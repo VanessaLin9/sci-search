@@ -1,0 +1,42 @@
+[
+  {
+    "id": "nature-methods",
+    "name": "Nature Methods",
+    "publisher": "Nature",
+    "kind": "rss",
+    "url": "https://www.nature.com/nmeth/current_issue/rss/",
+    "priority": 4
+  },
+  {
+    "id": "nature-methods-aop",
+    "name": "Nature Methods AOP",
+    "publisher": "Nature",
+    "kind": "rss",
+    "url": "https://www.nature.com/nmeth/journal/vaop/ncurrent/rss.rdf",
+    "priority": 4
+  },
+  {
+    "id": "biorxiv",
+    "name": "bioRxiv",
+    "publisher": "bioRxiv",
+    "kind": "biorxiv-api",
+    "url": "https://api.biorxiv.org/details/biorxiv",
+    "priority": 99
+  },
+  {
+    "id": "pnas",
+    "name": "PNAS",
+    "publisher": "PNAS",
+    "kind": "rss",
+    "url": "https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=PNAS",
+    "priority": 10
+  },
+  {
+    "id": "elife",
+    "name": "eLife",
+    "publisher": "eLife",
+    "kind": "csv",
+    "url": "https://prod--observer.elifesciences.org/report/latest-articles.csv",
+    "priority": 8
+  }
+]

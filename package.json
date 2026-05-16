@@ -1,0 +1,25 @@
+{
+  "name": "paper-digest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --import tsx src/index.ts",
+    "check": "tsc --noEmit",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "date-fns-tz": "^3.2.0",
+    "nunjucks": "^3.2.4",
+    "rss-parser": "^3.13.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "@types/nunjucks": "^3.2.6",
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
