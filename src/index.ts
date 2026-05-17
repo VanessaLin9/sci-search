@@ -1,6 +1,7 @@
 import { loadSources } from "./config.js";
 import { todayInTaipei } from "./date.js";
 import { fetchRssSource } from "./fetchRss.js";
+import { normalizeRssItemToPaper } from "./normalize.js";
 
 async function main() {
   const today = todayInTaipei();
@@ -24,17 +25,14 @@ async function main() {
     }
 
     const feed = await fetchRssSource(source);
+    const papers = feed.items
+      .map((item) => normalizeRssItemToPaper(item, source))
+      .filter((paper): paper is NonNullable<typeof paper> => paper !== null);
 
     console.log(`Feed: ${feed.title ?? source.name}`);
     console.log(`Items: ${feed.items.length}`);
-    console.log(
-      feed.items.slice(0, 3).map((item) => ({
-        title: item.title,
-        link: item.link,
-        pubDate: item.pubDate,
-        isoDate: item.isoDate,
-      })),
-    );
+    console.log(`Papers: ${papers.length}`);
+    console.log(papers.slice(0, 3));
   }
 }
 
