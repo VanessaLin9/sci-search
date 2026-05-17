@@ -4,16 +4,16 @@
     "name": "Nature Methods",
     "publisher": "Nature",
     "kind": "rss",
-    "url": "https://www.nature.com/nmeth/current_issue/rss/",
+    "url": "https://www.nature.com/nmeth.rss",
     "priority": 4
   },
   {
-    "id": "nature-methods-aop",
-    "name": "Nature Methods AOP",
-    "publisher": "Nature",
+    "id": "cell",
+    "name": "Cell",
+    "publisher": "Cell Press",
     "kind": "rss",
-    "url": "https://www.nature.com/nmeth/journal/vaop/ncurrent/rss.rdf",
-    "priority": 4
+    "url": "https://www.cell.com/cell/current.rss",
+    "priority": 1
   },
   {
     "id": "biorxiv",
@@ -30,6 +30,14 @@
     "kind": "rss",
     "url": "https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=PNAS",
     "priority": 10
+  },
+  {
+    "id": "plos-biology",
+    "name": "PLOS Biology",
+    "publisher": "PLOS",
+    "kind": "rss",
+    "url": "https://journals.plos.org/plosbiology/feed/atom",
+    "priority": 9
   },
   {
     "id": "elife",
