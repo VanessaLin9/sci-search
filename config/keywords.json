@@ -2,10 +2,18 @@
   "primary": [
     "single cell",
     "single-cell",
+    "single-cell ATAC",
+    "single nucleus",
+    "single-nucleus",
     "scRNA-seq",
+    "snRNA-seq",
     "spatial transcriptomics",
     "spatial omics",
     "spatial proteomics",
+    "spatial resolution",
+    "spatial deconvolution",
+    "spatial metabolomics",
+    "spatial domains",
     "multi-omics",
     "MERFISH",
     "Xenium",
@@ -13,7 +21,11 @@
     "Slide-seq",
     "Stereo-seq",
     "CITE-seq",
-    "Perturb-seq"
+    "Perturb-seq",
+    "CosMx",
+    "Merscope",
+    "STARmap",
+    "SeqFISH"
   ],
   "biology": [
     "biology",
