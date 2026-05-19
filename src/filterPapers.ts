@@ -1,4 +1,7 @@
 import type { Paper } from "./types.js";
+import { formatInTimeZone } from "date-fns-tz";
+
+const TIME_ZONE = "Asia/Taipei";
 
 export function matchKeywords(text: string, keywords: string[]): string[] {
   const haystack = text.toLowerCase();
@@ -16,4 +19,8 @@ export function dedupePapers(papers: Paper[]): Paper[] {
   }
 
   return result;
+}
+
+export function filterPapersByDate(papers: Paper[], targetDate: string): Paper[] {
+  return papers.filter((paper) => formatInTimeZone(paper.publishedDate, TIME_ZONE, "yyyy-MM-dd") === targetDate);
 }

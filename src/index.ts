@@ -2,7 +2,7 @@ import { loadSources, loadKeywords } from "./config.js";
 import { todayInTaipei } from "./date.js";
 import { fetchRssSource } from "./fetchRss.js";
 import { normalizeRssItemToPaper } from "./normalize.js";
-import { dedupePapers, matchKeywords } from "./filterPapers.js";
+import { dedupePapers, filterPapersByDate, matchKeywords } from "./filterPapers.js";
 
 async function main() {
   const today = todayInTaipei();
@@ -30,8 +30,10 @@ async function main() {
     const papers = feed.items
       .map((item) => normalizeRssItemToPaper(item, source))
       .filter((paper): paper is NonNullable<typeof paper> => paper !== null);
+    const dedupedPapers = dedupePapers(papers);
+    const papersOnTargetDate = filterPapersByDate(dedupedPapers, today);
     const allKeywords = [...keywords.primary, ...keywords.biology];
-    const papersWithKeywords = papers.map((paper) => {
+    const papersWithKeywords = papersOnTargetDate.map((paper) => {
       const searchableText = [paper.title, paper.abstract].filter(Boolean).join(" ");
       const matchedKeywords = matchKeywords(searchableText, allKeywords);
 
@@ -40,12 +42,13 @@ async function main() {
         matchedKeywords,
       };
     });
-    const dedupedPapers = dedupePapers(papersWithKeywords);
 
     console.log(`Feed: ${feed.title ?? source.name}`);
-    console.log(`Items: ${feed.items.length}`);
-    console.log(`Papers: ${dedupedPapers.length}`);
-    console.log(dedupedPapers.slice(0, 3));
+    console.log(`RSS items: ${feed.items.length}`);
+    console.log(`Normalized papers: ${papers.length}`);
+    console.log(`Deduped papers: ${dedupedPapers.length}`);
+    console.log(`Papers on ${today}: ${papersOnTargetDate.length}`);
+    console.log(papersWithKeywords.slice(0, 3));
   }
 }
 
