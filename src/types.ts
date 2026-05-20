@@ -1,5 +1,7 @@
 export type SourceKind = "rss" | "biorxiv-api" | "csv";
 
+export type PaperSection = "single-cell-spatial" | "biology" | "other";
+
 export type Source = {
   id: string;
   name: string;
@@ -20,4 +22,5 @@ export type Paper = {
   authors?: string[];
   sourceId: string;
   matchedKeywords: string[];
+  section: PaperSection;
 };

@@ -2,7 +2,14 @@ import { loadSources, loadKeywords } from "./config.js";
 import { todayInTaipei } from "./date.js";
 import { fetchRssSource } from "./fetchRss.js";
 import { normalizeRssItemToPaper } from "./normalize.js";
-import { dedupePapers, filterPapersByDate, matchKeywords } from "./filterPapers.js";
+import {
+  classifyPaperSection,
+  countPapersBySection,
+  dedupePapers,
+  filterPapersByDate,
+  getPaperSections,
+  matchKeywords,
+} from "./filterPapers.js";
 
 async function main() {
   const today = todayInTaipei();
@@ -32,23 +39,38 @@ async function main() {
       .filter((paper): paper is NonNullable<typeof paper> => paper !== null);
     const dedupedPapers = dedupePapers(papers);
     const papersOnTargetDate = filterPapersByDate(dedupedPapers, today);
-    const allKeywords = [...keywords.primary, ...keywords.biology];
-    const papersWithKeywords = papersOnTargetDate.map((paper) => {
+    const classifiedPapers = papersOnTargetDate.map((paper) => {
       const searchableText = [paper.title, paper.abstract].filter(Boolean).join(" ");
-      const matchedKeywords = matchKeywords(searchableText, allKeywords);
+      const primaryMatches = matchKeywords(searchableText, keywords.primary);
+      const biologyMatches = matchKeywords(searchableText, keywords.biology);
+      const matchedKeywords = [...primaryMatches, ...biologyMatches];
+      const section = classifyPaperSection(primaryMatches, biologyMatches);
 
       return {
         ...paper,
         matchedKeywords,
+        section,
       };
     });
+    const sectionCounts = countPapersBySection(classifiedPapers);
 
     console.log(`Feed: ${feed.title ?? source.name}`);
     console.log(`RSS items: ${feed.items.length}`);
     console.log(`Normalized papers: ${papers.length}`);
     console.log(`Deduped papers: ${dedupedPapers.length}`);
     console.log(`Papers on ${today}: ${papersOnTargetDate.length}`);
-    console.log(papersWithKeywords.slice(0, 3));
+    console.log(
+      `Section counts: ${getPaperSections()
+        .map((section) => `${section}: ${sectionCounts[section]}`)
+        .join(", ")}`,
+    );
+    console.log(
+      classifiedPapers.slice(0, 3).map((paper) => ({
+        title: paper.title,
+        matchedKeywords: paper.matchedKeywords,
+        section: paper.section,
+      })),
+    );
   }
 }
 

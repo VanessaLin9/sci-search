@@ -1,7 +1,8 @@
-import type { Paper } from "./types.js";
+import type { Paper, PaperSection } from "./types.js";
 import { formatInTimeZone } from "date-fns-tz";
 
 const TIME_ZONE = "Asia/Taipei";
+const SECTIONS: PaperSection[] = ["single-cell-spatial", "biology", "other"];
 
 export function matchKeywords(text: string, keywords: string[]): string[] {
   const haystack = text.toLowerCase();
@@ -23,4 +24,28 @@ export function dedupePapers(papers: Paper[]): Paper[] {
 
 export function filterPapersByDate(papers: Paper[], targetDate: string): Paper[] {
   return papers.filter((paper) => formatInTimeZone(paper.publishedDate, TIME_ZONE, "yyyy-MM-dd") === targetDate);
+}
+
+export function classifyPaperSection(primaryMatches: string[], biologyMatches: string[]): PaperSection {
+  if (primaryMatches.length > 0) return "single-cell-spatial";
+  if (biologyMatches.length > 0) return "biology";
+  return "other";
+}
+
+export function countPapersBySection(papers: Paper[]): Record<PaperSection, number> {
+  const counts: Record<PaperSection, number> = {
+    "single-cell-spatial": 0,
+    biology: 0,
+    other: 0,
+  };
+
+  for (const paper of papers) {
+    counts[paper.section] += 1;
+  }
+
+  return counts;
+}
+
+export function getPaperSections(): PaperSection[] {
+  return SECTIONS;
 }

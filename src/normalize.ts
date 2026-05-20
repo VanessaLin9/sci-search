@@ -34,6 +34,7 @@ export function normalizeRssItemToPaper(item: Item, source: Source): Paper | nul
     abstract: item.contentSnippet ?? item.summary,
     sourceId: source.id,
     matchedKeywords: [],
+    section: "other",
   };
 
   return paper;
