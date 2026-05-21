@@ -1,6 +1,12 @@
 import type { Item } from "rss-parser";
 import type { Paper, Source } from "./types.js";
 
+type RssItemWithCustomFields = Item & {
+  source?: string;
+};
+
+const DOI_PATTERN = /\b10\.\d{4,9}\/[-._;()/:A-Z0-9]+\b/i;
+
 export function normalizeWhitespace(value: string): string {
   return value.replace(/\s+/g, " ").trim();
 }
@@ -11,10 +17,16 @@ export function buildPaperId(paper: Pick<Paper, "doi" | "url" | "title">): strin
   return normalizeWhitespace(paper.title).toLowerCase();
 }
 
-export function normalizeRssItemToPaper(item: Item, source: Source): Paper | null {
+export function extractDoi(value: string | undefined): string | undefined {
+  if (!value) return undefined;
+  return value.match(DOI_PATTERN)?.[0];
+}
+
+export function normalizeRssItemToPaper(item: RssItemWithCustomFields, source: Source): Paper | null {
   const title = item.title ? normalizeWhitespace(item.title) : "";
   const url = item.link?.trim() ?? "";
   const publishedDate = item.isoDate ?? item.pubDate ?? "";
+  const doi = extractDoi(item.guid) ?? extractDoi(item.source);
 
   if (!title || !url || !publishedDate) {
     return null;
@@ -24,13 +36,13 @@ export function normalizeRssItemToPaper(item: Item, source: Source): Paper | nul
     id: buildPaperId({
       title,
       url,
-      doi: item.guid,
+      doi,
     }),
     title,
     journal: source.name,
     publishedDate,
     url,
-    doi: item.guid,
+    doi,
     abstract: item.contentSnippet ?? item.summary,
     sourceId: source.id,
     matchedKeywords: [],

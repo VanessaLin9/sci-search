@@ -1,7 +1,11 @@
 import Parser from "rss-parser";
 import type { Source } from "./types.js";
 
-const parser = new Parser();
+const parser = new Parser({
+  customFields: {
+    item: [["dc:source", "source"]],
+  },
+});
 
 export async function fetchRssSource(source: Source) {
   const response = await fetch(source.url, {

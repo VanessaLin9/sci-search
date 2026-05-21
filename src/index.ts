@@ -10,6 +10,23 @@ import {
   getPaperSections,
   matchKeywords,
 } from "./filterPapers.js";
+import type { Paper } from "./types.js";
+
+function printNormalizedPapers(sourceId: string, papers: Paper[]) {
+  console.log(`Normalized papers detail (${sourceId}):`);
+  console.table(
+    papers.map((paper, index) => ({
+      index: index + 1,
+      id: paper.id,
+      title: paper.title,
+      publishedDate: paper.publishedDate,
+      url: paper.url,
+      doi: paper.doi ?? "(missing)",
+      abstract: paper.abstract ? `${paper.abstract.slice(0, 120)}...` : "(missing)",
+      sourceId: paper.sourceId,
+    })),
+  );
+}
 
 async function main() {
   const today = todayInTaipei();
@@ -22,7 +39,7 @@ async function main() {
   console.log(`Report date: ${reportDate} (Asia/Taipei)`);
   console.log(`Sources: ${sources.length}`);
 
-  const rssSourceIds = ["nature-methods"];
+  const rssSourceIds = ["nature-methods", "cell"];
 
   for (const id of rssSourceIds) {
     const source = sources.find((source) => source.id === id);
@@ -59,6 +76,7 @@ async function main() {
     console.log(`Feed: ${feed.title ?? source.name}`);
     console.log(`RSS items: ${feed.items.length}`);
     console.log(`Normalized papers: ${papers.length}`);
+    printNormalizedPapers(source.id, papers);
     console.log(`Deduped papers: ${dedupedPapers.length}`);
     console.log(`Papers on report date: ${papersOnReportDate.length}`);
     console.log(
