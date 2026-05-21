@@ -1,5 +1,5 @@
 import { loadSources, loadKeywords } from "./config.js";
-import { todayInTaipei } from "./date.js";
+import { defaultReportDateInTaipei, todayInTaipei } from "./date.js";
 import { fetchRssSource } from "./fetchRss.js";
 import { normalizeRssItemToPaper } from "./normalize.js";
 import {
@@ -13,11 +13,13 @@ import {
 
 async function main() {
   const today = todayInTaipei();
+  const reportDate = defaultReportDateInTaipei();
   const sources = await loadSources();
   const keywords = await loadKeywords();
 
   console.log(`Paper Digest scaffold`);
   console.log(`Date: ${today} (Asia/Taipei)`);
+  console.log(`Report date: ${reportDate} (Asia/Taipei)`);
   console.log(`Sources: ${sources.length}`);
 
   const rssSourceIds = ["nature-methods"];
@@ -38,8 +40,8 @@ async function main() {
       .map((item) => normalizeRssItemToPaper(item, source))
       .filter((paper): paper is NonNullable<typeof paper> => paper !== null);
     const dedupedPapers = dedupePapers(papers);
-    const papersOnTargetDate = filterPapersByDate(dedupedPapers, today);
-    const classifiedPapers = papersOnTargetDate.map((paper) => {
+    const papersOnReportDate = filterPapersByDate(dedupedPapers, reportDate);
+    const classifiedPapers = papersOnReportDate.map((paper) => {
       const searchableText = [paper.title, paper.abstract].filter(Boolean).join(" ");
       const primaryMatches = matchKeywords(searchableText, keywords.primary);
       const biologyMatches = matchKeywords(searchableText, keywords.biology);
@@ -58,7 +60,7 @@ async function main() {
     console.log(`RSS items: ${feed.items.length}`);
     console.log(`Normalized papers: ${papers.length}`);
     console.log(`Deduped papers: ${dedupedPapers.length}`);
-    console.log(`Papers on ${today}: ${papersOnTargetDate.length}`);
+    console.log(`Papers on report date: ${papersOnReportDate.length}`);
     console.log(
       `Section counts: ${getPaperSections()
         .map((section) => `${section}: ${sectionCounts[section]}`)

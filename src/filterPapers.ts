@@ -1,7 +1,7 @@
 import type { Paper, PaperSection } from "./types.js";
 import { formatInTimeZone } from "date-fns-tz";
+import { TIME_ZONE } from "./date.js";
 
-const TIME_ZONE = "Asia/Taipei";
 const SECTIONS: PaperSection[] = ["single-cell-spatial", "biology", "other"];
 
 export function matchKeywords(text: string, keywords: string[]): string[] {
