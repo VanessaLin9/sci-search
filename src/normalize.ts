@@ -3,6 +3,7 @@ import { extractDoi } from "./doi.js";
 import { extractRssAbstract } from "./normalizers/rss/index.js";
 import { isNatureBiotechnologySkippedItem } from "./normalizers/rss/nature-biotechnology.js";
 import { isNatureCellBiologySkippedItem } from "./normalizers/rss/nature-cell-biology.js";
+import { isNatureNeuroscienceSkippedItem } from "./normalizers/rss/nature-neuroscience.js";
 import { isNatureCommunicationsSkippedItem } from "./normalizers/rss/nature-communications.js";
 import { isNatureEcologyEvolutionSkippedItem } from "./normalizers/rss/nature-ecology-evolution.js";
 import { isPnasEditorialRssItem } from "./normalizers/rss/pnas.js";
@@ -42,6 +43,10 @@ export function normalizeRssItemToPaper(item: RssItemWithCustomFields, source: S
   }
 
   if (source.id === "nature-cell-biology" && isNatureCellBiologySkippedItem(item)) {
+    return null;
+  }
+
+  if (source.id === "nature-neuroscience" && isNatureNeuroscienceSkippedItem(item)) {
     return null;
   }
 
