@@ -2,6 +2,7 @@ import type { Item } from "rss-parser";
 import { extractDoi } from "./doi.js";
 import { extractRssAbstract } from "./normalizers/rss/index.js";
 import { isNatureCommunicationsSkippedItem } from "./normalizers/rss/nature-communications.js";
+import { isNatureEcologyEvolutionSkippedItem } from "./normalizers/rss/nature-ecology-evolution.js";
 import { isPnasEditorialRssItem } from "./normalizers/rss/pnas.js";
 import { normalizeWhitespace } from "./normalizers/shared.js";
 import type { Paper, Source } from "./types.js";
@@ -27,6 +28,10 @@ export function normalizeRssItemToPaper(item: RssItemWithCustomFields, source: S
   }
 
   if (source.id === "nature-communications" && isNatureCommunicationsSkippedItem(item)) {
+    return null;
+  }
+
+  if (source.id === "nature-ecology-evolution" && isNatureEcologyEvolutionSkippedItem(item)) {
     return null;
   }
 

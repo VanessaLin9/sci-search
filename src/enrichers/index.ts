@@ -11,6 +11,7 @@ const PAPER_ENRICHERS: Record<string, PaperEnricher> = {
   "nature-methods": enrichNatureMethodsPaper,
   "nature-genetics": enrichNatureMethodsPaper,
   "nature-communications": enrichNatureMethodsPaper,
+  "nature-ecology-evolution": enrichNatureMethodsPaper,
   "pnas": enrichPnasPaper,
   "science": enrichSciencePaper,
 };
