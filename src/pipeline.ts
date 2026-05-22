@@ -14,6 +14,7 @@ export const DEFAULT_RSS_SOURCE_IDS = [
   "nature",
   "nature-methods",
   "cell",
+  "science",
   "plos-biology",
   "pnas",
 ] as const;
@@ -113,9 +114,11 @@ export async function runPipeline(options: {
     sourceResults.push(result);
   }
 
+  const dedupedPapers = dedupePapers(papers);
+
   return {
     reportDate: options.reportDate,
-    papers,
+    papers: dedupedPapers,
     sourceResults,
   };
 }

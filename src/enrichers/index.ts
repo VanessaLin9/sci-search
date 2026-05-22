@@ -2,6 +2,7 @@ import { isDebugEnabled, logEnrichResult } from "../debug.js";
 import type { Paper } from "../types.js";
 import { enrichNatureMethodsPaper } from "./nature-methods.js";
 import { enrichPnasPaper } from "./pnas.js";
+import { enrichSciencePaper } from "./science.js";
 
 export type PaperEnricher = (paper: Paper) => Promise<Paper>;
 
@@ -9,6 +10,7 @@ const PAPER_ENRICHERS: Record<string, PaperEnricher> = {
   "nature": enrichNatureMethodsPaper,
   "nature-methods": enrichNatureMethodsPaper,
   "pnas": enrichPnasPaper,
+  "science": enrichSciencePaper,
 };
 
 export type EnrichPapersResult = {

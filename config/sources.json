@@ -24,6 +24,14 @@
     "priority": 1
   },
   {
+    "id": "science",
+    "name": "Science",
+    "publisher": "AAAS",
+    "kind": "rss",
+    "url": "https://www.science.org/action/showFeed?type=axatoc&feed=rss&jc=science",
+    "priority": 3
+  },
+  {
     "id": "biorxiv",
     "name": "bioRxiv",
     "publisher": "bioRxiv",
