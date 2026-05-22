@@ -16,6 +16,7 @@ export const DEFAULT_RSS_SOURCE_IDS = [
   "nature-genetics",
   "nature-communications",
   "nature-ecology-evolution",
+  "nature-biotechnology",
   "cell",
   "science",
   "plos-biology",
