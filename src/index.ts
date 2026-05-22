@@ -11,6 +11,7 @@ import {
   matchKeywords,
 } from "./filterPapers.js";
 import type { Paper } from "./types.js";
+import { writeJsonFile } from "./writeJson.js";
 
 function printNormalizedPapers(sourceId: string, papers: Paper[]) {
   console.log(`Normalized papers detail (${sourceId}):`);
@@ -33,6 +34,7 @@ async function main() {
   const reportDate = defaultReportDateInTaipei();
   const sources = await loadSources();
   const keywords = await loadKeywords();
+  const allClassifiedPapers: Paper[] = [];
 
   console.log(`Paper Digest scaffold`);
   console.log(`Date: ${today} (Asia/Taipei)`);
@@ -71,6 +73,7 @@ async function main() {
         section,
       };
     });
+    allClassifiedPapers.push(...classifiedPapers);
     const sectionCounts = countPapersBySection(classifiedPapers);
 
     console.log(`Feed: ${feed.title ?? source.name}`);
@@ -92,6 +95,14 @@ async function main() {
       })),
     );
   }
+
+  const outputPath = `data/processed/${reportDate}/papers.json`;
+  await writeJsonFile(outputPath, {
+    reportDate,
+    generatedAt: new Date().toISOString(),
+    papers: allClassifiedPapers,
+  });
+  console.log(`Wrote ${outputPath}`);
 }
 
 main().catch((error) => {
