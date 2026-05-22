@@ -13,6 +13,7 @@ import type { Paper, PaperSection, Source } from "./types.js";
 export const DEFAULT_RSS_SOURCE_IDS = [
   "nature",
   "nature-methods",
+  "nature-genetics",
   "cell",
   "science",
   "plos-biology",

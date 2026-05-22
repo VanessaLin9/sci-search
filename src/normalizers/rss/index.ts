@@ -10,6 +10,7 @@ export type RssAbstractExtractor = (item: Item) => string | undefined;
 const RSS_ABSTRACT_EXTRACTORS: Record<string, RssAbstractExtractor> = {
   "nature": extractNatureMethodsAbstract,
   "nature-methods": extractNatureMethodsAbstract,
+  "nature-genetics": extractNatureMethodsAbstract,
   "plos-biology": extractPlosBiologyAbstract,
   "pnas": extractPnasAbstract,
   "science": extractScienceAbstract,
