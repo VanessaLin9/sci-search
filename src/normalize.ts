@@ -6,6 +6,7 @@ import { isNatureCellBiologySkippedItem } from "./normalizers/rss/nature-cell-bi
 import { isNatureNeuroscienceSkippedItem } from "./normalizers/rss/nature-neuroscience.js";
 import { isNatureCommunicationsSkippedItem } from "./normalizers/rss/nature-communications.js";
 import { isNatureEcologyEvolutionSkippedItem } from "./normalizers/rss/nature-ecology-evolution.js";
+import { isNatureImmunologySkippedItem } from "./normalizers/rss/nature-immunology.js";
 import { isPnasEditorialRssItem } from "./normalizers/rss/pnas.js";
 import { normalizeWhitespace } from "./normalizers/shared.js";
 import type { Paper, Source } from "./types.js";
@@ -47,6 +48,10 @@ export function normalizeRssItemToPaper(item: RssItemWithCustomFields, source: S
   }
 
   if (source.id === "nature-neuroscience" && isNatureNeuroscienceSkippedItem(item)) {
+    return null;
+  }
+
+  if (source.id === "nature-immunology" && isNatureImmunologySkippedItem(item)) {
     return null;
   }
 

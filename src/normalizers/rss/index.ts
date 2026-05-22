@@ -5,6 +5,7 @@ import { extractNatureBiotechnologyAbstract } from "./nature-biotechnology.js";
 import { extractNatureCellBiologyAbstract } from "./nature-cell-biology.js";
 import { extractNatureNeuroscienceAbstract } from "./nature-neuroscience.js";
 import { extractNatureEcologyEvolutionAbstract } from "./nature-ecology-evolution.js";
+import { extractNatureImmunologyAbstract } from "./nature-immunology.js";
 import { extractNatureMethodsAbstract } from "./nature-methods.js";
 import { extractPlosBiologyAbstract } from "./plos-biology.js";
 import { extractPnasAbstract } from "./pnas.js";
@@ -21,6 +22,7 @@ const RSS_ABSTRACT_EXTRACTORS: Record<string, RssAbstractExtractor> = {
   "nature-biotechnology": extractNatureBiotechnologyAbstract,
   "nature-cell-biology": extractNatureCellBiologyAbstract,
   "nature-neuroscience": extractNatureNeuroscienceAbstract,
+  "nature-immunology": extractNatureImmunologyAbstract,
   "plos-biology": extractPlosBiologyAbstract,
   "pnas": extractPnasAbstract,
   "science": extractScienceAbstract,
