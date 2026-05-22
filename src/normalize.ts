@@ -1,6 +1,7 @@
 import type { Item } from "rss-parser";
 import { extractDoi } from "./doi.js";
 import { extractRssAbstract } from "./normalizers/rss/index.js";
+import { isNatureCommunicationsSkippedItem } from "./normalizers/rss/nature-communications.js";
 import { isPnasEditorialRssItem } from "./normalizers/rss/pnas.js";
 import { normalizeWhitespace } from "./normalizers/shared.js";
 import type { Paper, Source } from "./types.js";
@@ -22,6 +23,10 @@ export function normalizeRssItemToPaper(item: RssItemWithCustomFields, source: S
   const url = item.link?.trim() ?? "";
   const publishedDate = item.isoDate ?? item.pubDate ?? "";
   if (source.id === "pnas" && isPnasEditorialRssItem(item)) {
+    return null;
+  }
+
+  if (source.id === "nature-communications" && isNatureCommunicationsSkippedItem(item)) {
     return null;
   }
 

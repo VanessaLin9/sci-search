@@ -3,7 +3,10 @@ import type { Source } from "./types.js";
 
 const parser = new Parser({
   customFields: {
-    item: [["dc:source", "source"]],
+    item: [
+      ["dc:source", "source"],
+      ["content:encoded", "contentEncoded"],
+    ],
   },
 });
 
