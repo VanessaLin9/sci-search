@@ -19,8 +19,10 @@ export function logSourceSummary(stats: SourcePipelineStats): void {
     .map((section) => `${section}: ${stats.sectionCounts[section]}`)
     .join(", ");
 
+  const enriched =
+    stats.enrichedCount > 0 ? ` · enriched ${stats.enrichedCount}` : "";
   console.log(
-    `${stats.sourceId}: ${stats.onReportDateCount} on report date (${stats.rssItemCount} RSS items) · ${sections}`,
+    `${stats.sourceId}: ${stats.onReportDateCount} on report date (${stats.rssItemCount} RSS items)${enriched} · ${sections}`,
   );
 }
 
@@ -31,6 +33,7 @@ export function logSourceDetails(stats: SourcePipelineStats, normalizedPapers: P
   printNormalizedPapers(stats.sourceId, normalizedPapers);
   console.log(`Deduped papers: ${stats.dedupedCount}`);
   console.log(`Papers on report date: ${stats.onReportDateCount}`);
+  console.log(`Enriched abstracts: ${stats.enrichedCount}`);
   console.log(
     `Section counts: ${getPaperSections()
       .map((section) => `${section}: ${stats.sectionCounts[section]}`)

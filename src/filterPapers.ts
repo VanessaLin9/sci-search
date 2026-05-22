@@ -22,8 +22,12 @@ export function dedupePapers(papers: Paper[]): Paper[] {
   return result;
 }
 
+export function isPaperOnReportDate(paper: Paper, reportDate: string): boolean {
+  return formatInTimeZone(paper.publishedDate, TIME_ZONE, "yyyy-MM-dd") === reportDate;
+}
+
 export function filterPapersByDate(papers: Paper[], targetDate: string): Paper[] {
-  return papers.filter((paper) => formatInTimeZone(paper.publishedDate, TIME_ZONE, "yyyy-MM-dd") === targetDate);
+  return papers.filter((paper) => isPaperOnReportDate(paper, targetDate));
 }
 
 export function classifyPaperSection(primaryMatches: string[], biologyMatches: string[]): PaperSection {

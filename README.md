@@ -2,13 +2,15 @@
 
 Daily paper digest prototype for RSS/API based science monitoring.
 
-## First goals
+## Pipeline
 
-1. Read source definitions from `config/sources.json`.
-2. Fetch RSS/API metadata.
-3. Normalize papers into one schema.
-4. Filter by date and keywords.
-5. Render static HTML into `docs/`.
+1. Load sources and keywords
+2. Fetch RSS/API metadata
+3. Normalize to a shared `Paper` schema (per-source normalizers)
+4. Dedupe and filter by report date (Asia/Taipei, default yesterday)
+5. Enrich missing metadata (e.g. Nature Methods abstract from article HTML)
+6. Tag keywords and classify section
+7. Write `data/processed/{reportDate}/papers.json`
 
 ## Commands
 

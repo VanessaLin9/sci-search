@@ -6,6 +6,7 @@ import {
   filterPapersByDate,
   matchKeywords,
 } from "./filterPapers.js";
+import { enrichPapers } from "./enrichers/index.js";
 import { normalizeRssItemToPaper } from "./normalize.js";
 import type { Paper, PaperSection, Source } from "./types.js";
 
@@ -23,6 +24,7 @@ export type SourcePipelineStats = {
   normalizedCount: number;
   dedupedCount: number;
   onReportDateCount: number;
+  enrichedCount: number;
   sectionCounts: Record<PaperSection, number>;
 };
 
@@ -65,7 +67,8 @@ export async function processRssSource(
     .filter((paper): paper is Paper => paper !== null);
   const deduped = dedupePapers(normalized);
   const onReportDate = filterPapersByDate(deduped, reportDate);
-  const classified = onReportDate.map((paper) => classifyPaper(paper, keywords));
+  const { papers: enrichedOnReportDate, enrichedCount } = await enrichPapers(onReportDate);
+  const classified = enrichedOnReportDate.map((paper) => classifyPaper(paper, keywords));
 
   return {
     papers: classified,
@@ -77,6 +80,7 @@ export async function processRssSource(
       normalizedCount: normalized.length,
       dedupedCount: deduped.length,
       onReportDateCount: onReportDate.length,
+      enrichedCount,
       sectionCounts: countPapersBySection(classified),
     },
   };
