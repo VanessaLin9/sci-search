@@ -9,7 +9,7 @@ import {
 import { normalizeRssItemToPaper } from "./normalize.js";
 import type { Paper, PaperSection, Source } from "./types.js";
 
-export const DEFAULT_RSS_SOURCE_IDS = ["nature-methods", "cell"] as const;
+export const DEFAULT_RSS_SOURCE_IDS = ["nature-methods", "cell", "plos-biology"] as const;
 
 export type KeywordsConfig = {
   primary: string[];

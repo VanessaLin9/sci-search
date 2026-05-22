@@ -1,4 +1,6 @@
 import type { Item } from "rss-parser";
+import { extractRssAbstract } from "./normalizers/rss/index.js";
+import { normalizeWhitespace } from "./normalizers/shared.js";
 import type { Paper, Source } from "./types.js";
 
 type RssItemWithCustomFields = Item & {
@@ -7,9 +9,7 @@ type RssItemWithCustomFields = Item & {
 
 const DOI_PATTERN = /\b10\.\d{4,9}\/[-._;()/:A-Z0-9]+\b/i;
 
-export function normalizeWhitespace(value: string): string {
-  return value.replace(/\s+/g, " ").trim();
-}
+export { normalizeWhitespace };
 
 export function buildPaperId(paper: Pick<Paper, "doi" | "url" | "title">): string {
   if (paper.doi) return paper.doi.toLowerCase();
@@ -43,7 +43,7 @@ export function normalizeRssItemToPaper(item: RssItemWithCustomFields, source: S
     publishedDate,
     url,
     doi,
-    abstract: item.contentSnippet ?? item.summary,
+    abstract: extractRssAbstract(source.id, item),
     sourceId: source.id,
     matchedKeywords: [],
     section: "other",
