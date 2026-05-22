@@ -1,4 +1,7 @@
+import { loadEnvFile } from "./loadEnv.js";
 import { loadSources, loadKeywords } from "./config.js";
+
+loadEnvFile();
 import { defaultReportDateInTaipei, todayInTaipei } from "./date.js";
 import {
   isDebugEnabled,

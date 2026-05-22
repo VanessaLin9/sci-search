@@ -17,7 +17,17 @@ npm run dev
 npm run check
 ```
 
-Optional debug logging (per-source tables and classified samples):
+Environment variables (optional `.env`, see `.env.example`):
+
+```bash
+cp .env.example .env
+```
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `DEBUG_NORMALIZED` | off | Set to `1` or `true` for verbose logs (`console.table`, classified samples). `0` or unset for cron-friendly output. |
+
+One-off without editing `.env`:
 
 ```bash
 DEBUG_NORMALIZED=1 npm run dev
