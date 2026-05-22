@@ -41,6 +41,23 @@ export function logSourceDetails(stats: SourcePipelineStats, normalizedPapers: P
   );
 }
 
+export function logEnrichResult(before: Paper, after: Paper): void {
+  if (before.abstract?.trim()) return;
+
+  const id = before.doi ?? before.id;
+  if (!after.abstract?.trim()) {
+    console.log(`Enrich ${before.sourceId} · ${id}: no abstract`);
+    return;
+  }
+
+  const preview = after.abstract.slice(0, 100);
+  const hasMarkup = /<jats\b|<\/?[a-z]/i.test(after.abstract);
+  console.log(
+    `Enrich ${before.sourceId} · ${id}: ok (${after.abstract.length} chars)${hasMarkup ? " [WARN: markup left]" : ""}`,
+  );
+  console.log(`  start: ${preview}${after.abstract.length > 100 ? "..." : ""}`);
+}
+
 export function logClassifiedSample(papers: Paper[], limit = 3): void {
   if (papers.length === 0) return;
 

@@ -1,10 +1,13 @@
+import { isDebugEnabled, logEnrichResult } from "../debug.js";
 import type { Paper } from "../types.js";
 import { enrichNatureMethodsPaper } from "./nature-methods.js";
+import { enrichPnasPaper } from "./pnas.js";
 
 export type PaperEnricher = (paper: Paper) => Promise<Paper>;
 
 const PAPER_ENRICHERS: Record<string, PaperEnricher> = {
   "nature-methods": enrichNatureMethodsPaper,
+  "pnas": enrichPnasPaper,
 };
 
 export type EnrichPapersResult = {
@@ -24,9 +27,17 @@ export async function enrichPapers(papers: Paper[]): Promise<EnrichPapersResult>
       continue;
     }
 
-    const next = await enricher(paper);
+    let next = paper;
+    try {
+      next = await enricher(paper);
+    } catch (error) {
+      console.warn(`Enrich failed (${paper.sourceId}/${paper.id}):`, error);
+    }
     if (next.abstract && !paper.abstract) {
       enrichedCount += 1;
+    }
+    if (isDebugEnabled()) {
+      logEnrichResult(paper, next);
     }
     enriched.push(next);
   }

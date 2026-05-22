@@ -1,4 +1,4 @@
-import { normalizeWhitespace, stripHtml } from "../normalizers/shared.js";
+import { decodeHtmlEntities, normalizeWhitespace, stripHtml } from "../normalizers/shared.js";
 
 function escapeRegExp(value: string): string {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -14,7 +14,7 @@ export function extractMetaByName(html: string, name: string): string | undefine
   for (const pattern of patterns) {
     const match = html.match(pattern);
     if (match?.[1]) {
-      return decodeHtmlEntities(match[1]);
+      return decodeHtmlEntities(match[1] ?? "");
     }
   }
 
@@ -31,7 +31,7 @@ export function extractMetaByProperty(html: string, property: string): string | 
   for (const pattern of patterns) {
     const match = html.match(pattern);
     if (match?.[1]) {
-      return decodeHtmlEntities(match[1]);
+      return decodeHtmlEntities(match[1] ?? "");
     }
   }
 
@@ -49,16 +49,4 @@ export function extractNatureAbs1Section(html: string): string | undefined {
 
   const normalized = normalizeWhitespace(stripHtml(contentMatch[1]));
   return normalized || undefined;
-}
-
-function decodeHtmlEntities(value: string): string {
-  return value
-    .replace(/&nbsp;/gi, " ")
-    .replace(/&amp;/gi, "&")
-    .replace(/&lt;/gi, "<")
-    .replace(/&gt;/gi, ">")
-    .replace(/&quot;/gi, '"')
-    .replace(/&#39;/gi, "'")
-    .replace(/&#x27;/gi, "'")
-    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)));
 }
