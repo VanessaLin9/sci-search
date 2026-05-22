@@ -1,5 +1,7 @@
 import type { Item } from "rss-parser";
+import { extractDoi } from "./doi.js";
 import { extractRssAbstract } from "./normalizers/rss/index.js";
+import { isPnasEditorialRssItem } from "./normalizers/rss/pnas.js";
 import { normalizeWhitespace } from "./normalizers/shared.js";
 import type { Paper, Source } from "./types.js";
 
@@ -7,9 +9,7 @@ type RssItemWithCustomFields = Item & {
   source?: string;
 };
 
-const DOI_PATTERN = /\b10\.\d{4,9}\/[-._;()/:A-Z0-9]+\b/i;
-
-export { normalizeWhitespace };
+export { extractDoi, normalizeWhitespace };
 
 export function buildPaperId(paper: Pick<Paper, "doi" | "url" | "title">): string {
   if (paper.doi) return paper.doi.toLowerCase();
@@ -17,16 +17,18 @@ export function buildPaperId(paper: Pick<Paper, "doi" | "url" | "title">): strin
   return normalizeWhitespace(paper.title).toLowerCase();
 }
 
-export function extractDoi(value: string | undefined): string | undefined {
-  if (!value) return undefined;
-  return value.match(DOI_PATTERN)?.[0];
-}
-
 export function normalizeRssItemToPaper(item: RssItemWithCustomFields, source: Source): Paper | null {
   const title = item.title ? normalizeWhitespace(item.title) : "";
   const url = item.link?.trim() ?? "";
   const publishedDate = item.isoDate ?? item.pubDate ?? "";
-  const doi = extractDoi(item.guid) ?? extractDoi(item.source);
+  if (source.id === "pnas" && isPnasEditorialRssItem(item)) {
+    return null;
+  }
+
+  const doi =
+    extractDoi(item.guid) ??
+    extractDoi(item.source) ??
+    extractDoi(item.link);
 
   if (!title || !url || !publishedDate) {
     return null;
