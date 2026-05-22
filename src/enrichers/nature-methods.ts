@@ -23,6 +23,7 @@ export function extractNatureMethodsAbstractFromHtml(html: string): string | und
   return undefined;
 }
 
+/** Works for any nature.com article URL (Nature, Nature Methods, …). */
 export async function enrichNatureMethodsPaper(paper: Paper): Promise<Paper> {
   if (paper.abstract?.trim()) return paper;
 

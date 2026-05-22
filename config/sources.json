@@ -1,5 +1,13 @@
 [
   {
+    "id": "nature",
+    "name": "Nature",
+    "publisher": "Nature",
+    "kind": "rss",
+    "url": "https://www.nature.com/nature.rss",
+    "priority": 2
+  },
+  {
     "id": "nature-methods",
     "name": "Nature Methods",
     "publisher": "Nature",

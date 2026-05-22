@@ -1,6 +1,6 @@
 import type { Item } from "rss-parser";
 
-/** Nature Methods RSS does not include abstract; enrichment fetches article pages later. */
+/** Nature Portfolio RSS (Nature, Nature Methods, etc.) has no abstract; enrich fetches article pages. */
 export function extractNatureMethodsAbstract(_item: Item): string | undefined {
   return undefined;
 }

@@ -6,6 +6,7 @@ import { enrichPnasPaper } from "./pnas.js";
 export type PaperEnricher = (paper: Paper) => Promise<Paper>;
 
 const PAPER_ENRICHERS: Record<string, PaperEnricher> = {
+  "nature": enrichNatureMethodsPaper,
   "nature-methods": enrichNatureMethodsPaper,
   "pnas": enrichPnasPaper,
 };

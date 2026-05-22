@@ -7,6 +7,7 @@ import { extractPnasAbstract } from "./pnas.js";
 export type RssAbstractExtractor = (item: Item) => string | undefined;
 
 const RSS_ABSTRACT_EXTRACTORS: Record<string, RssAbstractExtractor> = {
+  "nature": extractNatureMethodsAbstract,
   "nature-methods": extractNatureMethodsAbstract,
   "plos-biology": extractPlosBiologyAbstract,
   "pnas": extractPnasAbstract,
