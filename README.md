@@ -16,3 +16,9 @@ Daily paper digest prototype for RSS/API based science monitoring.
 npm run dev
 npm run check
 ```
+
+Optional debug logging (per-source tables and classified samples):
+
+```bash
+DEBUG_NORMALIZED=1 npm run dev
+```
