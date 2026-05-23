@@ -35,12 +35,13 @@ export function isNatureEncodedSkippedItem(item: Item): boolean {
   );
 }
 
+const NATURE_RSS_TEASER_VERB =
+  "report|reports|show|shows|find|finds|reveal|reveals|demonstrate|identify|discuss|uncover|describe|develop|use|provide|highlight|present|determine";
+
 /** Nature RSS often ships a one-line "Author et al. report …" blurb instead of the paper abstract. */
 export function isNatureRssTeaserAbstract(text: string): boolean {
   const normalized = normalizeWhitespace(text);
-  return /\bet al\.\s+(report|reports|show|shows|find|finds|reveal|reveals|demonstrate|identify|discuss)\b/i.test(
-    normalized,
-  );
+  return new RegExp(`\\bet al\\.\\s+(${NATURE_RSS_TEASER_VERB})\\b`, "i").test(normalized);
 }
 
 export function extractNatureEncodedAbstract(item: Item, journalName: string): string | undefined {
