@@ -10,22 +10,23 @@ import { enrichPapers } from "./enrichers/index.js";
 import { normalizeRssItemToPaper } from "./normalize.js";
 import type { Paper, PaperSection, Source } from "./types.js";
 
+/** Active RSS sources, ordered by `config/sources.json` priority (see SKILL journal list). */
 export const DEFAULT_RSS_SOURCE_IDS = [
+  "cell",
   "nature",
+  "science",
   "nature-methods",
   "nature-genetics",
-  "nature-communications",
   "nature-ecology-evolution",
   "nature-biotechnology",
   "nature-cell-biology",
   "nature-neuroscience",
   "nature-immunology",
   "nature-microbiology",
-  "cell",
-  "science",
   "science-advances",
-  "plos-biology",
   "pnas",
+  "plos-biology",
+  "nature-communications",
 ] as const;
 
 export type KeywordsConfig = {

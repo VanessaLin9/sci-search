@@ -1,11 +1,27 @@
 [
   {
+    "id": "cell",
+    "name": "Cell",
+    "publisher": "Cell Press",
+    "kind": "rss",
+    "url": "https://www.cell.com/cell/current.rss",
+    "priority": 1
+  },
+  {
     "id": "nature",
     "name": "Nature",
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/nature.rss",
     "priority": 2
+  },
+  {
+    "id": "science",
+    "name": "Science",
+    "publisher": "AAAS",
+    "kind": "rss",
+    "url": "https://www.science.org/action/showFeed?type=axatoc&feed=rss&jc=science",
+    "priority": 3
   },
   {
     "id": "nature-methods",
@@ -24,20 +40,12 @@
     "priority": 5
   },
   {
-    "id": "nature-communications",
-    "name": "Nature Communications",
-    "publisher": "Nature",
-    "kind": "rss",
-    "url": "https://www.nature.com/ncomms.rss",
-    "priority": 6
-  },
-  {
     "id": "nature-ecology-evolution",
     "name": "Nature Ecology & Evolution",
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/natecolevol.rss",
-    "priority": 7
+    "priority": 6
   },
   {
     "id": "nature-biotechnology",
@@ -45,7 +53,7 @@
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/nbt.rss",
-    "priority": 8
+    "priority": 7
   },
   {
     "id": "nature-cell-biology",
@@ -53,7 +61,7 @@
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/ncb.rss",
-    "priority": 9
+    "priority": 8
   },
   {
     "id": "nature-neuroscience",
@@ -61,7 +69,7 @@
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/neuro.rss",
-    "priority": 10
+    "priority": 9
   },
   {
     "id": "nature-immunology",
@@ -69,7 +77,7 @@
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/ni.rss",
-    "priority": 11
+    "priority": 10
   },
   {
     "id": "nature-microbiology",
@@ -77,23 +85,7 @@
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/nmicrobiol.rss",
-    "priority": 12
-  },
-  {
-    "id": "cell",
-    "name": "Cell",
-    "publisher": "Cell Press",
-    "kind": "rss",
-    "url": "https://www.cell.com/cell/current.rss",
-    "priority": 1
-  },
-  {
-    "id": "science",
-    "name": "Science",
-    "publisher": "AAAS",
-    "kind": "rss",
-    "url": "https://www.science.org/action/showFeed?type=axatoc&feed=rss&jc=science",
-    "priority": 3
+    "priority": 11
   },
   {
     "id": "science-advances",
@@ -101,7 +93,39 @@
     "publisher": "AAAS",
     "kind": "rss",
     "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv",
+    "priority": 12
+  },
+  {
+    "id": "pnas",
+    "name": "PNAS",
+    "publisher": "PNAS",
+    "kind": "rss",
+    "url": "https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=PNAS",
     "priority": 13
+  },
+  {
+    "id": "elife",
+    "name": "eLife",
+    "publisher": "eLife",
+    "kind": "csv",
+    "url": "https://prod--observer.elifesciences.org/report/latest-articles.csv",
+    "priority": 14
+  },
+  {
+    "id": "plos-biology",
+    "name": "PLOS Biology",
+    "publisher": "PLOS",
+    "kind": "rss",
+    "url": "https://journals.plos.org/plosbiology/feed/atom",
+    "priority": 15
+  },
+  {
+    "id": "nature-communications",
+    "name": "Nature Communications",
+    "publisher": "Nature",
+    "kind": "rss",
+    "url": "https://www.nature.com/ncomms.rss",
+    "priority": 16
   },
   {
     "id": "biorxiv",
@@ -110,29 +134,5 @@
     "kind": "biorxiv-api",
     "url": "https://api.biorxiv.org/details/biorxiv",
     "priority": 99
-  },
-  {
-    "id": "pnas",
-    "name": "PNAS",
-    "publisher": "PNAS",
-    "kind": "rss",
-    "url": "https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=PNAS",
-    "priority": 10
-  },
-  {
-    "id": "plos-biology",
-    "name": "PLOS Biology",
-    "publisher": "PLOS",
-    "kind": "rss",
-    "url": "https://journals.plos.org/plosbiology/feed/atom",
-    "priority": 9
-  },
-  {
-    "id": "elife",
-    "name": "eLife",
-    "publisher": "eLife",
-    "kind": "csv",
-    "url": "https://prod--observer.elifesciences.org/report/latest-articles.csv",
-    "priority": 8
   }
 ]
