@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "node --import tsx src/index.ts",
+    "send-digest": "node --import tsx src/commands/sendDigest.ts",
     "check": "tsc --noEmit",
     "format": "prettier --write ."
   },
