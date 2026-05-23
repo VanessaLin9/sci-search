@@ -4,6 +4,5 @@ dist/
 .DS_Store
 original_materials/
 data/raw/**/*.json
-data/processed/**/*.json
 !data/raw/.gitkeep
 !data/processed/.gitkeep

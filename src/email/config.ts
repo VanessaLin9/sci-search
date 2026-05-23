@@ -12,13 +12,18 @@ const emailConfigSchema = z.object({
 
 export type EmailConfig = z.infer<typeof emailConfigSchema>;
 
+function envOrDefault(name: string, fallback: string): string {
+  const value = process.env[name]?.trim();
+  return value ? value : fallback;
+}
+
 export function loadEmailConfig(): EmailConfig {
   const to = parseRecipientList(process.env.DIGEST_TO_EMAIL);
   const parsed = emailConfigSchema.safeParse({
-    resendApiKey: process.env.RESEND_API_KEY,
-    from: process.env.DIGEST_FROM_EMAIL ?? "onboarding@resend.dev",
+    resendApiKey: process.env.RESEND_API_KEY?.trim(),
+    from: envOrDefault("DIGEST_FROM_EMAIL", "onboarding@resend.dev"),
     to,
-    subjectPrefix: process.env.DIGEST_SUBJECT_PREFIX ?? "Paper Digest",
+    subjectPrefix: envOrDefault("DIGEST_SUBJECT_PREFIX", "Paper Digest"),
   });
 
   if (!parsed.success) {

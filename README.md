@@ -33,6 +33,30 @@ npm run send-digest -- --dry-run
 
 Requires `RESEND_API_KEY`, `DIGEST_TO_EMAIL`, and `DIGEST_FROM_EMAIL` in `.env` (see `.env.example`). Free Resend accounts can use `onboarding@resend.dev` as the sender until a domain is verified.
 
+One-shot local run (collect + email):
+
+```bash
+npm run daily
+```
+
+### GitHub Actions
+
+Workflow: [`.github/workflows/daily.yml`](.github/workflows/daily.yml)
+
+- Schedule: **06:30 Asia/Taipei** daily (`workflow_dispatch` also supported).
+- Steps: `npm run dev` → `npm run send-digest` → commit `data/processed/{date}/papers.json` → upload artifact.
+
+Add these **repository secrets** (Settings → Secrets and variables → Actions):
+
+| Secret | Required | Example |
+|--------|----------|---------|
+| `RESEND_API_KEY` | yes | `re_...` |
+| `DIGEST_TO_EMAIL` | yes | `["you@example.com","mentor@example.com"]` |
+| `DIGEST_FROM_EMAIL` | no | `onboarding@resend.dev` (default if omitted) |
+| `DIGEST_SUBJECT_PREFIX` | no | `Paper Digest` |
+
+After the first successful run, open the commit on `main` or download the `papers-{date}` artifact from the Actions run to inspect collected data.
+
 Environment variables (optional `.env`, see `.env.example`):
 
 ```bash

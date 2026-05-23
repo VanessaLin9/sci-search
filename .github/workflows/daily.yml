@@ -3,19 +3,77 @@ name: Daily Paper Digest
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 20 * * *"
+    # 06:30 Asia/Taipei (22:30 UTC)
+    - cron: "30 22 * * *"
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
 
 jobs:
-  build:
+  digest:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      TZ: Asia/Taipei
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      DIGEST_TO_EMAIL: ${{ secrets.DIGEST_TO_EMAIL }}
+      DEBUG_NORMALIZED: "0"
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
           cache: "npm"
-      - run: npm ci
-      - run: npm run check
-      - run: npm run dev
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run check
+
+      - name: Collect papers
+        run: npm run dev
+
+      - name: Resolve report date
+        id: report
+        run: |
+          REPORT_DATE="$(node --import tsx -e "import { defaultReportDateInTaipei } from './src/date.ts'; console.log(defaultReportDateInTaipei())")"
+          echo "date=${REPORT_DATE}" >> "$GITHUB_OUTPUT"
+          echo "Report date: ${REPORT_DATE}"
+
+      - name: Summarize collected papers
+        run: |
+          FILE="data/processed/${{ steps.report.outputs.date }}/papers.json"
+          node --import tsx -e "
+            import { readFile } from 'node:fs/promises';
+            const data = JSON.parse(await readFile('${FILE}', 'utf8'));
+            const bySection = { 'single-cell-spatial': 0, biology: 0, other: 0 };
+            for (const p of data.papers) bySection[p.section] = (bySection[p.section] ?? 0) + 1;
+            console.log('papers:', data.papers.length);
+            console.log('by section:', bySection);
+          "
+
+      - name: Send digest email
+        run: npm run send-digest -- --date "${{ steps.report.outputs.date }}"
+
+      - name: Upload papers artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: papers-${{ steps.report.outputs.date }}
+          path: data/processed/${{ steps.report.outputs.date }}/papers.json
+          if-no-files-found: error
+
+      - name: Commit processed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "data/processed/${{ steps.report.outputs.date }}/"
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: daily digest data for ${{ steps.report.outputs.date }}"
+            git push
+          fi
