@@ -35,6 +35,14 @@ export function isNatureEncodedSkippedItem(item: Item): boolean {
   );
 }
 
+/** Nature RSS often ships a one-line "Author et al. report …" blurb instead of the paper abstract. */
+export function isNatureRssTeaserAbstract(text: string): boolean {
+  const normalized = normalizeWhitespace(text);
+  return /\bet al\.\s+(report|reports|show|shows|find|finds|reveal|reveals|demonstrate|identify|discuss)\b/i.test(
+    normalized,
+  );
+}
+
 export function extractNatureEncodedAbstract(item: Item, journalName: string): string | undefined {
   const rssItem = item as NatureEncodedItem;
   const raw = (rssItem.contentEncoded ?? rssItem.content)?.trim();
@@ -46,6 +54,7 @@ export function extractNatureEncodedAbstract(item: Item, journalName: string): s
   normalized = normalized.replace(buildHeaderTextPattern(journalName), "").trim();
 
   if (!normalized || normalized.length < 40) return undefined;
+  if (isNatureRssTeaserAbstract(normalized)) return undefined;
 
   return normalized;
 }

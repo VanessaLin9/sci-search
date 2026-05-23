@@ -1,4 +1,5 @@
 import { isDebugEnabled, logEnrichResult } from "../debug.js";
+import { isNatureRssTeaserAbstract } from "../normalizers/rss/nature-encoded.js";
 import type { Paper } from "../types.js";
 import { enrichNatureMethodsPaper } from "./nature-methods.js";
 import { enrichPnasPaper } from "./pnas.js";
@@ -28,6 +29,12 @@ export type EnrichPapersResult = {
   enrichedCount: number;
 };
 
+function hasUsableAbstract(paper: Paper): boolean {
+  const abstract = paper.abstract?.trim();
+  if (!abstract) return false;
+  return !isNatureRssTeaserAbstract(abstract);
+}
+
 /** Caller should pass papers already filtered to the report date (see pipeline). */
 export async function enrichPapers(papers: Paper[]): Promise<EnrichPapersResult> {
   let enrichedCount = 0;
@@ -35,7 +42,7 @@ export async function enrichPapers(papers: Paper[]): Promise<EnrichPapersResult>
 
   for (const paper of papers) {
     const enricher = PAPER_ENRICHERS[paper.sourceId];
-    if (!enricher || paper.abstract?.trim()) {
+    if (!enricher || hasUsableAbstract(paper)) {
       enriched.push(paper);
       continue;
     }
@@ -46,7 +53,7 @@ export async function enrichPapers(papers: Paper[]): Promise<EnrichPapersResult>
     } catch (error) {
       console.warn(`Enrich failed (${paper.sourceId}/${paper.id}):`, error);
     }
-    if (next.abstract && !paper.abstract) {
+    if (next.abstract?.trim() && !hasUsableAbstract(paper)) {
       enrichedCount += 1;
     }
     if (isDebugEnabled()) {

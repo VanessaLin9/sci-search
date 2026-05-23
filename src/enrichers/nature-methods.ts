@@ -1,4 +1,5 @@
 import { fetchHtml } from "../fetchHtml.js";
+import { isNatureRssTeaserAbstract } from "../normalizers/rss/nature-encoded.js";
 import { normalizeWhitespace } from "../normalizers/shared.js";
 import type { Paper } from "../types.js";
 import {
@@ -25,7 +26,8 @@ export function extractNatureMethodsAbstractFromHtml(html: string): string | und
 
 /** Works for any nature.com article URL (Nature, Nature Methods, …). */
 export async function enrichNatureMethodsPaper(paper: Paper): Promise<Paper> {
-  if (paper.abstract?.trim()) return paper;
+  const existing = paper.abstract?.trim();
+  if (existing && !isNatureRssTeaserAbstract(existing)) return paper;
 
   const html = await fetchHtml(paper.url);
   const abstract = extractNatureMethodsAbstractFromHtml(html);
