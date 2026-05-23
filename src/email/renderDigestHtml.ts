@@ -15,10 +15,11 @@ export type RenderDigestHtmlOptions = {
   generatedAt?: string;
 };
 
-function formatPublishedDate(publishedDate: string): string {
-  const parsed = new Date(publishedDate);
-  if (Number.isNaN(parsed.getTime())) return publishedDate;
-  return parsed.toISOString().slice(0, 10);
+function renderJournalDoiMeta(paper: Paper): string {
+  const journal = escapeHtml(paper.journal);
+  const doi = paper.doi?.trim();
+  if (!doi) return journal;
+  return `${journal} · doi:${escapeHtml(doi)}`;
 }
 
 function renderPaperCard(paper: Paper): string {
@@ -30,7 +31,7 @@ function renderPaperCard(paper: Paper): string {
 
   return `
     <div style="margin:0 0 20px;padding:16px;border:1px solid #e5e7eb;border-radius:8px;background:#ffffff;">
-      <p style="margin:0 0 6px;font-size:12px;color:#6b7280;">${escapeHtml(paper.journal)} · ${escapeHtml(formatPublishedDate(paper.publishedDate))}</p>
+      <p style="margin:0 0 6px;font-size:12px;color:#6b7280;">${renderJournalDoiMeta(paper)}</p>
       <h3 style="margin:0 0 8px;font-size:16px;line-height:1.4;">
         <a href="${escapeHtml(paper.url)}" style="color:#1d4ed8;text-decoration:none;">${escapeHtml(paper.title)}</a>
       </h3>
