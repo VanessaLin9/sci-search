@@ -41,6 +41,7 @@ export type SourcePipelineStats = {
   dedupedCount: number;
   onReportDateCount: number;
   enrichedCount: number;
+  excludedCount: number;
   sectionCounts: Record<PaperSection, number>;
 };
 
@@ -83,7 +84,11 @@ export async function processRssSource(
     .filter((paper): paper is Paper => paper !== null);
   const deduped = dedupePapers(normalized);
   const onReportDate = filterPapersByDate(deduped, reportDate);
-  const { papers: enrichedOnReportDate, enrichedCount } = await enrichPapers(onReportDate);
+  const {
+    papers: enrichedOnReportDate,
+    enrichedCount,
+    excludedCount,
+  } = await enrichPapers(onReportDate);
   const classified = enrichedOnReportDate.map((paper) => classifyPaper(paper, keywords));
 
   return {
@@ -97,6 +102,7 @@ export async function processRssSource(
       dedupedCount: deduped.length,
       onReportDateCount: onReportDate.length,
       enrichedCount,
+      excludedCount,
       sectionCounts: countPapersBySection(classified),
     },
   };

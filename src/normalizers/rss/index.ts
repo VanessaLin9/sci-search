@@ -7,6 +7,7 @@ import { extractNatureNeuroscienceAbstract } from "./nature-neuroscience.js";
 import { extractNatureEcologyEvolutionAbstract } from "./nature-ecology-evolution.js";
 import { extractNatureImmunologyAbstract } from "./nature-immunology.js";
 import { extractNatureMicrobiologyAbstract } from "./nature-microbiology.js";
+import { extractNatureMainAbstract } from "./nature.js";
 import { extractNatureMethodsAbstract } from "./nature-methods.js";
 import { extractPlosBiologyAbstract } from "./plos-biology.js";
 import { extractPnasAbstract } from "./pnas.js";
@@ -16,7 +17,7 @@ import { extractScienceAbstract } from "./science.js";
 export type RssAbstractExtractor = (item: Item) => string | undefined;
 
 const RSS_ABSTRACT_EXTRACTORS: Record<string, RssAbstractExtractor> = {
-  "nature": extractNatureMethodsAbstract,
+  "nature": extractNatureMainAbstract,
   "nature-methods": extractNatureMethodsAbstract,
   "nature-genetics": extractNatureMethodsAbstract,
   "nature-communications": extractNatureCommunicationsAbstract,

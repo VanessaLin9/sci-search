@@ -38,6 +38,11 @@ export function extractMetaByProperty(html: string, property: string): string | 
   return undefined;
 }
 
+export function extractNatureDcType(html: string): string | undefined {
+  const value = extractMetaByName(html, "dc.type")?.trim();
+  return value || undefined;
+}
+
 export function extractNatureAbs1Section(html: string): string | undefined {
   const sectionMatch = html.match(/id=["']Abs1-section["'][\s\S]*?<\/div>\s*<\/div>/i);
   if (!sectionMatch) return undefined;

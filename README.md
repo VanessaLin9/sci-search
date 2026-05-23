@@ -18,7 +18,15 @@ Daily paper digest prototype for RSS/API based science monitoring.
 ```bash
 npm run dev
 npm run send-digest
+npm run daily          # dev + send-digest in one shot
 npm run check
+```
+
+`send-digest` only reads `data/processed/{date}/papers.json`. After changing filters or enrich logic, run `npm run dev` first (it overwrites the file; no need to delete manually).
+
+```bash
+npm run dev -- --date 2026-05-22
+npm run send-digest -- --date 2026-05-22
 ```
 
 ### Email digest (Resend)

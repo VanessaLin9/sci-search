@@ -13,9 +13,18 @@ import {
 import { DEFAULT_RSS_SOURCE_IDS, runPipeline } from "./pipeline.js";
 import { writeJsonFile } from "./writeJson.js";
 
+function parseReportDateArg(argv: string[]): string | undefined {
+  for (let index = 0; index < argv.length; index += 1) {
+    const arg = argv[index];
+    if (arg === "--date" && argv[index + 1]) return argv[index + 1];
+    if (arg.startsWith("--date=")) return arg.slice("--date=".length);
+  }
+  return undefined;
+}
+
 async function main() {
   const today = todayInTaipei();
-  const reportDate = defaultReportDateInTaipei();
+  const reportDate = parseReportDateArg(process.argv.slice(2)) ?? defaultReportDateInTaipei();
   const sources = await loadSources();
   const keywords = await loadKeywords();
 

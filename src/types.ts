@@ -19,6 +19,8 @@ export type Paper = {
   url: string;
   doi?: string;
   abstract?: string;
+  /** Nature.com dc.type from article HTML (e.g. News, OriginalPaper). */
+  articleType?: string;
   authors?: string[];
   sourceId: string;
   matchedKeywords: string[];

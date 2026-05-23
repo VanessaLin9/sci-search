@@ -21,8 +21,10 @@ export function logSourceSummary(stats: SourcePipelineStats): void {
 
   const enriched =
     stats.enrichedCount > 0 ? ` · enriched ${stats.enrichedCount}` : "";
+  const excluded =
+    stats.excludedCount > 0 ? ` · excluded ${stats.excludedCount}` : "";
   console.log(
-    `${stats.sourceId}: ${stats.onReportDateCount} on report date (${stats.rssItemCount} RSS items)${enriched} · ${sections}`,
+    `${stats.sourceId}: ${stats.onReportDateCount} on report date (${stats.rssItemCount} RSS items)${enriched}${excluded} · ${sections}`,
   );
 }
 
