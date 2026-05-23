@@ -96,6 +96,14 @@
     "priority": 3
   },
   {
+    "id": "science-advances",
+    "name": "Science Advances",
+    "publisher": "AAAS",
+    "kind": "rss",
+    "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv",
+    "priority": 13
+  },
+  {
     "id": "biorxiv",
     "name": "bioRxiv",
     "publisher": "bioRxiv",

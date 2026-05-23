@@ -23,6 +23,7 @@ export const DEFAULT_RSS_SOURCE_IDS = [
   "nature-microbiology",
   "cell",
   "science",
+  "science-advances",
   "plos-biology",
   "pnas",
 ] as const;
