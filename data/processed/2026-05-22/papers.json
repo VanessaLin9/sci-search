@@ -1,33 +1,7 @@
 {
   "reportDate": "2026-05-22",
-  "generatedAt": "2026-05-23T18:33:41.262Z",
+  "generatedAt": "2026-05-24T16:52:48.303Z",
   "papers": [
-    {
-      "id": "10.1038/d41586-026-01651-0",
-      "title": "AI cracks 80-year-old mathematics challenge — researchers are astonished",
-      "journal": "Nature",
-      "publishedDate": "2026-05-22T00:00:00.000Z",
-      "url": "https://www.nature.com/articles/d41586-026-01651-0",
-      "doi": "10.1038/d41586-026-01651-0",
-      "abstract": "The late Hungarian mathematician Paul Erdős thought he had the last word on a geometry problem. Now an OpenAI chatbot has proved him wrong.",
-      "sourceId": "nature",
-      "matchedKeywords": [],
-      "section": "other",
-      "articleType": "News"
-    },
-    {
-      "id": "10.1038/d41586-026-01644-z",
-      "title": "Stress impairs your brain’s ability to link memories — dampening insight",
-      "journal": "Nature",
-      "publishedDate": "2026-05-22T00:00:00.000Z",
-      "url": "https://www.nature.com/articles/d41586-026-01644-z",
-      "doi": "10.1038/d41586-026-01644-z",
-      "abstract": "Imaging suggests why the ability to make inferences declines after an episode of acute stress, such as a job interview.",
-      "sourceId": "nature",
-      "matchedKeywords": [],
-      "section": "other",
-      "articleType": "News"
-    },
     {
       "id": "10.1038/s41592-026-03066-1",
       "title": "A multimodal adaptive optical microscope for in vivo imaging from molecules to organisms",
@@ -38,7 +12,11 @@
       "abstract": "Understanding biological systems requires observing features and processes across vast spatial and temporal scales, spanning nanometers to centimeters and milliseconds to days, often using multiple imaging modalities within complex native microenvironments. Yet, achieving this comprehensive view is challenging because microscopes optimized for specific tasks typically lack versatility due to inherent optical and sample handling tradeoffs, and frequently suffer performance degradation from sample-induced optical aberrations in multicellular contexts. Here, we present Multimodal Optical Scope with Adaptive Imaging Correction (MOSAIC), a reconfigurable microscope that integrates multiple advanced imaging techniques including light-sheet, label-free, super-resolution and multiphoton, all equipped with adaptive optics. MOSAIC enables noninvasive imaging of subcellular dynamics in both cultured cells and live multicellular organisms, nanoscale mapping of molecular architectures across millimeter-scale expanded tissues and structural/functional neural imaging within live mice. MOSAIC facilitates correlative studies across biological scales within the same specimen, providing an integrated platform for broad biological investigation. MOSAIC is a versatile multimodal microscope that allows seamless transition between various light-sheet, two-photon, label-free and super-resolution modalities. It is demonstrated in various systems ranging from cell culture to mice.",
       "sourceId": "nature-methods",
       "matchedKeywords": [],
-      "section": "other"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      }
     },
     {
       "id": "10.1038/s41559-026-03080-8",
@@ -50,7 +28,11 @@
       "abstract": "An experiment with male-dimorphic mites shows long-lasting benefits of genetic rescue, regardless of type of male rescuer and despite introducing genetic load, in populations subjected to a thermal stress.",
       "sourceId": "nature-ecology-evolution",
       "matchedKeywords": [],
-      "section": "other"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      }
     },
     {
       "id": "10.1038/s41556-026-01950-8",
@@ -64,7 +46,11 @@
       "matchedKeywords": [
         "cancer"
       ],
-      "section": "biology"
+      "section": "biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      }
     },
     {
       "id": "10.1038/s41556-026-01953-5",
@@ -78,7 +64,11 @@
       "matchedKeywords": [
         "cancer"
       ],
-      "section": "biology"
+      "section": "biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      }
     },
     {
       "id": "10.1038/s41590-026-02528-0",
@@ -92,7 +82,11 @@
       "matchedKeywords": [
         "cancer"
       ],
-      "section": "biology"
+      "section": "biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      }
     },
     {
       "id": "10.1038/s41590-026-02523-5",
@@ -106,7 +100,11 @@
       "matchedKeywords": [
         "development"
       ],
-      "section": "biology"
+      "section": "biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      }
     },
     {
       "id": "10.1038/s41590-026-02517-3",
@@ -118,7 +116,11 @@
       "abstract": "The activation of pattern recognition receptors (PRRs) orchestrates inflammation and regulates adaptive immunity. To test whether tuning inflammation through PRR stimulation enhanced the efficacy of mRNA vaccines, we combined an mRNA-based vaccine generated against the ancestral spike protein of SARS-CoV-2 with mannadjuvant, a formulation of fungal mannan and aluminum hydroxide targeting the PRR dectin-2. In mice and non-human primates, mannadjuvant increased the magnitude and durability of the response elicited by the mRNA-based vaccine, and it also led to the induction of neutralizing antibodies directed against variants of concern with a high escape capacity, overcoming antigenic imprinting. Mechanistically, prolonged type I interferon (IFN) production and potentiated interleukin-1 (IL-1) signaling locally within the draining lymph node in mice or in human cells were necessary and sufficient to exert the effect of mannadjuvant. Our data indicate that antifungal PRRs can be harnessed to create more potent and durable mRNA-based vaccines. Jena, Qu et al. show that mannadjuvant, a formulation of fungal mannan and aluminum hydroxide, increases the magnitude, durability and breadth of the response elicited by mRNA-based vaccines against SARS-CoV-2 variants in mice and non-human primates.",
       "sourceId": "nature-immunology",
       "matchedKeywords": [],
-      "section": "other"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      }
     },
     {
       "id": "10.1038/s41564-026-02371-x",
@@ -132,7 +134,11 @@
       "matchedKeywords": [
         "evolution"
       ],
-      "section": "biology"
+      "section": "biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      }
     },
     {
       "id": "10.1038/s41564-026-02353-z",
@@ -144,7 +150,11 @@
       "abstract": "We spoke with Katherine Wu, a staff writer at The Atlantic, about her career path from infectious disease research to science journalism. She discusses her process as a science writer, offers advice to scientists when speaking with the press about their work and highlights the importance of science communication today.",
       "sourceId": "nature-microbiology",
       "matchedKeywords": [],
-      "section": "other"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      }
     },
     {
       "id": "10.1038/s41564-026-02358-8",
@@ -156,7 +166,11 @@
       "abstract": "Vaccines have saved an estimated 154 million lives in 50 years, yet that infrastructure is under threat. We highlight the global impact of vaccine scientists who trained in the USA and urge for stronger communication, advocacy and public engagement to safeguard vaccine science.",
       "sourceId": "nature-microbiology",
       "matchedKeywords": [],
-      "section": "other"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      }
     },
     {
       "id": "10.1038/s41564-026-02374-8",
@@ -168,7 +182,11 @@
       "abstract": "RNase E localization and translation initiation coordinate transcription, translation and mRNA degradation during the life cycle of an mRNA, explaining gene- and species-specific variations in this coordination in bacteria.",
       "sourceId": "nature-microbiology",
       "matchedKeywords": [],
-      "section": "other"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      }
     },
     {
       "id": "10.1038/s41564-026-02349-9",
@@ -180,7 +198,44 @@
       "abstract": "Denitrification is an essential process for the removal of excess nitrogen in aquatic ecosystems, and models informed by lake samples suggest that seasonal stratification changes could weaken the microbial communities responsible for this process.",
       "sourceId": "nature-microbiology",
       "matchedKeywords": [],
-      "section": "other"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      }
+    },
+    {
+      "id": "10.1371/journal.pbio.3003787",
+      "title": "Harnessing the stem cell potential in the human hippocampus to limit cognitive aging",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-05-22T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003787",
+      "doi": "10.1371/journal.pbio.3003787",
+      "abstract": "The field of human adult neurogenesis has been controversial despite mounting evidence. The authors propose moving beyond debating the existence of adult neurogenesis and towards discovering strategies to harness endogenous stem cell potential for resilience against cognitive aging. The field of human adult neurogenesis has been controversial despite mounting evidence. This Perspective proposes moving beyond debating the existence of adult neurogenesis, and towards discovering strategies to harness endogenous stem cell potential for resilience against cognitive aging.",
+      "sourceId": "plos-biology",
+      "matchedKeywords": [],
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      }
+    },
+    {
+      "id": "10.1038/d41586-026-01644-z",
+      "title": "Stress impairs your brain’s ability to link memories — dampening insight",
+      "journal": "Nature",
+      "publishedDate": "2026-05-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/d41586-026-01644-z",
+      "doi": "10.1038/d41586-026-01644-z",
+      "abstract": "Imaging suggests why the ability to make inferences declines after an episode of acute stress, such as a job interview.",
+      "sourceId": "nature",
+      "matchedKeywords": [],
+      "section": "other",
+      "articleType": "News",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.adw9543",
@@ -194,7 +249,11 @@
       "matchedKeywords": [
         "single-cell"
       ],
-      "section": "single-cell-spatial"
+      "section": "single-cell-spatial",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.ady2279",
@@ -206,7 +265,11 @@
       "abstract": "Advances in metagenomics, deep learning, and generative protein design have enabled broad in silico exploration of sequence space, but experimental characterization is still constrained by the cost and scalability of DNA synthesis. Here, we present OMEGA (Oligo-based Multiplexed Efficient Gene Assembly), a low-cost, accessible method for assembling hundreds to thousands of full-length genes in parallel using standard laboratory techniques. OMEGA computationally fragments target genes into short, high-fidelity Golden Gate–compatible oligonucleotides that can be ordered as a pooled library and assembled across multiplexed subpools. We systematically optimized the number of fragments per gene and orthogonal ligation sites per reaction and determine that OMEGA can assemble up to 2.6-kilobase constructs using as many as 70 Golden Gate sites. To validate the approach, we assembled and functionally screened a library of 810 natural and synthetic green fluorescent protein variants, recovering 94 to 97% of target sequences with high uniformity. OMEGA enables precision library construction at scale, with per-gene costs as low as $1.50, and offers a broadly applicable solution for bridging computational protein design with high-throughput experimental validation. We have developed OMEGA as an open-source software package and an easy-to-use Colab notebook to facilitate community adaptation.",
       "sourceId": "science-advances",
       "matchedKeywords": [],
-      "section": "other"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.ady9830",
@@ -220,31 +283,11 @@
       "matchedKeywords": [
         "single-cell"
       ],
-      "section": "single-cell-spatial"
-    },
-    {
-      "id": "10.1126/sciadv.aea6541",
-      "title": "Critical point–based wireless sensors enabling tiny perturbation detection",
-      "journal": "Science Advances",
-      "publishedDate": "2026-05-22T07:00:00.000Z",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea6541?af=R",
-      "doi": "10.1126/sciadv.aea6541",
-      "abstract": "High quality factor and sensitivity are critical to wireless sensors targeting small perturbation detection. Although introducing parity-time symmetric dynamics promises enhanced performance, the symmetric scheme often yields limited sensing behaviors. In particular, its implementation is hindered by the inherent difficulties in decoupling capacitance- and coupling strength–induced responses, the requirements of delicately matching and/or tuning both gain and loss, and the need of strong coupling strength. Here, we report a concept of critical point (CP)–based wireless sensors that do not rely on balanced gain-loss configurations, delivering ultrahigh quality factor with an extended interrogation distance. Owing to a sharp and deep reflection dip, the CP-based scheme can resolve the change in coupling coefficient down to 1.92 × 10 −4 and features frequency-independent responses. Furthermore, the CP-based scheme allows for identification of tiny asymmetric capacitive perturbations as small as 2.5 × 10 −5 without requiring active tuning of the other parameters under weak coupling.",
-      "sourceId": "science-advances",
-      "matchedKeywords": [],
-      "section": "other"
-    },
-    {
-      "id": "10.1126/sciadv.aea7043",
-      "title": "Molecular interfaces drive vertical crystallization in Dion-Jacobson perovskite solar cells",
-      "journal": "Science Advances",
-      "publishedDate": "2026-05-22T07:00:00.000Z",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea7043?af=R",
-      "doi": "10.1126/sciadv.aea7043",
-      "abstract": "Two-dimensional perovskites are promising candidates for photovoltaics due to their intrinsic structural stability, but their efficiency is often limited by poor charge transport, in part due to unfavorable crystal orientation. Here, we report a molecular interface engineering strategy using dual-anchoring organic acids, croconic acid (CA) and squaric acid (SA), to direct vertical crystallization in Dion-Jacobson (DJ) perovskite films. These molecules form robust interlayers between the NiO x hole transport layer and TTDMA (thieno[3,2- b ]thiophene-2,5-diyldimethanaminium)–based DJ perovskites (nominal n = 4), with SA exhibiting ordered vertical orientation via bidentate coordination. This templated interface promotes vertical orientation, reduces interfacial defects and lattice strain, and suppresses Ni 3+ -induced oxidation of I − . As a result, devices incorporating SA achieve a champion power conversion efficiency of 22.03% (certified 21.42%) along with outstanding operational stability. This study demonstrates a general molecular interface strategy to direct vertical crystallization and improve the performance of layered perovskite solar cells.",
-      "sourceId": "science-advances",
-      "matchedKeywords": [],
-      "section": "other"
+      "section": "single-cell-spatial",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.aea9389",
@@ -261,21 +304,11 @@
         "cancer",
         "development"
       ],
-      "section": "single-cell-spatial"
-    },
-    {
-      "id": "10.1126/sciadv.aeb1521",
-      "title": "Room-temperature spinor condensate in halide perovskite microcavity",
-      "journal": "Science Advances",
-      "publishedDate": "2026-05-22T07:00:00.000Z",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb1521?af=R",
-      "doi": "10.1126/sciadv.aeb1521",
-      "abstract": "A deeper understanding of room temperature polariton condensed phases is essential for advancing quantum applications. Spin degrees of freedom inherent in polariton particles manifest themselves in the form of spinor condensation, which has been demonstrated only at cryogenic temperatures in the past. Herein, we demonstrate room-temperature spinor polariton condensation in a lead-halide perovskite microcavity under nonresonant optical excitation. The crystalline anisotropy of the perovskite induces a linear polarization splitting of the lower polariton modes, and, above the condensation threshold, nonlinear polariton-polariton interactions drive the formation of elliptically polarized condensates. The condensation dynamics are analyzed using a spin-dependent Gross-Pitaevskii model, which provides a qualitative framework for understanding the experimentally observed polarization evolution and two-stage threshold behavior. Our findings pave the way for all-optical control of polariton spin states at room temperature, opening a path toward scalable polaritonic quantum devices.",
-      "sourceId": "science-advances",
-      "matchedKeywords": [
-        "evolution"
-      ],
-      "section": "biology"
+      "section": "single-cell-spatial",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.aeb8658",
@@ -290,19 +323,11 @@
         "cancer",
         "development"
       ],
-      "section": "biology"
-    },
-    {
-      "id": "10.1126/sciadv.aec0413",
-      "title": "Magnetogravitationally regulated streamer accretion onto a class 0 protostellar system",
-      "journal": "Science Advances",
-      "publishedDate": "2026-05-22T07:00:00.000Z",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec0413?af=R",
-      "doi": "10.1126/sciadv.aec0413",
-      "abstract": "How do magnetic fields shape the way young stars gather gas from their birth clouds? Using high-resolution Atacama Large Millimeter/submillimeter Array observations of a young triple protostellar system HOPS-182, we identify an elongated stream of gas, or accretion streamer, that extends over several thousand astronomical units (1 astronomical unit is the Earth-Sun distance) and carries a substantial flow of material toward the system. The gas speeds along this filament increase toward the star in a way consistent with gravitational free fall, while the streamer’s shape closely follows the magnetic field threading the region. By comparing the strengths of gravity and magnetic tension and measuring how the gas rotates compared with the local magnetic field, we show that the field is strong enough to help confine and guide the infalling gas and efficiently remove the angular momentum. These results suggest that a substantial fraction of the material falling onto young protostellar systems can be funneled through elongated, magnetically structured accretion streamers.",
-      "sourceId": "science-advances",
-      "matchedKeywords": [],
-      "section": "other"
+      "section": "biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.aec2231",
@@ -314,19 +339,11 @@
       "abstract": "RAG endonuclease initiates V(D)J recombination by cleaving recombination signal sequences (RSSs), subsequently repaired by classical nonhomologous end-joining (c-NHEJ). However, 53BP1, as a key DNA damage response (DDR) factor promoting c-NHEJ, is dispensable for V(D)J recombination. Here, we report that 53BP1 orchestrates sequence strength of RAG targets to shape end-joining features during V(D)J recombination. Loss of 53BP1, rather than other DDR factors, specifically increases junctional microhomology (MH) of cryptic RSS (cRSS) recombination instead of RSS recombination. This phenotype is partially recapitulated by RIF1 or Shieldin depletion, implicating the 53BP1-mediated end-joining axis. Notably, loss of RNF168, rather than other classical resection and alternative end-joining factors, fully reverts 53BP1 deficiency–mediated increase of junctional MH during cRSS recombination. RAG mutant and RSS score analyses indicate that the sequence strength of RAG targets dictates the unique roles of 53BP1 in balancing end-joining outcomes. Our findings provide deeper mechanistic insights into DNA damage repair at RAG-cleaved on- and off-targets during V(D)J recombination.",
       "sourceId": "science-advances",
       "matchedKeywords": [],
-      "section": "other"
-    },
-    {
-      "id": "10.1126/sciadv.aec3829",
-      "title": "Sub–10-nm imprint lithography on elastomers by chain translocated crystallization in nanochannels",
-      "journal": "Science Advances",
-      "publishedDate": "2026-05-22T07:00:00.000Z",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec3829?af=R",
-      "doi": "10.1126/sciadv.aec3829",
-      "abstract": "Elastomers with nanostructured surfaces exhibit substantial importance in enhancing interfacial properties including mechanics and optical diffraction. However, the structure on elastomer surfaces by imprinting is limited to microscale features due to kinetically arrested reptation diffusion and inevitable entropic recovery. Herein, we design a dynamic elastomeric network to achieve nanoimprinting with ultrahigh resolution and aspect ratios by chain translocated crystallization in nanochannels. Specifically, dynamic covalent bonds trigger network reconstruction after thermal activation and enhance chain disentanglement, which promotes chain translocation in nanochannels. Meanwhile, the crystalline phase within nanochannels creates energetic barriers that effectively restrict entropy-driven recovery. This strategy enables imprinting of elastomer surfaces with sub–10-nm structures, across a 10 7 range in length scale and aspect ratios exceeding 100:1, far outperforming conventional elastomers. Moreover, the imprinted nanostructures provide elastomer surfaces with a marked modulus enhancement by ~5 times to reach 4.2 gigapascals while simultaneously improving optical transparency, which endows elastomers with highly integrated multifunctional protective capabilities.",
-      "sourceId": "science-advances",
-      "matchedKeywords": [],
-      "section": "other"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.aec5607",
@@ -338,7 +355,11 @@
       "abstract": "Plant yield is often maximized by the extensive use of mineral fertilizers, which, however, has severe environmental consequences. Phosphate is particularly problematic as it represents a globally limited resource, and its runoff and soil erosion threaten open water bodies. Many crops engage in arbuscular mycorrhizal (AM) symbiosis with nutrient-acquiring fungi, aiding in the uptake of phosphate and other mineral nutrients. However, AM colonization is strongly reduced under high soil phosphate levels. A mechanistic understanding of phosphate sensing, phosphate starvation responses, and their connection to AM remains incomplete. Here, we show that, in Lotus japonicus , low-abundant, energy-rich inositol pyrophosphates act as important regulatory signals of AM, orchestrating the cross-talk between phosphate starvation responses, nutrient acquisition, and plant root endosymbiosis. These findings hold promise for breeding nutrient-efficient crops.",
       "sourceId": "science-advances",
       "matchedKeywords": [],
-      "section": "other"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.aed1296",
@@ -352,7 +373,11 @@
       "matchedKeywords": [
         "cancer"
       ],
-      "section": "biology"
+      "section": "biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.aed1757",
@@ -368,7 +393,11 @@
         "development",
         "CRISPR"
       ],
-      "section": "biology"
+      "section": "biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.aed4808",
@@ -380,19 +409,11 @@
       "abstract": "Through learning and memory, the cortex dynamically forms sensory associations to guide our behavior in an ever-changing environment. How memory-related brain regions, such as the medial-temporal lobe, influence sensory cortex to support this process remains unclear. Here, we used two-photon calcium imaging of axonal projections from the perirhinal (PRh) cortex to the auditory cortex during learning and generalization of an auditory discrimination task. PRh input in the auditory cortex increased during learning and influenced performance in a categorization task. Chemogenetically silencing PRh input selectively disrupted the activity of auditory cortex layer 2/3 pyramidal neurons, and PRh photoactivation drove behavior toward overgeneralization. These findings highlight PRh input as a key modulatory pathway that shapes cortical dynamics underlying auditory learning and memory-guided sensory perception.",
       "sourceId": "science-advances",
       "matchedKeywords": [],
-      "section": "other"
-    },
-    {
-      "id": "10.1126/sciadv.aed5419",
-      "title": "Spin glass in quantum paraelectric KTaO3: Supercritical CO2-induced monoclinic phase",
-      "journal": "Science Advances",
-      "publishedDate": "2026-05-22T07:00:00.000Z",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed5419?af=R",
-      "doi": "10.1126/sciadv.aed5419",
-      "abstract": "Inducing magnetism in d 0 nonmagnetic oxides is a central challenge in condensed matter physics and a bottleneck for developing advanced spintronic devices. KTaO 3 epitomizes this challenge: Despite having strong spin-orbit coupling, its functionality is hindered by a stable nonmagnetic cubic phase. Here, we report the unlocking of magnetism in KTaO 3 via supercritical carbon dioxide (SC CO 2 ), which induces a stable monoclinic phase that has, until now, remained undiscovered. Experimentally, we demonstrate that this monoclinic phase has spontaneous magnetic moments, driving the system into a spin-glass state. Monte Carlo simulations pinpoint the origin of this glassy behavior to interfacial phase frustration, arising from the coupling between ferromagnetic facets and an antiferromagnetic bulk. To our knowledge, this work not only presents the first observation of a magnetic phase in KTaO 3 but also reveals a peculiar phenomenon of SC CO 2 –induced interfacial phase frustration, establishing a versatile strategy for engineering complex magnetic states in quantum paraelectric.",
-      "sourceId": "science-advances",
-      "matchedKeywords": [],
-      "section": "other"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.aed5464",
@@ -406,7 +427,11 @@
       "matchedKeywords": [
         "genome"
       ],
-      "section": "biology"
+      "section": "biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.aed7719",
@@ -420,33 +445,11 @@
       "matchedKeywords": [
         "cancer"
       ],
-      "section": "biology"
-    },
-    {
-      "id": "10.1126/sciadv.aed9532",
-      "title": "On-demand linkage cleavage in two-dimensional conjugated metal-organic frameworks for closed-loop recyclable electronics",
-      "journal": "Science Advances",
-      "publishedDate": "2026-05-22T07:00:00.000Z",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed9532?af=R",
-      "doi": "10.1126/sciadv.aed9532",
-      "abstract": "The rapid growth of modern electronics has intensified concerns about electronic waste management at the end of a product’s life. Integrating closed-loop recyclability, where electronic materials can be efficiently recovered, reprocessed, and reused in regenerated products, is essential for achieving sustainable development, minimizing environmental impact, and realizing long-term economic benefits. However, achieving closed-loop recycling remains particularly challenging for complex electronic materials. Here, we demonstrate the closed-loop recycling of emerging multifunctional two-dimensional conjugated metal-organic frameworks (2D c -MOFs) through a mechanochemistry-induced on-demand degradation strategy. Exemplified with 2,3,6,7,10,11-hexahydroxytriphenylene (HHTP)–based 2D c -MOFs, we show that ultrasonic cavitation facilitates selective cleavage of metal-ligand linkages in alkaline solutions enabling rapid material degradation (up to 92.4% within 30 min). The HHTP monomers are subsequently recovered with high purity and yield (96.3%), and reused to regenerate 2D c -MOFs, establishing a complete circular material life cycle. Our cradle-to-cradle life-cycle assessment reveals that, compared with direct synthesis, this closed-loop recycling approach substantially reduces both total energy consumption (52 versus 358 MJ kg −1 ) and greenhouse gas (CO 2 ) emission (4.8 versus 27.4 kg CO 2 -equiv), thereby substantially lowering the overall environmental impact relative to conventional electronic materials. Moreover, we demonstrate the practical utility of these recyclable 2D c -MOFs in several applications, including hydrogen gas sensors, supercapacitor electrodes, and degradable printed electronic devices. These results highlight the potential of 2D c -MOFs to advance circular electronics, laying the groundwork for a sustainable transformation within the electronics industry.",
-      "sourceId": "science-advances",
-      "matchedKeywords": [
-        "development"
-      ],
-      "section": "biology"
-    },
-    {
-      "id": "10.1126/sciadv.aee1359",
-      "title": "High-entropy 1D halide perovskite piezoelectrics found by megalibrary synthesis and rapid nonlinear optical screening",
-      "journal": "Science Advances",
-      "publishedDate": "2026-05-22T07:00:00.000Z",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee1359?af=R",
-      "doi": "10.1126/sciadv.aee1359",
-      "abstract": "Piezoelectric molecular crystals offer excellent compositional and structural tunability and sustainable processability. However, their discovery is slow, primarily due to the serial synthesis and screening processes used. Here, we report an approach that combines massively parallel megalibrary synthesis with scanning second harmonic generation (SHG) microscopy for rapid screening of piezoelectric molecular crystals. Megalibraries consisting of more than 1,000,000 compositionally distinct but positionally encoded TMCM x TMA (1–x) Cd y Pb (1–y) Cl z Br (3–z) (TMCM: trimethylchloromethylammonium, TMA: tetramethylammonium; 0 ≤ x ≤ 1, 0 ≤ y ≤ 1, 0 ≤ z ≤ 3) nanocrystals were synthesized. The megalibraries were rapidly screened by SHG microscopy to identify notable noncentrosymmetric structures, which were then tested for piezoelectricity, facilitating discovery of a high-entropy noncentrosymmetric material with a large d 33 (TMCM 0.75 TMA 0.25 Cd 0.75 Pb 0.25 Cl 1.5 Br 1.5, 42.8 picocoulombs per newton). Furthermore, this approach enabled systematic investigation of the Curie temperature ( T C )–composition relationship in the TMCMCdCl z Br (3–z) system, facilitating reverse design of materials with targeted T C . Our work establishes a powerful approach to accelerate the discovery and design of unusual piezoelectrics for next-generation electronics and optics.",
-      "sourceId": "science-advances",
-      "matchedKeywords": [],
-      "section": "other"
+      "section": "biology",
+      "lifeScienceRouting": {
+        "verdict": "not_sure",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.aee2233",
@@ -458,7 +461,11 @@
       "abstract": "Ultrathin conductive hydrogels provide conformal and stable contact for flexible bioelectronics, which is critical for achieving the low impedance necessary for high-quality electrophysiological signal acquisition. However, their low modulus has made these hydrogel devices difficult to fabricate and handle. To overcome this, we present an on-demand formation strategy for creating ready-to-use, ultrathin (down to 1 micrometer) hydrogel-based bioelectronics that combine tissue-like softness with ready-to-use functionality. By using cross-linked electrospun polyvinyl alcohol (PVA) fiber mats, we produce liquid metal–patterned hydrogel tattoos (LMHTs). These devices transform from easy-to-handle dry films into adhesive, conformal hydrogel interfaces upon hydration. The resulting LMHTs are ultralight (0.9 milligrams per square centimeter), exhibit ultralow skin contact impedance (1.2 kilohms at 1 kilohertz), and show outstanding biocompatibility. We demonstrate their utility in diverse on-skin and implantable applications, including electrocardiogram recording, multichannel electromyogram mapping, neuromuscular electrical stimulation, and in vivo cardiac monitoring on a beating rat heart. This work offers a scalable and practical approach for generating high-performance, ultrathin hydrogel bioelectronics.",
       "sourceId": "science-advances",
       "matchedKeywords": [],
-      "section": "other"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.aee4419",
@@ -472,33 +479,11 @@
       "matchedKeywords": [
         "cancer"
       ],
-      "section": "biology"
-    },
-    {
-      "id": "10.1126/sciadv.aef4850",
-      "title": "Mesoscale hydrogen-bond network engineering controls quantum-coherent proton transport to suppress aluminum corrosion",
-      "journal": "Science Advances",
-      "publishedDate": "2026-05-22T07:00:00.000Z",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef4850?af=R",
-      "doi": "10.1126/sciadv.aef4850",
-      "abstract": "The hydrogen evolution reaction fundamentally constrains the use of aluminum in acidic electrochemical systems. Existing strategies rely on alloying or interfacial passivation and overlook how the electrolyte controls proton transport (PT) to the metal surface. Here, we demonstrate that the Gutmann donor number (DN) provides a quantitative molecular lever to regulate PT through the aqueous medium and suppress hydrogen evolution corrosion of aluminum. High-DN additives reorganize the electrolyte into compartmentalized domains that disrupt long-range PT and force protons onto tortuous, high-barrier pathways. Using water (DN = 18 kilocalories per mole) as a benchmark, additives exceeding this threshold increase the hydrogen evolution overpotential by ~20 to 70 millivolts at 10 milliamperes per square centimeter and reduce the corrosion current density from 7.44 to 2.23 milliamperes per square centimeter, following an approximately inverse linear dependence on DN. These results establish a direct link between a molecular donor descriptor and mesoscale hydrogen-bond networks, revealing a materials-agnostic strategy for corrosion suppression through targeted control of proton dynamics.",
-      "sourceId": "science-advances",
-      "matchedKeywords": [
-        "evolution"
-      ],
-      "section": "biology"
-    },
-    {
-      "id": "10.1126/sciadv.aef9111",
-      "title": "Revitalizing dendritic lithium with atomic modulator-decorated suspension electrolyte for durable lithium metal batteries",
-      "journal": "Science Advances",
-      "publishedDate": "2026-05-22T07:00:00.000Z",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef9111?af=R",
-      "doi": "10.1126/sciadv.aef9111",
-      "abstract": "Lithium metal anodes suffer from dendrite growth, unstable solid electrolyte interphase, and “dead Li” owing to high barriers and inhomogeneous Li + desolvation/diffusion kinetics. Here, we present the suspension electrolyte endowed with atom-level catalytic inorganic particles of single atomic cobalt on defect-rich ZnO 1− x nanoparticles (SACo@ZO) in a carbonate-based electrolyte, enhancing desolvation/diffusion kinetics and revitalizing dendritic Li. As systematically investigated by in situ electrochemical sum frequency generation (SFG) spectroscopy together with theoretical simulations, the SACo@ZO-assisted suspension electrolyte decreases the potential threshold down to 20 millivolts for driving interfacial desolvation rapidly, providing uniform solvation-free Li + /Li 0 flux and capability in revitalizing dendritic Li. Consequently, we achieve a smooth but dense Li plating behavior under room or low-temperature surroundings, lasting for a long life span of 1600 hours. Meanwhile, the practical Li-LiFePO 4 cell with SACo@ZO reserves the capacity retention of ~100% at 0.5 C and survives for 1000 cycles under 0°C, demonstrating the feasibility of atomically catalytic suspension electrolyte for high-performance dendrite-free Li metal batteries.",
-      "sourceId": "science-advances",
-      "matchedKeywords": [],
-      "section": "other"
+      "section": "biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.adv3770",
@@ -512,7 +497,11 @@
       "matchedKeywords": [
         "evolution"
       ],
-      "section": "biology"
+      "section": "biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.adz7896",
@@ -524,21 +513,11 @@
       "abstract": "Cell stress can increase the use of methylated guanosine (m 7 G) cap–independent, internal ribosome entry site (IRES)–mediated translation initiation relative to cap-dependent translation (IRES/Cap). Reporters that quantify IRES/Cap have demonstrated differential activity across cultured cell types and stress conditions. By generating an IRES/Cap reporter mouse, we were able to systematically evaluate IRES/Cap across distinct tissues and cell types during physiological stresses and lineage commitment. Caloric stress invoked the expected boost in IRES/Cap translation regardless of differentiation state, but unexpectedly, IRES/Cap progressively increased during hematopoietic and epithelial (hair follicle) differentiation under normal, homeostatic conditions. This was independent of total protein output or cell cycle. Even within cells of a given differentiation state, cells with lower relative IRES utilization had markedly higher multipotent capability in vivo. The RNA processing protein PTBP1 is a mediator of this translation initiation preference. Therefore, low IRES/Cap is a signature of high stemness and suggests that modulation of translation initiation participates in cell differentiation state.",
       "sourceId": "science-advances",
       "matchedKeywords": [],
-      "section": "other"
-    },
-    {
-      "id": "10.1126/sciadv.aeb7930",
-      "title": "Combinatorial optimization with Kerr solitons",
-      "journal": "Science Advances",
-      "publishedDate": "2026-05-22T07:00:00.000Z",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb7930?af=R",
-      "doi": "10.1126/sciadv.aeb7930",
-      "abstract": "The challenge of scaling digital computing motivates innovation, especially through the evolution of physical systems that mimic neural networks and combinatorial optimization problems. Light is a hyperefficient information carrier, and if efficient interactions with it could be uncovered, then direct information processing would become far more feasible. We harness an ensemble of hundreds of Kerr microresonator solitons and implement an analog feedback network to create an Ising machine with fully programmable all-to-all interactions. By increasing the feedback for self, on-diagonal interactions, each soliton exhibits a universal spin-like bifurcation, and using this palette of interactions, we solve the canonical Boolean satisfiability problem (SAT). The combination of uniform soliton interactions and the compatibility of our Ising machine with high-speed data interconnects enables rapid and precise solutions of complex SAT problems. The well-established theoretical properties of Kerr solitons bound the trade-off of optical power and time use by the machine at ~0.15 milliwatts per soliton and 1 microsecond for a single feedback step. We performed >10,000 trials on more than 100 randomly generated SAT instances to evaluate the Ising machine, demonstrating the potential to exceed the performance of benchmark digital SAT solvers. Our work highlights the convergence of optical nonlinearity, ultralow loss photonics, and optoelectronic circuits for computation-acceleration tasks.",
-      "sourceId": "science-advances",
-      "matchedKeywords": [
-        "evolution"
-      ],
-      "section": "biology"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.adx3959",
@@ -553,7 +532,11 @@
         "single-cell",
         "cancer"
       ],
-      "section": "single-cell-spatial"
+      "section": "single-cell-spatial",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.aea5496",
@@ -565,7 +548,11 @@
       "abstract": "Integrating related events in memory is essential for building knowledge that extends beyond direct observation and enables flexible inference. Here, we show that acute stress impairs inference by both reducing the degree to which past memories are reactivated during new learning and leading to their differentiation, rather than integration, in hippocampus. Adults learned A-B associations on day 1 and underwent a stress or control manipulation before learning overlapping B-C associations on day 2, with A-C inference tested thereafter. We demonstrate that stress reduces hippocampal reactivation of A elements during B-C learning, and lower reactivation was directly correlated with impaired A-C inference. Representational similarity analysis revealed that stress increases neural dissimilarity between overlapping A and C elements in the hippocampus, indicating pattern differentiation and a representation as discrete events. Our findings demonstrate that acute stress hampers a key memory integration mechanism, with broad implications for educational, legal, and clinical settings.",
       "sourceId": "science-advances",
       "matchedKeywords": [],
-      "section": "other"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.aed0496",
@@ -577,7 +564,11 @@
       "abstract": "Residual β cell function can positively affect diabetes regulation in type 1 diabetes (T1D), but details on residual β cell mass distribution in T1D is largely lacking in a whole organ context. Implementing an optical 3D imaging pipeline, we generated a complete account of the remaining β cells throughout an entire human late onset T1D pancreas at a microscopic resolution. Our data show that most of the residual β cells were present as scattered individual cells or as punctated clusters of individual β cells, spatially separated from each other and all other endocrine cell types. Compared to islet-associated β cells, extra-islet β cells appeared in a substantially higher relative abundance in the head region of the T1D pancreas. This 3D depiction of an entire T1D pancreas shows that individual β cells may be preserved and/or formed in a highly regionalized manner, potentially reflecting key aspects of disease dynamics, advocating for increased focus on extra-islet islet β cells in attempts to develop strategies for pancreatic β cell preservation in T1D.",
       "sourceId": "science-advances",
       "matchedKeywords": [],
-      "section": "other"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.aeh0301",
@@ -589,7 +580,11 @@
       "abstract": "Amyloid precursor protein (APP) gives rise to amyloid-β, a pathological factor in Alzheimer’s disease. However, the physiological role of APP and its homolog amyloid precursor–like protein 2 (APLP2), which are also widely expressed outside the nervous system, is largely unknown. Here, we show that endothelial APP and APLP2 are required for postischemia angiogenesis after myocardial infarction (MI). We found that hypoxia induced the endothelial expression of α-secretases, resulting in nonamyloidogenic processing of APP and APLP2 into the soluble forms APPsα and APLP2sα. Loss of endothelial APP and APLP2 led to decreased neovascularization as well as increased heart failure and mortality after MI, a phenotype that could be rescued by endothelial expression of APPsα. APPsα and APLP2sα exerted their proangiogenic effect by positive allosteric modulation of the endothelial receptor tyrosine kinase KIT, which promotes postischemia neovascularization. Our data identify a function of APP and APLP2 in endothelial cells, which is required for postischemia tissue repair, and suggest approaches to improve regeneration after MI and other ischemic diseases.",
       "sourceId": "science-advances",
       "matchedKeywords": [],
-      "section": "other"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.aeb6806",
@@ -601,7 +596,11 @@
       "abstract": "Plant-specialized metabolites are essential for plant fitness and human health, with their biosynthesis pathways tightly regulated at multiple levels. However, the translational regulation of their biosynthesis remains poorly understood. Here, we reveal a 5′ untranslated region (5′UTR)–mediated translational mechanism that controls glucosinolate production in Arabidopsis . A forward genetic screen exploring the metabolic interaction between auxin and glucosinolates identified two dominant Arabidopsis alleles, each carrying a single-nucleotide substitution located 13–base pair apart within the 5′UTR of MYB28 , a master regulator of aliphatic glucosinolate biosynthesis. These mutations markedly increase MYB28 protein abundance without affecting transcript levels, leading to enhanced glucosinolate production. Mutational profiling of the 5′UTR revealed that alterations in RNA tertiary structure influence translation efficiency, establishing a link between RNA conformation and metabolic output. Our findings uncover a previously uncharacterized layer of posttranscriptional regulation in plant-specialized metabolism and highlight the 5′UTR as a potential target for precision breeding to enhance crop performance and nutritional quality.",
       "sourceId": "science-advances",
       "matchedKeywords": [],
-      "section": "other"
+      "section": "other",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
     },
     {
       "id": "10.1126/sciadv.aef1594",
@@ -615,19 +614,227 @@
       "matchedKeywords": [
         "development"
       ],
-      "section": "biology"
+      "section": "biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      }
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 48,
+      "passedByScope": 13,
+      "llmClassified": 35,
+      "llmYes": 22,
+      "llmNotSure": 1,
+      "llmNo": 12,
+      "included": 36,
+      "excluded": 12
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01651-0",
+        "title": "AI cracks 80-year-old mathematics challenge — researchers are astonished",
+        "journal": "Nature",
+        "publishedDate": "2026-05-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01651-0",
+        "doi": "10.1038/d41586-026-01651-0",
+        "abstract": "The late Hungarian mathematician Paul Erdős thought he had the last word on a geometry problem. Now an OpenAI chatbot has proved him wrong.",
+        "sourceId": "nature",
+        "matchedKeywords": [],
+        "section": "other",
+        "articleType": "News"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
     },
     {
-      "id": "10.1371/journal.pbio.3003787",
-      "title": "Harnessing the stem cell potential in the human hippocampus to limit cognitive aging",
-      "journal": "PLOS Biology",
-      "publishedDate": "2026-05-22T14:00:00.000Z",
-      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003787",
-      "doi": "10.1371/journal.pbio.3003787",
-      "abstract": "The field of human adult neurogenesis has been controversial despite mounting evidence. The authors propose moving beyond debating the existence of adult neurogenesis and towards discovering strategies to harness endogenous stem cell potential for resilience against cognitive aging. The field of human adult neurogenesis has been controversial despite mounting evidence. This Perspective proposes moving beyond debating the existence of adult neurogenesis, and towards discovering strategies to harness endogenous stem cell potential for resilience against cognitive aging.",
-      "sourceId": "plos-biology",
-      "matchedKeywords": [],
-      "section": "other"
+      "paper": {
+        "id": "10.1126/sciadv.aea6541",
+        "title": "Critical point–based wireless sensors enabling tiny perturbation detection",
+        "journal": "Science Advances",
+        "publishedDate": "2026-05-22T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea6541?af=R",
+        "doi": "10.1126/sciadv.aea6541",
+        "abstract": "High quality factor and sensitivity are critical to wireless sensors targeting small perturbation detection. Although introducing parity-time symmetric dynamics promises enhanced performance, the symmetric scheme often yields limited sensing behaviors. In particular, its implementation is hindered by the inherent difficulties in decoupling capacitance- and coupling strength–induced responses, the requirements of delicately matching and/or tuning both gain and loss, and the need of strong coupling strength. Here, we report a concept of critical point (CP)–based wireless sensors that do not rely on balanced gain-loss configurations, delivering ultrahigh quality factor with an extended interrogation distance. Owing to a sharp and deep reflection dip, the CP-based scheme can resolve the change in coupling coefficient down to 1.92 × 10 −4 and features frequency-independent responses. Furthermore, the CP-based scheme allows for identification of tiny asymmetric capacitive perturbations as small as 2.5 × 10 −5 without requiring active tuning of the other parameters under weak coupling.",
+        "sourceId": "science-advances",
+        "matchedKeywords": [],
+        "section": "other"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aea7043",
+        "title": "Molecular interfaces drive vertical crystallization in Dion-Jacobson perovskite solar cells",
+        "journal": "Science Advances",
+        "publishedDate": "2026-05-22T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea7043?af=R",
+        "doi": "10.1126/sciadv.aea7043",
+        "abstract": "Two-dimensional perovskites are promising candidates for photovoltaics due to their intrinsic structural stability, but their efficiency is often limited by poor charge transport, in part due to unfavorable crystal orientation. Here, we report a molecular interface engineering strategy using dual-anchoring organic acids, croconic acid (CA) and squaric acid (SA), to direct vertical crystallization in Dion-Jacobson (DJ) perovskite films. These molecules form robust interlayers between the NiO x hole transport layer and TTDMA (thieno[3,2- b ]thiophene-2,5-diyldimethanaminium)–based DJ perovskites (nominal n = 4), with SA exhibiting ordered vertical orientation via bidentate coordination. This templated interface promotes vertical orientation, reduces interfacial defects and lattice strain, and suppresses Ni 3+ -induced oxidation of I − . As a result, devices incorporating SA achieve a champion power conversion efficiency of 22.03% (certified 21.42%) along with outstanding operational stability. This study demonstrates a general molecular interface strategy to direct vertical crystallization and improve the performance of layered perovskite solar cells.",
+        "sourceId": "science-advances",
+        "matchedKeywords": [],
+        "section": "other"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeb1521",
+        "title": "Room-temperature spinor condensate in halide perovskite microcavity",
+        "journal": "Science Advances",
+        "publishedDate": "2026-05-22T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb1521?af=R",
+        "doi": "10.1126/sciadv.aeb1521",
+        "abstract": "A deeper understanding of room temperature polariton condensed phases is essential for advancing quantum applications. Spin degrees of freedom inherent in polariton particles manifest themselves in the form of spinor condensation, which has been demonstrated only at cryogenic temperatures in the past. Herein, we demonstrate room-temperature spinor polariton condensation in a lead-halide perovskite microcavity under nonresonant optical excitation. The crystalline anisotropy of the perovskite induces a linear polarization splitting of the lower polariton modes, and, above the condensation threshold, nonlinear polariton-polariton interactions drive the formation of elliptically polarized condensates. The condensation dynamics are analyzed using a spin-dependent Gross-Pitaevskii model, which provides a qualitative framework for understanding the experimentally observed polarization evolution and two-stage threshold behavior. Our findings pave the way for all-optical control of polariton spin states at room temperature, opening a path toward scalable polaritonic quantum devices.",
+        "sourceId": "science-advances",
+        "matchedKeywords": [
+          "evolution"
+        ],
+        "section": "biology"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aec0413",
+        "title": "Magnetogravitationally regulated streamer accretion onto a class 0 protostellar system",
+        "journal": "Science Advances",
+        "publishedDate": "2026-05-22T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec0413?af=R",
+        "doi": "10.1126/sciadv.aec0413",
+        "abstract": "How do magnetic fields shape the way young stars gather gas from their birth clouds? Using high-resolution Atacama Large Millimeter/submillimeter Array observations of a young triple protostellar system HOPS-182, we identify an elongated stream of gas, or accretion streamer, that extends over several thousand astronomical units (1 astronomical unit is the Earth-Sun distance) and carries a substantial flow of material toward the system. The gas speeds along this filament increase toward the star in a way consistent with gravitational free fall, while the streamer’s shape closely follows the magnetic field threading the region. By comparing the strengths of gravity and magnetic tension and measuring how the gas rotates compared with the local magnetic field, we show that the field is strong enough to help confine and guide the infalling gas and efficiently remove the angular momentum. These results suggest that a substantial fraction of the material falling onto young protostellar systems can be funneled through elongated, magnetically structured accretion streamers.",
+        "sourceId": "science-advances",
+        "matchedKeywords": [],
+        "section": "other"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aec3829",
+        "title": "Sub–10-nm imprint lithography on elastomers by chain translocated crystallization in nanochannels",
+        "journal": "Science Advances",
+        "publishedDate": "2026-05-22T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec3829?af=R",
+        "doi": "10.1126/sciadv.aec3829",
+        "abstract": "Elastomers with nanostructured surfaces exhibit substantial importance in enhancing interfacial properties including mechanics and optical diffraction. However, the structure on elastomer surfaces by imprinting is limited to microscale features due to kinetically arrested reptation diffusion and inevitable entropic recovery. Herein, we design a dynamic elastomeric network to achieve nanoimprinting with ultrahigh resolution and aspect ratios by chain translocated crystallization in nanochannels. Specifically, dynamic covalent bonds trigger network reconstruction after thermal activation and enhance chain disentanglement, which promotes chain translocation in nanochannels. Meanwhile, the crystalline phase within nanochannels creates energetic barriers that effectively restrict entropy-driven recovery. This strategy enables imprinting of elastomer surfaces with sub–10-nm structures, across a 10 7 range in length scale and aspect ratios exceeding 100:1, far outperforming conventional elastomers. Moreover, the imprinted nanostructures provide elastomer surfaces with a marked modulus enhancement by ~5 times to reach 4.2 gigapascals while simultaneously improving optical transparency, which endows elastomers with highly integrated multifunctional protective capabilities.",
+        "sourceId": "science-advances",
+        "matchedKeywords": [],
+        "section": "other"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed5419",
+        "title": "Spin glass in quantum paraelectric KTaO3: Supercritical CO2-induced monoclinic phase",
+        "journal": "Science Advances",
+        "publishedDate": "2026-05-22T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed5419?af=R",
+        "doi": "10.1126/sciadv.aed5419",
+        "abstract": "Inducing magnetism in d 0 nonmagnetic oxides is a central challenge in condensed matter physics and a bottleneck for developing advanced spintronic devices. KTaO 3 epitomizes this challenge: Despite having strong spin-orbit coupling, its functionality is hindered by a stable nonmagnetic cubic phase. Here, we report the unlocking of magnetism in KTaO 3 via supercritical carbon dioxide (SC CO 2 ), which induces a stable monoclinic phase that has, until now, remained undiscovered. Experimentally, we demonstrate that this monoclinic phase has spontaneous magnetic moments, driving the system into a spin-glass state. Monte Carlo simulations pinpoint the origin of this glassy behavior to interfacial phase frustration, arising from the coupling between ferromagnetic facets and an antiferromagnetic bulk. To our knowledge, this work not only presents the first observation of a magnetic phase in KTaO 3 but also reveals a peculiar phenomenon of SC CO 2 –induced interfacial phase frustration, establishing a versatile strategy for engineering complex magnetic states in quantum paraelectric.",
+        "sourceId": "science-advances",
+        "matchedKeywords": [],
+        "section": "other"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed9532",
+        "title": "On-demand linkage cleavage in two-dimensional conjugated metal-organic frameworks for closed-loop recyclable electronics",
+        "journal": "Science Advances",
+        "publishedDate": "2026-05-22T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed9532?af=R",
+        "doi": "10.1126/sciadv.aed9532",
+        "abstract": "The rapid growth of modern electronics has intensified concerns about electronic waste management at the end of a product’s life. Integrating closed-loop recyclability, where electronic materials can be efficiently recovered, reprocessed, and reused in regenerated products, is essential for achieving sustainable development, minimizing environmental impact, and realizing long-term economic benefits. However, achieving closed-loop recycling remains particularly challenging for complex electronic materials. Here, we demonstrate the closed-loop recycling of emerging multifunctional two-dimensional conjugated metal-organic frameworks (2D c -MOFs) through a mechanochemistry-induced on-demand degradation strategy. Exemplified with 2,3,6,7,10,11-hexahydroxytriphenylene (HHTP)–based 2D c -MOFs, we show that ultrasonic cavitation facilitates selective cleavage of metal-ligand linkages in alkaline solutions enabling rapid material degradation (up to 92.4% within 30 min). The HHTP monomers are subsequently recovered with high purity and yield (96.3%), and reused to regenerate 2D c -MOFs, establishing a complete circular material life cycle. Our cradle-to-cradle life-cycle assessment reveals that, compared with direct synthesis, this closed-loop recycling approach substantially reduces both total energy consumption (52 versus 358 MJ kg −1 ) and greenhouse gas (CO 2 ) emission (4.8 versus 27.4 kg CO 2 -equiv), thereby substantially lowering the overall environmental impact relative to conventional electronic materials. Moreover, we demonstrate the practical utility of these recyclable 2D c -MOFs in several applications, including hydrogen gas sensors, supercapacitor electrodes, and degradable printed electronic devices. These results highlight the potential of 2D c -MOFs to advance circular electronics, laying the groundwork for a sustainable transformation within the electronics industry.",
+        "sourceId": "science-advances",
+        "matchedKeywords": [
+          "development"
+        ],
+        "section": "biology"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee1359",
+        "title": "High-entropy 1D halide perovskite piezoelectrics found by megalibrary synthesis and rapid nonlinear optical screening",
+        "journal": "Science Advances",
+        "publishedDate": "2026-05-22T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee1359?af=R",
+        "doi": "10.1126/sciadv.aee1359",
+        "abstract": "Piezoelectric molecular crystals offer excellent compositional and structural tunability and sustainable processability. However, their discovery is slow, primarily due to the serial synthesis and screening processes used. Here, we report an approach that combines massively parallel megalibrary synthesis with scanning second harmonic generation (SHG) microscopy for rapid screening of piezoelectric molecular crystals. Megalibraries consisting of more than 1,000,000 compositionally distinct but positionally encoded TMCM x TMA (1–x) Cd y Pb (1–y) Cl z Br (3–z) (TMCM: trimethylchloromethylammonium, TMA: tetramethylammonium; 0 ≤ x ≤ 1, 0 ≤ y ≤ 1, 0 ≤ z ≤ 3) nanocrystals were synthesized. The megalibraries were rapidly screened by SHG microscopy to identify notable noncentrosymmetric structures, which were then tested for piezoelectricity, facilitating discovery of a high-entropy noncentrosymmetric material with a large d 33 (TMCM 0.75 TMA 0.25 Cd 0.75 Pb 0.25 Cl 1.5 Br 1.5, 42.8 picocoulombs per newton). Furthermore, this approach enabled systematic investigation of the Curie temperature ( T C )–composition relationship in the TMCMCdCl z Br (3–z) system, facilitating reverse design of materials with targeted T C . Our work establishes a powerful approach to accelerate the discovery and design of unusual piezoelectrics for next-generation electronics and optics.",
+        "sourceId": "science-advances",
+        "matchedKeywords": [],
+        "section": "other"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aef4850",
+        "title": "Mesoscale hydrogen-bond network engineering controls quantum-coherent proton transport to suppress aluminum corrosion",
+        "journal": "Science Advances",
+        "publishedDate": "2026-05-22T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef4850?af=R",
+        "doi": "10.1126/sciadv.aef4850",
+        "abstract": "The hydrogen evolution reaction fundamentally constrains the use of aluminum in acidic electrochemical systems. Existing strategies rely on alloying or interfacial passivation and overlook how the electrolyte controls proton transport (PT) to the metal surface. Here, we demonstrate that the Gutmann donor number (DN) provides a quantitative molecular lever to regulate PT through the aqueous medium and suppress hydrogen evolution corrosion of aluminum. High-DN additives reorganize the electrolyte into compartmentalized domains that disrupt long-range PT and force protons onto tortuous, high-barrier pathways. Using water (DN = 18 kilocalories per mole) as a benchmark, additives exceeding this threshold increase the hydrogen evolution overpotential by ~20 to 70 millivolts at 10 milliamperes per square centimeter and reduce the corrosion current density from 7.44 to 2.23 milliamperes per square centimeter, following an approximately inverse linear dependence on DN. These results establish a direct link between a molecular donor descriptor and mesoscale hydrogen-bond networks, revealing a materials-agnostic strategy for corrosion suppression through targeted control of proton dynamics.",
+        "sourceId": "science-advances",
+        "matchedKeywords": [
+          "evolution"
+        ],
+        "section": "biology"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aef9111",
+        "title": "Revitalizing dendritic lithium with atomic modulator-decorated suspension electrolyte for durable lithium metal batteries",
+        "journal": "Science Advances",
+        "publishedDate": "2026-05-22T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef9111?af=R",
+        "doi": "10.1126/sciadv.aef9111",
+        "abstract": "Lithium metal anodes suffer from dendrite growth, unstable solid electrolyte interphase, and “dead Li” owing to high barriers and inhomogeneous Li + desolvation/diffusion kinetics. Here, we present the suspension electrolyte endowed with atom-level catalytic inorganic particles of single atomic cobalt on defect-rich ZnO 1− x nanoparticles (SACo@ZO) in a carbonate-based electrolyte, enhancing desolvation/diffusion kinetics and revitalizing dendritic Li. As systematically investigated by in situ electrochemical sum frequency generation (SFG) spectroscopy together with theoretical simulations, the SACo@ZO-assisted suspension electrolyte decreases the potential threshold down to 20 millivolts for driving interfacial desolvation rapidly, providing uniform solvation-free Li + /Li 0 flux and capability in revitalizing dendritic Li. Consequently, we achieve a smooth but dense Li plating behavior under room or low-temperature surroundings, lasting for a long life span of 1600 hours. Meanwhile, the practical Li-LiFePO 4 cell with SACo@ZO reserves the capacity retention of ~100% at 0.5 C and survives for 1000 cycles under 0°C, demonstrating the feasibility of atomically catalytic suspension electrolyte for high-performance dendrite-free Li metal batteries.",
+        "sourceId": "science-advances",
+        "matchedKeywords": [],
+        "section": "other"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeb7930",
+        "title": "Combinatorial optimization with Kerr solitons",
+        "journal": "Science Advances",
+        "publishedDate": "2026-05-22T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb7930?af=R",
+        "doi": "10.1126/sciadv.aeb7930",
+        "abstract": "The challenge of scaling digital computing motivates innovation, especially through the evolution of physical systems that mimic neural networks and combinatorial optimization problems. Light is a hyperefficient information carrier, and if efficient interactions with it could be uncovered, then direct information processing would become far more feasible. We harness an ensemble of hundreds of Kerr microresonator solitons and implement an analog feedback network to create an Ising machine with fully programmable all-to-all interactions. By increasing the feedback for self, on-diagonal interactions, each soliton exhibits a universal spin-like bifurcation, and using this palette of interactions, we solve the canonical Boolean satisfiability problem (SAT). The combination of uniform soliton interactions and the compatibility of our Ising machine with high-speed data interconnects enables rapid and precise solutions of complex SAT problems. The well-established theoretical properties of Kerr solitons bound the trade-off of optical power and time use by the machine at ~0.15 milliwatts per soliton and 1 microsecond for a single feedback step. We performed >10,000 trials on more than 100 randomly generated SAT instances to evaluate the Ising machine, demonstrating the potential to exceed the performance of benchmark digital SAT solvers. Our work highlights the convergence of optical nonlinearity, ultralow loss photonics, and optoelectronic circuits for computation-acceleration tasks.",
+        "sourceId": "science-advances",
+        "matchedKeywords": [
+          "evolution"
+        ],
+        "section": "biology"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
     }
   ]
 }

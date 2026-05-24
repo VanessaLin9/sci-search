@@ -7,6 +7,7 @@
     "dev": "node --import tsx src/index.ts",
     "send-digest": "node --import tsx src/commands/sendDigest.ts",
     "daily": "npm run dev && npm run send-digest",
+    "test-routing-llm": "node --import tsx src/commands/testRoutingLlm.ts",
     "check": "tsc --noEmit",
     "format": "prettier --write ."
   },

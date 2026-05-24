@@ -83,6 +83,17 @@ cp .env.example .env
 | `ROUTING_LLM_TIMEOUT_MS` | 180000 (NVIDIA) | Per-request timeout; logs show `batch N/M: done in Xs` or fail after timeout. |
 
 Routing logs are prefixed with `[routing]` and print even when `DEBUG_NORMALIZED` is off.
+
+### Debug routing LLM (single Science paper)
+
+```bash
+npm run test-routing-llm
+npm run test-routing-llm -- --model z-ai/glm-5.1
+npm run test-routing-llm -- --fixture physics
+npm run test-routing-llm -- --title "Your paper title here"
+```
+
+Prints config, request params, raw API response, and parsed verdict. Uses `.env` (`NVIDIA_API_KEY`, `ROUTING_LLM_BASE_URL`, etc.). Does not run the full RSS pipeline.
 | `RESEND_API_KEY` | — | Resend API key |
 | `DIGEST_FROM_EMAIL` | `onboarding@resend.dev` | Sender address |
 | `DIGEST_TO_EMAIL` | — | Recipient(s): JSON array `["a@b.com","c@d.com"]` or comma-separated |
