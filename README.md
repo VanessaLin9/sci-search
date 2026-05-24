@@ -61,7 +61,7 @@ Add these **repository secrets** (Settings → Secrets and variables → Actions
 |--------|----------|-------|
 | `RESEND_API_KEY` | yes | Resend API key |
 | `DIGEST_TO_EMAIL` | yes | JSON array or comma-separated recipients |
-| `NVIDIA_API_KEY` | yes (if routing on) | Or `ROUTING_LLM_API_KEY` / `OPENAI_API_KEY` |
+| `ROUTING_LLM_API_KEY` | yes (if routing on) | Legacy fallbacks: `NVIDIA_API_KEY`, `OPENAI_API_KEY` |
 | `ROUTING_LLM_MODEL` | yes (if routing on) | Model id — not committed (private) |
 | `DIGEST_FROM_EMAIL` | no | Default `onboarding@resend.dev` |
 | `DIGEST_SUBJECT_PREFIX` | no | Default `Paper Digest` |
@@ -80,7 +80,7 @@ cp .env.example .env
 |----------|---------|-------------|
 | `DEBUG_NORMALIZED` | off | `1` or `true` for verbose pipeline logs |
 | `ROUTE_LIFE_SCIENCE` | off locally | `1` to run Phase 2a routing (CI enables this in `daily.yml`) |
-| `NVIDIA_API_KEY` | — | Or `ROUTING_LLM_API_KEY` / `OPENAI_API_KEY` when routing is on |
+| `ROUTING_LLM_API_KEY` | — | When routing is on; or legacy `NVIDIA_API_KEY` / `OPENAI_API_KEY` |
 | `ROUTING_LLM_MODEL` | — | **Required** when routing is on; keep in `.env` only |
 | `RESEND_API_KEY` | — | For `send-digest` |
 | `DIGEST_TO_EMAIL` | — | Recipients for digest email |
