@@ -79,7 +79,8 @@ cp .env.example .env
 | `ROUTING_LLM_BASE_URL` | `https://api.openai.com/v1` | OpenAI-compatible endpoint (e.g. NVIDIA `https://integrate.api.nvidia.com/v1`). |
 | `ROUTING_LLM_MODEL` | `gpt-4o-mini` | Model id (e.g. NVIDIA `z-ai/glm-5.1`). |
 | `ROUTING_LLM_ENABLE_THINKING` | off on NVIDIA | Set `1` only if your NVIDIA model needs thinking mode (routing keeps it off by default). |
-| `ROUTING_LLM_BATCH_SIZE` | 8 (NVIDIA) / 25 | Smaller batches = more log lines but easier to see progress. |
+| `ROUTING_LLM_BATCH_SIZE` | 40 (NVIDIA) / 25 | Max papers per LLM call; batches also auto-sized by `ROUTING_LLM_MAX_INPUT_TOKENS`. |
+| `ROUTING_LLM_MAX_INPUT_TOKENS` | 28000 (NVIDIA) | Title-only routing usually fits **all** broad-science papers in one request (~4–6k tokens for 35 papers). |
 | `ROUTING_LLM_TIMEOUT_MS` | 180000 (NVIDIA) | Per-request timeout; logs show `batch N/M: done in Xs` or fail after timeout. |
 
 Routing logs are prefixed with `[routing]` and print even when `DEBUG_NORMALIZED` is off.

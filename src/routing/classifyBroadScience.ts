@@ -1,5 +1,6 @@
 import { z } from "zod";
 import type { LifeScienceRoutingVerdict } from "../types.js";
+import { planRoutingBatches } from "./batchSizing.js";
 import {
   callRoutingCompletion,
   extractRoutingMessageContent,
@@ -19,14 +20,6 @@ const llmResponseSchema = z.object({
     }),
   ),
 });
-
-function chunk<T>(items: T[], size: number): T[][] {
-  const batches: T[][] = [];
-  for (let index = 0; index < items.length; index += size) {
-    batches.push(items.slice(index, index + size));
-  }
-  return batches;
-}
 
 function summarizeVerdicts(verdictById: Map<string, LifeScienceRoutingVerdict>): string {
   let yes = 0;
@@ -61,7 +54,17 @@ async function classifyBatch(
     );
   }
 
-  const parsed = llmResponseSchema.parse(parseJsonFromLlmContent(content));
+  let parsed;
+  try {
+    parsed = llmResponseSchema.parse(parseJsonFromLlmContent(content));
+  } catch (parseError) {
+    const preview = content.slice(0, 400);
+    const finishReason = completion.choices[0]?.finish_reason ?? "unknown";
+    throw new Error(
+      `${batchLabel}: invalid JSON (finish_reason=${finishReason}, ${content.length} chars): ${preview}${content.length > 400 ? "…" : ""}`,
+      { cause: parseError },
+    );
+  }
   const verdictById = new Map<string, LifeScienceRoutingVerdict>();
 
   for (const row of parsed.results) {
@@ -84,14 +87,30 @@ export async function classifyBroadSciencePapers(
   if (items.length === 0) return new Map();
 
   const config = getRoutingLlmConfig();
-  const batches = chunk(items, config.batchSize);
+  const { batches, estimatedInputTokens, estimatedCompletionTokens } = planRoutingBatches(
+    items,
+    {
+      maxInputTokens: config.maxInputTokens,
+      maxCompletionTokens: config.maxTokens,
+      maxPapersPerBatch: config.maxPapersPerBatch,
+    },
+  );
   const verdictById = new Map<string, LifeScienceRoutingVerdict>();
+
+  const batchSummary = batches
+    .map(
+      (batch, index) =>
+        `${batch.length} papers (~${estimatedInputTokens[index]} tok in, ~${estimatedCompletionTokens[index]} tok out)`,
+    )
+    .join(", ");
 
   logRouting(
     `LLM config: model=${config.model} base=${config.baseUrl} key=${maskApiKey(config.apiKey)} ` +
-      `batchSize=${config.batchSize} batches=${batches.length} thinking=${config.disableThinking ? "off" : "on"}`,
+      `maxInput=${config.maxInputTokens} maxCompletion=${config.maxTokens} maxPapers=${config.maxPapersPerBatch} thinking=${config.disableThinking ? "off" : "on"}`,
   );
-  logRouting(`classifying ${items.length} broad-science paper(s)…`);
+  logRouting(
+    `classifying ${items.length} broad-science paper(s) in ${batches.length} batch(es): ${batchSummary}`,
+  );
 
   for (let index = 0; index < batches.length; index += 1) {
     const batch = batches[index]!;

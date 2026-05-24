@@ -1,6 +1,6 @@
 {
   "reportDate": "2026-05-22",
-  "generatedAt": "2026-05-24T16:52:48.303Z",
+  "generatedAt": "2026-05-24T17:37:35.722Z",
   "papers": [
     {
       "id": "10.1038/s41592-026-03066-1",
@@ -447,7 +447,7 @@
       ],
       "section": "biology",
       "lifeScienceRouting": {
-        "verdict": "not_sure",
+        "verdict": "yes",
         "method": "llm"
       }
     },
@@ -627,8 +627,8 @@
       "total": 48,
       "passedByScope": 13,
       "llmClassified": 35,
-      "llmYes": 22,
-      "llmNotSure": 1,
+      "llmYes": 23,
+      "llmNotSure": 0,
       "llmNo": 12,
       "included": 36,
       "excluded": 12

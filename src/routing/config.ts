@@ -11,7 +11,10 @@ export type RoutingLlmConfig = {
   apiKey: string;
   baseUrl: string;
   model: string;
-  batchSize: number;
+  /** Max papers per LLM request (also capped by maxInputTokens). */
+  maxPapersPerBatch: number;
+  /** Estimated input token budget per request (title-only payloads). */
+  maxInputTokens: number;
   timeoutMs: number;
   maxTokens: number;
   maxRetries: number;
@@ -47,15 +50,23 @@ export function getRoutingLlmConfig(): RoutingLlmConfig {
   const thinkingFlag = process.env.ROUTING_LLM_ENABLE_THINKING?.trim().toLowerCase();
   const enableThinking = thinkingFlag === "1" || thinkingFlag === "true";
 
-  const defaultBatchSize = nvidia ? 8 : 25;
+  const defaultMaxPapersPerBatch = nvidia ? 40 : 25;
+  const defaultMaxInputTokens = nvidia ? 28_000 : 24_000;
   const defaultTimeoutMs = nvidia ? 180_000 : 120_000;
-  const defaultMaxTokens = nvidia ? 8192 : 4096;
+  const defaultMaxTokens = 4096;
 
   return {
     apiKey,
     baseUrl,
     model,
-    batchSize: parsePositiveInt(process.env.ROUTING_LLM_BATCH_SIZE, defaultBatchSize),
+    maxPapersPerBatch: parsePositiveInt(
+      process.env.ROUTING_LLM_BATCH_SIZE,
+      defaultMaxPapersPerBatch,
+    ),
+    maxInputTokens: parsePositiveInt(
+      process.env.ROUTING_LLM_MAX_INPUT_TOKENS,
+      defaultMaxInputTokens,
+    ),
     timeoutMs: parsePositiveInt(process.env.ROUTING_LLM_TIMEOUT_MS, defaultTimeoutMs),
     maxTokens: parsePositiveInt(process.env.ROUTING_LLM_MAX_TOKENS, defaultMaxTokens),
     maxRetries: parsePositiveInt(process.env.ROUTING_LLM_MAX_RETRIES, 1),

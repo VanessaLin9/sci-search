@@ -12,15 +12,17 @@ NOT life sciences (answer "no"): physics, astronomy, chemistry (non-biochemical)
 
 Answer "not_sure" when the title is too vague to tell (e.g. generic methods without field, ambiguous interdisciplinary titles).
 
-Respond with JSON only, matching this schema:
-{"results":[{"id":"<paper id>","verdict":"yes"|"no"|"not_sure"}, ...]}
-
-Include exactly one result per input paper, using the same id.`;
+OUTPUT FORMAT (strict):
+- Reply with a single JSON object only. No markdown, no code fences, no preamble, no explanation, no reasoning, no commentary.
+- Do not analyze papers in prose. Do not repeat titles. Output verdicts only.
+- Schema: {"results":[{"id":"<paper id>","verdict":"yes"|"no"|"not_sure"}, ...]}
+- Include exactly one result per input paper, using the same id.`;
 
 export function buildRoutingCompletionParams(
   items: BroadScienceRoutingInput[],
   config: RoutingLlmConfig,
   useJsonResponseFormat: boolean,
+  maxTokensOverride?: number,
 ): ChatCompletionCreateParamsNonStreaming {
   const params: ChatCompletionCreateParamsNonStreaming & {
     chat_template_kwargs?: { enable_thinking?: boolean; clear_thinking?: boolean };
@@ -28,12 +30,12 @@ export function buildRoutingCompletionParams(
     model: config.model,
     temperature: 0,
     stream: false,
-    max_tokens: config.maxTokens,
+    max_tokens: maxTokensOverride ?? config.maxTokens,
     messages: [
       { role: "system", content: ROUTING_SYSTEM_PROMPT },
       {
         role: "user",
-        content: JSON.stringify({ papers: items }),
+        content: `Classify each paper. Reply with JSON only (no other text).\n${JSON.stringify({ papers: items })}`,
       },
     ],
   };

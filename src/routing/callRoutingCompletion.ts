@@ -3,6 +3,7 @@ import type { RoutingLlmConfig } from "./config.js";
 import { buildRoutingCompletionParams } from "./routingPrompt.js";
 import { createRoutingLlmClient } from "./routingLlmClient.js";
 import { formatElapsedMs, logRouting } from "./routingLog.js";
+import { estimateRoutingCompletionTokens } from "./batchSizing.js";
 import type { BroadScienceRoutingInput } from "./types.js";
 
 export type RoutingCompletionCall = {
@@ -35,14 +36,19 @@ export async function callRoutingCompletion(
   const label = options?.label ?? "routing-llm";
   let usedJsonResponseFormat = config.preferJsonResponseFormat;
 
+  const maxTokens = Math.min(
+    config.maxTokens,
+    Math.max(estimateRoutingCompletionTokens(items.length), 640),
+  );
+
   logRouting(
-    `${label}: POST chat/completions (${items.length} paper(s), max_tokens=${config.maxTokens}, timeout=${config.timeoutMs}ms)`,
+    `${label}: POST chat/completions (${items.length} paper(s), max_tokens=${maxTokens}, need~${estimateRoutingCompletionTokens(items.length)}, cap=${config.maxTokens}, timeout=${config.timeoutMs}ms)`,
   );
 
   let completion: ChatCompletion;
   try {
     completion = await client.chat.completions.create(
-      buildRoutingCompletionParams(items, config, usedJsonResponseFormat),
+      buildRoutingCompletionParams(items, config, usedJsonResponseFormat, maxTokens),
     );
   } catch (error) {
     if (!config.preferJsonResponseFormat) {
@@ -53,7 +59,7 @@ export async function callRoutingCompletion(
     logRouting(`${label}: json_object mode failed, retrying without response_format…`);
     usedJsonResponseFormat = false;
     completion = await client.chat.completions.create(
-      buildRoutingCompletionParams(items, config, false),
+      buildRoutingCompletionParams(items, config, false, maxTokens),
     );
   }
 
