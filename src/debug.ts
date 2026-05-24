@@ -1,7 +1,8 @@
-import { getPaperSections } from "./filterPapers.js";
+import type { EnrichPapersResult } from "./enrichers/index.js";
+import { countPapersBySection, getPaperSections } from "./filterPapers.js";
 import type { SourcePipelineStats } from "./pipeline.js";
 import type { LifeScienceRoutingStats } from "./routing/types.js";
-import type { Paper } from "./types.js";
+import type { ClassifiedPaper, Paper } from "./types.js";
 
 export function isDebugEnabled(): boolean {
   const flag = process.env.DEBUG_NORMALIZED?.trim().toLowerCase();
@@ -16,16 +17,8 @@ export function logRunHeader(today: string, reportDate: string, configuredSource
 }
 
 export function logSourceSummary(stats: SourcePipelineStats): void {
-  const sections = getPaperSections()
-    .map((section) => `${section}: ${stats.sectionCounts[section]}`)
-    .join(", ");
-
-  const enriched =
-    stats.enrichedCount > 0 ? ` · enriched ${stats.enrichedCount}` : "";
-  const excluded =
-    stats.excludedCount > 0 ? ` · excluded ${stats.excludedCount}` : "";
   console.log(
-    `${stats.sourceId}: ${stats.onReportDateCount} on report date (${stats.rssItemCount} RSS items)${enriched}${excluded} · ${sections}`,
+    `${stats.sourceId}: ${stats.onReportDateCount} on report date (${stats.rssItemCount} RSS items)`,
   );
 }
 
@@ -36,12 +29,6 @@ export function logSourceDetails(stats: SourcePipelineStats, normalizedPapers: P
   printNormalizedPapers(stats.sourceId, normalizedPapers);
   console.log(`Deduped papers: ${stats.dedupedCount}`);
   console.log(`Papers on report date: ${stats.onReportDateCount}`);
-  console.log(`Enriched abstracts: ${stats.enrichedCount}`);
-  console.log(
-    `Section counts: ${getPaperSections()
-      .map((section) => `${section}: ${stats.sectionCounts[section]}`)
-      .join(", ")}`,
-  );
 }
 
 export function logEnrichResult(before: Paper, after: Paper): void {
@@ -74,7 +61,7 @@ export function logRoutingSummary(stats: LifeScienceRoutingStats, enabled: boole
   );
 }
 
-export function logClassifiedSample(papers: Paper[], limit = 3): void {
+export function logClassifiedSample(papers: ClassifiedPaper[], limit = 3): void {
   if (papers.length === 0) return;
 
   console.log(
@@ -83,6 +70,22 @@ export function logClassifiedSample(papers: Paper[], limit = 3): void {
       matchedKeywords: paper.matchedKeywords,
       section: paper.section,
     })),
+  );
+}
+
+export function logEnrichSummary(enrich: EnrichPapersResult): void {
+  if (enrich.enrichedCount === 0 && enrich.excludedCount === 0) return;
+  const excluded =
+    enrich.excludedCount > 0 ? `, ${enrich.excludedCount} excluded by enrich` : "";
+  console.log(`Enriched ${enrich.enrichedCount} abstract(s)${excluded}`);
+}
+
+export function logSectionSummary(papers: ClassifiedPaper[]): void {
+  const sections = countPapersBySection(papers);
+  console.log(
+    `Sections: ${Object.entries(sections)
+      .map(([section, count]) => `${section}: ${count}`)
+      .join(", ")}`,
   );
 }
 

@@ -37,8 +37,12 @@ export type Paper = {
   articleType?: string;
   authors?: string[];
   sourceId: string;
-  matchedKeywords: string[];
-  section: PaperSection;
   /** Set after Phase 2a life-science routing. */
   lifeScienceRouting?: LifeScienceRouting;
+};
+
+/** Shape after the keyword-classify step; also the final shape persisted to JSON. */
+export type ClassifiedPaper = Paper & {
+  matchedKeywords: string[];
+  section: PaperSection;
 };

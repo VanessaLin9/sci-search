@@ -1,4 +1,4 @@
-import type { Paper, PaperSection } from "../types.js";
+import type { ClassifiedPaper, PaperSection } from "../types.js";
 import { escapeHtml } from "./escapeHtml.js";
 
 const SECTION_LABELS: Record<PaperSection, string> = {
@@ -11,18 +11,18 @@ const SECTION_ORDER: PaperSection[] = ["single-cell-spatial", "biology", "other"
 
 export type RenderDigestHtmlOptions = {
   reportDate: string;
-  papers: Paper[];
+  papers: ClassifiedPaper[];
   generatedAt?: string;
 };
 
-function renderJournalDoiMeta(paper: Paper): string {
+function renderJournalDoiMeta(paper: ClassifiedPaper): string {
   const journal = escapeHtml(paper.journal);
   const doi = paper.doi?.trim();
   if (!doi) return journal;
   return `${journal} · doi:${escapeHtml(doi)}`;
 }
 
-function renderPaperCard(paper: Paper): string {
+function renderPaperCard(paper: ClassifiedPaper): string {
   const abstract = paper.abstract?.trim();
   const keywords =
     paper.matchedKeywords.length > 0
@@ -45,7 +45,7 @@ function renderPaperCard(paper: Paper): string {
   `.trim();
 }
 
-function renderSection(section: PaperSection, papers: Paper[]): string {
+function renderSection(section: PaperSection, papers: ClassifiedPaper[]): string {
   const label = SECTION_LABELS[section];
   const body =
     papers.length > 0
@@ -61,7 +61,7 @@ function renderSection(section: PaperSection, papers: Paper[]): string {
 }
 
 export function renderDigestHtml(options: RenderDigestHtmlOptions): string {
-  const bySection: Record<PaperSection, Paper[]> = {
+  const bySection: Record<PaperSection, ClassifiedPaper[]> = {
     "single-cell-spatial": [],
     biology: [],
     other: [],

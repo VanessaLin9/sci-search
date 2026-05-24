@@ -6,15 +6,14 @@ import { defaultReportDateInTaipei, todayInTaipei } from "./date.js";
 import {
   isDebugEnabled,
   logClassifiedSample,
+  logEnrichSummary,
   logRoutingSummary,
   logRunHeader,
+  logSectionSummary,
   logSourceDetails,
   logSourceSummary,
 } from "./debug.js";
-import { countPapersBySection } from "./filterPapers.js";
-import { DEFAULT_RSS_SOURCE_IDS, enrichAndClassifyPapers, runPipeline } from "./pipeline.js";
-import { isLifeScienceRoutingEnabled } from "./routing/config.js";
-import { routeLifeSciencePapers } from "./routing/routeLifeScience.js";
+import { runPipeline } from "./pipeline.js";
 import { logRouting } from "./routing/routingLog.js";
 import { buildSourceScopeById } from "./routing/sourceScope.js";
 import { writeJsonFile } from "./writeJson.js";
@@ -55,62 +54,46 @@ async function main() {
     sources,
     keywords,
     reportDate,
-    rssSourceIds: DEFAULT_RSS_SOURCE_IDS,
+    scopeBySourceId,
   });
 
   for (const sourceResult of result.sourceResults) {
     logSourceSummary(sourceResult.stats);
-
     if (isDebugEnabled()) {
       logSourceDetails(sourceResult.stats, sourceResult.normalized);
     }
   }
 
-  const routing = await routeLifeSciencePapers({
-    papers: result.papers,
-    scopeBySourceId,
-  });
-
-  if (routing.enabled) {
-    logRouting(`before enrich: ${routing.included.length} to enrich, ${routing.excluded.length} skipped`);
+  if (result.routing.enabled) {
+    logRouting(
+      `before enrich: ${result.routing.included.length} to enrich, ${result.routing.excluded.length} skipped`,
+    );
   }
-  logRoutingSummary(routing.stats, routing.enabled);
-
-  const { papers: classified, enrichedCount, enrichExcludedCount } =
-    await enrichAndClassifyPapers(routing.included, keywords);
-
-  if (enrichedCount > 0 || enrichExcludedCount > 0) {
-    const enrichExcluded =
-      enrichExcludedCount > 0 ? `, ${enrichExcludedCount} excluded by enrich` : "";
-    console.log(`Enriched ${enrichedCount} abstract(s)${enrichExcluded}`);
-  }
+  logRoutingSummary(result.routing.stats, result.routing.enabled);
+  logEnrichSummary(result.enrich);
 
   if (isDebugEnabled()) {
-    logClassifiedSample(classified);
+    logClassifiedSample(result.papers);
   }
-
-  const sections = countPapersBySection(classified);
-  console.log(
-    `Sections: ${Object.entries(sections)
-      .map(([section, count]) => `${section}: ${count}`)
-      .join(", ")}`,
-  );
+  logSectionSummary(result.papers);
 
   const outputPath = `data/processed/${reportDate}/papers.json`;
   await writeJsonFile(outputPath, {
     reportDate,
     generatedAt: new Date().toISOString(),
-    papers: classified,
+    papers: result.papers,
     routing: {
-      enabled: routing.enabled,
-      stats: routing.stats,
+      enabled: result.routing.enabled,
+      stats: result.routing.stats,
     },
-    excludedPapers: routing.excluded.length > 0 ? routing.excluded : undefined,
+    excludedPapers: result.routing.excluded.length > 0 ? result.routing.excluded : undefined,
   });
 
   console.log(
-    `Wrote ${outputPath} (${classified.length} papers` +
-      (routing.excluded.length > 0 ? `, ${routing.excluded.length} routing-excluded` : "") +
+    `Wrote ${outputPath} (${result.papers.length} papers` +
+      (result.routing.excluded.length > 0
+        ? `, ${result.routing.excluded.length} routing-excluded`
+        : "") +
       ")",
   );
 }

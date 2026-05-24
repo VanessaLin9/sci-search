@@ -82,8 +82,6 @@ export function normalizeRssItemToPaper(item: RssItemWithCustomFields, source: S
     doi,
     abstract: extractRssAbstract(source.id, item),
     sourceId: source.id,
-    matchedKeywords: [],
-    section: "other",
   };
 
   return paper;

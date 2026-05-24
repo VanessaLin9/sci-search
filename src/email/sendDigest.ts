@@ -1,11 +1,11 @@
-import type { Paper } from "../types.js";
+import type { ClassifiedPaper } from "../types.js";
 import { loadEmailConfig } from "./config.js";
 import { buildDigestSubject, renderDigestHtml } from "./renderDigestHtml.js";
 import { sendWithResend } from "./sendWithResend.js";
 
 export type SendDigestEmailOptions = {
   reportDate: string;
-  papers: Paper[];
+  papers: ClassifiedPaper[];
   generatedAt?: string;
   dryRun?: boolean;
 };

@@ -1,4 +1,4 @@
-import type { Paper, PaperSection } from "./types.js";
+import type { ClassifiedPaper, Paper, PaperSection } from "./types.js";
 import { formatInTimeZone } from "date-fns-tz";
 import { TIME_ZONE } from "./date.js";
 
@@ -36,7 +36,7 @@ export function classifyPaperSection(primaryMatches: string[], biologyMatches: s
   return "other";
 }
 
-export function countPapersBySection(papers: Paper[]): Record<PaperSection, number> {
+export function countPapersBySection(papers: ClassifiedPaper[]): Record<PaperSection, number> {
   const counts: Record<PaperSection, number> = {
     "single-cell-spatial": 0,
     biology: 0,

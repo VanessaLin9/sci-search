@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 import { z } from "zod";
-import type { LifeScienceRouting, Paper } from "./types.js";
+import type { ClassifiedPaper, LifeScienceRouting } from "./types.js";
 import type { ExcludedPaper, LifeScienceRoutingStats } from "./routing/types.js";
 
 const lifeScienceRoutingSchema = z.object({
@@ -8,7 +8,9 @@ const lifeScienceRoutingSchema = z.object({
   method: z.enum(["scope-default", "llm"]),
 }) satisfies z.ZodType<LifeScienceRouting>;
 
-const paperSchema = z.object({
+// Pre-classify shape: routing happens before classify, so excluded papers never carry these fields.
+// Kept optional+strip-tolerant so legacy JSON files (which embedded the placeholder values) still parse.
+const rawPaperSchema = z.object({
   id: z.string(),
   title: z.string(),
   journal: z.string(),
@@ -19,13 +21,18 @@ const paperSchema = z.object({
   articleType: z.string().optional(),
   authors: z.array(z.string()).optional(),
   sourceId: z.string(),
+  lifeScienceRouting: lifeScienceRoutingSchema.optional(),
+  matchedKeywords: z.array(z.string()).optional(),
+  section: z.enum(["single-cell-spatial", "biology", "other"]).optional(),
+});
+
+const classifiedPaperSchema = rawPaperSchema.extend({
   matchedKeywords: z.array(z.string()),
   section: z.enum(["single-cell-spatial", "biology", "other"]),
-  lifeScienceRouting: lifeScienceRoutingSchema.optional(),
 });
 
 const excludedPaperSchema = z.object({
-  paper: paperSchema,
+  paper: rawPaperSchema,
   reason: z.literal("life-science-routing"),
   verdict: z.literal("no"),
 });
@@ -44,7 +51,7 @@ const routingStatsSchema = z.object({
 const processedPapersFileSchema = z.object({
   reportDate: z.string(),
   generatedAt: z.string().optional(),
-  papers: z.array(paperSchema),
+  papers: z.array(classifiedPaperSchema),
   routing: z
     .object({
       enabled: z.boolean(),
@@ -57,7 +64,7 @@ const processedPapersFileSchema = z.object({
 export type ProcessedPapersFile = {
   reportDate: string;
   generatedAt?: string;
-  papers: Paper[];
+  papers: ClassifiedPaper[];
   routing?: {
     enabled: boolean;
     stats: LifeScienceRoutingStats;

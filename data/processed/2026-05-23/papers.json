@@ -1,6 +1,6 @@
 {
   "reportDate": "2026-05-23",
-  "generatedAt": "2026-05-24T18:15:03.903Z",
+  "generatedAt": "2026-05-24T18:44:07.949Z",
   "papers": [
     {
       "id": "10.1038/s41467-026-73618-8",
@@ -11,12 +11,12 @@
       "doi": "10.1038/s41467-026-73618-8",
       "abstract": "Genetic code expansion can be limited by the need to supply non-standard amino acids. The authors design bacteria that perform integrated steps of converting supplemented aldehydes to L-phenylalanine derivatives and incorporating them within proteins.",
       "sourceId": "nature-communications",
-      "matchedKeywords": [],
-      "section": "other",
       "lifeScienceRouting": {
         "verdict": "yes",
         "method": "llm"
-      }
+      },
+      "matchedKeywords": [],
+      "section": "other"
     },
     {
       "id": "10.1038/s41467-026-73208-8",
@@ -27,12 +27,12 @@
       "doi": "10.1038/s41467-026-73208-8",
       "abstract": "The study shows that a subpopulation of brainstem astrocytes actively regulates breathing and brain states. Activating these cells alters respiratory patterns and increases sighing, revealing a key role in linking neural activity, arousal, and respiratory control.",
       "sourceId": "nature-communications",
-      "matchedKeywords": [],
-      "section": "other",
       "lifeScienceRouting": {
         "verdict": "yes",
         "method": "llm"
-      }
+      },
+      "matchedKeywords": [],
+      "section": "other"
     },
     {
       "id": "10.1038/s41467-026-73545-8",
@@ -43,12 +43,12 @@
       "doi": "10.1038/s41467-026-73545-8",
       "abstract": "In mice, a next-generation gene therapy for spinal muscular atrophy improved survival and motor function more than a Zolgensma-like treatment, with fewer signs of liver and heart toxicity, supporting its promise as a safer, more effective approach.",
       "sourceId": "nature-communications",
-      "matchedKeywords": [],
-      "section": "other",
       "lifeScienceRouting": {
         "verdict": "yes",
         "method": "llm"
-      }
+      },
+      "matchedKeywords": [],
+      "section": "other"
     }
   ],
   "routing": {
@@ -74,9 +74,7 @@
         "url": "https://www.nature.com/articles/s41467-026-73446-w",
         "doi": "10.1038/s41467-026-73446-w",
         "abstract": "Researchers realized the first truly chiral terahertz cavity with time-reversal-symmetry broken vacuum fields, with near-unity ellipticity at 0.66 THz and Q>50 under a 0.3 T field, offering a robust platform for chiral light–matter interactions.",
-        "sourceId": "nature-communications",
-        "matchedKeywords": [],
-        "section": "other"
+        "sourceId": "nature-communications"
       },
       "reason": "life-science-routing",
       "verdict": "no"
@@ -90,9 +88,7 @@
         "url": "https://www.nature.com/articles/s41467-026-73425-1",
         "doi": "10.1038/s41467-026-73425-1",
         "abstract": "A polymer-coated nanowire sponge utilizes mechanical energy to produce reactive oxygen species, enabling rapid disinfection and removal of diverse pollutants from water without added chemicals or rare metals.",
-        "sourceId": "nature-communications",
-        "matchedKeywords": [],
-        "section": "other"
+        "sourceId": "nature-communications"
       },
       "reason": "life-science-routing",
       "verdict": "no"
