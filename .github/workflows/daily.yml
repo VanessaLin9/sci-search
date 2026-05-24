@@ -20,6 +20,9 @@ jobs:
       RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
       DIGEST_TO_EMAIL: ${{ secrets.DIGEST_TO_EMAIL }}
       DEBUG_NORMALIZED: "0"
+      ROUTE_LIFE_SCIENCE: "1"
+      NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+      ROUTING_LLM_MODEL: ${{ secrets.ROUTING_LLM_MODEL }}
     steps:
       - uses: actions/checkout@v4
 

@@ -57,16 +57,20 @@ Workflow: [`.github/workflows/daily.yml`](.github/workflows/daily.yml)
 
 Add these **repository secrets** (Settings → Secrets and variables → Actions):
 
-| Secret | Required | Example |
-|--------|----------|---------|
-| `RESEND_API_KEY` | yes | `re_...` |
-| `DIGEST_TO_EMAIL` | yes | `["you@example.com","mentor@example.com"]` |
-| `DIGEST_FROM_EMAIL` | no | `onboarding@resend.dev` (default if omitted) |
-| `DIGEST_SUBJECT_PREFIX` | no | `Paper Digest` |
+| Secret | Required | Notes |
+|--------|----------|-------|
+| `RESEND_API_KEY` | yes | Resend API key |
+| `DIGEST_TO_EMAIL` | yes | JSON array or comma-separated recipients |
+| `NVIDIA_API_KEY` | yes (if routing on) | Or `ROUTING_LLM_API_KEY` / `OPENAI_API_KEY` |
+| `ROUTING_LLM_MODEL` | yes (if routing on) | Model id — not committed (private) |
+| `DIGEST_FROM_EMAIL` | no | Default `onboarding@resend.dev` |
+| `DIGEST_SUBJECT_PREFIX` | no | Default `Paper Digest` |
+
+The workflow sets `ROUTE_LIFE_SCIENCE=1`. Non-secret routing settings (endpoint, batch size, token limits) live in [`config/routing.json`](config/routing.json).
 
 After the first successful run, open the commit on `main` or download the `papers-{date}` artifact from the Actions run to inspect collected data.
 
-Environment variables (optional `.env`, see `.env.example`):
+### Local environment
 
 ```bash
 cp .env.example .env
@@ -74,14 +78,14 @@ cp .env.example .env
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `DEBUG_NORMALIZED` | off | Set to `1` or `true` for verbose logs (`console.table`, classified samples). `0` or unset for cron-friendly output. |
-| `ROUTE_LIFE_SCIENCE` | off | Set to `1` to run Phase 2a routing after collect. Requires `ROUTING_LLM_API_KEY`, `NVIDIA_API_KEY`, or `OPENAI_API_KEY`. |
-| `ROUTING_LLM_BASE_URL` | `https://api.openai.com/v1` | OpenAI-compatible endpoint (e.g. NVIDIA `https://integrate.api.nvidia.com/v1`). |
-| `ROUTING_LLM_MODEL` | `gpt-4o-mini` | Model id (e.g. NVIDIA `z-ai/glm-5.1`). |
-| `ROUTING_LLM_ENABLE_THINKING` | off on NVIDIA | Set `1` only if your NVIDIA model needs thinking mode (routing keeps it off by default). |
-| `ROUTING_LLM_BATCH_SIZE` | 40 (NVIDIA) / 25 | Max papers per LLM call; batches also auto-sized by `ROUTING_LLM_MAX_INPUT_TOKENS`. |
-| `ROUTING_LLM_MAX_INPUT_TOKENS` | 28000 (NVIDIA) | Title-only routing usually fits **all** broad-science papers in one request (~4–6k tokens for 35 papers). |
-| `ROUTING_LLM_TIMEOUT_MS` | 180000 (NVIDIA) | Per-request timeout; logs show `batch N/M: done in Xs` or fail after timeout. |
+| `DEBUG_NORMALIZED` | off | `1` or `true` for verbose pipeline logs |
+| `ROUTE_LIFE_SCIENCE` | off locally | `1` to run Phase 2a routing (CI enables this in `daily.yml`) |
+| `NVIDIA_API_KEY` | — | Or `ROUTING_LLM_API_KEY` / `OPENAI_API_KEY` when routing is on |
+| `ROUTING_LLM_MODEL` | — | **Required** when routing is on; keep in `.env` only |
+| `RESEND_API_KEY` | — | For `send-digest` |
+| `DIGEST_TO_EMAIL` | — | Recipients for digest email |
+| `DIGEST_FROM_EMAIL` | `onboarding@resend.dev` | Sender address |
+| `DIGEST_SUBJECT_PREFIX` | `Paper Digest` | Email subject prefix |
 
 Routing logs are prefixed with `[routing]` and print even when `DEBUG_NORMALIZED` is off.
 
@@ -89,16 +93,12 @@ Routing logs are prefixed with `[routing]` and print even when `DEBUG_NORMALIZED
 
 ```bash
 npm run test-routing-llm
-npm run test-routing-llm -- --model z-ai/glm-5.1
+npm run test-routing-llm -- --model your-model-id
 npm run test-routing-llm -- --fixture physics
 npm run test-routing-llm -- --title "Your paper title here"
 ```
 
-Prints config, request params, raw API response, and parsed verdict. Uses `.env` (`NVIDIA_API_KEY`, `ROUTING_LLM_BASE_URL`, etc.). Does not run the full RSS pipeline.
-| `RESEND_API_KEY` | — | Resend API key |
-| `DIGEST_FROM_EMAIL` | `onboarding@resend.dev` | Sender address |
-| `DIGEST_TO_EMAIL` | — | Recipient(s): JSON array `["a@b.com","c@d.com"]` or comma-separated |
-| `DIGEST_SUBJECT_PREFIX` | `Paper Digest` | Email subject prefix |
+Prints config, request params, raw API response, and parsed verdict. Uses `.env` for API key and model; endpoint/batch settings from `config/routing.json`. Does not run the full RSS pipeline.
 
 One-off without editing `.env`:
 

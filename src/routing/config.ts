@@ -1,3 +1,5 @@
+import { loadRoutingFileConfig } from "../config.js";
+
 export function isLifeScienceRoutingEnabled(): boolean {
   const flag = process.env.ROUTE_LIFE_SCIENCE?.trim().toLowerCase();
   return flag === "1" || flag === "true";
@@ -24,12 +26,9 @@ export type RoutingLlmConfig = {
   disableThinking: boolean;
 };
 
-function parsePositiveInt(value: string | undefined, fallback: number): number {
-  const parsed = Number.parseInt(value ?? "", 10);
-  return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback;
-}
-
 export function getRoutingLlmConfig(): RoutingLlmConfig {
+  const file = loadRoutingFileConfig();
+
   const apiKey =
     process.env.ROUTING_LLM_API_KEY?.trim() ||
     process.env.NVIDIA_API_KEY?.trim() ||
@@ -41,37 +40,27 @@ export function getRoutingLlmConfig(): RoutingLlmConfig {
     );
   }
 
-  const baseUrl = (
-    process.env.ROUTING_LLM_BASE_URL?.trim() || "https://api.openai.com/v1"
-  ).replace(/\/$/, "");
-  const model = process.env.ROUTING_LLM_MODEL?.trim() || "gpt-4o-mini";
+  const model = process.env.ROUTING_LLM_MODEL?.trim();
+  if (!model) {
+    throw new Error(
+      "ROUTING_LLM_MODEL is not set. Add it to .env locally or as a repository secret (not committed).",
+    );
+  }
+
+  const baseUrl = file.baseUrl.replace(/\/$/, "");
   const nvidia = isNvidiaIntegrateApi(baseUrl);
-
-  const thinkingFlag = process.env.ROUTING_LLM_ENABLE_THINKING?.trim().toLowerCase();
-  const enableThinking = thinkingFlag === "1" || thinkingFlag === "true";
-
-  const defaultMaxPapersPerBatch = nvidia ? 40 : 25;
-  const defaultMaxInputTokens = nvidia ? 28_000 : 24_000;
-  const defaultTimeoutMs = nvidia ? 180_000 : 120_000;
-  const defaultMaxTokens = 4096;
 
   return {
     apiKey,
     baseUrl,
     model,
-    maxPapersPerBatch: parsePositiveInt(
-      process.env.ROUTING_LLM_BATCH_SIZE,
-      defaultMaxPapersPerBatch,
-    ),
-    maxInputTokens: parsePositiveInt(
-      process.env.ROUTING_LLM_MAX_INPUT_TOKENS,
-      defaultMaxInputTokens,
-    ),
-    timeoutMs: parsePositiveInt(process.env.ROUTING_LLM_TIMEOUT_MS, defaultTimeoutMs),
-    maxTokens: parsePositiveInt(process.env.ROUTING_LLM_MAX_TOKENS, defaultMaxTokens),
-    maxRetries: parsePositiveInt(process.env.ROUTING_LLM_MAX_RETRIES, 1),
+    maxPapersPerBatch: file.maxPapersPerBatch,
+    maxInputTokens: file.maxInputTokens,
+    timeoutMs: file.timeoutMs,
+    maxTokens: file.maxTokens,
+    maxRetries: file.maxRetries,
     preferJsonResponseFormat: !nvidia,
-    disableThinking: nvidia && !enableThinking,
+    disableThinking: nvidia && !file.enableThinking,
   };
 }
 
