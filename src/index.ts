@@ -6,27 +6,45 @@ import { defaultReportDateInTaipei, todayInTaipei } from "./date.js";
 import {
   isDebugEnabled,
   logClassifiedSample,
+  logRoutingSummary,
   logRunHeader,
   logSourceDetails,
   logSourceSummary,
 } from "./debug.js";
 import { DEFAULT_RSS_SOURCE_IDS, runPipeline } from "./pipeline.js";
+import { routeLifeSciencePapers } from "./routing/routeLifeScience.js";
+import { buildSourceScopeById } from "./routing/sourceScope.js";
 import { writeJsonFile } from "./writeJson.js";
 
-function parseReportDateArg(argv: string[]): string | undefined {
+type CliOptions = {
+  reportDate?: string;
+};
+
+function parseCliArgs(argv: string[]): CliOptions {
+  const options: CliOptions = {};
+
   for (let index = 0; index < argv.length; index += 1) {
     const arg = argv[index];
-    if (arg === "--date" && argv[index + 1]) return argv[index + 1];
-    if (arg.startsWith("--date=")) return arg.slice("--date=".length);
+    if (arg === "--date" && argv[index + 1]) {
+      options.reportDate = argv[index + 1];
+      index += 1;
+      continue;
+    }
+    if (arg.startsWith("--date=")) {
+      options.reportDate = arg.slice("--date=".length);
+    }
   }
-  return undefined;
+
+  return options;
 }
 
 async function main() {
+  const cli = parseCliArgs(process.argv.slice(2));
   const today = todayInTaipei();
-  const reportDate = parseReportDateArg(process.argv.slice(2)) ?? defaultReportDateInTaipei();
+  const reportDate = cli.reportDate ?? defaultReportDateInTaipei();
   const sources = await loadSources();
   const keywords = await loadKeywords();
+  const scopeBySourceId = buildSourceScopeById(sources);
 
   logRunHeader(today, reportDate, sources.length);
 
@@ -46,14 +64,29 @@ async function main() {
     }
   }
 
+  const routing = await routeLifeSciencePapers({
+    papers: result.papers,
+    scopeBySourceId,
+  });
+  logRoutingSummary(routing.stats, routing.enabled);
+
   const outputPath = `data/processed/${reportDate}/papers.json`;
   await writeJsonFile(outputPath, {
     reportDate,
     generatedAt: new Date().toISOString(),
-    papers: result.papers,
+    papers: routing.included,
+    routing: {
+      enabled: routing.enabled,
+      stats: routing.stats,
+    },
+    excludedPapers: routing.excluded.length > 0 ? routing.excluded : undefined,
   });
 
-  console.log(`Wrote ${outputPath} (${result.papers.length} papers)`);
+  console.log(
+    `Wrote ${outputPath} (${routing.included.length} papers` +
+      (routing.excluded.length > 0 ? `, ${routing.excluded.length} excluded` : "") +
+      ")",
+  );
 }
 
 main().catch((error) => {

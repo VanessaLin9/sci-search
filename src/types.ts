@@ -5,6 +5,16 @@ export type SourceScope = "life-science-only" | "broad-science";
 
 export type PaperSection = "single-cell-spatial" | "biology" | "other";
 
+/** Phase 2a: is this paper life-science relevant? */
+export type LifeScienceRoutingVerdict = "yes" | "no" | "not_sure";
+
+export type LifeScienceRoutingMethod = "scope-default" | "llm";
+
+export type LifeScienceRouting = {
+  verdict: LifeScienceRoutingVerdict;
+  method: LifeScienceRoutingMethod;
+};
+
 export type Source = {
   id: string;
   name: string;
@@ -29,4 +39,6 @@ export type Paper = {
   sourceId: string;
   matchedKeywords: string[];
   section: PaperSection;
+  /** Set after Phase 2a life-science routing. */
+  lifeScienceRouting?: LifeScienceRouting;
 };

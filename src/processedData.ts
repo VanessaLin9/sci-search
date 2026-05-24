@@ -1,19 +1,73 @@
 import { readFile } from "node:fs/promises";
 import { z } from "zod";
-import type { Paper } from "./types.js";
+import type { LifeScienceRouting, Paper } from "./types.js";
+import type { ExcludedPaper, LifeScienceRoutingStats } from "./routing/types.js";
+
+const lifeScienceRoutingSchema = z.object({
+  verdict: z.enum(["yes", "no", "not_sure"]),
+  method: z.enum(["scope-default", "llm"]),
+}) satisfies z.ZodType<LifeScienceRouting>;
+
+const paperSchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  journal: z.string(),
+  publishedDate: z.string(),
+  url: z.string(),
+  doi: z.string().optional(),
+  abstract: z.string().optional(),
+  articleType: z.string().optional(),
+  authors: z.array(z.string()).optional(),
+  sourceId: z.string(),
+  matchedKeywords: z.array(z.string()),
+  section: z.enum(["single-cell-spatial", "biology", "other"]),
+  lifeScienceRouting: lifeScienceRoutingSchema.optional(),
+});
+
+const excludedPaperSchema = z.object({
+  paper: paperSchema,
+  reason: z.literal("life-science-routing"),
+  verdict: z.literal("no"),
+});
+
+const routingStatsSchema = z.object({
+  total: z.number(),
+  passedByScope: z.number(),
+  llmClassified: z.number(),
+  llmYes: z.number(),
+  llmNotSure: z.number(),
+  llmNo: z.number(),
+  included: z.number(),
+  excluded: z.number(),
+}) satisfies z.ZodType<LifeScienceRoutingStats>;
 
 const processedPapersFileSchema = z.object({
   reportDate: z.string(),
   generatedAt: z.string().optional(),
-  papers: z.array(z.custom<Paper>()),
+  papers: z.array(paperSchema),
+  routing: z
+    .object({
+      enabled: z.boolean(),
+      stats: routingStatsSchema,
+    })
+    .optional(),
+  excludedPapers: z.array(excludedPaperSchema).optional(),
 });
 
-export type ProcessedPapersFile = z.infer<typeof processedPapersFileSchema>;
+export type ProcessedPapersFile = {
+  reportDate: string;
+  generatedAt?: string;
+  papers: Paper[];
+  routing?: {
+    enabled: boolean;
+    stats: LifeScienceRoutingStats;
+  };
+  excludedPapers?: ExcludedPaper[];
+};
 
 export async function readProcessedPapersFile(path: string): Promise<ProcessedPapersFile> {
   const raw = await readFile(path, "utf8");
-  const parsed = processedPapersFileSchema.parse(JSON.parse(raw));
-  return parsed;
+  return processedPapersFileSchema.parse(JSON.parse(raw)) as ProcessedPapersFile;
 }
 
 export function processedPapersPath(reportDate: string): string {

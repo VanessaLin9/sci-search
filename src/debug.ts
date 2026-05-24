@@ -1,5 +1,6 @@
 import { getPaperSections } from "./filterPapers.js";
 import type { SourcePipelineStats } from "./pipeline.js";
+import type { LifeScienceRoutingStats } from "./routing/types.js";
 import type { Paper } from "./types.js";
 
 export function isDebugEnabled(): boolean {
@@ -58,6 +59,19 @@ export function logEnrichResult(before: Paper, after: Paper): void {
     `Enrich ${before.sourceId} · ${id}: ok (${after.abstract.length} chars)${hasMarkup ? " [WARN: markup left]" : ""}`,
   );
   console.log(`  start: ${preview}${after.abstract.length > 100 ? "..." : ""}`);
+}
+
+export function logRoutingSummary(stats: LifeScienceRoutingStats, enabled: boolean): void {
+  if (!enabled) {
+    console.log("Life-science routing: disabled (set ROUTE_LIFE_SCIENCE=1 to enable)");
+    return;
+  }
+
+  console.log(
+    `Life-science routing: ${stats.included} included, ${stats.excluded} excluded ` +
+      `(scope pass ${stats.passedByScope}, LLM ${stats.llmClassified}: ` +
+      `yes ${stats.llmYes}, not_sure ${stats.llmNotSure}, no ${stats.llmNo})`,
+  );
 }
 
 export function logClassifiedSample(papers: Paper[], limit = 3): void {
