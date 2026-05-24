@@ -5,7 +5,8 @@
     "publisher": "Cell Press",
     "kind": "rss",
     "url": "https://www.cell.com/cell/current.rss",
-    "priority": 1
+    "priority": 1,
+    "scope": "life-science-only"
   },
   {
     "id": "nature",
@@ -13,7 +14,8 @@
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/nature.rss",
-    "priority": 2
+    "priority": 2,
+    "scope": "broad-science"
   },
   {
     "id": "science",
@@ -21,7 +23,8 @@
     "publisher": "AAAS",
     "kind": "rss",
     "url": "https://www.science.org/action/showFeed?type=axatoc&feed=rss&jc=science",
-    "priority": 3
+    "priority": 3,
+    "scope": "broad-science"
   },
   {
     "id": "nature-methods",
@@ -29,7 +32,8 @@
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/nmeth.rss",
-    "priority": 4
+    "priority": 4,
+    "scope": "life-science-only"
   },
   {
     "id": "nature-genetics",
@@ -37,7 +41,8 @@
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/ng.rss",
-    "priority": 5
+    "priority": 5,
+    "scope": "life-science-only"
   },
   {
     "id": "nature-ecology-evolution",
@@ -45,7 +50,8 @@
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/natecolevol.rss",
-    "priority": 6
+    "priority": 6,
+    "scope": "life-science-only"
   },
   {
     "id": "nature-biotechnology",
@@ -53,7 +59,8 @@
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/nbt.rss",
-    "priority": 7
+    "priority": 7,
+    "scope": "life-science-only"
   },
   {
     "id": "nature-cell-biology",
@@ -61,7 +68,8 @@
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/ncb.rss",
-    "priority": 8
+    "priority": 8,
+    "scope": "life-science-only"
   },
   {
     "id": "nature-neuroscience",
@@ -69,7 +77,8 @@
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/neuro.rss",
-    "priority": 9
+    "priority": 9,
+    "scope": "life-science-only"
   },
   {
     "id": "nature-immunology",
@@ -77,7 +86,8 @@
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/ni.rss",
-    "priority": 10
+    "priority": 10,
+    "scope": "life-science-only"
   },
   {
     "id": "nature-microbiology",
@@ -85,7 +95,8 @@
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/nmicrobiol.rss",
-    "priority": 11
+    "priority": 11,
+    "scope": "life-science-only"
   },
   {
     "id": "science-advances",
@@ -93,7 +104,8 @@
     "publisher": "AAAS",
     "kind": "rss",
     "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv",
-    "priority": 12
+    "priority": 12,
+    "scope": "broad-science"
   },
   {
     "id": "pnas",
@@ -101,7 +113,8 @@
     "publisher": "PNAS",
     "kind": "rss",
     "url": "https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=PNAS",
-    "priority": 13
+    "priority": 13,
+    "scope": "broad-science"
   },
   {
     "id": "elife",
@@ -109,7 +122,8 @@
     "publisher": "eLife",
     "kind": "csv",
     "url": "https://prod--observer.elifesciences.org/report/latest-articles.csv",
-    "priority": 14
+    "priority": 14,
+    "scope": "life-science-only"
   },
   {
     "id": "plos-biology",
@@ -117,7 +131,8 @@
     "publisher": "PLOS",
     "kind": "rss",
     "url": "https://journals.plos.org/plosbiology/feed/atom",
-    "priority": 15
+    "priority": 15,
+    "scope": "life-science-only"
   },
   {
     "id": "nature-communications",
@@ -125,7 +140,8 @@
     "publisher": "Nature",
     "kind": "rss",
     "url": "https://www.nature.com/ncomms.rss",
-    "priority": 16
+    "priority": 16,
+    "scope": "broad-science"
   },
   {
     "id": "biorxiv",
@@ -133,6 +149,7 @@
     "publisher": "bioRxiv",
     "kind": "biorxiv-api",
     "url": "https://api.biorxiv.org/details/biorxiv",
-    "priority": 99
+    "priority": 99,
+    "scope": "life-science-only"
   }
 ]

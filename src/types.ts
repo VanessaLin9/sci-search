@@ -1,5 +1,8 @@
 export type SourceKind = "rss" | "biorxiv-api" | "csv";
 
+/** Phase 2 routing: broad-science feeds need title-only LLM life-science gate. */
+export type SourceScope = "life-science-only" | "broad-science";
+
 export type PaperSection = "single-cell-spatial" | "biology" | "other";
 
 export type Source = {
@@ -9,6 +12,7 @@ export type Source = {
   kind: SourceKind;
   url: string;
   priority: number;
+  scope: SourceScope;
 };
 
 export type Paper = {

@@ -9,6 +9,7 @@ const sourceSchema = z.object({
   kind: z.enum(["rss", "biorxiv-api", "csv"]),
   url: z.string().url(),
   priority: z.number(),
+  scope: z.enum(["life-science-only", "broad-science"]),
 });
 
 const keywordsSchema = z.object({
