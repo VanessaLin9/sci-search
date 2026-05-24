@@ -1,9 +1,10 @@
 import type { ChatCompletionCreateParamsNonStreaming } from "openai/resources/chat/completions";
 import { z } from "zod";
 import type { LifeScienceRoutingVerdict } from "../types.js";
-import { getRoutingLlmConfig, type RoutingLlmConfig } from "./config.js";
+import { getRoutingLlmConfig, maskApiKey, type RoutingLlmConfig } from "./config.js";
 import { parseJsonFromLlmContent } from "./parseLlmJson.js";
 import { createRoutingLlmClient } from "./routingLlmClient.js";
+import { formatElapsedMs, logRouting } from "./routingLog.js";
 import type { BroadScienceRoutingInput } from "./types.js";
 
 const verdictSchema = z.enum(["yes", "no", "not_sure"]);
@@ -51,6 +52,7 @@ function buildCompletionParams(
     model: config.model,
     temperature: 0,
     stream: false,
+    max_tokens: config.maxTokens,
     messages: [
       { role: "system", content: SYSTEM_PROMPT },
       {
@@ -77,27 +79,62 @@ function extractMessageContent(
   const content = message?.content?.trim();
   if (content) return content;
 
+  const reasoning = message?.reasoning_content?.trim();
+  if (reasoning) {
+    logRouting(
+      "warning: model returned reasoning_content but empty content; using reasoning as fallback",
+    );
+    return reasoning;
+  }
+
   throw new Error("Routing LLM returned empty message content");
+}
+
+function summarizeVerdicts(verdictById: Map<string, LifeScienceRoutingVerdict>): string {
+  let yes = 0;
+  let notSure = 0;
+  let no = 0;
+  for (const verdict of verdictById.values()) {
+    if (verdict === "yes") yes += 1;
+    else if (verdict === "not_sure") notSure += 1;
+    else no += 1;
+  }
+  return `yes ${yes}, not_sure ${notSure}, no ${no}`;
 }
 
 async function classifyBatch(
   items: BroadScienceRoutingInput[],
   config: RoutingLlmConfig,
+  batchLabel: string,
 ): Promise<Map<string, LifeScienceRoutingVerdict>> {
   const client = createRoutingLlmClient(config);
+  const startedAt = Date.now();
   let completion;
+
+  logRouting(
+    `${batchLabel}: POST chat/completions (${items.length} papers, max_tokens=${config.maxTokens}, timeout=${config.timeoutMs}ms)`,
+  );
 
   try {
     completion = await client.chat.completions.create(
       buildCompletionParams(items, config, config.preferJsonResponseFormat),
     );
   } catch (error) {
-    if (!config.preferJsonResponseFormat) throw error;
+    if (!config.preferJsonResponseFormat) {
+      logRouting(`${batchLabel}: failed after ${formatElapsedMs(startedAt)}`);
+      throw error;
+    }
 
+    logRouting(`${batchLabel}: json_object mode failed, retrying without response_format…`);
     completion = await client.chat.completions.create(
       buildCompletionParams(items, config, false),
     );
   }
+
+  const usage = completion.usage;
+  const usageLine = usage
+    ? `prompt=${usage.prompt_tokens ?? "?"} completion=${usage.completion_tokens ?? "?"} total=${usage.total_tokens ?? "?"}`
+    : "usage n/a";
 
   const content = extractMessageContent(completion.choices[0]?.message);
   const parsed = llmResponseSchema.parse(parseJsonFromLlmContent(content));
@@ -112,6 +149,10 @@ async function classifyBatch(
     throw new Error(`Routing LLM missing verdicts for: ${missingIds.join(", ")}`);
   }
 
+  logRouting(
+    `${batchLabel}: done in ${formatElapsedMs(startedAt)} (${usageLine}) · ${summarizeVerdicts(verdictById)}`,
+  );
+
   return verdictById;
 }
 
@@ -121,14 +162,24 @@ export async function classifyBroadSciencePapers(
   if (items.length === 0) return new Map();
 
   const config = getRoutingLlmConfig();
+  const batches = chunk(items, config.batchSize);
   const verdictById = new Map<string, LifeScienceRoutingVerdict>();
 
-  for (const batch of chunk(items, config.batchSize)) {
-    const batchVerdicts = await classifyBatch(batch, config);
+  logRouting(
+    `LLM config: model=${config.model} base=${config.baseUrl} key=${maskApiKey(config.apiKey)} ` +
+      `batchSize=${config.batchSize} batches=${batches.length} thinking=${config.disableThinking ? "off" : "on"}`,
+  );
+  logRouting(`classifying ${items.length} broad-science paper(s)…`);
+
+  for (let index = 0; index < batches.length; index += 1) {
+    const batch = batches[index]!;
+    const batchLabel = `batch ${index + 1}/${batches.length}`;
+    const batchVerdicts = await classifyBatch(batch, config, batchLabel);
     for (const [id, verdict] of batchVerdicts) {
       verdictById.set(id, verdict);
     }
   }
 
+  logRouting(`finished all batches · ${summarizeVerdicts(verdictById)}`);
   return verdictById;
 }

@@ -12,7 +12,9 @@ import {
   logSourceSummary,
 } from "./debug.js";
 import { DEFAULT_RSS_SOURCE_IDS, runPipeline } from "./pipeline.js";
+import { isLifeScienceRoutingEnabled } from "./routing/config.js";
 import { routeLifeSciencePapers } from "./routing/routeLifeScience.js";
+import { logRouting } from "./routing/routingLog.js";
 import { buildSourceScopeById } from "./routing/sourceScope.js";
 import { writeJsonFile } from "./writeJson.js";
 
@@ -62,6 +64,10 @@ async function main() {
       logSourceDetails(sourceResult.stats, sourceResult.normalized);
       logClassifiedSample(sourceResult.papers);
     }
+  }
+
+  if (isLifeScienceRoutingEnabled()) {
+    logRouting(`starting after collect (${result.papers.length} papers on report date)`);
   }
 
   const routing = await routeLifeSciencePapers({

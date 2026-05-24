@@ -12,11 +12,19 @@ export type RoutingLlmConfig = {
   baseUrl: string;
   model: string;
   batchSize: number;
+  timeoutMs: number;
+  maxTokens: number;
+  maxRetries: number;
   /** OpenAI json_object mode; skipped on NVIDIA if unsupported. */
   preferJsonResponseFormat: boolean;
   /** GLM / NVIDIA: disable chain-of-thought for cheap routing. */
   disableThinking: boolean;
 };
+
+function parsePositiveInt(value: string | undefined, fallback: number): number {
+  const parsed = Number.parseInt(value ?? "", 10);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback;
+}
 
 export function getRoutingLlmConfig(): RoutingLlmConfig {
   const apiKey =
@@ -34,18 +42,29 @@ export function getRoutingLlmConfig(): RoutingLlmConfig {
     process.env.ROUTING_LLM_BASE_URL?.trim() || "https://api.openai.com/v1"
   ).replace(/\/$/, "");
   const model = process.env.ROUTING_LLM_MODEL?.trim() || "gpt-4o-mini";
-  const batchSize = Number.parseInt(process.env.ROUTING_LLM_BATCH_SIZE ?? "25", 10);
   const nvidia = isNvidiaIntegrateApi(baseUrl);
 
   const thinkingFlag = process.env.ROUTING_LLM_ENABLE_THINKING?.trim().toLowerCase();
   const enableThinking = thinkingFlag === "1" || thinkingFlag === "true";
 
+  const defaultBatchSize = nvidia ? 8 : 25;
+  const defaultTimeoutMs = nvidia ? 180_000 : 120_000;
+  const defaultMaxTokens = nvidia ? 8192 : 4096;
+
   return {
     apiKey,
     baseUrl,
     model,
-    batchSize: Number.isFinite(batchSize) && batchSize > 0 ? batchSize : 25,
+    batchSize: parsePositiveInt(process.env.ROUTING_LLM_BATCH_SIZE, defaultBatchSize),
+    timeoutMs: parsePositiveInt(process.env.ROUTING_LLM_TIMEOUT_MS, defaultTimeoutMs),
+    maxTokens: parsePositiveInt(process.env.ROUTING_LLM_MAX_TOKENS, defaultMaxTokens),
+    maxRetries: parsePositiveInt(process.env.ROUTING_LLM_MAX_RETRIES, 1),
     preferJsonResponseFormat: !nvidia,
     disableThinking: nvidia && !enableThinking,
   };
+}
+
+export function maskApiKey(apiKey: string): string {
+  if (apiKey.length <= 8) return "***";
+  return `${apiKey.slice(0, 4)}…${apiKey.slice(-4)}`;
 }

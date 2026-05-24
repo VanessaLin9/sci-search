@@ -1,6 +1,7 @@
 import type { Paper, SourceScope } from "../types.js";
 import { classifyBroadSciencePapers } from "./classifyBroadScience.js";
-import { isLifeScienceRoutingEnabled } from "./config.js";
+import { getRoutingLlmConfig, isLifeScienceRoutingEnabled, maskApiKey } from "./config.js";
+import { logRouting } from "./routingLog.js";
 import { getSourceScope } from "./sourceScope.js";
 import { toBroadScienceRoutingInput } from "./toRoutingInput.js";
 import type {
@@ -54,6 +55,19 @@ export async function routeLifeSciencePapers(options: {
     ...paper,
     lifeScienceRouting: { verdict: "yes" as const, method: "scope-default" as const },
   }));
+
+  logRouting(
+    `split: ${lifeScienceOnly.length} life-science-only (skip LLM), ${broadScience.length} broad-science (LLM)`,
+  );
+
+  if (broadScience.length === 0) {
+    logRouting("no broad-science papers; skipping LLM");
+  } else {
+    const llmConfig = getRoutingLlmConfig();
+    logRouting(
+      `endpoint ${llmConfig.baseUrl} · model ${llmConfig.model} · key ${maskApiKey(llmConfig.apiKey)}`,
+    );
+  }
 
   const llmInputs = broadScience.map(toBroadScienceRoutingInput);
   const verdictById = await classifyBroadSciencePapers(llmInputs);

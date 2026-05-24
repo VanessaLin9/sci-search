@@ -79,6 +79,10 @@ cp .env.example .env
 | `ROUTING_LLM_BASE_URL` | `https://api.openai.com/v1` | OpenAI-compatible endpoint (e.g. NVIDIA `https://integrate.api.nvidia.com/v1`). |
 | `ROUTING_LLM_MODEL` | `gpt-4o-mini` | Model id (e.g. NVIDIA `z-ai/glm-5.1`). |
 | `ROUTING_LLM_ENABLE_THINKING` | off on NVIDIA | Set `1` only if your NVIDIA model needs thinking mode (routing keeps it off by default). |
+| `ROUTING_LLM_BATCH_SIZE` | 8 (NVIDIA) / 25 | Smaller batches = more log lines but easier to see progress. |
+| `ROUTING_LLM_TIMEOUT_MS` | 180000 (NVIDIA) | Per-request timeout; logs show `batch N/M: done in Xs` or fail after timeout. |
+
+Routing logs are prefixed with `[routing]` and print even when `DEBUG_NORMALIZED` is off.
 | `RESEND_API_KEY` | — | Resend API key |
 | `DIGEST_FROM_EMAIL` | `onboarding@resend.dev` | Sender address |
 | `DIGEST_TO_EMAIL` | — | Recipient(s): JSON array `["a@b.com","c@d.com"]` or comma-separated |

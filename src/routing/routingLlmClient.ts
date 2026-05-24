@@ -5,7 +5,7 @@ let cachedClient: OpenAI | null = null;
 let cachedConfigKey: string | null = null;
 
 function configCacheKey(config: RoutingLlmConfig): string {
-  return `${config.baseUrl}|${config.apiKey.slice(0, 8)}`;
+  return `${config.baseUrl}|${config.apiKey.slice(0, 8)}|${config.timeoutMs}|${config.maxRetries}`;
 }
 
 export function createRoutingLlmClient(config = getRoutingLlmConfig()): OpenAI {
@@ -17,6 +17,8 @@ export function createRoutingLlmClient(config = getRoutingLlmConfig()): OpenAI {
   cachedClient = new OpenAI({
     apiKey: config.apiKey,
     baseURL: config.baseUrl,
+    timeout: config.timeoutMs,
+    maxRetries: config.maxRetries,
   });
   cachedConfigKey = key;
   return cachedClient;
