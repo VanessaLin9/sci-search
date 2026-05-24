@@ -11,7 +11,8 @@ Daily paper digest prototype for RSS/API based science monitoring.
 5. Enrich missing metadata (e.g. Nature Methods abstract from article HTML)
 6. Tag keywords and classify section
 7. Write `data/processed/{reportDate}/papers.json`
-8. (Optional) Send HTML digest email via [Resend](https://resend.com)
+8. (Optional) **Life-science routing** — `life-science-only` sources pass; `broad-science` sources get a title-only LLM gate (`yes` / `no` / `not_sure`; `no` excluded)
+9. (Optional) Send HTML digest email via [Resend](https://resend.com)
 
 ## Commands
 
@@ -74,6 +75,10 @@ cp .env.example .env
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `DEBUG_NORMALIZED` | off | Set to `1` or `true` for verbose logs (`console.table`, classified samples). `0` or unset for cron-friendly output. |
+| `ROUTE_LIFE_SCIENCE` | off | Set to `1` to run Phase 2a routing after collect. Requires `ROUTING_LLM_API_KEY`, `NVIDIA_API_KEY`, or `OPENAI_API_KEY`. |
+| `ROUTING_LLM_BASE_URL` | `https://api.openai.com/v1` | OpenAI-compatible endpoint (e.g. NVIDIA `https://integrate.api.nvidia.com/v1`). |
+| `ROUTING_LLM_MODEL` | `gpt-4o-mini` | Model id (e.g. NVIDIA `z-ai/glm-5.1`). |
+| `ROUTING_LLM_ENABLE_THINKING` | off on NVIDIA | Set `1` only if your NVIDIA model needs thinking mode (routing keeps it off by default). |
 | `RESEND_API_KEY` | — | Resend API key |
 | `DIGEST_FROM_EMAIL` | `onboarding@resend.dev` | Sender address |
 | `DIGEST_TO_EMAIL` | — | Recipient(s): JSON array `["a@b.com","c@d.com"]` or comma-separated |
