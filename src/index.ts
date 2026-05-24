@@ -11,7 +11,8 @@ import {
   logSourceDetails,
   logSourceSummary,
 } from "./debug.js";
-import { DEFAULT_RSS_SOURCE_IDS, runPipeline } from "./pipeline.js";
+import { countPapersBySection } from "./filterPapers.js";
+import { DEFAULT_RSS_SOURCE_IDS, enrichAndClassifyPapers, runPipeline } from "./pipeline.js";
 import { isLifeScienceRoutingEnabled } from "./routing/config.js";
 import { routeLifeSciencePapers } from "./routing/routeLifeScience.js";
 import { logRouting } from "./routing/routingLog.js";
@@ -62,25 +63,44 @@ async function main() {
 
     if (isDebugEnabled()) {
       logSourceDetails(sourceResult.stats, sourceResult.normalized);
-      logClassifiedSample(sourceResult.papers);
     }
-  }
-
-  if (isLifeScienceRoutingEnabled()) {
-    logRouting(`starting after collect (${result.papers.length} papers on report date)`);
   }
 
   const routing = await routeLifeSciencePapers({
     papers: result.papers,
     scopeBySourceId,
   });
+
+  if (routing.enabled) {
+    logRouting(`before enrich: ${routing.included.length} to enrich, ${routing.excluded.length} skipped`);
+  }
   logRoutingSummary(routing.stats, routing.enabled);
+
+  const { papers: classified, enrichedCount, enrichExcludedCount } =
+    await enrichAndClassifyPapers(routing.included, keywords);
+
+  if (enrichedCount > 0 || enrichExcludedCount > 0) {
+    const enrichExcluded =
+      enrichExcludedCount > 0 ? `, ${enrichExcludedCount} excluded by enrich` : "";
+    console.log(`Enriched ${enrichedCount} abstract(s)${enrichExcluded}`);
+  }
+
+  if (isDebugEnabled()) {
+    logClassifiedSample(classified);
+  }
+
+  const sections = countPapersBySection(classified);
+  console.log(
+    `Sections: ${Object.entries(sections)
+      .map(([section, count]) => `${section}: ${count}`)
+      .join(", ")}`,
+  );
 
   const outputPath = `data/processed/${reportDate}/papers.json`;
   await writeJsonFile(outputPath, {
     reportDate,
     generatedAt: new Date().toISOString(),
-    papers: routing.included,
+    papers: classified,
     routing: {
       enabled: routing.enabled,
       stats: routing.stats,
@@ -89,8 +109,8 @@ async function main() {
   });
 
   console.log(
-    `Wrote ${outputPath} (${routing.included.length} papers` +
-      (routing.excluded.length > 0 ? `, ${routing.excluded.length} excluded` : "") +
+    `Wrote ${outputPath} (${classified.length} papers` +
+      (routing.excluded.length > 0 ? `, ${routing.excluded.length} routing-excluded` : "") +
       ")",
   );
 }

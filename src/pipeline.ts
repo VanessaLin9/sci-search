@@ -58,7 +58,7 @@ export type PipelineRunResult = {
   sourceResults: SourceProcessResult[];
 };
 
-function classifyPaper(paper: Paper, keywords: KeywordsConfig): Paper {
+export function classifyPaper(paper: Paper, keywords: KeywordsConfig): Paper {
   const searchableText = [paper.title, paper.abstract].filter(Boolean).join(" ");
   const primaryMatches = matchKeywords(searchableText, keywords.primary);
   const biologyMatches = matchKeywords(searchableText, keywords.biology);
@@ -72,7 +72,7 @@ function classifyPaper(paper: Paper, keywords: KeywordsConfig): Paper {
 
 export async function processRssSource(
   source: Source,
-  keywords: KeywordsConfig,
+  _keywords: KeywordsConfig,
   reportDate: string,
 ): Promise<SourceProcessResult> {
   if (source.kind !== "rss") {
@@ -84,16 +84,14 @@ export async function processRssSource(
     .map((item) => normalizeRssItemToPaper(item, source))
     .filter((paper): paper is Paper => paper !== null);
   const deduped = dedupePapers(normalized);
-  const onReportDate = filterPapersByDate(deduped, reportDate);
-  const {
-    papers: enrichedOnReportDate,
-    enrichedCount,
-    excludedCount,
-  } = await enrichPapers(onReportDate);
-  const classified = enrichedOnReportDate.map((paper) => classifyPaper(paper, keywords));
+  const onReportDate = filterPapersByDate(deduped, reportDate).map((paper) => ({
+    ...paper,
+    matchedKeywords: [],
+    section: "other" as const,
+  }));
 
   return {
-    papers: classified,
+    papers: onReportDate,
     normalized,
     stats: {
       sourceId: source.id,
@@ -102,10 +100,28 @@ export async function processRssSource(
       normalizedCount: normalized.length,
       dedupedCount: deduped.length,
       onReportDateCount: onReportDate.length,
-      enrichedCount,
-      excludedCount,
-      sectionCounts: countPapersBySection(classified),
+      enrichedCount: 0,
+      excludedCount: 0,
+      sectionCounts: countPapersBySection(onReportDate),
     },
+  };
+}
+
+/** Enrich then keyword/section tagging (after life-science routing). */
+export async function enrichAndClassifyPapers(
+  papers: Paper[],
+  keywords: KeywordsConfig,
+): Promise<{
+  papers: Paper[];
+  enrichedCount: number;
+  enrichExcludedCount: number;
+}> {
+  const { papers: enriched, enrichedCount, excludedCount } = await enrichPapers(papers);
+  const classified = enriched.map((paper) => classifyPaper(paper, keywords));
+  return {
+    papers: classified,
+    enrichedCount,
+    enrichExcludedCount: excludedCount,
   };
 }
 

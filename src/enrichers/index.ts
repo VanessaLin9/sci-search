@@ -37,7 +37,7 @@ function hasUsableAbstract(paper: Paper): boolean {
   return !isNatureRssTeaserAbstract(abstract);
 }
 
-/** Caller should pass papers already filtered to the report date (see pipeline). */
+/** Caller should pass papers after report-date filter and life-science routing (see pipeline). */
 export async function enrichPapers(papers: Paper[]): Promise<EnrichPapersResult> {
   let enrichedCount = 0;
   let excludedCount = 0;

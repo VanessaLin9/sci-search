@@ -8,10 +8,10 @@ Daily paper digest prototype for RSS/API based science monitoring.
 2. Fetch RSS/API metadata
 3. Normalize to a shared `Paper` schema (per-source normalizers)
 4. Dedupe and filter by report date (Asia/Taipei, default yesterday)
-5. Enrich missing metadata (e.g. Nature Methods abstract from article HTML)
-6. Tag keywords and classify section
-7. Write `data/processed/{reportDate}/papers.json`
-8. (Optional) **Life-science routing** — `life-science-only` sources pass; `broad-science` sources get a title-only LLM gate (`yes` / `no` / `not_sure`; `no` excluded)
+5. (Optional) **Life-science routing** — title-only LLM gate for `broad-science` sources (`no` → skip enrich)
+6. Enrich missing metadata (only papers that passed routing; e.g. Nature abstract from HTML)
+7. Tag keywords and classify section
+8. Write `data/processed/{reportDate}/papers.json`
 9. (Optional) Send HTML digest email via [Resend](https://resend.com)
 
 ## Commands
