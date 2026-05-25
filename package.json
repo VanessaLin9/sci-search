@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node --import tsx src/index.ts",
     "send-digest": "node --import tsx src/commands/sendDigest.ts",
-    "daily": "npm run dev && npm run send-digest",
+    "write-preview": "node --import tsx src/commands/writeDigestPreview.ts",
+    "daily": "npm run dev && npm run send-digest && npm run write-preview",
     "test-routing-llm": "node --import tsx src/commands/testRoutingLlm.ts",
     "test-digest-llm": "node --import tsx src/commands/testDigestLlm.ts",
     "check": "tsc --noEmit",

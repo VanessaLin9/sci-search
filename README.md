@@ -19,7 +19,8 @@ Daily paper digest prototype for RSS/API based science monitoring.
 ```bash
 npm run dev
 npm run send-digest
-npm run daily          # dev + send-digest in one shot
+npm run write-preview  # docs/index.html for GitHub Pages (from latest papers.json)
+npm run daily          # dev + send-digest + write-preview
 npm run check
 ```
 
@@ -53,7 +54,15 @@ npm run daily
 Workflow: [`.github/workflows/daily.yml`](.github/workflows/daily.yml)
 
 - Schedule: **06:30 Asia/Taipei** daily (`workflow_dispatch` also supported).
-- Steps: `npm run dev` → `npm run send-digest` → commit `data/processed/{date}/papers.json` → upload artifact.
+- Steps: `npm run dev` → `npm run send-digest` → `npm run write-preview` → commit `data/processed/{date}/` and `docs/` → upload artifact.
+
+### Public preview (GitHub Pages)
+
+The latest digest HTML is published from the [`docs/`](docs/) folder (same layout as the email). After each daily run, CI updates `docs/index.html` and `docs/archive/{date}.html`.
+
+**One-time setup:** GitHub repo → **Settings** → **Pages** → Build and deployment → **Deploy from a branch** → Branch `main`, folder **`/docs`**.
+
+Share the site URL (e.g. `https://<user>.github.io/<repo>/`) so people can preview before subscribing.
 
 Add these **repository secrets** (Settings → Secrets and variables → Actions):
 
@@ -63,6 +72,8 @@ Add these **repository secrets** (Settings → Secrets and variables → Actions
 | `DIGEST_TO_EMAIL` | yes | JSON array or comma-separated recipients |
 | `ROUTING_LLM_API_KEY` | yes (if routing on) | Legacy fallbacks: `NVIDIA_API_KEY`, `OPENAI_API_KEY` |
 | `ROUTING_LLM_MODEL` | yes (if routing on) | Model id — not committed (private) |
+| `DIGEST_LLM_MODEL` | no | Digest tagging/summary model; defaults to `ROUTING_LLM_MODEL` in CI |
+| `DIGEST_LLM_API_KEY` | no | Falls back to `ROUTING_LLM_API_KEY` in code |
 | `DIGEST_FROM_EMAIL` | no | Default `onboarding@resend.dev` |
 | `DIGEST_SUBJECT_PREFIX` | no | Default `Paper Digest` |
 

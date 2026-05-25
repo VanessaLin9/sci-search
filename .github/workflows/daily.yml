@@ -23,6 +23,9 @@ jobs:
       ROUTE_LIFE_SCIENCE: "1"
       ROUTING_LLM_API_KEY: ${{ secrets.ROUTING_LLM_API_KEY }}
       ROUTING_LLM_MODEL: ${{ secrets.ROUTING_LLM_MODEL }}
+      ENABLE_LLM_DIGEST: "1"
+      DIGEST_LLM_API_KEY: ${{ secrets.DIGEST_LLM_API_KEY }}
+      DIGEST_LLM_MODEL: ${{ secrets.DIGEST_LLM_MODEL || secrets.ROUTING_LLM_MODEL }}
     steps:
       - uses: actions/checkout@v4
 
@@ -37,15 +40,15 @@ jobs:
       - name: Typecheck
         run: npm run check
 
-      - name: Collect papers
-        run: npm run dev
-
       - name: Resolve report date
         id: report
         run: |
           REPORT_DATE="$(node --import tsx -e "import { defaultReportDateInTaipei } from './src/date.ts'; console.log(defaultReportDateInTaipei())")"
           echo "date=${REPORT_DATE}" >> "$GITHUB_OUTPUT"
           echo "Report date: ${REPORT_DATE}"
+
+      - name: Collect papers
+        run: npm run dev -- --date "${{ steps.report.outputs.date }}"
 
       - name: Summarize collected papers
         run: |
@@ -62,6 +65,9 @@ jobs:
       - name: Send digest email
         run: npm run send-digest -- --date "${{ steps.report.outputs.date }}"
 
+      - name: Update public preview (GitHub Pages)
+        run: npm run write-preview -- --date "${{ steps.report.outputs.date }}"
+
       - name: Upload papers artifact
         uses: actions/upload-artifact@v4
         with:
@@ -69,14 +75,14 @@ jobs:
           path: data/processed/${{ steps.report.outputs.date }}/papers.json
           if-no-files-found: error
 
-      - name: Commit processed data
+      - name: Commit processed data and preview
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "data/processed/${{ steps.report.outputs.date }}/"
+          git add "data/processed/${{ steps.report.outputs.date }}/" docs/
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: daily digest data for ${{ steps.report.outputs.date }}"
+            git commit -m "chore: daily digest data and preview for ${{ steps.report.outputs.date }}"
             git push
           fi
