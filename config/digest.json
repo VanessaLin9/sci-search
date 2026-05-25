@@ -1,0 +1,11 @@
+{
+  "maxFeatured": 12,
+  "overflowShowTitleZh": true,
+  "baseUrl": "https://integrate.api.nvidia.com/v1",
+  "maxPapersPerBatch": 8,
+  "maxInputTokens": 28000,
+  "maxTokens": 4096,
+  "timeoutMs": 180000,
+  "maxRetries": 1,
+  "enableThinking": false
+}

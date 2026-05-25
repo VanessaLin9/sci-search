@@ -5,6 +5,11 @@ export type SourceScope = "life-science-only" | "broad-science";
 
 export type PaperSection = "single-cell-spatial" | "biology" | "other";
 
+/** Phase 2b digest: main-line bucket for email layout and featured selection. */
+export type DigestLine = "line-a" | "line-b" | "preprint" | "skip";
+
+export type DigestTaggingMethod = "llm" | "keyword-fallback";
+
 /** Phase 2a: is this paper life-science relevant? */
 export type LifeScienceRoutingVerdict = "yes" | "no" | "not_sure";
 
@@ -45,4 +50,13 @@ export type Paper = {
 export type ClassifiedPaper = Paper & {
   matchedKeywords: string[];
   section: PaperSection;
+  /** Phase 2b: email main line (A/B/preprint); set after LLM tag or keyword fallback. */
+  digestLine?: DigestLine;
+  digestTaggingMethod?: DigestTaggingMethod;
+  /** Top N papers with full 繁中 summary in the email body. */
+  featured?: boolean;
+  titleZh?: string;
+  summaryZh?: string;
+  /** English topic tags for featured cards. */
+  topicTags?: string[];
 };

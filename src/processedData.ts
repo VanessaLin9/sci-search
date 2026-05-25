@@ -24,6 +24,12 @@ const rawPaperSchema = z.object({
   lifeScienceRouting: lifeScienceRoutingSchema.optional(),
   matchedKeywords: z.array(z.string()).optional(),
   section: z.enum(["single-cell-spatial", "biology", "other"]).optional(),
+  digestLine: z.enum(["line-a", "line-b", "preprint", "skip"]).optional(),
+  digestTaggingMethod: z.enum(["llm", "keyword-fallback"]).optional(),
+  featured: z.boolean().optional(),
+  titleZh: z.string().optional(),
+  summaryZh: z.string().optional(),
+  topicTags: z.array(z.string()).optional(),
 });
 
 const classifiedPaperSchema = rawPaperSchema.extend({

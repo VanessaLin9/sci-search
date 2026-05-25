@@ -30,7 +30,22 @@ const routingFileSchema = z.object({
 
 export type RoutingFileConfig = z.infer<typeof routingFileSchema>;
 
+const digestFileSchema = z.object({
+  maxFeatured: z.number().int().positive(),
+  overflowShowTitleZh: z.boolean(),
+  baseUrl: z.string().url(),
+  maxPapersPerBatch: z.number().int().positive(),
+  maxInputTokens: z.number().int().positive(),
+  maxTokens: z.number().int().positive(),
+  timeoutMs: z.number().int().positive(),
+  maxRetries: z.number().int().positive(),
+  enableThinking: z.boolean(),
+});
+
+export type DigestFileConfig = z.infer<typeof digestFileSchema>;
+
 let routingFileCache: RoutingFileConfig | undefined;
+let digestFileCache: DigestFileConfig | undefined;
 
 export async function loadSources(path = "config/sources.json"): Promise<Source[]> {
   const raw = await readFile(path, "utf8");
@@ -48,4 +63,12 @@ export function loadRoutingFileConfig(path = "config/routing.json"): RoutingFile
     routingFileCache = routingFileSchema.parse(JSON.parse(raw));
   }
   return routingFileCache;
+}
+
+export function loadDigestFileConfig(path = "config/digest.json"): DigestFileConfig {
+  if (!digestFileCache) {
+    const raw = readFileSync(path, "utf8");
+    digestFileCache = digestFileSchema.parse(JSON.parse(raw));
+  }
+  return digestFileCache;
 }
