@@ -1,118 +1,169 @@
 # Paper Digest
 
-Daily paper digest prototype for RSS/API based science monitoring.
+Daily **life-science** paper digest: collect journal RSS feeds, filter with an LLM gate, pick up to **12 featured** articles with Traditional Chinese summaries, email subscribers, and publish the same HTML on **GitHub Pages** for preview.
+
+Report date defaults to **yesterday (Asia/Taipei)**.
+
+## What MVP v1 delivers
+
+| Output | Description |
+|--------|-------------|
+| **Email** | HTML digest via [Resend](https://resend.com): featured cards (EN title, 繁中副標, 繁中摘要, English topic tags) in 主線 A / B / 預印本 sections, plus overflow titles grouped by journal |
+| **Public preview** | [`docs/index.html`](docs/index.html) updated by CI — enable Pages from `/docs` on `main` |
+| **Data** | `data/processed/{date}/papers.json` — routing stats, digest fields, excluded papers |
 
 ## Pipeline
 
-1. Load sources and keywords
-2. Fetch RSS/API metadata
-3. Normalize to a shared `Paper` schema (per-source normalizers)
-4. Dedupe and filter by report date (Asia/Taipei, default yesterday)
-5. (Optional) **Life-science routing** — title-only LLM gate for `broad-science` sources (`no` → skip enrich)
-6. Enrich missing metadata (only papers that passed routing; e.g. Nature abstract from HTML)
-7. Tag keywords and classify section
-8. Write `data/processed/{reportDate}/papers.json`
-9. (Optional) Send HTML digest email via [Resend](https://resend.com)
+```text
+sources (config/sources.json)
+  → fetch RSS → normalize → dedupe → filter by report date
+  → life-science routing (2a): broad-science titles → LLM yes/no/not_sure
+  → enrich abstracts (Nature HTML, etc.)
+  → keyword section (legacy field, still in JSON)
+  → digest phase (2b, ENABLE_LLM_DIGEST=1):
+       tag digestLine (line-a | line-b | preprint | skip), batch LLM
+       select featured ≤12 (line priority → source priority)
+       summarize featured: one API call per paper → titleZh, summaryZh, topicTags
+       translate overflow titles: batch LLM → titleZh only
+  → papers.json
+  → send-digest (email) + write-preview (docs/)
+```
+
+Papers with routing `no`, enrich drop, or digest `skip` do not appear in the email body.
+
+## Email layout
+
+**Featured (max 12)** — full card per paper:
+
+- English headline (link)
+- 繁中標題 (`titleZh`)
+- English `topicTags`
+- 繁中摘要 (`summaryZh`, 3–5 sentences from abstract)
+- Grouped by `digestLine`: 單細胞/空間組學 (A), 其他重要生物學 (B), preprint placeholder
+
+**Overflow (13+)** — compact list:
+
+- Grouped by journal; EN title link + gray 繁中標題 when translation ran
 
 ## Commands
 
 ```bash
-npm run dev
-npm run send-digest
-npm run write-preview  # docs/index.html for GitHub Pages (from latest papers.json)
-npm run daily          # dev + send-digest + write-preview
+npm ci
 npm run check
 ```
 
-`send-digest` only reads `data/processed/{date}/papers.json`. After changing filters or enrich logic, run `npm run dev` first (it overwrites the file; no need to delete manually).
+| Script | Purpose |
+|--------|---------|
+| `npm run dev` | Full pipeline → `data/processed/{date}/papers.json` |
+| `npm run send-digest` | Email from existing `papers.json` |
+| `npm run write-preview` | `docs/index.html` + `docs/archive/{date}.html` |
+| `npm run daily` | `dev` → `send-digest` → `write-preview` |
+| `npm run test-routing-llm` | One-paper routing smoke test |
+| `npm run test-digest-llm` | One-paper digest tagging smoke test |
+
+Date flag (all three main commands):
 
 ```bash
 npm run dev -- --date 2026-05-22
-npm run send-digest -- --date 2026-05-22
+npm run send-digest -- --date 2026-05-22 --dry-run
+npm run write-preview -- --date 2026-05-22
 ```
 
-### Email digest (Resend)
+`test-digest-llm -- --use-routing` uses routing API key/model with digest caps from `config/digest.json`.
 
-After `npm run dev` writes `papers.json`, send the digest:
+## Configuration
 
-```bash
-npm run send-digest
-npm run send-digest -- --date 2026-05-22
-npm run send-digest -- --dry-run
-```
+**Versioned (no secrets)**
 
-Requires `RESEND_API_KEY`, `DIGEST_TO_EMAIL`, and `DIGEST_FROM_EMAIL` in `.env` (see `.env.example`). Free Resend accounts can use `onboarding@resend.dev` as the sender until a domain is verified.
+| File | Role |
+|------|------|
+| [`config/sources.json`](config/sources.json) | RSS feeds, `scope` (`life-science-only` / `broad-science`), `priority` |
+| [`config/keywords.json`](config/keywords.json) | Keyword fallback for `section` / digest line |
+| [`config/routing.json`](config/routing.json) | Routing LLM endpoint, batch, tokens |
+| [`config/digest.json`](config/digest.json) | `maxFeatured`, digest LLM limits, `summarizeConcurrency` |
 
-One-shot local run (collect + email):
+**Environment (`.env` locally, Secrets in CI)** — copy from [`.env.example`](.env.example):
 
-```bash
-npm run daily
-```
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `RESEND_API_KEY` | for email | Resend API key |
+| `DIGEST_TO_EMAIL` | for email | JSON array or comma-separated recipients |
+| `DIGEST_FROM_EMAIL` | no | Default `onboarding@resend.dev` |
+| `DIGEST_SUBJECT_PREFIX` | no | Default `Paper Digest` |
+| `ROUTE_LIFE_SCIENCE` | no | `1` to enable routing (on in CI) |
+| `ROUTING_LLM_API_KEY` | if routing | Or `NVIDIA_API_KEY` / `OPENAI_API_KEY` |
+| `ROUTING_LLM_MODEL` | if routing | Model id (not in repo) |
+| `ENABLE_LLM_DIGEST` | no | `1` for LLM tagging + summarize + translate |
+| `DIGEST_LLM_API_KEY` | no | Falls back to routing key |
+| `DIGEST_LLM_MODEL` | if digest on | e.g. `minimaxai/minimax-m2.7` on NVIDIA integrate |
+| `DEBUG_NORMALIZED` | no | `1` for verbose logs |
 
-### GitHub Actions
+Digest logs use `[digest]`; routing uses `[routing]` (not gated by debug).
+
+## GitHub Actions
 
 Workflow: [`.github/workflows/daily.yml`](.github/workflows/daily.yml)
 
-- Schedule: **06:30 Asia/Taipei** daily (`workflow_dispatch` also supported).
-- Steps: `npm run dev` → `npm run send-digest` → `npm run write-preview` → commit `data/processed/{date}/` and `docs/` → upload artifact.
+- **Schedule:** 06:30 Asia/Taipei daily (`workflow_dispatch` supported)
+- **Steps:** resolve date → `dev` → `send-digest` → `write-preview` → artifact → commit `data/processed/{date}/` and `docs/`
 
-### Public preview (GitHub Pages)
-
-The latest digest HTML is published from the [`docs/`](docs/) folder (same layout as the email). After each daily run, CI updates `docs/index.html` and `docs/archive/{date}.html`.
-
-**One-time setup:** GitHub repo → **Settings** → **Pages** → Build and deployment → **Deploy from a branch** → Branch `main`, folder **`/docs`**.
-
-Share the site URL (e.g. `https://<user>.github.io/<repo>/`) so people can preview before subscribing.
-
-Add these **repository secrets** (Settings → Secrets and variables → Actions):
+### Repository secrets
 
 | Secret | Required | Notes |
 |--------|----------|-------|
-| `RESEND_API_KEY` | yes | Resend API key |
-| `DIGEST_TO_EMAIL` | yes | JSON array or comma-separated recipients |
-| `ROUTING_LLM_API_KEY` | yes (if routing on) | Legacy fallbacks: `NVIDIA_API_KEY`, `OPENAI_API_KEY` |
-| `ROUTING_LLM_MODEL` | yes (if routing on) | Model id — not committed (private) |
-| `DIGEST_LLM_MODEL` | no | Digest tagging/summary model; defaults to `ROUTING_LLM_MODEL` in CI |
-| `DIGEST_LLM_API_KEY` | no | Falls back to `ROUTING_LLM_API_KEY` in code |
-| `DIGEST_FROM_EMAIL` | no | Default `onboarding@resend.dev` |
-| `DIGEST_SUBJECT_PREFIX` | no | Default `Paper Digest` |
+| `RESEND_API_KEY` | yes | |
+| `DIGEST_TO_EMAIL` | yes | Include all subscribers (JSON array recommended) |
+| `ROUTING_LLM_API_KEY` | yes | Used for routing; digest can reuse via fallback |
+| `ROUTING_LLM_MODEL` | yes | |
+| `DIGEST_LLM_MODEL` | recommended | CI falls back to `ROUTING_LLM_MODEL` if unset |
+| `DIGEST_LLM_API_KEY` | no | Optional separate key |
+| `DIGEST_FROM_EMAIL` | no | |
+| `DIGEST_SUBJECT_PREFIX` | no | |
 
-The workflow sets `ROUTE_LIFE_SCIENCE=1`. Non-secret routing settings (endpoint, batch size, token limits) live in [`config/routing.json`](config/routing.json).
+### GitHub Pages (public preview)
 
-After the first successful run, open the commit on `main` or download the `papers-{date}` artifact from the Actions run to inspect collected data.
+1. Repo → **Settings** → **Pages**
+2. Source: branch **`main`**, folder **`/docs`**
+3. After the next successful daily run, open `https://<user>.github.io/<repo>/`
 
-### Local environment
+Archives: `docs/archive/YYYY-MM-DD.html`.
+
+## Local quick start
 
 ```bash
 cp .env.example .env
+# Set RESEND_*, ROUTING_LLM_*, ENABLE_LLM_DIGEST=1, DIGEST_LLM_MODEL=...
+
+npm run daily
+# Or step by step:
+npm run dev
+npm run send-digest -- --dry-run
+npm run write-preview
+open docs/index.html
 ```
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `DEBUG_NORMALIZED` | off | `1` or `true` for verbose pipeline logs |
-| `ROUTE_LIFE_SCIENCE` | off locally | `1` to run Phase 2a routing (CI enables this in `daily.yml`) |
-| `ROUTING_LLM_API_KEY` | — | When routing is on; or legacy `NVIDIA_API_KEY` / `OPENAI_API_KEY` |
-| `ROUTING_LLM_MODEL` | — | **Required** when routing is on; keep in `.env` only |
-| `RESEND_API_KEY` | — | For `send-digest` |
-| `DIGEST_TO_EMAIL` | — | Recipients for digest email |
-| `DIGEST_FROM_EMAIL` | `onboarding@resend.dev` | Sender address |
-| `DIGEST_SUBJECT_PREFIX` | `Paper Digest` | Email subject prefix |
+## Project layout (high level)
 
-Routing logs are prefixed with `[routing]` and print even when `DEBUG_NORMALIZED` is off.
-
-### Debug routing LLM (single Science paper)
-
-```bash
-npm run test-routing-llm
-npm run test-routing-llm -- --model your-model-id
-npm run test-routing-llm -- --fixture physics
-npm run test-routing-llm -- --title "Your paper title here"
+```text
+src/
+  pipeline.ts, index.ts          # orchestration
+  routing/                       # Phase 2a life-science gate
+  digest/                        # Phase 2b tag, select, summarize, translate
+  email/                         # Resend + HTML render
+  commands/                      # CLI entrypoints
+config/                          # sources, keywords, routing, digest
+docs/                            # GitHub Pages (generated HTML)
+data/processed/{date}/papers.json
 ```
 
-Prints config, request params, raw API response, and parsed verdict. Uses `.env` for API key and model; endpoint/batch settings from `config/routing.json`. Does not run the full RSS pipeline.
+## MVP v1 scope / known limits
 
-One-off without editing `.env`:
+- Preprint section is a **placeholder** until bioRxiv/medRxiv (or similar) is wired in `sources.json`
+- **Zero papers** on some weekends/holidays → empty-state email and preview (expected)
+- Email and preview share one renderer; no separate “subscriber-only” content
+- LLM costs and latency scale with paper count (tagging batches + 12 summarize calls + overflow translate)
+- `section` from keywords remains in JSON for compatibility; **email uses `digestLine` + `featured`**, not the old three keyword sections
 
-```bash
-DEBUG_NORMALIZED=1 npm run dev
-```
+## License / attribution
+
+Private prototype; adjust as needed for your lab or project policy.

@@ -50,16 +50,18 @@ jobs:
       - name: Collect papers
         run: npm run dev -- --date "${{ steps.report.outputs.date }}"
 
-      - name: Summarize collected papers
+      - name: Log digest stats
         run: |
           FILE="data/processed/${{ steps.report.outputs.date }}/papers.json"
           node --import tsx -e "
             import { readFile } from 'node:fs/promises';
             const data = JSON.parse(await readFile('${FILE}', 'utf8'));
-            const bySection = { 'single-cell-spatial': 0, biology: 0, other: 0 };
-            for (const p of data.papers) bySection[p.section] = (bySection[p.section] ?? 0) + 1;
+            const d = data.digest ?? {};
             console.log('papers:', data.papers.length);
-            console.log('by section:', bySection);
+            console.log('digest tagging:', d.tagging);
+            console.log('digest selection:', d.selection);
+            console.log('digest summarize:', d.summarize);
+            console.log('digest translate:', d.translate);
           "
 
       - name: Send digest email
