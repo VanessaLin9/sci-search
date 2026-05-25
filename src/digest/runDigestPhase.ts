@@ -1,11 +1,13 @@
+import { loadDigestFileConfig } from "../config.js";
 import { digestLineFromKeywords } from "./keywordDigestLine.js";
 import { isDigestLlmEnabled } from "./config.js";
 import { logDigest } from "./digestLog.js";
 import { selectFeaturedPapers, buildSourcePriorityById } from "./selectFeatured.js";
+import { summarizeFeaturedPapers } from "./summarizePapers.js";
 import { tagTitlesWithLlm } from "./tagTitles.js";
-import type { DigestPhaseResult } from "./types.js";
+import { translateOverflowTitles } from "./translateTitles.js";
+import type { DigestPhaseResult, DigestSummarizeStats, DigestTranslateStats } from "./types.js";
 import type { ClassifiedPaper, DigestLine, DigestTaggingMethod, Source, SourceScope } from "../types.js";
-import { loadDigestFileConfig } from "../config.js";
 
 function applyDigestLines(
   papers: ClassifiedPaper[],
@@ -27,13 +29,52 @@ function tagWithKeywordFallback(papers: ClassifiedPaper[]): ClassifiedPaper[] {
   }));
 }
 
+function applySummarizeFields(
+  papers: ClassifiedPaper[],
+  fieldsById: Map<string, { titleZh: string; summaryZh: string; topicTags: string[] }>,
+): ClassifiedPaper[] {
+  return papers.map((paper) => {
+    const fields = fieldsById.get(paper.id);
+    if (!fields) return paper;
+    return {
+      ...paper,
+      titleZh: fields.titleZh,
+      summaryZh: fields.summaryZh,
+      topicTags: fields.topicTags,
+    };
+  });
+}
+
+function applyOverflowTitleZh(
+  papers: ClassifiedPaper[],
+  titleZhById: Map<string, string>,
+): ClassifiedPaper[] {
+  return papers.map((paper) => {
+    const titleZh = titleZhById.get(paper.id);
+    if (!titleZh) return paper;
+    return { ...paper, titleZh };
+  });
+}
+
+const emptySummarizeStats = (): DigestSummarizeStats => ({
+  requested: 0,
+  llmSummarized: 0,
+  failed: 0,
+});
+
+const emptyTranslateStats = (): DigestTranslateStats => ({
+  requested: 0,
+  llmTranslated: 0,
+  failed: 0,
+});
+
 export async function runDigestPhase(options: {
   papers: ClassifiedPaper[];
   sources: Source[];
   scopeBySourceId: ReadonlyMap<string, SourceScope>;
 }): Promise<DigestPhaseResult> {
   const { papers, sources, scopeBySourceId } = options;
-  const { maxFeatured } = loadDigestFileConfig();
+  const { maxFeatured, overflowShowTitleZh } = loadDigestFileConfig();
   const priorityBySourceId = buildSourcePriorityById(sources);
   const llmTagging = isDigestLlmEnabled();
 
@@ -53,6 +94,8 @@ export async function runDigestPhase(options: {
         preprint: 0,
         skip: 0,
       },
+      summarize: emptySummarizeStats(),
+      translate: emptyTranslateStats(),
     };
   }
 
@@ -95,11 +138,59 @@ export async function runDigestPhase(options: {
     `selection: ${selectionStats.featured} featured, ${selectionStats.overflow} overflow, ${selectionStats.skip} skip (max ${maxFeatured})`,
   );
 
+  let enriched = selected;
+  let summarizeStats = emptySummarizeStats();
+  let translateStats = emptyTranslateStats();
+
+  if (llmTagging) {
+    try {
+      const { fieldsById, stats } = await summarizeFeaturedPapers({
+        papers: selected,
+        scopeBySourceId,
+      });
+      enriched = applySummarizeFields(enriched, fieldsById);
+      summarizeStats = stats;
+    } catch (error) {
+      console.warn(
+        "Digest summarize failed entirely:",
+        error instanceof Error ? error.message : error,
+      );
+      summarizeStats = {
+        requested: selected.filter((paper) => paper.featured).length,
+        llmSummarized: 0,
+        failed: selected.filter((paper) => paper.featured).length,
+      };
+    }
+
+    if (overflowShowTitleZh) {
+      try {
+        const { titleZhById, stats } = await translateOverflowTitles({ papers: enriched });
+        enriched = applyOverflowTitleZh(enriched, titleZhById);
+        translateStats = stats;
+      } catch (error) {
+        console.warn(
+          "Digest translate failed entirely:",
+          error instanceof Error ? error.message : error,
+        );
+        const overflowCount = enriched.filter(
+          (paper) => !paper.featured && paper.digestLine && paper.digestLine !== "skip",
+        ).length;
+        translateStats = {
+          requested: overflowCount,
+          llmTranslated: 0,
+          failed: overflowCount,
+        };
+      }
+    }
+  }
+
   return {
     enabled: true,
     llmTagging,
-    papers: selected,
+    papers: enriched,
     tagging: taggingStats,
     selection: selectionStats,
+    summarize: summarizeStats,
+    translate: translateStats,
   };
 }

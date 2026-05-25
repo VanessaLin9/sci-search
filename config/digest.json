@@ -7,5 +7,6 @@
   "maxTokens": 8192,
   "timeoutMs": 180000,
   "maxRetries": 1,
-  "enableThinking": false
+  "enableThinking": false,
+  "summarizeConcurrency": 3
 }

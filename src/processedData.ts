@@ -72,6 +72,20 @@ const digestStatsSchema = z.object({
     preprint: z.number(),
     skip: z.number(),
   }),
+  summarize: z
+    .object({
+      requested: z.number(),
+      llmSummarized: z.number(),
+      failed: z.number(),
+    })
+    .optional(),
+  translate: z
+    .object({
+      requested: z.number(),
+      llmTranslated: z.number(),
+      failed: z.number(),
+    })
+    .optional(),
 });
 
 const processedPapersFileSchema = z.object({

@@ -88,6 +88,18 @@ async function main() {
       `(line-a ${result.digest.selection.lineA}, line-b ${result.digest.selection.lineB}, ` +
       `preprint ${result.digest.selection.preprint}, skip ${result.digest.selection.skip})`,
   );
+  if (result.digest.llmTagging) {
+    logDigest(
+      `summarize: ${result.digest.summarize.llmSummarized}/${result.digest.summarize.requested} featured` +
+        (result.digest.summarize.failed > 0 ? `, ${result.digest.summarize.failed} failed` : ""),
+    );
+    if (result.digest.translate.requested > 0) {
+      logDigest(
+        `translate: ${result.digest.translate.llmTranslated}/${result.digest.translate.requested} overflow` +
+          (result.digest.translate.failed > 0 ? `, ${result.digest.translate.failed} without titleZh` : ""),
+      );
+    }
+  }
 
   const outputPath = `data/processed/${reportDate}/papers.json`;
   await writeJsonFile(outputPath, {
@@ -103,6 +115,8 @@ async function main() {
       llmTagging: result.digest.llmTagging,
       tagging: result.digest.tagging,
       selection: result.digest.selection,
+      summarize: result.digest.summarize,
+      translate: result.digest.translate,
     },
     excludedPapers: result.routing.excluded.length > 0 ? result.routing.excluded : undefined,
   });

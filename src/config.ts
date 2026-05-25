@@ -40,6 +40,7 @@ const digestFileSchema = z.object({
   timeoutMs: z.number().int().positive(),
   maxRetries: z.number().int().positive(),
   enableThinking: z.boolean(),
+  summarizeConcurrency: z.number().int().positive(),
 });
 
 export type DigestFileConfig = z.infer<typeof digestFileSchema>;
