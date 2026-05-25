@@ -126,23 +126,42 @@ async function processRssSource(source: Source, reportDate: string): Promise<Sou
     throw new Error(`Source ${source.id} is not an RSS source`);
   }
 
-  const feed = await fetchRssSource(source);
-  const normalized = feed.items
-    .map((item) => normalizeRssItemToPaper(item, source))
-    .filter((paper): paper is Paper => paper !== null);
-  const deduped = dedupePapers(normalized);
-  const onReportDate = filterPapersByDate(deduped, reportDate);
+  try {
+    const feed = await fetchRssSource(source);
+    const normalized = feed.items
+      .map((item) => normalizeRssItemToPaper(item, source))
+      .filter((paper): paper is Paper => paper !== null);
+    const deduped = dedupePapers(normalized);
+    const onReportDate = filterPapersByDate(deduped, reportDate);
 
-  return {
-    papers: onReportDate,
-    normalized,
-    stats: {
-      sourceId: source.id,
-      feedTitle: feed.title ?? source.name,
-      rssItemCount: feed.items.length,
-      normalizedCount: normalized.length,
-      dedupedCount: deduped.length,
-      onReportDateCount: onReportDate.length,
-    },
-  };
+    return {
+      papers: onReportDate,
+      normalized,
+      stats: {
+        sourceId: source.id,
+        feedTitle: feed.title ?? source.name,
+        rssItemCount: feed.items.length,
+        normalizedCount: normalized.length,
+        dedupedCount: deduped.length,
+        onReportDateCount: onReportDate.length,
+      },
+    };
+  } catch (error) {
+    console.warn(
+      `RSS skipped for ${source.id} (${source.url}):`,
+      error instanceof Error ? error.message : error,
+    );
+    return {
+      papers: [],
+      normalized: [],
+      stats: {
+        sourceId: source.id,
+        feedTitle: source.name,
+        rssItemCount: 0,
+        normalizedCount: 0,
+        dedupedCount: 0,
+        onReportDateCount: 0,
+      },
+    };
+  }
 }
