@@ -18,6 +18,22 @@ export function estimateRoutingCompletionTokens(paperCount: number): number {
   return 200 + paperCount * 72;
 }
 
+/**
+ * `max_tokens` sent to the API: never below estimated need + headroom, capped by config
+ * (e.g. NVIDIA minimax examples use up to 8192).
+ */
+export function resolveCompletionMaxTokens(
+  estimated: number,
+  configCap: number,
+  floor = 640,
+): number {
+  if (estimated <= 0) {
+    return Math.min(configCap, floor);
+  }
+  const withHeadroom = Math.max(Math.ceil(estimated * 1.35), estimated + 400, floor);
+  return Math.min(configCap, withHeadroom);
+}
+
 export function routingCompletionFits(
   paperCount: number,
   maxCompletionTokens: number,

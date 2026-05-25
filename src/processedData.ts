@@ -54,6 +54,26 @@ const routingStatsSchema = z.object({
   excluded: z.number(),
 }) satisfies z.ZodType<LifeScienceRoutingStats>;
 
+const digestStatsSchema = z.object({
+  enabled: z.boolean(),
+  llmTagging: z.boolean(),
+  tagging: z.object({
+    llmClassified: z.number(),
+    llmTagged: z.number(),
+    fallback: z.number(),
+  }),
+  selection: z.object({
+    total: z.number(),
+    candidates: z.number(),
+    featured: z.number(),
+    overflow: z.number(),
+    lineA: z.number(),
+    lineB: z.number(),
+    preprint: z.number(),
+    skip: z.number(),
+  }),
+});
+
 const processedPapersFileSchema = z.object({
   reportDate: z.string(),
   generatedAt: z.string().optional(),
@@ -64,6 +84,7 @@ const processedPapersFileSchema = z.object({
       stats: routingStatsSchema,
     })
     .optional(),
+  digest: digestStatsSchema.optional(),
   excludedPapers: z.array(excludedPaperSchema).optional(),
 });
 
@@ -75,6 +96,7 @@ export type ProcessedPapersFile = {
     enabled: boolean;
     stats: LifeScienceRoutingStats;
   };
+  digest?: z.infer<typeof digestStatsSchema>;
   excludedPapers?: ExcludedPaper[];
 };
 

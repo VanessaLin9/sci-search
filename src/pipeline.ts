@@ -7,6 +7,8 @@ import {
 } from "./filterPapers.js";
 import { enrichPapers, type EnrichPapersResult } from "./enrichers/index.js";
 import { normalizeRssItemToPaper } from "./normalize.js";
+import { runDigestPhase } from "./digest/runDigestPhase.js";
+import type { DigestPhaseResult } from "./digest/types.js";
 import { routeLifeSciencePapers } from "./routing/routeLifeScience.js";
 import type { LifeScienceRoutingResult } from "./routing/types.js";
 import type {
@@ -69,6 +71,7 @@ export type PipelineRunResult = {
   sourceResults: SourceProcessResult[];
   routing: LifeScienceRoutingResult;
   enrich: EnrichPapersResult;
+  digest: DigestPhaseResult;
 };
 
 export async function runPipeline(options: RunPipelineOptions): Promise<PipelineRunResult> {
@@ -79,14 +82,20 @@ export async function runPipeline(options: RunPipelineOptions): Promise<Pipeline
     scopeBySourceId: options.scopeBySourceId,
   });
   const enrich = await enrichPapers(routing.included);
-  const papers = classifyPapers(enrich.papers, options.keywords);
+  const classified = classifyPapers(enrich.papers, options.keywords);
+  const digest = await runDigestPhase({
+    papers: classified,
+    sources: options.sources,
+    scopeBySourceId: options.scopeBySourceId,
+  });
 
   return {
     reportDate: options.reportDate,
-    papers,
+    papers: digest.papers,
     sourceResults,
     routing,
     enrich,
+    digest,
   };
 }
 

@@ -3,7 +3,10 @@ import type { RoutingLlmConfig } from "./config.js";
 import { buildRoutingCompletionParams } from "./routingPrompt.js";
 import { createRoutingLlmClient } from "./routingLlmClient.js";
 import { formatElapsedMs, logRouting } from "./routingLog.js";
-import { estimateRoutingCompletionTokens } from "./batchSizing.js";
+import {
+  estimateRoutingCompletionTokens,
+  resolveCompletionMaxTokens,
+} from "./batchSizing.js";
 import type { BroadScienceRoutingInput } from "./types.js";
 
 export type RoutingCompletionCall = {
@@ -36,13 +39,11 @@ export async function callRoutingCompletion(
   const label = options?.label ?? "routing-llm";
   let usedJsonResponseFormat = config.preferJsonResponseFormat;
 
-  const maxTokens = Math.min(
-    config.maxTokens,
-    Math.max(estimateRoutingCompletionTokens(items.length), 640),
-  );
+  const estimated = estimateRoutingCompletionTokens(items.length);
+  const maxTokens = resolveCompletionMaxTokens(estimated, config.maxTokens);
 
   logRouting(
-    `${label}: POST chat/completions (${items.length} paper(s), max_tokens=${maxTokens}, need~${estimateRoutingCompletionTokens(items.length)}, cap=${config.maxTokens}, timeout=${config.timeoutMs}ms)`,
+    `${label}: POST chat/completions (${items.length} paper(s), max_tokens=${maxTokens}, need~${estimated}, cap=${config.maxTokens}, timeout=${config.timeoutMs}ms)`,
   );
 
   let completion: ChatCompletion;

@@ -13,6 +13,7 @@ import {
   logSourceDetails,
   logSourceSummary,
 } from "./debug.js";
+import { logDigest } from "./digest/digestLog.js";
 import { runPipeline } from "./pipeline.js";
 import { logRouting } from "./routing/routingLog.js";
 import { buildSourceScopeById } from "./routing/sourceScope.js";
@@ -77,6 +78,17 @@ async function main() {
   }
   logSectionSummary(result.papers);
 
+  if (result.digest.llmTagging) {
+    logDigest(
+      `tagging: ${result.digest.tagging.llmTagged} LLM, ${result.digest.tagging.fallback} fallback`,
+    );
+  }
+  logDigest(
+    `featured ${result.digest.selection.featured}/${result.digest.selection.candidates} candidates ` +
+      `(line-a ${result.digest.selection.lineA}, line-b ${result.digest.selection.lineB}, ` +
+      `preprint ${result.digest.selection.preprint}, skip ${result.digest.selection.skip})`,
+  );
+
   const outputPath = `data/processed/${reportDate}/papers.json`;
   await writeJsonFile(outputPath, {
     reportDate,
@@ -85,6 +97,12 @@ async function main() {
     routing: {
       enabled: result.routing.enabled,
       stats: result.routing.stats,
+    },
+    digest: {
+      enabled: result.digest.enabled,
+      llmTagging: result.digest.llmTagging,
+      tagging: result.digest.tagging,
+      selection: result.digest.selection,
     },
     excludedPapers: result.routing.excluded.length > 0 ? result.routing.excluded : undefined,
   });
