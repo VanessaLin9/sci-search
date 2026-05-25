@@ -1,6 +1,6 @@
 {
   "reportDate": "2026-05-22",
-  "generatedAt": "2026-05-25T09:29:12.295Z",
+  "generatedAt": "2026-05-25T10:06:19.279Z",
   "papers": [
     {
       "id": "10.1038/s41592-026-03066-1",
@@ -18,7 +18,7 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": true
     },
     {
@@ -37,7 +37,7 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": true
     },
     {
@@ -58,7 +58,7 @@
       ],
       "section": "biology",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": true
     },
     {
@@ -79,7 +79,7 @@
       ],
       "section": "biology",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": true
     },
     {
@@ -100,7 +100,7 @@
       ],
       "section": "biology",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": true
     },
     {
@@ -121,7 +121,7 @@
       ],
       "section": "biology",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": true
     },
     {
@@ -140,7 +140,7 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": true
     },
     {
@@ -161,8 +161,8 @@
       ],
       "section": "biology",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
-      "featured": false
+      "digestTaggingMethod": "llm",
+      "featured": true
     },
     {
       "id": "10.1038/s41564-026-02353-z",
@@ -179,8 +179,8 @@
       },
       "matchedKeywords": [],
       "section": "other",
-      "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
       "featured": false
     },
     {
@@ -198,8 +198,8 @@
       },
       "matchedKeywords": [],
       "section": "other",
-      "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
       "featured": false
     },
     {
@@ -218,8 +218,8 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
-      "featured": false
+      "digestTaggingMethod": "llm",
+      "featured": true
     },
     {
       "id": "10.1038/s41564-026-02349-9",
@@ -237,8 +237,8 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
-      "featured": false
+      "digestTaggingMethod": "llm",
+      "featured": true
     },
     {
       "id": "10.1371/journal.pbio.3003787",
@@ -256,7 +256,7 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": false
     },
     {
@@ -275,9 +275,9 @@
       "articleType": "News",
       "matchedKeywords": [],
       "section": "other",
-      "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
-      "featured": true
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
     },
     {
       "id": "10.1126/sciadv.adw9543",
@@ -296,9 +296,9 @@
         "single-cell"
       ],
       "section": "single-cell-spatial",
-      "digestLine": "line-a",
-      "digestTaggingMethod": "keyword-fallback",
-      "featured": true
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
     },
     {
       "id": "10.1126/sciadv.ady2279",
@@ -316,7 +316,7 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": false
     },
     {
@@ -505,28 +505,7 @@
       ],
       "section": "biology",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
-      "featured": false
-    },
-    {
-      "id": "10.1126/sciadv.aed7719",
-      "title": "High-fidelity molecular decoding through tile-guided in situ self-assembly",
-      "journal": "Science Advances",
-      "publishedDate": "2026-05-22T07:00:00.000Z",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed7719?af=R",
-      "doi": "10.1126/sciadv.aed7719",
-      "abstract": "High-fidelity profiling of intracellular biomarkers is crucial for deciphering tumorigenesis and progression, as well as classifying cell types. Conventional techniques suffer from high background interference and poor stability due to the scattered, point-like signals. Herein, we present a DNA tile–driven in vivo logical encoding self-assembly (TILES) strategy for robust and signal-amplified imaging of multiple biomarkers in cancer cells and tumor-bearing mice. Capitalizing on AND-gated logic operations, the TILES assay enables confined recognition of dual biomarkers to initiate the intracellular self-assembly of DNA scaffolds, yielding nanotube-like signals. Owing to the compact nucleic acid framework, DNA scaffolds exhibit an over sevenfold nuclease resistance enhancement than double-stranded DNA probes. Moreover, the structural output, characterized by high-density fluorophore architecture and defined morphology, substantially boosts the visualization and precise classification of diverse cancer types. The proposed strategy provides a robust platform to enable the high-fidelity, multiplexed profiling of intracellular biomarkers and dynamic gene regulatory networks analysis in living organisms.",
-      "sourceId": "science-advances",
-      "lifeScienceRouting": {
-        "verdict": "not_sure",
-        "method": "llm"
-      },
-      "matchedKeywords": [
-        "cancer"
-      ],
-      "section": "biology",
-      "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": false
     },
     {
@@ -545,7 +524,7 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": false
     },
     {
@@ -566,7 +545,7 @@
       ],
       "section": "biology",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": false
     },
     {
@@ -587,7 +566,7 @@
       ],
       "section": "biology",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": false
     },
     {
@@ -606,7 +585,7 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": false
     },
     {
@@ -627,9 +606,9 @@
         "cancer"
       ],
       "section": "single-cell-spatial",
-      "digestLine": "line-a",
-      "digestTaggingMethod": "keyword-fallback",
-      "featured": true
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
     },
     {
       "id": "10.1126/sciadv.aea5496",
@@ -647,7 +626,7 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": false
     },
     {
@@ -666,7 +645,7 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": false
     },
     {
@@ -685,7 +664,7 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": false
     },
     {
@@ -704,7 +683,7 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": false
     },
     {
@@ -725,7 +704,7 @@
       ],
       "section": "biology",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": false
     }
   ],
@@ -746,19 +725,19 @@
     "enabled": true,
     "llmTagging": true,
     "tagging": {
-      "llmClassified": 0,
-      "llmTagged": 0,
-      "fallback": 36
+      "llmClassified": 35,
+      "llmTagged": 27,
+      "fallback": 8
     },
     "selection": {
-      "total": 36,
-      "candidates": 36,
+      "total": 35,
+      "candidates": 32,
       "featured": 12,
-      "overflow": 24,
-      "lineA": 4,
-      "lineB": 32,
+      "overflow": 20,
+      "lineA": 2,
+      "lineB": 30,
       "preprint": 0,
-      "skip": 0
+      "skip": 3
     }
   },
   "excludedPapers": [
@@ -783,19 +762,6 @@
         "publishedDate": "2026-05-22T00:00:00.000Z",
         "url": "https://www.nature.com/articles/d41586-026-01660-z",
         "doi": "10.1038/d41586-026-01660-z",
-        "sourceId": "nature"
-      },
-      "reason": "life-science-routing",
-      "verdict": "no"
-    },
-    {
-      "paper": {
-        "id": "10.1038/d41586-026-01087-6",
-        "title": "Neuroflix",
-        "journal": "Nature",
-        "publishedDate": "2026-05-22T00:00:00.000Z",
-        "url": "https://www.nature.com/articles/d41586-026-01087-6",
-        "doi": "10.1038/d41586-026-01087-6",
         "sourceId": "nature"
       },
       "reason": "life-science-routing",
@@ -900,6 +866,19 @@
         "publishedDate": "2026-05-22T07:00:00.000Z",
         "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed5419?af=R",
         "doi": "10.1126/sciadv.aed5419",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed7719",
+        "title": "High-fidelity molecular decoding through tile-guided in situ self-assembly",
+        "journal": "Science Advances",
+        "publishedDate": "2026-05-22T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed7719?af=R",
+        "doi": "10.1126/sciadv.aed7719",
         "sourceId": "science-advances"
       },
       "reason": "life-science-routing",

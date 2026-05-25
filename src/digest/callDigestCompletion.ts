@@ -19,10 +19,10 @@ export async function callDigestTaggingCompletion(
   let usedJsonResponseFormat = config.preferJsonResponseFormat;
 
   const estimated = estimateDigestTaggingCompletionTokens(items.length);
-  const maxTokens = resolveCompletionMaxTokens(estimated, config.maxTokens, 512);
+  const maxTokens = resolveCompletionMaxTokens(estimated, config.maxTokens, 2048);
 
   logDigest(
-    `${label}: POST chat/completions (${items.length} paper(s), max_tokens=${maxTokens}, timeout=${config.timeoutMs}ms)`,
+    `${label}: POST chat/completions (${items.length} paper(s), max_tokens=${maxTokens}, need~${estimated}, cap=${config.maxTokens}, timeout=${config.timeoutMs}ms)`,
   );
 
   try {

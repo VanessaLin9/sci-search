@@ -12,7 +12,7 @@ export function estimateDigestTaggingRequestTokens(items: DigestTaggingInput[]):
 
 export function estimateDigestTaggingCompletionTokens(paperCount: number): number {
   if (paperCount === 0) return 0;
-  return 200 + paperCount * 48;
+  return 200 + paperCount * 96;
 }
 
 function taggingCompletionFits(paperCount: number, maxCompletionTokens: number): boolean {

@@ -6,6 +6,7 @@ import {
   extractDigestMessageContent,
 } from "./callDigestCompletion.js";
 import { getDigestLlmConfig, maskApiKey } from "./config.js";
+import { digestLineFromKeywords } from "./keywordDigestLine.js";
 import { logDigest } from "./digestLog.js";
 import { toDigestTaggingInput } from "./toTaggingInput.js";
 import type { DigestTaggingInput, DigestTaggingStats } from "./types.js";
@@ -22,12 +23,20 @@ const llmResponseSchema = z.object({
   ),
 });
 
+export type TagTitlesWithLlmResult = {
+  lineById: Map<string, DigestLine>;
+  llmTaggedIds: Set<string>;
+  stats: DigestTaggingStats;
+};
+
 export async function tagTitlesWithLlm(options: {
   papers: ClassifiedPaper[];
   scopeBySourceId: ReadonlyMap<string, SourceScope>;
-}): Promise<{ lineById: Map<string, DigestLine>; stats: DigestTaggingStats }> {
+}): Promise<TagTitlesWithLlmResult> {
   const { papers, scopeBySourceId } = options;
   const config = getDigestLlmConfig();
+  const paperById = new Map(papers.map((paper) => [paper.id, paper]));
+
   logDigest(`tagging endpoint ${config.baseUrl} · model ${config.model} · key ${maskApiKey(config.apiKey)}`);
 
   const inputs = papers.map((paper) => toDigestTaggingInput(paper, scopeBySourceId));
@@ -38,23 +47,52 @@ export async function tagTitlesWithLlm(options: {
   });
 
   const lineById = new Map<string, DigestLine>();
+  const llmTaggedIds = new Set<string>();
+  let llmTagged = 0;
+  let fallback = 0;
   const batchTotal = batches.length;
+
+  logDigest(`tagging ${papers.length} paper(s) in ${batchTotal} batch(es)`);
 
   for (let index = 0; index < batches.length; index += 1) {
     const batch = batches[index];
     const batchLabel = batchTotal > 1 ? `batch ${index + 1}/${batchTotal}` : "batch 1/1";
-    const batchLines = await classifyTaggingBatch(batch, config, batchLabel);
-    for (const [id, line] of batchLines) {
-      lineById.set(id, line);
+
+    try {
+      const batchLines = await classifyTaggingBatch(batch, config, batchLabel);
+      for (const [id, line] of batchLines) {
+        lineById.set(id, line);
+        llmTaggedIds.add(id);
+        llmTagged += 1;
+      }
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      logDigest(`${batchLabel}: failed (${message}); keyword fallback for ${batch.length} paper(s)`);
+      for (const item of batch) {
+        const paper = paperById.get(item.id);
+        if (!paper) continue;
+        lineById.set(item.id, digestLineFromKeywords(paper));
+        fallback += 1;
+      }
     }
   }
 
+  for (const paper of papers) {
+    if (!lineById.has(paper.id)) {
+      lineById.set(paper.id, digestLineFromKeywords(paper));
+      fallback += 1;
+    }
+  }
+
+  logDigest(`tagging done: ${llmTagged} LLM, ${fallback} keyword fallback`);
+
   return {
     lineById,
+    llmTaggedIds,
     stats: {
       llmClassified: papers.length,
-      llmTagged: lineById.size,
-      fallback: 0,
+      llmTagged,
+      fallback,
     },
   };
 }
@@ -65,10 +103,27 @@ async function classifyTaggingBatch(
   batchLabel: string,
 ): Promise<Map<string, DigestLine>> {
   const completion = await callDigestTaggingCompletion(items, config, { label: batchLabel });
-  const { content } = extractDigestMessageContent(completion.choices[0]?.message);
-  const parsed = llmResponseSchema.parse(parseJsonFromLlmContent(content));
-  const lineById = new Map<string, DigestLine>();
+  const finishReason = completion.choices[0]?.finish_reason ?? "unknown";
+  const { content, usedReasoningFallback } = extractDigestMessageContent(
+    completion.choices[0]?.message,
+  );
 
+  if (usedReasoningFallback) {
+    logDigest(`${batchLabel}: warning: used reasoning_content as message body`);
+  }
+
+  let parsed;
+  try {
+    parsed = llmResponseSchema.parse(parseJsonFromLlmContent(content));
+  } catch (parseError) {
+    const preview = content.trim().slice(0, 400);
+    throw new Error(
+      `${batchLabel}: invalid JSON (finish_reason=${finishReason}, ${content.length} chars): ${preview}${content.length > 400 ? "…" : ""}`,
+      { cause: parseError },
+    );
+  }
+
+  const lineById = new Map<string, DigestLine>();
   for (const row of parsed.results) {
     lineById.set(row.id, row.digest_line);
   }

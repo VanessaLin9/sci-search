@@ -10,12 +10,12 @@ import { loadDigestFileConfig } from "../config.js";
 function applyDigestLines(
   papers: ClassifiedPaper[],
   lineById: Map<string, DigestLine>,
-  method: DigestTaggingMethod,
+  llmTaggedIds: Set<string>,
 ): ClassifiedPaper[] {
   return papers.map((paper) => ({
     ...paper,
     digestLine: lineById.get(paper.id) ?? digestLineFromKeywords(paper),
-    digestTaggingMethod: method,
+    digestTaggingMethod: (llmTaggedIds.has(paper.id) ? "llm" : "keyword-fallback") satisfies DigestTaggingMethod,
   }));
 }
 
@@ -60,15 +60,13 @@ export async function runDigestPhase(options: {
   let taggingStats: DigestPhaseResult["tagging"];
 
   if (llmTagging) {
-    logDigest(`tagging ${papers.length} paper(s) with LLM`);
     try {
-      const { lineById, stats } = await tagTitlesWithLlm({ papers, scopeBySourceId });
-      tagged = applyDigestLines(papers, lineById, "llm");
-      const fallbackCount = tagged.filter((p) => p.digestTaggingMethod === "keyword-fallback").length;
-      taggingStats = { ...stats, fallback: fallbackCount };
+      const { lineById, llmTaggedIds, stats } = await tagTitlesWithLlm({ papers, scopeBySourceId });
+      tagged = applyDigestLines(papers, lineById, llmTaggedIds);
+      taggingStats = stats;
     } catch (error) {
       console.warn(
-        "Digest LLM tagging failed; using keyword fallback:",
+        "Digest LLM tagging failed entirely; using keyword fallback:",
         error instanceof Error ? error.message : error,
       );
       tagged = tagWithKeywordFallback(papers);

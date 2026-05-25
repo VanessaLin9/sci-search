@@ -13,7 +13,8 @@ Buckets:
 Use title, journal, source scope, and abstract when present. Papers already passed a life-science gate; when unsure between line-a and line-b, prefer line-b.
 
 OUTPUT FORMAT (strict):
-- Reply with a single JSON object only. No markdown, no preamble.
+- Reply with a single JSON object only. No markdown, no code fences, no preamble, no analysis, no reasoning.
+- Start the response with the character { (first non-whitespace character).
 - Schema: {"results":[{"id":"<paper id>","digest_line":"line-a"|"line-b"|"preprint"|"skip"}, ...]}
 - Include exactly one result per input paper, using the same id.`;
 
