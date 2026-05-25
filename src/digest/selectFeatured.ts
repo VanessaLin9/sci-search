@@ -12,6 +12,14 @@ export function buildSourcePriorityById(sources: Source[]): ReadonlyMap<string, 
   return new Map(sources.map((source) => [source.id, source.priority]));
 }
 
+/** Same ordering as featured selection (line → source priority → title). */
+export function sortPapersByDigestRank(
+  papers: ClassifiedPaper[],
+  priorityBySourceId: ReadonlyMap<string, number>,
+): ClassifiedPaper[] {
+  return [...papers].sort((a, b) => compareForFeatured(a, b, priorityBySourceId));
+}
+
 function compareForFeatured(
   a: ClassifiedPaper,
   b: ClassifiedPaper,

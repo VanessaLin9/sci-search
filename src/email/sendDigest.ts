@@ -1,3 +1,5 @@
+import { buildSourcePriorityById } from "../digest/selectFeatured.js";
+import { loadSources } from "../config.js";
 import type { ClassifiedPaper } from "../types.js";
 import { loadEmailConfig } from "./config.js";
 import { buildDigestSubject, renderDigestHtml } from "./renderDigestHtml.js";
@@ -22,22 +24,28 @@ export async function sendDigestEmail(
   options: SendDigestEmailOptions,
 ): Promise<SendDigestEmailResult> {
   const config = loadEmailConfig();
+  const visibleCount = options.papers.filter(
+    (paper) => paper.digestLine && paper.digestLine !== "skip",
+  ).length;
   const subject = buildDigestSubject(
     options.reportDate,
-    options.papers.length,
+    visibleCount,
     config.subjectPrefix,
   );
+  const sources = await loadSources();
+  const priorityBySourceId = buildSourcePriorityById(sources);
   const html = renderDigestHtml({
     reportDate: options.reportDate,
     papers: options.papers,
     generatedAt: options.generatedAt,
+    priorityBySourceId,
   });
 
   if (options.dryRun) {
     return {
       subject,
       to: config.to,
-      paperCount: options.papers.length,
+      paperCount: visibleCount,
       dryRun: true,
     };
   }
@@ -47,7 +55,7 @@ export async function sendDigestEmail(
   return {
     subject,
     to: config.to,
-    paperCount: options.papers.length,
+    paperCount: visibleCount,
     emailId: id,
     dryRun: false,
   };
