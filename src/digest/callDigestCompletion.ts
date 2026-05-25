@@ -1,5 +1,4 @@
 import type { ChatCompletion } from "openai/resources/chat/completions";
-import { extractRoutingMessageContent } from "../routing/callRoutingCompletion.js";
 import { resolveCompletionMaxTokens } from "../routing/batchSizing.js";
 import { estimateDigestTaggingCompletionTokens } from "./batchSizing.js";
 import type { DigestLlmConfig } from "./config.js";
@@ -19,7 +18,8 @@ export async function callDigestTaggingCompletion(
   let usedJsonResponseFormat = config.preferJsonResponseFormat;
 
   const estimated = estimateDigestTaggingCompletionTokens(items.length);
-  const maxTokens = resolveCompletionMaxTokens(estimated, config.maxTokens, 2048);
+  // Reasoning-heavy models (e.g. step-3.5-flash) need headroom beyond compact JSON estimates.
+  const maxTokens = resolveCompletionMaxTokens(estimated, config.maxTokens, config.maxTokens);
 
   logDigest(
     `${label}: POST chat/completions (${items.length} paper(s), max_tokens=${maxTokens}, need~${estimated}, cap=${config.maxTokens}, timeout=${config.timeoutMs}ms)`,
@@ -45,5 +45,3 @@ export async function callDigestTaggingCompletion(
     return completion;
   }
 }
-
-export { extractRoutingMessageContent as extractDigestMessageContent };

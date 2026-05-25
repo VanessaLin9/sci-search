@@ -12,7 +12,8 @@ export function estimateDigestTaggingRequestTokens(items: DigestTaggingInput[]):
 
 export function estimateDigestTaggingCompletionTokens(paperCount: number): number {
   if (paperCount === 0) return 0;
-  return 200 + paperCount * 96;
+  // Compact JSON is small; reasoning-heavy models may spend far more before emitting JSON.
+  return 400 + paperCount * 280;
 }
 
 function taggingCompletionFits(paperCount: number, maxCompletionTokens: number): boolean {

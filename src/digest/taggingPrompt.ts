@@ -16,7 +16,8 @@ OUTPUT FORMAT (strict):
 - Reply with a single JSON object only. No markdown, no code fences, no preamble, no analysis, no reasoning.
 - Start the response with the character { (first non-whitespace character).
 - Schema: {"results":[{"id":"<paper id>","digest_line":"line-a"|"line-b"|"preprint"|"skip"}, ...]}
-- Include exactly one result per input paper, using the same id.`;
+- Each row must include the exact input "id". You may also echo "title" for disambiguation.
+- Include exactly one result per input paper.`;
 
 export function buildDigestTaggingCompletionParams(
   items: DigestTaggingInput[],
