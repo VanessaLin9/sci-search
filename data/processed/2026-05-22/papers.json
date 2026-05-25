@@ -1,6 +1,6 @@
 {
   "reportDate": "2026-05-22",
-  "generatedAt": "2026-05-25T10:48:14.935Z",
+  "generatedAt": "2026-05-25T11:48:32.442Z",
   "papers": [
     {
       "id": "10.1038/s41559-026-03080-8",
@@ -19,7 +19,16 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": true,
+      "titleZh": "遺傳救援提升雄性二態蟎長期適應度：儘管引入遺傳負荷",
+      "summaryZh": "遺傳救援是保育生物學中用於拯救瀕危物種的重要策略。本研究以雄性二態蟎為實驗對象，發現遺傳救援能帶來持久的適應度提升，且此效益不受救援者雄性類型影響。值得注意的是，即使引入遺傳負荷，遺傳救援仍展現其效益，這挑戰了傳統上對遺傳負荷的擔憂。在熱緊迫條件下，這些發現表明遺傳救援可能是管理受脅物種遺傳多樣性的有效工具。",
+      "topicTags": [
+        "genetic-rescue",
+        "conservation-biology",
+        "population-genetics",
+        "thermal-stress",
+        "evolutionary-biology"
+      ]
     },
     {
       "id": "10.1038/s41556-026-01950-8",
@@ -40,7 +49,16 @@
       "section": "biology",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": true,
+      "titleZh": "拆除應激顆粒可促進膠質母細胞瘤的鐵死亡",
+      "summaryZh": "膠質母細胞瘤是極具治療難度的惡性腦瘤，其腫瘤幹細胞對化療藥物替莫唑胺及放射治療具有高度抗性。本研究發現，腫瘤幹細胞內的應激顆粒（stress granules）是一種保護性結構，能夠抑制鐵依賴性的細胞死亡方式——鐵死亡。當使用特定方法拆除這些應激顆粒後，癌細胞將更容易受到標準治療的攻擊，腫瘤細胞會因鐵死亡而大量死亡。此發現為克服膠質母細胞瘤的治療抗性提供了全新的分子標靶策略，具有重要的臨床轉譯價值。",
+      "topicTags": [
+        "glioblastoma",
+        "ferroptosis",
+        "stress-granules",
+        "cancer-therapy",
+        "stem-cells"
+      ]
     },
     {
       "id": "10.1038/s41556-026-01953-5",
@@ -61,7 +79,16 @@
       "section": "biology",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": true,
+      "titleZh": "壓力顆粒隔離鐵蛋白抑制鐵死亡——膠質母細胞瘤治療新策略",
+      "summaryZh": "膠質母細胞瘤幹細胞對標準治療（放射治療與替莫唑胺）具有高度抗藥性，是臨床上治療失敗的主因。本研究發現，壓力顆粒能夠隔離鐵蛋白，限制游離鐵離子含量並防止鐵蛋白自噬，從而抑制鐵死亡。G3BP1蛋白在氧化依賴性機制下與鐵蛋白輕鏈相互作用，是調控此過程的關鍵分子開關。研究團隊篩選出一種小分子化合物ciwujianoside C3，能阻斷G3BP1與鐵蛋白的結合，並在體內外實驗中成功使膠質母細胞瘤細胞重新對治療敏感。這項發現揭示了壓力顆粒與鐵死亡之間的負向調控關係，為克服膠質母細胞瘤的治療抗藥性提供了全新的分子靶點與治療策略。",
+      "topicTags": [
+        "glioblastoma",
+        "ferroptosis",
+        "stress-granules",
+        "cancer-therapy",
+        "drug-resistance"
+      ]
     },
     {
       "id": "10.1038/s41590-026-02528-0",
@@ -82,7 +109,16 @@
       "section": "biology",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": true,
+      "titleZh": "腫瘤微環境中的支鏈酮酸：透過穩定NOTCH2抑制抗腫瘤免疫",
+      "summaryZh": "本研究揭示了腫瘤細胞逃避免疫攻擊的全新機制。腫瘤細胞會分泌支鏈酮酸進入腫瘤微環境，這些代謝物可被腫瘤相關巨噬細胞攝取，並在細胞內穩定NOTCH2蛋白，使其免於降解。穩定的NOTCH2進而驅動巨噬細胞採用免疫抑制的基因表現程式，反而幫助腫瘤對抗免疫系統的監控。此發現不僅闡明了腫瘤微環境中代謝物與免疫細胞之間的複雜交互作用，也為開發新的癌症免疫療法提供了潛在的治療靶點。",
+      "topicTags": [
+        "cancer-immunology",
+        "tumor-microenvironment",
+        "macrophages",
+        "notch-signaling",
+        "metabolism"
+      ]
     },
     {
       "id": "10.1038/s41590-026-02523-5",
@@ -103,7 +139,16 @@
       "section": "biology",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": true,
+      "titleZh": "早期生命的免疫發育",
+      "summaryZh": "這篇綜述整合了產前造血、組織免疫細胞播種及屏障免疫特化等最新研究，揭示胎兒與嬰兒免疫系統遵循獨特的發育程式。研究者強調血液、組織和母乳中的細胞與體液因子如何共同校準免疫發育，而後天的微生物定植與環境暴露更進一步塑造免疫功能。此研究重新定義早期生命為建立免疫設定點的關鍵時期，這些設定點與宿主防禦、疫苗反應及過敏風險有持久關聯。理解這些機制可為促進全生命週期免疫健康的年齡適配策略提供理論基礎。",
+      "topicTags": [
+        "immunology",
+        "early-life",
+        "immune-development",
+        "perinatal",
+        "vaccine-response"
+      ]
     },
     {
       "id": "10.1038/s41590-026-02517-3",
@@ -122,7 +167,16 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": true,
+      "titleZh": "以聚醣為基礎的佐劑可提升mRNA疫苗的保護範圍與持續時間",
+      "summaryZh": "本研究開發了一種名為mannadjuvant的佐劑，由真菌甘露聚醣與氫氧化鋁組成，可專一性活化去ctin-2模式辨識受體。在小鼠與非人靈長類動物模型中，此佐劑顯著增強了mRNA疫苗對SARS-CoV-2的免疫反應幅度與持久性。值得注意的是，該佐劑能誘導針對高免疫逃脫能力變異株的中和抗體，有效克服了抗原原罪現象。機制研究顯示，局部淋巴結中延長的第一型干擾素產生與白介素-1訊號增強是mannadjuvant發揮效果的關鍵。此研究證明可利用抗真菌模式辨識受體來開發更強效且持久的mRNA疫苗。",
+      "topicTags": [
+        "mrna-vaccine",
+        "adjuvant",
+        "covid-19",
+        "immunology",
+        "glycan"
+      ]
     },
     {
       "id": "10.1038/s41564-026-02371-x",
@@ -143,7 +197,16 @@
       "section": "biology",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": true,
+      "titleZh": "橋接古典與連續定向演化：新型溶菌篩選系統問世",
+      "summaryZh": "定向演化是改造蛋白質與酶功能的重要工具，近年來連續演化方法雖能大幅加速篩選流程，卻往往犧牲了對演化歷程的控制。本研究提出的溶菌選擇與演化系統（lytic selection and evolution system）結合了速度、控制與彈性三大優勢，成功橋接了古典與連續演化方法的鴻溝。此創新工具為定向演化領域提供更精準的操控手段，有望加速功能性分子的開發與優化。",
+      "topicTags": [
+        "directed-evolution",
+        "protein-engineering",
+        "microbial-evolution",
+        "synthetic-biology",
+        "enzyme-design"
+      ]
     },
     {
       "id": "10.1038/s41564-026-02353-z",
@@ -179,9 +242,18 @@
       },
       "matchedKeywords": [],
       "section": "other",
-      "digestLine": "skip",
+      "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": true,
+      "titleZh": "守護美國疫苗科學的未來",
+      "summaryZh": "疫苗在過去50年間拯救了約1.54億條生命，然而這項關鍵基礎建設正面臨威脅。本研究強調在美國受訓的疫苗科學家具備深遠的全球影響力，並呼籲加強科學溝通、政策倡議與公眾參與，以確保疫苗科學的永續發展。在公共衛生挑戰日益複雜的時代，這篇呼籲對於維護全球防疫能力具有重要意義。",
+      "topicTags": [
+        "vaccine",
+        "public-health",
+        "science-policy",
+        "advocacy",
+        "USA"
+      ]
     },
     {
       "id": "10.1038/s41564-026-02374-8",
@@ -200,7 +272,16 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": true,
+      "titleZh": "空間與基因限制調控細菌轉錄-轉譯耦合及mRNA降解",
+      "summaryZh": "本研究揭示了RNase E的細胞定位與轉譯起始如何協調調控mRNA的轉錄、轉譯與降解過程，為理解細菌基因表達調控機制提供重要突破。研究發現這些分子事件在空間與基因層面上受到雙重限制，解释了不同基因及不同細菌物種間此協調機制的變異性。此發現不僅深化了我們對原核生物基因表達整體調控網絡的理解，也為未來開發新型抗菌策略提供了潛在的分子標靶。",
+      "topicTags": [
+        "bacterial-genetics",
+        "mrna-degradation",
+        "transcription-translation",
+        "rnase-e",
+        "gene-regulation"
+      ]
     },
     {
       "id": "10.1038/s41564-026-02349-9",
@@ -219,7 +300,16 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": true,
+      "titleZh": "湖泊微生物脫氮作用的季節性及其對氣候變暖的敏感性",
+      "summaryZh": "脫氮作用是水生生態系統中移除過量氮的關鍵過程。本研究發現湖泊微生物脫氮作用具有明顯的季節性變化，且氣候變暖導致的季節性溫度層化改變，可能會削弱執行脫氮功能的微生物群落。這項研究對於預測未來湖泊氮循環動態及水質管理具有重要意義，因為脫氮功能減弱可能加劇富營養化和生態失衡的風險。",
+      "topicTags": [
+        "microbial-ecology",
+        "denitrification",
+        "climate-change",
+        "lakes",
+        "nitrogen-cycle"
+      ]
     },
     {
       "id": "10.1371/journal.pbio.3003787",
@@ -238,7 +328,8 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "利用人類海馬迴的幹細胞潛力來限制認知老化"
     },
     {
       "id": "10.1038/d41586-026-01644-z",
@@ -279,7 +370,8 @@
       "section": "single-cell-spatial",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "滑膜纖維母細胞的P2X7R是與頑固性類風濕性關節炎相關的潛在治療標的"
     },
     {
       "id": "10.1126/sciadv.ady2279",
@@ -298,7 +390,8 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "可擴展且具成本效益的寡核苷酸池自訂基因庫組裝"
     },
     {
       "id": "10.1126/sciadv.ady9830",
@@ -319,7 +412,8 @@
       "section": "single-cell-spatial",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "內側杏仁核核團後腹側麩胺酸神經元編碼囓齒動物的同種個體識別"
     },
     {
       "id": "10.1126/sciadv.aea9389",
@@ -343,7 +437,16 @@
       "section": "single-cell-spatial",
       "digestLine": "line-a",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": true,
+      "titleZh": "單細胞轉錄體學揭示致病性SHP2變異的多樣化表型結果",
+      "summaryZh": "SHP2是Ras/MAPK訊號路徑的關鍵調控者，其基因PTPN11的突變會導致發育障礙（如努南氏症）或驅動癌症。本研究結合單細胞轉錄體學、蛋白質生化分析與結構生物學，深入探討不同臨床致病性SHP2變異如何擾亂細胞訊號。研究發現，催化活性喪失並不會在基因表現層面完全複製SHP2剔除的效應，且結構上截然不同的突變可能產生相似的細胞表型，而同一熱點位置的突變也可能導致截然不同的細胞狀態。這些發現為理解SHP2結構變異、細胞命運與人類疾病之間的關聯提供了重要框架。",
+      "topicTags": [
+        "single-cell",
+        "signal-transduction",
+        "cancer-biology",
+        "developmental-disorders",
+        "ptpase"
+      ]
     },
     {
       "id": "10.1126/sciadv.aeb8658",
@@ -365,7 +468,8 @@
       "section": "biology",
       "digestLine": "line-b",
       "digestTaggingMethod": "keyword-fallback",
-      "featured": false
+      "featured": false,
+      "titleZh": "非典型PI(4,5)P2通過膽固醇運輸協調溶酶體定位"
     },
     {
       "id": "10.1126/sciadv.aec2231",
@@ -384,7 +488,8 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": false,
+      "titleZh": "53BP1在V(D)J重組過程中協調RAG標的序列特徵以平衡DNA修復結果"
     },
     {
       "id": "10.1126/sciadv.aec5607",
@@ -403,7 +508,8 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "蓮花VIH2是調節叢枝菌根的肌醇焦磷酸合酶"
     },
     {
       "id": "10.1126/sciadv.aed1296",
@@ -422,9 +528,18 @@
         "cancer"
       ],
       "section": "biology",
-      "digestLine": "line-b",
+      "digestLine": "line-a",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": true,
+      "titleZh": "多區域分析揭示THBS1-SPP1單核球-巨噬細胞軸線驅動大腸癌肝轉移的免疫抑制",
+      "summaryZh": "大腸癌常見肝轉移（CRLM），是此類癌症主要的死因。免疫檢查點療法在CRLM的效果受限，主因其腫瘤微環境（TME）具有免疫抑制特性。研究團隊運用多區域組織採樣技術，發現CRLM腫瘤內存在不同的免疫分區，其中THBS1+單核球會分化為SPP1+巨噬細胞，並在腫瘤核心區域累積。這些SPP1+巨噬細胞透過TIM-3和CTLA-4路徑促進CD8+ T細胞耗竭，從而抑制抗腫瘤免疫反應。臨床資料顯示，SPP1+巨噬細胞的存在與T細胞耗竭程度增加及患者存活率下降密切相關，代表著恢復CRLM抗腫瘤免疫反應的關鍵治療標的。",
+      "topicTags": [
+        "colorectal-cancer",
+        "liver-metastasis",
+        "tumor-microenvironment",
+        "immunosuppression",
+        "macrophage"
+      ]
     },
     {
       "id": "10.1126/sciadv.aed1757",
@@ -447,7 +562,8 @@
       "section": "biology",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "使用RECO-Cas在液態切片中進行單核苷酸變異分析"
     },
     {
       "id": "10.1126/sciadv.aed4808",
@@ -466,7 +582,8 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "嗅周皮質輸入至聽覺皮層支持記憶引導的感官知覺"
     },
     {
       "id": "10.1126/sciadv.aed5464",
@@ -487,28 +604,8 @@
       "section": "biology",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
-    },
-    {
-      "id": "10.1126/sciadv.aed7719",
-      "title": "High-fidelity molecular decoding through tile-guided in situ self-assembly",
-      "journal": "Science Advances",
-      "publishedDate": "2026-05-22T07:00:00.000Z",
-      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed7719?af=R",
-      "doi": "10.1126/sciadv.aed7719",
-      "abstract": "High-fidelity profiling of intracellular biomarkers is crucial for deciphering tumorigenesis and progression, as well as classifying cell types. Conventional techniques suffer from high background interference and poor stability due to the scattered, point-like signals. Herein, we present a DNA tile–driven in vivo logical encoding self-assembly (TILES) strategy for robust and signal-amplified imaging of multiple biomarkers in cancer cells and tumor-bearing mice. Capitalizing on AND-gated logic operations, the TILES assay enables confined recognition of dual biomarkers to initiate the intracellular self-assembly of DNA scaffolds, yielding nanotube-like signals. Owing to the compact nucleic acid framework, DNA scaffolds exhibit an over sevenfold nuclease resistance enhancement than double-stranded DNA probes. Moreover, the structural output, characterized by high-density fluorophore architecture and defined morphology, substantially boosts the visualization and precise classification of diverse cancer types. The proposed strategy provides a robust platform to enable the high-fidelity, multiplexed profiling of intracellular biomarkers and dynamic gene regulatory networks analysis in living organisms.",
-      "sourceId": "science-advances",
-      "lifeScienceRouting": {
-        "verdict": "yes",
-        "method": "llm"
-      },
-      "matchedKeywords": [
-        "cancer"
-      ],
-      "section": "biology",
-      "digestLine": "line-b",
-      "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "高粱雙單倍體育種之路的逐步建構"
     },
     {
       "id": "10.1126/sciadv.aee2233",
@@ -527,7 +624,8 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "超薄液態金屬水凝膠紋身按需形成技術用於共形低阻抗生物電子"
     },
     {
       "id": "10.1126/sciadv.aee4419",
@@ -548,7 +646,8 @@
       "section": "biology",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "能隙賦能的超聲組織標記：可生物降解的亞結構水凝膠植入物"
     },
     {
       "id": "10.1126/sciadv.adv3770",
@@ -569,7 +668,8 @@
       "section": "biology",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "中樞多巴胺迴路的演化支撐盲眼洞穴魚對光觸發感覺運動反應的適應"
     },
     {
       "id": "10.1126/sciadv.adz7896",
@@ -588,7 +688,8 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "穩態幹細胞分化與壓力期間IRES與Cap起始轉譯的切換"
     },
     {
       "id": "10.1126/sciadv.adx3959",
@@ -610,7 +711,8 @@
       "section": "single-cell-spatial",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "腫瘤標靶雙特異性抗體有效抑制致癌路徑並將毒性最小化"
     },
     {
       "id": "10.1126/sciadv.aea5496",
@@ -629,7 +731,8 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "壓力破壞人類海馬對重疊事件的整合及記憶推論"
     },
     {
       "id": "10.1126/sciadv.aed0496",
@@ -648,7 +751,8 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": false,
+      "titleZh": "3D 成像揭示整個胰臟中晚發型第一型糖尿病胰島外與胰島相關β細胞的相反比例"
     },
     {
       "id": "10.1126/sciadv.aeh0301",
@@ -667,7 +771,8 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "內皮細胞可溶性APP/APLP2透過KIT媒介的血管新生促進心臟修復"
     },
     {
       "id": "10.1126/sciadv.aeb6806",
@@ -686,7 +791,8 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "透過5′UTR結構解鎖植物特殊代謝的轉譯調控"
     },
     {
       "id": "10.1126/sciadv.aef1594",
@@ -707,7 +813,8 @@
       "section": "biology",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": false
+      "featured": false,
+      "titleZh": "開發候選藥物GHP-88310/EIDD-3608在麻疹及呼吸道副黏液病毒模型中展現高耐受性與口服療效"
     }
   ],
   "routing": {
@@ -727,19 +834,29 @@
     "enabled": true,
     "llmTagging": true,
     "tagging": {
-      "llmClassified": 35,
-      "llmTagged": 34,
+      "llmClassified": 34,
+      "llmTagged": 33,
       "fallback": 1
     },
     "selection": {
-      "total": 35,
+      "total": 34,
       "candidates": 32,
       "featured": 12,
       "overflow": 20,
-      "lineA": 1,
-      "lineB": 31,
+      "lineA": 2,
+      "lineB": 30,
       "preprint": 0,
-      "skip": 3
+      "skip": 2
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 20,
+      "llmTranslated": 20,
+      "failed": 0
     }
   },
   "excludedPapers": [
@@ -751,19 +868,6 @@
         "publishedDate": "2026-05-22T00:00:00.000Z",
         "url": "https://www.nature.com/articles/d41586-026-01655-w",
         "doi": "10.1038/d41586-026-01655-w",
-        "sourceId": "nature"
-      },
-      "reason": "life-science-routing",
-      "verdict": "no"
-    },
-    {
-      "paper": {
-        "id": "10.1038/d41586-026-01660-z",
-        "title": "Major Ebola outbreak is escalating: what happens next",
-        "journal": "Nature",
-        "publishedDate": "2026-05-22T00:00:00.000Z",
-        "url": "https://www.nature.com/articles/d41586-026-01660-z",
-        "doi": "10.1038/d41586-026-01660-z",
         "sourceId": "nature"
       },
       "reason": "life-science-routing",
@@ -868,6 +972,19 @@
         "publishedDate": "2026-05-22T07:00:00.000Z",
         "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed5419?af=R",
         "doi": "10.1126/sciadv.aed5419",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed7719",
+        "title": "High-fidelity molecular decoding through tile-guided in situ self-assembly",
+        "journal": "Science Advances",
+        "publishedDate": "2026-05-22T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed7719?af=R",
+        "doi": "10.1126/sciadv.aed7719",
         "sourceId": "science-advances"
       },
       "reason": "life-science-routing",
