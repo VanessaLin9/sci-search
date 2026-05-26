@@ -1,0 +1,749 @@
+{
+  "reportDate": "2026-05-26",
+  "generatedAt": "2026-05-26T22:58:30.882Z",
+  "papers": [
+    {
+      "id": "10.1038/s41587-026-03134-z",
+      "title": "Improving multimodal wearable sensing for healthcare with artificial intelligence",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03134-z",
+      "doi": "10.1038/s41587-026-03134-z",
+      "abstract": "This Comment explores artificial intelligence-driven strategies to accelerate the clinical translation of multimodal wearable sensors. We outline key data-science challenges and highlight disease contexts in which these systems could support therapeutic interventions.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03153-w",
+      "title": "A framework for building a synthetic cell from the SynCell Asia Initiative",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03153-w",
+      "doi": "10.1038/s41587-026-03153-w",
+      "abstract": "Building a living cell from scratch requires overcoming a bottleneck that has remained unresolved despite decades of progress: orchestrating the spatiotemporal integration of core functional modules. To tackle this barrier, the SynCell Asia Initiative outlines a strategy for developing core functional modules followed by their systems-level integration through the establishment of a centralized, artificial intelligence (AI)-driven biofoundry.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03170-9",
+      "title": "Programming biology: next-gen AI firms raise billions to design better medicines",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03170-9",
+      "doi": "10.1038/s41587-026-03170-9",
+      "abstract": "Faster drug discovery, optimized drug design, even programmable therapeutics: AI is impacting R&D. Data and development bottlenecks remain.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology",
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03140-1",
+      "title": "Fetal monitoring for high-risk pregnancies using a wearable ultrasound patch",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03140-1",
+      "doi": "10.1038/s41587-026-03140-1",
+      "abstract": "A wearable ultrasound device is optimized for continuous monitoring of pregnancies.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "穿戴式超聲波貼片實現高風險妊娠持續監測",
+      "summaryZh": "這項研究開發了一款穿戴式超聲波貼片，能夠對高風險妊娠進行連續監測。傳統的超聲波檢查需要專業設備和人員操作，難以實現居家或長時間的持續監測。此技術突破讓孕婦可以在日常生活中隨時追蹤胎兒狀況，有助於及早發現異常。該設備的優化設計兼顧了舒適性與訊號品質，為高風險妊娠的居家管理開闢了新途徑。這項創新發表於Nature Biotechnology，展現了生物醫學工程在婦產科領域的重大進展。",
+      "topicTags": [
+        "wearable-medical-devices",
+        "ultrasound",
+        "fetal-monitoring",
+        "biomedical-engineering",
+        "point-of-care"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-01955-3",
+      "title": "Hairpin herds corralled at the lipid droplet",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-01955-3",
+      "doi": "10.1038/s41556-026-01955-3",
+      "abstract": "Lipid droplets acquire hairpin-containing proteins from the ER, but how they travel to lipid droplets and subsequently accumulate has remained unclear. With single-molecule tracking, a study now shows that persistent connections serve as bridges to lipid droplets, where nanoscale domains corral arriving proteins.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "脂滴如何接收髮夾蛋白質的新機制",
+      "summaryZh": "這項研究揭示了含有髮夾結構的蛋白質如何從內質網轉運至脂滴的詳細過程。研究團隊運用單分子追蹤技術，發現持久性的膜連接通道扮演著橋樑角色，協助蛋白質順利跨越至脂滴表面。此外，脂滴表面的奈米尺度結構域能夠有效聚集這些抵達的蛋白質，形成功能性的蛋白質隔間。這些發現對於理解細胞能量儲存、代謝調控以及蛋白質穩態維持具有重要意義。",
+      "topicTags": [
+        "lipid-droplets",
+        "protein-trafficking",
+        "single-molecule-tracking",
+        "membrane-biology",
+        "cell-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-01963-3",
+      "title": "Membrane bridges and nanodomain partitioning govern membrane protein targeting to lipid droplets",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-01963-3",
+      "doi": "10.1038/s41556-026-01963-3",
+      "abstract": "Numerous metabolic enzymes translocate from the endoplasmic reticulum (ER) membrane bilayer to the lipid droplet (LD) monolayer, where they perform essential functions. Mislocalization of certain LD-targeted membrane proteins, including HSD17B13 and PNPLA3, is implicated in metabolic dysfunction-associated steatotic liver disease. However, the mechanisms governing the trafficking and accumulation of ER proteins on LDs remain poorly understood. Here using minimal fluorescence photon fluxes nanoscopy and highly inclined and laminated optical single-molecule tracking combined with machine learning, we show that HSD17B13, GPAT4 and the model cargo ‘LiveDrop’ diffuse at comparable speeds in the ER and on LDs, but become nano-confined upon reaching the LD surface. Mechanistic dissection of LiveDrop targeting revealed that this confinement, along with protein accumulation on LDs, depends on specific residues within its targeting motif. These residues mediate preferential interactions with nanoscale membrane domains, suggesting that LD-targeted proteins selectively partition into distinct lipid–protein environments that transiently alter local motion and concentrate them at the LD surface. Single-molecule trajectories further revealed bidirectional trafficking of LiveDrop across seipin-containing ER–LD bridges, providing direct evidence for lateral protein transfer across membrane contact sites. These findings establish nanodomain-based confinement as a key mechanism driving selective protein accumulation on LDs and reveal how membrane bridges between organelles facilitate protein sorting. Mizrak et al. use single-molecule tracking to dissect mechanisms of protein targeting to lipid droplets. They show that nanodomain-based confinement drives selective protein accumulation on lipid droplets.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "膜橋與奈米域分區主宰膜蛋白前往脂滴的標的運輸",
+      "summaryZh": "這項研究運用超解析度顯微技術與單分子追蹤技術，揭示了膜蛋白從內質網轉運至脂滴的分子機制。研究發現蛋白質抵達脂滴表面後會被奈米級膜域限制，這種選擇性隔離效應是決定蛋白質累積於脂滴的關鍵因素。研究團隊進一步直接證實蛋白質可通過含有seipin的內質網-脂滴膜橋進行雙向運輸，確認了膜接觸位點的側向蛋白質轉移機制。此發現不僅建立奈米域隔離為脂滴蛋白質選擇性累積的核心機制，也為理解HSD17B13和PNPLA3等蛋白質錯誤定位導致代謝功能障礙相關脂肪肝病提供了重要基礎。",
+      "topicTags": [
+        "lipid-droplets",
+        "membrane-proteins",
+        "single-molecule-tracking",
+        "organelle-biology",
+        "metabolic-disease"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-01960-6",
+      "title": "Epigenetic programming by H3K23ac defines lineage fate of <i>Meg3</i><sup>+</sup> haematopoietic stem cells and drives immune ageing",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-01960-6",
+      "doi": "10.1038/s41556-026-01960-6",
+      "abstract": "Haematopoietic stem cells (HSCs) produce all blood and immune cells throughout life, but ageing progressively impairs their function, generating excessive myeloid and megakaryocyte cells at the expense of lymphocytes. This lineage imbalance contributes to immune decline, chronic inflammation and increased disease susceptibility in the elderly, yet the underlying mechanisms remain poorly understood. Here we show that a specific Meg3+ HSC subset (CD150hiSca1hiCD24hiCD201+CD9+CD63+ long-term HSCs) expands dramatically during ageing and drives this lineage skewing. Using multi-omics profiling, we found that inflammatory signals increase H3K23ac levels in aged Meg3+ HSCs, enhancing PU.1 activity through recruitment of the reader protein TRIM24. This epigenetic mechanism promotes excessive megakaryocyte and myeloid production. Of note, disrupting H3K23ac–TRIM24 interaction in aged HSCs restored balanced lineage output and reduced inflammatory signals. Our findings reveal a key mechanism linking inflammation to HSC ageing and identify potential therapeutic targets for reversing ageing-related immune decline. Wei et al. show that Meg3+ haematopoietic stem cells (HSCs) expand upon ageing and present with an increase in H3K23ac levels observed already at middle age. Inhibiting H3K23ac ameliorates megakaryocyte/platelet and myeloid skewing in aged HSCs.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "H3K23ac表觀遺傳調控Meg3+造血幹細胞譜系命運並加速免疫衰老",
+      "summaryZh": "造血幹細胞（HSCs）終生產生所有血液和免疫細胞，但老化會導致譜系失衡，產生過多的髓系和巨核細胞而減少淋巴細胞。本研究發現Meg3+ HSC亞群在老化過程中顯著擴增，並伴随H3K23ac修飾增加，透過招募TRIM24蛋白增強PU.1活性。這種表觀遺傳機制促進過量的巨核細胞和髓系細胞產生，導致免疫功能下降。重要的是，干擾H3K23ac-TRIM24的交互作用可恢復HSCs的平衡譜系輸出並減少發炎訊號，為逆轉老化相關免疫衰退提供了潛在治療標的。",
+      "topicTags": [
+        "haematopoietic-stem-cells",
+        "immune-ageing",
+        "epigenetics",
+        "histone-modification",
+        "inflammation"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02317-w",
+      "title": "Microglial mitochondria transfer to astrocytes via GPNMB-enriched extracellular vesicles alleviates cognitive deficits in tauopathy mice",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02317-w",
+      "doi": "10.1038/s41593-026-02317-w",
+      "abstract": "In PS19 mice, microglia-derived glycoprotein nonmetastatic melanoma protein B promotes mitochondrial extracellular vesicle secretion, enabling mitochondrial transfer to astrocytes. This improves astrocytic function and reduces Alzheimer’s disease (AD) symptoms, while GPNMB deficiency impairs it, highlighting new AD treatment avenues.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "膠質細胞透過富含GPNMB的細胞外囊泡將粒線體轉移至星狀膠質細胞，改善tau病小鼠認知障礙",
+      "summaryZh": "在阿茲海默症等tau蛋白病變的PS19小鼠模型中，研究發現小膠質細胞會分泌富含GPNMB（糖蛋白非轉移性黑色素瘤蛋白B）的細胞外囊泡，將功能性粒線體轉移至星狀膠質細胞。這種粒線體轉移機制能改善星狀膠質細胞的功能，進而減緩認知退化症狀。當GPNMB表現不足時，這種保護性機制會受到損害，導致症狀加劇。此研究揭示了神經膠質細胞間通訊的新機制，並為開發阿茲海默症治療藥物提供了嶄新的標的分子。",
+      "topicTags": [
+        "neuroscience",
+        "alzheimer-s-disease",
+        "microglia",
+        "extracellular-vesicles",
+        "mitochondria"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02531-5",
+      "title": "IFN-producing myeloid cells mediate photosensitivity",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02531-5",
+      "doi": "10.1038/s41590-026-02531-5",
+      "abstract": "Intercellular circuits between the myeloid compartment and T cells, keratinocytes and fibroblasts reveal how type I interferon (IFN) and sunlight drive photosensitive skin lesion development, with MMP9+CD14+ cells having a central role.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "干擾素生成骨髓細胞調控光敏感性反應",
+      "summaryZh": "本研究揭示了第一型干擾素與陽光如何共同驅動光敏感性皮膚病灶的發展。研究發現骨髓細胞與T細胞、角质細胞及纖維母細胞之間存在複雜的細胞間通訊網絡，其中MMP9+CD14+細胞扮演關鍵角色。這項發現為理解光過敏反應的發炎機制提供重要見解，並可能為相關皮膚疾病的治療開發提供新靶點。",
+      "topicTags": [
+        "type-i-interferon",
+        "photosensitivity",
+        "myeloid-cells",
+        "skin-inflammation",
+        "cell-circuits"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02348-w",
+      "title": "You talkin’ to me?",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02348-w",
+      "doi": "10.1038/s41564-026-02348-w",
+      "abstract": "Public trust and policy impact depend on communication in local languages. Nonetheless, one language, English, dominates scientific publishing. Multilingual science communication is not outreach — it is part of research responsibility.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41564-026-02367-7",
+      "title": "Lysosomal cholesterol overload impairs the innate–adaptive immune axis in tuberculosis granulomas",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02367-7",
+      "doi": "10.1038/s41564-026-02367-7",
+      "abstract": "Mycobacterium tuberculosis infection disrupts macrophage cholesterol homeostasis, impairing antigen presentation and macrophage–T cell crosstalk, which weakens bacterial control in necrotic granulomas. Carefully timed targeting of this response shows early promise as a host-directed therapy to improve control of tuberculosis.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "結核桿菌肉芽腫中溶酶體膽固醇過量負荷損害先天-適應性免疫軸",
+      "summaryZh": "結核桿菌感染會破壞巨噬細胞的膽固醇恆態，導致溶酶體中膽固醇異常堆積，進而損害抗原呈現功能與巨噬細胞-T細胞間的交互作用。這種免疫軸的失調削弱了宿主對細菌的控制能力，特別是在壞死性肉芽腫中表現尤為明顯。研究結果指出，精準調控此免疫反應路徑的時序性介入策略，有潛力發展為新型宿主導向療法，為改善結核病控制開闢新的治療方向。",
+      "topicTags": [
+        "tuberculosis",
+        "immunology",
+        "cholesterol",
+        "macrophages",
+        "host-directed-therapy"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02368-6",
+      "title": "Wall teichoic acids regulate peptidoglycan synthesis to maintain rod shape in <i>Bacillus subtilis</i>",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02368-6",
+      "doi": "10.1038/s41564-026-02368-6",
+      "abstract": "Wall teichoic acids confer rod shape in the Gram-positive model organism Bacillus subtilis by occluding pores in the cell wall, thereby preventing runaway isotropic (non-oriented) peptidoglycan synthesis.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "壁壁酸調控肽聚醣合成以維持枯草桿菌的桿狀形態",
+      "summaryZh": "桿菌如何維持其特定形狀一直是細菌細胞生物學中的核心問題。本研究發現，壁壁酸（WTA）透過堵塞細胞壁中的孔洞，阻止不受控制的等向性肽聚醣合成，從而使枯草桿菌維持桿狀形態。這一機制的闡明不僅深化了我們對革蘭氏陽性菌細胞壁結構與功能關係的理解，也為開發針對細胞壁合成的新型抗菌策略提供了重要的基礎知識。由於壁壁酸在許多病原菌中高度保守，此研究發現可能對相關感染的治療具有臨床應用價值。",
+      "topicTags": [
+        "cell-wall",
+        "bacterial-shape",
+        "peptidoglycan",
+        "bacillus-subtilis",
+        "microbiology"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003828",
+      "title": "Correction: Somatosensory input drives membrane potential dynamics in motor cortex during voluntary limb movement",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-05-26T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003828",
+      "doi": "10.1371/journal.pbio.3003828",
+      "abstract": "by The PLOS Biology Staff",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology"
+      ],
+      "section": "biology",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1371/journal.pbio.3003822",
+      "title": "Editorial Note: The Signal Sequence Coding Region Promotes Nuclear Export of mRNA",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-05-26T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003822",
+      "doi": "10.1371/journal.pbio.3003822",
+      "abstract": "by The PLOS Biology Editors",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology"
+      ],
+      "section": "biology",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1371/journal.pbio.3003804",
+      "title": "From germline immortality to somatic rejuvenation: Unlocking the ovarian blueprint for longevity",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-05-26T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003804",
+      "doi": "10.1371/journal.pbio.3003804",
+      "abstract": "Aging is typically framed as a one-way, irreversible accumulation of molecular damage in cells and tissues, leading to progressive functional decline. Yet mammalian reproduction, and particularly female reproduction, reveals a striking exception to this rule. Despite residing within an aging organism and within a fast-aging ovarian tissue environment, oocytes give rise to embryos that begin life with restored developmental potential and youthful molecular organization. By reframing ovarian biology as a model for rejuvenation rather than solely as a site of reproductive decline, this Essay proposes that the ovary offers a powerful blueprint for advancing the biology of aging and longevity.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology",
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "從生殖系永生到體細胞年輕化：解鎖卵巢的長壽藍圖",
+      "summaryZh": "老化通常被視為不可逆的分子損傷累積過程，然而女性生殖系統卻展現了獨特的例外。卵子雖然置身於老化的卵巢環境中，卻能產生具有恢復發育潛力和年輕分子組織的胚胎。本論文重新詮釋卵巢生物學，將其從生殖衰老的場域轉變為研究年輕化的模型。這項觀點可能為抗衰老生物學和延長壽命的研究提供全新的方向與突破口。",
+      "topicTags": [
+        "aging",
+        "longevity",
+        "rejuvenation",
+        "ovarian-biology",
+        "regenerative-medicine"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003794",
+      "title": "Remembrance of things past: Towards a life-course biology of aging",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-05-26T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003794",
+      "doi": "10.1371/journal.pbio.3003794",
+      "abstract": "Globally, the growing proportion of older individuals is imposing personal and societal costs. However, interventions that slow aging are possible; for example, dampened nutrient signaling pathway activity in animal models promotes better health later in life. Recent findings indicate that such interventions have long-term effects even when applied transiently in early adulthood, forming a “physiological memory.” Similar memory has been extensively documented in human epidemiology, where the health of older people is shaped by their earlier environmental exposures, such as diet composition. This Essay argues that the study of the biology of aging should encompass determinants of healthspan across the entire life course.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "回顧過往：邁向生命歷程的老年生物學",
+      "summaryZh": "全球老年人口比例持續攀升，為個人與社會帶來沉重負擔。然而，減緩衰老的介入措施確實可行，例如在動物模型中抑制營養訊號路徑可促進晚年健康。最新研究顯示，即使僅在成年早期短暫實施此類介入，仍能產生長期效果，形成所謂的「生理記憶」。人類流行病學也廣泛記錄了類似現象，顯示早年環境暴露（如飲食組成）會影響老年健康。本論文主張老年生物學研究應涵蓋整個生命歷程的健康壽命決定因素。",
+      "topicTags": [
+        "aging",
+        "life-course",
+        "healthspan",
+        "interventions",
+        "epidemiology"
+      ]
+    },
+    {
+      "id": "10.1038/d41586-026-01665-8",
+      "title": "Conservation gains should not be at the mercy of political changes",
+      "journal": "Nature",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/d41586-026-01665-8",
+      "doi": "10.1038/d41586-026-01665-8",
+      "abstract": "Letter to the Editor",
+      "sourceId": "nature",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "articleType": "Correspondence",
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/d41586-026-01415-w",
+      "title": "Hard-to-detect mutations explain how common autoimmune diseases arise",
+      "journal": "Nature",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/d41586-026-01415-w",
+      "doi": "10.1038/d41586-026-01415-w",
+      "abstract": "An old theory gains fresh support from advanced DNA sequencing, which can detect rare mutations in B cells from people with autoimmune thyroid conditions.",
+      "sourceId": "nature",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "articleType": "News And Views",
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "難以偵測的突變解釋常見自體免疫疾病如何產生",
+      "summaryZh": "一個關於自體免疫疾病成因的古老理論獲得新支持。透過先進的DNA定序技術，研究人員能夠偵測自體免疫甲狀腺疾病患者B細胞中的罕見突變。這項研究發現，這些過去難以偵測的基因突變可能解釋常見自體免疫疾病的發生機制，對於開發新的治療策略具有重要意義。",
+      "topicTags": [
+        "autoimmune-disease",
+        "dna-sequencing",
+        "b-cells",
+        "mutations",
+        "thyroid"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-73622-y",
+      "title": "Contextual gating of whisker-evoked responses by frontal cortex supports flexible decision making",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-73622-y",
+      "doi": "10.1038/s41467-026-73622-y",
+      "abstract": "Sensory stimuli have different implications depending upon context. Here, the authors report prominent context-dependent integration of whisker sensation with auditory working memory cues in frontal cortex directly downstream of somatosensory cortex.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "情境閘門機制：前額皮質調控觸鬚誘發反應以支援彈性決策",
+      "summaryZh": "感覺刺激的意義會隨著情境而改變。本研究發現，前額皮質會根據情境動態整合觸鬚感覺與聽覺工作記憶線索，這種整合發生在體感覺皮質直接下游的區域。此機制使動物能夠根據不同情境做出彈性決策，揭示了前額皮質在情境依賴性感官整合中的關鍵角色，對理解大腦如何支援認知彈性具有重要意義。",
+      "topicTags": [
+        "neuroscience",
+        "sensory-processing",
+        "decision-making",
+        "frontal-cortex",
+        "working-memory"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-73646-4",
+      "title": "TAK1 drives inflammatory fibroblast acquisition and shapes myocardial infarction responses in male mice",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-73646-4",
+      "doi": "10.1038/s41467-026-73646-4",
+      "abstract": "After a heart attack, fibroblasts help coordinate inflammation and repair, but the signals controlling this response are unclear. Here, the authors show that TAK1 drives an inflammatory fibroblast state that worsens remodeling after myocardial infarction in male mice.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "TAK1驅動炎性成纖維細胞獲取並塑造雄性小鼠心肌梗塞反應"
+    },
+    {
+      "id": "10.1038/s41467-026-73387-4",
+      "title": "Optimising DNA origami assembly by reducing off-target interactions",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-05-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-73387-4",
+      "doi": "10.1038/s41467-026-73387-4",
+      "abstract": "Off-target binding can result in kinetic traps reducing the efficiency of DNA origami assembly. Here, the authors develop a software tool to design scaffold & staples with chosen sequences to avoid unwanted molecular interactions, yielding stronger, more uniform nanostructures.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 35,
+      "passedByScope": 16,
+      "llmClassified": 19,
+      "llmYes": 6,
+      "llmNotSure": 0,
+      "llmNo": 13,
+      "included": 22,
+      "excluded": 13
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 21,
+      "llmTagged": 21,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 21,
+      "candidates": 13,
+      "featured": 12,
+      "overflow": 1,
+      "lineA": 0,
+      "lineB": 13,
+      "preprint": 0,
+      "skip": 8
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 1,
+      "llmTranslated": 1,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10669-3",
+        "title": "Bottom-Up Synthesis of Molecular Nanodiamond from Nanographene",
+        "journal": "Nature",
+        "publishedDate": "2026-05-26T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10669-3",
+        "doi": "10.1038/s41586-026-10669-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01664-9",
+        "title": "Poland’s economy is thriving, but its science is dying",
+        "journal": "Nature",
+        "publishedDate": "2026-05-26T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01664-9",
+        "doi": "10.1038/d41586-026-01664-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01663-w",
+        "title": "A cautious voice on the closure of China’s journal ranking list",
+        "journal": "Nature",
+        "publishedDate": "2026-05-26T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01663-w",
+        "doi": "10.1038/d41586-026-01663-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01336-8",
+        "title": "Should there be a national museum of chemicals?",
+        "journal": "Nature",
+        "publishedDate": "2026-05-26T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01336-8",
+        "doi": "10.1038/d41586-026-01336-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01666-7",
+        "title": "Iran’s Internet blackout: a scholar’s month in the dark",
+        "journal": "Nature",
+        "publishedDate": "2026-05-26T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01666-7",
+        "doi": "10.1038/d41586-026-01666-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01617-2",
+        "title": "Too dangerous to release: is Mythos the start of the restricted-AI era?",
+        "journal": "Nature",
+        "publishedDate": "2026-05-26T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01617-2",
+        "doi": "10.1038/d41586-026-01617-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01620-7",
+        "title": "Innovation starts in schools — lessons from China",
+        "journal": "Nature",
+        "publishedDate": "2026-05-26T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01620-7",
+        "doi": "10.1038/d41586-026-01620-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01616-3",
+        "title": "Why AI can’t be trusted to write scientific reviews",
+        "journal": "Nature",
+        "publishedDate": "2026-05-26T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01616-3",
+        "doi": "10.1038/d41586-026-01616-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-00402-5",
+        "title": "When the grid can’t keep up: how South African laboratories handle power outages",
+        "journal": "Nature",
+        "publishedDate": "2026-05-26T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-00402-5",
+        "doi": "10.1038/d41586-026-00402-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-73458-6",
+        "title": "Electrically reconfigurable polarization control with double tri-layer black phosphorus heterostructures",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-05-26T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-73458-6",
+        "doi": "10.1038/s41467-026-73458-6",
+        "abstract": "Layered anisotropic 2D materials hold potential for the realization of compact polarization modulators. Here, the authors realize a Fabry-Perot cavity integrating two orthogonally stacked and independently gated black phosphorus trilayers, showing tunable polarization control and predicting electronic access to up to 86% of the Poincaré sphere.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-73607-x",
+        "title": "The widening partisan gap in legislative support for civil rights in the United States",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-05-26T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-73607-x",
+        "doi": "10.1038/s41467-026-73607-x",
+        "abstract": "Civil rights legislation became a significant policy area after the Civil Rights Movement of the 1960s. Here, the authors show that it has since become a more common but more divisive area of policy, with party divergences in the mid-1990s and mid-2010s.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-73745-2",
+        "title": "A self-powered spherical compound eye with 8 ns-motion response for source-constrained drones",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-05-26T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-73745-2",
+        "doi": "10.1038/s41467-026-73745-2",
+        "abstract": "This work demonstrates a self-powered, event-nature artificial spherical compound eye that achieved ultrafast and panoramic motion sensing under 0 V, particularly suitable for resource-limited drones and robotics.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-73679-9",
+        "title": "Topological structure optimization of B,N-doped nanographenes for deep-blue emitters",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-05-26T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-73679-9",
+        "doi": "10.1038/s41467-026-73679-9",
+        "abstract": "Deep-blue emitting materials are essential for OLEDs. Here, the authors show how molecular topology in B,N-doped nanographenes controls conformation and excited-state properties, enabling efficient, narrowband deep-blue electroluminescence.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    }
+  ]
+}
