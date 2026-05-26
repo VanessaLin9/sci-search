@@ -38,7 +38,9 @@ const digestFileSchema = z.object({
   maxInputTokens: z.number().int().positive(),
   maxTokens: z.number().int().positive(),
   timeoutMs: z.number().int().positive(),
-  maxRetries: z.number().int().positive(),
+  maxRetries: z.number().int().nonnegative(),
+  summarizeTimeoutMs: z.number().int().positive(),
+  summarizeMaxRetries: z.number().int().nonnegative(),
   enableThinking: z.boolean(),
   summarizeConcurrency: z.number().int().positive(),
 });

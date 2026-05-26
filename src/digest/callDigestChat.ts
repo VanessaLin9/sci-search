@@ -5,6 +5,13 @@ import type { DigestLlmConfig } from "./config.js";
 import { createDigestLlmClient } from "./digestLlmClient.js";
 import { formatElapsedMs, logDigest } from "./digestLog.js";
 
+function formatError(error: unknown): string {
+  if (error instanceof Error) {
+    return error.message;
+  }
+  return String(error);
+}
+
 export async function callDigestChatCompletion(
   config: DigestLlmConfig,
   buildParams: (maxTokens: number) => ChatCompletionCreateParamsNonStreaming,
@@ -13,9 +20,13 @@ export async function callDigestChatCompletion(
     estimatedCompletionTokens: number;
     completionFloor?: number;
     preferJsonResponseFormat?: boolean;
+    timeoutMs?: number;
+    maxRetries?: number;
   },
 ): Promise<ChatCompletion> {
-  const client = createDigestLlmClient(config);
+  const timeoutMs = options.timeoutMs ?? config.timeoutMs;
+  const maxRetries = options.maxRetries ?? config.maxRetries;
+  const client = createDigestLlmClient(config, { timeoutMs, maxRetries });
   const startedAt = Date.now();
   const floor = options.completionFloor ?? config.maxTokens;
   const maxTokens = resolveCompletionMaxTokens(
@@ -26,7 +37,7 @@ export async function callDigestChatCompletion(
   const useJson = options.preferJsonResponseFormat ?? config.preferJsonResponseFormat;
 
   logDigest(
-    `${options.label}: POST chat/completions (max_tokens=${maxTokens}, need~${options.estimatedCompletionTokens}, cap=${config.maxTokens}, timeout=${config.timeoutMs}ms)`,
+    `${options.label}: POST chat/completions (max_tokens=${maxTokens}, need~${options.estimatedCompletionTokens}, cap=${config.maxTokens}, timeout=${timeoutMs}ms, retries=${maxRetries})`,
   );
 
   try {
@@ -34,8 +45,13 @@ export async function callDigestChatCompletion(
     logDigest(`${options.label}: HTTP ok in ${formatElapsedMs(startedAt)}`);
     return completion;
   } catch (error) {
+    const detail = formatError(error);
+    const attempts = maxRetries + 1;
+    const maxWaitHint =
+      attempts > 1 ? ` (up to ~${Math.round((timeoutMs * attempts) / 60000)}m with retries)` : "";
+    logDigest(`${options.label}: failed after ${formatElapsedMs(startedAt)}${maxWaitHint}: ${detail}`);
+
     if (!useJson) {
-      logDigest(`${options.label}: failed after ${formatElapsedMs(startedAt)}`);
       throw error;
     }
 

@@ -30,15 +30,22 @@ type SummarizeOneResult =
   | { ok: true; id: string; fields: PaperSummarizeFields }
   | { ok: false; id: string };
 
+function summarizeLabel(index: number, total: number, paper: ClassifiedPaper, retry: boolean): string {
+  const base = `summarize ${index + 1}/${total}`;
+  const idHint = paper.doi ?? paper.id;
+  return retry ? `${base} retry (${idHint})` : `${base} (${idHint})`;
+}
+
 async function summarizeOneFeaturedPaper(options: {
   paper: ClassifiedPaper;
   index: number;
   total: number;
   scopeBySourceId: ReadonlyMap<string, SourceScope>;
+  config: ReturnType<typeof getDigestLlmConfig>;
+  retry?: boolean;
 }): Promise<SummarizeOneResult> {
-  const { paper, index, total, scopeBySourceId } = options;
-  const config = getDigestLlmConfig();
-  const label = `summarize ${index + 1}/${total}`;
+  const { paper, index, total, scopeBySourceId, config, retry = false } = options;
+  const label = summarizeLabel(index, total, paper, retry);
   const input = toDigestSummarizeInput(paper, scopeBySourceId);
 
   try {
@@ -50,10 +57,16 @@ async function summarizeOneFeaturedPaper(options: {
         label,
         estimatedCompletionTokens: estimateSummarizeCompletionTokens(),
         completionFloor: 2048,
+        timeoutMs: config.summarizeTimeoutMs,
+        maxRetries: config.summarizeMaxRetries,
       },
     );
 
     const finishReason = completion.choices[0]?.finish_reason ?? "unknown";
+    const usage = completion.usage;
+    const usageHint = usage
+      ? `, tokens ${usage.completion_tokens ?? "?"} completion`
+      : "";
     const { content, usedReasoningFallback } = extractDigestMessageContent(
       completion.choices[0]?.message,
     );
@@ -66,7 +79,7 @@ async function summarizeOneFeaturedPaper(options: {
       throw new Error(`id mismatch (expected ${paper.id}, got ${parsed.id})`);
     }
 
-    logDigest(`${label}: ok (${parsed.topic_tags.length} tags, finish_reason=${finishReason})`);
+    logDigest(`${label}: ok (${parsed.topic_tags.length} tags, finish_reason=${finishReason}${usageHint})`);
     return {
       ok: true,
       id: paper.id,
@@ -103,7 +116,7 @@ export async function summarizeFeaturedPapers(options: {
 
   const concurrency = config.summarizeConcurrency;
   logDigest(
-    `summarize ${featured.length} featured paper(s), concurrency ${concurrency} (one request per paper)`,
+    `summarize ${featured.length} featured paper(s), concurrency ${concurrency}, timeout ${config.summarizeTimeoutMs}ms, retries ${config.summarizeMaxRetries}`,
   );
 
   const results = await runWithConcurrency(featured, concurrency, (paper, index) =>
@@ -112,17 +125,42 @@ export async function summarizeFeaturedPapers(options: {
       index,
       total: featured.length,
       scopeBySourceId: options.scopeBySourceId,
+      config,
     }),
   );
 
   let llmSummarized = 0;
   let failed = 0;
-  for (const result of results) {
+  const failedPapers: ClassifiedPaper[] = [];
+
+  for (let index = 0; index < results.length; index += 1) {
+    const result = results[index];
     if (result.ok) {
       fieldsById.set(result.id, result.fields);
       llmSummarized += 1;
     } else {
       failed += 1;
+      failedPapers.push(featured[index]);
+    }
+  }
+
+  if (failedPapers.length > 0) {
+    logDigest(`summarize retrying ${failedPapers.length} failed paper(s) sequentially…`);
+    for (const paper of failedPapers) {
+      const index = featured.findIndex((item) => item.id === paper.id);
+      const retryResult = await summarizeOneFeaturedPaper({
+        paper,
+        index: index >= 0 ? index : 0,
+        total: featured.length,
+        scopeBySourceId: options.scopeBySourceId,
+        config,
+        retry: true,
+      });
+      if (retryResult.ok) {
+        fieldsById.set(retryResult.id, retryResult.fields);
+        llmSummarized += 1;
+        failed -= 1;
+      }
     }
   }
 

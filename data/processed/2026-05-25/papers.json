@@ -1,6 +1,6 @@
 {
   "reportDate": "2026-05-25",
-  "generatedAt": "2026-05-26T06:22:06.292Z",
+  "generatedAt": "2026-05-26T09:15:38.784Z",
   "papers": [
     {
       "id": "10.1038/s41592-026-03112-y",
@@ -19,7 +19,16 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": true,
+      "titleZh": "Cryo-EM整合質譜技術：首次實現分子組成與超微結構的直接連結",
+      "summaryZh": "本研究開發了一套關聯性工作流程，將Cryo-EM與Cryo-ET結合二次離子質譜技術，能從同一玻璃化樣本中產生空間註冊的化學地圖。這項技術突破直接將超微結構資訊與分子組成進行連結，使研究人員能夠在奈米級解析度下精確定位藥物、污染物及訊號分子在細胞內的位置，為細胞生物學與藥物開發開闢全新研究途徑。",
+      "topicTags": [
+        "cryo-em",
+        "cryo-et",
+        "mass-spectrometry",
+        "correlative-imaging",
+        "structural-biology"
+      ]
     },
     {
       "id": "10.1038/s41592-026-03101-1",
@@ -57,9 +66,18 @@
         "single-cell"
       ],
       "section": "single-cell-spatial",
-      "digestLine": "line-a",
+      "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": true,
+      "titleZh": "讓bulk訓練模型預測單細胞基因調控",
+      "summaryZh": "本研究提出兩種新方法，能將原本針對大量細胞（bulk）資料訓練的序列模型，有效適配至單細胞層級的基因調控與變異效應預測。這種遷移學習策略大幅減少了從頭訓練模型所需的計算資源與時間成本。研究結果顯示，bulk資料訓練的模型蘊含的豐富基因組知識，能成功轉移至解析度更高的單細胞分析。此突破為單細胞基因調控研究提供了更高效且可及的計算工具。",
+      "topicTags": [
+        "single-cell",
+        "sequence-models",
+        "gene-regulation",
+        "variant-effects",
+        "computational-biology"
+      ]
     },
     {
       "id": "10.1038/s41592-026-03109-7",
@@ -81,13 +99,13 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
       "featured": true,
-      "titleZh": "低溫電子顯微鏡結合質譜成像實現亞細胞化學映射",
-      "summaryZh": "本研究開發了一套結合低溫電子顯微鏡（cryo-EM）與聚焦離子束二次離子質譜（FIB-SIMS）的關聯性分析流程，無需標記即可在亞細胞層級進行化學成像與空間定位分析。此方法相容於低溫光學顯微鏡及 FIB 研磨薄片，適用於原核與真核細胞樣本。研究團隊以環境菌株攝取雙酚-AF 污染物為例，發現此類化學物質會被隔離儲存於細胞質的相分離聚集體中，即使細菌的外排機制被大量誘導上調，仍無法將其移除。本技術為在接近原生態的生物樣本中映射元素與分子特徵提供了強大且有效的新途徑。",
+      "titleZh": "低溫電子顯微鏡結合質譜成像實現亞細胞化學定位",
+      "summaryZh": "Cryo-EM可高解析度呈現生物樣本結構，卻難以直接化學定性觀測到的密度。本研究首創結合低溫電子顯微鏡與聚焦離子束二次離子質譜（FIB-SIMS），無需標記即可對生物樣本進行空間化學分析。團隊以此技術研究環境菌對雙酚A污染物的攝取，發現這些化學物質會儲存於細胞質相分離聚集體中，巧妙迴避細菌外排機制的清除作用，即使該機制已被強烈誘導上調。此關聯顯微技術為在近天然狀態下繪製元素與分子特徵圖譜提供了強大工具。",
       "topicTags": [
         "cryo-em",
         "mass-spectrometry",
-        "correlative-imaging",
-        "subcellular-mapping",
+        "correlative-microscopy",
+        "subcellular-imaging",
         "environmental-pollutants"
       ]
     },
@@ -113,14 +131,14 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
       "featured": true,
-      "titleZh": "高感染多重性實現可擴展的CRISPR混合篩選",
-      "summaryZh": "CRISPR混合篩選技術能以前所未有的精確度與規模連結基因與細胞表型，但傳統方法需要大量細胞才能維持足夠的sgRNA表現量，造成技術與成本上的挑戰。本研究系統性評估了高感染多重性（MOI）下多重sgRNA共同遞送的策略，發現MOI 2.5至10範圍內的多重化篩選可維持優異的表現效果，同時大幅降低細胞需求量。研究團隊進一步將此優化條件應用於全基因組CRISPRi篩選，成功以僅五十萬細胞識別出ICAM-1細胞內黏附分子的新調控候選基因。此研究為資源受限環境中的CRISPR篩選應用提供了實用框架，有助於推動功能基因體學研究的普及與效率提升。",
+      "titleZh": "多重引導RNA策略實現可擴展的CRISPR混合篩選",
+      "summaryZh": "傳統的混合CRISPR篩選需要大量細胞才能確保sgRNA的代表性，對技術和成本都是挑戰。本研究證實透過高感染多重性（MOI 2.5-10）同時遞送多個引導RNA，可在維持篩選效能的同時大幅降低細胞需求。研究團隊進一步應用此優化條件進行ICAM-1調控因子的全基因組篩選，僅用五十萬細胞即成功識別新候選基因。這項工作為資源受限的研究環境提供了一套切實可行的CRISPR篩選簡化框架，有助於推動功能基因體學研究的普及。",
       "topicTags": [
         "crispr-screens",
+        "pooled-screens",
+        "multiplexed-editing",
         "functional-genomics",
-        "multiplexed-perturbation",
-        "high-throughput-screening",
-        "gene-phenotype-mapping"
+        "gene-perturbation"
       ]
     },
     {
@@ -141,9 +159,18 @@
         "single-nucleus"
       ],
       "section": "single-cell-spatial",
-      "digestLine": "line-a",
+      "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": true,
+      "titleZh": "解碼基因表現的序列決定因子：跨越細胞類型與疾病狀態的調控密碼",
+      "summaryZh": "現有的基因表現預測模型主要基於大量組織或細胞系的bulk表達數據，難以捕捉精確細胞類型與狀態的特異性。本研究提出的Decima模型，透過分析超過2200萬個細胞的單細胞RNA測序數據，能夠從DNA序列預測特定細胞類型與條件下的基因表現。研究團隊展示了Decima在揭示驅動細胞類型特異性基因表現的順式調控機制、預測非編碼遺傳變異在特定細胞類型中的效應，以及設計情境特異性調控DNA元件方面的強大能力。這項突破性研究為理解基因調控網絡和精準醫學提供了全新的計算工具。",
+      "topicTags": [
+        "gene-expression",
+        "single-cell",
+        "cis-regulatory",
+        "sequence-models",
+        "noncoding-variants"
+      ]
     },
     {
       "id": "10.1038/s41592-026-03093-y",
@@ -162,7 +189,16 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": true,
+      "titleZh": "AreTomoLive：即時且高通量之自動化全面校正與去噪低溫電子斷層掃描影像重建",
+      "summaryZh": "低溫電子斷層掃描（cryo-ET）與次級結構平均法是解析細胞內分子機器結構的關鍵技術，但現有軟體生態分散且處理效率有限。本研究開發之 AreTomoLive 為自動化前處理流程，整合兩個 GPU 加速套件：AreTomo3 可快速完成斷層掃描對齊與重建，並新增樣品幾何校正及局部對比傳遞函數修正功能；DenoisET 則能在對比增強過程中保留更多中頻解析特徵。該流程支援資料收集同時進行即時前處理，大幅提升高通量處理能力，為 cryo-ET 在結構生物學與細胞生物學的廣泛應用奠定基礎。",
+      "topicTags": [
+        "cryo-electron-tomography",
+        "image-processing",
+        "automation",
+        "gpu-acceleration",
+        "structural-biology"
+      ]
     },
     {
       "id": "10.1038/s41592-026-03105-x",
@@ -182,14 +218,14 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
       "featured": true,
-      "titleZh": "RNA交互體的全方位調控與功能百科圖譜",
-      "summaryZh": "RNA分子會與RNA結合蛋白質及其他RNA交互作用，調控基因表現。本研究開發了rbsSeeker和rriScan工具，大幅提升RBP-RNA及RNA-RNA交互作用的偵測靈敏度，並整合至RNA交互體百科資料庫（ENCORI）供研究者線上探索。研究團隊運用此資源發現了新型m6A相關蛋白質、調控rRNA假尿苷的孤兒小核糖核酸，以及目標導向的微RNA降解事件，證實ENCORI可作為研究RNA交互體的重要框架。此平台為研究RNA-蛋白質及RNA-RNA交互體提供了全面的分析工具與資源。",
+      "titleZh": "RNA交互體的全方位調控與功能圖譜",
+      "summaryZh": "RNA分子透過與RNA結合蛋白(RBP)及彼此之間的交互作用調控基因表現，然而現有方法對這類交互的偵測仍有限。本研究開發了rbsSeeker與rriScan工具，並將其整合至RNA交互體百科全書(ENCORI)平台，大幅提升RBP–RNA與RNA–RNA交互的檢測靈敏度與覆蓋範圍。利用此資源，研究團隊發現了新型m6A相關蛋白、孤兒小核RNA引導rRNA假尿苷的修飾，以及目標導向的microRNA降解事件，展示了ENCORI在解析RNA交互網絡中的強大能力。ENCORI已成為研究RNA–蛋白與RNA–RNA交互體的全方位分析平台與開放資源。",
       "topicTags": [
         "rna-interactome",
         "rna-binding-proteins",
-        "epitranscriptomics",
-        "crispr-screen",
-        "gene-regulation"
+        "m6a",
+        "sno-rna",
+        "mirna-degradation"
       ]
     },
     {
@@ -209,7 +245,16 @@
       "section": "other",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": true,
+      "titleZh": "跨族裔百萬人研究：解碼血脂相關的罕見編碼變異",
+      "summaryZh": "本研究分析超過115萬名來自不同族裔的個體，檢測近300萬個罕見編碼變異，發現800個與血脂特徵顯著相關的基因變異，並定位209個候選基因。研究結果顯示RORC基因沉默可作為降低低密度脂蛋白膽固醇的潛在治療標的，為冠狀動脈疾病的預防提供新策略。這項大規模跨族裔研究為罕見編碼變異的致病性分類與心血管疾病新藥開發奠定重要基礎。",
+      "topicTags": [
+        "lipid-genetics",
+        "rare-variants",
+        "exome-sequencing",
+        "coronary-artery-disease",
+        "multi-ancestry"
+      ]
     },
     {
       "id": "10.1038/s41559-026-03088-0",
@@ -229,13 +274,14 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
       "featured": true,
-      "titleZh": "真核生物向滲透營養的逆轉",
-      "summaryZh": "本研究揭示，多個遠緣真核生物譜系獨立從吞噬捕食演化為滲透營養。這種趨同演化是透過挪用祖先獲得的細菌基因，並利用真核生物間的水平基因轉移來實現的。這項發現顛覆了對真核生物營養模式演化的認知，強調了水平基因轉移在推動真核生物多樣性中的關鍵角色。研究結果對於理解生物如何適應環境變化和演化出新特徵具有深遠影響。",
+      "titleZh": "真核生物重返滲透營養：趨同演化的分子證據",
+      "summaryZh": "本研究揭示了遠緣真核生物譜系如何透過趨同演化，從吞噬攝食逆轉為滲透營養生活方式。這種逆轉的關鍵在於祖先時期獲得的細菌基因被重新徵用，並透過真核生物間的水平基因轉移進行傳播與動員。此發現挑戰了演化學中關於複雜性狀不可逆傳統觀點，證明即便高度特化的攝食機制也可能被重新改造。研究成果為理解真核生物多樣性的分子基礎提供了嶄新視角，並深化我們對趨同演化機制的認識。",
       "topicTags": [
+        "evolution",
         "horizontal-gene-transfer",
-        "eukaryote-evolution",
+        "eukaryotes",
         "convergent-evolution",
-        "osmotrophy"
+        "molecular-biology"
       ]
     },
     {
@@ -257,7 +303,16 @@
       "section": "biology",
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
-      "featured": true
+      "featured": true,
+      "titleZh": "真核生物滲透營養特化中基因轉移與平行演化的特徵",
+      "summaryZh": "本研究分析86種真核生物的比較基因體學，發現滲透營養生物具有豐富代謝功能的共享遺傳工具包。這些共享特徵的形成可追溯至早期的水平基因轉移事件，以及近期發生在遠緣真核生物之間的基因轉移。研究結果表明，具有相似營養策略的生物可能透過基因轉移獨立演化出相似的適應性，揭示了水平基因轉移在真核生物平行演化中的重要角色。",
+      "topicTags": [
+        "horizontal-gene-transfer",
+        "comparative-genomics",
+        "eukaryote-evolution",
+        "osmotrophic",
+        "parallel-evolution"
+      ]
     },
     {
       "id": "10.1038/s41559-026-03060-y",
@@ -277,14 +332,14 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
       "featured": true,
-      "titleZh": "人類驅逐狼群 促進金豺橫掃歐洲",
-      "summaryZh": "頂級掠食者的衰退常會對生態系統產生深遠的連鎖效應。本研究揭示，狼群從歐洲景觀中的消失，為金豺的擴張提供了關鍵契機。作者進一步運用模型預測了這一物種未來在歐洲的分布範圍，有助於理解人為干擾如何透過食物鏈影響物種分布，對保育政策制定具有重要參考價值。",
+      "titleZh": "人類驅狼護牧的意外後果：金豺趁勢席捲歐洲",
+      "summaryZh": "這項研究揭示了人類驅趕狼群的行為如何意外地促進了金豺在歐洲的擴散。研究團隊發現，狼群的消失改變了生態系統的平衡，讓金豺得以填補生態空位並快速占據新的棲地。模型預測顯示，金豺的分布範圍在未來可能會持續擴大。此研究強調了頂級掠食者消失對整個生態系統的連鎖影響，也提醒我們人為干預生態系統時可能產生的非預期後果。",
       "topicTags": [
-        "predator-depletion",
-        "golden-jackal",
-        "europe",
-        "range-expansion",
-        "trophic-cascade"
+        "predator-prey-dynamics",
+        "species-expansion",
+        "conservation-biology",
+        "ecosystem-cascades",
+        "golden-jackal"
       ]
     },
     {
@@ -305,7 +360,7 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
       "featured": false,
-      "titleZh": "組織架構與形態素梯度動態相互調控"
+      "titleZh": "組織結構與形態發生素梯度動態相互調節"
     },
     {
       "id": "10.1038/s41556-026-01958-0",
@@ -327,14 +382,14 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
       "featured": true,
-      "titleZh": "造血動力學模型揭示外在調控影響造血幹細胞的譜系偏向輸出",
-      "summaryZh": "本研究結合單細胞移植、深度表型分析與數學建模，系统性探討長期造血幹細胞的功能與調控機制。研究發現，重建動力學可作為評估造血幹細胞分化能力的統一指標，超越傳統標記物的限制。更重要的是，研究證實外在環境因素在決定造血幹細胞譜系偏向輸出中扮演關鍵角色，而非僅由細胞內在特性決定。這項動力學模型的建立為理解造血過程與血液疾病的發生提供了全新的理論框架與預測工具。",
+      "titleZh": "基於動力學的造血模型揭示外源性調控對造血幹細胞譜系偏向的影響",
+      "summaryZh": "本研究透過單細胞移植、長期造血幹細胞（HSC）深度表型分析與數學建模，發現重建動力學可作為衡量HSC潛能的統一指標，並指出外源性調控是導致HSC譜系輸出偏斜的關鍵因素。這項發現挑戰了傳統上僅以內在因子解釋HSC命運的觀點，並提供了一種可量化的框架來預測造血重建的動態過程。模型預測外源性信號在不同環境下能夠重塑血細胞譜系的分布，對臨床移植策略及再生醫學具有重要指導意義。總體而言，該研究為造血系統的調控機制提供了新視角，並促進了對幹細胞命運決定過程的深入理解。",
       "topicTags": [
         "haematopoiesis",
         "stem-cells",
-        "single-cell-analysis",
+        "kinetics",
         "mathematical-modelling",
-        "lineage-bias"
+        "single-cell"
       ]
     },
     {
@@ -355,7 +410,7 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
       "featured": false,
-      "titleZh": "腦幹低維度群體動態調控快速動眼期睡眠"
+      "titleZh": "腦幹低維群體動態調控快速動眼睡眠閘門"
     },
     {
       "id": "10.1038/s41593-026-02285-1",
@@ -375,7 +430,7 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
       "featured": false,
-      "titleZh": "自然場景凝視持續時間取決於記憶編碼而非處理需求"
+      "titleZh": "自然場景注視時長源於記憶編碼而非處理需求"
     },
     {
       "id": "10.1038/s41590-026-02522-6",
@@ -397,7 +452,7 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
       "featured": false,
-      "titleZh": "真菌聚糖增強mRNA疫苗"
+      "titleZh": "真菌醣類增強mRNA疫苗效力"
     },
     {
       "id": "10.1038/s41590-026-02532-4",
@@ -417,7 +472,7 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
       "featured": false,
-      "titleZh": "酶切將細菌脂蛋白武器化為免疫絆線"
+      "titleZh": "酶切將細菌脂蛋白轉化為免疫絆線"
     },
     {
       "id": "10.1038/s41590-026-02536-0",
@@ -437,7 +492,7 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
       "featured": false,
-      "titleZh": "RUNX1缺陷揭示胸腺肺泡第二型上皮模擬細胞"
+      "titleZh": "RUNX1缺陷揭示胸腺第二型肺泡上皮模擬細胞"
     },
     {
       "id": "10.1038/s41564-026-02383-7",
@@ -459,7 +514,7 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
       "featured": false,
-      "titleZh": "CRISPRi篩選揭示真菌 essential vulnerabilities"
+      "titleZh": "CRISPRi篩選揭示關鍵真菌弱點"
     },
     {
       "id": "10.1038/s41564-026-02369-5",
@@ -481,7 +536,7 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
       "featured": false,
-      "titleZh": "粒線體自噬步入真菌毒力研究舞台"
+      "titleZh": "粒線體自噬凸顯真菌致病力"
     },
     {
       "id": "10.1038/d41586-026-01621-6",
@@ -530,15 +585,15 @@
       "candidates": 20,
       "featured": 12,
       "overflow": 8,
-      "lineA": 2,
-      "lineB": 18,
+      "lineA": 0,
+      "lineB": 20,
       "preprint": 0,
       "skip": 2
     },
     "summarize": {
       "requested": 12,
-      "llmSummarized": 6,
-      "failed": 6
+      "llmSummarized": 12,
+      "failed": 0
     },
     "translate": {
       "requested": 8,

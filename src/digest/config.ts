@@ -19,6 +19,8 @@ export type DigestLlmConfig = {
   timeoutMs: number;
   maxTokens: number;
   maxRetries: number;
+  summarizeTimeoutMs: number;
+  summarizeMaxRetries: number;
   summarizeConcurrency: number;
   preferJsonResponseFormat: boolean;
   disableThinking: boolean;
@@ -60,6 +62,8 @@ export function getDigestLlmConfig(): DigestLlmConfig {
     timeoutMs: file.timeoutMs,
     maxTokens: file.maxTokens,
     maxRetries: file.maxRetries,
+    summarizeTimeoutMs: file.summarizeTimeoutMs,
+    summarizeMaxRetries: file.summarizeMaxRetries,
     summarizeConcurrency: file.summarizeConcurrency,
     preferJsonResponseFormat: !nvidia,
     disableThinking: nvidia && !file.enableThinking,

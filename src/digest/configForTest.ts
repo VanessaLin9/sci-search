@@ -30,6 +30,8 @@ export function getDigestLlmConfigForTest(options?: {
     timeoutMs: file.timeoutMs,
     maxTokens: file.maxTokens,
     maxRetries: file.maxRetries,
+    summarizeTimeoutMs: file.summarizeTimeoutMs,
+    summarizeMaxRetries: file.summarizeMaxRetries,
     summarizeConcurrency: file.summarizeConcurrency,
     preferJsonResponseFormat: !nvidia,
     disableThinking: nvidia && !file.enableThinking,

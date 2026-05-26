@@ -1,25 +1,38 @@
 import OpenAI from "openai";
 import { getDigestLlmConfig, type DigestLlmConfig } from "./config.js";
 
-let cachedClient: OpenAI | null = null;
-let cachedConfigKey: string | null = null;
+const clientCache = new Map<string, OpenAI>();
 
-function configCacheKey(config: DigestLlmConfig): string {
-  return `${config.baseUrl}|${config.apiKey.slice(0, 8)}|${config.timeoutMs}|${config.maxRetries}`;
+export type DigestLlmClientOptions = {
+  timeoutMs?: number;
+  maxRetries?: number;
+};
+
+function clientCacheKey(
+  config: DigestLlmConfig,
+  options?: DigestLlmClientOptions,
+): string {
+  const timeoutMs = options?.timeoutMs ?? config.timeoutMs;
+  const maxRetries = options?.maxRetries ?? config.maxRetries;
+  return `${config.baseUrl}|${config.apiKey.slice(0, 8)}|${timeoutMs}|${maxRetries}`;
 }
 
-export function createDigestLlmClient(config = getDigestLlmConfig()): OpenAI {
-  const key = configCacheKey(config);
-  if (cachedClient && cachedConfigKey === key) {
-    return cachedClient;
+export function createDigestLlmClient(
+  config = getDigestLlmConfig(),
+  options?: DigestLlmClientOptions,
+): OpenAI {
+  const key = clientCacheKey(config, options);
+  const cached = clientCache.get(key);
+  if (cached) {
+    return cached;
   }
 
-  cachedClient = new OpenAI({
+  const client = new OpenAI({
     apiKey: config.apiKey,
     baseURL: config.baseUrl,
-    timeout: config.timeoutMs,
-    maxRetries: config.maxRetries,
+    timeout: options?.timeoutMs ?? config.timeoutMs,
+    maxRetries: options?.maxRetries ?? config.maxRetries,
   });
-  cachedConfigKey = key;
-  return cachedClient;
+  clientCache.set(key, client);
+  return client;
 }
