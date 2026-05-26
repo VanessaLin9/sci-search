@@ -89,6 +89,7 @@ npm run write-preview -- --date 2026-05-22
 | `RESEND_API_KEY` | for email | Resend API key |
 | `DIGEST_TO_EMAIL` | for email | JSON array or comma-separated recipients |
 | `DIGEST_FROM_EMAIL` | no | Default `onboarding@resend.dev` |
+| `RESEND_ACCOUNT_EMAIL` | sandbox | Your Resend login; other `DIGEST_TO_EMAIL` addresses skipped until domain verified |
 | `DIGEST_SUBJECT_PREFIX` | no | Default `Paper Digest` |
 | `ROUTE_LIFE_SCIENCE` | no | `1` to enable routing (on in CI) |
 | `ROUTING_LLM_API_KEY` | if routing | Or `NVIDIA_API_KEY` / `OPENAI_API_KEY` |
@@ -112,13 +113,16 @@ Workflow: [`.github/workflows/daily.yml`](.github/workflows/daily.yml)
 | Secret | Required | Notes |
 |--------|----------|-------|
 | `RESEND_API_KEY` | yes | |
-| `DIGEST_TO_EMAIL` | yes | Include all subscribers (JSON array recommended) |
+| `DIGEST_TO_EMAIL` | yes | All intended recipients (JSON array); used fully after domain verify |
+| `RESEND_ACCOUNT_EMAIL` | yes (sandbox) | Your Resend login email — required while `DIGEST_FROM_EMAIL` is `onboarding@resend.dev` |
 | `ROUTING_LLM_API_KEY` | yes | Used for routing; digest can reuse via fallback |
 | `ROUTING_LLM_MODEL` | yes | |
 | `DIGEST_LLM_MODEL` | recommended | CI falls back to `ROUTING_LLM_MODEL` if unset |
 | `DIGEST_LLM_API_KEY` | no | Optional separate key |
-| `DIGEST_FROM_EMAIL` | no | |
+| `DIGEST_FROM_EMAIL` | no | Use `digest@yourdomain.com` after [domain verify](https://resend.com/domains) |
 | `DIGEST_SUBJECT_PREFIX` | no | |
+
+**Resend sandbox:** `onboarding@resend.dev` only delivers to your account inbox. Set `RESEND_ACCOUNT_EMAIL` to that address; extra recipients in `DIGEST_TO_EMAIL` are skipped (warning in log) until you verify a domain and change `DIGEST_FROM_EMAIL`.
 
 ### GitHub Pages (public preview)
 

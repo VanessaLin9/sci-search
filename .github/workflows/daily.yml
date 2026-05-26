@@ -19,6 +19,8 @@ jobs:
       TZ: Asia/Taipei
       RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
       DIGEST_TO_EMAIL: ${{ secrets.DIGEST_TO_EMAIL }}
+      # Resend test mode (onboarding@resend.dev): only this inbox receives mail until a domain is verified
+      RESEND_ACCOUNT_EMAIL: ${{ secrets.RESEND_ACCOUNT_EMAIL }}
       DEBUG_NORMALIZED: "0"
       ROUTE_LIFE_SCIENCE: "1"
       ROUTING_LLM_API_KEY: ${{ secrets.ROUTING_LLM_API_KEY }}
@@ -64,9 +66,6 @@ jobs:
             console.log('digest translate:', d.translate);
           "
 
-      - name: Send digest email
-        run: npm run send-digest -- --date "${{ steps.report.outputs.date }}"
-
       - name: Update public preview (GitHub Pages)
         run: npm run write-preview -- --date "${{ steps.report.outputs.date }}"
 
@@ -88,3 +87,7 @@ jobs:
             git commit -m "chore: daily digest data and preview for ${{ steps.report.outputs.date }}"
             git push
           fi
+
+      - name: Send digest email
+        continue-on-error: true
+        run: npm run send-digest -- --date "${{ steps.report.outputs.date }}"

@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { parseRecipientList } from "./parseRecipientList.js";
+import { applyResendSandboxLimits } from "./resendSandbox.js";
 
 const emailConfigSchema = z.object({
   resendApiKey: z.string().min(1, "RESEND_API_KEY is required"),
@@ -31,5 +32,5 @@ export function loadEmailConfig(): EmailConfig {
     throw new Error(`Email config invalid: ${message}`);
   }
 
-  return parsed.data;
+  return applyResendSandboxLimits(parsed.data);
 }
