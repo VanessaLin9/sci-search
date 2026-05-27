@@ -90,8 +90,9 @@ E2E tests load these files via `createMockFetch({ reportDate: "2026-05-22" })` â
 `npm run test:e2e` runs a deterministic golden pipeline:
 
 - Fixture RSS: [`test/fixtures/golden/rss/nature-methods.xml`](test/fixtures/golden/rss/nature-methods.xml)
+- Snapshot RSS: [`test/fixtures/rss-snapshots/{date}/`](test/fixtures/rss-snapshots/) (0522 busy day, 0524 empty day)
 - Mock LLM responses (routing / tagging / summarize / translate)
-- Asserts `papers.json` schema, selection stats, plain-text titles, featured fields, and digest HTML structure (blue links, DOI line, no leaked HTML tags)
+- Asserts `papers.json` schema, selection stats, plain-text titles, featured fields, and digest HTML structure
 
 CI runs this step before the daily collect job (no API keys required).
 

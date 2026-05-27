@@ -8,6 +8,7 @@ type SnapshotManifestEntry = {
   sourceId: string;
   url: string;
   status: "ok" | "error";
+  onReportDateCount?: number;
 };
 
 type SnapshotManifest = {
@@ -45,4 +46,11 @@ export function loadRssSnapshotUrlMap(reportDate: string): ReadonlyMap<string, s
   }
 
   return map;
+}
+
+/** Sum of on-report-date items across feeds at snapshot time (before cross-source dedupe). */
+export function expectedOnReportDatePaperCount(reportDate: string): number {
+  const manifestPath = join(rssSnapshotDir(reportDate), "manifest.json");
+  const manifest = JSON.parse(readFileSync(manifestPath, "utf8")) as SnapshotManifest;
+  return manifest.sources.reduce((sum, entry) => sum + (entry.onReportDateCount ?? 0), 0);
 }
