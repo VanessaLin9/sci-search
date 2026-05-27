@@ -9,14 +9,21 @@ import { isNatureEcologyEvolutionSkippedItem } from "./normalizers/rss/nature-ec
 import { isNatureImmunologySkippedItem } from "./normalizers/rss/nature-immunology.js";
 import { isNatureMicrobiologySkippedItem } from "./normalizers/rss/nature-microbiology.js";
 import { isPnasEditorialRssItem } from "./normalizers/rss/pnas.js";
-import { normalizeWhitespace } from "./normalizers/shared.js";
+import { normalizeWhitespace, stripInlineHtml } from "./normalizers/shared.js";
 import type { Paper, Source } from "./types.js";
 
 type RssItemWithCustomFields = Item & {
   source?: string;
 };
 
-export { extractDoi, normalizeWhitespace };
+export { extractDoi, normalizeWhitespace, stripInlineHtml };
+
+function normalizeRssTitle(raw: string): string {
+  if (/<[a-z][\s\S]*>/i.test(raw)) {
+    return stripInlineHtml(raw);
+  }
+  return normalizeWhitespace(raw);
+}
 
 export function buildPaperId(paper: Pick<Paper, "doi" | "url" | "title">): string {
   if (paper.doi) return paper.doi.toLowerCase();
@@ -25,7 +32,7 @@ export function buildPaperId(paper: Pick<Paper, "doi" | "url" | "title">): strin
 }
 
 export function normalizeRssItemToPaper(item: RssItemWithCustomFields, source: Source): Paper | null {
-  const title = item.title ? normalizeWhitespace(item.title) : "";
+  const title = item.title ? normalizeRssTitle(item.title) : "";
   const url = item.link?.trim() ?? "";
   const publishedDate = item.isoDate ?? item.pubDate ?? "";
   if (source.id === "pnas" && isPnasEditorialRssItem(item)) {

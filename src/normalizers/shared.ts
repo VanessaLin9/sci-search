@@ -22,3 +22,31 @@ export function stripHtml(html: string): string {
 
   return normalizeWhitespace(withoutTags);
 }
+
+const INLINE_FORMAT_TAGS = ["i", "em", "b", "strong", "sup", "sub"] as const;
+
+/** Unwrap inline tags (e.g. gene italics, superscripts) then strip any remaining markup. */
+export function stripInlineHtml(html: string): string {
+  let text = decodeHtmlEntities(html);
+
+  let changed = true;
+  while (changed) {
+    changed = false;
+    for (const tag of INLINE_FORMAT_TAGS) {
+      const next = text.replace(
+        new RegExp(`<${tag}\\b[^>]*>([\\s\\S]*?)</${tag}>`, "gi"),
+        "$1",
+      );
+      if (next !== text) {
+        changed = true;
+        text = next;
+      }
+    }
+  }
+
+  if (/<[a-z][\s\S]*>/i.test(text)) {
+    return stripHtml(text);
+  }
+
+  return normalizeWhitespace(text);
+}
