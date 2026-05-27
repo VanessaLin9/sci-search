@@ -1,0 +1,156 @@
+{
+  "reportDate": "2026-05-24",
+  "snapshotAt": "2026-05-27T11:45:05.207Z",
+  "sources": [
+    {
+      "sourceId": "cell",
+      "url": "https://www.cell.com/cell/current.rss",
+      "status": "ok",
+      "savedAt": "2026-05-27T11:44:58.140Z",
+      "rssItemCount": 26,
+      "normalizedCount": 26,
+      "onReportDateCount": 0,
+      "bytes": 47272
+    },
+    {
+      "sourceId": "nature",
+      "url": "https://www.nature.com/nature.rss",
+      "status": "ok",
+      "savedAt": "2026-05-27T11:44:58.481Z",
+      "rssItemCount": 75,
+      "normalizedCount": 75,
+      "onReportDateCount": 0,
+      "bytes": 122271
+    },
+    {
+      "sourceId": "science",
+      "url": "https://www.science.org/action/showFeed?type=axatoc&feed=rss&jc=science",
+      "status": "ok",
+      "savedAt": "2026-05-27T11:45:00.454Z",
+      "rssItemCount": 12,
+      "normalizedCount": 12,
+      "onReportDateCount": 0,
+      "bytes": 15463
+    },
+    {
+      "sourceId": "nature-methods",
+      "url": "https://www.nature.com/nmeth.rss",
+      "status": "ok",
+      "savedAt": "2026-05-27T11:45:00.750Z",
+      "rssItemCount": 8,
+      "normalizedCount": 8,
+      "onReportDateCount": 0,
+      "bytes": 15750
+    },
+    {
+      "sourceId": "nature-genetics",
+      "url": "https://www.nature.com/ng.rss",
+      "status": "ok",
+      "savedAt": "2026-05-27T11:45:00.811Z",
+      "rssItemCount": 8,
+      "normalizedCount": 8,
+      "onReportDateCount": 0,
+      "bytes": 18009
+    },
+    {
+      "sourceId": "nature-ecology-evolution",
+      "url": "https://www.nature.com/natecolevol.rss",
+      "status": "ok",
+      "savedAt": "2026-05-27T11:45:02.372Z",
+      "rssItemCount": 8,
+      "normalizedCount": 7,
+      "onReportDateCount": 0,
+      "bytes": 17436
+    },
+    {
+      "sourceId": "nature-biotechnology",
+      "url": "https://www.nature.com/nbt.rss",
+      "status": "ok",
+      "savedAt": "2026-05-27T11:45:02.436Z",
+      "rssItemCount": 8,
+      "normalizedCount": 7,
+      "onReportDateCount": 0,
+      "bytes": 18199
+    },
+    {
+      "sourceId": "nature-cell-biology",
+      "url": "https://www.nature.com/ncb.rss",
+      "status": "ok",
+      "savedAt": "2026-05-27T11:45:02.496Z",
+      "rssItemCount": 8,
+      "normalizedCount": 8,
+      "onReportDateCount": 0,
+      "bytes": 17806
+    },
+    {
+      "sourceId": "nature-neuroscience",
+      "url": "https://www.nature.com/neuro.rss",
+      "status": "ok",
+      "savedAt": "2026-05-27T11:45:02.558Z",
+      "rssItemCount": 8,
+      "normalizedCount": 8,
+      "onReportDateCount": 0,
+      "bytes": 19772
+    },
+    {
+      "sourceId": "nature-immunology",
+      "url": "https://www.nature.com/ni.rss",
+      "status": "ok",
+      "savedAt": "2026-05-27T11:45:02.624Z",
+      "rssItemCount": 8,
+      "normalizedCount": 8,
+      "onReportDateCount": 0,
+      "bytes": 16476
+    },
+    {
+      "sourceId": "nature-microbiology",
+      "url": "https://www.nature.com/nmicrobiol.rss",
+      "status": "ok",
+      "savedAt": "2026-05-27T11:45:02.691Z",
+      "rssItemCount": 8,
+      "normalizedCount": 8,
+      "onReportDateCount": 0,
+      "bytes": 15793
+    },
+    {
+      "sourceId": "science-advances",
+      "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv",
+      "status": "ok",
+      "savedAt": "2026-05-27T11:45:02.751Z",
+      "rssItemCount": 70,
+      "normalizedCount": 70,
+      "onReportDateCount": 0,
+      "bytes": 105494
+    },
+    {
+      "sourceId": "pnas",
+      "url": "https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=PNAS",
+      "status": "ok",
+      "savedAt": "2026-05-27T11:45:02.972Z",
+      "rssItemCount": 92,
+      "normalizedCount": 91,
+      "onReportDateCount": 0,
+      "bytes": 194781
+    },
+    {
+      "sourceId": "plos-biology",
+      "url": "https://journals.plos.org/plosbiology/feed/atom",
+      "status": "ok",
+      "savedAt": "2026-05-27T11:45:03.098Z",
+      "rssItemCount": 30,
+      "normalizedCount": 30,
+      "onReportDateCount": 0,
+      "bytes": 88585
+    },
+    {
+      "sourceId": "nature-communications",
+      "url": "https://www.nature.com/ncomms.rss",
+      "status": "ok",
+      "savedAt": "2026-05-27T11:45:03.752Z",
+      "rssItemCount": 8,
+      "normalizedCount": 8,
+      "onReportDateCount": 0,
+      "bytes": 19679
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns="http://purl.org/rss/1.0/" xmlns:admin="http://webns.net/mvcb/">
+    <channel rdf:about="http://feeds.nature.com/ni/rss/current">
+        <title>Nature Immunology</title>
+        <description>Nature Immunology, ranked first out of more than 100 primary immunology research journals, brings together the most significant immunology research from every discipline. Nature Immunology’s scope is broad, covering all areas of immunology, including (but not limited to) innate immunity and inflammation, development, immune receptors, signaling and apoptosis, antigen presentation, gene regulation and recombination, cellular and systemic immunity, vaccines, immune tolerance, autoimmunity and tumor immunology, microbial immunopathology and transplantation. By presenting research that provides fundamental insight into the working of the immune system, Nature Immunology communicates the most significant and influential advances to a broad audience.</description>
+        <link>http://feeds.nature.com/ni/rss/current</link>
+        <admin:generatorAgent rdf:resource="https://www.nature.com/"/>
+        <admin:errorReportsTo rdf:resource="mailto:feedback@nature.com"/>
+        <dc:publisher>Nature Publishing Group</dc:publisher>
+        <dc:language>en</dc:language>
+        <dc:rights>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</dc:rights>
+        <prism:publicationName>Nature Immunology</prism:publicationName>
+        
+        
+        <prism:copyright>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</prism:copyright>
+        <prism:rightsAgent>permissions@nature.com</prism:rightsAgent>
+        <image rdf:resource="https://www.nature.com/uploads/product/ni/rss.gif"/>
+        <items>
+            <rdf:Seq>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41590-026-02531-5"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41590-026-02522-6"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41590-026-02532-4"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41590-026-02536-0"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41590-026-02528-0"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41590-026-02523-5"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41590-026-02517-3"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41590-026-02513-7"/>
+                
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="https://www.nature.com/uploads/product/ni/rss.gif">
+        <title>Nature Immunology</title>
+        <url>https://www.nature.com/uploads/product/ni/rss.gif</url>
+        <link>http://feeds.nature.com/ni/rss/current</link>
+    </image>
+    
+        <item rdf:about="https://www.nature.com/articles/s41590-026-02531-5">
+            <title><![CDATA[IFN-producing myeloid cells mediate photosensitivity]]></title>
+            <link>https://www.nature.com/articles/s41590-026-02531-5</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Immunology, Published online: 26 May 2026; <a href="https://www.nature.com/articles/s41590-026-02531-5">doi:10.1038/s41590-026-02531-5</a></p>Intercellular circuits between the myeloid compartment and T cells, keratinocytes and fibroblasts reveal how type I interferon (IFN) and sunlight drive photosensitive skin lesion development, with MMP9+CD14+ cells having a central role.]]></content:encoded>
+            <dc:title><![CDATA[IFN-producing myeloid cells mediate photosensitivity]]></dc:title>
+            <dc:creator>Marta E. Alarcón-Riquelme</dc:creator>
+            <dc:identifier>doi:10.1038/s41590-026-02531-5</dc:identifier>
+            <dc:source>Nature Immunology, Published online: 2026-05-26; | doi:10.1038/s41590-026-02531-5</dc:source>
+            <dc:date>2026-05-26</dc:date>
+            <prism:publicationName>Nature Immunology</prism:publicationName>
+            <prism:doi>10.1038/s41590-026-02531-5</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41590-026-02531-5</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41590-026-02522-6">
+            <title><![CDATA[Fungal glycans boost mRNA-based vaccines]]></title>
+            <link>https://www.nature.com/articles/s41590-026-02522-6</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Immunology, Published online: 25 May 2026; <a href="https://www.nature.com/articles/s41590-026-02522-6">doi:10.1038/s41590-026-02522-6</a></p>mRNA-based vaccines saved millions of lives during the COVID-19 pandemic, but they require frequent boosting and periodic updates to match emerging virus strains. We demonstrate that fungal glycans can function as adjuvants for mRNA-based vaccines, expanding the durability and breath of protection against several virus strains. These findings support the development of a new generation of RNA-based vaccines with improved performance.]]></content:encoded>
+            <dc:title><![CDATA[Fungal glycans boost mRNA-based vaccines]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/s41590-026-02522-6</dc:identifier>
+            <dc:source>Nature Immunology, Published online: 2026-05-25; | doi:10.1038/s41590-026-02522-6</dc:source>
+            <dc:date>2026-05-25</dc:date>
+            <prism:publicationName>Nature Immunology</prism:publicationName>
+            <prism:doi>10.1038/s41590-026-02522-6</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41590-026-02522-6</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41590-026-02532-4">
+            <title><![CDATA[Enzymatic cleavage weaponizes bacterial lipoproteins into immune tripwires]]></title>
+            <link>https://www.nature.com/articles/s41590-026-02532-4</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Immunology, Published online: 25 May 2026; <a href="https://www.nature.com/articles/s41590-026-02532-4">doi:10.1038/s41590-026-02532-4</a></p>An amino acid metabolic enzyme transforms bacterial lipoproteins into disulfide-linked lipid structures that activate the non-canonical inflammasome, redefining cytosolic innate immune sensing as a process shaped by host metabolic remodeling.]]></content:encoded>
+            <dc:title><![CDATA[Enzymatic cleavage weaponizes bacterial lipoproteins into immune tripwires]]></dc:title>
+            <dc:creator>Suvapriya Roy</dc:creator><dc:creator>Srijit Kumar Mandal</dc:creator><dc:creator>Anirban Banerjee</dc:creator>
+            <dc:identifier>doi:10.1038/s41590-026-02532-4</dc:identifier>
+            <dc:source>Nature Immunology, Published online: 2026-05-25; | doi:10.1038/s41590-026-02532-4</dc:source>
+            <dc:date>2026-05-25</dc:date>
+            <prism:publicationName>Nature Immunology</prism:publicationName>
+            <prism:doi>10.1038/s41590-026-02532-4</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41590-026-02532-4</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41590-026-02536-0">
+            <title><![CDATA[Thymic alveolar type 2 epithelial mimetic cells revealed by RUNX1 deficiency]]></title>
+            <link>https://www.nature.com/articles/s41590-026-02536-0</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Immunology, Published online: 25 May 2026; <a href="https://www.nature.com/articles/s41590-026-02536-0">doi:10.1038/s41590-026-02536-0</a></p>Waterfield and colleagues report the transcription factor RUNX1 expressed in mTECs profoundly influences the diversity of thymic mimetic cells that express tissue-specific antigens.]]></content:encoded>
+            <dc:title><![CDATA[Thymic alveolar type 2 epithelial mimetic cells revealed by RUNX1 deficiency]]></dc:title>
+            <dc:creator>Jun Hyung Sin</dc:creator><dc:creator>Christopher J. Bowman</dc:creator><dc:creator>Joe Germino</dc:creator><dc:creator>Sloan H. Phillips</dc:creator><dc:creator>Juliana Sucharov</dc:creator><dc:creator>Xian Liu</dc:creator><dc:creator>Yi Wang</dc:creator><dc:creator>Corey N. Miller</dc:creator><dc:creator>Audrey V. Parent</dc:creator><dc:creator>Aaron Bodansky</dc:creator><dc:creator>Mark S. Anderson</dc:creator><dc:creator>Michael R. Waterfield</dc:creator>
+            <dc:identifier>doi:10.1038/s41590-026-02536-0</dc:identifier>
+            <dc:source>Nature Immunology, Published online: 2026-05-25; | doi:10.1038/s41590-026-02536-0</dc:source>
+            <dc:date>2026-05-25</dc:date>
+            <prism:publicationName>Nature Immunology</prism:publicationName>
+            <prism:doi>10.1038/s41590-026-02536-0</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41590-026-02536-0</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41590-026-02528-0">
+            <title><![CDATA[Branching out takes anti-tumor immunity down a NOTCH]]></title>
+            <link>https://www.nature.com/articles/s41590-026-02528-0</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Immunology, Published online: 22 May 2026; <a href="https://www.nature.com/articles/s41590-026-02528-0">doi:10.1038/s41590-026-02528-0</a></p>Cancer cells utilize many strategies to suppress immune responses. Data now show that these measures include the secretion of branched-chain keto acids into the tumor microenvironment. These metabolites can be taken up by tumor-associated macrophages, in which they can shield NOTCH2 from degradation and thereby favor an immunosuppressive gene expression program.]]></content:encoded>
+            <dc:title><![CDATA[Branching out takes anti-tumor immunity down a NOTCH]]></dc:title>
+            <dc:creator>Marco Sciacovelli</dc:creator><dc:creator>Christian Frezza</dc:creator>
+            <dc:identifier>doi:10.1038/s41590-026-02528-0</dc:identifier>
+            <dc:source>Nature Immunology, Published online: 2026-05-22; | doi:10.1038/s41590-026-02528-0</dc:source>
+            <dc:date>2026-05-22</dc:date>
+            <prism:publicationName>Nature Immunology</prism:publicationName>
+            <prism:doi>10.1038/s41590-026-02528-0</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41590-026-02528-0</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41590-026-02523-5">
+            <title><![CDATA[Immune development in early life]]></title>
+            <link>https://www.nature.com/articles/s41590-026-02523-5</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Immunology, Published online: 22 May 2026; <a href="https://www.nature.com/articles/s41590-026-02523-5">doi:10.1038/s41590-026-02523-5</a></p>Palma et al. discuss the current state of the field on early immune development in humans.]]></content:encoded>
+            <dc:title><![CDATA[Immune development in early life]]></dc:title>
+            <dc:creator>Paolo Palma</dc:creator><dc:creator>Donna L. Farber</dc:creator><dc:creator>Liza Konnikova</dc:creator><dc:creator>Ofer Levy</dc:creator>
+            <dc:identifier>doi:10.1038/s41590-026-02523-5</dc:identifier>
+            <dc:source>Nature Immunology, Published online: 2026-05-22; | doi:10.1038/s41590-026-02523-5</dc:source>
+            <dc:date>2026-05-22</dc:date>
+            <prism:publicationName>Nature Immunology</prism:publicationName>
+            <prism:doi>10.1038/s41590-026-02523-5</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41590-026-02523-5</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41590-026-02517-3">
+            <title><![CDATA[A glycan-based adjuvant expands the breadth and duration of protection of mRNA-based vaccines]]></title>
+            <link>https://www.nature.com/articles/s41590-026-02517-3</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Immunology, Published online: 22 May 2026; <a href="https://www.nature.com/articles/s41590-026-02517-3">doi:10.1038/s41590-026-02517-3</a></p>Jena, Qu et al. show that mannadjuvant, a formulation of fungal mannan and aluminum hydroxide, increases the magnitude, durability and breadth of the response elicited by mRNA-based vaccines against SARS-CoV-2 variants in mice and non-human primates.]]></content:encoded>
+            <dc:title><![CDATA[A glycan-based adjuvant expands the breadth and duration of protection of mRNA-based vaccines]]></dc:title>
+            <dc:creator>Kautilya K. Jena</dc:creator><dc:creator>Pengxiang Qu</dc:creator><dc:creator>Lauren Baracco</dc:creator><dc:creator>Shahab Saghaei</dc:creator><dc:creator>Keerti</dc:creator><dc:creator>Zahra Allahyari</dc:creator><dc:creator>Daniel Boehmer</dc:creator><dc:creator>Moriah Mitchell</dc:creator><dc:creator>Carly A. Dillen</dc:creator><dc:creator>Hai-Yun Li</dc:creator><dc:creator>Enqi Liu</dc:creator><dc:creator>Valentina Poli</dc:creator><dc:creator>Océane Dufies</dc:creator><dc:creator>David P. Hoytema van Konijnenburg</dc:creator><dc:creator>Roberto Spreafico</dc:creator><dc:creator>Caihong Bi</dc:creator><dc:creator>Rebecca Hall</dc:creator><dc:creator>Michael D. Kruppa</dc:creator><dc:creator>Zuchao Ma</dc:creator><dc:creator>Amy Gravitte</dc:creator><dc:creator>Douglas W. Lowman</dc:creator><dc:creator>Harry E. Ensley</dc:creator><dc:creator>Pierre Marty</dc:creator><dc:creator>Laurent Boyer</dc:creator><dc:creator>Rémy Collomp</dc:creator><dc:creator>David L. Williams</dc:creator><dc:creator>Victor Pui-Yan Ma</dc:creator><dc:creator>Pui Y. Lee</dc:creator><dc:creator>Peter A. Nigrovic</dc:creator><dc:creator>Jeffrey M. Karp</dc:creator><dc:creator>Stephen J. Elledge</dc:creator><dc:creator>Duane R. Wesemann</dc:creator><dc:creator>Yi Wu</dc:creator><dc:creator>Matthew Frieman</dc:creator><dc:creator>Ivan Zanoni</dc:creator>
+            <dc:identifier>doi:10.1038/s41590-026-02517-3</dc:identifier>
+            <dc:source>Nature Immunology, Published online: 2026-05-22; | doi:10.1038/s41590-026-02517-3</dc:source>
+            <dc:date>2026-05-22</dc:date>
+            <prism:publicationName>Nature Immunology</prism:publicationName>
+            <prism:doi>10.1038/s41590-026-02517-3</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41590-026-02517-3</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41590-026-02513-7">
+            <title><![CDATA[Salt-inducible kinases as druggable targets for immunotherapy of ovarian cancer]]></title>
+            <link>https://www.nature.com/articles/s41590-026-02513-7</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Immunology, Published online: 21 May 2026; <a href="https://www.nature.com/articles/s41590-026-02513-7">doi:10.1038/s41590-026-02513-7</a></p>Malignant ascites strongly inhibits T cell anti-tumor responses in patients with high-grade serous ovarian cancer (HGSOC). Using an all-human high-throughput drug repurposing screen, we identified salt-inducible kinases (SIKs) as negative regulators of T cell function in ascites. Pharmacological inhibition or genetic depletion of SIK2 and SIK3 in T cells strongly upregulates anti-tumor immunity and improves survival in immunotherapy-resistant preclinical models.]]></content:encoded>
+            <dc:title><![CDATA[Salt-inducible kinases as druggable targets for immunotherapy of ovarian cancer]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/s41590-026-02513-7</dc:identifier>
+            <dc:source>Nature Immunology, Published online: 2026-05-21; | doi:10.1038/s41590-026-02513-7</dc:source>
+            <dc:date>2026-05-21</dc:date>
+            <prism:publicationName>Nature Immunology</prism:publicationName>
+            <prism:doi>10.1038/s41590-026-02513-7</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41590-026-02513-7</prism:url>
+        </item>
+    
+</rdf:RDF>

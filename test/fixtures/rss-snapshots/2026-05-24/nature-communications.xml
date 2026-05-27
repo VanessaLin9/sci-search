@@ -1,0 +1,169 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns="http://purl.org/rss/1.0/" xmlns:admin="http://webns.net/mvcb/">
+    <channel rdf:about="http://feeds.nature.com/ncomms/rss/current">
+        <title>Nature Communications</title>
+        <description>&lt;p&gt;&lt;em&gt;Nature Communications&lt;/em&gt;&amp;nbsp;is an open access, multidisciplinary journal dedicated to publishing high-quality research in all areas of the biological, health, physical, chemical and Earth sciences. Papers published by the journal aim to represent important advances of significance to specialists within each field.&lt;/p&gt;
+
+&lt;p&gt;We are committed to providing an efficient service for both authors and readers. Our&amp;nbsp;team of independent editors make rapid and fair publication decisions. Prompt dissemination of accepted papers to a&amp;nbsp;wide readership and beyond is achieved through a programme of continuous online publication.&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/p&gt;
+</description>
+        <link>http://feeds.nature.com/ncomms/rss/current</link>
+        <admin:generatorAgent rdf:resource="https://www.nature.com/"/>
+        <admin:errorReportsTo rdf:resource="mailto:feedback@nature.com"/>
+        <dc:publisher>Nature Publishing Group</dc:publisher>
+        <dc:language>en</dc:language>
+        <dc:rights>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</dc:rights>
+        <prism:publicationName>Nature Communications</prism:publicationName>
+        
+        
+        <prism:copyright>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</prism:copyright>
+        <prism:rightsAgent>permissions@nature.com</prism:rightsAgent>
+        <image rdf:resource="https://www.nature.com/uploads/product/ncomms/rss.png"/>
+        <items>
+            <rdf:Seq>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41467-026-73542-x"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41467-026-73519-w"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41467-026-73486-2"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41467-026-73243-5"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41467-026-73677-x"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41467-026-73769-8"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41467-026-71876-0"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41467-026-73795-6"/>
+                
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="https://www.nature.com/uploads/product/ncomms/rss.png">
+        <title>Nature Communications</title>
+        <url>https://www.nature.com/uploads/product/ncomms/rss.png</url>
+        <link>http://feeds.nature.com/ncomms/rss/current</link>
+    </image>
+    
+        <item rdf:about="https://www.nature.com/articles/s41467-026-73542-x">
+            <title><![CDATA[Muscle mitochondria, function, mass, and quality of life in prostate cancer during androgen deprivation therapy]]></title>
+            <link>https://www.nature.com/articles/s41467-026-73542-x</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Communications, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41467-026-73542-x">doi:10.1038/s41467-026-73542-x</a></p>Prostate cancer and androgen deprivation therapy (ADT) impair muscle function and quality of life, yet mitochondrial involvement remains unclear. The authors show that greater mitochondrial function correlates with better endurance, quality of life, and smaller declines in these parameters post-ADT]]></content:encoded>
+            <dc:title><![CDATA[Muscle mitochondria, function, mass, and quality of life in prostate cancer during androgen deprivation therapy]]></dc:title>
+            <dc:creator>L. Caeiro</dc:creator><dc:creator>L. J. Anderson</dc:creator><dc:creator>A. Dash</dc:creator><dc:creator>D. J. Marcinek</dc:creator><dc:creator>H. L. Kerr</dc:creator><dc:creator>L. Paulsen</dc:creator><dc:creator>G. Miranda</dc:creator><dc:creator>S. Jaramillo Quiroz</dc:creator><dc:creator>T. Vaisar</dc:creator><dc:creator>M. A. Krueger</dc:creator><dc:creator>N. L. Acosta-Vega</dc:creator><dc:creator>S. A. Gharib</dc:creator><dc:creator>J. M. Garcia</dc:creator>
+            <dc:identifier>doi:10.1038/s41467-026-73542-x</dc:identifier>
+            <dc:source>Nature Communications, Published online: 2026-05-27; | doi:10.1038/s41467-026-73542-x</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Communications</prism:publicationName>
+            <prism:doi>10.1038/s41467-026-73542-x</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41467-026-73542-x</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41467-026-73519-w">
+            <title><![CDATA[Very low-carbohydrate ketogenic diet in treatment-naïve women with endometrial cancer and overweight: a randomized feasibility study]]></title>
+            <link>https://www.nature.com/articles/s41467-026-73519-w</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Communications, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41467-026-73519-w">doi:10.1038/s41467-026-73519-w</a></p>Dietary interventions have been proposed as potential therapeutic strategies in cancer. Here, the authors report a feasibility randomized clinical trial comparing standard diet with a very lowcarbohydrate ketogenic diet (VLCD) in treatment-naive women with endometrial cancer and obesity or overweight.]]></content:encoded>
+            <dc:title><![CDATA[Very low-carbohydrate ketogenic diet in treatment-naïve women with endometrial cancer and overweight: a randomized feasibility study]]></dc:title>
+            <dc:creator>Ezequiel Dantas</dc:creator><dc:creator>Katie C. Hootman</dc:creator><dc:creator>Jenna Moyer</dc:creator><dc:creator>Morgan Tomberlin</dc:creator><dc:creator>Katherine Curran</dc:creator><dc:creator>Bhavani Ramesh</dc:creator><dc:creator>Hannah Price</dc:creator><dc:creator>Jeshua Kim</dc:creator><dc:creator>Alex C. McPherson</dc:creator><dc:creator>Maurice A. Hurd</dc:creator><dc:creator>Yuan-Shan Zhu</dc:creator><dc:creator>Andrew J. Plodkowski</dc:creator><dc:creator>Erica Nagase</dc:creator><dc:creator>Anastasia Tsomides</dc:creator><dc:creator>Brandon M. Cuevas</dc:creator><dc:creator>M. Laura Martin</dc:creator><dc:creator>John Nguyen</dc:creator><dc:creator>Gabrielle Bennetti</dc:creator><dc:creator>Gissell Botero Rodriguez</dc:creator><dc:creator>Kaity Chang</dc:creator><dc:creator>Marissa Mezzancello</dc:creator><dc:creator>Ginger J. Gardner</dc:creator><dc:creator>Vance Broach</dc:creator><dc:creator>Jennifer J. Mueller</dc:creator><dc:creator>Yukio Sonoda</dc:creator><dc:creator>Oliver Zivanovic</dc:creator><dc:creator>Mario M. Leitao Jr</dc:creator><dc:creator>Alexia Iasonos</dc:creator><dc:creator>Krysten Soldan</dc:creator><dc:creator>Karen Carthew</dc:creator><dc:creator>Vania Hom</dc:creator><dc:creator>Francis N. Villamater</dc:creator><dc:creator>Rema Rao Chaari</dc:creator><dc:creator>Kathryn Gorski</dc:creator><dc:creator>Michael Sigouros</dc:creator><dc:creator>Carol Aghajanian</dc:creator><dc:creator>Olivier Elemento</dc:creator><dc:creator>Lewis C. Cantley</dc:creator><dc:creator>Benjamin D. Hopkins</dc:creator><dc:creator>Britta Weigelt</dc:creator><dc:creator>Lora H. Ellenson</dc:creator><dc:creator>Kari Hacker</dc:creator><dc:creator>Nadeem R. Abu-Rustum</dc:creator><dc:creator>Vicky Makker</dc:creator><dc:creator>Marcus D. Goncalves</dc:creator>
+            <dc:identifier>doi:10.1038/s41467-026-73519-w</dc:identifier>
+            <dc:source>Nature Communications, Published online: 2026-05-27; | doi:10.1038/s41467-026-73519-w</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Communications</prism:publicationName>
+            <prism:doi>10.1038/s41467-026-73519-w</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41467-026-73519-w</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41467-026-73486-2">
+            <title><![CDATA[Monitoring in vivo transcription with synthetic serum markers]]></title>
+            <link>https://www.nature.com/articles/s41467-026-73486-2</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Communications, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41467-026-73486-2">doi:10.1038/s41467-026-73486-2</a></p>Typically, transcription in vivo is measured post-mortem or in biopsied tissue samples. Here, the authors show a method where transcript levels can be reported in living animals with synthetic serum markers and simple blood test.]]></content:encoded>
+            <dc:title><![CDATA[Monitoring in vivo transcription with synthetic serum markers]]></dc:title>
+            <dc:creator>Sho Watanabe</dc:creator><dc:creator>Sangsin Lee</dc:creator><dc:creator>Manwal Harb</dc:creator><dc:creator>Shirin Nouraein</dc:creator><dc:creator>Emma Raisley</dc:creator><dc:creator>Honghao Li</dc:creator><dc:creator>Nicolas Buitrago</dc:creator><dc:creator>Beatrice Pforr</dc:creator><dc:creator>Jerzy O. Szablowski</dc:creator>
+            <dc:identifier>doi:10.1038/s41467-026-73486-2</dc:identifier>
+            <dc:source>Nature Communications, Published online: 2026-05-27; | doi:10.1038/s41467-026-73486-2</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Communications</prism:publicationName>
+            <prism:doi>10.1038/s41467-026-73486-2</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41467-026-73486-2</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41467-026-73243-5">
+            <title><![CDATA[Explainable time-series forecasting with sampling-free SHAP for Transformers]]></title>
+            <link>https://www.nature.com/articles/s41467-026-73243-5</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Communications, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41467-026-73243-5">doi:10.1038/s41467-026-73243-5</a></p>Time-series forecasting is crucial for decision making in many domains. The authors propose SHAPformer, a method for accurate and explainable time-series forecasting, delivering explanations in less than a second. It is validated on synthetic data and used to gain insights into electrical load and electricity price data.]]></content:encoded>
+            <dc:title><![CDATA[Explainable time-series forecasting with sampling-free SHAP for Transformers]]></dc:title>
+            <dc:creator>Matthias Hertel</dc:creator><dc:creator>Sebastian Pütz</dc:creator><dc:creator>Ralf Mikut</dc:creator><dc:creator>Veit Hagenmeyer</dc:creator><dc:creator>Benjamin Schäfer</dc:creator>
+            <dc:identifier>doi:10.1038/s41467-026-73243-5</dc:identifier>
+            <dc:source>Nature Communications, Published online: 2026-05-27; | doi:10.1038/s41467-026-73243-5</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Communications</prism:publicationName>
+            <prism:doi>10.1038/s41467-026-73243-5</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41467-026-73243-5</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41467-026-73677-x">
+            <title><![CDATA[Deciphering cytokine-driven ADP-ribosylation signaling networks via Af1521-based mass spectrometry analysis of labile Glu/Asp-linkages]]></title>
+            <link>https://www.nature.com/articles/s41467-026-73677-x</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Communications, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41467-026-73677-x">doi:10.1038/s41467-026-73677-x</a></p>Labile ADP-ribosylation has remained challenging to study. Here, the authors develop a mass spectrometry workflow that enables mapping of these modifications and reveals roles in immune and antiviral signaling.]]></content:encoded>
+            <dc:title><![CDATA[Deciphering cytokine-driven ADP-ribosylation signaling networks via Af1521-based mass spectrometry analysis of labile Glu/Asp-linkages]]></dc:title>
+            <dc:creator>Sara C. Buch-Larsen</dc:creator><dc:creator>Ivo A. Hendriks</dc:creator><dc:creator>Kyuto Tashiro</dc:creator><dc:creator>Jonas D. Elsborg</dc:creator><dc:creator>Sergey Y. Vakhrushev</dc:creator><dc:creator>Jesper V. Olsen</dc:creator><dc:creator>Bernhard Lüscher</dc:creator><dc:creator>Glen Liszczak</dc:creator><dc:creator>Ivan Ahel</dc:creator><dc:creator>Michael L. Nielsen</dc:creator>
+            <dc:identifier>doi:10.1038/s41467-026-73677-x</dc:identifier>
+            <dc:source>Nature Communications, Published online: 2026-05-27; | doi:10.1038/s41467-026-73677-x</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Communications</prism:publicationName>
+            <prism:doi>10.1038/s41467-026-73677-x</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41467-026-73677-x</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41467-026-73769-8">
+            <title><![CDATA[Telomere-to-telomere genome assembly of <i>Oryza australiensis</i> reveals transposon-driven centromere repositioning and shared EE–DD ancestry]]></title>
+            <link>https://www.nature.com/articles/s41467-026-73769-8</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Communications, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41467-026-73769-8">doi:10.1038/s41467-026-73769-8</a></p>Oryza australiensis (EE genome) is a wild rice species with extreme environmental adaptability and grain properties. Here, the authors report its telomere-to-telomere genome assembly and clarify that the ancestral lineage that contributed the DD subgenome shared common ancestry with an EE-like progenitor.]]></content:encoded>
+            <dc:title><![CDATA[Telomere-to-telomere genome assembly of <i>Oryza australiensis</i> reveals transposon-driven centromere repositioning and shared EE–DD ancestry]]></dc:title>
+            <dc:creator>Yu Bao</dc:creator><dc:creator>Hanli You</dc:creator><dc:creator>Shuo Liu</dc:creator><dc:creator>Guanqing Liu</dc:creator><dc:creator>Yuechao Wu</dc:creator><dc:creator>Qingqing Yang</dc:creator><dc:creator>Qi You</dc:creator><dc:creator>Peng Liu</dc:creator><dc:creator>Chuandeng Yi</dc:creator><dc:creator>Wenli Zhang</dc:creator><dc:creator>Zhukuan Cheng</dc:creator><dc:creator>Tao Zhang</dc:creator>
+            <dc:identifier>doi:10.1038/s41467-026-73769-8</dc:identifier>
+            <dc:source>Nature Communications, Published online: 2026-05-27; | doi:10.1038/s41467-026-73769-8</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Communications</prism:publicationName>
+            <prism:doi>10.1038/s41467-026-73769-8</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41467-026-73769-8</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41467-026-71876-0">
+            <title><![CDATA[Functional modules for enhanced amorphous composite halide solid electrolytes for low-temperature all-solid-state lithium batteries]]></title>
+            <link>https://www.nature.com/articles/s41467-026-71876-0</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Communications, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41467-026-71876-0">doi:10.1038/s41467-026-71876-0</a></p>Designing improved halide solid electrolytes holds the key to the success of all-solid-state batteries. Here, authors present the design of SSEs through functional modules, introducing LaCl3, which possesses a UCl3 structure, as well as low-cost and low-density AlF3, to enable low-temperature application and improve moisture and high-voltage stability in halide-based solid-state battery systems.]]></content:encoded>
+            <dc:title><![CDATA[Functional modules for enhanced amorphous composite halide solid electrolytes for low-temperature all-solid-state lithium batteries]]></dc:title>
+            <dc:creator>Yanlong Wu</dc:creator><dc:creator>Xinmiao Wang</dc:creator><dc:creator>Xingyu Wang</dc:creator><dc:creator>Yulong Cai</dc:creator><dc:creator>Junyi Yue</dc:creator><dc:creator>Simeng Zhang</dc:creator><dc:creator>Xiangzhen Zhu</dc:creator><dc:creator>Shanshan Wang</dc:creator><dc:creator>Meng Li</dc:creator><dc:creator>Xu Han</dc:creator><dc:creator>Yi Duan</dc:creator><dc:creator>Changtai Zhao</dc:creator><dc:creator>Rong Yang</dc:creator><dc:creator>Jianwen Liang</dc:creator><dc:creator>Xiaona Li</dc:creator><dc:creator>Xueliang Sun</dc:creator><dc:creator>Jiantao Wang</dc:creator>
+            <dc:identifier>doi:10.1038/s41467-026-71876-0</dc:identifier>
+            <dc:source>Nature Communications, Published online: 2026-05-27; | doi:10.1038/s41467-026-71876-0</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Communications</prism:publicationName>
+            <prism:doi>10.1038/s41467-026-71876-0</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41467-026-71876-0</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41467-026-73795-6">
+            <title><![CDATA[Highly dynamic assemblies of glycolytic enzymes by quinary determinants]]></title>
+            <link>https://www.nature.com/articles/s41467-026-73795-6</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Communications, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41467-026-73795-6">doi:10.1038/s41467-026-73795-6</a></p>Molecular channelling in glycolysis is debated. Here, authors show short-lived enzyme assemblies, named protein flocks, in yeast and human cells. Shared surface properties suggest quinary interactions boost efficiency and limit toxic intermediates.]]></content:encoded>
+            <dc:title><![CDATA[Highly dynamic assemblies of glycolytic enzymes by quinary determinants]]></dc:title>
+            <dc:creator>Blanca Poquet</dc:creator><dc:creator>Galal Yahya</dc:creator><dc:creator>Laia Ferrer</dc:creator><dc:creator>Enrique Marcos</dc:creator><dc:creator>Carme Gallego</dc:creator><dc:creator>Martí Aldea</dc:creator>
+            <dc:identifier>doi:10.1038/s41467-026-73795-6</dc:identifier>
+            <dc:source>Nature Communications, Published online: 2026-05-27; | doi:10.1038/s41467-026-73795-6</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Communications</prism:publicationName>
+            <prism:doi>10.1038/s41467-026-73795-6</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41467-026-73795-6</prism:url>
+        </item>
+    
+</rdf:RDF>

@@ -60,6 +60,9 @@ npm run check
 | `npm run daily` | `dev` → `send-digest` → `write-preview` |
 | `npm run test-routing-llm` | One-paper routing smoke test |
 | `npm run test-digest-llm` | One-paper digest tagging smoke test |
+| `npm run test:e2e` | Golden + RSS snapshot pipeline tests (mock LLM, no network) |
+| `npm run test:regression` | Render-only regression from committed `papers.json` fixtures |
+| `npm run test` | All of the above |
 
 Date flag (all three main commands):
 
@@ -70,6 +73,44 @@ npm run write-preview -- --date 2026-05-22
 ```
 
 `test-digest-llm -- --use-routing` uses routing API key/model with digest caps from `config/digest.json`.
+
+### RSS snapshots for tests
+
+Record live feeds once (commit the XML under `test/fixtures/rss-snapshots/{date}/`):
+
+```bash
+npm run snapshot-rss -- --date 2026-05-22
+npm run snapshot-rss -- --date 2026-05-24
+```
+
+Each run writes `{sourceId}.xml` plus `manifest.json` (item counts and how many entries match the report date in Taipei).
+
+E2E tests load these files via `createMockFetch({ reportDate: "2026-05-22" })` — no live RSS, Crossref, or LLM calls.
+
+### E2E acceptance tests
+
+`npm run test:e2e` runs a deterministic golden pipeline:
+
+- Fixture RSS: [`test/fixtures/golden/rss/nature-methods.xml`](test/fixtures/golden/rss/nature-methods.xml)
+- Snapshot RSS: [`test/fixtures/rss-snapshots/{date}/`](test/fixtures/rss-snapshots/) (0522 busy day, 0524 empty day)
+- Mock LLM responses (routing / tagging / summarize / translate)
+- Asserts `papers.json` schema, selection stats, plain-text titles, featured fields, and digest HTML structure
+
+CI runs on every push/PR to `main` (see [`.github/workflows/ci.yml`](.github/workflows/ci.yml)); no API keys required.
+
+### Regression fixtures (render-only)
+
+Real `papers.json` snapshots for render/schema validation without re-running RSS or LLM:
+
+```bash
+# After a good local run, refresh fixtures:
+npm run export-regression-fixture -- --date 2026-05-22
+npm run export-regression-fixture -- --date 2026-05-24
+
+npm run test:regression
+```
+
+Fixtures live in [`test/fixtures/regression/`](test/fixtures/regression/) (0522: 34 papers / featured 12; 0524: empty day).
 
 ## Configuration
 
@@ -105,10 +146,19 @@ Digest logs use `[digest]`; routing uses `[routing]` (not gated by debug).
 
 ## GitHub Actions
 
-Workflow: [`.github/workflows/daily.yml`](.github/workflows/daily.yml)
+### CI ([`.github/workflows/ci.yml`](.github/workflows/ci.yml))
+
+Runs on **push** and **pull_request** to `main`:
+
+- `npm run check`
+- `npm test` (E2E + regression; mock LLM/RSS only)
+
+Enable branch protection on `main`: require status check **`test`** before merge.
+
+### Daily digest ([`.github/workflows/daily.yml`](.github/workflows/daily.yml))
 
 - **Schedule:** 06:30 Asia/Taipei daily (`workflow_dispatch` supported)
-- **Steps:** resolve date → `dev` → `send-digest` → `write-preview` → artifact → commit `data/processed/{date}/` and `docs/`
+- **Steps:** resolve date → `dev` → `write-preview` → artifact → commit → `send-digest`
 
 ### Repository secrets
 

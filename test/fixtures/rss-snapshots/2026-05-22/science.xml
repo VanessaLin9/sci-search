@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns="http://purl.org/rss/1.0/"
+         xmlns:cc="http://web.resource.org/cc/"
+         xmlns:content="http://purl.org/rss/1.0/modules/content/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:enc="http://purl.oclc.org/net/rss_2.0/enc/"
+         xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">
+   <channel rdf:about="https://www.science.org/?af=R">
+      <title>AAAS: Table of Contents</title>
+      <description>Table of Contents for Science. List of articles from ahead of print issues.</description>
+      <link>https://www.science.org/?af=R</link>
+      <dc:publisher>AAAS</dc:publisher>
+      <dc:language>en-US</dc:language>
+      <prism:publicationName/>
+      <items>
+         <rdf:Seq>
+            <rdf:li rdf:resource="https://www.science.org/doi/abs/10.1126/science.aeb6487?af=R"/>
+            <rdf:li rdf:resource="https://www.science.org/doi/abs/10.1126/science.adv3081?af=R"/>
+            <rdf:li rdf:resource="https://www.science.org/doi/abs/10.1126/science.aed1656?af=R"/>
+            <rdf:li rdf:resource="https://www.science.org/doi/abs/10.1126/science.adz7118?af=R"/>
+            <rdf:li rdf:resource="https://www.science.org/doi/abs/10.1126/science.aef3733?af=R"/>
+            <rdf:li rdf:resource="https://www.science.org/doi/abs/10.1126/science.aef4958?af=R"/>
+            <rdf:li rdf:resource="https://www.science.org/doi/abs/10.1126/science.aec6396?af=R"/>
+            <rdf:li rdf:resource="https://www.science.org/doi/abs/10.1126/science.aec3187?af=R"/>
+            <rdf:li rdf:resource="https://www.science.org/doi/abs/10.1126/science.aec8514?af=R"/>
+            <rdf:li rdf:resource="https://www.science.org/doi/abs/10.1126/science.ads0189?af=R"/>
+            <rdf:li rdf:resource="https://www.science.org/doi/abs/10.1126/science.adw8329?af=R"/>
+            <rdf:li rdf:resource="https://www.science.org/doi/abs/10.1126/science.aef3178?af=R"/>
+         </rdf:Seq>
+      </items>
+   </channel>
+   <image rdf:about="http://www.atypon.com/images/atypon_logo_small.gif">
+      <title>Atypon Systems</title>
+      <url>http://www.atypon.com/images/atypon_logo_small.gif</url>
+      <link>http://www.atypon.com</link>
+   </image>
+   <item rdf:about="https://www.science.org/doi/abs/10.1126/science.aeb6487?af=R">
+      <title>Unstructured transcription factor interactions enable emergent specificity</title>
+      <link>https://www.science.org/doi/abs/10.1126/science.aeb6487?af=R</link>
+      <content:encoded>Science, Ahead of Print. &lt;br/&gt;</content:encoded>
+      <description>Science, Ahead of Print. &lt;br/&gt;</description>
+      <dc:identifier>doi:10.1126/science.aeb6487</dc:identifier>
+      <dc:source/>
+      <dc:date>2026-03-19T05:59:00Z</dc:date>
+      <dc:type>Research Article</dc:type>
+      <dc:creator>Abrar A. Abidi, Claudia Cattoglio, Natalie N. Tang, Vinson B. Fan, Gina M. Dailey, Amir D. Hay, Prasanthi Kunamaneni, Daniel E. Milkie, Xavier Darzacq, Eric Betzig, Robert Tjian, Thomas G. W. Graham</dc:creator>
+      <prism:publicationName>Science</prism:publicationName>
+      <prism:doi>10.1126/science.aeb6487</prism:doi>
+      <prism:url>https://www.science.org/doi/abs/10.1126/science.aeb6487?af=R</prism:url>
+      <prism:copyright/>
+   </item>
+   <item rdf:about="https://www.science.org/doi/abs/10.1126/science.adv3081?af=R">
+      <title>A high-throughput selection system for fast-acting covalent protein drugs</title>
+      <link>https://www.science.org/doi/abs/10.1126/science.adv3081?af=R</link>
+      <content:encoded>Science, Ahead of Print. &lt;br/&gt;</content:encoded>
+      <description>Science, Ahead of Print. &lt;br/&gt;</description>
+      <dc:identifier>doi:10.1126/science.adv3081</dc:identifier>
+      <dc:source/>
+      <dc:date>2026-04-02T05:59:01Z</dc:date>
+      <dc:type>Research Article</dc:type>
+      <dc:creator>Qiongxuan Fan, Jiahao Mei, Tian Li, Chuanlong Zang, Mengjiao Li, Jing Tang, You Xu, Ge Yu, Dandan Liu, Kai Chen, Bing Yang, Jing Huang, Ting Zhou, Bobo Dang</dc:creator>
+      <prism:publicationName>Science</prism:publicationName>
+      <prism:doi>10.1126/science.adv3081</prism:doi>
+      <prism:url>https://www.science.org/doi/abs/10.1126/science.adv3081?af=R</prism:url>
+      <prism:copyright/>
+   </item>
+   <item rdf:about="https://www.science.org/doi/abs/10.1126/science.aed1656?af=R">
+      <title>Protein-templated synthesis of dinucleotide repeat DNA by an antiphage reverse transcriptase</title>
+      <link>https://www.science.org/doi/abs/10.1126/science.aed1656?af=R</link>
+      <content:encoded>Science, Ahead of Print. &lt;br/&gt;</content:encoded>
+      <description>Science, Ahead of Print. &lt;br/&gt;</description>
+      <dc:identifier>doi:10.1126/science.aed1656</dc:identifier>
+      <dc:source/>
+      <dc:date>2026-04-16T06:00:01Z</dc:date>
+      <dc:type>Research Article</dc:type>
+      <dc:creator>Pujuan Deng, Hyunbin Lee, Carlo Armijo, Haoqing Wang, Alex Gao</dc:creator>
+      <prism:publicationName>Science</prism:publicationName>
+      <prism:doi>10.1126/science.aed1656</prism:doi>
+      <prism:url>https://www.science.org/doi/abs/10.1126/science.aed1656?af=R</prism:url>
+      <prism:copyright/>
+   </item>
+   <item rdf:about="https://www.science.org/doi/abs/10.1126/science.adz7118?af=R">
+      <title>Severe obesity in human HFpEF alters contractile protein function and organization</title>
+      <link>https://www.science.org/doi/abs/10.1126/science.adz7118?af=R</link>
+      <content:encoded>Science, Ahead of Print. &lt;br/&gt;</content:encoded>
+      <description>Science, Ahead of Print. &lt;br/&gt;</description>
+      <dc:identifier>doi:10.1126/science.adz7118</dc:identifier>
+      <dc:source/>
+      <dc:date>2026-04-23T06:00:00Z</dc:date>
+      <dc:type>Research Article</dc:type>
+      <dc:creator>Vivek P. Jani, Marcus Rhodehamel, Axel J. Fenwick, Weikang Ma, Eli Fisher, Maria T. Giannakopoulos, Sun Moon, Romi L. Castillo, Leslie M. Kennedy, Thomas C. Irving, Jil C. Tardiff, Elizabeth Murphy, Raghothama Chaerkady, Qing Wang, Meaghan E. Barry, Virginia S. Hahn, Kavita Sharma, Kenneth B. Margulies, Kenneth C. Bedi, Anthony Cammarato, David A. Kass</dc:creator>
+      <prism:publicationName>Science</prism:publicationName>
+      <prism:doi>10.1126/science.adz7118</prism:doi>
+      <prism:url>https://www.science.org/doi/abs/10.1126/science.adz7118?af=R</prism:url>
+      <prism:copyright/>
+   </item>
+   <item rdf:about="https://www.science.org/doi/abs/10.1126/science.aef3733?af=R">
+      <title>Stopping phase reveals abrupt arrest of large strike-slip earthquakes</title>
+      <link>https://www.science.org/doi/abs/10.1126/science.aef3733?af=R</link>
+      <content:encoded>Science, Ahead of Print. &lt;br/&gt;</content:encoded>
+      <description>Science, Ahead of Print. &lt;br/&gt;</description>
+      <dc:identifier>doi:10.1126/science.aef3733</dc:identifier>
+      <dc:source/>
+      <dc:date>2026-04-23T06:00:00Z</dc:date>
+      <dc:type>Research Article</dc:type>
+      <dc:creator>Jesse Kearse, Yoshihiro Kaneko</dc:creator>
+      <prism:publicationName>Science</prism:publicationName>
+      <prism:doi>10.1126/science.aef3733</prism:doi>
+      <prism:url>https://www.science.org/doi/abs/10.1126/science.aef3733?af=R</prism:url>
+      <prism:copyright/>
+   </item>
+   <item rdf:about="https://www.science.org/doi/abs/10.1126/science.aef4958?af=R">
+      <title>Structural N- and O-glycans revealed by high-resolution cryo-EM analysis of tubular mastigonemes</title>
+      <link>https://www.science.org/doi/abs/10.1126/science.aef4958?af=R</link>
+      <content:encoded>Science, Ahead of Print. &lt;br/&gt;</content:encoded>
+      <description>Science, Ahead of Print. &lt;br/&gt;</description>
+      <dc:identifier>doi:10.1126/science.aef4958</dc:identifier>
+      <dc:source/>
+      <dc:date>2026-04-23T06:00:00Z</dc:date>
+      <dc:type>Research Article</dc:type>
+      <dc:creator>, , , , , , </dc:creator>
+      <prism:publicationName>Science</prism:publicationName>
+      <prism:doi>10.1126/science.aef4958</prism:doi>
+      <prism:url>https://www.science.org/doi/abs/10.1126/science.aef4958?af=R</prism:url>
+      <prism:copyright/>
+   </item>
+   <item rdf:about="https://www.science.org/doi/abs/10.1126/science.aec6396?af=R">
+      <title>Induction of broadly neutralizing HIV antibodies by a two-step mechanism informs vaccine design</title>
+      <link>https://www.science.org/doi/abs/10.1126/science.aec6396?af=R</link>
+      <content:encoded>Science, Ahead of Print. &lt;br/&gt;</content:encoded>
+      <description>Science, Ahead of Print. &lt;br/&gt;</description>
+      <dc:identifier>doi:10.1126/science.aec6396</dc:identifier>
+      <dc:source/>
+      <dc:date>2026-05-07T05:59:18Z</dc:date>
+      <dc:type>Research Article</dc:type>
+      <dc:creator>Ashwin N. Skelly, Harry B. Gristick, Hui Li, Edem Gavor, Andrew J. Connell, Edward F. Kreider, Lorie Marchitto, Michael P. Hogarty, Maddy L. Newby, Joel D. Allen, Weimin Liu, Anthony P. West, Kasirajan Ayyanathan, Mary S. Campion, Kaitlyn Winters, Colette G. Gordon, Rebecca A. Osbaldeston, Macy J. Akeley, Emily Lewis, Yingying Li, Ajay Singh, Kendra Cruickshank, Younghoon Park, Chengyan Zhao, Xuduo Li, Khaled Amereh, Elizabeth Van Itallie, John W. Carey, Amie Albertus, Andrew T. DeLaitsch, Jennifer R. Keeffe, Melinda G. Lituchy, Agnes A. Walsh, Daniel J. Morris, Rumi Habib, Frederic Bibollet-Ruche, Nitesh Mishra, Gabriel Avillion, Nicholas S. Koranda, Samantha J. Plante, Christian L. Martella, Jinery Lora, Eric J. D. Wang, Mark G. Lewis, Malcolm A. Martin, Michel C. Nussenzweig, Michael S. Seaman, Darrell J. Irvine, Kevin J. Wiehe, Barton F. Haynes, Kshitij Wagh, Bette Korber, Raiees Andrabi, Max Crispin, Drew Weissman, Pamela J. Bjorkman, Beatrice H. Hahn, George M. Shaw</dc:creator>
+      <prism:publicationName>Science</prism:publicationName>
+      <prism:doi>10.1126/science.aec6396</prism:doi>
+      <prism:url>https://www.science.org/doi/abs/10.1126/science.aec6396?af=R</prism:url>
+      <prism:copyright/>
+   </item>
+   <item rdf:about="https://www.science.org/doi/abs/10.1126/science.aec3187?af=R">
+      <title>A 481-meter-high landslide-tsunami in a cruise ship–frequented Alaska fjord</title>
+      <link>https://www.science.org/doi/abs/10.1126/science.aec3187?af=R</link>
+      <content:encoded>Science, Ahead of Print. &lt;br/&gt;</content:encoded>
+      <description>Science, Ahead of Print. &lt;br/&gt;</description>
+      <dc:identifier>doi:10.1126/science.aec3187</dc:identifier>
+      <dc:source/>
+      <dc:date>2026-05-06T12:00:00Z</dc:date>
+      <dc:type>Research Article</dc:type>
+      <dc:creator>Dan H. Shugar, Katherine R. Barnhart, Mira Berdahl, Jacqueline Caplan-Auerbach, Göran Ekström, Aram Fathian, Marten Geertsema, Stephen P. Hicks, Bretwood Higman, Erin K. Jensen, Ezgi Karasözen, Patrick Lynett, John Lyons, Thomas Monahan, Gerard Roe, Kristian Svennevig, Liam Toney, Maximillian Van Wyk de Vries, Michael E. West</dc:creator>
+      <prism:publicationName>Science</prism:publicationName>
+      <prism:doi>10.1126/science.aec3187</prism:doi>
+      <prism:url>https://www.science.org/doi/abs/10.1126/science.aec3187?af=R</prism:url>
+      <prism:copyright/>
+   </item>
+   <item rdf:about="https://www.science.org/doi/abs/10.1126/science.aec8514?af=R">
+      <title>TranscriptFormer: A generative cell atlas across 1.5 billion years of evolution</title>
+      <link>https://www.science.org/doi/abs/10.1126/science.aec8514?af=R</link>
+      <content:encoded>Science, Ahead of Print. &lt;br/&gt;</content:encoded>
+      <description>Science, Ahead of Print. &lt;br/&gt;</description>
+      <dc:identifier>doi:10.1126/science.aec8514</dc:identifier>
+      <dc:source/>
+      <dc:date>2026-05-07T05:59:18Z</dc:date>
+      <dc:type>Research Article</dc:type>
+      <dc:creator>James D. Pearce, Sara E. Simmonds, Gita Mahmoudabadi, Lakshmi Krishnan, Giovanni Palla, Ana-Maria Istrate, Alexander Tarashansky, Benjamin Nelson, Omar Valenzuela, Donghui Li, Stephen R. Quake, Theofanis Karaletsos</dc:creator>
+      <prism:publicationName>Science</prism:publicationName>
+      <prism:doi>10.1126/science.aec8514</prism:doi>
+      <prism:url>https://www.science.org/doi/abs/10.1126/science.aec8514?af=R</prism:url>
+      <prism:copyright/>
+   </item>
+   <item rdf:about="https://www.science.org/doi/abs/10.1126/science.ads0189?af=R">
+      <title>Observation of quantum vortex core fractionalization and skyrmion formation in a superconductor</title>
+      <link>https://www.science.org/doi/abs/10.1126/science.ads0189?af=R</link>
+      <content:encoded>Science, Ahead of Print. &lt;br/&gt;</content:encoded>
+      <description>Science, Ahead of Print. &lt;br/&gt;</description>
+      <dc:identifier>doi:10.1126/science.ads0189</dc:identifier>
+      <dc:source/>
+      <dc:date>2026-05-21T06:00:00Z</dc:date>
+      <dc:type>Research Article</dc:type>
+      <dc:creator>Yu Zheng, Quanxin Hu, Xin Yu, Haijiao Ji, Igor Timoshuk, Julien Garaud, Hanxiang Xu, Yongwei Li, Ye Gao, Xingye Lu, Vadim Grinenko, Egor Babaev, Noah F. Q. Yuan, Rui Wu, Baiqing Lv, Chi-Ming Yim, Hong Ding</dc:creator>
+      <prism:publicationName>Science</prism:publicationName>
+      <prism:doi>10.1126/science.ads0189</prism:doi>
+      <prism:url>https://www.science.org/doi/abs/10.1126/science.ads0189?af=R</prism:url>
+      <prism:copyright/>
+   </item>
+   <item rdf:about="https://www.science.org/doi/abs/10.1126/science.adw8329?af=R">
+      <title>Nodeless superconducting gap and electron-boson coupling in (La,Pr,Sm)3Ni2O7 films</title>
+      <link>https://www.science.org/doi/abs/10.1126/science.adw8329?af=R</link>
+      <content:encoded>Science, Ahead of Print. &lt;br/&gt;</content:encoded>
+      <description>Science, Ahead of Print. &lt;br/&gt;</description>
+      <dc:identifier>doi:10.1126/science.adw8329</dc:identifier>
+      <dc:source/>
+      <dc:date>2026-05-21T06:00:00Z</dc:date>
+      <dc:type>Research Article</dc:type>
+      <dc:creator>Jianchang Shen, Guangdi Zhou, Yu Miao, Peng Li, Zhipeng Ou, Yaqi Chen, Zechao Wang, Runqing Luan, Hongxu Sun, Zikun Feng, Xinru Yong, Yueying Li, Lizhi Xu, Wei Lv, Zihao Nie, Heng Wang, Haoliang Huang, Yu-Jie Sun, Qi-Kun Xue, Junfeng He, Zhuoyu Chen</dc:creator>
+      <prism:publicationName>Science</prism:publicationName>
+      <prism:doi>10.1126/science.adw8329</prism:doi>
+      <prism:url>https://www.science.org/doi/abs/10.1126/science.adw8329?af=R</prism:url>
+      <prism:copyright/>
+   </item>
+   <item rdf:about="https://www.science.org/doi/abs/10.1126/science.aef3178?af=R">
+      <title>DNA polymerization activates RNA cleavage of a reverse transcriptase–like antiviral enzyme</title>
+      <link>https://www.science.org/doi/abs/10.1126/science.aef3178?af=R</link>
+      <content:encoded>Science, Ahead of Print. &lt;br/&gt;</content:encoded>
+      <description>Science, Ahead of Print. &lt;br/&gt;</description>
+      <dc:identifier>doi:10.1126/science.aef3178</dc:identifier>
+      <dc:source/>
+      <dc:date>2026-05-21T06:00:00Z</dc:date>
+      <dc:type>Research Article</dc:type>
+      <dc:creator>, , , , , , , , , , , , , </dc:creator>
+      <prism:publicationName>Science</prism:publicationName>
+      <prism:doi>10.1126/science.aef3178</prism:doi>
+      <prism:url>https://www.science.org/doi/abs/10.1126/science.aef3178?af=R</prism:url>
+      <prism:copyright/>
+   </item>
+</rdf:RDF>

@@ -116,7 +116,11 @@ export type ProcessedPapersFile = {
 
 export async function readProcessedPapersFile(path: string): Promise<ProcessedPapersFile> {
   const raw = await readFile(path, "utf8");
-  return processedPapersFileSchema.parse(JSON.parse(raw)) as ProcessedPapersFile;
+  return validateProcessedPapersFile(JSON.parse(raw));
+}
+
+export function validateProcessedPapersFile(data: unknown): ProcessedPapersFile {
+  return processedPapersFileSchema.parse(data) as ProcessedPapersFile;
 }
 
 export function processedPapersPath(reportDate: string): string {

@@ -1,0 +1,166 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns="http://purl.org/rss/1.0/" xmlns:admin="http://webns.net/mvcb/">
+    <channel rdf:about="http://feeds.nature.com/nbt/rss/current">
+        <title>Nature Biotechnology</title>
+        <description>Nature Biotechnology is a monthly journal publishing new concepts in biological technology of relevance to bioengineering, medicine, energy, agriculture, food and the environment. It has a magazine covering the commercial, political, ethical, legal and societal aspects of this research.</description>
+        <link>http://feeds.nature.com/nbt/rss/current</link>
+        <admin:generatorAgent rdf:resource="https://www.nature.com/"/>
+        <admin:errorReportsTo rdf:resource="mailto:feedback@nature.com"/>
+        <dc:publisher>Nature Publishing Group</dc:publisher>
+        <dc:language>en</dc:language>
+        <dc:rights>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</dc:rights>
+        <prism:publicationName>Nature Biotechnology</prism:publicationName>
+        
+        
+        <prism:copyright>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</prism:copyright>
+        <prism:rightsAgent>permissions@nature.com</prism:rightsAgent>
+        <image rdf:resource="https://www.nature.com/uploads/product/nbt/rss.png"/>
+        <items>
+            <rdf:Seq>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41587-026-03112-5"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41587-026-03131-2"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41587-026-03180-7"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41587-026-03134-z"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41587-026-03153-w"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41587-026-03170-9"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41587-026-03140-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41587-026-03149-6"/>
+                
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="https://www.nature.com/uploads/product/nbt/rss.png">
+        <title>Nature Biotechnology</title>
+        <url>https://www.nature.com/uploads/product/nbt/rss.png</url>
+        <link>http://feeds.nature.com/nbt/rss/current</link>
+    </image>
+    
+        <item rdf:about="https://www.nature.com/articles/s41587-026-03112-5">
+            <title><![CDATA[Scoring gene importance by interpreting single-cell foundation models]]></title>
+            <link>https://www.nature.com/articles/s41587-026-03112-5</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Biotechnology, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41587-026-03112-5">doi:10.1038/s41587-026-03112-5</a></p>SIGnature enables scalable cross-dataset analyses by combining explainable artificial intelligence with RNA foundation models.]]></content:encoded>
+            <dc:title><![CDATA[Scoring gene importance by interpreting single-cell foundation models]]></dc:title>
+            <dc:creator>Maxwell P. Gold</dc:creator><dc:creator>Miguel Reyes</dc:creator><dc:creator>Nathaniel Diamant</dc:creator><dc:creator>Tony Kuo</dc:creator><dc:creator>Ehsan Hajiramezanali</dc:creator><dc:creator>Jane W. Newburger</dc:creator><dc:creator>Mary Beth F. Son</dc:creator><dc:creator>Pui Y. Lee</dc:creator><dc:creator>Gabriele Scalia</dc:creator><dc:creator>Aicha BenTaieb</dc:creator><dc:creator>Sharookh B. Kapadia</dc:creator><dc:creator>Anupriya Tripathi</dc:creator><dc:creator>Héctor Corrada Bravo</dc:creator><dc:creator>Graham Heimberg</dc:creator><dc:creator>Tommaso Biancalani</dc:creator>
+            <dc:identifier>doi:10.1038/s41587-026-03112-5</dc:identifier>
+            <dc:source>Nature Biotechnology, Published online: 2026-05-27; | doi:10.1038/s41587-026-03112-5</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Biotechnology</prism:publicationName>
+            <prism:doi>10.1038/s41587-026-03112-5</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41587-026-03112-5</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41587-026-03131-2">
+            <title><![CDATA[Accurate quantification in proteomics with QuantUMS]]></title>
+            <link>https://www.nature.com/articles/s41587-026-03131-2</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Biotechnology, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41587-026-03131-2">doi:10.1038/s41587-026-03131-2</a></p>QuantUMS implements uncertainty estimation for protein quantification in mass spectrometry.]]></content:encoded>
+            <dc:title><![CDATA[Accurate quantification in proteomics with QuantUMS]]></dc:title>
+            <dc:creator>Justus L. Grossmann</dc:creator><dc:creator>Franziska Kistner</dc:creator><dc:creator>Ludwig R. Sinn</dc:creator><dc:creator>Lukasz Szyrwiel</dc:creator><dc:creator>Juri Rappsilber</dc:creator><dc:creator>Vadim Demichev</dc:creator>
+            <dc:identifier>doi:10.1038/s41587-026-03131-2</dc:identifier>
+            <dc:source>Nature Biotechnology, Published online: 2026-05-27; | doi:10.1038/s41587-026-03131-2</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Biotechnology</prism:publicationName>
+            <prism:doi>10.1038/s41587-026-03131-2</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41587-026-03131-2</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41587-026-03180-7">
+            <title><![CDATA[Author Correction: DNA-guided CRISPR–Cas12a effectors for programmable RNA recognition and cleavage]]></title>
+            <link>https://www.nature.com/articles/s41587-026-03180-7</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Biotechnology, Published online: 26 May 2026; <a href="https://www.nature.com/articles/s41587-026-03180-7">doi:10.1038/s41587-026-03180-7</a></p>Author Correction: DNA-guided CRISPR–Cas12a effectors for programmable RNA recognition and cleavage]]></content:encoded>
+            <dc:title><![CDATA[Author Correction: DNA-guided CRISPR–Cas12a effectors for programmable RNA recognition and cleavage]]></dc:title>
+            <dc:creator>Xiaolong Wu</dc:creator><dc:creator>Wai Hei Lam</dc:creator><dc:creator>Zibin Zhao</dc:creator><dc:creator>Yumeng Cao</dc:creator><dc:creator>Haosi Lin</dc:creator><dc:creator>Xianzhen Feng</dc:creator><dc:creator>Yuanliang Zhai</dc:creator><dc:creator>I-Ming Hsing</dc:creator>
+            <dc:identifier>doi:10.1038/s41587-026-03180-7</dc:identifier>
+            <dc:source>Nature Biotechnology, Published online: 2026-05-26; | doi:10.1038/s41587-026-03180-7</dc:source>
+            <dc:date>2026-05-26</dc:date>
+            <prism:publicationName>Nature Biotechnology</prism:publicationName>
+            <prism:doi>10.1038/s41587-026-03180-7</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41587-026-03180-7</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41587-026-03134-z">
+            <title><![CDATA[Improving multimodal wearable sensing for healthcare with artificial intelligence]]></title>
+            <link>https://www.nature.com/articles/s41587-026-03134-z</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Biotechnology, Published online: 26 May 2026; <a href="https://www.nature.com/articles/s41587-026-03134-z">doi:10.1038/s41587-026-03134-z</a></p>This Comment explores artificial intelligence-driven strategies to accelerate the clinical translation of multimodal wearable sensors. We outline key data-science challenges and highlight disease contexts in which these systems could support therapeutic interventions.]]></content:encoded>
+            <dc:title><![CDATA[Improving multimodal wearable sensing for healthcare with artificial intelligence]]></dc:title>
+            <dc:creator>Yizhou Bian</dc:creator><dc:creator>Shichao Ding</dc:creator><dc:creator>Catherine R. Jutzeler</dc:creator><dc:creator>Sheng Xu</dc:creator><dc:creator>Noé Brasier</dc:creator><dc:creator>Joseph Wang</dc:creator>
+            <dc:identifier>doi:10.1038/s41587-026-03134-z</dc:identifier>
+            <dc:source>Nature Biotechnology, Published online: 2026-05-26; | doi:10.1038/s41587-026-03134-z</dc:source>
+            <dc:date>2026-05-26</dc:date>
+            <prism:publicationName>Nature Biotechnology</prism:publicationName>
+            <prism:doi>10.1038/s41587-026-03134-z</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41587-026-03134-z</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41587-026-03153-w">
+            <title><![CDATA[A framework for building a synthetic cell from the SynCell Asia Initiative]]></title>
+            <link>https://www.nature.com/articles/s41587-026-03153-w</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Biotechnology, Published online: 26 May 2026; <a href="https://www.nature.com/articles/s41587-026-03153-w">doi:10.1038/s41587-026-03153-w</a></p>Building a living cell from scratch requires overcoming a bottleneck that has remained unresolved despite decades of progress: orchestrating the spatiotemporal integration of core functional modules. To tackle this barrier, the SynCell Asia Initiative outlines a strategy for developing core functional modules followed by their systems-level integration through the establishment of a centralized, artificial intelligence (AI)-driven biofoundry.]]></content:encoded>
+            <dc:title><![CDATA[A framework for building a synthetic cell from the SynCell Asia Initiative]]></dc:title>
+            <dc:creator>Zhuojun Dai</dc:creator><dc:creator>Wataru Aoki</dc:creator><dc:creator>Pimchai Chaiyen</dc:creator><dc:creator>Matthew Wook Chang</dc:creator><dc:creator>Xixian Chen</dc:creator><dc:creator>Zibo Chen</dc:creator><dc:creator>Byung-Kwan Cho</dc:creator><dc:creator>Nan-Nan Deng</dc:creator><dc:creator>Shishen Du</dc:creator><dc:creator>Jee Loon Foo</dc:creator><dc:creator>Julius Fredens</dc:creator><dc:creator>Meifang Fu</dc:creator><dc:creator>Xiaojun Han</dc:creator><dc:creator>Tomohisa Hasunuma</dc:creator><dc:creator>Norikazu Ichihashi</dc:creator><dc:creator>Nurulfiza Mat Isa</dc:creator><dc:creator>Daisuke Kiga</dc:creator><dc:creator>Dong-Myung Kim</dc:creator><dc:creator>Jongmin Kim</dc:creator><dc:creator>Akihiko Kondo</dc:creator><dc:creator>Yuishin Kosaka</dc:creator><dc:creator>Kobkul Laoteng</dc:creator><dc:creator>Joongoo Lee</dc:creator><dc:creator>Jian Li</dc:creator><dc:creator>Junbai Li</dc:creator><dc:creator>Ming Li</dc:creator><dc:creator>Sierin Lim</dc:creator><dc:creator>Jianbo Liu</dc:creator><dc:creator>Xingguo Liu</dc:creator><dc:creator>Yuan Lu</dc:creator><dc:creator>Nan Luo</dc:creator><dc:creator>Tomoaki Matsuura</dc:creator><dc:creator>Wataru Mizunashi</dc:creator><dc:creator>Yan Qiao</dc:creator><dc:creator>Ahmad Bazli Ramzi</dc:creator><dc:creator>Sang Woo Seo</dc:creator><dc:creator>Yoshihiro Shimizu</dc:creator><dc:creator>Kwanwoo Shin</dc:creator><dc:creator>Liangfei Tian</dc:creator><dc:creator>Wanwipa Vongsangnak</dc:creator><dc:creator>Baojun Wang</dc:creator><dc:creator>Cheng-Cai Zhang</dc:creator><dc:creator>Xian-En Zhang</dc:creator><dc:creator>Guoping Zhao</dc:creator><dc:creator>Bo Zheng</dc:creator><dc:creator>Yaoqi Zhou</dc:creator><dc:creator>Chenli Liu</dc:creator>
+            <dc:identifier>doi:10.1038/s41587-026-03153-w</dc:identifier>
+            <dc:source>Nature Biotechnology, Published online: 2026-05-26; | doi:10.1038/s41587-026-03153-w</dc:source>
+            <dc:date>2026-05-26</dc:date>
+            <prism:publicationName>Nature Biotechnology</prism:publicationName>
+            <prism:doi>10.1038/s41587-026-03153-w</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41587-026-03153-w</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41587-026-03170-9">
+            <title><![CDATA[Programming biology: next-gen AI firms raise billions to design better medicines]]></title>
+            <link>https://www.nature.com/articles/s41587-026-03170-9</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Biotechnology, Published online: 26 May 2026; <a href="https://www.nature.com/articles/s41587-026-03170-9">doi:10.1038/s41587-026-03170-9</a></p>Faster drug discovery, optimized drug design, even programmable therapeutics: AI is impacting R&D. Data and development bottlenecks remain.]]></content:encoded>
+            <dc:title><![CDATA[Programming biology: next-gen AI firms raise billions to design better medicines]]></dc:title>
+            <dc:creator>Melanie Senior</dc:creator>
+            <dc:identifier>doi:10.1038/s41587-026-03170-9</dc:identifier>
+            <dc:source>Nature Biotechnology, Published online: 2026-05-26; | doi:10.1038/s41587-026-03170-9</dc:source>
+            <dc:date>2026-05-26</dc:date>
+            <prism:publicationName>Nature Biotechnology</prism:publicationName>
+            <prism:doi>10.1038/s41587-026-03170-9</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41587-026-03170-9</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41587-026-03140-1">
+            <title><![CDATA[Fetal monitoring for high-risk pregnancies using a wearable ultrasound patch]]></title>
+            <link>https://www.nature.com/articles/s41587-026-03140-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Biotechnology, Published online: 26 May 2026; <a href="https://www.nature.com/articles/s41587-026-03140-1">doi:10.1038/s41587-026-03140-1</a></p>A wearable ultrasound device is optimized for continuous monitoring of pregnancies.]]></content:encoded>
+            <dc:title><![CDATA[Fetal monitoring for high-risk pregnancies using a wearable ultrasound patch]]></dc:title>
+            <dc:creator>Geonho Park</dc:creator><dc:creator>Yizhou Bian</dc:creator><dc:creator>Hao Huang</dc:creator><dc:creator>Sai Zhou</dc:creator><dc:creator>Siyu Qin</dc:creator><dc:creator>Muyang Lin</dc:creator><dc:creator>Xinyi Yang</dc:creator><dc:creator>Aaron Lee</dc:creator><dc:creator>Anand Ramkumar</dc:creator><dc:creator>Mariana Tome</dc:creator><dc:creator>Jayne Lander</dc:creator><dc:creator>Xiangjun Chen</dc:creator><dc:creator>Shenghan Wang</dc:creator><dc:creator>Pranavi Bheemreddy</dc:creator><dc:creator>Liam Stanton</dc:creator><dc:creator>Ren Sheng</dc:creator><dc:creator>Guihuan Guo</dc:creator><dc:creator>Mabel Shehada</dc:creator><dc:creator>Ruotao Wang</dc:creator><dc:creator>Alexa Roa</dc:creator><dc:creator>Chengchangfeng Lu</dc:creator><dc:creator>Wentong Yue</dc:creator><dc:creator>Ray S. Wu</dc:creator><dc:creator>Xiaoxiang Gao</dc:creator><dc:creator>Hongjie Hu</dc:creator><dc:creator>Amer Yaghi</dc:creator><dc:creator>Mark Liu</dc:creator><dc:creator>Lawrence Impey</dc:creator><dc:creator>Sally L. Collins</dc:creator><dc:creator>Aris T. Papageorghiou</dc:creator><dc:creator>Louise C. Laurent</dc:creator><dc:creator>Keith A. Wear</dc:creator><dc:creator>Antoniya Georgieva</dc:creator><dc:creator>Sheng Xu</dc:creator>
+            <dc:identifier>doi:10.1038/s41587-026-03140-1</dc:identifier>
+            <dc:source>Nature Biotechnology, Published online: 2026-05-26; | doi:10.1038/s41587-026-03140-1</dc:source>
+            <dc:date>2026-05-26</dc:date>
+            <prism:publicationName>Nature Biotechnology</prism:publicationName>
+            <prism:doi>10.1038/s41587-026-03140-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41587-026-03140-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41587-026-03149-6">
+            <title><![CDATA[AI-guided redesign of laboratory-evolved reverse transcriptases enhances prime editing]]></title>
+            <link>https://www.nature.com/articles/s41587-026-03149-6</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Biotechnology, Published online: 21 May 2026; <a href="https://www.nature.com/articles/s41587-026-03149-6">doi:10.1038/s41587-026-03149-6</a></p>A computational redesign strategy improves evolved prime editors.]]></content:encoded>
+            <dc:title><![CDATA[AI-guided redesign of laboratory-evolved reverse transcriptases enhances prime editing]]></dc:title>
+            <dc:creator>Y. Allen Tao</dc:creator><dc:creator>Holt A. Sakai</dc:creator><dc:creator>Allen Y. Jiang</dc:creator><dc:creator>Nicholas A. Krasnow</dc:creator><dc:creator>Vasilii S. Vaganov</dc:creator><dc:creator>Brian Shim</dc:creator><dc:creator>Zachary Barsdale</dc:creator><dc:creator>Smriti Pandey</dc:creator><dc:creator>Nouraiz Ahmed</dc:creator><dc:creator>Man Na</dc:creator><dc:creator>Ting-Wei Liao</dc:creator><dc:creator>Keyede Oye</dc:creator><dc:creator>Ana Cristian</dc:creator><dc:creator>Emily Zhang</dc:creator><dc:creator>Joy A. Xu</dc:creator><dc:creator>Mattijs Bulcaen</dc:creator><dc:creator>David R. Liu</dc:creator>
+            <dc:identifier>doi:10.1038/s41587-026-03149-6</dc:identifier>
+            <dc:source>Nature Biotechnology, Published online: 2026-05-21; | doi:10.1038/s41587-026-03149-6</dc:source>
+            <dc:date>2026-05-21</dc:date>
+            <prism:publicationName>Nature Biotechnology</prism:publicationName>
+            <prism:doi>10.1038/s41587-026-03149-6</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41587-026-03149-6</prism:url>
+        </item>
+    
+</rdf:RDF>
