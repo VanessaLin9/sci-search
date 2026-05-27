@@ -35,9 +35,22 @@ export type RenderDigestHtmlOptions = {
   priorityBySourceId?: ReadonlyMap<string, number>;
 };
 
-function formatReportDateLine(isoDate: string): string {
-  const published = isoDate.slice(0, 10);
-  return published;
+function paperDoi(paper: ClassifiedPaper): string | undefined {
+  const doi = paper.doi?.trim();
+  if (doi) return doi;
+  const id = paper.id.trim();
+  if (id.includes("/")) return id;
+  return undefined;
+}
+
+function renderJournalDoiLine(paper: ClassifiedPaper): string {
+  const journal = escapeHtml(paper.journal);
+  const doi = paperDoi(paper);
+  if (!doi) {
+    return `<p style="margin:0 0 10px;font-size:12px;color:#888;">${journal}</p>`;
+  }
+  const doiUrl = `https://doi.org/${encodeURIComponent(doi)}`;
+  return `<p style="margin:0 0 10px;font-size:12px;color:#888;">${journal} · <a href="${escapeHtml(doiUrl)}" style="color:#888;text-decoration:none;" target="_blank" rel="noopener noreferrer">${escapeHtml(doi)}</a></p>`;
 }
 
 function sortForDisplay(
@@ -69,7 +82,6 @@ function renderFeaturedArticle(paper: ClassifiedPaper): string {
   const titleZh = paper.titleZh?.trim();
   const summaryZh = paper.summaryZh?.trim();
   const abstract = paper.abstract?.trim();
-  const published = formatReportDateLine(paper.publishedDate);
 
   const zhTitleBlock = titleZh
     ? `<p style="margin:0 0 6px;font-size:14px;color:#555;font-weight:500;line-height:1.45;">${escapeHtml(titleZh)}</p>`
@@ -87,11 +99,11 @@ function renderFeaturedArticle(paper: ClassifiedPaper): string {
   return `
     <article style="background:#ffffff;border:1px solid #e2e2dc;border-radius:8px;padding:18px 20px;margin:0 0 14px;">
       <h3 style="margin:0 0 4px;font-size:16px;line-height:1.4;font-weight:600;">
-        <a href="${escapeHtml(paper.url)}" style="color:#1a1a1a;text-decoration:none;" target="_blank" rel="noopener noreferrer">${escapeHtml(paper.title)}</a>
+        <a href="${escapeHtml(paper.url)}" style="color:#2c5f8d;text-decoration:none;" target="_blank" rel="noopener noreferrer">${escapeHtml(paper.title)}</a>
       </h3>
       ${zhTitleBlock}
       ${renderTopicTags(paper.topicTags)}
-      <p style="margin:0 0 10px;font-size:12px;color:#888;">${escapeHtml(paper.journal)} · ${escapeHtml(published)}</p>
+      ${renderJournalDoiLine(paper)}
       ${summaryBlock}
     </article>
   `.trim();
