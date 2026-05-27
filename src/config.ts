@@ -47,8 +47,17 @@ const digestFileSchema = z.object({
 
 export type DigestFileConfig = z.infer<typeof digestFileSchema>;
 
+const emailFileSchema = z.object({
+  fromEmail: z.string().email(),
+  fromName: z.string().trim().min(1).optional(),
+  subjectPrefix: z.string().min(1),
+});
+
+export type EmailFileConfig = z.infer<typeof emailFileSchema>;
+
 let routingFileCache: RoutingFileConfig | undefined;
 let digestFileCache: DigestFileConfig | undefined;
+let emailFileCache: EmailFileConfig | undefined;
 
 export async function loadSources(path = "config/sources.json"): Promise<Source[]> {
   const raw = await readFile(path, "utf8");
@@ -74,4 +83,12 @@ export function loadDigestFileConfig(path = "config/digest.json"): DigestFileCon
     digestFileCache = digestFileSchema.parse(JSON.parse(raw));
   }
   return digestFileCache;
+}
+
+export function loadEmailFileConfig(path = "config/email.json"): EmailFileConfig {
+  if (!emailFileCache) {
+    const raw = readFileSync(path, "utf8");
+    emailFileCache = emailFileSchema.parse(JSON.parse(raw));
+  }
+  return emailFileCache;
 }

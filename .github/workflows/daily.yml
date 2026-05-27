@@ -19,6 +19,7 @@ jobs:
       TZ: Asia/Taipei
       RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
       DIGEST_TO_EMAIL: ${{ secrets.DIGEST_TO_EMAIL }}
+      # fromEmail / fromName / subjectPrefix: config/email.json (env overrides optional)
       # Resend test mode (onboarding@resend.dev): only this inbox receives mail until a domain is verified
       RESEND_ACCOUNT_EMAIL: ${{ secrets.RESEND_ACCOUNT_EMAIL }}
       DEBUG_NORMALIZED: "0"

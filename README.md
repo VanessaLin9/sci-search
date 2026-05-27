@@ -81,6 +81,7 @@ npm run write-preview -- --date 2026-05-22
 | [`config/keywords.json`](config/keywords.json) | Keyword fallback for `section` / digest line |
 | [`config/routing.json`](config/routing.json) | Routing LLM endpoint, batch, tokens |
 | [`config/digest.json`](config/digest.json) | `maxFeatured`, digest LLM limits, `summarizeConcurrency` |
+| [`config/email.json`](config/email.json) | `fromEmail`, `fromName`, `subjectPrefix` (not secrets) |
 
 **Environment (`.env` locally, Secrets in CI)** — copy from [`.env.example`](.env.example):
 
@@ -88,7 +89,8 @@ npm run write-preview -- --date 2026-05-22
 |----------|----------|-------------|
 | `RESEND_API_KEY` | for email | Resend API key |
 | `DIGEST_TO_EMAIL` | for email | JSON array or comma-separated recipients |
-| `DIGEST_FROM_EMAIL` | no | Default `onboarding@resend.dev` |
+| `DIGEST_FROM_EMAIL` | no | Override [`config/email.json`](config/email.json) |
+| `DIGEST_FROM_NAME` | no | Override display name in `config/email.json` |
 | `RESEND_ACCOUNT_EMAIL` | sandbox | Your Resend login; other `DIGEST_TO_EMAIL` addresses skipped until domain verified |
 | `DIGEST_SUBJECT_PREFIX` | no | Default `Paper Digest` |
 | `ROUTE_LIFE_SCIENCE` | no | `1` to enable routing (on in CI) |
@@ -119,8 +121,7 @@ Workflow: [`.github/workflows/daily.yml`](.github/workflows/daily.yml)
 | `ROUTING_LLM_MODEL` | yes | |
 | `DIGEST_LLM_MODEL` | recommended | CI falls back to `ROUTING_LLM_MODEL` if unset |
 | `DIGEST_LLM_API_KEY` | no | Optional separate key |
-| `DIGEST_FROM_EMAIL` | no | Use `digest@yourdomain.com` after [domain verify](https://resend.com/domains) |
-| `DIGEST_SUBJECT_PREFIX` | no | |
+| `DIGEST_SUBJECT_PREFIX` | no | Override `config/email.json` if needed |
 
 **Resend sandbox:** `onboarding@resend.dev` only delivers to your account inbox. Set `RESEND_ACCOUNT_EMAIL` to that address; extra recipients in `DIGEST_TO_EMAIL` are skipped (warning in log) until you verify a domain and change `DIGEST_FROM_EMAIL`.
 

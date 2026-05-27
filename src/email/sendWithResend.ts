@@ -2,6 +2,13 @@ import type { EmailConfig } from "./config.js";
 
 const RESEND_API_URL = "https://api.resend.com/emails";
 
+function buildFromHeader(config: EmailConfig): string {
+  if (!config.fromName) {
+    return config.fromEmail;
+  }
+  return `${config.fromName} <${config.fromEmail}>`;
+}
+
 export type SendEmailInput = {
   subject: string;
   html: string;
@@ -20,6 +27,7 @@ export async function sendWithResend(
   config: EmailConfig,
   input: SendEmailInput,
 ): Promise<SendEmailResult> {
+  const from = buildFromHeader(config);
   const response = await fetch(RESEND_API_URL, {
     method: "POST",
     headers: {
@@ -27,7 +35,7 @@ export async function sendWithResend(
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: config.from,
+      from,
       to: config.to,
       subject: input.subject,
       html: input.html,

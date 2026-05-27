@@ -1,12 +1,12 @@
 import type { EmailConfig } from "./config.js";
 
 /** Resend test sender only delivers to the account owner's inbox. */
-export function isResendSandboxFrom(from: string): boolean {
-  return from.toLowerCase().endsWith("@resend.dev");
+export function isResendSandboxFrom(fromEmail: string): boolean {
+  return fromEmail.toLowerCase().endsWith("@resend.dev");
 }
 
 export function applyResendSandboxLimits(config: EmailConfig): EmailConfig {
-  if (!isResendSandboxFrom(config.from)) {
+  if (!isResendSandboxFrom(config.fromEmail)) {
     return config;
   }
 
@@ -14,7 +14,7 @@ export function applyResendSandboxLimits(config: EmailConfig): EmailConfig {
   if (!owner) {
     if (config.to.length > 1) {
       throw new Error(
-        `Resend sandbox sender "${config.from}" can only deliver to your Resend account email. ` +
+        `Resend sandbox sender "${config.fromEmail}" can only deliver to your Resend account email. ` +
           `DIGEST_TO_EMAIL has ${config.to.length} recipients. Set RESEND_ACCOUNT_EMAIL to your login email ` +
           "(e.g. vanessa7591@gmail.com) so CI sends only to you and skips the rest, or verify a domain at " +
           "https://resend.com/domains and set DIGEST_FROM_EMAIL to an address on that domain.",
@@ -35,7 +35,7 @@ export function applyResendSandboxLimits(config: EmailConfig): EmailConfig {
 
   if (skipped.length > 0) {
     console.warn(
-      `[email] Resend sandbox (${config.from}): sending only to ${allowed.join(", ")}; ` +
+      `[email] Resend sandbox (${config.fromEmail}): sending only to ${allowed.join(", ")}; ` +
         `skipped ${skipped.join(", ")}. Verify a domain and use a custom DIGEST_FROM_EMAIL to email everyone.`,
     );
   }
