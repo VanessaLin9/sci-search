@@ -43,8 +43,8 @@ jobs:
       - name: Typecheck
         run: npm run check
 
-      - name: E2E acceptance tests
-        run: npm run test:e2e
+      - name: Tests
+        run: npm test
         env:
           ROUTE_LIFE_SCIENCE: "1"
           ENABLE_LLM_DIGEST: "1"

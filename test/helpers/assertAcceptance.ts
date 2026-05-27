@@ -169,3 +169,28 @@ export function assertEmptyDigestHtml(html: string, reportDate: string): void {
   assert.match(html, /精選 0/);
   assert.match(html, /更多收錄 0/);
 }
+
+/** Committed papers.json regression fixture (real LLM output, render-only). */
+export function assertRegressionFixtureOutput(
+  processed: ProcessedPapersFile,
+  expected: {
+    reportDate: string;
+    paperCount: number;
+    featured: number;
+    overflow: number;
+    skip: number;
+  },
+): void {
+  if (expected.paperCount === 0) {
+    assertEmptyPipelineOutput(processed, expected.reportDate);
+    return;
+  }
+
+  assertPipelineOutput(processed, expected.reportDate);
+  assertTranslateStats(processed);
+
+  assert.equal(processed.papers.length, expected.paperCount);
+  assert.equal(processed.digest?.selection.featured, expected.featured);
+  assert.equal(processed.digest?.selection.overflow, expected.overflow);
+  assert.equal(processed.digest?.selection.skip, expected.skip);
+}

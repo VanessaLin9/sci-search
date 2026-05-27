@@ -1,0 +1,862 @@
+{
+  "reportDate": "2026-05-22",
+  "generatedAt": "2026-05-25T11:48:32.442Z",
+  "papers": [
+    {
+      "id": "10.1038/s41559-026-03080-8",
+      "title": "Genetic rescue increases long-term fitness despite elevating putative genetic load in a male-dimorphic mite",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-05-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03080-8",
+      "doi": "10.1038/s41559-026-03080-8",
+      "abstract": "An experiment with male-dimorphic mites shows long-lasting benefits of genetic rescue, regardless of type of male rescuer and despite introducing genetic load, in populations subjected to a thermal stress.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "遺傳救援提升雄性二態蟎長期適應度：儘管引入遺傳負荷",
+      "summaryZh": "遺傳救援是保育生物學中用於拯救瀕危物種的重要策略。本研究以雄性二態蟎為實驗對象，發現遺傳救援能帶來持久的適應度提升，且此效益不受救援者雄性類型影響。值得注意的是，即使引入遺傳負荷，遺傳救援仍展現其效益，這挑戰了傳統上對遺傳負荷的擔憂。在熱緊迫條件下，這些發現表明遺傳救援可能是管理受脅物種遺傳多樣性的有效工具。",
+      "topicTags": [
+        "genetic-rescue",
+        "conservation-biology",
+        "population-genetics",
+        "thermal-stress",
+        "evolutionary-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-01950-8",
+      "title": "Stress granules shape ferroptosis in cancer",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-05-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-01950-8",
+      "doi": "10.1038/s41556-026-01950-8",
+      "abstract": "A major obstacle in treating glioblastoma is the remarkable resistance of glioblastoma stem cells to standard-of-care therapies such as temozolomide and irradiation. A new study now reveals that dismantling protective structures called stress granules can make these cells more susceptible to these treatment regimens by unleashing ferroptosis.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "拆除應激顆粒可促進膠質母細胞瘤的鐵死亡",
+      "summaryZh": "膠質母細胞瘤是極具治療難度的惡性腦瘤，其腫瘤幹細胞對化療藥物替莫唑胺及放射治療具有高度抗性。本研究發現，腫瘤幹細胞內的應激顆粒（stress granules）是一種保護性結構，能夠抑制鐵依賴性的細胞死亡方式——鐵死亡。當使用特定方法拆除這些應激顆粒後，癌細胞將更容易受到標準治療的攻擊，腫瘤細胞會因鐵死亡而大量死亡。此發現為克服膠質母細胞瘤的治療抗性提供了全新的分子標靶策略，具有重要的臨床轉譯價值。",
+      "topicTags": [
+        "glioblastoma",
+        "ferroptosis",
+        "stress-granules",
+        "cancer-therapy",
+        "stem-cells"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-01953-5",
+      "title": "Stress granules restrain ferroptosis by sequestering ferritin",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-05-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-01953-5",
+      "doi": "10.1038/s41556-026-01953-5",
+      "abstract": "Glioblastoma stem cells (GSCs) are refractory to first-line treatment in the clinic, which includes irradiation (IR) and temozolomide (TMZ). Here we find that disrupting stress granules (SGs) sensitizes GSCs to IR/TMZ through ferroptosis. The profiling of SG proteins reveals the recruitment of iron-related proteins including ferritin. Mechanistically, G3BP1, an SG core protein, directly interacts with ferritin light chain in an IR/TMZ-induced G3BP1 methionine-333 oxidation-dependent manner. This interaction facilitates recruiting and sequestering ferritin into SGs, thereby restricting ferroptosis by limiting Fe2+ content in the labile iron pool and preventing ferritinophagy. Disrupting G3BP1 and ferritin light chain binding using a screened small molecule, ciwujianoside C3, mitigates the restriction of SGs on ferroptosis, and resensitizes GSCs to IR/TMZ in both in vitro and animal models. These findings unveil a negative regulation of SGs on ferroptosis, and reveal a promising strategy to disrupt the SG–ferroptosis axis for treating glioblastomas and probably other types of cancer. Ge, Wang, Zhao, Guo et al. report a role for stress granules in suppressing ferroptosis by sequestering ferritin upon irradiation and temozolomide treatment in glioblastoma stem cells, which may potentially be targeted for improved efficacy.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "壓力顆粒隔離鐵蛋白抑制鐵死亡——膠質母細胞瘤治療新策略",
+      "summaryZh": "膠質母細胞瘤幹細胞對標準治療（放射治療與替莫唑胺）具有高度抗藥性，是臨床上治療失敗的主因。本研究發現，壓力顆粒能夠隔離鐵蛋白，限制游離鐵離子含量並防止鐵蛋白自噬，從而抑制鐵死亡。G3BP1蛋白在氧化依賴性機制下與鐵蛋白輕鏈相互作用，是調控此過程的關鍵分子開關。研究團隊篩選出一種小分子化合物ciwujianoside C3，能阻斷G3BP1與鐵蛋白的結合，並在體內外實驗中成功使膠質母細胞瘤細胞重新對治療敏感。這項發現揭示了壓力顆粒與鐵死亡之間的負向調控關係，為克服膠質母細胞瘤的治療抗藥性提供了全新的分子靶點與治療策略。",
+      "topicTags": [
+        "glioblastoma",
+        "ferroptosis",
+        "stress-granules",
+        "cancer-therapy",
+        "drug-resistance"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02528-0",
+      "title": "Branching out takes anti-tumor immunity down a NOTCH",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-05-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02528-0",
+      "doi": "10.1038/s41590-026-02528-0",
+      "abstract": "Cancer cells utilize many strategies to suppress immune responses. Data now show that these measures include the secretion of branched-chain keto acids into the tumor microenvironment. These metabolites can be taken up by tumor-associated macrophages, in which they can shield NOTCH2 from degradation and thereby favor an immunosuppressive gene expression program.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "腫瘤微環境中的支鏈酮酸：透過穩定NOTCH2抑制抗腫瘤免疫",
+      "summaryZh": "本研究揭示了腫瘤細胞逃避免疫攻擊的全新機制。腫瘤細胞會分泌支鏈酮酸進入腫瘤微環境，這些代謝物可被腫瘤相關巨噬細胞攝取，並在細胞內穩定NOTCH2蛋白，使其免於降解。穩定的NOTCH2進而驅動巨噬細胞採用免疫抑制的基因表現程式，反而幫助腫瘤對抗免疫系統的監控。此發現不僅闡明了腫瘤微環境中代謝物與免疫細胞之間的複雜交互作用，也為開發新的癌症免疫療法提供了潛在的治療靶點。",
+      "topicTags": [
+        "cancer-immunology",
+        "tumor-microenvironment",
+        "macrophages",
+        "notch-signaling",
+        "metabolism"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02523-5",
+      "title": "Immune development in early life",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-05-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02523-5",
+      "doi": "10.1038/s41590-026-02523-5",
+      "abstract": "The perinatal period of immune ontogeny reflects prenatal, maternal and postnatal cues that converge to establish durable immune trajectories. Fetal and infant immunity follows distinct, ontogeny-specific programs optimized for tissue protection, tolerance and rapid effector function. Herein, we integrate recent insights into prenatal hematopoiesis, tissue seeding by innate and adaptive lymphocytes, and the establishment of immune specialization across barriers and systemic compartments. We examine how cellular and humoral factors in blood, tissues and/or breast milk calibrate immune development, and how postnatal microbial colonization and environmental exposures further refine immune function in a tissue- and time-dependent manner. Together, these findings redefine early life as a critical window during which immune set points are established, with lasting immunological imprinting linked to host defense, vaccine responsiveness and risk for atopy. A mechanistic understanding of these processes provides a framework for rational, age-adapted strategies to promote immune health across the life course. Palma et al. discuss the current state of the field on early immune development in humans.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "早期生命的免疫發育",
+      "summaryZh": "這篇綜述整合了產前造血、組織免疫細胞播種及屏障免疫特化等最新研究，揭示胎兒與嬰兒免疫系統遵循獨特的發育程式。研究者強調血液、組織和母乳中的細胞與體液因子如何共同校準免疫發育，而後天的微生物定植與環境暴露更進一步塑造免疫功能。此研究重新定義早期生命為建立免疫設定點的關鍵時期，這些設定點與宿主防禦、疫苗反應及過敏風險有持久關聯。理解這些機制可為促進全生命週期免疫健康的年齡適配策略提供理論基礎。",
+      "topicTags": [
+        "immunology",
+        "early-life",
+        "immune-development",
+        "perinatal",
+        "vaccine-response"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02517-3",
+      "title": "A glycan-based adjuvant expands the breadth and duration of protection of mRNA-based vaccines",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-05-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02517-3",
+      "doi": "10.1038/s41590-026-02517-3",
+      "abstract": "The activation of pattern recognition receptors (PRRs) orchestrates inflammation and regulates adaptive immunity. To test whether tuning inflammation through PRR stimulation enhanced the efficacy of mRNA vaccines, we combined an mRNA-based vaccine generated against the ancestral spike protein of SARS-CoV-2 with mannadjuvant, a formulation of fungal mannan and aluminum hydroxide targeting the PRR dectin-2. In mice and non-human primates, mannadjuvant increased the magnitude and durability of the response elicited by the mRNA-based vaccine, and it also led to the induction of neutralizing antibodies directed against variants of concern with a high escape capacity, overcoming antigenic imprinting. Mechanistically, prolonged type I interferon (IFN) production and potentiated interleukin-1 (IL-1) signaling locally within the draining lymph node in mice or in human cells were necessary and sufficient to exert the effect of mannadjuvant. Our data indicate that antifungal PRRs can be harnessed to create more potent and durable mRNA-based vaccines. Jena, Qu et al. show that mannadjuvant, a formulation of fungal mannan and aluminum hydroxide, increases the magnitude, durability and breadth of the response elicited by mRNA-based vaccines against SARS-CoV-2 variants in mice and non-human primates.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "以聚醣為基礎的佐劑可提升mRNA疫苗的保護範圍與持續時間",
+      "summaryZh": "本研究開發了一種名為mannadjuvant的佐劑，由真菌甘露聚醣與氫氧化鋁組成，可專一性活化去ctin-2模式辨識受體。在小鼠與非人靈長類動物模型中，此佐劑顯著增強了mRNA疫苗對SARS-CoV-2的免疫反應幅度與持久性。值得注意的是，該佐劑能誘導針對高免疫逃脫能力變異株的中和抗體，有效克服了抗原原罪現象。機制研究顯示，局部淋巴結中延長的第一型干擾素產生與白介素-1訊號增強是mannadjuvant發揮效果的關鍵。此研究證明可利用抗真菌模式辨識受體來開發更強效且持久的mRNA疫苗。",
+      "topicTags": [
+        "mrna-vaccine",
+        "adjuvant",
+        "covid-19",
+        "immunology",
+        "glycan"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02371-x",
+      "title": "Bridging classical and continuous directed evolution",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-05-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02371-x",
+      "doi": "10.1038/s41564-026-02371-x",
+      "abstract": "Continuous evolution methods accelerate directed evolution campaigns, but often at the expense of control over evolutionary outcomes. The lytic selection and evolution system combines the advantages of speed, control and flexibility, adding to recent advances in the directed evolution toolbox.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "橋接古典與連續定向演化：新型溶菌篩選系統問世",
+      "summaryZh": "定向演化是改造蛋白質與酶功能的重要工具，近年來連續演化方法雖能大幅加速篩選流程，卻往往犧牲了對演化歷程的控制。本研究提出的溶菌選擇與演化系統（lytic selection and evolution system）結合了速度、控制與彈性三大優勢，成功橋接了古典與連續演化方法的鴻溝。此創新工具為定向演化領域提供更精準的操控手段，有望加速功能性分子的開發與優化。",
+      "topicTags": [
+        "directed-evolution",
+        "protein-engineering",
+        "microbial-evolution",
+        "synthetic-biology",
+        "enzyme-design"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02353-z",
+      "title": "A microbiologist’s voyage from the lab to The Atlantic",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-05-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02353-z",
+      "doi": "10.1038/s41564-026-02353-z",
+      "abstract": "We spoke with Katherine Wu, a staff writer at The Atlantic, about her career path from infectious disease research to science journalism. She discusses her process as a science writer, offers advice to scientists when speaking with the press about their work and highlights the importance of science communication today.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41564-026-02358-8",
+      "title": "Preserving the future of vaccine science in the USA",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-05-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02358-8",
+      "doi": "10.1038/s41564-026-02358-8",
+      "abstract": "Vaccines have saved an estimated 154 million lives in 50 years, yet that infrastructure is under threat. We highlight the global impact of vaccine scientists who trained in the USA and urge for stronger communication, advocacy and public engagement to safeguard vaccine science.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "守護美國疫苗科學的未來",
+      "summaryZh": "疫苗在過去50年間拯救了約1.54億條生命，然而這項關鍵基礎建設正面臨威脅。本研究強調在美國受訓的疫苗科學家具備深遠的全球影響力，並呼籲加強科學溝通、政策倡議與公眾參與，以確保疫苗科學的永續發展。在公共衛生挑戰日益複雜的時代，這篇呼籲對於維護全球防疫能力具有重要意義。",
+      "topicTags": [
+        "vaccine",
+        "public-health",
+        "science-policy",
+        "advocacy",
+        "USA"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02374-8",
+      "title": "Spatial and genetic constraints govern transcription–translation coupling and mRNA degradation in bacteria",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-05-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02374-8",
+      "doi": "10.1038/s41564-026-02374-8",
+      "abstract": "RNase E localization and translation initiation coordinate transcription, translation and mRNA degradation during the life cycle of an mRNA, explaining gene- and species-specific variations in this coordination in bacteria.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "空間與基因限制調控細菌轉錄-轉譯耦合及mRNA降解",
+      "summaryZh": "本研究揭示了RNase E的細胞定位與轉譯起始如何協調調控mRNA的轉錄、轉譯與降解過程，為理解細菌基因表達調控機制提供重要突破。研究發現這些分子事件在空間與基因層面上受到雙重限制，解释了不同基因及不同細菌物種間此協調機制的變異性。此發現不僅深化了我們對原核生物基因表達整體調控網絡的理解，也為未來開發新型抗菌策略提供了潛在的分子標靶。",
+      "topicTags": [
+        "bacterial-genetics",
+        "mrna-degradation",
+        "transcription-translation",
+        "rnase-e",
+        "gene-regulation"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02349-9",
+      "title": "Seasonality of lake microbial denitrification and its sensitivity to climate warming",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-05-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02349-9",
+      "doi": "10.1038/s41564-026-02349-9",
+      "abstract": "Denitrification is an essential process for the removal of excess nitrogen in aquatic ecosystems, and models informed by lake samples suggest that seasonal stratification changes could weaken the microbial communities responsible for this process.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "湖泊微生物脫氮作用的季節性及其對氣候變暖的敏感性",
+      "summaryZh": "脫氮作用是水生生態系統中移除過量氮的關鍵過程。本研究發現湖泊微生物脫氮作用具有明顯的季節性變化，且氣候變暖導致的季節性溫度層化改變，可能會削弱執行脫氮功能的微生物群落。這項研究對於預測未來湖泊氮循環動態及水質管理具有重要意義，因為脫氮功能減弱可能加劇富營養化和生態失衡的風險。",
+      "topicTags": [
+        "microbial-ecology",
+        "denitrification",
+        "climate-change",
+        "lakes",
+        "nitrogen-cycle"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003787",
+      "title": "Harnessing the stem cell potential in the human hippocampus to limit cognitive aging",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-05-22T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003787",
+      "doi": "10.1371/journal.pbio.3003787",
+      "abstract": "The field of human adult neurogenesis has been controversial despite mounting evidence. The authors propose moving beyond debating the existence of adult neurogenesis and towards discovering strategies to harness endogenous stem cell potential for resilience against cognitive aging. The field of human adult neurogenesis has been controversial despite mounting evidence. This Perspective proposes moving beyond debating the existence of adult neurogenesis, and towards discovering strategies to harness endogenous stem cell potential for resilience against cognitive aging.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "利用人類海馬迴的幹細胞潛力來限制認知老化"
+    },
+    {
+      "id": "10.1038/d41586-026-01644-z",
+      "title": "Stress impairs your brain’s ability to link memories — dampening insight",
+      "journal": "Nature",
+      "publishedDate": "2026-05-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/d41586-026-01644-z",
+      "doi": "10.1038/d41586-026-01644-z",
+      "abstract": "Imaging suggests why the ability to make inferences declines after an episode of acute stress, such as a job interview.",
+      "articleType": "News",
+      "sourceId": "nature",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.adw9543",
+      "title": "P2X7R of synovial fibroblasts is a potential therapeutic target associated with refractory rheumatoid arthritis",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adw9543?af=R",
+      "doi": "10.1126/sciadv.adw9543",
+      "abstract": "Rheumatoid arthritis (RA) is a chronic autoimmune disease characterized by persistent synovitis. Synovial fibroblasts (SF) are the predominant cellular components in the inflamed synovium. Recent studies have shown increased expression of P2X7 receptor (P2X7R) in RA SF. However, its precise expression patterns and its contribution to inflammatory arthritis remain unclear. We demonstrate that P2X7R is robustly expressed in RA synovium, correlating with increased synovitis and systemic inflammation. Single-cell transcriptome analysis indicated that P2X7R was enriched in specific SF associated with refractory RA. Then, we applied a highly selective human P2X7R antagonist, EVT-401, which promoted apoptosis and induced cell cycle arrest in RA SF, reduced the production of proinflammatory and joint-destructive mediators, and mitigated aggressive phenotypes. Furthermore, we demonstrated that EVT-401 markedly reduced synovial inflammation and arthritis severity in a nonhuman primate model of autoimmune arthritis. Together, these findings suggest that P2X7R is involved in synovial inflammation and its inhibition may represent a potential therapeutic strategy for refractory RA.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "滑膜纖維母細胞的P2X7R是與頑固性類風濕性關節炎相關的潛在治療標的"
+    },
+    {
+      "id": "10.1126/sciadv.ady2279",
+      "title": "Scalable and cost-efficient custom gene library assembly from oligopools",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.ady2279?af=R",
+      "doi": "10.1126/sciadv.ady2279",
+      "abstract": "Advances in metagenomics, deep learning, and generative protein design have enabled broad in silico exploration of sequence space, but experimental characterization is still constrained by the cost and scalability of DNA synthesis. Here, we present OMEGA (Oligo-based Multiplexed Efficient Gene Assembly), a low-cost, accessible method for assembling hundreds to thousands of full-length genes in parallel using standard laboratory techniques. OMEGA computationally fragments target genes into short, high-fidelity Golden Gate–compatible oligonucleotides that can be ordered as a pooled library and assembled across multiplexed subpools. We systematically optimized the number of fragments per gene and orthogonal ligation sites per reaction and determine that OMEGA can assemble up to 2.6-kilobase constructs using as many as 70 Golden Gate sites. To validate the approach, we assembled and functionally screened a library of 810 natural and synthetic green fluorescent protein variants, recovering 94 to 97% of target sequences with high uniformity. OMEGA enables precision library construction at scale, with per-gene costs as low as $1.50, and offers a broadly applicable solution for bridging computational protein design with high-throughput experimental validation. We have developed OMEGA as an open-source software package and an easy-to-use Colab notebook to facilitate community adaptation.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "可擴展且具成本效益的寡核苷酸池自訂基因庫組裝"
+    },
+    {
+      "id": "10.1126/sciadv.ady9830",
+      "title": "The posteroventral part of the medial amygdala nucleus glutamatergic neurons encodes conspecifics’ individual identity in rodents",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.ady9830?af=R",
+      "doi": "10.1126/sciadv.ady9830",
+      "abstract": "The medial amygdala (MeA) processes social olfactory cues, but its precise neural mechanisms remain unclear. We identified the posteroventral MeA (MeApv) as critical for individual conspecific odor discrimination in mice. Exposure to conspecifics or their odors markedly elevates calcium signals and c-Fos expression in MeApv VGluT2-positive neurons. Optogenetic silencing of these neurons or activating Gad2-positive neurons disrupts odor-driven social behaviors, including identity recognition, odor discrimination, and sex discrimination. Social information is directly relayed from the accessory olfactory bulb (AOB) to the MeApv, and acute AOB-MeApv pathway disruption impairs social discrimination. A distinct MeApv VGluT2-positive neuron population encodes individual-specific cues, as revealed by microendoscopic calcium imaging at a single-cell resolution. Selective silencing of these neurons induces deficits in odor-guided social interactions with related conspecifics, confirming the MeApv as a central hub for social information encoding. These findings establish the MeApv’s dual necessity and sufficiency in translating olfactory signals into social behavioral responses.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "內側杏仁核核團後腹側麩胺酸神經元編碼囓齒動物的同種個體識別"
+    },
+    {
+      "id": "10.1126/sciadv.aea9389",
+      "title": "Multiplexed single-cell transcriptomics reveals diverse phenotypic outcomes for pathogenic SHP2 variants",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea9389?af=R",
+      "doi": "10.1126/sciadv.aea9389",
+      "abstract": "The protein tyrosine phosphatase SHP2, encoded by PTPN11 , is an important regulator of Ras/mitogen-activated protein kinase signaling that acts downstream of receptor tyrosine kinases and other transmembrane receptors. Germline PTPN11 mutations cause developmental disorders such as Noonan syndrome, whereas somatic mutations drive various cancers. While many pathogenic mutations enhance SHP2 catalytic activity, others are inactivating or affect protein interactions, confounding our understanding of SHP2-driven disease. Here, we combine single-cell transcriptional profiling of cells expressing clinically diverse SHP2 variants with protein biochemistry, structural analysis, and cell biology to explain how pathogenic mutations dysregulate signaling. Our analyses reveal that loss of catalytic activity does not phenocopy SHP2 knockout at the gene expression level, that some mechanistically distinct mutations have convergent phenotypic effects, and that different mutations at the same hotspot residue can yield divergent cell states. These findings provide a framework for understanding the connection between SHP2 structural perturbations, cellular outcomes, and human diseases.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology",
+        "cancer",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞轉錄體學揭示致病性SHP2變異的多樣化表型結果",
+      "summaryZh": "SHP2是Ras/MAPK訊號路徑的關鍵調控者，其基因PTPN11的突變會導致發育障礙（如努南氏症）或驅動癌症。本研究結合單細胞轉錄體學、蛋白質生化分析與結構生物學，深入探討不同臨床致病性SHP2變異如何擾亂細胞訊號。研究發現，催化活性喪失並不會在基因表現層面完全複製SHP2剔除的效應，且結構上截然不同的突變可能產生相似的細胞表型，而同一熱點位置的突變也可能導致截然不同的細胞狀態。這些發現為理解SHP2結構變異、細胞命運與人類疾病之間的關聯提供了重要框架。",
+      "topicTags": [
+        "single-cell",
+        "signal-transduction",
+        "cancer-biology",
+        "developmental-disorders",
+        "ptpase"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aeb8658",
+      "title": "Noncanonical PI(4,5)P2 coordinates lysosome positioning through cholesterol trafficking",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb8658?af=R",
+      "doi": "10.1126/sciadv.aeb8658",
+      "abstract": "In p53-deficient cancers, targeting cholesterol metabolism has emerged as a promising therapeutic approach, given that p53 loss dysregulates sterol regulatory element-binding protein 2 pathways, thereby enhancing cholesterol biosynthesis. While cholesterol synthesis inhibitors such as statins have shown initial success, their efficacy is often compromised by the development of acquired resistance. Consequently, strategies are being explored to disrupt cholesterol homeostasis more comprehensively by inhibiting its synthesis and intracellular transport. In this study, we investigate a previously underexplored function of PI5P4Ks, which catalyzes the conversion of PI(5)P to PI(4,5)P 2 at intracellular membranes. Our findings reveal that PI5P4Ks play a key role in facilitating lysosomal cholesterol transport, regulating lysosome positioning, and sustaining growth signaling via the mechanistic target of rapamycin (mTOR) pathway. While PI5P4Ks have previously been implicated in mTOR signaling and tumor proliferation in p53-deficient contexts, this work elucidates an upstream mechanism that unifies these earlier observations.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer",
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "非典型PI(4,5)P2通過膽固醇運輸協調溶酶體定位"
+    },
+    {
+      "id": "10.1126/sciadv.aec2231",
+      "title": "53BP1 orchestrates sequence feature of RAG targets to balance DNA repair outcomes during V(D)J recombination",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec2231?af=R",
+      "doi": "10.1126/sciadv.aec2231",
+      "abstract": "RAG endonuclease initiates V(D)J recombination by cleaving recombination signal sequences (RSSs), subsequently repaired by classical nonhomologous end-joining (c-NHEJ). However, 53BP1, as a key DNA damage response (DDR) factor promoting c-NHEJ, is dispensable for V(D)J recombination. Here, we report that 53BP1 orchestrates sequence strength of RAG targets to shape end-joining features during V(D)J recombination. Loss of 53BP1, rather than other DDR factors, specifically increases junctional microhomology (MH) of cryptic RSS (cRSS) recombination instead of RSS recombination. This phenotype is partially recapitulated by RIF1 or Shieldin depletion, implicating the 53BP1-mediated end-joining axis. Notably, loss of RNF168, rather than other classical resection and alternative end-joining factors, fully reverts 53BP1 deficiency–mediated increase of junctional MH during cRSS recombination. RAG mutant and RSS score analyses indicate that the sequence strength of RAG targets dictates the unique roles of 53BP1 in balancing end-joining outcomes. Our findings provide deeper mechanistic insights into DNA damage repair at RAG-cleaved on- and off-targets during V(D)J recombination.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "53BP1在V(D)J重組過程中協調RAG標的序列特徵以平衡DNA修復結果"
+    },
+    {
+      "id": "10.1126/sciadv.aec5607",
+      "title": "Lotus japonicus VIH2 is an inositol pyrophosphate synthase that regulates arbuscular mycorrhiza",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec5607?af=R",
+      "doi": "10.1126/sciadv.aec5607",
+      "abstract": "Plant yield is often maximized by the extensive use of mineral fertilizers, which, however, has severe environmental consequences. Phosphate is particularly problematic as it represents a globally limited resource, and its runoff and soil erosion threaten open water bodies. Many crops engage in arbuscular mycorrhizal (AM) symbiosis with nutrient-acquiring fungi, aiding in the uptake of phosphate and other mineral nutrients. However, AM colonization is strongly reduced under high soil phosphate levels. A mechanistic understanding of phosphate sensing, phosphate starvation responses, and their connection to AM remains incomplete. Here, we show that, in Lotus japonicus , low-abundant, energy-rich inositol pyrophosphates act as important regulatory signals of AM, orchestrating the cross-talk between phosphate starvation responses, nutrient acquisition, and plant root endosymbiosis. These findings hold promise for breeding nutrient-efficient crops.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "蓮花VIH2是調節叢枝菌根的肌醇焦磷酸合酶"
+    },
+    {
+      "id": "10.1126/sciadv.aed1296",
+      "title": "Multiregional profiling reveals THBS1-SPP1 monocyte-macrophage axis drives immunosuppression and outcome in colorectal liver metastases",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed1296?af=R",
+      "doi": "10.1126/sciadv.aed1296",
+      "abstract": "Colorectal cancer (CRC) commonly metastasizes to the liver (CRLM), where it is the leading cause of CRC-related deaths. While immune checkpoint therapies show promise, their effectiveness is limited in CRLM due to the immunosuppressive liver tumor microenvironment (TME). Using multiregional tissue sampling from CRLM patient samples, we identified distinct immune zones within CRLM. Active Granzyme + CD8 + T cells were found in normal liver tissue, while CD8 + T cells in the tumor core were dysfunctional. At the tumor margin, we observed a pre-exhausted immune zone enriched in THBS1 + monocytes and CD47 + CD8 + T cells. Trajectory analysis showed that THBS1 + monocytes differentiate into SPP1 + macrophages, which accumulate in the tumor core and promote immune suppression via TIM-3 and CTLA-4 on exhausted CD8 + T cells. The presence of SPP1 + macrophages correlates with increased T cell exhaustion and poor survival, suggesting them as potential targets to restore antitumor immunity in CRLM.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "多區域分析揭示THBS1-SPP1單核球-巨噬細胞軸線驅動大腸癌肝轉移的免疫抑制",
+      "summaryZh": "大腸癌常見肝轉移（CRLM），是此類癌症主要的死因。免疫檢查點療法在CRLM的效果受限，主因其腫瘤微環境（TME）具有免疫抑制特性。研究團隊運用多區域組織採樣技術，發現CRLM腫瘤內存在不同的免疫分區，其中THBS1+單核球會分化為SPP1+巨噬細胞，並在腫瘤核心區域累積。這些SPP1+巨噬細胞透過TIM-3和CTLA-4路徑促進CD8+ T細胞耗竭，從而抑制抗腫瘤免疫反應。臨床資料顯示，SPP1+巨噬細胞的存在與T細胞耗竭程度增加及患者存活率下降密切相關，代表著恢復CRLM抗腫瘤免疫反應的關鍵治療標的。",
+      "topicTags": [
+        "colorectal-cancer",
+        "liver-metastasis",
+        "tumor-microenvironment",
+        "immunosuppression",
+        "macrophage"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aed1757",
+      "title": "Single-nucleotide variant profiling in liquid biopsy with RECO-Cas",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed1757?af=R",
+      "doi": "10.1126/sciadv.aed1757",
+      "abstract": "Mutation detection of cell-free DNA (cfDNA) through liquid biopsy is essential for precision oncology, resistance profiling, and informed clinical decision-making. However, its clinical application has remained limited by the lack of simple, rapid, accurate, and cost-effective detection approaches. Here, we report a recombined DNA construct–activated Cas12a (RECO-Cas) assay for profiling cfDNA mutations. The RECO-Cas assay uses a recombined DNA construct generated from Argonaute-nicked mutant DNA and an artificial DNA activator to selectively trigger CRISPR-Cas12a, enabling 0.01% variant allele frequency sensitivity and single-nucleotide resolution. Using the assay, we detect KRAS , EGFR , and PIK3CA point mutations in cfDNA from clinical plasma samples, demonstrating high sensitivity (90.48%) and excellent specificity (100%). We also apply it to successfully classify and identify KRAS missense variants. RECO-Cas provides a simple, rapid, and affordable solution that is compatible with a compact, wirelessly powered point-of-care diagnostic platform incorporating smartphone-based fluorescence detection. This assay enables highly sensitive and specific detection of low-frequency mutations, facilitating early cancer diagnosis and supporting the development of personalized treatment strategies.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer",
+        "development",
+        "CRISPR"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "使用RECO-Cas在液態切片中進行單核苷酸變異分析"
+    },
+    {
+      "id": "10.1126/sciadv.aed4808",
+      "title": "Perirhinal input to auditory cortex supports memory-guided sensory perception",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed4808?af=R",
+      "doi": "10.1126/sciadv.aed4808",
+      "abstract": "Through learning and memory, the cortex dynamically forms sensory associations to guide our behavior in an ever-changing environment. How memory-related brain regions, such as the medial-temporal lobe, influence sensory cortex to support this process remains unclear. Here, we used two-photon calcium imaging of axonal projections from the perirhinal (PRh) cortex to the auditory cortex during learning and generalization of an auditory discrimination task. PRh input in the auditory cortex increased during learning and influenced performance in a categorization task. Chemogenetically silencing PRh input selectively disrupted the activity of auditory cortex layer 2/3 pyramidal neurons, and PRh photoactivation drove behavior toward overgeneralization. These findings highlight PRh input as a key modulatory pathway that shapes cortical dynamics underlying auditory learning and memory-guided sensory perception.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "嗅周皮質輸入至聽覺皮層支持記憶引導的感官知覺"
+    },
+    {
+      "id": "10.1126/sciadv.aed5464",
+      "title": "Stepwise construction of the path to doubled haploid breeding in sorghum",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed5464?af=R",
+      "doi": "10.1126/sciadv.aed5464",
+      "abstract": "Doubled haploid (DH) breeding greatly accelerates crop improvement, but efficient in vivo haploid induction has remained limited primarily to maize because readily available haploid inducers are lacking in other species. Here, we establish a complete DH breeding pipeline for sorghum by overcoming this key limitation. Using genome editing, we developed maternal haploid inducers that achieved haploid induction rates up to 16.04% in the P898012 background, with an average of 12.18% across 92 diverse crosses (15,156 seeds; various genetic backgrounds and environments). A dual-marker system combining fluorescence and pigmentation enabled reliable haploid identification. By optimizing a scalable emasculation protocol and using sorghum’s naturally high rate of chromosome doubling, we established an efficient in planta DH production process. This framework provides a practical, transferable approach to implementing DH technology in sorghum and other crops.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "高粱雙單倍體育種之路的逐步建構"
+    },
+    {
+      "id": "10.1126/sciadv.aee2233",
+      "title": "On-demand formation of ultrathin liquid metal hydrogel tattoos for conformal and low-impedance bioelectronics",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee2233?af=R",
+      "doi": "10.1126/sciadv.aee2233",
+      "abstract": "Ultrathin conductive hydrogels provide conformal and stable contact for flexible bioelectronics, which is critical for achieving the low impedance necessary for high-quality electrophysiological signal acquisition. However, their low modulus has made these hydrogel devices difficult to fabricate and handle. To overcome this, we present an on-demand formation strategy for creating ready-to-use, ultrathin (down to 1 micrometer) hydrogel-based bioelectronics that combine tissue-like softness with ready-to-use functionality. By using cross-linked electrospun polyvinyl alcohol (PVA) fiber mats, we produce liquid metal–patterned hydrogel tattoos (LMHTs). These devices transform from easy-to-handle dry films into adhesive, conformal hydrogel interfaces upon hydration. The resulting LMHTs are ultralight (0.9 milligrams per square centimeter), exhibit ultralow skin contact impedance (1.2 kilohms at 1 kilohertz), and show outstanding biocompatibility. We demonstrate their utility in diverse on-skin and implantable applications, including electrocardiogram recording, multichannel electromyogram mapping, neuromuscular electrical stimulation, and in vivo cardiac monitoring on a beating rat heart. This work offers a scalable and practical approach for generating high-performance, ultrathin hydrogel bioelectronics.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "超薄液態金屬水凝膠紋身按需形成技術用於共形低阻抗生物電子"
+    },
+    {
+      "id": "10.1126/sciadv.aee4419",
+      "title": "Bandgap-enabled ultrasound tissue marking by a biodegradable metastructured hydrogel implant",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee4419?af=R",
+      "doi": "10.1126/sciadv.aee4419",
+      "abstract": "Implantation of tissue markers within lesions is standard practice in breast cancer diagnosis and treatment, which provides critical guidance for regular follow-up and precise surgical localization. However, the identification of existing markers is limited by nonspecificity and low resolution of conventional ultrasound imaging. The use of rigid materials to compensate for this constraint has resulted in inadequate biodegradability and biocompatibility. Here, we propose a biodegradable metastructured hydrogel tissue marker with acoustic bandgaps enabling specific ultrasonic reflection spectra. Through frequency-to-color mapping on B-mode images, visualization is achieved, with scalable designs allowing multiple marker distinction. Deliverable via an 18-gauge puncture needle and featuring tissue-mimicking softness, the metagel marker mitigates displacement risks, tissue damage, and inflammation. Live pig experiments demonstrate clear identification and dynamic stability. Six-week rat studies confirm long-term marking ability and biocompatibility. These results support the metagel marker’s clinical potential for breast cancer management and precise therapy.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "能隙賦能的超聲組織標記：可生物降解的亞結構水凝膠植入物"
+    },
+    {
+      "id": "10.1126/sciadv.adv3770",
+      "title": "Evolution of a central dopamine circuit underlies adaptation of a light-evoked sensorimotor response in the blind cavefish",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adv3770?af=R",
+      "doi": "10.1126/sciadv.adv3770",
+      "abstract": "Adaptive behaviors emerge in novel environments through functional changes in neural circuits. While relationships between circuit function and behavior are well studied, how evolution shapes circuits to drive behavioral adaptation is poorly understood. The Mexican cavefish, Astyanax mexicanus , provides a unique genetically tractable model, with above ground eyed surface fish and multiple blind cavefish populations that have evolved in darkness. These differences in environment and vision offer a way to examine how neural circuits evolve. We examine differences in detection and behavioral responses to the nonvisual effects of light in cave and surface A. mexicanus . Both populations exhibit photokinesis: Surface fish become hyperactive after darkness, and cavefish after illumination. Using whole-brain functional imaging aligned to an established Astyanax brain atlas, we identify the caudal posterior tuberculum as key to light- and dark-induced photokinesis. Pan-neuronal GCaMP imaging shows that dark-sensitive neurons in surface fish are light-sensitive in cavefish. Light sensing depends on dopamine signaling, suggesting that a conserved dopamine circuit mediates photokinesis and highlighting Astyanax as a model for sensory adaptation.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "中樞多巴胺迴路的演化支撐盲眼洞穴魚對光觸發感覺運動反應的適應"
+    },
+    {
+      "id": "10.1126/sciadv.adz7896",
+      "title": "Shifting IRES versus Cap-initiated translation during homeostatic stem cell differentiation and stress",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz7896?af=R",
+      "doi": "10.1126/sciadv.adz7896",
+      "abstract": "Cell stress can increase the use of methylated guanosine (m 7 G) cap–independent, internal ribosome entry site (IRES)–mediated translation initiation relative to cap-dependent translation (IRES/Cap). Reporters that quantify IRES/Cap have demonstrated differential activity across cultured cell types and stress conditions. By generating an IRES/Cap reporter mouse, we were able to systematically evaluate IRES/Cap across distinct tissues and cell types during physiological stresses and lineage commitment. Caloric stress invoked the expected boost in IRES/Cap translation regardless of differentiation state, but unexpectedly, IRES/Cap progressively increased during hematopoietic and epithelial (hair follicle) differentiation under normal, homeostatic conditions. This was independent of total protein output or cell cycle. Even within cells of a given differentiation state, cells with lower relative IRES utilization had markedly higher multipotent capability in vivo. The RNA processing protein PTBP1 is a mediator of this translation initiation preference. Therefore, low IRES/Cap is a signature of high stemness and suggests that modulation of translation initiation participates in cell differentiation state.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "穩態幹細胞分化與壓力期間IRES與Cap起始轉譯的切換"
+    },
+    {
+      "id": "10.1126/sciadv.adx3959",
+      "title": "Tumor-targeted bispecific antibodies effectively inhibit oncogenic pathways while minimizing toxicity",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adx3959?af=R",
+      "doi": "10.1126/sciadv.adx3959",
+      "abstract": "Enhancing the specificity of oncogenic pathway inhibition in cancer cells improves both efficacy and tolerability of anticancer therapies. Hyperactivated Wnt signaling is a key driver in cancers such as colorectal cancer and pancreatic ductal adenocarcinoma, but its direct inhibition is limited by severe toxicities due to the importance of Wnt signaling in normal tissues, particularly the gut and bone. To address this challenge, we designed bispecific antibodies that selectively target surface proteins of oncogenic signaling pathways in tumor cells while sparing normal cells. Using single-cell technologies, we identified tumor-specific receptors, including tumor-associated calcium signal transducer 2 (TROP2), which are absent in cells reliant on Wnt signaling. Our TROP2-targeted anti-Frizzled bispecific antibody effectively inhibited Wnt signaling in preclinical models with minimal effect on normal intestinal tissue. Expanding this approach, we developed tumor-targeted, toxicity-sparing bispecific antibodies against fibroblast growth factor receptor 1 (FGFR1) and epidermal growth factor receptor (EGFR). This work establishes a framework for designing targeted therapeutics that minimize cell type–specific toxicities in cancer and other diseases.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "腫瘤標靶雙特異性抗體有效抑制致癌路徑並將毒性最小化"
+    },
+    {
+      "id": "10.1126/sciadv.aea5496",
+      "title": "Stress disrupts hippocampal integration of overlapping events and memory inference in humans",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea5496?af=R",
+      "doi": "10.1126/sciadv.aea5496",
+      "abstract": "Integrating related events in memory is essential for building knowledge that extends beyond direct observation and enables flexible inference. Here, we show that acute stress impairs inference by both reducing the degree to which past memories are reactivated during new learning and leading to their differentiation, rather than integration, in hippocampus. Adults learned A-B associations on day 1 and underwent a stress or control manipulation before learning overlapping B-C associations on day 2, with A-C inference tested thereafter. We demonstrate that stress reduces hippocampal reactivation of A elements during B-C learning, and lower reactivation was directly correlated with impaired A-C inference. Representational similarity analysis revealed that stress increases neural dissimilarity between overlapping A and C elements in the hippocampus, indicating pattern differentiation and a representation as discrete events. Our findings demonstrate that acute stress hampers a key memory integration mechanism, with broad implications for educational, legal, and clinical settings.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "壓力破壞人類海馬對重疊事件的整合及記憶推論"
+    },
+    {
+      "id": "10.1126/sciadv.aed0496",
+      "title": "3D imaging of an entire pancreas shows inverse proportions of extra-islet versus islet-associated β cells in late-onset type 1 diabetes",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed0496?af=R",
+      "doi": "10.1126/sciadv.aed0496",
+      "abstract": "Residual β cell function can positively affect diabetes regulation in type 1 diabetes (T1D), but details on residual β cell mass distribution in T1D is largely lacking in a whole organ context. Implementing an optical 3D imaging pipeline, we generated a complete account of the remaining β cells throughout an entire human late onset T1D pancreas at a microscopic resolution. Our data show that most of the residual β cells were present as scattered individual cells or as punctated clusters of individual β cells, spatially separated from each other and all other endocrine cell types. Compared to islet-associated β cells, extra-islet β cells appeared in a substantially higher relative abundance in the head region of the T1D pancreas. This 3D depiction of an entire T1D pancreas shows that individual β cells may be preserved and/or formed in a highly regionalized manner, potentially reflecting key aspects of disease dynamics, advocating for increased focus on extra-islet islet β cells in attempts to develop strategies for pancreatic β cell preservation in T1D.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "3D 成像揭示整個胰臟中晚發型第一型糖尿病胰島外與胰島相關β細胞的相反比例"
+    },
+    {
+      "id": "10.1126/sciadv.aeh0301",
+      "title": "Endothelial soluble APP/APLP2 promote heart repair through KIT-mediated angiogenesis",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeh0301?af=R",
+      "doi": "10.1126/sciadv.aeh0301",
+      "abstract": "Amyloid precursor protein (APP) gives rise to amyloid-β, a pathological factor in Alzheimer’s disease. However, the physiological role of APP and its homolog amyloid precursor–like protein 2 (APLP2), which are also widely expressed outside the nervous system, is largely unknown. Here, we show that endothelial APP and APLP2 are required for postischemia angiogenesis after myocardial infarction (MI). We found that hypoxia induced the endothelial expression of α-secretases, resulting in nonamyloidogenic processing of APP and APLP2 into the soluble forms APPsα and APLP2sα. Loss of endothelial APP and APLP2 led to decreased neovascularization as well as increased heart failure and mortality after MI, a phenotype that could be rescued by endothelial expression of APPsα. APPsα and APLP2sα exerted their proangiogenic effect by positive allosteric modulation of the endothelial receptor tyrosine kinase KIT, which promotes postischemia neovascularization. Our data identify a function of APP and APLP2 in endothelial cells, which is required for postischemia tissue repair, and suggest approaches to improve regeneration after MI and other ischemic diseases.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "內皮細胞可溶性APP/APLP2透過KIT媒介的血管新生促進心臟修復"
+    },
+    {
+      "id": "10.1126/sciadv.aeb6806",
+      "title": "Unlocking translational control of specialized metabolism in plants through 5′UTR structure",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb6806?af=R",
+      "doi": "10.1126/sciadv.aeb6806",
+      "abstract": "Plant-specialized metabolites are essential for plant fitness and human health, with their biosynthesis pathways tightly regulated at multiple levels. However, the translational regulation of their biosynthesis remains poorly understood. Here, we reveal a 5′ untranslated region (5′UTR)–mediated translational mechanism that controls glucosinolate production in Arabidopsis . A forward genetic screen exploring the metabolic interaction between auxin and glucosinolates identified two dominant Arabidopsis alleles, each carrying a single-nucleotide substitution located 13–base pair apart within the 5′UTR of MYB28 , a master regulator of aliphatic glucosinolate biosynthesis. These mutations markedly increase MYB28 protein abundance without affecting transcript levels, leading to enhanced glucosinolate production. Mutational profiling of the 5′UTR revealed that alterations in RNA tertiary structure influence translation efficiency, establishing a link between RNA conformation and metabolic output. Our findings uncover a previously uncharacterized layer of posttranscriptional regulation in plant-specialized metabolism and highlight the 5′UTR as a potential target for precision breeding to enhance crop performance and nutritional quality.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "透過5′UTR結構解鎖植物特殊代謝的轉譯調控"
+    },
+    {
+      "id": "10.1126/sciadv.aef1594",
+      "title": "Developmental candidate GHP-88310/EIDD-3608 with high tolerability and oral efficacy in measles and respiratory paramyxovirus models",
+      "journal": "Science Advances",
+      "publishedDate": "2026-05-22T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef1594?af=R",
+      "doi": "10.1126/sciadv.aef1594",
+      "abstract": "Orthoparamyxoviruses, such as human parainfluenza virus type 3 (HPIV3) and measles virus (MeV), are a major health threat. We discovered an orally efficacious broad-spectrum inhibitor of orthoparamyxovirus polymerases. However, here, we found that tolerability in higher mammals was limited. We report the development of the clinical candidate analog GHP-88310 (EIDD-3608), which combines improved oral efficacy with favorable tolerability in nonrodents (ferrets and dogs). GHP-88310 was active against HPIV3, Sendai virus (SeV), MeV, and related canine distemper virus (CDV). In 7-day tolerability studies, daily doses of 2000 mg/kg were well tolerated. Pharmacokinetic analysis revealed altered plasma exposure of GHP-88310 compared to the original hit. In HPIV3-infected cotton rats, GHP-88310 lowered the respiratory tract viral load. Dosing of ferrets infected with CDV, causing lethal measles-like disease, resulted in complete survival, reduction of viremia and shed viral load, and alleviated lymphocytopenia. Once-daily GHP-88310 was efficacious in the CDV-ferret and HPIV3-cotton rat models. The compound was sterilizing against HPIV3 at physiological concentrations in human airway epithelium organoids.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "開發候選藥物GHP-88310/EIDD-3608在麻疹及呼吸道副黏液病毒模型中展現高耐受性與口服療效"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 51,
+      "passedByScope": 12,
+      "llmClassified": 39,
+      "llmYes": 23,
+      "llmNotSure": 1,
+      "llmNo": 15,
+      "included": 36,
+      "excluded": 15
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 34,
+      "llmTagged": 33,
+      "fallback": 1
+    },
+    "selection": {
+      "total": 34,
+      "candidates": 32,
+      "featured": 12,
+      "overflow": 20,
+      "lineA": 2,
+      "lineB": 30,
+      "preprint": 0,
+      "skip": 2
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 20,
+      "llmTranslated": 20,
+      "failed": 0
+    }
+  }
+}

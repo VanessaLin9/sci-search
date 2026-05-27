@@ -11,9 +11,11 @@
     "test-routing-llm": "node --import tsx src/commands/testRoutingLlm.ts",
     "test-digest-llm": "node --import tsx src/commands/testDigestLlm.ts",
     "check": "tsc --noEmit",
+    "export-regression-fixture": "node --import tsx src/commands/exportRegressionFixture.ts",
     "snapshot-rss": "node --import tsx src/commands/snapshotRss.ts",
-    "test": "node --import tsx --test test/**/*.test.ts",
+    "test": "node --import tsx --test 'test/**/*.test.ts'",
     "test:e2e": "node --import tsx --test test/e2e/*.test.ts",
+    "test:regression": "node --import tsx --test test/regression/*.test.ts",
     "format": "prettier --write ."
   },
   "dependencies": {
