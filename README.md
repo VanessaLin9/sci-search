@@ -60,6 +60,7 @@ npm run check
 | `npm run daily` | `dev` → `send-digest` → `write-preview` |
 | `npm run test-routing-llm` | One-paper routing smoke test |
 | `npm run test-digest-llm` | One-paper digest tagging smoke test |
+| `npm run test:e2e` | Golden pipeline acceptance test (fixture RSS + mock LLM, no network) |
 
 Date flag (all three main commands):
 
@@ -70,6 +71,16 @@ npm run write-preview -- --date 2026-05-22
 ```
 
 `test-digest-llm -- --use-routing` uses routing API key/model with digest caps from `config/digest.json`.
+
+### E2E acceptance tests
+
+`npm run test:e2e` runs a deterministic golden pipeline:
+
+- Fixture RSS: [`test/fixtures/golden/rss/nature-methods.xml`](test/fixtures/golden/rss/nature-methods.xml)
+- Mock LLM responses (routing / tagging / summarize / translate)
+- Asserts `papers.json` schema, selection stats, plain-text titles, featured fields, and digest HTML structure (blue links, DOI line, no leaked HTML tags)
+
+CI runs this step before the daily collect job (no API keys required).
 
 ## Configuration
 
