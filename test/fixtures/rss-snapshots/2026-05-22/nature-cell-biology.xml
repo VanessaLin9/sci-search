@@ -1,0 +1,166 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns="http://purl.org/rss/1.0/" xmlns:admin="http://webns.net/mvcb/">
+    <channel rdf:about="http://feeds.nature.com/ncb/rss/current">
+        <title>Nature Cell Biology</title>
+        <description>Nature Cell Biology publishes peer-reviewed original research of the highest quality in all areas of cell biology with an emphasis on studies that provide insights into the molecular mechanisms underlying cellular processes. The journal&amp;rsquo;s scope is broad and ranges from cytoskeletal dynamics, membrane transport, adhesion and migration, cell division, signalling pathways, development and stem cells, to molecular and cellular mechanisms underlying cancer. Nature Cell Biology provides timely and informative coverage of cell biological advances.</description>
+        <link>http://feeds.nature.com/ncb/rss/current</link>
+        <admin:generatorAgent rdf:resource="https://www.nature.com/"/>
+        <admin:errorReportsTo rdf:resource="mailto:feedback@nature.com"/>
+        <dc:publisher>Nature Publishing Group</dc:publisher>
+        <dc:language>en</dc:language>
+        <dc:rights>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</dc:rights>
+        <prism:publicationName>Nature Cell Biology</prism:publicationName>
+        
+        
+        <prism:copyright>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</prism:copyright>
+        <prism:rightsAgent>permissions@nature.com</prism:rightsAgent>
+        <image rdf:resource="https://www.nature.com/uploads/product/ncb/rss.png"/>
+        <items>
+            <rdf:Seq>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41556-026-01973-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41556-026-01955-3"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41556-026-01963-3"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41556-026-01960-6"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41556-026-01987-9"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41556-026-01958-0"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41556-026-01950-8"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41556-026-01953-5"/>
+                
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="https://www.nature.com/uploads/product/ncb/rss.png">
+        <title>Nature Cell Biology</title>
+        <url>https://www.nature.com/uploads/product/ncb/rss.png</url>
+        <link>http://feeds.nature.com/ncb/rss/current</link>
+    </image>
+    
+        <item rdf:about="https://www.nature.com/articles/s41556-026-01973-1">
+            <title><![CDATA[A transport-independent role for SLC25A12 in mitochondrial stress signalling]]></title>
+            <link>https://www.nature.com/articles/s41556-026-01973-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Cell Biology, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41556-026-01973-1">doi:10.1038/s41556-026-01973-1</a></p>Jiang et al. show that SLC25A12 interacts with the mitochondrial protease OMA1, enabling activation of integrated stress response during mitochondrial damage. This role is independent of SLC25A12’s transport activity.]]></content:encoded>
+            <dc:title><![CDATA[A transport-independent role for SLC25A12 in mitochondrial stress signalling]]></dc:title>
+            <dc:creator>Liu Jiang</dc:creator><dc:creator>Lan Li</dc:creator><dc:creator>Jialiang Guan</dc:creator><dc:creator>Ying Liu</dc:creator>
+            <dc:identifier>doi:10.1038/s41556-026-01973-1</dc:identifier>
+            <dc:source>Nature Cell Biology, Published online: 2026-05-27; | doi:10.1038/s41556-026-01973-1</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Cell Biology</prism:publicationName>
+            <prism:doi>10.1038/s41556-026-01973-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41556-026-01973-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41556-026-01955-3">
+            <title><![CDATA[Hairpin herds corralled at the lipid droplet]]></title>
+            <link>https://www.nature.com/articles/s41556-026-01955-3</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Cell Biology, Published online: 26 May 2026; <a href="https://www.nature.com/articles/s41556-026-01955-3">doi:10.1038/s41556-026-01955-3</a></p>Lipid droplets acquire hairpin-containing proteins from the ER, but how they travel to lipid droplets and subsequently accumulate has remained unclear. With single-molecule tracking, a study now shows that persistent connections serve as bridges to lipid droplets, where nanoscale domains corral arriving proteins.]]></content:encoded>
+            <dc:title><![CDATA[Hairpin herds corralled at the lipid droplet]]></dc:title>
+            <dc:creator>Laura Listenberger</dc:creator>
+            <dc:identifier>doi:10.1038/s41556-026-01955-3</dc:identifier>
+            <dc:source>Nature Cell Biology, Published online: 2026-05-26; | doi:10.1038/s41556-026-01955-3</dc:source>
+            <dc:date>2026-05-26</dc:date>
+            <prism:publicationName>Nature Cell Biology</prism:publicationName>
+            <prism:doi>10.1038/s41556-026-01955-3</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41556-026-01955-3</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41556-026-01963-3">
+            <title><![CDATA[Membrane bridges and nanodomain partitioning govern membrane protein targeting to lipid droplets]]></title>
+            <link>https://www.nature.com/articles/s41556-026-01963-3</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Cell Biology, Published online: 26 May 2026; <a href="https://www.nature.com/articles/s41556-026-01963-3">doi:10.1038/s41556-026-01963-3</a></p>Mizrak et al. use single-molecule tracking to dissect mechanisms of protein targeting to lipid droplets. They show that nanodomain-based confinement drives selective protein accumulation on lipid droplets.]]></content:encoded>
+            <dc:title><![CDATA[Membrane bridges and nanodomain partitioning govern membrane protein targeting to lipid droplets]]></dc:title>
+            <dc:creator>Arda Mizrak</dc:creator><dc:creator>Jacob Kæstel-Hansen</dc:creator><dc:creator>Jessica Matthias</dc:creator><dc:creator>J. Wade Harper</dc:creator><dc:creator>Nikos S. Hatzakis</dc:creator><dc:creator>Robert V. Farese Jr</dc:creator><dc:creator>Tobias C. Walther</dc:creator>
+            <dc:identifier>doi:10.1038/s41556-026-01963-3</dc:identifier>
+            <dc:source>Nature Cell Biology, Published online: 2026-05-26; | doi:10.1038/s41556-026-01963-3</dc:source>
+            <dc:date>2026-05-26</dc:date>
+            <prism:publicationName>Nature Cell Biology</prism:publicationName>
+            <prism:doi>10.1038/s41556-026-01963-3</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41556-026-01963-3</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41556-026-01960-6">
+            <title><![CDATA[Epigenetic programming by H3K23ac defines lineage fate of <i>Meg3</i><sup>+</sup> haematopoietic stem cells and drives immune ageing]]></title>
+            <link>https://www.nature.com/articles/s41556-026-01960-6</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Cell Biology, Published online: 26 May 2026; <a href="https://www.nature.com/articles/s41556-026-01960-6">doi:10.1038/s41556-026-01960-6</a></p>Wei et al. show that Meg3+ haematopoietic stem cells (HSCs) expand upon ageing and present with an increase in H3K23ac levels observed already at middle age. Inhibiting H3K23ac ameliorates megakaryocyte/platelet and myeloid skewing in aged HSCs.]]></content:encoded>
+            <dc:title><![CDATA[Epigenetic programming by H3K23ac defines lineage fate of <i>Meg3</i><sup>+</sup> haematopoietic stem cells and drives immune ageing]]></dc:title>
+            <dc:creator>Ni Wei</dc:creator><dc:creator>Huiwen Zhan</dc:creator><dc:creator>Yujun Deng</dc:creator><dc:creator>Min Liu</dc:creator><dc:creator>Yao Xiao</dc:creator><dc:creator>Yanqiu Gong</dc:creator><dc:creator>Xiaodong Wang</dc:creator><dc:creator>Pengbo Guan</dc:creator><dc:creator>Xiaoxian Lou</dc:creator><dc:creator>Yusi Xie</dc:creator><dc:creator>Yuemeng Wang</dc:creator><dc:creator>Zhonghan Li</dc:creator><dc:creator>Lunzhi Dai</dc:creator><dc:creator>Hongbo Hu</dc:creator><dc:creator>Huiyuan Zhang</dc:creator>
+            <dc:identifier>doi:10.1038/s41556-026-01960-6</dc:identifier>
+            <dc:source>Nature Cell Biology, Published online: 2026-05-26; | doi:10.1038/s41556-026-01960-6</dc:source>
+            <dc:date>2026-05-26</dc:date>
+            <prism:publicationName>Nature Cell Biology</prism:publicationName>
+            <prism:doi>10.1038/s41556-026-01960-6</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41556-026-01960-6</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41556-026-01987-9">
+            <title><![CDATA[Tissue organization and morphogen gradients dynamically tune one another]]></title>
+            <link>https://www.nature.com/articles/s41556-026-01987-9</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Cell Biology, Published online: 25 May 2026; <a href="https://www.nature.com/articles/s41556-026-01987-9">doi:10.1038/s41556-026-01987-9</a></p>During embryogenesis, morphogen signalling is known to pattern tissues as they remodel. Using genetic and optogenetic perturbations, together with theoretical frameworks of phase transitions and biochemical networks, we uncovered an autoregulatory feedback loop between morphogen gradients and the tissue material state. This work shows that spatial patterning can originate from tissue-scale physical properties.]]></content:encoded>
+            <dc:title><![CDATA[Tissue organization and morphogen gradients dynamically tune one another]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/s41556-026-01987-9</dc:identifier>
+            <dc:source>Nature Cell Biology, Published online: 2026-05-25; | doi:10.1038/s41556-026-01987-9</dc:source>
+            <dc:date>2026-05-25</dc:date>
+            <prism:publicationName>Nature Cell Biology</prism:publicationName>
+            <prism:doi>10.1038/s41556-026-01987-9</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41556-026-01987-9</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41556-026-01958-0">
+            <title><![CDATA[A kinetics-based model of haematopoiesis reveals extrinsic regulation of skewed lineage output from stem cells]]></title>
+            <link>https://www.nature.com/articles/s41556-026-01958-0</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Cell Biology, Published online: 25 May 2026; <a href="https://www.nature.com/articles/s41556-026-01958-0">doi:10.1038/s41556-026-01958-0</a></p>Single-cell transplantations of long-term haematopoietic stem cells (HSCs), in-depth phenotyping and mathematical modelling identify reconstitution kinetics as a unifying metric of HSC potency and extrinsic regulation as a driver of HSC lineage bias.]]></content:encoded>
+            <dc:title><![CDATA[A kinetics-based model of haematopoiesis reveals extrinsic regulation of skewed lineage output from stem cells]]></dc:title>
+            <dc:creator>Esther Rodríguez-Correa</dc:creator><dc:creator>Florian Grünschläger</dc:creator><dc:creator>Tamar Nizharadze</dc:creator><dc:creator>Natasha Anstee</dc:creator><dc:creator>Jude Al-Sabah</dc:creator><dc:creator>Vojtech Kumpost</dc:creator><dc:creator>Anastasia Sedlmeier</dc:creator><dc:creator>Congxin Li</dc:creator><dc:creator>Melanie Ball</dc:creator><dc:creator>Foteini Fotopoulou</dc:creator><dc:creator>Jeyan Jayarajan</dc:creator><dc:creator>Ian Ghezzi</dc:creator><dc:creator>Julia Knoch</dc:creator><dc:creator>Megan Druce</dc:creator><dc:creator>Kleo Aurich</dc:creator><dc:creator>Marleen Büchler-Schäff</dc:creator><dc:creator>Susanne Lux</dc:creator><dc:creator>Pablo Hernández-Malmierca</dc:creator><dc:creator>Julius Gräsel</dc:creator><dc:creator>Dominik Vonficht</dc:creator><dc:creator>Marta López-Osias</dc:creator><dc:creator>Elvira González-Saiz</dc:creator><dc:creator>Daniel Fernández-Pérez</dc:creator><dc:creator>Anna Mathioudaki</dc:creator><dc:creator>Judith Zaugg</dc:creator><dc:creator>Alejo Rodríguez-Fraticelli</dc:creator><dc:creator>Ralf Mikut</dc:creator><dc:creator>Andreas Trumpp</dc:creator><dc:creator>Thomas Höfer</dc:creator><dc:creator>Daniel Hübschmann</dc:creator><dc:creator>Simon Haas</dc:creator><dc:creator>Michael D. Milsom</dc:creator>
+            <dc:identifier>doi:10.1038/s41556-026-01958-0</dc:identifier>
+            <dc:source>Nature Cell Biology, Published online: 2026-05-25; | doi:10.1038/s41556-026-01958-0</dc:source>
+            <dc:date>2026-05-25</dc:date>
+            <prism:publicationName>Nature Cell Biology</prism:publicationName>
+            <prism:doi>10.1038/s41556-026-01958-0</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41556-026-01958-0</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41556-026-01950-8">
+            <title><![CDATA[Stress granules shape ferroptosis in cancer]]></title>
+            <link>https://www.nature.com/articles/s41556-026-01950-8</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Cell Biology, Published online: 22 May 2026; <a href="https://www.nature.com/articles/s41556-026-01950-8">doi:10.1038/s41556-026-01950-8</a></p>A major obstacle in treating glioblastoma is the remarkable resistance of glioblastoma stem cells to standard-of-care therapies such as temozolomide and irradiation. A new study now reveals that dismantling protective structures called stress granules can make these cells more susceptible to these treatment regimens by unleashing ferroptosis.]]></content:encoded>
+            <dc:title><![CDATA[Stress granules shape ferroptosis in cancer]]></dc:title>
+            <dc:creator>Maria Livia Sassano</dc:creator><dc:creator>Patrizia Agostinis</dc:creator>
+            <dc:identifier>doi:10.1038/s41556-026-01950-8</dc:identifier>
+            <dc:source>Nature Cell Biology, Published online: 2026-05-22; | doi:10.1038/s41556-026-01950-8</dc:source>
+            <dc:date>2026-05-22</dc:date>
+            <prism:publicationName>Nature Cell Biology</prism:publicationName>
+            <prism:doi>10.1038/s41556-026-01950-8</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41556-026-01950-8</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41556-026-01953-5">
+            <title><![CDATA[Stress granules restrain ferroptosis by sequestering ferritin]]></title>
+            <link>https://www.nature.com/articles/s41556-026-01953-5</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Cell Biology, Published online: 22 May 2026; <a href="https://www.nature.com/articles/s41556-026-01953-5">doi:10.1038/s41556-026-01953-5</a></p>Ge, Wang, Zhao, Guo et al. report a role for stress granules in suppressing ferroptosis by sequestering ferritin upon irradiation and temozolomide treatment in glioblastoma stem cells, which may potentially be targeted for improved efficacy.]]></content:encoded>
+            <dc:title><![CDATA[Stress granules restrain ferroptosis by sequestering ferritin]]></dc:title>
+            <dc:creator>Zehe Ge</dc:creator><dc:creator>Zihan Wang</dc:creator><dc:creator>Erjie Zhao</dc:creator><dc:creator>Yizhuo Guo</dc:creator><dc:creator>Longxiu Zhang</dc:creator><dc:creator>Fuwei Tian</dc:creator><dc:creator>Mengdie Li</dc:creator><dc:creator>Yunfei Ma</dc:creator><dc:creator>Fangshu Ding</dc:creator><dc:creator>Liuguijie He</dc:creator><dc:creator>Shuhong Sun</dc:creator><dc:creator>Minfeng Tong</dc:creator><dc:creator>Wenxia Xu</dc:creator><dc:creator>Xiefeng Wang</dc:creator><dc:creator>Junxia Zhang</dc:creator><dc:creator>Lingxiang Wu</dc:creator><dc:creator>Yudan Zhang</dc:creator><dc:creator>Lili Niu</dc:creator><dc:creator>Qianghu Wang</dc:creator><dc:creator>Rong Yin</dc:creator><dc:creator>Xiao Li</dc:creator><dc:creator>Yongping You</dc:creator><dc:creator>Jeremy N. Rich</dc:creator><dc:creator>Xiuxing Wang</dc:creator><dc:creator>Bing Yao</dc:creator><dc:creator>Zhumei Shi</dc:creator><dc:creator>Zhou Yang</dc:creator><dc:creator>Xin Ge</dc:creator><dc:creator>Fang Liu</dc:creator><dc:creator>Bo Chu</dc:creator><dc:creator>Xu Qian</dc:creator>
+            <dc:identifier>doi:10.1038/s41556-026-01953-5</dc:identifier>
+            <dc:source>Nature Cell Biology, Published online: 2026-05-22; | doi:10.1038/s41556-026-01953-5</dc:source>
+            <dc:date>2026-05-22</dc:date>
+            <prism:publicationName>Nature Cell Biology</prism:publicationName>
+            <prism:doi>10.1038/s41556-026-01953-5</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41556-026-01953-5</prism:url>
+        </item>
+    
+</rdf:RDF>

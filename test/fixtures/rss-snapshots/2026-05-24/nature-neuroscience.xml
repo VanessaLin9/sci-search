@@ -1,0 +1,166 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns="http://purl.org/rss/1.0/" xmlns:admin="http://webns.net/mvcb/">
+    <channel rdf:about="http://feeds.nature.com/neuro/rss/current">
+        <title>Nature Neuroscience</title>
+        <description>Nature Neuroscience provides the international neuroscience community with a highly visible forum in which the most exciting developments in all areas of neuroscience can be communicated to a broad readership. A lively front half, including News &amp;amp; Views, Reviews, Perspectives and editorials, helps place the primary research in context, providing readers with a broad perspective on the entire field. Nature Neuroscience aims to provide readers with authoritative, accessible and timely information on the most important advances in understanding the nervous system. Areas covered include molecular, cellular, systems, behavioral, cognitive and computational studies.</description>
+        <link>http://feeds.nature.com/neuro/rss/current</link>
+        <admin:generatorAgent rdf:resource="https://www.nature.com/"/>
+        <admin:errorReportsTo rdf:resource="mailto:feedback@nature.com"/>
+        <dc:publisher>Nature Publishing Group</dc:publisher>
+        <dc:language>en</dc:language>
+        <dc:rights>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</dc:rights>
+        <prism:publicationName>Nature Neuroscience</prism:publicationName>
+        
+        
+        <prism:copyright>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</prism:copyright>
+        <prism:rightsAgent>permissions@nature.com</prism:rightsAgent>
+        <image rdf:resource="https://www.nature.com/uploads/product/neuro/rss.gif"/>
+        <items>
+            <rdf:Seq>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41593-026-02308-x"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41593-026-02317-w"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41593-026-02314-z"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41593-026-02285-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41593-026-02302-3"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41593-026-02319-8"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41593-026-02299-9"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41593-026-02267-3"/>
+                
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="https://www.nature.com/uploads/product/neuro/rss.gif">
+        <title>Nature Neuroscience</title>
+        <url>https://www.nature.com/uploads/product/neuro/rss.gif</url>
+        <link>http://feeds.nature.com/neuro/rss/current</link>
+    </image>
+    
+        <item rdf:about="https://www.nature.com/articles/s41593-026-02308-x">
+            <title><![CDATA[The multiple scales of astrocytic functional units]]></title>
+            <link>https://www.nature.com/articles/s41593-026-02308-x</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Neuroscience, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41593-026-02308-x">doi:10.1038/s41593-026-02308-x</a></p>Astrocytes modulate complex brain functions. These ubiquitous glial cells constitute a multilayered system of functional units that operate across multiple spatial scales, thereby increasing the degrees of freedom in brain information processing.]]></content:encoded>
+            <dc:title><![CDATA[The multiple scales of astrocytic functional units]]></dc:title>
+            <dc:creator>João Filipe Oliveira</dc:creator><dc:creator>Amit Agarwal</dc:creator><dc:creator>Ruth Beckervordersandforth</dc:creator><dc:creator>Sebastiano Curreli</dc:creator><dc:creator>Audrey Denizot</dc:creator><dc:creator>Chris Dulla</dc:creator><dc:creator>Rune Enger</dc:creator><dc:creator>Yukiko Goda</dc:creator><dc:creator>Inbal Goshen</dc:creator><dc:creator>Matthew Guy Holt</dc:creator><dc:creator>Axel Nimmerjahn</dc:creator><dc:creator>Gertrudis Perea</dc:creator><dc:creator>Annalisa Scimemi</dc:creator><dc:creator>Christian Henneberger</dc:creator>
+            <dc:identifier>doi:10.1038/s41593-026-02308-x</dc:identifier>
+            <dc:source>Nature Neuroscience, Published online: 2026-05-27; | doi:10.1038/s41593-026-02308-x</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Neuroscience</prism:publicationName>
+            <prism:doi>10.1038/s41593-026-02308-x</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41593-026-02308-x</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41593-026-02317-w">
+            <title><![CDATA[Microglial mitochondria transfer to astrocytes via GPNMB-enriched extracellular vesicles alleviates cognitive deficits in tauopathy mice]]></title>
+            <link>https://www.nature.com/articles/s41593-026-02317-w</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Neuroscience, Published online: 26 May 2026; <a href="https://www.nature.com/articles/s41593-026-02317-w">doi:10.1038/s41593-026-02317-w</a></p>In PS19 mice, microglia-derived glycoprotein nonmetastatic melanoma protein B promotes mitochondrial extracellular vesicle secretion, enabling mitochondrial transfer to astrocytes. This improves astrocytic function and reduces Alzheimer’s disease (AD) symptoms, while GPNMB deficiency impairs it, highlighting new AD treatment avenues.]]></content:encoded>
+            <dc:title><![CDATA[Microglial mitochondria transfer to astrocytes via GPNMB-enriched extracellular vesicles alleviates cognitive deficits in tauopathy mice]]></dc:title>
+            <dc:creator>Chensi Liang</dc:creator><dc:creator>Yulan Zhou</dc:creator><dc:creator>Kai Zhuang</dc:creator><dc:creator>Shuzhong Wang</dc:creator><dc:creator>Li Zhong</dc:creator><dc:creator>Dan Can</dc:creator><dc:creator>Aiyu Lei</dc:creator><dc:creator>Huifang Li</dc:creator><dc:creator>Jie Zhang</dc:creator><dc:creator>Lige Leng</dc:creator>
+            <dc:identifier>doi:10.1038/s41593-026-02317-w</dc:identifier>
+            <dc:source>Nature Neuroscience, Published online: 2026-05-26; | doi:10.1038/s41593-026-02317-w</dc:source>
+            <dc:date>2026-05-26</dc:date>
+            <prism:publicationName>Nature Neuroscience</prism:publicationName>
+            <prism:doi>10.1038/s41593-026-02317-w</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41593-026-02317-w</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41593-026-02314-z">
+            <title><![CDATA[Low-dimensional population dynamics in the brainstem gate REM sleep]]></title>
+            <link>https://www.nature.com/articles/s41593-026-02314-z</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Neuroscience, Published online: 25 May 2026; <a href="https://www.nature.com/articles/s41593-026-02314-z">doi:10.1038/s41593-026-02314-z</a></p>Lozano et al. show that REM sleep is gated by low-dimensional brainstem network dynamics, in which opposing neuron populations across the midbrain and pons determine when transitions into REM sleep can occur.]]></content:encoded>
+            <dc:title><![CDATA[Low-dimensional population dynamics in the brainstem gate REM sleep]]></dc:title>
+            <dc:creator>David E. Lozano</dc:creator><dc:creator>Jiso Hong</dc:creator><dc:creator>Xi Jin</dc:creator><dc:creator>Joseph A. Stucynski</dc:creator><dc:creator>Christian K. Machens</dc:creator><dc:creator>Shinjae Chung</dc:creator><dc:creator>Franz Weber</dc:creator>
+            <dc:identifier>doi:10.1038/s41593-026-02314-z</dc:identifier>
+            <dc:source>Nature Neuroscience, Published online: 2026-05-25; | doi:10.1038/s41593-026-02314-z</dc:source>
+            <dc:date>2026-05-25</dc:date>
+            <prism:publicationName>Nature Neuroscience</prism:publicationName>
+            <prism:doi>10.1038/s41593-026-02314-z</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41593-026-02314-z</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41593-026-02285-1">
+            <title><![CDATA[Fixation duration on natural scenes is explained by memory encoding not processing demand]]></title>
+            <link>https://www.nature.com/articles/s41593-026-02285-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Neuroscience, Published online: 25 May 2026; <a href="https://www.nature.com/articles/s41593-026-02285-1">doi:10.1038/s41593-026-02285-1</a></p>By combining magnetoencephalography and eye tracking, this study sheds light on why people fixate on some parts of natural scenes longer than others. Rather than visual complexity, fixation durations are affected by memory encoding.]]></content:encoded>
+            <dc:title><![CDATA[Fixation duration on natural scenes is explained by memory encoding not processing demand]]></dc:title>
+            <dc:creator>Philip Sulewski</dc:creator><dc:creator>Carmen Amme</dc:creator><dc:creator>Martin N. Hebart</dc:creator><dc:creator>Peter König</dc:creator><dc:creator>Tim C. Kietzmann</dc:creator>
+            <dc:identifier>doi:10.1038/s41593-026-02285-1</dc:identifier>
+            <dc:source>Nature Neuroscience, Published online: 2026-05-25; | doi:10.1038/s41593-026-02285-1</dc:source>
+            <dc:date>2026-05-25</dc:date>
+            <prism:publicationName>Nature Neuroscience</prism:publicationName>
+            <prism:doi>10.1038/s41593-026-02285-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41593-026-02285-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41593-026-02302-3">
+            <title><![CDATA[Foamy microglia link oxylipins to disease progression in multiple sclerosis]]></title>
+            <link>https://www.nature.com/articles/s41593-026-02302-3</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Neuroscience, Published online: 21 May 2026; <a href="https://www.nature.com/articles/s41593-026-02302-3">doi:10.1038/s41593-026-02302-3</a></p>Foamy microglia are associated with multiple sclerosis progression, linking phagocytosis, altered lipid metabolism (oxylipins) and lysosomal stress to nonclassical neuroinflammation and disease severity, highlighting potential therapeutic targets.]]></content:encoded>
+            <dc:title><![CDATA[Foamy microglia link oxylipins to disease progression in multiple sclerosis]]></dc:title>
+            <dc:creator>Daan van der Vliet</dc:creator><dc:creator>Xinyu Di</dc:creator><dc:creator>Tatiana M. Shamorkina</dc:creator><dc:creator>Claire Coulon-Bainier</dc:creator><dc:creator>Anto Pavlovic</dc:creator><dc:creator>Iris A. C. M. van der Vliet</dc:creator><dc:creator>Yingyu Zeng</dc:creator><dc:creator>Will Macnair</dc:creator><dc:creator>Noëlle van Egmond</dc:creator><dc:creator>J. Q. Alida Chen</dc:creator><dc:creator>Aletta M. R. van den Bosch</dc:creator><dc:creator>Hendrik J. Engelenburg</dc:creator><dc:creator>Dennis Wever</dc:creator><dc:creator>Matthew R. J. Mason</dc:creator><dc:creator>Wouter P. F. Driever</dc:creator><dc:creator>Berend Gagestein</dc:creator><dc:creator>Elise Dusseldorp</dc:creator><dc:creator>Marco van Eijk</dc:creator><dc:creator>Uwe Grether</dc:creator><dc:creator>Aletta M. R. van den Bosch</dc:creator><dc:creator>Mignon de Goeij</dc:creator><dc:creator>Annemieke J. M. Rozemuller</dc:creator><dc:creator>Amy C. Harms</dc:creator><dc:creator>Thomas Hankemeier</dc:creator><dc:creator>Ludovic Collin</dc:creator><dc:creator>Albert J. R. Heck</dc:creator><dc:creator>Inge Huitinga</dc:creator><dc:creator>Mario van der Stelt</dc:creator>
+            <dc:identifier>doi:10.1038/s41593-026-02302-3</dc:identifier>
+            <dc:source>Nature Neuroscience, Published online: 2026-05-21; | doi:10.1038/s41593-026-02302-3</dc:source>
+            <dc:date>2026-05-21</dc:date>
+            <prism:publicationName>Nature Neuroscience</prism:publicationName>
+            <prism:doi>10.1038/s41593-026-02302-3</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41593-026-02302-3</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41593-026-02319-8">
+            <title><![CDATA[Considering biological limitations of lesion network mapping]]></title>
+            <link>https://www.nature.com/articles/s41593-026-02319-8</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Neuroscience, Published online: 20 May 2026; <a href="https://www.nature.com/articles/s41593-026-02319-8">doi:10.1038/s41593-026-02319-8</a></p>Lesion network mapping (LNM), or atrophy network mapping, has become a widely adopted tool for linking focal brain lesions or neurodegenerative brain clusters, respectively, to distributed functional networks associated with cognitive or clinical deficits. Recent insights, however, suggest that LNM primarily captures elementary topological properties of the normative connectome rather than disorder-specific circuits. Independent clinical evidence supports these methodological concerns, reflecting a deeper biological issue. LNM is inherently unable to capture the higher-order disconnection effects and non-linear connectivity changes that characterize the brain response to a broad range of neurological conditions. Brain injuries can induce widespread changes in distal regions not directly affected by the damage, as well as complex patterns of pathological hyperconnectivity and hypoconnectivity that evolve over time and whose functional significance remains uncertain. These phenomena represent a central challenge in clinical neuroscience. LNM is intrinsically limited in capturing these dynamics, with important implications for clinical translation and neuromodulation.]]></content:encoded>
+            <dc:title><![CDATA[Considering biological limitations of lesion network mapping]]></dc:title>
+            <dc:creator>Lorenzo Pini</dc:creator><dc:creator>Alessandro Salvalaggio</dc:creator><dc:creator>Maurizio Corbetta</dc:creator>
+            <dc:identifier>doi:10.1038/s41593-026-02319-8</dc:identifier>
+            <dc:source>Nature Neuroscience, Published online: 2026-05-20; | doi:10.1038/s41593-026-02319-8</dc:source>
+            <dc:date>2026-05-20</dc:date>
+            <prism:publicationName>Nature Neuroscience</prism:publicationName>
+            <prism:doi>10.1038/s41593-026-02319-8</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41593-026-02319-8</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41593-026-02299-9">
+            <title><![CDATA[Tau aggregates cause reactivation of transposable DNA elements, leading to Z-RNA–ZBP1-mediated neuronal death]]></title>
+            <link>https://www.nature.com/articles/s41593-026-02299-9</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Neuroscience, Published online: 20 May 2026; <a href="https://www.nature.com/articles/s41593-026-02299-9">doi:10.1038/s41593-026-02299-9</a></p>Tau aggregates disrupt heterochromatin by sequestering H3K9me3, reactivating transposable elements. This generates Z-RNAs, activating ZBP1 to drive neuronal death. ZBP1 haploinsufficiency reverses cognitive decline in aged tau mice, offering a therapeutic target for tauopathies.]]></content:encoded>
+            <dc:title><![CDATA[Tau aggregates cause reactivation of transposable DNA elements, leading to Z-RNA–ZBP1-mediated neuronal death]]></dc:title>
+            <dc:creator>Wei Liu</dc:creator><dc:creator>Song-Ang Wu</dc:creator><dc:creator>Bo-Xin Zhang</dc:creator><dc:creator>Shuang-Hui Guo</dc:creator><dc:creator>Lang Li</dc:creator><dc:creator>Wenjing Sun</dc:creator><dc:creator>Xushen Xiong</dc:creator><dc:creator>Jiuhong Nan</dc:creator><dc:creator>Jianfeng Wu</dc:creator><dc:creator>Linghui Zeng</dc:creator><dc:creator>Pilong Li</dc:creator><dc:creator>Zhi-Yu Cai</dc:creator><dc:creator>Huan-Feng Ye</dc:creator><dc:creator>Shuo Zhang</dc:creator><dc:creator>Sheng Nie</dc:creator><dc:creator>Baizhou Li</dc:creator><dc:creator>Dan Wu</dc:creator><dc:creator>Pu Cheng</dc:creator><dc:creator>Xuchen Qi</dc:creator><dc:creator>Dong Fang</dc:creator><dc:creator>Wei Chen</dc:creator><dc:creator>Yingying Zhang</dc:creator><dc:creator>Qiang Chen</dc:creator><dc:creator>Zhang-Hua Yang</dc:creator><dc:creator>Jiahuai Han</dc:creator><dc:creator>Wei Mo</dc:creator>
+            <dc:identifier>doi:10.1038/s41593-026-02299-9</dc:identifier>
+            <dc:source>Nature Neuroscience, Published online: 2026-05-20; | doi:10.1038/s41593-026-02299-9</dc:source>
+            <dc:date>2026-05-20</dc:date>
+            <prism:publicationName>Nature Neuroscience</prism:publicationName>
+            <prism:doi>10.1038/s41593-026-02299-9</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41593-026-02299-9</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41593-026-02267-3">
+            <title><![CDATA[Spatial proteomic analysis in human Alzheimer’s disease brains enables identification of microenvironment-dependent microglial cell states]]></title>
+            <link>https://www.nature.com/articles/s41593-026-02267-3</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Neuroscience, Published online: 18 May 2026; <a href="https://www.nature.com/articles/s41593-026-02267-3">doi:10.1038/s41593-026-02267-3</a></p>Myeloid cells show marked heterogeneity in Alzheimer’s disease. This study introduces CODEX-CNS, a single-cell spatial proteomics pipeline, and identifies a human microglial subpopulation enriched in Alzheimer’s disease brains that associates with dense amyloid-β plaques.]]></content:encoded>
+            <dc:title><![CDATA[Spatial proteomic analysis in human Alzheimer’s disease brains enables identification of microenvironment-dependent microglial cell states]]></dc:title>
+            <dc:creator>Paula Sanchez-Molina</dc:creator><dc:creator>Dennis-Dominik Rosmus</dc:creator><dc:creator>Dillon Brownell</dc:creator><dc:creator>Mert Meral</dc:creator><dc:creator>Cavanagh Gohlich</dc:creator><dc:creator>Aditya Pratapa</dc:creator><dc:creator>Yaser Peymanfar</dc:creator><dc:creator>Alyssa Whitley</dc:creator><dc:creator>Yue Hou</dc:creator><dc:creator>Nadezhda Nikulina</dc:creator><dc:creator>Alina Bogachuk</dc:creator><dc:creator>Ellen Lara Bouchard</dc:creator><dc:creator>Aude Chiot</dc:creator><dc:creator>Heidrun Kuhrt</dc:creator><dc:creator>Peter Wieghofer</dc:creator><dc:creator>Randall Woltjer</dc:creator><dc:creator>Fabian Svara</dc:creator><dc:creator>Oliver Braubach</dc:creator><dc:creator>Bahareh Ajami</dc:creator>
+            <dc:identifier>doi:10.1038/s41593-026-02267-3</dc:identifier>
+            <dc:source>Nature Neuroscience, Published online: 2026-05-18; | doi:10.1038/s41593-026-02267-3</dc:source>
+            <dc:date>2026-05-18</dc:date>
+            <prism:publicationName>Nature Neuroscience</prism:publicationName>
+            <prism:doi>10.1038/s41593-026-02267-3</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41593-026-02267-3</prism:url>
+        </item>
+    
+</rdf:RDF>

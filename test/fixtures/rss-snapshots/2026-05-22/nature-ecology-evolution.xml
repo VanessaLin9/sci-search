@@ -1,0 +1,166 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns="http://purl.org/rss/1.0/" xmlns:admin="http://webns.net/mvcb/">
+    <channel rdf:about="http://feeds.nature.com/natecolevol/rss/current">
+        <title>Nature Ecology &amp; Evolution</title>
+        <description>Nature Ecology and Evolution is interested in the full spectrum of ecological and evolutionary biology, encompassing approaches at the molecular, organismal, population, community and ecosystem levels, as well as relevant parts of the social sciences. Nature Ecology and Evolution will provide a place where all researchers and policymakers interested in all aspects of life’s diversity can come together to learn about the most accomplished and significant advances in the field and to discuss topical issues. An online-only monthly journal, our broad scope will ensure that the research published reaches the widest possible audience of scientists.</description>
+        <link>http://feeds.nature.com/natecolevol/rss/current</link>
+        <admin:generatorAgent rdf:resource="https://www.nature.com/"/>
+        <admin:errorReportsTo rdf:resource="mailto:feedback@nature.com"/>
+        <dc:publisher>Nature Publishing Group</dc:publisher>
+        <dc:language>en</dc:language>
+        <dc:rights>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</dc:rights>
+        <prism:publicationName>Nature Ecology &amp; Evolution</prism:publicationName>
+        
+        
+        <prism:copyright>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</prism:copyright>
+        <prism:rightsAgent>permissions@nature.com</prism:rightsAgent>
+        <image rdf:resource="https://www.nature.com/uploads/product/natecolevol/rss.png"/>
+        <items>
+            <rdf:Seq>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41559-026-03085-3"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41559-026-03088-0"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41559-026-03054-w"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41559-026-03060-y"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41559-026-03080-8"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41559-026-03082-6"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41559-026-03084-4"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41559-026-03092-4"/>
+                
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="https://www.nature.com/uploads/product/natecolevol/rss.png">
+        <title>Nature Ecology &amp; Evolution</title>
+        <url>https://www.nature.com/uploads/product/natecolevol/rss.png</url>
+        <link>http://feeds.nature.com/natecolevol/rss/current</link>
+    </image>
+    
+        <item rdf:about="https://www.nature.com/articles/s41559-026-03085-3">
+            <title><![CDATA[Synthetic controls reveal hurricane effects on urban bee biodiversity from iNaturalist data]]></title>
+            <link>https://www.nature.com/articles/s41559-026-03085-3</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Ecology &amp; Evolution, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41559-026-03085-3">doi:10.1038/s41559-026-03085-3</a></p>Combining participatory science data with synthetic control methods enables stronger causal inference about the drivers of urban biodiversity from observational datasets. Applying this framework to assess the effect of Hurricane Ida on bee observations in Philadelphia revealed a 15.5–20.9% decline that conventional ecological analyses failed to detect.]]></content:encoded>
+            <dc:title><![CDATA[Synthetic controls reveal hurricane effects on urban bee biodiversity from iNaturalist data]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/s41559-026-03085-3</dc:identifier>
+            <dc:source>Nature Ecology &amp; Evolution, Published online: 2026-05-27; | doi:10.1038/s41559-026-03085-3</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Ecology &amp; Evolution</prism:publicationName>
+            <prism:doi>10.1038/s41559-026-03085-3</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41559-026-03085-3</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41559-026-03088-0">
+            <title><![CDATA[Reversal to osmotrophy in eukaryotes]]></title>
+            <link>https://www.nature.com/articles/s41559-026-03088-0</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Ecology &amp; Evolution, Published online: 25 May 2026; <a href="https://www.nature.com/articles/s41559-026-03088-0">doi:10.1038/s41559-026-03088-0</a></p>Distant eukaryotic lineages convergently reverted from phagocytic predation to osmotrophy through co-option of ancestrally acquired bacterial genes and their subsequent mobilization via eukaryote-to-eukaryote horizontal gene transfer.]]></content:encoded>
+            <dc:title><![CDATA[Reversal to osmotrophy in eukaryotes]]></dc:title>
+            <dc:creator>Purificación López-García</dc:creator><dc:creator>David Moreira</dc:creator>
+            <dc:identifier>doi:10.1038/s41559-026-03088-0</dc:identifier>
+            <dc:source>Nature Ecology &amp; Evolution, Published online: 2026-05-25; | doi:10.1038/s41559-026-03088-0</dc:source>
+            <dc:date>2026-05-25</dc:date>
+            <prism:publicationName>Nature Ecology &amp; Evolution</prism:publicationName>
+            <prism:doi>10.1038/s41559-026-03088-0</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41559-026-03088-0</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41559-026-03054-w">
+            <title><![CDATA[Signatures of gene transfer in the parallel evolution of osmotrophic specialization in eukaryotes]]></title>
+            <link>https://www.nature.com/articles/s41559-026-03054-w</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Ecology &amp; Evolution, Published online: 25 May 2026; <a href="https://www.nature.com/articles/s41559-026-03054-w">doi:10.1038/s41559-026-03054-w</a></p>Comparative genomics of 86 eukaryotic species reveals a shared genetic toolkit enriched in metabolic functions among osmotrophs that was shaped by early horizontal gene transfer and more recent transfers among distantly related eukaryotic osmotrophs.]]></content:encoded>
+            <dc:title><![CDATA[Signatures of gene transfer in the parallel evolution of osmotrophic specialization in eukaryotes]]></dc:title>
+            <dc:creator>Eduard Ocaña-Pallarès</dc:creator><dc:creator>Thomas A. Richards</dc:creator><dc:creator>Toni Gabaldón</dc:creator><dc:creator>Gergely J. Szöllősi</dc:creator>
+            <dc:identifier>doi:10.1038/s41559-026-03054-w</dc:identifier>
+            <dc:source>Nature Ecology &amp; Evolution, Published online: 2026-05-25; | doi:10.1038/s41559-026-03054-w</dc:source>
+            <dc:date>2026-05-25</dc:date>
+            <prism:publicationName>Nature Ecology &amp; Evolution</prism:publicationName>
+            <prism:doi>10.1038/s41559-026-03054-w</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41559-026-03054-w</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41559-026-03060-y">
+            <title><![CDATA[Human shielding from wolves facilitates jackal expansion across Europe]]></title>
+            <link>https://www.nature.com/articles/s41559-026-03060-y</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Ecology &amp; Evolution, Published online: 25 May 2026; <a href="https://www.nature.com/articles/s41559-026-03060-y">doi:10.1038/s41559-026-03060-y</a></p>Human-driven declines of top predators can have cascading effects on other species. Here the authors show that the loss of wolves from a landscape has facilitated the spread of the golden jackal through Europe and model the potential future colonization of this species.]]></content:encoded>
+            <dc:title><![CDATA[Human shielding from wolves facilitates jackal expansion across Europe]]></dc:title>
+            <dc:creator>Nathan Ranc</dc:creator><dc:creator>Christopher C. Wilmers</dc:creator><dc:creator>Luigi Maiorano</dc:creator><dc:creator>David I. Warton</dc:creator><dc:creator>Francisco Álvares</dc:creator><dc:creator>Francesca Cagnacci</dc:creator><dc:creator>Jennifer Hatlauf</dc:creator><dc:creator>Ilya Acosta-Pankov</dc:creator><dc:creator>Ovidiu Banea</dc:creator><dc:creator>Tomaž Berce</dc:creator><dc:creator>Jaroslav Červinka</dc:creator><dc:creator>Duško Ćirović</dc:creator><dc:creator>Nada Ćosić</dc:creator><dc:creator>László Gál</dc:creator><dc:creator>Giorgos Giannatos</dc:creator><dc:creator>Nuno F. Guimarães</dc:creator><dc:creator>Miklós Heltai</dc:creator><dc:creator>Gjorge Ivanov</dc:creator><dc:creator>József Lanszki</dc:creator><dc:creator>Luca Lapini</dc:creator><dc:creator>Peep Männil</dc:creator><dc:creator>Dime Melovski</dc:creator><dc:creator>Despina Migli</dc:creator><dc:creator>Marco Pavanello</dc:creator><dc:creator>Aleksandra Penezić</dc:creator><dc:creator>Anelia Petrova</dc:creator><dc:creator>Martin Šálek</dc:creator><dc:creator>Alexandra Sallay-Mosoi</dc:creator><dc:creator>Ivana Selanec</dc:creator><dc:creator>Aldin Selimovic</dc:creator><dc:creator>Tobia Sforna</dc:creator><dc:creator>Aleksandar Stojanov</dc:creator><dc:creator>László Szabó</dc:creator><dc:creator>Jasna Tarman</dc:creator><dc:creator>Igor Trbojević</dc:creator><dc:creator>Tijana Trbojević</dc:creator><dc:creator>Peter Urban</dc:creator><dc:creator>Miha Krofel</dc:creator>
+            <dc:identifier>doi:10.1038/s41559-026-03060-y</dc:identifier>
+            <dc:source>Nature Ecology &amp; Evolution, Published online: 2026-05-25; | doi:10.1038/s41559-026-03060-y</dc:source>
+            <dc:date>2026-05-25</dc:date>
+            <prism:publicationName>Nature Ecology &amp; Evolution</prism:publicationName>
+            <prism:doi>10.1038/s41559-026-03060-y</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41559-026-03060-y</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41559-026-03080-8">
+            <title><![CDATA[Genetic rescue increases long-term fitness despite elevating putative genetic load in a male-dimorphic mite]]></title>
+            <link>https://www.nature.com/articles/s41559-026-03080-8</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Ecology &amp; Evolution, Published online: 22 May 2026; <a href="https://www.nature.com/articles/s41559-026-03080-8">doi:10.1038/s41559-026-03080-8</a></p>An experiment with male-dimorphic mites shows long-lasting benefits of genetic rescue, regardless of type of male rescuer and despite introducing genetic load, in populations subjected to a thermal stress.]]></content:encoded>
+            <dc:title><![CDATA[Genetic rescue increases long-term fitness despite elevating putative genetic load in a male-dimorphic mite]]></dc:title>
+            <dc:creator>Jonathan M. Parrett</dc:creator><dc:creator>Mateusz Konczal</dc:creator><dc:creator>Marta Kulczak</dc:creator><dc:creator>Jacek Radwan</dc:creator>
+            <dc:identifier>doi:10.1038/s41559-026-03080-8</dc:identifier>
+            <dc:source>Nature Ecology &amp; Evolution, Published online: 2026-05-22; | doi:10.1038/s41559-026-03080-8</dc:source>
+            <dc:date>2026-05-22</dc:date>
+            <prism:publicationName>Nature Ecology &amp; Evolution</prism:publicationName>
+            <prism:doi>10.1038/s41559-026-03080-8</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41559-026-03080-8</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41559-026-03082-6">
+            <title><![CDATA[Pre-agricultural intensification of plant use in Pleistocene Sri Lankan rainforests]]></title>
+            <link>https://www.nature.com/articles/s41559-026-03082-6</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Ecology &amp; Evolution, Published online: 20 May 2026; <a href="https://www.nature.com/articles/s41559-026-03082-6">doi:10.1038/s41559-026-03082-6</a></p>Isotopic data from Late Pleistocene to Late Holocene human and faunal tooth enamel in a Sri Lankan rainforest reveal mixed human diets throughout the sequence, with a trend towards intensifying plant consumption, even before the regional introduction of crop agriculture.]]></content:encoded>
+            <dc:title><![CDATA[Pre-agricultural intensification of plant use in Pleistocene Sri Lankan rainforests]]></dc:title>
+            <dc:creator>Nicolas Bourgon</dc:creator><dc:creator>Marcus Oelze</dc:creator><dc:creator>Noel Amano</dc:creator><dc:creator>Oshan Wedage</dc:creator><dc:creator>Nimal Perera</dc:creator><dc:creator>Patrick Roberts</dc:creator>
+            <dc:identifier>doi:10.1038/s41559-026-03082-6</dc:identifier>
+            <dc:source>Nature Ecology &amp; Evolution, Published online: 2026-05-20; | doi:10.1038/s41559-026-03082-6</dc:source>
+            <dc:date>2026-05-20</dc:date>
+            <prism:publicationName>Nature Ecology &amp; Evolution</prism:publicationName>
+            <prism:doi>10.1038/s41559-026-03082-6</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41559-026-03082-6</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41559-026-03084-4">
+            <title><![CDATA[Synthetic control methods enable stronger causal inference using participatory science data in cities]]></title>
+            <link>https://www.nature.com/articles/s41559-026-03084-4</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Ecology &amp; Evolution, Published online: 20 May 2026; <a href="https://www.nature.com/articles/s41559-026-03084-4">doi:10.1038/s41559-026-03084-4</a></p>Synthetic-control analysis applied to iNaturalist records identifies a decline in bee observations in the 2 years following Hurricane Ida in Philadelphia, while three conventional analyses of the same data did not detect this decline.]]></content:encoded>
+            <dc:title><![CDATA[Synthetic control methods enable stronger causal inference using participatory science data in cities]]></dc:title>
+            <dc:creator>Asia Kaiser</dc:creator><dc:creator>Julian Resasco</dc:creator><dc:creator>Laura E. Dee</dc:creator>
+            <dc:identifier>doi:10.1038/s41559-026-03084-4</dc:identifier>
+            <dc:source>Nature Ecology &amp; Evolution, Published online: 2026-05-20; | doi:10.1038/s41559-026-03084-4</dc:source>
+            <dc:date>2026-05-20</dc:date>
+            <prism:publicationName>Nature Ecology &amp; Evolution</prism:publicationName>
+            <prism:doi>10.1038/s41559-026-03084-4</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41559-026-03084-4</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41559-026-03092-4">
+            <title><![CDATA[Reply to: A case definition with microscopy would help establish <i>Vibrio</i> as a cause of sea star wasting disease]]></title>
+            <link>https://www.nature.com/articles/s41559-026-03092-4</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Ecology &amp; Evolution, Published online: 19 May 2026; <a href="https://www.nature.com/articles/s41559-026-03092-4">doi:10.1038/s41559-026-03092-4</a></p>Reply to: A case definition with microscopy would help establish <i>Vibrio</i> as a cause of sea star wasting disease]]></content:encoded>
+            <dc:title><![CDATA[Reply to: A case definition with microscopy would help establish <i>Vibrio</i> as a cause of sea star wasting disease]]></dc:title>
+            <dc:creator>Melanie B. Prentice</dc:creator><dc:creator>Grace A. Crandall</dc:creator><dc:creator>Amy M. Chan</dc:creator><dc:creator>Katherine M. Davis</dc:creator><dc:creator>Jan F. Finke</dc:creator><dc:creator>Jason Hodin</dc:creator><dc:creator>Andrew McCracken</dc:creator><dc:creator>Colleen T. E. Kellogg</dc:creator><dc:creator>Rute B. G. Clemente-Carvalho</dc:creator><dc:creator>Kevin X. Zhong</dc:creator><dc:creator>C. Drew Harvell</dc:creator><dc:creator>Curtis A. Suttle</dc:creator><dc:creator>Alyssa-Lois M. Gehman</dc:creator>
+            <dc:identifier>doi:10.1038/s41559-026-03092-4</dc:identifier>
+            <dc:source>Nature Ecology &amp; Evolution, Published online: 2026-05-19; | doi:10.1038/s41559-026-03092-4</dc:source>
+            <dc:date>2026-05-19</dc:date>
+            <prism:publicationName>Nature Ecology &amp; Evolution</prism:publicationName>
+            <prism:doi>10.1038/s41559-026-03092-4</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41559-026-03092-4</prism:url>
+        </item>
+    
+</rdf:RDF>

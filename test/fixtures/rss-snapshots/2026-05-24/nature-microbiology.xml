@@ -1,0 +1,166 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns="http://purl.org/rss/1.0/" xmlns:admin="http://webns.net/mvcb/">
+    <channel rdf:about="http://feeds.nature.com/nmicrobiol/rss/current">
+        <title>Nature Microbiology</title>
+        <description>Nature Microbiology is interested in all aspects of microorganisms, be it their evolution, physiology and cell biology; their interactions with each other, with a host or with an environment; or their societal significance. Nature Microbiology provides a place where all researchers and policymakers interested in microorganisms can come together to learn about the most accomplished and significant advances in the field and to discuss topical issues. An online-only monthly journal, our broad scope will ensure that the research published reaches the widest possible audience of microbiologists.</description>
+        <link>http://feeds.nature.com/nmicrobiol/rss/current</link>
+        <admin:generatorAgent rdf:resource="https://www.nature.com/"/>
+        <admin:errorReportsTo rdf:resource="mailto:feedback@nature.com"/>
+        <dc:publisher>Nature Publishing Group</dc:publisher>
+        <dc:language>en</dc:language>
+        <dc:rights>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</dc:rights>
+        <prism:publicationName>Nature Microbiology</prism:publicationName>
+        
+        
+        <prism:copyright>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</prism:copyright>
+        <prism:rightsAgent>permissions@nature.com</prism:rightsAgent>
+        <image rdf:resource="https://www.nature.com/uploads/product/nmicrobiol/rss.gif"/>
+        <items>
+            <rdf:Seq>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41564-026-02372-w"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41564-026-02355-x"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41564-026-02377-5"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41564-026-02363-x"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41564-026-02348-w"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41564-026-02367-7"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41564-026-02368-6"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41564-026-02383-7"/>
+                
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="https://www.nature.com/uploads/product/nmicrobiol/rss.gif">
+        <title>Nature Microbiology</title>
+        <url>https://www.nature.com/uploads/product/nmicrobiol/rss.gif</url>
+        <link>http://feeds.nature.com/nmicrobiol/rss/current</link>
+    </image>
+    
+        <item rdf:about="https://www.nature.com/articles/s41564-026-02372-w">
+            <title><![CDATA[Advocating for return-of-results to participants in microbiome research]]></title>
+            <link>https://www.nature.com/articles/s41564-026-02372-w</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Microbiology, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41564-026-02372-w">doi:10.1038/s41564-026-02372-w</a></p>As population-scale microbiome studies become increasingly common, the need for strategies to actively involve and communicate results to participants effectively are needed to ensure future involvement, and to better inform and distribute the outcomes of research equitably.]]></content:encoded>
+            <dc:title><![CDATA[Advocating for return-of-results to participants in microbiome research]]></dc:title>
+            <dc:creator>Luicer Olubayo</dc:creator><dc:creator>Scott Hazelhurst</dc:creator>
+            <dc:identifier>doi:10.1038/s41564-026-02372-w</dc:identifier>
+            <dc:source>Nature Microbiology, Published online: 2026-05-27; | doi:10.1038/s41564-026-02372-w</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Microbiology</prism:publicationName>
+            <prism:doi>10.1038/s41564-026-02372-w</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41564-026-02372-w</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41564-026-02355-x">
+            <title><![CDATA[Temperate phages enhance bacterial host fitness via RNA-guided flagellar remodelling]]></title>
+            <link>https://www.nature.com/articles/s41564-026-02355-x</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Microbiology, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41564-026-02355-x">doi:10.1038/s41564-026-02355-x</a></p>The prophage of a clinical Enterobacter isolate uses an RNA-guided transcription factor to alter flagellar composition, leading to enhanced bacterial motility and improved gut colonization in a mouse model.]]></content:encoded>
+            <dc:title><![CDATA[Temperate phages enhance bacterial host fitness via RNA-guided flagellar remodelling]]></dc:title>
+            <dc:creator>Matt W. G. Walker</dc:creator><dc:creator>Egill Richard</dc:creator><dc:creator>Tanner Wiegand</dc:creator><dc:creator>Jing Wang</dc:creator><dc:creator>Zaofeng Yang</dc:creator><dc:creator>Americo A. Casas-Ciniglio</dc:creator><dc:creator>Florian T. Hoffmann</dc:creator><dc:creator>Hamna Shahnawaz</dc:creator><dc:creator>Ryan G. Gaudet</dc:creator><dc:creator>Nicholas Arpaia</dc:creator><dc:creator>Israel S. Fernández</dc:creator><dc:creator>Samuel H. Sternberg</dc:creator>
+            <dc:identifier>doi:10.1038/s41564-026-02355-x</dc:identifier>
+            <dc:source>Nature Microbiology, Published online: 2026-05-27; | doi:10.1038/s41564-026-02355-x</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Microbiology</prism:publicationName>
+            <prism:doi>10.1038/s41564-026-02355-x</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41564-026-02355-x</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41564-026-02377-5">
+            <title><![CDATA[A deep mutational scanning-informed protein language model predicts SARS-CoV-2 evolution dynamics with spatiotemporal resolution]]></title>
+            <link>https://www.nature.com/articles/s41564-026-02377-5</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Microbiology, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41564-026-02377-5">doi:10.1038/s41564-026-02377-5</a></p>By integrating DMS profiles, evolutionary trajectories and epidemiological data, a deep-learning framework enables the spatiotemporal prediction of emerging dominant SARS-CoV-2 variants.]]></content:encoded>
+            <dc:title><![CDATA[A deep mutational scanning-informed protein language model predicts SARS-CoV-2 evolution dynamics with spatiotemporal resolution]]></dc:title>
+            <dc:creator>Sijie Yang</dc:creator><dc:creator>Xiaowei Luo</dc:creator><dc:creator>Jiejian Luo</dc:creator><dc:creator>Fanchong Jian</dc:creator><dc:creator>Yunlong Cao</dc:creator>
+            <dc:identifier>doi:10.1038/s41564-026-02377-5</dc:identifier>
+            <dc:source>Nature Microbiology, Published online: 2026-05-27; | doi:10.1038/s41564-026-02377-5</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Microbiology</prism:publicationName>
+            <prism:doi>10.1038/s41564-026-02377-5</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41564-026-02377-5</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41564-026-02363-x">
+            <title><![CDATA[Molecular basis of type VI secretion system effector loading]]></title>
+            <link>https://www.nature.com/articles/s41564-026-02363-x</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Microbiology, Published online: 27 May 2026; <a href="https://www.nature.com/articles/s41564-026-02363-x">doi:10.1038/s41564-026-02363-x</a></p>Structural analysis reveals that the type VI secretion system effector cargo is enclosed within hexameric Hcp3 rings that form sequentially to enable effector loading and delivery by the Pseudomonas aeruginosa H3-type VI secretion system.]]></content:encoded>
+            <dc:title><![CDATA[Molecular basis of type VI secretion system effector loading]]></dc:title>
+            <dc:creator>Patricia Paracuellos</dc:creator><dc:creator>Ambre Bexter</dc:creator><dc:creator>Jonasz B. Patkowski</dc:creator><dc:creator>Steven D. Kelly</dc:creator><dc:creator>Oleksii Omelchenko</dc:creator><dc:creator>Kévin Macé</dc:creator><dc:creator>Aravindan Ilangovan</dc:creator><dc:creator>Sujatha Subramoni</dc:creator><dc:creator>John C. Whitney</dc:creator><dc:creator>Alain Filloux</dc:creator><dc:creator>Tiago R. D. Costa</dc:creator>
+            <dc:identifier>doi:10.1038/s41564-026-02363-x</dc:identifier>
+            <dc:source>Nature Microbiology, Published online: 2026-05-27; | doi:10.1038/s41564-026-02363-x</dc:source>
+            <dc:date>2026-05-27</dc:date>
+            <prism:publicationName>Nature Microbiology</prism:publicationName>
+            <prism:doi>10.1038/s41564-026-02363-x</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41564-026-02363-x</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41564-026-02348-w">
+            <title><![CDATA[You talkin’ to me?]]></title>
+            <link>https://www.nature.com/articles/s41564-026-02348-w</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Microbiology, Published online: 26 May 2026; <a href="https://www.nature.com/articles/s41564-026-02348-w">doi:10.1038/s41564-026-02348-w</a></p>Public trust and policy impact depend on communication in local languages. Nonetheless, one language, English, dominates scientific publishing. Multilingual science communication is not outreach — it is part of research responsibility.]]></content:encoded>
+            <dc:title><![CDATA[You talkin’ to me?]]></dc:title>
+            <dc:creator>Luis Quevedo</dc:creator>
+            <dc:identifier>doi:10.1038/s41564-026-02348-w</dc:identifier>
+            <dc:source>Nature Microbiology, Published online: 2026-05-26; | doi:10.1038/s41564-026-02348-w</dc:source>
+            <dc:date>2026-05-26</dc:date>
+            <prism:publicationName>Nature Microbiology</prism:publicationName>
+            <prism:doi>10.1038/s41564-026-02348-w</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41564-026-02348-w</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41564-026-02367-7">
+            <title><![CDATA[Lysosomal cholesterol overload impairs the innate–adaptive immune axis in tuberculosis granulomas]]></title>
+            <link>https://www.nature.com/articles/s41564-026-02367-7</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Microbiology, Published online: 26 May 2026; <a href="https://www.nature.com/articles/s41564-026-02367-7">doi:10.1038/s41564-026-02367-7</a></p>Mycobacterium tuberculosis infection disrupts macrophage cholesterol homeostasis, impairing antigen presentation and macrophage–T cell crosstalk, which weakens bacterial control in necrotic granulomas. Carefully timed targeting of this response shows early promise as a host-directed therapy to improve control of tuberculosis.]]></content:encoded>
+            <dc:title><![CDATA[Lysosomal cholesterol overload impairs the innate–adaptive immune axis in tuberculosis granulomas]]></dc:title>
+            <dc:creator>Andrew T. Roth</dc:creator><dc:creator>Jennifer A. Philips</dc:creator>
+            <dc:identifier>doi:10.1038/s41564-026-02367-7</dc:identifier>
+            <dc:source>Nature Microbiology, Published online: 2026-05-26; | doi:10.1038/s41564-026-02367-7</dc:source>
+            <dc:date>2026-05-26</dc:date>
+            <prism:publicationName>Nature Microbiology</prism:publicationName>
+            <prism:doi>10.1038/s41564-026-02367-7</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41564-026-02367-7</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41564-026-02368-6">
+            <title><![CDATA[Wall teichoic acids regulate peptidoglycan synthesis to maintain rod shape in <i>Bacillus subtilis</i>]]></title>
+            <link>https://www.nature.com/articles/s41564-026-02368-6</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Microbiology, Published online: 26 May 2026; <a href="https://www.nature.com/articles/s41564-026-02368-6">doi:10.1038/s41564-026-02368-6</a></p>Wall teichoic acids confer rod shape in the Gram-positive model organism Bacillus subtilis by occluding pores in the cell wall, thereby preventing runaway isotropic (non-oriented) peptidoglycan synthesis.]]></content:encoded>
+            <dc:title><![CDATA[Wall teichoic acids regulate peptidoglycan synthesis to maintain rod shape in <i>Bacillus subtilis</i>]]></dc:title>
+            <dc:creator>Felix Barber</dc:creator><dc:creator>Zarina Akbary</dc:creator><dc:creator>Zhe Yuan</dc:creator><dc:creator>Jacob Biboy</dc:creator><dc:creator>Waldemar Vollmer</dc:creator><dc:creator>Enrique R. Rojas</dc:creator>
+            <dc:identifier>doi:10.1038/s41564-026-02368-6</dc:identifier>
+            <dc:source>Nature Microbiology, Published online: 2026-05-26; | doi:10.1038/s41564-026-02368-6</dc:source>
+            <dc:date>2026-05-26</dc:date>
+            <prism:publicationName>Nature Microbiology</prism:publicationName>
+            <prism:doi>10.1038/s41564-026-02368-6</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41564-026-02368-6</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41564-026-02383-7">
+            <title><![CDATA[CRISPRi screening reveals essential fungal vulnerabilities]]></title>
+            <link>https://www.nature.com/articles/s41564-026-02383-7</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Microbiology, Published online: 25 May 2026; <a href="https://www.nature.com/articles/s41564-026-02383-7">doi:10.1038/s41564-026-02383-7</a></p>We developed a scalable pooled CRISPR interference (CRISPRi) platform for the prominent fungal pathogen Candida albicans, enabling portable, high-throughput functional genomic analysis of essential genes across diverse environmental conditions and strain backgrounds. This approach identified conserved fungus-specific vulnerabilities that may help to prioritize promising targets for antifungal drug discovery.]]></content:encoded>
+            <dc:title><![CDATA[CRISPRi screening reveals essential fungal vulnerabilities]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/s41564-026-02383-7</dc:identifier>
+            <dc:source>Nature Microbiology, Published online: 2026-05-25; | doi:10.1038/s41564-026-02383-7</dc:source>
+            <dc:date>2026-05-25</dc:date>
+            <prism:publicationName>Nature Microbiology</prism:publicationName>
+            <prism:doi>10.1038/s41564-026-02383-7</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41564-026-02383-7</prism:url>
+        </item>
+    
+</rdf:RDF>

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns="http://purl.org/rss/1.0/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.w3.org/1999/02/22-rdf-syntax-ns# uri:atypon.com:cms:schema:rdf.xsd">
+   <channel rdf:about="https://www.cell.com/cell/current?publicationCode=cell&amp;rss=yes">
+      <title>Cell</title>
+      <description>Cell RSS feed. </description>
+      <link>https://www.cell.com/cell/current?publicationCode=cell&amp;rss=yes</link>
+      <dc:publisher>Elsevier Inc.</dc:publisher>
+      <dc:language>en</dc:language>
+      <dc:rights>© 2026 Published by Elsevier Inc. All rights reserved.</dc:rights>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:issn>0092-8674</prism:issn>
+      <prism:publicationDate>2026-05-20-07:00</prism:publicationDate>
+      <prism:copyright>© 2026 Published by Elsevier Inc. All rights reserved.</prism:copyright>
+      <prism:rightsAgent>permissionshelpdesk@elsevier.com</prism:rightsAgent>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <items>
+         <rdf:Seq>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00394-6?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00464-2?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00470-8?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00451-4?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00230-8?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00232-1?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00220-5?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00226-6?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00333-8?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00269-2?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00332-6?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00228-X?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00231-X?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00267-9?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00224-2?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00467-8?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00271-0?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00227-8?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(25)01489-8?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00465-4?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00266-7?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00280-1?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00233-3?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00168-6?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00396-X?rss=yes"/>
+            <rdf:li rdf:resource="https://www.cell.com/cell/fulltext/S0092-8674(26)00453-8?rss=yes"/>
+         </rdf:Seq>
+      </items>
+   </channel>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00394-6?rss=yes">
+      <title>This is IT: How accelerated intermittent theta burst stimulation relieves depression symptoms</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00394-6?rss=yes</link>
+      <description>In this issue of Cell, Gongwer et al. and Johnson et al. identify the plasticity of intratelencephalic (IT) neuronal projections to anterior insula as a central substrate mediating the antidepressant effects of accelerated intermittent theta burst stimulation. These studies suggest a revolutionary future in which brain stimulation can enable circuit-specific plasticity.</description>
+      <dc:title>This is IT: How accelerated intermittent theta burst stimulation relieves depression symptoms</dc:title>
+      <dc:creator>Morteza Salimi, Dhakshin S. Ramanathan</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.04.005</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-05-14</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-05-14</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Preview</prism:section>
+      <prism:startingPage>2783</prism:startingPage>
+      <prism:endingPage>2784</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00464-2?rss=yes">
+      <title>Scrambled signals: Bacterial viruses engage in information warfare</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00464-2?rss=yes</link>
+      <description>Bacterial viruses can send and receive signals to inform critical decisions. In this issue of Cell, Manley et al. and Gallego-del-Sol et al. independently identify crosstalk between bacterial viruses, leading us to wonder what the information warfare landscape between them looks like.</description>
+      <dc:title>Scrambled signals: Bacterial viruses engage in information warfare</dc:title>
+      <dc:creator>Ayesha Umair, Alexander P. Hynes</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.04.029</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-05-14</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-05-14</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Preview</prism:section>
+      <prism:startingPage>2785</prism:startingPage>
+      <prism:endingPage>2787</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00470-8?rss=yes">
+      <title>Glyceroneogenesis has a new PEP in its step(s)</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00470-8?rss=yes</link>
+      <description>Mitochondria generate phosphoenolpyruvate (PEP), although its export mechanism and physiological roles were unknown. In this issue of Cell, Kajimura and colleagues identify SLC25A35 as the mitochondrial PEP exporter and uncover a previously unrecognized role for mitochondrial PEP synthesis in glyceroneogenesis in adipose tissue and upon development of fatty liver disease.</description>
+      <dc:title>Glyceroneogenesis has a new PEP in its step(s)</dc:title>
+      <dc:creator>Alexandra E. Jerrett, Nicolai R. Hathiramani, Jessica B. Spinelli</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.04.035</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-05-14</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-05-14</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Preview</prism:section>
+      <prism:startingPage>2788</prism:startingPage>
+      <prism:endingPage>2790</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00451-4?rss=yes">
+      <title>Navigating the clinical progress of antibody-drug conjugates: Emerging opportunities and remaining challenges</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00451-4?rss=yes</link>
+      <description>Antibody-drug conjugates are among the fastest-growing anticancer therapies, delivering potent payloads directly to tumor cells with improved safety across hematologic and solid tumors. This review focuses on their biology and where the field needs to move as they expand into earlier-stage use and combinations that heighten the need for careful patient selection and toxicity management.</description>
+      <dc:title>Navigating the clinical progress of antibody-drug conjugates: Emerging opportunities and remaining challenges</dc:title>
+      <dc:creator>Louise Conilh, Virginia Metrangolo, Silvia Crescioli, Janice M. Reichert, Charles Dumontet</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.04.016</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-05-14</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-05-14</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Review</prism:section>
+      <prism:startingPage>2791</prism:startingPage>
+      <prism:endingPage>2820</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00230-8?rss=yes">
+      <title>Transplantation of encapsulated mitochondria alleviates dysfunction in mitochondrial and Parkinson’s disease models</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00230-8?rss=yes</link>
+      <description>A mitochondrial transplantation approach rescues mitochondrial deficiency and prevents mitochondrial DNA depletion syndrome, Leigh syndrome, and Parkinson’s disease in cellular and mouse models.</description>
+      <dc:title>Transplantation of encapsulated mitochondria alleviates dysfunction in mitochondrial and Parkinson’s disease models</dc:title>
+      <dc:creator>Shiwei Du, Qi Long, Yanshuang Zhou, Jiangqin Fu, Hao Wu, Liang Yang, Yaohang Xie, Yingzhe Ding, Maolei Zhang, Jingyi Guo, Mengfei Wang, Jiajun Lin, Mingli Hu, Jian Zhang, Deyang Yao, Wei Li, Feixiang Bao, Ge Xiang, Yi Wu, Yile Huang, Haozhao Liang, Rui Wang, Heying Li, Baodan Chen, Chong Li, Junwei Wang, Jiwei Zhang, Dajiang Qin, Jianwei Sun, Yun Zhu, Fei Sun, Wuming Wang, Gang Lu, Wai-Yee Chan, Hui Zhao, Chenli Liu, Xingguo Liu</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.02.023</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-03-18</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-03-18</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Short article</prism:section>
+      <prism:startingPage>2821</prism:startingPage>
+      <prism:endingPage>2833.e23</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00232-1?rss=yes">
+      <title>Controlled human influenza infection reveals heterogeneous expulsion of infectious virus into air</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00232-1?rss=yes</link>
+      <description>A platform called MIST enables quantification and genotyping of infectious influenza in expelled respiratory particles, revealing diverse, individual-specific viral loads and aerosolized variants that correlate with saliva and nasopharyngeal viral loads and symptoms. Overall, the findings indicate heterogeneity in transmission potential.</description>
+      <dc:title>Controlled human influenza infection reveals heterogeneous expulsion of infectious virus into air</dc:title>
+      <dc:creator>Nahara Vargas-Maldonado, Nishit Shetty, Lucas M. Ferreri, Matthew D. Pauly, Kayle Patatanian, Shamika Danzy, Meredith J. Shephard, David VanInsberghe, Michelle N. Vu, A.J. Campbell, Kayla Brizuela, Vedhika Raghunathan, Jin Pan, Aaron J. Prussin, Anna Sims, Hollie Macenczak, Jessica Traenkner, Ralph Tanios, Christelle Radi, Veronica Smith, Dalia Gulick, Katia Koelle, Andrew Catchpole, Alex J. Mann, Colleen S. Kraft, Nadine G. Rouphael, Linsey C. Marr, Anice C. Lowen, Seema S. Lakdawala</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.02.025</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-03-19</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-03-19</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Short article</prism:section>
+      <prism:startingPage>2834</prism:startingPage>
+      <prism:endingPage>2844.e23</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00220-5?rss=yes">
+      <title>Respiratory viral infections prime accelerated lung cancer growth</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00220-5?rss=yes</link>
+      <description>Severe COVID-19 is associated with an increased subsequent risk of lung cancer. Viral pneumonia induces durable lung epigenetic imprinting that promotes tumor-supportive neutrophils and impairs T cell immunity, which is reversible with combined CXCR2 inhibition and PD-L1 blockade.</description>
+      <dc:title>Respiratory viral infections prime accelerated lung cancer growth</dc:title>
+      <dc:creator>Wei Qian, Xiaoqin Wei, Andrew J. Barros, Xiangyu Ye, Haibo Zhang, Qing Yu, Samuel P. Young, Eric V. Yeatts, Yury Park, Chaofan Li, Sijie Hao, Gislane Almeida-Santos, Jinyi Tang, Harish Narasimhan, Nicole A. Kirk, Valeria Molinary, Ying Li, Li Li, Bimal N. Desai, Peter Chen, Kwon-Sik Park, Anny Xiaobo Zhou, Jeffrey M. Sturek, Wei Chen, In Su Cheon, Jie Sun</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.02.013</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-03-11</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-03-11</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Short article</prism:section>
+      <prism:startingPage>2845</prism:startingPage>
+      <prism:endingPage>2856.e20</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00226-6?rss=yes">
+      <title>Proteostasis sustains T cell differentiation potential and tumor-infiltrating lymphocyte function</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00226-6?rss=yes</link>
+      <description>Exhausted T cells experience a breakdown of proteostasis, characterized by unfolded protein accumulation and rescuable by E3 ubiquitin ligase activity. Targeting T cell proteostasis highlights a promising strategy for cancer immunotherapy.</description>
+      <dc:title>Proteostasis sustains T cell differentiation potential and tumor-infiltrating lymphocyte function</dc:title>
+      <dc:creator>Nicole E. Scharping, Xuezhen Ge, Maria Inês Matias, Fulin Jiang, Allison Cafferata, Maximilian Heeg, Alexander Monell, Giovanni Galletti, Kitty P. Cheung, Angelica Rock, Nick Thao, Sydnye L. Shuttleworth, Michael A. Bauer, Kennidy K. Takehara, Amir Ferry, Sara Quon, Brian Koss, Samuel A. Myers, Eric J. Bennett, Ananda W. Goldrath</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.02.019</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-04-29</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-04-29</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Article</prism:section>
+      <prism:startingPage>2857</prism:startingPage>
+      <prism:endingPage>2874.e31</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00333-8?rss=yes">
+      <title>Oncogenic and tumor-suppressive forces converge on a progenitor niche at the benign-to-malignant transition</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00333-8?rss=yes</link>
+      <description>Opposing oncogenic and tumor-suppressive forces establish a progenitor-like state that builds a self-reinforcing niche to drive benign-to-malignant transition in pancreatic cancer models. Disruption of p53 activity or KRAS inhibits malignancy by collapsing the niche.</description>
+      <dc:title>Oncogenic and tumor-suppressive forces converge on a progenitor niche at the benign-to-malignant transition</dc:title>
+      <dc:creator>José Reyes, Isabella Del Priore, Andrea C. Chaikovsky, Nikhita Pasnuri, Ahmed M. Elhossiny, Jin Park, Philipp Weiler, Tobias Krause, Andrew Moorman, Catherine Snopkowski, Meril Takizawa, Cassandra Burdziak, Nalin Ratnayeke, Ignas Masilionis, Yu-Jui Ho, Ronan Chaligné, Paul B. Romesser, Aveline Filliol, Tal Nawy, John P. Morris, Zhen Zhao, Marina Pasca Di Magliano, Direna Alonso-Curbelo, Dana Pe’er, Scott W. Lowe</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.03.032</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-04-15</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-04-15</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Article</prism:section>
+      <prism:startingPage>2875</prism:startingPage>
+      <prism:endingPage>2897.e53</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00269-2?rss=yes">
+      <title>A convergent uPAR-positive tumor ecosystem creates broad vulnerability to CAR T cell therapy</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00269-2?rss=yes</link>
+      <description>Synergizing with senescence-inducing therapies, uPAR CAR T cells eradicate primary and metastatic solid tumors with minimal myelodepletion by targeting both tumor cells and the stroma in preclinical models.</description>
+      <dc:title>A convergent uPAR-positive tumor ecosystem creates broad vulnerability to CAR T cell therapy</dc:title>
+      <dc:creator>Zeda Zhang, Yu-Jui Ho, Xin Fang, Minseo Kim, Marguerite Li, Wei Luan, Clemens Hinterleitner, Sascha Haubner, Friederike Kogel, Edwin C. Pratt, Elif Ozcelik, José Reyes, Qingwen Jiang, Vincent W. Yang, Yu-Jung Chen, Tao Wang, Haijiao Liu, Haonan Hu, Xueqian Zhuang, Jin Park, Stella V. Paffenholz, Kevin Chen, Qing Chang, Amanda Kulick, Jing Zhang, Eric Chan, Eric Rosiek, Ning Fan, Riley A. Williams, Adam C. Wang, Samuel Freeman, Sha Tian, Gertrude Gunset, Andreina Garcia Angus, Nicolas Lecomte, Selma Yeni Yildirim, Emily Ali, Michelle Wu, Ileana C. Miranda, Cristina R. Antonescu, Olca Basturk, Zeynep Tarcan, Natasha Rekhtman, Christina Wilson, Merve Basar, Jennifer L. Sauter, Hikmat A. Al-Ahmadie, Samuel Singer, Christine Iacobuzio-Donahue, Charles Rudin, Elisa de Stanchina, Karuna Ganesh, Paul B. Romesser, Britta Weigelt, Dan Dongeun Huh, Josef Leibold, Judith Feucht, Ignacio Vázquez-García, Matthew J. Bott, Dmitriy Zamarin, Sohrab P. Shah, Jason S. Lewis, Corina Amor, Dana Pe’er, Jorge Mansilla-Soto, Aveline Filliol, Michel Sadelain, Scott W. Lowe</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.03.002</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-03-30</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-03-30</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Article</prism:section>
+      <prism:startingPage>2898</prism:startingPage>
+      <prism:endingPage>2917.e42</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00332-6?rss=yes">
+      <title>Disrupted molecular glue complex drives RAS inhibitor resistance</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00332-6?rss=yes</link>
+      <description>Cancers evade RAS-targeting molecular glues through distinct alterations that converge on disrupting synthetic complex formation, exposing strategies for improved drug design and rational combination therapy.</description>
+      <dc:title>Disrupted molecular glue complex drives RAS inhibitor resistance</dc:title>
+      <dc:creator>Ben Sang, Ling Feng Ye, Zheng Fu, Yasin Pourfarjam, Antonio Cuevas-Navarro, Shijie Fan, Feng Hu, Aaliyah Washington, Diego J. Rodriguez, Alberto Vides, Sumit Kar, Ethan Ahler, Kevin K. Lin, Aparna Hegde, Jacqueline A.M. Smith, Brian M. Wolpin, Salman R. Punekar, Alexander I. Spira, Ignacio Garrido-Laguna, David S. Hong, Arvin C. Dar, Rona Yaeger, Kathryn C. Arbour, Piro Lito</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.03.031</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-05-05</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-05-05</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Article</prism:section>
+      <prism:startingPage>2918</prism:startingPage>
+      <prism:endingPage>2933.e17</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00228-X?rss=yes">
+      <title>Thermodynamic prediction of RNA cellular activity from sequence via conformational ensembles</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00228-X?rss=yes</link>
+      <description>The RNA sequence of HIV-1 TAR was systematically altered to change its propensity to adopt a functional secondary structure in the ensemble, measured using 1H CEST NMR. These minor sequence changes shifted the active-state propensity by ∼500-fold, quantitatively predicting changes in protein binding and cellular transactivation. These propensities could be inferred from secondary-structure prediction algorithms and incorporated into a thermodynamic framework to quantitatively predict how sequence changes alter protein-binding affinity and RNA cellular activity.</description>
+      <dc:title>Thermodynamic prediction of RNA cellular activity from sequence via conformational ensembles</dc:title>
+      <dc:creator>Ainan Geng, Rohit Roy, Megan Ken, Linshu Li, Alicia Chime, Hala Abou Assi, Bei Liu, Charles Bou-Nader, Yeongjoon Lee, Jinwei Zhang, Daniel Herschlag, Stephen P. Goff, Hashim M. Al-Hashimi</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.02.021</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-03-18</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-03-18</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Article</prism:section>
+      <prism:startingPage>2934</prism:startingPage>
+      <prism:endingPage>2954.e25</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00231-X?rss=yes">
+      <title>An activated wheat CCG10-NLR immune receptor forms an octameric resistosome</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00231-X?rss=yes</link>
+      <description>An activated CCG10-NLR WAI3 plant immune receptor forms an octameric resistosome, which induces calcium influx and immune responses through a unique channel architecture.</description>
+      <dc:title>An activated wheat CCG10-NLR immune receptor forms an octameric resistosome</dc:title>
+      <dc:creator>Guanghao Guo, He Zhao, Kaihong Bai, Jian Lu, Qiuhong Wu, Lei Lu, Yue Zhang, Lingli Dong, Guangwei Li, Yongxing Chen, Yikun Hou, Ping Lu, Miaomiao Li, Huaizhi Zhang, Gaojie Wang, Keyu Zhu, Baoge Huang, Xuejia Cui, Hongkui Fu, Chenchen Hu, Zhiying Chu, Xue Lyu, Sophien Kamoun, Chao Wang, Zhiyong Liu, Muniyandi Selvaraj, Jonathan D.G. Jones</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.02.024</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-03-20</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-03-20</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Article</prism:section>
+      <prism:startingPage>2955</prism:startingPage>
+      <prism:endingPage>2970.e16</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00267-9?rss=yes">
+      <title>STING signaling modulation by COPII cargo recognition</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00267-9?rss=yes</link>
+      <description>Lyu et al. identify the STING-ER-exit motif and the mechanism of its recognition by the COPII vesicle cargo-binding protein SEC24C. This study reveals how STING achieves controlled rather than constitutive ER exit and how COPII cargo recognition of STING can be modulated to control STING signaling.</description>
+      <dc:title>STING signaling modulation by COPII cargo recognition</dc:title>
+      <dc:creator>Heng Lyu, Cong Xing, Wanwan Huai, Kun Song, Devon Jeltema, Hui Zhang, Xuewu Zhang, Nan Yan</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.02.029</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-03-25</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-03-25</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Article</prism:section>
+      <prism:startingPage>2971</prism:startingPage>
+      <prism:endingPage>2987.e19</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00224-2?rss=yes">
+      <title>Mitochondrial control of glycerolipid synthesis by a PEP shuttle</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00224-2?rss=yes</link>
+      <description>SLC25A35 is revealed as the mitochondrial PEP exporter that licenses glycerolipid synthesis in lipogenic cells, linking mitochondrial energetics to lipid production. Mitochondrial PEP flux drives glycerol-3-phosphate and triglyceride synthesis, and blocking SLC25A35 reduces hepatic steatosis, offering a target for metabolic therapy.</description>
+      <dc:title>Mitochondrial control of glycerolipid synthesis by a PEP shuttle</dc:title>
+      <dc:creator>Tadashi Yamamuro, Daisuke Katoh, Guilherme Martins Silva, Hiroshi Nishida, Satoshi Oikawa, Yusuke Higuchi, Dandan Wang, Masanori Fujimoto, Naofumi Yoshida, Mark Li, Jihoon Shin, Zezhou Zhao, Jin-Seon Yook, Lijun Sun, Shingo Kajimura</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.02.017</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-03-17</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-03-17</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Article</prism:section>
+      <prism:startingPage>2988</prism:startingPage>
+      <prism:endingPage>3003.e23</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00467-8?rss=yes">
+      <title>A comparison of deep multiomics profiles across ethnicity, geography, and age</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00467-8?rss=yes</link>
+      <description>Multiomics profiling of healthy individuals reveals differences across molecular layers and key pathways related to immune, metabolic, and microbiome-linked processes across ethnicities, while geographic relocation reshapes these networks and influences aging trajectories.</description>
+      <dc:title>A comparison of deep multiomics profiles across ethnicity, geography, and age</dc:title>
+      <dc:creator>Nasim Barapour, John Z. Cao, Yue Wu, Shubham Gupta, Michael R. Hoopmann, Rui Qin, Mukul K. Midha, Myriam Mireault, Pablo Juanes-Velasco, Casey Hanson, Sara Ahadi, Emily Higgs, David H. Baxter, Christian Diener, Orit Dagan-Rosenfeld, Daniel Hornburg, Songjie Che, Fredrik Edfors, Stephanie J. Church, Mohan Babu, Durga Thota, Christopher Jin, Tristan Chou, Shannon Rego, Monika Avina, Lettie McGuire, Jessi W. Li, Thomas Karathanos, Daniel J. Panyard, Martín A. Acosta Parra, Aubrey K. Roberts, Amarnath K. Ranjit, Ekanath Rangan, Jose Juan Almagro Armenteros, Melanie Ashland, Kevin Erazo Castillo, Gavin Traber, Matthew Ellenberger, Ryan Kellogg, Wenyu Zhou, Hannes Rost, Martin Kjellberg, Tejaswini Mishra, Charu Kapil, Ulrike Kusebauch, Sushmita Patwardhan, Alicia Landeira-Viñuela, Angela-Patricia Hernandez, Mikkel Eggert Thomsen, Maliha Mashkoor, Thanadol Sutantiwanichkul, Tea Dodig-Crnkovic, Annika Bendes, Leo Dahl, Sean M. Gibbons, P. Venkat Rangan, Allan Stensballe, Jochen M. Schwenk, Richard D. Unwin, Manuel Fuentes, Lekha Sleno, Robert L. Moritz, Lara K. Mahal, Michael P. Snyder</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.04.032</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-05-14</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-05-14</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Article</prism:section>
+      <prism:startingPage>3004</prism:startingPage>
+      <prism:endingPage>3024.e35</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00271-0?rss=yes">
+      <title>Phages communicate across species to shape microbial ecosystems</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00271-0?rss=yes</link>
+      <description>Gallego-del-Sol et al. show that arbitrium-coding phages can sense non-cognate peptide signals from other phages to regulate lysis-lysogeny decisions. This crosstalk affects lysis-lysogeny outcomes of phage infections, mixed lysogenic communities, and polylysogens. Our results demonstrate that crosstalk is an important mechanism that drives phage interactions in microbial communities.</description>
+      <dc:title>Phages communicate across species to shape microbial ecosystems</dc:title>
+      <dc:creator>Francisca Gallego-del-Sol, Daniel Sin, Cora Chmielowska, Javier Mancheño-Bonillo, Yuyi Li, Sara Zamora-Caballero, Nuria Quiles-Puchalt, José R. Penadés, Alberto Marina</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.03.004</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-03-31</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-03-31</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Article</prism:section>
+      <prism:startingPage>3025</prism:startingPage>
+      <prism:endingPage>3038.e12</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00227-8?rss=yes">
+      <title>Arbitrium phages can manipulate each other’s lysis/lysogeny decisions</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00227-8?rss=yes</link>
+      <description>Arbitrium phages belonging to different species and genera can influence each other’s infection dynamics by secreting chemically similar, non-cognate signal peptides. These findings indicate that arbitrium-based communication is not as specific as previously thought.</description>
+      <dc:title>Arbitrium phages can manipulate each other’s lysis/lysogeny decisions</dc:title>
+      <dc:creator>R. Manley, R. Woodhams, T.J. Arrowsmith, E. Smith, J. Bruce, T.R. Blower, B. Temperton, E.R. Westra</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.02.020</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-03-31</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-03-31</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Article</prism:section>
+      <prism:startingPage>3039</prism:startingPage>
+      <prism:endingPage>3051.e17</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(25)01489-8?rss=yes">
+      <title>A cell type-specific mechanism driving the rapid antidepressant effects of transcranial magnetic stimulation</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(25)01489-8?rss=yes</link>
+      <description>A mouse model of repetitive transcranial magnetic stimulation reveals a prefrontal mechanism that links accelerated antidepressant behavioral effects to cell type-specific circuit plasticity.</description>
+      <dc:title>A cell type-specific mechanism driving the rapid antidepressant effects of transcranial magnetic stimulation</dc:title>
+      <dc:creator>Michael W. Gongwer, Alex Qi, Alexander S. Enos, Sophia A. Rueda Mora, Sabahaddin Taha Solakoğlu, Russell N. Ahmed, Cassandra B. Klune, Meelan Shari, Adrienne Q. Kashay, Owen H. Williams, Aliza Hacking, Jack P. Riley, Gary A. Wilke, Yihong Yang, Hanbing Lu, Andrew F. Leuchter, Laura A. DeNardo, Scott A. Wilke</dc:creator>
+      <dc:identifier>10.1016/j.cell.2025.12.040</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-05-07</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-05-07</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Article</prism:section>
+      <prism:startingPage>3052</prism:startingPage>
+      <prism:endingPage>3070.e13</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00465-4?rss=yes">
+      <title>Fronto-insular circuit mechanisms of accelerated intermittent theta burst stimulation</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00465-4?rss=yes</link>
+      <description>An optogenetic model of accelerated intermittent theta burst stimulation reveals cell type-specific plasticity mechanisms and a key role for a fronto-insular circuit in driving the antidepressant effects of this treatment in humans.</description>
+      <dc:title>Fronto-insular circuit mechanisms of accelerated intermittent theta burst stimulation</dc:title>
+      <dc:creator>Shane B. Johnson, Devin Rocks, Laura Chalençon, Kenneth Johnson, Umair Hassan, Anisul Arefin, Gülcan Akgül, Alexander Donatelle, Henry Asher, Immanuel Elbau, David Estrin, Rebecca Zhang, Alexandra Lenz, Rachel Mikofsky, Cory Knox, Rachael Han, Pooja Suganthan, Tahrima Chowdhury, Christine Kuang, Daniel Shaver, Parsa Nilchian, Puja Parekh, Jacob Roshgadol, Natalia DeMarco Garcia, Matthew Wright, Lindsay Victoria, Charles J. Lynch, Benjamin Zebley, Joshua Levitz, Corey J. Keller, Aaron D. Boes, Conor Liston</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.04.030</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-05-07</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-05-07</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Article</prism:section>
+      <prism:startingPage>3071</prism:startingPage>
+      <prism:endingPage>3090.e27</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00266-7?rss=yes">
+      <title>Development of non-spatial grid-like neural codes tracks inference and intelligence</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00266-7?rss=yes</link>
+      <description>The maturation of non-spatial grid-cell-like neural codes in the entorhinal cortex provides a foundational scaffold for Piaget’s cognitive development theory, uncovering how structured knowledge schemas support inferential reasoning, assimilate new information, and track fluid intelligence from ages 8 to 25.</description>
+      <dc:title>Development of non-spatial grid-like neural codes tracks inference and intelligence</dc:title>
+      <dc:creator>Yukun Qu, Jianxin Ou, Luoyao Pang, Shuqi Wu, Yuejia Luo, Tim Behrens, Yunzhe Liu</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.02.028</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-03-25</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-03-25</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Article</prism:section>
+      <prism:startingPage>3091</prism:startingPage>
+      <prism:endingPage>3106.e15</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00280-1?rss=yes">
+      <title>The spatiotemporal dynamics of postnatal vascularization in the mouse brain</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00280-1?rss=yes</link>
+      <description>Whole-brain tissue clearing and spatial transcriptomics were applied to map postnatal vascular development in the mouse brain, identifying three coordinated phases that link vascular growth to neuronal maturation.</description>
+      <dc:title>The spatiotemporal dynamics of postnatal vascularization in the mouse brain</dc:title>
+      <dc:creator>Elisa de Launoit, Sophie Skriabine, Etienne Doumazane, Mathilde Bizou, Rémi Pommé, Gabrièle Lienhard, Domitille Rajot, Alina Mikhailenko, Alba Vieites-Prado, Mathilde Lannes, Natalia Fabiano, Louise Mathé, Gael Cagnone, Laura Mouton, Mathieu D. Santin, Séverine Candelier, Patricia Gaspar, Charly V. Rousseau, Alexandre Dubrac, Nicolas Renier</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.03.013</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-04-14</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-04-14</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Resource</prism:section>
+      <prism:startingPage>3107</prism:startingPage>
+      <prism:endingPage>3123.e18</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00233-3?rss=yes">
+      <title>Pan-neurodegeneration proteomics reveals disease subtypes and molecular signatures</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00233-3?rss=yes</link>
+      <description>A pan-neurodegeneration atlas built from multilayer, deep proteomics of 2,279 brain samples across 6 major diseases integrates whole proteome, detergent-insoluble proteome, and posttranslational modifications to enable intra- and inter-disease comparisons to reveal disease-specific subtypes and dysregulated pathways, while identifying shared changes such as GPNMB upregulation and NPTX2 downregulation.</description>
+      <dc:title>Pan-neurodegeneration proteomics reveals disease subtypes and molecular signatures</dc:title>
+      <dc:creator>Him K. Shrestha, Huan Sun, Jay M. Yarbro, DongGeun Lee, Danting Liu, Erming Wang, Meghan McReynolds, Nan Zhang, Boer Xie, Shu Yang, Kaiwen Yu, Suresh Poudel, Yuxin Li, Zuo-Fei Yuan, Dehui Kong, Minghui Wang, Zhen Wang, Mingming Niu, Hong Wang, Masihuz Zaman, Ju Wang, David R. Vanderwall, Yu Sun, Zhiping Wu, Ping-Chung Chen, Bing Bai, Anthony A. High, Júlia Faura, Chunyu Liu, David A. Bennett, Erik C.B. Johnson, Nicholas T. Seyfried, Allan I. Levey, Vahram Haroutunian, Geidy E. Serrano, Thomas G. Beach, Michael DeTure, Takahisa Kanekiyo, Ronald C. Petersen, Guojun Bu, Pamela J. McLean, Dennis W. Dickson, Rosa Rademakers, Gang Yu, Xusheng Wang, Bin Zhang, Junmin Peng</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.02.026</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-03-23</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-03-23</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Resource</prism:section>
+      <prism:startingPage>3124</prism:startingPage>
+      <prism:endingPage>3143.e15</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00168-6?rss=yes">
+      <title>Immune-microbiome coordination defines interferon setpoints in healthy humans</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00168-6?rss=yes</link>
+      <description>A comprehensive multi-omic analysis of healthy humans reveals two major axes of immunological variation characterized by interferon responses, one of which is coordinated with the microbiome and its metabolites and is stable over time within individuals.</description>
+      <dc:title>Immune-microbiome coordination defines interferon setpoints in healthy humans</dc:title>
+      <dc:creator>Joel Babdor, Ravi K. Patel, Brittany Davidson, Kelvin Koser, Cecilia Noecker, Maha K. Rahim, Jordan E. Bisanz, Iliana Tenvooren, Diana Marquez, Maria Calvo, Vrinda Johri, Elizabeth E. McCarthy, Avneet Shaheed, Christina Ekstrand, Allison M. Weakley, Feiqiao B. Yu, Kristen Krip, Kashif A. Shaikh, Hajera Amatullah, Oliver Fiehn, Peter J. Turnbaugh, Alexis J. Combes, Gabriela K. Fragiadakis, Matthew H. Spitzer</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.02.003</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-03-09</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-03-09</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Resource</prism:section>
+      <prism:startingPage>3144</prism:startingPage>
+      <prism:endingPage>3163.e20</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00396-X?rss=yes">
+      <title>The immunoproteasome disturbs neuronal metabolism and drives neurodegeneration in multiple sclerosis</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00396-X?rss=yes</link>
+      <description>(Cell 188, 4567–4585.e1–e12; August 21, 2025)</description>
+      <dc:title>The immunoproteasome disturbs neuronal metabolism and drives neurodegeneration in multiple sclerosis</dc:title>
+      <dc:creator>Marcel S. Woo, Johannes Brand, Lukas C. Bal, Manuela Moritz, Mark Walkenhorst, Vanessa Vieira, Inbal Ipenberg, Nicola Rothammer, Man Wang, Batuhan Dogan, Desirée Loreth, Christina Mayer, Darwin Nagel, Ingrid Wagner, Lena Kristina Pfeffer, Peter Landgraf, Marco van Ham, Kuno M.-J. Mattern, Ingo Winschel, Noah Frantz, Jana K. Sonner, Henrike K. Grosshans, Albert Miguela, Simone Bauer, Nina Meurs, Anke Müller, Lars Binkle-Ladisch, Gabriela Salinas, Lothar Jänsch, Daniela C. Dieterich, Maria Riedner, Elke Krüger, Frank L. Heppner, Markus Glatzel, Victor G. Puelles, Jan Broder Engler, Jens Randel Nyengaard, Thomas Misgeld, Martin Kerschensteiner, Doron Merkler, Catherine Meyer-Schwesinger, Manuel A. Friese</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.04.007</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-04-16</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-04-16</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Correction</prism:section>
+      <prism:startingPage>3164</prism:startingPage>
+      <prism:endingPage>3174</prism:endingPage>
+   </item>
+   <item rdf:about="https://www.cell.com/cell/fulltext/S0092-8674(26)00453-8?rss=yes">
+      <title>Pyruvate is a natural suppressor of interferon signaling by inducing STAT1 protein pyruvylation</title>
+      <link>https://www.cell.com/cell/fulltext/S0092-8674(26)00453-8?rss=yes</link>
+      <description>(Cell 189, 1975–1989.e1–e5; April 2, 2026)</description>
+      <dc:title>Pyruvate is a natural suppressor of interferon signaling by inducing STAT1 protein pyruvylation</dc:title>
+      <dc:creator>Yibo Zuo, Qin Wang, Wanying Tian, Xinhe Wang, Zhijin Zheng, Wei He, Renxia Zhang, Qian Zhao, Ying Miao, Yukang Yuan, Tingting Zhang, Qun Cui, Yuerong Zhang, Chunyan Liu, Haiyan Zhou, Hui Zheng</dc:creator>
+      <dc:identifier>10.1016/j.cell.2026.04.018</dc:identifier>
+      <dc:source>Cell 189, 10 (2026)</dc:source>
+      <dc:date>2026-04-22</dc:date>
+      <prism:publicationName>Cell</prism:publicationName>
+      <prism:publicationDate>2026-04-22</prism:publicationDate>
+      <prism:volume>189</prism:volume>
+      <prism:number>10</prism:number>
+      <prism:issueIdentifier>S0092-8674(25)X0011-8</prism:issueIdentifier>
+      <prism:section>Correction</prism:section>
+      <prism:startingPage>3175</prism:startingPage>
+   </item>
+</rdf:RDF>

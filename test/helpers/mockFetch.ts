@@ -2,11 +2,18 @@ import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import type { ChatCompletion } from "openai/resources/chat/completions";
+import { loadRssSnapshotUrlMap } from "./rssSnapshots.js";
 
-const FIXTURE_DIR = join(dirname(fileURLToPath(import.meta.url)), "../fixtures/golden");
+const GOLDEN_FIXTURE_DIR = join(dirname(fileURLToPath(import.meta.url)), "../fixtures/golden");
 
-const RSS_FIXTURE_BY_URL: Record<string, string> = {
-  "https://www.nature.com/nmeth.rss": join(FIXTURE_DIR, "rss/nature-methods.xml"),
+/** Small single-feed fixture for the minimal synthetic E2E test. */
+const GOLDEN_RSS_BY_URL: Record<string, string> = {
+  "https://www.nature.com/nmeth.rss": join(GOLDEN_FIXTURE_DIR, "rss/nature-methods.xml"),
+};
+
+export type MockFetchOptions = {
+  /** Load RSS from test/fixtures/rss-snapshots/{reportDate}/ (no network). */
+  reportDate?: string;
 };
 
 type ChatMessage = { role?: string; content?: string };
@@ -51,6 +58,34 @@ function chatCompletion(content: string): ChatCompletion {
 
 function jsonResponse(content: unknown): Response {
   return new Response(JSON.stringify(chatCompletion(JSON.stringify(content))), {
+    status: 200,
+    headers: { "content-type": "application/json" },
+  });
+}
+
+function xmlResponse(xml: string): Response {
+  return new Response(xml, {
+    status: 200,
+    headers: { "content-type": "application/rss+xml" },
+  });
+}
+
+function mockArticleHtmlResponse(): Response {
+  const html = `<!DOCTYPE html><html><head><meta name="description" content="Fixture abstract for E2E enrich step. This placeholder is long enough to pass minimum abstract length checks in tests." /></head><body></body></html>`;
+  return new Response(html, {
+    status: 200,
+    headers: { "content-type": "text/html" },
+  });
+}
+
+function mockCrossrefResponse(): Response {
+  const body = {
+    message: {
+      abstract:
+        "<jats:p>Fixture abstract from Crossref for E2E testing. Repeated text to satisfy minimum abstract length.</jats:p>",
+    },
+  };
+  return new Response(JSON.stringify(body), {
     status: 200,
     headers: { "content-type": "application/json" },
   });
@@ -132,7 +167,27 @@ function mockChatCompletion(body: string): Response {
   throw new Error(`mock LLM: unrecognized system prompt: ${system.slice(0, 80)}…`);
 }
 
-export function createMockFetch(): typeof fetch {
+function buildRssByUrl(options: MockFetchOptions): Map<string, string> {
+  const rssByUrl = new Map<string, string>();
+
+  if (options.reportDate) {
+    for (const [url, path] of loadRssSnapshotUrlMap(options.reportDate)) {
+      rssByUrl.set(url, path);
+    }
+  }
+
+  for (const [url, path] of Object.entries(GOLDEN_RSS_BY_URL)) {
+    if (!rssByUrl.has(url)) {
+      rssByUrl.set(url, path);
+    }
+  }
+
+  return rssByUrl;
+}
+
+export function createMockFetch(options: MockFetchOptions = {}): typeof fetch {
+  const rssByUrl = buildRssByUrl(options);
+
   return async (input, init) => {
     const url =
       typeof input === "string"
@@ -146,23 +201,22 @@ export function createMockFetch(): typeof fetch {
       return mockChatCompletion(body);
     }
 
+    if (url.startsWith("https://api.crossref.org/works/")) {
+      return mockCrossrefResponse();
+    }
+
     if (url.includes("nature.com/articles/")) {
-      const html = `<!DOCTYPE html><html><head><meta name="description" content="Fixture abstract for E2E enrich step." /></head><body></body></html>`;
-      return new Response(html, {
-        status: 200,
-        headers: { "content-type": "text/html" },
-      });
+      return mockArticleHtmlResponse();
     }
 
-    const rssFixture = RSS_FIXTURE_BY_URL[url];
-    if (rssFixture) {
-      const xml = readFileSync(rssFixture, "utf8");
-      return new Response(xml, {
-        status: 200,
-        headers: { "content-type": "application/rss+xml" },
-      });
+    const rssPath = rssByUrl.get(url);
+    if (rssPath) {
+      return xmlResponse(readFileSync(rssPath, "utf8"));
     }
 
-    throw new Error(`Unexpected fetch in E2E test: ${url}`);
+    throw new Error(
+      `Unexpected fetch in E2E test (no fixture): ${url}\n` +
+        `Registered RSS URLs: ${[...rssByUrl.keys()].join(", ") || "(none)"}`,
+    );
   };
 }

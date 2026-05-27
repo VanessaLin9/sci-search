@@ -1,0 +1,166 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns="http://purl.org/rss/1.0/" xmlns:admin="http://webns.net/mvcb/">
+    <channel rdf:about="http://feeds.nature.com/ng/rss/current">
+        <title>Nature Genetics</title>
+        <description>Nature Genetics is the primary research journal for the genetics community. With a reputation for quality global coverage, Nature Genetics delivers the latest research across the field, including human genetics and genomics, genomics in plant and animal breeding, epigenetics, cancer and genetic technology. With News and Views, Analysis, Perspectives, Letters, Articles and Technical Reports, Nature Genetics is consistently the most frequently cited primary research journal in the field of Genetics and Heredity.</description>
+        <link>http://feeds.nature.com/ng/rss/current</link>
+        <admin:generatorAgent rdf:resource="https://www.nature.com/"/>
+        <admin:errorReportsTo rdf:resource="mailto:feedback@nature.com"/>
+        <dc:publisher>Nature Publishing Group</dc:publisher>
+        <dc:language>en</dc:language>
+        <dc:rights>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</dc:rights>
+        <prism:publicationName>Nature Genetics</prism:publicationName>
+        
+        
+        <prism:copyright>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</prism:copyright>
+        <prism:rightsAgent>permissions@nature.com</prism:rightsAgent>
+        <image rdf:resource="https://www.nature.com/uploads/product/ng/rss.png"/>
+        <items>
+            <rdf:Seq>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41588-026-02613-y"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41588-026-02603-0"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41588-026-02604-z"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41588-026-02612-z"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41588-026-02610-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41588-026-02606-x"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41588-026-02596-w"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41588-026-02592-0"/>
+                
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="https://www.nature.com/uploads/product/ng/rss.png">
+        <title>Nature Genetics</title>
+        <url>https://www.nature.com/uploads/product/ng/rss.png</url>
+        <link>http://feeds.nature.com/ng/rss/current</link>
+    </image>
+    
+        <item rdf:about="https://www.nature.com/articles/s41588-026-02613-y">
+            <title><![CDATA[Exome-wide association study of blood lipids in 1,158,017 individuals from diverse populations]]></title>
+            <link>https://www.nature.com/articles/s41588-026-02613-y</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Genetics, Published online: 25 May 2026; <a href="https://www.nature.com/articles/s41588-026-02613-y">doi:10.1038/s41588-026-02613-y</a></p>Multi-ancestry exome-wide analyses in the Million Veteran Program, UK Biobank and All of Us identify rare coding variants across 209 genes associated with blood lipid traits, highlighting new candidate drug targets across diverse populations.]]></content:encoded>
+            <dc:title><![CDATA[Exome-wide association study of blood lipids in 1,158,017 individuals from diverse populations]]></dc:title>
+            <dc:creator>Satoshi Koyama</dc:creator><dc:creator>Zhi Yu</dc:creator><dc:creator>Seung Hoan Choi</dc:creator><dc:creator>Sean J. Jurgens</dc:creator><dc:creator>Margaret Sunitha Selvaraj</dc:creator><dc:creator>Derek Klarin</dc:creator><dc:creator>Jennifer E. Huffman</dc:creator><dc:creator>Shoa L. Clarke</dc:creator><dc:creator>Selena K. Zhang</dc:creator><dc:creator>Michael N. Trinh</dc:creator><dc:creator>Akshaya Ravi</dc:creator><dc:creator>Jacqueline S. Dron</dc:creator><dc:creator>Catherine Spinks</dc:creator><dc:creator>Ida Surakka</dc:creator><dc:creator>Aarushi Bhatnagar</dc:creator><dc:creator>Kim Lannery</dc:creator><dc:creator>Whitney Hornsby</dc:creator><dc:creator>Scott M. Damrauer</dc:creator><dc:creator>Kyong-Mi Chang</dc:creator><dc:creator>Julie A. Lynch</dc:creator><dc:creator>Themistocles L. Assimes</dc:creator><dc:creator>Philip S. Tsao</dc:creator><dc:creator>Daniel J. Rader</dc:creator><dc:creator>Kelly Cho</dc:creator><dc:creator>Gina M. Peloso</dc:creator><dc:creator>Patrick T. Ellinor</dc:creator><dc:creator>Yan V. Sun</dc:creator><dc:creator>Peter W. F. Wilson</dc:creator><dc:creator>Pradeep Natarajan</dc:creator>
+            <dc:identifier>doi:10.1038/s41588-026-02613-y</dc:identifier>
+            <dc:source>Nature Genetics, Published online: 2026-05-25; | doi:10.1038/s41588-026-02613-y</dc:source>
+            <dc:date>2026-05-25</dc:date>
+            <prism:publicationName>Nature Genetics</prism:publicationName>
+            <prism:doi>10.1038/s41588-026-02613-y</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41588-026-02613-y</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41588-026-02603-0">
+            <title><![CDATA[Allele-specific methylation uncovers non-Mendelian inheritance]]></title>
+            <link>https://www.nature.com/articles/s41588-026-02603-0</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Genetics, Published online: 21 May 2026; <a href="https://www.nature.com/articles/s41588-026-02603-0">doi:10.1038/s41588-026-02603-0</a></p>We developed a genome-wide allele-specific methylation framework using long-read sequencing to characterize intergenerational epigenetic inheritance in mice. This framework revealed non-Mendelian inheritance, including emergent epialleles, imprinting events and paramutation, in a non-transgenic mammalian genome.]]></content:encoded>
+            <dc:title><![CDATA[Allele-specific methylation uncovers non-Mendelian inheritance]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/s41588-026-02603-0</dc:identifier>
+            <dc:source>Nature Genetics, Published online: 2026-05-21; | doi:10.1038/s41588-026-02603-0</dc:source>
+            <dc:date>2026-05-21</dc:date>
+            <prism:publicationName>Nature Genetics</prism:publicationName>
+            <prism:doi>10.1038/s41588-026-02603-0</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41588-026-02603-0</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41588-026-02604-z">
+            <title><![CDATA[Non-Mendelian inheritance of DNA methylation patterns in mice]]></title>
+            <link>https://www.nature.com/articles/s41588-026-02604-z</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Genetics, Published online: 20 May 2026; <a href="https://www.nature.com/articles/s41588-026-02604-z">doi:10.1038/s41588-026-02604-z</a></p>Davidovich et al. investigate allele-specific DNA methylation inheritance patterns in mouse liver and muscle. Most patterns are Mendelian, but ~7% are non-Mendelian, including new imprinted genes and a paramutation at the Capn11 locus.]]></content:encoded>
+            <dc:title><![CDATA[Non-Mendelian inheritance of DNA methylation patterns in mice]]></dc:title>
+            <dc:creator>Adam Davidovich</dc:creator><dc:creator>Danila Cuomo</dc:creator><dc:creator>Hang Su</dc:creator><dc:creator>Sandeep Kambhampati</dc:creator><dc:creator>Qingqing Gong</dc:creator><dc:creator>Alexandra Naron</dc:creator><dc:creator>Rakel Tryggvadottir</dc:creator><dc:creator>Leonard McMillan</dc:creator><dc:creator>Kasper D. Hansen</dc:creator><dc:creator>David W. Threadgill</dc:creator><dc:creator>Andrew P. Feinberg</dc:creator>
+            <dc:identifier>doi:10.1038/s41588-026-02604-z</dc:identifier>
+            <dc:source>Nature Genetics, Published online: 2026-05-20; | doi:10.1038/s41588-026-02604-z</dc:source>
+            <dc:date>2026-05-20</dc:date>
+            <prism:publicationName>Nature Genetics</prism:publicationName>
+            <prism:doi>10.1038/s41588-026-02604-z</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41588-026-02604-z</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41588-026-02612-z">
+            <title><![CDATA[Genome-wide associations of structural variants with human traits through imputation from long-read assemblies]]></title>
+            <link>https://www.nature.com/articles/s41588-026-02612-z</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Genetics, Published online: 20 May 2026; <a href="https://www.nature.com/articles/s41588-026-02612-z">doi:10.1038/s41588-026-02612-z</a></p>This study identifies structural variants (SVs) from long-read assemblies, develops a new reference panel and web application to impute SVs from single-nucleotide polymorphism-level data, and identifies associations between SVs and complex traits.]]></content:encoded>
+            <dc:title><![CDATA[Genome-wide associations of structural variants with human traits through imputation from long-read assemblies]]></dc:title>
+            <dc:creator>Wei-Yang Bai</dc:creator><dc:creator>Shuli Liu</dc:creator><dc:creator>Zhongqu Duan</dc:creator><dc:creator>Ji-Jian Yang</dc:creator><dc:creator>Jie Chen</dc:creator><dc:creator>Junren Hou</dc:creator><dc:creator>Lianfeng Wu</dc:creator><dc:creator>Nan Li</dc:creator><dc:creator>Ting Qi</dc:creator><dc:creator>Jian Yang</dc:creator>
+            <dc:identifier>doi:10.1038/s41588-026-02612-z</dc:identifier>
+            <dc:source>Nature Genetics, Published online: 2026-05-20; | doi:10.1038/s41588-026-02612-z</dc:source>
+            <dc:date>2026-05-20</dc:date>
+            <prism:publicationName>Nature Genetics</prism:publicationName>
+            <prism:doi>10.1038/s41588-026-02612-z</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41588-026-02612-z</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41588-026-02610-1">
+            <title><![CDATA[Accurate, scalable and cross-platform cell identification for high-resolution spatial transcriptomics]]></title>
+            <link>https://www.nature.com/articles/s41588-026-02610-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Genetics, Published online: 20 May 2026; <a href="https://www.nature.com/articles/s41588-026-02610-1">doi:10.1038/s41588-026-02610-1</a></p>Cellist is a computationally efficient cell-segmentation method combining imaging and expression data from spatial transcriptomics across different technologies.]]></content:encoded>
+            <dc:title><![CDATA[Accurate, scalable and cross-platform cell identification for high-resolution spatial transcriptomics]]></dc:title>
+            <dc:creator>Dongqing Sun</dc:creator><dc:creator>Lele Zhang</dc:creator><dc:creator>Tong Han</dc:creator><dc:creator>Qiu Wu</dc:creator><dc:creator>Peng Zhang</dc:creator><dc:creator>Chenfei Wang</dc:creator>
+            <dc:identifier>doi:10.1038/s41588-026-02610-1</dc:identifier>
+            <dc:source>Nature Genetics, Published online: 2026-05-20; | doi:10.1038/s41588-026-02610-1</dc:source>
+            <dc:date>2026-05-20</dc:date>
+            <prism:publicationName>Nature Genetics</prism:publicationName>
+            <prism:doi>10.1038/s41588-026-02610-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41588-026-02610-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41588-026-02606-x">
+            <title><![CDATA[Towards a decentralized future for open-science databases]]></title>
+            <link>https://www.nature.com/articles/s41588-026-02606-x</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Genetics, Published online: 19 May 2026; <a href="https://www.nature.com/articles/s41588-026-02606-x">doi:10.1038/s41588-026-02606-x</a></p>Large-scale biological data repositories, particularly when deployed as single, non-mirrored instances or governed within narrow contexts, face structural vulnerabilities, from cyberattacks to funding disruptions. We propose a hybrid framework that integrates federated and decentralized models to ensure the resilience, sustainability and FAIR/CARE stewardship of scientific data as a global public good.]]></content:encoded>
+            <dc:title><![CDATA[Towards a decentralized future for open-science databases]]></dc:title>
+            <dc:creator>Gaurav Sharma</dc:creator><dc:creator>Viorel Munteanu</dc:creator><dc:creator>Nika Mansouri Ghiasi</dc:creator><dc:creator>Utkarsha Mahanta</dc:creator><dc:creator>Jineta Banerjee</dc:creator><dc:creator>Susheel Varma</dc:creator><dc:creator>Luca Foschini</dc:creator><dc:creator>Kyle Ellrott</dc:creator><dc:creator>Onur Mutlu</dc:creator><dc:creator>Dumitru Ciorbă</dc:creator><dc:creator>Roel A. Ophoff</dc:creator><dc:creator>Viorel Bostan</dc:creator><dc:creator>Jason H. Moore</dc:creator><dc:creator>Despoina Sousoni</dc:creator><dc:creator>Arunkumar Krishnan</dc:creator><dc:creator>Alexander G. Lucaci</dc:creator><dc:creator>Alba Tull</dc:creator><dc:creator>Christopher E. Mason</dc:creator><dc:creator>Mihai Dimian</dc:creator><dc:creator>Gustavo Stolovitzky</dc:creator><dc:creator>Fabio G. Liberante</dc:creator><dc:creator>Taras K. Oleksyk</dc:creator><dc:creator>Serghei Mangul</dc:creator>
+            <dc:identifier>doi:10.1038/s41588-026-02606-x</dc:identifier>
+            <dc:source>Nature Genetics, Published online: 2026-05-19; | doi:10.1038/s41588-026-02606-x</dc:source>
+            <dc:date>2026-05-19</dc:date>
+            <prism:publicationName>Nature Genetics</prism:publicationName>
+            <prism:doi>10.1038/s41588-026-02606-x</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41588-026-02606-x</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41588-026-02596-w">
+            <title><![CDATA[Genomic and genetic dissection of drought tolerance in a resilient wheat germplasm JIN50]]></title>
+            <link>https://www.nature.com/articles/s41588-026-02596-w</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Genetics, Published online: 19 May 2026; <a href="https://www.nature.com/articles/s41588-026-02596-w">doi:10.1038/s41588-026-02596-w</a></p>A de novo genome assembly of drought-resistant wheat (Triticum aestivum L.) genotype JIN50 and genomic analyses across other wheat germplasms identify structural variations contributing to drought responses and adaptation.]]></content:encoded>
+            <dc:title><![CDATA[Genomic and genetic dissection of drought tolerance in a resilient wheat germplasm JIN50]]></dc:title>
+            <dc:creator>Jingchen Lin</dc:creator><dc:creator>Chenji Zhang</dc:creator><dc:creator>Zehui Liu</dc:creator><dc:creator>Jinpeng Li</dc:creator><dc:creator>Qun Yang</dc:creator><dc:creator>Wei Chu</dc:creator><dc:creator>Debiao Liu</dc:creator><dc:creator>Lei Zhang</dc:creator><dc:creator>Danyang Zhao</dc:creator><dc:creator>Xiao Peng</dc:creator><dc:creator>Wanghongan Jia</dc:creator><dc:creator>Huitao An</dc:creator><dc:creator>Mingming Xin</dc:creator><dc:creator>Yingyin Yao</dc:creator><dc:creator>Weilong Guo</dc:creator><dc:creator>Huiru Peng</dc:creator><dc:creator>Chaojie Xie</dc:creator><dc:creator>Zhongfu Ni</dc:creator><dc:creator>Qixin Sun</dc:creator><dc:creator>Zhaorong Hu</dc:creator>
+            <dc:identifier>doi:10.1038/s41588-026-02596-w</dc:identifier>
+            <dc:source>Nature Genetics, Published online: 2026-05-19; | doi:10.1038/s41588-026-02596-w</dc:source>
+            <dc:date>2026-05-19</dc:date>
+            <prism:publicationName>Nature Genetics</prism:publicationName>
+            <prism:doi>10.1038/s41588-026-02596-w</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41588-026-02596-w</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41588-026-02592-0">
+            <title><![CDATA[Patterns and drivers of 43,617 mosaic chromosomal alterations in blood]]></title>
+            <link>https://www.nature.com/articles/s41588-026-02592-0</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Genetics, Published online: 19 May 2026; <a href="https://www.nature.com/articles/s41588-026-02592-0">doi:10.1038/s41588-026-02592-0</a></p>High-resolution analyses of blood-derived whole-genome sequence data from UK Biobank detect new mosaic chromosomal alterations and identify rare protein-coding variants associated with clonal expansions of copy-neutral loss-of-heterozygosity mutations.]]></content:encoded>
+            <dc:title><![CDATA[Patterns and drivers of 43,617 mosaic chromosomal alterations in blood]]></dc:title>
+            <dc:creator>David Tang</dc:creator><dc:creator>Nolan Kamitaki</dc:creator><dc:creator>Ronen E. Mukamel</dc:creator><dc:creator>Simone Rubinacci</dc:creator><dc:creator>Po-Ru Loh</dc:creator>
+            <dc:identifier>doi:10.1038/s41588-026-02592-0</dc:identifier>
+            <dc:source>Nature Genetics, Published online: 2026-05-19; | doi:10.1038/s41588-026-02592-0</dc:source>
+            <dc:date>2026-05-19</dc:date>
+            <prism:publicationName>Nature Genetics</prism:publicationName>
+            <prism:doi>10.1038/s41588-026-02592-0</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41588-026-02592-0</prism:url>
+        </item>
+    
+</rdf:RDF>

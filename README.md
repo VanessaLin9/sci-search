@@ -72,6 +72,19 @@ npm run write-preview -- --date 2026-05-22
 
 `test-digest-llm -- --use-routing` uses routing API key/model with digest caps from `config/digest.json`.
 
+### RSS snapshots for tests
+
+Record live feeds once (commit the XML under `test/fixtures/rss-snapshots/{date}/`):
+
+```bash
+npm run snapshot-rss -- --date 2026-05-22
+npm run snapshot-rss -- --date 2026-05-24
+```
+
+Each run writes `{sourceId}.xml` plus `manifest.json` (item counts and how many entries match the report date in Taipei).
+
+E2E tests load these files via `createMockFetch({ reportDate: "2026-05-22" })` — no live RSS, Crossref, or LLM calls.
+
 ### E2E acceptance tests
 
 `npm run test:e2e` runs a deterministic golden pipeline:

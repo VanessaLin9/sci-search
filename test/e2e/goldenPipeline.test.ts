@@ -21,7 +21,7 @@ before(() => {
   process.env.DEBUG_NORMALIZED = "0";
 
   originalFetch = globalThis.fetch;
-  globalThis.fetch = createMockFetch() as typeof fetch;
+  globalThis.fetch = createMockFetch({}) as typeof fetch;
 });
 
 after(() => {
