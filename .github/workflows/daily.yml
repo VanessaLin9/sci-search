@@ -40,19 +40,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Typecheck
-        run: npm run check
-
-      - name: Tests
-        run: npm test
-        env:
-          ROUTE_LIFE_SCIENCE: "1"
-          ENABLE_LLM_DIGEST: "1"
-          ROUTING_LLM_API_KEY: test-routing-key
-          DIGEST_LLM_API_KEY: test-digest-key
-          ROUTING_LLM_MODEL: test-model
-          DIGEST_LLM_MODEL: test-model
-
       - name: Resolve report date
         id: report
         run: |

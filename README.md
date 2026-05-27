@@ -96,7 +96,7 @@ E2E tests load these files via `createMockFetch({ reportDate: "2026-05-22" })` �
 - Mock LLM responses (routing / tagging / summarize / translate)
 - Asserts `papers.json` schema, selection stats, plain-text titles, featured fields, and digest HTML structure
 
-CI runs this step before the daily collect job (no API keys required).
+CI runs on every push/PR to `main` (see [`.github/workflows/ci.yml`](.github/workflows/ci.yml)); no API keys required.
 
 ### Regression fixtures (render-only)
 
@@ -146,10 +146,19 @@ Digest logs use `[digest]`; routing uses `[routing]` (not gated by debug).
 
 ## GitHub Actions
 
-Workflow: [`.github/workflows/daily.yml`](.github/workflows/daily.yml)
+### CI ([`.github/workflows/ci.yml`](.github/workflows/ci.yml))
+
+Runs on **push** and **pull_request** to `main`:
+
+- `npm run check`
+- `npm test` (E2E + regression; mock LLM/RSS only)
+
+Enable branch protection on `main`: require status check **`test`** before merge.
+
+### Daily digest ([`.github/workflows/daily.yml`](.github/workflows/daily.yml))
 
 - **Schedule:** 06:30 Asia/Taipei daily (`workflow_dispatch` supported)
-- **Steps:** resolve date → `dev` → `send-digest` → `write-preview` → artifact → commit `data/processed/{date}/` and `docs/`
+- **Steps:** resolve date → `dev` → `write-preview` → artifact → commit → `send-digest`
 
 ### Repository secrets
 
