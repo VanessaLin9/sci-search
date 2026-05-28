@@ -130,13 +130,17 @@ async function collectPapersFromSources(options: RunPipelineOptions): Promise<So
   return results;
 }
 
+async function fetchAndParseRss(source: Source) {
+  return fetchRssSource(source);
+}
+
 async function processRssSource(source: Source, reportDate: string): Promise<SourceProcessResult> {
   if (source.kind !== "rss") {
     throw new Error(`Source ${source.id} is not an RSS source`);
   }
 
   try {
-    const feed = await fetchRssSource(source);
+    const feed = await fetchAndParseRss(source);
     const normalized = feed.items
       .map((item) => normalizeRssItemToPaper(item, source))
       .filter((paper): paper is Paper => paper !== null);
