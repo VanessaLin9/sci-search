@@ -1,3 +1,4 @@
+import type { Item } from "rss-parser";
 import { fetchRssSource } from "./fetchRss.js";
 import {
   classifyPaperSection,
@@ -134,22 +135,19 @@ async function fetchAndParseRss(source: Source) {
   return fetchRssSource(source);
 }
 
-function normalizeFeedItems(
-  items: Awaited<ReturnType<typeof fetchAndParseRss>>["items"],
-  source: Source,
-): Paper[] {
+function normalizeFeedItems(items: Item[], source: Source): Paper[] {
   return items
     .map((item) => normalizeRssItemToPaper(item, source))
     .filter((paper): paper is Paper => paper !== null);
 }
 
-function applyPerSourceFilters(normalized: Paper[], reportDate: string): {
-  papers: Paper[];
-  dedupedCount: number;
-} {
+function applyPerSourceFilters(
+  normalized: Paper[],
+  reportDate: string,
+): { deduped: Paper[]; onReportDate: Paper[] } {
   const deduped = dedupePapers(normalized);
-  const papers = filterPapersByDate(deduped, reportDate);
-  return { papers, dedupedCount: deduped.length };
+  const onReportDate = filterPapersByDate(deduped, reportDate);
+  return { deduped, onReportDate };
 }
 
 async function processRssSource(source: Source, reportDate: string): Promise<SourceProcessResult> {
@@ -160,18 +158,18 @@ async function processRssSource(source: Source, reportDate: string): Promise<Sou
   try {
     const feed = await fetchAndParseRss(source);
     const normalized = normalizeFeedItems(feed.items, source);
-    const { papers, dedupedCount } = applyPerSourceFilters(normalized, reportDate);
+    const { deduped, onReportDate } = applyPerSourceFilters(normalized, reportDate);
 
     return {
-      papers,
+      papers: onReportDate,
       normalized,
       stats: {
         sourceId: source.id,
         feedTitle: feed.title ?? source.name,
         rssItemCount: feed.items.length,
         normalizedCount: normalized.length,
-        dedupedCount,
-        onReportDateCount: papers.length,
+        dedupedCount: deduped.length,
+        onReportDateCount: onReportDate.length,
       },
     };
   } catch (error) {
