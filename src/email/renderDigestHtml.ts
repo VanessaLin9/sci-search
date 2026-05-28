@@ -1,8 +1,10 @@
-import { sortPapersByDigestRank } from "../digest/selectFeatured.js";
+/** Sole digest HTML entry for email (`sendDigest`) and GitHub Pages preview (`writeDigestPreview`). */
 import type { ClassifiedPaper, DigestLine } from "../types.js";
 import {
+  groupOverflowByJournal,
   renderJournalDoiLine,
   renderTopicTags,
+  sortPapersForDisplay,
 } from "./digestHtmlHelpers.js";
 import { escapeHtml } from "./escapeHtml.js";
 
@@ -38,16 +40,6 @@ export type RenderDigestHtmlOptions = {
   generatedAt?: string;
   priorityBySourceId?: ReadonlyMap<string, number>;
 };
-
-function sortForDisplay(
-  papers: ClassifiedPaper[],
-  priorityBySourceId?: ReadonlyMap<string, number>,
-): ClassifiedPaper[] {
-  if (priorityBySourceId) {
-    return sortPapersByDigestRank(papers, priorityBySourceId);
-  }
-  return [...papers].sort((a, b) => a.title.localeCompare(b.title));
-}
 
 function visiblePapers(papers: ClassifiedPaper[]): ClassifiedPaper[] {
   return papers.filter((paper) => paper.digestLine && paper.digestLine !== "skip");
@@ -115,37 +107,6 @@ function renderDigestLineSection(
   return `${sectionHeading}\n${papers.map((paper) => renderFeaturedArticle(paper)).join("\n")}`;
 }
 
-function groupOverflowByJournal(
-  papers: ClassifiedPaper[],
-  priorityBySourceId?: ReadonlyMap<string, number>,
-): { journal: string; papers: ClassifiedPaper[] }[] {
-  const byJournal = new Map<string, ClassifiedPaper[]>();
-  for (const paper of papers) {
-    const key = paper.journal.trim() || paper.sourceId;
-    const list = byJournal.get(key) ?? [];
-    list.push(paper);
-    byJournal.set(key, list);
-  }
-
-  const groups = [...byJournal.entries()].map(([journal, groupPapers]) => ({
-    journal,
-    papers: sortForDisplay(groupPapers, priorityBySourceId),
-  }));
-
-  groups.sort((a, b) => {
-    const priorityA = Math.min(
-      ...a.papers.map((paper) => priorityBySourceId?.get(paper.sourceId) ?? 999),
-    );
-    const priorityB = Math.min(
-      ...b.papers.map((paper) => priorityBySourceId?.get(paper.sourceId) ?? 999),
-    );
-    if (priorityA !== priorityB) return priorityA - priorityB;
-    return a.journal.localeCompare(b.journal);
-  });
-
-  return groups;
-}
-
 function renderOverflowItem(paper: ClassifiedPaper): string {
   const titleZh = paper.titleZh?.trim();
   const zhLine = titleZh
@@ -207,11 +168,11 @@ export function renderDigestHtml(options: RenderDigestHtmlOptions): string {
   const visible = visiblePapers(papers);
   const isEmpty = visible.length === 0;
 
-  const featured = sortForDisplay(
+  const featured = sortPapersForDisplay(
     visible.filter((paper) => paper.featured),
     priorityBySourceId,
   );
-  const overflow = sortForDisplay(
+  const overflow = sortPapersForDisplay(
     visible.filter((paper) => !paper.featured),
     priorityBySourceId,
   );
