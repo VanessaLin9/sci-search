@@ -1,3 +1,4 @@
+import type { Item } from "rss-parser";
 import { fetchRssSource } from "./fetchRss.js";
 import {
   classifyPaperSection,
@@ -130,18 +131,34 @@ async function collectPapersFromSources(options: RunPipelineOptions): Promise<So
   return results;
 }
 
+async function fetchAndParseRss(source: Source) {
+  return fetchRssSource(source);
+}
+
+function normalizeFeedItems(items: Item[], source: Source): Paper[] {
+  return items
+    .map((item) => normalizeRssItemToPaper(item, source))
+    .filter((paper): paper is Paper => paper !== null);
+}
+
+function applyPerSourceFilters(
+  normalized: Paper[],
+  reportDate: string,
+): { deduped: Paper[]; onReportDate: Paper[] } {
+  const deduped = dedupePapers(normalized);
+  const onReportDate = filterPapersByDate(deduped, reportDate);
+  return { deduped, onReportDate };
+}
+
 async function processRssSource(source: Source, reportDate: string): Promise<SourceProcessResult> {
   if (source.kind !== "rss") {
     throw new Error(`Source ${source.id} is not an RSS source`);
   }
 
   try {
-    const feed = await fetchRssSource(source);
-    const normalized = feed.items
-      .map((item) => normalizeRssItemToPaper(item, source))
-      .filter((paper): paper is Paper => paper !== null);
-    const deduped = dedupePapers(normalized);
-    const onReportDate = filterPapersByDate(deduped, reportDate);
+    const feed = await fetchAndParseRss(source);
+    const normalized = normalizeFeedItems(feed.items, source);
+    const { deduped, onReportDate } = applyPerSourceFilters(normalized, reportDate);
 
     return {
       papers: onReportDate,
