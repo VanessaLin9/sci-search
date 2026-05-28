@@ -134,6 +134,15 @@ async function fetchAndParseRss(source: Source) {
   return fetchRssSource(source);
 }
 
+function normalizeFeedItems(
+  items: Awaited<ReturnType<typeof fetchAndParseRss>>["items"],
+  source: Source,
+): Paper[] {
+  return items
+    .map((item) => normalizeRssItemToPaper(item, source))
+    .filter((paper): paper is Paper => paper !== null);
+}
+
 async function processRssSource(source: Source, reportDate: string): Promise<SourceProcessResult> {
   if (source.kind !== "rss") {
     throw new Error(`Source ${source.id} is not an RSS source`);
@@ -141,9 +150,7 @@ async function processRssSource(source: Source, reportDate: string): Promise<Sou
 
   try {
     const feed = await fetchAndParseRss(source);
-    const normalized = feed.items
-      .map((item) => normalizeRssItemToPaper(item, source))
-      .filter((paper): paper is Paper => paper !== null);
+    const normalized = normalizeFeedItems(feed.items, source);
     const deduped = dedupePapers(normalized);
     const onReportDate = filterPapersByDate(deduped, reportDate);
 
