@@ -1,14 +1,6 @@
 import type { Item } from "rss-parser";
 import { extractDoi } from "./doi.js";
-import { extractRssAbstract } from "./normalizers/rss/index.js";
-import { isNatureBiotechnologySkippedItem } from "./normalizers/rss/nature-biotechnology.js";
-import { isNatureCellBiologySkippedItem } from "./normalizers/rss/nature-cell-biology.js";
-import { isNatureNeuroscienceSkippedItem } from "./normalizers/rss/nature-neuroscience.js";
-import { isNatureCommunicationsSkippedItem } from "./normalizers/rss/nature-communications.js";
-import { isNatureEcologyEvolutionSkippedItem } from "./normalizers/rss/nature-ecology-evolution.js";
-import { isNatureImmunologySkippedItem } from "./normalizers/rss/nature-immunology.js";
-import { isNatureMicrobiologySkippedItem } from "./normalizers/rss/nature-microbiology.js";
-import { isPnasEditorialRssItem } from "./normalizers/rss/pnas.js";
+import { extractRssAbstract, shouldSkipRssItem } from "./normalizers/rss/index.js";
 import { normalizeWhitespace, stripInlineHtml } from "./normalizers/shared.js";
 import type { Paper, Source } from "./types.js";
 
@@ -35,35 +27,7 @@ export function normalizeRssItemToPaper(item: RssItemWithCustomFields, source: S
   const title = item.title ? normalizeRssTitle(item.title) : "";
   const url = item.link?.trim() ?? "";
   const publishedDate = item.isoDate ?? item.pubDate ?? "";
-  if (source.id === "pnas" && isPnasEditorialRssItem(item)) {
-    return null;
-  }
-
-  if (source.id === "nature-communications" && isNatureCommunicationsSkippedItem(item)) {
-    return null;
-  }
-
-  if (source.id === "nature-ecology-evolution" && isNatureEcologyEvolutionSkippedItem(item)) {
-    return null;
-  }
-
-  if (source.id === "nature-biotechnology" && isNatureBiotechnologySkippedItem(item)) {
-    return null;
-  }
-
-  if (source.id === "nature-cell-biology" && isNatureCellBiologySkippedItem(item)) {
-    return null;
-  }
-
-  if (source.id === "nature-neuroscience" && isNatureNeuroscienceSkippedItem(item)) {
-    return null;
-  }
-
-  if (source.id === "nature-immunology" && isNatureImmunologySkippedItem(item)) {
-    return null;
-  }
-
-  if (source.id === "nature-microbiology" && isNatureMicrobiologySkippedItem(item)) {
+  if (shouldSkipRssItem(source.id, item)) {
     return null;
   }
 
