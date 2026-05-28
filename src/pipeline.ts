@@ -143,6 +143,15 @@ function normalizeFeedItems(
     .filter((paper): paper is Paper => paper !== null);
 }
 
+function applyPerSourceFilters(normalized: Paper[], reportDate: string): {
+  papers: Paper[];
+  dedupedCount: number;
+} {
+  const deduped = dedupePapers(normalized);
+  const papers = filterPapersByDate(deduped, reportDate);
+  return { papers, dedupedCount: deduped.length };
+}
+
 async function processRssSource(source: Source, reportDate: string): Promise<SourceProcessResult> {
   if (source.kind !== "rss") {
     throw new Error(`Source ${source.id} is not an RSS source`);
@@ -151,19 +160,18 @@ async function processRssSource(source: Source, reportDate: string): Promise<Sou
   try {
     const feed = await fetchAndParseRss(source);
     const normalized = normalizeFeedItems(feed.items, source);
-    const deduped = dedupePapers(normalized);
-    const onReportDate = filterPapersByDate(deduped, reportDate);
+    const { papers, dedupedCount } = applyPerSourceFilters(normalized, reportDate);
 
     return {
-      papers: onReportDate,
+      papers,
       normalized,
       stats: {
         sourceId: source.id,
         feedTitle: feed.title ?? source.name,
         rssItemCount: feed.items.length,
         normalizedCount: normalized.length,
-        dedupedCount: deduped.length,
-        onReportDateCount: onReportDate.length,
+        dedupedCount,
+        onReportDateCount: papers.length,
       },
     };
   } catch (error) {
