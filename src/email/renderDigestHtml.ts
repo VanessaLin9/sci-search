@@ -1,5 +1,11 @@
-import { sortPapersByDigestRank } from "../digest/selectFeatured.js";
+/** Sole digest HTML entry for email (`sendDigest`) and GitHub Pages preview (`writeDigestPreview`). */
 import type { ClassifiedPaper, DigestLine } from "../types.js";
+import {
+  groupOverflowByJournal,
+  renderJournalDoiLine,
+  renderTopicTags,
+  sortPapersForDisplay,
+} from "./digestHtmlHelpers.js";
 import { escapeHtml } from "./escapeHtml.js";
 
 const LINE_SECTIONS: {
@@ -35,47 +41,8 @@ export type RenderDigestHtmlOptions = {
   priorityBySourceId?: ReadonlyMap<string, number>;
 };
 
-function paperDoi(paper: ClassifiedPaper): string | undefined {
-  const doi = paper.doi?.trim();
-  if (doi) return doi;
-  const id = paper.id.trim();
-  if (id.includes("/")) return id;
-  return undefined;
-}
-
-function renderJournalDoiLine(paper: ClassifiedPaper): string {
-  const journal = escapeHtml(paper.journal);
-  const doi = paperDoi(paper);
-  if (!doi) {
-    return `<p style="margin:0 0 10px;font-size:12px;color:#888;">${journal}</p>`;
-  }
-  const doiUrl = `https://doi.org/${encodeURIComponent(doi)}`;
-  return `<p style="margin:0 0 10px;font-size:12px;color:#888;">${journal} · <a href="${escapeHtml(doiUrl)}" style="color:#888;text-decoration:none;" target="_blank" rel="noopener noreferrer">${escapeHtml(doi)}</a></p>`;
-}
-
-function sortForDisplay(
-  papers: ClassifiedPaper[],
-  priorityBySourceId?: ReadonlyMap<string, number>,
-): ClassifiedPaper[] {
-  if (priorityBySourceId) {
-    return sortPapersByDigestRank(papers, priorityBySourceId);
-  }
-  return [...papers].sort((a, b) => a.title.localeCompare(b.title));
-}
-
 function visiblePapers(papers: ClassifiedPaper[]): ClassifiedPaper[] {
   return papers.filter((paper) => paper.digestLine && paper.digestLine !== "skip");
-}
-
-function renderTopicTags(tags: string[] | undefined): string {
-  if (!tags || tags.length === 0) return "";
-  const chips = tags
-    .map(
-      (tag) =>
-        `<span style="display:inline-block;font-size:11px;padding:1px 7px;margin:0 4px 4px 0;border-radius:8px;background:#f0efe8;color:#555;border:1px solid #e2e2dc;">${escapeHtml(tag)}</span>`,
-    )
-    .join("");
-  return `<div style="margin:4px 0 8px 0;">${chips}</div>`;
 }
 
 function renderFeaturedArticle(paper: ClassifiedPaper): string {
@@ -140,37 +107,6 @@ function renderDigestLineSection(
   return `${sectionHeading}\n${papers.map((paper) => renderFeaturedArticle(paper)).join("\n")}`;
 }
 
-function groupOverflowByJournal(
-  papers: ClassifiedPaper[],
-  priorityBySourceId?: ReadonlyMap<string, number>,
-): { journal: string; papers: ClassifiedPaper[] }[] {
-  const byJournal = new Map<string, ClassifiedPaper[]>();
-  for (const paper of papers) {
-    const key = paper.journal.trim() || paper.sourceId;
-    const list = byJournal.get(key) ?? [];
-    list.push(paper);
-    byJournal.set(key, list);
-  }
-
-  const groups = [...byJournal.entries()].map(([journal, groupPapers]) => ({
-    journal,
-    papers: sortForDisplay(groupPapers, priorityBySourceId),
-  }));
-
-  groups.sort((a, b) => {
-    const priorityA = Math.min(
-      ...a.papers.map((paper) => priorityBySourceId?.get(paper.sourceId) ?? 999),
-    );
-    const priorityB = Math.min(
-      ...b.papers.map((paper) => priorityBySourceId?.get(paper.sourceId) ?? 999),
-    );
-    if (priorityA !== priorityB) return priorityA - priorityB;
-    return a.journal.localeCompare(b.journal);
-  });
-
-  return groups;
-}
-
 function renderOverflowItem(paper: ClassifiedPaper): string {
   const titleZh = paper.titleZh?.trim();
   const zhLine = titleZh
@@ -232,11 +168,11 @@ export function renderDigestHtml(options: RenderDigestHtmlOptions): string {
   const visible = visiblePapers(papers);
   const isEmpty = visible.length === 0;
 
-  const featured = sortForDisplay(
+  const featured = sortPapersForDisplay(
     visible.filter((paper) => paper.featured),
     priorityBySourceId,
   );
-  const overflow = sortForDisplay(
+  const overflow = sortPapersForDisplay(
     visible.filter((paper) => !paper.featured),
     priorityBySourceId,
   );
