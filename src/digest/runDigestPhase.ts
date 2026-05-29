@@ -1,33 +1,22 @@
 import { loadDigestFileConfig } from "../config.js";
-import { digestLineFromKeywords } from "./keywordDigestLine.js";
+import {
+  applyKeywordDigestFallback,
+  emptyDigestSelectionStats,
+  emptyDigestTaggingStats,
+  keywordFallbackTaggingStats,
+  resolveDigestLines,
+} from "../domain/life-science/digest/resolveDigestLines.js";
+import {
+  buildSourcePriorityById,
+  selectFeatured,
+} from "../domain/life-science/digest/selection.js";
 import { isDigestLlmEnabled } from "./config.js";
 import { logDigest } from "./digestLog.js";
-import { selectFeaturedPapers, buildSourcePriorityById } from "./selectFeatured.js";
 import { summarizeFeaturedPapers } from "./summarizePapers.js";
 import { tagTitlesWithLlm } from "./tagTitles.js";
 import { translateOverflowTitles } from "./translateTitles.js";
 import type { DigestPhaseResult, DigestSummarizeStats, DigestTranslateStats } from "./types.js";
-import type { ClassifiedPaper, DigestLine, DigestTaggingMethod, Source, SourceScope } from "../types.js";
-
-function applyDigestLines(
-  papers: ClassifiedPaper[],
-  lineById: Map<string, DigestLine>,
-  llmTaggedIds: Set<string>,
-): ClassifiedPaper[] {
-  return papers.map((paper) => ({
-    ...paper,
-    digestLine: lineById.get(paper.id) ?? digestLineFromKeywords(paper),
-    digestTaggingMethod: (llmTaggedIds.has(paper.id) ? "llm" : "keyword-fallback") satisfies DigestTaggingMethod,
-  }));
-}
-
-function tagWithKeywordFallback(papers: ClassifiedPaper[]): ClassifiedPaper[] {
-  return papers.map((paper) => ({
-    ...paper,
-    digestLine: digestLineFromKeywords(paper),
-    digestTaggingMethod: "keyword-fallback" as const,
-  }));
-}
+import type { ClassifiedPaper, Source, SourceScope } from "../types.js";
 
 function applySummarizeFields(
   papers: ClassifiedPaper[],
@@ -83,17 +72,8 @@ export async function runDigestPhase(options: {
       enabled: true,
       llmTagging,
       papers: [],
-      tagging: { llmClassified: 0, llmTagged: 0, fallback: 0 },
-      selection: {
-        total: 0,
-        candidates: 0,
-        featured: 0,
-        overflow: 0,
-        lineA: 0,
-        lineB: 0,
-        preprint: 0,
-        skip: 0,
-      },
+      tagging: emptyDigestTaggingStats(),
+      selection: emptyDigestSelectionStats(),
       summarize: emptySummarizeStats(),
       translate: emptyTranslateStats(),
     };
@@ -105,31 +85,23 @@ export async function runDigestPhase(options: {
   if (llmTagging) {
     try {
       const { lineById, llmTaggedIds, stats } = await tagTitlesWithLlm({ papers, scopeBySourceId });
-      tagged = applyDigestLines(papers, lineById, llmTaggedIds);
+      tagged = resolveDigestLines(papers, lineById, llmTaggedIds);
       taggingStats = stats;
     } catch (error) {
       console.warn(
         "Digest LLM tagging failed entirely; using keyword fallback:",
         error instanceof Error ? error.message : error,
       );
-      tagged = tagWithKeywordFallback(papers);
-      taggingStats = {
-        llmClassified: 0,
-        llmTagged: 0,
-        fallback: papers.length,
-      };
+      tagged = applyKeywordDigestFallback(papers);
+      taggingStats = keywordFallbackTaggingStats(papers.length);
     }
   } else {
     logDigest("LLM tagging disabled (set ENABLE_LLM_DIGEST=1); using keyword fallback");
-    tagged = tagWithKeywordFallback(papers);
-    taggingStats = {
-      llmClassified: 0,
-      llmTagged: 0,
-      fallback: papers.length,
-    };
+    tagged = applyKeywordDigestFallback(papers);
+    taggingStats = keywordFallbackTaggingStats(papers.length);
   }
 
-  const { papers: selected, stats: selectionStats } = selectFeaturedPapers(tagged, {
+  const { papers: selected, stats: selectionStats } = selectFeatured(tagged, {
     maxFeatured,
     priorityBySourceId,
   });

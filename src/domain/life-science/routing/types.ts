@@ -9,8 +9,8 @@ export type BroadScienceRoutingInput = {
   source_id: string;
 };
 
-export type ExcludedPaper = {
-  paper: Paper;
+export type ExcludedPaper<P = Paper> = {
+  paper: P;
   reason: typeof LIFE_SCIENCE_ROUTING_EXCLUSION_REASON;
   verdict: Extract<LifeScienceRoutingVerdict, "no">;
 };
@@ -26,9 +26,9 @@ export type LifeScienceRoutingStats = {
   excluded: number;
 };
 
-export type LifeScienceRoutingResult = {
+export type LifeScienceRoutingResult<P = Paper> = {
   enabled: boolean;
-  included: Paper[];
-  excluded: ExcludedPaper[];
+  included: P[];
+  excluded: ExcludedPaper<P>[];
   stats: LifeScienceRoutingStats;
 };

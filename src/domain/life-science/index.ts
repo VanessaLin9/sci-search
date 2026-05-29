@@ -61,3 +61,35 @@ export { ROUTING_SYSTEM_PROMPT } from "./prompts/routing.system.js";
 export { DIGEST_TAGGING_SYSTEM_PROMPT } from "./prompts/tagging.system.js";
 export { DIGEST_SUMMARIZE_SYSTEM_PROMPT } from "./prompts/summarize.system.js";
 export { DIGEST_TRANSLATE_SYSTEM_PROMPT } from "./prompts/translate.system.js";
+
+export {
+  buildSourceScopeById,
+  getSourceScope,
+  passesScopeDefault,
+} from "./routing/sourceScope.js";
+export { isLifeScienceRoutingEnabled } from "./routing/config.js";
+export {
+  applyScopeDefaultRouting,
+  assembleRoutingResult,
+  emptyRoutingStats,
+  mergeBroadScienceRoutingResults,
+  routingResultWhenDisabled,
+  splitPapersByRoutingScope,
+} from "./routing/route.js";
+
+export {
+  applyKeywordDigestFallback,
+  emptyDigestSelectionStats,
+  emptyDigestTaggingStats,
+  keywordFallbackTaggingStats,
+  resolveDigestLines,
+  type DigestTaggingStats as DomainDigestTaggingStats,
+} from "./digest/resolveDigestLines.js";
+export {
+  buildSourcePriorityById,
+  compareForFeatured,
+  DIGEST_LINE_RANK,
+  selectFeatured,
+  sortPapersByDigestRank,
+  type DigestSelectionStats,
+} from "./digest/selection.js";
