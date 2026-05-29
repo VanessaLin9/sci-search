@@ -29,7 +29,7 @@ test("dedupePapers keeps first paper when ids match via URL fallback", () => {
 
 test("dedupePapers keeps first paper when ids match via normalized title fallback", () => {
   const title = "Shared Title";
-  const id = buildPaperId({ title });
+  const id = buildPaperId({ title, url: "" });
   const first = makePaper({
     id,
     title,
@@ -49,7 +49,7 @@ test("buildPaperId uses URL when DOI is absent", () => {
 });
 
 test("buildPaperId uses normalized lowercase title when DOI and URL are absent", () => {
-  assert.equal(buildPaperId({ title: "  My Paper Title  " }), "my paper title");
+  assert.equal(buildPaperId({ title: "  My Paper Title  ", url: "" }), "my paper title");
 });
 
 test("isPaperOnReportDate uses Asia/Taipei calendar day", () => {

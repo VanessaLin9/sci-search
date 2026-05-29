@@ -9,19 +9,15 @@ import {
   splitPapersByRoutingScope,
 } from "../../../../src/domain/life-science/routing/route.js";
 import { LIFE_SCIENCE_ROUTING_EXCLUSION_REASON } from "../../../../src/domain/life-science/constants.js";
+import type { LifeScienceRouting } from "../../../../src/domain/life-science/types.js";
 
-type RoutablePaper = {
-  id: string;
-  sourceId: string;
-  lifeScienceRouting?: { verdict: string; method: string };
-};
-
-function makeRoutablePaper(
-  id: string,
-  sourceId: string,
-): RoutablePaper {
+function makeRoutablePaper(id: string, sourceId: string) {
   return { id, sourceId };
 }
+
+type RoutedPaper = ReturnType<typeof makeRoutablePaper> & {
+  lifeScienceRouting: LifeScienceRouting;
+};
 
 const scopeBySourceId = buildSourceScopeById([
   { id: "nature-methods", scope: "life-science-only" },
@@ -69,8 +65,14 @@ test("mergeBroadScienceRoutingResults includes yes and not_sure verdicts", () =>
   assert.equal(merge.excluded.length, 0);
   assert.equal(merge.llmYes, 1);
   assert.equal(merge.llmNotSure, 1);
-  assert.deepEqual(merge.included[0]?.lifeScienceRouting, { verdict: "yes", method: "llm" });
-  assert.deepEqual(merge.included[1]?.lifeScienceRouting, { verdict: "not_sure", method: "llm" });
+  assert.deepEqual((merge.included[0] as RoutedPaper).lifeScienceRouting, {
+    verdict: "yes",
+    method: "llm",
+  });
+  assert.deepEqual((merge.included[1] as RoutedPaper).lifeScienceRouting, {
+    verdict: "not_sure",
+    method: "llm",
+  });
 });
 
 test("mergeBroadScienceRoutingResults throws when a broad-science verdict is missing", () => {

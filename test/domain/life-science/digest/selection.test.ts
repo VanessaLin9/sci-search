@@ -13,6 +13,8 @@ type RankedPaper = {
   digestLine?: "line-a" | "line-b" | "preprint" | "skip";
 };
 
+type RankedPaperWithFeatured = RankedPaper & { featured: boolean };
+
 function ranked(
   id: string,
   options: Partial<RankedPaper> & Pick<RankedPaper, "sourceId" | "title">,
@@ -54,11 +56,12 @@ test("selectFeatured never features skip papers", () => {
     maxFeatured: 12,
     priorityBySourceId,
   });
+  const withFeatured = selected as RankedPaperWithFeatured[];
   assert.equal(stats.candidates, 1);
   assert.equal(stats.featured, 1);
   assert.equal(stats.skip, 1);
-  assert.equal(selected.find((paper) => paper.id === "skip-1")?.featured, false);
-  assert.equal(selected.find((paper) => paper.id === "feat-1")?.featured, true);
+  assert.equal(withFeatured.find((paper) => paper.id === "skip-1")?.featured, false);
+  assert.equal(withFeatured.find((paper) => paper.id === "feat-1")?.featured, true);
 });
 
 test("selectFeatured caps featured count and reports overflow stats", () => {
