@@ -8,9 +8,8 @@ import { digestLineFromKeywords } from "./keywordDigestLine.js";
 import { logDigest } from "./digestLog.js";
 import { toDigestTaggingInput } from "./toTaggingInput.js";
 import type { DigestTaggingInput, DigestTaggingStats } from "./types.js";
+import { digestLineSchema } from "../domain/life-science/index.js";
 import type { ClassifiedPaper, DigestLine, SourceScope } from "../types.js";
-
-const digestLineSchema = z.enum(["line-a", "line-b", "preprint", "skip"]);
 
 const taggingResultRowSchema = z
   .object({

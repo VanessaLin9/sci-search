@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { lifeScienceRoutingVerdictSchema } from "../domain/life-science/schemas.js";
 import type { LifeScienceRoutingVerdict } from "../types.js";
 import { planRoutingBatches } from "./batchSizing.js";
 import {
@@ -10,7 +11,7 @@ import { parseJsonFromLlmContent } from "./parseLlmJson.js";
 import { formatElapsedMs, logRouting } from "./routingLog.js";
 import type { BroadScienceRoutingInput } from "./types.js";
 
-const verdictSchema = z.enum(["yes", "no", "not_sure"]);
+const verdictSchema = lifeScienceRoutingVerdictSchema;
 
 const llmResponseSchema = z.object({
   results: z.array(

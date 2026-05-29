@@ -1,32 +1,32 @@
 import type { Item } from "rss-parser";
+import {
+  RSS_ABSTRACT_EXTRACTOR_REGISTRY,
+  RSS_SKIP_RULE_REGISTRY,
+  type RssAbstractExtractorKind,
+  type RssSkipRuleKind,
+} from "../../domain/life-science/feeds/registries.js";
+import { isNatureEncodedSkippedItem } from "../../domain/life-science/feeds/natureSkipPolicy.js";
 import { extractDefaultRssAbstract } from "./default.js";
 import {
   extractNatureCommunicationsAbstract,
-  isNatureCommunicationsSkippedItem,
 } from "./nature-communications.js";
 import {
   extractNatureBiotechnologyAbstract,
-  isNatureBiotechnologySkippedItem,
 } from "./nature-biotechnology.js";
 import {
   extractNatureCellBiologyAbstract,
-  isNatureCellBiologySkippedItem,
 } from "./nature-cell-biology.js";
 import {
   extractNatureNeuroscienceAbstract,
-  isNatureNeuroscienceSkippedItem,
 } from "./nature-neuroscience.js";
 import {
   extractNatureEcologyEvolutionAbstract,
-  isNatureEcologyEvolutionSkippedItem,
 } from "./nature-ecology-evolution.js";
 import {
   extractNatureImmunologyAbstract,
-  isNatureImmunologySkippedItem,
 } from "./nature-immunology.js";
 import {
   extractNatureMicrobiologyAbstract,
-  isNatureMicrobiologySkippedItem,
 } from "./nature-microbiology.js";
 import { extractNatureMainAbstract } from "./nature.js";
 import { extractNatureMethodsAbstract } from "./nature-methods.js";
@@ -38,21 +38,14 @@ import { extractScienceAbstract } from "./science.js";
 export type RssAbstractExtractor = (item: Item) => string | undefined;
 export type RssSkipRule = (item: Item) => boolean;
 
-const RSS_SKIP_RULES: Record<string, RssSkipRule> = {
-  "pnas": isPnasEditorialRssItem,
-  "nature-communications": isNatureCommunicationsSkippedItem,
-  "nature-ecology-evolution": isNatureEcologyEvolutionSkippedItem,
-  "nature-biotechnology": isNatureBiotechnologySkippedItem,
-  "nature-cell-biology": isNatureCellBiologySkippedItem,
-  "nature-neuroscience": isNatureNeuroscienceSkippedItem,
-  "nature-immunology": isNatureImmunologySkippedItem,
-  "nature-microbiology": isNatureMicrobiologySkippedItem,
+const RSS_SKIP_RULE_IMPLEMENTATIONS: Record<RssSkipRuleKind, RssSkipRule> = {
+  "pnas-editorial": isPnasEditorialRssItem,
+  "nature-encoded": isNatureEncodedSkippedItem,
 };
 
-const RSS_ABSTRACT_EXTRACTORS: Record<string, RssAbstractExtractor> = {
-  "nature": extractNatureMainAbstract,
+const RSS_ABSTRACT_EXTRACTOR_IMPLEMENTATIONS: Record<RssAbstractExtractorKind, RssAbstractExtractor> = {
+  "nature-main": extractNatureMainAbstract,
   "nature-methods": extractNatureMethodsAbstract,
-  "nature-genetics": extractNatureMethodsAbstract,
   "nature-communications": extractNatureCommunicationsAbstract,
   "nature-ecology-evolution": extractNatureEcologyEvolutionAbstract,
   "nature-biotechnology": extractNatureBiotechnologyAbstract,
@@ -61,17 +54,35 @@ const RSS_ABSTRACT_EXTRACTORS: Record<string, RssAbstractExtractor> = {
   "nature-immunology": extractNatureImmunologyAbstract,
   "nature-microbiology": extractNatureMicrobiologyAbstract,
   "plos-biology": extractPlosBiologyAbstract,
-  "pnas": extractPnasAbstract,
-  "science": extractScienceAbstract,
+  pnas: extractPnasAbstract,
+  science: extractScienceAbstract,
   "science-advances": extractScienceAdvancesAbstract,
 };
 
+const RSS_SKIP_RULES = Object.fromEntries(
+  Object.entries(RSS_SKIP_RULE_REGISTRY).map(([sourceId, ruleKind]) => [
+    sourceId,
+    RSS_SKIP_RULE_IMPLEMENTATIONS[ruleKind],
+  ]),
+) as Record<keyof typeof RSS_SKIP_RULE_REGISTRY, RssSkipRule>;
+
+const RSS_ABSTRACT_EXTRACTORS = Object.fromEntries(
+  Object.entries(RSS_ABSTRACT_EXTRACTOR_REGISTRY).map(([sourceId, extractorKind]) => [
+    sourceId,
+    RSS_ABSTRACT_EXTRACTOR_IMPLEMENTATIONS[extractorKind],
+  ]),
+) as Record<keyof typeof RSS_ABSTRACT_EXTRACTOR_REGISTRY, RssAbstractExtractor>;
+
 export function shouldSkipRssItem(sourceId: string, item: Item): boolean {
-  const skipRule = RSS_SKIP_RULES[sourceId];
+  const skipRule = RSS_SKIP_RULES[sourceId as keyof typeof RSS_SKIP_RULES];
   return skipRule ? skipRule(item) : false;
 }
 
 export function extractRssAbstract(sourceId: string, item: Item): string | undefined {
-  const extractor = RSS_ABSTRACT_EXTRACTORS[sourceId] ?? extractDefaultRssAbstract;
+  const extractor =
+    RSS_ABSTRACT_EXTRACTORS[sourceId as keyof typeof RSS_ABSTRACT_EXTRACTORS] ??
+    extractDefaultRssAbstract;
   return extractor(item);
 }
+
+export { RSS_SKIP_RULE_REGISTRY, RSS_ABSTRACT_EXTRACTOR_REGISTRY };

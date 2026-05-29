@@ -1,9 +1,7 @@
 import { loadRoutingFileConfig } from "../config.js";
+import { isLifeScienceRoutingEnabled } from "../domain/life-science/routing/config.js";
 
-export function isLifeScienceRoutingEnabled(): boolean {
-  const flag = process.env.ROUTE_LIFE_SCIENCE?.trim().toLowerCase();
-  return flag === "1" || flag === "true";
-}
+export { isLifeScienceRoutingEnabled };
 
 export function isNvidiaIntegrateApi(baseUrl: string): boolean {
   return baseUrl.includes("integrate.api.nvidia.com");

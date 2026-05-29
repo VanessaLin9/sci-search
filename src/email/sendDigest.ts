@@ -1,8 +1,10 @@
 import { buildSourcePriorityById } from "../digest/selectFeatured.js";
 import { loadSources } from "../config.js";
+import { buildDigestSubject } from "../domain/life-science/email/subject.js";
+import { isVisibleInDigest } from "../domain/life-science/email/visibility.js";
 import type { ClassifiedPaper } from "../types.js";
 import { loadEmailConfig } from "./config.js";
-import { buildDigestSubject, renderDigestHtml } from "./renderDigestHtml.js";
+import { renderDigestHtml } from "./renderDigestHtml.js";
 import { sendWithResend } from "./sendWithResend.js";
 
 export type SendDigestEmailOptions = {
@@ -24,9 +26,7 @@ export async function sendDigestEmail(
   options: SendDigestEmailOptions,
 ): Promise<SendDigestEmailResult> {
   const config = loadEmailConfig();
-  const visibleCount = options.papers.filter(
-    (paper) => paper.digestLine && paper.digestLine !== "skip",
-  ).length;
+  const visibleCount = options.papers.filter(isVisibleInDigest).length;
   const subject = buildDigestSubject(
     options.reportDate,
     visibleCount,

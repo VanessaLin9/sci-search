@@ -1,4 +1,8 @@
 import { isDebugEnabled, logEnrichResult } from "../debug.js";
+import {
+  PAPER_ENRICHER_REGISTRY,
+  type PaperEnricherKind,
+} from "../domain/life-science/feeds/registries.js";
 import { isNatureRssTeaserAbstract } from "../normalizers/rss/nature-encoded.js";
 import type { Paper } from "../types.js";
 import { enrichNatureMainPaper } from "./nature-main.js";
@@ -9,21 +13,20 @@ import { enrichSciencePaper } from "./science.js";
 
 export type PaperEnricher = (paper: Paper) => Promise<Paper | null>;
 
-const PAPER_ENRICHERS: Record<string, PaperEnricher> = {
-  "nature": enrichNatureMainPaper,
+const PAPER_ENRICHER_IMPLEMENTATIONS: Record<PaperEnricherKind, PaperEnricher> = {
+  "nature-main": enrichNatureMainPaper,
   "nature-methods": enrichNatureMethodsPaper,
-  "nature-genetics": enrichNatureMethodsPaper,
-  "nature-communications": enrichNatureMethodsPaper,
-  "nature-ecology-evolution": enrichNatureMethodsPaper,
-  "nature-biotechnology": enrichNatureMethodsPaper,
-  "nature-cell-biology": enrichNatureMethodsPaper,
-  "nature-neuroscience": enrichNatureMethodsPaper,
-  "nature-immunology": enrichNatureMethodsPaper,
-  "nature-microbiology": enrichNatureMethodsPaper,
-  "pnas": enrichPnasPaper,
-  "science": enrichSciencePaper,
+  pnas: enrichPnasPaper,
+  science: enrichSciencePaper,
   "science-advances": enrichScienceAdvancesPaper,
 };
+
+const PAPER_ENRICHERS = Object.fromEntries(
+  Object.entries(PAPER_ENRICHER_REGISTRY).map(([sourceId, enricherKind]) => [
+    sourceId,
+    PAPER_ENRICHER_IMPLEMENTATIONS[enricherKind],
+  ]),
+) as Record<keyof typeof PAPER_ENRICHER_REGISTRY, PaperEnricher>;
 
 export type EnrichPapersResult = {
   papers: Paper[];
@@ -45,7 +48,9 @@ export async function enrichPapers(papers: Paper[]): Promise<EnrichPapersResult>
 
   for (const paper of papers) {
     const enricher =
-      paper.sourceId in PAPER_ENRICHERS ? PAPER_ENRICHERS[paper.sourceId] : undefined;
+      paper.sourceId in PAPER_ENRICHERS
+        ? PAPER_ENRICHERS[paper.sourceId as keyof typeof PAPER_ENRICHERS]
+        : undefined;
     const needsAbstract = Boolean(enricher) && !hasUsableAbstract(paper);
 
     if (!enricher) {
@@ -84,3 +89,5 @@ export async function enrichPapers(papers: Paper[]): Promise<EnrichPapersResult>
 
   return { papers: enriched, enrichedCount, excludedCount };
 }
+
+export { PAPER_ENRICHER_REGISTRY };

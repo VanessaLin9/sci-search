@@ -37,7 +37,7 @@ const PHYSICS_SAMPLE: DigestTaggingInput = {
   abstract: "We report superconductivity near room temperature in compressed lanthanum hydride.",
 };
 
-const digestLineSchema = z.enum(["line-a", "line-b", "preprint", "skip"]);
+import { digestLineSchema } from "../domain/life-science/index.js";
 const llmResponseSchema = z.object({
   results: z.array(
     z.object({
