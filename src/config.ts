@@ -5,6 +5,7 @@ import {
   LIFE_SCIENCE_DIGEST_POLICY,
   LIFE_SCIENCE_EMAIL_BRANDING,
   LIFE_SCIENCE_KEYWORDS,
+  SOURCE_SCOPE_BY_ID,
   sourceScopeSchema,
   type LifeScienceKeywordsConfig,
 } from "./domain/life-science/index.js";
@@ -68,7 +69,27 @@ let emailFileCache: EmailFileConfig | undefined;
 
 export async function loadSources(path = "config/sources.json"): Promise<Source[]> {
   const raw = await readFile(path, "utf8");
-  return z.array(sourceSchema).parse(JSON.parse(raw));
+  const sources = z.array(sourceSchema).parse(JSON.parse(raw));
+
+  for (const source of sources) {
+    const expectedScope = SOURCE_SCOPE_BY_ID[source.id as keyof typeof SOURCE_SCOPE_BY_ID];
+    if (expectedScope === undefined || source.scope !== expectedScope) {
+      throw new Error(
+        `config/sources.json scope for ${source.id} drifted from src/domain/life-science/sources.ts; update domain policy first`,
+      );
+    }
+  }
+
+  const configuredIds = new Set(sources.map((source) => source.id));
+  for (const id of Object.keys(SOURCE_SCOPE_BY_ID)) {
+    if (!configuredIds.has(id)) {
+      throw new Error(
+        `SOURCE_SCOPE_BY_ID.${id} missing from config/sources.json; update domain policy first`,
+      );
+    }
+  }
+
+  return sources;
 }
 
 /** Returns canonical life-science keyword policy (config/keywords.json kept for transition). */
