@@ -12,36 +12,15 @@ import { runDigestPhase } from "./digest/runDigestPhase.js";
 import type { DigestPhaseResult } from "./digest/types.js";
 import { routeLifeSciencePapers } from "./routing/routeLifeScience.js";
 import type { LifeScienceRoutingResult } from "./routing/types.js";
-import type {
-  ClassifiedPaper,
-  Paper,
-  Source,
-  SourceScope,
-} from "./types.js";
+import {
+  DEFAULT_RSS_SOURCE_IDS,
+  type LifeScienceKeywordsConfig,
+} from "./domain/life-science/index.js";
+import type { ClassifiedPaper, Paper, Source, SourceScope } from "./types.js";
 
-/** Active RSS sources, ordered by `config/sources.json` priority (see SKILL journal list). */
-export const DEFAULT_RSS_SOURCE_IDS = [
-  "cell",
-  "nature",
-  "science",
-  "nature-methods",
-  "nature-genetics",
-  "nature-ecology-evolution",
-  "nature-biotechnology",
-  "nature-cell-biology",
-  "nature-neuroscience",
-  "nature-immunology",
-  "nature-microbiology",
-  "science-advances",
-  "pnas",
-  "plos-biology",
-  "nature-communications",
-] as const;
+export { DEFAULT_RSS_SOURCE_IDS };
 
-export type KeywordsConfig = {
-  primary: string[];
-  biology: string[];
-};
+export type KeywordsConfig = LifeScienceKeywordsConfig;
 
 export type SourcePipelineStats = {
   sourceId: string;

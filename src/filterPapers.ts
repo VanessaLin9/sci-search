@@ -1,10 +1,11 @@
+import { PAPER_SECTIONS } from "./domain/life-science/index.js";
 import type { ClassifiedPaper, Paper, PaperSection } from "./types.js";
 import { formatInTimeZone } from "date-fns-tz";
 import { TIME_ZONE } from "./date.js";
 
-const SECTIONS: PaperSection[] = ["single-cell-spatial", "biology", "other"];
+const SECTIONS: PaperSection[] = [...PAPER_SECTIONS];
 
-export function matchKeywords(text: string, keywords: string[]): string[] {
+export function matchKeywords(text: string, keywords: readonly string[]): string[] {
   const haystack = text.toLowerCase();
   return keywords.filter((keyword) => haystack.includes(keyword.toLowerCase()));
 }

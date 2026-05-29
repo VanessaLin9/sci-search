@@ -1,12 +1,15 @@
 import { readFile } from "node:fs/promises";
 import { z } from "zod";
-import type { ClassifiedPaper, LifeScienceRouting } from "./types.js";
+import {
+  digestLineSchema,
+  digestTaggingMethodSchema,
+  lifeScienceRoutingExclusionReasonSchema,
+  lifeScienceRoutingExclusionVerdictSchema,
+  lifeScienceRoutingSchema,
+  paperSectionSchema,
+} from "./domain/life-science/index.js";
+import type { ClassifiedPaper } from "./types.js";
 import type { ExcludedPaper, LifeScienceRoutingStats } from "./routing/types.js";
-
-const lifeScienceRoutingSchema = z.object({
-  verdict: z.enum(["yes", "no", "not_sure"]),
-  method: z.enum(["scope-default", "llm"]),
-}) satisfies z.ZodType<LifeScienceRouting>;
 
 // Pre-classify shape: routing happens before classify, so excluded papers never carry these fields.
 // Kept optional+strip-tolerant so legacy JSON files (which embedded the placeholder values) still parse.
@@ -23,9 +26,9 @@ const rawPaperSchema = z.object({
   sourceId: z.string(),
   lifeScienceRouting: lifeScienceRoutingSchema.optional(),
   matchedKeywords: z.array(z.string()).optional(),
-  section: z.enum(["single-cell-spatial", "biology", "other"]).optional(),
-  digestLine: z.enum(["line-a", "line-b", "preprint", "skip"]).optional(),
-  digestTaggingMethod: z.enum(["llm", "keyword-fallback"]).optional(),
+  section: paperSectionSchema.optional(),
+  digestLine: digestLineSchema.optional(),
+  digestTaggingMethod: digestTaggingMethodSchema.optional(),
   featured: z.boolean().optional(),
   titleZh: z.string().optional(),
   summaryZh: z.string().optional(),
@@ -34,13 +37,13 @@ const rawPaperSchema = z.object({
 
 const classifiedPaperSchema = rawPaperSchema.extend({
   matchedKeywords: z.array(z.string()),
-  section: z.enum(["single-cell-spatial", "biology", "other"]),
+  section: paperSectionSchema,
 });
 
 const excludedPaperSchema = z.object({
   paper: rawPaperSchema,
-  reason: z.literal("life-science-routing"),
-  verdict: z.literal("no"),
+  reason: lifeScienceRoutingExclusionReasonSchema,
+  verdict: lifeScienceRoutingExclusionVerdictSchema,
 });
 
 const routingStatsSchema = z.object({
