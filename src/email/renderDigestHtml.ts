@@ -1,4 +1,14 @@
 /** Sole digest HTML entry for email (`sendDigest`) and GitHub Pages preview (`writeDigestPreview`). */
+import {
+  digestPageTitle,
+  DIGEST_HEADER_SUBTITLE,
+  DIGEST_PAGE_TITLE,
+  emptySectionMessage,
+} from "../domain/life-science/email/emailCopy.js";
+import { featuredDigestLineBucket } from "../domain/life-science/email/normalizeDigestLine.js";
+import { LINE_SECTIONS } from "../domain/life-science/email/lineSections.js";
+import { visiblePapers } from "../domain/life-science/email/visibility.js";
+import { buildDigestSubject } from "../domain/life-science/email/subject.js";
 import type { ClassifiedPaper, DigestLine } from "../types.js";
 import {
   groupOverflowByJournal,
@@ -8,31 +18,7 @@ import {
 } from "./digestHtmlHelpers.js";
 import { escapeHtml } from "./escapeHtml.js";
 
-const LINE_SECTIONS: {
-  line: DigestLine;
-  badgeStyle: string;
-  badgeLabel: string;
-  heading: string;
-}[] = [
-  {
-    line: "line-a",
-    badgeStyle: "background:#eaf2f8;color:#2c5f8d;",
-    badgeLabel: "主線 A",
-    heading: "單細胞 / 空間組學",
-  },
-  {
-    line: "line-b",
-    badgeStyle: "background:#e6f4ec;color:#2f7a4f;",
-    badgeLabel: "主線 B",
-    heading: "當日其他重要生物學發現",
-  },
-  {
-    line: "preprint",
-    badgeStyle: "background:#fdf2e6;color:#b85c00;",
-    badgeLabel: "預印本",
-    heading: "bioRxiv / medRxiv",
-  },
-];
+export { buildDigestSubject };
 
 export type RenderDigestHtmlOptions = {
   reportDate: string;
@@ -40,10 +26,6 @@ export type RenderDigestHtmlOptions = {
   generatedAt?: string;
   priorityBySourceId?: ReadonlyMap<string, number>;
 };
-
-function visiblePapers(papers: ClassifiedPaper[]): ClassifiedPaper[] {
-  return papers.filter((paper) => paper.digestLine && paper.digestLine !== "skip");
-}
 
 function renderFeaturedArticle(paper: ClassifiedPaper): string {
   const titleZh = paper.titleZh?.trim();
@@ -92,10 +74,7 @@ function renderDigestLineSection(
   `.trim();
 
   if (papers.length === 0) {
-    const emptyMsg =
-      line === "preprint"
-        ? "本期無 preprint 精選。"
-        : "今日此主線無精選文章。";
+    const emptyMsg = emptySectionMessage(line);
     return `
       ${sectionHeading}
       <div style="background:#fff8e8;border:1px dashed #d6b85a;padding:14px 18px;border-radius:8px;color:#6e5410;font-size:14px;margin:0 0 14px;">
@@ -159,6 +138,20 @@ function renderEmptyDigestBody(reportDate: string): string {
   `.trim();
 }
 
+function groupFeaturedByLine(featured: ClassifiedPaper[]): Record<"line-a" | "line-b" | "preprint", ClassifiedPaper[]> {
+  const featuredByLine: Record<"line-a" | "line-b" | "preprint", ClassifiedPaper[]> = {
+    "line-a": [],
+    "line-b": [],
+    preprint: [],
+  };
+
+  for (const paper of featured) {
+    featuredByLine[featuredDigestLineBucket(paper.digestLine)].push(paper);
+  }
+
+  return featuredByLine;
+}
+
 export function renderDigestHtml(options: RenderDigestHtmlOptions): string {
   const { reportDate, papers, generatedAt, priorityBySourceId } = options;
   const generatedLine = generatedAt
@@ -177,19 +170,7 @@ export function renderDigestHtml(options: RenderDigestHtmlOptions): string {
     priorityBySourceId,
   );
 
-  const featuredByLine: Record<"line-a" | "line-b" | "preprint", ClassifiedPaper[]> = {
-    "line-a": [],
-    "line-b": [],
-    preprint: [],
-  };
-  for (const paper of featured) {
-    const line = paper.digestLine;
-    if (line === "line-a" || line === "line-b" || line === "preprint") {
-      featuredByLine[line].push(paper);
-    } else {
-      featuredByLine["line-b"].push(paper);
-    }
-  }
+  const featuredByLine = groupFeaturedByLine(featured);
 
   let body: string;
   if (isEmpty) {
@@ -215,13 +196,13 @@ export function renderDigestHtml(options: RenderDigestHtmlOptions): string {
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>每日科學期刊摘要 · ${escapeHtml(reportDate)}</title>
+    <title>${escapeHtml(digestPageTitle(reportDate))}</title>
   </head>
   <body style="margin:0;padding:32px 16px;background:#fafaf7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans TC','PingFang TC',Roboto,'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;line-height:1.65;">
     <div style="max-width:880px;margin:0 auto;">
       <header style="border-bottom:2px solid #1a1a1a;padding-bottom:16px;margin-bottom:28px;">
-        <h1 style="margin:0 0 6px;font-size:28px;letter-spacing:0.5px;">每日科學期刊摘要</h1>
-        <p style="margin:0;font-size:15px;color:#555;">Daily Digest · 當日新論文（單細胞/空間組學 + 重要生物學發現）</p>
+        <h1 style="margin:0 0 6px;font-size:28px;letter-spacing:0.5px;">${escapeHtml(DIGEST_PAGE_TITLE)}</h1>
+        <p style="margin:0;font-size:15px;color:#555;">${escapeHtml(DIGEST_HEADER_SUBTITLE)}</p>
         <p style="margin:8px 0 0;font-size:13px;color:#888;">
           📅 ${escapeHtml(reportDate)}（台北） · 精選 ${metaFeatured} 篇 · 更多收錄 ${metaOverflow} 篇
         </p>
@@ -234,12 +215,4 @@ export function renderDigestHtml(options: RenderDigestHtmlOptions): string {
     </div>
   </body>
 </html>`;
-}
-
-export function buildDigestSubject(
-  reportDate: string,
-  paperCount: number,
-  subjectPrefix: string,
-): string {
-  return `${subjectPrefix} · ${reportDate} (${paperCount} papers)`;
 }

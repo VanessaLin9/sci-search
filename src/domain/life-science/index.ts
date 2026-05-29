@@ -93,3 +93,24 @@ export {
   sortPapersByDigestRank,
   type DigestSelectionStats,
 } from "./digest/selection.js";
+
+export {
+  digestPageTitle,
+  DIGEST_HEADER_SUBTITLE,
+  DIGEST_PAGE_TITLE,
+  emptySectionMessage,
+} from "./email/emailCopy.js";
+export { featuredDigestLineBucket, normalizeDigestLine } from "./email/normalizeDigestLine.js";
+export { LINE_SECTIONS, type DigestLineSectionConfig } from "./email/lineSections.js";
+export { buildDigestSubject } from "./email/subject.js";
+export { isVisibleInDigest, visiblePapers } from "./email/visibility.js";
+
+export { isNatureEncodedSkippedItem } from "./feeds/natureSkipPolicy.js";
+export {
+  PAPER_ENRICHER_REGISTRY,
+  RSS_ABSTRACT_EXTRACTOR_REGISTRY,
+  RSS_SKIP_RULE_REGISTRY,
+  type PaperEnricherKind,
+  type RssAbstractExtractorKind,
+  type RssSkipRuleKind,
+} from "./feeds/registries.js";

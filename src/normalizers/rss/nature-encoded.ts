@@ -1,5 +1,8 @@
 import type { Item } from "rss-parser";
+import { isNatureEncodedSkippedItem } from "../../domain/life-science/feeds/natureSkipPolicy.js";
 import { normalizeWhitespace, stripHtml } from "../shared.js";
+
+export { isNatureEncodedSkippedItem };
 
 type NatureEncodedItem = Item & {
   contentEncoded?: string;
@@ -27,13 +30,6 @@ function buildHeaderTextPattern(journalName: string): RegExp {
   );
 }
 
-export function isNatureEncodedSkippedItem(item: Item): boolean {
-  const title = item.title?.trim() ?? "";
-  return (
-    /^(Author|Publisher) Correction:/i.test(title) ||
-    /^Reply to:/i.test(title)
-  );
-}
 
 const NATURE_RSS_TEASER_VERB =
   "report|reports|show|shows|find|finds|reveal|reveals|demonstrate|identify|discuss|uncover|describe|develop|use|provide|highlight|present|determine";
