@@ -14,3 +14,12 @@ test("shouldSkipRssItem returns false when registered rule says no", () => {
 test("shouldSkipRssItem returns true when registered rule says yes", () => {
   assert.equal(shouldSkipRssItem("pnas", { title: "In This Issue" } as Item), true);
 });
+
+test("shouldSkipRssItem returns true for nature-encoded correction titles", () => {
+  assert.equal(
+    shouldSkipRssItem("nature-communications", {
+      title: "Author Correction: Example study",
+    } as Item),
+    true,
+  );
+});
