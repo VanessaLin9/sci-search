@@ -1,11 +1,6 @@
 import type { Item } from "rss-parser";
 import { fetchRssSource } from "./fetchRss.js";
-import {
-  classifyPaperSection,
-  dedupePapers,
-  filterPapersByDate,
-  matchKeywords,
-} from "./filterPapers.js";
+import { dedupePapers, filterPapersByDate } from "./filterPapers.js";
 import { enrichPapers, type EnrichPapersResult } from "./enrichers/index.js";
 import { normalizeRssItemToPaper } from "./normalize.js";
 import { runDigestPhase } from "./digest/runDigestPhase.js";
@@ -13,6 +8,8 @@ import type { DigestPhaseResult } from "./digest/types.js";
 import { routeLifeSciencePapers } from "./routing/routeLifeScience.js";
 import type { LifeScienceRoutingResult } from "./routing/types.js";
 import {
+  classifyPaperKeywords,
+  classifyPapersWithKeywords,
   DEFAULT_RSS_SOURCE_IDS,
   type LifeScienceKeywordsConfig,
 } from "./domain/life-science/index.js";
@@ -80,19 +77,11 @@ export async function runPipeline(options: RunPipelineOptions): Promise<Pipeline
 }
 
 export function classifyPaper(paper: Paper, keywords: KeywordsConfig): ClassifiedPaper {
-  const searchableText = [paper.title, paper.abstract].filter(Boolean).join(" ");
-  const primaryMatches = matchKeywords(searchableText, keywords.primary);
-  const biologyMatches = matchKeywords(searchableText, keywords.biology);
-
-  return {
-    ...paper,
-    matchedKeywords: [...primaryMatches, ...biologyMatches],
-    section: classifyPaperSection(primaryMatches, biologyMatches),
-  };
+  return classifyPaperKeywords(paper, keywords);
 }
 
 export function classifyPapers(papers: Paper[], keywords: KeywordsConfig): ClassifiedPaper[] {
-  return papers.map((paper) => classifyPaper(paper, keywords));
+  return classifyPapersWithKeywords(papers, keywords);
 }
 
 async function collectPapersFromSources(options: RunPipelineOptions): Promise<SourceProcessResult[]> {

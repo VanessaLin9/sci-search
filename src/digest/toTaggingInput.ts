@@ -1,3 +1,4 @@
+import { resolveSourceScope } from "../domain/life-science/resolveSourceScope.js";
 import type { ClassifiedPaper, SourceScope } from "../types.js";
 import type { DigestTaggingInput } from "./types.js";
 
@@ -7,7 +8,7 @@ export function toDigestTaggingInput(
   paper: ClassifiedPaper,
   scopeBySourceId: ReadonlyMap<string, SourceScope>,
 ): DigestTaggingInput {
-  const scope = scopeBySourceId.get(paper.sourceId) ?? "life-science-only";
+  const scope = resolveSourceScope(paper.sourceId, scopeBySourceId);
   const abstract = paper.abstract?.trim();
   return {
     id: paper.id,

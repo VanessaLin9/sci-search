@@ -1,14 +1,11 @@
-import { PAPER_SECTIONS } from "./domain/life-science/index.js";
+import { PAPER_SECTIONS, classifySection, matchKeywords } from "./domain/life-science/index.js";
 import type { ClassifiedPaper, Paper, PaperSection } from "./types.js";
 import { formatInTimeZone } from "date-fns-tz";
 import { TIME_ZONE } from "./date.js";
 
 const SECTIONS: PaperSection[] = [...PAPER_SECTIONS];
 
-export function matchKeywords(text: string, keywords: readonly string[]): string[] {
-  const haystack = text.toLowerCase();
-  return keywords.filter((keyword) => haystack.includes(keyword.toLowerCase()));
-}
+export { matchKeywords, classifySection as classifyPaperSection };
 
 export function dedupePapers(papers: Paper[]): Paper[] {
   const seen = new Set<string>();
@@ -29,12 +26,6 @@ export function isPaperOnReportDate(paper: Paper, reportDate: string): boolean {
 
 export function filterPapersByDate(papers: Paper[], targetDate: string): Paper[] {
   return papers.filter((paper) => isPaperOnReportDate(paper, targetDate));
-}
-
-export function classifyPaperSection(primaryMatches: string[], biologyMatches: string[]): PaperSection {
-  if (primaryMatches.length > 0) return "single-cell-spatial";
-  if (biologyMatches.length > 0) return "biology";
-  return "other";
 }
 
 export function countPapersBySection(papers: ClassifiedPaper[]): Record<PaperSection, number> {

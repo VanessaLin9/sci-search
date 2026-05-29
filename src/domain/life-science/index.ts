@@ -47,3 +47,17 @@ export type {
   LifeScienceRoutingResult,
   LifeScienceRoutingStats,
 } from "./routing/types.js";
+
+export {
+  classifyPaperKeywords,
+  classifyPapersWithKeywords,
+  classifySection,
+  matchKeywords,
+  type KeywordClassifiedFields,
+} from "./classifyKeywords.js";
+export { fallbackDigestLine, type DigestLineFallbackInput } from "./fallbackDigestLine.js";
+export { resolveSourceScope } from "./resolveSourceScope.js";
+export { ROUTING_SYSTEM_PROMPT } from "./prompts/routing.system.js";
+export { DIGEST_TAGGING_SYSTEM_PROMPT } from "./prompts/tagging.system.js";
+export { DIGEST_SUMMARIZE_SYSTEM_PROMPT } from "./prompts/summarize.system.js";
+export { DIGEST_TRANSLATE_SYSTEM_PROMPT } from "./prompts/translate.system.js";
