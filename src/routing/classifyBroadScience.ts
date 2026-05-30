@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { lifeScienceRoutingVerdictSchema } from "../domain/life-science/schemas.js";
+import { shouldRetrySplitLlmBatch } from "../llm/extractLlmJsonContent.js";
 import type { LifeScienceRoutingVerdict } from "../types.js";
 import { planRoutingBatches } from "./batchSizing.js";
 import {
@@ -8,7 +9,7 @@ import {
 } from "./callRoutingCompletion.js";
 import { getRoutingLlmConfig, maskApiKey, type RoutingLlmConfig } from "./config.js";
 import { parseJsonFromLlmContent } from "./parseLlmJson.js";
-import { formatElapsedMs, logRouting } from "./routingLog.js";
+import { logRouting } from "./routingLog.js";
 import type { BroadScienceRoutingInput } from "./types.js";
 
 const verdictSchema = lifeScienceRoutingVerdictSchema;
@@ -39,6 +40,29 @@ async function classifyBatch(
   config: RoutingLlmConfig,
   batchLabel: string,
 ): Promise<Map<string, LifeScienceRoutingVerdict>> {
+  try {
+    return await classifyBatchOnce(items, config, batchLabel);
+  } catch (error) {
+    const finishReason =
+      error instanceof Error && "finishReason" in error
+        ? String((error as Error & { finishReason: string }).finishReason)
+        : "unknown";
+    if (items.length <= 1 || !shouldRetrySplitLlmBatch(error, finishReason)) {
+      throw error;
+    }
+    const mid = Math.ceil(items.length / 2);
+    logRouting(`${batchLabel}: split retry ${items.length} → ${mid} + ${items.length - mid}`);
+    const first = await classifyBatch(items.slice(0, mid), config, `${batchLabel}a`);
+    const second = await classifyBatch(items.slice(mid), config, `${batchLabel}b`);
+    return new Map([...first, ...second]);
+  }
+}
+
+async function classifyBatchOnce(
+  items: BroadScienceRoutingInput[],
+  config: RoutingLlmConfig,
+  batchLabel: string,
+): Promise<Map<string, LifeScienceRoutingVerdict>> {
   const { completion } = await callRoutingCompletion(items, config, { label: batchLabel });
 
   const usage = completion.usage;
@@ -46,12 +70,21 @@ async function classifyBatch(
     ? `prompt=${usage.prompt_tokens ?? "?"} completion=${usage.completion_tokens ?? "?"} total=${usage.total_tokens ?? "?"}`
     : "usage n/a";
 
-  const { content, usedReasoningFallback } = extractRoutingMessageContent(
-    completion.choices[0]?.message,
-  );
+  const finishReason = completion.choices[0]?.finish_reason ?? "unknown";
+
+  let content: string;
+  let usedReasoningFallback: boolean;
+  try {
+    ({ content, usedReasoningFallback } = extractRoutingMessageContent(completion.choices[0]?.message));
+  } catch (extractError) {
+    if (items.length > 1 && shouldRetrySplitLlmBatch(extractError, finishReason)) {
+      throw attachFinishReason(extractError, finishReason);
+    }
+    throw extractError;
+  }
   if (usedReasoningFallback) {
     logRouting(
-      `${batchLabel}: warning: model returned reasoning_content but empty content; used reasoning as fallback`,
+      `${batchLabel}: warning: JSON taken from reasoning_content`,
     );
   }
 
@@ -60,11 +93,14 @@ async function classifyBatch(
     parsed = llmResponseSchema.parse(parseJsonFromLlmContent(content));
   } catch (parseError) {
     const preview = content.slice(0, 400);
-    const finishReason = completion.choices[0]?.finish_reason ?? "unknown";
-    throw new Error(
+    const wrapped = new Error(
       `${batchLabel}: invalid JSON (finish_reason=${finishReason}, ${content.length} chars): ${preview}${content.length > 400 ? "…" : ""}`,
       { cause: parseError },
     );
+    if (items.length > 1 && shouldRetrySplitLlmBatch(wrapped, finishReason)) {
+      throw attachFinishReason(wrapped, finishReason);
+    }
+    throw wrapped;
   }
   const verdictById = new Map<string, LifeScienceRoutingVerdict>();
 
@@ -80,6 +116,13 @@ async function classifyBatch(
   logRouting(`${batchLabel}: parsed (${usageLine}) · ${summarizeVerdicts(verdictById)}`);
 
   return verdictById;
+}
+
+function attachFinishReason(error: unknown, finishReason: string): Error {
+  if (error instanceof Error) {
+    return Object.assign(error, { finishReason });
+  }
+  return Object.assign(new Error(String(error)), { finishReason });
 }
 
 export async function classifyBroadSciencePapers(

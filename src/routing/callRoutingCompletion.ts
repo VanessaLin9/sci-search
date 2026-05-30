@@ -15,19 +15,7 @@ export type RoutingCompletionCall = {
   elapsedMs: number;
 };
 
-export function extractRoutingMessageContent(
-  message: { content?: string | null; reasoning_content?: string | null } | undefined,
-): { content: string; usedReasoningFallback: boolean } {
-  const content = message?.content?.trim();
-  if (content) return { content, usedReasoningFallback: false };
-
-  const reasoning = message?.reasoning_content?.trim();
-  if (reasoning) {
-    return { content: reasoning, usedReasoningFallback: true };
-  }
-
-  throw new Error("Routing LLM returned empty message content and reasoning_content");
-}
+export { extractLlmJsonContent as extractRoutingMessageContent } from "../llm/extractLlmJsonContent.js";
 
 export async function callRoutingCompletion(
   items: BroadScienceRoutingInput[],
