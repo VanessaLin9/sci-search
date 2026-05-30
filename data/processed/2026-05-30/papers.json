@@ -1,0 +1,223 @@
+{
+  "reportDate": "2026-05-30",
+  "generatedAt": "2026-05-30T22:49:36.978Z",
+  "papers": [
+    {
+      "id": "10.1038/s41467-026-73801-x",
+      "title": "Multi-ancestry transcriptome-wide association studies uncover insights into breast cancer genetics and biology",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-05-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-73801-x",
+      "doi": "10.1038/s41467-026-73801-x",
+      "abstract": "Genome-wide association studies (GWAS) have identified over 200 genetic risk loci for breast cancer, but the target genes in these loci remain largely unknown. Here, the authors conduct multi-ancestry transcriptome-wide association studies to discover potential breast cancer susceptibility genes, which are further explored with single-cell sequencing and in vitro experiments.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology",
+        "cancer",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "多族裔轉錄體全基因組關聯研究揭示乳癌遺傳學與生物學新見解",
+      "summaryZh": "全基因組關聯研究已發現超過200個乳癌遺傳風險位點，但這些位點的目標基因仍大部分未知。本研究採用多族裔轉錄體全基因組關聯分析方法，系統性地發現潛在的乳癌易感基因，並進一步透過單細胞定序與體外實驗進行驗證。此研究不僅填補了風險位點與致病基因之間的知識缺口，也凸顯了跨族裔分析在發現常見疾病遺傳因子中的重要性，為乳癌的生物學機制與未來治療標的開發提供重要線索。",
+      "topicTags": [
+        "breast-cancer",
+        "transcriptome-wide-association-study",
+        "multi-ancestry",
+        "cancer-genetics",
+        "single-cell"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-73721-w",
+      "title": "Pan-cancer single-cell atlases of mouse and human tumor-associated dendritic cells",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-05-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-73721-w",
+      "doi": "10.1038/s41467-026-73721-w",
+      "abstract": "Multiple lineages and functional states of tumor-associated dendritic cells (TADCs), as essential inducers of anti-tumor immunity, have been reported. Here, the authors have generated single-cell RNA sequencing atlases of pan-cancer mouse and human TADCs, illustrating heterogeneity and evolution of dendritic cells with tumor progression.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "泛癌單細胞圖譜：解析小鼠與人類腫瘤相關樹突狀細胞的異質性與演化",
+      "summaryZh": "腫瘤相關樹突狀細胞（TADC）是誘發抗腫瘤免疫反應的關鍵角色，但其在不同腫瘤中的組成與功能狀態尚未被完整解析。本研究透過單細胞RNA定序技術，建立了涵蓋多種癌症的小鼠與人類TADC泛癌單細胞圖譜，揭示了TADC在不同腫瘤類型中的高度異質性，並追蹤了樹突狀細胞隨腫瘤進展的動態演化過程。這項資源為理解腫瘤免疫微環境提供了重要的參考框架，有助於開發新的免疫治療策略。",
+      "topicTags": [
+        "single-cell",
+        "tumor-immunology",
+        "dendritic-cells",
+        "pan-cancer",
+        "transcriptomics"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-73752-3",
+      "title": "CryoWriter: a robotic solution for improved Cryo-EM grid preparation",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-05-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-73752-3",
+      "doi": "10.1038/s41467-026-73752-3",
+      "abstract": "Cryo-EM faces a bottleneck in sample preparation. Here, the authors evaluated the cryoWriter, a robotic microfluidics device to prepare cryo-EM grids from nanoliters of sample. Multiple samples are written onto the same grid, enabling time-resolved exposure experiments.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "not_sure",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41467-026-73455-9",
+      "title": "COXFA4L2 upregulation preserves residual cytochrome c oxidase activity in COXFA4-related Leigh-like encephalopathy",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-05-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-73455-9",
+      "doi": "10.1038/s41467-026-73455-9",
+      "abstract": "Primary mitochondrial diseases (PMDs) affect approximately 1 in 4300 individuals and cause early-onset neuromuscular and multisystem dysfunction with reduced lifespan. They result from pathogenic variants in mitochondrial or nuclear DNA that impair oxidative phosphorylation. Cytochrome c oxidase (COX; complex IV) deficiency is a well-established cause of PMD, leading to a broad spectrum of phenotypes. COXFA4 (cytochrome c oxidase subunit FA4), formerly NDUFA4, is a nuclear-encoded COX subunit, but its role in disease remains poorly defined. We report the largest genetically confirmed cohort of COXFA4-related PMD to date, comprising 13 individuals from 12 families with biallelic pathogenic COXFA4 variants. All present with Leigh-like encephalopathy and complete loss of COXFA4 protein; however, patient-derived fibroblasts retain residual COX activity, with upregulation of COXFA4L2 (cytochrome c oxidase subunit FA4-like 2), a poorly characterised paralog. Here, we show that COXFA4 is a late-stage COX assembly subunit and identify a paralog-mediated compensatory mechanism with translational potential. Falabella et al. report the largest cohort of individuals with biallelic COXFA4 variants associated with Leigh-like encephalopathy and show that the paralog COXFA4L2 partially compensates for complex IV deficiency, suggesting a potential therapeutic strategy.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "COXFA4L2 上調保留殘餘細胞色素c氧化酶活性——COXFA4相關Leigh樣腦病變的新發現",
+      "summaryZh": "原發性粒線體疾病影響約每4300人中的1人，導致早發性神經肌肉及多系統功能障礙。本研究報告了迄今最大規模的COXFA4相關原發性粒線體疾病世代研究，涵蓋12個家族共13位患者。所有患者均呈現Leigh樣腦病變且完全喪失COXFA4蛋白表現，但纖維母細胞仍保留殘餘COX活性，關鍵在於其上調了結構相似的旁系同源基因COXFA4L2。此研究揭示了COXFA4為晚期COX組裝亞基，並發現COXFA4L2可部分補償功能缺失，為開發新穎治療策略提供了重要的分子基礎。",
+      "topicTags": [
+        "mitochondrial-disease",
+        "leigh-syndrome",
+        "cytochrome-c-oxidase",
+        "therapeutic-strategy",
+        "genetic-disorder"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-73029-9",
+      "title": "Children use algorithm induction to discover patterns in data",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-05-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-73029-9",
+      "doi": "10.1038/s41467-026-73029-9",
+      "abstract": "Humans are extraordinarily fast, flexible learners. Here, the authors show evidence that this capacity is powered by a general-purpose learning mechanism that allows children across cultures to discover patterns in data, even without instruction.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 8,
+      "passedByScope": 0,
+      "llmClassified": 8,
+      "llmYes": 4,
+      "llmNotSure": 1,
+      "llmNo": 3,
+      "included": 5,
+      "excluded": 3
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 5,
+      "llmTagged": 5,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 5,
+      "candidates": 3,
+      "featured": 3,
+      "overflow": 0,
+      "lineA": 1,
+      "lineB": 2,
+      "preprint": 0,
+      "skip": 2
+    },
+    "summarize": {
+      "requested": 3,
+      "llmSummarized": 3,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-73363-y",
+        "title": "Tectonic and climatic implications of the Aleutian Arc initiation ≥56 million years ago",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-05-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-73363-y",
+        "doi": "10.1038/s41467-026-73363-y",
+        "abstract": "The Paleocene initiation of the Aleutian Arc subduction zone drove tectonic plate reorganization in the circum-Pacific region 57 to 47 million years ago, as shown by geochronology and geochemical data from Aleutian arc rock samples from marine sequences and plate tectonic reconstructions.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-73778-7",
+        "title": "Supercurrent effect in a charge density wave intertwined superconductor",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-05-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-73778-7",
+        "doi": "10.1038/s41467-026-73778-7",
+        "abstract": "Scanning tunneling spectroscopic imaging reveals a field-driven symmetry breaking of CDW modulations in superconducting NbSe₂. Model calculations suggest that the observed anisotropy originates from a Doppler-shift-induced reconstruction of the dispersion of Bogoliubov quasiparticle excitations.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-73912-5",
+        "title": "High-throughput production of microbatteries by a stack-punching method",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-05-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-73912-5",
+        "doi": "10.1038/s41467-026-73912-5",
+        "abstract": "Microbatteries are essential for miniaturized electronics, but it is currently difficult for scale-up fabrication with high efficiency and high consistency. Here, authors report a stack-punching method that enables high-throughput fabrication of microbatteries with high consistency, demonstrating their potential for wearable devices and biohybrid systems.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    }
+  ]
+}
