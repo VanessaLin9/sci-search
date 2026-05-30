@@ -1,44 +1,30 @@
-import { extractFirstJsonObject } from "../routing/parseLlmJson.js";
+import { extractLlmJsonContent } from "../llm/extractLlmJsonContent.js";
 
 type DigestMessage = {
   content?: string | null;
   reasoning_content?: string | null;
 };
 
-/**
- * Prefer a parseable JSON object in `content`; otherwise try `reasoning_content`.
- * Never return long analysis prose — that breaks batch tagging on reasoning-heavy models.
- */
+/** @see extractLlmJsonContent */
 export function extractDigestMessageContent(message: DigestMessage | undefined): {
   content: string;
   usedReasoningFallback: boolean;
 } {
-  const rawContent = message?.content?.trim() ?? "";
-  const jsonFromContent = extractFirstJsonObject(rawContent);
-  if (jsonFromContent) {
-    return { content: jsonFromContent, usedReasoningFallback: false };
+  try {
+    return extractLlmJsonContent(message);
+  } catch (error) {
+    if (!(error instanceof Error)) {
+      throw error;
+    }
+    if (error.message.startsWith("LLM message.content")) {
+      throw new Error(error.message.replace(/^LLM /, "Digest LLM "));
+    }
+    if (error.message.startsWith("LLM put output")) {
+      throw new Error(error.message.replace(/^LLM /, "Digest LLM "));
+    }
+    if (error.message === "LLM returned empty message content and reasoning_content") {
+      throw new Error("Digest LLM returned empty message content and reasoning_content");
+    }
+    throw error;
   }
-
-  if (rawContent.startsWith("{")) {
-    return { content: rawContent, usedReasoningFallback: false };
-  }
-
-  const reasoning = message?.reasoning_content?.trim() ?? "";
-  const jsonFromReasoning = extractFirstJsonObject(reasoning);
-  if (jsonFromReasoning) {
-    return { content: jsonFromReasoning, usedReasoningFallback: true };
-  }
-
-  if (rawContent) {
-    throw new Error(
-      `Digest LLM message.content has no JSON object (${rawContent.length} chars, preview: ${rawContent.slice(0, 120)}…)`,
-    );
-  }
-  if (reasoning) {
-    throw new Error(
-      `Digest LLM put output in reasoning only with no JSON (${reasoning.length} chars). Use a model that returns JSON in content, or reduce batch size.`,
-    );
-  }
-
-  throw new Error("Digest LLM returned empty message content and reasoning_content");
 }
