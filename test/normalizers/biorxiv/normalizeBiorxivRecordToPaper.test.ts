@@ -1,11 +1,14 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
+import { LIFE_SCIENCE_KEYWORDS } from "../../../src/domain/life-science/index.js";
 import {
   buildBiorxivPaperUrl,
+  filterBiorxivPapersByPrimaryKeywords,
   normalizeBiorxivRecordToPaper,
+  paperMatchesPrimaryKeywords,
   parseBiorxivAuthors,
 } from "../../../src/normalizers/biorxiv.js";
-import type { Source } from "../../../src/types.js";
+import type { Paper, Source } from "../../../src/types.js";
 
 const biorxivSource: Source = {
   id: "biorxiv",
@@ -63,4 +66,52 @@ test("normalizeBiorxivRecordToPaper returns null when required fields are missin
     ),
     null,
   );
+});
+
+test("paperMatchesPrimaryKeywords matches single-cell/spatial terms in title or abstract", () => {
+  assert.equal(
+    paperMatchesPrimaryKeywords(
+      {
+        title: "Spatial transcriptomics atlas",
+        abstract: "Methods paper.",
+      },
+      LIFE_SCIENCE_KEYWORDS,
+    ),
+    true,
+  );
+  assert.equal(
+    paperMatchesPrimaryKeywords(
+      {
+        title: "Generic cell signaling review",
+        abstract: "No omics keywords here.",
+      },
+      LIFE_SCIENCE_KEYWORDS,
+    ),
+    false,
+  );
+});
+
+test("filterBiorxivPapersByPrimaryKeywords keeps only primary-keyword matches", () => {
+  const papers: Paper[] = [
+    {
+      id: "a",
+      title: "scRNA-seq atlas of liver zonation",
+      journal: "bioRxiv",
+      publishedDate: "2026-05-28",
+      url: "https://example.com/a",
+      sourceId: "biorxiv",
+    },
+    {
+      id: "b",
+      title: "Unrelated biochemistry preprint",
+      journal: "bioRxiv",
+      publishedDate: "2026-05-28",
+      url: "https://example.com/b",
+      sourceId: "biorxiv",
+    },
+  ];
+
+  const filtered = filterBiorxivPapersByPrimaryKeywords(papers, LIFE_SCIENCE_KEYWORDS);
+  assert.equal(filtered.length, 1);
+  assert.equal(filtered[0]?.id, "a");
 });

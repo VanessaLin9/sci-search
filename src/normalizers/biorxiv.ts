@@ -1,4 +1,5 @@
 import { buildPaperId } from "../normalize.js";
+import { matchKeywords, type LifeScienceKeywordsConfig } from "../domain/life-science/index.js";
 import { normalizeWhitespace } from "./shared.js";
 import type { Paper, Source } from "../types.js";
 
@@ -54,4 +55,20 @@ export function normalizeBiorxivRecordToPaper(
     articleType: record.category?.trim() || record.type?.trim() || undefined,
     sourceId: source.id,
   };
+}
+
+/** Keep bioRxiv preprints whose title/abstract hit primary (single-cell/spatial) keywords. */
+export function paperMatchesPrimaryKeywords(
+  paper: Pick<Paper, "title" | "abstract">,
+  keywords: LifeScienceKeywordsConfig,
+): boolean {
+  const searchableText = [paper.title, paper.abstract].filter(Boolean).join(" ");
+  return matchKeywords(searchableText, keywords.primary).length > 0;
+}
+
+export function filterBiorxivPapersByPrimaryKeywords(
+  papers: Paper[],
+  keywords: LifeScienceKeywordsConfig,
+): Paper[] {
+  return papers.filter((paper) => paperMatchesPrimaryKeywords(paper, keywords));
 }

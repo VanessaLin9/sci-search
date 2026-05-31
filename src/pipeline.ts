@@ -5,7 +5,7 @@ import { fetchRssSource } from "./fetchRss.js";
 import { dedupePapers, filterPapersByDate } from "./filterPapers.js";
 import { enrichPapers, type EnrichPapersResult } from "./enrichers/index.js";
 import { normalizeRssItemToPaper } from "./normalize.js";
-import { normalizeBiorxivRecordToPaper } from "./normalizers/biorxiv.js";
+import { normalizeBiorxivRecordToPaper, filterBiorxivPapersByPrimaryKeywords } from "./normalizers/biorxiv.js";
 import { runDigestPhase } from "./digest/runDigestPhase.js";
 import type { DigestPhaseResult } from "./digest/types.js";
 import { routeLifeSciencePapers } from "./routing/routeLifeScience.js";
@@ -109,7 +109,14 @@ async function collectPapersFromSources(options: RunPipelineOptions): Promise<So
       if (!source) {
         throw new Error(`Source ${id} not found`);
       }
-      results.push(await processBiorxivSource(source, options.reportDate, biorxivConfig.categories));
+      results.push(
+        await processBiorxivSource(
+          source,
+          options.reportDate,
+          biorxivConfig.categories,
+          options.keywords,
+        ),
+      );
     }
   }
 
@@ -139,6 +146,7 @@ async function processBiorxivSource(
   source: Source,
   reportDate: string,
   categories: readonly string[],
+  keywords: KeywordsConfig,
 ): Promise<SourceProcessResult> {
   if (source.kind !== "biorxiv-api") {
     throw new Error(`Source ${source.id} is not a bioRxiv API source`);
@@ -153,16 +161,17 @@ async function processBiorxivSource(
     const normalized = records
       .map((record) => normalizeBiorxivRecordToPaper(record, source))
       .filter((paper): paper is Paper => paper !== null);
-    const { deduped, onReportDate } = applyPerSourceFilters(normalized, reportDate);
+    const keywordMatched = filterBiorxivPapersByPrimaryKeywords(normalized, keywords);
+    const { deduped, onReportDate } = applyPerSourceFilters(keywordMatched, reportDate);
 
     return {
       papers: onReportDate,
-      normalized,
+      normalized: keywordMatched,
       stats: {
         sourceId: source.id,
         feedTitle: source.name,
         rssItemCount: fetchedCount,
-        normalizedCount: normalized.length,
+        normalizedCount: keywordMatched.length,
         dedupedCount: deduped.length,
         onReportDateCount: onReportDate.length,
       },
