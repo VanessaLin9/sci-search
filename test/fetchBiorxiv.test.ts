@@ -44,6 +44,25 @@ test("fetchBiorxivCategoryPage parses a single page", async () => {
   assert.equal(page.nextCursor, null);
 });
 
+test("fetchBiorxivCategoryPage returns empty when API reports no posts found", async () => {
+  const url =
+    "https://api.biorxiv.org/details/biorxiv/2026-05-28/2026-05-28/0/json?category=synthetic_biology";
+  const page = await fetchBiorxivCategoryPage(
+    "https://api.biorxiv.org/details/biorxiv",
+    "2026-05-28",
+    "synthetic_biology",
+    0,
+    createFixtureFetch({
+      [url]: {
+        messages: [{ status: "no posts found" }],
+        collection: [],
+      },
+    }),
+  );
+
+  assert.deepEqual(page, { records: [], nextCursor: null });
+});
+
 test("fetchBiorxivCategoryRecords paginates until total is reached", async () => {
   const page0Url =
     "https://api.biorxiv.org/details/biorxiv/2026-05-28/2026-05-28/0/json?category=cell_biology";

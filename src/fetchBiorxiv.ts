@@ -1,11 +1,20 @@
 import { z } from "zod";
 import type { BiorxivRecord } from "./normalizers/biorxiv.js";
 
+const numericField = z
+  .union([z.number(), z.string()])
+  .optional()
+  .transform((value) => {
+    if (value === undefined) return 0;
+    const parsed = typeof value === "number" ? value : Number.parseInt(value, 10);
+    return Number.isFinite(parsed) ? parsed : 0;
+  });
+
 const biorxivMessageSchema = z.object({
   status: z.string(),
-  cursor: z.number(),
-  count: z.number(),
-  total: z.union([z.string(), z.number()]),
+  cursor: numericField,
+  count: numericField,
+  total: numericField,
 });
 
 const biorxivResponseSchema = z.object({
@@ -25,12 +34,6 @@ export const BIORXIV_FETCH_HEADERS = {
 } as const;
 
 const PAGE_SIZE = 100;
-
-function parseTotal(total: string | number): number {
-  if (typeof total === "number") return total;
-  const parsed = Number.parseInt(total, 10);
-  return Number.isFinite(parsed) ? parsed : 0;
-}
 
 function buildCategoryUrl(
   baseUrl: string,
@@ -65,12 +68,18 @@ export async function fetchBiorxivCategoryPage(
 
   const parsed = biorxivResponseSchema.parse(await response.json());
   const message = parsed.messages[0];
-  if (!message || message.status !== "ok") {
-    throw new Error(`bioRxiv API error for ${category}: ${message?.status ?? "missing status"}`);
+  if (!message) {
+    throw new Error(`bioRxiv API error for ${category}: missing status message`);
+  }
+  if (message.status === "no posts found") {
+    return { records: [], nextCursor: null };
+  }
+  if (message.status !== "ok") {
+    throw new Error(`bioRxiv API error for ${category}: ${message.status}`);
   }
 
   const records = parsed.collection as BiorxivRecord[];
-  const total = parseTotal(message.total);
+  const total = message.total;
   const nextCursor = message.cursor + message.count;
   if (message.count === 0 || records.length === 0 || nextCursor >= total) {
     return { records, nextCursor: null };
@@ -114,14 +123,21 @@ export async function fetchBiorxivRecords(options: {
   let fetchedCount = 0;
 
   for (const category of options.categories) {
-    const categoryRecords = await fetchBiorxivCategoryRecords(
-      options.baseUrl,
-      options.reportDate,
-      category,
-      fetchFn,
-    );
-    fetchedCount += categoryRecords.length;
-    records.push(...categoryRecords);
+    try {
+      const categoryRecords = await fetchBiorxivCategoryRecords(
+        options.baseUrl,
+        options.reportDate,
+        category,
+        fetchFn,
+      );
+      fetchedCount += categoryRecords.length;
+      records.push(...categoryRecords);
+    } catch (error) {
+      console.warn(
+        `bioRxiv category skipped (${category}):`,
+        error instanceof Error ? error.message : error,
+      );
+    }
   }
 
   return {
