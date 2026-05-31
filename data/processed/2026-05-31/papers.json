@@ -1,0 +1,166 @@
+{
+  "reportDate": "2026-05-31",
+  "generatedAt": "2026-05-31T22:49:16.441Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.05.27.728266",
+      "title": "From unsupervised clustering to atlas-guided annotation in cohort-scale spatial omics with HiCAT",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-05-31",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.27.728266v1",
+      "doi": "10.64898/2026.05.27.728266",
+      "abstract": "Pathologist-annotated tissue regions provide a fundamental reference for examining spatial omics data, yet such annotations are available for a limited number of samples due to the substantial manual effort required. Moreover, these annotations are derived from morphology within individual histology images, which can overlook molecularly defined regions and obscure intra-sample heterogeneity. To address these limitations, we present HiCAT, a machine-learning framework that automatically generates pathologist-informed region annotations and characterizes regional heterogeneity in spatial omics data. Across seven datasets, HiCAT consistently outperforms state-of-the-art methods, achieving a median relative improvement of 107% in accuracy. Beyond transferring pathologist annotations, HiCAT uncovers molecularly informed regional heterogeneity not captured by original annotations, including tumor subregions associated with clinical outcomes and brain subregions aligned with spatiotemporal disease progression. By generating consistent, highly granular, and biologically informative region annotations across large cohorts, HiCAT enables scalable downstream analysis and provides training labels for foundation models in spatial biology.",
+      "authors": [
+        "Huang, J.",
+        "Shen, X.",
+        "Smith, Y.",
+        "Harik, L.",
+        "Wang, L.",
+        "Yu, J.",
+        "Epstein, M.",
+        "Hu, J."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial omics",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "HiCAT：從無監督聚類到大規模空間組學圖譜導引註釋的機器學習框架",
+      "summaryZh": "病理學家手動註釋組織區域耗時費力，且傳統形態學方法可能忽略分子層面的重要資訊。HiCAT 框架能自動生成病理學家級別的區域註釋，並精確呈現空間組學數據中的異質性。在七個數據集測試中，HiCAT 準確率中位數提升達107%，顯著優於現有方法。研究進一步發現，HiCAT 能識別與臨床結果相關的腫瘤亞區域，以及與疾病時空進展對應的腦部亞區域。這項技術為空間生物學的大規模下游分析與基礎模型訓練提供了可擴展的解決方案。",
+      "topicTags": [
+        "spatial-omics",
+        "machine-learning",
+        "pathology",
+        "computational-biology",
+        "single-cell"
+      ]
+    },
+    {
+      "id": "10.64898/2026.05.27.727961",
+      "title": "Epigenome Alterations and 3D Chromatin Architecture Remodeling in Inflammatory Macrophage Activation under Diabetic Conditions",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-05-31",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.27.727961v1",
+      "doi": "10.64898/2026.05.27.727961",
+      "abstract": "Aberrant monocyte and macrophage activation in diabetes drives chronic inflammation and complications. While epigenetic mechanisms are implicated, the role of 3D chromatin reorganization remains unclear. Using integrated multi-Omics, we profiled gene expression and 3D chromatin architecture in human CD14+ monocyte differentiated macrophages treated with high glucose plus TNF-alpha (HT) mimicking the diabetic milieu. HT induced inflammatory programs resembling those in diabetes, dynamically altered chromatin accessibility, enhancer-promoter loops, transcriptionally active/inactive (A/B) compartments, and topologically associated domains. Inflammatory genes exhibited increased chromatin accessibility, whereas cell cycle and metabolic genes showed reduced chromatin accessibility and enhancer-promoter interactions. These architectural changes facilitated the convergence of lineage-specific and signal-dependent transcription factors at enhancer-promoter loops, forming network hubs orchestrating pro-inflammatory responses. Similar enhancer-promoter interactions were observed in monocytes from individuals with diabetes. Perturbing chromatin interactions via CRISPR-interference targeting HT induced enhancers suppressed inflammatory gene expression. Results from this first comprehensive enhancer connectome maps in macrophages under diabetic conditions reveal disease associated rewiring of the 3D epigenome, highlighting epigenetic mechanisms as potential therapeutic targets.",
+      "authors": [
+        "Reddy, M. A.",
+        "Bhattacharya, S.",
+        "Tanwar, V. S.",
+        "Malek, V.",
+        "Chen, Z.",
+        "Zhang, L.",
+        "Lanting, L.",
+        "Wu, X.",
+        "Grant, M. B.",
+        "Tompkins, J.",
+        "Chen, Z. B.",
+        "Natarajan, R."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics",
+        "CRISPR",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "糖尿病環境下發炎巨噬細胞活化之表觀基因體改變與三維染色質結構重塑",
+      "summaryZh": "本研究探討糖尿病環境（高血糖合併腫瘤壞死因子-α）如何透過表觀基因機制與三維染色質結構改變影響巨噬細胞活化。研究團隊運用整合性多體學分析，發現發炎相關基因在糖尿病模擬條件下呈現染色質開放性增加，而細胞週期與代謝相關基因則顯示染色質可及性與增強子-啟動子交互作用降低。三維染色質結構的重塑促進了譜系特異性與訊號依賴性轉錄因子在增強子-啟動子迴路上的匯聚，形成協調促發炎反應的網絡樞紐。值得注意的是，這些染色質架構改變在糖尿病患者的單核球中同樣被觀察到，顯示其與疾病的臨床相關性。透過CRISPR干擾技術破壞特定增強子的染色質交互作用可有效抑制發炎基因表現，揭示表觀基因機制作為糖尿病相關慢性發炎治療標靶的潛力。",
+      "topicTags": [
+        "diabetes",
+        "macrophage",
+        "epigenetics",
+        "chromatin-architecture",
+        "inflammation"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 4,
+      "passedByScope": 2,
+      "llmClassified": 2,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 2,
+      "included": 2,
+      "excluded": 2
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 2,
+      "llmTagged": 2,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 2,
+      "candidates": 2,
+      "featured": 2,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 0,
+      "preprint": 2,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 2,
+      "llmSummarized": 2,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-73939-8",
+        "title": "Revealing bond level origin of stability in disordered solids from marginal stability to ultrastability",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-05-31T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-73939-8",
+        "doi": "10.1038/s41467-026-73939-8",
+        "abstract": "Understanding the structural origins of stability in disordered solids is essential for predicting mechanical failure and manipulating their properties, yet the inherent disorder complicates this analysis. This study identifies stabilizing bonds as critical structural features that govern stability across a spectrum from marginal to ultra-stable disordered solids, providing a unified framework for understanding their mechanical behavior.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-73973-6",
+        "title": "An electronic fingerprint device based on spiral patterned tactile pixel array for augmented human-machine interactions",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-05-31T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-73973-6",
+        "doi": "10.1038/s41467-026-73973-6",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    }
+  ]
+}
