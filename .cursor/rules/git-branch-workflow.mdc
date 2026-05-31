@@ -1,0 +1,36 @@
+---
+description: Git workflow — always branch from updated main; never commit on main
+alwaysApply: true
+---
+
+# Git branch workflow
+
+Before starting **any new feature, fix, or refactor** in this repo:
+
+1. **Update `main`**
+   - `git fetch origin`
+   - `git checkout main`
+   - `git pull origin main`
+
+2. **Create a feature branch** (never work directly on `main`)
+   - `git checkout -b <type>/<short-description>`
+   - Examples: `feat/biorxiv-preprint`, `fix/rss-timeout`, `chore/update-deps`
+
+3. **Do all edits and commits on that branch only**
+   - Never commit on `main`
+   - Never push directly to `main`
+   - Merge via PR when the user asks
+
+## If already on the wrong branch
+
+- Uncommitted work on `main` or an unrelated branch → stash, update `main`, create the correct feature branch, then `git stash pop`
+- Do not leave feature work sitting on `main` uncommitted
+
+## Before the first commit on new work
+
+Confirm:
+
+- Current branch is **not** `main`
+- Branch name matches the task being implemented
+
+Only create commits when the user explicitly asks (see user commit rules).
