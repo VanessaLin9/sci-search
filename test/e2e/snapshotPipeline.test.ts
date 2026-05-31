@@ -52,6 +52,7 @@ describe("RSS snapshot pipeline e2e", () => {
         keywords,
         reportDate: BUSY_DATE,
         scopeBySourceId,
+        biorxivSourceIds: [],
       });
 
       const processed = buildProcessedFile(BUSY_DATE, result);
@@ -90,6 +91,7 @@ describe("RSS snapshot pipeline e2e", () => {
         keywords,
         reportDate: EMPTY_DATE,
         scopeBySourceId,
+        biorxivSourceIds: [],
       });
 
       const processed = buildProcessedFile(EMPTY_DATE, result);

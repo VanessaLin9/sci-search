@@ -1,0 +1,26 @@
+{
+  "messages": [
+    {
+      "status": "ok",
+      "category": "cell biology",
+      "interval": "2026-05-28:2026-05-28",
+      "funder": "all",
+      "cursor": 0,
+      "count": 1,
+      "count_new_papers": "1",
+      "total": "2"
+    }
+  ],
+  "collection": [
+    {
+      "title": "Page one preprint",
+      "authors": "Alpha, A.",
+      "doi": "10.1101/2026.05.28.111111",
+      "date": "2026-05-28",
+      "version": "1",
+      "category": "cell biology",
+      "abstract": "First page record.",
+      "server": "biorxiv"
+    }
+  ]
+}

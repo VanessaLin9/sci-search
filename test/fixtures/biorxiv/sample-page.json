@@ -1,0 +1,40 @@
+{
+  "messages": [
+    {
+      "status": "ok",
+      "category": "cell biology",
+      "interval": "2026-05-28:2026-05-28",
+      "funder": "all",
+      "cursor": 0,
+      "count": 2,
+      "count_new_papers": "2",
+      "total": "2"
+    }
+  ],
+  "collection": [
+    {
+      "title": "Single-cell atlas of spatial transcriptomics in test tissue",
+      "authors": "Smith, J.; Doe, A.",
+      "author_corresponding": "Jane Smith",
+      "author_corresponding_institution": "Test University",
+      "doi": "10.1101/2026.05.28.123456",
+      "date": "2026-05-28",
+      "version": "1",
+      "type": "new results",
+      "license": "cc_by",
+      "category": "cell biology",
+      "abstract": "We profile single cells with spatial transcriptomics across test tissue samples.",
+      "published": "NA",
+      "server": "biorxiv"
+    },
+    {
+      "title": "A preprint missing required fields",
+      "authors": "No Date Author",
+      "doi": "10.1101/2026.05.28.999999",
+      "version": "1",
+      "category": "cell biology",
+      "abstract": "Should be skipped because date is missing.",
+      "server": "biorxiv"
+    }
+  ]
+}
