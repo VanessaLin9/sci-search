@@ -33,6 +33,7 @@ describe("golden pipeline e2e", () => {
       reportDate: REPORT_DATE,
       scopeBySourceId,
       rssSourceIds: ["nature-methods"],
+      biorxivSourceIds: [],
     });
 
     const processed = buildProcessedFile(REPORT_DATE, result);

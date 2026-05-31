@@ -145,6 +145,17 @@ function mockTranslateResponse(payload: Record<string, unknown>): Response {
   });
 }
 
+function emptyBiorxivResponse(): Response {
+  const body = {
+    messages: [{ status: "ok", cursor: 0, count: 0, total: "0" }],
+    collection: [],
+  };
+  return new Response(JSON.stringify(body), {
+    status: 200,
+    headers: { "content-type": "application/json" },
+  });
+}
+
 function mockChatCompletion(body: string): Response {
   const request = JSON.parse(body) as ChatRequestBody;
   const system = request.messages?.find((message) => message.role === "system")?.content ?? "";
@@ -203,6 +214,10 @@ export function createMockFetch(options: MockFetchOptions = {}): typeof fetch {
 
     if (url.startsWith("https://api.crossref.org/works/")) {
       return mockCrossrefResponse();
+    }
+
+    if (url.includes("api.biorxiv.org/details/biorxiv")) {
+      return emptyBiorxivResponse();
     }
 
     if (url.includes("nature.com/articles/")) {

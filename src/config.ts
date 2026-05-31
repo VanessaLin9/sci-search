@@ -63,9 +63,16 @@ const emailFileSchema = z.object({
 
 export type EmailFileConfig = z.infer<typeof emailFileSchema>;
 
+const biorxivFileSchema = z.object({
+  categories: z.array(z.string().min(1)),
+});
+
+export type BiorxivFileConfig = z.infer<typeof biorxivFileSchema>;
+
 let routingFileCache: RoutingFileConfig | undefined;
 let digestFileCache: DigestFileConfig | undefined;
 let emailFileCache: EmailFileConfig | undefined;
+let biorxivFileCache: BiorxivFileConfig | undefined;
 
 export async function loadSources(path = "config/sources.json"): Promise<Source[]> {
   const raw = await readFile(path, "utf8");
@@ -132,6 +139,14 @@ export function loadDigestFileConfig(path = "config/digest.json"): DigestFileCon
     digestFileCache = parsed;
   }
   return digestFileCache;
+}
+
+export function loadBiorxivFileConfig(path = "config/biorxiv.json"): BiorxivFileConfig {
+  if (!biorxivFileCache) {
+    const raw = readFileSync(path, "utf8");
+    biorxivFileCache = biorxivFileSchema.parse(JSON.parse(raw));
+  }
+  return biorxivFileCache;
 }
 
 export function loadEmailFileConfig(path = "config/email.json"): EmailFileConfig {

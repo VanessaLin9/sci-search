@@ -22,6 +22,18 @@ export const DEFAULT_RSS_SOURCE_IDS = [
 
 export type DefaultRssSourceId = (typeof DEFAULT_RSS_SOURCE_IDS)[number];
 
+/** Default bioRxiv API source IDs for the pipeline. */
+export const DEFAULT_BIORXIV_SOURCE_IDS = ["biorxiv"] as const;
+
+export type DefaultBiorxivSourceId = (typeof DEFAULT_BIORXIV_SOURCE_IDS)[number];
+
+/** Sources whose papers must always land in the preprint digest line (never line-a/line-b). */
+export const PREPRINT_SOURCE_IDS = [...DEFAULT_BIORXIV_SOURCE_IDS] as const;
+
+export function isPreprintSource(sourceId: string): boolean {
+  return (PREPRINT_SOURCE_IDS as readonly string[]).includes(sourceId);
+}
+
 /** Per-source scope assignments (broad-science vs life-science-only). */
 export const SOURCE_SCOPE_BY_ID = {
   cell: "life-science-only",

@@ -1,4 +1,5 @@
 import { fallbackDigestLine } from "../fallbackDigestLine.js";
+import { isPreprintSource } from "../sources.js";
 import type { DigestLine, DigestTaggingMethod } from "../types.js";
 
 type DigestTaggedPaper = {
@@ -15,11 +16,15 @@ export function resolveDigestLines<P extends DigestTaggedPaper>(
   lineById: ReadonlyMap<string, DigestLine>,
   llmTaggedIds: ReadonlySet<string>,
 ): Array<P & { digestLine: DigestLine; digestTaggingMethod: DigestTaggingMethod }> {
-  return papers.map((paper) => ({
-    ...paper,
-    digestLine: lineById.get(paper.id) ?? fallbackDigestLine(paper),
-    digestTaggingMethod: llmTaggedIds.has(paper.id) ? "llm" : "keyword-fallback",
-  }));
+  return papers.map((paper) => {
+    const digestLine = lineById.get(paper.id) ?? fallbackDigestLine(paper);
+    const digestTaggingMethod = llmTaggedIds.has(paper.id) ? "llm" : "keyword-fallback";
+    return {
+      ...paper,
+      digestLine: isPreprintSource(paper.sourceId) ? "preprint" : digestLine,
+      digestTaggingMethod,
+    };
+  });
 }
 
 export function applyKeywordDigestFallback<P extends DigestTaggedPaper>(
