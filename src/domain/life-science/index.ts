@@ -19,6 +19,8 @@ export {
 export {
   DEFAULT_BIORXIV_SOURCE_IDS,
   DEFAULT_RSS_SOURCE_IDS,
+  isPreprintSource,
+  PREPRINT_SOURCE_IDS,
   SOURCE_SCOPE_BY_ID,
   type DefaultBiorxivSourceId,
   type DefaultRssSourceId,

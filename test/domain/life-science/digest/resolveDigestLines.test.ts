@@ -52,6 +52,25 @@ test("resolveDigestLines falls back when LLM line is missing", () => {
   assert.equal(resolved.digestTaggingMethod, "keyword-fallback");
 });
 
+test("resolveDigestLines forces preprint for biorxiv even when LLM tags line-a", () => {
+  const [resolved] = resolveDigestLines(
+    [paper("p-1", { sourceId: "biorxiv", section: "single-cell-spatial" })],
+    new Map([["p-1", "line-a"]]),
+    new Set(["p-1"]),
+  );
+  assert.equal(resolved.digestLine, "preprint");
+  assert.equal(resolved.digestTaggingMethod, "llm");
+});
+
+test("resolveDigestLines forces preprint for biorxiv even when LLM tags line-b", () => {
+  const [resolved] = resolveDigestLines(
+    [paper("p-1", { sourceId: "biorxiv", section: "biology" })],
+    new Map([["p-1", "line-b"]]),
+    new Set(["p-1"]),
+  );
+  assert.equal(resolved.digestLine, "preprint");
+});
+
 test("applyKeywordDigestFallback tags every paper with keyword-fallback", () => {
   const resolved = applyKeywordDigestFallback([
     paper("p-1", { section: "other" }),
