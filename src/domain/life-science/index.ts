@@ -16,7 +16,13 @@ export {
   LIFE_SCIENCE_EMAIL_BRANDING,
   type LifeScienceEmailBranding,
 } from "./emailBranding.js";
-export { DEFAULT_RSS_SOURCE_IDS, SOURCE_SCOPE_BY_ID, type DefaultRssSourceId } from "./sources.js";
+export {
+  DEFAULT_BIORXIV_SOURCE_IDS,
+  DEFAULT_RSS_SOURCE_IDS,
+  SOURCE_SCOPE_BY_ID,
+  type DefaultBiorxivSourceId,
+  type DefaultRssSourceId,
+} from "./sources.js";
 export { PAPER_SECTIONS } from "./constants.js";
 export { SOURCE_SCOPES, LIFE_SCIENCE_ROUTING_EXCLUSION_REASON } from "./constants.js";
 export {

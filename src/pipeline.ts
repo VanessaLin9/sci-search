@@ -1,8 +1,11 @@
 import type { Item } from "rss-parser";
+import { loadBiorxivFileConfig } from "./config.js";
+import { fetchBiorxivRecords } from "./fetchBiorxiv.js";
 import { fetchRssSource } from "./fetchRss.js";
 import { dedupePapers, filterPapersByDate } from "./filterPapers.js";
 import { enrichPapers, type EnrichPapersResult } from "./enrichers/index.js";
 import { normalizeRssItemToPaper } from "./normalize.js";
+import { normalizeBiorxivRecordToPaper } from "./normalizers/biorxiv.js";
 import { runDigestPhase } from "./digest/runDigestPhase.js";
 import type { DigestPhaseResult } from "./digest/types.js";
 import { routeLifeSciencePapers } from "./routing/routeLifeScience.js";
@@ -10,12 +13,13 @@ import type { LifeScienceRoutingResult } from "./routing/types.js";
 import {
   classifyPaperKeywords,
   classifyPapersWithKeywords,
+  DEFAULT_BIORXIV_SOURCE_IDS,
   DEFAULT_RSS_SOURCE_IDS,
   type LifeScienceKeywordsConfig,
 } from "./domain/life-science/index.js";
 import type { ClassifiedPaper, Paper, Source, SourceScope } from "./types.js";
 
-export { DEFAULT_RSS_SOURCE_IDS };
+export { DEFAULT_BIORXIV_SOURCE_IDS, DEFAULT_RSS_SOURCE_IDS };
 
 export type KeywordsConfig = LifeScienceKeywordsConfig;
 
@@ -40,6 +44,7 @@ export type RunPipelineOptions = {
   reportDate: string;
   scopeBySourceId: ReadonlyMap<string, SourceScope>;
   rssSourceIds?: readonly string[];
+  biorxivSourceIds?: readonly string[];
 };
 
 export type PipelineRunResult = {
@@ -86,6 +91,7 @@ export function classifyPapers(papers: Paper[], keywords: KeywordsConfig): Class
 
 async function collectPapersFromSources(options: RunPipelineOptions): Promise<SourceProcessResult[]> {
   const rssSourceIds = options.rssSourceIds ?? DEFAULT_RSS_SOURCE_IDS;
+  const biorxivSourceIds = options.biorxivSourceIds ?? DEFAULT_BIORXIV_SOURCE_IDS;
   const results: SourceProcessResult[] = [];
 
   for (const id of rssSourceIds) {
@@ -94,6 +100,17 @@ async function collectPapersFromSources(options: RunPipelineOptions): Promise<So
       throw new Error(`Source ${id} not found`);
     }
     results.push(await processRssSource(source, options.reportDate));
+  }
+
+  if (biorxivSourceIds.length > 0) {
+    const biorxivConfig = loadBiorxivFileConfig();
+    for (const id of biorxivSourceIds) {
+      const source = options.sources.find((candidate) => candidate.id === id);
+      if (!source) {
+        throw new Error(`Source ${id} not found`);
+      }
+      results.push(await processBiorxivSource(source, options.reportDate, biorxivConfig.categories));
+    }
   }
 
   return results;
@@ -116,6 +133,58 @@ function applyPerSourceFilters(
   const deduped = dedupePapers(normalized);
   const onReportDate = filterPapersByDate(deduped, reportDate);
   return { deduped, onReportDate };
+}
+
+async function processBiorxivSource(
+  source: Source,
+  reportDate: string,
+  categories: readonly string[],
+): Promise<SourceProcessResult> {
+  if (source.kind !== "biorxiv-api") {
+    throw new Error(`Source ${source.id} is not a bioRxiv API source`);
+  }
+
+  try {
+    const { records, fetchedCount } = await fetchBiorxivRecords({
+      baseUrl: source.url,
+      reportDate,
+      categories,
+    });
+    const normalized = records
+      .map((record) => normalizeBiorxivRecordToPaper(record, source))
+      .filter((paper): paper is Paper => paper !== null);
+    const { deduped, onReportDate } = applyPerSourceFilters(normalized, reportDate);
+
+    return {
+      papers: onReportDate,
+      normalized,
+      stats: {
+        sourceId: source.id,
+        feedTitle: source.name,
+        rssItemCount: fetchedCount,
+        normalizedCount: normalized.length,
+        dedupedCount: deduped.length,
+        onReportDateCount: onReportDate.length,
+      },
+    };
+  } catch (error) {
+    console.warn(
+      `bioRxiv skipped for ${source.id} (${source.url}):`,
+      error instanceof Error ? error.message : error,
+    );
+    return {
+      papers: [],
+      normalized: [],
+      stats: {
+        sourceId: source.id,
+        feedTitle: source.name,
+        rssItemCount: 0,
+        normalizedCount: 0,
+        dedupedCount: 0,
+        onReportDateCount: 0,
+      },
+    };
+  }
 }
 
 async function processRssSource(source: Source, reportDate: string): Promise<SourceProcessResult> {

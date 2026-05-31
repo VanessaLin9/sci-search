@@ -22,6 +22,11 @@ export const DEFAULT_RSS_SOURCE_IDS = [
 
 export type DefaultRssSourceId = (typeof DEFAULT_RSS_SOURCE_IDS)[number];
 
+/** Default bioRxiv API source IDs for the pipeline. */
+export const DEFAULT_BIORXIV_SOURCE_IDS = ["biorxiv"] as const;
+
+export type DefaultBiorxivSourceId = (typeof DEFAULT_BIORXIV_SOURCE_IDS)[number];
+
 /** Per-source scope assignments (broad-science vs life-science-only). */
 export const SOURCE_SCOPE_BY_ID = {
   cell: "life-science-only",
