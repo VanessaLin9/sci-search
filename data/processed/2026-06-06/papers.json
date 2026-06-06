@@ -1,0 +1,471 @@
+{
+  "reportDate": "2026-06-06",
+  "generatedAt": "2026-06-06T22:51:54.916Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.06.04.730125",
+      "title": "Single-Cell Multi-Omics Dissection of Malignant Evolutionary Mechanisms and Construction of a Prognostic Model for Clear Cell Renal Cell Carcinoma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.04.730125v1",
+      "doi": "10.64898/2026.06.04.730125",
+      "abstract": "Clear cell renal cell carcinoma (ccRCC) exhibits pronounced heterogeneity across WHO histological grades, yet systematic single-cell multi-omics studies characterizing these transitions remain limited. We integrated scRNA-seq and scATAC-seq data across ccRCC WHO grades to establish a multi-omics framework encompassing tumor cells and immune populations. Using pseudotime trajectory analysis and machine learning ensembles, we developed a prognostic signature (CBG) from core nodes of transcriptional regulatory networks. We found that in tumor cells, epigenetic alterations consistently precede metabolic reprogramming and invasive adaptation. CD8+ T cell exhaustion followed a trajectory shifting from IRF7- to ZNF683-regulated states, while monocytes differentiated toward M1 and M2 macrophages orchestrated by NFIC/IL1B and CEBPD/GLI2. Intercellular communication networks showed a temporal progression from inflammation, through vascular remodeling, to immunosuppression dominance. The CBG signature demonstrated robust performance in independent cohorts, identifying SLC11A1 and SH3YL1 as antagonistic survival determinants. This study elucidates the dynamic molecular and immunological mechanisms underlying ccRCC grade progression, providing a robust framework for subtype-specific prognostication and precision therapeutic targeting",
+      "authors": [
+        "Liu, R.",
+        "Shi, Y.",
+        "Xiao, Y.",
+        "Ren, B.",
+        "Li, L.",
+        "Qi, B.",
+        "Li, T.",
+        "Zhang, Y.",
+        "Gao, J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "multi-omics",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞多體學解析腎透明細胞癌惡性演化並建構預後模型",
+      "summaryZh": "腎透明細胞癌在不同WHO分級間展現顯著異質性，然而系統性單細胞多體學研究仍屬匱乏。本研究整合scRNA-seq與scATAC-seq技術，建立涵蓋腫瘤細胞與免疫族群的 multi-omics 框架，發現腫瘤細胞中表觀遺傳改變一致性地先於代謝重編程與侵襲適應。團隊進一步運用偽時間軌跡分析與機器學習整合方法，從轉錄調控網路的核心節點開發出CBG預後特徵，並在多個獨立世代中驗證其穩健表現。研究亦揭示CD8+ T細胞耗竭、單核球分化及細胞間通訊的動態演進，為精準醫療時代的腫瘤亞型分類與治療策略提供重要框架。",
+      "topicTags": [
+        "single-cell",
+        "multi-omics",
+        "renal-cell-carcinoma",
+        "cancer-prognosis",
+        "tumor-microenvironment"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.03.729847",
+      "title": "HOPE: Interpretable Histology Analysis with Spatial Omics-Derived Signatures for Precision Oncology",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.03.729847v1",
+      "doi": "10.64898/2026.06.03.729847",
+      "abstract": "Hematoxylin and eosin (H&E) stained images are fundamental clinical tools for disease assessment. However, even with advanced computational models, their prognostic capabilities remain limited. Spatial omics characterizes tumor microenvironments (TME) in detail yet remains clinically inaccessible due to cost and complexity. In this study, we present HOPE, a lightweight framework that learns TME signatures from paired H&E and spatial omics data during training, then applies these to H&E alone at inference. Leveraging H&E foundation models, HOPE consistently outperforms identical architectures trained without spatial omics guidance across cancer types and cohorts. It further generates interpretable annotations of TME signature on H&E regions, stratifying patients into biologically coherent groups with different prognostic outcomes. HOPE establishes a practical route to translate high-content spatial omics discoveries into scalable, clinically deployable tools.",
+      "authors": [
+        "Wang, T.",
+        "Bieniosek, M.",
+        "Krpicak, T. J.",
+        "Luan, M.",
+        "Ruf, B.",
+        "Schürch, C. M.",
+        "Mayer, A. T.",
+        "Luo, R.",
+        "Trevino, A. E.",
+        "Wu, Z."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial omics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "HOPE：利用空間組學特徵實現可解釋性組織學分析",
+      "summaryZh": "H&E染色影像為臨床疾病評估的基本工具，但現有預測模型的預後能力仍有限。空間組學能詳細刻畫腫瘤微環境，但因成本高昂與操作複雜而難以臨床應用。HOPE框架能從配對的H&E與空間組學資料中學習腫瘤微環境特徵，之後僅需H&E影像即可進行推論。透過結合H&E基礎模型，HOPE在多種癌症類型與族群中皆優於未使用空間組學引導的相同架構，並能產生可解釋的腫瘤微環境特徵標註，將病人分層為具有不同預後結果的生物學群組。HOPE為將高內涵空間組學發現轉化為可擴展臨床工具提供了實用途徑。",
+      "topicTags": [
+        "spatial-omics",
+        "histology",
+        "precision-oncology",
+        "tumor-microenvironment",
+        "computational-pathology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.03.729557",
+      "title": "STITCH: Spatial Transcriptomics Imputation via Flow Matching with Internal Learning",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.03.729557v1",
+      "doi": "10.64898/2026.06.03.729557",
+      "abstract": "Spatial transcriptomics datasets frequently suffer from spatial gaps and missing regions due to sectioning artifacts, tissue damage, and the high cost of sequencing that limits tissue coverage. We present STITCH, a scalable and robust generative framework for multidimensional virtual spatial transcriptomics reconstruction. STITCH models intrinsic spatial-transcriptomic patterns directly from individual tissue samples, enabling reconstruction without requiring external reference atlases or matched histological image priors. The framework adopts a decoupled architecture that separates spatial morphology restoration from transcriptomic generation. STITCH first compresses high-dimensional transcriptomic profiles into a low-dimensional latent representation through a spatial-aware graph autoencoder. For 3D cross-slice gaps, STITCH employs optimal transport-conditioned flow matching for spatial reconstruction, whereas 2D in-slice damage is repaired through an internal learning strategy. To generate the corresponding transcriptomic profiles, STITCH further establishes a point-wise conditional flow matching model in the latent space. This module achieves linear computational complexity, enabling continuous 3D atlas reconstruction of over 11 million cells within 5 hours on a single commodity GPU. Extensive evaluations across diverse spatial transcriptomics platforms, spanning both single-cell and spot-level technologies, demonstrate that STITCH consistently preserves transcriptomic identities, spatial topologies, and anatomical continuity. Overall, STITCH provides a scalable and platform-compatible computational framework for reconstructing high-resolution continuous spatial transcriptomic atlases.",
+      "authors": [
+        "Wang, S.",
+        "Wang, X.",
+        "Peng, Q.",
+        "Li, T."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "STITCH：透過流匹配與內部學習進行空間轉錄體學填補",
+      "summaryZh": "空間轉錄體學資料常因切片 artifact、組織損傷及測序成本限制而存在空間缺口與缺失區域。STITCH 是一個可擴展且穩健的生成式框架，採用解耦架構將空間形態修復與轉錄體生成分開處理，無需外部參考圖譜即可直接從個別組織樣本學習內在的空間轉錄體模式。該框架結合了空間感知圖自動編碼器與最優傳輸條件流匹配技術，能在單張消費級 GPU 上於 5 小時內完成超過 1100 萬個細胞的連續 3D 重建。實驗結果顯示 STITCH 在不同空間轉錄體技術平台上均能一致地保留轉錄體特徵與空間拓撲結構，為建構高解析度連續空間轉錄體圖譜提供了一個可擴展且平台相容的計算方案。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "flow-matching",
+        "imputation",
+        "generative-AI",
+        "single-cell"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.02.729674",
+      "title": "PAG-Agent: a biologist-oriented research assistant for context-aware pathway-level analysis and interpretation",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.02.729674v1",
+      "doi": "10.64898/2026.06.02.729674",
+      "abstract": "Pathway analysis is a critical step for translating gene-level omics results into biological mechanisms, yet existing workflows often leave researchers with long lists of statistically significant pathways that are difficult to interpret, validate, and connect to experimental context. We developed PAG-Agent, a biologist-oriented virtual research assistant that integrates pathway-level statistical analysis, context-aware biological interpretation, literature-supported reasoning, and scientific writing support within a unified workflow. PAG-Agent supports bulk and single-cell transcriptomic data and enables users to perform data preprocessing, differential expression analysis, pathway analysis, pathway-level consensus analysis, and pathway-level meta-analysis through click-based and chat-based interactions. Unlike conventional pathway-analysis tools that analyze gene sets largely in isolation, PAG-Agent incorporates experimental conditions and research objectives to prioritize biologically relevant pathways and generate interpretable hypotheses. The system also provides gene and pathway annotation, citation retrieval, visualization, and writing refinement functions. In Alzheimer's disease case studies using three transcriptomic datasets, PAG-Agent consistently identified neurodegeneration-related pathways across multiple analysis methods and datasets. In citation-retrieval benchmarking, PAG-Agent outperformed six competing LLMs across five common literature-support scenarios, demonstrating improved ability to provide contextually relevant and valid references. Overall, PAG-Agent lowers technical barriers for pathway-level analysis and helps researchers move from transcriptomic data to biologically grounded interpretation, hypothesis generation, and scientific communication.",
+      "authors": [
+        "Nguyen, Q.-H.",
+        "Zhang, Z.",
+        "Le, D.-H.",
+        "Chen, J. Y.",
+        "Ku, W.-S.",
+        "Chen, H.",
+        "Yue, Z."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "PAG-Agent：面向生物學家的情境感知路徑層級分析與解讀研究助理",
+      "summaryZh": "路徑分析是將基因體學結果轉化為生物機制的關鍵步驟，但現有工具常產生難以解讀與驗證的冗長路徑清單。PAG-Agent 是一款整合路徑統計分析、文獻推理與科學寫作支援的虛擬研究助理，支援批次與單細胞轉錄體資料，並能透過點選或對話方式完成差異表現分析與統合分析。此系統可根據實驗條件與研究目標優先排序具生物相關性的路徑，生成可驗證的假說。在阿茲海默症轉錄體資料的分析中，PAG-Agent 跨多個資料集與方法一致性地識別出神經退化相關路徑；在文獻檢索基準測試中亦超越六個大型語言模型，展現更準確的上下文相關引用能力，整體而言大幅降低了路徑分析的技術門檻。",
+      "topicTags": [
+        "pathway-analysis",
+        "transcriptomics",
+        "single-cell",
+        "llm",
+        "alzheimer-disease",
+        "bioinformatics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.03.725182",
+      "title": "Compositional and interpretable representation of histology using AI foundation models and sparse autoencoders",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.03.725182v1",
+      "doi": "10.64898/2026.06.03.725182",
+      "abstract": "Light microscopy of tissue sections stained with hematoxylin and eosin (H&E) has been the foundation of histopathology for over 150 years and remains essential for diagnosis and research. The development of high-plex spatial profiling approaches able to measure protein and RNA expression at single-cell resolution augments but does not replace H&E imaging, even in research. Computational pathology (CPath) models based on deep learning promise to further increase the value of H&E imaging but interpreting these models in biological terms remains challenging. As a result, they are not widely used in spatial profiling studies. Here we describe a human-in-the-loop computational framework that leverages CPath foundation models (FMs) and sparse autoencoders (SAEs) to decompose FM embeddings and automatically identify diverse, human-interpretable histopathology features in H&E images. When FM-SAE modeling was applied to pulmonary diseases such as tuberculosis and lung cancer, human-machine interaction augmented and accelerated expert interpretation. Moreover, the resulting annotations provide a morphology-aware approach to integrating 2D and 3D mesoscale tissue architectures with molecular spatial profiling.",
+      "authors": [
+        "Zhao, Z.",
+        "Maliga, Z.",
+        "Ogbonna, E. C.",
+        "Talemi, S. R.",
+        "Coy, S.",
+        "Gagne, A.",
+        "Lumamba, K.",
+        "Solomon, I. H.",
+        "Santagata, S.",
+        "Steyn, A. J. C.",
+        "Naidoo, T.",
+        "Sorger, P. K."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "AI基礎模型攜手稀疏自編碼器　解開組織病理學的黑盒子",
+      "summaryZh": "H&E組織染色在病理學應用已逾150年，但深度學習模型的生物學解釋始終是瓶頸。本研究開發了一套人機協作框架，結合計算病理學基礎模型與稀疏自編碼器，可自動分解模型嵌入並識別人類可解讀的組織病理特徵。應用於肺結核與肺癌等肺部疾病時，專家解讀的效率與深度皆獲顯著提升。此方法更提供形態學導向的策略，有助整合二維與三維組織架構與分子空間分析數據，為空間蛋白質體學與轉錄體學研究開闢新徑。",
+      "topicTags": [
+        "computational-pathology",
+        "deep-learning",
+        "histopathology",
+        "spatial-profiling",
+        "interpretable-ai"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.02.729736",
+      "title": "Chromap Suite: an open-source single-binary platform for agentic multiomic RNA + ATAC profiling",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.02.729736v1",
+      "doi": "10.64898/2026.06.02.729736",
+      "abstract": "Background. Single-cell multiomic profiling of RNA expression and chromatin accessibility is now a standard tool for resolving regulatory state in single cells, but existing analysis toolchains have lagged. Cell Ranger ARC, the proprietary multiomic pipeline, uses a custom broad peak caller rather than the MACS3 narrow peaks that the ATAC field has consolidated on, and its restrictive end-user licence forbids redistribution of analysis pipelines that include it. A fully open-source, permissively-licensed alternative anchored on community-standard methods (Chromap for ATAC alignment and MACS3 for narrow peak calling) has been impractical to assemble because the two codebases are written in different languages with incompatible runtimes, leaving practitioners to chain them together with ad-hoc scripts. Results. We present Chromap Suite, the chromatin-accessibility side of an open-source multiomic stack built in support of the NIH Molecular Phenotypes of Null Alleles in Cells (MorPhiC) consortium's multiomic production pipeline. We extended Chromap with native BAM output and coordinate sorting, in-process narrow peak calling, optional Y-chromosome filtering, and native input from the compressed binary CBQ sequencing format alongside FASTQ, and hardened the result with a regression-test matrix that auto-validates the four upstream Chromap presets (bulk ATAC, scATAC, ChIP-seq, Hi-C). We reimplemented MACS3's narrow peak caller in portable C++ as libMACS3, byte-identical to MACS3 v3.0.3 and free of any Python interpreter dependency. Finally, we extracted Chromap's alignment and fragment-generation paths into a callable C++ library (libchromap) and embedded both libchromap and libMACS3 into STAR Suite, so that one STAR invocation runs alignment, peak calling, and cell calling for both RNA and ATAC modalities concurrently. To our knowledge this is the first true single-binary RNA + ATAC multiomic implementation. On the public 3K PBMC Multiome at 32 threads, the platform completes in 18 minutes 55 seconds wall time and 44.6 GB peak resident memory, against 40 minutes 4 seconds and 79.1 GB resident memory for Cell Ranger ARC v2.2.0 (a 2.12x wall speedup with 1.8x less peak memory), and produces 50,274 peaks that are byte-identical to MACS3 v3.0.3. To support deployment by both research scientists and the AI agents increasingly used in bioinformatics analysis, Chromap Suite ships a Model Context Protocol (MCP) server and a browser-based Launchpad driven by a shared set of composable YAML recipes that humans and agents drive the same way. Conclusions. Chromap Suite delivers a unified, freely redistributable multiomic pipeline that produces the MACS3 narrow peaks downstream ATAC analyses already rely on, with substantially lower wall time and memory than the proprietary alternative. The MIT- and BSD-3-licensed code carries no redistribution restrictions, the constituent libraries are independently embeddable in other open-source tools, and the MCP server plus Launchpad recipes make the platform straightforward to drive both by humans and by AI agents.",
+      "authors": [
+        "Hung, L.-H.",
+        "Yeung, K. Y."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Chromap Suite：開源單一二進制平台實現單細胞多體學 RNA + ATAC 分析",
+      "summaryZh": "單細胞多體學分析 RNA 表現與染色質可及性已成為解析單細胞調控狀態的標準工具，但現有分析流程如 Cell Ranger ARC 為專有軟體且授權限制嚴格，妨礙了分析流程的開放分享。本研究推出 Chromap Suite，以社群標準方法（Chromap 進行 ATAC 比對、MACS3 進行 narrow peak 呼叫）為基礎，提供完全開源的替代方案。研究團隊將 MACS3 的 narrow peak 呼叫器以可攜式 C++ 重新實作（libMACS3），擺脫 Python 直譯器依賴，並將 Chromap 的比對與片段生成路徑封裝為可呼叫函式庫（libchromap），最終將兩者嵌入 STAR Suite，實現首次真正的單一二進制 RNA + ATAC 多體學實作。此平台將支援 NIH MorPhiC 聯盟的多體學生產流程，為研究社群提供可自由再分發的開放工具。",
+      "topicTags": [
+        "single-cell",
+        "multiomics",
+        "atac-seq",
+        "open-source",
+        "bioinformatics"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-74087-9",
+      "title": "Cryo-EM structures of heteromeric Kir4.1/5.1 channel suggest mechanisms of inward rectification and channel blockage",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74087-9",
+      "doi": "10.1038/s41467-026-74087-9",
+      "abstract": "Kir4.1/5.1 channels are vital for brain and kidney function. Here the authors combine structural, electrophysiological, and computational studies to reveal an inner-ring pore blockage mechanism by polyamines and inhibitors, providing the structural basis for inward rectification.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Cryo-EM結構揭示異源Kir4.1/5.1通道的內向整流與阻斷機制",
+      "summaryZh": "Kir4.1/5.1通道在腦部與腎臟功能中扮演關鍵角色。本研究利用冷凍電子顯微鏡（Cryo-EM）解析了異源Kir4.1/5.1通道的結構，並結合電生理學與計算分析，揭示了多胺類物質及抑制劑透過內環孔隙阻斷通道的分子機制。此發現為內向整流現象提供了結構層面的解釋，對於理解離子通道的調控機制具有重要意義，並可能為相關疾病的藥物開發提供新思路。",
+      "topicTags": [
+        "cryo-em",
+        "ion-channels",
+        "inward-rectification",
+        "structural-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-73964-7",
+      "title": "Mapping the absorption landscape of far-red Photosystem II",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-73964-7",
+      "doi": "10.1038/s41467-026-73964-7",
+      "abstract": "Some cyanobacteria do oxygenic photosynthesis with near-infrared photons using specialized pigments. Here, the authors identify their positions and colors by combining phylogenetic, spectroscopic, and structural methods.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "遠紅外光系統II吸收光譜測繪",
+      "summaryZh": "部分藍綠菌能利用近紅外光進行氧化光合作用，這在傳統認知中相當罕見，因為氧化光合作用通常依賴可見光。本研究結合系統發育分析、光譜學與結構生物學方法，鑑定這些特殊色素在光系統II中的位置與光學特性。此發現揭示了光合作用在光能利用上的驚人多樣性與適應能力，對於理解光合作用的演化歷程具有重要意義，並可能為開發新型光能轉換系統提供靈感。",
+      "topicTags": [
+        "photosynthesis",
+        "cyanobacteria",
+        "spectroscopy",
+        "structural-biology",
+        "far-red-light"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-74021-z",
+      "title": "Ameliorating calcium homeostasis improves longevity and healthspan in progeroid and naturally aged mice",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74021-z",
+      "doi": "10.1038/s41467-026-74021-z",
+      "abstract": "The study shows that disruption of calcium homeostasis triggers the aberrant accumulation of S100A6 in the cytoplasm, thereby promoting Hutchinson-Gilford Progeria Syndrome (HGPS) and natural aging. Mianserin was found to effectively retard the aging process and significantly extend the lifespan of both progeroid and naturally aged mice by restoring calcium homeostasis.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "改善鈣離子恆定可延長早衰症與自然老化小鼠的壽命及健康期",
+      "summaryZh": "本研究揭示了鈣離子恆定失衡會導致S100A6蛋白異常堆積於細胞質中，進而加速哈欽森-吉爾福德早衰症（HGPS）與自然老化的進程。實驗發現抗憂鬱藥物美安昔寧（Mianserin）能有效恢復鈣離子恆定，顯著延緩早衰症小鼠與自然老化小鼠的衰老速度，並大幅延長其壽命。此發現不僅闡明了鈣離子調控在老化過程中的關鍵角色，也為開發延緩人類衰老及治療老化相關疾病的藥物提供了嶄新的治療策略與分子標的。",
+      "topicTags": [
+        "calcium-homeostasis",
+        "aging",
+        "progeria",
+        "mianserin",
+        "longevity"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-74000-4",
+      "title": "ArchVelo: archetypal velocity modeling for single-cell multi-omic trajectories",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74000-4",
+      "doi": "10.1038/s41467-026-74000-4",
+      "abstract": "Mapping cell dynamics from static data is a challenge in genomics. Here, authors introduce ArchVelo, a computational method for modeling transcription dynamics and trajectory inference using chromatin accessibility archetypes in single-cell multi-omics, and infer new T cell transitions in infection.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "ArchVelo：利用染色質可及性原型建模單細胞多體學軌跡",
+      "summaryZh": "靜態單細胞資料難以捕捉細胞動態變化，是基因體學研究的主要挑戰。本研究提出 ArchVelo 方法，結合染色質可及性原型與速度模型，能從單細胞多體學資料中推估轉錄動態與細胞軌跡。研究者將此方法應用於感染情境，成功推斷出新的 T 細胞狀態轉換路徑。這項工具為理解免疫細胞分化與功能調控提供更精確的分析框架，有助於單細胞基因體學研究的發展。",
+      "topicTags": [
+        "single-cell",
+        "multi-omics",
+        "trajectory-inference",
+        "chromatin-accessibility",
+        "t-cells"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 14,
+      "passedByScope": 6,
+      "llmClassified": 8,
+      "llmYes": 4,
+      "llmNotSure": 0,
+      "llmNo": 4,
+      "included": 10,
+      "excluded": 4
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 10,
+      "llmTagged": 10,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 10,
+      "candidates": 10,
+      "featured": 10,
+      "overflow": 0,
+      "lineA": 1,
+      "lineB": 3,
+      "preprint": 6,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 10,
+      "llmSummarized": 10,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-74177-8",
+        "title": "Grain boundary engineered aluminum current collector for energy-dense initially anode-free sodium metal batteries",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-06-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-74177-8",
+        "doi": "10.1038/s41467-026-74177-8",
+        "abstract": "The initially anode-free sodium metal offer advantages in energy density and safety. Here, authors design a grain-boundary Ga-rich polycrystalline aluminum current collector that enables controlled Al3+ dissolution to compensate Na loss, stabilizes Na plating/stripping, and delivers reversible batteries.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-73154-5",
+        "title": "Superballistic flow of viscous electron fluid induced by edge magnetoplasmons in point contacts",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-06-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-73154-5",
+        "doi": "10.1038/s41467-026-73154-5",
+        "abstract": "Superballistic transport is a known hydrodynamic effect where viscous electrons can move collectively. Here, the authors provide evidence of superballistic electron flow under microwave irradiation in point contacts induced by edge magnetoplasmons.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-74014-y",
+        "title": "Towards practical aqueous zinc metal pouch cell batteries via weakly bound water-mediated shear-thickening electrolyte",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-06-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-74014-y",
+        "doi": "10.1038/s41467-026-74014-y",
+        "abstract": "Zinc dendrite growth and corrosion limit zinc metal electrode performance. Here, authors design a weakly bound water-mediated shear-thickening electrolyte that integrates chemical regulation with mechanical reinforcement to suppress dendrites and corrosion, enabling stable zinc metal electrodes.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-74052-6",
+        "title": "Bioinspired nano-architecture for cellulose fibers with spider silk–like toughness",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-06-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-74052-6",
+        "doi": "10.1038/s41467-026-74052-6",
+        "abstract": "Cellulose fibers derived from renewable biomass offer great tensile strength performance, but their toughness remains limited. Here the authors develop cellulose fibers with uniquely high toughness and tensile strength, that can form from single fibers to woven fabrics.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    }
+  ]
+}
