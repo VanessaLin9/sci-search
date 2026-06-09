@@ -138,9 +138,16 @@ async function classifyBatch(
       `${batchLabel}: missing-retry ${retryItems.length} paper(s) (from ${parsed.missingIds.length} missing)`,
     );
 
-    const retryVerdicts = await classifyBatch(retryItems, config, `${batchLabel} missing-retry`, {
-      allowMissingVerdictRetry: false,
-    });
+    let retryVerdicts: Map<string, LifeScienceRoutingVerdict>;
+    try {
+      retryVerdicts = await classifyBatch(retryItems, config, `${batchLabel} missing-retry`, {
+        allowMissingVerdictRetry: false,
+      });
+    } catch (retryError) {
+      const message = retryError instanceof Error ? retryError.message : String(retryError);
+      logRouting(`${batchLabel}: missing-retry failed (${message}); applying fallback for missing verdicts`);
+      retryVerdicts = new Map();
+    }
 
     const originallyMissing = new Set(parsed.missingIds);
     for (const [id, verdict] of retryVerdicts) {
