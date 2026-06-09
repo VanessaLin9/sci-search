@@ -23,3 +23,9 @@ export function createRoutingLlmClient(config = getRoutingLlmConfig()): OpenAI {
   cachedConfigKey = key;
   return cachedClient;
 }
+
+/** Test-only: clear cached client so mocked global fetch is picked up. */
+export function resetRoutingLlmClientCache(): void {
+  cachedClient = null;
+  cachedConfigKey = null;
+}

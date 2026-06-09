@@ -43,8 +43,18 @@ export function extractLlmJsonContent(message: LlmMessage | undefined): {
   throw new Error("LLM returned empty message content and reasoning_content");
 }
 
+export function isRoutingMissingVerdictsError(error: unknown): boolean {
+  const message = error instanceof Error ? error.message : String(error);
+  return message.includes("Routing LLM missing verdicts");
+}
+
 export function shouldRetrySplitLlmBatch(error: unknown, finishReason: string): boolean {
   if (finishReason === "length") return true;
   const message = error instanceof Error ? error.message : String(error);
-  return message.includes("no JSON object") || message.includes("reasoning only") || message.includes("invalid JSON");
+  return (
+    message.includes("no JSON object") ||
+    message.includes("reasoning only") ||
+    message.includes("invalid JSON") ||
+    message.includes("Routing LLM missing verdicts")
+  );
 }
