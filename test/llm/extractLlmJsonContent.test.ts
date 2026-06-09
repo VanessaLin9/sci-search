@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import {
   extractLlmJsonContent,
+  isRoutingMissingVerdictsError,
   shouldRetrySplitLlmBatch,
 } from "../../src/llm/extractLlmJsonContent.js";
 
@@ -41,4 +42,10 @@ test("shouldRetrySplitLlmBatch retries on length and missing JSON", () => {
     true,
   );
   assert.equal(shouldRetrySplitLlmBatch(new Error("network timeout"), "stop"), false);
+});
+
+test("shouldRetrySplitLlmBatch treats routing missing verdict errors as retryable", () => {
+  const error = new Error("Routing LLM missing verdicts for: 10.1038/d41586-026-01689-0");
+  assert.equal(shouldRetrySplitLlmBatch(error, "stop"), true);
+  assert.equal(isRoutingMissingVerdictsError(error), true);
 });
