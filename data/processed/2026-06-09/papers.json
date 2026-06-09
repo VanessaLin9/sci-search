@@ -1,0 +1,1096 @@
+{
+  "reportDate": "2026-06-09",
+  "generatedAt": "2026-06-09T23:08:58.059Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03119-5",
+      "title": "Scaling up training dataset size for transcriptomic AI models is much pain with little gain",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03119-5",
+      "doi": "10.1038/s41592-026-03119-5",
+      "abstract": "The advantages of training foundation models for single-cell datasets on large (tens of millions of cells) datasets have not been systematically tested. We evaluated the role of the size and diversity of the training dataset in the performance of single-cell foundation models and found little gain in increasing dataset size beyond a set point.",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "訓練資料集擴增對轉錄體AI模型的效益有限",
+      "summaryZh": "訓練大型單細胞資料集的基礎模型是否資料越多越好？本研究系統性地測試了訓練資料集大小與多樣性對單細胞基礎模型效能的影響。研究結果顯示，當資料集超過一定規模後，繼續擴增資料量所帶來的效能提升相當有限。這項發現挑戰了「資料越多模型越好」的直覺假設，對於研究資源的分配與基礎模型的開發策略具有重要參考價值。",
+      "topicTags": [
+        "single-cell",
+        "transcriptomics",
+        "foundation-models",
+        "ai-ml",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41592-026-03120-y",
+      "title": "Evaluating the role of pretraining dataset size and diversity on single-cell foundation model performance",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03120-y",
+      "doi": "10.1038/s41592-026-03120-y",
+      "abstract": "The success of transformer-based foundation models on natural language and images has motivated their use in single-cell biology. Single-cell foundation models have been trained on increasingly larger transcriptomic datasets, scaling from initial studies with 1 million cells to newer atlases with over 100 million cells. Here we investigate the role of pretraining dataset size and diversity on the performance of single-cell foundation models on both zero-shot and fine-tuned tasks. Using a large corpus of 22.2 million cells, we pretrain a total of 400 models, which we evaluate by conducting 6,400 experiments. Our results show that current methods tend to plateau in performance with pretraining datasets that are only a fraction of the size of current training corpora. Unlike large language models, single-cell foundation models show no clear data scaling laws, indicating that developers should focus on balancing model capacity, dataset size and computational resources rather than indiscriminately increasing all three. The performance of single-cell foundation models is dependent on many factors. This study assesses the effect of the pretraining dataset’s size and diversity, revealing potential challenges in pursuing consistent improvement by naively scaling up pretraining data.",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞基礎模型：預訓練資料集規模與多樣性對效能的影響評估",
+      "summaryZh": "本研究系統性地探討預訓練資料集的規模與多樣性如何影響單細胞基礎模型的效能。研究團隊使用2,220萬個細胞的資料集預訓練了400個模型，並進行了6,400次實驗評估。研究結果顯示，當前方法在僅使用目前訓練語料庫一小部分資料時效能就會趨於平緩，且不同於大型語言模型，單細胞基礎模型並未展現明確的資料 scaling laws。這項發現意味著開發者應專注於平衡模型容量、資料集規模與計算資源，而非盲目擴增所有要素，為未來單細胞基礎模型的開發提供了重要的實證指引。",
+      "topicTags": [
+        "single-cell",
+        "foundation-models",
+        "machine-learning",
+        "computational-biology",
+        "transcriptomics"
+      ]
+    },
+    {
+      "id": "10.1038/s41592-026-03125-7",
+      "title": "Simultaneous two- and three-photon multiplane imaging across cortical layers in freely moving mice",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03125-7",
+      "doi": "10.1038/s41592-026-03125-7",
+      "abstract": "Head-mounted multiphoton microscopes enable imaging of activity from neuronal populations spread throughout the cortical layers in freely moving mice but so far have been restricted to recording from one cortical layer at a time. Here, combining two- and three-photon-based excitation delivered through multiple fibers, we built a head-mounted multiplane microscope enabling near-simultaneous imaging of neuronal activity from five vertically separated planes, spread across multiple cortical layers. Both excitation pathways had remote focusing mechanisms for fine axial adjustments, enabling activity recordings from the same neuronal populations over weeks in freely behaving mice. The lightweight microscope utilized an onboard, two-channel detection system designed to enable activity recordings from neuronal populations spread across visual-cortex layers in both lit and dark conditions as well as imaging activity across posterior parietal cortex layers during complex gap-crossing behaviors. We show that during gap-crossing tasks, layer 5 and 2/3 neuronal subpopulations in the posterior parietal cortex have differential pattern sequences during free decision-making. A lightweight head-mounted multiplane microscope allows simultaneous imaging from >1,800 neurons spread across the cortical layers in freely moving mice performing complex behavioral tasks, sampled over weeks.",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "自由活動小鼠皮質層的同步雙光子和三光子多平面成像",
+      "summaryZh": "頭戴式多光子顯微鏡過去僅能一次記錄單一皮質層的神經活動。本研究結合雙光子和三光子激發技術，透過多光纖傳輸，開發出可同時成像五個垂直分布平面的頭戴式顯微鏡，重量輕巧且配備遙控對焦機制。此系統能在數週內對自由行為小鼠的同一神經元群體進行長期追蹤，並在光照與黑暗環境下對視覺皮質進行成像。研究進一步發現，在複雜的間隙跨越行為中，後頂葉皮質第五層與第二/三層的神經元展現出不同的活動模式序列，揭示皮質各層在自由決策過程中的功能分化。此技術實現了同時記錄超過1,800個神經元的高通量成像，為研究皮質層間的神經編碼機制開闢新途徑。",
+      "topicTags": [
+        "multiphoton-microscopy",
+        "neural-imaging",
+        "freely-moving",
+        "cortical-layers",
+        "in-vivo-recording"
+      ]
+    },
+    {
+      "id": "10.1038/s41592-026-03123-9",
+      "title": "Spatially resolved m6A profiling using m6A-ARTR-DBiT",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03123-9",
+      "doi": "10.1038/s41592-026-03123-9",
+      "abstract": "N6-methyladenosine (m6A) on RNA plays diverse regulatory roles, yet its spatial distribution within tissues remains largely unexplored. Here we introduce m6A-ARTR-DBiT, a spatial m6A profiling assay that leverages reverse-transcription-based detection and deterministic barcoding in tissue to map transcriptome-wide m6A distribution while preserving native tissue context. Applying m6A-ARTR-DBiT to mouse embryonic tissues and adult brains generates spatially resolved m6A landscapes and reveals region-associated m6A features across different functional domains. Pairwise comparison of spatial m6A profiles with spatial transcriptomes uncovers positive correlations between m6A levels and the expression of its methyltransferases and binding proteins, which also enables systematic identification of tissue-region-specific epitranscriptomic regulation. In the mouse hippocampus, m6A-ARTR-DBiT allows for high-resolution mapping of m6A organization within fine-scale tissue structures. Together, m6A-ARTR-DBiT provides a platform for interrogating RNA modification distribution within intact tissue sections, offering insights into the link between spatially patterned m6A deposition and gene regulation. m6A-ARTR-DBiT offers a spatial assay to profile the distribution of N6-methyladenosine (m6A) across the transcriptome in intact tissue sections.",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "m6A-ARTR-DBiT：實現組織空間解析的m6A定序新技術",
+      "summaryZh": "m6A（N6-甲基腺苷）是RNA上最常見的修飾之一，調控多種基因表現過程，但過去難以在組織層面觀察其空間分布。本研究開發m6A-ARTR-DBiT技術，結合逆轉錄偵測與精確條碼標定，在完整組織切片上繪製全轉錄組m6A分布圖譜，同時保留原生組織結構。應用於小鼠胚胎與成體腦組織，揭示不同功能區域特有的m6A特徵，並發現m6A修飾程度與其甲基轉移酶及結合蛋白的表現呈正相關。在小鼠海馬體中更實現高解析度m6A組織圖譜，為研究RNA修飾的空間調控機制提供強大工具。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "rna-modification",
+        "epitranscriptomics",
+        "brain-mapping",
+        "embryonic-development"
+      ]
+    },
+    {
+      "id": "10.1038/s41592-026-03126-6",
+      "title": "OrthoFinder: improved phylogenetic orthology inference with enhanced accuracy and scalability",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03126-6",
+      "doi": "10.1038/s41592-026-03126-6",
+      "abstract": "Here we present a major advancement of the OrthoFinder method. This extends OrthoFinder’s high-accuracy comparative genomic framework to provide substantially enhanced scalability and accuracy. Specifically, we show that enhanced phylogenetic delineation of orthogroups provides a 7% relative increase in orthogroup inference accuracy. We further demonstrate that a new gene assignment method substantially reduces overall runtime RAM usage without compromising accuracy. The latest version of OrthoFinder is available via GitHub at https://github.com/OrthoFinder/OrthoFinder . The updated OrthoFinder v3 software boosts accuracy and scalability in phylogenetic orthology inference with massive and diverse datasets.",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "OrthoFinder：提升系統發育同源基因推斷的準確度與可擴展性",
+      "summaryZh": "OrthoFinder是一款重要的系統發育同源基因推斷工具，本研究發表其重大升級版本。研究團隊透過改良的系統發育同源基因群界定方法，使同源基因推斷準確度相對提升7%。此外，新開發的基因分配方法大幅降低執行時的記憶體使用量，同時不影響推斷準確度。這些改進使OrthoFinder能更有效率地處理龐大且多樣化的基因體資料集，對比較基因體學研究具有重要價值。最新版本已於GitHub公開供學界使用。",
+      "topicTags": [
+        "phylogenetics",
+        "orthology-inference",
+        "comparative-genomics",
+        "bioinformatics",
+        "software"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02607-w",
+      "title": "Pleiotropic shared heritability quantifies the shared genetic variance of common diseases",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02607-w",
+      "doi": "10.1038/s41588-026-02607-w",
+      "abstract": "The overall contribution of pleiotropy to disease architectures is unknown, as most studies estimate genetic correlations with each auxiliary disease in turn. Here we propose a method—pleiotropic shared heritability with bias correction (PHBC)—to estimate the liability-scale genetic variance of a target disease that is shared with a specific set of auxiliary diseases ( $${{h}^{2}}_{\\mathrm{pleio}}$$ ). PHBC estimates $${{h}^{2}}_{\\mathrm{pleio}}$$ from a genetic correlation matrix using a Monte Carlo bias correction procedure to account for sampling noise. The average ratio of $${{h}^{2}}_{\\mathrm{pleio}}$$ to total single-nucleotide polymorphism heritability ( $${{h}^{2}}_{\\mathrm{pleio}}/{h}^{2}$$ ) across 15 UK Biobank diseases (spanning seven disease categories) was 27 ± 3%, increasing to 48 ± 5% when expanding to 62 auxiliary diseases/traits. $${{h}^{2}}_{\\mathrm{pleio}}/{h}^{2}$$ was broadly distributed across disease categories, decreasing only modestly when removing the most informative auxiliary disease categories. The average $${{h}^{2}}_{\\mathrm{pleio}}/{h}^{2}$$ was 1.51 ± 0.16-times larger than the proportion of total phenotypic variance explained by auxiliary diseases, implying higher pleiotropy for genetic effects. In summary, roughly half of common disease heritability is pleiotropic with a broad range of diseases. Pleiotropic shared heritability with bias correction (PHBC) estimates the genetic variance of a target disease that is shared with a set of auxiliary diseases. Applying PHBC to diseases in the UK Biobank shows pervasive sharing of genetic etiologies across disease categories.",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "多效性共享遺傳力量化常見疾病的共享遺傳變異",
+      "summaryZh": "本研究提出名為PHBC的新方法，透過蒙地卡羅偏差校正程序，從遺傳相關矩陣準確估算目標疾病與輔助疾病之間共享的遺傳變異量。針對英國生物資料庫中15種疾病的分析顯示，平均約27%的單核苷酸多態性遺傳力具有多效性，擴展至62種輔助疾病與性狀後更提升至48%。研究發現多效性共享遺傳力廣泛分布於各疾病類別，即使移除最具資訊量的輔助疾病類別也僅略微下降，顯示遺傳效應具有高度多效性。整體而言，約半數常見疾病的遺傳力與廣泛疾病範圍存在多效性共享，揭示了跨疾病類別普遍存在的遺傳病因學共享現象。",
+      "topicTags": [
+        "pleiotropy",
+        "genetic-heritability",
+        "complex-diseases",
+        "uk-biobank",
+        "statistical-genetics"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02614-x",
+      "title": "Inflammatory cytokines induce new cancer dependencies",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02614-x",
+      "doi": "10.1038/s41588-026-02614-x",
+      "abstract": "Tumor cells respond and adapt to environmental stresses that facilitate growth in hostile environments, including cytokine-mediated inflammation elicited by antitumor immunity and enhanced by immune checkpoint blockade (ICB). However, cytokine responses also induce transcriptional and cell-state changes that may predispose tumor cells to new vulnerabilities, which remain poorly explored. Here we performed in vitro genome-scale CRISPR loss-of-function screens in eight cancer models exposed to interferon-γ (IFNγ), interferon-β or tumor necrosis factor to map inflammation-induced genetic vulnerabilities. We identified members of the glycosylphosphatidylinositol (GPI) transamidase complex and the lipid phosphatase FITM2 as interferon-specific cancer dependencies. Tumor-specific deletion of GPI transamidase subunits or FITM2 markedly enhanced response to ICB in vivo. By integrating functional genomics, metabolomics and pharmacologic perturbation of downstream stress pathways, we found that loss of FITM2 predisposed cancer cells to IFNγ-driven endoplasmic reticulum and oxidative stress, culminating in paraptosis-like cell death. Collectively, these findings identify tumor-intrinsic dependencies governing responses to inflammatory cytokines. Cheruiyot et al. conduct genome-scale in vitro CRISPR loss-of-function screens to map genetic vulnerabilities induced by inflammatory cytokines and identify the glycosylphosphatidylinositol transamidase complex and the lipid phosphatase FITM2 as two interferon-specific tumor dependencies whose disruption sensitizes tumors to immune checkpoint blockade.",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer",
+        "CRISPR",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "發炎細胞激素誘發新的癌症弱點",
+      "summaryZh": "腫瘤細胞在發炎環境中會產生新的弱點，本研究系統性地繪製了發炎細胞激素誘導的遺傳脆弱性圖譜。研究發現 GPI 轉醯酶複合體和 FITM2 脂磷酸酶是干擾素特異性的癌症依賴基因，其破壞可顯著增強腫瘤對免疫檢查點抑制劑的反應。進一步分析顯示 FITM2 缺失會使癌細胞對干擾素驅動的內質網和氧化壓力過敏，最終引發類副凋亡細胞死亡。這項研究揭示了腫瘤對發炎細胞激素反應的關鍵調控機制，為克服免疫治療抗藥性提供了新的治療策略。",
+      "topicTags": [
+        "cancer",
+        "immunology",
+        "crispr-screen",
+        "immune-checkpoint-blockade",
+        "cytokine-signaling"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02615-w",
+      "title": "Spatially resolved single-cell analyses of human meningioma identify novel cell states influencing tumor microenvironment and progression",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02615-w",
+      "doi": "10.1038/s41588-026-02615-w",
+      "abstract": "Recent advances in our understanding of the molecular landscape of meningioma have generated new insights into the biology and heterogeneity of this disease, with demonstrated clinical value. However, there remains a need to understand tumor-intrinsic heterogeneity at single-cell resolution to inform potential therapeutic avenues. In this study, we examined the breadth of cell types and states in meningioma using a large cohort profiled with single-nuclear RNA sequencing and high-resolution spatial transcriptomics, as well as bulk DNA methylation and RNA sequencing (n = 712), bulk proteomics (n = 88) and plasma methylation (n = 59). We demonstrated that myeloid cell states differ across molecular groups of meningiomas and evolve meaningfully from dura to tumor. Myeloid cell states were also associated with unique myeloid–neoplastic interactions and neoplastic gene programs, suggesting a role in shaping the microenvironment. Finally, multiple non-neoplastic cell states refined outcome prediction beyond molecular group, suggesting a role in meningioma progression. This paper presents a sizeable single-cell multi-omic analysis of meningiomas comprising more than seven million cells. The results highlight tumor-intrinsic heterogeneity within both malignant and stromal compartments.",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "人類腦膜瘤空間單細胞分析：發現影響腫瘤微環境與病程的新型細胞狀態",
+      "summaryZh": "這項研究運用單核RNA定序和高解析度空間轉錄體學，分析了712個樣本的超過七百萬個細胞，為腦膜瘤的腫瘤異質性提供了前所未有的解析。研究發現骨髓細胞狀態在不同分子分型的腦膜瘤中有所差異，並且會從硬腦膜到腫瘤之間有意義地演化。這些骨髓細胞狀態與獨特的骨髓-腫瘤交互作用及腫瘤基因程式有關，暗示它們在塑造腫瘤微環境中扮演重要角色。此外，多種非腫瘤細胞狀態能夠強化預後預測，顯示其在腦膜瘤病程進展中的潛在角色。此研究為腦膜瘤的治療策略開發提供了重要的單細胞多體學資源。",
+      "topicTags": [
+        "single-cell",
+        "meningioma",
+        "spatial-transcriptomics",
+        "tumor-microenvironment",
+        "myeloid-cells"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02637-4",
+      "title": "MIXPRS enables multi-population and multi-method polygenic risk scores using summary statistics",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02637-4",
+      "doi": "10.1038/s41588-026-02637-4",
+      "abstract": "Many multi-population polygenic risk score (PRS) methods have been proposed to improve prediction in underrepresented populations; however, no single method performs best across all scenarios. Although integrating PRSs across multiple methods and populations may improve prediction, this approach is often limited by the need for individual-level tuning data. Here we introduce MIXPRS, a robust framework based on the data fission paradigm for combining multiple multi-population PRS methods using only genome-wide association study summary statistics. MIXPRS uses single nucleotide polymorphism pruning to mitigate linkage disequilibrium mismatch and non-negative least squares regression to estimate combination weights. Across simulations and real-data analyses spanning up to 26 traits, MIXPRS consistently improves prediction accuracy over existing methods. We further extend this framework to MIXPRS+, incorporating functional annotations and clinical PRSs, yielding additional gains in non-European populations. MIXPRS relies only on summary statistics, thus offering broad accessibility and robustness for underrepresented populations. MIXPRS is a framework for combining polygenic risk scores from multiple populations using GWAS summary statistics, enabling risk scores that can be effective for individuals across ancestries.",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "MIXPRS：利用GWAS摘要統計資料整合多族群與多方法的遺傳風險評分",
+      "summaryZh": "MIXPRS 是一個創新的框架，能夠僅使用全基因組關聯研究（GWAS）的摘要統計資料，結合來自多個族群與多種方法的遺傳風險評分（PRS）。過去整合不同PRS方法需要個人層級的調整資料，限制了研究的廣泛應用，而MIXPRS透過單核苷酸多態性修剪與非負最小平方法回歸，有效解決了連鎖不平衡不匹配的問題。此方法在模擬與真實資料分析中（涵蓋最多26種性狀）均展現優於現有方法的預測準確度。MIXPRS+進一步整合功能註釋與臨床PRS，為非歐洲族群帶來額外的預測提升，對於遺傳研究中代表性不足的族群具有重要意義。",
+      "topicTags": [
+        "polygenic-risk-scores",
+        "multi-population",
+        "gwas",
+        "genetic-prediction",
+        "underrepresented-populations"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03094-2",
+      "title": "The influence of reproductive mode on resource competition and diversity patterns in Ediacaran early animal communities",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03094-2",
+      "doi": "10.1038/s41559-026-03094-2",
+      "abstract": "The appearance of the first animals in the late Ediacaran period was followed by a period of relatively slow diversification. Here the authors show that asexual stoloniferous reproduction would have enabled co-existence of suboptimal interspecific competitors and constrained diversification.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "繁殖模式對埃迪卡拉紀早期動物群落資源競爭與多樣性分布的影響",
+      "summaryZh": "埃迪卡拉紀晚期最早動物的出現後，經歷了一段多樣化進展相對緩慢的時期。本研究揭示，無性匍匐繁殖（stoloniferous reproduction）使次優物種間競爭者能夠共存。這種繁殖模式限制了資源競爭的強度，從而約束了物種多樣化的發展。此研究為理解早期動物演化停滯提供了一個新的生態學視角，有助於解釋寒武紀大爆發前為何缺乏快速的物種多樣性增長。",
+      "topicTags": [
+        "ediacaran",
+        "early-animals",
+        "reproductive-biology",
+        "diversification",
+        "paleontology"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03172-7",
+      "title": "Hybrid solid−liquid optics enable scalable, high-resolution light-sheet microscopy across diverse immersion media",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03172-7",
+      "doi": "10.1038/s41587-026-03172-7",
+      "abstract": "Hybrid solid–liquid optics improve light-sheet imaging of intact biological samples.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "混合固液光學實現多浸沒介質高解析度光片顯微鏡",
+      "summaryZh": "本研究開發了一種混合固液光學系統，能在多樣的浸沒介質中實現高解析度光片顯微成像。光片顯微鏡因其低光毒性與高速成像能力，是活體生物樣本三維成像的理想工具，然而傳統光學系統在不同浸沒介質間的相容性受限。此技術結合固態與液態光學元件的優勢，不僅提升了成像解析度與可擴展性，還能適用於水、油及組織透明化試劑等多種介質。對於完整生物組織的高速三維成像與長期追蹤觀測，這項突破將大幅拓展顯微鏡的應用場景。",
+      "topicTags": [
+        "light-sheet-microscopy",
+        "optical-engineering",
+        "bioimaging",
+        "live-cell-imaging",
+        "tissue-imaging"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02311-2",
+      "title": "Human learning of noninvasive brain–computer interfaces via manifold geometry",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02311-2",
+      "doi": "10.1038/s41593-026-02311-2",
+      "abstract": "Brain–computer interfaces (BCIs) promise to restore and enhance human capabilities. Yet, their adoption has been limited by slow and inconsistent learning across users. We show that BCI learning is accelerated by leveraging the naturally occurring geometry, or intrinsic manifold, of brain activity, extracted using data diffusion. Participants were trained with real-time functional magnetic resonance imaging to control an avatar in a video game by self-modulating activity in brain regions supporting spatial navigation. We perturbed the mapping between brain activity and avatar movement to test how neural manifolds constrain human BCI learning. When new mappings relied on directions of significant variance on the intrinsic manifold, participants successfully gained control by realigning brain activity along these directions. When new mappings did not follow the intrinsic manifold, participants could not learn to control the avatar. These findings show how manifold geometry in higher-order brain regions guides human learning of complex cognitive tasks, identifying a principle for improving future neurotechnologies. Busch et al. use nonlinear neural manifolds to help humans gain rapid control over a noninvasive brain–computer interface, allowing them to learn how to play a video game with real-time fMRI neurofeedback from cognitive brain regions.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "人類透過流形幾何學習非侵入式腦機介面"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003849",
+      "title": "Correction: Premotor cortex hemodynamic responses primarily reflect perceptual rather than specific motor aspects of decision making",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-09T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003849",
+      "doi": "10.1371/journal.pbio.3003849",
+      "abstract": "by Jeff Boucher, Shihab Shamma, Yves Boubenec",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1371/journal.pbio.3003798",
+      "title": "Animal acoustic communication has a conserved optimal rhythm within the neural delta range",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-09T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003798",
+      "doi": "10.1371/journal.pbio.3003798",
+      "abstract": "Acoustic communication is crucial for survival across the animal kingdom, with acoustic signals being shaped by the interaction of producer and receiver selective pressures. While spectral features’ variation reflects species-specific selection, the evolutionary history of acoustic communication rhythms, i.e., the rhythmic modulations of acoustic signals, remains unknown. Using data from 98 species spanning primarily mammals and birds, with additional representation from amphibians, reptiles, fishes, and insects, we investigate the origins of acoustic communication rhythms, notably whether they are shaped by the producer’s anatomical characteristics, environmental constraints, or social complexity. Regression models which controlled for phylogenetic relatedness did not support an influence of these species-specific selective forces; instead, explicit phylogenetic models of trait evolution showed that most species’ rhythms are conserved around an evolutionary optimum of 2.7 Hz that falls within the neural delta range (1–4 Hz) and predates mammalian divergence. Given the known conserved brain oscillations across species and delta involvement in active sensing, we propose that, unlike spectral features, acoustic rhythm could be governed by a universal neural mechanism facilitating effective intra and interspecific communication via a shared channel that has persisted through evolutionary times.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "動物聲學通訊在神經δ頻帶範圍內具有保守的最佳節律"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003766",
+      "title": "Estrogen impacts NOD2-dependent regulation of intestinal homeostasis",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-09T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003766",
+      "doi": "10.1371/journal.pbio.3003766",
+      "abstract": "Mutations in the innate immune receptor NOD2 are the greatest single genetic risk factor for Crohn’s disease, yet the mechanisms by which NOD2 regulates intestinal homeostasis remain unclear. We used a CRISPR-generated zebrafish model to determine the impacts of NOD2 deficiency on intestinal health. In cellular, molecular, and transcriptomic studies, we uncovered substantial effects of NOD2 deficiency on epithelial and immune compartments, including deregulated expression of developmental pathways that establish and maintain the gut epithelium, and an unexpected increase in the expression of multiple estrogen-response genes. In functional assays, we uncovered a mechanistic link between estrogenic signals and NOD2-deficiency phenotypes, whereby exposure to estrogen alone replicated the effects of NOD2-deficiency, and treatment with the estrogen receptor modulator tamoxifen reverted the epithelial defects observed in nod2 mutants. Our findings identify a NOD2-estrogen regulatory axis that supports intestinal homeostasis and suggest that hormonal signaling may contribute to sex-specific aspects of Crohn’s disease.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development",
+        "CRISPR"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "雌激素影響NOD2依賴性腸道恆定調節"
+    },
+    {
+      "id": "10.64898/2026.06.04.730032",
+      "title": "Multi-modal comparison of primary and stem cell-derived β-cells nominates targets for maturation",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.04.730032v1",
+      "doi": "10.64898/2026.06.04.730032",
+      "abstract": "Stem-cell-derived {beta}-like-cells (SC{beta}-cells) provide a promising platform for diabetes modelling and cell replacement therapy, but their incomplete functional maturation remains a challenge. Here, we compared immature SC{beta}-cells to human primary {beta}-cells utilizing a multi-omic, single-cell framework integrating patch-clamp electrophysiology with scRNA sequencing (patch-seq), regulatory network inference, and functional phenotyping. Despite low insulin secretion and reduced insulin content, SC{beta}-cells displayed larger Na+ and Ca2+ currents and depolarization-induced exocytosis. Ultrastructural and metabolic profiling revealed immature insulin granules, altered mitochondrial morphology, elevated basal respiration and proton leak, and diminished spare respiratory capacity and glucose-responsive metabolism. Patch-seq linked exocytotic activity in SC{beta}-cells to oxidative phosphorylation and MYC target programs, consistent with incomplete terminal differentiation, whereas SC{beta}-cells expressing higher levels of mature identity markers showed reduced ion channel hyperactivity. Multi-omics profiling showed that electrophysiological features in SC{beta}-cells were embedded in transcriptional programs distinct from those of primary {beta}-cells and other endocrine cells. Network control theory nominated SREBP1, an endoplasmic reticulum tethered transcription factor regulating cholesterol and lipid homeostasis, as a promising candidate involved in this immature state. Inhibition of cholesterol trafficking increased SREBF1 expression and shifted metabolic and transcriptional features towards a more mature {beta}-like state. These data identify potential targets and pathways that can be leveraged to improve SC{beta}-cell maturation and validate cholesterol and lipid homeostasis through the SREBP1 axis as one such candidate.",
+      "authors": [
+        "Maghera, J.",
+        "Ellis, C. E.",
+        "Spigelman, A. F.",
+        "Smith, N.",
+        "Sasaki, S.",
+        "Lynn, F. C.",
+        "MacDonald, P. E."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "原代細胞與幹細胞衍生β細胞的多模態比較提名成熟標的"
+    },
+    {
+      "id": "10.64898/2026.06.02.729719",
+      "title": "PanKbase Integrated Single-Cell Map: A Comprehensive Atlas of Human Pancreatic Islets",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.02.729719v1",
+      "doi": "10.64898/2026.06.02.729719",
+      "abstract": "Abstract Aims/hypothesis Single-cell RNA sequencing (scRNA-seq) of pancreatic islet tissue is a powerful tool for investigating Type 1 Diabetes (T1D). However, individual datasets are limited in size and fragmented across donors, laboratories, and experimental conditions, highlighting the need for a unified single-cell atlas. This study aimed to construct a comprehensive, integrated scRNA-seq map of human isolated pancreatic islets by collating data from diverse sources. Methods Publicly available scRNA-seq datasets derived from isolated pancreatic islets, generated and/or provided by the Human Pancreas Analysis Program (HPAP), Prodo Labs, and the Integrated Islet Distribution Program (IIDP), were collected. Systematic quality controls were implemented to select high-quality samples, reads and cells. Data integration was conducted, accounting for important variables such as age, sex, body mass index (BMI), origin study, treatments, islet data/distribution resources, and sequencing chemistry. Results We generated a comprehensive single-cell atlas of human pancreatic islets comprising 191 high-quality assays from 140 donors (59 female, 81 male) across five phenotypic groups: controls without diabetes (69 donors), autoantibody-positive donors without diabetes (12), pre-diabetic donors (11), donors with type 1 diabetes (12), and donors with type 2 diabetes (36). The atlas also includes experimentally perturbed samples, including those exposed to SARS-CoV-2 infection and pro-inflammatory cytokines. In total, the atlas contains 448,935 cells, capturing major endocrine islet populations, such as alpha cells (43.3%) and beta cells (26.8%), as well as non-endocrine populations such as endothelial cells (0.75%) and immune cells (0.6%). Conclusions/interpretation By uniformly harmonizing and integrating data from multiple sources, we have developed a comprehensive single-cell atlas of isolated human pancreatic islets, which is publicly available at www.pankbase.org. The atlas provides a platform for hypothesis-driven investigation of diabetes pathophysiology and, given rigorous quality control at the read, barcode, and sample levels alongside careful metadata curation, is well suited for downstream machine-learning applications.",
+      "authors": [
+        "Vu, H. T. H.",
+        "Sun, H.",
+        "Kudtarkar, P.",
+        "Sharp, S. A.",
+        "Brusman, L.",
+        "Wang, Y.",
+        "Huang, Y.",
+        "Mao, R.",
+        "Feng, F.",
+        "Corban, S.",
+        "Huber, A. K.",
+        "Shilin, A.",
+        "Sun, Y.",
+        "Narayanaswamy, S.",
+        "Jang, D.",
+        "Jurgens, J.",
+        "Robertson, C. C.",
+        "Shrestha, S.",
+        "Bate, T.",
+        "Nguyen, T.",
+        "Smadbeck, P.",
+        "Zhang, L.",
+        "Brandes, M.",
+        "The PanKbase Consortium,",
+        "Flannick, J.",
+        "Burtt, N.",
+        "Chen, S.",
+        "Liu, J.",
+        "Cartailler, J.-P.",
+        "Voight, B. F.",
+        "Stitzel, M. L.",
+        "Brissova, M.",
+        "Gloyn, A. L.",
+        "Gaulton, K. J.",
+        "Parker, S. C. J."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "PanKbase整合單細胞圖譜：人類胰島綜合圖集"
+    },
+    {
+      "id": "10.64898/2026.06.05.730086",
+      "title": "Enhancer-gene regulatory interactions in colorectal cancer revealed through genome-wide CRISPRi perturbations",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.05.730086v1",
+      "doi": "10.64898/2026.06.05.730086",
+      "abstract": "Background Establishing functional relationships between distal enhancers and their target genes is a central challenge in genome biology and cancer genetics. CRISPR/dCas9-mediated perturbations followed by single-cell RNA sequencing (Perturb-seq) has emerged as an efficient means of establishing enhancer-target gene relationships. Results We used genome-wide CRISPRi Perturb-seq with 35,139 guide RNAs targeting 12,117 enhancers to create a functional enhancer-gene map of colorectal cancer (CRC), identifying 238 significant regulatory associations (FDR < 0.1). Integration of chromatin accessibility (ATAC-seq), histone modification profiling (ChIP-seq), and ultra-high resolution chromatin conformation capture (Micro-C) data revealed that enhancer regulation in CRC is constrained by topological domains and often targets the nearest gene, findings corroborated by Activity-by-Contact modelling. Conclusions We provide a comprehensive functional enhancer-gene interaction map for CRC. This resource should provide a foundation for studying gene regulation in colorectal tumorigenesis and for prioritising candidate non-coding drivers in cancer sequencing studies.",
+      "authors": [
+        "Law, P. J.",
+        "Vijayakrishnan, J.",
+        "Smith, J.",
+        "Barry, T.",
+        "Mandelia, M.",
+        "Katsevich, E."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "Perturb-seq",
+        "biology",
+        "cancer",
+        "CRISPR",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "大腸癌中增強子-基因調控交互作用：全基因組CRISPRi干擾揭示"
+    },
+    {
+      "id": "10.64898/2026.02.18.706509",
+      "title": "NaVis: a virtual microscopy framework for interactive histological interrogation of spatial transcriptomics data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.02.18.706509v2",
+      "doi": "10.64898/2026.02.18.706509",
+      "abstract": "Despite the widespread adoption of spatial transcriptomics (ST), revealing the alignment between transcriptional layers and tissue morphology remains technically demanding, typically requiring proficiency across multiple computational frameworks and thereby limiting accessibility for a substantial fraction of the biomedical community. Here, we introduce NaVis (https://github.com/Izzilab/NaVis), a point-and-click virtual microscopy framework that redefines ST analysis as an interactive, image-centric experience. NaVis enables rapid high-resolution inference from low-resolution whole-transcriptome platforms, producing microscopy-like visualizations while preserving transcriptome-wide coverage. It further decomposes histological images into quantitative tissue architecture priors (nuclei-rich regions, fibrillar extracellular matrix, and soft tissue) allowing direct integration of gene expression with local morphology. This unified representation supports analyses of compartment enrichment, boundary concordance, spatial cross-correlation, morphological patterning, histology/expression decoupling, and transcriptome-wide spatial similarity. By coupling transcriptomic and image-derived information within an interactive framework, NaVis shifts ST from static computational workflows to an exploratory modality, broadening its accessibility, conceptual reach and potential for biological discoveries.",
+      "authors": [
+        "Oshinjo, A.",
+        "Wu, J.",
+        "Petrov, P.",
+        "Hashmi, A.",
+        "Englund, J. I.",
+        "Izzi, V."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "NaVis：互動式空間轉錄體學組織學檢視的虛擬顯微鏡框架"
+    },
+    {
+      "id": "10.64898/2026.05.05.722992",
+      "title": "LongAllele: a joint inference framework for allele-specific analysis on long-read bulk and single-cell RNA sequencing",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.05.722992v2",
+      "doi": "10.64898/2026.05.05.722992",
+      "abstract": "Allele-specific analysis from RNA-seq is a powerful approach to characterize cis-regulatory effects. However, existing methods remain limited in both haplotype inference and allelic testing. Their haplotype-inference workflows separate variant calling, haplotype phasing, and read-haplotype assignment into sequential steps, failing to fully exploit within-read single-nucleotide variant (SNV) linkage information and propagating errors into downstream allelic analysis. At the testing stage, they ignore non-phasable reads lacking heterozygous SNVs, biasing calls and inflating false positives, and remain incomplete across gene-, isoform-, and local-event-level variant effects. Here, we present LongAllele, a statistical framework that employs an expectation-maximization algorithm to jointly infer heterozygous variants, haplotype structure, and read-haplotype assignments from long-read bulk and single-cell RNA sequencing. LongAllele further introduces phasability-aware testing that explicitly accounts for non-phasable reads, avoiding inflated false-positive calls when haplotype information is incomplete. It also enables comprehensive allelic testing across gene-level allele-specific expression (ASE), isoform-level allele-specific transcript usage (ASTU), and local-event-level haplotype-associated exon and junction usage (HAEU and HAJU), providing a multi-scale view of cis-regulation across biological contexts. We applied LongAllele to long-read RNA-seq datasets spanning GTEx (multi-tissue bulk), peripheral blood mononuclear cells (single-cell), human hippocampus (single-nucleus), and human cortex from two Alzheimer's disease (AD) case-control cohorts (bulk, Oxford Nanopore and PacBio). LongAllele consistently revealed greater context dependence in expression-level than isoform-level allelic regulation across tissues, cell types, and disease states, and pinpointed high-impact regulatory variants including rare splice-site mutations missed by standalone variant callers. It further showed that purifying selection constrains allelic imbalance at both gene and isoform levels and resolved AD-associated variant effects in individual transcriptomes across long-read platforms.",
+      "authors": [
+        "Xu, Z.",
+        "Wang, K."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "LongAllele：長讀取大量與單細胞RNA定序等位基因特異性分析的聯合推論框架"
+    },
+    {
+      "id": "10.64898/2026.06.04.730253",
+      "title": "PRIME: scalable, robust inference of mechanistic cell states from multimodal single-cell counts via probability generating functions",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.04.730253v1",
+      "doi": "10.64898/2026.06.04.730253",
+      "abstract": "Single-cell multiomic technologies can now quantify complementary RNA species within the same cell, creating an opportunity to move beyond descriptive clustering toward mechanistically interpretable cell states. Yet most current methods depend on heuristic integration steps and become computationally burdensome at scale, limiting their ability to robustly detect subtle kinetic differences across heterogeneous populations. Here we introduce PRIME, a scalable framework for mechanistic cell-state discovery from multimodal single-cell count data. PRIME embeds multimodal measurements in a probability generating function (PGF) space, where transcriptional dynamics are encoded compactly and compared efficiently. This representation enables robust inference of latent kinetic structure and supports rapid cell grouping with a power K-means backbone that remains stable under noise, sparsity, and multimodality. Across synthetic benchmarks and experimental multimodal datasets, PRIME consistently recovers cell populations distinguished by transcriptional kinetics, outperforms conventional integration-and-clustering pipelines in robustness, and yields interpretable parameters that link observed variability to underlying regulatory mechanisms. By providing a mathematically principled yet practical route from multimodal counts to kinetic cell states, PRIME empowers biologists to uncover dynamic transcriptional regimes, dissect regulatory heterogeneity, and connect cell identity to mechanism rather than markers.",
+      "authors": [
+        "Li, S.",
+        "Wang, Y.",
+        "Jiang, Q.",
+        "Grima, R.",
+        "Cao, Z."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "PRIME：透過機率生成函數進行可擴展且穩健的多模態單細胞計數機制性細胞狀態推斷"
+    },
+    {
+      "id": "10.1038/s41586-026-10748-5",
+      "title": "A unicellular relative links aggregative multicellularity to animal origins",
+      "journal": "Nature",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41586-026-10748-5",
+      "doi": "10.1038/s41586-026-10748-5",
+      "abstract": "How animals evolved complex multicellularity from their unicellular ancestors remains unanswered. Unicellular relatives of animals exhibit simple multicellularity through clonal division, formation of multinucleate coenocytes, or aggregation. 1 Therefore, animal multicellularity may have evolved from one (or a combination) of these behaviours. Aggregation has classically been dismissed as a means to complex multicellularity. 2 However, aggregation occurs in many extant animal cells and has also been recently described in three close unicellular relatives of animals (the choanoflagellates Salpingoeca rosetta and Choanoeca flexa, and the filasterean Capsaspora owczarzaki). 3-5 It is unclear whether aggregation in these species is derived or ancestral, and its relevance for animal origins remains unknown. To fill this gap, we investigated whether an additional close unicellular relative of animals can undergo aggregation. We discovered that the marine free-living bacterivorous filasterean Ministeria vibrans 6 forms homogeneous aggregates with reproducible kinetics that have long-term stability, and that improved feeding and mating may be evolutionary drivers of this aggregation. Notably, we found that homologs of many animal multicellularity genes involved in cell adhesion, signalling, and transcriptional regulation were deployed during the aggregation process, indicating that they may have been used for aggregation in the unicellular ancestors of animals before being co-opted into animal multicellular development. Thus, our results imply that aggregative multicellularity was key to the development of the multicellular animal genetic toolkit.",
+      "sourceId": "nature",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "articleType": "OriginalPaper",
+      "matchedKeywords": [
+        "development",
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞近親揭示聚集性多細胞與動物起源的關聯",
+      "summaryZh": "動物如何從單細胞祖先演化出複雜的多細胞結構一直是未解之謎。本研究發現海洋filasterean Ministeria vibrans能形成具有可重現動力學且長期穩定的同質聚集體，而改善攝食與交配可能是這種聚集行為的演化驅動力。值得注意的是，許多參與細胞黏附、訊號傳導和轉錄調控的動物多細胞基因在聚集過程中都有表現，顯示這些基因可能在動物單細胞祖先中就已被用於聚集行為。因此，本研究結果表明聚集性多細胞可能是動物多細胞遺傳工具箱發展的關鍵。",
+      "topicTags": [
+        "multicellularity",
+        "evolution",
+        "single-cell",
+        "animal-origins",
+        "gene-regulation"
+      ]
+    },
+    {
+      "id": "10.1038/d41586-026-01836-7",
+      "title": "World-first: therapy to make cells young again trialled in a person",
+      "journal": "Nature",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/d41586-026-01836-7",
+      "doi": "10.1038/d41586-026-01836-7",
+      "abstract": "A participant in a landmark clinical trial has been given a cellular-reprogramming treatment that aims to rejuvenate damaged cells in the eye.",
+      "sourceId": "nature",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "articleType": "News",
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/d41586-026-01825-w",
+      "title": "TB vaccine from the 1920s shows promise in diabetes trial",
+      "journal": "Nature",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/d41586-026-01825-w",
+      "doi": "10.1038/d41586-026-01825-w",
+      "abstract": "The shot reduced insulin use for people with type 1 diabetes and another autoimmune condition.",
+      "sourceId": "nature",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "articleType": "News",
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41467-026-74078-w",
+      "title": "Inhibition of the QPCT–PDIA4 axis rescues ΔF508 and N1303K CFTR in cystic fibrosis",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74078-w",
+      "doi": "10.1038/s41467-026-74078-w",
+      "abstract": "Cystic fibrosis (CF) arises from CFTR mutations, which result in defective ion transport and multisystem pathology. Here, the authors identify a QPCT-PDIA4 pathway that promotes ER retention of misfolded CFTR. QPCT inhibition disrupts the PDIA4-CFTR interaction and restores trafficking and function of ΔF508 and N1303K CFTR variants.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "抑制QPCT–PDIA4軸線拯救囊狀纖維化中ΔF508與N1303K CFTR"
+    },
+    {
+      "id": "10.1038/s41467-026-74113-w",
+      "title": "Structural and functional characterisation of the Crimean-Congo haemorrhagic fever virus RNA dependent RNA polymerase",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74113-w",
+      "doi": "10.1038/s41467-026-74113-w",
+      "abstract": "Authors present CryoEM structures of the Crimean-Congo haemorrhagic fever virus L-protein RdRp core bound to the 5′ genome end, develop in vitro functional assays, and demonstrate their utility for antiviral screening.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "克里米亞-剛果出血熱病毒RNA依賴性RNA聚合酶的結構與功能表徵"
+    },
+    {
+      "id": "10.1038/s41467-026-74118-5",
+      "title": "Cell-to-cell variability and gain of methylation at polycomb CpG islands as a hallmark of aging",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74118-5",
+      "doi": "10.1038/s41467-026-74118-5",
+      "abstract": "Aging is associated with DNA methylation changes, but how this occurs in individual cells is unclear. Here, the authors show that methylation at polycomb CpG islands accumulates unevenly across single cells, revealing that some cells age faster than others.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "細胞間變異性與Polycomb CpG島甲基化增加作為老化特徵"
+    },
+    {
+      "id": "10.1038/s41467-026-74038-4",
+      "title": "Semaglutide attenuates neuroinflammation in male mice",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74038-4",
+      "doi": "10.1038/s41467-026-74038-4",
+      "abstract": "Semaglutide attenuates brain inflammation in mice, coordinately reversing inflammatory gene programs across diverse brain cell types likely engaging both neuronal circuits and peripheral immune responses to drive resolution.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Semaglutide減輕雄性小鼠神經炎症"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 51,
+      "passedByScope": 21,
+      "llmClassified": 30,
+      "llmYes": 10,
+      "llmNotSure": 0,
+      "llmNo": 20,
+      "included": 31,
+      "excluded": 20
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 28,
+      "llmTagged": 28,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 28,
+      "candidates": 25,
+      "featured": 12,
+      "overflow": 13,
+      "lineA": 4,
+      "lineB": 15,
+      "preprint": 6,
+      "skip": 3
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 13,
+      "llmTranslated": 13,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01848-3",
+        "title": "AI technology must serve human cognitive development, not the other way around",
+        "journal": "Nature",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01848-3",
+        "doi": "10.1038/d41586-026-01848-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01810-3",
+        "title": "A treasure trove of Neolithic necklace beads",
+        "journal": "Nature",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01810-3",
+        "doi": "10.1038/d41586-026-01810-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01846-5",
+        "title": "Arson attacks at Ebola hospitals are a cry for regional development",
+        "journal": "Nature",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01846-5",
+        "doi": "10.1038/d41586-026-01846-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01849-2",
+        "title": "Science must be seen as a viable profession for the many, not the few",
+        "journal": "Nature",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01849-2",
+        "doi": "10.1038/d41586-026-01849-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01847-4",
+        "title": "Preventing cancer requires more than a list of carcinogens",
+        "journal": "Nature",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01847-4",
+        "doi": "10.1038/d41586-026-01847-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01826-9",
+        "title": "Ocean ‘cold blob’ is evidence for a troubling climate trend",
+        "journal": "Nature",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01826-9",
+        "doi": "10.1038/d41586-026-01826-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01737-9",
+        "title": "People are turning to AI chatbots to plug gaps in health information",
+        "journal": "Nature",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01737-9",
+        "doi": "10.1038/d41586-026-01737-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-00799-z",
+        "title": "Let’s talk about biomedical research kits",
+        "journal": "Nature",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-00799-z",
+        "doi": "10.1038/d41586-026-00799-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01815-y",
+        "title": "Don’t compete, collaborate: why collective funding applications are the future",
+        "journal": "Nature",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01815-y",
+        "doi": "10.1038/d41586-026-01815-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01822-z",
+        "title": "The best way to start your day? The science backs naked cartwheels in the sun",
+        "journal": "Nature",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01822-z",
+        "doi": "10.1038/d41586-026-01822-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01690-7",
+        "title": "Scientists have a bad case of AI FOMO, Nature poll reveals",
+        "journal": "Nature",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01690-7",
+        "doi": "10.1038/d41586-026-01690-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01823-y",
+        "title": "Good recycling starts at home — and benefits the world",
+        "journal": "Nature",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01823-y",
+        "doi": "10.1038/d41586-026-01823-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01234-z",
+        "title": "My overseas job offer was rescinded. Here’s how I bounced back",
+        "journal": "Nature",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01234-z",
+        "doi": "10.1038/d41586-026-01234-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01209-0",
+        "title": "Seven steps for critically analysing research papers",
+        "journal": "Nature",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01209-0",
+        "doi": "10.1038/d41586-026-01209-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01840-x",
+        "title": "Ancient ground squirrels feasted on carcasses like ‘zombies of the Pleistocene’",
+        "journal": "Nature",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01840-x",
+        "doi": "10.1038/d41586-026-01840-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01817-w",
+        "title": "How ice forms is a mystery — now scientists are cracking the case",
+        "journal": "Nature",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01817-w",
+        "doi": "10.1038/d41586-026-01817-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-74281-9",
+        "title": "Nondestructive removal of superhydrophobic coatings by an electric switch",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-74281-9",
+        "doi": "10.1038/s41467-026-74281-9",
+        "abstract": "Extensive efforts have been made to enhance the durability of superhydrophobic coatings by adhesives, yet the non-destructive removal of coatings remains challenging. Here, the authors propose a superhydrophobic coating that can be removed non-destructively via an electrical switch",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-74188-5",
+        "title": "Photoelectrocatalytic self-cross coupling enabling carbon chain elongation",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-74188-5",
+        "doi": "10.1038/s41467-026-74188-5",
+        "abstract": "To establish green and efficient carbon chain elongation protocols, this study reports a photoelectrocatalytic system enabling radical-mediated self-cross-coupling reactions.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-74181-y",
+        "title": "Intermetallic charge redistribution restructures the oxygen-bound intermediate network for efficient ethylene electrosynthesis",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-74181-y",
+        "doi": "10.1038/s41467-026-74181-y",
+        "abstract": "Turning carbon dioxide into ethylene requires catalysts that control intermediate formation and coupling on copper surfaces. Here, the authors show that aluminum-doped copper tunes these intermediates through orbital interactions, enabling efficient ethylene production from dilute carbon dioxide.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-74149-y",
+        "title": "Fermi-level depinning achieved by high-work-function Au1-xSex alloy contacts for high-performance p-type WSe2 transistors",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-06-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-74149-y",
+        "doi": "10.1038/s41467-026-74149-y",
+        "abstract": "The fabrication of p-type contacts for 2D semiconductors remains an important challenge towards the industrialization of 2D electronics. Here, the authors report a low-temperature molecular beam epitaxy contact strategy using a high-work-function Au1-xSex alloy to achieve Fermi-level depinning in monolayer WSe2 and realize high-performance 2D p-type transistors.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    }
+  ]
+}
