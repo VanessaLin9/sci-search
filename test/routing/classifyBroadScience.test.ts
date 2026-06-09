@@ -93,6 +93,42 @@ function installRoutingFetch(plans: RoutingMockPlan[]): void {
   }) as typeof fetch;
 }
 
+function installRoutingFetchWithRetryFailure(firstPlan: RoutingMockPlan, retryError: Error): void {
+  routingCallCount = 0;
+  resetRoutingLlmClientCache();
+  let firstCallDone = false;
+
+  globalThis.fetch = (async (input, init) => {
+    routingCallCount += 1;
+    const url =
+      typeof input === "string" ? input : input instanceof URL ? input.href : input.url;
+    if (!url.includes("/chat/completions")) {
+      throw new Error(`Unexpected fetch: ${url}`);
+    }
+
+    if (firstCallDone) {
+      throw retryError;
+    }
+
+    const body =
+      typeof init?.body === "string"
+        ? init.body
+        : init?.body
+          ? await new Response(init.body).text()
+          : "";
+    const request = JSON.parse(body) as {
+      messages?: Array<{ role?: string; content?: string }>;
+    };
+    const user = request.messages?.find((message) => message.role === "user")?.content ?? "";
+    const payloadStart = user.indexOf("{");
+    const payload = JSON.parse(user.slice(payloadStart)) as {
+      papers: Array<{ id: string }>;
+    };
+    firstCallDone = true;
+    return routingResponse(payload.papers, firstPlan);
+  }) as typeof fetch;
+}
+
 before(() => {
   installPipelineTestEnv();
   originalFetch = globalThis.fetch;
@@ -143,6 +179,21 @@ describe("classifyBroadSciencePapers missing verdict handling", { concurrency: 1
 
     assert.equal(routingCallCount, 2);
     assert.equal(verdictById.get("c"), "yes");
+    assert.equal(verdictById.get("d"), "yes");
+  });
+
+  test("falls back to no when missing-retry request fails", async () => {
+    const missingId = "10.1038/d41586-026-01689-0";
+    const items = [paper("a"), paper("b"), paper(missingId), paper("d")];
+    installRoutingFetchWithRetryFailure(
+      { omitIds: [missingId] },
+      new Error("Request timed out."),
+    );
+
+    const verdictById = await classifyBroadSciencePapers(items);
+
+    assert.ok(routingCallCount >= 2);
+    assert.equal(verdictById.get(missingId), "no");
     assert.equal(verdictById.get("d"), "yes");
   });
 
