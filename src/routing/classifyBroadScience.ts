@@ -1,6 +1,9 @@
 import { z } from "zod";
 import { lifeScienceRoutingVerdictSchema } from "../domain/life-science/schemas.js";
-import { shouldRetrySplitLlmBatch } from "../llm/extractLlmJsonContent.js";
+import {
+  isRoutingMissingVerdictsError,
+  shouldRetrySplitLlmBatch,
+} from "../llm/extractLlmJsonContent.js";
 import type { LifeScienceRoutingVerdict } from "../types.js";
 import { planRoutingBatches } from "./batchSizing.js";
 import {
@@ -23,6 +26,18 @@ const llmResponseSchema = z.object({
   ),
 });
 
+type ClassifyBatchOptions = {
+  allowMissingVerdictRetry?: boolean;
+};
+
+type ParsedBatchResult = {
+  verdictById: Map<string, LifeScienceRoutingVerdict>;
+  missingIds: string[];
+  finishReason: string;
+  usageLine: string;
+  parsedResultCount: number;
+};
+
 function summarizeVerdicts(verdictById: Map<string, LifeScienceRoutingVerdict>): string {
   let yes = 0;
   let notSure = 0;
@@ -35,14 +50,114 @@ function summarizeVerdicts(verdictById: Map<string, LifeScienceRoutingVerdict>):
   return `yes ${yes}, not_sure ${notSure}, no ${no}`;
 }
 
+/** Build the one retry batch for missing verdicts (exported for tests). */
+export function buildMissingVerdictRetryBatch(
+  items: BroadScienceRoutingInput[],
+  missingIds: string[],
+): BroadScienceRoutingInput[] {
+  if (missingIds.length === 0) return [];
+  if (missingIds.length > 1) {
+    const missingSet = new Set(missingIds);
+    return items.filter((item) => missingSet.has(item.id));
+  }
+
+  const missingId = missingIds[0]!;
+  const mid = Math.ceil(items.length / 2);
+  const firstHalf = items.slice(0, mid);
+  if (firstHalf.some((item) => item.id === missingId)) {
+    return firstHalf;
+  }
+  return items.slice(mid);
+}
+
+function logMissingVerdictDiagnostic(
+  batchLabel: string,
+  options: {
+    missingIds: string[];
+    totalCount: number;
+    finishReason: string;
+    usageLine: string;
+    parsedResultCount: number;
+  },
+): void {
+  logRouting(
+    `${batchLabel}: missing ${options.missingIds.length}/${options.totalCount} verdict(s) ` +
+      `(finish_reason=${options.finishReason}, ${options.usageLine}, parsed=${options.parsedResultCount}): ` +
+      `${options.missingIds.join(", ")}`,
+  );
+}
+
+function applyFallbackNo(
+  verdictById: Map<string, LifeScienceRoutingVerdict>,
+  missingIds: string[],
+  batchLabel: string,
+): void {
+  if (missingIds.length === 0) return;
+  logRouting(
+    `${batchLabel}: fallback no for ${missingIds.length} missing verdict(s): ${missingIds.join(", ")}`,
+  );
+  for (const id of missingIds) {
+    verdictById.set(id, "no");
+  }
+}
+
 async function classifyBatch(
   items: BroadScienceRoutingInput[],
   config: RoutingLlmConfig,
   batchLabel: string,
+  options: ClassifyBatchOptions = {},
 ): Promise<Map<string, LifeScienceRoutingVerdict>> {
+  const { allowMissingVerdictRetry = true } = options;
+
   try {
-    return await classifyBatchOnce(items, config, batchLabel);
+    const parsed = await classifyBatchOnce(items, config, batchLabel);
+
+    if (parsed.missingIds.length === 0) {
+      logRouting(`${batchLabel}: parsed (${parsed.usageLine}) · ${summarizeVerdicts(parsed.verdictById)}`);
+      return parsed.verdictById;
+    }
+
+    logMissingVerdictDiagnostic(batchLabel, {
+      missingIds: parsed.missingIds,
+      totalCount: items.length,
+      finishReason: parsed.finishReason,
+      usageLine: parsed.usageLine,
+      parsedResultCount: parsed.parsedResultCount,
+    });
+
+    const verdictById = new Map(parsed.verdictById);
+
+    if (!allowMissingVerdictRetry) {
+      applyFallbackNo(verdictById, parsed.missingIds, batchLabel);
+      logRouting(`${batchLabel}: parsed (${parsed.usageLine}) · ${summarizeVerdicts(verdictById)}`);
+      return verdictById;
+    }
+
+    const retryItems = buildMissingVerdictRetryBatch(items, parsed.missingIds);
+    logRouting(
+      `${batchLabel}: missing-retry ${retryItems.length} paper(s) (from ${parsed.missingIds.length} missing)`,
+    );
+
+    const retryVerdicts = await classifyBatch(retryItems, config, `${batchLabel} missing-retry`, {
+      allowMissingVerdictRetry: false,
+    });
+
+    for (const [id, verdict] of retryVerdicts) {
+      verdictById.set(id, verdict);
+    }
+
+    const stillMissing = items.filter((item) => !verdictById.has(item.id)).map((item) => item.id);
+    if (stillMissing.length > 0) {
+      applyFallbackNo(verdictById, stillMissing, batchLabel);
+    }
+
+    logRouting(`${batchLabel}: parsed (${parsed.usageLine}) · ${summarizeVerdicts(verdictById)}`);
+    return verdictById;
   } catch (error) {
+    if (isRoutingMissingVerdictsError(error)) {
+      throw error;
+    }
+
     const finishReason =
       error instanceof Error && "finishReason" in error
         ? String((error as Error & { finishReason: string }).finishReason)
@@ -62,7 +177,7 @@ async function classifyBatchOnce(
   items: BroadScienceRoutingInput[],
   config: RoutingLlmConfig,
   batchLabel: string,
-): Promise<Map<string, LifeScienceRoutingVerdict>> {
+): Promise<ParsedBatchResult> {
   const { completion } = await callRoutingCompletion(items, config, { label: batchLabel });
 
   const usage = completion.usage;
@@ -109,13 +224,14 @@ async function classifyBatchOnce(
   }
 
   const missingIds = items.filter((item) => !verdictById.has(item.id)).map((item) => item.id);
-  if (missingIds.length > 0) {
-    throw new Error(`Routing LLM missing verdicts for: ${missingIds.join(", ")}`);
-  }
 
-  logRouting(`${batchLabel}: parsed (${usageLine}) · ${summarizeVerdicts(verdictById)}`);
-
-  return verdictById;
+  return {
+    verdictById,
+    missingIds,
+    finishReason,
+    usageLine,
+    parsedResultCount: parsed.results.length,
+  };
 }
 
 function attachFinishReason(error: unknown, finishReason: string): Error {
