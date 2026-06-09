@@ -135,6 +135,17 @@ describe("classifyBroadSciencePapers missing verdict handling", { concurrency: 1
     assert.equal(merge.excluded[0]?.paper.id, missingId);
   });
 
+  test("does not overwrite context paper verdicts from the first successful batch", async () => {
+    const items = [paper("a"), paper("b"), paper("c"), paper("d")];
+    installRoutingFetch([{ omitIds: ["c"] }, { omitIds: ["d"] }]);
+
+    const verdictById = await classifyBroadSciencePapers(items);
+
+    assert.equal(routingCallCount, 2);
+    assert.equal(verdictById.get("c"), "yes");
+    assert.equal(verdictById.get("d"), "yes");
+  });
+
   test("does not retry more than once for persistent missing verdicts", async () => {
     const items = [paper("a"), paper("b"), paper("c")];
     installRoutingFetch([{ omitIds: ["b"] }, { omitIds: ["b"] }, { omitIds: ["b"] }]);

@@ -142,11 +142,14 @@ async function classifyBatch(
       allowMissingVerdictRetry: false,
     });
 
+    const originallyMissing = new Set(parsed.missingIds);
     for (const [id, verdict] of retryVerdicts) {
-      verdictById.set(id, verdict);
+      if (originallyMissing.has(id)) {
+        verdictById.set(id, verdict);
+      }
     }
 
-    const stillMissing = items.filter((item) => !verdictById.has(item.id)).map((item) => item.id);
+    const stillMissing = parsed.missingIds.filter((id) => !verdictById.has(id));
     if (stillMissing.length > 0) {
       applyFallbackNo(verdictById, stillMissing, batchLabel);
     }
