@@ -5,6 +5,16 @@ import { fetchRssSource } from "./fetchRss.js";
 import { dedupePapers, filterPapersByDate } from "./filterPapers.js";
 import { enrichPapers, type EnrichPapersResult } from "./enrichers/index.js";
 import { normalizeRssItemToPaper } from "./normalize.js";
+import { applyBiorxivGate } from "./biorxiv-gate/applyBiorxivGate.js";
+import {
+  logBiorxivApiStats,
+  logBiorxivFineScreenSkipped,
+  logBiorxivFineScreenSummary,
+  logBiorxivIngestHeader,
+  logBiorxivNormalizedSummary,
+  logBiorxivPrimaryScreenSummary,
+  logBiorxivReportDateSummary,
+} from "./biorxiv/ingestLog.js";
 import { normalizeBiorxivRecordToPaper, filterBiorxivPapersByPrimaryKeywords } from "./normalizers/biorxiv.js";
 import { runDigestPhase } from "./digest/runDigestPhase.js";
 import type { DigestPhaseResult } from "./digest/types.js";
@@ -153,16 +163,53 @@ async function processBiorxivSource(
   }
 
   try {
-    const { records, fetchedCount } = await fetchBiorxivRecords({
+    logBiorxivIngestHeader(reportDate);
+
+    const { records, fetchedCount, categoryStats } = await fetchBiorxivRecords({
       baseUrl: source.url,
       reportDate,
       categories,
     });
+    logBiorxivApiStats({ categoryStats, fetchedCount });
+
     const normalized = records
       .map((record) => normalizeBiorxivRecordToPaper(record, source))
       .filter((paper): paper is Paper => paper !== null);
+    logBiorxivNormalizedSummary({
+      rawRecordCount: records.length,
+      normalizedCount: normalized.length,
+      papers: normalized,
+    });
+
     const keywordMatched = filterBiorxivPapersByPrimaryKeywords(normalized, keywords);
-    const { deduped, onReportDate } = applyPerSourceFilters(keywordMatched, reportDate);
+    const gateCandidates = dedupePapers(keywordMatched);
+    logBiorxivPrimaryScreenSummary({
+      normalizedCount: normalized.length,
+      keywordMatched,
+      gateCandidates,
+    });
+
+    const gateResult = await applyBiorxivGate(gateCandidates);
+    if (gateResult.usedFallback) {
+      logBiorxivFineScreenSkipped({
+        candidates: gateCandidates.length,
+        reason: gateResult.fallbackReason ?? "unknown error",
+      });
+    } else if (gateResult.fineScreen) {
+      logBiorxivFineScreenSummary({
+        ...gateResult.fineScreen,
+        passedPapers: gateResult.papers,
+      });
+    }
+
+    const { deduped, onReportDate } = applyPerSourceFilters(gateResult.papers, reportDate);
+    logBiorxivReportDateSummary({
+      reportDate,
+      afterFineScreenCount: gateResult.papers.length,
+      gateCandidatesCount: gateCandidates.length,
+      onReportDateCount: onReportDate.length,
+      papers: onReportDate,
+    });
 
     return {
       papers: onReportDate,
