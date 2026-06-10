@@ -4,9 +4,19 @@ import { filterPapersByBiorxivGate } from "./filterByGate.js";
 import { logBiorxivGate } from "./gateLog.js";
 import { toBiorxivGateInput } from "./toGateInput.js";
 
+export type BiorxivFineScreenStats = {
+  candidates: number;
+  passed: number;
+  yes: number;
+  no: number;
+  notSure: number;
+};
+
 export type BiorxivGateResult = {
   papers: Paper[];
   usedFallback: boolean;
+  fallbackReason?: string;
+  fineScreen?: BiorxivFineScreenStats;
 };
 
 function logExcludedPapers(
@@ -36,13 +46,23 @@ export async function applyBiorxivGate(papers: Paper[]): Promise<BiorxivGateResu
     );
     logExcludedPapers(filtered.excluded);
 
-    return { papers: filtered.included, usedFallback: false };
+    return {
+      papers: filtered.included,
+      usedFallback: false,
+      fineScreen: {
+        candidates: papers.length,
+        passed: filtered.included.length,
+        yes: filtered.yes,
+        no: filtered.no,
+        notSure: filtered.notSure,
+      },
+    };
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     logBiorxivGate(
       `failed; falling back to keyword-only results: ${message} (${papers.length} paper(s))`,
     );
-    return { papers, usedFallback: true };
+    return { papers, usedFallback: true, fallbackReason: message };
   }
 }
 
