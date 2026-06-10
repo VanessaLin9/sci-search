@@ -1,0 +1,23 @@
+---
+description: Split work into small logical commits; message must match contents
+alwaysApply: true
+---
+
+# Incremental commits
+
+When the user asks you to implement features or fixes:
+
+1. **Do not squash everything into one large commit.** Split work by logical development steps (e.g. types/prompt → classifier → orchestration → pipeline wiring → tests).
+2. **Each commit must be coherent:** the diff should match the commit message. A reader should understand what changed from the message alone.
+3. **Commit as you go** when the user requests implementation with commits — do not wait until the end to commit a large batch.
+4. **Suggested split axes:** domain types/constants → pure helpers → external integration → pipeline wiring → unit tests → e2e tests. Adjust to the task; keep commits reviewable.
+5. **Still follow** the user rule to only commit when asked; when they ask to implement and mention commits, commit incrementally without being reminded again.
+
+Example sequence for a new feature module:
+
+- `feat(scope): add types, prompt, and filter helpers`
+- `feat(scope): add batch LLM classifier`
+- `feat(scope): add fail-open orchestration`
+- `test(scope): add unit tests for classifier and fallback`
+- `feat(scope): wire into pipeline`
+- `test(scope): extend e2e for new behavior`
