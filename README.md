@@ -157,7 +157,7 @@ Enable branch protection on `main`: require status check **`test`** before merge
 
 ### Daily digest ([`.github/workflows/daily.yml`](.github/workflows/daily.yml))
 
-- **Schedule:** 06:30 Asia/Taipei daily (`workflow_dispatch` supported)
+- **Schedule:** 18:00 Asia/Taipei daily (`workflow_dispatch` supported)
 - **Steps:** resolve date → `dev` → `write-preview` → artifact → commit → `send-digest`
 
 ### Repository secrets

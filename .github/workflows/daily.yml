@@ -3,8 +3,8 @@ name: Daily Paper Digest
 on:
   workflow_dispatch:
   schedule:
-    # 06:30 Asia/Taipei (22:30 UTC)
-    - cron: "30 22 * * *"
+    # 18:00 Asia/Taipei (10:00 UTC) — later run to catch bioRxiv/RSS posts indexed after morning
+    - cron: "0 10 * * *"
 
 concurrency:
   group: daily-digest
