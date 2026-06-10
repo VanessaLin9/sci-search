@@ -22,10 +22,18 @@ const biorxivResponseSchema = z.object({
   collection: z.array(z.record(z.unknown())),
 });
 
+export type BiorxivCategoryFetchStat = {
+  category: string;
+  recordCount: number;
+  status: "ok" | "empty" | "skipped";
+  error?: string;
+};
+
 export type BiorxivFetchResult = {
   records: BiorxivRecord[];
   categoryCount: number;
   fetchedCount: number;
+  categoryStats: BiorxivCategoryFetchStat[];
 };
 
 export const BIORXIV_FETCH_HEADERS = {
@@ -120,6 +128,7 @@ export async function fetchBiorxivRecords(options: {
 }): Promise<BiorxivFetchResult> {
   const fetchFn = options.fetchFn ?? fetch;
   const records: BiorxivRecord[] = [];
+  const categoryStats: BiorxivCategoryFetchStat[] = [];
   let fetchedCount = 0;
 
   for (const category of options.categories) {
@@ -132,11 +141,20 @@ export async function fetchBiorxivRecords(options: {
       );
       fetchedCount += categoryRecords.length;
       records.push(...categoryRecords);
+      categoryStats.push({
+        category,
+        recordCount: categoryRecords.length,
+        status: categoryRecords.length > 0 ? "ok" : "empty",
+      });
     } catch (error) {
-      console.warn(
-        `bioRxiv category skipped (${category}):`,
-        error instanceof Error ? error.message : error,
-      );
+      const message = error instanceof Error ? error.message : String(error);
+      console.warn(`bioRxiv category skipped (${category}):`, message);
+      categoryStats.push({
+        category,
+        recordCount: 0,
+        status: "skipped",
+        error: message,
+      });
     }
   }
 
@@ -144,6 +162,7 @@ export async function fetchBiorxivRecords(options: {
     records,
     categoryCount: options.categories.length,
     fetchedCount,
+    categoryStats,
   };
 }
 

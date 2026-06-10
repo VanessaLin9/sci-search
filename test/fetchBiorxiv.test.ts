@@ -128,4 +128,8 @@ test("fetchBiorxivRecords merges multiple categories", async () => {
   assert.equal(result.categoryCount, 2);
   assert.equal(result.fetchedCount, 3);
   assert.equal(result.records.length, 3);
+  assert.deepEqual(result.categoryStats, [
+    { category: "cell_biology", recordCount: 2, status: "ok" },
+    { category: "neuroscience", recordCount: 1, status: "ok" },
+  ]);
 });
