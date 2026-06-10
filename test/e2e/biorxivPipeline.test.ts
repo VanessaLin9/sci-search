@@ -64,10 +64,35 @@ describe("bioRxiv pipeline integration", () => {
     assert.ok(result.routing.included.some((paper) => paper.sourceId === "biorxiv"));
   });
 
-  it("drops keyword-matched bioRxiv papers when gate returns no or not_sure", async () => {
+  it("drops keyword-matched bioRxiv papers when gate returns no", async () => {
     installBiorxivFetch({
       kind: "verdictById",
       verdictById: { [SAMPLE_DOI]: "no" },
+    });
+
+    const sources = await loadSources();
+    const keywords = await loadKeywords();
+    const scopeBySourceId = buildSourceScopeById(sources);
+
+    const result = await runPipeline({
+      sources,
+      keywords,
+      reportDate: REPORT_DATE,
+      scopeBySourceId,
+      rssSourceIds: [],
+      biorxivSourceIds: ["biorxiv"],
+    });
+
+    const biorxivStats = result.sourceResults.find((entry) => entry.stats.sourceId === "biorxiv");
+    assert.ok(biorxivStats);
+    assert.equal(biorxivStats.stats.onReportDateCount, 0);
+    assert.equal(result.papers.some((paper) => paper.sourceId === "biorxiv"), false);
+  });
+
+  it("drops keyword-matched bioRxiv papers when gate returns not_sure", async () => {
+    installBiorxivFetch({
+      kind: "verdictById",
+      verdictById: { [SAMPLE_DOI]: "not_sure" },
     });
 
     const sources = await loadSources();
