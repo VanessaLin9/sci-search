@@ -3,7 +3,7 @@ import {
   isRoutingMissingVerdictsError,
   shouldRetrySplitLlmBatch,
 } from "../llm/extractLlmJsonContent.js";
-import { buildMissingVerdictRetryBatch } from "../routing/classifyBroadScience.js";
+import { buildMissingVerdictRetryBatch } from "./buildMissingVerdictRetryBatch.js";
 import { getRoutingLlmConfig, maskApiKey, type RoutingLlmConfig } from "../routing/config.js";
 import { parseJsonFromLlmContent } from "../routing/parseLlmJson.js";
 import { planBiorxivGateBatches } from "./batchSizing.js";
