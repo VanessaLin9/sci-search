@@ -88,13 +88,22 @@ export function logBiorxivFineScreenSkipped(options: {
 
 export function logBiorxivReportDateSummary(options: {
   reportDate: string;
-  beforeCount: number;
+  afterFineScreenCount: number;
+  gateCandidatesCount: number;
   onReportDateCount: number;
   papers: readonly Paper[];
 }): void {
-  const dropped = options.beforeCount - options.onReportDateCount;
+  if (options.afterFineScreenCount === 0) {
+    logBiorxivIngest(
+      `report date ${options.reportDate}: 0 on report date ` +
+        `(fine screen left 0; ${options.gateCandidatesCount} gate candidate(s) before fine screen)`,
+    );
+    return;
+  }
+
+  const dropped = options.afterFineScreenCount - options.onReportDateCount;
   logBiorxivIngest(
-    `report date ${options.reportDate}: ${options.onReportDateCount}/${options.beforeCount} paper(s)` +
+    `report date ${options.reportDate}: ${options.onReportDateCount}/${options.afterFineScreenCount} paper(s)` +
       (dropped > 0 ? ` (${dropped} off-date)` : "") +
       ` · ${formatCategoryCounts(countPapersByCategory(options.papers))}`,
   );

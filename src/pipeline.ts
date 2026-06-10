@@ -205,7 +205,8 @@ async function processBiorxivSource(
     const { deduped, onReportDate } = applyPerSourceFilters(gateResult.papers, reportDate);
     logBiorxivReportDateSummary({
       reportDate,
-      beforeCount: gateResult.papers.length,
+      afterFineScreenCount: gateResult.papers.length,
+      gateCandidatesCount: gateCandidates.length,
       onReportDateCount: onReportDate.length,
       papers: onReportDate,
     });
