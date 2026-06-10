@@ -5,6 +5,7 @@ import { fetchRssSource } from "./fetchRss.js";
 import { dedupePapers, filterPapersByDate } from "./filterPapers.js";
 import { enrichPapers, type EnrichPapersResult } from "./enrichers/index.js";
 import { normalizeRssItemToPaper } from "./normalize.js";
+import { applyBiorxivGate } from "./biorxiv-gate/applyBiorxivGate.js";
 import { normalizeBiorxivRecordToPaper, filterBiorxivPapersByPrimaryKeywords } from "./normalizers/biorxiv.js";
 import { runDigestPhase } from "./digest/runDigestPhase.js";
 import type { DigestPhaseResult } from "./digest/types.js";
@@ -162,7 +163,9 @@ async function processBiorxivSource(
       .map((record) => normalizeBiorxivRecordToPaper(record, source))
       .filter((paper): paper is Paper => paper !== null);
     const keywordMatched = filterBiorxivPapersByPrimaryKeywords(normalized, keywords);
-    const { deduped, onReportDate } = applyPerSourceFilters(keywordMatched, reportDate);
+    const gateCandidates = dedupePapers(keywordMatched);
+    const gateResult = await applyBiorxivGate(gateCandidates);
+    const { deduped, onReportDate } = applyPerSourceFilters(gateResult.papers, reportDate);
 
     return {
       papers: onReportDate,
