@@ -11,6 +11,7 @@ export const RSS_FETCH_HEADERS = {
 const parser = new Parser({
   customFields: {
     item: [
+      ["dc:identifier", "dcIdentifier"],
       ["dc:source", "source"],
       ["content:encoded", "contentEncoded"],
     ],

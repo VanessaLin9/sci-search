@@ -3,6 +3,7 @@ import type { Source } from "../../src/types.js";
 
 /** Matches `RssItemWithCustomFields` in src/normalize.ts (RSS `source` holds DOI on some feeds). */
 export type RssItemWithCustomFields = Item & {
+  dcIdentifier?: string;
   source?: string;
 };
 

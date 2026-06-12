@@ -16,7 +16,7 @@ export function paperDoi(paper: ClassifiedPaper): string | undefined {
   const doi = paper.doi?.trim();
   if (doi) return doi;
   const id = paper.id.trim();
-  if (id.includes("/")) return id;
+  if (/^10\.\d{4,9}\//i.test(id)) return id;
   return undefined;
 }
 

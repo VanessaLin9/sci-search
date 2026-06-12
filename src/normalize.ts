@@ -5,6 +5,7 @@ import { normalizeWhitespace, stripInlineHtml } from "./normalizers/shared.js";
 import type { Paper, Source } from "./types.js";
 
 type RssItemWithCustomFields = Item & {
+  dcIdentifier?: string;
   source?: string;
 };
 
@@ -33,6 +34,7 @@ export function normalizeRssItemToPaper(item: RssItemWithCustomFields, source: S
 
   const doi =
     extractDoi(item.guid) ??
+    extractDoi(item.dcIdentifier) ??
     extractDoi(item.source) ??
     extractDoi(item.link);
 
