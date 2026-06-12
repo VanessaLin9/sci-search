@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import {
   extractLlmJsonContent,
+  isRoutingBatchRequestFailure,
   isRoutingMissingVerdictsError,
   shouldRetrySplitLlmBatch,
 } from "../../src/llm/extractLlmJsonContent.js";
@@ -48,4 +49,13 @@ test("shouldRetrySplitLlmBatch treats routing missing verdict errors as retryabl
   const error = new Error("Routing LLM missing verdicts for: 10.1038/d41586-026-01689-0");
   assert.equal(shouldRetrySplitLlmBatch(error, "stop"), true);
   assert.equal(isRoutingMissingVerdictsError(error), true);
+});
+
+test("isRoutingBatchRequestFailure detects timeout and connection errors", () => {
+  const timeout = Object.assign(new Error("Request timed out."), {
+    name: "APIConnectionTimeoutError",
+  });
+  assert.equal(isRoutingBatchRequestFailure(timeout), true);
+  assert.equal(isRoutingBatchRequestFailure(new Error("Connection error.")), true);
+  assert.equal(isRoutingBatchRequestFailure(new Error("invalid JSON")), false);
 });
