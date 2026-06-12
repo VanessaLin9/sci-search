@@ -48,6 +48,20 @@ export function isRoutingMissingVerdictsError(error: unknown): boolean {
   return message.includes("Routing LLM missing verdicts");
 }
 
+/** Timeout / connection failures from the routing LLM client — degrade, do not abort the pipeline. */
+export function isRoutingBatchRequestFailure(error: unknown): boolean {
+  const message = error instanceof Error ? error.message : String(error);
+  const name = error instanceof Error ? error.name : "";
+  return (
+    name === "APIConnectionTimeoutError" ||
+    message.includes("Request timed out") ||
+    message.includes("Connection error") ||
+    message.includes("ECONNRESET") ||
+    message.includes("ETIMEDOUT") ||
+    message.includes("fetch failed")
+  );
+}
+
 export function shouldRetrySplitLlmBatch(error: unknown, finishReason: string): boolean {
   if (finishReason === "length") return true;
   const message = error instanceof Error ? error.message : String(error);

@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { lifeScienceRoutingVerdictSchema } from "../domain/life-science/schemas.js";
 import {
+  isRoutingBatchRequestFailure,
   isRoutingMissingVerdictsError,
   shouldRetrySplitLlmBatch,
 } from "../llm/extractLlmJsonContent.js";
@@ -89,14 +90,17 @@ function logMissingVerdictDiagnostic(
 
 function applyFallbackNo(
   verdictById: Map<string, LifeScienceRoutingVerdict>,
-  missingIds: string[],
+  ids: string[],
   batchLabel: string,
+  options?: { afterRequestFailure?: string },
 ): void {
-  if (missingIds.length === 0) return;
-  logRouting(
-    `${batchLabel}: fallback no for ${missingIds.length} missing verdict(s): ${missingIds.join(", ")}`,
-  );
-  for (const id of missingIds) {
+  if (ids.length === 0) return;
+  const line =
+    options?.afterRequestFailure !== undefined
+      ? `${batchLabel}: fallback no for ${ids.length} paper(s) after request failure (${options.afterRequestFailure}): ${ids.join(", ")}`
+      : `${batchLabel}: fallback no for ${ids.length} missing verdict(s): ${ids.join(", ")}`;
+  logRouting(line);
+  for (const id of ids) {
     verdictById.set(id, "no");
   }
 }
@@ -172,14 +176,33 @@ async function classifyBatch(
       error instanceof Error && "finishReason" in error
         ? String((error as Error & { finishReason: string }).finishReason)
         : "unknown";
-    if (items.length <= 1 || !shouldRetrySplitLlmBatch(error, finishReason)) {
-      throw error;
+    const message = error instanceof Error ? error.message : String(error);
+    const requestFailed = isRoutingBatchRequestFailure(error);
+    const canSplit =
+      items.length > 1 &&
+      (shouldRetrySplitLlmBatch(error, finishReason) || requestFailed);
+
+    if (canSplit) {
+      const mid = Math.ceil(items.length / 2);
+      const reason = requestFailed ? `request failed (${message})` : "recoverable error";
+      logRouting(`${batchLabel}: ${reason}; split retry ${items.length} → ${mid} + ${items.length - mid}`);
+      const first = await classifyBatch(items.slice(0, mid), config, `${batchLabel}a`);
+      const second = await classifyBatch(items.slice(mid), config, `${batchLabel}b`);
+      return new Map([...first, ...second]);
     }
-    const mid = Math.ceil(items.length / 2);
-    logRouting(`${batchLabel}: split retry ${items.length} → ${mid} + ${items.length - mid}`);
-    const first = await classifyBatch(items.slice(0, mid), config, `${batchLabel}a`);
-    const second = await classifyBatch(items.slice(mid), config, `${batchLabel}b`);
-    return new Map([...first, ...second]);
+
+    if (requestFailed) {
+      const verdictById = new Map<string, LifeScienceRoutingVerdict>();
+      applyFallbackNo(
+        verdictById,
+        items.map((item) => item.id),
+        batchLabel,
+        { afterRequestFailure: message },
+      );
+      return verdictById;
+    }
+
+    throw error;
   }
 }
 

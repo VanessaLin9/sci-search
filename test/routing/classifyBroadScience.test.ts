@@ -93,6 +93,45 @@ function installRoutingFetch(plans: RoutingMockPlan[]): void {
   }) as typeof fetch;
 }
 
+function installRoutingFetchWithRequestFailures(
+  failuresBeforeSuccess: number,
+  error: Error = new Error("Request timed out."),
+): void {
+  routingCallCount = 0;
+  resetRoutingLlmClientCache();
+  let failuresLeft = failuresBeforeSuccess;
+
+  globalThis.fetch = (async (input, init) => {
+    routingCallCount += 1;
+    const url =
+      typeof input === "string" ? input : input instanceof URL ? input.href : input.url;
+    if (!url.includes("/chat/completions")) {
+      throw new Error(`Unexpected fetch: ${url}`);
+    }
+
+    if (failuresLeft > 0) {
+      failuresLeft -= 1;
+      throw error;
+    }
+
+    const body =
+      typeof init?.body === "string"
+        ? init.body
+        : init?.body
+          ? await new Response(init.body).text()
+          : "";
+    const request = JSON.parse(body) as {
+      messages?: Array<{ role?: string; content?: string }>;
+    };
+    const user = request.messages?.find((message) => message.role === "user")?.content ?? "";
+    const payloadStart = user.indexOf("{");
+    const payload = JSON.parse(user.slice(payloadStart)) as {
+      papers: Array<{ id: string }>;
+    };
+    return routingResponse(payload.papers);
+  }) as typeof fetch;
+}
+
 function installRoutingFetchWithRetryFailure(firstPlan: RoutingMockPlan, retryError: Error): void {
   routingCallCount = 0;
   resetRoutingLlmClientCache();
@@ -205,5 +244,29 @@ describe("classifyBroadSciencePapers missing verdict handling", { concurrency: 1
 
     assert.equal(routingCallCount, 2);
     assert.equal(verdictById.get("b"), "no");
+  });
+
+  test("split retries on batch request failure then succeeds", async () => {
+    const items = [paper("a"), paper("b"), paper("c"), paper("d")];
+    // SDK maxRetries=1 → two failed attempts before classifyBatch splits the batch.
+    installRoutingFetchWithRequestFailures(2);
+
+    const verdictById = await classifyBroadSciencePapers(items);
+
+    assert.equal(routingCallCount, 4);
+    assert.equal(verdictById.get("a"), "yes");
+    assert.equal(verdictById.get("b"), "yes");
+    assert.equal(verdictById.get("c"), "yes");
+    assert.equal(verdictById.get("d"), "yes");
+  });
+
+  test("falls back to no when batch request keeps failing on a single paper", async () => {
+    const items = [paper("a")];
+    installRoutingFetchWithRequestFailures(2);
+
+    const verdictById = await classifyBroadSciencePapers(items);
+
+    assert.equal(routingCallCount, 2);
+    assert.equal(verdictById.get("a"), "no");
   });
 });
