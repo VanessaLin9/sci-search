@@ -82,6 +82,19 @@ test("normalizeRssItemToPaper sets doi from item source when guid is empty", () 
   assert.equal(paper.doi, "10.1126/science.abc9999");
 });
 
+test("normalizeRssItemToPaper sets doi from dc:identifier for Cell RSS", () => {
+  const paper = normalizeRssItemToPaper(
+    makeRssItem({
+      link: "https://www.cell.com/cell/fulltext/S0092-8674(26)00587-8?rss=yes",
+      dcIdentifier: "10.1016/j.cell.2026.05.012",
+    }),
+    makeRssSource("cell"),
+  );
+  assert.ok(paper);
+  assert.equal(paper.doi, "10.1016/j.cell.2026.05.012");
+  assert.equal(paper.id, "10.1016/j.cell.2026.05.012");
+});
+
 test("normalizeRssItemToPaper uses default abstract extractor for unregistered source", () => {
   const paper = normalizeRssItemToPaper(
     makeRssItem({ contentSnippet: "Snippet abstract." }),
