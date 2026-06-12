@@ -90,14 +90,17 @@ function logMissingVerdictDiagnostic(
 
 function applyFallbackNo(
   verdictById: Map<string, LifeScienceRoutingVerdict>,
-  missingIds: string[],
+  ids: string[],
   batchLabel: string,
+  options?: { afterRequestFailure?: string },
 ): void {
-  if (missingIds.length === 0) return;
-  logRouting(
-    `${batchLabel}: fallback no for ${missingIds.length} missing verdict(s): ${missingIds.join(", ")}`,
-  );
-  for (const id of missingIds) {
+  if (ids.length === 0) return;
+  const line =
+    options?.afterRequestFailure !== undefined
+      ? `${batchLabel}: fallback no for ${ids.length} paper(s) after request failure (${options.afterRequestFailure}): ${ids.join(", ")}`
+      : `${batchLabel}: fallback no for ${ids.length} missing verdict(s): ${ids.join(", ")}`;
+  logRouting(line);
+  for (const id of ids) {
     verdictById.set(id, "no");
   }
 }
@@ -189,12 +192,12 @@ async function classifyBatch(
     }
 
     if (requestFailed) {
-      logRouting(`${batchLabel}: request failed (${message}); fallback no for ${items.length} paper(s)`);
       const verdictById = new Map<string, LifeScienceRoutingVerdict>();
       applyFallbackNo(
         verdictById,
         items.map((item) => item.id),
         batchLabel,
+        { afterRequestFailure: message },
       );
       return verdictById;
     }
