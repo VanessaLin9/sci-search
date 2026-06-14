@@ -1,0 +1,287 @@
+{
+  "reportDate": "2026-06-13",
+  "generatedAt": "2026-06-14T11:00:57.545Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.06.13.732013",
+      "title": "PertDiffBench: Benchmarking Diffusion Models for Single-Cell Perturbation Response Prediction",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-13",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.13.732013v1",
+      "doi": "10.64898/2026.06.13.732013",
+      "abstract": "Diffusion models are increasingly used to predict transcriptional responses to perturbations, but whether they improve on simpler generative and representation-based baselines remains unclear. Existing evaluations often do not separate the effects of model architecture, input representation, biological context and metric choice, making it difficult to determine where diffusion-based methods are useful. Here we introduce PertDiffBench, a standardized benchmark for diffusion-based transcriptomic perturbation prediction across single-cell and bulk RNA-seq datasets. PertDiffBench evaluates diffusion-based models across three complementary evaluation settings: standard prediction in known single-cell contexts and bulk perturbation conditions, generalization to unseen cell types, species, drugs and intermediate time points, and stress tests of feature dimensionality, input representation, noise type and gene ordering. Across these settings, diffusion models did not show a consistent advantage. scGen remained a strong baseline in common prediction tasks, whereas scDiffusion was the most competitive diffusion-based method in several generalization settings. Temporal imputation showed a different pattern, with a simple DDPM operating directly in expression space outperforming more specialized models. Stress tests showed that performance was model dependent and sensitive to feature dimensionality, encoder choice, noise type and gene ordering. Pretrained encoders did not consistently improve performance, with the classical scVI representation slightly exceeding STATE in seen-condition and unseen-cell-type settings. These results indicate that diffusion-model performance in perturbation response prediction depends strongly on task design and representation choice. PertDiffBench provides a practical framework for evaluating these models under biologically varied and stress-tested conditions.",
+      "authors": [
+        "Song, Z.",
+        "Xiang, Y.",
+        "Song, Z.",
+        "Jin, W.",
+        "Li, J.",
+        "Sun, C.",
+        "Xie, L."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "PertDiffBench：單細胞擾動反應預測之擴散模型基準測試",
+      "summaryZh": "擴散模型已被廣泛應用於預測細胞對擾動的轉錄反應，但與較簡單的生成模型或表徵模型相比是否真有優勢，目前仍缺乏系統性評估。PertDiffBench提供標準化基準測試，涵蓋已知單細胞情境、跨物種與細胞類型的泛化能力，以及特徵維度、雜訊類型等壓力測試。研究發現擴散模型並未展現一致優勢，scGen在常見預測任務中仍是強勁基準，而擴散模型的表現高度依賴任務設計與表徵方式。此基準測試為生物學家提供實用框架，可在多樣化條件下客觀評估不同模型的適用性。",
+      "topicTags": [
+        "single-cell",
+        "diffusion-models",
+        "perturbation-prediction",
+        "benchmark",
+        "transcriptomics"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-74318-z",
+      "title": "Spatial cellular order underlies locally-confined mechanisms of immune resistance in oropharyngeal cancer",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74318-z",
+      "doi": "10.1038/s41467-026-74318-z",
+      "abstract": "Mechanisms underlying effective immune escape in HPV-associated oropharyngeal cancers despite the presence of immune cells are incompletely understood. Here, authors use single-cell spatial analysis to show that tumors form distinct local immune niches, including hypoxic regions and chemokine foci, that shape immune cell composition and support cancer cell states able to evade HPV-specific T cell responses.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "空間細胞排列揭示口咽癌局部免疫抗性機制",
+      "summaryZh": "HPV相關口咽癌的發生率持續上升，但此類腫瘤如何在免疫細胞存在的情況下仍能有效逃避免疫攻擊，其機制尚未完全闡明。本研究採用單細胞空間分析技術，發現腫瘤會形成獨特的局部免疫微環境，包括缺氧區域與趨化因子富集區，這些特殊區域能夠重塑免疫細胞的組成與分布。研究結果顯示，這些局部微環境支持癌細胞維持特定狀態，使其得以逃避免疫監視，尤其是對HPV特異性T細胞反應的抑制。此發現為理解腫瘤免疫逃脫機制提供了新視角，並可能為未來免疫治療策略的優化提供重要參考。",
+      "topicTags": [
+        "spatial-analysis",
+        "oropharyngeal-cancer",
+        "immune-evasion",
+        "hpv",
+        "single-cell"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-74384-3",
+      "title": "Clonal evolution and mutational trajectories of metastatic colorectal cancer shaped by anticancer therapies",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74384-3",
+      "doi": "10.1038/s41467-026-74384-3",
+      "abstract": "The evolutionary changes in cancer genomes under treatment are not fully understood. Here, whole-genome sequencing of 58 single-cell tumoroids and 18 matched bulk tumours from 6 metastatic colorectal cancer patients reveals clonal structures and mutation patterns under therapy.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer",
+        "evolution",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "化療如何重塑轉移性大腸癌的克隆演化與突變軌跡",
+      "summaryZh": "轉移性大腸癌在治療過程中的基因組演化機制尚未完全被解開。本研究透過全基因體定序分析6位轉移性大腸癌患者的58個單細胞腫瘤類器官及18個配對腫瘤組織，揭示了治療壓力下的克隆結構與突變特徵。這些發現有助於理解癌症如何透過基因演化來適應並抵抗藥物治療，為未來個人化抗癌療法提供重要的基因組學基礎。",
+      "topicTags": [
+        "cancer-genomics",
+        "colorectal-cancer",
+        "clonal-evolution",
+        "tumoroids",
+        "whole-genome-sequencing"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-74320-5",
+      "title": "Spatial architecture of autism pathogenesis reveals mosaic structural disarray during early development",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74320-5",
+      "doi": "10.1038/s41467-026-74320-5",
+      "abstract": "Spatial and single-cell transcriptomics of patient-derived brain organoids reveal disrupted progenitor–neuron organization and local neuronal disarray, implicating spatially mosaic pathogenesis in autism heterogeneity.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "自閉症早期發育的空間致病機制：腦類器官研究揭示鑲嵌式結構紊亂",
+      "summaryZh": "本研究運用空間轉錄體學與單細胞轉錄體學技術，分析自閉症患者誘導型腦類器官，揭示發育過程中前驅細胞與神經元之間的組織紊亂。研究發現區域性神經元排列失序，呈現局部結構錯亂的特徵。此結果表明自閉症的致病機制並非均勻分布，而是具有空間異質性的鑲嵌式特質。這項發現為理解自閉症臨床表型多樣性提供了新的空間視角，並有助於解釋為何不同患者呈現差異化的神經發育異常。",
+      "topicTags": [
+        "autism",
+        "brain-organoids",
+        "spatial-transcriptomics",
+        "single-cell",
+        "neurodevelopment"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-74061-5",
+      "title": "The PLK4 inhibitor RP-1664 demonstrates potent efficacy in neuroblastoma preclinical models through a dual mechanism of sensitivity",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74061-5",
+      "doi": "10.1038/s41467-026-74061-5",
+      "abstract": "Inhibition of PLK4 is synthetic lethal in cancers with chromosome 17q TRIM37 copy number gain. Here, the authors show that while RP-1664 (PLK4 inhibitor) causes centrosome depletion in a TRIM37-dependent manner as high doses, low dose causes cell death in a TRIM37-independent manner via centrosome amplification and demonstrate its efficacy in preclinical models of neuroblastoma with TRIM37 gain.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "PLK4抑制劑RP-1664在神經母細胞瘤臨床前模型中展現雙重敏感機制的強效療效",
+      "summaryZh": "本研究針對具有第17q染色體TRIM37基因拷貝數增加的神經母細胞瘤，發現PLK4抑制劑RP-1664在高劑量時透過TRIM37依賴的途徑導致中心體耗竭，而在低劑量時則以TRIM37非依賴的方式引發中心體擴增並觸發細胞死亡。這種雙重敏感機制顯示RP-1664在不同劑量下可同時靶向依賴與非依賴TRIM37的癌細胞，提升治療窗口。臨床前模型驗證了其在TRIM37增益的神經母細胞瘤中的顯著抗腫瘤效果，為高風險患者提供新的候選藥物。此發現不僅深化對PLK4與TRIM37交互作用的理解，也為精準醫療策略的開發奠定基礎。",
+      "topicTags": [
+        "plk4",
+        "neuroblastoma",
+        "trim37",
+        "centrosome-amplification",
+        "preclinical"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-73931-2",
+      "title": "YBX1 Confers immunosuppressive bone metastatic traits in non-small cell lung cancer",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-73931-2",
+      "doi": "10.1038/s41467-026-73931-2",
+      "abstract": "Bone metastases derived from lung cancer typically exhibit an immunosuppressive microenvironment. This study identifies a YBX1 glycosylation–dependent mechanism that drives both metastasis and immunosuppression, and proposes the small molecule Icaritin as a potential therapeutic strategy through YBX1 degradation.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "YBX1糖基化機制促成肺癌骨轉移的免疫抑制特性",
+      "summaryZh": "肺癌骨轉移通常伴隨免疫抑制的微環境，嚴重影響治療效果。本研究發現YBX1的糖基化修飾是調控肺癌骨轉移與免疫抑制雙重特性的關鍵機制。透過這種糖基化依賴途徑，YBX1同時促進腫瘤轉移並抑制免疫細胞功能。研究團隊進一步證實小分子藥物Icaritin能夠降解YBX1，為肺癌骨轉移的治療提供新的策略方向。",
+      "topicTags": [
+        "non-small-cell-lung-cancer",
+        "bone-metastasis",
+        "immunosuppression",
+        "ybx1",
+        "targeted-therapy"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 9,
+      "passedByScope": 1,
+      "llmClassified": 8,
+      "llmYes": 5,
+      "llmNotSure": 0,
+      "llmNo": 3,
+      "included": 6,
+      "excluded": 3
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 6,
+      "llmTagged": 6,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 6,
+      "candidates": 6,
+      "featured": 6,
+      "overflow": 0,
+      "lineA": 2,
+      "lineB": 3,
+      "preprint": 1,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 6,
+      "llmSummarized": 6,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-74155-0",
+        "title": "A probabilistic forecasting framework for neighbourhood-level disaggregation of electric vehicle adoption scenarios",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-06-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-74155-0",
+        "doi": "10.1038/s41467-026-74155-0",
+        "abstract": "A Gaussian process framework integrates neighbourhood EV registration data with regional scenarios to generate probabilistic local adoption forecasts with uncertainty estimates for electricity network planning.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-74143-4",
+        "title": "Generation of ultra-broadband frequency comb in strongly bistable nonlinear magnonic resonator",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-06-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-74143-4",
+        "doi": "10.1038/s41467-026-74143-4",
+        "abstract": "Researchers report a breakthrough in ultra-broadband magnonic frequency combs by driving a nonlinear YIG resonator far off-resonance, yielding over 350 comb lines across 450 MHz with continuously tunable spacing.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-74101-0",
+        "title": "Generative flow model on distance geometry for predicting transition states of chemical reactions",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-06-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-74101-0",
+        "doi": "10.1038/s41467-026-74101-0",
+        "abstract": "Predicting transition states of chemical reactions is demanding. A generative flow model in distance geometry space, dubbed TS-DFM, is proposed, achieving higher structural accuracy and better generalizability than Cartesian-based approaches.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    }
+  ]
+}
