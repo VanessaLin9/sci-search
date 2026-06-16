@@ -132,6 +132,43 @@ function installRoutingFetchWithRequestFailures(
   }) as typeof fetch;
 }
 
+function installRoutingFetchWithInvalidJson(): void {
+  routingCallCount = 0;
+  resetRoutingLlmClientCache();
+
+  globalThis.fetch = (async (input) => {
+    routingCallCount += 1;
+    const url =
+      typeof input === "string" ? input : input instanceof URL ? input.href : input.url;
+    if (!url.includes("/chat/completions")) {
+      throw new Error(`Unexpected fetch: ${url}`);
+    }
+
+    return new Response(
+      JSON.stringify(
+        chatCompletion("This is prose, not JSON.", 24),
+      ),
+      { status: 200, headers: { "content-type": "application/json" } },
+    );
+  }) as typeof fetch;
+}
+
+function installRoutingFetchWithHttpError(status: number, message: string): void {
+  routingCallCount = 0;
+  resetRoutingLlmClientCache();
+
+  globalThis.fetch = (async (input) => {
+    routingCallCount += 1;
+    const url =
+      typeof input === "string" ? input : input instanceof URL ? input.href : input.url;
+    if (!url.includes("/chat/completions")) {
+      throw new Error(`Unexpected fetch: ${url}`);
+    }
+
+    return new Response(message, { status, headers: { "content-type": "text/plain" } });
+  }) as typeof fetch;
+}
+
 function installRoutingFetchWithRetryFailure(firstPlan: RoutingMockPlan, retryError: Error): void {
   routingCallCount = 0;
   resetRoutingLlmClientCache();
@@ -268,5 +305,36 @@ describe("classifyBroadSciencePapers missing verdict handling", { concurrency: 1
 
     assert.equal(routingCallCount, 2);
     assert.equal(verdictById.get("a"), "no");
+  });
+
+  test("falls back to no when single-paper response has invalid JSON", async () => {
+    const items = [paper("a")];
+    installRoutingFetchWithInvalidJson();
+
+    const verdictById = await classifyBroadSciencePapers(items);
+
+    assert.ok(routingCallCount >= 1);
+    assert.equal(verdictById.get("a"), "no");
+  });
+
+  test("falls back to no when single-paper HTTP returns non-timeout error", async () => {
+    const items = [paper("a")];
+    installRoutingFetchWithHttpError(429, "Rate limit exceeded");
+
+    const verdictById = await classifyBroadSciencePapers(items);
+
+    assert.ok(routingCallCount >= 1);
+    assert.equal(verdictById.get("a"), "no");
+  });
+
+  test("falls back to no for entire batch when JSON stays invalid after split", async () => {
+    const items = [paper("a"), paper("b")];
+    installRoutingFetchWithInvalidJson();
+
+    const verdictById = await classifyBroadSciencePapers(items);
+
+    assert.ok(routingCallCount >= 2);
+    assert.equal(verdictById.get("a"), "no");
+    assert.equal(verdictById.get("b"), "no");
   });
 });
