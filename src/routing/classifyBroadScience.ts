@@ -2,7 +2,6 @@ import { z } from "zod";
 import { lifeScienceRoutingVerdictSchema } from "../domain/life-science/schemas.js";
 import {
   isRoutingBatchRequestFailure,
-  isRoutingMissingVerdictsError,
   shouldRetrySplitLlmBatch,
 } from "../llm/extractLlmJsonContent.js";
 import type { LifeScienceRoutingVerdict } from "../types.js";
@@ -92,17 +91,31 @@ function applyFallbackNo(
   verdictById: Map<string, LifeScienceRoutingVerdict>,
   ids: string[],
   batchLabel: string,
-  options?: { afterRequestFailure?: string },
+  options?: { reason?: string },
 ): void {
   if (ids.length === 0) return;
-  const line =
-    options?.afterRequestFailure !== undefined
-      ? `${batchLabel}: fallback no for ${ids.length} paper(s) after request failure (${options.afterRequestFailure}): ${ids.join(", ")}`
-      : `${batchLabel}: fallback no for ${ids.length} missing verdict(s): ${ids.join(", ")}`;
+  const line = options?.reason
+    ? `${batchLabel}: fallback no for ${ids.length} paper(s) (${options.reason}): ${ids.join(", ")}`
+    : `${batchLabel}: fallback no for ${ids.length} missing verdict(s): ${ids.join(", ")}`;
   logRouting(line);
   for (const id of ids) {
     verdictById.set(id, "no");
   }
+}
+
+function fallbackNoForBatch(
+  items: BroadScienceRoutingInput[],
+  batchLabel: string,
+  reason: string,
+): Map<string, LifeScienceRoutingVerdict> {
+  const verdictById = new Map<string, LifeScienceRoutingVerdict>();
+  applyFallbackNo(
+    verdictById,
+    items.map((item) => item.id),
+    batchLabel,
+    { reason },
+  );
+  return verdictById;
 }
 
 async function classifyBatch(
@@ -168,10 +181,6 @@ async function classifyBatch(
     logRouting(`${batchLabel}: parsed (${parsed.usageLine}) · ${summarizeVerdicts(verdictById)}`);
     return verdictById;
   } catch (error) {
-    if (isRoutingMissingVerdictsError(error)) {
-      throw error;
-    }
-
     const finishReason =
       error instanceof Error && "finishReason" in error
         ? String((error as Error & { finishReason: string }).finishReason)
@@ -192,17 +201,10 @@ async function classifyBatch(
     }
 
     if (requestFailed) {
-      const verdictById = new Map<string, LifeScienceRoutingVerdict>();
-      applyFallbackNo(
-        verdictById,
-        items.map((item) => item.id),
-        batchLabel,
-        { afterRequestFailure: message },
-      );
-      return verdictById;
+      return fallbackNoForBatch(items, batchLabel, `request failure (${message})`);
     }
 
-    throw error;
+    return fallbackNoForBatch(items, batchLabel, message);
   }
 }
 
