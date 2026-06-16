@@ -1,0 +1,777 @@
+{
+  "reportDate": "2026-06-15",
+  "generatedAt": "2026-06-16T12:27:03.323Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03098-7",
+      "title": "A foundation model to help understand the regulatory implications of 3D genome organization",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03098-7",
+      "doi": "10.1038/s41592-026-03098-7",
+      "abstract": "We developed a foundation model for 3D genome organization from Hi-C-derived chromatin structure. HiCFoundation supports integrative analysis linking genome architecture to downstream regulatory function. Through large-scale self-supervised pretraining on Hi-C data, followed by fine-tuning on downstream tasks, it provides a unified, efficient, generalizable and interpretable paradigm for 3D genome, single-cell and multiomics analysis across species.",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "理解3D基因組調控功能的新基石：HiCFoundation模型",
+      "summaryZh": "本研究開發了HiCFoundation，一個基於Hi-C染色質結構數據的3D基因組基礎模型。透過大規模自我監督預訓練，該模型能有效連結基因組三維結構與下游調控功能。研究團隊進一步針對多種下游任務進行微調，展示其在單細胞分析、多組學整合及跨物種應用中的優異效能。此模型提供了一個統一且可解釋的分析框架，有望加速我們對基因組調控機制的理解。",
+      "topicTags": [
+        "foundation-model",
+        "3d-genome",
+        "hi-c",
+        "chromatin",
+        "single-cell",
+        "multiomics"
+      ]
+    },
+    {
+      "id": "10.1038/s41592-026-03103-z",
+      "title": "An image-based framework for the integrated analysis of the epithelial-to-mesenchymal transition",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03103-z",
+      "doi": "10.1038/s41592-026-03103-z",
+      "abstract": "A quantitative imaging platform enables integrated analysis of the cellular dynamics associated with the epithelial-to-mesenchymal transition (EMT) in human induced pluripotent stem cells. Differences in EMT progression across 2D and 3D culture geometries were linked to basement membrane integrity.",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "以影像為基礎的上皮-間質轉化整合分析框架",
+      "summaryZh": "這項研究開發了一套定量成像平台，能夠整合分析人類誘導型多功能幹細胞中上皮-間質轉化（EMT）的細胞動態過程。研究比較了二維與三維培養環境中EMT進程的差異，並發現這些差異與基底膜完整性密切相關。此框架為理解細胞可塑性、發育過程及癌症轉移機制提供了新的工具，有助於推動再生醫學與抗癌療法的發展。",
+      "topicTags": [
+        "epithelial-mesenchymal-transition",
+        "quantitative-imaging",
+        "stem-cells",
+        "cell-dynamics",
+        "basement-membrane"
+      ]
+    },
+    {
+      "id": "10.1038/s41592-026-03130-w",
+      "title": "Search, organize, aggregate and share image data with BioFile Finder (BFF)",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03130-w",
+      "doi": "10.1038/s41592-026-03130-w",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41592-026-03097-8",
+      "title": "A generalizable Hi-C foundation model for chromatin architecture, single-cell and multiomics analysis across species",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03097-8",
+      "doi": "10.1038/s41592-026-03097-8",
+      "abstract": "Nuclear DNA is organized into a three-dimensional (3D) structure that impacts critical cellular processes. However, the integrative analysis of 3D structure (measured by high-throughput chromosome conformation capture (Hi-C)) and associated epigenomic regulation (for example, assay for transposase-accessible chromatin using sequencing (ATAC−seq) and chromatin immunoprecipitation followed by sequencing (ChIP−seq)) remains challenging due to the differences in data format, resolution and analytical pipelines. Here we propose HiCFoundation, a foundation model trained on massive Hi-C data for integrative analysis linking chromatin structure to downstream regulatory function. The model achieves state-of-the-art performance and generalizability across species on various 3D genome analysis, including reproducibility analysis, resolution enhancement and loop detection. Additionally, HiCFoundation can predict various epigenomic activities from Hi-C to reveal how 3D structure links to regulatory function. Finally, HiCFoundation can easily adapt to single-cell Hi-C data. HiCFoundation thus offers a general, interpretable framework for studying the 3D genome and its functional roles across cell types and species. HiCFoundation is a foundation model pretrained on a large corpus of Hi-C data for comprehensive 3D genome and epigenomics analysis.",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "通用型Hi-C基礎模型：跨物種染色質結構與單細胞多體學分析框架",
+      "summaryZh": "核DNA的三維結構對細胞過程有重要影響，但Hi-C技術與表觀基因組數據（如ATAC-seq、ChIP-seq）在格式、解析度和分析流程上的差異，使得整合分析極具挑戰性。本研究提出HiCFoundation，這是一個基於海量Hi-C數據訓練的基礎模型，能在不同物種間達到最先進的效能，涵蓋可重複性分析、解析度提升與環路偵測等三維基因組分析任務。此外，該模型可從Hi-C數據預測多種表觀基因組活性，揭示染色質三維結構與基因調控功能的關聯，並能靈活適配單細胞Hi-C數據，為跨細胞類型與物種的三維基因組研究提供通用且可解釋的分析框架。",
+      "topicTags": [
+        "foundation-model",
+        "chromatin-architecture",
+        "hi-c-analysis",
+        "single-cell",
+        "epigenomics",
+        "3d-genome"
+      ]
+    },
+    {
+      "id": "10.1038/s41592-026-03096-9",
+      "title": "A human induced pluripotent stem cell model for the holistic study of epithelial-to-mesenchymal transitions",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03096-9",
+      "doi": "10.1038/s41592-026-03096-9",
+      "abstract": "The epithelial-to-mesenchymal transition (EMT) is a widely studied cell state change, yet differences in model design and measurement approaches limit comparison across studies. Addressing this challenge requires experimental model systems and analysis frameworks that support standardization across contexts. Here, we show that human induced pluripotent stem (hiPS) cells in defined cell culture geometries, two-dimensional colonies and three-dimensional lumenoids, enable multimodal measurements of EMT dynamics within a single experimental platform. Using fixed-cell and live-cell image-based assays, we quantify changes in cell migration, EMT-related molecular markers, cell–cell junction organization and interactions with the basement membrane, a specialized form of the extracellular matrix, during EMT induced in hiPS cells. We identify cell culture geometry-dependent differences in the timing of migration onset and show that basement membrane integrity can be quantitatively linked to these differences. Together, these results establish an imaging-based framework for analysis of cell state transitions and provide accessible datasets and tools. This study presents an human induced pluripotent stem-cell-based culture model for studying cell state transitions during epithelial-to-mesenchymal transition.",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "人類誘導性多功能幹細胞模型：全面研究上皮-間質轉化的新平台",
+      "summaryZh": "上皮-間質轉化（EMT）是細胞狀態變化的重要研究領域，但不同模型設計與測量方法的差異限制了跨研究的比較。本研究利用人類誘導性多功能幹細胞（hiPS），在二維 colony 與三維 lumenoid 兩種幾何結構中，建立可標準化的 EMT 研究平台。該平台可同步測量細胞遷移、EMT 相關分子標記、細胞間連接組織及與基底膜的交互作用。研究發現細胞培養幾何結構會影響遷移起始的時間，且基底膜完整性與這些差異具有定量關聯。此研究提供了一套以成像為基礎的分析框架及可共享的資料集與工具，為細胞狀態轉換的標準化研究奠定基礎。",
+      "topicTags": [
+        "stem-cells",
+        "epithelial-mesenchymal-transition",
+        "cell-migration",
+        "organoids",
+        "image-analysis"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02619-6",
+      "title": "Decoding common and rare noncoding variant effects across cellular and developmental contexts",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02619-6",
+      "doi": "10.1038/s41588-026-02619-6",
+      "abstract": "Interpreting how noncoding variants act in specific cell types across human development is a major challenge. Here we generated 3 billion predictions from deep learning sequence models of chromatin accessibility across diverse fetal and adult cellular contexts. These prioritized functional variants and revealed a dichotomy: common variants are more cell-type-specific, whereas ultra-rare variants had larger and broader effects across cell types, with the strongest evidence of purifying selection in fetal neurons. Leveraging these insights, we developed FLARE (Functional Lasso Analysis of Regulatory Evolution), which integrates evolutionary constraint to prioritize noncoding variants with extreme regulatory effects. FLARE provided a general framework for studying regulatory variation, from de novo mutations in childhood disorders to rare variants underlying outlier adult brain expression and common variants enriched for schizophrenia heritability. Together, these results demonstrate how integrating single-cell chromatin accessibility, population genetics and deep learning can identify regulatory variants that influence human development and disease. This study contributes a resource of predicted effects of noncoding variants on chromatin accessibility and a method to identify noncoding variants with extreme regulatory effects, with application to disease variant discovery.",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "破解非編碼變異在細胞與發育情境中的調控效應",
+      "summaryZh": "本研究運用深度學習模型，預測30億個非編碼變異在胎兒與成人不同細胞類型中的染色質可及性效應。研究發現常見變異傾向於細胞類型特異性調控，而超罕見變異則具有更廣泛且更強的跨細胞類型效應，尤其在胎兒神經元中發現最強的純化選擇證據。基於這些發現，團隊開發了FLARE方法，能有效識別具有極端調控效應的非編碼變異，並成功應用於兒童發育障礙、成人腦部基因表現異常及思覺失調症遺傳風險等研究。此研究為解讀非編碼變異在人類發育與疾病中的角色提供了重要資源與新工具。",
+      "topicTags": [
+        "deep-learning",
+        "noncoding-variants",
+        "chromatin-accessibility",
+        "developmental-biology",
+        "population-genetics"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02634-7",
+      "title": "Single-cell RNA sequencing of terminal ileal biopsies identifies signatures of Crohn’s disease pathogenesis",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02634-7",
+      "doi": "10.1038/s41588-026-02634-7",
+      "abstract": "Crohn’s disease (CD) is a chronic inflammatory bowel disease exhibiting substantial heterogeneity in clinical presentation and response to therapy. To explore its molecular basis, we developed IBDverse, a large single-cell RNA sequencing (scRNA-seq) dataset of terminal ileal biopsies, profiling over 1.1 million cells from 111 patients with CD and 232 healthy controls. This resource integrates discovery and replication cohorts for the robust identification of CD-associated cell types, genes and pathways. We uncovered epithelial changes marked by interferon-driven upregulation of major histocompatibility complex class I molecules that persisted in progenitor cells after macroscopic inflammation resolution. ITGA4+ macrophages were identified as key inflammatory drivers, showing enriched JAK–STAT signaling and cytokine expression (interleukin-6 (IL-6), IL-12 and IL-23). Heritability analysis linked inflammatory monocytes and macrophages to CD susceptibility, implicating resident and recruited immune cells in pathogenesis. These findings establish a comprehensive cellular and molecular framework for CD, offering insights into disease mechanisms and therapeutic opportunities. IBDverse is a single-cell RNA atlas of terminal ileal biopsies comprising 1.1 million cells from 111 patients with Crohn’s disease and 232 healthy participants. Analysis of the data identifies genes, pathways and cell populations associated with the disease and implicates inflammatory monocytes and macrophages in disease susceptibility.",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞RNA定序解析末端迴腸切片：揭示克羅恩氏病致病關鍵特徵",
+      "summaryZh": "克羅恩氏病是一種臨床表現多樣且治療反應差異大的慢性發炎性腸道疾病。本研究團隊建立IBDverse大型單細胞RNA定序資料庫，涵蓋111位患者與232位健康對照共超過110萬個細胞，可用於穩健識別疾病相關的細胞型態、基因與路徑。研究發現上皮細胞在宏觀發炎緩解後仍持續表現干擾素驅動的第一型主要組織相容性複合體分子，ITGA4+巨噬細胞則是關鍵的發炎驅動者，展現JAK-STAT訊號活化及多種細胞激素表達。遺傳分析進一步將發炎性單核球與巨噬細胞連結至疾病易感性，為理解致病機制與開發新療法提供全面性的細胞與分子架構。",
+      "topicTags": [
+        "single-cell",
+        "crohns-disease",
+        "inflammatory-bowel-disease",
+        "immunology",
+        "transcriptomics"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-01994-w",
+      "title": "A platform to study pacemaker",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-01994-w",
+      "doi": "10.1038/s41556-026-01994-w",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41556-026-01990-0",
+      "title": "Spatial profiling in bladder cancer",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-01990-0",
+      "doi": "10.1038/s41556-026-01990-0",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "膀胱癌的空間轉錄體分析",
+      "summaryZh": "這項研究運用空間基因表現分析技術，深入解析膀胱癌組織中細胞的空間分布與基因表現特徵。研究揭示了腫瘤微環境中不同細胞類型之間的交互作用，為理解膀胱癌的進展機制提供重要線索。此技術能同時保留組織結構資訊與分子特徵，有助於識別與患者預後相關的生物標記。研究成果可為膀胱癌的精準醫療與新療法開發奠定基礎。",
+      "topicTags": [
+        "spatial-profiling",
+        "bladder-cancer",
+        "tumor-microenvironment",
+        "transcriptomics",
+        "cancer-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-01995-9",
+      "title": "Starving and crowded in quiescence",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-01995-9",
+      "doi": "10.1038/s41556-026-01995-9",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "靜止期中的飢餓與擁擠"
+    },
+    {
+      "id": "10.1038/s41556-026-01991-z",
+      "title": "Integrated stress response couples mitochondrial fitness with lineage reprogramming to drive cancer evolution",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-01991-z",
+      "doi": "10.1038/s41556-026-01991-z",
+      "abstract": "Tumour progression towards dedifferentiated cell clusters plays a critical role in intratumour heterogeneity and therapy resistance. While tumour microenvironmental stress has been implicated, the underlying mechanisms remain poorly defined. Using mouse models of lung adenocarcinoma, we demonstrate that activation of the integrated stress response (ISR)—marked by phosphorylation of eIF2 (p-eIF2) and ATF4 induction—drives tumour heterogeneity. ISR activation facilitates the emergence of high-plasticity, undifferentiated and pre-epithelial-to-mesenchymal transition clusters characterized by elevated ATF4 and MYC activity. This process is MYC dependent and involves ISR-mediated repression of NKX2-1, a key determinant of alveolar identity, and induction of CHCHD10, a regulator of mitochondrial integrity and metabolic fitness. Disruption of the p-eIF2–ATF4 axis induces mitochondrial dysfunction, limits dedifferentiation and suppresses tumour growth. In human lung adenocarcinoma, ISR-driven dedifferentiation correlates with advanced disease and poor prognosis, identifying the ISR as a central driver of lineage reprogramming and metabolic fitness in tumour progression. Diao, Zou et al. demonstrate that activation of the integrated stress response drives lineage dedifferentiation and tumour progression in lung adenocarcinoma, associated with aberrant mitochondrial function and metabolic fitness.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer",
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "整合性壓力反應將粒線體適能與譜系重編程耦合以推動癌症演化"
+    },
+    {
+      "id": "10.1038/s41590-026-02563-x",
+      "title": "A temporal map of B cell diversification mechanisms in mice",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02563-x",
+      "doi": "10.1038/s41590-026-02563-x",
+      "abstract": "Here, the authors conduct integrated multiomics analysis of B cell activation, differentiation and diversification responses to malaria infection and provide a graphical user interface for readers to mine these data.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "小鼠B細胞多樣化機制的時間圖譜"
+    },
+    {
+      "id": "10.1038/s41590-026-02568-6",
+      "title": "Pyoderma gangrenosum caused by the molecular uncoupling of OTULIN catalytic activity and LUBAC binding",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02568-6",
+      "doi": "10.1038/s41590-026-02568-6",
+      "abstract": "Some patients with pyoderma gangrenosum harbor a mutation (R57C) in OTULIN that disrupts the interaction between OTULIN and LUBAC leading to hyperactivation in monocytes and enhanced susceptibility of keratinocytes to TNF-induced, caspase-dependent cell death. One patient treated with anti-TNF therapy showed clinical remission of skin ulceration.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "OTULIN催化活性與LUBAC結合的分子解耦引起壞疽性膿皮症"
+    },
+    {
+      "id": "10.1038/s41590-026-02569-5",
+      "title": "mRNA-based influenza vaccine expands the B cell response breadth in humans",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02569-5",
+      "doi": "10.1038/s41590-026-02569-5",
+      "abstract": "This study compares the humoral response of individuals who received inactivated influenza vaccines to that of individuals who received an mRNA-based quadrivalent influenza vaccine. The mRNA-based vaccine induced prolonged germinal center responses, more antibodies and increased numbers of memory B cells.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "mRNA流感疫苗擴展人類B細胞反應廣度"
+    },
+    {
+      "id": "10.1038/s41564-026-02389-1",
+      "title": "Purine bias in bacterial genes is driven by runaway transcription",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02389-1",
+      "doi": "10.1038/s41564-026-02389-1",
+      "abstract": "Purine bias is critical for gene expression in bacteria, preventing premature transcription in species that exhibit runaway transcription.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "細菌基因中的普林偏好由失控轉錄所驅動"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003862",
+      "title": "Audiomotor prediction errors drive speech adaptation even in the absence of overt movement",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-15T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003862",
+      "doi": "10.1371/journal.pbio.3003862",
+      "abstract": "Observed outcomes of our movements sometimes differ from our expectations. These sensory prediction errors recalibrate the brain’s internal models for motor control, reflected in alterations to subsequent movements that counteract these errors (motor adaptation). While leading theories suggest that all forms of motor adaptation are driven by learning from sensory prediction errors, dominant models of speech adaptation argue that adaptation results from integrating time-advanced copies of corrective feedback commands into feedforward motor programs. Here, we tested these competing theories of speech adaptation by inducing planned, but not executed, speech. Human speakers were prompted to speak a word and, on a subset of trials, were rapidly cued to withhold the prompted speech. On standard trials, speakers were exposed to real-time playback of their own speech with an auditory perturbation of the first formant to induce single-trial speech adaptation. Speakers experienced a similar sensory error on movement cancellation trials, hearing a perturbation applied to a recording of their speech from a previous trial at the time they would have spoken. Speakers adapted to auditory prediction errors in both contexts, altering the spectral content of spoken vowels to counteract formant perturbations even when no actual produced speech coincided with the perturbed feedback. Such adaptation was not observed when participants passively listened to perturbed feedback without the intention to speak, ruling out observational learning as the cause of adaptation in movement cancellation trials. These results suggest that prediction errors, rather than corrective motor commands, drive audiomotor adaptation in speech, building on recent findings in reaching.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "聽覺運動預測誤差即使在無明顯運動時也能驅動言語適應"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003856",
+      "title": "Aging and metabolism contribute separately to brain–body health",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-15T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003856",
+      "doi": "10.1371/journal.pbio.3003856",
+      "abstract": "The brain and body undergo coordinated changes throughout the life span, yet studies of aging have traditionally examined these systems as separate entities. Here we ask how brain health relates to aging and peripheral biomarkers of metabolic and vascular function, including body mass index, blood pressure, and blood biochemistry. We use multivariate pattern learning to identify generalizable patterns of covariance between multi-modal neuroimaging data (structural, functional, diffusion, and arterial spin labeling MRI), demographic, and physiological markers in two large-scale deeply phenotyped datasets: the Human Connectome Project–Aging and UK Biobank. This data-driven approach isolates two principal axes of brain–body associations in both biological sexes. The first axis is driven by the dominant contribution of age. Across multiple brain measures, aging is associated with loss of brain structural integrity and cerebral vascular dysfunction. The second axis is driven by metabolic features, characterized by low high-density lipoprotein cholesterol, elevated body mass index, blood pressure, glycosylated hemoglobin, insulin, glucose, and alanine aminotransferase that predominantly converge on reduced cerebral perfusion. Importantly, the aging and the metabolic axes are independent of each other, meaning that age and metabolic dysfunction have separable influences on the brain. Finally, we show that deviations from a healthy metabolic profile are linked to cognitive deficits, particularly in females. Our study contributes to development of comprehensive translatable biomarkers for brain health assessment, and highlights the importance of metabolic health as a determinant of brain health in aging population.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "老化與代謝分別貢獻於腦體健康"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003855",
+      "title": "Evolutionary analysis of transcription elongation factors reveals conserved and lineage-specific regulatory domains",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-15T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003855",
+      "doi": "10.1371/journal.pbio.3003855",
+      "abstract": "In eukaryotes, transcription elongation factors (TEFs) associate with RNA Polymerase II (RNAPII) to facilitate gene expression and couple transcription to co-transcriptional processes, including chromatin regulation and RNA processing. To further our understanding of TEF biology, we developed a domain-centric analysis pipeline to perform a broad survey of 10 TEF orthologs—Paf1, Ctr9, Cdc73, Rtf1, Leo1, Spt4, Spt5, Spt6, Spn1, and Elf1—across the Tree of Life and analyze their evolutionary patterns in a structural context. We report evidence for all 10 TEFs being present in the last eukaryotic common ancestor, indicating that mechanisms of TEF-mediated transcription regulation are both ancient and conserved. However, some early-diverging eukaryotic clades exhibit signs of altered TEF domain composition. A comparative phylogenetic analysis highlighted conserved regions of TEFs that are detected in both metazoans and fungi and other regions that appear clade-specific, detected only in metazoans. These observations, together with additional insights generated from evolutionary rate covariation analysis, shed light on under-characterized aspects of TEFs, including domains for which functions have yet to be dissected.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology",
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "轉錄延伸因子的演化分析揭示保守與譜系特異性調控結構域"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003842",
+      "title": "Eco-evolutionary feedbacks drive the co-occurrence of restriction-modification systems and antimicrobial resistance genes in bacteria",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-15T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003842",
+      "doi": "10.1371/journal.pbio.3003842",
+      "abstract": "Bacterial pathogens commonly become drug resistant via horizontal acquisition of antimicrobial resistance genes (ARGs), which are often encoded on mobile genetic elements (MGEs). Although bacterial defence systems are typically considered barriers to horizontal gene transfer (HGT), previous studies revealed that bacteria with more restriction-modification (RM) systems (the most abundant bacterial defences) frequently carry more MGEs. It was suggested that this counterintuitive relationship might result from stronger selection for RM systems when exposure to costly MGEs increases. Here, we test this hypothesis using a combination of modeling and bioinformatics analysis of >40,000 bacterial genomes to better understand how eco-evolutionary feedbacks between selection for RM and acquisition of MGEs shape bacterial genome evolution. Our model predicts negative associations between HGT and RM, but only if RM diversity is high. By contrast, at low RM diversity, eco-evolutionary feedbacks drive the emergence of positive associations between HGT and RM. Consistent with these predictions, we identified negative relationships between acquired ARG counts and RM counts across species but positive relationships within individual species. Collectively, our work helps to understand how RM systems shape patterns of HGT of ARGs, which may offer opportunities for targeted surveillance of strains at higher risk of horizontally acquiring novel drug resistance alleles.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "生態演化回饋驅動細菌中限制-修飾系統與抗菌藥物抗性基因的共同出現"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003813",
+      "title": "Biotic interactions biogeography: A framework for understanding how species interactions shape biodiversity patterns across scales",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-15T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003813",
+      "doi": "10.1371/journal.pbio.3003813",
+      "abstract": "The integration between biogeography and ecology has been historically limited due to the lack of data on biotic interactions across large spatial scales. The emergence of new methods and high-quality ecological network data at biogeographical scales are paving the way for a deeper integration of biogeography and ecology. This Essay examines this integration through three interconnected research areas: the effects of biotic interactions on species distributions; the influence of environmental gradients on biotic interactions; and the effects of biotic interactions on the environment. Recent progress and primary challenges are discussed, and suggestions provided on how to advance understanding of biodiversity patterns and processes across scales.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "生物交互作用生物地理學：理解物種交互作用如何跨尺度塑造生物多樣性模式的框架"
+    },
+    {
+      "id": "10.64898/2026.06.11.730069",
+      "title": "Long-read single-cell genomics: resolving chimeras in multiple displacement amplification",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-15",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.11.730069v1",
+      "doi": "10.64898/2026.06.11.730069",
+      "abstract": "Multiple displacement amplification (MDA) enables whole-genome amplification from single cells, but introduces chimeric artifacts that severely compromise downstream analyses, particularly with long-read sequencing. Here, we systematically evaluate long-read PacBio HiFi sequencing of MDA amplified DNA from single cells using the model green alga Chlamydomonas reinhardtii. We show that MDA-derived libraries exhibit highly uneven coverage and extreme chimera rates impacting up to 70% of reads, leading to thousands of artefactual structural variants and misassemblies when assembled using algorithms designed for bulk sequencing. To overcome these challenges, we developed lrSAGA (long-read Single Amplified Genome Assembly), a novel tool to assemble long-read MDA sequencing datasets. Assemblies generated using lrSAGA are more complete, more contiguous, and have 75-95% fewer misassemblies compared to conventional assembly algorithms. Although overall contiguity is limited by MDA coverage dropouts, we demonstrate that up to 68% of the C. reinhardtii genome can be accurately assembled from just a single haploid cell. We further validated lrSAGA using published Oxford Nanopore and PacBio HiFi data from single or half Caenorhabditis elegans worms, generating accurate and highly complete assemblies. Applying our approach to single protist cells isolated from environmental water samples, we performed PacBio HiFi single-cell genome sequencing of four uncultivated microbial eukaryotes: an amoeboflagellate from the Naegleria genus, a flagellate from the Bodo genus, and two deep-branching flagellates from the enigmatic CRuMs supergroup, Collodictyon triciliatum and Diphylleia rotans. From single cells, we generated high-quality draft genome assemblies estimated to be 70-84% complete, demonstrating the potential of long-read single-cell genomics to unlock genome diversity from uncultivated microbial eukaryotes.",
+      "authors": [
+        "McGowan, J.",
+        "Lipscombe, J.",
+        "Kilias, E. S.",
+        "Barker, T.",
+        "Catchpole, L.",
+        "Durrant, A.",
+        "Irish, N.",
+        "McTaggart, S.",
+        "Warring, S. D.",
+        "Gharbi, K.",
+        "Richards, T. A.",
+        "Hall, N.",
+        "Swarbreck, D."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "長讀單細胞基因體學：解析多重置換擴增中的嵌合體"
+    },
+    {
+      "id": "10.64898/2026.06.10.731246",
+      "title": "Robust integration of weakly anchored spatial multi-omics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-15",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.10.731246v2",
+      "doi": "10.64898/2026.06.10.731246",
+      "abstract": "Spatial multi-omics holds great promise for dissecting complex biological processes, though inherent technical constraints continue to limit its widespread adoption. Currently, most studies therefore measure distinct omics features on separate tissue sections, necessitating spatial diagonal integration. An emerging practical solution is to leverage hematoxylin and eosin (H&E) images as an integration anchor, given their ubiquity, low cost, and compatibility across tissue preparations. However, this anchor is frequently compromised in real-world settings by variations in H&E staining style, absence of reliable histological landmarks, and mismatches in spatial resolutions across omics modalities. To address this, we introduce SpaWeaver, a computational framework that couples a pathology foundation model with a graph Transformer and a latent feature aligner module, providing a highly robust solution for weakly anchored spatial omics data diagonal integration. Extensive experiments demonstrate that SpaWeaver exhibits superior robustness against isolated or synergistic weak-anchoring factors. The spatial multi-omics profiles generated by SpaWeaver link molecular features originally separated on two sections, unlocking diverse downstream analyses once exclusive to co-assayed spatial multi-omics data, including niche-aware cell-cell communication inference and multi-omics resolved cell state. In this study, it unveils tumor-distance-dependent fibroblast-CD4+ T-cell signaling in human colon adenocarcinoma and identifies a hypoxic glycolytic tumor state with pyknotic nuclei in human ovarian cancer. Overall, our approach bridges readily accessible single-omics measurements across weakly anchored tissue sections, enabling unified spatial multi-omics characterization and system-level tissue analysis.",
+      "authors": [
+        "Wang, C.",
+        "Liu, Y.",
+        "Wang, Z.",
+        "Sun, P.",
+        "Li, Z.",
+        "Li, J.",
+        "Wang, X.",
+        "Chen, K.",
+        "Zou, Q.",
+        "Daoliang, Z.",
+        "Hu, Z.",
+        "Du, Y.",
+        "Qian, B.",
+        "Feng, X.",
+        "Yuan, Z.",
+        "Guan, R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial omics",
+        "spatial resolution",
+        "multi-omics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "弱錨定空間多體學的穩健整合"
+    },
+    {
+      "id": "10.1038/d41586-026-01867-0",
+      "title": "The latest benefit of obesity drugs: boosting testosterone and sperm quality",
+      "journal": "Nature",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/d41586-026-01867-0",
+      "doi": "10.1038/d41586-026-01867-0",
+      "abstract": "Preliminary study finds that testosterone levels increase or stabilize in people taking GLP-1 medications.",
+      "sourceId": "nature",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "articleType": "News",
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/d41586-026-01917-7",
+      "title": "‘Every box has been opened’: London botanic gardens digitizes 7 million specimens",
+      "journal": "Nature",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/d41586-026-01917-7",
+      "doi": "10.1038/d41586-026-01917-7",
+      "abstract": "As Kew Botanic Gardens completes a scan of its collections, AI tools could help in the fight against biodiversity loss.",
+      "sourceId": "nature",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "articleType": "News",
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/d41586-026-01863-4",
+      "title": "At-home brain implant gives man with motor neuron disease his daily life back",
+      "journal": "Nature",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/d41586-026-01863-4",
+      "doi": "10.1038/d41586-026-01863-4",
+      "abstract": "The device has helped a man with motor neuron disease communicate and control his computer for nearly two years.",
+      "sourceId": "nature",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "articleType": "News",
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "居家腦部植入物讓運動神經元疾病患者重獲日常生活",
+      "summaryZh": "這項研究展示了一種居家使用的腦部植入裝置，能夠幫助運動神經元疾病患者恢復溝通能力與電腦控制功能。該設備已持續運作近兩年，顯示出長期穩定性與實用價值。對於這類會逐漸喪失語言與運動能力的患者而言，能在家中自主操作電腦代表著生活品質的重大提升。此突破為腦機介面技術從實驗室走向日常應用提供了重要參考，也為其他神經退化性疾病患者帶來新的希望。",
+      "topicTags": [
+        "brain-computer-interface",
+        "motor-neuron-disease",
+        "neural-implant",
+        "assistive-technology",
+        "neurotechnology"
+      ]
+    },
+    {
+      "id": "10.1038/d41586-026-01887-w",
+      "title": "How AI is revealing the secret lives of animals from hummingbirds to pumas",
+      "journal": "Nature",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/d41586-026-01887-w",
+      "doi": "10.1038/d41586-026-01887-w",
+      "abstract": "Advances in machine learning and other technologies are helping researchers to trace the movements, landmarks and social practices of wildlife.",
+      "sourceId": "nature",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "articleType": "Essay",
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "AI揭開野生動物神秘生活：從蜂鳥到美洲獅的行為密碼",
+      "summaryZh": "人工智慧正在徹底改變野生動物研究的方式。機器學習技術讓科學家能夠以前所未有的精確度追蹤動物的移動軌跡、識別重要地標，以及分析社會行為。這項技術突破使得研究範圍從微小的蜂鳥到大型的美洲獅都能涵蓋，為生態學與動物行為學開闢新途徑。這種非侵入式的觀察方法讓研究人員能更深入了解野生動物的日常習性與互動模式，對於物種保護策略的制定具有重要意義。",
+      "topicTags": [
+        "artificial-intelligence",
+        "wildlife",
+        "animal-behavior",
+        "machine-learning",
+        "ecology"
+      ]
+    },
+    {
+      "id": "10.1038/d41586-026-01885-y",
+      "title": "In the field — and in the lab — sometimes the simplest tool is best",
+      "journal": "Nature",
+      "publishedDate": "2026-06-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/d41586-026-01885-y",
+      "doi": "10.1038/d41586-026-01885-y",
+      "abstract": "Technology has led to unprecedented innovation, but common household items can help make research more reproducible — and accessible.",
+      "sourceId": "nature",
+      "lifeScienceRouting": {
+        "verdict": "not_sure",
+        "method": "llm"
+      },
+      "articleType": "Technology Feature",
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "野外與實驗室：最簡單的工具往往最好",
+      "summaryZh": "科技發展帶來前所未有的創新，但日常家居用品也能在研究中發揮重要作用。這些簡單的工具不僅能提高研究的可重複性，還能降低研究成本，使更多研究者能夠參與科學探索。在野外調查與實驗室工作中，善用随手可得的材料，能讓研究更加普及與永續。這種回歸基本的精神，提醒我們創新不一定需要昂貴的設備。",
+      "topicTags": [
+        "reproducibility",
+        "open-science",
+        "research-tools",
+        "field-research"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 30,
+      "passedByScope": 22,
+      "llmClassified": 8,
+      "llmYes": 4,
+      "llmNotSure": 1,
+      "llmNo": 3,
+      "included": 27,
+      "excluded": 3
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 27,
+      "llmTagged": 26,
+      "fallback": 1
+    },
+    "selection": {
+      "total": 27,
+      "candidates": 25,
+      "featured": 12,
+      "overflow": 13,
+      "lineA": 4,
+      "lineB": 19,
+      "preprint": 2,
+      "skip": 2
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 10,
+      "failed": 2
+    },
+    "translate": {
+      "requested": 13,
+      "llmTranslated": 13,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10768-1",
+        "title": "Nanocrystal-tailored recombination for all-perovskite tandem solar modules",
+        "journal": "Nature",
+        "publishedDate": "2026-06-15T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10768-1",
+        "doi": "10.1038/s41586-026-10768-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01833-w",
+        "title": "Bones of Iron Age skeleton were whittled into tools",
+        "journal": "Nature",
+        "publishedDate": "2026-06-15T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01833-w",
+        "doi": "10.1038/d41586-026-01833-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01889-8",
+        "title": "Why people should work together to shape the economy",
+        "journal": "Nature",
+        "publishedDate": "2026-06-15T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01889-8",
+        "doi": "10.1038/d41586-026-01889-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no"
+    }
+  ]
+}
