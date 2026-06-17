@@ -12,6 +12,10 @@ export const DIGEST_TAGGING_METHODS = ["llm", "keyword-fallback"] as const;
 /** Phase 2a: is this paper life-science relevant? */
 export const LIFE_SCIENCE_ROUTING_VERDICTS = ["yes", "no", "not_sure"] as const;
 
-export const LIFE_SCIENCE_ROUTING_METHODS = ["scope-default", "llm"] as const;
+export const LIFE_SCIENCE_ROUTING_METHODS = [
+  "scope-default",
+  "llm",
+  "routing-keyword-fallback",
+] as const;
 
 export const LIFE_SCIENCE_ROUTING_EXCLUSION_REASON = "life-science-routing" as const;

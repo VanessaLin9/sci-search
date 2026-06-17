@@ -79,11 +79,15 @@ export { isLifeScienceRoutingEnabled } from "./routing/config.js";
 export {
   applyScopeDefaultRouting,
   assembleRoutingResult,
+  combineBroadScienceMergeResults,
+  emptyBroadScienceMergeResult,
   emptyRoutingStats,
+  mergeBroadScienceKeywordFallbackResults,
   mergeBroadScienceRoutingResults,
   routingResultWhenDisabled,
   splitPapersByRoutingScope,
 } from "./routing/route.js";
+export { matchRoutingKeywordFallback, type RoutingKeywordsConfig } from "./routing/keywordFallbackMatcher.js";
 
 export {
   applyKeywordDigestFallback,
