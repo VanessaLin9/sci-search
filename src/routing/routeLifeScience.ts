@@ -24,7 +24,6 @@ export async function routeLifeSciencePapers(options: {
 }): Promise<LifeScienceRoutingResult> {
   const { papers, scopeBySourceId } = options;
   const enabled = isLifeScienceRoutingEnabled();
-  const keywordConfig = loadRoutingKeywordsConfig();
 
   if (!enabled) {
     return routingResultWhenDisabled(papers);
@@ -45,6 +44,8 @@ export async function routeLifeSciencePapers(options: {
       total: papers.length,
     });
   }
+
+  const keywordConfig = loadRoutingKeywordsConfig();
 
   try {
     const llmConfig = getRoutingLlmConfig();
