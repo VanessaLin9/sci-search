@@ -131,7 +131,7 @@ export async function loadKeywords(_path = "config/keywords.json"): Promise<Life
 }
 
 export function loadRoutingKeywordsConfig(
-  path = "config/routing-keywords.json",
+  path = process.env.ROUTING_KEYWORDS_CONFIG_PATH?.trim() || "config/routing-keywords.json",
 ): RoutingKeywordsFileConfig {
   if (!routingKeywordsFileCache) {
     const raw = readFileSync(path, "utf8");
