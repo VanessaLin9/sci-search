@@ -244,11 +244,14 @@ describe("classifyBroadSciencePapers missing verdict handling", { concurrency: 1
     const items = [paper("a"), paper("b"), paper("c"), paper("d")];
     installRoutingFetch([{ omitIds: ["c"] }, { omitIds: ["d"] }]);
 
-    const { verdictById } = await classifyBroadSciencePapers(items);
+    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(items);
 
     assert.equal(routingCallCount, 2);
     assert.equal(verdictById.get("c"), "yes");
     assert.equal(verdictById.get("d"), "yes");
+    assert.ok(!degradedPaperIds.includes("d"), "context paper d must not be degraded when retry omits it");
+    assert.ok(!degradedPaperIds.includes("a"));
+    assert.ok(!degradedPaperIds.includes("b"));
   });
 
   test("marks papers degraded when missing-retry request fails", async () => {

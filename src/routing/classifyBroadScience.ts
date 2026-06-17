@@ -29,6 +29,8 @@ const llmResponseSchema = z.object({
 type ClassifyBatchOptions = {
   allowMissingVerdictRetry?: boolean;
   degradedPaperIds?: Set<string>;
+  /** When set, only these paper ids may be added to degradedPaperIds. */
+  degradeOnlyIds?: Set<string>;
 };
 
 type ParsedBatchResult = {
@@ -93,12 +95,15 @@ function markPapersDegraded(
   ids: string[],
   batchLabel: string,
   reason: string,
+  degradeOnlyIds?: Set<string>,
 ): void {
   if (!degradedPaperIds || ids.length === 0) return;
+  const targetIds = degradeOnlyIds ? ids.filter((id) => degradeOnlyIds.has(id)) : ids;
+  if (targetIds.length === 0) return;
   logRouting(
-    `${batchLabel}: degraded ${ids.length} paper(s) (${reason}): ${ids.join(", ")}`,
+    `${batchLabel}: degraded ${targetIds.length} paper(s) (${reason}): ${targetIds.join(", ")}`,
   );
-  for (const id of ids) {
+  for (const id of targetIds) {
     degradedPaperIds.add(id);
   }
 }
@@ -107,7 +112,7 @@ function applyFallbackNo(
   verdictById: Map<string, LifeScienceRoutingVerdict>,
   ids: string[],
   batchLabel: string,
-  options?: { reason?: string; degradedPaperIds?: Set<string> },
+  options?: { reason?: string; degradedPaperIds?: Set<string>; degradeOnlyIds?: Set<string> },
 ): void {
   if (ids.length === 0) return;
   if (options?.degradedPaperIds) {
@@ -116,6 +121,7 @@ function applyFallbackNo(
       ids,
       batchLabel,
       options.reason ?? "missing verdict",
+      options.degradeOnlyIds,
     );
     return;
   }
@@ -134,13 +140,12 @@ function degradeBatchForKeywordFallback(
   batchLabel: string,
   reason: string,
   degradedPaperIds: Set<string>,
+  degradeOnlyIds?: Set<string>,
 ): Map<string, LifeScienceRoutingVerdict> {
-  markPapersDegraded(
-    degradedPaperIds,
-    items.map((item) => item.id),
-    batchLabel,
-    reason,
-  );
+  const paperIds = degradeOnlyIds
+    ? items.filter((item) => degradeOnlyIds.has(item.id)).map((item) => item.id)
+    : items.map((item) => item.id);
+  markPapersDegraded(degradedPaperIds, paperIds, batchLabel, reason, degradeOnlyIds);
   return new Map();
 }
 
@@ -150,7 +155,7 @@ async function classifyBatch(
   batchLabel: string,
   options: ClassifyBatchOptions = {},
 ): Promise<Map<string, LifeScienceRoutingVerdict>> {
-  const { allowMissingVerdictRetry = true, degradedPaperIds } = options;
+  const { allowMissingVerdictRetry = true, degradedPaperIds, degradeOnlyIds } = options;
 
   try {
     const parsed = await classifyBatchOnce(items, config, batchLabel);
@@ -171,7 +176,10 @@ async function classifyBatch(
     const verdictById = new Map(parsed.verdictById);
 
     if (!allowMissingVerdictRetry) {
-      applyFallbackNo(verdictById, parsed.missingIds, batchLabel, { degradedPaperIds });
+      applyFallbackNo(verdictById, parsed.missingIds, batchLabel, {
+        degradedPaperIds,
+        degradeOnlyIds,
+      });
       logRouting(`${batchLabel}: parsed (${parsed.usageLine}) · ${summarizeVerdicts(verdictById)}`);
       return verdictById;
     }
@@ -181,11 +189,13 @@ async function classifyBatch(
       `${batchLabel}: missing-retry ${retryItems.length} paper(s) (from ${parsed.missingIds.length} missing)`,
     );
 
+    const originallyMissing = new Set(parsed.missingIds);
     let retryVerdicts: Map<string, LifeScienceRoutingVerdict>;
     try {
       retryVerdicts = await classifyBatch(retryItems, config, `${batchLabel} missing-retry`, {
         allowMissingVerdictRetry: false,
         degradedPaperIds,
+        degradeOnlyIds: originallyMissing,
       });
     } catch (retryError) {
       const message = retryError instanceof Error ? retryError.message : String(retryError);
@@ -193,7 +203,6 @@ async function classifyBatch(
       retryVerdicts = new Map();
     }
 
-    const originallyMissing = new Set(parsed.missingIds);
     for (const [id, verdict] of retryVerdicts) {
       if (originallyMissing.has(id)) {
         verdictById.set(id, verdict);
@@ -236,6 +245,7 @@ async function classifyBatch(
         batchLabel,
         `request failure (${message})`,
         degradedPaperIds,
+        degradeOnlyIds,
       );
     }
 
@@ -243,7 +253,7 @@ async function classifyBatch(
       throw error;
     }
 
-    return degradeBatchForKeywordFallback(items, batchLabel, message, degradedPaperIds);
+    return degradeBatchForKeywordFallback(items, batchLabel, message, degradedPaperIds, degradeOnlyIds);
   }
 }
 
