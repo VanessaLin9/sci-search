@@ -1,10 +1,13 @@
 import type { Paper, SourceScope } from "../types.js";
+import { loadRoutingKeywordsConfig } from "../config.js";
 import { classifyBroadSciencePapers } from "./classifyBroadScience.js";
-import { mergeBroadScienceWithGateFallback } from "./broadScienceGateFallback.js";
+import { mergeBroadScienceWithKeywordGateFallback } from "./broadScienceGateFallback.js";
 import { getRoutingLlmConfig, maskApiKey } from "./config.js";
 import {
   applyScopeDefaultRouting,
   assembleRoutingResult,
+  combineBroadScienceMergeResults,
+  emptyBroadScienceMergeResult,
   mergeBroadScienceRoutingResults,
   routingResultWhenDisabled,
   splitPapersByRoutingScope,
@@ -13,6 +16,7 @@ import { isLifeScienceRoutingEnabled } from "../domain/life-science/routing/conf
 import { logRouting } from "./routingLog.js";
 import { toBroadScienceRoutingInput } from "./toRoutingInput.js";
 import type { LifeScienceRoutingResult } from "./types.js";
+import type { BroadScienceMergeResult } from "../domain/life-science/routing/types.js";
 
 export async function routeLifeSciencePapers(options: {
   papers: Paper[];
@@ -36,18 +40,12 @@ export async function routeLifeSciencePapers(options: {
     logRouting("no broad-science papers; skipping LLM");
     return assembleRoutingResult({
       scopeDefaultIncluded,
-      broadScienceMerge: {
-        included: [],
-        excluded: [],
-        llmYes: 0,
-        llmNotSure: 0,
-        llmNo: 0,
-      },
+      broadScienceMerge: emptyBroadScienceMergeResult(),
       total: papers.length,
     });
   }
 
-  let broadScienceMerge: ReturnType<typeof mergeBroadScienceRoutingResults<Paper>>;
+  const keywordConfig = loadRoutingKeywordsConfig();
 
   try {
     const llmConfig = getRoutingLlmConfig();
@@ -56,16 +54,40 @@ export async function routeLifeSciencePapers(options: {
     );
 
     const llmInputs = broadScience.map(toBroadScienceRoutingInput);
-    const verdictById = await classifyBroadSciencePapers(llmInputs);
-    broadScienceMerge = mergeBroadScienceRoutingResults(broadScience, verdictById);
+    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(llmInputs);
+
+    const degradedSet = new Set(degradedPaperIds);
+    const llmPapers = broadScience.filter((paper) => !degradedSet.has(paper.id));
+    const degradedPapers = broadScience.filter((paper) => degradedSet.has(paper.id));
+
+    const llmMerge: BroadScienceMergeResult<Paper> =
+      llmPapers.length > 0
+        ? mergeBroadScienceRoutingResults(llmPapers, verdictById)
+        : emptyBroadScienceMergeResult();
+
+    const keywordMerge: BroadScienceMergeResult<Paper> =
+      degradedPapers.length > 0
+        ? mergeBroadScienceWithKeywordGateFallback(
+            degradedPapers,
+            "LLM gate degraded",
+            keywordConfig,
+          )
+        : emptyBroadScienceMergeResult();
+
+    return assembleRoutingResult({
+      scopeDefaultIncluded,
+      broadScienceMerge: combineBroadScienceMergeResults(llmMerge, keywordMerge),
+      total: papers.length,
+    });
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    broadScienceMerge = mergeBroadScienceWithGateFallback(broadScience, message);
-  }
+    const broadScienceMerge: BroadScienceMergeResult<Paper> =
+      mergeBroadScienceWithKeywordGateFallback(broadScience, message, keywordConfig);
 
-  return assembleRoutingResult({
-    scopeDefaultIncluded,
-    broadScienceMerge,
-    total: papers.length,
-  });
+    return assembleRoutingResult({
+      scopeDefaultIncluded,
+      broadScienceMerge,
+      total: papers.length,
+    });
+  }
 }

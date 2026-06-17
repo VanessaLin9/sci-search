@@ -57,7 +57,9 @@ export function logRoutingSummary(stats: LifeScienceRoutingStats, enabled: boole
   console.log(
     `Life-science routing: ${stats.included} included, ${stats.excluded} excluded ` +
       `(scope pass ${stats.passedByScope}, LLM ${stats.llmClassified}: ` +
-      `yes ${stats.llmYes}, not_sure ${stats.llmNotSure}, no ${stats.llmNo})`,
+      `yes ${stats.llmYes}, not_sure ${stats.llmNotSure}, no ${stats.llmNo}; ` +
+      `keyword fallback ${stats.keywordFallbackClassified}: ` +
+      `yes ${stats.keywordFallbackYes}, no ${stats.keywordFallbackNo})`,
   );
 }
 

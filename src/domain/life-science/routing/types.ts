@@ -1,4 +1,4 @@
-import type { LifeScienceRoutingVerdict } from "../types.js";
+import type { LifeScienceRoutingMethod, LifeScienceRoutingVerdict } from "../types.js";
 import type { Paper } from "../../../types.js";
 import { LIFE_SCIENCE_ROUTING_EXCLUSION_REASON } from "../constants.js";
 
@@ -13,6 +13,7 @@ export type ExcludedPaper<P = Paper> = {
   paper: P;
   reason: typeof LIFE_SCIENCE_ROUTING_EXCLUSION_REASON;
   verdict: Extract<LifeScienceRoutingVerdict, "no">;
+  method?: LifeScienceRoutingMethod;
 };
 
 export type LifeScienceRoutingStats = {
@@ -22,8 +23,21 @@ export type LifeScienceRoutingStats = {
   llmYes: number;
   llmNotSure: number;
   llmNo: number;
+  keywordFallbackClassified: number;
+  keywordFallbackYes: number;
+  keywordFallbackNo: number;
   included: number;
   excluded: number;
+};
+
+export type BroadScienceMergeResult<P> = {
+  included: P[];
+  excluded: ExcludedPaper<P>[];
+  llmYes: number;
+  llmNotSure: number;
+  llmNo: number;
+  keywordFallbackYes: number;
+  keywordFallbackNo: number;
 };
 
 export type LifeScienceRoutingResult<P = Paper> = {

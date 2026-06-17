@@ -28,6 +28,9 @@ const llmResponseSchema = z.object({
 
 type ClassifyBatchOptions = {
   allowMissingVerdictRetry?: boolean;
+  degradedPaperIds?: Set<string>;
+  /** When set, only these paper ids may be added to degradedPaperIds. */
+  degradeOnlyIds?: Set<string>;
 };
 
 type ParsedBatchResult = {
@@ -87,13 +90,42 @@ function logMissingVerdictDiagnostic(
   );
 }
 
+function markPapersDegraded(
+  degradedPaperIds: Set<string> | undefined,
+  ids: string[],
+  batchLabel: string,
+  reason: string,
+  degradeOnlyIds?: Set<string>,
+): void {
+  if (!degradedPaperIds || ids.length === 0) return;
+  const targetIds = degradeOnlyIds ? ids.filter((id) => degradeOnlyIds.has(id)) : ids;
+  if (targetIds.length === 0) return;
+  logRouting(
+    `${batchLabel}: degraded ${targetIds.length} paper(s) (${reason}): ${targetIds.join(", ")}`,
+  );
+  for (const id of targetIds) {
+    degradedPaperIds.add(id);
+  }
+}
+
 function applyFallbackNo(
   verdictById: Map<string, LifeScienceRoutingVerdict>,
   ids: string[],
   batchLabel: string,
-  options?: { reason?: string },
+  options?: { reason?: string; degradedPaperIds?: Set<string>; degradeOnlyIds?: Set<string> },
 ): void {
   if (ids.length === 0) return;
+  if (options?.degradedPaperIds) {
+    markPapersDegraded(
+      options.degradedPaperIds,
+      ids,
+      batchLabel,
+      options.reason ?? "missing verdict",
+      options.degradeOnlyIds,
+    );
+    return;
+  }
+
   const line = options?.reason
     ? `${batchLabel}: fallback no for ${ids.length} paper(s) (${options.reason}): ${ids.join(", ")}`
     : `${batchLabel}: fallback no for ${ids.length} missing verdict(s): ${ids.join(", ")}`;
@@ -103,19 +135,18 @@ function applyFallbackNo(
   }
 }
 
-function fallbackNoForBatch(
+function degradeBatchForKeywordFallback(
   items: BroadScienceRoutingInput[],
   batchLabel: string,
   reason: string,
+  degradedPaperIds: Set<string>,
+  degradeOnlyIds?: Set<string>,
 ): Map<string, LifeScienceRoutingVerdict> {
-  const verdictById = new Map<string, LifeScienceRoutingVerdict>();
-  applyFallbackNo(
-    verdictById,
-    items.map((item) => item.id),
-    batchLabel,
-    { reason },
-  );
-  return verdictById;
+  const paperIds = degradeOnlyIds
+    ? items.filter((item) => degradeOnlyIds.has(item.id)).map((item) => item.id)
+    : items.map((item) => item.id);
+  markPapersDegraded(degradedPaperIds, paperIds, batchLabel, reason, degradeOnlyIds);
+  return new Map();
 }
 
 async function classifyBatch(
@@ -124,7 +155,7 @@ async function classifyBatch(
   batchLabel: string,
   options: ClassifyBatchOptions = {},
 ): Promise<Map<string, LifeScienceRoutingVerdict>> {
-  const { allowMissingVerdictRetry = true } = options;
+  const { allowMissingVerdictRetry = true, degradedPaperIds, degradeOnlyIds } = options;
 
   try {
     const parsed = await classifyBatchOnce(items, config, batchLabel);
@@ -145,7 +176,10 @@ async function classifyBatch(
     const verdictById = new Map(parsed.verdictById);
 
     if (!allowMissingVerdictRetry) {
-      applyFallbackNo(verdictById, parsed.missingIds, batchLabel);
+      applyFallbackNo(verdictById, parsed.missingIds, batchLabel, {
+        degradedPaperIds,
+        degradeOnlyIds,
+      });
       logRouting(`${batchLabel}: parsed (${parsed.usageLine}) · ${summarizeVerdicts(verdictById)}`);
       return verdictById;
     }
@@ -155,10 +189,13 @@ async function classifyBatch(
       `${batchLabel}: missing-retry ${retryItems.length} paper(s) (from ${parsed.missingIds.length} missing)`,
     );
 
+    const originallyMissing = new Set(parsed.missingIds);
     let retryVerdicts: Map<string, LifeScienceRoutingVerdict>;
     try {
       retryVerdicts = await classifyBatch(retryItems, config, `${batchLabel} missing-retry`, {
         allowMissingVerdictRetry: false,
+        degradedPaperIds,
+        degradeOnlyIds: originallyMissing,
       });
     } catch (retryError) {
       const message = retryError instanceof Error ? retryError.message : String(retryError);
@@ -166,7 +203,6 @@ async function classifyBatch(
       retryVerdicts = new Map();
     }
 
-    const originallyMissing = new Set(parsed.missingIds);
     for (const [id, verdict] of retryVerdicts) {
       if (originallyMissing.has(id)) {
         verdictById.set(id, verdict);
@@ -175,7 +211,7 @@ async function classifyBatch(
 
     const stillMissing = parsed.missingIds.filter((id) => !verdictById.has(id));
     if (stillMissing.length > 0) {
-      applyFallbackNo(verdictById, stillMissing, batchLabel);
+      applyFallbackNo(verdictById, stillMissing, batchLabel, { degradedPaperIds });
     }
 
     logRouting(`${batchLabel}: parsed (${parsed.usageLine}) · ${summarizeVerdicts(verdictById)}`);
@@ -195,16 +231,29 @@ async function classifyBatch(
       const mid = Math.ceil(items.length / 2);
       const reason = requestFailed ? `request failed (${message})` : "recoverable error";
       logRouting(`${batchLabel}: ${reason}; split retry ${items.length} → ${mid} + ${items.length - mid}`);
-      const first = await classifyBatch(items.slice(0, mid), config, `${batchLabel}a`);
-      const second = await classifyBatch(items.slice(mid), config, `${batchLabel}b`);
+      const first = await classifyBatch(items.slice(0, mid), config, `${batchLabel}a`, options);
+      const second = await classifyBatch(items.slice(mid), config, `${batchLabel}b`, options);
       return new Map([...first, ...second]);
     }
 
     if (requestFailed) {
-      return fallbackNoForBatch(items, batchLabel, `request failure (${message})`);
+      if (!degradedPaperIds) {
+        throw error;
+      }
+      return degradeBatchForKeywordFallback(
+        items,
+        batchLabel,
+        `request failure (${message})`,
+        degradedPaperIds,
+        degradeOnlyIds,
+      );
     }
 
-    return fallbackNoForBatch(items, batchLabel, message);
+    if (!degradedPaperIds) {
+      throw error;
+    }
+
+    return degradeBatchForKeywordFallback(items, batchLabel, message, degradedPaperIds, degradeOnlyIds);
   }
 }
 
@@ -276,10 +325,19 @@ function attachFinishReason(error: unknown, finishReason: string): Error {
   return Object.assign(new Error(String(error)), { finishReason });
 }
 
+export type BroadScienceClassificationResult = {
+  verdictById: Map<string, LifeScienceRoutingVerdict>;
+  degradedPaperIds: string[];
+};
+
 export async function classifyBroadSciencePapers(
   items: BroadScienceRoutingInput[],
-): Promise<Map<string, LifeScienceRoutingVerdict>> {
-  if (items.length === 0) return new Map();
+): Promise<BroadScienceClassificationResult> {
+  if (items.length === 0) {
+    return { verdictById: new Map(), degradedPaperIds: [] };
+  }
+
+  const degradedPaperIds = new Set<string>();
 
   const config = getRoutingLlmConfig();
   const { batches, estimatedInputTokens, estimatedCompletionTokens } = planRoutingBatches(
@@ -310,12 +368,12 @@ export async function classifyBroadSciencePapers(
   for (let index = 0; index < batches.length; index += 1) {
     const batch = batches[index]!;
     const batchLabel = `batch ${index + 1}/${batches.length}`;
-    const batchVerdicts = await classifyBatch(batch, config, batchLabel);
+    const batchVerdicts = await classifyBatch(batch, config, batchLabel, { degradedPaperIds });
     for (const [id, verdict] of batchVerdicts) {
       verdictById.set(id, verdict);
     }
   }
 
   logRouting(`finished all batches · ${summarizeVerdicts(verdictById)}`);
-  return verdictById;
+  return { verdictById, degradedPaperIds: [...degradedPaperIds] };
 }

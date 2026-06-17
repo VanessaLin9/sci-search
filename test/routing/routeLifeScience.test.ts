@@ -1,5 +1,8 @@
 import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
 import { after, before, describe, test } from "node:test";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import type { ChatCompletion } from "openai/resources/chat/completions";
 import { buildSourceScopeById } from "../../src/domain/life-science/routing/sourceScope.js";
 import { routeLifeSciencePapers } from "../../src/routing/routeLifeScience.js";
@@ -12,10 +15,10 @@ const scopeBySourceId = buildSourceScopeById([
   { id: "science", scope: "broad-science" },
 ]);
 
-function makePaper(id: string, sourceId: string): Paper {
+function makePaper(id: string, sourceId: string, title?: string): Paper {
   return {
     id,
-    title: `Title ${id}`,
+    title: title ?? `Title ${id}`,
     journal: "Test Journal",
     publishedDate: "2026-06-10",
     url: `https://example.test/${id}`,
@@ -136,7 +139,11 @@ describe("routeLifeSciencePapers gate boundary", { concurrency: 1 }, () => {
     assert.equal(result.included[0]?.id, "ls-1");
     assert.equal(result.excluded.length, 1);
     assert.equal(result.excluded[0]?.paper.id, "bs-1");
+    assert.equal(result.excluded[0]?.method, "routing-keyword-fallback");
+    assert.equal(result.stats.keywordFallbackNo, 1);
+    assert.equal(result.stats.llmNo, 0);
     assert.ok(logLines.some((line) => line.includes("routing gate degraded")));
+    assert.ok(logLines.some((line) => line.includes("routing keyword fallback")));
   });
 
   test("gate degrades when ROUTING_LLM_MODEL is missing", async () => {
@@ -150,10 +157,12 @@ describe("routeLifeSciencePapers gate boundary", { concurrency: 1 }, () => {
 
     assert.equal(result.included.length, 0);
     assert.equal(result.excluded.length, 1);
+    assert.equal(result.excluded[0]?.method, "routing-keyword-fallback");
+    assert.equal(result.stats.keywordFallbackNo, 1);
     assert.ok(logLines.some((line) => line.includes("routing gate degraded")));
   });
 
-  test("classifier degrade keeps gate resolving: HTTP 429 → broad-science excluded", async () => {
+  test("classifier degrade uses keyword fallback: HTTP 429", async () => {
     installTestEnv();
     installRoutingHttpError(429, "Rate limit exceeded");
 
@@ -166,9 +175,12 @@ describe("routeLifeSciencePapers gate boundary", { concurrency: 1 }, () => {
     assert.equal(result.included[0]?.id, "ls-1");
     assert.equal(result.excluded.length, 1);
     assert.equal(result.excluded[0]?.paper.id, "bs-1");
+    assert.equal(result.excluded[0]?.method, "routing-keyword-fallback");
+    assert.equal(result.stats.keywordFallbackNo, 1);
+    assert.equal(result.stats.llmNo, 0);
   });
 
-  test("classifier degrade keeps gate resolving: invalid JSON → broad-science excluded", async () => {
+  test("classifier degrade uses keyword fallback: invalid JSON → broad-science excluded", async () => {
     installTestEnv();
     installRoutingInvalidJson();
 
@@ -179,13 +191,15 @@ describe("routeLifeSciencePapers gate boundary", { concurrency: 1 }, () => {
 
     assert.equal(result.included.length, 0);
     assert.equal(result.excluded.length, 2);
+    assert.equal(result.excluded[0]?.method, "routing-keyword-fallback");
+    assert.equal(result.stats.keywordFallbackNo, 2);
     assert.deepEqual(
       result.excluded.map((entry) => entry.paper.id).sort(),
       ["bs-a", "bs-b"],
     );
   });
 
-  test("classifier degrade keeps gate resolving: request timeout → broad-science excluded", async () => {
+  test("classifier degrade uses keyword fallback: request timeout", async () => {
     installTestEnv();
     installRoutingRequestTimeout();
 
@@ -198,6 +212,32 @@ describe("routeLifeSciencePapers gate boundary", { concurrency: 1 }, () => {
     assert.equal(result.included[0]?.id, "ls-1");
     assert.equal(result.excluded.length, 1);
     assert.equal(result.excluded[0]?.paper.id, "bs-1");
+    assert.equal(result.excluded[0]?.method, "routing-keyword-fallback");
+    assert.equal(result.stats.keywordFallbackNo, 1);
+  });
+
+  test("keyword fallback includes likely life-science title on gate degrade", async () => {
+    installTestEnv();
+    delete process.env.ROUTING_LLM_API_KEY;
+    delete process.env.NVIDIA_API_KEY;
+    delete process.env.OPENAI_API_KEY;
+
+    const result = await routeLifeSciencePapers({
+      papers: [
+        makePaper(
+          "bs-ls",
+          "science",
+          "Semaglutide attenuates neuroinflammation in male mice",
+        ),
+      ],
+      scopeBySourceId,
+    });
+
+    assert.equal(result.included.length, 1);
+    assert.equal(result.included[0]?.lifeScienceRouting?.method, "routing-keyword-fallback");
+    assert.equal(result.included[0]?.lifeScienceRouting?.verdict, "yes");
+    assert.equal(result.stats.keywordFallbackYes, 1);
+    assert.equal(result.stats.keywordFallbackNo, 0);
   });
 
   test("life-science-only papers stay included when broad-science gate degrades", async () => {
@@ -220,6 +260,19 @@ describe("routeLifeSciencePapers gate boundary", { concurrency: 1 }, () => {
     assert.deepEqual(result.included.map((paper) => paper.id).sort(), ["ls-1", "ls-2"]);
     assert.equal(result.excluded.length, 2);
     assert.equal(result.stats.passedByScope, 2);
-    assert.equal(result.stats.llmNo, 2);
+    assert.equal(result.stats.keywordFallbackNo, 2);
+    assert.equal(result.stats.llmNo, 0);
+  });
+
+  test("disabled routing does not load routing-keywords.json", () => {
+    const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "../..");
+    const script = join(repoRoot, "test/routing/helpers/disabledRoutingEscapeHatch.ts");
+    const child = spawnSync(process.execPath, ["--import", "tsx", script], {
+      cwd: repoRoot,
+      env: process.env,
+      encoding: "utf8",
+    });
+
+    assert.equal(child.status, 0, child.stderr || child.stdout);
   });
 });

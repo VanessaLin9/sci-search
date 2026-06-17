@@ -2,7 +2,6 @@ import assert from "node:assert/strict";
 import { after, before, describe, test } from "node:test";
 import type { ChatCompletion } from "openai/resources/chat/completions";
 import { ROUTING_SYSTEM_PROMPT } from "../../src/domain/life-science/prompts/routing.system.js";
-import { mergeBroadScienceRoutingResults } from "../../src/domain/life-science/routing/route.js";
 import { classifyBroadSciencePapers } from "../../src/routing/classifyBroadScience.js";
 import { resetRoutingLlmClientCache } from "../../src/routing/routingLlmClient.js";
 import type { BroadScienceRoutingInput } from "../../src/routing/types.js";
@@ -219,7 +218,7 @@ describe("classifyBroadSciencePapers missing verdict handling", { concurrency: 1
     const items = [paper("a"), paper("b"), paper("c"), paper("d")];
     installRoutingFetch([{ omitIds: ["c"] }, {}]);
 
-    const verdictById = await classifyBroadSciencePapers(items);
+    const { verdictById } = await classifyBroadSciencePapers(items);
 
     assert.equal(routingCallCount, 2);
     assert.equal(verdictById.get("a"), "yes");
@@ -228,37 +227,34 @@ describe("classifyBroadSciencePapers missing verdict handling", { concurrency: 1
     assert.equal(verdictById.get("d"), "yes");
   });
 
-  test("falls back to no when retry still misses verdicts", async () => {
+  test("marks papers degraded when retry still misses verdicts", async () => {
     const missingId = "10.1038/d41586-026-01689-0";
     const items = [paper("a"), paper("b"), paper(missingId), paper("d")];
     installRoutingFetch([{ omitIds: [missingId] }, { omitIds: [missingId] }]);
 
-    const verdictById = await classifyBroadSciencePapers(items);
+    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(items);
 
     assert.equal(routingCallCount, 2);
-    assert.equal(verdictById.get(missingId), "no");
+    assert.ok(degradedPaperIds.includes(missingId));
+    assert.equal(verdictById.get(missingId), undefined);
     assert.equal(verdictById.get("a"), "yes");
-
-    const merge = mergeBroadScienceRoutingResults(
-      items.map((item) => ({ id: item.id, sourceId: item.source_id })),
-      verdictById,
-    );
-    assert.equal(merge.excluded.length, 1);
-    assert.equal(merge.excluded[0]?.paper.id, missingId);
   });
 
   test("does not overwrite context paper verdicts from the first successful batch", async () => {
     const items = [paper("a"), paper("b"), paper("c"), paper("d")];
     installRoutingFetch([{ omitIds: ["c"] }, { omitIds: ["d"] }]);
 
-    const verdictById = await classifyBroadSciencePapers(items);
+    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(items);
 
     assert.equal(routingCallCount, 2);
     assert.equal(verdictById.get("c"), "yes");
     assert.equal(verdictById.get("d"), "yes");
+    assert.ok(!degradedPaperIds.includes("d"), "context paper d must not be degraded when retry omits it");
+    assert.ok(!degradedPaperIds.includes("a"));
+    assert.ok(!degradedPaperIds.includes("b"));
   });
 
-  test("falls back to no when missing-retry request fails", async () => {
+  test("marks papers degraded when missing-retry request fails", async () => {
     const missingId = "10.1038/d41586-026-01689-0";
     const items = [paper("a"), paper("b"), paper(missingId), paper("d")];
     installRoutingFetchWithRetryFailure(
@@ -266,10 +262,11 @@ describe("classifyBroadSciencePapers missing verdict handling", { concurrency: 1
       new Error("Request timed out."),
     );
 
-    const verdictById = await classifyBroadSciencePapers(items);
+    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(items);
 
     assert.ok(routingCallCount >= 2);
-    assert.equal(verdictById.get(missingId), "no");
+    assert.ok(degradedPaperIds.includes(missingId));
+    assert.equal(verdictById.get(missingId), undefined);
     assert.equal(verdictById.get("d"), "yes");
   });
 
@@ -277,10 +274,11 @@ describe("classifyBroadSciencePapers missing verdict handling", { concurrency: 1
     const items = [paper("a"), paper("b"), paper("c")];
     installRoutingFetch([{ omitIds: ["b"] }, { omitIds: ["b"] }, { omitIds: ["b"] }]);
 
-    const verdictById = await classifyBroadSciencePapers(items);
+    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(items);
 
     assert.equal(routingCallCount, 2);
-    assert.equal(verdictById.get("b"), "no");
+    assert.ok(degradedPaperIds.includes("b"));
+    assert.equal(verdictById.get("b"), undefined);
   });
 
   test("split retries on batch request failure then succeeds", async () => {
@@ -288,7 +286,7 @@ describe("classifyBroadSciencePapers missing verdict handling", { concurrency: 1
     // SDK maxRetries=1 → two failed attempts before classifyBatch splits the batch.
     installRoutingFetchWithRequestFailures(2);
 
-    const verdictById = await classifyBroadSciencePapers(items);
+    const { verdictById } = await classifyBroadSciencePapers(items);
 
     assert.equal(routingCallCount, 4);
     assert.equal(verdictById.get("a"), "yes");
@@ -297,44 +295,48 @@ describe("classifyBroadSciencePapers missing verdict handling", { concurrency: 1
     assert.equal(verdictById.get("d"), "yes");
   });
 
-  test("falls back to no when batch request keeps failing on a single paper", async () => {
+  test("marks single paper degraded when batch request keeps failing", async () => {
     const items = [paper("a")];
     installRoutingFetchWithRequestFailures(2);
 
-    const verdictById = await classifyBroadSciencePapers(items);
+    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(items);
 
     assert.equal(routingCallCount, 2);
-    assert.equal(verdictById.get("a"), "no");
+    assert.deepEqual(degradedPaperIds, ["a"]);
+    assert.equal(verdictById.get("a"), undefined);
   });
 
-  test("falls back to no when single-paper response has invalid JSON", async () => {
+  test("marks single paper degraded when response has invalid JSON", async () => {
     const items = [paper("a")];
     installRoutingFetchWithInvalidJson();
 
-    const verdictById = await classifyBroadSciencePapers(items);
+    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(items);
 
     assert.ok(routingCallCount >= 1);
-    assert.equal(verdictById.get("a"), "no");
+    assert.deepEqual(degradedPaperIds, ["a"]);
+    assert.equal(verdictById.get("a"), undefined);
   });
 
-  test("falls back to no when single-paper HTTP returns non-timeout error", async () => {
+  test("marks single paper degraded when HTTP returns non-timeout error", async () => {
     const items = [paper("a")];
     installRoutingFetchWithHttpError(429, "Rate limit exceeded");
 
-    const verdictById = await classifyBroadSciencePapers(items);
+    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(items);
 
     assert.ok(routingCallCount >= 1);
-    assert.equal(verdictById.get("a"), "no");
+    assert.deepEqual(degradedPaperIds, ["a"]);
+    assert.equal(verdictById.get("a"), undefined);
   });
 
-  test("falls back to no for entire batch when JSON stays invalid after split", async () => {
+  test("marks entire batch degraded when JSON stays invalid after split", async () => {
     const items = [paper("a"), paper("b")];
     installRoutingFetchWithInvalidJson();
 
-    const verdictById = await classifyBroadSciencePapers(items);
+    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(items);
 
     assert.ok(routingCallCount >= 2);
-    assert.equal(verdictById.get("a"), "no");
-    assert.equal(verdictById.get("b"), "no");
+    assert.deepEqual(degradedPaperIds.sort(), ["a", "b"]);
+    assert.equal(verdictById.get("a"), undefined);
+    assert.equal(verdictById.get("b"), undefined);
   });
 });

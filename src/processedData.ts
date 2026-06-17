@@ -5,6 +5,7 @@ import {
   digestTaggingMethodSchema,
   lifeScienceRoutingExclusionReasonSchema,
   lifeScienceRoutingExclusionVerdictSchema,
+  lifeScienceRoutingMethodSchema,
   lifeScienceRoutingSchema,
   paperSectionSchema,
 } from "./domain/life-science/index.js";
@@ -44,6 +45,7 @@ const excludedPaperSchema = z.object({
   paper: rawPaperSchema,
   reason: lifeScienceRoutingExclusionReasonSchema,
   verdict: lifeScienceRoutingExclusionVerdictSchema,
+  method: lifeScienceRoutingMethodSchema.optional(),
 });
 
 const routingStatsSchema = z.object({
@@ -53,9 +55,12 @@ const routingStatsSchema = z.object({
   llmYes: z.number(),
   llmNotSure: z.number(),
   llmNo: z.number(),
+  keywordFallbackClassified: z.number().default(0),
+  keywordFallbackYes: z.number().default(0),
+  keywordFallbackNo: z.number().default(0),
   included: z.number(),
   excluded: z.number(),
-}) satisfies z.ZodType<LifeScienceRoutingStats>;
+});
 
 const digestStatsSchema = z.object({
   enabled: z.boolean(),
@@ -123,7 +128,21 @@ export async function readProcessedPapersFile(path: string): Promise<ProcessedPa
 }
 
 export function validateProcessedPapersFile(data: unknown): ProcessedPapersFile {
-  return processedPapersFileSchema.parse(data) as ProcessedPapersFile;
+  const parsed = processedPapersFileSchema.parse(data);
+  return {
+    ...parsed,
+    routing: parsed.routing
+      ? {
+          ...parsed.routing,
+          stats: {
+            ...parsed.routing.stats,
+            keywordFallbackClassified: parsed.routing.stats.keywordFallbackClassified ?? 0,
+            keywordFallbackYes: parsed.routing.stats.keywordFallbackYes ?? 0,
+            keywordFallbackNo: parsed.routing.stats.keywordFallbackNo ?? 0,
+          },
+        }
+      : undefined,
+  } as ProcessedPapersFile;
 }
 
 export function processedPapersPath(reportDate: string): string {

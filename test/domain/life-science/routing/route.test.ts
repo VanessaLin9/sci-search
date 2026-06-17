@@ -47,6 +47,7 @@ test("mergeBroadScienceRoutingResults excludes no verdicts", () => {
   assert.equal(merge.included.length, 0);
   assert.equal(merge.excluded.length, 1);
   assert.equal(merge.excluded[0]?.reason, LIFE_SCIENCE_ROUTING_EXCLUSION_REASON);
+  assert.equal(merge.excluded[0]?.method, "llm");
   assert.equal(merge.excluded[0]?.verdict, "no");
   assert.equal(merge.llmNo, 1);
 });
@@ -107,6 +108,9 @@ test("assembleRoutingResult builds stats for scope-default and LLM paths", () =>
     llmYes: 1,
     llmNotSure: 0,
     llmNo: 1,
+    keywordFallbackClassified: 0,
+    keywordFallbackYes: 0,
+    keywordFallbackNo: 0,
     included: 2,
     excluded: 1,
   });

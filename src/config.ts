@@ -69,6 +69,17 @@ const biorxivFileSchema = z.object({
 
 export type BiorxivFileConfig = z.infer<typeof biorxivFileSchema>;
 
+const routingKeywordsSchema = z.object({
+  includeStems: z.array(z.string()),
+  includeTerms: z.array(z.string()),
+  sharedIncludeTerms: z.array(z.string()),
+  excludeTerms: z.array(z.string()),
+  excludePhrases: z.array(z.string()),
+});
+
+export type RoutingKeywordsFileConfig = z.infer<typeof routingKeywordsSchema>;
+
+let routingKeywordsFileCache: RoutingKeywordsFileConfig | undefined;
 let routingFileCache: RoutingFileConfig | undefined;
 let digestFileCache: DigestFileConfig | undefined;
 let emailFileCache: EmailFileConfig | undefined;
@@ -117,6 +128,16 @@ export async function loadKeywords(_path = "config/keywords.json"): Promise<Life
   }
 
   return LIFE_SCIENCE_KEYWORDS;
+}
+
+export function loadRoutingKeywordsConfig(
+  path = process.env.ROUTING_KEYWORDS_CONFIG_PATH?.trim() || "config/routing-keywords.json",
+): RoutingKeywordsFileConfig {
+  if (!routingKeywordsFileCache) {
+    const raw = readFileSync(path, "utf8");
+    routingKeywordsFileCache = routingKeywordsSchema.parse(JSON.parse(raw));
+  }
+  return routingKeywordsFileCache;
 }
 
 export function loadRoutingFileConfig(path = "config/routing.json"): RoutingFileConfig {
