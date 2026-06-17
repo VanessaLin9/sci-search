@@ -1,8 +1,10 @@
-import { mergeBroadScienceRoutingResults } from "../domain/life-science/routing/route.js";
-import type { LifeScienceRoutingVerdict } from "../types.js";
+import type { Paper } from "../types.js";
+import {
+  mergeBroadScienceKeywordFallbackResults,
+} from "../domain/life-science/routing/route.js";
+import type { BroadScienceMergeResult } from "../domain/life-science/routing/types.js";
+import type { RoutingKeywordsConfig } from "../domain/life-science/routing/keywordFallbackMatcher.js";
 import { logRouting } from "./routingLog.js";
-
-type RoutablePaper = { id: string; sourceId: string };
 
 export function logRoutingGateDegraded(paperIds: string[], reason: string): void {
   const idList =
@@ -10,18 +12,33 @@ export function logRoutingGateDegraded(paperIds: string[], reason: string): void
       ? paperIds.join(", ")
       : `${paperIds.slice(0, 8).join(", ")}… (+${paperIds.length - 8} more)`;
   logRouting(
-    `routing gate degraded: ${paperIds.length} broad-science paper(s) → fallback no (${reason}): ${idList}`,
+    `routing gate degraded: ${paperIds.length} broad-science paper(s) → keyword fallback (${reason}): ${idList}`,
   );
 }
 
-export function mergeBroadScienceWithGateFallback<P extends RoutablePaper>(
+export function mergeBroadScienceWithKeywordGateFallback<P extends Paper>(
   broadScience: P[],
   reason: string,
-): ReturnType<typeof mergeBroadScienceRoutingResults<P>> {
+  config: RoutingKeywordsConfig,
+): BroadScienceMergeResult<P> {
   const paperIds = broadScience.map((paper) => paper.id);
   logRoutingGateDegraded(paperIds, reason);
-  const verdictById = new Map<string, LifeScienceRoutingVerdict>(
-    paperIds.map((id) => [id, "no"]),
+
+  const merge = mergeBroadScienceKeywordFallbackResults(broadScience, config);
+
+  logRouting(
+    `routing keyword fallback: yes ${merge.keywordFallbackYes}, no ${merge.keywordFallbackNo}`,
   );
-  return mergeBroadScienceRoutingResults(broadScience, verdictById);
+
+  for (const paper of merge.included) {
+    const routing = paper.lifeScienceRouting;
+    if (routing?.method !== "routing-keyword-fallback") continue;
+    logRouting(`routing keyword fallback yes · ${paper.id} · ${paper.title}`);
+  }
+
+  for (const entry of merge.excluded) {
+    logRouting(`routing keyword fallback no · ${entry.paper.id} · ${entry.paper.title}`);
+  }
+
+  return merge;
 }
