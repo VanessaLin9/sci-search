@@ -1,5 +1,8 @@
 import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
 import { after, before, describe, test } from "node:test";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import type { ChatCompletion } from "openai/resources/chat/completions";
 import { buildSourceScopeById } from "../../src/domain/life-science/routing/sourceScope.js";
 import { routeLifeSciencePapers } from "../../src/routing/routeLifeScience.js";
@@ -259,5 +262,17 @@ describe("routeLifeSciencePapers gate boundary", { concurrency: 1 }, () => {
     assert.equal(result.stats.passedByScope, 2);
     assert.equal(result.stats.keywordFallbackNo, 2);
     assert.equal(result.stats.llmNo, 0);
+  });
+
+  test("disabled routing does not load routing-keywords.json", () => {
+    const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "../..");
+    const script = join(repoRoot, "test/routing/helpers/disabledRoutingEscapeHatch.ts");
+    const child = spawnSync(process.execPath, ["--import", "tsx", script], {
+      cwd: repoRoot,
+      env: process.env,
+      encoding: "utf8",
+    });
+
+    assert.equal(child.status, 0, child.stderr || child.stdout);
   });
 });
