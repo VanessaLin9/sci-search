@@ -49,7 +49,7 @@ describe("matchRoutingKeywordFallback regression fixture", () => {
   test("reports precision/recall on 185-paper analysis set", () => {
     const analysisPath = join(
       process.cwd(),
-      "data/analysis/broad-science-routing-2026-06-04_10.json",
+      "test/fixtures/routing/broad-science-routing-regression.json",
     );
     const analysis = JSON.parse(readFileSync(analysisPath, "utf8")) as {
       papers: Array<{ title: string; verdict: "yes" | "no" | "not_sure" }>;
