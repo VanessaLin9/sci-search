@@ -1,0 +1,1241 @@
+{
+  "reportDate": "2026-06-17",
+  "generatedAt": "2026-06-18T11:45:44.677Z",
+  "papers": [
+    {
+      "id": "10.1038/s41588-026-02632-9",
+      "title": "Taking apart the DNA-methylation clock with an epigenetic progeria syndrome",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-06-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02632-9",
+      "doi": "10.1038/s41588-026-02632-9",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "以表觀遺傳早衰症拆解DNA甲基化時鐘",
+      "summaryZh": "DNA甲基化時鐘是衡量生物年齡的重要表觀遺傳標記，但支撐其運作的分子機制仍未完全闡明。本研究利用早衰症候群患者細胞中加速老化的特性，系統性地解析DNA甲基化時鐘的組成與調控邏輯。研究發現早衰症相關的表觀遺傳變化可分層解析，部分與正常老化共享機制，部分則為疾病特有。這項工作不僅深化了我們對表觀遺傳時鐘生物學的理解，也為開發延緩衰老的干預策略提供新的分子靶點。",
+      "topicTags": [
+        "dna-methylation",
+        "epigenetic-clock",
+        "progeria",
+        "aging",
+        "epigenetics"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003840",
+      "title": "The fungal blind spot: Why marine carbon models ignore a key player",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-17T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003840",
+      "doi": "10.1371/journal.pbio.3003840",
+      "abstract": "Marine fungi were assumed to have a minor role in carbon cycling, unable to compete with bacteria. A new PLOS Biology study challenges this dogma, showing fungi can dominate labile dissolved organic matter assimilation, reshaping our understanding of ocean carbon retention and storage. Marine fungi were assumed to have a minor role in the carbon cycling, unable to compete with bacteria. A new PLOS Biology study challenges this dogma, showing fungi can dominate labile dissolved organic matter assimilation, reshaping our understanding of ocean carbon retention and storage.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.06.16.732671",
+      "title": "Single-nucleus multiomic analysis reveals modulation of the gene regulatory circuit landscape in pituitary cell types during mouse estrous cycle.",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-17",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.16.732671v1",
+      "doi": "10.64898/2026.06.16.732671",
+      "abstract": "The estrous cycle transcriptional and chromatin dynamics in pituitary cell types have not been investigated. We report single-nucleus multiomics assays in 18 adult mouse pituitaries (102,069 post quality-control nuclei) across 6 cycle time points. Differential analysis revealed cycle stage-dependent epigenetic and transcriptional remodeling across the major pituitary cell populations. In gonadotropes and lactotropes, we identified temporal patterns of differential gene expression linked to various biological processes, notably neuronal and synaptic-related ontologies. Pseudotime trajectory analysis was consistent with a rapid transition of individual gonadotropes through different cellular states. In gonadotropes and lactotropes, we uncovered gene regulatory circuits whose activity varies between consecutive cycle time points. We experimentally validated a gonadotrope ETS2-driven circuit that differentially regulates Fshb gene expression between 2 and 9 am on estrus. Our data and analyses, available at https://rstudio-connect.hpc.mssm.edu/snpit_estrous_browser/, provide a window into gene regulatory mechanisms underlying estrous cycle stage transitions.",
+      "authors": [
+        "Zhang, Z.",
+        "Cheng, W. S.",
+        "Jin, Y.",
+        "Ongaro, L.",
+        "Smith, G. R.",
+        "Pincas, H.",
+        "Mendelev, N.",
+        "Strupinsky, G.",
+        "Alonso, C. A. I.",
+        "Zhou, X.",
+        "Brule, E.",
+        "Zamojski, M.",
+        "Turgeon, J. L.",
+        "Zaslavsky, E.",
+        "Bernard, D. J.",
+        "Ruf-Zamojski, F.",
+        "Sealfon, S."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.06.12.731741",
+      "title": "Annotation-Based Gene-Peak Links Improve Regulatory Network Prediction of Gene Expression in Human Kidney Multi-Omics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-17",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.12.731741v1",
+      "doi": "10.64898/2026.06.12.731741",
+      "abstract": "Abstract Background Linking distal regulatory elements to their target genes is a central problem for interpreting chromatin accessibility and other non-coding genomic data. Proximity-based mapping is convenient but ignores three-dimensional enhancer-promoter architecture and can misassign long-range regulatory effects. Correlation-based approaches can also miss regulatory links because of limited statistical power and restrictive distance or significance thresholds. Single-cell and single-nucleus multi-omic datasets, such as 10x Multiome profiles that jointly measure chromatin accessibility and gene expression in the same cells or nuclei, now provide a way to evaluate gene-peak linkage strategies by testing how well linked accessibility features predict gene expression. Existing methods often focus on scoring individual enhancer-gene pairs. In this study, we proposed and constructed a fast annotation-based candidate gene-peak network and tested whether it improves downstream prediction of gene expression. Methods We first built a unified gene-peak regulatory network by integrating enhancer-based, promoter-based, and proximity-based linkage strategies. We then used single-cell multiome data from the Kidney Precision Medicine Project (KPMP) 10x Multiome cohort to evaluate whether the proposed links captured regulatory signals. We aggregated RNA expression and ATAC accessibility at the cell-type cluster level and trained predictive models to evaluate how well different linkage strategies could explain gene expression based on accessibility. Model performance was compared between annotation-based (including both enhancer- and promoter-based links) and proximity-based gene-peak links using testing R-squared and mean squared error (MSE) in a strict set of 1,704 genes and an adaptive set of 7,973 genes with more relaxed requirements. Results In the strict regime (1,704 genes with at least 20 peaks assigned by the nearest-TSS rule and at least 10 annotated enhancer-based peaks), the annotation-based model consistently achieved higher testing R-squared and lower testing MSE than the proximity-based model. In the larger adaptive regime (7,973 genes with at least 5 proximity-based and at least 2 enhancer-based peaks), we defined for each gene a balanced number of selected peaks based on its available closest and enhancer links; the annotation-based model again showed globally higher testing R-squared and lower testing MSE. These improvements were observed over a broad range of candidate-linked peak numbers. Conclusions Using human kidney 10x Multiome data, we show that a fast annotation-based gene-peak linkage framework can improve prediction of gene expression from chromatin accessibility compared with conventional approaches. These results support the use of biologically informed enhancer and promoter annotations when constructing candidate gene regulatory networks. Our framework also showed concordance with the correlation-based Signac LinkPeaks method while providing broader coverage and greater computational efficiency. We have implemented these annotation-based linkage methods in the GPlinksR R package, providing a fast and scalable tool for constructing regulatory networks.",
+      "authors": [
+        "Wang, X.",
+        "Siegmund, K.",
+        "Goodrich, J. A.",
+        "Nelson, J.",
+        "Mi, H.",
+        "Zhang, L.",
+        "Gazal, S.",
+        "Queme, B.",
+        "Shibata, D.",
+        "Street, K."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.06.13.732076",
+      "title": "Correcting spatial transcriptomics data affected by a prevalent transcript leakage problem across platforms, species, and tissues",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-17",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.13.732076v1",
+      "doi": "10.64898/2026.06.13.732076",
+      "abstract": "Spatial transcriptomics has been widely applied to study the spatial distribution of cell types, cell states, and specific gene expression in tissue samples. However, we show that there is a prevalent transcript leakage problem in spatial transcriptomics data, where transcripts expressed by a cell diffuse to its neighborhood and are recurrently detected in the nearby cells. By analyzing published data sets, we show that this problem is general across data produced from different tissues and different species using different imaging-based and sequencing-based spatial transcriptomics platforms. It affects both upstream tasks such as expression quantification as well as downstream tasks such as cell-type annotation and detection of spatially-dependent gene expression. To tackle the transcript leakage problem, we propose a reference-free Bayesian model-based method, DeLeakage, which cleans up the data much more effectively than existing denoising methods. DeLeakage also improves cell-type annotation and avoids false detection of spatially dependent expression.",
+      "authors": [
+        "Shi, C. H.",
+        "Zhai, Y.",
+        "Chow, S. H.-C.",
+        "Li, L.",
+        "Carver, C. M.",
+        "Teneche, M. G.",
+        "Flores, J.",
+        "Kern, C.",
+        "Adams, P. D.",
+        "Ren, B.",
+        "Schafer, M. J.",
+        "Zhu, Q.",
+        "Wei, Y.",
+        "Yip, K. Y."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2025.12.15.694536",
+      "title": "DOMINO: graph diffusion learning identifies spatial domain structures with enhanced accuracy and scalability",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-17",
+      "url": "https://www.biorxiv.org/content/10.64898/2025.12.15.694536v2",
+      "doi": "10.64898/2025.12.15.694536",
+      "abstract": "Spatial transcriptomics enables in situ molecular profiling, allowing to measure the cellular transcriptional output within the tissue. As the tissue architecture is conserved, spatial domains with specific transcriptional patterns can be identified, facilitating the discovery and understanding of functional tissue compartments. Thus, several methods to uncover and identify these spatial domains have been developed. However, most of these existing methods do not scale to rapidly increasing data sizes and focus only on local structure while missing the global view of the tissue. Here, we present DOMINO, a diffusion-optimised contrastive learning framework for spatial domain detection. DOMINO utilises graph diffusion convolution to propagate information beyond immediate neighbours and jointly optimises local and, importantly, global graph structure via contrastive learning. This novel framework yields biologically interpretable domains with clearer boundaries and scales to large datasets, outperforming state-of-the-art methods across healthy and malignant benchmark datasets. We apply DOMINO to a newly generated spatial transcriptomic dataset of endometriosis-associated ovarian cancers, which could not be processed by existing domain detection methods owing to its size. We uncovered conserved proliferative and non-proliferative tumour states that recurred across these tumours and were independently validated in an external clear cell ovarian cancer spatial transcriptomic dataset. Proliferative domains were characterised by elevated expression of EIF4A1 and HSPA8, increased cell cycle activity, reduced mast cell abundance, and coordinated stromal remodelling, including altered fibroblast states and spatial organisation. In parallel, integrative analysis across tumours revealed subtype-specific multicellular ecosystems associated with either endometrioid or clear cell ovarian carcinomas, together with a tumour-excluded stromal domain that could only be resolved through the integration of spatial and transcriptional information. These findings demonstrate how well DOMINO scales up and that it uncovers biologically meaningful spatial programs spanning tumour intrinsic states, tumour microenvironment interactions, and subtype-specific tissue architecture that are not recovered by conventional expression-based clustering approaches.",
+      "authors": [
+        "Jia, P.",
+        "Liu, N. W.",
+        "Ran, Z.",
+        "Maiolo, S.",
+        "Zhang, T.",
+        "Mohenska, M.",
+        "Guo, X.",
+        "Wang, C.",
+        "Walters, E.",
+        "Ricciardelli, C.",
+        "Lokman, N. A.",
+        "Morrow, R.",
+        "Oehler, M. K.",
+        "Polo, J. M.",
+        "Liu, N.",
+        "Li, F."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "spatial domains",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.adt2527",
+      "title": "NPAS3-regulated astrocyte mitochondrial bioenergetics is required for cognition",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adt2527?af=R",
+      "doi": "10.1126/sciadv.adt2527",
+      "abstract": "The basic helix-loop-helix transcription factor neuronal PAS (Per, Arnt, Sim) domain protein 3 (NPAS3) provides transcriptional regulation of metabolic pathways and is highly expressed in astrocytes. NPAS3 variants have been associated with cognitive dysfunction under several neuropsychiatric conditions, but the underlying brain cell type–specific mechanisms remain obscure. Here, we report that NPAS3 is a key regulator of mitochondrial bioenergetics in astrocytes in the mouse brain. Selective deletion of Npas3 in mature astrocytes decreases expression of mitochondrial glutamate carrier 2 involved in glutamate oxidation, leading to reduced oxidative phosphorylation and lactate production in astrocytes. This deficit reduces intrinsic excitability, dendritic spine density, and excitatory synaptic transmission of medial prefrontal cortex (mPFC) pyramidal neurons. Mice with Npas3 -deficient mPFC astrocytes exhibit impaired trace fear conditioning, which is rescued by lactate treatment. Thus, the present study demonstrates a mechanistic link between NPAS3-dependent astrocyte mitochondrial bioenergetics and cognitive function and provides insights for glia-targeting treatment of cognitive dysfunction in neuropsychiatric disease.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aea6844",
+      "title": "Piezobiomimetic delivery nanosystem converts cold tumors to hot by parallel PANoptosis/STING activation in hepatocellular carcinoma",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea6844?af=R",
+      "doi": "10.1126/sciadv.aea6844",
+      "abstract": "Hepatocellular carcinoma (HCC) remains a challenge for therapeutic efficacy in converting cold tumors into hot ones. Herein, doping defect–engineered manganese perovskite piezoelectric nanocubes (Mn-BaZrO 3 , MBZO) integrated miltirone biomimetic delivery within tumor-derived nanovesicles are proposed for the parallel pyroptosis-apoptosis-necroptosis (PANoptosis) and the stimulator of interferon genes (STING) pathway activation to reshape the immune microenvironment, leading to tumor regression in HCC. Homologously targeting HCC cells, MBZO nanocubes accumulated and produced exogenous reactive oxygen species through the piezocatalytic effect. Specifically, miltirone accelerated oxidative stress amplification, potentially serving as an inducer of programmed cell death in HCC. Then, PANoptosis was activated to disrupt the cell barrier and release damage-associated molecular patterns, promoting immunogenicity. Concurrently, MBZO synergistically stimulated the STING pathway to evoke pro-inflammatory responses and elicit immunogenic cell death, triggering effector immune cell deployment (EICD). The piezobiomimetic delivery nanosystem bridged innate immunity activation and EICD to convert cold tumors into hot tumors and suppress tumor growth, thereby enhancing the efficacy of piezoimmunotherapy in HCC.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec1031",
+      "title": "Aptamer-functionalized apoptotic vesicles ameliorate osteoarthritis via resuming mitochondria OXPHOS of chondrocytes",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec1031?af=R",
+      "doi": "10.1126/sciadv.aec1031",
+      "abstract": "Emerging evidence suggests that osteoarthritis (OA) progression is critically associated with disruptions of cartilage matrix homeostasis caused by mitochondrial impairment in chondrocytes. Apoptotic vesicles (apoVs) derived from mesenchymal stem cells (MSCs) have exhibited great therapeutic promising for tissue regeneration and osteoarticular diseases. However, their poor ability targeting chondrocytes and short-time retention in joint cavity hinder further clinical translation. As a chemically synthesized nucleic acid, aptamer tgg2 demonstrated a robust specificity binding with chondrocytes. In this study, our team successfully functionalized apoVs with tgg2 (tgg2@apoVs) via Schiff base reaction with high conjugation efficiency and fabricated an injectable sustained-release system based on hyaluronic acid methacryloyl (HAMA) hydrogels. tgg2@apoVs significantly promoted chondrocyte extracellular matrix synthesis and improved mitochondrial oxidative phosphorylation (OXPHOS) in vitro. The HAMA injectable hydrogels compounded with tgg2@apoVs remarkedly alleviated OA symptoms in vivo. The potential molecular mechanism of apoVs’ improvement in mitochondrial energy metabolism of chondrocytes is preliminarily investigated. Specifically, apoVs activate transcriptional factor Yin Yang 1 (YY1) to up-regulate the expression of Cox7c, a key subunit of complex IV in electron transport chain, thereby augmenting mitochondrial OXPHOS. In conclusion, the tgg2@apoVs’ sustained-release system provides a cost-effective solution for OA treatment, and the elucidation of the molecular mechanism underlying apoVs’ enhancement of chondrocyte OXPHOS offers insights for broader applications in energy metabolism–related diseases.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "適體功能化凋亡囊泡恢復軟骨細胞粒線體氧化磷酸化以改善骨關節炎",
+      "summaryZh": "本研究發現，骨關節炎（OA）的進展與軟骨細胞粒線體功能障礙密切相關，導致軟骨基質失衡。間質幹細胞來源的凋亡囊泡（apoVs）具備組織再生潛力，但缺乏對軟骨細胞的特異性靶向與關節內持久性。研究團隊利用化學合成的aptamer tgg2與apoVs結合（tgg2@apoVs），並以透明質酸甲丙烯醯（HAMA）水凝膠製成可注射的持續釋放系統，顯著提升軟骨細胞外基質合成與粒線體氧化磷酸化（OXPHOS）。體內實驗顯示，該系統有效緩解OA症狀，並揭示apoVs透過活化轉錄因子YY1上調Cox7c表達，增強電子傳遞鏈Complex IV功能，從而改善粒線體能量代謝。此微創、成本效益高的治療策略為OA提供新方向，亦為能量代謝相關疾病的干預提供參考。",
+      "topicTags": [
+        "osteoarthritis",
+        "apoptotic-vesicles",
+        "aptamer",
+        "mitochondria-oxphos",
+        "chondrocyte"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aec3505",
+      "title": "NEDDylation maintains oocyte quality by stabilizing mitochondrial transcription",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec3505?af=R",
+      "doi": "10.1126/sciadv.aec3505",
+      "abstract": "Age-related decline in oocyte quality increases the risk of infertility, miscarriage, and birth defects. Mitochondrial dysfunction is a key contributor to this decline. Here, we report that oocyte-specific deletion of Uba3 , which encodes the catalytic subunit of the E1 NEDDylation-activating complex, causes sterility in mice. Fully grown, germinal vesicle–stage Uba3 conditional knockout oocytes exhibit mitochondrial dysfunction, including elevated reactive oxygen species, impaired oxidative phosphorylation, and depletion of mitochondrially encoded RNA transcripts. Proteomic analysis identified alterations in mitochondrial-associated proteins, including enrichment of mitochondrial matrix and respiratory chain components and reduced abundance of electron transport chain complexes. These defects were associated with reduced levels of the mitochondrial RNA polymerase, POLRMT [polymerase (RNA) mitochondrial DNA directed]. We further show that POLRMT is directly modified by NEDDylation, which alters its stability by antagonizing ubiquitylation and degradation. Notably, NEDD8 levels decline with age in both mouse and human oocytes. Together, these findings identify NEDDylation as a regulator of oocyte quality and connect this pathway to mitochondrial transcription in oocytes.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec4824",
+      "title": "Characterization of the biosynthetic enzymes of the Morus alba benzofuran natural products",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec4824?af=R",
+      "doi": "10.1126/sciadv.aec4824",
+      "abstract": "Moracins are a distinct class of benzofuran natural products, primarily found in Moraceae plants. Despite their varying biological activities and interesting chemical structures, little is known about their biosynthesis. Here, we elucidate the biosynthetic pathway of moracin M, a common intermediate in moracin biosynthesis. Using thermal proteome profiling, we identified a noncanonical laccase from Morus alba (MaLAC) that catalyzes an unprecedented oxidative cyclization of oxyresveratrol to moracin M. Distinct from other plant laccases, MaLAC is the first plant laccase shown to catalyze an intramolecular oxidative cyclization reaction in natural product biosynthesis. Mechanistic studies revealed a copper-mediated radical cyclization, providing guidance for engineering laccases to catalyze synthetically valuable intramolecular oxidative cyclization. The biosynthetic pathway for moracin M was heterologously constructed in Nicotiana benthamiana . This work not only provides important insights into moracin biosynthesis, laying the foundation for manufacturing bioactive moracins via metabolic engineering strategies, but also demonstrates the power of label-free chemoproteomics in elucidating unknown biosynthetic pathways of plant secondary metabolites.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "桑樹苯並呋喃天然產物生物合成酶的鑑定與功能分析",
+      "summaryZh": "桑科植物中的苯並呋喃類天然產物（moracins）具有多樣的生物活性，但其生物合成途徑長期未知。本研究利用熱蛋白質體分析技術，發現桑樹中一種非典型漆酶（MaLAC）能催化白藜蘆醇進行分子內氧化環化生成moracin M。這是首例被證實能催化分子內氧化環化反應的植物漆酶，其銅離子介導的自由基環化機制為設計新型生物催化反應提供了重要參考。研究團隊已成功在菸草中異源重建moracin M的完整生物合成途徑，為透過代謝工程大量生產此類活性天然產物奠定基礎。",
+      "topicTags": [
+        "natural-products",
+        "enzyme-catalysis",
+        "plant-biochemistry",
+        "metabolic-engineering",
+        "chemoproteomics"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aec8681",
+      "title": "Spatial transcriptome mapping identifies Ppara-Anxa2 cross-talk in microplastic-induced hepatotoxicity",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec8681?af=R",
+      "doi": "10.1126/sciadv.aec8681",
+      "abstract": "Microplastics (MPs) are increasingly recognized as an urgent global health concern, with mounting evidence linking their bioaccumulation to chronic disease risks. The liver, as a central organ for metabolic homeostasis and detoxification, is particularly sensitive to sustained MP exposure. However, the mechanisms underlying hepatic responses to polyethylene (PE), the most prevalent yet relatively understudied plastic type, remain poorly defined. By performing combined bulk and spatial transcriptomic analyses, we observed that PE resulted in hepatic dysfunction in mice fed on standard or metabolic dysfunction-associated steatohepatitis (MASH)–inducing diets, driving both globally and spatially distinct transcriptional alterations, including a nuclear receptor (NR), Ppara . Spatial transcriptomics uncovered the cell type heterogeneity and gene expression patterns masked in bulk analyses. Spatial clustering uncovered inflammatory hotspots characterized by reduced cellular diversity and distinct PE-responsive gene signatures. Among these, NR signaling emerged as a key regulatory axis, with Ppara identified as a modulator. We further demonstrated that Ppara regulates Anxa2 , a gene involved in damage response and tissue recovery, through enhancer and promoter binding. These findings offer insights into how PE disrupts hepatic homeostasis and underscores the value of spatial transcriptomics in elucidating environmental impacts on tissue organization and gene expression regulation. This study provides a molecular framework for understanding MP-associated disruption of liver pathophysiology and highlights potential targets for therapeutic intervention.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "空間轉錄組測繪揭示Ppara-Anxa2交互作用在微塑膠誘導肝毒性中的角色",
+      "summaryZh": "微塑膠已被確認為全球公共衛生的重大威脅，肝臟因負責代謝與解毒功能而對微塑膠暴露特別敏感。本研究結合整體與空間轉錄組分析，發現聚乙烯會在標準飲食或代謝功能障礙相關脂肪性肝炎飲食的小鼠中誘發肝功能障礙，並驅動獨特的空間轉錄變化。空間轉錄組技術揭示了整體分析所掩蓋的細胞類型異質性與炎症熱點，並確定核受體Ppara為關鍵調控因子，透過增強子與啟動子結合調控Anxa2基因表達。本研究為理解微塑膠如何擾亂肝臟恆態提供分子框架，並凸顯空間轉錄組在闡明環境因素對組織與基因表達調控影響的價值。",
+      "topicTags": [
+        "microplastics",
+        "hepatotoxicity",
+        "spatial-transcriptomics",
+        "nuclear-receptor",
+        "liver-disease"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aec9247",
+      "title": "Untethered thin-film neurostimulator wrapped around tiny nerve trunks for wireless neuromodulation",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec9247?af=R",
+      "doi": "10.1126/sciadv.aec9247",
+      "abstract": "Electrical stimulation of tiny peripheral nerve trunks for near-organ neuromodulation enables precise electroceutical therapy for refractory diseases, but long-term stable neuromodulation of these delicate, fragile nerve trunks remains an engineering challenge. Here, we report the development of NeuroWrap Ultrasonic Stimulator (NWUS), an untethered, self-adhesive thin-film neurostimulator capable of conformally wrapping around tiny nerve trunks. The untethered architecture can help avoid the damage or rupture of tiny nerves due to uncontrollable micromotion of lead wires during bodily movements. The NWUS is an ultrasound-responsive acoustoelectric converter with optimized impedance matching, which enables highly effective wireless electrical stimulation. The electroceutical application of NWUS was further illustrated in chronic vagus nerve stimulation for immunomodulation therapy in a rat model. The wireless neuromodulation therapy of rat experimental autoimmune myocarditis was proven to restore left ventricular function, suppress proinflammatory cytokine expression as well as macrophage infiltration within cardiac tissue, and promote regulatory T cell recruitment along with increased anti-inflammatory cytokine levels.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "無束縛薄膜神經刺激器纏繞細小神經幹實現無線神經調控"
+    },
+    {
+      "id": "10.1126/sciadv.aed3887",
+      "title": "Live imaging and multimodal profiling reveal transdifferentiation of a cochlear supporting cell subpopulation upon Notch inhibition",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed3887?af=R",
+      "doi": "10.1126/sciadv.aed3887",
+      "abstract": "Regeneration enables organisms to repair damaged tissues, yet this capacity is notably limited in the cochlear sensory epithelium, essential for sound detection. A major cause of hearing loss arises from the irreversible loss of sensory hair cells (HCs) in the cochlea. While supporting cells (SCs) have a latent ability to transdifferentiate into HCs, this regenerative potential is rapidly lost after development. Using live imaging and single-cell multiomics of cochlear explants, we uncovered the cellular and molecular heterogeneity underlying the limited regenerative capacity of the neonatal mouse cochlea. Notch repression broadly silenced key SC genes, yet only a rare subpopulation of Deiters’ cells (DC), termed transdifferentiating DCs (tDCs), initiated the transdifferentiation into HC fate. These cells underwent coordinated transcriptional and enhancer remodeling, linking epigenetic priming with morphological plasticity, while other SCs remained refractory despite robust Notch targets down-regulation. Our study provides a molecular definition of an early induced transitional DC to HC state, revealing Notch inhibition as a selective trigger that unmasks rare regenerative competence.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "抑制Notch信號揭示耳蝸支持細胞再生潛能",
+      "summaryZh": "聽覺損失主要由耳蝸感覺上皮中毛細胞的不可逆損失引起，而支持細胞雖具有轉分化為毛細胞的潛能，但在發育後迅速消失。本研究利用活體成像與單細胞多體學分析，發現抑制Notch信號後，只有稱為「轉分化Deiters細胞」(tDCs)的稀有亞群能啟動向毛細胞命運的轉分化。這些細胞經歷協調的轉錄與增強子重塑，將表觀遺傳準備與形態可塑性連結起來。本研究為早期誘導的DC至HC過渡狀態提供了分子定義，揭示Notch抑制作為選擇性觸發因素，能夠顯露稀有的再生能力。",
+      "topicTags": [
+        "regeneration",
+        "cochlea",
+        "notch-signaling",
+        "single-cell-multiomics",
+        "hair-cells"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aee2291",
+      "title": "A ∼0.5 Myr perturbation of carbon and mercury cycles during the Middle Triassic biotic radiation",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee2291?af=R",
+      "doi": "10.1126/sciadv.aee2291",
+      "abstract": "The Anisian Stage (Middle Triassic) marks a pivotal interval for biotic recovery following the Permian-Triassic mass extinction, yet its environmental drivers remain poorly understood. This study presents carbon isotopes, mercury (Hg) concentrations, and Hg isotope data from Anisian (mainly Pelsonian substage) marine and terrestrial sections across the Tethys. Our results reveal a widespread Hg enrichment event that is synchronous with the Pelsonian negative carbon isotope excursion (PENCIE). Hg isotopic compositions support an origin from enhanced regional volcanism, coupled with contemporaneous terrestrial input. New high-precision zircon U-Pb ages (244.200 ± 0.037 Ma and 243.451 ± 0.049 Ma), integrated with chemostratigraphic and biostratigraphic data, constrain the duration of the PENCIE to ∼0.5 Myr. This interval coincided with major biodiversification, revealing that recovery occurred alongside environmental perturbations rather than in stable conditions as traditionally thought. These global disturbances in carbon and mercury cycles, linked to volcanism and terrestrial input, likely accelerated Middle Triassic biotic recovery.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aee4069",
+      "title": "Haplotype-resolved methylomes reveal parent-of-origin DNA methylation imbalance in autism spectrum disorder",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee4069?af=R",
+      "doi": "10.1126/sciadv.aee4069",
+      "abstract": "Epigenetic dysregulation plays an essential role in autism spectrum disorder (ASD), but the parent-of-origin effects (POEs) of DNA methylation remain unknown. Here, we applied PacBio HiFi sequencing with haplotype-phased methylation profiling in 124 individuals (31 ASD quartets) to systematically dissect POE-dependent methylation. Comparative analysis of phased methylomes between probands and unaffected siblings identified 114 paternal- and 106 maternal-specific differential methylated cytosines (DMCs), 45 and 46 differential methylated regions (DMRs), and 2425 and 2693 methylation outliers (MOs), respectively. These POE methylation alterations were enriched in ASD-relevant gene categories but exhibited distinct genomic distributions and functional pathways between parental haplotypes. Furthermore, genome-wide parent-of-origin DMR analysis identified 443 allele-specific methylation (ASM) regions, from which we detected 34 differential expression ASMs and 62 ASM outliers, showing pronounced enrichment within PWS/AS locus and ASD-associated genes. Collectively, this study provides a comprehensive evidence of pervasive POE-dependent methylation imbalance and aberrant ASM at imprinting regions underlying ASD pathogenesis, offering insights into epigenetic mechanisms of complex neurodevelopmental disorders.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "單倍型解析甲基化體揭示自閉症譜系障礙中親本來源DNA甲基化不平衡"
+    },
+    {
+      "id": "10.1126/sciadv.aee4926",
+      "title": "Noninvasive whole-brain imaging of glymphatic dynamics",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee4926?af=R",
+      "doi": "10.1126/sciadv.aee4926",
+      "abstract": "Cerebrospinal fluid circulation through the glymphatic system plays a crucial role in removing metabolic waste from the central nervous system. However, the mechanism underlying the brain-wide glymphatic dynamics is not yet fully understood, in part due to the lack of glymphatic imaging technologies on deep brains. Here, we report a hybrid imaging technology that integrates three-dimensional photoacoustic tomography and ultrasound localization microscopy (3D-PAULM), enhanced by a photoacoustic dye with strong optical absorption in the second near-infrared window (NIR-II). 3D-PAULM allows for continuous, noninvasive, whole-brain imaging in mice through intact skull, providing superresolution mapping of the brain vasculature and highly sensitive tracing of the NIR-II dye in the glymphatic system. Using 3D-PAULM, we investigated the glymphatic function impaired by ischemic stroke, aging, and anesthesia. Our results provide insights into glymphatic transport under various physiological as well as pathological conditions and establish 3D-PAULM as a valuable tool for preclinical glymphatic research.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "非侵入性全腦膠質淋巴動態成像"
+    },
+    {
+      "id": "10.1126/sciadv.aee6015",
+      "title": "A conserved in-frame stop codon acts as a multipotent defense mechanism in alphaviruses",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee6015?af=R",
+      "doi": "10.1126/sciadv.aee6015",
+      "abstract": "Most alphaviruses maintain an in-frame opal stop codon that interrupts their nonstructural polyprotein (nsP) ORF between nsP3 and nsP4 in both vertebrate and insect hosts. We show that the nsP3 opal stop codon confers a replicative advantage to Sindbis virus (SINV) in RNAi-competent Aedes cells and mosquitoes but not in RNAi-deficient cells or mosquitoes. Mutation of the opal stop codon delays processing of the viral nsP polyprotein, disrupts viral replication spherule integrity, and renders viral RNA susceptible to Dicer 2 cleavage, resulting in higher antiviral siRNA responses against SINV. Similarly, these defects caused by opal codon mutations lead to increased viral RNA detection and enhanced immune signaling in vertebrate cells. Thus, a single stop codon in alphaviruses mediates a multipotent viral strategy to evade innate immune defenses across diverse hosts.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單一終止密碼子：阿爾法病毒的多功能免疫規避策略",
+      "summaryZh": "本研究揭示了阿爾法病毒中一個高度保守的框內蛋白質終止密碼子，竟是病毒對抗宿主先天免疫的關鍵武器。這些病毒在nsP3與nsP4之間保留的蛋白質終止密碼子，能幫助病毒在具有RNA干擾機制的蚊子細胞中獲得複製優勢。當此終止密碼子發生突變時，會導致病毒RNA更容易被宿主Dicer 2切割，從而觸發更強的抗病毒siRNA反應。在脊椎動物細胞中，同樣的突變也會增加病毒RNA被偵測的機會並增強免疫訊號傳導。這項發現證明，區區一個核苷酸改變就能大幅影響病毒的免疫規避能力，對開發抗病毒藥物具有重要啟示。",
+      "topicTags": [
+        "virology",
+        "alphavirus",
+        "innate-immunity",
+        "rna-interference",
+        "host-pathogen"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aee6998",
+      "title": "Global impacts of drifting fish aggregating devices on marine protected areas",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee6998?af=R",
+      "doi": "10.1126/sciadv.aee6998",
+      "abstract": "Protected areas are a critical component of efforts to reverse biodiversity loss by 2050. In the ocean, free-drifting fish aggregating devices (dFADs) are released in large numbers by industrial purse seine fishing companies to help catch tuna. These devices can enter marine protected areas (MPAs) undetected, potentially leading to wildlife entanglement, plastic pollution, and habitat degradation. Here we investigate processes by which dFADs may compromise MPA objectives and assess the burden they put on existing MPAs. By analyzing drift, strandings, and expert interview data, we show that dFADs have likely interacted with 53% of the global MPA network by area and stranded in 174 protected areas, which are home to at least 490 at-risk species. While recent improvements to dFAD design should reduce harm to wildlife, our findings suggest that improved regulation, transparency, and industry accountability are required to mitigate additional effects on MPAs, especially around documented hotspots in the central Pacific, western Indian Ocean, and Caribbean.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "漂流集魚器對海洋保護區的全球影響"
+    },
+    {
+      "id": "10.1126/sciadv.aef2491",
+      "title": "A programmable bifunctional flavoenzyme for direct amine-to-ester conversion",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef2491?af=R",
+      "doi": "10.1126/sciadv.aef2491",
+      "abstract": "The unification of mechanistically distinct oxidative transformations within a single enzyme active site represents a long-standing challenge in biocatalysis. In particular, flavin-dependent oxidative deamination and Baeyer-Villiger oxidation have remained evolutionarily and mechanistically segregated, raising fundamental questions as to whether their catalytic cycles can be coherently integrated without mutual interference. Here, we report a bifunctional ancestral flavoenzyme, AncFO-221, reconstructed using a function-oriented ancestral sequence reconstruction strategy, which enables direct amine-to-ester conversion within a single active site. Combined experimental and computational analyses reveal a unified catalytic framework in which histidine-assisted proton and hydride transfer during amine oxidation is intrinsically coupled to C 4a -peroxyflavin–mediated oxygen insertion, establishing a continuous amine oxidation-Baeyer–Villiger oxidation (AO-BVO) reaction cycle rather than a fortuitous cascade. Guided by this mechanistic unity, modular protein engineering produced an optimized variant, M15, exhibiting an ~18-fold enhancement in catalytic efficiency, near-complete suppression of reductive side reactions, and lactone yields up to 93%. Notably, the engineered enzyme displays programmable and unconventional regioselectivity, preferentially migrating weakly migratory groups across structurally diverse amines, thereby overriding the classical Baeyer-Villiger migratory rule. This study demonstrates that ancestral reconstruction combined with mechanism-guided evolution can merge evolutionarily segregated chemistries into a single, tunable catalytic platform, providing a generalizable blueprint for the design of multistep oxidative biocatalysts.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "可程式化雙功能黃素酶實現胺類直接轉酯",
+      "summaryZh": "本研究重建了一種祖先黃素酶 AncFO-221，成功將兩種演化上各自獨立運作的氧化反應——氧化脫胺與拜耳－維利格氧化——整合於單一活性位點中。該酶透過連續的 AO-BVO 反應循環實現胺類直接轉酯為酯類，其中組氨酸輔助的質子與氫負離子轉移與 C4a-過氧黃素的氧插入反應固有耦合。經蛋白質工程優化的變異株 M15 展現約 18 倍的催化效率提升、近乎完全抑制的還原副反應，以及高達 93% 的內酯產率。值得注意的是，該工程酶展現可程式化且非傳統的區域選擇性，能優先遷移弱遷移性基團，突破經典拜耳－維利格規則的限制。此研究證明祖先序列重建結合機制導向演化可將演化分隔的化學反應融合為單一可調控的催化平台。",
+      "topicTags": [
+        "biocatalysis",
+        "flavoenzyme",
+        "baeyer-villiger",
+        "protein-engineering",
+        "ancestral-reconstruction"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aeg2614",
+      "title": "Life-span–dependent transcriptional dynamics of the human heart",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg2614?af=R",
+      "doi": "10.1126/sciadv.aeg2614",
+      "abstract": "The human heart undergoes continuous transcriptional remodeling from development through aging, yet the cellular and regulatory features governing this process remain incompletely defined. Here, we generated a single-nucleus RNA sequencing atlas of 442,239 nuclei from 54 nonfailing myocardial tissues of 29 individuals spanning development, adulthood, and aging, covering left and right ventricles. Across all major cell types, we uncovered coordinated yet cell type–specific transcriptional trajectories that converge on progressive loss of gene expression homeostasis, stress responses, and inflammatory signaling over the life span. Cardiomyocytes displayed distinct age-associated transcriptional states enriched for senescence- and disease-related signatures. Regulatory network analysis identified PRDM16 as a transcriptional regulator whose activity declined with age in cardiomyocytes. Functional perturbation of PRDM16 in human cardiomyocyte models induced senescence, metabolic dysfunction, and stress responses, whereas its rebalancing in aged mouse hearts improved cardiac function and partially reversed aging-associated transcriptional programs. Last, leveraging life-span–resolved single-nucleus data, we constructed cardiac transcriptomic age prediction models that closely tracked chronological age in nonfailing hearts and revealed deviations consistent with accelerated aging in cardiomyopathies. Together, this study provides a comprehensive single-nucleus resource of the human heart across the life span and delineates cellular and regulatory features associated with cardiac aging.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "心臟衰老的細胞地圖：跨越生命週期的單核轉錄組解析",
+      "summaryZh": "本研究運用單核RNA測序技術，分析了從發育到衰老的54個人類心臟組織樣本，共計442,239個細胞核，繪製了心臟全生命週期的轉錄組圖譜。研究發現心臟中所有主要細胞類型都呈現協調且細胞型別特異性的轉錄軌跡，伴随著基因表達穩態的逐漸喪失及發炎訊號的增強。心肌細胞展現出與衰老和疾病相關的獨特轉錄狀態，研究並識別出PRDM16為關鍵調控因子，其活性隨年齡下降。動物實驗證實，恢復PRDM16水平能改善老年小鼠的心臟功能並逆轉部分衰老相關的轉錄程序。本研究建立的轉錄組年齡預測模型可追蹤心臟衰老進程，並揭示心肌病變中加速衰老的特徵。",
+      "topicTags": [
+        "single-nucleus-rna-seq",
+        "cardiac-aging",
+        "transcriptomics",
+        "cardiomyocytes",
+        "prdm16"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aeh1439",
+      "title": "Control of naive T cell reactivity and peripheral tolerance by ascorbate and TET activity",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeh1439?af=R",
+      "doi": "10.1126/sciadv.aeh1439",
+      "abstract": "Peripheral tolerance depends on limiting conventional T cell responses to self-antigens. To define the contribution of nutritional factors and related epigenetic regulation, we perform in vivo CRISPR screening and identify the ascorbate transporter Slc23a2 as a key regulator of naive T cell (Tn) reactivity. T cell–specific loss of Slc23a2 reduces intracellular ascorbate, induces regional DNA hypermethylation, enhances differentiation of Tn cells into effector and memory populations, and promotes low-grade autoimmune inflammation. These phenotypes mirror those caused by ascorbate deprivation, TET dioxygenase deficiency, and aging. Mechanistically, Slc23a2 maintains TET enzymatic activity through ascorbate, dampens proximal TCR signaling, represses helper T cell lineage programs, and sustains Tcf1 expression and chromatin binding in Tn cells. Deletion of Tcf7 partially phenocopies Slc23a2 deficiency, whereas Tcf1 overexpression mitigates the effects. Together, these findings identify ascorbate and TET-dependent DNA demethylation as a checkpoint that restrains Tn cell reactivity to self-antigens, thereby maintaining peripheral tolerance, a process compromised with aging.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "CRISPR"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "維生素C與TET酶調控初始T細胞反應性及外周耐受性",
+      "summaryZh": "本研究透過體內CRISPR篩選，發現維生素C轉運蛋白Slc23a2是調控初始T細胞反應性的關鍵因子。T細胞特異性缺失Slc23a2會導致細胞內維生素C濃度下降，進而抑制TET雙加氧酶活性，造成區域性DNA高度甲基化，並促進初始T細胞向效應及記憶細胞分化，最終引發低度自體免疫發炎反應。此研究揭示維生素C與TET依賴的DNA去甲基化作用作為一道重要檢查點，能抑制初始T細胞對自體抗原的反應，從而維持外周耐受性；這些機制在老化過程中會受到損害，可能解釋老年人自體免疫疾病風險增加的原因。",
+      "topicTags": [
+        "immunology",
+        "T cells",
+        "epigenetics",
+        "autoimmunity",
+        "aging"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aed1407",
+      "title": "Spatial transcriptomics identifies distinct domains regulating yield-component traits of the wheat ear",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed1407?af=R",
+      "doi": "10.1126/sciadv.aed1407",
+      "abstract": "Cereals form complex, highly ordered inflorescences composed of grain-producing florets that form within spikelets. Wheat spikelets are arranged in alternating rows along a central rachis, in a pattern determined during early development. While several genes controlling spikelet formation have been identified, it is still unclear how they interact to regulate inflorescence morphology and the development of supporting structures, including meristems and the rachis. Here, we used spatial transcriptomics to investigate the transcriptional landscape of a developing wheat inflorescence. We identified two spatially distinct regions that regulate spikelet architecture, including a primordium region characterized by RAMOSA2 and a boundary region that expresses ALOG1 and bract suppressors. Developmental assays indicate that spikelets differentiate from meristems and are accompanied by formation of the central vasculature that expresses spikelet number and fertility genes. The combined spatial transcriptome and genetic data reveal key regulators of spikelet development, including target genes for improving spikelet number and yield.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "空間轉錄組學揭示小麥穗部發育調控關鍵區域",
+      "summaryZh": "穀物形成複雜且高度有序的花序，由在穗軸上交替排列的小穗所構成。小麥小穗的排列模式在早期發育階段就已決定，但調控花序形態和支援結構發育的基因交互作用仍不清楚。本研究利用空間轉錄組學技術分析發育中的小麥花序轉錄體，識別出兩個調控小穗架構的空間特異區域：包括表達RAMOSA2的原基區域，以及表達ALOG1和苞片抑制因子的邊界區域。這些發現揭示了小穗發育的關鍵調控因子，可作為改良小穗數量與產量的重要分子標的。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "wheat",
+        "plant-development",
+        "yield-improvement",
+        "inflorescence"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aeh2957",
+      "title": "Structural evolution of the MTCH family of mitochondrial insertases",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeh2957?af=R",
+      "doi": "10.1126/sciadv.aeh2957",
+      "abstract": "We demonstrate that MTCH2 is the defining member of a large family of mitochondrial outer membrane (OM) insertases. MTCH insertases are conserved across holozoa and have diverged from the solute carrier 25 transporters. The cryoelectron microscopy structure of the 33-kilodalton human MTCH2 revealed that evolution of its insertase activity required loss of a transmembrane helix, which created a lipid-accessible hydrophilic groove stabilized by its unique, structured C terminus. Mutational analyses showed that MTCH insertase activity is attenuated, while experimental structures and reconstitution of hyperactive mutants demonstrated that the hydrophobicity, charge, and size of the residues that line its groove regulated MTCH function. Leveraging the MTCH2 structure, we identified the plant OM insertase and proposed a universal mechanism for OM insertion across all kingdoms of life.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "粒線體插入酶MTCH家族的結構演化"
+    },
+    {
+      "id": "10.1126/sciadv.aec4450",
+      "title": "Abiotic sources of fixed nitrogen sustained early ecosystems for several hundred million years after the origin of life",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec4450?af=R",
+      "doi": "10.1126/sciadv.aec4450",
+      "abstract": "Nitrogen (N) plays a crucial role in controlling biological productivity. However, it remains unknown how Earth’s earliest ecosystems accessed bioavailable forms of nitrogen. Here, we present genomic evidence that the last universal common ancestor (LUCA) had genes for importing ammonium into the cell, but the first organisms with all three catalytic nitrogen fixing genes emerged at least 1 billion years later. Similarly, enzymatic pathways for accessing nitrogen from urea and nitriles appear to predate biological N 2 fixation. Our results imply that Earth’s earliest biosphere was maintained by environmental sources of ammonium and other N-bearing compounds, possibly derived from a combination of processes such as hydrothermal activity, photochemistry, rock weathering, lightning, or impact events. Biological N 2 fixation may have emerged in response to an increase in biological nutrient demand or due to declining abiotic supplies of ammonium, urea, and nitriles.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "非生物固定氮源在生命起源後數億年間維持早期生態系",
+      "summaryZh": "氮是控制生物生產力的關鍵元素，但早期地球生態系如何獲得生物可利用的氮形態仍不清楚。本研究透過基因組學證據顯示，最後共同祖先（LUCA）已具備將銨離子輸入細胞的基因，但完整的三個催化固氮基因至少在十億年後才出現。此外，利用尿素和腈的酶路徑似乎早於生物固氮作用，暗示早期生物圈依賴環境來源如熱泉、光化學、岩石風化、閃電或撞擊事件所產生的銨和其他含氮化合物。此發現挑戰了生物固氮是早期氮循環主要來源的傳統觀點，並指出生物固氮可能是因生物營養需求增加或非生物氮源減少而演化出來的。",
+      "topicTags": [
+        "nitrogen-fixation",
+        "early-earth",
+        "luca",
+        "biogeochemistry"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.adz5090",
+      "title": "An F-box protein OsFKF1 interacts with either OsGI or Hd1 and mediates the degradation of OsGI to control flowering time in rice",
+      "journal": "Science Advances",
+      "publishedDate": "2026-06-17T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz5090?af=R",
+      "doi": "10.1126/sciadv.adz5090",
+      "abstract": "Flowering time of rice ( Oryza sativa ) plays important roles in regulating grain yield, quality, and adaptability. O. sativa GIGANTEAN (OsGI), heading date 1 (Hd1), and O. sativa flavin-binding, Kelch repeat, and F-box 1 (OsFKF1) are key factors controlling flowering time in rice. However, their relationships are not quite clear. In this study, we found that OsFKF1, an F-box domain–containing protein, physically interacts with OsGI and Hd1. OsFKF1 targets OsGI for degradation through ubiquitination-mediated 26 S proteasome. OsFKF1 is functionally conserved with FKF1 in Arabidopsis . Mutations of OsFKF1 , OsGI , and Hd1 generated through CRISPR-Cas9 in the same genetic background confer late flowering phenotypes. The osfkf1 mutations suppress the expression of Ehd1 , Hd1 , and Ehd2 , while activating Ghd7 and Ehd3 , which further reduces the expression of florigen genes Hd3a and RFT1 , leading to delayed flowering time. Mutations of OsFKF1 also affect the agronomic traits and enhance grain yield. These findings reveal the molecular mechanisms of OsFKF1 on regulating flowering time and provide valuable germplasm resources for rice breeding to improve growth period.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "CRISPR"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "F-box蛋白OsFKF1調控水稻花期新機制 為育種提供重要遺傳資源",
+      "summaryZh": "水稻花期調控對產量、品質及環境適應性至關重要。本研究發現F-box蛋白OsFKF1能與OsGI和Hd1發生蛋白質互作，並透過泛素-26S蛋白酶體途徑降解OsGI，首次揭示了OsFKF1在水田中調控花期的分子機制。CRISPR-Cas9技術敲除OsFKF1、OsGI及Hd1基因均導致晚花表型，並影響多個花期調控基因的表現，包括下調Ehd1、Hd1、Ehd2及花期基因Hd3a和RFT1，同時上調Ghd7和Ehd3。此外，OsFKF1突變體展現優異的農藝性狀並提高穀物產量，為水稻育種提供寶貴的遺傳資源與分子育種標的。",
+      "topicTags": [
+        "plant-biology",
+        "rice",
+        "flowering-time",
+        "protein-degradation",
+        "molecular-breeding"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 83,
+      "passedByScope": 6,
+      "llmClassified": 76,
+      "llmYes": 42,
+      "llmNotSure": 1,
+      "llmNo": 33,
+      "keywordFallbackClassified": 1,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 1,
+      "included": 49,
+      "excluded": 34
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 26,
+      "llmTagged": 17,
+      "fallback": 9
+    },
+    "selection": {
+      "total": 26,
+      "candidates": 25,
+      "featured": 12,
+      "overflow": 13,
+      "lineA": 4,
+      "lineB": 17,
+      "preprint": 4,
+      "skip": 1
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 13,
+      "llmTranslated": 5,
+      "failed": 8
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10614-4",
+        "title": "Emergent decadal predictability in Antarctic contribution to sea-level rise",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10614-4",
+        "doi": "10.1038/s41586-026-10614-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10586-5",
+        "title": "A distant brown dwarf coplanar to a warm Jupiter and a hot super-Earth",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10586-5",
+        "doi": "10.1038/s41586-026-10586-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10638-w",
+        "title": "Probing picometre-scale interlayer deformations via hyperbolic polaritons",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10638-w",
+        "doi": "10.1038/s41586-026-10638-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10673-7",
+        "title": "Optical fibre gripper for high-performance 3D micromanipulation",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10673-7",
+        "doi": "10.1038/s41586-026-10673-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10617-1",
+        "title": "A prototype differential atom interferometer for fundamental physics",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10617-1",
+        "doi": "10.1038/s41586-026-10617-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10676-4",
+        "title": "A 98-qubit trapped-ion quantum computer with all-to-all connectivity",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10676-4",
+        "doi": "10.1038/s41586-026-10676-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-025-09553-3",
+        "title": "Fast formation to reinforce lithium-rich cathodes",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-025-09553-3",
+        "doi": "10.1038/s41586-025-09553-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-025-09473-2",
+        "title": "Revealing competitive interfacial reactions in high-energy Li–S batteries",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-025-09473-2",
+        "doi": "10.1038/s41586-025-09473-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10664-8",
+        "title": "Rock weathering can counteract river CO2 emissions induced by permafrost thaw",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10664-8",
+        "doi": "10.1038/s41586-026-10664-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10635-z",
+        "title": "Optical metasurfaces for general vision processing on the edge",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10635-z",
+        "doi": "10.1038/s41586-026-10635-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10654-w",
+        "title": "Visualizing the impact of quenched disorder on 2D electron Wigner solids",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10654-w",
+        "doi": "10.1038/s41586-026-10654-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10666-6",
+        "title": "Cucurbituril-based anion-conducting membranes with supramolecular nanopores",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10666-6",
+        "doi": "10.1038/s41586-026-10666-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01938-2",
+        "title": "Oceans in Asia smash heat records — what it means for extreme weather",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01938-2",
+        "doi": "10.1038/d41586-026-01938-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01702-6",
+        "title": "Reconfigurable quantum computer juggles 98 qubits",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01702-6",
+        "doi": "10.1038/d41586-026-01702-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01891-0",
+        "title": "Reimagining machine vision with optical computing",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01891-0",
+        "doi": "10.1038/d41586-026-01891-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01882-1",
+        "title": "The EU needs to back its ambition to end animal testing with cash",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01882-1",
+        "doi": "10.1038/d41586-026-01882-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01903-z",
+        "title": "Should nicotine be regulated like a narcotic? A Pacific nation makes the case",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01903-z",
+        "doi": "10.1038/d41586-026-01903-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01703-5",
+        "title": "Light-controlled microgripper punches above its weight",
+        "journal": "Nature",
+        "publishedDate": "2026-06-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01703-5",
+        "doi": "10.1038/d41586-026-01703-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeh0739",
+        "title": "Broadening participation: 20-year outcomes from undergraduate science training programs",
+        "journal": "Science Advances",
+        "publishedDate": "2026-06-17T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeh0739?af=R",
+        "doi": "10.1126/sciadv.aeh0739",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aea1277",
+        "title": "Heatwaves enable wildfire activity in the western United States",
+        "journal": "Science Advances",
+        "publishedDate": "2026-06-17T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea1277?af=R",
+        "doi": "10.1126/sciadv.aea1277",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aec2861",
+        "title": "Electric field–induced ferromagnetic domain change by ferroelectric topological domain switching in Co-substituted BiFeO3 nanodots",
+        "journal": "Science Advances",
+        "publishedDate": "2026-06-17T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec2861?af=R",
+        "doi": "10.1126/sciadv.aec2861",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aec7965",
+        "title": "Scalable multiplexed machine learning gas sensor chips for food classification",
+        "journal": "Science Advances",
+        "publishedDate": "2026-06-17T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec7965?af=R",
+        "doi": "10.1126/sciadv.aec7965",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed0418",
+        "title": "Direct all-electrical decoding of vector vortex beams on chip",
+        "journal": "Science Advances",
+        "publishedDate": "2026-06-17T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed0418?af=R",
+        "doi": "10.1126/sciadv.aed0418",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed1856",
+        "title": "Superefficient optical frequency division referenced to μHz Schawlow-Townes-linewidth quantum noise–limited lasers",
+        "journal": "Science Advances",
+        "publishedDate": "2026-06-17T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed1856?af=R",
+        "doi": "10.1126/sciadv.aed1856",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed5675",
+        "title": "A stage-based framework for closed-loop recycling of polymeric composite membranes",
+        "journal": "Science Advances",
+        "publishedDate": "2026-06-17T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed5675?af=R",
+        "doi": "10.1126/sciadv.aed5675",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed9124",
+        "title": "Conversion of all polyester units to amines: Ruthenium-catalyzed, acid-assisted hydrogenative amination",
+        "journal": "Science Advances",
+        "publishedDate": "2026-06-17T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed9124?af=R",
+        "doi": "10.1126/sciadv.aed9124",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee5238",
+        "title": "Determination of stable carbon isotope ratios for molecules in natural organic matter using ESI FT-ICR MS",
+        "journal": "Science Advances",
+        "publishedDate": "2026-06-17T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee5238?af=R",
+        "doi": "10.1126/sciadv.aee5238",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aef3610",
+        "title": "Transforming global water cycle observations via synergistic AI and remote sensing",
+        "journal": "Science Advances",
+        "publishedDate": "2026-06-17T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef3610?af=R",
+        "doi": "10.1126/sciadv.aef3610",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aef4765",
+        "title": "Metaceramic enables ultrahigh-temperature record rectification and programmable 3D thermal control",
+        "journal": "Science Advances",
+        "publishedDate": "2026-06-17T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef4765?af=R",
+        "doi": "10.1126/sciadv.aef4765",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aef7659",
+        "title": "Doppler-encoded Mie scattering rainbow of flying particles",
+        "journal": "Science Advances",
+        "publishedDate": "2026-06-17T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef7659?af=R",
+        "doi": "10.1126/sciadv.aef7659",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aec7638",
+        "title": "Non-Hermitian dynamics in quantum anomalous Hall insulators",
+        "journal": "Science Advances",
+        "publishedDate": "2026-06-17T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec7638?af=R",
+        "doi": "10.1126/sciadv.aec7638",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aef8585",
+        "title": "Probing and controlling coherent and incoherent dynamics of phase transitions via multipulse excitation",
+        "journal": "Science Advances",
+        "publishedDate": "2026-06-17T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef8585?af=R",
+        "doi": "10.1126/sciadv.aef8585",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeg7124",
+        "title": "Rule-breaking in chemical synthesis",
+        "journal": "Science Advances",
+        "publishedDate": "2026-06-17T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg7124?af=R",
+        "doi": "10.1126/sciadv.aeg7124",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeb0766",
+        "title": "Plasticity in brittle intermetallics enabled by framework of amorphous interfaces and preexisting dislocations",
+        "journal": "Science Advances",
+        "publishedDate": "2026-06-17T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb0766?af=R",
+        "doi": "10.1126/sciadv.aeb0766",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    }
+  ]
+}
