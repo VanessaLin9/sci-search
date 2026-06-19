@@ -1,0 +1,576 @@
+{
+  "reportDate": "2026-06-18",
+  "generatedAt": "2026-06-19T11:41:31.186Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03129-3",
+      "title": "SmartTrap: automated precision experiments with optical tweezers",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-06-18T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03129-3",
+      "doi": "10.1038/s41592-026-03129-3",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "SmartTrap：光鑷自動化精密實驗新工具",
+      "summaryZh": "光鑷技術能以高度精確的方式操控奈米級顆粒並測量微小力量，廣泛應用於生物分子力學研究。本研究開發的 SmartTrap 系統透過智慧化演算法與自動化控制，大幅提升了光鑷實驗的精確度與操作效率。此技術突破傳統光鑷實驗耗時費力的限制，使研究人員能更快速、穩定地進行分子層級的力學測量。SmartTrap 的問世為單分子研究與生物物理學領域提供了更強大的實驗工具。",
+      "topicTags": [
+        "optical-tweezers",
+        "single-molecule",
+        "biophysics",
+        "automation",
+        "force-measurement"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02546-y",
+      "title": "Why regulatory T cells fail to control inflammation in rheumatoid arthritis",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-18T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02546-y",
+      "doi": "10.1038/s41590-026-02546-y",
+      "abstract": "Regulatory T cells are responsible for suppressing inflammation, yet they fail to do so in rheumatoid arthritis. We show that signals in the local tissue environment can drive these cells into either protective or dysfunctional states.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "為何調節型T細胞無法控制類風濕性關節炎的發炎反應",
+      "summaryZh": "調節型T細胞通常負責抑制體內的發炎反應，但在類風濕性關節炎患者體內卻失去功能。本研究揭示，組織微環境中的訊號會決定調節型T細胞的命運，使其走向保護性或功能失調的狀態。這項發現顛覆了過去認為調節型T細胞功能缺陷是細胞本身問題的觀點，為類風濕性關節炎的治療開闢了新的研究方向。",
+      "topicTags": [
+        "regulatory-t-cells",
+        "rheumatoid-arthritis",
+        "inflammation",
+        "autoimmunity",
+        "tissue-microenvironment"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003865",
+      "title": "The microglia-derived protein sema4ab attenuates regenerative neurogenesis after spinal cord injury in zebrafish",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-18T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003865",
+      "doi": "10.1371/journal.pbio.3003865",
+      "abstract": "Zebrafish, in contrast to mammals, regenerate neurons after spinal cord injury, but little is known about the control mechanisms of this process. Here we use scRNA-seq and in vivo experiments to show that sema4ab , mainly expressed by lesion-reactive microglia, attenuates regenerative neurogenesis by changing the complex lesion environment. After spinal injury, disruption of sema4ab doubles the number of newly generated progenitor cells and neurons but attenuates axon regrowth and recovery of swimming function. Disruption of the plxnb1a/b receptors, selectively expressed by neural progenitor cells, increases regenerative neurogenesis. In addition, disruption of sema4ab alters activation state and cytokine expression of microglia, such that fibroblasts increase expression of the cytokine tgfb3 , which strongly promotes regenerative neurogenesis. Hence, we propose that sema4ab expression in microglia attenuates regenerative neurogenesis in multiple ways, likely directly through plxnb1a/b receptors and indirectly, by controlling the inflammatory milieu and tgfb3 levels . Targeting Sema4A-dependent signaling in non-regenerating vertebrates may be a future strategy to improve regenerative outcomes.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "scRNA-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "斑馬魚研究揭示小膠質細胞蛋白Sema4ab抑制脊髓損傷後的神經再生",
+      "summaryZh": "哺乳動物無法在脊髓損傷後再生神經元，但斑馬魚卻具有這種能力。本研究利用單細胞RNA定序與活體實驗發現，小膠質細胞表達的sema4ab蛋白會抑制損傷後的神經再生。敲降sema4ab可使新生成的祖細胞和神經元數量增加一倍，但會削弱軸突再生和游泳功能的恢復。進一步分析顯示，sema4ab透過直接作用於神經前驅細胞上的plxnb1a/b受體，以及間接調控小膠質細胞的發炎環境與纖維母細胞的tgfb3細胞激素表現，來抑制神經再生。此研究結果為改善非再生物種脊髓損傷後的神經修復提供了新的治療策略。",
+      "topicTags": [
+        "spinal-cord-injury",
+        "regenerative-neurogenesis",
+        "microglia",
+        "zebrafish",
+        "scRNA-seq"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003861",
+      "title": "Learning engages transient and sustained cellular mechanisms in the human brain",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-18T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003861",
+      "doi": "10.1371/journal.pbio.3003861",
+      "abstract": "Structural neuroplasticity supports learning, development, and shapes vulnerability to brain disorders, making it a central priority in neuroscience research. However, progress in humans has remained limited by the inability to probe cellular processes in vivo, leaving mechanistic insight largely dependent on animal models. To address this gap, here we combined the sub-voxel sensitivity of ultra–high-gradient diffusion MRI with the cell-compartment specificity of the Soma and Neurite Density Imaging (SANDI) model to probe structural plasticity directly in the living human brain. By tracking how learning modulates the temporal dynamics of cell bodies and cell processes, we aimed to distinguish plastic from nonplastic biological processes driving changes in microstructure. We found that learning a motor skill triggered two distinct temporal responses: a transient expansion of cell bodies across all brain regions engaged by the task, consistent with a short-lived homeostatic mechanism, and a sustained increase in cell-process density restricted to key motor regions, consistent with structural plasticity. Our approach provides a mechanistic window into human neuroplasticity and marks a significant step toward bridging the gap between animal and human neuroscience.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "neuroscience",
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "學習同時啟動人類大腦短暫與持續的細胞機制",
+      "summaryZh": "結構神經可塑性支撐著學習與發育，並影響腦部疾病的易感性，然而在人類研究中，科學家長期受限於無法直接在活體內探測細胞過程。本研究結合超高梯度擴散磁振造影與SANDI模型，成功在活體人類大腦中區分細胞本體與神經突觸的微結構變化。研究發現，運動技能學習觸發兩種截然不同的時間動態：全腦任務相關區域出現細胞本體的短暫膨脹（符合短期穩態機制），而關鍵運動區域則呈現神經突觸密度的持續增加（符合結構可塑性）。此研究為人類神經可塑性研究開創了嶄新的機械性視角，顯著拉近了動物與人類神經科學之間的鴻溝。",
+      "topicTags": [
+        "neuroplasticity",
+        "diffusion-mri",
+        "motor-learning",
+        "human-neuroscience",
+        "structural-plasticity"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003860",
+      "title": "Argonaute 2 drives resistance to immune checkpoint inhibitors in immunorefractory non-small cell lung cancer",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-18T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003860",
+      "doi": "10.1371/journal.pbio.3003860",
+      "abstract": "One of the first-line treatments for advanced non-small cell lung cancer (NSCLC) are immune checkpoint inhibitors (ICI), which activate the antitumor immune response. Despite their success, ICI remain ineffective in many patients, highlighting the need for strategies to overcome resistance. Most efforts have focused on promoting immune cell infiltration into refractory tumors to improve ICI efficacy. In this work, we mobilize this approach by focusing on Argonaute 2 (Ago2), a pivotal member of the RNA interference pathway. Using two murine models of immunorefractory NSCLC, we demonstrate that tumoral Ago2 suppresses interferon signaling, leading to poor immunogenicity and failure of ICI therapy. Genetic deletion of Ago2 in cancer cells restores interferon signaling and supports immune infiltration of the tumor. Consequently, whereas wild-type tumors are resistant to ICI, tumors devoid of Ago2 become sensitive to treatment. In NSCLC patients treated with ICI, high Ago2 expression and a low interferon signature in tumors correlates with reduced survival. Ago2 is thus a driver of the immunorefractory phenotype observed in NSCLC and may represent a therapeutic target when aiming to sensitize patients to ICI.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Ago2蛋白質成為非小細胞肺癌免疫檢查點抑制劑耐藥性的關鍵驅動因子",
+      "summaryZh": "本研究揭示了核糖核酸內切酶Ago2是非小細胞肺癌（NSCLC）患者對免疫檢查點抑制劑（ICI）產生耐藥性的關鍵驅動因子。研究團隊利用兩種免疫難治性NSCLC小鼠模型證實，腫瘤細胞中的Ago2會抑制干擾素訊號傳導，導致腫瘤免疫原性降低並造成ICI治療失敗。透過基因編輯刪除癌細胞中的Ago2，可恢復干擾素訊號並促進免疫細胞浸潤腫瘤，使原本對ICI具抗性的腫瘤轉變為敏感狀態。臨床資料顯示，接受ICI治療的NSCLC患者若腫瘤中Ago2表現量高且干擾素特徵低，則整體存活率顯著下降。Ago2因此成為克服ICI耐藥性的重要治療標的。",
+      "topicTags": [
+        "non-small-cell-lung-cancer",
+        "immune-checkpoint-inhibitors",
+        "argonaute-2",
+        "interferon-signaling",
+        "cancer-immunotherapy"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003821",
+      "title": "Adiponectin exerts sex-dependent effects on lipid, amino acid, and glucose metabolism during caloric restriction",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-18T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003821",
+      "doi": "10.1371/journal.pbio.3003821",
+      "abstract": "Adiponectin is the most abundant hormone in the circulation. Plasma adiponectin decreases in obesity but increases in leanness, including during caloric restriction (CR) in animals and humans. In obesity, adiponectin deficiency promotes cardiometabolic dysfunction. In contrast, the roles of adiponectin in CR, when it is at its highest, are largely unknown. To address this, we studied global adiponectin knockout (KO) in male and female mice fed either ad libitum (AL) or a 30% CR diet from 9–13 weeks of age. We show that adiponectin KO did not alter CR effects on body mass, body composition, or energy expenditure. However, KO unexpectedly decreased blood glucose levels during CR, both with fasting and following an oral glucose challenge. This is opposite to the effects of adiponectin deficiency during AL feeding or obesity and occurred without changes in insulin concentrations or sensitivity. Moreover, adiponectin KO augmented CR-induced increases in plasma fatty acids in both sexes and, in males only, impaired systemic triglyceride clearance on both AL and CR diets. These effects on lipid metabolism were associated with sex- and diet-specific KO effects on white adipose tissue, including altered adipocyte size and expression of key regulators of adipocyte lipid metabolism. Indirect calorimetry further revealed that adiponectin KO alters the shifts between carbohydrate and lipid utilization that occur during transitions between fed and fasted states. To determine potential molecular mechanisms, we investigated effects of adiponectin KO on the liver, a major adiponectin target that plays key roles entraining metabolism to nutritional state. Hepatic transcriptomics revealed that, in both sexes, adiponectin KO upregulates sterol and fatty acid synthesis genes under AL while increasing amino acid catabolic genes during CR. However, the latter occurred without altering plasma or hepatic amino acid concentrations. Together, our findings suggest that adiponectin exerts sexually dimorphic effects on glucose, lipid, and amino acid metabolism during CR, in whole or in part through effects on the liver. Thus, the roles adiponectin in CR differ markedly from its widely reported functions in obesity, insulin resistance, and other pathological states.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "脂肪激素在熱量限制期間對脂類、胺基酸和葡萄糖代謝具有性別依賴性影響",
+      "summaryZh": "這是第一項系統性研究脂肪激素在熱量限制期間生理角色的研究，填補了該領域的重要空白。研究發現脂肪激素基因剔除在熱量限制期間反而降低血糖，與肥胖或正常飲食下的效果相反，揭示了脂肪激素在不同營養狀態下的矛盾功能。脂肪激素剔除會增強熱量限制誘導的血漿游離脂肪酸增加，並在雄性小鼠中損害三酸甘油酯清除，顯示性別特異性的代謝調控差異。肝臟轉錄體分析進一步顯示脂肪激素在不同營養狀態下調節 sterol 和脂肪酸合成以及胺基酸分解代謝的基因表現。這些發現對於理解熱量限制的健康效益機制，以及開發針對代謝疾病的性別特異性治療策略具有重要意義。",
+      "topicTags": [
+        "adiponectin",
+        "caloric-restriction",
+        "metabolism",
+        "sex-differences",
+        "mouse-model"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003819",
+      "title": "Levels of additive genetic variation vary substantially between species",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-18T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003819",
+      "doi": "10.1371/journal.pbio.3003819",
+      "abstract": "A population’s ability to adapt is determined by its levels of additive genetic variance ( V A ), and while it is agreed that most organisms have genetic variation for most traits, the extent to which it varies between species is poorly characterized. Here, we investigate this question by compiling 3,209 and 1,852 estimates of heritability and evolvability (the additive genetic variance divided by the square of the mean), respectively, for a variety of traits from 220 and 172 multicellular eukaryotic species. Using phylogenetic generalized linear mixed models, we find substantial and highly significant interspecific variation in evolvability. Much of the variation is explained by phylogenetic relatedness, with plants in our data having substantially higher evolvability than animals. While heritability also varies between species, the differences are more subtle, and plants are not exceptional. We investigate whether the variation in evolvability and heritability between species is due to variation in the mutation rate, effective population size, genome size, ploidy, and recombination rate, but find little evidence of any factor being important. However, the confidence intervals are large suggesting that we have little power to detect any associations between these factors and our estimates of V A .",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "物種間的加性遺傳變異程度差異甚大",
+      "summaryZh": "一個族群的適應能力取決於其加性遺傳變異（VA）的程度，但不同物種間遺傳變異的差異程度尚未被充分描述。本研究彙整了來自220個物種的3,209個遺傳率估計值，以及來自172個物種的1,852個演化能力估計值，涵蓋多種性狀。透過系統發育廣義線性混合模型分析，發現演化能力在物種間存在顯著且高度顯著的差異，其中植物的演化能力遠高於動物。雖然遺傳率在物種間也有差異，但差異較為細微。研究進一步探討突變率、有效族群大小、基因體大小、倍性及重組率是否能解釋這些變異，但證據顯示這些因素皆非主要影響因子。",
+      "topicTags": [
+        "evolutionary-biology",
+        "genetics",
+        "heritability",
+        "phylogenetics",
+        "adaptation"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.14.732207",
+      "title": "Hi-C data from the filamentous fungus Podospora anserina and associated 3D models to visualize the spatial organization of its chromosomes",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-18",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.14.732207v1",
+      "doi": "10.64898/2026.06.14.732207",
+      "abstract": "Objectives: Model species are essential for fundamental research in biology. While a complete genomic sequence is a prerequisite for genetic studies, it is not enough on its own. Understanding the three-dimensional organization of the genome is also important, allowing researchers to gain a more realistic understanding of the mechanisms governing genome function. In the fungal model Podospora anserina, although the genomic sequence has been established for a long time, the three-dimensionalorganization remained unknown. Here we obtained the first Hi-C datasets and present associated 3D models, providing the research community with a valuable resource for better multi-omics data integration. Data description: Hi-C experiments were performed in duplicate, using nuclei purified from wild-type fungal mycelium. Four FASTQ files were obtained (two per replicate) and used as inputs for the 3DGB workflow with four different output resolutions, to observe the genome organization of P. anserina at different levels of detail (50 kb, 20 kb, 10 kb, and 5 kb). In a context where researchers already have, for this species, a large amount of traditional omics data (ChIP-seq, RNA-seq, etc.), these 3D models are helpful for complementing the linear representation of the genome, which is traditionally used in bioinformatic analyses.",
+      "authors": [
+        "Royer, G.",
+        "Gualdoni, A.",
+        "Poulain, P.",
+        "Dumetz, F.",
+        "Ponts, N.",
+        "Grognet, P.",
+        "Malagnac, F.",
+        "Lelandais, G."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics",
+        "biology",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "絲狀真菌Podospora anserina的Hi-C資料與3D模型：解析染色體空間組織結構",
+      "summaryZh": "Podospora anserina是重要的真菌模式生物，但過去缺乏其染色體三維結構的資訊。本研究首次發表該物種的Hi-C資料，並建立不同解析度（5 kb至50 kb）的染色體3D模型。這些三維結構資料可與現有的ChIP-seq、RNA-seq等傳統基因體學資料整合，提供更完整的基因體功能詮釋。此資源將有助於研究人員深入了解真菌染色體的空間組織調控機制，並促進多體學資料的綜合分析。",
+      "topicTags": [
+        "hi-c",
+        "chromosome-conformation",
+        "fungal-genomics",
+        "3d-genome",
+        "podospora-anserina"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.16.732760",
+      "title": "Deciphering shared and divergent tissue architectures from cross-species spatial transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-18",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.16.732760v1",
+      "doi": "10.64898/2026.06.16.732760",
+      "abstract": "The integration of spatial transcriptomics (ST) data across species is essential for cross-species and translational studies, but remains challenging due to molecular divergence and anatomical differences between organisms. We present STACAME, a graph attention autoencoder-based framework to decipher shared and divergent tissue architectures from cross-species ST data by explicitly modeling both orthologous and species-specific genes. STACAME aligns ST slices in a spatially aware manner, identifies homologous and species-specific domains, and enables a suite of downstream comparative analyses. We demonstrate its utility by integrating ST datasets from diverse tissues, including hippocampus, isocortex, embryo, breast, liver, and cerebellum, across multiple species such as human, macaque, marmoset, mouse, and zebrafish. STACAME supports cross-species spatial domain alignment, the detection of shared and divergent spatially variable genes, development alignment and comparison, and the 3D integration of tissue architecture. This flexible approach facilitates the translation of findings from model organisms to humans, providing a unified computational platform for cross-species spatial transcriptomics.",
+      "authors": [
+        "Zhang, B.",
+        "Zhou, X.",
+        "Zhang, S.",
+        "Zhang, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "跨物種空間轉錄體學：解碼組織架構的共同性與差異性",
+      "summaryZh": "空間轉錄體學技術的快速發展為理解組織微環境提供了前所未有的視角，但跨物種間的整合分析仍面臨分子分歧與解剖結構差異的挑戰。本研究開發的 STACAME 框架，運用圖注意力自編碼器同時建模直系同源基因與物種特異性基因，實現空間感知導向的跨物種切片對齊。研究團隊成功整合來自人類、獼猴、絨猴、小鼠與斑馬魚等多物種的海馬體、皮層、胚胎、乳腺、肝臟及小腦等組織資料，展現了跨物種空間域對齊、差異化空間變異基因偵測、發育軌跡比對與三維組織架構整合等多元分析能力。此方法為從模式生物到人類研究的轉譯醫學提供了統一的計算平台。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "cross-species-analysis",
+        "graph-autoencoder",
+        "comparative-biology",
+        "translational-research"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.15.731445",
+      "title": "Benchmarking gene expression reconstruction from single-cell latent representations",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-18",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.15.731445v1",
+      "doi": "10.64898/2026.06.15.731445",
+      "abstract": "Single-cell transcriptomics is typically modeled in low-dimensional latent representations that improve the signal-to-noise ratio of the data. Such representations underpin data integration, cell state discovery, and perturbation prediction, with applications ranging from large-scale organ atlases to latent trajectory modeling. Recent virtual cell approaches further leverage these representations to predict cellular responses as distributional shifts in latent space. Each of these applications ultimately requires faithful gene expression reconstruction from latent spaces for biological interpretation, enabling gene-level analysis of predicted perturbed or batch-corrected cells. Yet representation choice is typically treated as an implementation detail rather than a primary modeling decision, with no systematic evaluation of how well latent representations support gene expression reconstruction. Here, we introduce ReconEval, a benchmark for evaluating gene expression reconstruction from single-cell latent spaces. We benchmark two classes of latent representations: end-to-end trained models such as PCA, autoencoders, and variational autoencoders, and pretrained single-cell foundation model embeddings coupled to newly trained decoders. Reconstruction is evaluated both directly and after latent-space perturbation prediction. Across perturbational and observational datasets totaling over 100 million cells, our metric suite quantifies statistical fidelity; biological signal preservation, including differential expression, coexpression, cell-cycle structure, cytokine response and pathway activity; and perturbation-specific effects. We find that autoencoders achieve the strongest stand-alone reconstruction at low dimensionality, while variational regularization does not improve generalization in reconstruction. Frozen foundation model embeddings retain recoverable gene-level information, with reconstruction quality depending strongly on decoder architecture and pretraining objective. In latent perturbation modeling, high-dimensional PCA matches foundation model embeddings, while low-dimensional AE embeddings are optimal for flow-based generative models. Overall, reconstruction depends critically on the interplay between representation and downstream model, and simpler representations can outperform complex alternatives given appropriate capacity. Our benchmark establishes reconstruction as a critical evaluation axis for single-cell foundation models. We envision it improving the biological interpretability of latent-space modeling, a prerequisite for future virtual cell models to be validated by domain experts and grounded in biology.",
+      "authors": [
+        "Fu, X.",
+        "Klein, D.",
+        "Antipov, E.",
+        "Palma, A.",
+        "Tejada-Lapuerta, A.",
+        "Bahrami, M.",
+        "Kummerle, L. B.",
+        "Lubetzki, M.",
+        "Casale, F. P.",
+        "Luecken, M. D.",
+        "Theis, F. J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞潛在表徵的基因表現重建基準評估",
+      "summaryZh": "單細胞轉錄體學廣泛使用低維潛在表徵來提升數據品質，但這些表徵能否忠實重建基因表現的系統性評估仍屬空白。本研究推出ReconEval基準測試，橫跨超過一億細胞的擾動與觀測數據集，從統計保真度、生物信號保留及擾動效應等多維度量化重建品質。研究發現自編碼器在低維度下達到最佳獨立重建效果，而變分正則化並未如預期改善重建泛化能力；凍結的基礎模型嵌入則保留可恢復的基因層級資訊，其品質高度取決於解碼器架構與預訓練策略。此基準框架為單細胞研究的表徵選擇提供客觀依據，有助優化從數據整合到擾動預測的各項應用。",
+      "topicTags": [
+        "single-cell",
+        "gene-expression",
+        "benchmarking",
+        "representation-learning",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.64898/2025.12.18.694987",
+      "title": "Global StationaryOT: Trajectory inference for aging time courses of single-cell snapshots",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-18",
+      "url": "https://www.biorxiv.org/content/10.64898/2025.12.18.694987v2",
+      "doi": "10.64898/2025.12.18.694987",
+      "abstract": "Trajectory inference (TI) methods for single-cell snapshots of developmental systems have yielded numerous insights into the gene regulatory networks (GRNs) that control cell differentiation. Many TI algorithms have been proposed for recovering cell trajectories from single samples containing cells spanning a spectrum of differentiation states; however, these methods cannot leverage temporal information when a time course of such diverse samples is available. As interest grows in understanding how the regulation of GRNs changes as an organism ages, current TI theory and methods must be adapted to take advantage of all information in aging time courses of single-cell data. In this paper, we present our novel age-conscious method, global StationaryOT, which exploits the temporal information in aging time courses to simultaneously reconstruct debiased cell trajectories at all ages. We demonstrate that this first-of-its-kind method achieves more accurate, biologically consistent trajectories in synthetic and real biological contexts where data sparsity produces significant noise in the outputs of current TI methods when they are applied to time course samples independently.",
+      "authors": [
+        "Boyle, C.",
+        "Ventre, E.",
+        "Schiebinger, G."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "全域StationaryOT：單細胞快照老化時間序列的軌跡推斷方法",
+      "summaryZh": "單細胞軌跡推斷方法已廣泛用於發育系統研究，但現有方法難以有效利用老化時間序列資料中的時間資訊。隨著學界對基因調控網路在老化過程中如何變化的興趣日益增加，本研究提出嶄新的年齡感知方法「全域StationaryOT」，能夠同時利用老化時間序列中的時間資訊，在所有年齡層重建無偏誤的細胞軌跡。該方法在合成資料與真實生物資料中均展現優異效能，特別是在資料稀疏導致傳統軌跡推斷方法產生顯著雜訊的情境下，能提供更準確且生物學上一致的軌跡重建結果。",
+      "topicTags": [
+        "single-cell",
+        "trajectory-inference",
+        "aging",
+        "gene-regulatory-networks",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.15.732063",
+      "title": "Elucidating the Design Space of Generative Models for Single-Cell Perturbation Prediction",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-18",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.15.732063v1",
+      "doi": "10.64898/2026.06.15.732063",
+      "abstract": "Next-token prediction has produced predictable scaling in language, but the recipe presumes a sequence of tokens with a meaningful order. Single-cell RNA-seq counts have no natural gene ordering, so applying the recipe directly to raw expression fails under an ill-suited left-to-right bias. We instead ask whether a learned latent can supply the structure the recipe needs. We introduce \\texttt{ExpressionVAE} (eVAE), a discrete-latent perturbation model that compresses each cell into a short sequence of discrete codes through a finite-scalar-quantization (FSQ) bottleneck and trains a perturbation-conditioned discrete prior over those codes. On Replogle and Parse~1M, eVAE sets a new state of the art on every distributional metric and leads on most cell-eval perturbation metrics, with Fr\\'echet distance and $\\mathrm{MMD}^2$ roughly $3$ to $20\\times$ lower than the strongest continuous-latent baseline. Swapping the prior between autoregressive and masked discrete diffusion leaves performance near-identical, isolating the gain to the discrete latent itself rather than the prior family. A decoder-head ablation then exposes a single design axis, the richness of the predictive distribution at inference, that splits the standard metrics into two groups, variance-sensitive and mean-sensitive, which move in opposite directions along the axis. Finally, on a held-out CRISPRi reversion benchmark of $1{,}732$ perturbations under inflammatory cytokine stress, the frozen eVAE encoder outperforms UMAP and differential expression and matches scGPT on perturbation ranking at a fraction of the data.",
+      "authors": [
+        "Bhattacharya, S.",
+        "Gensbigler, C.",
+        "Karim, S.",
+        "Lees, J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞干擾預測的生成式模型設計空間探索",
+      "summaryZh": "單細胞RNA-seq資料缺乏自然的基因排序，無法直接套用語言模型的next-token預測方法。本研究提出ExpressionVAE（eVAE），利用有限純量量化瓶頸將每個細胞壓縮成離散編碼，訓練干擾條件化的離散先驗模型，在Replogle和Parse 1M資料集上於所有分布指標達到新SOTA，Fréchet距離和MMD²較最佳連續潛空間基線降低3至20倍。實驗證明離散潛空間本身是效能提升的關鍵，而非先驗模型的選擇；解碼器頭的消融實驗更揭示預測分布豐富度是區分變異敏感與均值敏感指標的單一設計軸線。此方法在CRISPRi逆轉基準測試中超越UMAP和差異表達分析，並以少量資料達到與scGPT相當的干擾排序表現，為單細胞擾動建模提供更強大且高效的生成式框架。",
+      "topicTags": [
+        "single-cell",
+        "generative-models",
+        "perturbation-prediction",
+        "variational-autoencoder",
+        "machine-learning"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.15.732243",
+      "title": "Trajectory inference of epithelial-centered neighborhood profiles reconstructs a pseudo-temporal continuum in idiopathic pulmonary fibrosis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-18",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.15.732243v1",
+      "doi": "10.64898/2026.06.15.732243",
+      "abstract": "Idiopathic pulmonary fibrosis (IPF) is characterized by complex lung architecture and spatially heterogeneous remodeling, which have hindered integrated analysis of cell-intrinsic activity and intercellular communication during disease progression. Here we profiled six IPF lung specimens comprising more than 630,000 cells using the Xenium 5k panel and developed an epithelial-centered neighborhood profiling framework based on the local cellular composition around each epithelial cell. This approach captured fibrosis-associated variation in epithelial niches without requiring predefined histological regions. Pseudo-temporal continuum inference of these profiles reconstructed a continuous axis that reflected the spatial progression of fibrotic remodeling from relatively preserved alveolar regions to fibrotic and airway-like remodeled regions. Within this spatial dataset, we mapped coordinated changes in epithelial states, local microenvironments, epithelial intracellular pathway activities, and directional interactions with neighboring cell types along the same axis. Our findings provide a spatial framework that generates testable hypotheses for progressive epithelial niche remodeling in IPF.",
+      "authors": [
+        "Nakamura, S.",
+        "Tsubouchi, K.",
+        "Yamamoto, Y.",
+        "Takano, T.",
+        "Nakatsuru, K.",
+        "Takenaka, T.",
+        "Hashisako, M.",
+        "Oda, Y.",
+        "Okamoto, I."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "Xenium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "上皮細胞中心鄰域特徵的軌跡推斷重建特發性肺纖維化之擬時間連續性"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 21,
+      "passedByScope": 13,
+      "llmClassified": 8,
+      "llmYes": 2,
+      "llmNotSure": 0,
+      "llmNo": 6,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 15,
+      "excluded": 6
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 13,
+      "llmTagged": 13,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 13,
+      "candidates": 13,
+      "featured": 12,
+      "overflow": 1,
+      "lineA": 0,
+      "lineB": 7,
+      "preprint": 6,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 1,
+      "llmTranslated": 1,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01871-4",
+        "title": "It slices! It dices! Sashimi-Bot handles seafood with ease",
+        "journal": "Nature",
+        "publishedDate": "2026-06-18T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01871-4",
+        "doi": "10.1038/d41586-026-01871-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01947-1",
+        "title": "Is AI ruining our skills? Early results are in — and they’re not good",
+        "journal": "Nature",
+        "publishedDate": "2026-06-18T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01947-1",
+        "doi": "10.1038/d41586-026-01947-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01841-w",
+        "title": "Brexit tore apart European science — now the research rifts are healing",
+        "journal": "Nature",
+        "publishedDate": "2026-06-18T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01841-w",
+        "doi": "10.1038/d41586-026-01841-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/science.adt9347",
+        "title": "Dynamic asymmetric strain imprinted into substrates by an oxide thin film",
+        "journal": "Science",
+        "publishedDate": "2026-06-18T05:59:05.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/science.adt9347?af=R",
+        "doi": "10.1126/science.adt9347",
+        "sourceId": "science"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/science.aef5355",
+        "title": "Indium-free perovskite/silicon tandem solar cells with tin oxide recombination layer and electrodes",
+        "journal": "Science",
+        "publishedDate": "2026-06-18T05:59:05.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/science.aef5355?af=R",
+        "doi": "10.1126/science.aef5355",
+        "sourceId": "science"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/science.aeg8744",
+        "title": "EU Omnibus proposal increases pesticide risks",
+        "journal": "Science",
+        "publishedDate": "2026-06-18T05:59:05.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/science.aeg8744?af=R",
+        "doi": "10.1126/science.aeg8744",
+        "sourceId": "science"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
