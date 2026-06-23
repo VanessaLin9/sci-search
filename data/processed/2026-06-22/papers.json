@@ -1,0 +1,762 @@
+{
+  "reportDate": "2026-06-22",
+  "generatedAt": "2026-06-23T11:17:46.258Z",
+  "papers": [
+    {
+      "id": "10.1038/s41588-026-02618-7",
+      "title": "Non-coding variant prioritization based on cell type, developmental stage and evolutionary constraint",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-06-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02618-7",
+      "doi": "10.1038/s41588-026-02618-7",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development",
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "非編碼變異的細胞型別、發育階段與演化約束優先排序",
+      "summaryZh": "非編碼區域占據了人類基因組超過98%，但大多數疾病相關變異位於此區域，使其功能解讀極具挑戰。本研究提出一個整合細胞型別、發育階段與演化約束的框架，能更精確地篩選可能致病的非編碼變異。此方法有助於解決全基因組關聯分析（GWAS）中常見的候選變異過多問題，加速疾病機制的解析。透過結合多維度功能證據，研究者能更有效率地從海量基因組數據中揪出真正的致病元兇，對精準醫療與基因診斷具有重要應用價值。",
+      "topicTags": [
+        "non-coding-variants",
+        "variant-prioritization",
+        "evolutionary-constraint",
+        "developmental-biology",
+        "genomics"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02642-7",
+      "title": "Longitudinal changes in DNA methylation in IDH-mutant glioma fuel disease progression through altered cell state differentiation",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-06-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02642-7",
+      "doi": "10.1038/s41588-026-02642-7",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "IDH突變型膠質瘤DNA甲基化的縱向變化：透過改變細胞狀態分化推動疾病進展",
+      "summaryZh": "這項研究追蹤IDH突變型膠質瘤患者腫瘤組織中DNA甲基化的縱向變化，發現甲基化模式會隨著疾病進展而持續演變。研究揭示這些甲基化改變會影響腫瘤細胞的分化狀態，使細胞偏向更具侵襲性的表型，進而推動疾病惡化。這項發現為理解膠質瘤的進展機制提供了新見解，並可能為未來開發針對表觀遺傳調控的治療策略奠定基礎。",
+      "topicTags": [
+        "glioma",
+        "dna-methylation",
+        "idh-mutation",
+        "cancer-progression",
+        "epigenetics"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02646-3",
+      "title": "Co-expression-based models improve eQTL predictions for transcriptome-wide association studies and highlight new schizophrenia-associated genes",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-06-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02646-3",
+      "doi": "10.1038/s41588-026-02646-3",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "共表達模型提升eQTL預測 揪出思覺失調症新候選基因",
+      "summaryZh": "expression quantitative trait loci（eQTL）研究在解析基因表現與疾病關聯中扮演關鍵角色，但傳統eQTL模型預測能力有限。本研究提出結合基因共表達資訊的模型，顯著提升eQTL的預測準確度，進而改善了轉錄組全關聯研究（TWAS）的效果，並成功識別出多個與思覺失調症相關的新候選基因。這些發現為理解思覺失調症的遺傳機制提供新線索，並有助於開發新的治療策略。",
+      "topicTags": [
+        "eqtl",
+        "transcriptome-wide-association-study",
+        "schizophrenia",
+        "gene-expression",
+        "psychiatric-genetics"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03209-x",
+      "title": "Affordable centimeter-scale 3D microscopy with submicrometer resolution",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-06-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03209-x",
+      "doi": "10.1038/s41587-026-03209-x",
+      "abstract": "Submicrometer-resolution three-dimensional (3D) imaging of large samples has been constrained by the short working distance, high cost and inflexible design of immersion objectives. We developed hybrid solid–liquid optics (HySIL) — a refractive framework with index-matched components — for submicrometer-resolution 3D imaging of centimeter-scale samples in various immersion media using inexpensive air objectives.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41556-026-01977-x",
+      "title": "Rewiring dormancy",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-06-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-01977-x",
+      "doi": "10.1038/s41556-026-01977-x",
+      "abstract": "Metastatic relapse can occur long after dissemination, suggesting that dormant tumour cells retain the capacity to eventually ‘reawaken’. A study now shows that loss of MED4 reshapes enhancers, creating a primed, plastic state that enables desmoplastic niche formation and sensing, ultimately facilitating metastatic outgrowth.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "重新佈線休眠：MED4缺失如何喚醒轉移性腫瘤細胞",
+      "summaryZh": "癌症復發常在腫瘤細胞散佈後很長時間才發生，這表明休眠的腫瘤細胞仍保留著最終「甦醒」的能力。此研究發現MED4的缺失會重塑增強子，創造出一種處於準備狀態且具有高度可塑性的細胞狀態。這種狀態使癌細胞能夠形成並感知促纖維化微環境，最終促進轉移性腫瘤的生長。此發現為理解腫瘤復發的分子機制提供了重要見解，並可能為預防癌症轉移提供新的治療策略。",
+      "topicTags": [
+        "metastasis",
+        "tumor-dormancy",
+        "epigenetics",
+        "cancer-biology",
+        "cell-plasticity"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-01984-y",
+      "title": "Mediator subunit MED4 enforces metastatic dormancy in breast cancer",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-06-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-01984-y",
+      "doi": "10.1038/s41556-026-01984-y",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "中介體亞基 MED4 維持乳腺癌轉移休眠",
+      "summaryZh": "本研究發現，中介體複合體的亞基 MED4 是維持乳腺癌轉移休眠的關鍵調控因子。MED4 透過強制休眠來抑制散播性腫瘤細胞的增殖，表明存在一個控制轉移進程的新機制。研究結果揭示了中介體複合體在轉移中的前所未聞的角色，拓寬了我們對癌症轉錄調控的認識。針對 MED4 或其下游路徑的治療策略可能有助於將轉移細胞維持在休眠狀態，從而改善患者預後。",
+      "topicTags": [
+        "breast-cancer",
+        "metastatic-dormancy",
+        "mediator-complex",
+        "cancer-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02559-7",
+      "title": "Costimulation drives CAR-T cell division fate",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02559-7",
+      "doi": "10.1038/s41590-026-02559-7",
+      "abstract": "Asymmetric cell division can result in functionally distinct CAR-T cells. Data now indicate that this asymmetry is an early ‘program selector’ that can explain why 4-1BBζ CAR-T cells preferentially generate durable memory progeny whereas CD28ζ CAR-T cells skew toward short-lived effector fates.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "共刺激調控CAR-T細胞分裂命運",
+      "summaryZh": "研究發現CAR-T細胞在分裂時會出現不對稱分配，導致子細胞功能分化。這種早期「程序選擇器」決定了細胞的命運走向，解釋了4-1BBζ CAR-T細胞傾向產生持久的記憶子代，而CD28ζ CAR-T細胞則偏向短命的效應子命運。此結果為理解CAR-T細胞療效差異提供新機制，並可指導設計更具持久性的CAR-T產品。",
+      "topicTags": [
+        "car-t",
+        "asymmetric-division",
+        "immunotherapy",
+        "t-cell-memory",
+        "costimulation"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02564-w",
+      "title": "When regulators become helpers",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02564-w",
+      "doi": "10.1038/s41590-026-02564-w",
+      "abstract": "Memory regulatory T cells can shed their suppressive identity and become T follicular helper-like effector cells during recurrent malaria, identifying an unexpected mechanism that links immune regulation with protective humoral immunity.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "當調節者成為幫手：瘧疾感染中調節型T細胞的華麗轉身",
+      "summaryZh": "這項研究發現，記憶調節型T細胞在反覆感染瘧疾時，竟能拋開其抑制性免疫的角色，轉變為具有輔助功能的濾泡輔助型T細胞。這種「身份轉換」揭示了免疫系統中調節與保護之間意想不到的連結機制，表明相同的免疫細胞群可以在不同情境下發揮截然不同的功能。這項發現為理解免疫反應的彈性提供了新視角，並可能為開發更有效的瘧疾疫苗或免疫療法提供新的標的。",
+      "topicTags": [
+        "immunology",
+        "t-cells",
+        "malaria",
+        "regulatory-t-cells",
+        "humoral-immunity"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02398-0",
+      "title": "Forecasting virus evolution by integrating genotype–phenotype–epidemiology",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-06-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02398-0",
+      "doi": "10.1038/s41564-026-02398-0",
+      "abstract": "Integration of sequence information, mutation phenotypes and epidemiological data into machine learning frameworks enables accurate prediction of emerging dominant SARS-CoV-2 variants. This scalable approach could guide vaccine updates and surveillance efforts.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "整合基因型-表型-流行病學數據預測病毒演化趨勢",
+      "summaryZh": "這項研究整合病毒基因序列、突變表型與流行病學數據，運用機器學習框架預測未來可能成為主流的SARS-CoV-2變異株。研究結果顯示此方法能準確識別將在人群中傳播的優勢變異株，為公共衛生決策提供科學依據。這種可擴展的整合策略不僅能優化疫苗配方更新時機，還能強化全球病毒監測網絡，對未來傳染病大流行的早期預警與防控具有重要價值。",
+      "topicTags": [
+        "virus-evolution",
+        "machine-learning",
+        "covid-19",
+        "genomic-surveillance",
+        "vaccine-development"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02390-8",
+      "title": "Modelling the role of the microbiome in antimicrobial resistance across scales",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-06-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02390-8",
+      "doi": "10.1038/s41564-026-02390-8",
+      "abstract": "The microbiome plays a significant yet underexplored role in antimicrobial resistance by influencing ecological and evolutionary processes. This Perspective proposes a framework to integrate microbiome–AMR interactions into predictive models while highlighting key mechanisms and data gaps to improve resistance understanding and interventions.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution",
+        "microbiome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "跨尺度微生物组在抗菌素耐药性中的建模角色",
+      "summaryZh": "微生物组在抗菌素耐药性（AMR）中的作用尚未被充分探索，本文提出一个跨尺度建模框架，整合微生物组与AMR的相互作用。该框架旨在将生态与进化过程纳入预测模型，以提升对耐药机制的理解。研究还指出了关键数据缺口，为未来的干预措施提供指导。对公共卫生和临床抗药性管理具有重要意义。",
+      "topicTags": [
+        "microbiome",
+        "antimicrobial-resistance",
+        "predictive-modelling",
+        "ecology",
+        "evolution"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02399-z",
+      "title": "Structure and substrate recognition by the bacterial twin-arginine translocation (Tat) core complex",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-06-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02399-z",
+      "doi": "10.1038/s41564-026-02399-z",
+      "abstract": "Cryo-EM structural, biochemical and functional analyses of the bacterial twin-arginine translocation system for protein transport across membranes reveal mechanisms of substrate binding.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "細菌雙精胺酸轉運系統核心複合體的結構與受質辨識機制",
+      "summaryZh": "本研究利用冷凍電顯結構分析、生物化學及功能分析，揭示了細菌雙精胺酸轉運（Tat）系統的結構與蛋白質跨膜運輸的機制。研究發現Tat系統如何辨識並轉運特定蛋白質，對了解細菌生理學具有重要意義。這些結構資訊為開發新型抗菌策略提供了重要的基礎。",
+      "topicTags": [
+        "cryo-em",
+        "protein-transport",
+        "bacterial-physiology",
+        "structural-biology",
+        "membrane-proteins"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003873",
+      "title": "Distinct sources of decision-related signals in visual cortex are represented in different local field potential bands",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-22T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003873",
+      "doi": "10.1371/journal.pbio.3003873",
+      "abstract": "Fluctuations in single-neuron activity in the sensory cortex often correlate with perceptual decisions. This kind of correlation is often hypothesized to reflect a causal influence of sensory signals on decisions, but it can be attributed to various noncausal factors as well. To disentangle these different possibilities, we have examined local field potentials (LFPs) recorded from the middle temporal (MT) area and area V4 of nonhuman primates ( Macaca mulatta ) while they performed two different perceptual decision-making tasks. Compared to single-neuron spiking, LFPs have the advantage of being decomposable into frequency bands that are associated with different anatomical sources of input. More importantly, they persist when spiking activity is inactivated, which precludes a causal influence of the corresponding neural activity on behavior. We found that high-gamma frequency (70–150 Hz) LFP power was correlated with perceptual decisions and that this correlation disappeared when spikes were inactivated, consistent with a causal role for this frequency band in decision-making. These signals overlapped in time with decision signals in the lower gamma band (30–70 Hz), which persisted after spiking inactivation, suggesting a noncausal input. Interestingly, lower-frequency LFP signals (5–30 Hz) reflected both impending perceptual decisions and the outcome of preceding trials, suggesting a modulatory influence of recent experience on neural dynamics. Our results, therefore, reveal that neural activity multiplexes different sources of information about perceptual decisions and that these types of information can be estimated reliably from different LFP frequencies.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "視覺皮層中決策相關訊號的來源以不同局部場電位頻帶表現",
+      "summaryZh": "感官皮層中單神經元活動的波動與知覺決策之間的相關性可能反映因果關係，但也可能由非因果因素造成。本研究利用非人類靈長類動物在執行知覺決策任務時於MT區和V4區記錄的局部場電位（LFP），發現高頻伽馬頻帶（70-150 Hz）的LFP功率與知覺決策相關，且在神經元放電被抑制後消失，支持此頻帶在決策中的因果角色。較低伽馬頻帶（30-70 Hz）的決策訊號在抑制後仍然存在，暗示其非因果輸入來源。此外，低頻LFP訊號（5-30 Hz）同時反映即將到來的決策和先前試驗的結果，顯示近期經驗對神經動態的調節影響。這項研究揭示了神經活動如何透過不同LFP頻率多工處理知覺決策的多種資訊來源。",
+      "topicTags": [
+        "neuroscience",
+        "visual-cortex",
+        "decision-making",
+        "local-field-potential",
+        "nonhuman-primate"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003864",
+      "title": "The total mass, copy number, and distribution of hormones in the human bloodstream",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-22T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003864",
+      "doi": "10.1371/journal.pbio.3003864",
+      "abstract": "The human endocrine system orchestrates critical physiological processes, yet a systematic quantitative synthesis of clinically relevant circulating hormones has been lacking. Here, we present a comprehensive, integrative analysis of circulating human hormones, leveraging clinically validated reference intervals across major endocrine subsystems. We use clinically validated reference intervals that we further validate using published datasets. Our analysis reveals that the total mass of circulating hormones is approximately 40 ± 2 mg. We find that this mass in healthy young adults is dominated by Adiponectin and DHEAS, which constitute over 90% of both total hormone weight and copy number. We show there are on the order of a million hormone molecules per cell in the human body. Females have about half the number of circulating hormone molecules compared to males. Across 56 hormones with curated affinity data, free (receptor-available) concentration correlates with receptor binding affinity, with class-specific scaling. Bioavailability mechanisms segregate by chemical class, consistent with chemical structure constraining available buffering strategies. Together, these data provide a quantitative reference for the human endocrine system and highlight relationships linking receptor affinity, bioavailability, and chemical class.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "人類血液中荷爾蒙的總質量、拷貝數與分布"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003857",
+      "title": "Growth arrest of Mycobacterium tuberculosis in acidic environments enhances their survival of antibiotic treatment",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-22T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003857",
+      "doi": "10.1371/journal.pbio.3003857",
+      "abstract": "The ability of Mycobacterium tuberculosis (Mtb) to dynamically adjust its growth behavior in response to host environments is critical for survival under immune and drug stress, but how these behaviors shift at the single-cell level remains poorly understood. Here, using high-resolution single-cell analysis, we show that Mtb adapts to acidic conditions by increasing the proportion of bacteria in a growth-arrested state, rather than uniformly slowing the growth rate of the entire population. This nongrowing subpopulation exhibits enhanced tolerance to ethambutol, highlighting its role in drug survival. Clinical strains displayed higher proportions of growth-arrested cells under both neutral and acidic conditions, suggesting that growth arrest may serve as one of the strategies for persistence during infection. While the PhoPR two-component system partially regulates this state, our RNA sequencing analysis revealed additional transcriptional regulators that are upregulated following acidic adaptation and may contribute to entry into the growth-arrested state and increased tolerance to ethambutol. Our study demonstrates that increasing the proportion of nongrowing subpopulations is an active adaptive strategy that can influence antibiotic susceptibility under acidic conditions, offering new perspectives for targeting bacterial heterogeneity in tuberculosis therapy.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "結核菌在酸性環境中進入生長停滯狀態以增強抗生素治療期間的存活能力",
+      "summaryZh": "結核桿菌能根據宿主環境動態調整生長行為，這對其在免疫及藥物壓力下的存活至關重要。本研究利用高解析度單細胞分析發現，結核桿菌在酸性條件下會增加生長停滯細胞的比例，而非讓整個菌群均勻減速。這些停止生長的亞群體對乙胺丁醇展現更強的耐藥性，顯示生長停滯可能是細菌在感染期間持續存活的重要策略。臨床上分離的菌株在酸性和中性條件下皆顯示較高比例的生長停滯細胞，進一步支持此機制與結核病持續性感染之間的關聯。此研究揭示了細菌異質性在結核病治療中的重要性，為開發針對非生長菌群的療法提供新方向。",
+      "topicTags": [
+        "mycobacterium-tuberculosis",
+        "antibiotic-tolerance",
+        "single-cell-analysis",
+        "acid-stress",
+        "bacterial-persistence"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.17.732980",
+      "title": "An Integrated muti-omics cell atlas of the human trabecular meshwork and ciliary body",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.17.732980v1",
+      "doi": "10.64898/2026.06.17.732980",
+      "abstract": "The trabecular meshwork (TM) and ciliary body (CB) regulate aqueous humor dynamics and intraocular pressure (IOP), and TM/Schlemm's canal (SC) dysfunction underlies glaucoma. Here, we present a spatially resolved multi-omics atlas of human TM and CB, integrating snRNA-seq, scRNA-seq, and snATAC-seq from over one million cells and nuclei across 112 donors with Xenium spatial transcriptomics. We identified 9 major cell classes and 21 cell types, revealing heterogeneity, including undercharacterized fibroblast and epithelial subpopulations. Spatial mapping supported TM fibroblast zonation and CB epithelial organization. Regulatory analyses identified cell type-specific programs, including OTX/PAX networks in CB epithelium and SMAD3/TGF-[beta]; signaling in fibroblasts. Integration with glaucoma loci showed enrichment of non-coding variants in regulatory elements associated with POAG and PACG. Age- and ancestry-associated remodeling revealed divergent fibroblast aging with increased PIEZO1, suggesting impaired outflow and elevated IOP. Together, this high-resolution atlas links cellular, regulatory, and genetic variation to anterior segment function and glaucoma susceptibility.",
+      "authors": [
+        "Jian, J.",
+        "Bao, X.",
+        "Wang, J.",
+        "Zheng, Y.",
+        "Li, J.",
+        "Shao, J.",
+        "Yang, T.",
+        "Yaman, I.",
+        "Li, J.",
+        "Chen, H.",
+        "Tolman, N.",
+        "Scheuermann, R. H.",
+        "Zheng, J. J.",
+        "Sheridan, C.",
+        "Liu, Y.",
+        "Du, Y.",
+        "Balasubramanian, R.",
+        "Zode, G. S.",
+        "John, S.",
+        "Stout, J. T.",
+        "Stamer, D.",
+        "Li, Y.",
+        "Chen, R."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "scRNA-seq",
+        "snRNA-seq",
+        "spatial transcriptomics",
+        "multi-omics",
+        "Xenium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "人類小樑網與睫狀體的整合性多體學細胞圖譜"
+    },
+    {
+      "id": "10.64898/2026.06.16.732397",
+      "title": "CellTosg2Sequence: A Unified Text-Omics-Signaling-Graph Large Language Model for Single-Cell Analysis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.16.732397v1",
+      "doi": "10.64898/2026.06.16.732397",
+      "abstract": "bioRxivLaTeXUnicodeabstract --- In single-cell (sc)-based scientific discovery, text-formatted biomedical prior knowledge and signaling graphs are essential for annotating and interpreting numeric sc-omics data and for generating novel testable hypotheses. A major limitation of existing single-cell large language models (scLLMs) is that they rely on numeric expression data with gene names as the only textual signal, while comprehensive biomedical priors -- cellular localization, gene function, disease associations, and signaling interaction patterns -- remain absent from the model input. We introduce CellTosg2Sequence, a textual-prior- and signaling-graph-augmented cell-omics-sentence language model. A lightweight heterogeneous graph encoder maps a curated 62,507-node biomedical knowledge graph (KG) into compact virtual tokens that are prepended to each cell sentence, allowing the language model to condition on biological structure with minimal sequence-length overhead. We train CellTosg2Sequence with a three-stage objective: Stage I anchors the KG channel under autoregressive language-model pretraining, leveraging Qwen2.5-32B's own language reasoning for rapid KG alignment; Stage II aligns labels via supervised fine-tuning with KG-anchored InfoNCE; Stage III applies Group Relative Policy Optimization (GRPO) with an ontology-hierarchy reward, enabling free-generation cell-type prediction that generalizes beyond the closed training vocabulary. Across multiple benchmarks and ablation experiments, CellTosg2Sequence outperforms strong baselines. All results are achieved with lightweight LoRA training and a single unified checkpoint.",
+      "authors": [
+        "chen, w.",
+        "Ye, M.",
+        "Xu, T.",
+        "Huang, D.",
+        "Zhang, H.",
+        "Li, H.",
+        "Li, W.",
+        "Chen, Y.",
+        "Payne, P. R.",
+        "Li, F."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "CellTosg2Sequence：用於單細胞分析的统一文字-組學-信號-圖谱大語言模型"
+    },
+    {
+      "id": "10.64898/2026.06.16.732716",
+      "title": "Benchmarking cell type annotation in spatial transcriptomics: resolving cellular hierarchies, biological fidelity, and dynamic cell states",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.16.732716v1",
+      "doi": "10.64898/2026.06.16.732716",
+      "abstract": "Spatial transcriptomics enables the quantification of gene expression within its native tissue context, providing unprecedented insight into tissue architecture, cellular ecosystems, and local cell-cell interactions at regional and single-cell resolution. Accurate cell type annotation is a critical prerequisite for interpreting these data and is often the first and most essential step in downstream analysis. Despite rapid advances in computational methods, cell type annotation remains challenging and frequently requires extensive expert-driven manual curation based on marker-gene expression, spatial context, and prior biological knowledge. While early approaches relied primarily on transcriptional similarity, newer methods increasingly incorporate spatial information, histological features, and multimodal data to improve annotation accuracy. Nevertheless, reliable annotation remains difficult when biological interpretation requires fine-grained subtype resolution, particularly for platforms with limited gene panels, tissues undergoing dynamic cellular state transitions, and studies in which reference and query datasets differ substantially in biological context or technical modality. Here, we present a systematic benchmark of 20 state-of-the-art cell type annotation methods across four spatial transcriptomics datasets spanning diverse technologies, experimental conditions, cell numbers, and gene panel sizes. Importantly, all benchmark datasets contain expert-curated cell type labels, including well-resolved cell populations and subtype annotations, providing high-quality biological ground truth for evaluation. The benchmark encompasses both reference-based and reference-free methods representing a broad range of computational frameworks. Performance was assessed using conventional classification metrics, including accuracy and F1-based measures, together with structure-aware metrics that evaluate both cell-level annotation accuracy and preservation of higher-order biological organization. Across datasets, annotation performance varied substantially according to tissue context, reference-query similarity, and annotation granularity. Fine-grained subtype annotation and recovery of rare cell populations remained challenging for many methods, particularly in datasets capturing injury, repair, developmental, and regenerative processes characterized by continuous cellular state transitions. Notably, high classification accuracy did not necessarily correspond to preservation of global cellular relationships or biologically coherent downstream pathway and gene-set enrichment analyses. Overall, scANVI, Seurat, and TACCO consistently ranked among the top-performing methods, although their relative advantages were context dependent. Together, our results provide a comprehensive assessment of current annotation strategies for spatial transcriptomics and offer practical guidance for selecting methods that best align with specific biological questions, dataset characteristics, and analytical priorities.",
+      "authors": [
+        "Zhu, Y.",
+        "Hu, Y.",
+        "Xie, M. B.",
+        "Qin, H.",
+        "Szul, Z. J.",
+        "Young, D. M.",
+        "Yuan, W.",
+        "Wang, Q.",
+        "Liu, Y. H.",
+        "Shen, W.",
+        "Meltzer, S.",
+        "Zhou, X. M."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "空間轉錄體學中細胞型態註釋的基準測試：解析細胞層級、生物真實性與動態細胞狀態"
+    },
+    {
+      "id": "10.64898/2026.05.23.727175",
+      "title": "ATLAS: a scverse-compatible package for multi-omic single-cell trajectory inference integration",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.23.727175v2",
+      "doi": "10.64898/2026.05.23.727175",
+      "abstract": "Single-cell trajectory inference is widely used to study cellular differentiation and fate decisions, yet most existing approaches rely on transcriptomic information alone, limiting their ability to capture the regulatory processes underlying cell-state transitions. This work presents ATLAS (Advanced Trajectory Learning from multi-omics At Single-cell resolution), a scverse-compatible framework for trajectory inference in paired single-cell RNA-seq and ATAC-seq data. ATLAS integrates transcriptomic and chromatin accessibility information through Weighted Nearest Neighbor graphs, enabling both molecular layers to jointly inform pseudotime estimation, terminal-state identification, and fate probability inference within a unified multi-omic representation. Across synthetic and real datasets, ATLAS reconstructs coherent developmental trajectories, captures progressive fate commitment, and resolves biologically meaningful lineage structures, demonstrating the effectiveness of multi-omic integration for characterizing cellular dynamics. In addition, ATLAS enables the joint exploration of transcription factor expression and target gene activity along pseudotime, providing direct access to regulatory programs and chromatin-associated transitions that are not detectable from transcriptomic data alone. Overall, ATLAS provides a scalable and biologically informative framework for studying dynamic cellular processes in single-cell multi-omics experiments.",
+      "authors": [
+        "Leclercq, A.",
+        "Martini, L.",
+        "Bardini, R.",
+        "Savino, A.",
+        "Di Carlo, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "ATLAS：一個與scverse相容的多體學單細胞軌跡推斷整合套件"
+    },
+    {
+      "id": "10.64898/2026.06.01.729268",
+      "title": "Proteomics-constrained deconvolution reveals spatial cell-type programs in tumours",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.01.729268v2",
+      "doi": "10.64898/2026.06.01.729268",
+      "abstract": "Accurately resolving cell-type mixtures in spatial transcriptomics remains challenging, particularly in heterogeneous tumours where cell populations are intermixed and matched single-cell references may be unavailable or poorly aligned. Current deconvolution approaches either require high-quality scRNA-seq references, suffer from scalability limitations, or lack interpretability. We introduce PISTACHIO, a proteomics-informed spatial transcriptomics deconvolution framework based on constrained non-negative matrix factorization with a negative-binomial likelihood. Rather than using probabilistic priors, PISTACHIO incorporates spatial cell-type constraints derived from paired Imaging Mass Cytometry, enforcing biologically grounded sparsity and explicit spatial feasibility of cell-type presence. PISTACHIO improved recovery of spatial cell-type distributions compared with Cell2location and STdeconvolve across synthetic and real tumour datasets. Our approach remains robust under cell-type assignment errors, maintaining high correlation with ground-truth under moderate noise, and achieves fast runtime on standard hardware, enabling practical large-scale deployment.",
+      "authors": [
+        "Isik, E. B.",
+        "Haley, M. J.",
+        "Anbaki, A. A.",
+        "Bere, L.",
+        "Roncaroli, F.",
+        "Piper Hanley, K.",
+        "Couper, K.",
+        "Wedge, D. C.",
+        "Sellers, R.",
+        "Baker, A.",
+        "Oliveira, P.",
+        "Ashton, J.",
+        "Bristow, R. G.",
+        "Alvarez, M. A.",
+        "Georgaka, S.",
+        "Rattray, M."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "蛋白質體學約束的解卷積揭示腫瘤中的空間細胞型態程式"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 30,
+      "passedByScope": 19,
+      "llmClassified": 11,
+      "llmYes": 2,
+      "llmNotSure": 0,
+      "llmNo": 9,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 21,
+      "excluded": 9
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 19,
+      "llmTagged": 19,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 19,
+      "candidates": 18,
+      "featured": 12,
+      "overflow": 6,
+      "lineA": 0,
+      "lineB": 13,
+      "preprint": 5,
+      "skip": 1
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 6,
+      "llmTranslated": 6,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10800-4",
+        "title": "Stereoretentive decarbonylative C(sp3)-C(sp3) cross-coupling",
+        "journal": "Nature",
+        "publishedDate": "2026-06-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10800-4",
+        "doi": "10.1038/s41586-026-10800-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10771-6",
+        "title": "Isotopic evidence for a cold and distant origin of 3I/ATLAS",
+        "journal": "Nature",
+        "publishedDate": "2026-06-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10771-6",
+        "doi": "10.1038/s41586-026-10771-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01949-z",
+        "title": "A spacecraft is falling to its doom — can NASA save it?",
+        "journal": "Nature",
+        "publishedDate": "2026-06-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01949-z",
+        "doi": "10.1038/d41586-026-01949-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01909-7",
+        "title": "The first ticking ‘nuclear clocks’ are here — what can they do?",
+        "journal": "Nature",
+        "publishedDate": "2026-06-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01909-7",
+        "doi": "10.1038/d41586-026-01909-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01954-2",
+        "title": "Will AI spark a scientific renaissance — or a diffuse monoculture?",
+        "journal": "Nature",
+        "publishedDate": "2026-06-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01954-2",
+        "doi": "10.1038/d41586-026-01954-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01801-4",
+        "title": "Forty years of high-temperature superconductivity",
+        "journal": "Nature",
+        "publishedDate": "2026-06-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01801-4",
+        "doi": "10.1038/d41586-026-01801-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01997-5",
+        "title": "Daily briefing: First-ever ‘nuclear’ clocks put atomic clocks in the shade",
+        "journal": "Nature",
+        "publishedDate": "2026-06-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01997-5",
+        "doi": "10.1038/d41586-026-01997-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01957-z",
+        "title": "Make science more reliable: study people as they go about their lives",
+        "journal": "Nature",
+        "publishedDate": "2026-06-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01957-z",
+        "doi": "10.1038/d41586-026-01957-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01956-0",
+        "title": "Why heritage sites are at risk in a warming world — and how to save them",
+        "journal": "Nature",
+        "publishedDate": "2026-06-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01956-0",
+        "doi": "10.1038/d41586-026-01956-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
