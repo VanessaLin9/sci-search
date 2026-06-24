@@ -1,0 +1,851 @@
+{
+  "reportDate": "2026-06-23",
+  "generatedAt": "2026-06-24T11:10:48.858Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03127-5",
+      "title": "EasyGrid: a versatile platform for automated cryo-EM sample preparation and quality control",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-06-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03127-5",
+      "doi": "10.1038/s41592-026-03127-5",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "EasyGrid：全自動冷凍電鏡樣本製備與品質控制平台",
+      "summaryZh": "這項研究開發了EasyGrid平台，能夠自動化冷凍電鏡樣本製備流程，大幅提升結構生物學研究的效率。傳統的冷凍電鏡樣本製備過程耗時且需要高度專業技術，往往成為研究瓶頸。EasyGrid整合了樣本製備與品質控制功能於一體，使研究人員能夠更快速地獲得高品質的冷凍電鏡影像。該平台的通用性使其適用於多種類型的生物樣本，有助於推動結構生物學研究的普及與發展。",
+      "topicTags": [
+        "cryo-em",
+        "automation",
+        "structural-biology",
+        "sample-preparation",
+        "quality-control"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03114-1",
+      "title": "Top-down effects dominate the relationship between plant–herbivorous insect interactions and ecosystem stability",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-06-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03114-1",
+      "doi": "10.1038/s41559-026-03114-1",
+      "abstract": "Multitrophic interactions may affect plant diversity–stability relationships. This analysis of 430 empirical plant–herbivore networks suggests that plant–herbivore interactions are a key driver of the temporal stability of ecosystem productivity under climatic disturbance.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "自上而下效應主導植物-草食昆蟲互作與生態系統穩定性的關係",
+      "summaryZh": "本研究分析430個實證植物-草食昆蟲網絡，發現植物與草食昆蟲之間的交互作用是氣候變遷下生態系統生產力時間穩定性的關鍵驅動力。研究結果顯示，自上而下的捕食效應在調控植物多樣性與生態系統穩定性關係中占主導地位。此發現挑戰了傳統上僅由植物本身驅動穩定性的觀點，強調多營養層級交互作用在維護生態系統功能中的重要性。",
+      "topicTags": [
+        "ecosystem-stability",
+        "plant-herbivore-interactions",
+        "multitrophic-interactions",
+        "climate-disturbance",
+        "biodiversity"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03177-2",
+      "title": "Mapping and engineering the human cell–cell interactome",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-06-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03177-2",
+      "doi": "10.1038/s41587-026-03177-2",
+      "abstract": "Di Carlo and colleagues discuss technologies required to map and engineer the human cell–cell interactome and the therapeutic avenues such an atlas could unlock.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "人類細胞互作圖譜的測繪與工程技術",
+      "summaryZh": "這篇論文探討了測繪與工程化人類細胞-細胞互作組所需的關鍵技術，並展望此類細胞互作圖譜在解鎖新穎治療途徑上的巨大潛力。透過系統性地分析細胞間的交互作用，研究者能更深入理解組織微環境中的複雜通訊網絡。這項工作為精準醫學與細胞療法提供了前所未有的工具與資源，有望加速藥物開發與疾病治療的進程。",
+      "topicTags": [
+        "cell-interactome",
+        "single-cell",
+        "therapeutics",
+        "bioengineering"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03187-0",
+      "title": "Efficient generation of epitope-targeted antibodies with Germinal",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-06-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03187-0",
+      "doi": "10.1038/s41587-026-03187-0",
+      "abstract": "Germinal achieves epitope-targeted, de novo complementarity-determining region design with high experimental success rates.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Germinal：高效生成表位靶向抗體的新方法",
+      "summaryZh": "抗體藥物在癌症、傳染病及自體免疫疾病的治療中至關重要，然而精準設計針對特定表位的抗體仍極具挑戰性。本研究開發的 Germinal 平台能從頭設計互補決定區（CDR），實現表位靶向的抗體生成，突破傳統抗體開發的限制。該方法大幅提升實驗成功率，顯著降低抗體研發的成本與時間。這項計算生物學工具為精準醫療與抗體藥物開發提供了強大的技術支援。",
+      "topicTags": [
+        "antibody-engineering",
+        "epitope-targeting",
+        "protein-design",
+        "computational-biology",
+        "drug-discovery"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02567-7",
+      "title": "The sooner you boost the better",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02567-7",
+      "doi": "10.1038/s41590-026-02567-7",
+      "abstract": "Rapid sequential heterologous immunization schedule enhances B cell maturation in germinal centers, relative to conventionally spaced vaccination regimens.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "越快追加越好",
+      "summaryZh": "這項研究比較了快速連續施打不同類型疫苗與傳統間隔施打的免疫效果。研究發現，快速連續的異源免疫策略能夠促進生發中心中B細胞的成熟，產生更優質的抗體反應。此發現對於新興傳染病的疫苗策略設計具有重要參考價值，可能幫助人類在疫情爆發時更快建立保護力，挑戰了傳統疫苗施打間隔的既定觀念。",
+      "topicTags": [
+        "vaccination",
+        "immunology",
+        "b-cells",
+        "germinal-centers",
+        "vaccine-strategy"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02565-9",
+      "title": "Diversifying the antibody response to influenza virus with an mRNA-based vaccine",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02565-9",
+      "doi": "10.1038/s41590-026-02565-9",
+      "abstract": "Influenza virus poses a persistent challenge owing to its high antigenic variability. We show that an mRNA-based influenza vaccine generates not only robust influenza virus-specific antibody titers, but also prolonged germinal center B cell responses in humans, resulting in enhanced breadth of antibody binding to antigenically diverse viral strains.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "mRNA疫苗多樣化流感抗體反應",
+      "summaryZh": "流感病毒因其高度變異性而持續挑戰疫苗研發。本研究顯示，mRNA流感疫苗在人類中能誘發強效且持久的流感病毒特異性抗體，並延長生發中心B細胞反應，進而提升抗體對抗原多樣化病毒株的結合廣度。這種免疫深度的增加，有助於克服病毒變異帶來的保護不足問題，並可能為廣譜流感疫苗的開發提供新策略。",
+      "topicTags": [
+        "influenza",
+        "mrna-vaccine",
+        "antibody-response",
+        "germinal-center",
+        "vaccine-breadth"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02570-y",
+      "title": "Arthritis susceptibility begins before birth",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02570-y",
+      "doi": "10.1038/s41590-026-02570-y",
+      "abstract": "Why do certain joints develop inflammation in rheumatoid arthritis, while others escape? New findings suggest that the roots of rheumatoid arthritis lie in prenatal tissue architecture.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "類風濕性關節炎易感性竟始於出生前",
+      "summaryZh": "類風濕性關節炎為何只攻擊特定關節而讓其他關節完好？這項研究揭示了答案可能早在胎兒發育時期就已決定。研究發現，某些關節對炎症的易感性源於產前組織架構的差異，而非成年後才獲得的免疫異常。這一發現徹底改變了我們對類風濕性關節炎發病時機的傳統認知，並暗示早期預防策略或許比我們想像的更有潛力。此研究為自體免疫疾病的發病機制提供了全新的發育生物學視角。",
+      "topicTags": [
+        "immunology",
+        "rheumatoid-arthritis",
+        "developmental-biology",
+        "autoimmunity",
+        "prenatal"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02575-7",
+      "title": "A monogenic basis for pyoderma gangrenosum due to dysregulation of linear ubiquitin",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02575-7",
+      "doi": "10.1038/s41590-026-02575-7",
+      "abstract": "We report a new inborn error of immunity, termed OTULIN-related pyoderma gangrenosum (ORP). ORP is caused by homozygosity for the R57C mutation, a separation-of-function variant in OTULIN that disrupts its interaction with, and regulation of, the linear ubiquitination assembly complex while preserving its catalytic activity. ORP features inflammasome activation and increased susceptibility of dermal cells to TNF-dependent death, pointing to TNF blockade as a therapeutic option.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單基因變異導致壞疽性膿皮病：OTULIN與線性泛素組裝複合體調控失衡",
+      "summaryZh": "本研究發現一種新的先天性免疫缺陷疾病——OTULIN相關壞疽性膿皮病（ORP）。研究證實R57C突變會破壞OTULIN與線性泛素組裝複合體的相互作用，導致發炎體過度活化，並使皮膚細胞對TNF依賴性細胞死亡更加敏感。此發現不僅確立了壞疽性膿皮病的單基因遺傳基礎，也為開發TNF抑制劑作為精準治療選項提供了關鍵的分子機制證據，對於此類難治性皮膚疾病的臨床管理具有重要意義。",
+      "topicTags": [
+        "immunology",
+        "genetics",
+        "dermatology",
+        "ubiquitin",
+        "inflammation"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02549-9",
+      "title": "Rapid boosting increases germinal center responses to sequential vaccines",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02549-9",
+      "doi": "10.1038/s41590-026-02549-9",
+      "abstract": "The authors explore the potential of changing vaccination schedules combined with ‘germline targeting’ to increase the generation of broadly neutralizing antibodies against HIV. In mice, they find that early booster vaccination is sufficient to promote a long-lasting immune response that allows generation of CD4 binding site-specific antibodies and show that boosting primarily promotes the existing germinal center response but also allows some entry of naive B cells.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "快速加強提升順序疫苗的生發中心反應",
+      "summaryZh": "本研究探討調整疫苗施打時序結合「胚系標的」策略，以提升對抗HIV的廣效中和抗體生成。在小鼠模型中，早期加強免疫即可促進持久免疫反應，並有效產生針對CD4結合位點的特異性抗體。研究顯示，加強免疫主要強化既有的生發中心反應，同時也允許部分初始B細胞進入，顯示時序優化對於抗體多樣性的重要性。此發現為HIV疫苗的時序設計與胚系標的策略的臨床應用提供了重要的實驗依據。",
+      "topicTags": [
+        "vaccine",
+        "germinal-center",
+        "HIV",
+        "broadly-neutralizing-antibody"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02406-3",
+      "title": "Stuck on you Giardia",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-06-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02406-3",
+      "doi": "10.1038/s41564-026-02406-3",
+      "abstract": "Staffan Svärd reflects on his 30-year relationship with Giardia, which has stayed on his mind in a manner reminiscent of its adhesive trophozoite form.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "甩不掉的研究伴侶：蘭氏賈第鞭毛蟲",
+      "summaryZh": "本文是寄生蟲學家Staffan Svärd回顧他與蘭氏賈第鞭毛蟲（Giardia）三十年的研究淵源。蘭氏賈第鞭毛蟲是一種引起腹瀉的原生動物寄生蟲，其滋養體具有強大的吸附能力，這也是標題「Stuck on you」的雙關意涵。這篇個人反思文章展現了長期投入一個研究領域的心路歷程，以及寄生蟲如何像它們附著腸道的方式一樣，深深「黏」在研究者的心中。對於從事寄生蟲學或傳染病研究的人而言，這是一篇關於研究熱情與堅持的深刻分享。",
+      "topicTags": [
+        "parasitology",
+        "giardia",
+        "microbiology",
+        "research-reflection",
+        "infectious-disease"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02395-3",
+      "title": "Phages tame plant pathogens",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-06-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02395-3",
+      "doi": "10.1038/s41564-026-02395-3",
+      "abstract": "Predicting infection heterogeneity requires looking beyond the host. Phage–bacteria coevolution in tomato fields maintains diverse bacterial strategies and explains uneven disease occurrence across plant populations.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "噬菌體如何抑制植物病原菌",
+      "summaryZh": "植物病害對農業生產造成重大損失，理解病害發生差異的成因至關重要。本研究發現，噬菌體與細菌在番茄田中的共同演化，維持了細菌策略的多樣性，進而解釋了為何同樣的病原菌在不同植物族群中會造成不均勻的病害發生。此研究跳脫以往僅從宿主（植物）角度分析病害的框架，證明「宿主以外」的因素同樣關鍵。這項發現為開發以噬菌體為基礎的生物防治策略提供了重要的理論依據。",
+      "topicTags": [
+        "phage-bacteria-coevolution",
+        "plant-pathogens",
+        "biological-control",
+        "agricultural-microbiology",
+        "disease-heterogeneity"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003825",
+      "title": "Web-based collaborative model development in interdisciplinary consortia: Design principles and practical guidance",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-23T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003825",
+      "doi": "10.1371/journal.pbio.3003825",
+      "abstract": "Web-based modeling platforms can enhance collaboration between modelers and experimentalists during early model development. Drawing on two interdisciplinary case studies, we provide guiding principles on how to build interactive agile modeling tools. Web-based modelling platforms can enhance collaboration between modelers and experimentalists during early model development. This Community Page provides guiding principles on how to build agile interactive modelling tools.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "網頁式跨學科聯盟協作模型開發：設計原則與實務指引"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003818",
+      "title": "Human neuronal firing varies with the frequency of local field potential oscillations",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-23T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003818",
+      "doi": "10.1371/journal.pbio.3003818",
+      "abstract": "Neural oscillations play a critical role in shaping neuronal firing patterns. While phase-locked neuronal firing (“phase tuning”) has been extensively studied in animal models and human invasive recordings, much less is known about whether neurons show preferential firing at specific oscillatory frequencies, termed frequency tuning. Here, we employ human intracranial recordings across several brain regions including hippocampus, entorhinal cortex, anterior and posterior cingulate cortex, and orbitofrontal cortex to test the hypothesis that neurons exhibit frequency-specific firing. We analyzed 357 single units recorded simultaneously with local field potentials in 19 neurosurgical patients during awake resting. We estimated the instantaneous frequency of the LFP using adaptive spectral decomposition and assessed frequency tuning of each neuron while controlling for changes in firing rate unrelated to frequency changes. We found 27% of neurons exhibited increased or decreased firing within specific frequencies, most commonly within the low-frequency range (<10 Hz). Neurons exhibiting frequency tuning were distinct from those displaying phase tuning, and both types of tuning were observed across multiple brain regions with no anatomical preference. Together, our results demonstrate that the instantaneous frequency of neural oscillations modulates neuronal firing which may serve as an additional mechanism for information processing in the human brain, opening new avenues for frequency-targeted neural stimulation.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "人類神經元放電隨局部場電位振盪頻率變化",
+      "summaryZh": "本研究透過顱內電擊記錄分析19位神經外科患者的357個單細胞單位，發現約27%的神經元在特定振盪頻率下展現增強或減弱的放電活動，稱為「頻率調諧」，且多發生在低頻範圍（<10 Hz）。此頻率調諧現象與傳統研究的相位調諧不同，顯示大腦可能利用振盪頻率作為另一種資訊處理機制。這項發現橫跨多個腦區，包括海馬體、內嗅皮質、扣帶皮質及眶額皮質，證實此機制的普遍性。更重要的是，研究結果為開發頻率導向的神經調控治療（如深層腦刺激或經顱刺激）提供新的理論基礎。",
+      "topicTags": [
+        "neuroscience",
+        "neural-oscillations",
+        "intracranial-recordings",
+        "frequency-tuning",
+        "human-brain"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003816",
+      "title": "Sleep deprivation increases levels of the synaptic density marker SV2A in the human brain",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-23T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003816",
+      "doi": "10.1371/journal.pbio.3003816",
+      "abstract": "Sleep is essential for synaptic homeostasis, a proposed mechanism whereby wakefulness leads to synaptic potentiation and sleep facilitates synaptic down-selection. Synaptic vesicle glycoprotein 2A (SV2A), whose availability is quantifiable by [¹⁸F]SynVesT-1 positron emission tomography (PET), is commonly interpreted as a proxy for synaptic density. In this randomized study, we examined 40 healthy adults (mean age 27.5 ± 6.5 years) who underwent two [¹⁸F]SynVesT-1 PET scans on consecutive days. Half of the participants were assigned to the normal sleep (i.e., control) condition and half to the sleep deprivation condition. Scans were performed at the same circadian time point, approximately 4 h after awakening in the control group and during baseline in the sleep deprivation group or after ~28 h of continuous wakefulness in the sleep deprivation group after sleep deprivation. Sleep deprivation led to significant increases in synaptic vesicle glycoprotein 2A binding in multiple brain regions, including the thalamus (+4.6%), hippocampus (+5.6%), and parietal cortex (+3.2%), whereas no changes were observed in controls. The degree of increase in synaptic vesicle glycoprotein 2A positively correlated with elevated slow wave activity during recovery sleep, a physiological marker of sleep pressure. These findings provide in vivo support for the synaptic homeostasis hypothesis in humans and suggest that synaptic vesicle glycoprotein 2A PET imaging is sensitive to sleep-wake dependent synaptic plasticity. Trial Registration The study was prospectively registered on 19.01.2022 here: German Clinical Trials Registry: DRKS # DRKS00027867, https://drks.de/search/en/trial/DRKS00027867.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "睡眠剝奪增加人腦中突觸密度標記 SV2A 的含量"
+    },
+    {
+      "id": "10.64898/2026.06.18.733106",
+      "title": "gamdid: generalized additive models for differential distributions in single cell experiments",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.18.733106v1",
+      "doi": "10.64898/2026.06.18.733106",
+      "abstract": "Single-cell proteomics (SCP) generates protein abundance measurements across hundreds to thousands of individual cells, offering unprecedented resolution to study cellular heterogeneity. However, existing differential abundance (DA) methods are limited to detecting shifts in mean expression, leaving biologically relevant differences in shape undetected. Indeed, the specific power of SCP is to identify differences between individual cells in a population, which are typically only found as shape differences rather than in mean expression. We here therefore present gamdid (generalized additive models for differential distributions), a novel statistical framework and R package for differential distribution (DD) analysis in SCP data. gamdid is based on generalized additive models (GAMs) to flexibly model heterogeneous distributions, perform inference and provide interpretable visualizations. Through semi-synthetic benchmarking on two SCP datasets, gamdid demonstrates conservative false discovery rate control and substantially outperforms competing methods for differences in shape, while achieving comparable performance for mean shifts. A spike-in case study further demonstrates the utility of gamdid and its interpretable visualization. Uniquely among DD methods, gamdid supports omnibus testing across more than two groups, with post-hoc pairwise comparisons via stagewise testing, and is specifically tailored for proteomics abundance data.",
+      "authors": [
+        "Clement, L.",
+        "Beerland, L.",
+        "Martens, L.",
+        "Vanderaa, C.",
+        "Vandenbulcke, S."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "gamdid：單細胞實驗中差異分布的廣義加法模型"
+    },
+    {
+      "id": "10.64898/2025.12.29.696804",
+      "title": "OmniCell: Unified Foundation Modeling of Single-Cell and Spatial Transcriptomics for Cellular and Molecular Insights",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2025.12.29.696804v3",
+      "doi": "10.64898/2025.12.29.696804",
+      "abstract": "A cell's transcriptional programme is not fully defined by gene expression alone, but by the tissue context in which that programme is enacted. Singlecell RNA sequencing resolves molecular identity after dissociation, whereas spatial transcriptomics preserves tissue architecture but remains constrained by assay-specific sparsity and gene coverage. Here we present OmniCell, a tissue-contextual transcriptomic foundation model pretrained on 67 million dissociated and spatially resolved profiles. By integrating gene identity, expression magnitude and tissue context, OmniCell links transcriptional programmes to the cellular neighbourhoods and anatomical contexts in which they operate. OmniCell organised transcriptomes across molecular, cellular and tissue scales. It recovered celltypespecific programmes and tissuealigned gene modules, preserved robust cell-state structure across batches, species and rare populations, and improved the reconstruction of spatial cell identity, anatomical domains and cell-type composition. In human liver cancer Stereo-seq data, OmniCell resolved a tumour-margin transition zone characterised by immune infiltration, acute-phaseinflammation, coagulation/complement activity and metallothionein-linked metalion detoxification. Contextual geneembedding similarity analysis showed that gene relationships differed across tumour core, transition-zone and paratumour/adjacent non-malignant niches, indicating that OmniCell captures tissue-dependent gene function rather than expression similarity alone. In mouse brain development and macaque cortex, spatial virtual perturbations mapped regulatory genes onto stage and regionspecific anatomical programmes. Together, these results establish tissue context as a primary axis of transcriptomic representation and provide a framework for studying how cellular programmes acquire context-dependent biological meaning in intact tissues.",
+      "authors": [
+        "Pang, J.",
+        "Qiu, P.",
+        "He, Y.",
+        "Deng, Y.",
+        "Tang, W.",
+        "Zhi, H.",
+        "Yan, J.",
+        "Li, B.",
+        "Lin, A.",
+        "Cao, L.",
+        "Teng, F.",
+        "Fang, S.",
+        "Li, S.",
+        "Deng, Z.",
+        "Zhang, Y.",
+        "Li, Y.",
+        "Li, S.",
+        "Xu, X."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "Stereo-seq",
+        "cancer",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "OmniCell：單細胞與空間轉錄體學的統一基礎模型以獲得細胞與分子洞察"
+    },
+    {
+      "id": "10.64898/2026.06.07.730684",
+      "title": "HoloCell: A Generative Foundation Model for Holistic Cellular Modeling",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.07.730684v2",
+      "doi": "10.64898/2026.06.07.730684",
+      "abstract": "Single-cell multi-omics technologies have recently advanced to enable the profiling of epigenomic, transcriptomic, and proteomic layers within individual cells, offering new opportunities to characterize cellular states as integrated biological systems. However, developing a unified framework that can seamlessly integrate diverse omics modalities and remain robust to heterogeneous modality missingness remains challenging. Existing methods are often designed for specific modalities or modality pairs, relying on dataset-specific training or paired measurements. Here we present HoloCell, to our knowledge the first generative foundation model for joint representation learning and generative modeling across all three major single-cell omics modalities, i.e., epigenomics, transcriptomics, and proteomics. HoloCell contains over 860 million parameters and is pretrained on the Human-Multi-Omics-Corpus, which comprises approximately 468 million single-cell profiles across these three omics layers, corresponding to over 425 billion tokens. HoloCell introduces a simple yet biologically motivated hierarchical tokenization strategy that encodes cis-regulatory elements, genes, and proteins as structured tokens within a shared modeling framework. We evaluated HoloCell across single-omics representation learning, paired multi-omics integration, unpaired multi-omics alignment, and cross-modal generation via iterative diffusion and remasking, demonstrating its superior performance and flexibility across diverse omics tasks. From a representation perspective, HoloCell provides a unified digital mapping of cellular states across multiple omics layers, capturing cell heterogeneity as an integrated system. From a generation perspective, its iterative diffusion and remasking framework permits flexible generation orders beyond fixed left-to-right causality, enabling in silico simulation of multi-omics information flow. Together, these capabilities position HoloCell as a versatile foundation model toward the emerging concept of a virtual cell, offering both systematic characterization and generative simulation of cellular systems within a unified framework.",
+      "authors": [
+        "Jiang, Q.",
+        "Li, Z.",
+        "Hu, B.",
+        "Bie, Y.",
+        "Li, K.",
+        "Li, Q.",
+        "Jin, P.",
+        "He, Y.",
+        "Deng, P.",
+        "Wang, Z.",
+        "Chen, X.",
+        "Qin, T.",
+        "Liu, H.",
+        "Jiang, R.",
+        "Yin, Q."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "HoloCell：用於整體細胞建模的生成式基礎模型"
+    },
+    {
+      "id": "10.64898/2026.06.18.733285",
+      "title": "Systematic benchmarking of zero-shot utility and robustness in single-cell transcriptomic foundation models",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.18.733285v1",
+      "doi": "10.64898/2026.06.18.733285",
+      "abstract": "Single-cell foundation models (scFMs) have been proposed as reusable representations for transcriptomic analysis, yet their practical utility and robustness when applied without task-specific fine-tuning remain incompletely characterized. Here, we systematically evaluated single-cell transcriptomic representations in zero-shot settings across 20 methods, 6 downstream tasks and 1,607 datasets comprising nearly 21.8 million cells. We characterized model behavior along three complementary dimensions: baseline utility, structural robustness, and dataset-level drivers of performance variability. Our large-scale analysis reveals a decoupling between utility and robustness: methods ranking highly on standard benchmarks often show marked instability under shifts in dataset structure. Furthermore, no single model performs uniformly well across tasks. In several tasks, classical statistical representations based on highly variable genes remain competitive under zero-shot conditions. Together, these results define the practical boundaries of zero-shot use in scFMs and provide a large-scale benchmark and decision framework for representation selection in single-cell genomics.",
+      "authors": [
+        "Liu, T.",
+        "Feng, T.",
+        "Pan, X.",
+        "Chen, Y.",
+        "Ren, L.",
+        "Ye, X.",
+        "Sakurai, T.",
+        "Lin, H.",
+        "Zhang, Y."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "單細胞轉錄體基礎模型的零樣本效用與穩健性系統性基準測試"
+    },
+    {
+      "id": "10.64898/2026.06.18.733163",
+      "title": "CellOS: Learning a World Model of Cellular State through Joint Embedding Prediction",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.18.733163v1",
+      "doi": "10.64898/2026.06.18.733163",
+      "abstract": "Foundation models learned from single-cell transcriptomes are central to the prospect of AI virtual cell that can represent, query and predict cellular state. However, most current single-cell foundation models learn from a single view of gene expression and are optimized primarily through reconstruction or next-token prediction. As a result, they capture expression abundance but can-not explicitly reconcile complementary views of cellular state. Here we present CellOS, a multi-view foundation model that learns cellular representations from paired expression and perception views. CellOS integrates complementary views through a scalable three-stage training strategy that combines causal cell-sentence language modelling, function-preserving dense-to-mixture-of-experts expansion and latent-space alignment via an LLM-JEPA objective. Using this framework, we trained a 12-billion-parameter model on 390.5 million single-cell transcriptomes. Across diverse benchmarks spanning cell-state annotation, batch integration and perturbation-response prediction, CellOS consistently outperformed state-of-the-art single-cell foundation models in cell-state annotation and perturbation-response prediction while preserving robust batch integration. Together, these results suggest that predictive alignment between complementary cellular views provides a scalable path toward representation-centric cellular world models and transferable AI virtual cells.",
+      "authors": [
+        "Zhou, Q.",
+        "Le, Y.",
+        "Qi, X.",
+        "Chang, S.",
+        "Lu, H.",
+        "Wu, Y.",
+        "Wang, H.",
+        "Ran, R.",
+        "li, x."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "CellOS：透過聯合嵌入預測學習細胞狀態的世界模型"
+    },
+    {
+      "id": "10.64898/2026.06.18.733122",
+      "title": "Model-based inference of gene expression noise from single-cell RNA-sequencing data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.18.733122v1",
+      "doi": "10.64898/2026.06.18.733122",
+      "abstract": "The heterogeneity of expression levels among genetically identical cells, termed gene expression noise, is a property of the gene expression process whose importance in the biology of organisms and their evolution is increasingly recognized. Measuring gene expression noise requires single-cell expression data, as obtained from single-cell RNA sequencing (scRNASeq). Its estimation, however, is challenging owing to (i) the presence of technical noise in addition to biological noise, and (ii) the heterogeneity of cell types in the sampled population. We propose a maximum-likelihood framework to infer biological noise from scRNASeq data, while accounting for technical noise, dropout probabilities, and distinct cell sequencing depths. We demonstrate the parameter identifiability using simulations and that the resulting noise estimates are uncorrelated from the mean gene expression, and therefore do not need extra correction in downstream analyses, easing intra- and inter- genome comparisons. Using two technical replicates of scRNASeq data from the wild yeast *Saccharomyces paradoxus*, we show that expression noise can be inferred in a reproducible manner.",
+      "authors": [
+        "Giersdorf, F.",
+        "Rogers, D. W.",
+        "Christensen, S.",
+        "Dutheil, J. Y."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology",
+        "evolution",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "基於模型推斷單細胞 RNA 序列資料中的基因表現雜訊"
+    },
+    {
+      "id": "10.64898/2026.06.18.733146",
+      "title": "VCBench: A Multi-Dimensional Benchmark for Single-Cell Foundation Models",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.18.733146v1",
+      "doi": "10.64898/2026.06.18.733146",
+      "abstract": "Single-cell foundation models are increasingly positioned as virtual cells, yet their capabilities are assessed by fragmented, largely single-task benchmarks that obscure where these models improve on simple baselines. VCBench addresses this by synthesizing four independent virtual-cell frameworks into seven capability dimensions: perturbation response prediction, cross-species universality, gene regulatory network (GRN) inference, modality integration, temporal dynamics, multi-scale integration, and in silico experimentation. Each dimension is assessed for operational testability under current architectures and datasets: five admit direct or proxy evaluation, while multi-scale integration and in silico experimentation are structurally untestable as end-to-end tasks. We evaluate five foundation models (Geneformer, scGPT, UCE, TranscriptFormer, Arc State) against pre-registered linear and nearest-neighbor baselines across the five testable dimensions, and report three findings. First, the baselines match or exceed every foundation model on four of the five scored dimensions, replicating the reported competitiveness of linear baselines on perturbation prediction and extending it to cross-species transfer, GRN inference, and temporal ordering. Second, TranscriptFormer alone exceeds the strongest baseline on cross-modal RNA-to-protein prediction (53% Pearson improvement, with a documented contamination caveat) and is the only model to reach Level 2 in the pre-registered Virtual Cell (VC) Level rubric; the architectural choice behind this advantage simultaneously causes a spectral collapse that destroys its temporal-ordering performance, a tradeoff invisible to single-task benchmarks. Third, no foundation model publishes a complete cell-level training manifest, leaving data contamination undetectable to users. Alongside the benchmark, VCBench releases a Contamination Reporting Schema and contributes two further methodological tools: a common-label-set protocol that controls for class-count confounds in cross-species transfer, and a spread-error correlation probe for epistemic calibration.",
+      "authors": [
+        "Weidener, L. S.",
+        "Brkic, M.",
+        "Jovanovic, M.",
+        "Ulgac, E.",
+        "Meduri, A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "VCBench：單細胞基礎模型多維度基準測試"
+    },
+    {
+      "id": "10.1101/2025.08.12.669903",
+      "title": "Systematic evaluation of robustness to cell type mismatch of deconvolution methods for spatial transcriptomics data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-23",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.08.12.669903v2",
+      "doi": "10.1101/2025.08.12.669903",
+      "abstract": "Sequencing-based spatial transcriptomics (ST) approaches preserve spatial information but with limited cellular resolution, whereas single-cell RNA-sequencing (scRNA-seq) techniques provide single-cell resolution but lose spatial context during tissue dissociation. Given these complementary strengths, computational tools have been developed to combine scRNA-seq and ST data. These methods use deconvolution techniques to identify cell types and estimate their proportions at each spatial location in ST data, using scRNA-seq reference data. However, these methods are sensitive to missing cell types in the scRNA-seq reference, a problem known as cell type mismatch. Using two reference datasets, we performed extensive simulations to systematically evaluate the robustness to cell type mismatch of six deconvolution methods (CARD, cell2location, RCTD, Seurat, SPOTlight, Stereoscope) tailored for ST data, and two designed for bulk RNA-seq data (MuSiC, SCDC). At baseline, that is, with no cell types missing from the reference datasets, cell2location showed the strongest performance, while Seurat performed the worst. By simulating different cell type mismatch scenarios, we found that the performance of deconvolution methods decreases proportionally to the number of cell types missing from the reference. Moreover, compared to baseline, for most methods the relative decrease in performance is similar. Additionally, methods that perform well at baseline tend to assign the proportions of a missing cell type to the transcriptionally most similar cell types present in the reference data. Our results highlight the adverse effects of cell type mismatch on the performance of deconvolution methods for ST data and stress the need for more robust approaches to this issue.",
+      "authors": [
+        "Mahamune, U. M.",
+        "Jongejan, A.",
+        "van Kampen, A. H. C.",
+        "van Baarsen, L. G.",
+        "Moerland, P. D."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "空間轉錄體學資料中細胞類型錯配對解卷積方法穩健性的系統性評估"
+    },
+    {
+      "id": "10.64898/2026.06.22.733672",
+      "title": "FateLimit quantifies the prediction horizon of cell fate",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.22.733672v1",
+      "doi": "10.64898/2026.06.22.733672",
+      "abstract": "Single-cell technologies have enabled increasingly detailed reconstruction of developmental trajectories, yet a fundamental question remains unresolved: when does future cellular identity become predictable from cells current molecular state? Existing approaches infer lineage relationships, transition probabilities or future transcriptional dynamics, but do not directly quantify the emergence of fate predictability during cellular state transitions. Here we present FateLimit, an information-theoretic framework for measuring the temporal dynamics of cell-fate predictability from single-cell omics data. FateLimit combines probabilistic fate assignment, fate entropy and mutual information to quantify how information about future cellular outcomes is encoded in present molecular states. We introduce two quantitative descriptors: the Fate Information Half-Life (FIHL), which measures the characteristic timescale of fate-information dynamics, and the Prediction Horizon (PH), defined as the earliest developmental stage at which observed fate predictability exceeds the 95th percentile of a permutation-derived null distribution. We applied FateLimit across developmental, lineage-tracing and reprogramming systems, including pancreatic endocrinogenesis, CellTag reprogramming, human hematopoiesis and zebrafish embryogenesis. Across all datasets, FateLimit identified significant fate information and reproducible prediction horizons that were robust to cell-state representation, lineage structure and biological context. Comparative analysis revealed that prediction horizons differ substantially among cellular lineages, indicating that distinct developmental programs acquire predictive information at different rates. FateLimit establishes a general framework for quantifying the predictability of future cellular identity from present molecular states. By transforming developmental trajectories into predictability landscapes, FateLimit enables systematic comparison of commitment dynamics across biological systems and establishes prediction horizons as a quantitative measure of cell-fate determination.",
+      "authors": [
+        "Sung, J.-Y.",
+        "Cheong, J.-H."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "FateLimit 量化細胞命運的預測範圍"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 34,
+      "passedByScope": 23,
+      "llmClassified": 11,
+      "llmYes": 3,
+      "llmNotSure": 0,
+      "llmNo": 8,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 26,
+      "excluded": 8
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 23,
+      "llmTagged": 23,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 23,
+      "candidates": 23,
+      "featured": 12,
+      "overflow": 11,
+      "lineA": 0,
+      "lineB": 14,
+      "preprint": 9,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 11,
+      "llmTranslated": 11,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10799-8",
+        "title": "Retraction Note: Sub-second periodicity in a fast radio burst",
+        "journal": "Nature",
+        "publishedDate": "2026-06-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10799-8",
+        "doi": "10.1038/s41586-026-10799-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01970-2",
+        "title": "Nepal’s new science ministry must strengthen scientific capacity",
+        "journal": "Nature",
+        "publishedDate": "2026-06-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01970-2",
+        "doi": "10.1038/d41586-026-01970-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01971-1",
+        "title": "Academic success still assumes uninterrupted careers",
+        "journal": "Nature",
+        "publishedDate": "2026-06-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01971-1",
+        "doi": "10.1038/d41586-026-01971-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01969-9",
+        "title": "The halo effect: how academic hierarchy undermines peer review and enables fraud",
+        "journal": "Nature",
+        "publishedDate": "2026-06-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01969-9",
+        "doi": "10.1038/d41586-026-01969-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01951-5",
+        "title": "Silicon Valley’s vision for global AI is flawed: each country needs its own blueprint",
+        "journal": "Nature",
+        "publishedDate": "2026-06-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01951-5",
+        "doi": "10.1038/d41586-026-01951-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01955-1",
+        "title": "Europe as science superpower: what it will take to rival the US and China",
+        "journal": "Nature",
+        "publishedDate": "2026-06-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01955-1",
+        "doi": "10.1038/d41586-026-01955-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01130-6",
+        "title": "How should I respond to race-based exclusion in my lab?",
+        "journal": "Nature",
+        "publishedDate": "2026-06-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01130-6",
+        "doi": "10.1038/d41586-026-01130-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01953-3",
+        "title": "Europe must seize the moment to lead on free and open science",
+        "journal": "Nature",
+        "publishedDate": "2026-06-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01953-3",
+        "doi": "10.1038/d41586-026-01953-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
