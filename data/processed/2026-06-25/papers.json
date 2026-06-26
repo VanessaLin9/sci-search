@@ -1,0 +1,821 @@
+{
+  "reportDate": "2026-06-25",
+  "generatedAt": "2026-06-26T11:06:36.808Z",
+  "papers": [
+    {
+      "id": "10.1016/j.cell.2026.05.034",
+      "title": "Excessive vascular integrity restricts anti-tumor immunity",
+      "journal": "Cell",
+      "publishedDate": "2026-06-25T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00634-3?rss=yes",
+      "doi": "10.1016/j.cell.2026.05.034",
+      "abstract": "Vessel normalization aims to correct the abnormal vasculature in the tumor to improve drug delivery and immune control. In this issue of Cell, Wang et al. identify an immune-excluding vasculature in small-cell lung cancer, where excessive vessel integrity drives immune desertification, and propose “reverse normalization” to restore immune access and overcome immunotherapy resistance.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "過度血管完整性限制小細胞肺癌的抗腫瘤免疫反應",
+      "summaryZh": "傳統觀點認為腫瘤血管正常化能改善藥物递送並增強免疫控制。然而，王等人於本期《Cell》發表的研究顛覆了這一認知，發現小細胞肺癌中存在一種排斥免疫細胞浸潤的特殊血管結構。這種過度緊密的血管屏障反而導致腫瘤區域形成免疫「沙漠」，使免疫治療難以發揮效果。研究團隊據此提出「逆轉正常化」策略，透過適度破壞血管完整性來恢復免疫細胞的腫瘤 접근權限。這項發現不僅挑戰了現有的血管正常化理論，更為克服免疫檢查點抑制劑的耐藥性提供了全新的治療思路。",
+      "topicTags": [
+        "cancer-immunotherapy",
+        "vascular-biology",
+        "small-cell-lung-cancer",
+        "immunotherapy-resistance",
+        "tumor-microenvironment"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.05.038",
+      "title": "A new sense for electrical fields",
+      "journal": "Cell",
+      "publishedDate": "2026-06-25T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00638-0?rss=yes",
+      "doi": "10.1016/j.cell.2026.05.038",
+      "abstract": "Most cells polarize and migrate in response to electrical fields. In this issue of Cell, Belliveau et al. identify TMEM154/Galvanin, a receptor that serves as a cellular antenna to sense electrical gradients and guide migration toward the cathode.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "電場感測新感受器：TMEM154/Galvanin",
+      "summaryZh": "細胞在電場中能極化並遷移，然而其感知電場梯度的分子機制長期未知。Belliveau 等人在本期《Cell》中發現 TMEM154/Galvanin 受體可作為細胞的「天線」，專門偵測電場方向並引導細胞向陰極遷移。此發現首次揭示了電場感測的受體層面機制，為理解發育、傷口修復及癌細胞轉移等過程中的電場調控提供關鍵線索，並有望開發操控細胞電場感應的新工具。",
+      "topicTags": [
+        "electrical-fields",
+        "cell-migration",
+        "receptor",
+        "electrotaxis"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.06.003",
+      "title": "CAR T targets: AI takes the wheel",
+      "journal": "Cell",
+      "publishedDate": "2026-06-25T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00652-5?rss=yes",
+      "doi": "10.1016/j.cell.2026.06.003",
+      "abstract": "Identifying safe and effective targets remains a major bottleneck for CAR T cell therapies. In this issue of Cell, Baker and colleagues developed a large language model (LLM)-assisted scoring framework to streamline this process and as a result identified and validated glycoprotein non-metastatic melanoma protein B (GPNMB) as a candidate chimeric antigen receptor (CAR) T target across melanoma, leukemia, and colorectal cancer.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "AI 驅動 CAR T 標的發現：LLM 框架加速癌症免疫療法開發",
+      "summaryZh": "CAR T 細胞療法在癌症治療上展現潛力，但找出安全且有效的標的一直是開發的主要瓶頸。Baker 與團隊開發了一套大型語言模型輔助的評分框架，能系統性地篩選候選標的，大幅加速篩選流程。研究團隊運用此框架成功識別出 GPNMB（糖蛋白非轉移性黑色素瘤蛋白 B）作為候選 CAR T 標的，並在黑色素瘤、白血病及大腸癌中驗證其療效潛力。這項研究證明 AI 可有效整合海量生物醫學文獻與數據，為精準腫瘤學提供新的標的發現策略。",
+      "topicTags": [
+        "car-t",
+        "ai-ml",
+        "cancer-immunotherapy",
+        "target-discovery",
+        "oncology"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.06.001",
+      "title": "The cGAS-STING pathway: Mechanism and medical implications",
+      "journal": "Cell",
+      "publishedDate": "2026-06-25T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00650-1?rss=yes",
+      "doi": "10.1016/j.cell.2026.06.001",
+      "abstract": "This review covers the biology of the cGAS-STING pathway, the cell’s alarm system that shapes immune and stress responses with impacts on a range of processes, from antiviral defense and tumor immunity to chronic inflammation and disease. The underlying biology of cGAS and STING signaling will guide new therapeutics.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "cGAS-STING路徑：機制與醫學應用前景",
+      "summaryZh": "這篇發表於《Cell》的綜論文獻深入探討cGAS-STING路徑的生物學機制。該路徑扮演細胞警報系統的角色，調控免疫與壓力反應，並與抗病毒防禦、腫瘤免疫及慢性發炎等多種生理病理過程密切相關。了解cGAS與STING訊號傳導的詳細機制，將為開發新型治療藥物提供重要科學依據。",
+      "topicTags": [
+        "immunology",
+        "innate-immunity",
+        "inflammation",
+        "cancer-immunotherapy",
+        "drug-discovery"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.06.002",
+      "title": "AI-driven discovery of GPNMB CAR T cells as a multi-cancer therapy",
+      "journal": "Cell",
+      "publishedDate": "2026-06-25T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00651-3?rss=yes",
+      "doi": "10.1016/j.cell.2026.06.002",
+      "abstract": "An AI-guided framework integrating high-resolution cellular atlases, public knowledge databases, and large language models enables a modular framework for CAR T cell target discovery. GPNMB emerged as a versatile candidate antigen, enabling the development of GPNMB CAR T cells with potent activity in multiple xenograft mouse models of cancer.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer",
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "AI 驅動發現 GPNMB CAR T 細胞作為多癌種療法",
+      "summaryZh": "本研究開發了一套整合高解析度細胞圖譜、公眾知識資料庫與大型語言模型的 AI 導向框架，用於模組化發現 CAR T 細胞治療標的。研究團隊從中篩選並確認 GPNMB 為具有潛力的多功能候選抗原。GPNMB CAR T 細胞在多種癌症異種移植小鼠模型中展現強效抗腫瘤活性，凸顯其跨癌種治療的廣泛應用前景。此研究為 CAR T 細胞療法的開發提供了新穎的 AI 輔助策略，有望加速精準腫瘤免疫治療的進展。",
+      "topicTags": [
+        "car-t-cell",
+        "ai-drug-discovery",
+        "cancer-immunotherapy",
+        "gpnmb",
+        "multi-cancer"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.05.046",
+      "title": "A disinhibitory basal forebrain-to-cortex projection supports sustained attention",
+      "journal": "Cell",
+      "publishedDate": "2026-06-25T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00646-X?rss=yes",
+      "doi": "10.1016/j.cell.2026.05.046",
+      "abstract": "A long-range inhibitory projection from the basal forebrain disinhibits the cortex to amplify sensory responses. This circuit encodes motivational salience and predicts moment-to-moment attentional performance, providing a mechanism for the real-time control of sustained attention.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "基底前腦抑制性投射調控皮層活動支持持續性注意力",
+      "summaryZh": "本研究發現基底前腦存在一條長程抑制性投射至皮層，透過去抑制機制放大感覺反應。這條神經迴路能編碼動機顯著性，並預測即時的注意力表現。此發現為持續性注意力的即時調控提供了新的神經機制，有助於理解注意力缺陷相關疾病的病理基礎。",
+      "topicTags": [
+        "neuroscience",
+        "attention",
+        "basal-forebrain",
+        "cortical-circuit",
+        "disinhibition"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02629-4",
+      "title": "Advances and challenges of splicing prediction with AI",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-06-25T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02629-4",
+      "doi": "10.1038/s41588-026-02629-4",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "AI預測RNA剪接的進展與挑戰",
+      "summaryZh": "RNA剪接是真核生物基因表現調控的關鍵步驟，異常剪接與癌症、神經退化疾病等多種人類疾病密切相關。近年來人工智慧與深度學習技術的快速發展，大幅提升了剪接預測的準確性與效率，為解碼基因組複雜調控機制開闢了新途徑。本篇綜述系統性地回顧了AI輔助剪接預測的最新進展，包括模型架構創新與訓練策略優化，同時也深入探討了現有方法在泛化能力、解釋性及臨床轉化等方面仍面臨的挑戰。這些研究成果對於推動精準醫療、基因療法開發及遺傳疾病診斷具有重要的科學與應用價值。",
+      "topicTags": [
+        "splicing",
+        "machine-learning",
+        "genomics",
+        "gene-expression",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03135-w",
+      "title": "Bacterial genes rescue starving giants",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-06-25T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03135-w",
+      "doi": "10.1038/s41559-026-03135-w",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "細菌基因拯救挨餓的巨型生物",
+      "summaryZh": "這項研究揭示了細菌基因在幫助大型生物度過飢餓困境中的關鍵角色，展現了微生物與巨人之間令人驚嘆的跨物種互助機制。這種基因層面的救援策略可能涉及水平基因轉移或共生關係的演化適應，對理解生態系統中的營養循環具有重要意義。研究結果挑戰了我們對飢餓反應的傳統認知，表明大型生物可能依賴細菌來獲取關鍵的營養或代謝能力。此發現為農業、保育及微生物製藥領域提供了新的思路。",
+      "topicTags": [
+        "microbiology",
+        "symbiosis",
+        "ecology",
+        "evolution",
+        "horizontal-gene-transfer"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03139-8",
+      "title": "Toward mechanistic virtual immune cells",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-06-25T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03139-8",
+      "doi": "10.1038/s41587-026-03139-8",
+      "abstract": "This Comment outlines molecular and technical considerations for developing mechanistically grounded virtual immune cell models.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "邁向機制性虛擬免疫細胞",
+      "summaryZh": "本評論文章探討了建構具機械原理基礎的虛擬免疫細胞模型所需考量的分子與技術層面。虛擬免疫細胞能夠模擬免疫系統的複雜功能，有望加速免疫學研究並減少動物實驗的需求。此類計算模型可應用於藥物開發、免疫療法設計及個人化醫療等領域。隨著單細胞定序與系統生物學的進展，科學家已具備足夠的數據基礎來建構更精準的免疫細胞模型。本研究為未來虛擬免疫系統的發展提供了重要的理論框架與實踐指引。",
+      "topicTags": [
+        "immunology",
+        "computational-biology",
+        "systems-biology",
+        "virtual-cells",
+        "drug-discovery"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02347-4",
+      "title": "DBS: from neuromodulation to neuroremodelling",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-06-25T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02347-4",
+      "doi": "10.1038/s41593-026-02347-4",
+      "abstract": "Deep-brain stimulation (DBS) treats movement and neuropsychiatric disorders through mechanisms that remain unclear. Two studies that combine longitudinal neuroimaging, stimulation experiments and tissue-level analysis show that the effects of DBS evolve in space and time, demonstrating acute effects on network activity as well as providing insights into chronic effects that reshape the networks it engages.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "深腦刺激：從神經調控到神經重塑",
+      "summaryZh": "深腦刺激（DBS）已被廣泛用於治療運動障礙及神經精神疾病，但其作用機制仍未完全闡明。本研究結合縱向神經影像學、刺激實驗及組織層級分析，揭示DBS效應在空間與時間上的動態變化。研究發現DBS具有急性神經網路調控作用，並進一步證實長期刺激能夠重塑其所作用的神經網路結構。這些發現為優化DBS治療策略及開發更精準的神經調控技術提供了重要的科學依據。",
+      "topicTags": [
+        "deep-brain-stimulation",
+        "neuroscience",
+        "neuroimaging",
+        "neural-networks",
+        "movement-disorders"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02333-w",
+      "title": "Learning shapes neural geometry in the primate prefrontal cortex",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-06-25T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02333-w",
+      "doi": "10.1038/s41593-026-02333-w",
+      "abstract": "Learning transforms prefrontal cortex activity from flexible, high-dimensional representations into compact, task-relevant and abstract codes, enabling efficient generalization of learned rules to new stimuli and contexts.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "學習塑造靈長類前額葉皮層的神經幾何結構"
+    },
+    {
+      "id": "10.1038/s41593-026-02345-6",
+      "title": "Human hippocampal ripples tune cortical responses based on predicted uncertainty",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-06-25T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02345-6",
+      "doi": "10.1038/s41593-026-02345-6",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "海馬體 ripples 根據預測不確定性動態調整皮質反應",
+      "summaryZh": "本研究揭示了海馬體 ripples——這類在記憶鞏固期間出現的快速振盪事件——如何根據預測的不確定性動態調控皮質反應。研究團隊發現，當預測誤差較高或資訊不確定時， ripples 的發生頻率與時序會發生顯著改變，進而影響皮質區域的神經活動模式。這項發現為預測編碼理論與記憶系統神經科學之間提供了重要的橋梁，顯示 ripples 可能作為一種閘門機制，決定哪些資訊能夠獲得皮質資源的優先處理。研究成果有助於深入理解人類記憶鞏固的神經機制，並為相關記憶障礙疾病的治療策略提供新思路。",
+      "topicTags": [
+        "neuroscience",
+        "hippocampus",
+        "memory-consolidation",
+        "predictive-coding",
+        "neural-oscillations"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02404-5",
+      "title": "Bacteroides fragilis toxin promotes gall bladder cancer in mice",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-06-25T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02404-5",
+      "doi": "10.1038/s41564-026-02404-5",
+      "abstract": "Binding between bacterial membrane-bound lytic murein transglycosylase D (MltD) and host transmembrane serine protease 13 (TMPRSS13) potentiates the tumorigenic effects of Bacteroides fragilis toxin through JAK2–STAT3 signalling and myeloid-derived suppressor cell recruitment in gall bladder cancer.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "脆弱擬桿菌毒素促進小鼠膽囊癌"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003871",
+      "title": "Engineered bipaternal mice reveal the consequences of life without a maternal genomic contribution",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-25T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003871",
+      "doi": "10.1371/journal.pbio.3003871",
+      "abstract": "Successful mammalian development normally requires contributions from both maternal and paternal genomes, yet how these parental components jointly shape organismal development remains incompletely understood. Using engineered bipaternal mice generated from androgenetic embryonic stem cells carrying extensive imprinting-region modifications and produced through tetraploid complementation, we examined developmental and physiological consequences of development supported exclusively by paternal genomes. Placental analyses revealed partial normalization of placental growth but persistent differences among conceptuses. Transcriptomic profiling across embryos and postnatal tissues similarly showed broad alterations in gene expression states involving both imprinted and non-imprinted genes. Despite these differences during development, adult physiology showed a more coherent endpoint: integrated transcriptomic and metabolomic analyses revealed that adult livers converge toward an altered metabolic configuration characterized by coordinated perturbations of the tricarboxylic acid cycle and associated lipid metabolism, accompanied by hepatic lipid accumulation and increased systemic fat mass. These findings indicate that paternal-only mammalian development can proceed across multiple stages but follows altered developmental trajectories that culminate in distinct physiological states, providing insight into how maternal and paternal genomic contributions interact to shape mammalian development and physiology.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "工程化雙父源小鼠揭示缺乏母源基因組貢獻的生命後果"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003858",
+      "title": "Angptl5 restricts primitive hematopoiesis by promoting retinoic acid signaling in zebrafish",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-25T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003858",
+      "doi": "10.1371/journal.pbio.3003858",
+      "abstract": "Homeostasis is essential for hematopoiesis, and its dysregulation can lead to severe pathological conditions. Retinoic acid (RA) is a key regulator that exerts concentration-dependent effects on both embryonic and adult hematopoiesis. However, the mechanisms that modulate RA signaling in hematopoietic processes remain poorly understood. Using zebrafish as a model, we identified angiopoietin-like protein 5 (Angptl5) as a critical regulator of hematopoietic homeostasis. Loss of Angptl5 function resulted in myeloid hyperplasia in the anterior lateral plate mesoderm (ALPM) and anterior expansion of erythroid progenitors in the posterior lateral plate mesoderm (PLPM)—phenotypes consistent with attenuated RA signaling. Molecular analyses confirmed impaired RA signaling in angptl5 Δ10/Δ10 mutants, and exogenous RA supplementation fully rescued the hematopoietic defects. Mechanistically, we found that Angptl5 transcriptionally activates retinol dehydrogenase dhrs9 through its interaction with Integrin α6lβ5. Our findings establish Angptl5 as a novel and essential regulator of embryonic hematopoiesis and reveal a previously unrecognized mechanism controlling hematopoietic homeostasis. These insights position Angptl5 as a potential therapeutic target for hematological disorders.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Angptl5透過促進斑馬魚視黃酸訊號傳導限制原始造血"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003854",
+      "title": "Multiple adhesion molecules act together in oligodendrocyte-mediated axonal selection and myelin formation",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-25T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003854",
+      "doi": "10.1371/journal.pbio.3003854",
+      "abstract": "Rapid information processing in complex organisms depends on myelin, which consists of a multilamellar membrane that tightly adheres to the axonal surface along the internode and at paranodal loops, where specialized adhesion proteins maintain axon-glial contact. Because the decision to myelinate an axon profoundly influences neuronal transmission, this process must be precisely regulated. Yet, it remains unclear which specific molecules enable oligodendrocytes to select appropriate axonal substrates for myelination. Several key myelin-associated adhesion systems have been identified, including Myelin-associated glycoprotein (Mag) and Cell Adhesion Molecule 4 (Cadm4) at the internode, as well as Contactin1 (Cntn1) at the paranode; however, these three adhesion molecules have not previously been deleted in combination. Here, using zebrafish, we systematically disrupted all three myelin-associated adhesion systems. We found that the combined loss of Mag, Cadm4, and Cntn1 severely impairs myelin initiation and destabilizes the few nascent sheaths that do form, resulting in a phenotype characterized by oligodendrocytes exhibiting membrane “stubs”. The failure to form myelin triggered cell death of early myelinating oligodendrocytes and resulted in profound hypomyelination. Our findings reveal that axonal target selection and myelin formation depend on a redundant set of adhesion molecules, and that their simultaneous loss largely abolishes myelin biogenesis.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "多種黏附分子共同作用於少突膠質細胞介導的軸突選擇與髓鞘形成"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003823",
+      "title": "Splicing deficiency is driven by genomic erosion in non-recombining algal mating-type chromosomes",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-06-25T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003823",
+      "doi": "10.1371/journal.pbio.3003823",
+      "abstract": "Splicing deficiency may represent a critical yet underexplored form of genomic erosion in non-recombining regions. Across four phytoplankton species diverged ~333–639 million years ago, genes within U (female) and V (male) “UV” mating-type regions—non-recombining chromosomal regions that determine mating compatibility—show strikingly elevated intron retention relative to genes in other genomic regions. Long-read data reveal abundant aberrant, likely non-functional mRNA isoforms despite preserved coding potential. This preservation suggests that splicing defects arose early in UV evolution and have persisted over deep time. We propose that these defects arise from evolutionary changes in sequence composition and chromatin organization that accompany recombination suppression, such as reduced GC content, altered nucleosome occupancy, and disrupted methylation, that collectively compromise splicing fidelity. Unlike sex chromosomes, which often degenerate through gene loss, splicing-deficient UV regions in green algae retain hundreds of genes, indicating that transcript-level dysfunction provides an alternative route to functional decay. Our results identify chromatin-mediated splicing deficiency as a novel axis of genomic erosion and position algal UV systems as models for studying how recombination suppression reshapes RNA processing fidelity in essential, non-recombining genomes.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "剪接缺陷由不重組藻類交配型染色體的基因組侵蝕所驅動"
+    },
+    {
+      "id": "10.64898/2026.06.18.733163",
+      "title": "CellOS: Learning a World Model of Cellular State through Joint Embedding Prediction",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.18.733163v2",
+      "doi": "10.64898/2026.06.18.733163",
+      "abstract": "Foundation models learned from single-cell transcriptomes are central to the prospect of AI virtual cell that can represent, query and predict cellular state. However, most current single-cell foundation models learn from a single view of gene expression and are optimized primarily through reconstruction or next-token prediction. As a result, they capture expression abundance but can-not explicitly reconcile complementary views of cellular state. Here we present CellOS, a multi-view foundation model that learns cellular representations from paired expression and perception views. CellOS integrates complementary views through a scalable three-stage training strategy that combines causal cell-sentence language modelling, function-preserving dense-to-mixture-of-experts expansion and latent-space alignment via an LLM-JEPA objective. Using this framework, we trained a 12-billion-parameter model on 390.5 million single-cell transcriptomes. Across diverse benchmarks spanning cell-state annotation, batch integration and perturbation-response prediction, CellOS consistently outperformed state-of-the-art single-cell foundation models. Together, these results suggest that predictive alignment between complementary cellular views provides a scalable path toward representation-centric cellular world models and transferable AI virtual cells.",
+      "authors": [
+        "Zhou, Q.",
+        "Le, Y.",
+        "Qi, X.",
+        "Chang, S.",
+        "Lu, H.",
+        "Wu, Y.",
+        "Wang, H.",
+        "Ran, R.",
+        "li, x."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "CellOS：透過聯合嵌入預測學習細胞狀態世界模型"
+    },
+    {
+      "id": "10.64898/2026.06.23.733339",
+      "title": "DextraDemixer enables accurate identification of antigen-specific T cells from pMHC multimer experiments",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.23.733339v1",
+      "doi": "10.64898/2026.06.23.733339",
+      "abstract": "Antigen specificity of T cells defines the adaptive immune response, yet the vast majority of known T cell receptors (TCRs) lack annotated antigen targets. Single-cell peptide-MHC (pMHC) multimer assays offer a scalable approach to map TCR-antigen interactions. Still, their utility is limited by pervasive non-specific binding and severe overlap between signal and noise, which confound the accurate identification of antigen-specific cells. To address these limitations, we present DextraDemixer, a Bayesian hierarchical mixture model that disentangles antigen-specific T cells from background noise in pMHC multimer data. The model integrates information from negative controls and clonotype structure while providing calibrated uncertainty estimates for classification. We further introduce a dynamic thresholding scheme that enables credible interval-bounded control of the false discovery rate. Extensive benchmarking on simulated datasets and antigen-specific spike-in experiments demonstrated the model's robustness and improved accuracy over established methods. In a longitudinal SARS-CoV-2 vaccine study, DextraDemixer identified antigen-specific TCRs characterized by high sequence similarity, elevated antigen-specificity prediction scores, and strong clonal purity. Annotations showed high concordance with external validation data and supported the identification of antigen-specific motifs. Overall, DextraDemixer provides a principled probabilistic framework for reliable identification of antigen-specific TCRs from single-cell pMHC-multimer assays.",
+      "authors": [
+        "An, Y.",
+        "Drost, F.",
+        "Bonafonte-Pardas, I.",
+        "Grotz, M.",
+        "Schober, K.",
+        "Schubert, B."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "DextraDemixer實現pMHC多聚體實驗中抗原特異性T細胞的準確識別"
+    },
+    {
+      "id": "10.64898/2026.06.22.733853",
+      "title": "The Human Pancreas Cell Atlas defines a healthy reference framework for disease contextualization and translational benchmarking",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.22.733853v1",
+      "doi": "10.64898/2026.06.22.733853",
+      "abstract": "A central challenge in single-cell biology is distinguishing disease-associated remodeling from normal cellular heterogeneity. Addressing this challenge requires healthy reference frameworks that capture cellular diversity across individuals, technologies, and biological contexts. Here we present the Human Pancreas Cell Atlas (HPCA), a reference atlas of the healthy human pancreas integrating 815,126 single-cell and single-nucleus transcriptomes from 109 donors across 12 studies, diverse technologies, and demographics. Using benchmarked integration and community-driven annotations, HPCA defines 94 cell types and transcriptional states spanning endocrine, exocrine, immune, and stromal compartments. The atlas identifies rare endocrine populations, including a putative, spatially supported polyhormonal alpha-beta-delta state, and provides a unified framework for interpreting pancreatic cellular variation across diverse biological and demographic covariates. Projection of disease and model-system datasets onto HPCA contextualized endocrine and epithelial remodeling relative to healthy pancreatic states. Diabetes-associated endocrine cells remained embedded within the healthy endocrine state space while exhibiting disease-specific changes, as supported by spatial and eQTL concordance analyses. Integration with a pancreatic ductal adenocarcinoma atlas resolved injury-associated and malignant epithelial ecosystem regions across donors. Finally, the HPCA enables quantitative benchmarking of murine diabetes models and stem-cell-derived islets against human pancreatic reference states. Together, the HPCA establishes a healthy transcriptional coordinate system for interpreting disease-associated pathophysiology , experimental perturbation, and regenerative fidelity, illustrating how reference atlases can function as analytical frameworks rather than static cell catalogs.",
+      "authors": [
+        "Parikh, S.",
+        "Strobl, D. C.",
+        "Jimenez, S.",
+        "Beckmann, J. L.",
+        "Arnoldt, L.",
+        "Roellin, E.",
+        "Vandenbempt, V.",
+        "Sterr, M.",
+        "Aije, M.",
+        "Vu, H. T. H.",
+        "Melton, R.",
+        "Liu, J.",
+        "Feng, F.",
+        "Cartailler, J.",
+        "Gaulton, K. J.",
+        "Parker, S. C. J.",
+        "Ruland, J.",
+        "Conrad, C.",
+        "Brissova, M.",
+        "Carlotti, F.",
+        "Lickert, H.",
+        "Eils, R.",
+        "Balboa, D.",
+        "Luecken, M. D.",
+        "Theis, F. J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "人類胰臟細胞圖譜：定義健康參考框架以用於疾病脈絡化與轉譯基準測試"
+    },
+    {
+      "id": "10.64898/2026.06.21.728965",
+      "title": "NanoCellAnnotator: Formalizing Expert Cell Type Annotation with Large Language Models",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.21.728965v1",
+      "doi": "10.64898/2026.06.21.728965",
+      "abstract": "Motivation: Cell-type annotation in spatial transcriptomics is challenging due to sparse gene panels, spatial heterogeneity, and limited availability of tissue-matched reference atlases. Recent approaches have explored large language models (LLMs) for integrating biological knowledge during annotation, but unconstrained inference can produce biologically unsupported predictions and hallucinated cell types. In addition, many LLM-based pipelines rely on large cloud-hosted models that limit reproducibility and deployment in privacy-sensitive environments. Results: We introduce NanoCellAnnotator, a biologically constrained and confidence-aware framework for automated cell-type annotation in spatial transcriptomics. The framework de-couples spatial structure discovery, deterministic biological evidence construction, and language model-based semantic inference. Spatial clusters are identified using hybrid spatially regularized non-negative matrix factorization (hSNMF), after which cluster-level marker genes are abstracted into ontology-derived functional programs using Gene Ontology enrichment and GO-slim projection. A lightweight locally executable language model performs constrained label selection within a curated admissible label space derived from PanglaoDB and CellMarker. Annotation confidence is estimated independently using marker support strength and lineage separation, enabling ambiguous or heterogeneous clusters to be explicitly flagged. We evaluate NanoCellAnnotator on Xenium spatial transcriptomics data from intrahepatic cholangiocarci-noma and an independent breast cancer spatial transcriptomics dataset. The framework recovers canonical cell populations with high confidence while identifying heterogeneous or transitional spatial domains as ambiguous. Agreement with manual annotations was evaluated using accuracy and adjusted Rand index. Availability: Code available at https://github.com/ishtyaqmahmud/NanoCellAnnotator.",
+      "authors": [
+        "Mahmud, M. I.",
+        "Kochat, V.",
+        "Anzum, H.",
+        "Satpati, S.",
+        "Dwarampudi, J. M. R.",
+        "Rai, K.",
+        "Banerjee, T."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "spatial domains",
+        "Xenium",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "NanoCellAnnotator：使用大型語言模型形式化專家細胞類型註釋"
+    },
+    {
+      "id": "10.64898/2026.06.21.733596",
+      "title": "Ambiguity-Aware Multi-Stage Cell-Type Annotation for Spatial Transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.21.733596v1",
+      "doi": "10.64898/2026.06.21.733596",
+      "abstract": "Spatial transcriptomics enables characterization of cellular organization in intact tissue, but robust cell type annotation remains challenging due to heterogeneous expression profiles, mixed populations, and transitional states. Existing methods often enforce a single label per cluster, obscuring biologically meaningful ambiguity and producing overconfident assignments. We propose an ambiguity-aware, multi-stage framework for spatial cell-type annotation. The method combines hybrid spatial feature clustering with constrained language-model inference over curated label sets, and assigns confidence scores based on marker coverage, candidate separation, and entropy. Low-confidence clusters are selectively refined via local reclustering of ambiguous regions, while unresolved clusters are preserved as mixed rather than forcibly labeled. Applied to 10x Genomics Xenium spatial transcriptomics data from cholangiocarcinoma, the proposed refinement reduces cluster-level ambiguity from 16.1% to 2.27% and cell-level ambiguity from 18.4% to 0.86%, while improving confidence calibration. Spatial ablation confirms that topological integration resolves structural ambiguity over feature-only baselines, while constrained inference via a lightweight language model ensures scalable and biologically coherent annotations. These results highlight the importance of explicit ambiguity handling for reliable spatial annotation in heterogeneous tumors.",
+      "authors": [
+        "Mahmud, M. I.",
+        "Kochat, V.",
+        "Anzum, H.",
+        "Satpati, S.",
+        "Dwarampudi, J. M. R.",
+        "Rai, K.",
+        "Banerjee, T."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "Xenium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "模糊感知多階段細胞類型註釋應用於空間轉錄體學"
+    },
+    {
+      "id": "10.1126/science.adx6925",
+      "title": "The origin, history, and resistance architecture of an invasive urban malaria mosquito in Africa",
+      "journal": "Science",
+      "publishedDate": "2026-06-25T06:00:05.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/science.adx6925?af=R",
+      "doi": "10.1126/science.adx6925",
+      "abstract": "The invasive urban malaria vector Anopheles stephensi threatens 126 million city-dwellers in Africa. Controling An. stephensi requires greater understanding of its origin, invasion dynamics, and insecticide resistance mechanisms. Analysis of 645 whole genomes sampled across Africa, the Middle East, and Asia supports an invasion scenario in which an initial introduction South Asian introduction established a bridgehead population in Djibouti, which seeded distinct invasion fronts in Sudan, Ethiopia–Kenya, and Yemen. These incursions show contrasting rates and routes of spread shaped by landscape topology. Insecticide resistance is predominantly mediated by metabolic detoxification genes, with resistance haplotypes and copy-number amplifications introduced from South Asia. These findings, alongside a companion genomic resource, enable genomic surveillance of An. stephensi spread and resistance to aid control strategies.",
+      "sourceId": "science",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "入侵非洲城市瘧蚊的起源、抗藥性與傳播地圖",
+      "summaryZh": "入侵城市瘧蚊媒介斯氏瘧蚊（Anopheles stephensi）威脅著非洲1.26億城市居民的健康。本研究分析橫跨非洲、中東及亞洲645個基因組，揭示其從南亞經吉布地建立根據地，再擴散至蘇丹、衣索比亞-肯亞及葉門的入侵途徑，且傳播速度與路徑深受地形景觀影響。抗藥性主要由代謝解毒基因所介導，相關基因單倍型及拷貝數增幅均源自南亞族群。這些發現為斯氏瘧蚊的基因組監測與抗藥性追蹤提供關鍵工具，有助於制定更有效的防控策略。",
+      "topicTags": [
+        "malaria",
+        "anopheles-stephensi",
+        "invasive-species",
+        "insecticide-resistance",
+        "genomic-surveillance"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 35,
+      "passedByScope": 22,
+      "llmClassified": 13,
+      "llmYes": 5,
+      "llmNotSure": 0,
+      "llmNo": 8,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 27,
+      "excluded": 8
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 23,
+      "llmTagged": 23,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 23,
+      "candidates": 23,
+      "featured": 12,
+      "overflow": 11,
+      "lineA": 0,
+      "lineB": 18,
+      "preprint": 5,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 11,
+      "llmTranslated": 11,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10829-5",
+        "title": "Publisher Correction: In situ nanocrystal confinement for efficient blue perovskite LEDs",
+        "journal": "Nature",
+        "publishedDate": "2026-06-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10829-5",
+        "doi": "10.1038/s41586-026-10829-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10826-8",
+        "title": "Ligand-enabled distal desaturative lactonization of aliphatic acids",
+        "journal": "Nature",
+        "publishedDate": "2026-06-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10826-8",
+        "doi": "10.1038/s41586-026-10826-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02028-z",
+        "title": "US funding uncertainties threaten to sink key global oceanography projects",
+        "journal": "Nature",
+        "publishedDate": "2026-06-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02028-z",
+        "doi": "10.1038/d41586-026-02028-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02047-w",
+        "title": "China’s LineShine just topped the global supercomputer ranking: what you need to know",
+        "journal": "Nature",
+        "publishedDate": "2026-06-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02047-w",
+        "doi": "10.1038/d41586-026-02047-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01978-8",
+        "title": "Can you terraform Mars? Try Nature’s game",
+        "journal": "Nature",
+        "publishedDate": "2026-06-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01978-8",
+        "doi": "10.1038/d41586-026-01978-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02036-z",
+        "title": "Electric fields probe the symmetry of the ‘heavy hydrogen’ nucleus",
+        "journal": "Nature",
+        "publishedDate": "2026-06-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02036-z",
+        "doi": "10.1038/d41586-026-02036-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/science.aed5665",
+        "title": "Cyclic sealing and drainage on an oceanic transform fault",
+        "journal": "Science",
+        "publishedDate": "2026-06-25T06:00:05.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/science.aed5665?af=R",
+        "doi": "10.1126/science.aed5665",
+        "sourceId": "science"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/science.adv3075",
+        "title": "Constraining an exoplanet’s magnetic field using star-planet interactions",
+        "journal": "Science",
+        "publishedDate": "2026-06-25T06:00:05.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/science.adv3075?af=R",
+        "doi": "10.1126/science.adv3075",
+        "sourceId": "science"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
