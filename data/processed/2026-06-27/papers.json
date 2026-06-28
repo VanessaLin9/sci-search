@@ -1,0 +1,223 @@
+{
+  "reportDate": "2026-06-27",
+  "generatedAt": "2026-06-28T10:46:18.860Z",
+  "papers": [
+    {
+      "id": "10.1038/s41467-026-75005-9",
+      "title": "Enhancing molecular property prediction of transformer models with dual graph representation",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-27T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-75005-9",
+      "doi": "10.1038/s41467-026-75005-9",
+      "abstract": "Molecular representation is critical for property prediction. Here authors introduce a dual graph transformer that fuses atom, bond, topology, structure, and stereogeometric features within self-attention to enhance molecular property prediction.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "not_sure",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "以雙圖表示法增強Transformer模型之分子性質預測",
+      "summaryZh": "分子性質預測在藥物研發與材料科學中扮演關鍵角色。本研究提出雙圖Transformer架構，創新性地融合原子、鍵結、拓撲結構、立體幾何等多元分子特徵，透過自我注意力機制有效整合不同尺度的結構資訊。此方法可更全面地捕捉分子結構與性質之間的複雜關聯，顯著提升預測準確度，為加速新藥開發與功能性材料設計提供有力工具。",
+      "topicTags": [
+        "molecular-property-prediction",
+        "transformer-models",
+        "graph-neural-networks",
+        "drug-discovery",
+        "machine-learning"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-73994-1",
+      "title": "Prediction error correlates in the striosome-dopamine circuit emerge from information gain",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-27T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-73994-1",
+      "doi": "10.1038/s41467-026-73994-1",
+      "abstract": "Striosomes and the brain’s dopamine system influence learning, movement, and decision-making, but it is difficult to account for these roles together. Here the authors show that dopamine signals can be understood as tracking how much new information changes what action should be taken next, unifying its diverse functions under a single principle.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "紋狀體-多巴胺迴路中的預測誤差訊號源於資訊增益",
+      "summaryZh": "這項研究探討了紋狀體小區與大腦多巴胺系統之間的互作關係，發現多巴胺訊號能夠追蹤「資訊增益」——即新資訊如何改變下一個行動的選擇。這一發現將多巴胺在學習、運動和決策中的多樣功能統一在單一原則下，為理解大腦獎勵系統提供了創新的理論框架。研究結果不僅解釋了多巴胺為何能同時影響多種認知功能，也可能為柏金遜症等神經退化性疾病的治療策略提供新思路。",
+      "topicTags": [
+        "dopamine",
+        "striatum",
+        "reinforcement-learning",
+        "decision-making",
+        "neural-circuits"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-74400-6",
+      "title": "NAD+ modulates mitochondrial vulnerability in MERTK-associated models of retinitis pigmentosa",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-27T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74400-6",
+      "doi": "10.1038/s41467-026-74400-6",
+      "abstract": "Retinitis pigmentosa leads to blindness due to photoreceptor loss. Here, the authors show that the NAD+ precursor NMN protects against retinal degeneration by improving mitochondrial function in MERTK-associated models, offering potential therapeutic insights.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "NAD+調控MERTK相關視網膜色素病變的粒線體脆弱性",
+      "summaryZh": "視網膜色素病變會導致光感受器細胞死亡而造成失明，是常見的遺傳性眼疾。本研究發現NAD+前驅物NMN能夠改善粒線體功能，從而保護視網膜免於退化。在MERTK基因突變相關的視網膜色素病變模型中，NMN展現出顯著的神經保護效果。此發現不僅闡明了NAD+在視網膜退化中的關鍵角色，更為MERTK突變相關的視網膜疾病提供了新的治療策略與臨床應用潛力。",
+      "topicTags": [
+        "retinitis-pigmentosa",
+        "mitochondria",
+        "nad-supplementation",
+        "retinal-degeneration",
+        "ocular-disease"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-74914-z",
+      "title": "Ecological multifunctionality of watersheds increases with tree species richness",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-27T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74914-z",
+      "doi": "10.1038/s41467-026-74914-z",
+      "abstract": "Watersheds support ecological functions, yet how biodiversity shapes their performance across large landscapes remains unclear. This study finds that higher forest tree diversity increases with watershed multifunctionality, but the effect weakens in arid climates.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "森林樹種多樣性提升流域生態多功能性",
+      "summaryZh": "流域是重要的生態系統，提供水源調節、養分循環等多種生態服務。本研究發現，較高的森林樹種多樣性與流域多功能性呈正相關，顯示生物多樣性對維持生態系統服務具有關鍵作用。然而，這種正向關係在乾旱氣候區會減弱，突顯氣候條件在調控生物多樣性與生態功能關係中的重要性。這些發現為流域管理與森林保育政策提供了重要的科學依據。",
+      "topicTags": [
+        "biodiversity",
+        "ecology",
+        "watershed",
+        "forest",
+        "climate"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-74933-w",
+      "title": "Multiple human transgenes prolong survival of triple-carbohydrate knockout porcine kidney xenografts in nonhuman primates",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-27T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74933-w",
+      "doi": "10.1038/s41467-026-74933-w",
+      "abstract": "Genetically modified pigs lacking the three major carbohydrate xenoantigens (3KO) are being developed to reduce immune rejection in xenotransplantation. Here, the authors evaluate 3KO kidney grafts and show that adding human transgenes, notably TNFAIP3 and HMOX1, dampens immune responses and improves graft survival in non-human primate models",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "多人類轉基因延長三碳水化合物剔除豬腎異種移植於非人類靈長類的存活時間",
+      "summaryZh": "異種移植是解決器官短缺的重要策略，但豬與人類之間的免疫不相容性是主要障礙。本研究利用剔除三種主要碳水化合物異種抗原的基因改造豬（3KO）進行腎臟移植，並在非人類靈長類模型中測試。研究發現，額外加入人類轉基因（如TNFAIP3與HMOX1）能有效抑制免疫排斥反應，顯著延長移植腎臟的存活時間。此成果為克服異種移植免疫障礙提供了關鍵策略，對未來臨床應用具有重要意義。",
+      "topicTags": [
+        "xenotransplantation",
+        "kidney",
+        "genetic-engineering",
+        "immunology",
+        "primates"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 7,
+      "passedByScope": 0,
+      "llmClassified": 7,
+      "llmYes": 4,
+      "llmNotSure": 1,
+      "llmNo": 2,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 5,
+      "excluded": 2
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 5,
+      "llmTagged": 5,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 5,
+      "candidates": 5,
+      "featured": 5,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 5,
+      "preprint": 0,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 5,
+      "llmSummarized": 5,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-74830-2",
+        "title": "Hyperbranched dielectric polymer networks exhibiting giant energy storage density at 250 °C",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-06-27T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-74830-2",
+        "doi": "10.1038/s41467-026-74830-2",
+        "abstract": "To overcome charge transfer and achieve efficient capacitive energy storage in dielectric polymers at thermal extremes, hyperbranched networks are designed to expand inter-chain spacing and suppress secondary relaxation, delivering 4.9 J/cm³ energy density with 90% efficiency at 250 °C.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-73889-1",
+        "title": "Highly robust molecular information carriers for traceability of plastic materials",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-06-27T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-73889-1",
+        "doi": "10.1038/s41467-026-73889-1",
+        "abstract": "Sequence-defined oligomers offer programmable molecular architectures but their deployment in real-world materials has been constrained by their low scale, limited thermal resilience and the need for specialized analytical methods. Here the authors introduce a molecular tagging strategy based on abiotic sequence-defined oligoamides incorporated at ultralow concentrations that endure the thermal and chemical conditions of industrial polymer processing",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
