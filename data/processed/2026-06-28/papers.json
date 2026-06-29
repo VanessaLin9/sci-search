@@ -1,0 +1,203 @@
+{
+  "reportDate": "2026-06-28",
+  "generatedAt": "2026-06-29T11:41:24.015Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.06.25.734628",
+      "title": "Lineage-aware stochastic modeling reveals gene-expression dynamics in development and disease",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.25.734628v1",
+      "doi": "10.64898/2026.06.25.734628",
+      "abstract": "Gene expression evolves dynamically along cell lineages, yet most analysis methods treat single-cell RNA-seq (scRNA-seq) data as static snapshots and fail to exploit phylogenetic relationships among cells. Recent advances in cell-lineage tracing now enable the reconstruction of high-resolution lineage phylogenies, providing a natural framework for identifying when and where transcriptional changes arise during development, differentiation, and disease progression. Some models of gene expression have begun to consider phylogenetic structure, but they generally rely on imprecise Gaussian assumptions, focus on endpoint-level comparisons, or fail to consider sparse and overdispersed scRNA-seq read counts. Here, we present LaVOUS (Lineage-aware Variational Ornstein-Uhlenbeck Single-cell RNA-seq analysis), a probabilistic framework that couples lineage-based models of latent dynamics derived from the Brownian motion and Ornstein-Uhlenbeck stochastic processes with negative-binomial observation models and scalable variational inference. LaVOUS enables likelihood-based tests for cellular heritability and branch-specific shifts in gene expression, as well as phylogenetic reconstruction of latent expression histories. In simulations, LaVOUS outperformed Gaussian method in detecting lineage-associated expression changes and produced accurate reconstructions of expression histories across expression levels. We additionally applied LaVOUS to paired single-cell lineage and transcriptomic data from metastatic lung cancer, class-switching B cells, and the developing brain. Across these settings, LaVOUS identified lineage-associated expression changes related to metastatic progression, B-cell isotype switching, and dopaminergic and glutamatergic neuron differentiation. By providing an expressive framework for modeling sparse count data on lineage trees, LaVOUS establishes a foundation for studying single-cell expression dynamics across developmental and disease contexts, with natural extensions to multi-gene regulation, lineage uncertainty, and multi-modal integration.",
+      "authors": [
+        "Xing, J.",
+        "Staklinski, S. J.",
+        "Liu, Z.",
+        "Nowak, D.",
+        "Siepel, A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "cancer",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "細胞譜系感知隨機模型揭示發育與疾病的基因表現動態",
+      "summaryZh": "單細胞RNA-seq數據通常被視為靜態快照，忽略了細胞譜系間的系統發育關係。本研究提出LaVOUS框架，結合布朗運動和Ornstein-Uhlenbeck隨機過程與負二項觀測模型，能對稀疏的scRNA-seq計數資料進行譜系感知分析。該方法可進行細胞遺傳性檢驗與分支特異性基因表現變化檢測，並支援潛在表現歷史的系統發育重建。在模擬與實際資料中，LaVOUS成功識別出與轉移性肺癌進展、B細胞類型轉換及神經元分化相關的譜系關聯表現變化，為發育與疾病情境下的單細胞表現動態研究奠定方法學基礎。",
+      "topicTags": [
+        "single-cell",
+        "lineage-tracing",
+        "gene-expression",
+        "stochastic-modeling",
+        "bioinformatics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.22.733860",
+      "title": "Spatial co-expression and cell-cell communication inference from spatially resolved transcriptomics with CONCISE",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.22.733860v1",
+      "doi": "10.64898/2026.06.22.733860",
+      "abstract": "Cell-cell communication is fundamental to tissue organization, homeostasis, and disease progression. Recent advances in spatial transcriptomics provide unprecedented opportunities to systematically characterize ligand-receptor interactions directly within intact tissues. However, robust inference of spatial ligand-receptor interactions remains challenging because intrinsic features of spatial transcriptomics data, including spatial autocorrelation, variation in total molecular counts, and measurement errors, can induce spurious spatial co-expression and lead to inflated false-positive results. Most existing methods do not adequately account for these confounding factors, limiting the reliability of inferred cellular communication. Here, we present CONCISE, a statistical method for spatially constrained co-expression and ligand-receptor interaction inference that jointly models spatial autocorrelation, variation in total molecular counts, measurement errors, and spatial proximity constraints. CONCISE combines efficient moment-based parameter estimation with analytical hypothesis testing, enabling fast and statistically rigorous inference without restrictive distributional assumptions. Through extensive simulations, real-data permutation experiments, and biologically motivated negative-control analyses across different spatial transcriptomics platforms, we show that most existing methods presented inflated false-positive rates, whereas CONCISE achieved well-calibrated inference, robust false-positive control, and improved detection power. Application of CONCISE to high-resolution MERFISH and CosMx datasets from intestinal inflammation and non-small cell lung cancer further highlights its biological utility in disease contexts. CONCISE uncovered inflammation-associated fibroblast-specific interactions during intestinal inflammation and delineated complex tumor-immune and tumor-stromal signaling networks within the tumor microenvironment.",
+      "authors": [
+        "Zhao, J.",
+        "Shan, X.",
+        "Wang, G.",
+        "Chu, T.",
+        "Lin, C.",
+        "Chang, R.",
+        "Zhao, H."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "MERFISH",
+        "CosMx",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "CONCISE：空間轉錄體學中細胞間通訊推斷的統計方法",
+      "summaryZh": "細胞間通訊對於組織結構、體內平衡與疾病進程至關重要，然而現有空間轉錄體學方法在推斷配體-受體交互作用時，常因空間自相關、分子計數變異及測量誤差等因素產生假陽性結果。CONCISE 是一種空間約束的共表達與配體-受體交互作用推斷統計方法，能夠聯合建模上述干擾因素並結合空間鄰近性約束，實現快速且統計嚴謹的推斷。研究團隊透過模擬實驗與多種空間轉錄體學平台驗證，證實 CONCISE 能有效控制假陽性率並提升檢測能力。應用於腸道發炎與非小細胞肺癌的 MERFISH 及 CosMx 高解析資料，CONCISE 揭示了發炎相關纖維母細胞的特異性交互作用，並描繪出腫瘤微環境中複雜的腫瘤-免疫與腫瘤-基質訊號網絡。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "cell-cell-communication",
+        "ligand-receptor",
+        "bioinformatics",
+        "statistics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.23.733649",
+      "title": "Fault-tolerant 3D reconstruction from 2D spatial proteomics sections",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.23.733649v1",
+      "doi": "10.64898/2026.06.23.733649",
+      "abstract": "Reconstructing 3D molecular volumes from sparsely sampled 2D tissue sections is limited by per-section marker dropout and tissue loss. We present 3D-Omics-Flow, a generative pipeline that jointly repairs damaged sections and interpolates between them at single-cell resolution. Across datasets spanning health and disease, 3D-Omics-Flow expands 3D spatial proteomics to practical sampling regimes, enabling atlas construction and downstream analysis from imperfect 2D section stacks.",
+      "authors": [
+        "Zhang, Z.",
+        "Tan, Y.",
+        "Nolan, G.",
+        "Snyder, M.",
+        "Ma, Z."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial proteomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "容錯式三維重建：從二維空間蛋白質體學切片還原分子結構",
+      "summaryZh": "從二維組織切片重建三維分子結構時，常面臨切片標記缺失與組織損耗的挑戰。本研究提出 3D-Omics-Flow，一種生成式流程，能在單細胞解析度下修復受損切片並填補其間的空隙。此方法適用於健康與疾病的多種資料集，將三維空間蛋白質體學擴展至實務可行的取樣範圍。這項技術為建構組織圖譜及進行下游分析開闢了新途徑，即使樣本為不完整的二維切片堆疊也能順利執行。",
+      "topicTags": [
+        "spatial-proteomics",
+        "3d-reconstruction",
+        "generative-ai",
+        "single-cell",
+        "tissue-atlas"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-74784-5",
+      "title": "Wild tomato genome assemblies reveal structural variants and repeat content act as recombination barriers",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-06-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74784-5",
+      "doi": "10.1038/s41467-026-74784-5",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "野生番茄基因體組裝揭示結構變異與重複序列作為重組障礙",
+      "summaryZh": "野生番茄的基因體組裝研究揭示了結構變異與重複序列如何成為基因重組的障礙。這項發現對於理解番茄的基因體演化具有重要意義，因為重複序列在植物基因體中佔據相當大的比例。研究結果表明，這些結構性障礙可能影響基因流動與物種分化。對於作物育種而言，了解這些分子機制將有助於開發更有效的遺傳改良策略，並為其他作物基因體的結構分析提供重要的參考框架。",
+      "topicTags": [
+        "genomics",
+        "plant-genetics",
+        "structural-variants",
+        "tomato",
+        "recombination"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 4,
+      "passedByScope": 3,
+      "llmClassified": 1,
+      "llmYes": 1,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 4,
+      "excluded": 0
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 4,
+      "llmTagged": 4,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 4,
+      "candidates": 4,
+      "featured": 4,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 1,
+      "preprint": 3,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 4,
+      "llmSummarized": 4,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  }
+}
