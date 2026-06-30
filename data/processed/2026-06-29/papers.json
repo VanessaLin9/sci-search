@@ -1,0 +1,774 @@
+{
+  "reportDate": "2026-06-29",
+  "generatedAt": "2026-06-30T11:14:21.326Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03151-5",
+      "title": "Spatio-DARLIN enables robust and efficient in situ lineage tracing in mice at single-cell resolution",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03151-5",
+      "doi": "10.1038/s41592-026-03151-5",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Spatio-DARLIN：實現小鼠單細胞解析的穩健高效原位譜系追蹤",
+      "summaryZh": "Spatio-DARLIN 是一種創新的空間轉錄體學方法，能在單細胞解析度下對小鼠組織進行穩健且高效的譜系追蹤。該技術透過在原位捕获轉錄本，實現了空間資訊與細胞譜系關係的同時解析，解決了傳統譜系追蹤方法缺乏空間背景資訊的局限。研究表明 Spatio-DARLIN 在保持高準確性的同時大幅提升了實驗效率，為發育生物學、疾病機制研究及再生醫學等領域提供了強大的工具。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "lineage-tracing",
+        "single-cell",
+        "methods",
+        "developmental-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02655-2",
+      "title": "Multiomics analysis of primary metabolism reveals the genetic basis of nitrogen partitioning modulated by ZmAVT1A-1 in maize",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02655-2",
+      "doi": "10.1038/s41588-026-02655-2",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "多體學分析揭示ZmAVT1A-1調控玉米氮素分配的遺傳基礎",
+      "summaryZh": "氮素是植物生長發育的關鍵營養元素，了解作物如何分配和利用氮素對提高產量及減少肥料施用至關重要。本研究運用多體學方法分析玉米的主要代謝途徑，揭示了ZmAVT1A-1基因在調控氮素分配中的核心遺傳機制。研究發現ZmAVT1A-1的變異會影響玉米體內氮素的流向與分布，進而影響植株生長與籽粒產量。此研究成果為培育氮素利用效率更高的玉米新品種提供了重要的遺傳學基礎，對於減少農業氮肥使用、促進永續農業發展具有重要意義。",
+      "topicTags": [
+        "plant-science",
+        "multiomics",
+        "nitrogen-metabolism",
+        "maize",
+        "genetics"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02594-y",
+      "title": "No evidence of immunosurveillance in mutation-hotspot-driven clonal hematopoiesis",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02594-y",
+      "doi": "10.1038/s41588-026-02594-y",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "突變熱點驅動的克隆性造血：免疫監測缺席的證據",
+      "summaryZh": "克隆性造血是血液幹細胞累積特定突變並形成優勢克隆的現象，常見於老化過程中。本研究針對突變熱點驅動的克隆性造血，探討免疫系統是否能有效識別並清除這些異常克隆。研究結果顯示，在這類克隆性造血中並無免疫監測的證據，意味著異常克隆得以逃避免疫監視而持續擴增。此發現挑戰了免疫系統可抑制克隆性造血進展的假設，對理解克隆性造血如何進展為血癌具有重要意義，並可能影響未來風險評估與預防策略的制定。",
+      "topicTags": [
+        "clonal-hematopoiesis",
+        "immunosurveillance",
+        "hematology",
+        "cancer-risk",
+        "mutation"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03102-5",
+      "title": "Comparative primate analysis shows that humans are not unique in having a tight cephalopelvic fit at birth",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03102-5",
+      "doi": "10.1038/s41559-026-03102-5",
+      "abstract": "Analysing cephalopelvic proportions among 29 extant primate species, the authors show that a tight cephalopelvic fit is not unique to humans, with comparable or tighter fits occurring in several non-human primate species, including macaques, squirrel monkeys and bushbabies.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "靈長類比較研究：人類分娩頭盆不對稱並非獨有",
+      "summaryZh": "這項研究分析了29種現存靈長類動物的頭盆比例，挑戰了人類在分娩時具有獨特頭盆緊密契合的假設。研究發現，包括獼猴、松鼠猴和嬰猴在內的多種非人類靈長類動物也展現出相似或更緊密的頭盆契合度。此發現表明，緊密的頭盆契合可能是一種靈長類祖先就有的原始特徵，而非人類獨有的適應演化結果。這項研究為理解人類分娩的演化歷程提供了新的視角。",
+      "topicTags": [
+        "primate-evolution",
+        "reproductive-biology",
+        "comparative-anatomy",
+        "human-evolution",
+        "childbirth"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03198-x",
+      "title": "A retargeted recombinase for precise insertion of large DNA",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03198-x",
+      "doi": "10.1038/s41587-026-03198-x",
+      "abstract": "An approach to retarget the large serine recombinase Bxb1 enables precise integration of large DNA payloads at desired loci.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "改造重組酶實現大型DNA精確插入",
+      "summaryZh": "大型絲氨酸重組酶Bxb1在基因工程中具有重要應用價值，但過去難以精確定位於特定基因座。本研究開發了一種重新定向Bxb1的方法，使其能夠在目標位點精確整合大型DNA有效載荷。這項技術突破對於基因治療、合成生物學及基因功能研究具有重大意義，可實現更安全、更精準的基因編輯與治療應用。",
+      "topicTags": [
+        "genome-engineering",
+        "gene-therapy",
+        "recombinase",
+        "synthetic-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03166-5",
+      "title": "Experiment-guided AlphaFold3 resolves measurement-consistent protein ensembles",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03166-5",
+      "doi": "10.1038/s41587-026-03166-5",
+      "abstract": "A generative model using AlphaFold3 as prior infers protein conformational ensembles consistent with measured experimental data.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "實驗導向 AlphaFold3 解析與測量數據一致之蛋白質構型集合",
+      "summaryZh": "AlphaFold3 已成為蛋白質結構預測的重要工具，但計算預測往往難以捕捉蛋白質的動態構型變化。本研究開發了一種生成模型，以 AlphaFold3 作為先驗資訊，並結合實驗測量數據來推斷蛋白質的構型集合。此方法能產生與實驗數據一致的構型分布，有效解決計算預測與實驗測量之間的落差。這項技術對於理解蛋白質的功能機制、藥物設計以及疾病相關蛋白的動力學研究具有重要應用價值。",
+      "topicTags": [
+        "protein-structure",
+        "alphafold",
+        "machine-learning",
+        "structural-biology",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03186-1",
+      "title": "Retargeted serine integrases for one-step, precise integration of large DNA sequences in human cells",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03186-1",
+      "doi": "10.1038/s41587-026-03186-1",
+      "abstract": "Serine integrases are retargeted to streamline genomic integrations of DNA.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "重新定向絲氨酸整合酶 實現人類細胞大片段DNA一次性精準整合",
+      "summaryZh": "絲氨酸整合酶是重要的基因組編輯工具，但傳統方法的定向性有限。本研究重新設計並定向絲氨酸整合酶，使其能夠在人類細胞中實現一次性、精準的大片段DNA整合，大幅簡化了過往繁瑣的多步驟基因組工程流程。此技術突破對於基因治療載體開發、合成生物學電路建構，以及功能性基因組研究皆具有重要應用價值。",
+      "topicTags": [
+        "genome-engineering",
+        "gene-therapy",
+        "synthetic-biology",
+        "dna-integration",
+        "enzyme-engineering"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-01992-y",
+      "title": "Transcription factor condensates as storage",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-01992-y",
+      "doi": "10.1038/s41556-026-01992-y",
+      "abstract": "A study shows that TEAD1 can form both active and inactive condensates. Small condensates at enhancers or promoters promote transcription, whereas large condensates at pericentromeric heterochromatin act as storage depots, buffering excess TEAD1 and adding a new layer of transcriptional regulation through spatial sequestration.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "轉錄因子凝聚物的新角色：儲存與調控",
+      "summaryZh": "本研究揭示轉錄因子TEAD1可形成兩種不同功能的凝聚物。小型凝聚物位於增強子或啟動子處，促進轉錄活性；而大型凝聚物則位於周圍核異染色質，作為儲存庫緩衝過量的TEAD1。這種透過空間隔離的機制為轉錄調控增添了新層次，顯示細胞可利用凝聚物的相變特性來動態管理轉錄因子的可用性與活性。此發現對於理解基因表現的精細調控機制具有重要意義。",
+      "topicTags": [
+        "transcription-factors",
+        "condensates",
+        "phase-separation",
+        "gene-regulation",
+        "chromatin"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02303-2",
+      "title": "Noninvasive decoding of typed sentences from human brain activity",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02303-2",
+      "doi": "10.1038/s41593-026-02303-2",
+      "abstract": "Here the authors introduce Brain2Qwerty, a deep learning model that decodes typed sentences from non-invasive brain activity with character error rate down to 18%. This opens a pathway for non-invasive communication neuroprostheses.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "從大腦活動解碼輸入句子：Brain2Qwerty 開啟無創腦機介面新篇章",
+      "summaryZh": "本研究開發了 Brain2Qwerty 深度學習模型，能從非侵入式腦活動訊號解碼人類輸入的句子，錯誤率低達 18%。這項技術突破為語言障礙患者（如漸凍症、閉鎖症候群）提供了非侵入式溝通神經義肢的可能性。相較於過去需要侵入性手術的腦機介面，Brain2Qwerty 可透過腦電圖等非侵入式方式實現，未來有望大幅改善失語症患者的溝通能力與生活品質。",
+      "topicTags": [
+        "brain-computer-interface",
+        "deep-learning",
+        "speech-decoding",
+        "neuroprosthetics",
+        "neuroscience"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02589-1",
+      "title": "Embryonic senescence",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02589-1",
+      "doi": "10.1038/s41590-026-02589-1",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "胚胎衰老",
+      "summaryZh": "胚胎期的细胞衰老现象在传统上被视为损伤反应，但新研究揭示其在正常发育过程中的调控作用。通过高通量单细胞分析，科学家们描绘了胚胎内衰老细胞的时空分布图谱，发现这些细胞在组织重塑和免疫细胞招募中发挥关键功能。该研究挑战了衰老仅与老化相关的观点，为理解发育程序提供了新视角，并提示在胚胎发育异常中可能存在衰老失调的致病机制。进一步探索胚胎衰老或将为再生医学和免疫疗法提供新的干预靶点。",
+      "topicTags": [
+        "senescence",
+        "embryonic-development",
+        "immunology",
+        "developmental-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02587-3",
+      "title": "Eosinophils are mothers’ helpers",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02587-3",
+      "doi": "10.1038/s41590-026-02587-3",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "嗜酸性粒細胞：媽媽的免疫好幫手",
+      "summaryZh": "這項研究揭示了嗜酸性粒細胞在母體健康中扮演的關鍵角色。嗜酸性粒細胞過去主要被認為與過敏反應和寄生蟲感染有關，但本研究發現這些細胞在懷孕期間提供重要的免疫支持。研究結果顯示嗜酸性粒細胞能夠協助調節母體免疫環境，促進胎兒與母體的和諧共處。這項發現顛覆了我們對嗜酸性粒細胞功能的傳統認知，並為了解孕期免疫調控機制開闢了新方向，對於未來可能應用於改善母胎健康具有重要意義。",
+      "topicTags": [
+        "immunology",
+        "eosinophils",
+        "maternal-health",
+        "pregnancy",
+        "cell-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02597-1",
+      "title": "Editorial Expression of Concern: Recognition of the nonclassical MHC class I molecule H2-M3 by the receptor Ly49A regulates the licensing and activation of NK cells",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02597-1",
+      "doi": "10.1038/s41590-026-02597-1",
+      "abstract": "Editorial Expression of Concern: Recognition of the nonclassical MHC class I molecule H2-M3 by the receptor Ly49A regulates the licensing and activation of NK cells",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41590-026-02588-2",
+      "title": "Maternal IFN shapes neurodevelopment",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02588-2",
+      "doi": "10.1038/s41590-026-02588-2",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "母體干擾素塑造神經發育"
+    },
+    {
+      "id": "10.1038/s41590-026-02590-8",
+      "title": "First contact matters",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02590-8",
+      "doi": "10.1038/s41590-026-02590-8",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "初次接觸至關重要"
+    },
+    {
+      "id": "10.1038/s41590-026-02594-4",
+      "title": "Critical connections",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02594-4",
+      "doi": "10.1038/s41590-026-02594-4",
+      "abstract": "New perspectives, insights and therapy applications can arise from exploring the interactions between the immune and nervous systems.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "免疫與神經系統的關鍵連結",
+      "summaryZh": "免疫系統與神經系統向來被視為各自獨立運作的兩大生理體系，然而兩者之間的交互作用正逐漸被揭示。本篇研究深入探討這兩個系統如何相互影響，為理解人體複雜的調控網絡提供全新視角。這種跨系統的整合觀點不僅拓展基礎科學的邊界，更可能開啟治療神經退化性疾病、慢性發炎及自體免疫疾病的新途徑。隨著神經免疫學的快速發展，這類研究對於未來精準醫療與創新療法開發具有重要價值。",
+      "topicTags": [
+        "neuroimmunology",
+        "immune-nervous-system",
+        "cross-system-interactions",
+        "therapy-applications",
+        "immunology"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02541-3",
+      "title": "Epigenetic mechanisms of inflammatory memory in the central nervous system",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02541-3",
+      "doi": "10.1038/s41590-026-02541-3",
+      "abstract": "Ye and Quintana discuss emerging evidence of inflammatory memory in the CNS and discuss its underlying mechanisms.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "中樞神經系統發炎記憶的表觀遺傳機制"
+    },
+    {
+      "id": "10.1038/s41590-026-02560-0",
+      "title": "The neuroimmune system and cognition",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02560-0",
+      "doi": "10.1038/s41590-026-02560-0",
+      "abstract": "Klein discusses recent understanding of the role of immune molecules in molecular mechanisms of memory formation.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "神經免疫系統與認知功能"
+    },
+    {
+      "id": "10.1038/s41564-026-02386-4",
+      "title": "Epistatic interactions inform rational design of synthetic microbial communities for bioremediation",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02386-4",
+      "doi": "10.1038/s41564-026-02386-4",
+      "abstract": "By taking into account the impacts of species presence, absence and potential interactions, synthetic soil microbial consortia are designed to degrade the toxic environmental contaminant bisphenol-A.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "上位性交互作用為生物修復用合成微生物群落的理性設計提供指引"
+    },
+    {
+      "id": "10.1038/s41564-026-02391-7",
+      "title": "Mobile genetic elements shape microbial diversity and functions in thawing permafrost soils",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-06-29T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02391-7",
+      "doi": "10.1038/s41564-026-02391-7",
+      "abstract": "An 8-year soil meta-omic time series shows how mobile genetic elements shape permafrost microbial diversity and impact a range of functions, including carbon and nutrient cycling.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "移動遺傳元件塑造解凍永凍土中的微生物多樣性與功能"
+    },
+    {
+      "id": "10.64898/2026.06.25.734643",
+      "title": "Genetically informed single-cell and spatial mapping of metabolic programs in human health and disease",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-29",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.25.734643v1",
+      "doi": "10.64898/2026.06.25.734643",
+      "abstract": "Defining cell-type-specific endogenous metabolic features, the spatial distribution of cell-level metabolic states and cellular responses to exogenous metabolites is essential for understanding disease mechanisms. Existing transcriptome-based metabolic models primarily infer intracellular reaction or pathway-level activities, and therefore cannot directly assess associations between individual metabolite levels and cellular states, particularly for metabolites that act extracellularly as signalling molecules rather than entering cells as metabolic substrates. Here we introduce gmMAP, a framework that integrates metabolite GWAS summary statistics with single-cell and spatial transcriptomes to map metabolic programmes at cellular and spatial resolution. Notably, gmMAP enables the prediction of endogenous metabolic process activation while also revealing intrinsic associations between exogenous metabolites and diverse cellular functional states. To further capture the connectivity of cellular metabolic networks, we incorporated a constraint-based metabolic flux model to evaluate global metabolic activity. To evaluate the accuracy and robustness of gmMAP, we applied the framework across representative biological contexts spanning human development, physiological homeostasis, inflammation and cancer. In human kidney development, gmMAP captured dynamic metabolic programmes and was validated using paired transcriptomic and metabolomic reference datasets, supporting its reliability in metabolite identification and metabolic-flow inference. At the organ level, gmMAP reconstructed spatial metabolite distribution patterns across 17 mouse organs under homeostatic and autoimmune inflammatory conditions, and further extension to 24 normal human tissues generated a multi-scale metabolic atlas at both organ and cellular resolutions. In disease settings, gmMAP revealed metabolic reprogramming across 29 pan-cancer cell populations and identified potential links between exogenous metabolites and inflammation-associated stromal metabolic remodelling in ulcerative colitis. Together, gmMAP can consistently connect genetically informed metabolite traits with cell states, spatial tissue organization and disease pathology.",
+      "authors": [
+        "Xu, H.",
+        "Huang, G.",
+        "Zhang, L.",
+        "Liu, W.",
+        "Wu, Q.",
+        "Chen, M.",
+        "Zhao, D.",
+        "Zhang, Y.",
+        "Xu, A."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial resolution",
+        "cancer",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "基因資訊驅動的單細胞與空間代謝程式測繪：人類健康與疾病"
+    },
+    {
+      "id": "10.64898/2026.06.23.734031",
+      "title": "G-LATO: Inference of Spatial Latent Ordering via Deep Gaussian Processes",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-29",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.23.734031v1",
+      "doi": "10.64898/2026.06.23.734031",
+      "abstract": "Spatial transcriptomics enables the study of cells within their native tissue context, yet identifying gradients of cellular development remains challenging. We introduce a deep Gaussian process model to address this gap. Our method recovers spatially smooth gradients explaining observed gene expression. We illustrate our method on healthy liver and glioblastoma data in reconstructing known spatial organisation and uncovering new pathological gradients, thus providing robust inference for spatial biology.",
+      "authors": [
+        "Zago, M.",
+        "Mukherjee, S.",
+        "Schleicher, J. T.",
+        "Bürkner, P.",
+        "Tabatabai, G.",
+        "Claassen, M."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "biology",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "G-LATO：透過深度高斯過程推斷空間潛在排序"
+    },
+    {
+      "id": "10.64898/2026.06.24.734199",
+      "title": "Single-cell transcriptomics reveals chondrocyte state transitions and ECM remodeling in osteoarthritic knee cartilage",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-29",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.24.734199v1",
+      "doi": "10.64898/2026.06.24.734199",
+      "abstract": "Osteoarthritis cartilage has heterogeneous chondrocyte states, yet their transitions remain unresolved from public single-cell data. We retrospectively reanalyzed a public knee cartilage single-cell RNA-seq dataset GSE255460 from 8 osteoarthritis and 3 non-osteoarthritis donors totaling 19 samples. After sample-wise quality control and doublet removal we performed batch-corrected clustering, chondrocyte subclustering with marker-based annotation, and trajectory inference using Slingshot. Regulatory chondrocytes were tested for osteoarthritis versus control differential expression, followed by Gene Ontology and KEGG enrichment with Benjamini-Hochberg false discovery rate <0.05, and protein-protein interaction hub screening. We retained 27,036 cells. Chondrocytes exhibited branching continuous states; regulatory cells localized near the main manifold and adjacent to inferred branches, suggesting a transition-adjacent state. In regulatory cells, osteoarthritis-upregulated genes were enriched for collagen-containing extracellular matrix organization, endoplasmic reticulum secretory/proteostasis, cell-matrix adhesion including focal adhesion, and TGFbeta/SMAD signaling. Protein-protein interaction analysis identified five high-connectivity hubs: COL5A1, COL5A2, COL6A1, COL1A2, and COL3A1. Our findings support a transition-adjacent regulatory program in OA with coordinated extracellular matrix remodeling and secretory/adhesion/TGFbeta signatures, nominating collagen hubs for validation.",
+      "authors": [
+        "Bo, Z.",
+        "Xu, H.",
+        "Liang, Y."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "單細胞轉錄體學揭示退化性膝關節炎軟骨中軟骨細胞狀態轉變與細胞外基質重構"
+    },
+    {
+      "id": "10.1101/2025.10.09.681318",
+      "title": "Serval: A modular framework for decoding imaging based spatial transcriptomics data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-29",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.10.09.681318v2",
+      "doi": "10.1101/2025.10.09.681318",
+      "abstract": "Imaging-based spatial transcriptomics technologies have opened new avenues for studying cellular organization and gene expression within intact tissues. However, the accuracy of downstream analyses depends critically on the decoding step that reconstructs barcodes from fluorescence patterns and maps them to gene identities. Despite a growing number of decoding methods, systematic benchmarking has been limited. Here, we introduce Serval, a modular framework for developing and benchmarking decoding methods across diverse spatial transcriptomics platforms. Serval separates key decoding stages into independently configurable modules, enabling flexible integration of alternative algorithms. Using this framework, we develop the Cosine decoder, a novel method that improves transcript recovery by optimizing cosine similarity to known barcodes. We evaluate Cosine and baseline methods on synthetic and real MERFISH datasets, showing that Cosine achieves higher transcript recovery and superior correlation with expression references compared to existing methods. Furthermore, we demonstrate that the Serval framework generalizes beyond MERFISH. By extending to the DART-FISH platform, we show that Cosine improves transcript recovery, clustering stability and supports more direct annotation of complex biological structures such as the human primary motor cortex. These results establish that modular decoding frameworks facilitate robust, platform-agnostic benchmarking, ultimately supporting more accurate spatial transcriptomics analysis across diverse biological samples.",
+      "authors": [
+        "Tsui, J.",
+        "Adam, N.",
+        "Choi, W.",
+        "Liu, L. Y.",
+        "Flores, C.",
+        "Ansari, S.",
+        "Kong, E.",
+        "Thapliyal, Y.",
+        "Lee, H.",
+        "Haider, S.",
+        "Von Riedemann, I.",
+        "O'Flanagan, C.",
+        "IMAXT Cancer Grand Challenges Consortium,",
+        "Aparicio, S.",
+        "Roth, A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "MERFISH"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Serval：用於解碼基於影像的空間轉錄體學資料之模組化框架"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 31,
+      "passedByScope": 23,
+      "llmClassified": 8,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 8,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 23,
+      "excluded": 8
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 23,
+      "llmTagged": 23,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 23,
+      "candidates": 22,
+      "featured": 12,
+      "overflow": 10,
+      "lineA": 1,
+      "lineB": 17,
+      "preprint": 4,
+      "skip": 1
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 10,
+      "llmTranslated": 10,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10815-x",
+        "title": "Family of magnetic field-boosted superconductors in rhombohedral graphene",
+        "journal": "Nature",
+        "publishedDate": "2026-06-29T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10815-x",
+        "doi": "10.1038/s41586-026-10815-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02063-w",
+        "title": "Audio long read: Is the peptide craze backed by science? The promise behind the hype",
+        "journal": "Nature",
+        "publishedDate": "2026-06-29T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02063-w",
+        "doi": "10.1038/d41586-026-02063-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02023-4",
+        "title": "Trump has big AI and quantum ambitions: this scientist’s job is to make them reality",
+        "journal": "Nature",
+        "publishedDate": "2026-06-29T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02023-4",
+        "doi": "10.1038/d41586-026-02023-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01137-z",
+        "title": "How one US scientist is adapting to life abroad after DOGE cuts",
+        "journal": "Nature",
+        "publishedDate": "2026-06-29T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01137-z",
+        "doi": "10.1038/d41586-026-01137-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01672-9",
+        "title": "How AI can crack open the ‘hidden curriculum’ for neurodivergent students",
+        "journal": "Nature",
+        "publishedDate": "2026-06-29T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01672-9",
+        "doi": "10.1038/d41586-026-01672-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01979-7",
+        "title": "What’s the human cost of US research turmoil? A new film finds out",
+        "journal": "Nature",
+        "publishedDate": "2026-06-29T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01979-7",
+        "doi": "10.1038/d41586-026-01979-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01496-7",
+        "title": "Scientists fight back against far-right plans to restrict academic freedom in Germany",
+        "journal": "Nature",
+        "publishedDate": "2026-06-29T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01496-7",
+        "doi": "10.1038/d41586-026-01496-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/science.adu5501",
+        "title": "A native sulfur deposit in Gale crater, Mars",
+        "journal": "Science",
+        "publishedDate": "2026-06-29T12:00:02.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/science.adu5501?af=R",
+        "doi": "10.1126/science.adu5501",
+        "sourceId": "science"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
