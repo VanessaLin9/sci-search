@@ -1,0 +1,524 @@
+{
+  "reportDate": "2026-06-30",
+  "generatedAt": "2026-07-01T11:14:16.050Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03128-4",
+      "title": "RNAbpFlow: base pair-augmented SE(3) flow matching for conditional RNA 3D structure generation",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-06-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03128-4",
+      "doi": "10.1038/s41592-026-03128-4",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "RNAbpFlow：結合鹼基配對資訊的SE(3)流匹配條件式RNA三維結構生成",
+      "summaryZh": "RNA的三維結構決定其功能，然而實驗解析耗時費力，計算預測方法因此至關重要。RNAbpFlow創新地將鹼基配對資訊整合至SE(3)等變流匹配框架，能在三維空間中生成幾何一致且符合配對約束的RNA結構。此條件式生成能力使研究人員可針對特定序列或功能需求設計目標結構，有望加速RNA生物學研究與RNA藥物開發。",
+      "topicTags": [
+        "rna-structure",
+        "deep-learning",
+        "computational-biology",
+        "drug-discovery",
+        "structural-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02628-5",
+      "title": "Lineage tracing from cellular heritage to disease destiny",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-06-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02628-5",
+      "doi": "10.1038/s41588-026-02628-5",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "從細胞譜系到疾病命運：譜系追蹤技術的新突破",
+      "summaryZh": "譜系追蹤技術是理解細胞發育與分化的重要工具。本研究深入探討細胞譜系如何影響疾病進程，為解析複雜疾病的發生機制提供全新視角。透過追蹤細胞的發育歷史，研究者能更精確地預測細胞命運走向。這項突破性進展對於了解癌症發生、神經發育障礙及組織再生等領域具有深遠意義。",
+      "topicTags": [
+        "lineage-tracing",
+        "cell-biology",
+        "developmental-biology",
+        "disease-mechanisms",
+        "genomics"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03201-5",
+      "title": "Editor’s pick: Liberate Bio",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-06-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03201-5",
+      "doi": "10.1038/s41587-026-03201-5",
+      "abstract": "Each year, Nature Biotechnology highlights companies that received sizeable early-stage funding in the previous year. Liberate Bio is developing a lipid nanoparticle toolbox to deliver genetic medicine to previously inaccessible cells inside the body.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03200-6",
+      "title": "Editor’s pick: Trogenix",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-06-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03200-6",
+      "doi": "10.1038/s41587-026-03200-6",
+      "abstract": "Each year, Nature Biotechnology highlights companies that received sizeable early-stage funding in the previous year. Trogenix has developed a platform for generating ‘synthetic super-enhancers’ that could drive highly cell-specific gene therapy-based treatment of solid tumors such as glioblastoma.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03202-4",
+      "title": "Prime editing for precise genome engineering and modulation of fungal metabolism",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-06-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03202-4",
+      "doi": "10.1038/s41587-026-03202-4",
+      "abstract": "fPE7max efficiently installs base substitutions, insertions and deletions to modulate filamentous fungal metabolism.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Prime Editing 精準基因工程與真菌代謝調控新突破",
+      "summaryZh": "本研究開發的 fPE7max 系統成功將 Prime Editing 技術應用於絲狀真菌，實現高精準度的鹼基替換、插入與刪除。研究團隊運用此工具有效調控真菌代謝途徑，為工業生技與製藥應用提供強大新工具。此技術突破過去基因編輯在絲狀真菌中的效率與精確度限制，大幅提升真菌基因工程的實用性。fPE7max 的開發為真菌生物製造與合成生物學研究開闢嶄新途徑。",
+      "topicTags": [
+        "prime-editing",
+        "fungal-metabolism",
+        "genome-engineering",
+        "synthetic-biology",
+        "biotechnology"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02006-7",
+      "title": "Why the temporal dimension matters in cellular signalling",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-06-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02006-7",
+      "doi": "10.1038/s41556-026-02006-7",
+      "abstract": "Temporal encoding of signalling dynamics is not just widespread; it offers a fundamental information-theoretic advantage in cellular communication. Recent advances in channel capacity measurement and decoding of second-messenger networks now provide a predictive framework linking temporal codes to differential gene regulation.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "為何時間維度在細胞訊號傳遞中至關重要",
+      "summaryZh": "這篇論文揭示了細胞訊號傳遞中時間編碼的關鍵角色，指出時間動態變化不僅廣泛存在，更提供了細胞通訊的資訊理論優勢。研究結合通道容量測量與第二信使網路解碼技術，建立了可預測的理論框架，將時間編碼與差異性基因調控直接連結。這項發現為理解細胞如何利用訊號的時間模式精確控制基因表現開闢新途徑，對基礎生物學研究與藥物開發皆具深遠影響。",
+      "topicTags": [
+        "cell-signalling",
+        "temporal-dynamics",
+        "information-theory",
+        "gene-regulation",
+        "second-messenger"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02344-7",
+      "title": "Connectomic evidence that ordered activity drives neuromuscular network formation",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-06-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02344-7",
+      "doi": "10.1038/s41593-026-02344-7",
+      "abstract": "Complete neuromuscular connectomes across development show that motor neuron recruitment order shapes both local and long-distance synapse elimination, leaving adult wiring as a structural record of the activity patterns that formed it.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "連接組學證據：有序活動驅動神經肌肉網絡形成",
+      "summaryZh": "本研究建立了發育過程中完整的神經肌肉連接組，揭示了運動神經元的招募順序如何塑造局部和遠距離的突觸消除過程。這項連接組學證據表明，成年時期的神經網絡結構並非隨機形成，而是編碼了發育過程中的活動模式。研究成果為理解神經網絡如何從有序的活動中自我組織提供了直接證據，並有助於解釋發育障礙中常見的神經肌肉功能異常。",
+      "topicTags": [
+        "connectomics",
+        "neuromuscular",
+        "synapse-elimination",
+        "neural-development",
+        "activity-dependent"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02412-5",
+      "title": "Identification of chemical features for improved outer membrane permeation in mycobacteria using machine learning",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-06-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02412-5",
+      "doi": "10.1038/s41564-026-02412-5",
+      "abstract": "Screening 1,572 compounds for mycomembrane permeation plus cheminformatic and machine learning analyses reveals features associated with improved permeation in the pathogen Mycobacterium tuberculosis and model organism M. smegmatis.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "機器學習分析1,572種化合物 揭示改善分枝桿菌膜滲透性的關鍵化學特徵",
+      "summaryZh": "分枝桿菌的外膜是藥物開發的主要障礙，其獨特的細胞壁結構使許多候選藥物難以滲透。本研究大規模篩選了1,572種化合物，結合化學資訊學與機器學習技術，分析這些化合物在結核分枝桿菌及其模式菌M. smegmatis中的膜滲透特性。研究團隊成功識別出與改善滲透性相關的特定化學特徵，為開發更有效的抗分枝桿菌藥物提供重要的結構基礎。這項發現有望加速結核病等分枝桿菌感染的治療藥物開發。",
+      "topicTags": [
+        "machine-learning",
+        "mycobacteria",
+        "tuberculosis",
+        "drug-discovery",
+        "membrane-biology"
+      ]
+    },
+    {
+      "id": "10.1101/2024.08.23.609473",
+      "title": "Robustness and reliability of single-cell regulatory multi-omics with deep mitochondrial mutation profiling",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-30",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.08.23.609473v2",
+      "doi": "10.1101/2024.08.23.609473",
+      "abstract": "The detection of mitochondrial DNA (mtDNA) mutations in single cells holds considerable potential to define clonal relationships at scale, coupled with information on cell state in humans. Previous methods focused on higher heteroplasmy mutations, which, while informative, are few in number and may be shaped by functional selection, providing limited lineage information and potentially introducing biases for tracing. Although more challenging to detect, intermediate- to low-heteroplasmy mtDNA mutations are valuable due to their high diversity, abundance, and lower propensity to selection. To enhance mtDNA mutation detection and facilitate fine-scale lineage tracing, we developed the single-cell Regulatory multi-omics with Deep Mitochondrial mutation profiling (ReDeeM) approach, an integrated experimental and computational framework. Here, we specifically address two analytical challenges central to single-cell mtDNA-based lineage analysis: the fidelity of variant-calling workflows and the reliability of phylogenetic inference. We demonstrate that, by leveraging consensus-based error correction, ReDeeM's mtDNA mutation calls achieve high fidelity, aligning with bona fide mutational signatures even for mutations supported by a single molecule per cell. We also developed an improved post-consensus filtering approach, termed \"filter2\" that systematically identifies and filters residual edge-enriched artifacts, even though these affect only a minority of mutation calls. To systematically validate ReDeeM, we recently conducted a lentiviral barcoding experiment in human HSCs, uniquely labeling each cell prior to expansion and differentiation to provide a ground truth for assessing lineage tracing accuracy1. Such validation demonstrate that the original ReDeeM analytic approach (filter1)2 robustly recovers true clonal structure at high resolution and recall. Including intermediate to low-heteroplasmy variants (<10% per cell) strongly improves lineage inference, whereas excluding mutations supported by a single molecule per cell removes true clonal signal and degrades recovery of true clones. Both filter1 and filter2 accurately recover true clones and outperform prior mtDNA-based lineage tracing approaches in ground-truth precision and recall, with filter2 providing additional gains in performance. Finally, while ReDeeM advances mtDNA-based lineage tracing by recovering true clones at high resolution, yet quantifying the phylogenetic uncertainty from mitochondrial inheritance remains unmet. To address this, we recently developed and validated MitoDrift1 as a next-generation, drift-aware framework for mtDNA lineage tracing that further strengthens phylogenetic inference and provides interpretable uncertainty estimates.",
+      "authors": [
+        "Weng, C.",
+        "Weissman, J. S.",
+        "Sankaran, V. G."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "深度粒線體突變分析提升單細胞調控多體學的可靠性與譜系追蹤精準度",
+      "summaryZh": "粒線體DNA突變可用於追蹤單細胞層級的克隆關係，但低異質性突變的偵測極具挑戰性。本研究開發的ReDeeM方法，透過共識式錯誤校正，能在高精確度下偵測單一分子層級的mtDNA突變，並與真實突變特徵高度吻合。研究團隊設計的filter2過濾方法可有效去除邊緣富集的人工產物，進一步提升突變calls的可靠性。在人類造血幹細胞中的慢病毒條碼實驗驗證顯示，ReDeeM能準確重建克隆結構並達到高解析度的譜系追蹤。結合中低異質性變異（<10%）可顯著強化譜系推斷能力，為人類細胞命運與發育研究提供更完整的工具。",
+      "topicTags": [
+        "single-cell",
+        "mtDNA",
+        "lineage-tracing",
+        "mitochondrial-genomics",
+        "hematopoietic-stem-cells"
+      ]
+    },
+    {
+      "id": "10.1101/2025.11.19.689368",
+      "title": "Integrating morphology and gene expression of neural cells in unpaired single-cell data using GeoAdvAE",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-30",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.11.19.689368v3",
+      "doi": "10.1101/2025.11.19.689368",
+      "abstract": "Background: Cellular morphological transitions are observed across many diseases, yet their functional role remains unclear because few technologies profile form and function in the same cell. Linking single-cell morphology to transcriptomics is difficult: the two modalities share no feature correspondence and are typically measured in different cells. Methods: We present GeoAdvAE, a geometry-aware adversarial autoencoder for diagonal (unpaired) integration of single-cell morphology and single-cell RNA sequencing. GeoAdvAE couples modality-specific variational autoencoders with a Gromov-Wasserstein regularizer and an adversarial discriminator to embed unpaired morphologies and transcriptomes into a shared latent space that preserves both reconstruction fidelity and cross-modal geometry. Results: Using patch-seq neurons with joint morphology-RNA measurements as ground truth, GeoAdvAE attains the best cross-modal cell-type matching accuracy among diagonal integration methods, outperforming optimal-transport, latent-alignment, and adversarial baselines. Applied to 98 CAJAL-quantified microglial morphologies and 31,948 single-cell transcriptomes from the 5xFAD Alzheimer's disease model, GeoAdvAE recovers a one-dimensional axis that aligns the two modalities. Integrated-gradient attribution highlights transcriptomic shifts (DNA repair in ramified microglia; cell killing in amoeboid microglia), nominates gene markers (Ms4a6b; Ftl1/Fth1), and reveals disease-associated microglia signatures that are decoupled from morphology. Conclusions: GeoAdvAE provides a scalable and interpretable approach to connecting cellular \"form\" and \"function\" when joint profiling of morphology and transcriptomics is impractical. Our method is publicly available at https://github.com/turbodu222/GeoAdVAE.",
+      "authors": [
+        "Du, J. T.",
+        "Chartrand, T.",
+        "Jayadev, S.",
+        "Prater, K. E.",
+        "Lin, K. Z."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "使用 GeoAdvAE 整合未配對單細胞資料中神經細胞的形態與基因表現",
+      "summaryZh": "細胞形態變化與多種疾病密切相關，但形態與功能之間的對應關係難以解析。本研究提出 GeoAdvAE，一種結合 Gromov-Wasserstein 正則化與對抗式學習的幾何感知自編碼器，能在無需配對資料的情況下整合單細胞形態學與轉錄組資料。在 patch-seq 資料驗證中，GeoAdvAE 的跨模態細胞型態匹配準確率優於現有最佳傳輸、潛在對齊及對抗式基準方法。應用於 5xFAD 阿茲海默症小鼠模型的微膠細胞，發現形態與轉錄組特徵軸的對齊規律，並識別出與疾病相關的微膠細胞標記基因。此方法為難以同時測量形態與轉錄組的細胞研究提供了解析「形態-功能」對應關係的新途徑。",
+      "topicTags": [
+        "single-cell-analysis",
+        "computational-biology",
+        "neuroscience",
+        "deep-learning",
+        "alzheimer-disease"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.29.735326",
+      "title": "A Simple, Cost-Effective, High-Throughput Method for Measuring Chromatin Accessibility and Gene Expression in Single Nuclei",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.29.735326v1",
+      "doi": "10.64898/2026.06.29.735326",
+      "abstract": "We describe microfluidic-free, droplet-based methods for single-nucleus epigenomic measurements: Particle-templated Instant Partition single-nucleus assay for transposase-accessible chromatin using sequencing (PIP-ATAC-seq) and its multiomic version (PIP-Multiome-seq). We benchmarked these assays by generating data sets containing thousands of nuclei using cell lines and mouse brains and compared to other established methods. PIP-Multiome and PIP-ATAC are straightforward to implement, affordable, and produce high-quality data, providing useful additions to the single-cell molecular measurement armamentarium.",
+      "authors": [
+        "Luo, Z.",
+        "Greenleaf, W. J."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "簡單、低成本、高通量的單核染色質可及性與基因表現測量新方法",
+      "summaryZh": "本研究開發了 PIP-ATAC-seq 與 PIP-Multiome-seq 兩種微流控-free、基於液滴的單核表觀基因組測量方法，無需昂貴設備即可實現高通量單細胞分析。研究團隊以細胞株與小鼠腦組織進行驗證，證實數據品質與現有主流方法相當，且成本大幅降低。這項技術讓更多實驗室能夠負擔單核染色質可及性與基因表現的同步分析，為單細胞分子測量領域提供了實用且平價的新工具。",
+      "topicTags": [
+        "single-cell",
+        "epigenomics",
+        "chromatin-accessibility",
+        "gene-expression",
+        "droplet-sequencing"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.25.733584",
+      "title": "Spike-in-normalised single-cell RNA-seq reveals cell-type-specific transcriptional repression during ageing",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.25.733584v1",
+      "doi": "10.64898/2026.06.25.733584",
+      "abstract": "Transcriptome analyses are widely used for biomarker discovery and to gain insights into normal processes and diseases. Age-related changes in gene expression inferred from RNA-seq are typically reported relative to the transcriptome composition using library-size normalisation. As such, absolute changes in transcript abundance with age remain poorly characterised. Here, using external spike-in normalisation in the Tabula Muris Senis dataset, we quantify age-related variation in total mRNA content and gene expression across mouse cell types. We observe widespread changes in total mRNA abundance, with decreases predominantly in non-immune cell types and increases predominantly in immune cell types. In parallel, the number of genes expressed declines across most cell types, including immune populations. Differential expression analysis based on spike-in-normalised counts identifies genes consistently downregulated across cell types, enriched for functions in RNA metabolism and protein processing. Furthermore, genes downregulated during ageing and during proliferation arrest show partial overlap, suggesting that these transcriptional changes may share regulatory processes. Together, these results are consistent with a general repression of transcriptional and metabolic activity with age, modulated by immune-specific responses. More broadly, our results demonstrate that conclusions drawn from transcriptomic ageing studies can depend strongly on whether gene expression is interpreted in relative or absolute terms, highlighting the importance of absolute normalisation approaches for the analysis of age-related transcriptomic change",
+      "authors": [
+        "de Jesus Viegas, I.",
+        "Lagger, C.",
+        "de Magalhaes, J. P."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞RNA測序揭示老化過程中細胞類型特異性轉錄抑制",
+      "summaryZh": "傳統的RNA-seq年齡相關分析依賴於文庫大小標準化，只能呈現相對基因表達變化，無法捕捉細胞內mRNA總量的絕對變化。本研究利用外源性spike-in標準化技術分析Tabula Muris Senis數據集，發現非免疫細胞的總mRNA含量普遍下降，而免疫細胞則呈現增加趨勢，且大多數細胞類型中表達基因數量隨老化減少。進一步分析顯示，跨細胞類型一致下調的基因富集於RNA代謝和蛋白質加工功能，與細胞增殖停滞期間的下調基因有部分重疊，表明老化與細胞增殖抑制可能共享部分調控機制。此研究強調了絕對標準化方法對於準確解讀老化轉錄組變化的重要性，為生物標誌物發現和老化機制研究提供新見解。",
+      "topicTags": [
+        "single-cell",
+        "ageing",
+        "rna-seq",
+        "transcriptional-regulation",
+        "spike-in-normalization"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.25.734643",
+      "title": "Genetically informed single-cell and spatial mapping of metabolic programs in human health and disease",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-06-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.25.734643v2",
+      "doi": "10.64898/2026.06.25.734643",
+      "abstract": "Defining cell-type-specific endogenous metabolic features, the spatial distribution of cell-level metabolic states and cellular responses to exogenous metabolites is essential for understanding disease mechanisms. Existing transcriptome-based metabolic models primarily infer intracellular reaction or pathway-level activities, and therefore cannot directly assess associations between individual metabolite levels and cellular states, particularly for metabolites that act extracellularly as signalling molecules rather than entering cells as metabolic substrates. Here we introduce gmMAP, a framework that integrates metabolite GWAS summary statistics with single-cell and spatial transcriptomes to map metabolic programmes at cellular and spatial resolution. Notably, gmMAP enables the prediction of endogenous metabolic process activation while also revealing intrinsic associations between exogenous metabolites and diverse cellular functional states. To further capture the connectivity of cellular metabolic networks, we incorporated a constraint-based metabolic flux model to evaluate global metabolic activity. To evaluate the accuracy and robustness of gmMAP, we applied the framework across representative biological contexts spanning human development, physiological homeostasis, inflammation and cancer. In human kidney development, gmMAP captured dynamic metabolic programmes and was validated using paired transcriptomic and metabolomic reference datasets, supporting its reliability in metabolite identification and metabolic-flow inference. At the organ level, gmMAP reconstructed spatial metabolite distribution patterns across 17 mouse organs under homeostatic and autoimmune inflammatory conditions, and further extension to 24 normal human tissues generated a multi-scale metabolic atlas at both organ and cellular resolutions. In disease settings, gmMAP revealed metabolic reprogramming across 29 pan-cancer cell populations and identified potential links between exogenous metabolites and inflammation-associated stromal metabolic remodelling in ulcerative colitis. Together, gmMAP can consistently connect genetically informed metabolite traits with cell states, spatial tissue organization and disease pathology.",
+      "authors": [
+        "Xu, H.",
+        "Huang, G.",
+        "Zhang, L.",
+        "Liu, W.",
+        "Wu, Q.",
+        "Chen, M.",
+        "Zhao, D.",
+        "Zhang, Y.",
+        "Xu, A."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial resolution",
+        "cancer",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "基因資訊驅動的單細胞與空間代謝圖譜：解析人類健康與疾病的代謝程式",
+      "summaryZh": "現有轉錄組-based代謝模型主要推估細胞內反應或路徑層級的活性，難以直接評估個別代謝物與細胞狀態的關聯，特別是作為細胞外訊號分子的代謝物。本研究開發的gmMAP框架，整合了代謝物全基因體關聯分析（GWAS）統計資料與單細胞及空間轉錄組，能在細胞與空間層次繪製代謝程式圖譜，並預測內源性代謝途徑的活化狀態，同時揭示外源性代謝物與多樣細胞功能狀態的關聯。研究團隊在人類腎臟發育中驗證了此方法的準確性，並成功重建17種小鼠器官及24種正常人體組織的空間代謝分布模式，更進一步發現29種泛癌細胞群體的代謝重編程現象，為疾病機制研究提供重要的多尺度代謝資源。",
+      "topicTags": [
+        "single-cell",
+        "metabolism",
+        "spatial-transcriptomics",
+        "gwas",
+        "cancer-metabolism"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 23,
+      "passedByScope": 13,
+      "llmClassified": 10,
+      "llmYes": 5,
+      "llmNotSure": 0,
+      "llmNo": 5,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 18,
+      "excluded": 5
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 13,
+      "llmTagged": 13,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 13,
+      "candidates": 11,
+      "featured": 11,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 6,
+      "preprint": 5,
+      "skip": 2
+    },
+    "summarize": {
+      "requested": 11,
+      "llmSummarized": 11,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02068-5",
+        "title": "Child online safety needs more than social-media bans",
+        "journal": "Nature",
+        "publishedDate": "2026-06-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02068-5",
+        "doi": "10.1038/d41586-026-02068-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01813-0",
+        "title": "Early television set impresses Nature editors — but will it catch on?",
+        "journal": "Nature",
+        "publishedDate": "2026-06-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01813-0",
+        "doi": "10.1038/d41586-026-01813-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02069-4",
+        "title": "AI tools can speed up thinking, but evidence still comes from the lab bench",
+        "journal": "Nature",
+        "publishedDate": "2026-06-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02069-4",
+        "doi": "10.1038/d41586-026-02069-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01980-0",
+        "title": "Can Rwanda sustain its rise in science and technology? Here’s what can help",
+        "journal": "Nature",
+        "publishedDate": "2026-06-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01980-0",
+        "doi": "10.1038/d41586-026-01980-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01873-2",
+        "title": "AI systems devise hypotheses and ways to test them",
+        "journal": "Nature",
+        "publishedDate": "2026-06-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01873-2",
+        "doi": "10.1038/d41586-026-01873-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
