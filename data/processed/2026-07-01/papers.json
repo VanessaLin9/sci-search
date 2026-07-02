@@ -1,0 +1,1266 @@
+{
+  "reportDate": "2026-07-01",
+  "generatedAt": "2026-07-02T11:03:30.632Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03152-4",
+      "title": "ClairS: a deep-learning method for long-read tumor–normal pair somatic small variant calling",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-07-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03152-4",
+      "doi": "10.1038/s41592-026-03152-4",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "ClairS：長讀序腫瘤-正常配對體細胞變異偵測的深度學習新方法",
+      "summaryZh": "本研究開發了ClairS，這是一款專為長讀序數據設計的深度學習體細胞變異偵測工具，能在腫瘤-正常配對樣本中精確識別體細胞突變。相較於傳統短讀序方法，長讀序技術能有效克服複雜基因組區域（如重複序列和結構變異周邊區域）的偵測瓶頸。ClairS採用先進的神經網路架構，能有效區分體細胞突變與種系遺傳變異，顯著提升變異偵測的靈敏度與特異性。此工具的開發對於癌症基因組學研究、精準醫療及液態切片等臨床應用具有重要價值，有助於更全面地描繪腫瘤突變景觀。",
+      "topicTags": [
+        "deep-learning",
+        "long-read-sequencing",
+        "cancer-genomics",
+        "somatic-variant-calling",
+        "bioinformatics"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02647-2",
+      "title": "Mutations in splicing factor gene U2AF1 rescue defective oncogene splicing in KRAS-mutant cancers",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02647-2",
+      "doi": "10.1038/s41588-026-02647-2",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "U2AF1突變拯救KRAS突變癌症的缺陷性致癌剪接",
+      "summaryZh": "KRAS突變的癌症常伴隨RNA剪接失調，導致致癌基因的異常剪接。本研究發現，剪接因子U2AF1的突變能夠部分恢復這些缺陷的剪接，從而改變致癌基因的表達模式。體內外實驗顯示，這種U2AF1突變可促進腫瘤細胞的生長與存活，並在KRAS突變腫瘤中提供替代的致癌途徑。這些結果揭示了U2AF1突變在KRAS突變癌症中的獨特功能，並提示干預剪接過程可能成為新的治療策略。",
+      "topicTags": [
+        "u2af1-mutation",
+        "KRAS-mutant",
+        "cancer",
+        "RNA-splicing",
+        "splicing-factor"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02602-1",
+      "title": "Assessing the effect of immune surveillance on clonal expansions in the blood",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02602-1",
+      "doi": "10.1038/s41588-026-02602-1",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "免疫監測對血液克隆擴增的影響評估",
+      "summaryZh": "這項研究評估免疫監測機制如何影響血液中的克隆擴增過程。克隆性造血與老化及血液惡性腫瘤的發生密切相關，理解免疫系統如何調控這些擴增對疾病預防至關重要。研究結果可能為血液疾病的早期偵測與免疫療法開發提供新的見解，並深化我們對免疫系統與造血系統互動的理解。",
+      "topicTags": [
+        "immunology",
+        "clonal-hematopoiesis",
+        "blood-cancer",
+        "genomics",
+        "immune-surveillance"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02648-1",
+      "title": "U2AF1 mutations rescue deleterious exon skipping induced by KRAS mutations",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02648-1",
+      "doi": "10.1038/s41588-026-02648-1",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "U2AF1突變拯救KRAS突變導致的外顯子跳躍缺失",
+      "summaryZh": "本研究發現U2AF1的突變能夠拯救KRAS突變所導致的有害外顯子跳躍現象，揭示了剪接因子與致癌訊號之間的新型補償機制。這項發現闡明了RNA剪接失調與致癌路徑之間的複雜交互作用，為理解癌症進程提供了重要見解。研究結果表明，針對剪接調控的治療策略可能具有開發潛力，為KRAS突變相關癌症的治療提供新的思路。",
+      "topicTags": [
+        "splicing-factors",
+        "cancer-biology",
+        "kras",
+        "rna-splicing",
+        "oncology"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02649-0",
+      "title": "Improved heritability partitioning and enrichment analyses using summary statistics with graphREML",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02649-0",
+      "doi": "10.1038/s41588-026-02649-0",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "graphREML：利用摘要統計資料進行遺傳力分割與富集分析的新方法",
+      "summaryZh": "遺傳力分割是理解複雜性狀遺傳基礎的重要工具。本研究提出graphREML方法，能更有效率地利用全基因組關聯研究（GWAS）的摘要統計資料進行遺傳力分割與富集分析。相較於現有方法，graphREML在估計準確度與計算效率上皆有顯著提升。此工具對於大規模基因體研究，特別是缺乏原始資料但僅有摘要統計的研究具有重要價值。graphREML能幫助研究人員更精確地識別影響複雜性狀的遺傳區域與功能類別。",
+      "topicTags": [
+        "statistical-genetics",
+        "heritability",
+        "gwass",
+        "computational-genomics",
+        "enrichment-analysis"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03199-w",
+      "title": "A genome-scale CRISPRi perturbation atlas of human induced pluripotent stem cells",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-07-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03199-w",
+      "doi": "10.1038/s41587-026-03199-w",
+      "abstract": "A transcriptional regulatory map of pluripotent stem cells is generated by CRISPR screening.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "CRISPR",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "人類誘導性多功能幹細胞的全基因組CRISPRi干擾圖譜",
+      "summaryZh": "本研究利用CRISPR干擾技術（CRISPRi）在人類誘導性多功能幹細胞（iPSC）中進行全基因組規模的基因篩選，成功建構了多功能幹細胞的轉錄調控網絡圖譜。此圖譜系統性地揭示了基因之間的調控關係，為理解細胞多功能性與分化過程的分子機制提供前所未有的視角。該資源可作為研究人類iPSC基因功能的重要工具，對再生醫學與疾病模型建構具有重要應用價值。透過全基因組層面的轉錄調控解析，此研究為探索幹細胞如何維持多功能狀態及轉變為特定細胞譜系奠定關鍵基礎。",
+      "topicTags": [
+        "crispri",
+        "ipsc",
+        "genome-scale-screening",
+        "transcriptional-regulation",
+        "pluripotent-stem-cells",
+        "functional-genomics"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02018-3",
+      "title": "Learning from stem cell-based embryo models",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-07-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02018-3",
+      "doi": "10.1038/s41556-026-02018-3",
+      "abstract": "Efforts to construct stem cell-based embryo models are thriving, with numerous potential implications for basic and translational research. We now introduce a Collection of articles that highlight recent achievements, grapple with ethical matters and provide guidance.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "探索幹細胞胚胎模型的應用與展望",
+      "summaryZh": "幹細胞胚胎模型的研究正蓬勃發展，為基礎科學與轉譯醫學帶來嶄新契機。這類模型能夠幫助研究人員深入了解胚胎發育過程的分子調控機制，並提供替代傳統胚胎研究的新途徑。然而，隨著技術進展，相關倫理議題也日益受到關注。本論文集收錄多篇重要文章，不僅展示最新研究成果，也針對倫理規範提供指導方針，協助研究社群在推動科學突破的同時，確保研究倫理的嚴謹性與社會責任。",
+      "topicTags": [
+        "stem-cell",
+        "embryo-model",
+        "developmental-biology",
+        "ethics",
+        "regenerative-medicine"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02366-1",
+      "title": "Just how goal-directed are hippocampal theta sweeps, anyway?",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-07-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02366-1",
+      "doi": "10.1038/s41593-026-02366-1",
+      "abstract": "Planning is a cognitive process that is thought to be grounded in hippocampal sequences, but recent studies have suggested that a simpler mechanism, fundamentally incompatible with those planning hypotheses, underlies these sequences. Two studies in this issue of Nature Neuroscience provide the first steps to resolving that controversy.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "neuroscience"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "海馬體θ波序列的目標導向性：爭議與解答",
+      "summaryZh": "海馬體的θ波序列長期以來被認為是空間導航與記憶規劃的神經基礎，但近期研究提出這些序列可能源自更簡單的機制，與傳統的規劃假說存在根本矛盾。本期《自然神經科學》發表的兩項研究首次嘗試解決這一爭議，對理解海馬體如何支持認知功能具有重要意義。這項爭議的核心在於：這些神經序列究竟是大腦主動規劃未來的表現，還是僅僅是感覺輸入驅動的被動產物？解決這個問題將幫助我們更精確地掌握記憶編碼與決策過程的神經機制。",
+      "topicTags": [
+        "neuroscience",
+        "hippocampus",
+        "theta-sequences",
+        "planning",
+        "spatial-navigation"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02364-3",
+      "title": "Goal-directed hippocampal theta sweeps during memory-guided navigation",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-07-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02364-3",
+      "doi": "10.1038/s41593-026-02364-3",
+      "abstract": "Hippocampal neural activity sweeps toward remembered goals on internal maps during navigation. These goal-directed sweeps coordinate with prefrontal cortex activity and are preferentially replayed offline, supporting flexible memory-guided planning.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "記憶引導導航中目標導向的海馬體θ波掃描",
+      "summaryZh": "本研究揭示了海馬體在導航過程中如何透過θ波掃描將神經活動導向記憶中的目標位置。這種目標導向的掃描與前額葉皮質的活動相互協調，形成跨腦區的神經網絡調控。研究發現這些目標相關的神經活動模式會在休息時被優先回放，暗示其在記憶鞏固中扮演重要角色。此發現為理解大腦如何支持靈活的記憶引導規劃提供了關鍵的神經機制解釋，對於認知神經科學和記憶研究具有重要意義。",
+      "topicTags": [
+        "neuroscience",
+        "hippocampus",
+        "theta-oscillations",
+        "memory",
+        "navigation",
+        "prefrontal-cortex"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02365-2",
+      "title": "Hippocampal theta sweeps indicate goal direction during navigation",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-07-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02365-2",
+      "doi": "10.1038/s41593-026-02365-2",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "海馬 theta 波振盪揭示導航時的目標方向",
+      "summaryZh": "本研究發現，海馬體中的 theta 波振盪攜帶了關於導航時目標方向的神經資訊。當動物在空間中移動時，這些規律的神經活動會在目標方向上出現增強的同步振盪，顯示大腦利用這種節律性活動來規劃和引導朝向目的地的移動。此發現深化了我們對海馬體如何編碼空間目標的理解，對於揭開記憶與導航的神經機制具有重要意義。這項研究也為探索導航障礙相關疾病（如阿茲海默症）的病理機制提供了新的理論基礎。",
+      "topicTags": [
+        "neuroscience",
+        "spatial-navigation",
+        "hippocampus",
+        "theta-oscillations",
+        "memory"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003839",
+      "title": "Towards globally equitable bioinformatics adoption",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-01T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003839",
+      "doi": "10.1371/journal.pbio.3003839",
+      "abstract": "Advances in artificial intelligence (AI)-driven bioinformatics promise democratized discovery, yet major inequities persist. Equitable adoption of bioinformatics tools will require sustained investment in infrastructure, training, institutions, and global communities, not just access. Advances in AI-driven bioinformatics promise democratized discovery, yet major inequities persist. This Perspective uses AlphaFold as an illustrative case to argue that equitable adoption of bioinformatics technologies will require sustained global investment, not just provision of access.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "邁向全球公平的生物資訊學採用"
+    },
+    {
+      "id": "10.64898/2026.06.28.735102",
+      "title": "Fly Viral Atlas: A single-nucleus transcriptomic atlas of RNA viruses and transposable elements (TEs) in Drosophila melanogaster",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-01",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.28.735102v1",
+      "doi": "10.64898/2026.06.28.735102",
+      "abstract": "Drosophila RNA viruses often persist in wild and lab populations, yet their tissue and cellular tropism is poorly understood. In the Fly Cell Atlas (a comprehensive Drosophila single-nucleus transcriptome) data, we detected four RNA virus infections: Nora virus, Drosophila A virus, Drosophila C virus, and Newfield virus. Nora and Drosophila A virus were the most abundant and widespread across tissues and cell types, while Drosophila C virus and Newfield virus RNA transcript were only found in oenocyte and fat body tissues. We found transcriptional changes associated with viral infection in canonical viral immunity genes (e.g. Vago, vir-1). Additionally, we observed that during persistent viral infections, transposable element (TE) transcripts were upregulated in somatic cells. TEs are traditionally associated with the germline, but recent studies and our data suggest they are also expressed in somatic cells. Using the Fly Cell Atlas data, we found that distinct somatic cell types express specific TE subtypes, indicating regulated and cell-type specific TE activity often overlooked in transcriptomic studies. We present Fly Viral Atlas (https://flyviralatlas.shinyapps.io/home/), a single-nucleus level atlas of RNA viruses and TE expressions in Drosophila, providing new insights into viral tropism and TE dynamics across cell types and tissues.",
+      "authors": [
+        "Roy, N.",
+        "Unckless, R. L."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "果蠅病毒圖譜：Drosophila melanogaster 中 RNA 病毒與轉座子 (TEs) 的單核轉錄體圖譜"
+    },
+    {
+      "id": "10.1101/2025.11.14.687149",
+      "title": "Morphological profiling of all human and mouse miRNAs in 24M cells",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-01",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.11.14.687149v2",
+      "doi": "10.1101/2025.11.14.687149",
+      "abstract": "MicroRNAs (miRNAs) are post-transcriptional regulators of gene expression whose contributions to cell biology remain underexplored. Here, we used Cell Painting to quantify the morphological effect of 2,565 human and 1,900 mouse miRNA mimics on 24 million cells across five cell lines. To do so, we developed a novel single-cell morphological profiling analysis framework, involving stringent batch correction, feature selection, and hit calling. With this, we discovered that 9% of human and 15% of mouse miRNA mimics significantly alter cell morphology in at least one cell line. Eighteen miRNAs caused significant changes in multiple cell lines, including eight orthologous miRNAs that altered morphology in both human and mouse cells. Among the replicating miRNAs were human and mouse miR-155-5p, which affected morphology in at least one replicate of four cell lines. As expected, miRNAs with identical seed sequences induced more similar morphological changes than miRNAs with different seeds. Also, morphological changes were associated with cytotoxicity and annotation confidence. This comprehensive single-cell morphological resource will help elucidate the cellular functions of human and mouse miRNAs.",
+      "authors": [
+        "Wagner, J.",
+        "Smillie, C. L.",
+        "Sirey, T. M.",
+        "Khamseh, A.",
+        "Ponting, C. P.",
+        "Beentjes, S. V."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "24M 細胞中所有人類與小鼠 miRNA 的形態學分析"
+    },
+    {
+      "id": "10.1101/2025.06.27.661992",
+      "title": "MORPH Predicts the Single-Cell Outcome of Genetic Perturbations Across Conditions and Data Modalities",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-01",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.06.27.661992v2",
+      "doi": "10.1101/2025.06.27.661992",
+      "abstract": "Modeling cellular responses to genetic perturbations is a significant challenge in computational biology. Measuring all gene perturbations and their combinations across cell types and conditions is experimentally challenging, highlighting the need for predictive models that generalize across data types to support this task. Here we present MORPH, a MOdular framework for predicting Responses to Perturbational cHanges. MORPH combines a discrepancy-based variational autoencoder with an attention mechanism to predict cellular responses to unseen perturbations. It supports both single-cell transcriptomics and imaging outputs and can generalize to unseen perturbations, combinations of perturbations, and perturbations in new cellular contexts. The attention-based framework enables inference of gene interactions and regulatory networks, while the learned gene embeddings can guide the design of informative perturbations, as demonstrated in two applications. Overall, MORPH is a flexible tool for optimizing perturbation experiments, enabling efficient exploration of the perturbation space to advance understanding of cellular programs for fundamental research and therapeutic applications.",
+      "authors": [
+        "He, C.",
+        "Zhang, J.",
+        "Dahleh, M. A.",
+        "Uhler, C."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "MORPH 預測遺傳擾動在不同條件與資料模態下的單細胞結果"
+    },
+    {
+      "id": "10.64898/2026.06.26.734694",
+      "title": "mirCCC: Repression-aware graph learning for miRNA-mediated cell-cell communication inference",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-01",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.26.734694v1",
+      "doi": "10.64898/2026.06.26.734694",
+      "abstract": "Cell-cell communication analyses usually focus on protein ligands and receptors and therefore miss the extracellular vesicle-mediated transfer of microRNAs, an important route of signalling in cancer. Here, we show that microRNA-mediated communication can be inferred from standard single-cell RNA sequencing by detecting coordinated decreases in the expression of validated miRNA target genes. We developed mirCCC, a computational framework that estimates cell-specific microRNA activity, models cellular sending and receiving capacities for extracellular vesicle transfer, and learns microRNA-resolved communication graphs from transcriptomic data. In synthetic benchmarks with strong confounding signals, mirCCC improved, whereas all comparison methods declined. Applied to a human colorectal cancer atlas, mirCCC recovered known colorectal cancer-associated microRNAs and identified stromal- and myeloid-to-epithelial communication converging on a plasticity program linked to TGF-{beta} and Wnt/{beta}-catenin signalling. These results provide a practical route for studying extracellular vesicle-mediated communication in existing single-cell atlases.",
+      "authors": [
+        "Chen, Y.",
+        "Cui, J.",
+        "Zhang, S.",
+        "Liu, E.",
+        "Xie, L.",
+        "Feng, C.",
+        "Chen, M."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "mirCCC：用於 miRNA 媒介細胞間通訊推斷的抑制感知圖學習"
+    },
+    {
+      "id": "10.64898/2026.06.26.734559",
+      "title": "MintCNA: A Unified Framework for Integrative Copy Number Profiling with Single-Cell Multi-Omics Data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-01",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.26.734559v1",
+      "doi": "10.64898/2026.06.26.734559",
+      "abstract": "Chromosomal copy number alterations (CNAs) are key drivers of tumor evolution, disease progression and therapeutic resistance, and the identification of them is an important step to delineate tumor clonal structure. However, accurately resolving CNA landscapes from single-cell data remains challenging. Most existing tools analyze one omics layer at a time and are susceptible to assay-specific noises, limiting their ability to recover shared or modality-specific CNAs. Recent single-cell multi-omics techniques enable joint sequencing of multiple molecular layers in the same cells, yet in silico methods that fully exploit such complementary multi-modal data for CNA analysis are still missing. Here we present a single-cell multi-omics integration framework, MintCNA, a unified framework for CNA detection from paired multi-omics data. MintCNA integrates traditional statistical modeling with embedded deep learning structure to enhance CNA profiling across multi-omics. We use an attention-guided convolutional autoencoder for data denoising and perform multivariate change-point detection utilizing a sliding-window screening and ranking procedure. Missingness-adjusted CUSUM statistics are constructed which jointly aggregate omics features by a data-adaptive projection to detect genome-wide chromosomal breakpoints. Across various simulations and applications to a colorectal cancer multi-omics dataset, MintCNA consistently outperforms existing single-omics CNA callers in detection accuracy. MintCNA provides a single-cell CNA tool that integrates paired scDNA-seq and scRNA-seq, supporting the study of intra-tumor heterogeneity and tumor evolution.",
+      "authors": [
+        "Bao, W.",
+        "Qin, F.",
+        "Xiao, F."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "multi-omics",
+        "cancer",
+        "evolution",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "MintCNA：單細胞多體學資料整合拷貝數分析的統一框架"
+    },
+    {
+      "id": "10.1126/sciadv.ads2698",
+      "title": "Discovery of specific rhizosphere bacteria Rhodanobacter involved in KAI2-mediated drought tolerance in Arabidopsis",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.ads2698?af=R",
+      "doi": "10.1126/sciadv.ads2698",
+      "abstract": "The KARRIKIN INSENSITIVE 2 (KAI2) receptor has been reported to contribute to drought tolerance in Arabidopsis . However, the extent to which KAI2’s function in drought tolerance depends on soil microbiota remains unclear. This study demonstrates that the rhizosphere microbiome is indispensable for KAI2-mediated drought tolerance. We isolated specific Rhodanobacter sp. and confirmed its role in enhancing drought tolerance in Arabidopsis . Notably, Rhodanobacter sp. was found to specifically secrete the key isoflavone daidzin. We found that daidzin had a similar function with KAI2 agonist, desmethyl-type germinone, and induced interaction between KAI2 and SUPRESSOR OF MORE AXILLARY GROWTH 2 1. Moreover, the exogenous application of daidzin enhanced drought tolerance by modulating the expression of karrikin response and drought-related genes, in a KAI2-dependent manner. Our findings suggest that the rhizosphere microbiome plays a crucial role in facilitating KAI2-mediated drought tolerance in Arabidopsis , with Rhodanobacter sp. contributing through the secretion of daidzin.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "microbiome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "參與擬南芥 KAI2 媒介抗旱性的特定根圈細菌 Rhodanobacter 發現"
+    },
+    {
+      "id": "10.1126/sciadv.adu3822",
+      "title": "Tethered agonist– and GAIN domain–independent signaling of an adhesion GPCR",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adu3822?af=R",
+      "doi": "10.1126/sciadv.adu3822",
+      "abstract": "In transfected cells, adhesion G protein–coupled receptors (GPCRs) are activated by tethered agonists that are embedded in their canonical autoproteolytic GAIN domain. It is unknown, however, whether a tethered agonist–dependent activation mechanism generally mediates the physiological functions of adhesion GPCRs. Here, we show that G protein signaling by BAI3 ( Adgrb3 ), a brain-specific adhesion GPCR, is essential for its functions in controlling axon and dendrite growth and promoting synapse formation. Moreover, our signal transduction assays confirm that constitutive exposure of BAI3’s tethered agonist massively stimulates (~5-fold) its GPCR activity. However, the constitutive exposure of BAI3’s tethered agonist, produced by deletion of its extracellular domains, blocked instead of activating BAI3’s functions in regulating axonal and dendritic growth and promoting synapse formation. Moreover, inactivating mutations of BAI3’s tethered agonist or deletion of BAI3’s constituent GAIN domain did not detectably impair BAI3’s physiological functions. Thus, the GPCR activity of BAI3 is functionally required, whereas tethered agonist–mediated stimulation of its GPCR activity is not.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "黏著 GPCR 的拴連激動劑與 GAIN 結構域非依賴性訊號傳導"
+    },
+    {
+      "id": "10.1126/sciadv.adu9309",
+      "title": "Variations of global brain asymmetry are associated with aging and related diseases",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adu9309?af=R",
+      "doi": "10.1126/sciadv.adu9309",
+      "abstract": "Lateralization is a hallmark of brain organization, yet the structural basis underlying this phenomenon remains a critical, unresolved question in cognitive and systems neuroscience. In this study, we applied multivariate machine learning techniques to investigate variations of global brain asymmetry and their associations with cognitive functions, aging, and aging-related diseases, using large-scale datasets. Our findings revealed substantial and previously unknown structural differences between the hemispheres, and established key associations between structural asymmetries and lateralized functions. At the population level, we identified unique aging trajectories of hemispheric differences and uncovered diagnosis-specific variations in patients with Alzheimer’s and Parkinson’s disease, and in APOE ε4 carriers at genetic risk. Notably, we identified a “left hemi-aging” pattern that challenges the conventional “right hemi-aging” model. Together, these results advance our understanding of functional lateralization in the human brain and highlight the potential of global brain asymmetry as a biomarker for brain aging and related diseases.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "neuroscience"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "全球腦不對稱性變化與老化及相關疾病的關聯"
+    },
+    {
+      "id": "10.1126/sciadv.adv1982",
+      "title": "Ancient inversion polymorphisms are locally adaptive in a widespread butterfly species",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adv1982?af=R",
+      "doi": "10.1126/sciadv.adv1982",
+      "abstract": "Divergent selection across species ranges does not always translate into observable morphological divergence. Genomic approaches agnostic to traits or groups of populations under selection can reveal cryptic genetic diversity and provide insights into the nature of local adaptation. Here, we use such an approach to investigate local adaptation in the zebra butterfly, Heliconius charithonia . This species is widely distributed across the Caribbean and adjacent North, Central and South America yet is morphologically and genetically homogeneous across its range. Genomic analyses, however, reveal three geographically restricted inversions that survived recent range expansions that explain genetic homogeneity in the rest of the genome. These inversions are ancient but not shared with related species. Their polymorphisms cannot be explained by accumulation of mutational load and are more likely maintained by divergent selection in heterogeneous environments. Our study emphasizes the power of genomic approaches for uncovering hidden diversity in morphologically homogeneous species and highlights the important role of chromosomal rearrangements in local adaptation.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "古代倒位多態性在廣泛分布的蝴蝶物種中具有局部適應性",
+      "summaryZh": "斑馬蝶(Heliconius charithonia)廣泛分布於加勒比海及美洲各地，但形態和遺傳上高度均質。基因組分析發現三個地理分布受限的古代倒位，這些倒位在最近的範圍擴張中存活下來，並解釋了基因組其餘部分的遺傳均質性。這些倒位雖然古老但未與近緣物種共享，其多態性無法用突變負荷累積解釋，更可能是由異質環境中的歧異選擇所維持。此研究強調了基因組方法在揭示形態均質物種中隱藏遺傳多態性的威力，並凸顯染色體重排在局部適應中的重要角色。",
+      "topicTags": [
+        "population-genetics",
+        "local-adaptation",
+        "chromosomal-inversions",
+        "heliconius-butterfly",
+        "genomics",
+        "cryptic-diversity"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aeb3363",
+      "title": "Annotating the pangenome reveals the diversity in the genetic basis for metabolic enzymes",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb3363?af=R",
+      "doi": "10.1126/sciadv.aeb3363",
+      "abstract": "Affordable sequencing has flooded public databases with bacterial genomes; yet, species-scale maps that connect gene content variation to metabolic functions essential to biotechnology/system biology remain scarce. We address this gap by building a pangenome-wide gene-protein-reaction association and applying it to 2377 Escherichia coli genomes to reconstruct a pangenome-scale metabolic model (panGEM). We validate panGEM against Biolog carbon source utilization assays, achieving ≈0.99 precision in growth/no-growth predictions. Using panGEM, we identify >11,000 rare metabolic genes, yet only 35 metabolic reactions are rare. To explain the mismatch, we examined rare genes and found that most are pseudogenes or diverged orthologs acquired by horizontal gene transfer (HGT). Results indicate a recurrent loss-reacquisition cycle in which a core allele is lost/pseudogenized and its function is restored by HGT, preserving function without expanding the reactome, generating genetic heterogeneity in a small subset (~3.6%) of reactions, marking selection pressure hotspots of metabolism. Thus, pangenome annotation reveals the evolutionary dynamics that shape the genetic basis of metabolism.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "biology",
+        "evolution",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "註解泛基因組揭示代謝酶遺傳基礎的多樣性",
+      "summaryZh": "研究團隊分析了2377個大腸桿菌基因組，建立了泛基因組尺度的代謝模型(panGEM)，能以約99%的精確度預測生長表現。他們發現超過11,000個罕見代謝基因，但僅有35個罕見反應，兩者數量極不匹配。進一步分析顯示，大多數罕見基因是偽基因或透過水平基因轉移獲得的趨異直系同源基因。研究揭示了一個「丟失-重新獲得」的循環機制：核心等位基因丟失或偽基因化後，功能由水平基因轉移恢復，在不擴展反應組的情況下保留功能。這項發現標記了約3.6%反應中的遺傳異質性，為代謝選擇壓力的熱點區域提供了重要見解。",
+      "topicTags": [
+        "pangenome",
+        "metabolism",
+        "escherichia-coli",
+        "horizontal-gene-transfer",
+        "systems-biology"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aeb5202",
+      "title": "Jurassic avialan reveals stepwise evolution of bony tail in birds",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb5202?af=R",
+      "doi": "10.1126/sciadv.aeb5202",
+      "abstract": "The evolutionary assembly of the flight-adapted bird body plan encompasses some of the most profound morphological changes in terrestrial vertebrate history. Beyond feathered wings, the short pygostyle-bearing tail has been pivotal to the clade’s ecological success. However, transition from the long bony tail to the short pygostyle-bearing tail remains a mystery, hindered by the scarcity of early branching avialans with transitional morphologies. Here, we report on a new avialan, Zhengheornis buyu , gen. et sp. nov., from the Upper Jurassic of southeastern China, suggesting that the vertebral reduction and shortening preceded pygostyle fusion in early avialan evolution, providing critical evidence for the stepwise evolution of the bird tail. Z. buyu is smaller than all known non-pygostylian paravians, expanding the species and body size diversity of stemward taxa.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "侏羅紀鳥翼類揭示鳥類骨質尾部的逐步演化"
+    },
+    {
+      "id": "10.1126/sciadv.aeb5510",
+      "title": "Rapid evolution of lncRNAs introduces novel regulatory inputs into ancestral cancer pathways",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb5510?af=R",
+      "doi": "10.1126/sciadv.aeb5510",
+      "abstract": "A substantial fraction of human long noncoding RNAs (lncRNAs) are lineage specific and increasingly implicated in cancer, yet the evolutionary origins of their oncogenic relevance remain unclear. It is unknown whether such roles arise through adaptive refinement or as incidental by-products of transcriptomic complexity under weak selection. Here, we show that newly evolved cancer-associated lncRNAs, predominantly of primate origin, arise through a stepwise process initiated by increased transcriptional activity. Once expression surpasses a threshold, these lncRNAs undergo sequence expansion, with 73.3% incorporating external or local genomic fragments, facilitating integration into deeply conserved cancer-related pathways. We validate this model through MIR497HG , which originated near a microRNA in the human-macaque ancestor, and subsequently expanded and integrated into the ancient AMPK (adenosine monophosphate–activated protein kinase)/ferroptosis network in humans, influencing oncogenesis. Collectively, our findings support a model in which weak selection permits neutral transcriptional innovations to persist and gradually infiltrate ancient regulatory architectures, consistent with constructive neutral evolution.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer",
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "長鏈非編碼RNA的快速演化為祖先癌症途徑引入新型調控輸入"
+    },
+    {
+      "id": "10.1126/sciadv.aeb5575",
+      "title": "Assisted evolution of corals and their symbionts enhances recruit heat tolerance but with complex outcomes",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb5575?af=R",
+      "doi": "10.1126/sciadv.aeb5575",
+      "abstract": "Heat-tolerant coral stock could supplement populations with tolerance-conferring alleles to combat rising sea surface temperatures and marine heat waves. We tested coral selective breeding and Symbiodiniaceae experimental evolution independently and in tandem as interventions for generating heat-tolerant stock. Broodstock from two sites were ranked using Symbiodiniaceae photochemical efficiency under rapid heat stress and crossed to produce offspring from heat-tolerant colonies (top 25th percentile) and control offspring. Offspring were inoculated with heat-evolved or wild-type symbionts and exposed to 28°C (ambient) or 32°C (elevated) for 2 months. Selective breeding using rapid assays enhanced Davies but not Moore Reef recruit survival and growth at 32°C, suggesting that this method does not universally generate heat-tolerant coral due to genetics, maternal effects, and/or acclimation. Heat-evolved symbionts enhanced survival and bleaching resilience at 32°C but reduced growth at 28°C. Combining interventions yielded additive benefits, no enhancement, or resulted in one intervention diminishing the other’s impact. These results demonstrate assisted evolution’s potential while cautioning against generalizing its outcomes.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "珊瑚及其共生體的輔助演化增強幼體耐熱性但結果複雜"
+    },
+    {
+      "id": "10.1126/sciadv.aeb7931",
+      "title": "Hierarchical microtopology and phase-specific delivery functionally restore ultralong nerve continuity across species",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb7931?af=R",
+      "doi": "10.1126/sciadv.aeb7931",
+      "abstract": "Repairing ultralong peripheral nerve defects remains a major clinical challenge, primarily due to the requirement for regenerative platforms to be capable of integrating spatial guidance with temporally resolved biochemical cues. To address this, we developed a clinically translatable, fully synthetic nerve conduit that aligns with native regenerative principles through hierarchical microtopological engineering and phase-specific molecular delivery. This design creates a proregenerative microenvironment by synchronizing structural cues with repair cascades. The neuroanatomically inspired core mimics the endoneurium and perineurium, providing extensive cell-scale contact guidance for axonal alignment and fasciculation. A dual-layered sheath ensures mechanical integrity, metabolic permeability, and selective exclusion of fibrotic tissue. Tailored to align with distinct phases of nerve repair, the conduit enables sequential release of spermidine and ascorbic acid. Spermidine resolves early inflammation, priming the niche for ascorbic acid–mediated debris clearance, axonal elongation, and remyelination. In both rat (2 centimeters) and beagle (5 centimeters) models of critical-sized sciatic nerve defects, the conduit supports structural and functional regeneration comparable to autografts while yielding superior outcomes in motor coordination and suppression of autotomy. This strategy offers a scalable and mechanistically informed solution for repairing ultralong nerve injuries with high translational promise.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "分層微拓撲與相位特異性遞送功能性地恢復跨物種的極長神經連續性"
+    },
+    {
+      "id": "10.1126/sciadv.aec4661",
+      "title": "Loss of O-antigen due to wbbL mutations is common and associated with increased mortality in Escherichia coli bloodstream infections",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec4661?af=R",
+      "doi": "10.1126/sciadv.aec4661",
+      "abstract": "Escherichia coli bloodstream infections are common and associated with high mortality. A key feature of E. coli is the lipopolysaccharide (LPS) O-antigen, which contributes to immune evasion during invasive infection. We analyzed serial isolates from patients with relapsed E. coli bacteremia and identified frequent disruption of O-antigen synthesis due to mutations in wbbL , resulting in a rough LPS phenotype. Rough LPS isolates were more serum sensitive and less pathogenic in mice. Despite this apparent attenuation, 11 of 61 (18%) E. coli sequence type 131 bloodstream isolates in our cohort harbored disruptive wbbL mutations and were associated with significantly worse clinical outcomes, including septic shock and mortality. Using a murine model of recurrent bacteremia, we show that rough LPS isolates partially evade protective immunity generated against smooth LPS E. coli , highlighting the importance of host immune context in invasive disease.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "wbbL突變導致O抗原缺失常見且與大腸桿菌血流感染死亡率增加相關"
+    },
+    {
+      "id": "10.1126/sciadv.aec7011",
+      "title": "Bio-integrated μBots with overtone ultrawideband magnetoelectric antennas for wireless telemetry",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec7011?af=R",
+      "doi": "10.1126/sciadv.aec7011",
+      "abstract": "Implantable and wearable devices require antennas that are both miniaturized and efficient, yet conventional designs are constrained by narrow bandwidth and orientation sensitivity. We report overtone ultrawideband magnetoelectric (OUWB-ME) antennas that exploit higher-order acoustic modes in polished silicon substrates to achieve a 22.6-gigahertz −10-decibel bandwidth and overtone capability in the 3- to 4-gigahertz range. Packaged into “μBots,” these magnetoelectric heterostructures bonded with silver nanoparticle inks maintain stable operation under biological loading. In vitro assays confirm the biocompatibility of aluminum nitride and the protective role of parylene encapsulation for iron-gallium. Ex vivo rat and human tissues reshape transmission and reflection spectra, with reproducible frequency windows near 3.3 and 3.9 gigahertz. μBots enable real-time audiovisual telemetry using software-defined radios and exhibit compatibility with 7-tesla magnetic resonance imaging. By combining wideband response, robustness to misalignment, and biocompatible packaging, OUWB-ME μBots provide a scalable platform for wireless bio-integrated communication and telemetry.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aed0910",
+      "title": "Spatiotemporal control of myoblast identity drives muscle diversity in the Drosophila leg",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed0910?af=R",
+      "doi": "10.1126/sciadv.aed0910",
+      "abstract": "Skeletal muscles exhibit notable morphological diversity, yet the developmental mechanisms specifying distinct identities are unclear. Using Drosophila leg muscles, we show that naïve mesodermal precursors undergo stepwise specification orchestrated by epithelial morphogens. Wg/Wnt1 and Dpp/BMP first restrict multipotent precursors into proximal and distal lineages. Within the distal lineage, successive fate bifurcations generate distinct muscle subtypes and a separate nonmuscle lineage of neuronal lamella cells. Focusing on one lineage, we demonstrate that Wg and Dpp act again to control the spatiotemporal deployment of transcription factors, ensuring that groups of myoblasts destined to fuse to produce a specific muscle share a coordinated transcriptional identity. Thus, epithelial morphogens not only pattern the epithelium but also synchronize myoblast specification, enabling the emergence of diverse muscles from syncytial fibers. Our findings provide a framework for the developmental and evolutionary origins of appendicular muscles and may help explain the selective vulnerability of specific muscles in muscular dystrophies.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development",
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "時空控制肌母細胞特性驅動果蠅腿部肌肉多樣性"
+    },
+    {
+      "id": "10.1126/sciadv.aed8943",
+      "title": "Dimer asymmetry in signaling of blue light sensor histidine kinases",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed8943?af=R",
+      "doi": "10.1126/sciadv.aed8943",
+      "abstract": "Photoreceptor sensory histidine kinases (SHKs) couple light absorption to conformational changes regulating two-component signaling. Despite their importance and widespread use in optogenetics, the underlying structural signaling mechanisms remain poorly understood. Here, we engineered dimeric SHKs based on Pseudomonas putida short light-oxygen-voltage (LOV) proteins, determined their crystal structures, and investigated their signaling mechanisms. Regardless of illumination, the structures adopted a light-state like LOV-LOV dimer with symmetric/straight kinase modules. In contrast, small-angle x-ray scattering together with functional assays revealed pronounced light-dependent rearrangements in solution and allowed the assignment of the kinase-ON dark state to an asymmetric/kinked conformation, whereas the light state adopts a symmetric/straight structure. Comparative analyses of natural and engineered SHKs identified conserved motifs linking light-induced LOV domain rotation to kinase activity. The findings highlight the central role of dimer asymmetry and flexibility in SHK signaling, thereby not least informing the engineering of new light-responsive signaling systems.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "藍光感測組胺酸激酶訊號傳導中的二聚體不對稱性"
+    },
+    {
+      "id": "10.1126/sciadv.aee3487",
+      "title": "Dual-mode analysis of ischemic stroke based on urine SERS spectra and carotid B-ultrasound",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee3487?af=R",
+      "doi": "10.1126/sciadv.aee3487",
+      "abstract": "Achieving noninvasive high-frequency monitoring of ischemic stroke (IS) remains a major clinical challenge for timely intervention and precise secondary prevention. Establishing precise correlations between patients’ systemic microscopic molecular fingerprints and localized macroscopic organ pathological events is essential to overcome the limitations of single-modal detection and enhance the efficacy of clinical risk assessment. However, because of the complexity of heterogeneous data, effectively integrating the cross-dimensional “molecular imaging” data remains a critical bottleneck in achieving this goal. Here, we present a proof-of-concept method to distinguish patients with confirmed IS from healthy controls (HCs) that used machine learning (ML)–based methods to surface-enhanced Raman spectroscopy (SERS) of urine (one-dimensional) and carotid artery B-ultrasound imaging (CBI) (two-dimensional). In an exploratory cohort of 101 participants, this approach analyzed 10,100 SERS spectra and 481 CBI images, achieving 92% classification accuracy and an area under the curve (AUC) of 0.95. Furthermore, by combined SERS spectra and liquid chromatography–mass spectrometry technology, this study preliminarily explored the urinary biomarker differences between HC/IS groups. The multidimensional data fusion strategy proposed in this study effectively bridges the information gap between traditional molecular detection and clinical phenotypes by systematically correlating microfluidic biomarkers with macro-organ imaging features. This approach provides a previously unexplored, noninvasive, and highly accurate tool for risk stratification and clinical decision-making in classifying HC/IS groups.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aef1695",
+      "title": "Mechanical movements generated by movable lipids break endosomal barriers for enhanced mRNA therapeutics",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef1695?af=R",
+      "doi": "10.1126/sciadv.aef1695",
+      "abstract": "Lipid nanoparticles (LNPs), composed of ionizable lipids, phospholipids, cholesterol, and PEGylated lipids, have been successfully used in messenger RNA (mRNA) vaccine development. Despite substantial progress, endosomal entrapment after cellular internalization is still a critical bottleneck limiting the vaccine efficacy. While the efforts to optimize lipid p K a , spatial conformation, and LNP composition have been made, further fine-tuning of these parameters shows diminishing returns in improving effectiveness. Here, we propose a previously unreported parameter, programmable mechanical movement. LNPs are expected to destabilize endosomal membranes through conducting mechanical movements under specific inputs, achieving robust endosomal escape. Specifically, we demonstrate a light-emitting diode (LED)–driven movable lipid (i.e., phenylazothiazole lipid) capable of performing mechanical movements. We integrate the movable lipids into the BNT162b2 formulation from Pfizer-BioNTech. Upon LED irradiation, the movable lipids within LNPs function as molecular rotors, thereby facilitating endosomal membrane destabilization. This strategy has achieved exciting preclinical results in enhancing mRNA-LNP cancer vaccine efficacy.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer",
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aef4971",
+      "title": "Structural and mutational insights define ERMA as the ER Mg2+ ATPase and reservoir gatekeeper",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef4971?af=R",
+      "doi": "10.1126/sciadv.aef4971",
+      "abstract": "Magnesium (Mg 2+ ) is the most abundant divalent cation in cells, yet the mechanisms mediating its organellar transport remain poorly defined. We identify endoplasmic reticulum (ER) Mg 2+ adenosine triphosphatase (ATPase) (ERMA) as the transporter that drives Mg 2+ uptake into the ER lumen, establishing the ER as a bi-ionic intracellular reservoir. MagFRET biosensors targeted to the ER demonstrate that ERMA mediates dynamic ER Mg 2+ storage and robust adenosine 5′-triphosphate–dependent Mg 2+ uptake reaching 15 to 30 millimolar. Cryo–electron microscopy structures of human and mouse ERMA reveal a P-type ATPase fold with an unwound transmembrane 4 (TM4) that coordinates Mg 2+ via the unique PILP backbone and the TM5 residue Q1110, whose mutation markedly impairs ERMA-mediated Mg 2+ uptake. Functional reconstitution of domain mutants, ERMA-SERCA chimeras, and pathogenic variants confirm ERMA as an ER-resident Mg 2+ pump and gatekeeper of ER Mg 2+ ionic equilibrium.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aef8428",
+      "title": "B7-H4–targeted radiotheranostics enable precise imaging and potent therapy across solid tumor models",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef8428?af=R",
+      "doi": "10.1126/sciadv.aef8428",
+      "abstract": "B7-H4 is an emerging immunoregulatory checkpoint broadly overexpressed across solid tumors and minimally present in normal tissues, making it an attractive candidate for targeted imaging and therapy. Here, we develop and evaluate a B7-H4–directed radiotheranostic antibody labeled with [ 89 Zr] for PET imaging and with either [ 177 Lu] or [ 225 Ac] for β- or α-particle therapy, respectively. [ 89 Zr]-immunoPET enabled quantitative, whole-body visualization of B7-H4 expression and reliably distinguished high, intermediate, and negative-expressing tumors. Radiotherapy with [ 177 Lu]- or [ 225 Ac]-conjugated antibody exhibited potent, antigen-dependent antitumor activity, including complete and durable regressions in B7-H4–high expressing xenografts after a single administration, while having a minimal effect on B7-H4–negative tumors. Both therapeutic constructs were well tolerated, causing only transient, reversible myelosuppression without sustained hepatic, renal, or histopathologic toxicity. These findings identify B7-H4 as a promising target for integrated imaging and radionuclide therapy and provide a preclinical foundation for the future development of B7-H4–directed radiotheranostic strategies.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aef9628",
+      "title": "Hemisphere-wide evidence of Early Paleoindian megaherbivore specialization",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef9628?af=R",
+      "doi": "10.1126/sciadv.aef9628",
+      "abstract": "The adaptive strategies of Early Paleoindians associated with the rapid and continent-wide expansions of Clovis and related Fishtail Projectile Point (FPP) complexes in the Americas have been subject to differing interpretations. Were Early Paleoindians megafauna specialists or dietary generalists? These alternative models offer profoundly different implications for Early Paleoindian prey choice, mobility, and technology. We synthesize and evaluate the zooarchaeological records of the earliest widespread cultural manifestations in Eastern Beringia [~14,000 to 13,300 calibrated years before the present (cal B.P.)], North America (Clovis complex, ~13,400/13,050 to 12,800 cal B.P.), and South America (FPP complex, ~12,900 to 11,600 cal B.P.) and summarize their adaptive strategies. Zooarchaeological, technological, and mobility data strongly support the megafauna specialization model. All three groups obtained most of their food from megaherbivores (>1000 kg): woolly mammoth in Beringia, Columbian mammoth in North America, and giant ground sloths and gomphotheres in South America. Focus on megaherbivores facilitated rapid human expansion into different ecosystems before the time-transgressive extinction of megafauna led to regional diversification through adaptations to locally available resources.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aeg5356",
+      "title": "Remote homology and functional genetics unmask deeply preserved Scm3/HJURP orthologs in metazoans",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg5356?af=R",
+      "doi": "10.1126/sciadv.aeg5356",
+      "abstract": "In most animals and fungi, centromere identity and function depend on the Scm3/Holliday junction recognition protein (HJURP) chaperone, which deposits CENPA at centromeres. However, Scm3/HJURP orthologs appeared to be missing in insects, nematodes, many vertebrates, and other metazoans, suggesting radical chaperone replacement in these lineages. Here, we combine remote homology detection, AlphaFold-based structural modeling, and functional genetics in zebrafish and Caenorhabditis elegans to identify previously unknown Scm3/HJURP orthologs that localize to centromeres and whose loss causes catastrophic mitotic failure. We further show that Drosophila CAL1, long considered a functional analog, is instead a highly diverged Scm3/HJURP ortholog. Despite rapid primary-sequence divergence, predicted and known structures reveal a broadly conserved CENPA-H4–binding scm3 fold across fungi, vertebrates, nematodes, insects, and most metazoans. Our work demonstrates how rapid divergence can obscure the broad conservation of essential centromere machinery and provides a generalizable strategy for unmasking missing orthologs.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aeg6081",
+      "title": "O-methyltransferase variation enables a specific volatile alarm call in rice",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg6081?af=R",
+      "doi": "10.1126/sciadv.aeg6081",
+      "abstract": "Plants emit volatile compounds that orchestrate complex ecological interactions, with methylated catabolites of interaction-induced phytohormones being common examples. Salicylic acid (SA) mediates plant antipathogen responses, while its methylated derivative, MeSA, broadly mediates plant-insect interactions without specificity. Here, we identified dimethyl salicylate (DMSA), an unappreciated dimethylated SA catabolite, emitted by rice when attacked by the major destructive pest, the brown planthopper. DMSA biosynthesis requires an O -methyltransferase cascade, BSMT1 (benzoic acid/salicylic acid carboxyl methyltransferase 1)–MSOMT (methyl salicylate O -methyltransferase), which is directly activated by a jasmonate (JA)–responsive MYC2-JAMYB transcriptional cascade. Natural variation in the MSOMT promoter confers its herbivory-induced expression in indica but not japonica cultivars. Functionally, DMSA acts as a specific volatile signal attracting the egg-parasitoid wasps of brown planthoppers (BPHs) without mediating direct resistance, which demonstrably suppresses BPH populations in paddy fields. DMSA is an optimized advance in SA signaling derived plant “alarm calls” with great potential in sustainable rice pest management.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aea0592",
+      "title": "Turbocharging synaptic transmission: 12 SNAREpins are required for rapid release of reconstituted synaptic vesicles",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea0592?af=R",
+      "doi": "10.1126/sciadv.aea0592",
+      "abstract": "Synaptic transmission occurs synchronously with real-world events, far faster than vesicle fusion for hormone release or membrane biogenesis, all mediated by soluble N -ethylmaleimide–sensitive factor attachment protein receptor (SNARE) complexes. How SNAREs cooperate to achieve synchronous neurotransmitter release is a long-standing mystery. Rapid release (",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec4197",
+      "title": "Toward autonomous robotic-assisted and microrobotic surgery",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec4197?af=R",
+      "doi": "10.1126/sciadv.aec4197",
+      "abstract": "Autonomous robotic-assisted surgery (RAS) has emerged as a promising objective in biomedical technology, further enhanced by miniaturization toward microrobotic-assisted surgery (μ-RAS). This reduction in scale promises minimally invasive, partially or fully automated surgical procedures, with the potential to reduce patient recovery times, lower medical costs, and enable previously unavailable procedural options. This perspective highlights the specific advances in RAS that potentially map to the microscale (μ-RAS), organized across five surgical domains: endovascular, endoluminal, laparoscopic, ophthalmic, and orthopedic. We examine both clinical demands and technological advances in surgical robotics and identify the key innovations required for progress across these surgical fields. Our contribution is distinct in combining the perspectives of both surgical experts and bioengineering innovators, outlining a roadmap for the advancement and eventual integration of autonomous RAS and μ-RAS into mainstream surgical practice.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aed9156",
+      "title": "Illuminating aging with multimodal optical metabolic imaging",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed9156?af=R",
+      "doi": "10.1126/sciadv.aed9156",
+      "abstract": "Aging is intimately entangled with the reprogramming of metabolic pathways that coordinate energy production, biosynthesis, and molecular turnover. However, visualizing and understanding these metabolic underpinnings within their spatial and temporal contexts remains a major challenge. Metabolic imaging has emerged as a transformative approach that enables spatially resolved visualization of metabolic dynamics both at the molecular or cellular and organismal levels. In this review, we summarize recent advances and applications of metabolic imaging in probing aging biology, with particular emphasis on multimodal nonlinear optical imaging techniques and their applications across diverse aging models. Optical metabolic imaging provides unique insights into the mechanisms of aging by capturing metabolic alterations that span from organelle-level interactions to tissue-scale remodeling. Optical metabolic imaging enables the label-free detection of early metabolic shifts in vivo, representing an emerging frontier in aging research. Looking ahead, optical metabolic imaging holds great promise as a practical and powerful tool for clinical translation, advancing precision medicine and enhancing the diagnosis, monitoring, and evaluation of aging processes to promote human health span and longevity.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "biology"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aej2301",
+      "title": "How leg muscles get to know who they are",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-01T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aej2301?af=R",
+      "doi": "10.1126/sciadv.aej2301",
+      "abstract": "Legs use diverse muscles to perform movements. A study on insect leg muscle development shows that the environment instructs cellular diversity before muscles form.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "腿部肌肉如何認識自己的身份"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 57,
+      "passedByScope": 16,
+      "llmClassified": 41,
+      "llmYes": 24,
+      "llmNotSure": 0,
+      "llmNo": 17,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 40,
+      "excluded": 17
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 40,
+      "llmTagged": 40,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 40,
+      "candidates": 37,
+      "featured": 12,
+      "overflow": 25,
+      "lineA": 0,
+      "lineB": 32,
+      "preprint": 5,
+      "skip": 3
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 25,
+      "llmTranslated": 17,
+      "failed": 8
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee1333",
+        "title": "Unlocking the potential of high-dimensional quantum communication with scalable photonic entanglement in time and frequency",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-01T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee1333?af=R",
+        "doi": "10.1126/sciadv.aee1333",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeb5187",
+        "title": "Earth is mostly diffusive: A global analysis of landscape evolution",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-01T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb5187?af=R",
+        "doi": "10.1126/sciadv.aeb5187",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aec1952",
+        "title": "Diffraction anomalous fine structure pinpoints electrochemically active sites in robust heterojunctions",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-01T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec1952?af=R",
+        "doi": "10.1126/sciadv.aec1952",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aec3186",
+        "title": "Ultrafast photocurrent detection contradicts optical detection conclusions: Exciton diffusion contributes little to carbon nanotube device efficiency",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-01T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec3186?af=R",
+        "doi": "10.1126/sciadv.aec3186",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed5447",
+        "title": "Antiferroelectric thin films embedded with ferroelectric switching loop for giant negative electrocaloric effect",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-01T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed5447?af=R",
+        "doi": "10.1126/sciadv.aed5447",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed6327",
+        "title": "A unified ligand-dimensional design to halt cation migration in perovskite photovoltaics",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-01T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed6327?af=R",
+        "doi": "10.1126/sciadv.aed6327",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed7506",
+        "title": "Stellar feedback drives the baryon deficiency in low-mass galaxies",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-01T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed7506?af=R",
+        "doi": "10.1126/sciadv.aed7506",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee1510",
+        "title": "Large-area, photo-programmable 2D semiconductors with chromic molecular functionalization",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-01T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee1510?af=R",
+        "doi": "10.1126/sciadv.aee1510",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee2065",
+        "title": "Safe, high-performance, moisture-activated batteries for powering next-generation Internet-of-Things devices",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-01T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee2065?af=R",
+        "doi": "10.1126/sciadv.aee2065",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee3116",
+        "title": "Realization of strongly correlated 2D honeycomb boron",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-01T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee3116?af=R",
+        "doi": "10.1126/sciadv.aee3116",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee3921",
+        "title": "Ultralow-angle faults produce giant earthquakes",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-01T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee3921?af=R",
+        "doi": "10.1126/sciadv.aee3921",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee4175",
+        "title": "Tetraphosphorylated phthalocyanine–based self-assembled monolayer stabilizes perovskite photovoltaics",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-01T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee4175?af=R",
+        "doi": "10.1126/sciadv.aee4175",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee5865",
+        "title": "Accelerating glacier recession contrasts rock glacier stability in a temperate mountain range",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-01T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee5865?af=R",
+        "doi": "10.1126/sciadv.aee5865",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee6932",
+        "title": "Community Notes undermoderate polarizing content by design creating risks in electoral processes",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-01T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee6932?af=R",
+        "doi": "10.1126/sciadv.aee6932",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeg1456",
+        "title": "Unlocking 27.3% perovskite photovoltaics by interface-locked dual-molecule contact",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-01T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg1456?af=R",
+        "doi": "10.1126/sciadv.aeg1456",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-75080-y",
+        "title": "Chlorinated VSLSs Surpass HCFCs in CFC-11-Equivalent Emissions for Ozone Layer Depletion in China",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-07-01T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-75080-y",
+        "doi": "10.1038/s41467-026-75080-y",
+        "abstract": "Emissions of unregulated chlorinated substances, dichloromethane and chloroform, have risen substantially from 2010 to 2023 in China. Dichloromethane emissions alone are projected to surpass all regulated hydrochlorofluorocarbons in China in ozone-depletion impact. Adopting advanced control technologies could substantially reduce future cumulative emissions.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-74911-2",
+        "title": "STARE: a semiconductor-integrated transmit-array architecture for 6G beamforming",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-07-01T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-74911-2",
+        "doi": "10.1038/s41467-026-74911-2",
+        "abstract": "This study presents STARE, a semiconductor integrated reconfigurable intelligent surface that embeds diodes in silicon to steer wireless beams, offering a scalable route for 6G communication systems.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
