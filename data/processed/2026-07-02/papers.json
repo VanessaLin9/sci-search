@@ -1,0 +1,607 @@
+{
+  "reportDate": "2026-07-02",
+  "generatedAt": "2026-07-03T12:14:45.353Z",
+  "papers": [
+    {
+      "id": "10.1038/s41587-026-03219-9",
+      "title": "Unlocking the chemical potential of filamentous fungi using prime editing",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-07-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03219-9",
+      "doi": "10.1038/s41587-026-03219-9",
+      "abstract": "We developed the prime editor fPE7max, which is optimized for filamentous fungi and enables precise genome engineering — from single-base substitutions to kilobase-scale insertions and multi-kilobase deletions, across diverse species. Editing of translation-regulatory elements for a pleiotropic metabolic regulator unlocked previously inaccessible biosynthetic pathways and uncovered new fungal metabolites.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "利用prime editing解鎖絲狀真菌的化學潛力",
+      "summaryZh": "本研究開發了專為絲狀真菌優化的prime editor工具fPE7max，能在多種真菌物種中實現精準的基因組工程，從單鹼基替換到千鹼基規模的插入與刪除。研究團隊透過編輯翻譯調控元件，成功解鎖了過去無法觸及的生物合成途徑，並發現了新的真菌代謝產物。這項技術為真菌生物技術與天然物藥物開發開闢了新途徑。",
+      "topicTags": [
+        "genome-engineering",
+        "fungi",
+        "prime-editing",
+        "biotechnology",
+        "metabolites"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02343-8",
+      "title": "Neural timescales from a computational perspective",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-07-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02343-8",
+      "doi": "10.1038/s41593-026-02343-8",
+      "abstract": "This review integrates computational approaches to provide a unified view on how data analysis methods, biophysical mechanistic models and machine learning approaches can help to uncover the origins and functions of neural timescales.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "從計算視角解析神經時間尺度",
+      "summaryZh": "神經時間尺度是理解大腦資訊處理機制的關鍵特徵，本篇回顧整合計算方法提供統一視角，綜觀資料分析方法、生物物理機制模型與機器學習技術如何闡明神經時間尺度的起源與功能。此整合觀點有助於跨越不同研究方法間的鴻溝，為探索大腦時間動態提供更全面的理論框架。對於計算神經科學研究者而言，本論文是理解神經時間尺度研究前沿的重要參考文獻。",
+      "topicTags": [
+        "computational-neuroscience",
+        "neural-timescales",
+        "machine-learning",
+        "brain-dynamics",
+        "biophysical-modeling"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003891",
+      "title": "Correction: Cdc42 interacts with chaperone Ydj1 to enhance its stability and partitioning during asymmetric cell division and aging in yeast",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-02T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003891",
+      "doi": "10.1371/journal.pbio.3003891",
+      "abstract": "by The PLOS Biology Staff",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology"
+      ],
+      "section": "biology",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1371/journal.pbio.3003853",
+      "title": "The cell cloud: Adopting systems biology concepts in the era of single-cell immunology",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-02T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003853",
+      "doi": "10.1371/journal.pbio.3003853",
+      "abstract": "High-throughput single-cell assays reveal data that defies discrete categorization. The ‘cell cloud’ model, grounded in established systems biology principles, offers a framework to navigate biological plasticity alongside technical variability. Immune cells exist as continuous clouds, not discrete categories. In this Perspective, authors from the Immunological Genome Project reframe immune identity through systems biology, and redirect where immunotherapies should aim: at the dynamics of the cloud, not just its center.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology",
+        "immunology",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "細胞雲：單細胞免疫學時代的系統生物學新視角",
+      "summaryZh": "單細胞高通量技術所產生的數據挑戰了傳統的離散分類方式，免疫基因體計畫的科學家因此提出「細胞雲」模型，以系統生物學原則重新詮釋免疫細胞的定義。該模型指出免疫細胞應被視為連續雲狀分佈，而非固定類別，這徹底改變了我們對細胞身份的理解。更重要的是，這項觀點將重新定向免疫療法的開發方向——未來治療策略應瞄準細胞雲的動態變化，而非僅僅針對其中心位置。",
+      "topicTags": [
+        "single-cell",
+        "immunology",
+        "systems-biology",
+        "immunotherapy",
+        "cell-identity"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003831",
+      "title": "Disinhibitory signaling enables flexible coding of top-down information in cortical networks",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-02T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003831",
+      "doi": "10.1371/journal.pbio.3003831",
+      "abstract": "Flexible behavior requires the ability to modulate sensory processing based on task context, yet the circuit-level mechanisms supporting this capacity remain poorly understood. Here, we combine recurrent neural network modeling and neural recordings from mouse visual cortex to investigate how task context shapes sensory coding. Networks trained on an instruction-based discrimination task develop a disinhibitory interneuron-to-interneuron motif that dynamically gates task-relevant sensory information. Perturbation and lesion analyses show that this motif is necessary for task performance and for maintaining distinct sensory representations across contexts. We validate key predictions in mouse visual cortex, where interneuron activity patterns exhibit comparable task-dependent modulation. These results identify a biologically plausible circuit motif that supports flexible sensory processing and link recurrent connectivity structure to adaptive context integration in both artificial and biological systems.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "抑制解除訊號使皮質網路能夠彈性編碼自上而下資訊",
+      "summaryZh": "這項研究結合循環神經網路模型與小鼠視覺皮質神經記錄，探討任務情境如何塑造感官編碼。研究發現網路在學習基於指令的辨別任務時，會發展出一種抑制解除型中間神經元至中間神經元迴路結構，能動態調控任務相關的感官資訊。擾動與損傷分析顯示，此迴路結構對任務表現及維持不同情境下的獨特感官表徵至關重要。研究進一步在小鼠視覺皮質中驗證關鍵預測，證實中間神經元活動確實展現任務依賴性調控。此研究識別出具有生物學可信度的迴路結構，連結了循環連接結構與人工及生物系統中的適應性情境整合。",
+      "topicTags": [
+        "neural-circuits",
+        "disinhibition",
+        "sensory-processing",
+        "recurrent-networks",
+        "flexible-behavior"
+      ]
+    },
+    {
+      "id": "10.1101/2024.08.23.609473",
+      "title": "Robustness and reliability of single-cell regulatory multi-omics with deep mitochondrial mutation profiling",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-02",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.08.23.609473v3",
+      "doi": "10.1101/2024.08.23.609473",
+      "abstract": "The detection of mitochondrial DNA (mtDNA) mutations in single cells holds considerable potential to define clonal relationships at scale, coupled with information on cell state in humans. Previous methods focused on higher heteroplasmy mutations, which, while informative, are few in number and may be shaped by functional selection, providing limited lineage information and potentially introducing biases for tracing. Although more challenging to detect, intermediate- to low-heteroplasmy mtDNA mutations are valuable due to their high diversity, abundance, and lower propensity to selection. To enhance mtDNA mutation detection and facilitate fine-scale lineage tracing, we developed the single-cell Regulatory multi-omics with Deep Mitochondrial mutation profiling (ReDeeM) approach, an integrated experimental and computational framework. Here, we specifically address two analytical challenges central to single-cell mtDNA-based lineage analysis: the fidelity of variant-calling workflows and the reliability of phylogenetic inference. We demonstrate that, by leveraging consensus-based error correction, ReDeeMs mtDNA mutation calls achieve high fidelity, aligning with bona fide mutational signatures even for mutations supported by a single molecule per cell. We also developed an improved post-consensus filtering approach, termed \"filter2\" that systematically identifies and filters residual edge-enriched artifacts, even though these affect only a minority of mutation calls. To systematically validate ReDeeM, we recently conducted a lentiviral barcoding experiment in human HSCs, uniquely labeling each cell prior to expansion and differentiation to provide a ground truth for assessing lineage tracing accuracy1. Such validation demonstrate that the original ReDeeM analytic approach (filter1)2 robustly recovers true clonal structure at high resolution and recall. Including intermediate to low-heteroplasmy variants (<10% per cell) strongly improves lineage inference, whereas excluding mutations supported by a single molecule per cell removes true clonal signal and degrades recovery of true clones. Both filter1 and filter2 accurately recover true clones and outperform prior mtDNA-based lineage tracing approaches in ground-truth precision and recall, with filter2 providing additional gains in performance. Finally, while ReDeeM advances mtDNA-based lineage tracing by recovering true clones at high resolution, yet quantifying the phylogenetic uncertainty from mitochondrial inheritance remains unmet. To address this, we recently developed and validated MitoDrift1 as a next-generation, drift-aware framework for mtDNA lineage tracing that further strengthens phylogenetic inference and provides interpretable uncertainty estimates.",
+      "authors": [
+        "Weng, C.",
+        "Weissman, J. S.",
+        "Sankaran, V. G."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞粒線體突變深度分析：提升細胞譜系追蹤的穩健性與可靠性",
+      "summaryZh": "粒線體DNA突變可用於定義細胞克隆關係，但現有方法主要專注於高異質性突變，數量有限且可能受功能選擇影響。ReDeeM方法採用共識式錯誤校正，即使在每個細胞僅有單一分子支持的情況下，也能實現高保真度的粒線體突變檢測。研究團隊透過慢病毒條碼實驗在人類造血幹細胞中驗證，證實該方法能以高解析度和高召回率重建真實的克隆結構。納入中低異質性變異（每細胞<10%）可大幅提升譜系推斷的準確性，為單細胞層級的精細譜系追蹤開闢新途徑。",
+      "topicTags": [
+        "single-cell",
+        "mitochondrial-dna",
+        "lineage-tracing",
+        "variant-calling",
+        "phylogenetics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.29.735170",
+      "title": "HiFi-ST: High-Fidelity Reconstruction of Continuous Spatial Transcriptomic Expression Fields via Conditional Neural Fields",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-02",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.29.735170v1",
+      "doi": "10.64898/2026.06.29.735170",
+      "abstract": "Spatial transcriptomics characterizes tissue-scale gene expression patterns, yet its observations are sparse discrete samples of an underlying continuous molecular field, leading to spatial aliasing and sub-resolution information loss. Existing methods usually formulate this task as spot-level point regression, making it difficult to capture both expression continuity and the regional nature of observation. Here, we propose HiFi-ST, a conditional neural field framework for continuous spatial transcriptomics modeling. HiFi-ST formulates spatial gene expression prediction as continuous expression field learning, models each spot as a regional observation over a finite support domain, approximates local integration through Monte Carlo sampling, and integrates multiscale tissue feature extraction with FiLM-based conditional modulation to improve modeling of complex spatial heterogeneity and consistency with the underlying measurement process. Systematic evaluation on three independent datasets (HER2+, cSCC, and Alex_NatGen) showed that HiFi-ST outperformed mclSTExp, BLEEP, THItoGene, His2ST, and HisToGene on key metrics. On HER2+, HiFi-ST achieved an average PCC improvement of 65.1% and an average MSE reduction of 40.9%; on cSCC, PCC improved by 10.2% and MSE decreased by 51.2%; on Alex_NatGen, PCC improved by 80.0% and MSE decreased by 16.3%. In addition, the learned multiscale tissue representations supported downstream spatial immunoanalysis, including assisted identification of candidate TLS regions. Overall, HiFi-ST provides a unified framework bridging discrete measurements and continuous expression field reconstruction for tumor microenvironment analysis and spatial immune structure characterization.",
+      "authors": [
+        "Li, H.",
+        "Tang, L.",
+        "Han, W.",
+        "Yang, X.",
+        "Chen, X."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "HiFi-ST：條件神經場框架實現高保真空間轉錄體連續場重建",
+      "summaryZh": "空間轉錄體技術的觀測資料為稀疏的離散樣本，傳統方法將其視為點回歸問題，難以捕捉表現的連續性與區域性特徵。HiFi-ST 首創以條件神經場框架建模連續表現場，將每個 spot 視為有限支撐域上的區域觀測，並結合 Monte Carlo 採樣與 FiLM 多尺度條件調制，有效提升複雜空間異質性的建模能力。在 HER2+、cSCC 及 Alex_NatGen 三個獨立資料集上，HiFi-ST 顯著優於 mclSTExp、BLEEP、THItoGene、His2ST 等現有方法，PCC 提升達 10–80%，MSE 降低達 16–51%。此外，學習到的多尺度組織表徵可支援腫瘤微環境分析與三級淋巴結構候選區域的輔助辨識，為空間免疫結構研究提供統一的新框架。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "neural-fields",
+        "gene-expression-reconstruction",
+        "tumor-microenvironment",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.1101/2025.09.14.676067",
+      "title": "SpatialFuser: a unified framework for integrative analysis of unpaired spatial multi-omics data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-02",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.09.14.676067v3",
+      "doi": "10.1101/2025.09.14.676067",
+      "abstract": "Recent advances in spatial multi-omics technologies provide unprecedented opportunities to interpret molecular features in tissue microenvironments, but integrative analysis across heterogeneous datasets remains challenging. Here we present SpatialFuser, a deep learning framework for integrative analysis of unpaired spatial multi-omics data across epigenomics, transcriptomics, proteomics, and metabolomics. SpatialFuser consists of three coordinated modules: MCGATE, a Multi-head Collaborative Graph Attention auToEncoder that learns multi-scale spatial representations to decipher fine-grained spatial heterogeneity beyond predefined spatial neighbourhoods; an optional geometric pre-matching module that provides coarse initialization under tissue geometry mismatch; and an iterative matching-fusion module that couples geometry-constrained optimal transport matching with contrastive-learning-guided modality fusion for cross-slice alignment and integration. Systematic benchmarks demonstrate superior performance and reliability compared with existing state-of-the-art methods in spatial domain identification, cross-slice alignment, and multi-omics integration. Applications to real datasets illustrate that SpatialFuser resolves precise spatial molecular patterns, reveals developmental dynamics, and recovers complementary signals across modalities. Cross-resolution integration of weakly correlated modalities by our method further uncovers previously obscured biological variation. The generalizability and versatility of our framework enable customized analytical scenarios and potential extension for emerging omics.",
+      "authors": [
+        "Cai, W.",
+        "Li, W."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "SpatialFuser：一個用於未配對空間多體學資料整合分析的統一框架"
+    },
+    {
+      "id": "10.64898/2026.06.28.735031",
+      "title": "SpaGRD deciphers signaling architectures in spatial transcriptomics using graph reaction-diffusion systems",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-02",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.28.735031v1",
+      "doi": "10.64898/2026.06.28.735031",
+      "abstract": "The rapid emergence of spatial transcriptomics offers unprecedented opportunities to study cell-cell communication (CCC) by capturing gene expression alongside spatial context. However, existing CCC inference methods often rely on static, heuristic models that overlook the inherently spatiotemporal dynamics and mechanistic complexity of intercellular signaling, limiting both accuracy and biological interpretability. Here, we present SpaGRD, a first-principles-based method that explicitly models ligand-receptor interactions through partial differential equations derived from Fick law of diffusion and the mass action law. Leveraging graph signal processing techniques, SpaGRD solves these equations on spatial graphs, providing a principled and generalizable approach to CCC inference. Through extensive simulations, SpaGRD demonstrates superior accuracy and robustness compared to existing methods. Applications to multiple datasets across diverse tissues and platforms reveal dynamic CCC patterns with spatially resolved signaling heterogeneity, providing biologically meaningful insights into cellular coordination and developmental processes. By bridging physical modeling with spatial transcriptomics, SpaGRD provides an accurate, interpretable, and mechanistically grounded framework for advancing quantitative studies of spatiotemporal cell-cell communication.",
+      "authors": [
+        "Liu, J.",
+        "Sun, S.",
+        "Chen, Z.",
+        "Lv, Z.",
+        "Jiang, S.",
+        "Li, G.",
+        "Liu, B."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "SpaGRD 使用圖形反應-擴散系統解析空間轉錄體學中的訊號架構"
+    },
+    {
+      "id": "10.64898/2026.04.18.719420",
+      "title": "Interpretable Integration of CITE-seq RNA and ADT Profiles Without Explicit Modality-Weight Tuning via Tensor Decomposition-Based Unsupervised Feature Extraction",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-02",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.04.18.719420v2",
+      "doi": "10.64898/2026.04.18.719420",
+      "abstract": "CITE-seq jointly profiles cellular transcripts and surface proteins, but RNA and ADT modalities differ markedly in dimensionality, sparsity, and noise characteristics. We applied tensor-decomposition-based unsupervised feature extraction to paired CITE-seq data by constructing a gene x cell x protein tensor and performing HOSVD. The proposed workflow does not require explicit RNA/ADT modality-weight tuning or prior HVG-based gene filtering, and it provides cell-mode singular vectors together with post hoc unsupervised gene selection. Across ImmGen T-cell CITE-seq datasets, TD-derived cell representations preserved cell-type-related local structure and showed competitive kNN-based consistency compared with scMoMaT, a related factorization-based reference. However, ADT-only embeddings and Seurat WNN graphs often showed higher cell-type neighborhood consistency, indicating that TD-based UFE should not be interpreted as a replacement for marker-based or graph-based cell-type analysis. Enrichment analysis of TD-selected genes supported their biological plausibility but was interpreted as an exploratory check rather than proof of complete marker recovery. These results position TD-based UFE as a lightweight tensor-based unsupervised feature extraction framework for paired RNA/ADT data, rather than as a universally superior CITE-seq integration method.",
+      "authors": [
+        "Turki, T.",
+        "Taguchi, Y.-h."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "CITE-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "利用張量分解無監督特徵提取實現CITE-seq RNA與ADT數據的可解釋整合",
+      "summaryZh": "CITE-seq技術能同時測量細胞轉錄體與表面蛋白質，但兩種模態在維度、稀疏度與雜訊特性上差異顯著，整合分析具有挑戰性。本研究提出基於張量分解的無監督特徵提取方法，透過建構基因×細胞×蛋白質三維張量並執行HOSVD分解，無需手動調整RNA/ADT權重或預先進行動態基因篩選。在免疫細胞CITE-seq資料集中，該方法有效保留細胞類型相關的局部結構，展現與現有分解方法相當的鄰域一致性。這項研究為配對RNA/ADT數據提供了一個輕量化的無監督整合框架，儘管不應取代基於標記基因或圖網絡的細胞類型分析方法。",
+      "topicTags": [
+        "single-cell",
+        "cite-seq",
+        "tensor-decomposition",
+        "multimodal-integration",
+        "unsupervised-learning"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.29.735205",
+      "title": "Inferring differentiation trajectories from T cell clonotype distributions",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-02",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.29.735205v1",
+      "doi": "10.64898/2026.06.29.735205",
+      "abstract": "Single-cell RNA sequencing (scRNA-seq) enables reconstruction of cellular differentiation trajectories, but most trajectory inference methods rely largely on gene expression and overlook lineage relationships. In T lymphocytes, the T cell receptor (TCR) provides a unique, endogenous barcode that is stably inherited during clonal expansion. Here we introduce PhyloTrajectory, a framework that leverages TCR-based clonotype frequencies together with scRNA-seq to infer T cell differentiation dynamics. By modeling clonotype frequency evolution as a continuous stochastic process, PhyloTrajectory reconstructs differentiation tree topologies from clonotype frequencies across cellular subsets. We investigate the ability to recover the underlying tree topology using simulated data, and apply our approach to CD4 T cells in murine models of allergic inflammation and viral infection. We further demonstrate that PhyloTrajectory is useful in the context of exogenously introduced barcodes. Overall, this shows that a stochastic model of clonal expansion can be used to infer cell state transitions from clonotype frequencies.",
+      "authors": [
+        "Guryleva, M. V.",
+        "Danielsson, M.",
+        "Tibbitt, C. A.",
+        "Coquet, J. M.",
+        "Murrell, B."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "利用T細胞受體克隆型分布推斷細胞分化軌跡",
+      "summaryZh": "單細胞RNA測序(scRNA-seq)能重建細胞分化軌跡，但現有方法主要依賴基因表達而忽略譜系關係。本研究開發PhyloTrajectory框架，利用T細胞受體(TCR)作為穩定的內源性條碼，結合scRNA-seq數據，將克隆型頻率演化建模為連續隨機過程，從而推斷T細胞分化樹狀結構。此方法在模擬數據中驗證了重建分化拓撲的能力，並成功應用於過敏性發炎和病毒感染的CD4 T細胞模型，證明克隆型頻率的隨機模型可有效推斷細胞狀態轉換。",
+      "topicTags": [
+        "single-cell",
+        "t-cell",
+        "trajectory-inference",
+        "tcr",
+        "immunology"
+      ]
+    },
+    {
+      "id": "10.1126/science.aec2171",
+      "title": "Hierarchical sensory processing in zebrafish thalamocortical-like circuits",
+      "journal": "Science",
+      "publishedDate": "2026-07-02T06:00:01.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/science.aec2171?af=R",
+      "doi": "10.1126/science.aec2171",
+      "abstract": "Thalamocortical projections shape the functional regionalization and parallel sensory computations across the mammalian cortex. However, the principles of thalamocortical computations in non-mammalian vertebrates remain underexplored. Here we investigated how the zebrafish pallium, a homolog of the vertebrate cortex, receives and processes sensory information, and how its architecture compares to thalamocortical circuits in other vertebrates. We revealed that the preglomerular complex (PG), a thalamocortical-like pathway, is the primary source of visual and vibrational information to the zebrafish pallium. PG and its pallial projections exhibit sensory-specific and topographically organized responses. In contrast, pallial neurons display topographically organized hierarchies, ranging from sensory-specific to multimodal and coincidence-detecting nonlinear responses. Our results suggest that hierarchies of sensory transformations across topographically organized thalamocortical-like circuits reflect a convergent principle across vertebrates.",
+      "sourceId": "science",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "斑馬魚丘腦皮質樣迴路中的階層式感覺處理",
+      "summaryZh": "丘腦皮質投射塑造了哺乳類皮質的功能區域化與平行感覺計算，但非哺乳類脊椎動物的相關運算原則仍不清楚。本研究以斑馬魚的 pallium（皮質同源結構）為模型，發現前腎小球複合體（PG）是視覺與振動資訊傳入斑馬魚 pallium 的主要來源。PG 及其投射展現出感覺特異性與地形圖組織化的反應，而 pallium 神經元則呈現從感覺特異性到多模態及巧合偵測非線性反應的階層式架構。此研究揭示了跨脊椎動物演化中，感覺轉換階層與地形圖組織化丘腦皮質樣迴路的趨同原則。",
+      "topicTags": [
+        "sensory-processing",
+        "zebrafish",
+        "thalamocortical-circuits",
+        "neural-hierarchy",
+        "comparative-neuroscience"
+      ]
+    },
+    {
+      "id": "10.1126/science.aeh1348",
+      "title": "Manipulation of protein translation and stem cell self-renewal by CRISPR activation of rRNA transcription",
+      "journal": "Science",
+      "publishedDate": "2026-07-02T06:00:01.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/science.aeh1348?af=R",
+      "doi": "10.1126/science.aeh1348",
+      "abstract": "Ribosomal RNA (rRNA) transcription rates vary during development, and their dysregulation is linked to diseases such as cancer and ribosomopathies. Owing to their high abundance and genomic redundancy, the functional significance of rRNA-levels remains unclear. Here, we developed TAPIR (Targeted Activation of Protein Translation), a CRISPR-based approach to elevate rRNA-levels by inducing 47S rDNA transcription. TAPIR increased nucleolar size and enhanced protein synthesis, even in rapidly proliferating cells. In neural stem cells, elevated translation promoted self-renewal and proliferation in vitro and in vivo. Furthermore, TAPIR enabled the modeling and partial rescue of associated disease phenotypes. Our findings revealed that rRNA-levels directly regulate translational output and that protein synthesis capacity can act as a key determinant of mammalian stem cell behavior.",
+      "sourceId": "science",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer",
+        "development",
+        "CRISPR"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "CRISPR激活核糖體RNA轉錄調控蛋白質翻譯與幹細胞命運",
+      "summaryZh": "本研究開發了TAPIR系統，一種利用CRISPR技術激活47S rDNA轉錄以提升核糖體RNA水平的基因編輯工具。研究發現提升rRNA水平可增加核核仁大小並促進蛋白質合成，甚至在快速增殖的細胞中亦可見效。在神經幹細胞中，翻譯活性的提升可促進自我更新與增殖能力，無論在體外或體內實驗皆獲得驗證。此外，TAPIR系統还能模擬並部分挽救相關疾病的表型。此研究揭示了rRNA水平直接調控轉譯輸出，且蛋白質合成能力是哺乳類動物幹細胞行為的關鍵決定因素。",
+      "topicTags": [
+        "crispr-activation",
+        "ribosome-biogenesis",
+        "stem-cell-biology",
+        "protein-synthesis",
+        "neural-stem-cells"
+      ]
+    },
+    {
+      "id": "10.1126/science.aeh2300",
+      "title": "TTF2 processes sites of incomplete DNA replication during mitosis via sister-chromatid exchanges",
+      "journal": "Science",
+      "publishedDate": "2026-07-02T06:00:01.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/science.aeh2300?af=R",
+      "doi": "10.1126/science.aeh2300",
+      "abstract": "Mammalian cells frequently enter mitosis before DNA replication has finished, necessitating the rapid processing of unreplicated loci to facilitate chromosome segregation. The TRAIP ubiquitin ligase induces replisome disassembly during mitosis, triggering the cleavage of DNA replication forks. Until now, the mechanisms that regulate TRAIP and process cleaved DNA replication forks were unclear. Here we show that the TTF2 ATPase is a new type of phospho-receptor that binds a conserved phosphorylation site on TRAIP during mitosis. TTF2 couples phosphorylated TRAIP to DNA polymerase epsilon (Pol ε) in the replisome, leading TRAIP to ubiquitylate the CDC45-MCM-GINS (CMG) helicase. This triggers mitotic replisome disassembly, and a repair pathway that produces sister-chromatid exchanges, supporting a model for how fork cleavage promotes the segregation of under-replicated loci in mammalian cells.",
+      "sourceId": "science",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "TTF2透過姐妹染色體交換處理有絲分裂期間未完全複製的DNA位點",
+      "summaryZh": "哺乳類細胞常在DNA複製尚未完成時便進入有絲分裂，因此需要快速處理未複製的基因座以確保染色體正常分離。本研究發現TTF2 ATP酶是一種新型磷酸受體，能在有絲分裂期間與TRAIP上的保守磷酸化位點結合，並將磷酸化的TRAIP與複製叉中的DNA聚合酶epsilon（Pol ε）耦合。這種耦合導致TRAIP對CMG解旋酶進行泛素化修飾，觸發有絲分裂期間複製叉的拆卸，並透過產生姐妹染色體交換的修復途徑，促進未完全複製基因座的正確分離。本研究揭示了複製叉斷裂如何協助哺乳類細胞中未複製區域的分離機制，對理解基因組穩定性與細胞分裂調控具有重要意義。",
+      "topicTags": [
+        "mitosis",
+        "DNA-replication",
+        "replisome",
+        "sister-chromatid-exchange",
+        "ubiquitin-ligase"
+      ]
+    },
+    {
+      "id": "10.1126/science.aeh1834",
+      "title": "A CDK1 phospho-switch reprograms TRAIP to unload replisomes in mitosis",
+      "journal": "Science",
+      "publishedDate": "2026-07-02T06:00:01.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/science.aeh1834?af=R",
+      "doi": "10.1126/science.aeh1834",
+      "abstract": "Cells entering mitosis with incompletely replicated DNA face catastrophic chromosome segregation failure. During interphase, the replisome-associated E3 ubiquitin ligase TRAIP ubiquitylates barriers in front of the fork to allow replisome progression. In mitosis, TRAIP is reprogrammed from a trans -acting to a cis -acting ligase that can ubiquitylate the replisome itself. This enables the processing of unreplicated DNA by promoting replisome disassembly, fork breakage, and joining of the broken chromosome arms. Here, we describe a mechanism for this reprogramming: the ATPase TTF2 is recruited to the replisome, where its noncatalytic N-terminal domain tethers Cyclin B-CDK1-phosphorylated TRAIP to the leading strand DNA polymerase ε in a geometry that allows replisome ubiquitylation. Thus, a phospho-regulated architectural switch alters replisome organization in mitosis to safeguard genome integrity before chromosome segregation.",
+      "sourceId": "science",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "CDK1磷酸化開關重編程TRAIP以在有絲分裂中卸載複製體",
+      "summaryZh": "細胞進入有絲分裂時若DNA複製尚未完成，將面臨染色體分離失敗的災難性後果。本研究發現複製體相關的E3泛素連接酶TRAIP在有絲分裂期間會被CDK1磷酸化重編程，從原本作用於複製叉前方障礙物的反式連接酶，轉變為可泛素化複製體本身的自式連接酶。此機制由ATPase TTF2介導，其非催化性N端結構域將磷酸化的TRAIP錨定在leading strand DNA polymerase ε上，形成有利於複製體泛素化的幾何構型。最終透過促進複製體拆卸、複製叉斷裂及斷裂染色體臂的連接，確保細胞在染色體分離前維護基因組完整性。",
+      "topicTags": [
+        "dna-replication",
+        "cell-cycle",
+        "mitosis",
+        "ubiquitin-ligase",
+        "genome-integrity"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 21,
+      "passedByScope": 11,
+      "llmClassified": 10,
+      "llmYes": 4,
+      "llmNotSure": 0,
+      "llmNo": 6,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 15,
+      "excluded": 6
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 15,
+      "llmTagged": 15,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 15,
+      "candidates": 14,
+      "featured": 12,
+      "overflow": 2,
+      "lineA": 0,
+      "lineB": 8,
+      "preprint": 6,
+      "skip": 1
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 2,
+      "llmTranslated": 2,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10844-6",
+        "title": "Electrodeposited self-assembled molecules for perovskite photovoltaics",
+        "journal": "Nature",
+        "publishedDate": "2026-07-02T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10844-6",
+        "doi": "10.1038/s41586-026-10844-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10854-4",
+        "title": "Author Correction: Synthesis of enantioenriched atropisomers by biocatalytic deracemization",
+        "journal": "Nature",
+        "publishedDate": "2026-07-02T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10854-4",
+        "doi": "10.1038/s41586-026-10854-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02034-1",
+        "title": "Neutrino’s nursery found: the ‘Shadow Blaster’",
+        "journal": "Nature",
+        "publishedDate": "2026-07-02T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02034-1",
+        "doi": "10.1038/d41586-026-02034-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02108-0",
+        "title": "Daily briefing: ‘Cyborg’ cockroaches breathe underwater with printed suit",
+        "journal": "Nature",
+        "publishedDate": "2026-07-02T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02108-0",
+        "doi": "10.1038/d41586-026-02108-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01773-5",
+        "title": "Can you actually do a nine-to-five PhD? Nature readers weigh in",
+        "journal": "Nature",
+        "publishedDate": "2026-07-02T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01773-5",
+        "doi": "10.1038/d41586-026-01773-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02088-1",
+        "title": "Incoming US science academy chief vows to ‘double down’ on research",
+        "journal": "Nature",
+        "publishedDate": "2026-07-02T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02088-1",
+        "doi": "10.1038/d41586-026-02088-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
