@@ -1,0 +1,1110 @@
+{
+  "reportDate": "2026-07-03",
+  "generatedAt": "2026-07-04T11:32:28.461Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03156-0",
+      "title": "Efficient evidence-based genome annotation with EviAnn",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-07-03T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03156-0",
+      "doi": "10.1038/s41592-026-03156-0",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "高效率的證據驅動基因體註解工具：EviAnn",
+      "summaryZh": "基因體註解是解讀基因組數據的基礎，精確的註解對於功能基因體學研究至關重要。EviAnn 是一款創新的證據驅動型基因體註解工具，能有效整合多種實驗證據來提升註解的準確性與完整性。此方法在保持高準確性的同時，大幅提升了註解效率，有助於加速大規模基因體計畫的推進。發表於 Nature Methods 的這項研究為基因體註解領域提供了實用且高效的新選擇，對於後續的基因功能分析與比較基因體學研究具有重要價值。",
+      "topicTags": [
+        "genome-annotation",
+        "computational-biology",
+        "bioinformatics",
+        "genomics",
+        "machine-learning"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02403-6",
+      "title": "The penicillin-binding protein PBP1b fortifies the Escherichia coli division site against osmotic rupture",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-07-03T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02403-6",
+      "doi": "10.1038/s41564-026-02403-6",
+      "abstract": "A specific isoform of PBP1b functions independently of the activator protein, LpoB, to drive generation of a wedge-like peptidoglycan structure that strengthens the division site in Escherichia coli.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "青黴素結合蛋白PBP1b強化大腸桿菌分裂位點以對抗滲透壓破裂",
+      "summaryZh": "本研究發現大腸桿菌中的青黴素結合蛋白PBP1b存在一種特殊異構體，能夠不依賴活化蛋白LpoB而獨立運作，驅動生成楔形肽聚糖結構來強化細胞分裂位點。這項發現顛覆了過去對PBP1b功能調控機制的理解，揭示了細菌細胞壁合成中先前未知的備援途徑。此結構能有效保護分裂中的細胞抵禦滲透壓衝擊，對維持細菌生存至關重要。由於青黴素結合蛋白是許多抗生素的作用標的，此研究結果為開發新型抗菌藥物提供了重要的結構基礎與理論依據。",
+      "topicTags": [
+        "bacterial-cell-biology",
+        "penicillin-binding-protein",
+        "cell-division",
+        "escherichia-coli",
+        "peptidoglycan"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.29.735224",
+      "title": "Scalable multi-group nonnegative spatial factorization for spatial genomics data with cell-type heterogeneity",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-03",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.29.735224v1",
+      "doi": "10.64898/2026.06.29.735224",
+      "abstract": "Spatial transcriptomics (ST) technologies enable the study of gene expression within the spatial context of tissues, providing insights into tissue structure, cellular interactions, and disease progression. However, existing dimension reduction methods often overlook spatial information or struggle to distinguish spatial gene patterns from those driven by cell-type differences, limiting biological interpretability by convolving differences in gene expression patterns with differences in cell-type proportions. To address these challenges, we introduce the scalable multi-group nonnegative spatial factorization (smNSF), a computationally-tractable probabilistic framework that integrates spatial coordinates and cell-type labels into a unified matrix factorization model. By using multi-group Gaussian processes (MGGPs) as priors, our model captures complex spatial variation in a cell-type specific way while enforcing nonnegativity to enhance interpretability. We develop a variational inference framework for MGGPs that supports scalable optimization and improves the numerical stability of smNSF. Across seven spatial transcriptomics datasets spanning diverse technologies and tissues, smNSF recovers sparse, interpretable spatial factors and, through its cell-type conditional posteriors, organizes them into cell-type enriched, cell-type specific, and universal spatial programs that are not apparent from marginal factors alone. Given cell-type labels in ST data, smNSF enables cell-type aware spatial decompositions and supports cell-type conditional posteriors for in silico exploration of relationships between spatial patterns and cellular identity.",
+      "authors": [
+        "Chumpitaz-Diaz, L.",
+        "Shrestha, P.",
+        "Engelhardt, B. E."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "可擴展多組非負空間因子分解法應用於細胞類型異質性空間基因體資料"
+    },
+    {
+      "id": "10.64898/2026.04.11.717967",
+      "title": "Scalable genotyping in fixed transcriptomes resolves clonal heterogeneity via single-cell sequencing",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-03",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.04.11.717967v3",
+      "doi": "10.64898/2026.04.11.717967",
+      "abstract": "Single-cell transcriptomics has revolutionized our understanding of heterogeneous cell populations. However, technical limitations of widely-used platforms have limited our ability to link transcriptional states to somatic mutations within the same cells at scale. Here, we introduce Genotyping in Fixed Transcriptomes (GIFT), a novel assay for simultaneous detection of hundreds of targeted genetic variants and whole transcriptome profiles in single cells. The core innovation of GIFT is a rationally designed gapfilling reaction between adjacent single-stranded DNA (ssDNA) probes that barcodes native transcript sequence to enable highly-specific targeted mutation detection. GIFT achieves >99% genotyping accuracy and flexible capture of hundreds of mutations per cell, including in FFPE (Formalin-Fixed Paraffin-Embedded) tissue, enabling clonal lineage tracing in heterogeneous settings. We demonstrate the unique scalability of GIFT by profiling >700,000 cells from 35 donors with myeloproliferative neoplasms (MPN), revealing mutation-dependent hematopoietic responses to systemic inflammation associated with the characteristic JAK2V617 mutation, including an allelic dose gradient of interferon-associated transcriptional programs and transcriptional priming of hematopoietic stem cells that develop into divergent disease states. Together, the unique technical advantages of GIFT enable direct resolution of genotype-to-phenotype relationships via clonal lineage tracing with comprehensive cell state measurements at single-cell resolution.",
+      "authors": [
+        "Blattman, S. B.",
+        "Maslah, N.",
+        "Varela, A. A.",
+        "Kumpaitis, K.",
+        "Nalbant, B.",
+        "Snopkowski, C.",
+        "Mariani, M.",
+        "Kida, L. C.",
+        "Takizawa, M.",
+        "Ratnayeke, N.",
+        "Yu, K. K. H.",
+        "Fernandes, S.",
+        "Mousavi, N.",
+        "Borgstrom, E.",
+        "Vallejo, D.",
+        "Boghospor, L.",
+        "Xin, R.",
+        "Mignardi, M.",
+        "Wu, S.",
+        "Scarlott, N.",
+        "Delgado-Rivera, L.",
+        "Kumar, P.",
+        "Krishnan, S.",
+        "Giraudier, S.",
+        "Kiladjian, J.-J.",
+        "Howitt, B. E.",
+        "Kohlway, A.",
+        "Lund, P.",
+        "Pe'er, D.",
+        "Chaligne, R.",
+        "Lareau, C. A."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "可擴展固定轉錄體基因分型技術透過單細胞定序解析克隆異質性"
+    },
+    {
+      "id": "10.64898/2026.06.30.735261",
+      "title": "Spatial and functional mapping of the human pancreas reveals endocrine and exocrine cell states in health and metabolic disease",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-03",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.30.735261v1",
+      "doi": "10.64898/2026.06.30.735261",
+      "abstract": "The human pancreas contains diverse endocrine and exocrine cell populations whose spatial organization is essential for tissue physiology. While single-cell and spatial transcriptomics revealed molecular heterogeneity across pancreatic cell types, linking these states to physiological activity in situ has remained challenging. Here, we combined single-nucleus RNA sequencing, spatial transcriptomics, and functional calcium imaging across pancreatic samples in health and metabolic disease. We identified heterogeneous endocrine and exocrine cell states associated with obesity and diabetes, including inflammatory remodeling of acinar and ductal populations. To directly couple tissue physiology with molecular state, we developed Slice-seq, which integrates calcium imaging with spatial transcriptomics in acute pancreatic slices. Slice-seq linked local endocrine composition and transcriptional programs with {beta} cell activity and identified extra-islet {beta} cells with reduced glucose responsiveness and mitochondrial oxidative metabolism. Together, our study provides a framework for linking pancreatic cell states to tissue organization and physiological activity in health and disease.",
+      "authors": [
+        "Xie, Y.",
+        "Postic, S.",
+        "Pereyra, D.",
+        "Ferrara, R.",
+        "Mullins, A.",
+        "Pfabe, J.",
+        "Dalman, M.",
+        "Hallin, K.",
+        "Ingvast, S.",
+        "Smith, N.",
+        "Suleiman, M.",
+        "Tesi, M.",
+        "Gyoeri, G.",
+        "Dingfelder, J.",
+        "Gironella-Torrent, M.",
+        "Starlinger, P. P.",
+        "Marselli, L.",
+        "Marchetti, P.",
+        "MacDonald, P. E.",
+        "Rupnik, M. S.",
+        "Korsgren, O.",
+        "Camunas-Soler, J."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "人類胰臟空間與功能圖譜揭示健康與代謝疾病中的內分泌與外分泌細胞狀態"
+    },
+    {
+      "id": "10.64898/2026.06.29.734828",
+      "title": "Multi-modality Graph Representation Learning for Malignant Cell Identification from scRNA-seq using DeepMalignant",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-03",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.29.734828v1",
+      "doi": "10.64898/2026.06.29.734828",
+      "abstract": "Distinguishing malignant from normal cells in single-cell RNA sequencing data remains a critical yet challenging task in cancer genomics. Existing methods often suffer from poor precision, limited generalizability across cancer types, and reduced robustness across different sequencing platforms. We developed DeepMalignant, an unsupervised multimodal graph attention autoencoder for malignant cell identification that jointly integrates gene expression and copy number alteration (CNA) information. We applied DeepMalignant to five datasets covering 26 samples and four cancer types (breast, colorectal, pancreatic, and ovarian cancers), generated by three platforms (10x Genomics, inDrop, and Drop-seq) for benchmarking and compared it with existing state-of-the-art methods including scMalignantFinder, PreCanCell, CopyKAT, ikarus, and Cancer-Finder. DeepMalignant achieved the best overall balance of precision and recall and consistently outperformed the existing methods that used either gene expression or CNA in F1 scores. Ablation studies showed that both CNA-based edge weighting and graph attention aggregation contribute independently to performance, and attribution analysis further indicated that the learned embeddings capture biologically meaningful malignant programs. We further applied DeepMalignant to two ductal carcinoma in situ (DCIS) samples, DCIS2 and DCIS1, that have matched spatial transcriptomics and scRNA-seq data. DeepMalignant identified tumor-enriched regions that were highly consistent with the matched histological image. The downstream cell-cell communications analysis revealed that fibroblast-derived C3 and MIF both directed signaling more toward normal epithelial cells than tumor epithelial cells, demonstrating that accurate tumor-normal cell classification by DeepMalignant enables biologically meaningful interrogation of the tumor microenvironment and revealing how stromal cells differentially communicate with malignant versus normal epithelial populations.",
+      "authors": [
+        "Bhattarrai, P.",
+        "Yuan, W.",
+        "Chi, H.",
+        "Zhou, X. M.",
+        "Mallory, X."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "使用DeepMalignant從單細胞RNA-seq辨識惡性細胞的多模態圖表示學習"
+    },
+    {
+      "id": "10.64898/2026.06.29.735389",
+      "title": "Raw-count embeddings improve single-cell foundation models",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-03",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.29.735389v1",
+      "doi": "10.64898/2026.06.29.735389",
+      "abstract": "Single-cell transformer foundation models have grown to hundreds of millions of parameters, yet the preprocessing choices that underlie them, including gene ranking and library-size normalisation, have not been systematically benchmarked. Testing seven strategies, we find these elaborations are largely unnecessary: non-normalised, log-transformed counts give the best performance, and gene order barely matters, with even random ordering outperforming sophisticated rank-based schemes. The resulting model, Gene Intelligence, projects log1p-transformed raw counts directly onto each token embedding and jointly predicts masked tokens and counts, using no normalisation, positional encoding, or read-depth tokens. Despite this simplicity, it achieves state-of-the-art performance in the tested gene-level tasks and in doublet detection, and matches large current foundation models on cell-classification tasks while using 10- to 200-fold fewer parameters.",
+      "authors": [
+        "Schlede, S.",
+        "Muruganandan, T. P.",
+        "Gojjam Kantharaju, S.",
+        "Kisis, I.",
+        "Boecker, M.",
+        "Kim Alves Carpinteiro, M.",
+        "Schmitz, A.",
+        "Buchwald, L. M.",
+        "Sakthivelu, V.",
+        "Gülcüler Balta, G. S.",
+        "Anstötz, M.",
+        "Rueger, M. A.",
+        "Thomas, R. K.",
+        "Beleggia, F."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "原始計數嵌入法提升單細胞基礎模型"
+    },
+    {
+      "id": "10.64898/2026.06.30.735507",
+      "title": "Generative cell phenotyping with structured latent populations",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-03",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.30.735507v1",
+      "doi": "10.64898/2026.06.30.735507",
+      "abstract": "Flow cytometry produces high-dimensional single-cell protein measurements central to immunophenotyping and clinical monitoring. Yet analysis still relies largely on manual gating, which is labour-intensive, poorly reproducible, and ill-suited to large marker panels. Existing computational approaches address classification or discovery in isolation, treating cell-type identity as a post-hoc annotation rather than as part of the generative model itself. We present MARVIN, a semi-supervised variational autoencoder that encodes the assumption that cells organise into discrete populations with continuous intra-population variability through a Gaussian mixture prior in the latent space. Because each component represents a distinct cell population, classification, discovery, and density estimation emerge as complementary views of the same representation. On public benchmarks, MARVIN matches or exceeds existing methods using as few as 10% labelled cells. Trained exclusively on healthy samples, it identifies leukaemic cells through elevated reconstruction error, providing an unsupervised anomaly detection signal. On paired stimulation data, it maintains stable population assignments while capturing condition-specific shifts in abundance and marker expression at patient-level resolution. MARVIN is open-source and designed for local deployment, adapting to institution-specific panels and instruments",
+      "authors": [
+        "Bodart, F.",
+        "De Voeght, A.",
+        "Baron, F.",
+        "Louppe, G."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "使用結構化潛在族群的生成式細胞表型分析"
+    },
+    {
+      "id": "10.1126/sciadv.adx5109",
+      "title": "Substance P regulates Tacr1 neurons, which control nitric oxide–mediated neurovascular coupling in the mouse cortex",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adx5109?af=R",
+      "doi": "10.1126/sciadv.adx5109",
+      "abstract": "Neuronal activity–driven increases in cerebral blood flow (CBF), known as neurovascular coupling (NVC), are crucial for sustaining the metabolic demands of the brain. Our group has found that Tacr1 neurons, a subset of somatostatin neurons expressing the substance P (SP) receptor and neuronal nitric oxide synthase (nNOS), exert a disproportionately large regulation of CBF. Here, we use two-photon imaging to show that Tacr1 neurons regulate CBF through nitric oxide (NO) release and SP-receptor signaling . We identify astrocytic calcium (Ca 2+ ) transients as a secondary response to vasodilation. To identify potential sources of SP in somatosensory cortex, viral mapping revealed Tac1 -positive neurons locally, predominantly among parvalbumin (PV) neurons, as well as Tac1 -positive long-range projections from perirhinal cortex. Functional analyses indicate that PV neurons regulate CBF through a Tacr1 neuron dependent pathway. These findings suggest a sequential mechanism whereby Tacr1 neurons respond to SP to release NO, inducing vasodilation and driving astrocytic Ca 2+ signaling.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "P物質調控Tacr1神經元以控制小鼠皮質中一氧化氮介導的神經血管耦合"
+    },
+    {
+      "id": "10.1126/sciadv.aea2814",
+      "title": "Self-vocalizations activate the developing auditory cortex via an intracortical pathway",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea2814?af=R",
+      "doi": "10.1126/sciadv.aea2814",
+      "abstract": "The development of the sensory brain relies on early periphery-generated spontaneous neural activity and later sensory-evoked activity. To investigate activity sources in the auditory cortex (ACtx) during development, we performed in vivo imaging in neonatal mouse pups. We found self-vocalization–associated ACtx activity even before ear opening and that this activity was stronger than tone-evoked activity. Self-vocalization–associated activity also existed in deaf pups, suggesting a top-down activity source. We revealed projections from the anterior cingulate cortex (ACC) and secondary motor cortex (M2) to the ACtx and that ACC/M2 showed vocalization-driven activity correlated with ACtx activity. ACC/M2 inactivation reduced self-vocalization and ACtx activity. Thus, self-vocalizations activate the developing ACtx even before ear opening, potentially via ACC/M2 motor commands. Our results reveal a previously unidentified early ACtx activity source that can shape development.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "自發聲音透過皮質內路徑活化發育中的聽覺皮質"
+    },
+    {
+      "id": "10.1126/sciadv.aea4727",
+      "title": "Single-cell transcriptomic analysis reveals tumor-immune determinants of lymph node colonization and progression in thyroid cancer",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea4727?af=R",
+      "doi": "10.1126/sciadv.aea4727",
+      "abstract": "Lymph node (LN) metastases are a major driver of mortality across solid cancers, including thyroid carcinomas, which are known for high rates of nodal colonization. To elucidate the determinants of nodal spread, we isolated tumor-infiltrating leukocytes from primary thyroid tumors and matched metastatic LNs for single-cell RNA sequencing with validation by multiplex immunohistochemistry. Comparing the microenvironmental alterations between primary tumors and their LNs, we found that thyrocytes and tumor-associated macrophages down-regulate the expression of multiple inflammatory cytokine receptors, including TNFRSF12A and CX3CR1 , upon LN colonization. LNs were associated with the induction of regulatory T cells to suppress T cell–mediated cytotoxicity compared to matched primary tumors. Notably, tumor-infiltrating lymphocytes within LNs demonstrated increased expression of activation markers, including interleukin-7 receptor ( IL7R ). High LN expression of IL7R was significantly correlated with improved outcomes and can serve as a biomarker in this heterogeneous disease. Our findings on the dynamic equilibrium within LN metastases may offer conserved mechanisms for nodal colonization across solid tumors.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞轉錄體分析揭示甲狀腺癌淋巴結轉移與進展的腫瘤免疫決定因素",
+      "summaryZh": "淋巴結轉移是甲狀腺癌等實體腫瘤死亡率上升的主要驅動因素。本研究透過單細胞RNA定序技術，比較甲狀腺原發腫瘤與配對轉移淋巴結中腫瘤浸潤免疫細胞的轉錄體變化，發現甲狀腺細胞與腫瘤相關巨噬細胞在淋巴結轉移時會下調TNFRSF12A與CX3CR1等多種發炎細胞激素受體的表現。淋巴結微環境中亦伴隨調節型T細胞的誘導，進一步抑制T細胞介導的細胞毒性反應。值得注意的是，淋巴結內的腫瘤浸潤淋巴球展現出較高的IL7R表現，且高IL7R表達與甲狀腺癌患者較佳的預後顯著相關，可作為此異質性疾病的生物標記。這些發現揭示了淋巴結轉移過程中的動態平衡機制，可能為其他實體腫瘤的淋巴結轉移提供通用的治療標的。",
+      "topicTags": [
+        "single-cell",
+        "thyroid-cancer",
+        "lymph-node-metastasis",
+        "tumor-microenvironment",
+        "immunotherapy"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aea5923",
+      "title": "Real-time imaging of transcriptional feedback in nonsense-mediated mRNA decay",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea5923?af=R",
+      "doi": "10.1126/sciadv.aea5923",
+      "abstract": "Nonsense-mediated mRNA decay (NMD) is a translation-coupled mRNA decay pathway triggered by a premature termination codon (PTC). While in-frame stop codons are typically defined by cytoplasmic ribosomes, unexpected changes in transcription have been reported in genes containing PTCs. This observation suggests the possibility of PTC detection at the transcription site (TS), which has not been thoroughly investigated with high temporal and spatial resolution. Here, we use a real-time imaging approach to simultaneously detecting transcription sites (TSs) expressing wild-type or NMD-targeted β-globin reporter genes in the same cell. Our data indicate a dynamic change in the transcription of PTC-containing β-globin mRNA that depends on translation, NMD, and nuclear protein import, supporting the existence of rapid transcriptional feedback following NMD in the cytoplasm. This study establishes a robust temporal link between cytoplasmic mRNA decay and nuclear transcription.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "spatial resolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "即時成像無義mRNA衰減中的轉錄回饋"
+    },
+    {
+      "id": "10.1126/sciadv.aea9045",
+      "title": "Pancreatic α cells are required for nutrient homeostasis by regulating dynamic β cell networks in islets",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea9045?af=R",
+      "doi": "10.1126/sciadv.aea9045",
+      "abstract": "Pancreatic islets contain α, β, γ, and δ cells as sensors and actuators regulating glucose homeostasis. Despite the known importance of α cells, they are seemingly required for glucose tolerance only under metabolic stress. In an inducible model of α cell ablation in mice (GluDTR), glucose tolerance was considerably decreased by the addition of amino acids mimicking meals. Analysis of islet β cell secretion and electrical activities using microelectrode arrays (MEAs) detected only minor differences in GluDTR mice for glucose but revealed a major reduction upon addition of amino acids. Analysis of functional islet β cell networks by high-density MEA revealed leader regions in different locations, a high degree of synchrony, and the activation of large cell clusters. The characteristics of leading regions were preserved in GluDTR islets, but synchrony, cluster size, and signal propagation speed were largely reduced. Thus, even without metabolic stress, α cells are required for nutrient homeostasis by regulating the dynamics of β cell networks.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "胰島α細胞透過調控胰島中動態β細胞網絡以維持營養恆定"
+    },
+    {
+      "id": "10.1126/sciadv.aeb2956",
+      "title": "Drosophila storage proteins promote both the rate and the duration of tumor growth",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb2956?af=R",
+      "doi": "10.1126/sciadv.aeb2956",
+      "abstract": "Amino acid storage proteins, such as serum albumin in mammals, are known to accumulate within tumors, but their precise contribution to tumor biology remains unclear. Using both cachectic and noncachectic tumor models in Drosophila , we observed that fat body–derived hexamerins accumulate in the tumors through a selective uptake process. Disabling this uptake led to a marked reduction in tumor growth, demonstrating that hexamerins are used as a nutrient source to support cancer progression. Hexamerin uptake also supports expression of the relaxin-like Drosophila insulin-like protein 8 (Dilp8) by the tumor, inhibiting ecdysone production and extending the growth period. This coupling between nutrient uptake by the tumor and inhibition of the developmental progression exerts a full diversion of the host resources. Functional parallels with mammalian albumins suggest evolutionarily conserved mechanisms with potential implications for cancer biology.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "biology",
+        "cancer",
+        "development",
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "果蠅儲存蛋白促進腫瘤生長速率與持續時間",
+      "summaryZh": "哺乳類的白蛋白等胺基酸儲存蛋白會累積在腫瘤中，但其在腫瘤生物學中的精確角色仍不清楚。本研究利用果蠅的腫瘤模型發現，脂肪體來源的六聚體蛋白能選擇性地被腫瘤吸收，作為營養來源支持癌症進展。阻斷此吸收過程會顯著抑制腫瘤生長，證實六聚體蛋白對腫瘤生長的關鍵作用。此外，六聚體蛋白還支持腫瘤表達胰島素樣胜肽8，進而抑制蛻皮激素產生並延長生長週期，完整地挪用宿主資源。此機制與哺乳動物白蛋白的功能相似，揭示了腫瘤營養獲取策略在演化上的保守性，對癌症生物學具有重要意涵。",
+      "topicTags": [
+        "cancer-biology",
+        "drosophila",
+        "tumor-growth",
+        "nutrient-uptake",
+        "storage-proteins"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aed2912",
+      "title": "Distinct contributions of two subpopulations of subthalamic neurons to levodopa-induced dyskinesia",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed2912?af=R",
+      "doi": "10.1126/sciadv.aed2912",
+      "abstract": "The subthalamic nucleus (STN) is a prominent target for deep-brain stimulation (DBS) in the treatment of levodopa-induced dyskinesia (LID), a common motor complication of Parkinson’s disease. However, the precise impact of STN-DBS on LID remains unclear. Here, we investigated the functional roles of two distinct neuronal populations within the STN in regulating LID. In a mouse model of LID, STN neurons projecting to the entopeduncular nucleus (EP) exhibited a U-shaped activation pattern, whereas those projecting to the tegmental reticular nucleus (RtTg) displayed a predominantly inhibitory response. Activation of EP-projecting STN neurons alleviated dyskinesia but worsened hypokinesia in the parkinsonian state. Activation of RtTg-projecting STN neurons alone did not induce hyperkinetic characteristics, except when combined with levodopa. These findings reveal two anatomically and functionally distinct populations of STN neurons involved in LID regulation, offering insights into the circuitry underlying STN-DBS.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "丘腦底核兩種神經元對左旋多巴誘發運動障礙的不同調控機制",
+      "summaryZh": "左旋多巴誘發運動障礙（LID）是帕金森氏症藥物治療中的常見併發症，丘腦底核深腦刺激（DBS）是改善此症狀的重要療法。本研究發現丘腦底核中兩群神經元——投射至蒼白球內節（EP）與投射至網狀結構（RtTg）者——對運動障礙具有截然不同的調控作用：EP投射神經元呈U型活化模式，RtTg投射神經元則主要呈抑制性反應。進一步實驗顯示，激活EP投射神經元可緩解運動障礙但加重運動過少，而RtTg投射神經元需與左旋多巴共同作用才會誘發運動過多。此研究揭示了丘腦底核調控運動障礙的複雜神經迴路，為優化DBS治療策略提供重要的科學依據。",
+      "topicTags": [
+        "parkinsons-disease",
+        "neuroscience",
+        "deep-brain-stimulation",
+        "motor-control",
+        "basal-ganglia"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aed3610",
+      "title": "Dexterous single sniffs for ethological active olfaction",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed3610?af=R",
+      "doi": "10.1126/sciadv.aed3610",
+      "abstract": "Rhythmic sniffing is considered intrinsic to active olfaction among terrestrial mammals. However, mice are known to briefly hold food under their nares while feeding, suggesting coordination of oromanual dexterity, breathing, and olfaction for nonrhythmic single sniffs. Here, we recorded kinematics and breathing as mice foraged and fed, finding that mice indeed, with clockwork-like dexterity and millisecond timing, synchronize a single inspiration with rapid head and hand movements. These solitary food sniffs are associated with abrupt resetting of the breathing rhythm, differ from stereotypical rhythmic sniffing, and exhibit behavioral modulations for different food properties. Olfactory and motor circuit manipulations demonstrate motor cortical dependence rather than reflexive neural control. Our study extends the concept of active olfaction to include this distinct form of complex motor-sensory coordination, features of which accord with the idea of discrete “snapshot” olfaction.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "老鼠精準單次嗅探：揭示主動嗅覺的新形式",
+      "summaryZh": "過往研究認為節律性嗅探是陸生哺乳類主動嗅覺的基礎，但本研究發現小鼠在覓食與進食時，會以精準的時序協調單次吸氣與頭部、手部快速動作，執行非節律性的「食物嗅探」。這種嗅探會突然重置呼吸節奏，與典型節律性嗅探不同，且會因食物特性而調整。操控實驗顯示此行為依賴運動皮層而非反射性神經控制。本研究將主動嗅覺的概念擴展至這種複雜的感覺運動協調形式，並提出「快照嗅覺」的理論框架。",
+      "topicTags": [
+        "olfaction",
+        "motor-coordination",
+        "mouse-behavior",
+        "respiratory-rhythm",
+        "sensorimotor"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aed6463",
+      "title": "A targetable FTO/SLC7A11/CBS/CTH axis controls cysteine metabolism, growth and survival in NSCLC",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed6463?af=R",
+      "doi": "10.1126/sciadv.aed6463",
+      "abstract": "Cysteine metabolism plays a crucial role in the growth and survival of non–small cell lung cancer (NSCLC), although the mechanisms governing its regulation are not fully understood. Here, we demonstrate that the RNA demethylase FTO is a therapeutic target that drives cysteine metabolism in NSCLC cells. Genetic or pharmacologic inhibition of FTO reduced cystine uptake and transsulfuration activity, leading to depleted intracellular glutathione, elevated reactive oxygen species (ROS), and ROS-mediated DNA damage and cell death. Mechanistically, FTO promotes the expression of the cystine uptake transporter SLC7A11 and the transsulfuration enzymes cystathionine β-synthase (CBS) and cystathionine γ-lyase (CTH) to promote NSCLC cystine uptake, transsulfuration activity, and survival. FTO inhibition increased lipid peroxidation, reduced tumor growth, and resulted in additive therapeutic benefit in combination with radiotherapy in multiple NSCLC xenograft models. Collectively, our study reveals a role for FTO in cysteine metabolism and highlights the therapeutic potential of targeting cancer epitranscriptomics and cysteine metabolism for NSCLC therapy.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "可靶向的FTO/SLC7A11/CBS/CTH軸調控半胱氨酸代謝與非小細胞肺癌的生長存活",
+      "summaryZh": "本研究揭示RNA去甲基酶FTO是非小細胞肺癌（NSCLC）的治療靶點，透過調控半胱氨酸代謝促進癌細胞生長。FTO可提升胱氨酸轉運蛋白SLC7A11及轉硫途徑酶CBS與CTH的表現，進而增強胱氨酸攝取與穀胱甘肽合成。抑制FTO會導致細胞內穀胱甘肽耗竭、活性氧物質累積，並引發氧化壓力相關的DNA損傷與細胞死亡。在多種NSCLC異種移植模型中，FTO抑制不僅減少腫瘤生長，與放射治療聯用更具加乘療效。此研究強調靶向癌症表觀轉錄組學與半胱氨酸代謝的治療潛力。",
+      "topicTags": [
+        "non-small-cell-lung-cancer",
+        "cysteine-metabolism",
+        "fto",
+        "epitranscriptomics",
+        "radiotherapy",
+        "glutathione"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aed8653",
+      "title": "Targeting astrocytic Dp71 attenuates BBB disruption after traumatic brain injury through WTAP-associated m6A regulation of MMP2",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed8653?af=R",
+      "doi": "10.1126/sciadv.aed8653",
+      "abstract": "Blood-brain barrier (BBB) disruption is a major pathological feature of traumatic brain injury (TBI) that contributes to secondary damage and poor neurological recovery. Although astrocytes are essential for BBB homeostasis, the molecular basis of astrocyte-associated BBB dysfunction after TBI remains unclear. Here, we found that astrocytic dystrophin protein 71 (Dp71) expression was reduced after TBI in both patients and mouse models. In mice, further experimental down-regulation of astrocytic Dp71 attenuated secondary BBB disruption and was accompanied by reduced astrocyte activation, inflammatory cell infiltration, and matrix metalloproteinase-2 (MMP2) release. Mechanistically, nuclear Dp71 interacted with Wilms tumor 1–associated protein (WTAP) and influenced its ubiquitination, leading to changes in the N 6 -methyladenosine (m 6 A) modification, RNA stability, and expression of MMP2 messenger RNA. In addition, biomimetic nanovesicles coated with astrocyte membranes enabled targeted delivery of small interfering RNA targeting Dp71 (siDp71) to astrocytes and reduced MMP2 release and BBB damage after TBI, suggesting a potential therapeutic strategy for mitigating BBB injury after TBI.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "標靶星狀細胞Dp71透過WTAP相關m6A調控MMP2減緩創傷性腦損傷後血腦屏障破壞"
+    },
+    {
+      "id": "10.1126/sciadv.aee1002",
+      "title": "Theta oscillations are an organizational unit of odor processing in the olfactory bulb",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee1002?af=R",
+      "doi": "10.1126/sciadv.aee1002",
+      "abstract": "When sampling odors, humans typically take a single long sniff, unlike most other mammals who sample odors through bouts of rapid repetitive sniffing. Decades of work has established that rapid sniffing rhythms underlie the organizational principles of odor coding, with sniff speed clocking odor responses in the olfactory bulb. In the absence of rapid sniffing, how are odor responses organized in the human olfactory system? Because most mammals sniff at rates centered around the theta frequency, we hypothesized that the olfactory bulb exploits a theta-range neural oscillation to set the pace of odor coding in the system. Here, we used high-precision neural recordings from the human olfactory bulb to show that initiation of a sniff elicits and temporally aligns theta oscillations in the bulb and that sniff-induced theta oscillations organize the timing and amplitude of odor responses. These findings suggest that, despite the lack of rapid sniffing bouts in humans, the system has preserved a similarly timed unit of olfactory processing.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Theta振盪為嗅球中氣味處理的組織單位"
+    },
+    {
+      "id": "10.1126/sciadv.aee1305",
+      "title": "Beech latewood density as a proxy for temperature reconstruction",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee1305?af=R",
+      "doi": "10.1126/sciadv.aee1305",
+      "abstract": "Maximum latewood density of conifers is the most widely used annual-resolution summer temperature proxy. Regions with few conifers, however, remain underrepresented in global paleoclimate records. Here, we use x-ray micro–computed tomography (micro-CT) to show that latewood density measurements of European beech ( Fagus sylvatica L.) in a temperate lowland forest exhibit a strong summer (May to September) temperature signal ( r = 0.73; 1833 to 2022 CE). Complementary wood anatomical analyses using deep learning segmentation reveal that both vessel and fiber anatomy are key drivers of latewood density variability and its temperature sensitivity. By integrating these anatomical responses, x-ray micro-CT–based latewood density measurements generate a robust and temporally stable summer temperature signal. Our results highlight the untapped potential of broad-leaved tree species for density-based climate reconstructions in temperate regions and open previously unidentified avenues for high-resolution paleoclimatology beyond the use of conifers.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aee4765",
+      "title": "Structures of asymmetric particles of tick-borne encephalitis virus provide insight into flavivirus assembly and maturation",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee4765?af=R",
+      "doi": "10.1126/sciadv.aee4765",
+      "abstract": "Flaviviruses are globally distributed human pathogens. However, the mechanisms underlying flavivirus assembly and maturation remain poorly understood. Here, we show that many particles of tick-borne encephalitis virus (TBEV) are asymmetric and lack subsets of surface heterodimers. Immature particles of TBEV contain incomplete spikes, providing evidence that their coats assemble directly from heterodimers of premembrane (prM) and envelope (E) proteins. Exposure of TBEV particles to acidic pH in the Golgi complex promotes maturation. The spikes and herringbone regions in TBEV maturation intermediates are oriented randomly rather than conforming to a common icosahedral symmetry. Consequently, the mature herringbone lattice forms around a randomly oriented nucleation center, expanding by addition of membrane-envelope heterodimers as the spikes disassemble and prMs are cleaved. The observed incompleteness of the protein coats explains, as an alternative to particle breathing, how flaviviruses can be neutralized by antibodies that bind to regions of E proteins normally inaccessible in the spiky or herringbone structures.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "蜱傳腦炎病毒非對稱顆粒結構提供黃病毒組裝與成熟之見解"
+    },
+    {
+      "id": "10.1126/sciadv.aee5417",
+      "title": "Loss of heterozygosity exposes germline mutations in complex I and drives Warburg metabolism in oncocytic carcinoma of the thyroid",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee5417?af=R",
+      "doi": "10.1126/sciadv.aee5417",
+      "abstract": "Oncocytic (Hürthle cell) carcinoma of the thyroid (OCT) is characterized by widespread loss of heterozygosity (LOH), mitochondrial accumulation, and recurrent mitochondrial DNA mutations leading to impairment of complex I. Here, we establish and characterize a novel OCT cell line, UT946, which displays severe mitochondrial electron transport chain dysfunction and a Warburg metabolic phenotype. Using a series of cytoplasmic hybrids, we establish that the complex I defect in UT946 stems from a nuclear-encoded loss-of-function mutation in the complex I subunit NDUFS1. To our surprise, the mutation in NDUFS1 was inherited as a recessive germline allele that underwent LOH in the tumor to expose functional loss of complex I. A reanalysis of 91 OCT tumor genomes revealed that LOH-driven exposure of recessive germline mutations in complex I subunits was a recurrent mechanism underlying complex I inactivation in OCT. These findings unveil a previously unidentified germline-driven mechanism of complex I loss and metabolic reprogramming in cancer and provide further evidence of the selective pressure for complex I impairment in OCT.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "雜合性缺失揭露甲狀腺嗜酸細胞癌中複合物I的種系突變並驅動沃伯效應代謝"
+    },
+    {
+      "id": "10.1126/sciadv.aee6676",
+      "title": "A BIN2-SOG1 molecular module regulates replication stress response independently on ATR",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee6676?af=R",
+      "doi": "10.1126/sciadv.aee6676",
+      "abstract": "DNA replication stress poses a severe threat to genome stability. It is well-known that SOG1 plays a crucial role in DNA replication stress response in plants. Although ATM-mediated phosphorylation and CRL4 PRL1 -mediated polyubiquitination of SOG1 play important roles in regulating DNA damage response (DDR), the posttranslational modifications of SOG1 during the replication stress response are little known. Here we show that, during replication stress, the activity of the GSK3-like kinase BIN2 is activated by an unknown mechanism independent of ATR. Subsequently, BIN2 phosphorylates SOG1 at T244 and T249, which enhances SOG1 stability and transcriptional activity to activate DDR. Thus, our study demonstrated a pathway by which plants dynamically regulate replication stress response by a BIN2-SOG1 module.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "BIN2-SOG1分子模組獨立於ATR調控複製壓力反應",
+      "summaryZh": "DNA複製壓力是威脅基因組穩定性的重大挑戰。本研究揭示了植物中BIN2-SOG1分子模組在調控複製壓力反應中的關鍵角色，發現BIN2激酶在複製壓力下會被獨立於ATR的機制所激活。活化的BIN2接著磷酸化SOG1蛋白的T244和T249位點，進而增強SOG1的穩定性與轉錄活性，最終啟動DNA損傷反應。這項發現為植物如何動態調控複製壓力反應提供了嶄新的分子機制，並拓展了我們對植物防禦途徑的理解。",
+      "topicTags": [
+        "dna-replication",
+        "plant-biology",
+        "protein-phosphorylation",
+        "genome-stability",
+        "signal-transduction"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aef0108",
+      "title": "Ancient DNA reveals elite dynastic rule among Iron Age Eurasian Steppe nomads",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef0108?af=R",
+      "doi": "10.1126/sciadv.aef0108",
+      "abstract": "The Eurasian Steppe in the first millennium BCE saw the rise of the Scytho-Siberian archaeological horizon, which would come to stretch from the Altai Mountains in the east to the Black Sea in the west. We examined the genetic profiles of Iron Age Scythians to explore how social status shaped biological relatedness and ancestry patterns. We present genome-wide data from 85 individuals (38 elite and 47 non-elite), including 45 newly sequenced individuals and the first genome-wide data for the Scythian “Golden Man.” We identify consanguineous unions, a reduced effective population size, and identity-by-descent links among the elites. Dynastic rule is supported by elite grandparent-grandchild relationships across cemeteries. While ancestries are heterogeneous, elite Iron Age Scythians show lower variation and no detectable patrilocal or matrilocal signal. These findings highlight hereditary status transmission and the emergence of social stratification in ancient nomadic societies.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aef7793",
+      "title": "Aryl hydrocarbon receptor deficiency triggers the activation of γδT17 cells to exacerbate autoimmune inflammation",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef7793?af=R",
+      "doi": "10.1126/sciadv.aef7793",
+      "abstract": "Despite the well-established role of interleukin-17 (IL-17)–producing γδ T cells (γδT17 cells) in autoimmune inflammations, key factors to trigger the activation of γδT17 cells remain largely unknown. Here, we show that aryl hydrocarbon receptor (AhR) is markedly reduced upon γδT17 cell activation. AhR deficiency and pharmacological activation promotes and suppresses γδT17 cell activation, respectively. Mechanistically, AhR deficiency strengthens heat shock protein family A member 9 (HSPA9)-mediated competition with F-box and WD-40 domain protein 11(FBXW11) for binding to RBP-j-associated molecule (RAM) domain of Notch intracellular domain (NICD), which impairs FBXW11-dependent NICD ubiquitination to increase NICD occupancy at the Rorc enhancer to drive γδT17 cell activation. Consistently, AhR deficiency increases the proportion of γδT17 cells and the disease severity in psoriasis-like dermatitis mice and colitis mice, which is almost entirely reversed by pretreatment with either adeno-associated virus (AAV)-sh Hspa9 or AAV-sh Notch1 . Collectively, these findings identify AhR deficiency as a key driver of aberrant γδT17 activation, uncover a γδT17 activation mechanism via HSPA9/FBXW11-mediated suppression of NICD ubiquitination, and provide a strong mechanistic basis for AhR agonists as therapeutics in autoimmune inflammations.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "芳香烴受體缺乏活化γδT17細胞加劇自體免疫發炎",
+      "summaryZh": "γδT17細胞在自體免疫發炎中扮演關鍵角色，但觸發其活化的分子機制仍不清楚。本研究發現芳香烴受體(AhR)在γδT17細胞活化時顯著下降，而AhR缺乏會透過HSPA9/FBXW11/Notch訊號途徑促進γδT17細胞活化。在乾癬樣皮膚炎及結腸炎小鼠模型中，AhR缺乏會增加γδT17細胞比例並加重疾病嚴重度。此研究揭示了AhR缺乏是驅動γδT17異常活化的關鍵因素，並為開發AhR激動劑作為自體免疫疾病的治療藥物提供了強有力的分子機制基礎。",
+      "topicTags": [
+        "immunology",
+        "autoimmune-disease",
+        "t-cells",
+        "aryl-hydrocarbon-receptor",
+        "inflammation"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aef9101",
+      "title": "A multiple-encrypted DNA device for secure communication",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef9101?af=R",
+      "doi": "10.1126/sciadv.aef9101",
+      "abstract": "DNA cryptography has been explored for data encryption because of the high storage capacity of DNA molecules, the considerable parallelism of DNA computing, and the diversity of DNA nanostructures. Nevertheless, integrating multiple encryption protocols in a single DNA origami communication workflow remains challenging. Here, we develop a DNA multilayer encryption device that integrates multiple cryptographic algorithms for secure communication. The encoding system exploits the addressability of rectangular DNA nanostructures to create spatial patterns into nano–Morse code. In a codebook-based symmetric encryption framework, ciphertext messages encoded by nano–Morse code patterns are transmitted through shared key. Furthermore, the transformation between the rectangular and tubular DNA nanostructures allows the steganography and conformation-gated verification with a key space of 2 576 . We demonstrate multilayer secure communication in block-based message normalization mode by transmitting the message “JUNE6 INVASION NORMANDY,” achieving confidentiality, integrity, and authenticity. This work advances DNA nanotechnology from a structural scaffold to a programmable information-processing platform with implications for intelligent molecular systems.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aeg2095",
+      "title": "Luminespib and AZ5104 are effective antithrombotic drugs via targeting the platelet Ero1α-PDI pathway",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg2095?af=R",
+      "doi": "10.1126/sciadv.aeg2095",
+      "abstract": "The platelet-surface Ero1α–protein disulfide isomerase (PDI) system is essential for integrin αIIbβ3 activation and platelet aggregation. Targeting the functional interplay between Ero1α and PDI emerges as a promising antithrombotic strategy. Using a tiered high-throughput screen, we identified two clinical-stage compounds, Luminespib and AZ5104, as selective inhibitors of the Ero1α-PDI interaction. They bind a hydrophobic pocket in the PDI b ʹ domain, inhibiting the pathway in biochemical and cellular assays without affecting other PDI family members. The antiplatelet effects of Luminespib and AZ5104 were abolished in megakaryocyte-specific Pdi or Ero1a knockout mice, confirming on-target specificity. Mechanistically, they concurrently inhibit Ero1α-PDI–driven extracellular integrin activation and intracellular Ca 2+ signaling. Both compounds potently reduced arterial thrombosis in mice without prolonging bleeding time. Our work establishes Luminespib and AZ5104 as clinical-stage antithrombotic agents that target the platelet Ero1α-PDI system, offering an effective strategy to achieve potent antithrombosis without compromising hemostasis.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Luminespib與AZ5104透過標靶血小板Ero1α-PDI途徑成為有效抗血栓藥物"
+    },
+    {
+      "id": "10.1126/sciadv.aeh2735",
+      "title": "Targeting granule initiation and amyloplast structure to create giant starch granules in wheat",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeh2735?af=R",
+      "doi": "10.1126/sciadv.aeh2735",
+      "abstract": "Starch granule size influences the functional, digestive, and processing qualities of starch, but its genetic control is poorly understood. Here, we demonstrate that both space and substrate constraints limit starch granule size in wheat and provide an approach to achieve substantial increases in granule size. Wheat starch contains large A-type and small B-type granules. To increase A-type granule size, we mutated the plastid division component PARALOG OF ARC 6 ( PARC6 ), which increases amyloplast size and the space available for granule growth, and B-GRANULE CONTENT 1 ( BGC1 ), which reduces granule initiations and competition between growing granules. The parc6 bgc1 double mutant produced giant granules that were more than double the size of typical A-type granules. We demonstrate that the size increase affects functional properties, including viscosity and pasting temperature. Overall, by targeting both constraints, we created a giant cereal starch that has not been observed in nature, with altered physicochemical properties that can be used in food and industrial applications.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "標靶顆粒起始與澱粉體結構以在小麥中創造巨大澱粉顆粒"
+    },
+    {
+      "id": "10.1126/sciadv.aeg4002",
+      "title": "Global synthesis reveals systematic variation in trophic transfer efficiency across and within ecosystems",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg4002?af=R",
+      "doi": "10.1126/sciadv.aeg4002",
+      "abstract": "Trophic transfer efficiency (TTE) describes the proportion of energy or nutrients transferred from one trophic level to the next. A common assumption holds that ~10% of energy is transferred upward. This rule of thumb has shaped ecological models and discussions of sustainability, but broad empirical tests are lacking. We compiled 2052 TTE estimates from 122 studies across ecosystems. Average energy transfer efficiency (TTE e ) was 5.92%, well below 10%, while nutrient transfer efficiency (TTE n ) averaged 11.13%. Marine ecosystems had the highest TTE e (8.13%), followed by freshwater (5.53%) and terrestrial (1.52%) systems. TTE e declined with temperature in freshwater and was lower for consumers feeding on autotrophs, endotherms, and higher trophic levels. Our findings challenge long-standing assumptions and highlight the need for better understanding of TTE variation.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "跨越與單一生態系統的營養傳遞效率：全球綜合分析",
+      "summaryZh": "營養傳遞效率（TTE）描述能量或營養從一個營養級傳遞到下一個營養級的比例。本研究綜合了122項研究中的2052個TTE估計值，發現能量傳遞效率平均僅有5.92%，遠低於長期以來假設的10%。營養傳遞效率平均為11.13%，其中海洋生態系統效率最高（8.13%），其次是淡水（5.53%）和陸地生態系統（1.52%）。研究還發現，在淡水中TTE隨溫度升高而下降，且以自養生物、內溫動物和較高營養級為食的消費者，其TTE較低。這些發現挑戰了長期以來的假設，並強調需要更好地理解TTE的變異性。",
+      "topicTags": [
+        "ecology",
+        "trophic-transfer",
+        "ecosystems",
+        "marine-biology",
+        "food-web"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aeb7219",
+      "title": "Taphonomic analysis at Liang Bua reveals the behavioral and technological capabilities of Homo floresiensis",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb7219?af=R",
+      "doi": "10.1126/sciadv.aeb7219",
+      "abstract": "Since its discovery, Homo floresiensis —an extinct, short-statured, and small-brained hominin species from Flores, Indonesia—has often been ascribed unexpectedly advanced behaviors, such as hunting large game and using fire. Here, we report the results of a systematic taphonomic study sampling the proboscidean bone assemblage at Liang Bua where the frequency and locations of predatory marks, along with skeletal part profiles, show that Komodo dragons likely had primary access to these remains leaving behind only low-utility elements for H. floresiensis to scavenge. Moreover, no signs of intentional use of fire are present in the stratigraphic units associated with H. floresiensis . Together, these results suggest that H. floresiensis was not as behaviorally advanced as originally suggested and provides critical insights into the behavioral repertoire of H. floresiensis , raising important questions about its ancestry.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "埋藏學分析揭示梁布亞洞穴佛羅勒斯人的行為與技術能力"
+    },
+    {
+      "id": "10.1126/sciadv.aee5076",
+      "title": "A 3D amphioxus brain atlas illuminates the blueprint of the ancestral chordate brain and highlights unique vertebrate innovations",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee5076?af=R",
+      "doi": "10.1126/sciadv.aee5076",
+      "abstract": "Comparative studies of vertebrate brains have elucidated the evolution of morphological diversity; yet, the fundamental chordate brain blueprint and the emergence of vertebrate-specific innovations remain elusive. To reconstruct the cellular and molecular origins of brain architecture in chordates, we combined single-nucleus RNA sequencing with spatial transcriptomics to generate a three-dimensional cell atlas of the central nervous system (CNS) in the early-branching chordate amphioxus. This atlas reveals a tripartite anterior-posterior organization comprising a rostral retinal/hypothalamic region, a di-mesencephalic domain, and a caudal hindbrain/spinal cord. Challenging previous views, we identify cell clusters resembling the vertebrate zona limitans intrathalamica and midbrain-hindbrain boundary regions that demarcate major brain compartments. Conversely, the absence of telencephalic marker expression in the amphioxus rostral forebrain suggests that the telencephalon is a vertebrate innovation. Collectively, our findings establish a spatial transcriptomic framework for the amphioxus CNS, providing crucial insight into the evolutionary origins of vertebrate brain complexity.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "spatial transcriptomics",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "3D文昌魚腦圖譜揭開脊索動物祖先大腦藍圖",
+      "summaryZh": "科學家結合單細胞核RNA定序與空間轉錄體學技術，繪製出早期分支脊索動物文昌魚中樞神經系統的三維細胞圖譜。此圖譜揭示了由前腦視網膜與下視丘區域、中腦-間腦區域，以及後腦與脊髓所組成的三段式結構。值得注意的是，研究發現文昌魚腦中存在類似脊椎動物間腦峽部與中腦-後腦邊界區域的細胞群，挑戰了既有觀點。然而，文昌魚前腦缺乏端腦標記基因的表現，證實端腦是脊椎動物獨有的演化創新。這項研究為理解脊椎動物大腦複雜性的演化起源提供了關鍵的空間轉錄體學框架。",
+      "topicTags": [
+        "brain-evolution",
+        "spatial-transcriptomics",
+        "amphioxus",
+        "chordate",
+        "single-nucleus-rna-seq"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aeg0499",
+      "title": "S-acylation switches the fate of a plant peptide precursor in cell wall damage responses",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg0499?af=R",
+      "doi": "10.1126/sciadv.aeg0499",
+      "abstract": "Under stress conditions, organisms produce damage-associated molecular patterns (DAMPs) to activate defense signaling pathways. Thus, precise regulation of DAMPs is essential for organismal survival, yet the underlying molecular mechanisms remain poorly understood. Plant elicitor peptides (Peps), which are processed from their precursor proteins PROPEPs, constitute a major class of DAMPs in plants. Here, we report that PROPEP1 undergoes S-acylation, a reversible lipid modification critical for its targeting to the vacuolar membrane and for its function in mediating responses to cell wall damage. Mutations at the S-acylation sites alter the trafficking route of PROPEP1 and promote its delivery to the vacuolar lumen for degradation. Upon cell wall damage, expression of PROTEIN S-ACYL TRANSFERASE 10 (PAT10) is up-regulated, thereby promoting S-acylation of PROPEP1 and ensuring its correct subcellular localization and functional role. Collectively, this study uncovers a posttranslational mechanism governing the fate of the precursor of a plant damage-associated peptide, thereby advancing our mechanistic understanding of DAMP regulation across diverse biological systems.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "S-醯化在細胞壁損傷反應中轉換植物肽前驅體的命運"
+    },
+    {
+      "id": "10.1126/sciadv.aec6492",
+      "title": "Cyclin K condensates bridge CDK12 to phosphorylate and drive oncogenic YAP activation in hepatocellular carcinoma",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec6492?af=R",
+      "doi": "10.1126/sciadv.aec6492",
+      "abstract": "Targeting transcriptional condensates is an emerging paradigm for cancer therapy. A key player is the transcriptional coactivator YAP (Yes-associated protein), which drives tumor-specific programs that fuel tumor progression and therapeutic resistance. Cyclin K, partnered with cyclin-dependent kinases (CDKs) CDK12/CDK13, is essential for transcription elongation, but its role in specific oncogenic programs was unclear. Here, we identify Cyclin K as an essential vulnerability across multiple cancer types. The CDK12/Cyclin K complex binds YAP via Cyclin K and forms a regulatory condensate to bridge YAP phosphorylation by CDK12. Such a phosphorylation at threonine-398 impedes YAP inhibition by its canonical LATS kinases, stabilizes YAP, and enables its further condensation with TEAD4 to stimulate YAP oncogenic activity. Coexpression of CDK12/Cyclin K and YAP predicts sensitivity to Cyclin K inhibitors in hepatocellular carcinoma cells and patient-derived xenografts. Thus, we define CDK12/Cyclin K as a critical regulator of YAP-driven transcriptional addiction and a biomarker for patient stratification who mostly benefit from therapies targeting the CDK12/Cyclin K–YAP axis.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Cyclin K 凝聚體橋接 CDK12 促進 YAP 磷酸化 驅動肝細胞癌惡性進展",
+      "summaryZh": "瞄準轉錄凝聚體已成為癌症治療的新興典範。YAP（Yes相關蛋白）是驅動腫瘤進展和治療耐藥性的關鍵轉錄共激活因子。本研究發現 CDK12/Cyclin K 複合體通過 Cyclin K 與 YAP 結合並形成調節性凝聚體，進而橋接 YAP 的磷酸化。這種在蘇氨酸-398 處的磷酸化會阻礙 LATS 激酶對 YAP 的抑制作用，穩定 YAP 蛋白並促進其與 TEAD4 的進一步凝聚，從而刺激 YAP 的致癌活性。CDK12/Cyclin K 和 YAP 的共表達能夠預測肝細胞癌細胞和患者衍生異種移植模型對 Cyclin K 抑制劑的敏感性，表明 CDK12/Cyclin K 可作為患者分層的生物標誌物。",
+      "topicTags": [
+        "hepatocellular-carcinoma",
+        "transcriptional-condensates",
+        "yap-signaling",
+        "cdk12",
+        "cancer-therapy"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.adz1923",
+      "title": "A meta-analysis of carbon losses and gains from tropical moist forest degradation and regeneration",
+      "journal": "Science Advances",
+      "publishedDate": "2026-07-03T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz1923?af=R",
+      "doi": "10.1126/sciadv.adz1923",
+      "abstract": "Aboveground carbon (AGC) fluxes from deforestation and subsequent regrowth in tropical moist forest (TMF) are increasingly well characterized, but carbon losses and gains following partial disturbance are uncertain. We synthesized 146 studies quantifying postdisturbance AGC changes relative to undisturbed forests across TMF. Immediate AGC losses (mean ± 1 SD; 2.5 ± 2.3 years after disturbance) following partial anthropogenic disturbances were greatest for forest fires (49 ± 26%), selective logging (34 ± 20%), and edge effects (31 ± 19%). Higher-frequency and -intensity disturbances significantly increased carbon loss. After 20 years of regeneration, AGC stock was higher in recovering degraded forests (41 to 117%) compared to secondary regrowth forests after complete deforestation (1 to 74%), indicating greater regeneration potential when forest structure is preserved. Our compiled database and associated meta-analysis improve accuracy and completeness for carbon inventory reporting and modeling. Substantial AGC losses and gains from distinct degradation and recovery processes are now better characterized, serving as an evidence base for policies to halt degradation and foster recovery for climate mitigation.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 44,
+      "passedByScope": 8,
+      "llmClassified": 36,
+      "llmYes": 26,
+      "llmNotSure": 0,
+      "llmNo": 10,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 34,
+      "excluded": 10
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 34,
+      "llmTagged": 34,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 34,
+      "candidates": 30,
+      "featured": 12,
+      "overflow": 18,
+      "lineA": 2,
+      "lineB": 22,
+      "preprint": 6,
+      "skip": 4
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 18,
+      "llmTranslated": 18,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01989-5",
+        "title": "China boosts prestigious grants for young scientists — will it ease competition?",
+        "journal": "Nature",
+        "publishedDate": "2026-07-03T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01989-5",
+        "doi": "10.1038/d41586-026-01989-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.adz4647",
+        "title": "Trans-basin linkages prolong Northwestern Pacific marine heatwaves through a circumglobal wave pattern",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-03T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz4647?af=R",
+        "doi": "10.1126/sciadv.adz4647",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed5495",
+        "title": "Capillary ratchets activated by interfacial flows for versatile torque generation and microassembly",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-03T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed5495?af=R",
+        "doi": "10.1126/sciadv.aed5495",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed6394",
+        "title": "Solving the cooling flow problem with combined jet-wind AGN feedback",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-03T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed6394?af=R",
+        "doi": "10.1126/sciadv.aed6394",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed6943",
+        "title": "Understanding the role of entropy in designing high-performance thermoelectrics",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-03T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed6943?af=R",
+        "doi": "10.1126/sciadv.aed6943",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee5236",
+        "title": "High-resolution real-time mechanochromic tactile sensors",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-03T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee5236?af=R",
+        "doi": "10.1126/sciadv.aee5236",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aef2744",
+        "title": "A sustainable seven-electron cascade battery via orchestrated gas-liquid-solid triphase redox reactions",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-03T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef2744?af=R",
+        "doi": "10.1126/sciadv.aef2744",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aef9370",
+        "title": "Electronic structure–driven sodiophilicity enables stable anode-free sodium batteries",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-03T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef9370?af=R",
+        "doi": "10.1126/sciadv.aef9370",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeg3850",
+        "title": "Atomic-scale regulation of ion motion and phonon scattering: ALD-driven interface engineering for stabilizing β-Zn4Sb3",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-03T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg3850?af=R",
+        "doi": "10.1126/sciadv.aeg3850",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed6069",
+        "title": "Dynamic evaporative and radiative cooling for efficient year-round energy savings",
+        "journal": "Science Advances",
+        "publishedDate": "2026-07-03T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed6069?af=R",
+        "doi": "10.1126/sciadv.aed6069",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
