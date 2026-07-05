@@ -1,0 +1,483 @@
+{
+  "reportDate": "2026-07-04",
+  "generatedAt": "2026-07-05T11:32:16.398Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.06.30.735631",
+      "title": "Saturation-seq integrates single-cell saturation genome editing and RNA-seq to quantify NFE2L2 (NRF2) variant effects",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-04",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.30.735631v1",
+      "doi": "10.64898/2026.06.30.735631",
+      "abstract": "Interpreting the functional consequences of variants remains one of the central unsolved problems in genomics and clinical genetics. Compounding this, most existing approaches rely on reductive, one-dimensional proxies such as cell growth to score variant effects, which can be a poor substitute for the rich, multidimensional phenotyping that is ultimately needed to understand how variants alter biology. This is especially true for variants known to act through gain-of-function/neomorphic mechanisms. We developed Saturation-seq, a high-throughput platform that combines saturation genome editing with single-cell DNA and RNA profiling to systematically map variant effects. Using CRISPR-based editing in a barcoded haploid cell line, we install hundreds of variants directly into endogenous genomic loci, testing them in multiplex and preserving the native coding and regulatory context. Single-cell amplicon and transcriptome sequencing enables direct linkage of each genomic edit to its transcriptional impact. We apply Saturation-seq to comprehensively characterize 230 variants in the recurrently mutated N-terminal region of NFE2L2 (NRF2), a master regulator of oxidative stress and an oncogene mutated in lung cancer. We define variant function with disruption scores computed from misregulation of known NRF2 targets in single-cell transcriptomes; scores separate pathogenic/benign truthset variants with >90% accuracy and enabled interpretation of TCGA and TRACERx patient tumor data, as well as a rare NFE2L2 germline variant linked to a developmental syndrome. Thus, we establish a broadly applicable high-resolution single-cell variant-to-function platform with a rich phenotypic readout.",
+      "authors": [
+        "Strauss, M. E.",
+        "Waters, A. J.",
+        "Roberston, H.",
+        "Brendler-Spaeth, T.",
+        "Gontarczyk, A.",
+        "Gupta, P.",
+        "Kataria, S.",
+        "Gitterman, D.",
+        "Ntereke, T.",
+        "Wells, L.",
+        "Billington, J.",
+        "Bassett, A.",
+        "Cooper, S.",
+        "Adams, D. J."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology",
+        "cancer",
+        "development",
+        "CRISPR",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Saturation-seq整合單細胞飽和基因編輯與RNA定序以量化NFE2L2 (NRF2)變異體效應",
+      "summaryZh": "解讀基因變異的功能後果一直是基因組學與臨床遺傳學的核心未解難題。本研究開發了Saturation-seq平台，結合飽和基因組編輯與單細胞DNA及RNA分析，在條形碼單倍體細胞系中直接測試數百種變異體，並保留原生編碼與調控情境。研究者將此技術應用於NFE2L2 (NRF2)基因——一種在肺癌中頻繁突變的氧化壓力主調控因子與致癌基因——系統性地表徵了230種變異體。透過單細胞轉錄組中NRF2標的基因的失調計算破壞分數，能以超過90%的準確率區分致病性與良性變異，並成功解讀TCGA與TRACERx患者腫瘤數據及一個與發育症候群相關的罕見胚系變異。此平台提供了一種可廣泛應用的高解析度單細胞變異至功能分析工具。",
+      "topicTags": [
+        "variant-interpretation",
+        "single-cell-genomics",
+        "crispr-editing",
+        "cancer-genomics",
+        "nrf2"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.30.735539",
+      "title": "HLiCA: An integrated cell atlas of the healthy human liver",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-04",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.30.735539v1",
+      "doi": "10.64898/2026.06.30.735539",
+      "abstract": "The human liver is composed of a heterogeneous mix of cell types. How these distinct populations contribute individually and collectively to liver function remains poorly understood. Although single-cell technologies have advanced our understanding of liver biology, individual studies have often been limited by small donor cohorts and inconsistent cell type annotations. Integrating multiple datasets can overcome these challenges and better capture biological variability. We present the Human Liver Cell Atlas (HLiCA), an integrated reference of non-disease liver cells assembled from eight datasets across six research centers, encompassing more than 525,000 cells from 110 donors. Developed in collaboration with the Human Cell Atlas Liver Bionetwork, the HLiCA incorporates expert-curated cell annotations refined through community feedback and dedicated cell type annotation meetings. The HLiCA classifies cells into six lineages and expands the cell type resolution to include 47 distinct cell types. Starting from raw sequencing reads, we realigned all data and performed rigorous benchmarking to ensure robust integration across technical and biological variables. Genetic ancestry was inferred for all samples to evaluate the range of ancestral backgrounds represented in the atlas. The expanded cell type annotation enabled identification of previously unrecognized liver cell types, including NRXN1+ stromal cells. Their presence was validated using spatial transcriptomics, which localized NRXN1+ stromal cells to periportal regions. With the number of donors included in the HLiCA we were able to examine cell type specific associations with demographic covariates. In hepatocytes, drug metabolism genes showed differential expression between sexes, and in cholangiocytes, mucus-production genes varied with age. As the largest and most genetically diverse human liver cell atlas to date, the HLiCA provides a comprehensive, well-annotated reference for the field, annotated by expert consensus. This resource will enable deeper interrogation of liver cellular diversity, architecture, and function in the healthy human liver and serve as a reference to understand changes that occur with disease.",
+      "authors": [
+        "Edgar, R. D.",
+        "Portman, J. R.",
+        "Hu, H.",
+        "Pouyabahar, D.",
+        "Rahman, R. R.",
+        "Stueckmann, D.",
+        "Choi, Y.",
+        "Neavin, D. R.",
+        "Atif, J.",
+        "Clarke, Z. A.",
+        "Gao, R.",
+        "Khare, S.",
+        "Li, Z.",
+        "Martens, L.",
+        "Murti, A.",
+        "Nakib, D.",
+        "Shirgaonkar, N.",
+        "Thomann, S.",
+        "Thone, T.",
+        "Wilson-Kanamori, J. R.",
+        "Breitkopf-Heinlein, K.",
+        "Lattouf, E. I.",
+        "Li, R.",
+        "Napoliello, R.",
+        "Rahbari, N. N.",
+        "Sadria, M.",
+        "Yakubovsky, O.",
+        "Andrews, T.",
+        "Aronow, B. J.",
+        "Cuenca, A. G.",
+        "DePasquale, E. A. K.",
+        "Huppert, S. S.",
+        "Itzkovitz, S.",
+        "Lauer, G. M.",
+        "Mysore, K. R.",
+        "Powell, J. E.",
+        "Schwartz, R. E.",
+        "Sharma, A.",
+        "Taylor, S. A.",
+        "Vallier, L.",
+        "Wang, B.",
+        "Dasgupta, R.",
+        "Grün, D"
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "HLiCA：整合性人類健康肝臟細胞圖譜",
+      "summaryZh": "人類肝臟由多種異質性細胞組成，過去研究受限於捐贈者樣本數量不足及細胞類型註釋不一致，難以全面解析肝臟功能。本研究整合六個研究中心、八個資料集的超過52.5萬個細胞，來自110位捐贈者，建構出迄今最大且最具遺傳多樣性的人類肝臟細胞圖譜。專家團隊對細胞進行系統性分類與註釋，將細胞細分為六大譜系與47種不同細胞類型，並透過空間轉錄體學驗證了新發現的NRXN1+基質細胞存在於門脈區域。此圖譜進一步揭示了性別與年齡對特定肝細胞基因表現的影響，例如肝細胞中藥物代謝基因的性別差異，以及膽管細胞中黏液生成基因隨年齡的變化，為肝臟生理學與疾病研究提供重要參考資源。",
+      "topicTags": [
+        "single-cell",
+        "cell-atlas",
+        "liver",
+        "transcriptomics",
+        "human-cell-atlas"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.30.735508",
+      "title": "SPICE: A Robust Computational Framework for Identifying Copy Number Variations in Spatial Transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-04",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.30.735508v1",
+      "doi": "10.64898/2026.06.30.735508",
+      "abstract": "Copy number variation (CNV), which alters the number of genomic segments, is a major driver of intratumor heterogeneity, characterized by spatially organized and genetically distinct cell populations. Recent advances in spatially resolved transcriptomic (SRT) technologies, which profile gene expression across thousands of spatially indexed tissue locations, offer a powerful opportunity to reconstruct the CNV architecture and dissect the spatial organization of cancer subclones. Here, we introduce SPICE (spatial inference of CNV events), a probabilistic method for identifying somatic CNVs and allele-specific copy number (ASCN) profiles from SRT data. A key feature of SPICE is its ability to integrate multiple complementary information available in SRT data, including gene expression, spatial coordinates, and heterozygous SNPs inferred from transcriptomic reads, to substantially enhance the accuracy and power of CNV detection. Using datasets generated across different SRT platforms, we first assess the reliability of SNPs derived from SRT data to ensure robust downstream inference. We then demonstrate that SPICE effectively integrates these modalities to deliver accurate and spatially coherent reconstruction of CNV landscapes and subclonal architecture, while maintaining excellent control of false discoveries. Together, SPICE provides a robust and effective solution for dissecting genomic heterogeneity in SRT studies of cancer.",
+      "authors": [
+        "Banerjee, K.",
+        "Langefeld, R. C.",
+        "Keller, E. T.",
+        "Zhou, X."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "SPICE：空間轉錄體學中拷貝數變異識別的穩健計算框架",
+      "summaryZh": "拷貝數變異（CNV）是腫瘤內異質性的主要驅動因素，表現為空間上有序且遺傳學上不同的細胞群體。SPICE是一種新型機率方法，能從空間轉錄體學（SRT）數據中識別體細胞拷貝數變異和等位基因特異性拷貝數（ASCN）譜。該方法的關鍵特點是整合了SRT數據中的多重互補資訊，包括基因表現、空間座標以及從轉錄組讀數推斷的雜合SNP，大幅提升拷貝數變異檢測的準確性與效能。在不同SRT平台上驗證後，SPICE能提供準確且空間連貫的拷貝數變異景觀和亞克隆結構重建，為癌症研究中的基因組異質性解析提供強大工具。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "copy-number-variation",
+        "cancer-heterogeneity",
+        "computational-biology",
+        "subclone-architecture"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.04.736492",
+      "title": "Direct comparison of CRISPR knockout and interference with Perturb-seq",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-04",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.04.736492v1",
+      "doi": "10.64898/2026.07.04.736492",
+      "abstract": "CRISPR knockout (CRISPRko) and CRISPR interference (CRISPRi) are two workhorse technologies for loss-of-function studies, yet direct comparisons between the two are scant relative to their widespread adoption. Here, we establish benchmarking libraries for Cas9-based CRISPRko and CRISPRi screens using Perturb-seq as the read-out. For both modalities, we observe consistent transcriptional signatures among cells with the same genes perturbed, strong evidence of on-target signal. We also examine tradeoffs between modalities: while CRISPRi guides demonstrate heightened rates of off-target activity, we also observe artifacts stemming from the cellular response to double-stranded breaks with the use of CRISPRko. The libraries and analyses presented here will be a useful benchmarking and de-risking resource for any group preparing for a large-scale Perturb-seq screen.",
+      "authors": [
+        "Drepanos, L. M.",
+        "Escude Velasco, B.",
+        "Chase, A.",
+        "Srikanth, S.",
+        "Gatzen, M.",
+        "Rickner, H. D.",
+        "Dubinsky, D.",
+        "Navia, A. W.",
+        "Winter, P. S.",
+        "Shibue, T.",
+        "Yates, K. B.",
+        "Doench, J. G."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "Perturb-seq",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "CRISPR knockout與干擾技術在Perturb-seq中的直接比較",
+      "summaryZh": "CRISPR knockout（CRISPRko）與CRISPR interference（CRISPRi）是 loss-of-function 研究中的兩大主力技術，但兩者之間的直接比較研究仍相對匱乏。本研究建立了以Perturb-seq為讀出方法的Cas9基礎CRISPRko與CRISPRi篩選基準資料庫，發現兩種技術都能產生一致的轉錄特徵，證實了on-target訊號的可靠性。同時研究也揭示了兩種技術的取捨：CRISPRi的脫靶活性較高，而CRISPRko則會因細胞對雙股DNA斷裂的反應而產生假象。這些基準資料庫與分析結果將成為任何規劃大規模Perturb-seq篩選實驗的重要參考資源。",
+      "topicTags": [
+        "crispr",
+        "perturb-seq",
+        "functional-genomics",
+        "screen",
+        "benchmarking"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.30.735555",
+      "title": "Unbalanced Perturbation Dynamics For Cell Fate Design",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-04",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.30.735555v1",
+      "doi": "10.64898/2026.06.30.735555",
+      "abstract": "Large-scale single-cell perturbation sequencing provides an unprecedented opportunity to construct virtual cells for the in silico simulation of cellular responses and the inverse design of optimal interventions. However, most perturbation-response models treat cellular responses primarily as mass-preserving shifts in transcriptomic state, whereas single-cell perturbation measurements are inherently unbalanced: the recovered endpoint population is shaped by technical sampling as well as biological perturbation-induced proliferation, apoptosis and selection. Here we introduce U-Pert, an unbalanced generative framework that learns condition- and context-dependent perturbation dynamics from unpaired single-cell snapshots. U-Pert jointly models transcriptomic state transitions and cell-number dynamics, enabling scalable and robust forward prediction of unseen perturbations and contexts, as well as inverse design to screen for desired genetic or pharmacological interventions that achieve user-defined transcriptomic or population-level outcomes. Across controlled simulations, genetic perturbation benchmarks, sciPlex3 drug responses and PBMC cytokine perturbations, U-Pert predicts unseen responses, captures both molecular and abundance changes, and performs inverse design for target gene-expression programs and cell-type compositions. These results show that cell abundance is an integral component of the perturbation phenotype, providing a mass-aware framework for virtual-cell modeling and perturbation cell fate design.",
+      "authors": [
+        "Peng, Q.",
+        "Wang, Y.",
+        "Li, J.",
+        "Wang, X.",
+        "Xiao, Y.",
+        "Zhou, P."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "非平衡擾動動態學：用於細胞命運設計的生成式框架",
+      "summaryZh": "單細胞擾動測序技術為虛擬細胞建構與干預設計提供了前所未有的機會，但現有模型多將細胞反應視為質量守恆的狀態轉移。本研究指出，單細胞擾動測量本質上是非平衡的，同時受到技術採樣與生物學過程（增殖、凋亡、篩選）的影響。研究者開發了U-Pert框架，能從未配對的單細胞快照中聯合建模轉錄組狀態轉換與細胞數量動態學，不僅能預測未知擾動與情境下的細胞反應，還能反向設計達到目標基因表達或細胞組成所需的遺傳或藥理學干預。這項研究證明細胞豐度是擾動表型不可或缺的組成部分，為虛擬細胞建模與細胞命運設計提供了具有質量感知能力的通用框架。",
+      "topicTags": [
+        "single-cell",
+        "perturbation-biology",
+        "generative-model",
+        "virtual-cell",
+        "cell-fate-design"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-75320-1",
+      "title": "Widespread controls of precipitation sensitivity on drought recovery of global forests",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-07-04T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-75320-1",
+      "doi": "10.1038/s41467-026-75320-1",
+      "abstract": "Forest recovery after drought is critical for ecosystem resilience under climate change. The authors show that intermediate precipitation sensitivity maximizes drought recovery, whereas climate-driven increases reduce recovery in many forests.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41467-026-75271-7",
+      "title": "The BRCA1-A complex restricts replication fork reversal-dependent DNA repair in ATM deficient cells",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-07-04T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-75271-7",
+      "doi": "10.1038/s41467-026-75271-7",
+      "abstract": "ATM kinase activity is required for cellular survival to replication fork damaging chemotherapies. Here the authors show that deficiency in the BRCA1-A complex promotes chemotherapy resistance of ATM mutated cells by restoring fork reversal to allow homologous recombination repair.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "BRCA1-A 複合體限制 ATM 缺陷細胞中依賴複製叉逆轉的 DNA 修復",
+      "summaryZh": "ATM 激酶活性對於細胞在面對複製叉損傷化療藥物時的存活至關重要。本研究發現 BRCA1-A 複合體的缺陷可透過恢復複製叉逆轉，使 ATM 突變細胞能夠進行同源重組修復，從而促進化療抗性。此發現揭示了 BRCA1-A 複合體在調控 DNA 修復途徑中的關鍵抑制角色，並闡明了 ATM 缺陷細胞如何繞過細胞死亡機制而產生化療抗藥性。這項研究對於開發針對 ATM 突變腫瘤的新型治療策略具有重要意義。",
+      "topicTags": [
+        "dna-repair",
+        "cancer-biology",
+        "brca1",
+        "atm",
+        "chemotherapy-resistance"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-75265-5",
+      "title": "Closed-loop readout of anterior insula high-gamma activity steers value-based decisions",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-07-04T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-75265-5",
+      "doi": "10.1038/s41467-026-75265-5",
+      "abstract": "Using a closed-loop intracranial brain–computer interface, the authors demonstrate that spontaneous neural fluctuations can causally shape value-based decisions, highlighting the role of ongoing brain activity in human choice variability.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "閉環腦機介面解讀前島葉活動 操控人類價值決策",
+      "summaryZh": "本研究利用閉環式顱內腦機介面技術，即時解讀前島葉皮質的高頻伽馬活動，並成功證明自發性神經波動能夠因果性地影響人類的價值導向決策。這項發現挑戰了傳統觀點，顯示大腦的隨時活動並非無關緊要的雜訊，而是能實質塑造我們的選擇行為。研究結果為理解人類決策變異性的神經機制提供了重要依據，對未來神經調控治療與腦機介面技術的發展具有深遠影響。",
+      "topicTags": [
+        "brain-computer-interface",
+        "decision-making",
+        "neuroscience",
+        "neural-activity",
+        "insula"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-75102-9",
+      "title": "Glutamatergic signaling underlies brain structural organization for mathematical and reading abilities in children",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-07-04T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-75102-9",
+      "doi": "10.1038/s41467-026-75102-9",
+      "abstract": "Across two independent child cohorts, this study shows that glutamatergic signaling, particularly NMDA receptor distribution, shows reproducible spatial correspondence with brain structural organization supporting math and reading abilities.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "穀氨酸訊號調控兒童數學與閱讀能力的大腦結構組織",
+      "summaryZh": "本研究跨兩個獨立兒童世代發現，穀氨酸神經傳遞，特別是NMDA受體的分佈，與支持數學和閱讀能力的大腦結構組織具有可重複的空間對應關係。這項發現揭示了穀氨酸訊號在兒童認知發展中的關鍵角色，並提供神經生物學層面的證據，說明語言與數學能力可能共享相似的大腦網絡基礎。由於結果在兩個獨立世代中獲得驗證，研究結論具有高度可信度與可推廣性。此研究為理解學習障礙的神經機制提供新視角，未來可能應用於發展針對性的教育介入策略。",
+      "topicTags": [
+        "neuroscience",
+        "glutamate",
+        "brain-development",
+        "learning",
+        "children",
+        "nmda-receptor"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-74822-2",
+      "title": "A likelihood-based method for identifying replay from spike sequences",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-07-04T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74822-2",
+      "doi": "10.1038/s41467-026-74822-2",
+      "abstract": "How the brain replays past experiences beyond spatial memories remains unclear. Here the authors introduce a new method based on neural firing order, revealing structured replay in both the hippocampus and visual cortex.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "突破空間記憶框架：利用放電順序識別神經回放新方法",
+      "summaryZh": "以往研究認為神經回放主要發生在空間記憶情境中，本研究提出一種基於 likelihood 的新方法，透過分析神經放電順序來識別回放現象。研究結果顯示，不僅海馬體，視覺皮質也會出現結構化的回放活動，挑戰了回放僅限於空間導航的傳統觀點。此方法可應用於各種神經放電序列分析，為理解大腦如何重現過去經驗提供新工具。",
+      "topicTags": [
+        "neuroscience",
+        "spike-sequences",
+        "replay",
+        "likelihood-method",
+        "hippocampus"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 13,
+      "passedByScope": 5,
+      "llmClassified": 8,
+      "llmYes": 5,
+      "llmNotSure": 0,
+      "llmNo": 3,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 10,
+      "excluded": 3
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 10,
+      "llmTagged": 10,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 10,
+      "candidates": 9,
+      "featured": 9,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 4,
+      "preprint": 5,
+      "skip": 1
+    },
+    "summarize": {
+      "requested": 9,
+      "llmSummarized": 9,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-75400-2",
+        "title": "Proton shuttling at electrochemical interfaces under alkaline hydrogen evolution",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-07-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-75400-2",
+        "doi": "10.1038/s41467-026-75400-2",
+        "abstract": "Alkaline water electrolysis is a cost-effective route to hydrogen production, but its mechanism remains unclear at the molecular level. Here, the authors report an in-situ spectroscopic observation of proton shuttling in hydration shells of cations that can improve water dissociation.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-75146-x",
+        "title": "Dielectric-dependent hybrid functional based on meta-GGA",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-07-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-75146-x",
+        "doi": "10.1038/s41467-026-75146-x",
+        "abstract": "A density functional is proposed that combines a modern treatment of semilocal interactions with an exact constraint for long-range dielectric screening. The method achieves gold-standard accuracy for energy levels while being fast and user-friendly.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-75199-y",
+        "title": "North Pacific meltwater weakens the Atlantic Meridional Overturning Circulation and preconditions Heinrich Stadial 1",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-07-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-75199-y",
+        "doi": "10.1038/s41467-026-75199-y",
+        "abstract": "This study shows that Cordilleran ice discharge to the North Pacific may have triggered AMOC weakening during Heinrich Stadials, potentially destabilizing the European and Laurentide Ice Sheets and leading to Heinrich events.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
