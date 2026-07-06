@@ -1,0 +1,126 @@
+{
+  "reportDate": "2026-07-05",
+  "generatedAt": "2026-07-06T13:40:24.452Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.07.01.735754",
+      "title": "Deciphering the Tumor Microenvironment: An Integrated Single-Cell RNA-Seq and AI Framework for Novel Biomarker and Therapeutic Target Discovery in Melanoma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-05",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.01.735754v1",
+      "doi": "10.64898/2026.07.01.735754",
+      "abstract": "Background: Melanoma represents a highly immunogenic and therapeutically challenging malignancy. The complex cellular ecosystem of the tumor microenvironment (TME) acts as a critical driver of immune evasion, patient prognosis, and treatment resistance. Traditional bulk sequencing often fails to resolve these high-resolution intercellular dynamics. This investigation presents an end-to-end explainable machine learning and network biology framework designed to deconstruct TME single-cell heterogeneity, discover novel candidate biomarkers, and map actionable cell-cell communication networks. Methodology: High-quality single-cell RNA sequencing (scRNA-seq) expression data from melanoma lesions (GSE115978) were processed using a multi-phase computational workflow. Following cellular filtration, library size normalisation, and highly variable gene (HVG) selection, cells were partitioned using unsupervised Leiden clustering and annotated via signature gene scoring matrix methods (Wolf et al., 2018; Traag et al., 2019). An optimal gradient-boosted tree ensemble classifier (XGBoost) was constructed for cross-compartment biomarker screening (Chen & Guestrin, 2016), interpreted using SHAP (SHapley Additive exPlanations) values (Lundberg & Lee, 2017), and augmented with a PyTorch deep autoencoder. Downstream systems analyses included biological pathway enrichment via gseapy (Kuleshov et al., 2016), ligand-receptor communication mapping via LIANA (Efremova et al., 2020; Dimitrov et al., 2022), and Pearson co-expression network profiling. Cross-cohort validation was conducted on an independent melanoma cohort (GSE72056) (Tirosh et al., 2016b), and prognostic utility was clinically validated using empirical patient survival data from the TCGA-SKCM cohort (TCGA Research Network, 2015; Davidson-Pilon, 2019). Results: Unsupervised Leiden clustering partitioned the cellular atlas into seven major structural and immunological compartments: Melanoma/Tumor, T-Cells, B-Cells, Macrophages, NK Cells, Endothelial cells, and Cancer-Associated Fibroblasts (CAFs). The trained XGBoost model prioritized CD79A, MLANA, LYZ, MFAP4, and CDH5 as top candidate biomarkers across distinct microenvironmental niches. SHAP explainability analysis confirmed MLANA and S100B as key positive predictors of tumor cell identity, while highlighting a bidirectional distribution for B2M linked to antigen presentation downregulation. Functional enrichment mapped Coagulation and Epithelial-Mesenchymal Transition (EMT) as highly dysregulated pathways driving the malignant state. Cell-cell communication profiling inferred highly significant SERPINE1 signalling axes to LRP1 and PLAUR receptors. SPARC was identified as the central co-expression hub regulator. Cross-cohort screening in GSE72056 confirmed biomarker stability across independent patient profiles. Empirical clinical survival validation within the TCGA-SKCM cohort (n=314) demonstrated that heightened expression of CD79A correlates with a statistically significant survival advantage (Log-Rank p = 4.4202 * 10-3), extending median overall survival from 26.7 months to 44.8 months. Conclusion: This computational pipeline systematically resolves TME heterogeneity, revealing a robust biomarker signature centred on CD79A and MLANA, alongside SERPINE1-driven immune-stromal crosstalk. The discovery of the protective prognostic role of CD79A links single-cell immune networks directly to clinical patient outcomes, providing a reproducible roadmap for anti-tumour immune engagement and immunotherapeutic stratification. Keywords: Melanoma, Tumor Microenvironment, Single-Cell RNA-Seq, scRNA-seq, XGBoost, SHAP, LIANA, TCGA-SKCM, CD79A, SPARC, SERPINE1, Biomarker Discovery, Leiden Clustering",
+      "authors": [
+        "Ostwal, R.",
+        "Natarajan, E."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "biology",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "解讀黑色素瘤腫瘤微環境：單細胞RNA‑seq與AI整合框架",
+      "summaryZh": "黑色素瘤屬於高度免疫原性且治療挑戰大的惡性腫瘤，其腫瘤微環境（TME）的複雜細胞生態系統是免疫逃逸、預後不良與治療抗性的關鍵驅動因素。傳統的大量測序往往無法解析這些高解析度的細胞間動態，而本研究提出一套端到端可解釋的機器學習與網絡生物學框架，結合單細胞RNA‑seq（scRNA‑seq）資料，系統性地解構TME的單細胞異質性。該框架利用XGBoost分類器、SHAP解釋與深度自編碼器篩選候選生物標記，並透過路徑富集、配體‑受體通訊圖譜及共表達網絡分析揭示腫瘤與免疫細胞間的交互作用。研究在多個獨立世代（GSE115978、GSE72056、TCGA‑SKCM）中驗證，發現七個主要細胞區室（黑色素瘤細胞、T細胞、B細胞、巨噬細胞等），提供新穎的生物標記與治療靶點，有望改善黑色素瘤患者的精準治療與預後評估。",
+      "topicTags": [
+        "single-cell",
+        "melanoma",
+        "tumor-microenvironment",
+        "machine-learning",
+        "biomarker"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.30.735390",
+      "title": "Tissue tearing degrades optimal-transport and diffeomorphic registration of spatial transcriptomics beyond displacement magnitude: a multi-seed deformation benchmark and a supervised graph cross-attention proof-of-concept.",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-05",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.30.735390v1",
+      "doi": "10.64898/2026.06.30.735390",
+      "abstract": "Background. Three-dimensional reconstruction from serial spatial-transcriptomics (ST) sections requires registering adjacent slices, but physical sectioning introduces tears -- discontinuous, non-isometric deformations. Leading methods rely on priors that tears strain: PASTE/PASTE2 use Fused Gromov-Wasserstein optimal transport (OT), which assumes near-isometric preservation of within-slice distances, while STalign and CODA use diffeomorphic (LDDMM) mapping, which cannot change tissue topology. Learned-deformation ST methods are emerging (STaCker, INST-Align), but OT/diffeomorphic behaviour under tearing has not been systematically characterised. Methods. On the spatialLIBD human DLPFC Visium dataset (Maynard et al., 2021; 3 donors), we build a controlled benchmark -- known smooth warps, single-block rigid tears (expression unchanged), and an identity self-control -- at severities of 0-8 spot pitches, scored against an approximate array-position ground truth (~8 px residual). We evaluate three unsupervised incumbents -- PASTE2 (OT, over five warp seeds), STalign (diffeomorphic LDDMM), and GPSA (Gaussian-process warp) -- add a magnitude-matched smooth control, and test a minimal graph model, Sutura (per-slice graph encoder -> cross-attention correspondence -> per-spot displacement; spatial coupling is local kNN message passing only, no explicit smoothness penalty). Sutura is trained supervised on each tissue's ground truth; all baselines are unsupervised. Generalisation is assessed by leave-one-donor-out across all three donors. Results. OT registration is robust to smooth warps but degrades reproducibly under tearing: nearest-correspondence (argmax) error 722 +/- 5 -> 855 +/- 27 px and layer accuracy 64.9% -> 60.5% (mean +/- 95% CI, 5 seeds). The effect is not merely displacement magnitude: at a matched mean displacement (~2000 px), a smooth warp costs 769 px / 60.2% accuracy whereas a tear costs 863 px / 57.5% -- an extra ~100 px and ~3 points attributable to the discontinuity. STalign (LDDMM) and GPSA (GP warp) both collapse at severe tears (866 px and 931 px respectively), confirming tear-collapse is field-wide across three independent method families. Trained and evaluated on the same donor, Sutura fits torn-tissue correspondence to a median 99 -> 106 px (5-seed), but under leave-one-donor-out is 1236 +/- 2 -> 1584 +/- 52 px -- approximately 1.8-3.6x worse than PASTE2 on every unseen donor. A contrastive correspondence loss halves the gap on two of three donors (to 816 -> 949 and 749 -> 826 px, approximately 1.1-1.2x PASTE2 at worst-case tear) but is modest on the third and never surpasses PASTE2. Conclusion. Tearing is a real, magnitude-controlled failure mode of all three incumbent method classes. A learned model fits it in-sample but donor-invariant generalisation remains open. The contrastive fix roughly halves the held-out gap on two of three donors and nears PASTE2 at worst-case tear, but does not surpass it: donor-invariance is improved, not solved. The durable contribution is the benchmark, the characterisation across three method families, and an honest negative with a diagnosed mechanism.",
+      "authors": [
+        "Maniar, R. K.",
+        "Lee, S. G.",
+        "Lee, S. S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "Visium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "撕裂組織破壞空間轉錄組配準：超越位移幅度的降質效應",
+      "summaryZh": "三維空間轉錄組重建需將連續組織切片配準，但切片過程產生的撕裂會造成非等距、非連續的變形。本研究在人類DLPFC Visium資料集上建立受控基準，系統性評估現有主流方法（PASTE2最佳傳輸、STalign微分同胚映射、GPSA高斯過程）在組織撕裂下的表現，發現最佳傳輸配準的誤差不僅隨位移增加，更因撕裂而額外惡化約100像素、準確率下降約3個百分點。為此提出Sutura模型，採用圖神經網路編碼器搭配跨注意力機制對應切片間的空間位置，透過局部k近鄰訊息傳遞實現空間耦合。研究成果揭示組織撕裂對現有配準方法的獨特挑戰，並提供可學習式對應的新方向。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "registration",
+        "optimal-transport",
+        "graph-neural-networks",
+        "bioinformatics"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 2,
+      "passedByScope": 2,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 2,
+      "excluded": 0
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 2,
+      "llmTagged": 2,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 2,
+      "candidates": 2,
+      "featured": 2,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 0,
+      "preprint": 2,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 2,
+      "llmSummarized": 2,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  }
+}
