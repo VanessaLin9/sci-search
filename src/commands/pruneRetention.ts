@@ -1,3 +1,4 @@
+import { fileURLToPath } from "node:url";
 import { defaultReportDateInTaipei } from "../date.js";
 import {
   applyRetentionPrune,
@@ -7,13 +8,13 @@ import {
 
 const DEFAULT_RETENTION_DAYS = 30;
 
-type CliOptions = {
+export type PruneRetentionCliOptions = {
   baseDate: string;
   days: number;
   dryRun: boolean;
 };
 
-function parseCliArgs(argv: string[]): CliOptions {
+export function parsePruneRetentionCliArgs(argv: string[]): PruneRetentionCliOptions {
   let baseDate: string | undefined;
   let days = DEFAULT_RETENTION_DAYS;
   let dryRun = false;
@@ -70,23 +71,42 @@ export function logRetentionPrunePlan(plan: RetentionPrunePlan): void {
   }
 }
 
-async function main() {
-  const cli = parseCliArgs(process.argv.slice(2));
-  const plan = await scanAndPlanRetentionPrune({
+export async function runPruneRetention(
+  cli: PruneRetentionCliOptions,
+  deps?: {
+    scan?: typeof scanAndPlanRetentionPrune;
+    apply?: typeof applyRetentionPrune;
+    log?: typeof logRetentionPrunePlan;
+  },
+): Promise<{ plan: RetentionPrunePlan; applied: boolean }> {
+  const scan = deps?.scan ?? scanAndPlanRetentionPrune;
+  const apply = deps?.apply ?? applyRetentionPrune;
+  const log = deps?.log ?? logRetentionPrunePlan;
+
+  const plan = await scan({
     baseDate: cli.baseDate,
     days: cli.days,
   });
 
-  logRetentionPrunePlan(plan);
+  log(plan);
+
   if (cli.dryRun) {
     console.log("[retention] dry-run: no files removed");
-    return;
+    return { plan, applied: false };
   }
 
-  await applyRetentionPrune(plan);
+  await apply(plan);
+  return { plan, applied: true };
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+async function mainFromArgv() {
+  const cli = parsePruneRetentionCliArgs(process.argv.slice(2));
+  await runPruneRetention(cli);
+}
+
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  mainFromArgv().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}
