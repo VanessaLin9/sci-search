@@ -10,14 +10,20 @@ const DEFAULT_RETENTION_DAYS = 30;
 type CliOptions = {
   baseDate: string;
   days: number;
+  dryRun: boolean;
 };
 
 function parseCliArgs(argv: string[]): CliOptions {
   let baseDate: string | undefined;
   let days = DEFAULT_RETENTION_DAYS;
+  let dryRun = false;
 
   for (let index = 0; index < argv.length; index += 1) {
     const arg = argv[index];
+    if (arg === "--dry-run") {
+      dryRun = true;
+      continue;
+    }
     if (arg === "--date" && argv[index + 1]) {
       baseDate = argv[index + 1];
       index += 1;
@@ -40,6 +46,7 @@ function parseCliArgs(argv: string[]): CliOptions {
   return {
     baseDate: baseDate ?? defaultReportDateInTaipei(),
     days,
+    dryRun,
   };
 }
 
@@ -71,6 +78,11 @@ async function main() {
   });
 
   logRetentionPrunePlan(plan);
+  if (cli.dryRun) {
+    console.log("[retention] dry-run: no files removed");
+    return;
+  }
+
   await applyRetentionPrune(plan);
 }
 
