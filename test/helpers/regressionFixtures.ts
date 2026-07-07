@@ -35,4 +35,11 @@ export const REGRESSION_EXPECTATIONS: Record<string, RegressionExpectations> = {
     overflow: 0,
     skip: 0,
   },
+  "2026-06-10": {
+    reportDate: "2026-06-10",
+    paperCount: 64,
+    featured: 12,
+    overflow: 40,
+    skip: 12,
+  },
 };
