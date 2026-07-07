@@ -14,6 +14,7 @@
     "test:types": "tsc --noEmit -p tsconfig.test.json",
     "export-regression-fixture": "node --import tsx src/commands/exportRegressionFixture.ts",
     "snapshot-rss": "node --import tsx src/commands/snapshotRss.ts",
+    "prune-retention": "node --import tsx src/commands/pruneRetention.ts",
     "test": "node --import tsx --test 'test/**/*.test.ts'",
     "test:e2e": "node --import tsx --test test/e2e/*.test.ts",
     "test:regression": "node --import tsx --test test/regression/*.test.ts",
