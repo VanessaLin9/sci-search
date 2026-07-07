@@ -1,3 +1,4 @@
+import type { Dirent } from "node:fs";
 import { readdir, rm } from "node:fs/promises";
 import { join } from "node:path";
 import { format, isValid, parseISO, subDays } from "date-fns";
@@ -74,15 +75,34 @@ export function planRetentionPruneFromEntries(options: {
   };
 }
 
-async function listDirectoryEntries(root: string): Promise<string[]> {
+async function listDirectoryEntries(root: string): Promise<Dirent[]> {
   try {
-    return await readdir(root);
+    return await readdir(root, { withFileTypes: true });
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === "ENOENT") {
       return [];
     }
     throw error;
   }
+}
+
+async function listProcessedDateLabels(root: string): Promise<string[]> {
+  const entries = await listDirectoryEntries(root);
+  return entries
+    .filter((entry) => entry.isDirectory() && isRetentionDateLabel(entry.name))
+    .map((entry) => entry.name);
+}
+
+async function listArchiveDateLabels(root: string): Promise<string[]> {
+  const entries = await listDirectoryEntries(root);
+  return entries
+    .map((entry) => {
+      if (!entry.isFile()) {
+        return null;
+      }
+      return archiveDateLabelFromFileName(entry.name);
+    })
+    .filter((entry): entry is string => entry !== null);
 }
 
 function archiveDateLabelFromFileName(fileName: string): string | null {
@@ -103,13 +123,8 @@ export async function scanAndPlanRetentionPrune(options: {
   const processedRoot = options.processedRoot ?? join("data", "processed");
   const archiveRoot = options.archiveRoot ?? join("docs", "archive");
 
-  const processedEntries = await listDirectoryEntries(processedRoot);
-  const archiveEntries = await listDirectoryEntries(archiveRoot);
-
-  const processedDateLabels = processedEntries.filter((entry) => isRetentionDateLabel(entry));
-  const archiveDateLabels = archiveEntries
-    .map((entry) => archiveDateLabelFromFileName(entry))
-    .filter((entry): entry is string => entry !== null);
+  const processedDateLabels = await listProcessedDateLabels(processedRoot);
+  const archiveDateLabels = await listArchiveDateLabels(archiveRoot);
 
   return planRetentionPruneFromEntries({
     baseDate: options.baseDate,

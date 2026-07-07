@@ -85,6 +85,33 @@ describe("daily output retention", () => {
     }
   });
 
+  it("scanAndPlanRetentionPrune only accepts processed directories and archive files", async () => {
+    const root = await mkdtemp(join(tmpdir(), "paper-retention-"));
+    const processedRoot = join(root, "data", "processed");
+    const archiveRoot = join(root, "docs", "archive");
+
+    try {
+      await mkdir(processedRoot, { recursive: true });
+      await mkdir(archiveRoot, { recursive: true });
+      await mkdir(join(processedRoot, "2026-06-06"), { recursive: true });
+      await writeFile(join(processedRoot, "2026-06-05"), "not a directory");
+      await writeFile(join(archiveRoot, "2026-06-06.html"), "<html></html>");
+      await mkdir(join(archiveRoot, "2026-06-05.html"), { recursive: true });
+
+      const plan = await scanAndPlanRetentionPrune({
+        baseDate: "2026-07-06",
+        days: 30,
+        processedRoot,
+        archiveRoot,
+      });
+
+      assert.deepEqual(plan.processedDatesToRemove, ["2026-06-06"]);
+      assert.deepEqual(plan.archiveDatesToRemove, ["2026-06-06"]);
+    } finally {
+      await rm(root, { recursive: true, force: true });
+    }
+  });
+
   it("applyRetentionPrune removes planned directories and archive files only", async () => {
     const root = await mkdtemp(join(tmpdir(), "paper-retention-"));
     const processedRoot = join(root, "data", "processed");
