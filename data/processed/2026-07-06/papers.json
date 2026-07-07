@@ -1,0 +1,649 @@
+{
+  "reportDate": "2026-07-06",
+  "generatedAt": "2026-07-07T12:28:56.947Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03142-6",
+      "title": "A comprehensive benchmark of sequence-based subcellular localization predictors for human proteins",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-07-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03142-6",
+      "doi": "10.1038/s41592-026-03142-6",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "人類蛋白質序列-based亞細胞定位預測工具的綜合基準測試",
+      "summaryZh": "蛋白質的亞細胞定位決定其功能與交互作用，精確預測定位對生物學研究至關重要。本研究系統性地評估了多種基於序列的亞細胞定位預測工具，涵蓋廣泛的人類蛋白質資料集。研究發現現有工具在預測不同細胞區室的準確度上存在顯著差異，且面臨著對低豐度或新發現定位預測能力不足的挑戰。這些基準測試結果為研究人員選擇適合的工具提供實用指引，並為未來開發更精準的定位預測演算法奠定基礎。",
+      "topicTags": [
+        "protein-localization",
+        "bioinformatics",
+        "machine-learning",
+        "benchmarking",
+        "subcellular-localization"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03122-1",
+      "title": "Unravelling the cause of an unprecedented harmful algal bloom in South Australia",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-07-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03122-1",
+      "doi": "10.1038/s41559-026-03122-1",
+      "abstract": "A marine harmful algal bloom off coastal South Australia in 2025 persisted for more than a year, and affected an area of at least 20,000 km2, causing the deaths of millions of marine animals and affecting human health. We identified the source of the toxicity as Karenia cristata, which produces the neurotoxin brevetoxin.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "解開南澳史無前例有害藻華成因",
+      "summaryZh": "2025年，南澳沿海爆發史無前例的有害藻華，持續超過一年，影響範圍達兩萬平方公里以上，造成數百萬海洋動物死亡，並對人類健康構成威脅。研究團隊確認此次事件的有毒藻種為克氏卡羅藻（Karenia cristata），該藻種會產生神經毒素brev etoxin。此研究首次完整揭示此物種引發大規模有害藻華的成因，對未來海洋生態監測與公共衛生防護具有重要意義。",
+      "topicTags": [
+        "harmful-algal-bloom",
+        "marine-toxicology",
+        "Karenia",
+        "brev etoxin",
+        "South-Australia",
+        "marine-ecosystem"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03136-9",
+      "title": "Rethinking temperate coral restoration beyond tropical paradigms",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-07-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03136-9",
+      "doi": "10.1038/s41559-026-03136-9",
+      "abstract": "Rethinking temperate coral restoration beyond tropical paradigms",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "跳脫熱帶典範：重新思考溫帶珊瑚復育",
+      "summaryZh": "溫帶珊瑚生態系統長期被忽視，相較於廣受關注的熱帶珊瑚，其復育研究相對匱乏。傳統珊瑚復育策略多以熱帶珊瑚為範本，但溫帶珊瑚面臨不同的環境條件與生態壓力，可能需要截然不同的管理方式。本研究挑戰現有熱帶典範，探討適用於溫帶水域的珊瑚復育新途徑，對提升海洋生物多樣性保育成效具有重要意義。此類研究有助於完善全球珊瑚礁生態系的整體保護策略。",
+      "topicTags": [
+        "coral-restoration",
+        "marine-conservation",
+        "temperate-ecosystems",
+        "ecology",
+        "biodiversity"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03118-x",
+      "title": "Observed core-to-transition biodiversity gradient may be a statistical artefact",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-07-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03118-x",
+      "doi": "10.1038/s41559-026-03118-x",
+      "abstract": "Observed core-to-transition biodiversity gradient may be a statistical artefact",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "觀測到的核心至過渡區生物多樣性梯度可能是統計假象",
+      "summaryZh": "這項研究挑戰了長期以來關於生物多樣性從核心區到過渡區呈現梯度變化的觀點。研究團隊指出，過去觀察到的生物多樣性梯度模式可能並非真實的生態現象，而是統計方法所產生的假象。這一發現對生物地理學和保育規劃具有重要影響，因為許多保育策略建立在這些梯度模式的假設之上。若此統計假象的論點成立，將促使科學家重新檢視並修正生物多樣性分布的研究方法與結論。",
+      "topicTags": [
+        "biodiversity",
+        "biogeography",
+        "statistical-methods",
+        "ecology",
+        "conservation"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03115-0",
+      "title": "A catastrophic marine mortality event caused by a complex algal bloom including the brevetoxin producer Karenia cristata",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-07-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03115-0",
+      "doi": "10.1038/s41559-026-03115-0",
+      "abstract": "Genomic characterization and toxicity assays identify Karenia cristata as a brevetoxin-producing species that is the dominant component of the prolonged microalgal bloom causing mass marine mortality in South Australia.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "複雜藻華中產生短裸甲藻毒素的卡羅藻為澳洲南部海洋生物大量死亡事件的主因",
+      "summaryZh": "本研究透過基因體分析與毒性測試，確認卡羅藻（Karenia cristata）為產生短裸甲藻毒素的物種，並且是造成澳洲南部海域長期微藻華引發海洋生物大量死亡的關鍵成分。此發現解開了該地區海洋生物集體死亡的謎團，並首次將卡羅藻確認為危險性藻華的主要貢獻者。這項研究凸顯了複雜藻華中特定有害藻種的生態與毒理學角色，對於海洋生態監測與有害藻華預警系統的建立具有重要參考價值。",
+      "topicTags": [
+        "harmful-algal-bloom",
+        "marine-ecology",
+        "brevetoxin",
+        "Karenia",
+        "marine-mortality"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03233-x",
+      "title": "Quantum computing in transition",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-07-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03233-x",
+      "doi": "10.1038/s41587-026-03233-x",
+      "abstract": "Hybrid quantum–classical computers will achieve quantum advantage in biotechnology, bridging the time until a full quantum computer becomes available.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "量子運算的轉型時刻",
+      "summaryZh": "量子運算正從理論走向實際應用階段，混合量子-傳統電腦架構被視為過渡期的重要方案。本文探討生技領域如何率先實現量子優勢，為製藥研發、蛋白質模擬等應用帶來突破性可能。隨著技術成熟，全量子電腦的實現指日可待，將為生技產業開創新局。",
+      "topicTags": [
+        "quantum-computing",
+        "biotechnology",
+        "hybrid-systems",
+        "drug-discovery",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02020-9",
+      "title": "Addendum: In situ architecture of the human prohibitin complex",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-07-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02020-9",
+      "doi": "10.1038/s41556-026-02020-9",
+      "abstract": "Addendum: In situ architecture of the human prohibitin complex",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "勘誤：人類 prohibitin 複合體的原位結構",
+      "summaryZh": "本篇為先前發表之人類 prohibitin 複合體原位結構研究的勘誤與補充文獻。Prohibitin 複合體廣泛存在於粒線體內膜，參與調控細胞能量代謝、細胞凋亡及老化等關鍵生理過程。此勘誤更新了原始結構模型，可能涉及蛋白質複合體的組裝方式或構象細節的修正，對於理解其在細胞訊號傳導與粒線體功能維持中的分子機制具有重要參考價值。",
+      "topicTags": [
+        "structural-biology",
+        "protein-complex",
+        "mitochondria",
+        "cryo-et",
+        "cell-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-01981-1",
+      "title": "CD44 restricts EGFR mobility to polarize cytoskeletal signalling modules driving bleb-based migration",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-07-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-01981-1",
+      "doi": "10.1038/s41556-026-01981-1",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "CD44限制EGFR流動性以極化細胞骨架信號 驅動足體型細胞遷移",
+      "summaryZh": "細胞遷移是發育、傷口癒合及癌症轉移等關鍵生理病理過程的基礎。本研究揭示了細胞表面受體CD44如何透過限制表皮生長因子受體（EGFR）的流動性，來極化細胞骨架信號模組，進而驅動足體型遷移這種常見於癌細胞的移動方式。這項發現闡明了細胞極性建立的分子機制，並確認CD44-EGFR複合體在調控細胞遷移方向中的關鍵角色。由於足體型遷移與腫瘤侵襲及轉移密切相關，此研究為開發抑制癌症轉移的治療策略提供了重要的新靶點。",
+      "topicTags": [
+        "cell-migration",
+        "cancer-biology",
+        "cell-signaling",
+        "cytoskeleton",
+        "membrane-proteins"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-01979-9",
+      "title": "Evolutionarily conserved short linear motifs drive actin filament binding",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-07-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-01979-9",
+      "doi": "10.1038/s41556-026-01979-9",
+      "abstract": "Paraschiakos, Yuan et al., using a computational pipeline, identify the short linear actin filament-binding motif (SFM) as an evolutionarily conserved actin filament-binding motif present in 103 human proteins.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "演化保守的短線性模體驅動肌動蛋白絲結合",
+      "summaryZh": "本研究發現了一個演化上高度保守的短線性肌動蛋白絲結合模體（SFM），存在於103種人類蛋白質中。研究團隊透過計算生物學方法，成功識別出這個關鍵的蛋白質結合模體，揭示了細胞骨架蛋白與肌動蛋白絲相互作用的普遍機制。此發現闡明了多種細胞功能中蛋白質與肌動蛋白絲結合的分子基礎，對理解細胞運動、胞分裂及訊號傳導等基本生物過程具有重要意義。",
+      "topicTags": [
+        "actin",
+        "short-linear-motif",
+        "cytoskeleton",
+        "protein-binding",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02583-7",
+      "title": "Exhausted CD8+ T cell subsets differ a TAD",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-07-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02583-7",
+      "doi": "10.1038/s41590-026-02583-7",
+      "abstract": "Lineage choices that maintain and diversify exhausted CD8+ T cells under chronic antigen exposure are driven by epigenetic rewiring. CTCF-mediated spatial chromatin reorganization is shown to regulate subset-specific architecture and gene expression programs, guiding differentiation of stem-like and effector exhausted CD8+ T cells.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "耗竭性CD8+ T細胞亞群在TAD結構上的差異",
+      "summaryZh": "本研究揭示了慢性抗原持續刺激下，耗竭性CD8+ T細胞如何透過表觀遺傳重組來維持與多樣化其細胞譜系。研究發現CTCF介導的空間染色質重構能調控亞群特異性的染色質架構與基因表現程式，進而引導幹細胞樣與效應型耗竭性CD8+ T細胞的分化。此發現不僅闡明了T細胞耗竭的分子調控機制，也為慢性感染與癌症的免疫治療策略提供了新的分子標的與理論基礎。",
+      "topicTags": [
+        "t-cell-exhaustion",
+        "epigenetics",
+        "chromatin-architecture",
+        "ctcf",
+        "immune-regulation"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02578-4",
+      "title": "Mapping self-associating chromatin hubs identifies Id proteins as key determinants of exhausted CD8+ T cell fate",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-07-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02578-4",
+      "doi": "10.1038/s41590-026-02578-4",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "解析自我關聯染色質樞紐揭示Id蛋白為耗竭型CD8+ T細胞命運的關鍵決定因子",
+      "summaryZh": "CD8+ T細胞在慢性病毒感染和腫瘤微環境中會逐漸喪失功能，進入所謂的「耗竭」狀態，這是免疫治療效果受限的主要原因之一。本研究運用高解析度染色質構象捕捉技術，系統性地繪製了耗竭型CD8+ T細胞中自我關聯的染色質樞紐結構，並發現Id蛋白家族在調控此類細胞命運決定中扮演關鍵角色。透過操控Id蛋白的表現，研究者能夠影響T細胞的耗竭進程，為逆轉細胞功能障礙提供新策略。這些發現不僅深化了我們對三維基因組結構調控免疫細胞命運的理解，更為癌症免疫療法和慢性感染治療開闢了嶄新的分子靶點。",
+      "topicTags": [
+        "t-cell-exhaustion",
+        "chromatin-architecture",
+        "immunotherapy",
+        "cancer-immunology",
+        "gene-regulation"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02585-5",
+      "title": "Exhausted CD8+ T cell fate is programmed by dynamic CTCF-mediated enhancer activation and invariant CTCF-imposed barriers",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-07-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02585-5",
+      "doi": "10.1038/s41590-026-02585-5",
+      "abstract": "Xue and colleagues show that the chromatin regulator CTCF balances stemness preservation and effector differentiation to specify CD8+ TPEX versus CD8+ TEX_EFF cell fate decisions.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "CTCF調控耗竭性CD8+ T細胞命運：動態增強子活化與固定屏障的平衡",
+      "summaryZh": "耗竭性CD8+ T細胞是慢性感染和腫瘤中免疫反應受損的關鍵因素。本研究揭示染色質調節因子CTCF如何透過動態調控增強子活化與建立基因表現屏障，平衡幹細胞樣前體（TPEX）與效應細胞（TEX_EFF）的命運決定。這項發現闡明了T細胞耗竭的分子調控機制，為改善癌症免疫治療和對抗慢性病毒感染提供重要的理論基礎。",
+      "topicTags": [
+        "t-cell-exhaustion",
+        "ctcf",
+        "enhancer-regulation",
+        "cancer-immunology",
+        "chromatin"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02415-2",
+      "title": "Non-canonical gene amplifications facilitate adaptive evolution in bacteria",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-07-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02415-2",
+      "doi": "10.1038/s41564-026-02415-2",
+      "abstract": "Transposon-associated amplifications are dominated by a previously underappreciated architecture, where the transposon is found only between, not flanking, the amplicons. These amplifications facilitate the evolution of bacteria and their adaptation to antibiotics.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "非典型基因擴增促進細菌適應性演化"
+    },
+    {
+      "id": "10.1038/s41564-026-02410-7",
+      "title": "Identification of genetic markers of quinine partial resistance in Plasmodium falciparum",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-07-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02410-7",
+      "doi": "10.1038/s41564-026-02410-7",
+      "abstract": "A genetic cross of Plasmodium falciparum parasites revealed that quinine resistance is polygenic and is associated with mutations in transporter proteins on chromosome 7 (PfCRT and DMT1) and a metalloprotease on chromosome 12 (FtsH1), highlighting key markers for clinical surveillance.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "識別瘧原蟲對奎寧部分抗藥性的遺傳標記"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003894",
+      "title": "Sequential neural dynamics underlie unconscious integration and conscious perception of visual stimuli",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-06T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003894",
+      "doi": "10.1371/journal.pbio.3003894",
+      "abstract": "In some forms of postdictive phenomena, later events influence the perception of earlier ones, suggesting that conscious perception may be preceded by extended periods of unconscious processing. An example is the Sequential Metacontrast (SQM) paradigm, in which vernier offsets are unconsciously integrated over several hundred milliseconds before conscious perception. Obviously, the integrated percept can only emerge after each individual element in the stream has been processed. Thus, the SQM provides a unique opportunity to dissociate unconscious from conscious stages of visual processing, as these stages are well separated in time. Using electroencephalography (EEG) recordings in human participants during the SQM, we identified two distinct stages of neural activity: an early occipital EEG activity pattern (~200 ms after the initial vernier) associated with unconscious processing, and a later centro-parietal EEG pattern (~400 to 600 ms after SQM onset) associated with the integrated percept and the behavioral report. We propose that the transition between these neural patterns marks the shift from unconscious encoding of individual visual stimuli to their integrated percept.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "連續性神經動態調控視覺刺激的無意識整合與意識知覺"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003886",
+      "title": "Shared memories of event details in the human brain are altered by misinformation and test expectations",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-06T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003886",
+      "doi": "10.1371/journal.pbio.3003886",
+      "abstract": "Shared memories of event details are crucial to eyewitness testimony. When different people encode or recall the same event, similar scene-specific neural activity patterns emerge across individual brains. However, it remains unclear whether these patterns are specific to event details and how test expectancy (i.e., expecting free recall or general memory tests) and misinformation affect them. In this study, 100 participants were randomly assigned to view one of two versions of each event. Both versions featured identical scenarios, but with different details. About half of the participants were informed about the upcoming free recall before viewing events, while the others were told to expect a general memory test. Functional magnetic resonance imaging was used to record their brain activity during four stages: viewing original events, initial free recall, reading misinformation, and final free recall of original events. The neuroimaging data were analyzed based on the similarity of neural patterns across participants. Test expectancy increased the similarity of detail-specific neural activity patterns between individuals when they viewed original events in brain regions relevant for visual attention. Misinformation increased the likelihood of people forming shared false memories of event details. People who formed shared false memories exhibited similar detail-specific patterns of activity in the dorsomedial prefrontal cortex when reading misinformation. People who formed shared true memories exhibited similar detail-specific patterns of activity in the inferior parietal lobe when viewing original events, as well as in the ventrolateral prefrontal cortex and middle temporal gyrus when recalling them after exposure to misinformation. Our findings revealed that different brain regions of the default mode network play distinct roles in the encoding and recall of event details shared by individuals.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "人類大腦中事件細節的共享記憶會受到錯誤資訊與測試預期影響"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003879",
+      "title": "Engineering resilient gene drives for sustainable malaria control by predicting, testing and overcoming target site resistance in Anopheles gambiae",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-06T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003879",
+      "doi": "10.1371/journal.pbio.3003879",
+      "abstract": "CRISPR-based gene drives are selfish genetic elements with the potential to spread through entire insect populations for sustainable vector control. Gene drives designed to disrupt the reproductive capacity of females can suppress laboratory populations of the malaria mosquito, Anopheles gambiae . However, any suppressive intervention will inevitably exert an evolutionary pressure for resistance, and the likelihood of resistance emerging at natural population scales remains poorly defined. Here, we present a pipeline to quantify the evolutionary space for resistance, enabling accelerated discovery, engineering, and testing of both natural and drive-induced variants that could reverse gene drive spread. We applied our approach to stress-test a best-in-class suppression gene drive that has evaded resistance in all laboratory-contained releases to date, known as Ag(QFS)1. We showed that previously undetected resistant alleles can arise at low frequency, including a novel type of partially resistant alleles that can perturb drive-invasion dynamics. Integrating experimentally derived resistance rates with population genetic modeling shows that single-target suppression drives are unlikely to be robust at natural mosquito population sizes, even at highly constrained loci. Here, we engineer and validate multiplexed gene drives in Anopheles gambiae , that target multiple conserved sites, actively removing resistant alleles. Our models predict that such gene drives could supress large natural mosquito populations in the field.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution",
+        "CRISPR"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "透過預測、測試及克服岡比亞瘧蚊標的位點抗性以工程設計韌性基因驅動系統實現永續瘧疾控制"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003852",
+      "title": "Resistance potentiators: Evolutionary catalysts of antibiotic resistance",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-06T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003852",
+      "doi": "10.1371/journal.pbio.3003852",
+      "abstract": "Why do even closely-related bacteria differ in their capacity to evolve antibiotic resistance? Drawing on evidence from experimental evolution, pathogen genomics, and molecular microbiology, this Essay argues that the evolution of antibiotic resistance in bacterial genomes is frequently catalyzed by the presence of ‘resistance potentiators’: genes, elements, or pathways that accelerate evolution in a trait-specific manner. Epidemiological evidence suggests that resistance potentiators that modulate phenotypes have been particularly important in successful pathogen lineages. Furthermore, experimental models show that combining antibiotics with inhibitors of resistance potentiators can restrict the evolution of resistance, suggesting that they could be future drug targets or otherwise lead to more evolution-informed antibiotic therapy.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology",
+        "evolution",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "抗性強化劑：抗生素抗藥性的演化催化劑"
+    },
+    {
+      "id": "10.64898/2026.07.04.736507",
+      "title": "Multimodal temporal mapping of macrophage transcriptome remodeling during Salmonella infection",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.04.736507v1",
+      "doi": "10.64898/2026.07.04.736507",
+      "abstract": "Macrophages are equipped to eliminate invading pathogens, yet several intracellular bacteria exploit them as replicative niches. Salmonella enterica serovar Typhimurium subverts host immunity by injecting effector proteins that remodel macrophage functions. While macrophages typically induce a pro-inflammatory program upon bacterial invasion, Salmonella can redirect them toward an anti-inflammatory and replication-permissive state via manipulation of the NFkB and STAT3 host transcription factors. How the integration of the effects on these two transcription factors and potentially others underpins this reprogramming remains poorly charted. Here, we use a multipronged approach combining a bacterial reporter, temporal single-cell RNA-seq with RNA metabolic labeling, transcription factor (TF) footprinting, and single-cell CRISPR perturbations to dissect macrophage polarization dynamics during early infection. We catch the bifurcation during infection, where a subset of macrophages transition toward the anti-inflammatory phenotype. This shift involves the activation of Salmonella pathogenicity island 2 (SPI2) leading to both the dampening of the initial NFkB-driven inflammatory program and the induction of specific transcriptional modules beyond NFkB and STAT3, with possible contributions from AP-1 and Maf family members. Together, our study uncovers host decision points in macrophage polarization circuitry and reveals a vulnerability exploited by Salmonella to modulate host immunity.",
+      "authors": [
+        "Toussaint, C.",
+        "Hill, P. W. S.",
+        "Klodewig, B.",
+        "Eldridge, M. J.",
+        "Theis, F. J.",
+        "Helaine, S.",
+        "Saliba, A.-E."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "沙門氏菌感染期間巨噬細胞轉錄組重塑的多模態時間測繪"
+    },
+    {
+      "id": "10.64898/2026.07.02.736061",
+      "title": "Paradoxical Th1 activation and CTLA-4 regulation is beneficial during latent cryptococcosis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.02.736061v1",
+      "doi": "10.64898/2026.07.02.736061",
+      "abstract": "Cryptococcus neoformans is the predominant causative agent of cryptococcal meningitis in immunocompromised individuals. Conversely in immunocompetent individuals, C. neoformans establishes a latent pulmonary infection characterized by a paucity of clinical symptoms. Using a mouse inhalation model of latent C. neoformans infection, we previously showed that CD4 T-cells are necessary for preventing fungal proliferation in the lungs. In the current study, we performed single cell RNA sequencing (scRNAseq) and found that the CD4 T-cell response was both highly heterogenous and dichotomous during pulmonary C. neoformans infection, with concomitant expression of genes related to Th1 polarization (Tbx21, Ifng) and immune regulation (Ctla4). First, we demonstrated that cells with Th1-like phenotypes are necessary and sufficient to control latent infection via adoptive transfer of T-bet positive cells into infection-matched CD4-depleted recipient mice. Second, scRNAseq analysis revealed the subpopulation of effector CD4 T-cells that co-expressed Ctla4 and Gata3 was significantly higher than a subpopulation that co-expressed Ctla4 and Tbx21. Furthermore, our data suggested that CTLA-4 upregulation is beneficial against C. neoformans infection, as CTLA-4 blockade promoted fungal proliferation. Thus, we propose a model wherein Th1 control of latent C. neoformans infection is supported by CTLA-4 suppression of detrimental Th2 activation.",
+      "authors": [
+        "Ding, M.",
+        "Drnevich, J.",
+        "Yoder, J. M.",
+        "Dang, E.",
+        "Nielsen, K."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "潛隱性隱球菌病中矛盾的Th1活化與CTLA-4調控具有益處"
+    },
+    {
+      "id": "10.1101/2024.11.02.621624",
+      "title": "Generalized cell phenotyping for spatial proteomics with language-informed vision models",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-06",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.11.02.621624v4",
+      "doi": "10.1101/2024.11.02.621624",
+      "abstract": "We present DeepCell Types, a novel approach to cell phenotyping for spatial proteomics that addresses the challenge of generalization across diverse datasets with varying marker panels collected across different platforms. Our approach utilizes a transformer with channel-wise attention to create a language-informed vision model; this model's semantic understanding of the underlying marker panel enables it to learn from and adapt to heterogeneous datasets. Leveraging a curated, diverse dataset named Expanded TissueNet with cell type labels spanning the literature and the NIH Human BioMolecular Atlas Program (HuBMAP) consortium, our model demonstrates robust performance across various cell types, tissues, and imaging modalities. Comprehensive benchmarking shows that our method outperforms existing approaches on cell-type prediction and, from the same model, predicts marker positivity competitively with a dedicated specialist; it further matches manual expert gating and adapts to new data with modest fine-tuning, well past what baselines reach when trained from scratch. This work equips the spatial proteomics community with a single, continuously improvable phenotyping model that generalizes to new marker panels and can be fine-tuned efficiently when needed. We release both DeepCell Types and Expanded TissueNet as open-source resources.",
+      "authors": [
+        "Wang, X.",
+        "Dilip, R.",
+        "Iqbal, A. R.",
+        "Bussi, Y.",
+        "Brown, C.",
+        "Pradhan, E.",
+        "Jain, Y.",
+        "Yu, K.",
+        "Li, S.",
+        "Abt, M.",
+        "Borner, K.",
+        "Keren, L.",
+        "Yue, Y.",
+        "Barnowski, R.",
+        "Van Valen, D. A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial proteomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "基於語言引導視覺模型的空間蛋白質體學通用化細胞表型分析"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 26,
+      "passedByScope": 21,
+      "llmClassified": 5,
+      "llmYes": 3,
+      "llmNotSure": 0,
+      "llmNo": 2,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 24,
+      "excluded": 2
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 21,
+      "llmTagged": 21,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 21,
+      "candidates": 21,
+      "featured": 12,
+      "overflow": 9,
+      "lineA": 0,
+      "lineB": 18,
+      "preprint": 3,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 9,
+      "llmTranslated": 9,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01358-2",
+        "title": "Universities are relying on AI-detection software to catch cheating. How well do the programs work?",
+        "journal": "Nature",
+        "publishedDate": "2026-07-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01358-2",
+        "doi": "10.1038/d41586-026-01358-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02099-y",
+        "title": "The rise of computer chips — and the race to control them",
+        "journal": "Nature",
+        "publishedDate": "2026-07-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02099-y",
+        "doi": "10.1038/d41586-026-02099-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
