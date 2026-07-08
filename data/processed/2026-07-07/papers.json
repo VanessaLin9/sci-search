@@ -1,0 +1,391 @@
+{
+  "reportDate": "2026-07-07",
+  "generatedAt": "2026-07-08T11:46:41.144Z",
+  "papers": [
+    {
+      "id": "10.1038/s41588-026-02659-y",
+      "title": "Toward a framework for measuring the impact of ELSI research",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02659-y",
+      "doi": "10.1038/s41588-026-02659-y",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "建立ELSI研究影響力評估框架",
+      "summaryZh": "本研究提出一個測量ELSI（倫理、法律與社會影響）研究影響力的框架。ELSI研究在基因體學中扮演關鍵角色，探討基因技術發展所涉及的倫理、法律與社會問題。然而，過去學界缺乏統一的標準來評估此類研究的價值與貢獻。本框架的建立將有助於研究人員資助機構與政策制定者更有效地衡量ELSI研究的成果，進而支持更具影響力的倫理與社會相關研究。隨著基因編輯、基因檢測等技術快速進展，這類評估工具對於確保研究資金的合理分配至關重要。",
+      "topicTags": [
+        "bioethics",
+        "genomics",
+        "research-impact",
+        "ELSI",
+        "science-policy"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02663-2",
+      "title": "Mapping the path to clinical implementation of multi-omics",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02663-2",
+      "doi": "10.1038/s41588-026-02663-2",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "多體學臨床轉譯之路：挑戰與展望",
+      "summaryZh": "多體學技術的快速發展為精準醫療帶來前所未有的機遇，但將這些複雜的分子數據整合應用於臨床診斷和治療仍是重大挑戰。本綜述論文系統性地梳理了多體學從基礎研究邁向臨床實踐的關鍵瓶頸與解決策略，包括標準化流程、數據整合方法及驗證標準的建立。對於推動個人化醫療的發展具有重要的指導意義。",
+      "topicTags": [
+        "multi-omics",
+        "clinical-implementation",
+        "precision-medicine",
+        "translational-medicine",
+        "genomics"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03119-w",
+      "title": "Disturbance regimes drive widespread plant range disequilibrium in Europe alongside climate change",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-07-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03119-w",
+      "doi": "10.1038/s41559-026-03119-w",
+      "abstract": "Ecological constraints may prevent species from occupying potentially suitable areas. Here the authors show that disturbance is a widespread predictor of range disequilibrium in the vascular flora of Europe and determines whether plant species can occupy landscapes with suitable climates.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "干擾體制在氣候變遷下推動歐洲植物分佈失衡",
+      "summaryZh": "研究發現，生態限制可能阻止物種佔據潛在適合的區域。作者證實，干擾是歐洲維管束植物分佈失衡的廣泛預測因子，並決定植物物種是否能佔據具有合適氣候的景觀。這項研究強調，在評估物種對氣候變遷的響應時，僅考慮氣候適宜性是不夠的，還需納入干擾體制的影響。對於預測物種分佈變化和制定保育策略具有重要意義。",
+      "topicTags": [
+        "plant-distribution",
+        "climate-change",
+        "ecology",
+        "europe",
+        "disturbance-regimes"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03214-0",
+      "title": "Frontier AI companies as biotech acquirers",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-07-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03214-0",
+      "doi": "10.1038/s41587-026-03214-0",
+      "abstract": "A new class of biotech buyer is emerging, as frontier AI and big tech companies acquire early-stage biology foundational platforms. How do big tech acquisitions differ from traditional pharma exits, and what are the potential implications for founders, investors and the pharmaceutical industry?",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "前沿AI公司成為生技收購新勢力",
+      "summaryZh": "隨著前沿AI與大型科技公司開始收購早期生技基礎平台，一種新型態的生技買家正在崛起。本研究深入探討大型科技公司的收購策略與傳統製藥業退出模式的根本差異，並分析其對生技新創創辦人、投資人及整體製藥產業生態的深遠影響。這種趨勢可能重塑生技創新價值鏈，同時引發關於數據主權、技術整合與產業競爭格局的重要議題。",
+      "topicTags": [
+        "ai-biotech",
+        "acquisitions",
+        "pharma-industry",
+        "big-tech",
+        "startup-ecosystem"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02580-w",
+      "title": "Tissue-resident CD8+ T cells link pregnancy to breast cancer protection",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-07-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02580-w",
+      "doi": "10.1038/s41590-026-02580-w",
+      "abstract": "We discovered that pregnancy promotes the expansion of tissue-resident memory-like CD8+ T (TRM-like) cells in the mammary gland. This expansion is driven by mammary gland alveologenesis and cytokines produced by mammary epithelial cells. Depletion of TRM-like cells abolished pregnancy-associated protection against breast cancer, whereas expansion of these cells conferred protection.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "組織駐留CD8+ T細胞：懷孕與乳腺癌保護之間的關鍵橋樑",
+      "summaryZh": "本研究揭示了懷孕如何透過促進乳腺組織中組織駐留記憶型CD8+ T細胞的擴增，來降低乳腺癌風險。這些TRM-like細胞的擴增是由乳腺腺泡發育及乳腺上皮細胞所分泌的細胞激素所驅動。當研究團隊清除這些TRM-like細胞後，懷孕所赋予的乳腺癌保護效果隨即消失；反之，擴增這些細胞則能有效預防乳腺癌。這項發現不僅闡明了懷孕與乳腺癌風險之間的免疫學機制，也為未來的乳腺癌預防與免疫治療策略提供了嶄新的研究方向。",
+      "topicTags": [
+        "tissue-resident-t-cells",
+        "breast-cancer",
+        "pregnancy",
+        "immunology",
+        "cancer-prevention"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02577-5",
+      "title": "Implications of RNA virus persistence for post-acute sequelae and chronic inflammatory syndromes",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-07-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02577-5",
+      "doi": "10.1038/s41590-026-02577-5",
+      "abstract": "López and colleagues review recent evidence of RNA virus persistence and the associated consequences in terms of post-acute sequelae or chronic inflammatory syndromes.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "RNA病毒持續感染對急性後遺症及慢性發炎症候群的影響",
+      "summaryZh": "RNA病毒在急性感染後可能持續存在於體內，這些殘留的病毒與急性後遺症及慢性發炎症候群的發生密切相關。López等人回顧了近年來關於RNA病毒持續感染的最新證據，闡述其對人體健康的長期影響。此類持續感染被認為是導致新冠後遺症及其他慢性發炎症狀的關鍵機制之一。這篇綜論文獻有助於臨床醫師和研究人員更深入理解病毒與免疫系統的交互作用，並為未來的治療策略提供重要的科學基礎。",
+      "topicTags": [
+        "virology",
+        "post-acute-sequelae",
+        "chronic-inflammation",
+        "immunology",
+        "long-covid"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02413-4",
+      "title": "Self-generated hydrogel ejects bacterial cells for localized biofilm dispersion",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-07-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02413-4",
+      "doi": "10.1038/s41564-026-02413-4",
+      "abstract": "Bacillus subtilis biofilms locally disperse by ejecting motile cells through osmotic pressure generated by their poly-γ-glutamic acid hydrogel, a mechanism resembling that through which Cnidaria eject nematocysts.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "自生水膠體利用滲透壓將細菌細胞彈出以局部消散生物膜",
+      "summaryZh": "本研究發現枯草桿菌（Bacillus subtilis）生物膜能夠在局部區域自行生成聚γ-谷氨酸水膠體，並透過滲透壓將運動細胞彈出，實現生物膜的局部消散。這種利用自生水膠體產生高滲透壓的機制，與刺胞動物（如水母）射出刺絲囊的過程相似，提供了生物學中跨門類的相似防禦機制範例。此發現不僅深化了我們對生物膜調控與分散過程的理解，也為開發新型抗菌策略或控制生物膜相關感染提供了嶄新的思路。",
+      "topicTags": [
+        "biofilm-dispersion",
+        "hydrogel",
+        "osmotic-pressure",
+        "Bacillus-subtilis",
+        "bacterial-motility"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003870",
+      "title": "A developmental shift in glucocorticoid receptor expression preserves glucocorticoid sensitivity in the adult suprachiasmatic nucleus",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-07T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003870",
+      "doi": "10.1371/journal.pbio.3003870",
+      "abstract": "The circadian system synchronizes physiology, improving the adaptation to daily environmental changes. In mammals, the central pacemaker, in the suprachiasmatic nuclei (SCN) of the hypothalamus, coordinates “wake” functions by inducing the circadian release of glucocorticoids (GCs). GCs entrain the clocks of a wide variety of tissues through GC receptor (GR) activation, however, the influence of GCs on the SCN is unclear and seems to depend on the maturity of the circuit. During the perinatal period, the mouse SCN express GR and respond directly to GCs while the adult SCN express low GR and have been traditionally considered resistant to GCs. To understand the change of sensitivity to GCs we followed the developmental trajectory of the mouse SCN, and found that while GR is expressed in all SCN cells early in life, it remains expressed mainly in astrocytes in the adult. Using a model of prenatal exposure to GCs, we found that offspring from treated mothers, adapt slower to shifted light–dark cycle and shows reduced expression of GR in SCN astrocytes. The adult SCN astrocytes can indeed sense and respond to GCs with rapid astrocytic Ca 2+ events that propagate across neighboring cells, an effect that is prevented by the specific inhibition of astrocyte–astrocyte communication. Our findings provide a conceptual advance on how the mouse clock develops and on the influence that GCs have on the SCN. This might be relevant to understand how circadian synchrony is restored in conditions of temporal misalignment, such as jet lag.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "發育過程中糖皮質激素受體表現的轉變維持成人視交叉上核對糖皮質激素的敏感性",
+      "summaryZh": "視交叉上核（SCN）是哺乳動物的中央時鐘，負責協調日夜節律與糖皮質激素的晝夜釋放。本研究發現，雖然成人SCN中糖皮質激素受體（GR）主要表現在星形膠質細胞，但這些細胞仍能感測糖皮質激素並引發快速鈣離子事件，進而傳播至鄰近細胞。產前暴露於糖皮質激素會降低子代SCN星形膠質細胞中GR的表現，導致適應光暗週期轉換的速度變慢。此研究揭示了時鐘發育的機制及糖皮質激素對SCN的影響，對於理解時差反應等時間錯位狀況下日夜節律同步的恢復具有重要參考價值。",
+      "topicTags": [
+        "circadian-rhythm",
+        "glucocorticoid-receptor",
+        "suprachiasmatic-nucleus",
+        "astrocytes",
+        "jet-lag"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.02.729719",
+      "title": "PanKbase Integrated Single-Cell Map: A Comprehensive Atlas of Human Pancreatic Islets",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.02.729719v3",
+      "doi": "10.64898/2026.06.02.729719",
+      "abstract": "Single-cell RNA sequencing (scRNA-seq) of human pancreatic islet tissue is a powerful tool for investigating type 1 diabetes (T1D). However, individual datasets are limited in size and fragmented across donors, laboratories, and experimental conditions. To address this, we constructed a comprehensive, integrated scRNA-seq atlas of isolated human pancreatic islets by collating publicly available data generated from tissue provided by resources including the Human Pancreas Analysis Program, the Integrated Islet Distribution Program, and Prodo Labs. Systematic quality controls were implemented to select high-quality samples, reads, and cells. During integration, we accounted for important variables such as age, sex, body mass index, origin study, treatments, islet distribution resources, and sequencing chemistry. Our single-cell atlas comprises 191 high-quality samples from 140 donors (59 female, 81 male) across five phenotypic groups: no diabetes (controls, n=69), autoantibody positivity without diabetes (n=12), pre-diabetes (n=11), T1D (n=12), and type 2 diabetes (T2D) (n=36). In total, the atlas contains 448,935 cells, capturing 13 distinct populations, including alpha cells (43.3%) and beta cells (26.8%), as well as groups such as immune cells (0.6%). Publicly available at www.pankbase.org, this atlas provides a platform for hypothesis-driven investigation of diabetes pathophysiology and, given rigorous quality control, is well-suited for downstream machine-learning applications.",
+      "authors": [
+        "Vu, H. T. H.",
+        "Sun, H.",
+        "Kudtarkar, P.",
+        "Sharp, S. A.",
+        "Brusman, L.",
+        "Feng, F.",
+        "Bate, T.",
+        "Jurgens, J.",
+        "Wang, Y.",
+        "Huang, Y.",
+        "Mao, R.",
+        "Corban, S.",
+        "Huber, A. K.",
+        "Shilin, A.",
+        "Sun, Y.",
+        "Narayanaswamy, S.",
+        "Jang, D.",
+        "Robertson, C. C.",
+        "Shrestha, S.",
+        "Nguyen, T.",
+        "Smadbeck, P.",
+        "Zhang, L.",
+        "Brandes, M.",
+        "The PanKbase Consortium,",
+        "Flannick, J.",
+        "Burtt, N.",
+        "Chen, S.",
+        "Liu, J.",
+        "Cartailler, J.-P.",
+        "Voight, B. F.",
+        "Stitzel, M. L.",
+        "Brissova, M.",
+        "Gloyn, A. L.",
+        "Gaulton, K. J.",
+        "Parker, S. C. J."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "PanKbase單細胞圖譜：涵蓋人類胰島細胞與糖尿病表型的大型整合資料庫",
+      "summaryZh": "人類胰島組織的單細胞RNA定序資料長期以來分散於不同研究機構，導致個別資料集規模有限且難以跨研究比較。本研究整合了來自人類胰島分析計畫、整合胰島分配計畫等多個來源的公開資料，經過嚴格的品質控制後，建立了包含191個高品質樣本、140位捐贈者、超過44萬顆細胞的胰島單細胞圖譜，涵蓋健康對照組與五種糖尿病表型族群。此圖譜識別出13種不同的細胞群體，包括α細胞與β細胞等主要內分泌細胞類型，並納入了性別、年齡、身體質量指數等重要變數進行整合分析。作為一個高品質的開放資源，PanKbase圖譜將成為研究糖尿病病理機制與開發機器學習模型的重要平台。",
+      "topicTags": [
+        "single-cell",
+        "pancreatic-islets",
+        "diabetes",
+        "scrna-seq",
+        "atlas"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.01.735284",
+      "title": "SupeRJump: Determining normal and leukemic differentiation fate through semi-supervised jump diffusion modeling",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.01.735284v1",
+      "doi": "10.64898/2026.07.01.735284",
+      "abstract": "Single cell RNA-seq (scRNA) has provided unprecedented resolution into cellular and clonal heterogeneity. Computational approaches have enabled recovery of differentiation dynamics, yet current approaches do not evaluate discontinuous differentiation processes present in malignant leukemia. To address these gaps, we developed SupeRJump: a jump-drift-diffusion based supervised cell-fate model (https://github.com/namwob44/SupeRJump/). We deploy this approach in human bone marrow, murine aging hematopoiesis, and lentivirally barcoded mouse models of acute myeloid leukemia. Our framework introduces a semi-supervised pseudotime strategy to fit a jump-drift-diffusion model and batch correction for lineage fate predictions from absorbing Markov chains. We introduce metrics to quantify cell skewness toward particular lineages, transitions through intermediate progenitor states toward terminally differentiated states, and discontinuous transition dynamics. We use these metrics to identify cells preferentially biased for differentiation, their underlying transcriptional networks, and gene programs responsible for differentiation discontinuity.",
+      "authors": [
+        "Bowman, M.",
+        "Bandopadhyay, R.",
+        "Singh, V.",
+        "Telpoukhovskaia, M.",
+        "Vander Velde, R.",
+        "Shaffer, S. M.",
+        "Trowbridge, J. J.",
+        "Bowman, R. L."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "SupeRJump：透過半監督跳躍擴散模型解析正常與白血病細胞分化命運",
+      "summaryZh": "單細胞RNA-seq技術雖能解析細胞異質性，現有計算方法卻難以捕捉惡性白血病中常見的不連續分化過程。SupeRJump創新地結合跳躍-漂移-擴散模型與半監督策略，可同時分析人類骨髓、小鼠老化造血系統及急性骨髓性白血病模型，為正常與病態造血提供統一的分析框架。此方法引入吸收態馬可夫鏈進行譜系命運預測的批次校正，並開發細胞譜系偏斜度、中間前驅細胞過渡及不連續轉換動態等新穎量化指標，突破傳統偽時間方法的限制。研究團隊進一步運用這些指標識別分化偏好細胞及其轉錄調控網路，揭示導致分化不連續性的關鍵基因程式，為白血病治療策略提供嶄新的分子標的。",
+      "topicTags": [
+        "single-cell",
+        "leukemia",
+        "hematopoiesis",
+        "computational-biology",
+        "differentiation"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 10,
+      "passedByScope": 10,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 10,
+      "excluded": 0
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 10,
+      "llmTagged": 10,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 10,
+      "candidates": 10,
+      "featured": 10,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 8,
+      "preprint": 2,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 10,
+      "llmSummarized": 10,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  }
+}
