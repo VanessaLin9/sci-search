@@ -48,4 +48,22 @@ describe("regression render digest", () => {
 
     assertEmptyDigestHtml(html, reportDate);
   });
+
+  it("2026-06-10: validates busiest fixture and renders busy-day HTML", async () => {
+    const reportDate = "2026-06-10";
+    const processed = loadRegressionFixture(reportDate);
+    const expected = REGRESSION_EXPECTATIONS[reportDate]!;
+
+    assertRegressionFixtureOutput(processed, expected);
+
+    const sources = await loadSources();
+    const html = renderDigestHtml({
+      reportDate,
+      papers: processed.papers,
+      generatedAt: processed.generatedAt,
+      priorityBySourceId: buildSourcePriorityById(sources),
+    });
+
+    assertBusyDayDigestHtml(html, processed);
+  });
 });

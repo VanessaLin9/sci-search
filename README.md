@@ -10,7 +10,7 @@ Report date defaults to **yesterday (Asia/Taipei)**.
 |--------|-------------|
 | **Email** | HTML digest via [Resend](https://resend.com): featured cards (EN title, 繁中副標, 繁中摘要, English topic tags) in 主線 A / B / 預印本 sections, plus overflow titles grouped by journal |
 | **Public preview** | [`docs/index.html`](docs/index.html) updated by CI — enable Pages from `/docs` on `main` |
-| **Data** | `data/processed/{date}/papers.json` — routing stats, digest fields, excluded papers |
+| **Data** | `data/processed/{date}/papers.json` — routing stats, digest fields, excluded papers; **30-day rolling retention** on `main` (older daily output pruned by CI) |
 
 ## Pipeline
 
@@ -57,6 +57,7 @@ npm run check
 | `npm run dev` | Full pipeline → `data/processed/{date}/papers.json` |
 | `npm run send-digest` | Email from existing `papers.json` |
 | `npm run write-preview` | `docs/index.html` + `docs/archive/{date}.html` |
+| `npm run prune-retention` | Remove `data/processed/{date}/` and `docs/archive/{date}.html` older than `--days` (default 30); use `--dry-run` to preview |
 | `npm run daily` | `dev` → `send-digest` → `write-preview` |
 | `npm run test-routing-llm` | One-paper routing smoke test |
 | `npm run test-digest-llm` | One-paper digest tagging smoke test |
@@ -70,6 +71,7 @@ Date flag (all three main commands):
 npm run dev -- --date 2026-05-22
 npm run send-digest -- --date 2026-05-22 --dry-run
 npm run write-preview -- --date 2026-05-22
+npm run prune-retention -- --date 2026-07-06 --days 30 --dry-run
 ```
 
 `test-digest-llm -- --use-routing` uses routing API key/model with digest caps from `config/digest.json`.
@@ -106,11 +108,12 @@ Real `papers.json` snapshots for render/schema validation without re-running RSS
 # After a good local run, refresh fixtures:
 npm run export-regression-fixture -- --date 2026-05-22
 npm run export-regression-fixture -- --date 2026-05-24
+npm run export-regression-fixture -- --date 2026-06-10
 
 npm run test:regression
 ```
 
-Fixtures live in [`test/fixtures/regression/`](test/fixtures/regression/) (0522: 34 papers / featured 12; 0524: empty day).
+Fixtures live in [`test/fixtures/regression/`](test/fixtures/regression/) (0522: 34 papers / featured 12; 0524: empty day; 0610: busiest day, 64 papers / featured 12).
 
 ## Configuration
 
@@ -158,7 +161,9 @@ Enable branch protection on `main`: require status check **`test`** before merge
 ### Daily digest ([`.github/workflows/daily.yml`](.github/workflows/daily.yml))
 
 - **Schedule:** 18:00 Asia/Taipei daily (`workflow_dispatch` supported)
-- **Steps:** resolve date → `dev` → `write-preview` → artifact → commit → `send-digest`
+- **Steps:** resolve date → `dev` → `write-preview` → artifact (`retention-days: 30`) → `prune-retention` (30-day window) → commit (`git add -A data/processed docs`) → `send-digest`
+
+On `main`, only the most recent **30 days** of `data/processed/{date}/` and `docs/archive/{date}.html` are kept in the working tree. Older daily output remains in git history; pinned regression fixtures under `test/fixtures/regression/` are not pruned.
 
 ### Repository secrets
 
@@ -181,7 +186,7 @@ Enable branch protection on `main`: require status check **`test`** before merge
 2. Source: branch **`main`**, folder **`/docs`**
 3. After the next successful daily run, open `https://<user>.github.io/<repo>/`
 
-Archives: `docs/archive/YYYY-MM-DD.html`.
+Archives: `docs/archive/YYYY-MM-DD.html` (rolling **30-day** window on `main`; see daily workflow).
 
 ## Local quick start
 
@@ -206,9 +211,10 @@ src/
   digest/                        # Phase 2b tag, select, summarize, translate
   email/                         # Resend + HTML render
   commands/                      # CLI entrypoints
+  retention/                     # daily output retention prune
 config/                          # sources, keywords, routing, digest
 docs/                            # GitHub Pages (generated HTML)
-data/processed/{date}/papers.json
+data/processed/{date}/papers.json  # 30-day rolling retention on main
 ```
 
 ## MVP v1 scope / known limits
