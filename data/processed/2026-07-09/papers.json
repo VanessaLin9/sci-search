@@ -1,0 +1,1560 @@
+{
+  "reportDate": "2026-07-09",
+  "generatedAt": "2026-07-10T12:36:33.232Z",
+  "papers": [
+    {
+      "id": "10.1016/j.cell.2026.05.001",
+      "title": "Photosynthetic medicine: Engineering a plant-derived nanofoundry to power mammalian cells",
+      "journal": "Cell",
+      "publishedDate": "2026-07-09T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00518-0?rss=yes",
+      "doi": "10.1016/j.cell.2026.05.001",
+      "abstract": "Mammalian eyes receive constant visible light yet lack photosynthesis. Xing et al. engineer an intact thylakoid grana nanoparticle enabling light-driven NADPH production within corneal cells, restoring antioxidant defenses and interrupting inflammatory cycles in dry eye disease. This work positions borrowed photosynthesis as a therapeutic strategy for oxidative, light-exposed tissue pathologies.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "光合作用醫學：工程化植物奈米工廠為哺乳類細胞供電",
+      "summaryZh": "人類眼睛持續暴露於可見光下，卻缺乏光合作用能力。本研究成功工程化完整的葉綠體類囊體顆粒奈米粒子，使其能在角膜細胞內進行光驅動的NADPH生成，有效恢復細胞的抗氧化防禦機制，並中斷乾眼症的發炎循環。此技術為借鑒植物光合作用開創性的治療策略，不僅為乾眼病提供新療法，更為氧化壓力相關的光照組織病變开辟全新治療途徑。",
+      "topicTags": [
+        "photosynthesis",
+        "nanomedicine",
+        "ophthalmology",
+        "oxidative-stress",
+        "dry-eye-disease"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.06.011",
+      "title": "Rewriting Duchenne muscular dystrophy therapy",
+      "journal": "Cell",
+      "publishedDate": "2026-07-09T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00698-7?rss=yes",
+      "doi": "10.1016/j.cell.2026.06.011",
+      "abstract": "In this issue of Cell, Guo et al. report the development of a new exon-skipping, RNA-editing-based therapy for Duchenne muscular dystrophy. The dual mechanism of action through both ADAR-dependent and -independent pathways has the potential to be more effective and require a lower dosing frequency than currently available ASO-based exon-skipping treatments.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "改寫杜氏肌肉營養不良症治療新篇章",
+      "summaryZh": "杜氏肌肉營養不良症（DMD）是一種致命的X染色體隱性遺傳疾病，目前臨床上有效的治療選擇相當有限。本研究開發了一種創新的RNA編輯外顯子跳躍療法，結合ADAR依賴性和非依賴性雙重作用機制，突破了傳統ASO疗法的限制。臨床前數據顯示，這種新療法可能比現有治療更有效，且能降低給藥頻率，提升患者生活品質。此研究為DMD治療開闢了新的方向，具有重要的臨床轉化價值。",
+      "topicTags": [
+        "duchenne-muscular-dystrophy",
+        "rna-editing",
+        "exon-skipping",
+        "gene-therapy",
+        "neuromuscular-disorders"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.06.018",
+      "title": "Bridging omics and physiology to build multimodal clocks of human aging",
+      "journal": "Cell",
+      "publishedDate": "2026-07-09T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00705-1?rss=yes",
+      "doi": "10.1016/j.cell.2026.06.018",
+      "abstract": "Human aging is a heterogeneous, multi-system process that spans molecular, tissue, and physiological decline. In this issue of Cell, Li et al. integrate clinical data, multi-omics, and organ-associated signatures to construct a multi-layer framework for quantifying biological aging across scales.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "整合多體學與生理學建構人類老化多模態時鐘",
+      "summaryZh": "人類老化是一個異質性的多系統過程，涉及分子、組織和生理層面的複雜衰退。本研究由 Li 等人發表，創新性地整合臨床數據、多體學資料與器官相關特徵，建構出一套多層次的老化量化框架。此框架能跨越分子、組織與生理等多個尺度，精確評估個體的生物年齡與老化進程。相較於傳統僅依賴單一指標的年齡預測方法，此多模態時鐘更能捕捉老化過程中的個體差異，對於疾病風險評估、抗衰老策略開發及精準醫療具有重要的應用價值。",
+      "topicTags": [
+        "aging-biology",
+        "multi-omics",
+        "biological-age",
+        "longevity",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.06.006",
+      "title": "Recent advances in Alzheimer’s disease: From molecular mechanisms to therapeutic strategies",
+      "journal": "Cell",
+      "publishedDate": "2026-07-09T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00655-0?rss=yes",
+      "doi": "10.1016/j.cell.2026.06.006",
+      "abstract": "Alzheimer’s disease is driven by pathological brain changes that progressively impair memory and cognition, with current treatment options being limited. Advances in early, biomarker-based diagnosis and amyloid-targeting and other disease-modifying approaches are beginning to slow disease progression in clinical studies.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "阿茲海默症研究最新進展：從分子機制到治療策略",
+      "summaryZh": "阿茲海默症是導致記憶與認知功能逐步退化的大腦疾病，目前治療選擇仍相當有限。本综述整合了分子機制研究的最新進展，並重點介紹了生物標記早期診斷與類澱粉蛋白標靶治療的突破。這些以疾病修飾為目標的新療法已在臨床試驗中展現延緩疾病進程的效果，為患者帶來新希望。此综述對於理解阿茲海默症治療的未來發展方向具有重要參考價值。",
+      "topicTags": [
+        "alzheimer's-disease",
+        "neurodegenerative-disease",
+        "amyloid",
+        "biomarkers",
+        "clinical-trials"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03145-8",
+      "title": "Dominating the recovery",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-07-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03145-8",
+      "doi": "10.1038/s41559-026-03145-8",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "主導生態復原的關鍵力量",
+      "summaryZh": "生態系統在遭受干擾後如何恢復，是保育生物學的核心議題。本研究探討哪些因素決定了生態復原的過程與結果，特別是優勢物種在復原中所扮演的角色。了解這些機制對於制定有效的生態保育與棲地修復策略至關重要。研究結果可能為面對氣候變遷與人為干擾下的生態系管理提供重要參考。",
+      "topicTags": [
+        "ecosystem-recovery",
+        "dominance",
+        "ecology",
+        "conservation",
+        "species-interactions"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02586-4",
+      "title": "In tuberculosis, the neutrophil is neutral in name alone",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-07-09T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02586-4",
+      "doi": "10.1038/s41590-026-02586-4",
+      "abstract": "A study of a human participant cohort in a region of low endemic tuberculosis provides new insights into how neutrophils, T cells and macrophages interact to influence whether disease is controlled or progresses.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "結核病中，中性球並非如其名般「中立」",
+      "summaryZh": "這項研究在一個結核病低流行區域的人類參與者世代中進行，揭示了中性球、T細胞與巨噬細胞之間的交互作用如何影響結核病的控制或進展。儘管中性球的名稱暗示其功能較為被動，但研究顯示它們在疾病進程中扮演著主動且關鍵的角色。這些發現挑戰了既有的免疫學認知，並可能為結核病的治療策略提供新的標的。",
+      "topicTags": [
+        "tuberculosis",
+        "neutrophils",
+        "immunology",
+        "infectious-disease",
+        "cell-interaction"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003829",
+      "title": "Identity-specific reward expectations in orbitofrontal cortex guide goal-directed choices",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-09T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003829",
+      "doi": "10.1371/journal.pbio.3003829",
+      "abstract": "Real-life decisions are typically directed toward specific types of rewards (e.g., a slice of pizza or a bowl of pasta), but reward identity is often neglected in neuroeconomic theories of decision-making. Previous research has shown that the lateral orbitofrontal cortex (lOFC) represents the specific rewards predicted by environmental cues. However, whether and how these expectations influence decision-making remains an open question. To address these questions in humans, we developed a novel behavioral task in which Pavlovian cues associated with specific rewards are presented before participants can make decisions to forage these rewards. Using pattern-based analysis of functional magnetic resonance imaging data, we show that cues predicting distinct reward types evoke identity-specific expectations in lOFC, which in turn predict subsequent choices. This effect is amplified by activity in the nucleus accumbens, which enhances the influence of lOFC reward expectations on action representations in the dorsal anterior cingulate cortex. These results connect representational and motivational accounts of decision-making, highlighting the neural mechanism by which expectations about reward identity guide goal-directed behavior.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "外側眼眶額葉皮層的特定獎勵預期調控目標導向決策",
+      "summaryZh": "現實生活中的決策通常針對特定類型的獎勵，但獎勵身份在神經經濟學理論中常被忽略。本研究開發了一種新穎的行為任務，結合功能性磁振造影的 pattern 分析，發現預測不同獎勵類型的線索會在外側眼眶額葉皮層引發特定獎勵預期，並能準確預測後續的選擇行為。進一步發現伏隔核的活動會增強調控效果，增強外側眼眶額葉皮層獎勵預期對背側前扣帶皮層動作表徵的影響。此研究連接了表徵與動機的決策理論，闡明了獎勵身份預期如何引導目標導向行為的神經機制。",
+      "topicTags": [
+        "decision-making",
+        "reward-processing",
+        "orbitofrontal-cortex",
+        "neuroscience",
+        "fMRI"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003473",
+      "title": "Dipteran flight diversity is shaped by aerodynamic constraints, scaling, and evolutionary trade-offs",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-09T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003473",
+      "doi": "10.1371/journal.pbio.3003473",
+      "abstract": "Flight has been a key innovation in insect evolution, yet the selective and mechanistic pressures shaping their flight motor systems remain poorly understood. Here, we present a comprehensive comparative analysis of flight in Diptera (true flies), integrating morphology, wingbeat kinematics, and aerodynamics within a phylogenetic framework. We quantified morphology in 133 species spanning the Dipteran phylogenetic and size range, and for a subset of 46 species, we combined high-speed stereoscopic videography with computational fluid dynamics (CFD) to characterize wingbeat kinematics and aerodynamic performance, respectively. Our results reveal that morphology is strongly structured by phylogeny, whereas wingbeat kinematics are broadly conserved across Diptera, reflecting dominant aerodynamic constraints. Two early-diverged lineages, Culicomorpha (mosquitoes and midges) and Tipulomorpha (crane flies), exhibit strikingly divergent kinematics and aerodynamics, suggesting lineage-specific selective pressures. Combining these data with scaling analyses shows that maintaining in-flight weight support across the dipteran size range requires systematic allometric adjustments in wing morphology, wingbeat kinematics, and flight musculature. Smaller dipterans achieve weight support through relatively larger wings and higher wingbeat frequencies, whereas larger dipterans achieve the same aerodynamic requirement through increased investment in flight musculature to sustain the necessary mechanical power output. These size-dependent trait combinations highlight how different morphological and kinematic adaptations evolved in response to the shared physical requirements of hovering flight across Diptera. Mosquitoes and midges represent an extreme case, exhibiting a pronounced aerodynamic–acoustic trade-off with disproportionately high wingbeat frequencies, large flight musculature and increased aerodynamic and acoustic power, consistent with selection favoring acoustic signaling during in-swarm mating. By integrating comparative morphology, kinematics, and aerodynamics across a major insect radiation, our study uncovers the interplay between physical scaling laws, aerodynamic constraints, and ecological pressures in shaping the evolution of animal flight. These findings provide a mechanistic framework for understanding how complex locomotor systems diversify under multiple selection pressures.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "雙翅目飛行多樣性：氣動力學限制、體型縮放與演化權衡的塑造",
+      "summaryZh": "飛行是昆蟲演化中的關鍵創新，但塑造其飛行運動系統的選擇壓力與機制仍不甚清楚。本研究整合形態學、翅膀拍擊運動學與空氣動力學，分析133種雙翅目物種，發現形態學深受系統發育影響，而翅膀拍擊運動學則普遍保守，反映主要的氣動力學限制。較小的雙翅目透過相對較大的翅膀與較高的翅膀拍擊頻率來維持飛行支撐，而較大的雙翅目則透過增加飛行肌肉來產生必要的機械功率。蚊子與蠓展現出極端的氣動力學-聲學權衡，其翅膀拍擊頻率異常高，且同時產生氣動力與聲學功率，這與偏好聲學訊號的選擇壓力一致。本研究揭示了雙翅目如何透過不同的形態與運動學適應，來因應懸停飛行的共同物理需求。",
+      "topicTags": [
+        "insect-flight",
+        "diptera",
+        "aerodynamics",
+        "evolutionary-biology",
+        "biomechanics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.25.734616",
+      "title": "Spatiotemporal cellular landscape of the human utricle sensory epithelium",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.25.734616v1",
+      "doi": "10.64898/2026.06.25.734616",
+      "abstract": "Vestibular dysfunction affects individuals of all ages and becomes increasingly common with age. Despite the essential role of the utricle in balance, its molecular states and tissue architecture in humans remain poorly defined. Here, we integrated paired single-nucleus transcriptomic and epigenomic profiling with imaging-based spatial transcriptomics to characterize the human fetal utricle and its spatiotemporal patterning. We resolved transcriptionally heterogeneous, spatially segregated populations of sensory and nonsensory epithelial cells and reconstructed sensory cell differentiation across three gestational ages, showing that these cells acquire region-specific transcriptional signatures before final subtype specification. We further uncover a progressive decline in nonsensory cell proliferation accompanied by chromatin remodelling, as well as transitional epithelial populations with distinct spatial and regulatory programs. Together, these data define the molecular and spatial dynamics of the human fetal utricle and reveal cell states and regulatory pathways that provide a foundation for studying vestibular disorders and regeneration. HIGHLIGHTSO_LISpatial identity of utricular sensory hair cells precedes full subtype specification C_LIO_LIDistinct transcriptional regulators control hair cell fate and regional patterning C_LIO_LISupporting cells remodel chromatin as their proliferative capacity declines C_LIO_LITransitional epithelial cells adopt ordered states along the utricular border C_LIO_LISensory and nonsensory cells show divergent regulatory and signalling programs C_LI",
+      "authors": [
+        "Liang, W.",
+        "Yamamoto, R.",
+        "Luca, E.",
+        "Dabdoub, A."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "人類耳石囊感覺上皮細胞的時空細胞景觀"
+    },
+    {
+      "id": "10.64898/2026.07.08.737054",
+      "title": "Distinct macrophage and T cell programs shape pancreatic inflammation during metabolic stress and aging",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.08.737054v1",
+      "doi": "10.64898/2026.07.08.737054",
+      "abstract": "Type 2 diabetes is linked to systemic inflammation driven by metabolic stress and aging. Although pancreatic inflammation associated with these factors is well documented, the dynamics of immune cell populations and their molecular changes remain poorly understood. We characterized immune cell alterations in the pancreas and pancreatic islets during Western diet (WD) feeding and aging using imaging mass cytometry (IMC) and single-cell RNA sequencing (scRNA-seq). Spatial and transcriptional analyses were performed to define immune cell subtype composition, activation states, and inferred cell-cell communication programs under metabolic and age-related stress conditions. Our analyses identified expansion of an F4/80low macrophage subtype and activated effector-like CD8+ T cells throughout the pancreas during WD feeding and aging. Within pancreatic islets, single-cell RNA sequencing identified a type 1 interferon-responsive macrophage population with low F4/80 expression that expanded during overnutrition. Notably, the type 1 interferon responses elicited by these stressors diverged: aging was associated with a more canonical type 1 interferon response, whereas overnutrition induced a broader response that included STAT3-associated transcriptional programs. We further provide evidence for enhanced cytokine-mediated communication between macrophages and a CD8+ cytotoxic T-cell population under overnutrition and aging. These findings show that metabolic stress and aging remodel pancreatic inflammation through overlapping but distinct immune mechanisms, involving expansion of F4/80low macrophages, activation of divergent type 1 interferon programs, and enhanced macrophage-CD8+ T-cell communication. Together, these findings suggest that distinct therapeutic approaches may be required to preserve islet function in type 2 diabetes driven by metabolic stress versus aging.",
+      "authors": [
+        "Sai, S.",
+        "Omar, I.",
+        "Barone, M.",
+        "Muhle, K.",
+        "Schneider, M.",
+        "Liu, F.",
+        "Sriram, S.",
+        "Johnson, J. C.",
+        "Thoma, T.",
+        "Conrad, T.",
+        "Borodina, T.",
+        "Sawitzki, B.",
+        "Sander, M.",
+        "Zhu, H."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "獨特的巨噬細胞與T細胞程式在代謝壓力與老化過程中塑造胰臟發炎"
+    },
+    {
+      "id": "10.64898/2026.06.28.735042",
+      "title": "A rare pre-existing progenitor-like Primed SMC compartment is the dominant inferred source of SMC-derived cellularity in vascular injury and atherosclerosis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.28.735042v2",
+      "doi": "10.64898/2026.06.28.735042",
+      "abstract": "The cellular origin of smooth muscle cell (SMC)-derived populations in vascular lesions remains unresolved. Here we show, using single-cell transcriptomic analyses spanning carotid ligation injury, Myh11-CreERT{superscript 2}-traced aortic homeostasis, and LDLR- and ApoE-deficient atherosclerosis, that a rare progenitor-like \"Primed\" SMC compartment pre-exists at baseline in all models and in the healthy human aorta. Relative to contractile SMCs, Primed SMCs attenuate sarcomeric and contractile programmes while inducing matricellular, progenitor-niche and chondrogenic-poised developmental programmes, resolving into conserved niche/progenitor (Cd34, Fst, Tnfrsf11b) and matricellular (Vcam1, Thbs1, Timp1) cores overlaid by vessel-specific signatures, on a retained SMC identity. Multiple orthogonal computational lineage-inference approaches indicate that this compartment expands predominantly through autonomous self-renewal and is the dominant inferred source of cycling and lesion fibrochondrocyte populations, while contractile SMCs are consistently depleted as a feeder source. These findings reframe lesional SMC cellularity as expansion of a pre-existing Primed compartment rather than widespread phenotypic switching of contractile SMCs.",
+      "authors": [
+        "Wani, S.",
+        "Kitching, M.",
+        "Aboulhassanzadeh, S.",
+        "Lungu, T.-S.",
+        "Kilicgun, I.",
+        "Ulibarri, K.",
+        "Liu, W.",
+        "Floudas, A.",
+        "Redmond, E. M.",
+        "Cahill, P. A."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "罕見既存前驅細胞樣Primed SMC區室為血管損傷與粥狀硬化中SMC衍生細胞的主導推定來源"
+    },
+    {
+      "id": "10.64898/2026.06.30.733275",
+      "title": "The Spatial Landscape of Extracellular Matrix Gene Expression in Healthy and Type 2 Diabetic Human Pancreas",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.30.733275v1",
+      "doi": "10.64898/2026.06.30.733275",
+      "abstract": "The unique peri-islet and double-layered vascular basement membrane (BM) of the human pancreatic islet are critical regulators of beta cell survival and function. While animal models imply that endothelial cells (ECs) are the exclusive source of islet BM, the precise cellular origins and spatial organization of the human islet matrisome remain poorly defined due to overlap in genes that mark non-epithelial cell populations and loss of spatial context during single-cell dissociation. In this study, we combine computational integration of whole-pancreas single-cell transcriptomes using CONCORD with high-resolution MERFISH spatial genomics to map the extracellular matrix (ECM) landscape across 251,477 spatially resolved cells from seven non-diabetic and five type 2 diabetic human donors. Contrary to an endothelial-centric paradigm, our data support a cooperative division of labor in the provision of BM, where pericytes represent the dominant transcriptional source of structural BM collagens (COL4A1, COL4A2) and ECs selectively express complementary matrix factors (HSPG2, LAMA5). Spatial neighborhood analysis further resolves a specialized population of islet-associated fibroblasts enriched at the islet boundary that are characterized by expression of peri-islet laminin genes. In type 2 diabetes, this homeostatic perivascular niche changes composition, marked by a significant increase in the islet fibroblast-to-pericyte ratio. Concurrently, islet pericytes undergo pro-fibrotic reprogramming characterized by the loss of canonical identity markers (PDGFRB), altered expression of ECM genes including COL1A2 and COL18A1, and upregulation of contractile machinery (MYL9). In the non-diabetic pancreas, pericytes constitute the principal vascular BM-expressing population within islets, whereas type 2 diabetes is associated with coordinated, compartment-specific remodeling of vascular-supportive stromal populations. Research in ContextO_ST_ABSWhat is already known about this subject?C_ST_ABSO_LIExtracellular matrix (ECM), and in particular basement membrane (BM), are essential structural and signaling components of the pancreatic islet microenvironment that contribute to beta cell function and survival. C_LIO_LIIslet capillaries are closely associated with endocrine cells and are surrounded by specialized BMs; however, the cellular sources of these BM components in the adult human pancreas remain incompletely defined. C_LIO_LIType 2 diabetes is associated with islet fibrosis and vascular dysfunction, but cell type-specific alterations in ECM-producing populations have not been comprehensively characterized in situ. C_LI What is the key question?O_LIWhich cell populations produce the components of ECM, including BM, within the adult human islet, and how are these populations altered in type 2 diabetes? C_LI What are the new findings?O_LISpatial transcriptomics identifies pericytes as the predominant vascular-associated source of ECM, including BM, gene expression in human islets, whereas endothelial cells exhibit complementary but more limited matrix-producing programs. C_LIO_LISpatial transcriptomics identifies an islet-associated fibroblast population enriched for fibrillar collagen and BM-associated genes that localizes preferentially to the islet surface niche. C_LIO_LIType 2 diabetes is associated with remodeling of perivascular ECM programs, including reduced expression of vascular basement membrane genes, a shift from a pericyte to smooth muscle-like identity, and increased expression of matrix-remodeling and fibrosis-associated genes. C_LI How might this impact clinical practice in the foreseeable future?O_LIDefining the cellular sources and disease-associated remodeling of the human islet ECM may inform the development of therapies aimed at preserving or restoring the islet microenvironment in type 2 diabetes. C_LIO_LIIncluding key subtypes of islet-associated ECM-producing cells may be important in improving current protocols to generate replacement islets from human pluripotent stem cells for cell replacement therapy for diabetes. C_LI",
+      "authors": [
+        "Meneses, L. K.",
+        "Kim, H. J.",
+        "Szot, G. L.",
+        "Sneddon, J. B.",
+        "Gartner, Z. J."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "MERFISH",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "健康與第二型糖尿病人類胰臟細胞外基質基因表現的空間景觀"
+    },
+    {
+      "id": "10.64898/2026.07.02.736039",
+      "title": "Organ-resolved endothelial regulatory programs link aging and metabolic overload to vascular immune remodeling",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.02.736039v1",
+      "doi": "10.64898/2026.07.02.736039",
+      "abstract": "Systemic aging and metabolic overload remodel the vasculature; however, how endothelial cells integrate these stresses across organs remains unclear. Using multi-organ single-cell and spatial transcriptomics with functional validation, we mapped endothelial and hematopoietic responses in adipose tissue, skeletal muscle, liver, and heart. Organ-specific endothelial transcriptional features were relatively preserved, whereas chronic stress selectively reconfigured regulatory programs: aging induced a conserved Irf/Stat-centered endothelial program, while high-fat diet engaged organ-biased lipid and remodeling programs. Spatial analysis revealed perivascular niches centered on aging-associated interferon-stimulated endothelial activation, with neighboring immune and stromal cells expressing C3 and LRP1-associated signals. Rather than simply amplifying inflammation, these niches contained mechanisms that restrained IFN activation, as C3 depletion upregulated vascular IRF7 expression. In parallel, the IFN downstream effector BST2 promoted anti-inflammatory macrophage differentiation and suppressed atherosclerosis. These findings define vascular inflammaging as an organ-resolved niche process in which endothelial IFN activation is coupled to local inflammatory restraint. HighlightsO_LIAging induces a shared endothelial type I IFN program across organs. C_LIO_LIA high-fat diet triggers organ-biased endothelial remodeling programs. C_LIO_LIPerivascular interferon niches couple inflammation with local restraint. C_LIO_LIIFN-induced endothelial BST2 promotes CD200R-associated macrophage regulatory features. C_LI",
+      "authors": [
+        "Yokoyama, M.",
+        "Nakayama, A.",
+        "Taki, Y.",
+        "Chen, M.",
+        "Gong, Y.",
+        "Shiina, M.",
+        "Kono, T.",
+        "Fujimoto, M.",
+        "Ito, K.",
+        "Ikeda, J.-i.",
+        "Tanaka, T."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "器官解析之內皮細胞調控程式連結老化與代謝過載至血管免疫重塑"
+    },
+    {
+      "id": "10.64898/2026.07.04.736471",
+      "title": "GAMETE maps the genetic architecture of chromatin accessibility in rice pollen at single-nucleus resolution",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.04.736471v1",
+      "doi": "10.64898/2026.07.04.736471",
+      "abstract": "Background Dissecting the genetic basis of cell-type-specific gene regulation during gametogenesis remains a major challenge. Population-level studies mask cellular heterogeneity, while the extreme data sparsity of single-cell profiling has precluded robust genetic mapping. Results We present GAMETE (Genetic Architecture Mapping of Epigenetic Traits at single-nucleus resolution), an integrated framework combining MPS-ATAC-seq, a high-throughput single-nucleus ATAC-seq method, with robust computational approaches for genotype inference and genetic mapping from sparse single-nucleus data. Applying GAMETE to hybrid rice pollen, we simultaneously profiled chromatin accessibility and inferred the genotypes of 4,887 individual haploid nuclei, revealing distinct chromatin landscapes across pollen cell types. This uncovered an unexpected elevation of chromatin accessibility at gypsy retrotransposons in microspores preceding their silencing in sperm cells, exposing a surveillance gap that may contribute to genome expansion. The synchronized profiling enabled us to construct a single-cell recombination map, map segregation distortion loci and trace their developmental origins, and identify 16,113 chromatin accessibility QTLs (caQTLs), 48.6% of which exhibited pronounced cell-type specificity. Analysis of introgression lines supported a cell-type-specific trans-acting caQTL regulating the pollen-essential gene DTM1. Conclusions This work establishes GAMETE as a broadly applicable framework for dissecting the genetic architecture of chromatin accessibility during gametogenesis without the need for subsequent generations.",
+      "authors": [
+        "Liu, Y.",
+        "Xia, C.",
+        "Li, J.",
+        "Li, J.",
+        "Yang, H.",
+        "Zong, Z.",
+        "Ming, L.",
+        "Yang, J.",
+        "Lian, H.",
+        "Luo, M.",
+        "Zhu, T.",
+        "He, X.",
+        "Xing, Y.",
+        "Yu, S.",
+        "Ouyang, Y.",
+        "Xie, W."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "development",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "GAMETE以單核解析度繪製水稻花粉染色質可及性之遺傳架構"
+    },
+    {
+      "id": "10.64898/2026.07.04.736527",
+      "title": "BertST: BERT-based Spatial Domain Identification in Patient Data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.04.736527v1",
+      "doi": "10.64898/2026.07.04.736527",
+      "abstract": "Spatial transcriptomics enables the study of gene expression within its native tissue context, providing critical insights into cellular organization and microenvironment-driven biological processes. A key challenge in this field is spatial domain identification, which aims to partition tissue into coherent regions by jointly leveraging gene expression and spatial information. Existing approaches are predominantly based on Graph Neural Networks (GNNs), and approach based on Transformers particularly, Bidirectional Encoder Reppresentation Transformer (BERT) model for modelling both local and long-range dependencies remains largely unexplored. In this work, we propose BERT for Spatial Transcriptomics (BertST), a transformer-based framework that reformulates spatial transcriptomics as a graph-to-text representation learning problem. Building upon the BERTwalk paradigm, we construct a task-specific multi-graph representation integrating spatial adjacency, pruned gene-expression similarity, and a fully connected gene-expression graph. This design enables the modelling of both local spatial structure and global molecular relationships. Random walks over these graphs are treated as sequences, allowing a BERT model to learn contextualised node embeddings. To further enhance representation quality, we introduce a hierarchical multi-graph propagation strategy, where embedding refinement is performed sequentially: first on the fully connected graph to capture global structure, followed by the pruned graph to refine molecular relationships, and finally on the spatial graph to enforce local smoothness. This ordering ensures that global information is effectively distributed and progressively constrained by biologically meaningful neighbourhoods. We also improve computational efficiency by leveraging \\textit{PecanPy}, a fast and scalable implementation of node2vec, enabling efficient random walk generation on dense graphs. Experimental results on multiple 10x Visium datasets, including DLPFC and Human Breast Cancer, demonstrate that BertST consistently outperforms or matches GNN-based methods such as ConST, CCST, and SpaceFlow in terms of Adjusted Rand Index (ARI) and Adjusted Mutual Information (AMI). Overall, BertST highlights the potential of transformer-based architectures for spatial omics analysis by effectively capturing both local and long-range spatial-molecular dependencies, offering a promising alternative to traditional graph-based methods.",
+      "authors": [
+        "Nnadi, G. O."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "spatial omics",
+        "Visium",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "BertST：基於BERT之患者資料空間領域識別"
+    },
+    {
+      "id": "10.64898/2026.07.06.736651",
+      "title": "LeafRank: A phylodynamic framework for inferring relative fitness from single-cell phylogenies in chromosomally unstable tumors",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.06.736651v1",
+      "doi": "10.64898/2026.07.06.736651",
+      "abstract": "Tumors contain cancer cells with diverse growth potentials that shape evolutionary trajectories, yet this fitness diversity remains difficult to quantify in cases of whole-genome duplication (WGD) and chromosomal instability. We present LeafRank, a mathematical framework that leverages single-cell DNA-seq phylogenies to infer the relative fitness of individual cells. Using a multi-type branching process model, LeafRank integrates full tree topology, including branch lengths and bifurcation patterns, to estimate marginal fitness probabilities under punctuated evolutionary regimes driven by rare driver events. To account for elevated aberration rates following WGD, we introduce a tree-rescaling strategy that adjusts for lineage-specific genomic instability. Unlike methods focused on predefined subclones, LeafRank ranks all sampled cells, enabling flexible assessment of growth heterogeneity. Simulations demonstrate high accuracy across spatial and non-spatial virtual tumors. Applied to ovarian cancer, LeafRank reveals directional and parallel selection in WGD tumors and identifies recurrent copy number events enriched in high-fitness lineages. WGD lineages do not show immediate growth advantages but acquire fitness through subsequent alterations.",
+      "authors": [
+        "Wu, C.",
+        "Leder, K.",
+        "Wang, Z.",
+        "Sun, R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer",
+        "evolution",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "LeafRank：從染色體不穩定腫瘤單細胞系統發育推斷相對適應度之系統發育動力學框架"
+    },
+    {
+      "id": "10.64898/2026.07.07.737048",
+      "title": "Coding agents author interpretable single-cell embedding models from the literature",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.07.737048v1",
+      "doi": "10.64898/2026.07.07.737048",
+      "abstract": "The single-cell literature catalogs cell states as validated marker-gene programs - a sparse, compositional prior. Conventional embedding methods do not leverage this prior and learn cell-state structure de novo from the expression matrix, producing dense dimensions needing post-hoc interpretation and batch correction. Here we show coding agents can author single-cell embedding models directly from the literature. Given a scenario that focuses this literature lens on a chosen biological subdomain, the agent edits a structured Python template, curating named, literature-cited gene programs and composing them into axes, without a gene-set database, training, or sight of the data. Across mouse and human tissues these zero-shot embeddings are competitive in biological quality with conventional, foundation-model, and program-informed baselines, batch-robust by construction and reproducible across runs, complementing data-driven embeddings. Because each dimension is a named, cited gene program, the embedding is interpretable and auditable, and its composable axes can be steered into a developmental tree.",
+      "authors": [
+        "Brunn, N.",
+        "Krissmer, S. M.",
+        "Frosch, M.",
+        "Frick, M.",
+        "Prinz, M.",
+        "Binder, H."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "編碼代理從文獻中建構可解釋的單細胞嵌入模型"
+    },
+    {
+      "id": "10.64898/2026.07.05.736638",
+      "title": "Mind the Alignment Gap: A Spatial Transcriptomics Benchmark for Scientific Coding Agents",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.05.736638v1",
+      "doi": "10.64898/2026.07.05.736638",
+      "abstract": "Scientific coding agents are difficult to benchmark because many research tasks require executable work yet produce ambiguous or hard-to-verify outputs. Because benchmark construction requires substantial time and resources, automation offers a path to accelerating methods evaluation. We introduce an interactive framework for constructing scientific-agent benchmarks from peer-reviewed papers and diagnosing agent behavior through trace inspection. We apply it as a case study in spatial transcriptomics alignment, constructing 40 tasks from SABench in which agents submit coordinate tables aligning pairs of two-dimensional tissue slices. Across 120 runs and three configurations, we compare a basic prompt, a package-aware prompt, and a full prompt with a prebuilt virtual environment. In this setting, richer package and environment context increased tool exploration but reduced the mean alignment score relative to the basic prompt (0.36 vs. 0.43; 95% CI, [-0.11,-0.03]). Trace inspection showed that added scaffolding often induced unnecessary transformations, fragile package-first workflows, and infrastructure failures. These results illustrate how specialized tooling can alter agent behavior and why scientific-agent benchmarks should evaluate agent traces and the workflows that produce them in addition to the final outputs.",
+      "authors": [
+        "Chen, Y. T.",
+        "Hicks, S. C."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "注意對齊差距：科學編碼代理的空間轉錄體學基準"
+    },
+    {
+      "id": "10.64898/2026.07.07.736950",
+      "title": "Rectangle: robust and scalable multiscale deconvolution informed by single-cell RNA sequencing data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.07.736950v1",
+      "doi": "10.64898/2026.07.07.736950",
+      "abstract": "Bulk RNA-seq enables effective profiling of large cohorts and complex experimental designs, but current single-cell-informed deconvolution methods incompletely resolve closely related cell phenotypes, do not scale efficiently to large single-cell datasets, or fail to account for cellular content not represented in the reference. Here, we present Rectangle, an scverse Python framework for single-cell-informed deconvolution of bulk RNA-seq data. Rectangle combines multiscale deconvolution, capturing cellular composition across multiple resolution levels, with explicit modeling of unknown cellular content. In a diverse, cross-method benchmark, Rectangle achieved consistently strong performance across all evaluated metrics, demonstrating high accuracy, high resolution, low spillover, strong scalability and efficiency, and robustness to unknown cellular content. By bridging the resolution of single-cell transcriptomics with the scale and cost-efficiency of bulk RNA-seq, Rectangle enables cell-type and cell-state profiling at scale, supporting population-scale cellular biomarker discovery and tracking of cellular dynamics in settings impractical for comprehensive single-cell sequencing.",
+      "authors": [
+        "Eder, B.",
+        "Rigato, I.",
+        "Dietrich, A.",
+        "Merotto, L.",
+        "Sturm, G.",
+        "Treis, T.",
+        "List, M.",
+        "Theis, F.",
+        "Finotello, F."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Rectangle：基於單細胞RNA測序數據的穩健可擴展多尺度解卷積"
+    },
+    {
+      "id": "10.64898/2026.07.05.736629",
+      "title": "Gene Program Negotiation Defines Cellular Identity in Single-Cell Transcriptomes",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.05.736629v1",
+      "doi": "10.64898/2026.07.05.736629",
+      "abstract": "Single-cell transcriptomics has transformed the characterization of cellular heterogeneity by enabling systematic analysis of biological gene programs. However, existing computational approaches primarily quantify the activity of individual programs independently and therefore provide limited insight into how multiple simultaneously active programs collectively determine cellular identity. Here we present Gene Program Negotiation (GPN), a graph-based computational framework that models regulatory decision-making among concurrently active biological programs. GPN reconstructs cell-specific program interaction networks from local transcriptional neighborhoods and quantifies regulatory organization using the Gene Program Coherence Index (GPCI) together with measures of local regulatory conflict, program diversity, and dominance. These graph-derived properties enable the classification of individual cells into five regulatory decision states: Consensus, Competition, Negotiation, Dominance, and Low activity. Applying GPN to gastric cancer single-cell transcriptomes revealed that cells sharing the same dominant biological program frequently occupied distinct regulatory decision states, demonstrating that dominant program identity alone does not uniquely define cellular regulatory organization. Competition states consistently exhibited elevated local regulatory conflict and were preferentially enriched among transition-like cells, indicating that regulatory competition is closely associated with transcriptional plasticity. Independent validation using glioblastoma single-cell transcriptomes reproduced these regulatory patterns without modification of the computational framework, supporting the robustness and generalizability of the approach across biologically distinct malignancies. These findings establish regulatory negotiation as an additional layer of cellular organization beyond conventional gene-program activity analysis. By explicitly modeling interactions among simultaneously active biological programs, GPN provides a general computational framework for investigating regulatory coordination, cellular plasticity, and dynamic cell-state organization in single-cell transcriptomic data.",
+      "authors": [
+        "Sung, J.-Y.",
+        "Cheong, J.-H."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "基因程式協商定義單細胞轉錄體中的細胞身份"
+    },
+    {
+      "id": "10.64898/2026.07.05.736582",
+      "title": "Learning the spatial cell-cell communication network to decode multi-channel signaling and predict network-hub vulnerabilities with MOSANIC",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.05.736582v1",
+      "doi": "10.64898/2026.07.05.736582",
+      "abstract": "Intercellular signaling governs the central decisions of tissue biology, from proliferation and immune recruitment to metabolic adaptation and cell death, and its dysregulation is a hallmark of disease. What matters most are properties of the signaling network as a whole rather than of individual interactions: the hubs that hold the network together and mark rational points of intervention, the relays through which a signal propagates across intermediate cells to reach partners it does not directly contact, the response of tissue-wide communication to the loss of a single node, and the metabolite-mediated axis that operates alongside secreted-protein signalling. Scoring known ligand-receptor pairs yields a ranked interaction list that captures none of these and excludes metabolite signalling. We present MOSANIC (Multi-mOdal Self-Attention Network for Intercellular Communication), which learns a tissue's communication network directly from spatial transcriptomics. MOSANIC represents each tissue as a single heterogeneous graph of cells, genes and metabolites, initialises every node with a frozen foundation-model representation (scVI, ESM-2 and ChemBERTa), and propagates these representations through a self-attention network over biologically typed edges. Supervision is restricted to spatial gene-expression prediction and excludes ligand-receptor annotation, rendering the inferred communication statistically independent of the reference databases used for evaluation. Across five spatial datasets spanning three platforms and two species, MOSANIC attains the highest accuracy on all eight independent ligand-receptor benchmarks (mean AUROC 0.756) against nine established methods, resolves a metabolite-receptor channel statistically orthogonal to the peptide channel, and reconstructs multi-step signal relays that concentrate within a compact rich-core of load-bearing hub genes and cells whose removal fragments the network far beyond a degree-preserving null. In-silico knockout of these hubs recovers experimentally reported phenotypes, and, given no prior oncological input, MOSANIC nominates SCARF1 as a previously unrecognised communication hub in breast cancer whose elevated expression predicts significantly worse survival in an independent cohort after adjustment for tumour stage and age (hazard ratio 1.17, P = 0.043). MOSANIC is released as an open-source Python package (mosanic-ccc).",
+      "authors": [
+        "Das, D.",
+        "Mitra, P."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "biology",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "學習空間細胞間通訊網絡以解碼多通道訊號並用MOSANIC預測網絡樞紐脆弱性"
+    },
+    {
+      "id": "10.64898/2026.07.06.736701",
+      "title": "scJET: Full-gene Space Single-cell Expression Generation with Patch-based Transformer Modeling",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.06.736701v1",
+      "doi": "10.64898/2026.07.06.736701",
+      "abstract": "Most single-cell generative models rely on highly variable genes (HVGs) or low-dimensional latent representations, limiting their capacity to capture the complexity of full-gene features. We present scJET, a patch-based Transformer denoising framework that operates in full-gene space. scJET preserves global manifold structure, local neighborhood statistics, and gene-level expression programs. By combining scalable patch tokenization with full-gene denoising, scJET provides an efficient framework for transcriptome-wide single-cell matrix generation.",
+      "authors": [
+        "Liang, Q.",
+        "Lyu, Q. R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "scJET：基於修補式Transformer建模的全基因空間單細胞表現生成"
+    },
+    {
+      "id": "10.64898/2026.07.03.736035",
+      "title": "Characterizing dynamic tissue architectures by identifying cell-type-specific spatiotemporal gene programs with stGP",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.03.736035v2",
+      "doi": "10.64898/2026.07.03.736035",
+      "abstract": "Cellular gene programs unfold over biological time within spatially organized tissues. The same cell type can activate distinct programs in different spatial domains or multicellular niches. Spatiotemporal transcriptomics enables in situ measurement of these processes; however, the interplay between temporal progression and spatial organization complicates the identification of whether a gene program is influenced by temporal changes, spatial structure, or both. To overcome this challenge, we present spatiotemporal Gene Programs (stGP), a statistical framework for identifying interpretable cell-type-specific gene programs across multi-sample spatiotemporal transcriptomic studies. stGP preserves the molecular identity of each program through shared gene loadings, and decomposes individual cell activity into a temporal component that captures gene program responses over biological time, and a spatial component that characterizes variations within tissue sections. We quantify their relative contributions by estimating their variance components. Through comprehensive simulations and analyses of three spatiotemporal transcriptomic datasets across different tissues and technologies, stGP uncovers spatiotemporal gene programs that distinguish preserved tissue architecture from dynamic remodeling. Our framework delineates age-associated cellular responses and uncovers localized program deployment within anatomical regions, aging hotspots, and multicellular niches. Our results establish stGP as an effective and robust framework for dissecting dynamic tissue architecture, providing insights into how cell-type-specific gene programs are coordinated across time and spatial microenvironments.",
+      "authors": [
+        "Yu, B.",
+        "Tan, Z.",
+        "Wan, X.",
+        "Wang, H.",
+        "Yang, C."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial domains"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "用stGP識別細胞類型特異性時空基因程式來表徵動態組織架構"
+    },
+    {
+      "id": "10.64898/2026.06.30.735464",
+      "title": "A Cross-Species Systems Genetics Framework Identifies Causal Genes in Diabetic Nephropathy",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.30.735464v1",
+      "doi": "10.64898/2026.06.30.735464",
+      "abstract": "Diabetic nephropathy (DN) is the leading cause of kidney failure in the developed world, but the genetic architecture of DN susceptibility is not well characterised. Here we apply a systems genetics approach in a mouse model of DN to discover novel QTLs for clinically relevant phenotypes including albuminuria, glomerulosclerosis, and macrophage infiltration. For context and prioritisation, we combined single-cell-transcriptomics-guided pQTL and eQTL mapping with cell-type-specific co-expression networks, identifying 192 candidate pGenes for albuminuria. While many were novel, 27% had prior genetic associations, and 40% were validated in a human diabetic cohort. Twelve genes belong to a podocyte network enriched for human GWAS signals. Among those, functional significance of the E3 ubiquitin ligases DCAF6 and ZNRF2 was confirmed by knockdown in Drosophila nephrocytes. Our systems genetics approach identified DN susceptibility genes previously validated in human GWAS while uncovering potential new genes and pathways that could be exploited for risk stratification and therapeutics development.",
+      "authors": [
+        "Mishra, K.",
+        "Sakban, R. B.",
+        "Shankar, S.",
+        "Wong, J.",
+        "Farah, B. L.",
+        "Guo, J.",
+        "Ching, J.",
+        "Tham, M. S.",
+        "Kovalik, J.-P.",
+        "Gurley, S. B.",
+        "Petretto, E.",
+        "Tolwinski, N. S.",
+        "Coffman, T. M.",
+        "Behmoaras, J."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "跨物種系統遺傳學框架識別糖尿病腎病中的因果基因"
+    },
+    {
+      "id": "10.64898/2026.07.01.735871",
+      "title": "Shield-4i: A Whole-mount Multiplexed Imaging Platform for Studying Multiscale Information Flow in 3D Multicellular Systems",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.01.735871v1",
+      "doi": "10.64898/2026.07.01.735871",
+      "abstract": "Self-organization in multicellular systems emerges from reciprocal interactions across spatiotemporal scales. Understanding how subcellular organization, tissue remodeling and developmental outcome are coordinated, thus requires simultaneous profiling of biological processes spanning orders of magnitudes in space and time. Yet, a unified experimental and computational framework for capturing these multiscale properties across in vivo and stem cell-derived systems has been lacking. Here, we introduce Shield-4i, a high-throughput, versatile, and accessible method for automated in toto iterative immunofluorescence imaging of whole-mount structures at subcellular resolution. Through polyepoxide-mediated inter- and intramolecular crosslinking, Shield-4i preserves sample integrity during repeated SDS-based elution cycles. We benchmark this method in gastrulating zebrafish and post-implantation mouse embryos and demonstrate its applicability to stem cell-derived 3D gastruloids, achieving up to 30-plex measurements of proteins and their post-translational modifications across hundreds of samples. To enable scalable analysis, we developed a dedicated 3D workflow supporting OME-Zarr-based and FAIR-compliant data storage, standardized processing, and multiscale feature extraction. Applying this framework to investigate gastruloid self-organization, we quantify how cellular physicochemical state and signaling properties encode cell position along embryonic axes and connect molecular patterning and fate decisions to morphological symmetry breaking at the multicellular scale. Together, Shield-4i provides a high-content in toto spatial proteomics platform for dissecting multiscale information flow and self-organization in multicellular systems.",
+      "authors": [
+        "Hornbachner, R.",
+        "Shamipour, S.",
+        "Arslan, F. N.",
+        "Fan, R.",
+        "Hess, M.",
+        "Curvaia, F.",
+        "Lüthi, J.",
+        "Oates, A. C.",
+        "Bedzhov, I.",
+        "Gilmour, D.",
+        "Uhlmann, V.",
+        "Pelkmans, L."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial proteomics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Shield-4i：一個用於研究三維多細胞系統中多尺度資訊流的全標本多重成像平台"
+    },
+    {
+      "id": "10.1101/2025.11.17.688894",
+      "title": "Multidimensional Single-Cell Transcriptomic Profiling of Uterine Leiomyosarcomas Reveals Distinct Tumor States with Inferred Therapeutic Vulnerabilities",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.11.17.688894v2",
+      "doi": "10.1101/2025.11.17.688894",
+      "abstract": "Uterine leiomyosarcoma (ULMS) is an orphan disease that frequently recurs and metastasizes, with patients undergoing multiple lines of chemotherapy due to lack of effective therapeutic targets. To address this gap, we used single-cell RNA sequencing and spatial transcriptomic analysis to comprehensively profile ULMS. We uncovered multiple states of tumor cells, including tumor cells with mesenchyme-like features, ischemic tumor cells defined by a MYC program, inflammatory tumor cells with active interferon signaling, and stem cell-like hormone receptor-positive cells. The inferred spatial correlates of these tumor cell states demonstrated unique localization patterns. By correlating these signatures to bulk RNA sequencing data, we demonstrate the relevance of these findings to clinical outcomes. Finally, using the single-cell integration and drug response prediction algorithm (scIDUC), we propose drug predictions that may target specific tumor states. Our findings suggest new avenues for further exploration of individualized and multifaceted therapeutic strategies to treat ULMS.",
+      "authors": [
+        "Korah, M.",
+        "Agolia, J. P.",
+        "Reddy, B.",
+        "Flojo, R. A. B.",
+        "Goncalves, A.",
+        "Wang, L.",
+        "Bethi, R.",
+        "Bobst, W.",
+        "Liang, B.",
+        "Yip, K. A.",
+        "Tabora, A.",
+        "Hsu, C.-H.",
+        "Reveron-Thornton, R.",
+        "Guo, C.",
+        "Gruener, R. F.",
+        "Delitto, A. E.",
+        "Xie, P. Y.",
+        "Tomasso, A.",
+        "Sun, B.",
+        "Daniel, S. K.",
+        "Litkouhi, B.",
+        "Dorigo, O.",
+        "Bui, N. Q.",
+        "Pan, M.",
+        "Moding, E. J.",
+        "Kalbasi, A.",
+        "Kirane, A. R.",
+        "Poultsides, G. A.",
+        "Norton, J. A.",
+        "Newman, A. M.",
+        "Charville, G.",
+        "Ganjoo, K. N.",
+        "Foster, D. S.",
+        "Huang, R. S.",
+        "Lee, B.",
+        "Longaker, M. T.",
+        "Delitto, D."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "子，子宮平滑肌肉瘤的多維單細胞轉錄體分析揭示具有推估治療弱點的不同腫瘤狀態"
+    },
+    {
+      "id": "10.64898/2026.06.26.734719",
+      "title": "Modeling pancreatic cancer tumor stroma co-evolution in an in ovo model",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.26.734719v1",
+      "doi": "10.64898/2026.06.26.734719",
+      "abstract": "Pancreatic ductal adenocarcinoma (PDAC) is characterized by a dense, desmoplastic microenvironment that drives disease progression, yet conventional models fail to capture this complex tumor-stroma coevolution. Here, we utilize the chick chorioallantoic membrane (CAM) platform to investigate tumor-stroma interactions using murine PDAC cell lines and patient-derived organoids (PDOs). Integrating single-cell RNA sequencing and spatial transcriptomics, we show that the CAM microenvironment supports the emergence of complex tumor ecosystems while preserving patient-specific characteristics. Within five days, in ovo tumors faithfully recapitulated the structural and molecular features of parental tumors. Histological analysis revealed the rapid recruitment and spatial organization of heterogeneous host cancer-associated fibroblast (CAF) populations, showcasing distinct myofibroblastic and inflammatory stromal states. Crucially, the model preserved intrinsic tumor heterogeneity and permitted functional interrogation of subtype-specific extracellular matrix remodeling and metastatic dissemination. Together, our findings demonstrate that the CAM provides a highly permissive niche for tumor-stroma coevolution. As a rapid, scalable, and biologically relevant platform, this in ovo model offers a powerful approach for studying stromal composition, metastatic progression, and patient-specific tumor biology in pancreatic cancer.",
+      "authors": [
+        "Ranjan, R.",
+        "Ravichandra, A.",
+        "Putze, P.",
+        "Chernysheva, A.",
+        "Wirth, J.",
+        "Lucarelli, D.",
+        "Ng, W. Y.",
+        "Pavlovska, O.",
+        "Sibanda, K. S.",
+        "Leipe, E.",
+        "Schicktanz, F.",
+        "Bärthel, S.",
+        "Schlitter, A. M.",
+        "Ollinger, R.",
+        "Ringelhan, M.",
+        "Maurer, C.",
+        "Mogler, C.",
+        "Nawroth, R.",
+        "Schmid, R. M.",
+        "Schneider, G.",
+        "Rad, R.",
+        "Steiger, K.",
+        "Saur, D.",
+        "Reichert, M."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "biology",
+        "cancer",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "在雞胚模型中模擬胰臟癌腫瘤基質的共同演化"
+    },
+    {
+      "id": "10.64898/2026.07.08.737173",
+      "title": "Predicting subclonal TP53 mutations from tumor spatial transcriptomics data using a graph convolutional neural network",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.08.737173v1",
+      "doi": "10.64898/2026.07.08.737173",
+      "abstract": "Spatial transcriptomics (ST) has revolutionized our understanding of tumor biology but inherently lacks information on the upstream somatic driver mutations. We developed a spatially-aware graph convolutional neural network (MuT-GCNN) that infers TP53 clones directly from ST data. MuT-GCNN was trained on virtual ST slides with clones simulated from a large collection of existing RNA and matched DNA sequencing data. The model is highly performant with precision and recall values exceeding 95% in most analysed cancer types. It is sensitive for single hit mutations and is primarily informed by the expression of p53 signalling genes in cancer cells. After demonstrating the potential of the model on publicly available squamous cell carcinoma (SCC) data, a direct validation was performed using ST and matched DNA sequencing from serial slices obtained from 4 cutaneous SCC samples. With the increasing availability of ST data and upcoming ST atlases, MuT-GCNN can unveil the location of (sub)clonal alterations in TP53, the most frequently mutated gene in human cancer.",
+      "authors": [
+        "Luijts, T.",
+        "Hoogstoel, S.",
+        "Pappaert, E.",
+        "De Meester, E.",
+        "Van Nieuwerburgh, F.",
+        "Van Hamme, E.",
+        "De Schepper, S.",
+        "Willaert, W.",
+        "Vral, A.",
+        "Hoorens, I.",
+        "Van den Eynden, J."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "biology",
+        "cancer",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "使用圖卷積神經網路從腫瘤空間轉錄體資料預測亞克隆TP53突變"
+    },
+    {
+      "id": "10.64898/2025.12.23.695206",
+      "title": "Aging increases ovarian cancer growth, metastasis, and immunosuppression that can be alleviated by inhibiting hedgehog signaling",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2025.12.23.695206v2",
+      "doi": "10.64898/2025.12.23.695206",
+      "abstract": "Ovarian cancer incidence and mortality increase with age, yet how aging shapes tumor progression and the immune microenvironment remains poorly defined. Using orthotopic syngeneic models of distinct cellular origins (ovarian surface epithelial and fallopian tube-derived) in young versus aged mice, we show that aged hosts exhibit higher tumor burden, metastasis and ascites. Follicle depletion in young mice did not recapitulate these effects, indicating contributions beyond hormonal decline. Spatial transcriptomics revealed distinct age dependent intratumoral heterogeneity, with Hedgehog signaling enrichment in CD45+ cells from aged tumors, alongside elevated CD206+ tumor-associated macrophages and FoxP3+ regulatory T cells. Pharmacologic Hedgehog inhibition in aged mice suppressed tumor growth, reduced metastasis, and decreased CD206+ macrophages and FoxP3+ T cells while preserving CD8+T cells. In human ovarian cancer, Hedgehog activation correlated with immunosuppressive and immune checkpoint resistance signatures. We propose Hedgehog inhibition as an immunomodulatory strategy for Hedgehog activated or post menopausal ovarian cancer.",
+      "authors": [
+        "Kumari, A.",
+        "Elbahoty, M. H.",
+        "Rajkarnikar, R.",
+        "Sureja, K.",
+        "Nayyar, M. V.",
+        "Monavarian, M.",
+        "Quintero, L. M.",
+        "Fuh, K.",
+        "Tyrrell, D. J.",
+        "Shevde, L. A.",
+        "Anand, S.",
+        "Margaroli, C.",
+        "Mythreye, K."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "老化增加卵巢癌的生長、轉移和免疫抑制，而抑制Hedgehog訊號傳導可緩解此現象"
+    },
+    {
+      "id": "10.64898/2026.07.01.735780",
+      "title": "Transcriptionally defined AML cell states associate with treatment response and microenvironmental remodeling",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.01.735780v1",
+      "doi": "10.64898/2026.07.01.735780",
+      "abstract": "While therapy resistance in acute myeloid leukemia (AML) is often attributed to leukemic stem cells (LSCs), their functional properties are not fully captured by their well-established genetic landscape and cell lineage transcriptional programs. Here, we explore AML cell states and their associations to drug response and systemic immune context. We performed integrated single-cell transcriptomics and immunophenotyping on diagnostic AML samples (n=6) to define transcriptional cell state gene signatures. These were projected onto bulk RNA-seq data from 448 AML patients to assess associations with drug sensitivity, plasma proteomics, clinical features, and established prognostic scores. Longitudinal single-cell data from external cohorts and cell-cell communication analyses were used to examine treatment dynamics and microenvironmental signaling. We defined nine AML cell states, including progenitor-like, stromal-like, antigen-presenting, and monocytic programs. Stemness features were distributed across multiple states, with lymphoid-primed and stress-adapted progenitors showing the strongest alignment with established stemness scores. Distinct drug sensitivities emerged, including cell cycle checkpoint inhibitor sensitivity in stress-adapted progenitors and kinase inhibitor sensitivity in cycling progenitors, alongside shared resistance to BH3 mimetics in monocytic states. Stress-adapted progenitors were associated with adverse clinical features and expanded following venetoclax-based therapy. Monocytic states acted as immunosuppressive hubs via TIGIT signaling, while stromal-associated states received niche-derived survival signals. Overall, we define a framework that associates AML cell states with stemness, drug response, and microenvironmental interactions. These findings highlight distributed stemness, state-specific vulnerabilities, and niche-driven resistance mechanisms, informing more precise therapeutic strategies in AML.",
+      "authors": [
+        "Struyf, N.",
+        "Hartmanis, L.",
+        "Rico Pizarro, L.",
+        "Österroos, A.",
+        "Bohlin, A.",
+        "Bengtzen, S.",
+        "Lehmann, S.",
+        "Kallioniemi, O.",
+        "Erkers, T."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "轉錄體定義的急性骨髓性白血病細胞狀態與治療反應和微環境重塑相關"
+    },
+    {
+      "id": "10.64898/2026.07.02.736148",
+      "title": "Pericyte-Derived Cancer-Associated Fibroblasts Correlate with Poor Survival and Are Enriched After Chemoradiotherapy in Glioblastoma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.02.736148v1",
+      "doi": "10.64898/2026.07.02.736148",
+      "abstract": "The role of cancer-associated fibroblasts (CAFs) in glioblastoma remains unclear, as their existence in the brain tumor microenvironment is still debated, given that the normal brain parenchyma is devoid of fibroblasts. It is unclear whether cells described as CAFs represent a distinct stromal population or a transcriptional state of perivascular cells such as pericytes. The aim of this study was to determine the identity, origin, and functional relevance of CAFs in glioblastoma. We analyzed 54 single-cell RNA sequencing datasets together with 88 bulk RNA sequencing samples. We identified a continuous transcriptional spectrum linking endothelial cells, pericytes, and CAFs, supporting pericytes as the most likely source of CAFs in glioblastoma. We further derived and validated robust CAF- and pericyte-specific gene signatures, enabling clear separation of these populations across cohorts. Reproducible CAF-associated ligand-receptor interactions were enriched in angiogenesis and immune modulation pathways. In bulk RNA-seq data, both CAF signature scoring and deconvolution consistently demonstrated increased CAF abundance in IDH-wildtype gliomas and further enrichment after chemoradiotherapy, while selective CYP1B1 expression in CAFs suggested a potential association with therapy-induced tumor adaptation. Overall, CAFs represent a distinct, pericyte-related stromal population in glioblastoma with conserved transcriptional and signaling programs. High CAF signature scores were associated with poorer overall and progression-free survival and were enriched in IDH-wildtype and post-chemoradiotherapy gliomas, suggesting a role for CAFs in therapy-associated remodeling of the tumor microenvironment in aggressive disease.",
+      "authors": [
+        "Ismailov, A.",
+        "Poptsova, M."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "周細胞來源的癌症相關纖維母細胞與膠質母細胞瘤化放療後的不良存活相關且數量增加"
+    },
+    {
+      "id": "10.64898/2026.07.02.735691",
+      "title": "Single-cell multi-omics analysis reveals heterogeneity and plasticity of neutrophil states in response to immunotherapies",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.02.735691v1",
+      "doi": "10.64898/2026.07.02.735691",
+      "abstract": "BackgroundTumor-associated neutrophils (TANs) are emerging as functionally heterogeneous and plastic cells in the tumor microenvironment. In immunologically cold tumors, elevated neutrophil abundance correlates with poor prognosis and resistance to immune checkpoint inhibition (ICI). Whether distinct anti-tumoral neutrophil states can be induced by different immunotherapies and how they relate to treatment efficacy remains unclear. MethodsUsing the syngeneic MOC2-huEGFR (M2h) mouse model of head and neck squamous cell cancer (HNSCC), we treated tumor-bearing mice with agonistic anti-CD40 monoclonal antibody (mAb) (aCD40), TNF, Cetuximab, or a combination of all three, designated Neutrophil Activating Therapy (NAT). In addition to evaluating anti-tumor efficacy, we performed single-cell multiomics RNA and protein sequencing, followed by bioinformatics analyses and flow cytometry validation. NAT-induced anti-tumor efficacy and related neutrophil states were also assessed in another cold tumor model, 9464D-GD2 neuroblastoma. Murine treatment-induced neutrophil gene signatures were then evaluated using clinical, proteomic, and transcriptomic data from HNSCC patients. ResultsFive transcriptionally distinct neutrophil states (N0-N4), including precursor state CD49d+ N4, were identified using the M2h model. N0 neutrophils (immunosuppressive/quiescent) dominated untreated tumors, but not in successful treatments. ISG+ N1 neutrophils and CCR3+ N3 neutrophils expanded by aCD40, TNF, and NAT treatment with anti-tumoral gene signatures and found more interacting with CD8+ T cells from bioinformatics analysis. N2 neutrophils reflected a recently established hypoxia-adapted state found in all treatments. ICAM1 (CD54) emerged as a marker of treatment-induced neutrophil activation, discriminating N1, N2, and N3 neutrophils from N0 neutrophils, validated by flow cytometry. In the 9464D-GD2 neuroblastoma model, NAT treatment also reduced the N0 dominance seen in untreated tumors in the HNSCC model but failed to induce anti-tumoral neutrophil states. In 23 HNSCC patients who received ICI therapy, ICAM1 protein expression in neutrophils trended toward association with responder status (TMA-level p=0.029), and ICAM1 neutrophil gene expression also trended toward association with improved overall survival in TCGA data (HR=0.75, p=0.059). ConclusionsDistinct immunotherapy-induced neutrophil states are defined by transcriptional profiles enriched in different functional pathways, associated with both anti-tumor and pro-tumor signatures. ICAM1 identifies activated neutrophils and potentially serves as a biomarker of ICI response in HNSCC, warranting further clinical validation. WHAT IS ALREADY KNOWN ON THIS TOPICNeutrophil heterogeneity has received increasing attention, with studies identifying antitumoral neutrophil populations, either at baseline or induced by treatment. Several effective treatment regimens involve an anti-CD40 agonist (aCD40) antibody, among them Neutrophil Activating Therapy (NAT), which combines aCD40, TNF, and a tumor antigen binding antibody designed to reprogram neutrophils. NAT could thus be particularly effective in cold, myeloid-rich tumors that are largely unresponsive to conventional immunotherapies such as checkpoint blockade, enacting these anti-tumoral effects through similar and different mechanisms; however, this has not been tested. WHAT THIS STUDY ADDSThis study adds a single-cell multi-omics framework for defining treatment-induced neutrophil heterogeneity in MOC2-huEGFR and 9464D-GD2 tumors, two immunologically cold models. It highlights ICAM1/CD54 and interferon-stimulated genes as markers of a dominant antitumor neutrophil state, while showing that neutrophil state composition variy across tumor models. HOW THIS STUDY MIGHT AFFECT RESEARCH, PRACTICE, OR POLICYThese results support the efficacy of a myeloid-modulating therapy built around aCD40 and TNF in a cold murine head and neck cancer model, and to a lesser extent in a cold murine neuroblastoma model. ICAM1/CD54 expression in neutrophils was also identified as a promising marker of antitumor activity and treatment response. More broadly, this work suggests that incorporating aCD40 and/or TNF into existing treatment regimens could improve outcomes, while ICAM1/CD54-high neutrophils may serve as a useful therapeutic readout.",
+      "authors": [
+        "Gao, A.",
+        "Shyamkumar, S.",
+        "Winn, N. B.",
+        "Erbe, A. K.",
+        "Davis, S.",
+        "Zaborek, J.",
+        "Heimstreet, K.",
+        "Boyenga, S.",
+        "Matthews, J.",
+        "Tzu-Ming Tsao, S.",
+        "Sondel, P. M.",
+        "Dinh, H. Q."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "單細胞多體學分析揭示嗜中性球狀態對免疫治療的異質性與可塑性"
+    },
+    {
+      "id": "10.64898/2026.01.06.697137",
+      "title": "Cellular basis of accelerated whole-tooth regeneration",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.01.06.697137v2",
+      "doi": "10.64898/2026.01.06.697137",
+      "abstract": "Teeth are ectodermal organs that have, throughout their long evolutionary history, retained the capacity for full regeneration and replacement, even in adult stages. Yet, because most mammals (e.g., humans, mice) lack lifelong dental replacement, we do not fully understand its tempo and mode, and we do not have a clear picture of the cell populations and signals that contribute to the process. Here, we used cichlid fishes from Lake Malawi, species that differ in tooth formula (tooth shape and number) but share one-for-one tooth replacement, to (i) explore the tempo of dental replacement after plucking and then (ii) identify the cell populations, gene expression signatures, and interactions between cell populations that change in this plucking paradigm. We observed that cichlid species with divergent dentitions accelerated tooth replacement >3x on the plucked half of the jaw. Then, we used single-nucleus RNA-seq to profile cellular and molecular changes across the first week of post-plucking tooth replacement. This approach allowed us to infer cellular trajectories in dental epithelium and mesenchyme that underlie tooth regeneration. We identifed distinct gene expression profiles and cellular interactions across four time points of accelerated tooth replacement, with divergent involvement of epithelial, mesenchymal and immune cell types. Diferential signaling of Collagen, BMP, MMP, Semaphorin and Slit-Robo pathways was evident after plucking and highlights temporally-sequenced roles of immune response, odontogenesis, vascularization and nerve pathfinding as teeth are constructed anew. Overall, this study provides insight into the trajectory of cellular interactions accompanying whole-tooth replacement and offers a comparative foundation for understanding dental regeneration in vertebrates.",
+      "authors": [
+        "Mubeen, T.",
+        "He, H.",
+        "Gruenhagen, G. W.",
+        "Satoskar, A.",
+        "Streelman, J. T."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "加速全牙再生的細胞基礎"
+    },
+    {
+      "id": "10.64898/2026.06.30.731692",
+      "title": "Hoxb5+ fetal liver hematopoietic stem cells establish lifelong hematopoiesis and exhibit enhanced ITGA4-dependent engraftment",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.30.731692v1",
+      "doi": "10.64898/2026.06.30.731692",
+      "abstract": "Adult long-term hematopoietic stem cells (LT-HSCs) are classically defined by self-renewal, multilineage regenerative capacity, and relative quiescence, but how and when lifelong LT-HSCs are established during development remains unclear. Here, we demonstrate that Hoxb5 fetal liver HSCs exhibit bona fide LT-HSC activity, including long-term multilineage reconstitution and serial transplantation capacity, whereas Hoxb5- fetal liver HSCs display limited regenerative potential. Embryonic lineage tracing further demonstrates that E14.5 Hoxb5-expressing hematopoietic cells contribute broadly to adult hematopoiesis, including the adult HSC compartment, and give rise to functional adult LT-HSCs. Across developmental stages, single-cell transcriptional profiling revealed that fetal Hoxb5 HSCs remain highly proliferative while maintaining canonical LT-HSC transcriptional programs and superior repopulating activity relative to predominantly quiescent adult Hoxb5 HSCs. Fetal Hoxb5 HSCs also exhibited elevated ITGA4-mediated adhesion programs, and disruption of the ITGA4-VCAM1 axis impaired engraftment following transplantation. Together, these findings establish a developmental continuum linking fetal and adult LT-HSCs and identify enhanced ITGA4-mediated adhesion as a defining feature of fetal LT-HSCs.",
+      "authors": [
+        "Banuelos, A.",
+        "Baez, M.",
+        "Yılmaz, L.",
+        "Koren-Sedova, E.",
+        "Zhang, A.",
+        "Zukowska, M.",
+        "Womack-Gambrel, N.",
+        "Moffitt, M.",
+        "Burden, A. T.",
+        "Mascetti, V. L.",
+        "Honjol, R.",
+        "Xiang, J.",
+        "Sinha, R.",
+        "Weissman, I. L."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Hoxb5+ 胎兒肝臟造血幹細胞建立終生造血並展現增強的 ITGA4 依賴性植入"
+    },
+    {
+      "id": "10.64898/2026.06.30.734854",
+      "title": "Hoxb5 Enriches Long-Term Hematopoietic Stem Cell Activity within the Mouse Fetal Liver Phenotypic HSC Compartment",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.30.734854v1",
+      "doi": "10.64898/2026.06.30.734854",
+      "abstract": "Hematopoietic stem cells (HSCs) in the adult mouse can be prospectively isolated to near-purity through phenotypic markers, enabling detailed analysis of stem cell function. Homeobox B5 (Hoxb5) was previously identified as a definitive marker of long-term (LT) HSCs in adult bone marrow1. In contrast, fetal HSCs have not been purified to the same extent. Here, we show that Hoxb5 is expressed in fetal liver (FL) HSCs at embryonic day (E) 12.5-16.5 using a single-color tri-mCherry reporter driven by endogenous Hoxb5 regulation. Prospective purification by stringent multiparameter flow cytometry revealed Hoxb5 FL-HSCs to exhibit robust, multilineage reconstitution upon serial transplantation. Quantitative assays reveal that Hoxb5 enriches FL-HSCs to near-single-cell purity, analogous to its role in the adult bone marrow, underscoring its reliability in distinguishing LT-HSCs throughout hematopoietic ontogeny. Notably, Hoxb5 expression is not exclusive to FL-HSCs, as it is also detected across the fetal liver hematopoietic hierarchy and in fetal liver endothelial cells, suggesting developmental stage-specific regulation of its expression. In addition, single-cell RNA sequencing of FL-HSCs identified distinct transcriptional states defined by Hoxb5 expression. These findings establish Hoxb5 as a robust marker for enhancing the purification of fetal liver phenotypic HSCs (pHSC) and provide a framework for dissecting the molecular regulation of HSC ontogeny.",
+      "authors": [
+        "Mascetti, V. L.",
+        "Banuelos, A.",
+        "Teague, K.",
+        "Wegnelius Jarlstedt, T.",
+        "Wilkinson, A.",
+        "Nakauchi, H.",
+        "Weissman, I. L."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Hoxb5 富集小鼠胎兒肝臟表型造血幹細胞區室中的長期造血幹細胞活性"
+    },
+    {
+      "id": "10.64898/2025.12.29.696817",
+      "title": "Primordial cardiomyocytes orchestrate myocardial morphogenesis and vascularization but are dispensable for regeneration",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2025.12.29.696817v2",
+      "doi": "10.64898/2025.12.29.696817",
+      "abstract": "The vertebrate heart is composed of heterogeneous cardiomyocyte (CM) populations, however, the roles of distinct CM subpopulations in heart development and repair remain poorly defined. Here, using single-cell RNA sequencing analysis of adult zebrafish heart, we identified a unique CM subpopulation marked by the expression of phlda2, which is associated with anaerobic metabolism and different from mature CMs which are enriched for oxidative phosphorylation genes. We demonstrated that phlda2+ cells constituted a primordial CM compartment localized between compact and trabecular muscles. Genetic ablation of phlda2+ CMs during development severely disrupted heart morphogenesis, leading to defective myocardial trabeculation and compaction, and impaired coronary vascularization. Surprisingly, despite their essential roles in development, the depletion of phlda2+ CMs didnt impair myocardial restoration and revascularization following ventricular resection. We found that this was probably due to the limited regenerative capacity of the primordial CMs themselves, as they failed to regenerate after either surgical amputation or genetic ablation. Our findings identify primordial CMs as an organizer for heart morphogenesis but not essential for regeneration, revealing a fundamental difference between developmental and regenerative programs in the vertebrate heart.",
+      "authors": [
+        "Sun, J.",
+        "Chen, L.",
+        "Wang, J."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "原始心肌細胞協調心肌形態發生和血管化，但對再生非必要"
+    },
+    {
+      "id": "10.64898/2026.07.02.731459",
+      "title": "Distinct transcriptional programs define cranial motor neuron subtypes during vertebrate development",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.02.731459v1",
+      "doi": "10.64898/2026.07.02.731459",
+      "abstract": "Closely related neurons that share core differentiation programs can be difficult to distinguish by gene expression, even when they differ in connectivity and function. Cranial motor neurons (cMNs) exemplify this challenge, forming discrete nuclei that control behaviors as diverse as eye movement, feeding, facial expression, and regulation of visceral organ function. However, the developmental programs that drive cMN target choices and functional specialization have not been comprehensively studied in any vertebrate. Here, we present an integrated single-cell RNA-sequencing atlas of zebrafish cMN development from 18 to 144 hours post-fertilization, combining FACS-purified cMNs with cMNs computationally extracted from published whole-embryo datasets and perform extensive validation by HCR in situ hybridization. We find that each cranial motor nucleus expresses a distinct transcriptional signature, and in many cases, we identify transcriptional correlates to functional subtypes within individual nuclei as determined by retrograde labeling. We find that identity often precedes axon targeting, indicating that cranial motor neuron fate is genetically specified early in development. These distinct identities are shaped by the intersection of shared function, rhombomere origin, and developmental time. A cross-species comparison reveals a largely one-to-one correspondence between zebrafish and mouse cMN nuclei, indicating that these genetic programs are conserved. Together, this atlas provides a nucleus-resolved molecular framework for understanding cranial motor neuron diversification, and for interpreting human cranial dysinnervation disorders.",
+      "authors": [
+        "Seroka, A. Q.",
+        "Yasutomi, R.",
+        "DiChristina, I.",
+        "Isabella, A. J.",
+        "Trapnell, C.",
+        "Moens, C. B."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "獨特的轉錄程式定義脊椎動物發育過程中的顱運動神經元亞型"
+    },
+    {
+      "id": "10.64898/2026.07.02.732788",
+      "title": "A conserved lamination pattern in the paleocortex and the neocortex revealed by single-cell RNA analyses",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.02.732788v1",
+      "doi": "10.64898/2026.07.02.732788",
+      "abstract": "The piriform cortex, the largest paleocortical domain and a central olfactory cortex, is classically described as a three-layered structure, with layer II subdivided into semilunar and superficial pyramidal neurons. However, its cellular composition, developmental logic, and evolutionary relationship with the six-layered neocortex remain incompletely defined. Here, we aimed to resolve piriform cortical cell types and laminar organization and compare their molecular programs across mammalian cortical regions and the reptilian cortex. We performed single-nucleus RNA sequencing of the microdissected piriform cortex and integrated neuronal lineage data with published datasets, with spatial validation via the Allen Mouse Brain Atlas. Interspecies analyses identified piriform-dominant glutamatergic populations marked by Unc13c/Lmo3/Rora and an Rorb/Reln/Ntng1-enriched sensory-recipient subtype localized to the superficial layer IIa, consistent with semilunar neurons. Spatial transcriptomic mapping revealed that piriform layer IIb contains neocortical upper-layer-like corticocortical neurons, while piriform layer III segregates into layer V-like (IIIa), layer VI-like (IIIb), and VIb/VII (subplate)-equivalent populations, indicating a neocortex-like laminar framework with an inverted positioning of sensory recipients and corticocortical compartments relative to the neocortex. GABAergic neurons largely conformed to canonical MGE- and CGE-derived lineages but included a piriform-specific Rgs9+Pde7b+ subtype consistent with an LGE-related origin, suggesting region-specific diversification of GABAergic neurons. Disease ontology enrichment linked hippocampus-dominant glutamatergic programs to Alzheimers-related genes and piriform-dominant (and pan-cortical) excitatory and inhibitory programs to autism spectrum disorder and intellectual disability, implicating coordinated E/I circuit specializations in area-selective vulnerability. These findings support a revised view of the paleocortex as a divergent specialization of a conserved, multilayered cortical program and provide molecular markers and a comparative framework for studying cortical evolution and region-specific disease susceptibility.",
+      "authors": [
+        "Nasu, M.",
+        "Esumi, S.",
+        "Wakayama, T.",
+        "Shimamura, K."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "development",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞RNA分析揭示古皮質與新皮質間保守的層狀結構模式",
+      "summaryZh": "本研究運用單細胞核糖核酸定序技術分析梨狀皮質（古皮質中最大的區域），發現古皮質雖然傳統上被描述為三層結構，實際上具有與新皮質相似的層狀架構，但感覺接收與皮質間神經元區室的相對位置與新皮質相反。跨物種分析進一步確認了梨狀皮質特有的神經元亞型，包括表達Unc13c/Lmo3/Rora的谷氨酸神經元群，以及位於淺層IIa的感覺接收亞型。疾病本体富集分析顯示，海馬迴優勢的谷氨酸神經元程式與阿茲海默症基因相關，而梨狀皮質優勢的興奮性與抑制性程式則與自閉症譜系障礙及智能障礙有關，暗示協調的興奮/抑制神經迴路特化可能導致特定腦區的選擇性脆弱性。此研究為古皮質的演化與其與新皮質的關係提供了修正性的觀點。",
+      "topicTags": [
+        "single-cell",
+        "cortex-development",
+        "evolutionary-neuroscience",
+        "autism",
+        "alzheimers-disease"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.02.736117",
+      "title": "Rapamycin Mitigates a Sex-biased Convergent Aging Trajectory",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.02.736117v1",
+      "doi": "10.64898/2026.07.02.736117",
+      "abstract": "Rapamycin extends lifespan across species, yet its cell-type-specific benefits and vulnerabilities remain unclear at whole-organism scale. Here, we present the Rapamycin Fly Cell Atlas (Rapa-FCA), a whole-organism single-nucleus transcriptomic atlas of Drosophila spanning both sexes, multiple ages, 18 cell classes, and 181 cell types. Rapamycin elicited a highly heterogeneous response, with prominent effects in reproductive, digestive, and neuromuscular systems and modest responses in most neuronal populations. Across diverse tissues, we identified a rapamycin-sensitive Convergent Aging Trajectory (CAT), marked by Fkbp12 enrichment and mTORC1-linked metabolic programs, including glycolysis and lipid synthesis. CAT-high nuclei accumulated with age and were preferentially reduced by rapamycin, especially in females, consistent with stronger female lifespan extension. By integrating CAT abundance, aging-clock predictions, and nucleus-ratio changes, we mapped sex- and cell-type-specific geroprotection effects of rapamycin. Together, the Rapa-FCA provides an organism-wide framework for resolving how rapamycin reshapes cellular aging across sex, tissue, and cellular state.",
+      "authors": [
+        "Lu, T.-C.",
+        "Liang, C.-Y.",
+        "Park, Y.-J.",
+        "Auld, N.",
+        "Jackson, T.",
+        "Yin, Z.",
+        "Harrison, E.",
+        "Sun, B.",
+        "Qadiri, M.",
+        "Perrimon, N.",
+        "Hsu, A.-L.",
+        "Qi, Y.",
+        "Li, H."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "雷帕黴素減緩性別偏見的趨同老化軌跡"
+    },
+    {
+      "id": "10.1126/science.adz4351",
+      "title": "Autonomous biomedical research with an artificial intelligence agent",
+      "journal": "Science",
+      "publishedDate": "2026-07-09T06:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/science.adz4351?af=R",
+      "doi": "10.1126/science.adz4351",
+      "abstract": "Biomedical research is increasingly constrained by repetitive, fragmented workflows that slow discovery. We introduce Biomni, a general-purpose biomedical artificial intelligence agent that autonomously executes diverse research tasks. To map the biomedical action space, Biomni’s action-discovery agent mines tools, databases, and protocols from thousands of publications across 25 domains, building a unified agentic environment. Its general-purpose architecture integrates large language model reasoning with retrieval-augmented planning and code-based execution, dynamically composing workflows without predefined templates. Systematic benchmarking shows strong generalization across heterogeneous tasks—causal gene prioritization, drug repurposing, rare-disease diagnosis, microbiome analysis, and molecular cloning—without task-specific tuning. Real-world case studies demonstrate Biomni interpreting multi-modal datasets, optimizing protein stability, orchestrating wet-lab instruments, and generating experimentally testable protocols. Biomni envisions artificial intelligence augmenting human scientists and accelerating discovery.",
+      "sourceId": "science",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "microbiome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "AI 代理實現自主生物醫學研究",
+      "summaryZh": "生物醫學研究常受限於重複且碎片化的工作流程，拖慢了研究進展。本研究介紹了 Biomni，這是一個能自主執行多樣研究任務的通用型生物醫學 AI 代理。Biomni 從數千篇涵蓋 25 個領域的文獻中挖掘工具、資料庫和實驗流程，建構統一的代理環境。系統性測試顯示其在基因優先排序、藥物重新定位、罕見疾病診斷、微生物體分析與分子克隆等多項任務上具有強大的泛化能力，無需任務專屬調整。實際應用案例證明 Biomni 能解讀多模態資料、優化蛋白質穩定性、操控濕實驗室儀器，並生成可實驗驗證的流程。",
+      "topicTags": [
+        "ai-agent",
+        "biomedical-research",
+        "large-language-models",
+        "drug-repurposing",
+        "automation"
+      ]
+    },
+    {
+      "id": "10.1126/science.aec6299",
+      "title": "Virome-wide ubiquitin ligase discovery reveals diverse mechanisms of immune evasion",
+      "journal": "Science",
+      "publishedDate": "2026-07-09T06:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/science.aec6299?af=R",
+      "doi": "10.1126/science.aec6299",
+      "abstract": "Viruses are intracellular parasites that reprogram the host proteome to promote replication and evade immune recognition. We applied a virome-wide library of ~10,000 open reading frames to discover viral ubiquitin ligases, mapping their mechanisms of degradation and host substrates using targeted CRISPR screens and proteomics. These viral effectors could be classified as canonical ligases that mimic host E3s, hijackers that redirect host E3s, and non-canonical ligases that rewire Cullin-RING ligase machinery. These diverse strategies of virus-mediated degradation converged on immune-related substrates, including JAK1 and CUL1 β−TrCP , underscoring immune evasion as a major driver of viral ubiquitin ligase evolution. Our findings elucidate viral strategies for exploiting the ubiquitin–proteasome system with potential for therapeutic targeting.",
+      "sourceId": "science",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "evolution",
+        "CRISPR"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "病毒泛 ubiquitin 連接酶篩選揭示多樣化免疫規避策略",
+      "summaryZh": "本研究以病毒泛基因體學方法，篩選約一萬個病毒開放閱讀框架，系統性發現病毒 ubiquitin 連接酶並解析其降解宿主標的之機制。研究將這些病毒效應因子分為三類：模擬宿主 E3 連接酶的典型 ligases、劫持宿主 E3 連接酶的 hijackers，以及重新佈線 Cullin-RING 連接酶複合體的非典型 ligases。值得注意的是，這些多樣化的病毒降解策略皆聚焦於免疫相關基質，包括 JAK1 與 CUL1 β-TrCP，凸顯免疫規避是病毒 ubiquitin 連接酶演化的主要驅動力。本研究闡明病毒如何 exploit ubiquitin-proteasome 系統，並為抗病毒藥物開發提供新靶點。",
+      "topicTags": [
+        "virology",
+        "ubiquitin-ligase",
+        "immune-evasion",
+        "protein-degradation",
+        "antiviral-therapy"
+      ]
+    },
+    {
+      "id": "10.1126/science.aed6782",
+      "title": "Bacteria sense virus-induced genome degradation via methylated mononucleotides",
+      "journal": "Science",
+      "publishedDate": "2026-07-09T06:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/science.aed6782?af=R",
+      "doi": "10.1126/science.aed6782",
+      "abstract": "Phages often degrade the genome of their bacterial host to individual nucleotides. Here we describe Metis, a bacterial defense system that directly senses phage-mediated host genome degradation. Metis aborts phage infection once it detects the modified mono-nucleotide m 6 dAMP. As methylation of deoxyadenosines usually occurs on the DNA polymer, accumulation of m 6 dAMP signals that the host genome has been degraded. In type I Metis, sensing of m 6 dAMP activates an NAD + diphosphatase, leading to NAD + depletion and cessation of the infection process; while the effector in type II Metis is a membrane-spanning protein whose toxicity is triggered in response to the modified mono-nucleotide. We further show that Metis defense depends on endogenous DNA methylases, and that phages can escape Metis via mutations that inactivate host genome degradation.",
+      "sourceId": "science",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "細菌透過甲基化單核苷酸偵測病毒誘導的基因組降解",
+      "summaryZh": "噬菌體在感染細菌時常會將宿主基因組降解為核苷酸，本研究發現名為Metis的細菌防禦系統，能直接偵測這種基因組降解現象。Metis的關鍵在於偵測甲基化單核苷酸m6dAMP的累積——當宿主DNA被降解時，原本存在於DNA上的甲基化腺苷便會游離出來，成為危險信號。系統運作方式分為兩型：第一型透過消耗NAD+使感染過程停滯，第二型則啟動膜蛋白毒性直接殺死被感染的細胞。此防禦機制依賴細菌自身的DNA甲基酶活性，而噬菌體可透過突變失去降解宿主基因組的能力來逃脫Metis的攻擊。這項發現揭示了宿主基因組完整性與免疫偵測之間的嶄新連結。",
+      "topicTags": [
+        "bacteriophage",
+        "bacterial-defense",
+        "genome-degradation",
+        "dna-methylation",
+        "innate-immunity"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 48,
+      "passedByScope": 39,
+      "llmClassified": 9,
+      "llmYes": 3,
+      "llmNotSure": 0,
+      "llmNo": 6,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 42,
+      "excluded": 6
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 42,
+      "llmTagged": 42,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 42,
+      "candidates": 42,
+      "featured": 12,
+      "overflow": 30,
+      "lineA": 0,
+      "lineB": 11,
+      "preprint": 31,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 30,
+      "llmTranslated": 30,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02112-4",
+        "title": "Found: the toxic killer that caused an ocean catastrophe",
+        "journal": "Nature",
+        "publishedDate": "2026-07-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02112-4",
+        "doi": "10.1038/d41586-026-02112-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02114-2",
+        "title": "Pair of ‘super-puff’ planets are lighter than candy floss",
+        "journal": "Nature",
+        "publishedDate": "2026-07-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02114-2",
+        "doi": "10.1038/d41586-026-02114-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01242-z",
+        "title": "Graduating without a thesis: meet the people getting ‘practical’ PhDs in China",
+        "journal": "Nature",
+        "publishedDate": "2026-07-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01242-z",
+        "doi": "10.1038/d41586-026-01242-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02057-8",
+        "title": "Whoops! Most arXiv papers contain information never meant to be shared",
+        "journal": "Nature",
+        "publishedDate": "2026-07-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02057-8",
+        "doi": "10.1038/d41586-026-02057-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01357-3",
+        "title": "‘This time, it’s the other way around’: how Indonesia is reclaiming the science of human history",
+        "journal": "Nature",
+        "publishedDate": "2026-07-09T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01357-3",
+        "doi": "10.1038/d41586-026-01357-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/science.aef0766",
+        "title": "Vicinal disubstitution of alkyl C–X synthons via alkene radical cation generation",
+        "journal": "Science",
+        "publishedDate": "2026-07-09T06:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/science.aef0766?af=R",
+        "doi": "10.1126/science.aef0766",
+        "sourceId": "science"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
