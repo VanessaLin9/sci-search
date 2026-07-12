@@ -1,0 +1,479 @@
+{
+  "reportDate": "2026-07-11",
+  "generatedAt": "2026-07-12T11:47:16.674Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.07.10.737863",
+      "title": "Joint analysis of multiply perturbed cells improves statistical power and cost efficiency in Perturb-seq",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-11",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.10.737863v1",
+      "doi": "10.64898/2026.07.10.737863",
+      "abstract": "Perturb-seq measures transcriptomic responses to genetic perturbations at scale, but conventional designs that enrich for one guide RNA per cell remain resource-intensive. Standard analyses discard cells carrying multiple guides, further limiting the usable yield from each experiment. Here, we characterize how incorporating these guide multiplets affects signal recovery, information loss, and cost reduction. At the highest guide burden, cells showed increased stress and suppressed cell-cycle progression. We develop PerturbMatch, a scalable statistical framework to analyze guide multiplets. Among different classes of guide multiplets, doublets and triplets recovered perturbation responses more accurately than higher-order multiplets. Across three 5000-gene Perturb-seq screens with increasing guide loading, per-cell costs decreased by up to 81% while information loss remained within 1.5-fold of the loss observed between technical replicates. In existing genome-wide Perturb-seq data, incorporating previously discarded guide multiplets increased usable cell numbers and improved statistical power. Compared with a singlet holdout set, adding guide multiplets moved signal recovery closer to the theoretical expected reproducibility. Overall, we recommend a design that intentionally includes single-guide cells, guide doublets, and guide triplets to improve cost efficiency while preserving signal recovery.",
+      "authors": [
+        "Yeung, J.",
+        "Tan, J.",
+        "Wang, L.",
+        "Wu, D.",
+        "Melo Carlos, S.",
+        "Kageyama, J.",
+        "Kamm, J.",
+        "Chu, B. B.",
+        "Mayba, O.",
+        "Forrest, W. F.",
+        "Xie, S."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "Perturb-seq",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "納入多重引導RNA細胞分析 提升Perturb-seq成本效益與統計效力",
+      "summaryZh": "Perturb-seq能大規模測量基因擾動後的轉錄體變化，但傳統設計每細胞僅能承載單一引導RNA，資源消耗巨大，且分析時常拋棄攜帶多重引導的細胞，進一步浪費數據。本研究開發PerturbMatch統計框架，證實引導雙體與三體細胞能準確恢復擾動訊號，效果優於高階多體。在三項包含5000基因的Perturb-seq篩檢中，納入多重引導細胞後，每細胞成本降低達81%，資訊損失仍控制在技術重複的1.5倍以內。此方法不僅提升現有基因體規模篩檢的統計效力，也為未來實驗設計提供兼顧成本與數據品質的新策略。",
+      "topicTags": [
+        "perturb-seq",
+        "single-cell",
+        "transcriptomics",
+        "genetic-perturbation",
+        "statistical-analysis"
+      ]
+    },
+    {
+      "id": "10.64898/2026.01.29.701618",
+      "title": "scDiagnostics: systematic assessment of cell type annotation in single-cell transcriptomics data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-11",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.01.29.701618v2",
+      "doi": "10.64898/2026.01.29.701618",
+      "abstract": "Although cell type annotation has become an integral part of single-cell analysis workflows, the assessment of computational annotations remains challenging. Many annotation tools transfer labels from an annotated reference dataset to a new query dataset of interest, but blindly transferring labels from one dataset to another has its own set of challenges. Often enough there is no perfect alignment between datasets, especially when transferring annotations from a healthy reference atlas for the discovery of disease states. We present scDiagnostics, a new open-source software package that facilitates the detection of complex or ambiguous annotation cases that may otherwise go unnoticed, thus addressing a critical unmet need in current single-cell analysis workflows. scDiagnostics is equipped with novel diagnostic methods that are compatible with all major cell type annotation tools. We demonstrate that scDiagnostics reliably detects complex or conflicting annotations using both carefully designed simulated datasets and diverse real-world single-cell datasets. Our evaluation demonstrates that scDiagnostics reliably identifies misleading annotations that systematically distort downstream analysis and interpretation and that would otherwise remain undetected. The scDiagnostics R package is available from Bioconductor (https://bioconductor.org/packages/scDiagnostics).",
+      "authors": [
+        "Christidis, A.",
+        "Ghazi, A. R.",
+        "Chawla, S.",
+        "Turaga, N.",
+        "Gentleman, R.",
+        "Geistlinger, L."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "scDiagnostics：單細胞轉錄體學資料中細胞型態註釋的系統性評估工具",
+      "summaryZh": "單細胞轉錄體學已成為解析細胞異質性的核心技術，但細胞型態註釋的品質評估卻長期缺乏有效工具。scDiagnostics 是一款開源軟體，能系統性地偵測註釋模糊或衝突的細胞群，協助研究人員發現可能被忽略的問題。此工具相容於所有主流細胞型態註釋工具，並可識別會扭曲下游分析結果的錯誤註釋。研究團隊透過模擬資料與真實單細胞資料集驗證其可靠性，有助於提升單細胞研究的再現性與準確性。",
+      "topicTags": [
+        "single-cell",
+        "transcriptomics",
+        "cell-annotation",
+        "bioinformatics",
+        "software"
+      ]
+    },
+    {
+      "id": "10.1101/2025.10.22.684047",
+      "title": "Tokenizing single-cell transcriptomes as a native language for large language models",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-11",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.10.22.684047v2",
+      "doi": "10.1101/2025.10.22.684047",
+      "abstract": "Large language models (LLMs) can process diverse forms of information once they are represented as tokens in a shared sequence space. However, single-cell transcriptomes remain a foreign modality to LLMs because they are continuous, high-dimensional molecular profiles rather than discrete linguistic units. Here, we propose CellTok, a tokenized single-cell language modeling approach that converts transcriptomic profiles into compact cellular token sequences and incorporates them into the vocabulary of a pretrained LLM. By representing cells as native tokens, CellTok enables cellular measurements, textual instructions, biological context, and multi-cell populations to be jointly processed within the same autoregressive modeling framework. Across diverse tasks, CellTok enable LLMs to recognize individual cells, interpret homogeneous and heterogeneous cell populations, infer disease-associated cellular states, predict cell-cell communication, model developmental trajectories, and generate cellular states. Moreover, prompt-based experiments show that providing appropriate biological context improves performance, indicating that CellTok can leverage LLM knowledge and contextual reasoning to support cellular data interpretation. These results demonstrate that single-cell transcriptomes can be transformed from a foreign molecular modality into a native language for LLMs, establishing a unified interface for modeling cells, populations, and biological knowledge in a shared token space.",
+      "authors": [
+        "Xiao, C.",
+        "Ding, Y.",
+        "Bian, H.",
+        "Chen, Y.",
+        "Wei, L.",
+        "Zhang, X."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "將單細胞轉錄體Tokenizer化為大型語言模型的原生語言",
+      "summaryZh": "單細胞轉錄體資料具有連續性與高維度特性，難以被大型語言模型（LLM）直接處理。CellTok 創新地將轉錄體資料轉換為緊湊的細胞Token序列，使其能夠與文字指令、生物語境在相同的自迴歸框架下進行聯合處理。此方法讓LLM能夠執行多項任務，包括細胞辨識、細胞群體解讀、疾病相關細胞狀態推斷、細胞間通訊預測、發育軌跡建模，以及細胞狀態生成。研究結果表明，CellTok能有效運用LLM的知識與情境推理能力來支援細胞資料的分析與解讀，為細胞、生物群體與生物知識的整合建模開創了新的可能性。",
+      "topicTags": [
+        "single-cell",
+        "large-language-models",
+        "transcriptomics",
+        "tokenization",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.09.737611",
+      "title": "Spatial mitochondrial lineage tracing uncovers a premetastatic niche and microenvironment programmed fate switching in osteosarcoma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-11",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.09.737611v1",
+      "doi": "10.64898/2026.07.09.737611",
+      "abstract": "Osteosarcoma progression involves complex spatiotemporal dynamics, yet the lineage relationships underlying tumor cell fate decisions remain poorly understood. Here we integrate single cell and spatial transcriptomics and mitochondrial variants-based lineage tracing to map the evolution of a late-stage, non-metastatic osteosarcoma. Single cell pseudotemporal reconstruction of malignant cells reveals a stepwise cascade of transcriptional programs that instructs bifurcation of COL3A1 progenitors into ALPL osteoblastic and THY1 mesenchymal lineages. Critically, we demonstrate that the metastatic THY1 mesenchymal cell fate is not governed by cell-autonomous transcriptional programs alone; this pro-tumorigenic state requires strict spatial licensing via direct co-localization with PLVAP dysfunctional endothelia to form a pro-metastatic niche (THY1-Endo) enriched for PTN/NOTCH signaling. To distinguish clonal ancestry from microenvironmental plasticity, we leveraged spatially resolved somatic mitochondrial variants as endogenous lineage tracers. A spatial autocorrelation filter confirmed significant clonal spatial coherence (Z = 10.07, p = 4 x10 -24). Phylogenetic reconstruction using a Wright-Fisher drift model coupled with a hidden Markov tree (WF-HMT) revealed a striking directional transition rate from COL3A1 to THY1 tumor cells (724.08) versus the reverse (4.09), a ~177-fold asymmetry, whereas the COL3A1 to ALPL transition rate was lower (0.47). Notably, drift--agnostic coarse VAF clustering failed to resolve ALPL versus THY1 bifurcation, underscoring that explicit modeling of stochastic mitochondrial drift is essential for uncovering directional fate locking. We propose a \"time--space--lineage\" relay model where sequential microenvironmental signals program tumor cell fate and pre-metastatic niche assembly through irreversible clonal commitment. This multi dimensional framework bridges single cell states, spatial organization, temporal dynamics, and clonal ancestry -underscoring the power of somatic mitochondrial variants to resolve clonal history and intercept cancer evolution.",
+      "authors": [
+        "Xue, Y.",
+        "Su, Z.",
+        "Su, J.",
+        "Chu, A. S.",
+        "Wan, L.",
+        "Chen, M.",
+        "Cheung, J. P. Y.",
+        "Cheung, K. S. C.",
+        "Ho, J. W. K."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "spatial transcriptomics",
+        "cancer",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "空間粒線體譜系追蹤揭示骨肉瘤轉移前微環境與程式化命運轉換",
+      "summaryZh": "本研究整合單細胞與空間轉錄體學，並利用粒線體變異進行譜系追蹤，繪製骨肉瘤的演化歷程。研究發現，腫瘤細胞的轉移命運並非由細胞自主轉錄程式單獨決定，而是需要透過與功能失常內皮細胞的直接交互作用，形成促轉移微環境才能實現。利用Wright-Fisher漂變模型分析，研究者發現腫瘤細胞譜系間存在約177倍的不對稱轉換率，證實微環境訊號能夠程式化腫瘤細胞的不可逆命運決定。此「時間-空間-譜系」框架為理解腫瘤進展與轉移提供了多維度的整合性視角。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "lineage-tracing",
+        "osteosarcoma",
+        "metastasis",
+        "tumor-microenvironment"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.07.737010",
+      "title": "Somatic mutation inference from single-cell transcriptomics: A survey in the esophagus",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-11",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.07.737010v1",
+      "doi": "10.64898/2026.07.07.737010",
+      "abstract": "Human somatic tissues accumulate mutations during normal aging. Some of these affect cancer-associated driver genes and confer mutant progenitor cells a competitive advantage that leads to clonal expansions. The human esophageal epithelium exemplifies this phenomenon, becoming a dense mosaic of competing mutant clones by adulthood. However, the phenotypic consequence of those mutations and their possible role in carcinogenesis remains unknown. Novel bioinformatic tools for de novo mutant detection from single-cell transcriptomics (scRNA-seq) could potentially leverage on the wealth of publicly available data to help draw mutant cell phenotypes in vivo. In this study we test SComatic algorithm's ability to identify somatic mutations in the normal, polyclonal esophageal epithelium. We analyze a public scRNA-seq dataset from a human cohort with multiple esophageal samples per donor, and an independent study in mice subjected to experimental mutagenesis where samples have been re-sequenced for validation. These unconventional experimental designs allow us to control unspecificity. We observe scRNA-seq variant calling output is heavily affected by undesired technical artifacts and germline variants, which we are able to reduce following a customized series of rational filters that enrich in somatic mutations. Final candidate mutations are then used to reconstitute clonal lineages and map them to differentiation trajectories in the UMAP embeddings. We find low read depth and sparse cellular sampling favor detection of passenger mutations and hinder driver mutant phenotypic inferences. Altogether, we showcase current limitations of scRNA-seq-derived mutation calling, while we offer methodological indications that should be considered for future studies aimed at investigating mutant clone behavior in normal polyclonal tissues from single-cell transcriptomics.",
+      "authors": [
+        "Mendez-Alejandre, A.",
+        "Gonzalez-Menendez, D.",
+        "Vidal-Notari, S.",
+        "Skrupskelyte, G.",
+        "Rodriguez-Rodriguez, M.",
+        "Ajith, H.",
+        "Torralba, A. S.",
+        "Alcolea, M. P.",
+        "Piedrafita, G."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "單細胞轉錄體學推斷體細胞突變：食道組織調查",
+      "summaryZh": "人類正常組織在老化過程中會累積體細胞突變，部分會影響癌症相關的驅動基因，賦予突變細胞競爭優勢，導致克隆擴增。食道上皮正是典型例子，成年後會形成緻密的突變克隆鑲嵌結構。本研究測試SComatic演算法從單細胞轉錄體學資料中偵測體細胞突變的能力，發現現有方法受限於技術偽影、讀取深度不足及細胞採樣稀疏等問題，難以有效區分乘客突變與驅動突變。研究團隊提出客製化篩選流程以提升體細胞突變偵測率，並為未來利用單細胞轉錄體學研究正常組織中突變克隆行為提供方法學指引。",
+      "topicTags": [
+        "single-cell",
+        "somatic-mutation",
+        "transcriptomics",
+        "esophagus",
+        "clonal-expansion"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.07.737032",
+      "title": "Single-cell RNA-seq reveals conserved and divergent cellular states across wound types and species",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-11",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.07.737032v1",
+      "doi": "10.64898/2026.07.07.737032",
+      "abstract": "Chronic wounds, such as diabetic foot ulcers, fail to progress through the normal healing process and impose a significant burden on healthcare systems. While previous single-cell studies have characterized specific wound conditions, a unified understanding of the shared and distinct cellular landscapes across diverse wound microenvironments has been lacking. Therefore, we integrated over 500,541 cells from patients and mice across multiple wound conditions, including acute wound, diabetic foot ulcer, and venous ulcer as well as their healing outcome. Fibroblast-focused analysis identified a bifurcation in differentiation trajectories and identified STAT3 as a potential regulator of a reparative program in chronic wound. Furthermore, we discovered immune dysfunctions in non-healed chronic wounds, contrasting the quiescent memory-like T cells and TIMP1+ macrophages in healed chronic wounds with the exhausted T cells and foamy SPP1+ macrophage enriched in non-healed chronic wounds. Finally, we translated these results into a clinically applicable three-gene signature (CHI3L1, TIMP1, and SPP1) that accurately predicts chronic wound healing. To support wound biology community, we developed WoundSCAtlas, an interactive web resource for exploring diverse wound pathologies. In conclusion, this work provides a comprehensive and cross-species landscape of chronic wound healing, identifying conversed wound outcome-associated molecular programs, predictive biomarker, and interactive data resource.",
+      "authors": [
+        "Choi, D.",
+        "Bakhtiari, M.",
+        "Amin, A.",
+        "Mann, J.",
+        "Bhasin, S.",
+        "Bhasin, M."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "單細胞RNA測序揭示不同傷口類型與物種間的保守與差異細胞狀態",
+      "summaryZh": "慢性傷口如糖尿病足潰湯是醫療系統的重大負擔，本研究整合超過五十萬個細胞，建立跨物種、跨傷口類型的單細胞圖譜。研究發現慢性傷口癒合與否的關鍵分子程序，包括修復相關的STAT3調控機制，以及免疫細胞的差異表現。團隊進一步開發出三基因特徵（CHI3L1、TIMP1、SPP1），可準確預測慢性傷口的癒合潛力。這項研究為傷口癒合機制提供全面理解，並開發可臨床應用的生物標記與互動式資料庫WoundSCAtlas。",
+      "topicTags": [
+        "single-cell",
+        "wound-healing",
+        "chronic-wounds",
+        "transcriptomics",
+        "biomarker"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.07.736532",
+      "title": "SPARC: A Graph-based Optimization Framework for Directional Trajectory Reconstruction Across Ordered Single-Cell Conditions",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-11",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.07.736532v1",
+      "doi": "10.64898/2026.07.07.736532",
+      "abstract": "Single-cell transcriptomics has enabled systematic profiling of cellular states across ordered biological contexts, including developmental stages, treatment phases, disease progression, and anatomical compartments. A central challenge is to reconstruct trajectories that respect the directionality imposed by biology or experimental design. Existing trajectory inference methods reconstruct cell-state progressions from latent-space geometry but do not enforce external biological ordering during graph construction, yielding biologically inadmissible transitions. An emerging paradigm of optimal-transport (OT) approaches partially addresses this limitation by incorporating experimental ordering into probabilistic state-to-state correspondences, yet their pairwise formulation cannot resolve whether a given state is an intermediate state or a terminal state along a multi-step progression. In multi-timepoint settings, OT typically estimates couplings only betweenadjacent timepoints and then chains these locally solved couplings to approximate long-range trajectories without a global optimization across all conditions simultaneously. Here we present SPARC, a graph-based optimization framework that quantifies similarity in a shared high-dimensional latent space and reconstruct directional trajectories under biological constraints. Global shortest-path optimization over this graph yields progression routes, from which SPARC derives path-based pseudotime identifies bottlenecks clusters, and detects gene temporal behavior. SPARC was evaluated across three complementary settings representing distinct trajectory-inference challenges. Its application to paired primary and lung metastatic osteosarcoma samples allows us to be the first to propose a cross-organ bone-like microenvironment hypothesis, in which osteoclastogenic signaling establishes a bone-like remodeling niche within the pulmonary metastatic lesion that promotes osteoclast differentiation and activity. The findings are independently recoverable in human osteosarcoma Visium HD spatial transcriptomics.",
+      "authors": [
+        "Wu, S.",
+        "Walker, W. C.",
+        "Martin, C.",
+        "Yustein, J. T.",
+        "Samee, M. A. H."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "Visium",
+        "biology",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "單細胞有序條件定向軌跡重建的圖優化框架",
+      "summaryZh": "單細胞轉錄組學能夠系統性分析發育階段、治療過程或疾病進展等有序生物情境下的細胞狀態，但現有軌跡推斷方法在圖構建時未強制執行外部生物學排序，導致推斷結果可能違反生物學邏輯。SPARC 提出一種圖優化框架，在共享的高維潛在空間中量化相似性，並透過全域最短路徑優化在生物約束下重建定向軌跡。該方法應用於骨肉瘤原發及肺轉移樣本，首次提出跨器官骨樣微環境假說，揭示轉移灶中骨重塑生態位的形成機制。這項研究為多時間點複雜軌跡的系統解析提供了新工具。",
+      "topicTags": [
+        "single-cell",
+        "trajectory-inference",
+        "optimal-transport",
+        "graph-optimization",
+        "cancer-metastasis"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-74705-6",
+      "title": "Pervasive summertime nitrous oxide undersaturation in U.S. lakes and reservoirs",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-07-11T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-74705-6",
+      "doi": "10.1038/s41467-026-74705-6",
+      "abstract": "A new study finds that 73% of US lakes and reservoirs function as N2O sinks during the summer, but uncertainty in large lake N2O concentrations precludes a determination of whether US lakes and reservoirs function as a net source or sink of atmospheric N2O.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "美國湖泊與水庫夏季氧化亞氮普遍未飽和",
+      "summaryZh": "這項研究分析了美國湖泊與水庫的氧化亞氮濃度，發現夏季時有73%的水體作為氧化亞氮的匯（即吸收而非排放這種溫室氣體）。然而，大型湖泊的氧化亞氮濃度測量存在不確定性，無法確定美國湖泊與水庫對大氣中氧化亞氮的整體貢獻是來源還是匯。這項發現挑戰了過去認為淡水系統普遍是氧化亞氮排放來源的觀點，對於評估淡水生態系統在全球溫室氣體收支中的角色具有重要意義。",
+      "topicTags": [
+        "greenhouse-gas",
+        "lakes",
+        "nitrous-oxide",
+        "aquatic-ecosystems",
+        "climate-science"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-75532-5",
+      "title": "Phage portal proteins counteract stringent-response–mediated restriction",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-07-11T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-75532-5",
+      "doi": "10.1038/s41467-026-75532-5",
+      "abstract": "Bacteria can protect themselves against viral infections by entering physiological states, such as the stringent response, that limit cellular resources. Here, the authors show that phages can use their portal proteins to suppress the bacterial stringent response, thus promoting infection.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "噬菌體門戶蛋白對抗嚴格反應介導的限制",
+      "summaryZh": "細菌可透過進入嚴格反應等生理狀態來保護自己免受病毒感染，這些狀態會限制細胞資源。本研究發現噬菌體可利用其門戶蛋白抑制細菌的嚴格反應，從而促進感染過程。這項發現揭示了噬菌體對抗細菌防禦機制的新型策略，對理解宿主與病原體之間的軍備競賽具有重要意義，並可能為開發新型抗菌療法提供思路。",
+      "topicTags": [
+        "bacteriophage",
+        "stringent-response",
+        "bacterial-defense",
+        "host-pathogen",
+        "portal-protein"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 14,
+      "passedByScope": 7,
+      "llmClassified": 7,
+      "llmYes": 2,
+      "llmNotSure": 0,
+      "llmNo": 5,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 9,
+      "excluded": 5
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 9,
+      "llmTagged": 0,
+      "fallback": 9
+    },
+    "selection": {
+      "total": 9,
+      "candidates": 9,
+      "featured": 9,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 2,
+      "preprint": 7,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 9,
+      "llmSummarized": 9,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-75388-9",
+        "title": "Efficiency-weighted cooling degree days reveal opposing temperature and humidity effects on energy demand",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-07-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-75388-9",
+        "doi": "10.1038/s41467-026-75388-9",
+        "abstract": "A metric shows air conditioners work less efficiently as temperatures rise, while humidity can worsen or offset losses. Across North America, future cooling energy demand may grow far faster than standard temperature-based estimates suggest.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-75254-8",
+        "title": "The traffic concentration effects of urban navigation services",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-07-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-75254-8",
+        "doi": "10.1038/s41467-026-75254-8",
+        "abstract": "Navigation services concentrate traffic onto a few roads as adoption increases. Simulations in Florence, Milan, and Rome show route diversity drops by up to 14% at full adoption, and CO2 benefits vanish or reverse beyond a city- and service-specific threshold.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-74797-0",
+        "title": "Gapless fracton quantum spin liquid and emergent photons in a 2D spin-1 model",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-07-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-74797-0",
+        "doi": "10.1038/s41467-026-74797-0",
+        "abstract": "Gapless fracton quantum spin liquids described by higher rank gauge theories have remained elusive in microscopic quantum spin models. Here, the authors demonstrate a spin 1 square lattice model exhibiting signatures of a rank 2 U(1) fracton quantum spin liquid, including suppressed pinch points and emergent photon like excitations revealed by Green function Monte Carlo simulations.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-75429-3",
+        "title": "Mesoscale ordered assembly of Er3+-doped quantum dots enables efficient 1.55 µm electroluminescence",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-07-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-75429-3",
+        "doi": "10.1038/s41467-026-75429-3",
+        "abstract": "Efficient 1.55 micrometer light sources are needed for telecom and infrared photonics, but realizing them with perovskite quantum dots is challenging due to bandgap limitations. Li et al. used Er3 + -doping and hydrogen-bonded ordered assembly in CsPbCl3 to enable efficient electroluminescence.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-75516-5",
+        "title": "Chip-integrated metasurface-enabled single-photon skyrmion sources",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-07-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-75516-5",
+        "doi": "10.1038/s41467-026-75516-5",
+        "abstract": "On-chip generation of single-photon skyrmions is challenging due to the nanoscale confinement of quantum emitters. Here the authors demonstrate a metasurface-integrated quantum emitter platform enabling room-temperature on-chip generation of single-photon skyrmions without requiring magnetic fields.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
