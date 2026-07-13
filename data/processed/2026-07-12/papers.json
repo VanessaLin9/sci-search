@@ -1,0 +1,97 @@
+{
+  "reportDate": "2026-07-12",
+  "generatedAt": "2026-07-13T12:32:37.244Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.07.08.737248",
+      "title": "OCellus: A Language-Model Framework for Single-Cell, Spatial, and Perturbation Biology with Natural-Language Reasoning",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-12",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.08.737248v1",
+      "doi": "10.64898/2026.07.08.737248",
+      "abstract": "Computational modeling of cellular behavior - the virtual cell - has emerged as a stated grand challenge at the intersection of artificial intelligence and biology, yet existing foundation models remain specialized: single-cell models process dissociated transcriptomes only, spatial models require dedicated spatial-aware architectures, and perturbation predictors depend on manually curated knowledge bases that cap generalization. Here we introduce OCellus, a single nine-billion-parameter language model (Qwen3.5-9B) fine-tuned on twenty-two biological tasks that simultaneously addresses all three limitations through three coordinated technical contributions on a shared backbone. First, EvenClock encodes two-dimensional spatial coordinates as eighteen clockface sectors of text, enabling spatial reasoning on a vanilla language model without architectural modification; on ten spatial transcriptomics tasks OCellus attains 77 percent spatial-neighborhood accuracy, 96 percent spatial-cellchat accuracy, and 0.70 proportion-cosine similarity on spatial deconvolution, all without any spatial-aware architectural components. Second, per-gene language-model embeddings replace the Gene Ontology annotations that GEARS depends on, achieving Pearson correlation 0.945 on the Replogle 2022 perturbation benchmark versus 0.84 for GEARS across 457 completely unseen knockout genes. Third, OCellus-Agent provides a Planner-Router-Verifier natural-language interface that achieves 75 percent pipeline accuracy on eighty multi-task queries. Removing language-model embeddings collapses perturbation Pearson to 0.06, confirming that learned functional representations - not graph topology - drive the gain. As a cell-type encoder, OCellus ranks first among fourteen foundation models in linear-probe accuracy at 95.1 percent across four benchmark datasets, and reaches 72.6 percent average across twenty-two evaluated biological tasks - a 57-percentage-point absolute gain over the strongest baseline configuration. As a language model, OCellus uniquely generates natural-language explanations of its predictions, a capability absent from all competing methods. Code, pre-trained model weights, the graph-neural-network module, and the agent system will be made available upon publication.",
+      "authors": [
+        "Zhang, C.",
+        "Sun, J.",
+        "Xu, Z.",
+        "Liao, R.",
+        "Yin, A.",
+        "Gao, H.",
+        "Liu, E.",
+        "Bao, Y.",
+        "Zhao, L.",
+        "Wang, G."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "spatial deconvolution",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "OCellus：整合單細胞、空間與擾動生物學的自然語言推理框架",
+      "summaryZh": "虛擬細胞被視為人工智慧與生物學交叉領域的重大挑戰，但現有基礎模型各自受限於單一任務。本研究提出 OCellus，僅用一個 90 億參數的語言模型（Qwen3.5-9B）同時克服單細胞、空間轉錄體與擾動預測三大限制。OCellus 透過時鐘編碼方式讓一般語言模型也能處理二維空間座標，在十項空間轉錄體任務中達到 77% 空間鄰域準確率；並以基因語言模型嵌入取代傳統 Gene Ontology 註釋，在 457 個完全未見的敲除基因上達到 0.945 Pearson 相關性，顯著超越 GEARS 的 0.84。此外，OCellus-Agent 的自然語言介面在多任務查詢中達到 75% 管線準確率，證明學習到的功能表徵而非圖譜拓撲是效能提升的關鍵。",
+      "topicTags": [
+        "single-cell",
+        "spatial-transcriptomics",
+        "language-model",
+        "perturbation-biology",
+        "foundation-model"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 1,
+      "passedByScope": 1,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 1,
+      "excluded": 0
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 1,
+      "llmTagged": 1,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 1,
+      "candidates": 1,
+      "featured": 1,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 0,
+      "preprint": 1,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 1,
+      "llmSummarized": 1,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  }
+}
