@@ -1,0 +1,566 @@
+{
+  "reportDate": "2026-07-13",
+  "generatedAt": "2026-07-14T11:29:40.065Z",
+  "papers": [
+    {
+      "id": "10.1038/s41588-026-02674-z",
+      "title": "Pervasive interactions between exposures and polygenic risk can inform more effective clinical and behavioral interventions",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02674-z",
+      "doi": "10.1038/s41588-026-02674-z",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "環境暴露與多基因風險的交互作用：為臨床與行為介入策略開闢新徑",
+      "summaryZh": "本研究系統性地揭示了環境暴露與多基因風險分數之間普遍存在的交互效應，發現這些交互作用在多種複雜疾病的風險評估中扮演關鍵角色。研究結果顯示，僅僅依靠基因風險評分可能忽略環境因素對疾病風險的調控作用，進而影響預防策略的精準性。此發現強調了在精準醫療時代，必須將生活型態與環境因素納入個人化風險評估框架。對於臨床實踐而言，這些交互作用的闡明有助於識別出真正需要早期介入的高風險族群，並設計更具針對性的行為改變方案。",
+      "topicTags": [
+        "gene-environment-interaction",
+        "polygenic-risk-score",
+        "precision-medicine",
+        "complex-disease",
+        "clinical-intervention"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03141-y",
+      "title": "Citizen science platforms must mitigate against the threat of generative AI",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-07-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03141-y",
+      "doi": "10.1038/s41559-026-03141-y",
+      "abstract": "Citizen science platforms must mitigate against the threat of generative AI",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41559-026-03129-8",
+      "title": "Evolutionary history drives organ-specific variability in plant non-structural carbohydrates",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-07-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03129-8",
+      "doi": "10.1038/s41559-026-03129-8",
+      "abstract": "Compiling a global database of non-structural carbohydrates (NSCs) from >2,000 plant species, the authors show that evolutionary history explains a larger proportion of NSC variation than environmental controls.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "演化歷史主導植物非結構性碳水化合物之器官特異性變異",
+      "summaryZh": "本研究彙整超過2,000種植物的非結構性碳水化合物（NSC）全球資料庫，發現演化歷史對NSC變異的解釋力優於環境因子。此發現挑戰了環境主導植物碳儲存變化的傳統觀點，揭示譜系遺傳在植物生理調控中的關鍵角色。透過大規模跨物種比較，研究者證實不同植物器官的碳水化合物累積模式具有深刻的演化根源，對理解植物適應策略與碳循環研究具有重要意義。",
+      "topicTags": [
+        "plant-evolution",
+        "non-structural-carbohydrates",
+        "phylogenetics",
+        "plant-physiology",
+        "global-database"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03218-w",
+      "title": "High-resolution reconstruction of cell-type-specific transcriptional regulatory processes from bulk sequencing samples",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-07-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03218-w",
+      "doi": "10.1038/s41587-026-03218-w",
+      "abstract": "DeepDETAILS enables cross-modality deconvolution of bulk sequencing samples.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "DeepDETAILS：從大量定序資料解析細胞特異性基因調控網絡",
+      "summaryZh": "DeepDETAILS 是一種新型深度學習方法，能從 bulk 定序資料中高解析度地重建細胞類型特異性的轉錄調控過程。傳統上要獲得細胞解析度的基因調控資訊需要昂貴的單細胞定序技術，而此方法提供了一種更具成本效益的替代方案。透過跨模態解卷積技術，DeepDETAILS 能整合不同來源的定序資料，提升解碼的準確性與解析度。此技術對於研究複雜組織的細胞組成與調控網絡具有重要價值，有助於加速發育生物學、疾病機制與精準醫學的研究進展。",
+      "topicTags": [
+        "single-cell",
+        "gene-regulation",
+        "deep-learning",
+        "bioinformatics",
+        "transcriptomics"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02026-3",
+      "title": "Cargo capture during ER-phagy",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-07-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02026-3",
+      "doi": "10.1038/s41556-026-02026-3",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "內質網自噬過程中的受損蛋白質捕捉機制",
+      "summaryZh": "內質網自噬（ER-phagy）是細胞選擇性降解受損或過剩內質網成分的關鍵過程，對維持細胞內蛋白質穩態至關重要。本研究揭示了內質網自噬過程中如何精確捕捉特定 cargo 的分子機制，為理解細胞如何區分並選擇性清除受損蛋白質提供重要見解。此發現有助於闡明多種與蛋白質錯誤折疊相關疾病的致病機制，包括神經退化性疾病和代謝障礙。該研究也為未來開發針對自噬途徑的治療策略提供了新的分子靶點。",
+      "topicTags": [
+        "autophagy",
+        "endoplasmic-reticulum",
+        "cell-biology",
+        "protein-quality-control",
+        "membrane-trafficking"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02014-7",
+      "title": "Relative tension shapes embryos",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-07-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02014-7",
+      "doi": "10.1038/s41556-026-02014-7",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "相對張力如何塑造胚胎發育",
+      "summaryZh": "胚胎發育過程中，細胞如何感知並回應機械力一直是發育生物學的核心問題。本研究揭示了細胞間相對張力的平衡在胚胎形態建成中的關鍵作用，顛覆了過去僅強調絕對張力大小的觀點。這項發現為理解組織成型與器官形成的力學調控機制提供了新框架，對再生醫學與組織工程具有重要的參考價值。研究結果顯示，胚胎能夠透過比較相鄰細胞間的張力差異來決定細胞命運與組織結構，這種相對張力感知機制可能普遍存在於多細胞生物的發育過程中。",
+      "topicTags": [
+        "embryo-development",
+        "mechanobiology",
+        "cell-tension",
+        "developmental-biology",
+        "morphogenesis"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02015-6",
+      "title": "Neuroproteasomes in tau pathology",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-07-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02015-6",
+      "doi": "10.1038/s41556-026-02015-6",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "神經蛋白酶體在tau病理中的關鍵角色",
+      "summaryZh": "Tau蛋白的異常聚集是阿茲海默症等神經退化疾病的核心病理特徵。本研究深入探討神經蛋白酶體如何識別並處理病理狀態下的tau蛋白，揭示其在tau毒性累積中的雙重角色。研究結果顯示蛋白酶體功能障礙可能加速tau病理的進程，為理解神經退化性疾病的發病機制提供重要線索。更重要的是，此發現為開發以增強蛋白質清除系統為策略的神經退化疾病治療方法開闢了新方向。",
+      "topicTags": [
+        "proteasome",
+        "tau-pathology",
+        "neurodegeneration",
+        "protein-degradation",
+        "neuroscience"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02418-z",
+      "title": "New nucleases target modified DNA",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-07-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02418-z",
+      "doi": "10.1038/s41564-026-02418-z",
+      "abstract": "Bacteriophages often use hypermodified DNA to protect themselves from host defences. The END nucleases found in bacteria represent a new class of modification-dependent endonucleases recognizing diverse DNA modifications, allowing a single system to protect the cell against multiple phage types.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "新型核酸酶瞄準修飾DNA",
+      "summaryZh": "噬菌體常利用高度修飾的DNA來保護自己免受宿主防禦系統的攻擊。本研究發現了END核酸酶這類新型的修飾依賴性內切酶，能夠辨識多種DNA修飾。這種單一系統能夠對抗多種噬菌體的特性，為開發新型抗菌療法提供了重要思路。此發現拓展了我們對細菌防禦機制的理解，並為未來應用於基因編輯或病原菌控制領域奠定基礎。",
+      "topicTags": [
+        "microbiology",
+        "bacteriophages",
+        "nucleases",
+        "dna-modification",
+        "bacterial-defense"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003897",
+      "title": "Meis1 isoform diversity orchestrates neural progenitor differentiation by regulating ATOH1 degradation at distinct subcellular compartments",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-13T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003897",
+      "doi": "10.1371/journal.pbio.3003897",
+      "abstract": "The development of the complex nervous system is strictly controlled by diverse isoforms produced from individual genes, but the underlying machinery remains unclear. Our long-read cDNA sequencing of mouse cerebellar granule cell progenitors (GCPs) identifies more than 700 genes with high isoform diversity. One such gene, Meis1 , produces MEIS1-FL and MEIS1-HdL isoforms, which include and lack the homeodomain, respectively. Our previous study showed that MEIS1-FL localizes to nuclei and promotes ATOH1 protein degradation through transcriptional regulation, thereby promoting GCP differentiation. In contrast, our in vivo electroporation experiments in the postnatal mouse cerebellum show that MEIS1-HdL inhibits GCP differentiation. MEIS1-HdL localizes in the cytoplasm and inhibits the degradation of ATOH1 mediated by CUL3, which is a newly identified E3 ligase for ATOH1. MEIS1-HdL enhances the binding of the COP9 signalosome to CUL3, which suppresses ATOH1 polyubiquitination. This study demonstrates that functionally antagonistic isoforms derived from a single gene cleverly control neural progenitor differentiation.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "同一基因，兩種命運：MEIS1同源異構體如何在不同細胞區室調控ATOH1降解以引導神經前驅細胞分化",
+      "summaryZh": "本研究利用長讀序cDNA定序技術分析小鼠小腦顆粒細胞前驅細胞，發現超過700個基因具有高度的同源異構體多樣性。其中Meis1基因可產生兩種功能拮抗的蛋白質：含同源結構域的MEIS1-FL主要分布於細胞核，透過轉錄調控促進ATOH1蛋白質降解，從而推動神經前驅細胞分化；而不含同源結構域的MEIS1-HdL則分布於細胞質，抑制ATOH1的降解並阻礙細胞分化。本研究進一步發現CUL3是ATOH1的新型E3泛素連接酶，而MEIS1-HdL能增強COP9信號體與CUL3的結合，進而抑制ATOH1的泛素化。這項研究揭示了同一基因來源的兩種同源異構體如何聰明地透過不同的細胞定位與分子機制，精準調控神經系統發育中的細胞命運決定。",
+      "topicTags": [
+        "isoform-diversity",
+        "neural-progenitor",
+        "protein-degradation",
+        "cerebellar-development",
+        "ubiquitination"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.28.735042",
+      "title": "A rare pre-existing progenitor-like Primed SMC compartment is the dominant inferred source of SMC-derived cellularity in vascular injury and atherosclerosis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-13",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.28.735042v5",
+      "doi": "10.64898/2026.06.28.735042",
+      "abstract": "The cellular origin of smooth muscle cell (SMC)-derived populations in vascular lesions remains unresolved. Here we show, using single-cell transcriptomic analyses spanning carotid ligation injury, Myh11-CreERT2-traced aortic homeostasis, and LDLR- and ApoE-deficient atherosclerosis, that a rare progenitor-like \"Primed\" SMC compartment pre-exists at baseline in all models and in the healthy human aorta. Relative to contractile SMCs, Primed SMCs attenuate sarcomeric and contractile programmes while inducing matricellular, progenitor-niche and chondrogenic-poised developmental programmes, resolving into conserved niche/progenitor (Cd34, Fst, Tnfrsf11b) and matricellular (Vcam1, Thbs1, Timp1) cores overlaid by vessel-specific signatures, on a retained SMC identity. Multiple orthogonal computational lineage-inference approaches indicate that this compartment expands predominantly through autonomous self-renewal and is the dominant inferred source of cycling and lesion fibrochondrocyte populations, while contractile SMCs are consistently depleted as a feeder source. These findings reframe lesional SMC cellularity as expansion of a pre-existing Primed compartment rather than widespread phenotypic switching of contractile SMCs.",
+      "authors": [
+        "Wani, S.",
+        "Kitching, M.",
+        "Aboulhassanzadeh, S.",
+        "Lungu, T.-S.",
+        "Kilicgun, I.",
+        "Ulibarri, K.",
+        "Liu, W.",
+        "Floudas, A.",
+        "Redmond, E. M.",
+        "Cahill, P. A."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "預先存在的「預備型」平滑肌細胞亞群是血管病變中SMC來源細胞的主要供應者",
+      "summaryZh": "本研究解決了長期以來關於血管病變中平滑肌細胞（SMC）來源細胞起源的爭議。研究團隊運用單細胞轉錄體分析，在小鼠頸动脉結紮損傷、 主動脈穩態及动脉粥樣硬化模型中發現，一種罕見的類先驅細胞「預備型」SMC亞群在損傷前就已存在於血管壁中，且同樣存在於健康人類主動脈。這些預備型SMC透過自我更新擴增，成為病變中纖維軟骨細胞的主要來源，而非傳統認為的廣泛性收縮型SMC表型轉換。此發現重新定義了血管病變中SMC細胞結構的形成機制，對理解动脉粥樣硬化和血管損傷修復具有重要意義。",
+      "topicTags": [
+        "smooth-muscle-cells",
+        "atherosclerosis",
+        "single-cell-transcriptomics",
+        "vascular-biology",
+        "progenitor-cells"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.18.733285",
+      "title": "Context-dependent utility and robustness of pretrained single-cell foundation model representations across analytical tasks",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-13",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.18.733285v2",
+      "doi": "10.64898/2026.06.18.733285",
+      "abstract": "Single-cell foundation models (scFMs) have emerged as powerful representation learning approaches for single-cell transcriptomics. However, the utility and robustness of their pretrained representations across diverse analytical tasks and data conditions remain insufficiently characterized, particularly in zero-shot settings without task-specific fine-tuning. Here, we systematically analyze zero-shot performance of single-cell transcriptomic representations across 20 methods, 6 downstream tasks and 1,607 datasets comprising nearly 21.8 million cells. We evaluate model behavior along three complementary dimensions: utility on original datasets, robustness to controlled changes in dataset structure, and exploratory associations between dataset characteristics and performance variation. Our results show that scFM performance is strongly task dependent, with no single method consistently outperforming others across cell- and gene-level analyses. Notably, high utility on original datasets did not necessarily translate into robustness under structural perturbations, and several top-ranking methods were sensitive to changes in cell number, gene number, class composition, class imbalance, and batch complexity. Conventional statistical and task-specific methods remained competitive in several settings, while greater computational cost did not consistently correspond to better performance. Driver analyses further identified task-specific associations between performance and dataset characteristics, including cell-type complexity, train-test class overlap, batch number, and regulatory target-set size. Together, these findings show that the zero-shot utility and robustness of pretrained scFM representations depend jointly on analytical task and dataset structure. Our study provides a practical basis for context-aware representation selection and underscores the importance of evaluating structural robustness alongside utility when developing and applying scFMs.",
+      "authors": [
+        "Liu, T.",
+        "Feng, T.",
+        "Pan, X.",
+        "Chen, Y.",
+        "Ren, L.",
+        "Ye, X.",
+        "Lin, H.",
+        "Zhang, Y."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "預訓練單細胞基礎模型表徵的實用性與穩健性：跨分析任務的系統性評估",
+      "summaryZh": "單細胞基礎模型已成為單細胞轉錄體學中強大的表徵學習方法，但其在不同分析任務和數據條件下的實用性與穩健性，特別是零樣本設定下的表現，仍缺乏系統性評估。本研究橫跨20種方法、6種下游任務及1,607個數據集（近2,180萬個細胞），系統性地分析了單細胞轉錄體表徵的零樣本表現。研究結果顯示，scFM的表現高度依賴任務類型，沒有任何單一方法能在細胞層級和基因層級分析中持續勝出；高實用性並不一定轉化為結構擾動下的穩健性，多個排名靠前的方法對細胞數、基因數、類別組成及批次複雜度等變化敏感。此研究為情境感知式表徵選擇提供了實務基礎，並強調在開發及應用scFM時，評估結構穩健性與實用性同等重要。",
+      "topicTags": [
+        "single-cell",
+        "foundation-models",
+        "representation-learning",
+        "transcriptomics",
+        "robustness"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.10.737736",
+      "title": "Microbial Invasion and Immunosuppression Drives Adenoma Progression in Early Colorectal Cancer Development",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-13",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.10.737736v1",
+      "doi": "10.64898/2026.07.10.737736",
+      "abstract": "Several inherited predispositions to colorectal cancer exist, most notably familial adenomatous polyposis (FAP), which typically involves a germline loss-of-function mutation in one APC allele. A second hit in APC or related loci leads to aberrant Wnt signalling, triggering adenoma formation with near-complete penetrance. Yet, substantial variability in disease onset and severity, even among siblings with identical APC germline mutations, implicates environmental modifiers. Emerging evidence points to the gut microbiome as a critical regulator of adenoma initiation and progression, particularly in early-onset CRC. Here, we show that bacterial invasion is associated with neutrophil immunosuppression, T-cell exclusion and adenoma progression in a porcine model of FAP. Longitudinal mapping of progressing and regressing polyps using single-cell RNA sequencing, spatial transcriptomics and integrated microbiome profiling resolved the cellular and microbial architecture underlying these divergent lesion states. Single-cell RNA-seq identified 35 cell subpopulations and showed that regressing polyps are enriched for central-memory CD4+ T cells, cytotoxic CD8+ T cells and inflammatory neutrophils, whereas progressing polyps contain immunosuppressive/PD-L1-associated neutrophils, regulatory and dysfunctional T cells. Spatial transcriptomics with a custom host panel and targeted bacterial probes linked bacterial-high adenomatous regions to immunosuppressive neutrophil niches and T cell exclusion, while regressing lesions showed predominantly lumen-adjacent bacterial localization and spatially organized immune surveillance. These results provide a spatially resolved map of cellular and microbial organisation in early colorectal polyp progression and regression and reveal a microbiome-driven, neutrophil-mediated mechanism of early tumour progression with implications for CRC interception.",
+      "authors": [
+        "Liang, W.",
+        "Falk, L.",
+        "Lucarelli, D.",
+        "Putze, P.",
+        "Metwaly, A.",
+        "Zheng, Y.",
+        "Springer, F.",
+        "Winogrodzki, T.",
+        "Chan, Q.",
+        "Zhang, Y.",
+        "Zeller, G.",
+        "Meier, M.",
+        "Schnieke, A.",
+        "Ebner, F.",
+        "Haller, D.",
+        "Flisikowska, T.",
+        "Saur, D.",
+        "Flisikowski, K."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "cancer",
+        "development",
+        "microbiome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "微生物入侵與免疫抑制促進早期大腸癌腺瘤進展",
+      "summaryZh": "本研究利用家族性腺瘤性息肉病（FAP）的豬模型，結合單細胞RNA定序與空間轉錄體學，發現腺瘤進展與細菌入侵、免疫抑制性嗜中性球及T細胞排除密切相關。研究解析了35種細胞亞群，發現消退型息肉富含中央記憶型CD4+ T細胞、細胞毒性CD8+ T細胞及發炎性嗜中性球，而進展型息肉則充滿免疫抑制性PD-L1相關嗜中性球與失能T細胞。空間轉錄體分析顯示，細菌富集的腺瘤區域與免疫抑制性嗜中性球微環境相連，揭示了微生物驅動、嗜中性球介導的早期腫瘤進展機制，為大腸癌早期拦截提供新靶點。",
+      "topicTags": [
+        "colorectal-cancer",
+        "microbiome",
+        "single-cell",
+        "immunology",
+        "tumor-microenvironment"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.12.737989",
+      "title": "Single cell multi-omics enables high-resolution identification and functionalpurification of human acute myeloid leukemia stem cells",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-13",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.12.737989v1",
+      "doi": "10.64898/2026.07.12.737989",
+      "abstract": "In human acute myeloid leukemia (AML), a sub-population of leukemia stem cells (LSCs) drive disease initiation, therapeutic resistance, and relapse. However, the lack of reliable markers to distinguish LSCs from bulk leukemia cells has impeded progress in studying LSC pathogenesis and developing meaningful LSC-specific diagnostics and therapeutics. Existing LSC gene signatures, derived from bulk populations, cannot definitively identify LSCs at single-cell resolution. To address this, we analyzed large patient cohorts with bulk gene expression data and single-cell multi-omic assays to identify a prognostic gene signature that is specifically enriched in a clinically adverse AML sub-population. Using this signature, we defined and prospectively isolated CD34+CD90-CLL1-CD69+CD53- immunophenotypic LSCs that are significantly enriched for LSC content based on limiting dilution xenotransplantation assays. Our findings demonstrate the power of single-cell multi-omics to precisely identify a clinically relevant LSC population and establish a clear framework for future translational research in AML.",
+      "authors": [
+        "Ediriwickrema, A.",
+        "Nakauchi, Y.",
+        "Kohnke, T.",
+        "Fan, A. C.",
+        "Hu, X.",
+        "Benard, B. A.",
+        "Karigane, D.",
+        "Linde, M. H.",
+        "Newman, A. M.",
+        "Gentles, A. J.",
+        "Majeti, R."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞多體學實現人類急性骨髓性白血病幹細胞的高解析度識別與功能純化",
+      "summaryZh": "急性骨髓性白血病（AML）中，白血病幹細胞（LSCs）是疾病發生、治療抗藥性與復發的關鍵驅動者，然而過去缺乏可靠標記來區分LSCs與一般白血病細胞，阻礙了研究與治療發展。本研究結合大量患者基因表現數據與單細胞多體學分析，識別出一個在臨床預後不良AML亞群中特異性富集的基因特徵，並據此定義出CD34+CD90-CLL1-CD69+CD53-免疫表型LSCs。體內限量稀釋移植實驗證實此免疫表型細胞顯著富集LSCs含量。本研究展示了單細胞多體學在精確識別臨床相關LSCs群體的強大能力，為未來AML轉譯研究奠定明確框架。",
+      "topicTags": [
+        "single-cell",
+        "multi-omics",
+        "acute-myeloid-leukemia",
+        "leukemia-stem-cells",
+        "cancer-biology"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 23,
+      "passedByScope": 13,
+      "llmClassified": 10,
+      "llmYes": 4,
+      "llmNotSure": 0,
+      "llmNo": 6,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 17,
+      "excluded": 6
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 13,
+      "llmTagged": 13,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 13,
+      "candidates": 12,
+      "featured": 12,
+      "overflow": 0,
+      "lineA": 1,
+      "lineB": 7,
+      "preprint": 4,
+      "skip": 1
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10869-x",
+        "title": "Perovskite–organic tandem solar cells with a photo-transformable stabilizer",
+        "journal": "Nature",
+        "publishedDate": "2026-07-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10869-x",
+        "doi": "10.1038/s41586-026-10869-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02152-w",
+        "title": "Rights for rivers and ice cream for all: top reads for the summer holidays",
+        "journal": "Nature",
+        "publishedDate": "2026-07-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02152-w",
+        "doi": "10.1038/d41586-026-02152-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01339-5",
+        "title": "How voluntary work can boost your career in science",
+        "journal": "Nature",
+        "publishedDate": "2026-07-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01339-5",
+        "doi": "10.1038/d41586-026-01339-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02153-9",
+        "title": "The rise of evidence-based medicine and the ‘mavericks’ who championed it",
+        "journal": "Nature",
+        "publishedDate": "2026-07-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02153-9",
+        "doi": "10.1038/d41586-026-02153-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01654-x",
+        "title": "This microbiologist endured a four-year court battle over COVID-19 tests",
+        "journal": "Nature",
+        "publishedDate": "2026-07-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01654-x",
+        "doi": "10.1038/d41586-026-01654-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02206-z",
+        "title": "Daily briefing: The rise of evidence-based medicine",
+        "journal": "Nature",
+        "publishedDate": "2026-07-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02206-z",
+        "doi": "10.1038/d41586-026-02206-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
