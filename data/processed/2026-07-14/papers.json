@@ -1,0 +1,1014 @@
+{
+  "reportDate": "2026-07-14",
+  "generatedAt": "2026-07-15T11:29:56.573Z",
+  "papers": [
+    {
+      "id": "10.1038/s41588-026-02668-x",
+      "title": "The need to consider complexity in the future of behavioral genetics",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-14T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02668-x",
+      "doi": "10.1038/s41588-026-02668-x",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "行為遺傳學的未來：正視複雜性的必要性",
+      "summaryZh": "本篇論文強調行為遺傳學研究必須正視複雜性的關鍵議題。行為特徵並非由單一基因決定，而是涉及基因與環境之間錯綜複雜的交互作用。作者指出，現行的研究方法往往過度簡化生物機制，忽略了基因調控網路、表觀遺傳學以及社會環境因素的深層影響。此觀點對於推動行為遺傳學邁向更精準的研究框架具有重要意義，有助於未來建立更貼近真實的複雜性模型，進而提升對人類行為遺傳基礎的理解。",
+      "topicTags": [
+        "behavioral-genetics",
+        "complex-traits",
+        "gene-environment-interaction",
+        "epigenetics",
+        "research-methodology"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02676-x",
+      "title": "Enhancer control of promoter activity and variability via frequency modulation of clustered transcriptional bursts",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-14T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02676-x",
+      "doi": "10.1038/s41588-026-02676-x",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "增強子透過調控轉錄爆發頻率影響啟動子活性與表現變異",
+      "summaryZh": "本研究揭示了增強子如何透過調控轉錄爆發的頻率來控制基因表現的變異性。研究發現增強子並非單純提升基因表現量，而是精確地調控爆發頻率，進而影響基因表現的噪音程度。這種機制為理解細胞如何在隨機的轉錄過程中維持精確的基因表現模式提供了新視角。了解此調控層面對於闡明發育過程、疾病機制及細胞異質性至關重要，也為合成生物學與基因治療中的表現調控設計提供重要參考。",
+      "topicTags": [
+        "enhancer",
+        "transcriptional-bursts",
+        "gene-regulation",
+        "expression-variability",
+        "promoter"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03232-y",
+      "title": "Biotech news from around the world",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-07-14T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03232-y",
+      "doi": "10.1038/s41587-026-03232-y",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03244-8",
+      "title": "MHRA’s radical rare disease proposal",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-07-14T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03244-8",
+      "doi": "10.1038/s41587-026-03244-8",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03235-9",
+      "title": "Form follows function for RNA editing",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-07-14T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03235-9",
+      "doi": "10.1038/s41587-026-03235-9",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "形態與功能的對話：RNA 編輯新視角",
+      "summaryZh": "本研究揭示 RNA 分子的三維結構如何決定其編輯功能，為理解轉錄後調控開闢新途徑。傳統觀點認為 RNA 編輯是由序列特異性決定，但此研究提出結構形態同樣扮演關鍵角色。這項發現可能徹底改變我們對 RNA 編輯機制的理解，並為開發新型 RNA 療法提供重要理論基礎。對於遺傳疾病治療和精準醫療的發展具有深遠影響。",
+      "topicTags": [
+        "rna-editing",
+        "rna-structure",
+        "molecular-biology",
+        "gene-regulation",
+        "biotechnology"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03205-1",
+      "title": "Bispecific antibodies",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-07-14T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03205-1",
+      "doi": "10.1038/s41587-026-03205-1",
+      "abstract": "Recent patents relating to bispecific antibody compositions and methods of use.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41556-026-02022-7",
+      "title": "Single-cell transcriptomics uncovers endothelial progenitor-like remodelling driving human coronary atherosclerosis progression",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-07-14T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02022-7",
+      "doi": "10.1038/s41556-026-02022-7",
+      "abstract": "Yao, Li, Gai et al. profile normal coronary artery and early and advanced coronary atherosclerosis samples from humans using single-cell transcriptomics and identify a progenitor-like endothelial subtype with functional implications in disease progression",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞轉錄體學揭示內皮前驅細胞樣重塑推動人類冠狀動脈粥狀硬化進程",
+      "summaryZh": "本研究運用單細胞轉錄體學技術，分析正常人冠狀動脈、早期及晚期冠狀動脈粥狀硬化樣本，發現一群具有前驅細胞特徵的內皮細胞亞型。此亞型在疾病進程中展現功能意義，為粥狀硬化的細胞機制提供新見解。這項發現有助於闡明冠狀动脉疾病的發生與惡化機制，並可能為未來治療策略提供新的分子標的。",
+      "topicTags": [
+        "single-cell-transcriptomics",
+        "endothelial-cells",
+        "atherosclerosis",
+        "coronary-artery-disease",
+        "cell-progenitors"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02349-2",
+      "title": "Oxytocin in the amygdala links social and reward signals to cataplexy in mice",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-07-14T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02349-2",
+      "doi": "10.1038/s41593-026-02349-2",
+      "abstract": "Loss of orexin neurons in narcolepsy leads to sleepiness and cataplexy episodes, which are most common in social contexts. In a mouse model, an oxytocin-sensitive circuit in the central amygdala is both necessary and sufficient for cataplexy induced by socialization and reward, which links positive emotional signals to motor suppression and highlights a potential therapeutic target.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "催產素調控杏仁核電路：揭開社交情境誘發猝睡症的機制",
+      "summaryZh": "猝睡症患者在社交情境中最常發作猝睡症，本研究首次在小鼠模型中發現杏仁核中的催產素敏感神經電路是社交與獎勵誘發猝睡症的關鍵調控樞紐。研究證實這條神經路徑對於正向情緒訊號轉換為運動抑制反應是必要且充分的，為猝睡症治療提供了全新的策略方向。此發現不僅闡明了猝睡症在情緒相關情境下發作的分子機制，更指出催產素系統作為藥物開發標的之潛力。",
+      "topicTags": [
+        "neuroscience",
+        "narcolepsy",
+        "oxytocin",
+        "cataplexy",
+        "amygdala"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02352-7",
+      "title": "Oxytocin promotes socially triggered cataplexy",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-07-14T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02352-7",
+      "doi": "10.1038/s41593-026-02352-7",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "催產素促進社會觸發的猝倒症",
+      "summaryZh": "本研究首次揭示催產素在社會情緒刺激觸發猝倒症中的關鍵角色，顛覆了以往對催產素僅限於社交行為的認識。透過動物模型與光遺傳學技術，研究團隊證實催產素能調控下丘腦與腦幹的神經回路，導致情緒驅動的肌肉失張力。此發現不僅深化了我們對猝倒症發病機制的了解，也為臨床上針對猝倒症及嗜睡症的治療提供新靶點。此外，研究結果暗示情緒調節與運動控制之間的神經交互作用可能比先前假設更為緊密，對未來的神經病理學研究具有重要啟示。",
+      "topicTags": [
+        "oxytocin",
+        "cataplexy",
+        "social-trigger",
+        "narcolepsy",
+        "emotion-regulation"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02376-z",
+      "title": "A framework for comparative analysis of human and mouse cortical neuron dendrites in corresponding brain regions",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-07-14T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02376-z",
+      "doi": "10.1038/s41593-026-02376-z",
+      "abstract": "This study establishes a region-matched framework for comparing single-neuron dendritic morphology in human and mouse cortex, revealing more compact local dendrites and stronger lobe-level morphological specialization in humans.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "人類與小鼠皮層神經元樹突結構的跨物種比較框架",
+      "summaryZh": "這項研究建立了人類與小鼠皮層對應腦區單神經元樹突形態學的系統性比較框架。研究發現，人類皮層神經元具有更緊湊的局部樹突結構，以及更強的腦葉層級形態學特化。這種跨物種的結構比較為理解人類大腦演化與功能特殊性提供了重要基礎，並為未來神經退化性疾病的研究提供了珍貴的參照標準。",
+      "topicTags": [
+        "neuroscience",
+        "dendrites",
+        "comparative-analysis",
+        "cortical-neurons",
+        "single-cell"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003884",
+      "title": "Flight style and metabolism shape the tempo of genome evolution in birds",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-14T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003884",
+      "doi": "10.1371/journal.pbio.3003884",
+      "abstract": "As a hallmark of avian ecological innovation, powered flight has fundamentally shaped diverse aspects of birds. The energy demand of flight may have mutagenic impacts on genomes, influencing how fast genomes evolve. However, the relationship between flight, metabolism, and evolutionary rates remains relatively underexplored. Leveraging 363 newly available avian genomes from >90% of avian families, we quantified three distinct types of genomic evolutionary rates to capture a broad spectrum of mutational processes. By combining four flight-related traits and three metabolic metrics, we uncovered significant associations between flight style, metabolism, and multiple evolutionary rates. Next, using a causal inference framework, we demonstrated that metabolism accounted for 43.3% of the total effect between flight and evolutionary rate, underscoring its key role. Together, our findings establish a robust connection between flight, metabolism, and evolutionary rates, offering new insights into how key innovations and associated phenotypes shape the tempo of genome evolution.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "飛行型態與新陳代謝塑造鳥類基因組演化節奏",
+      "summaryZh": "鳥類的動力飛行是生態創新的重要特徵，其高能量需求可能對基因組產生致突變效應，進而影響基因組演化速度。本研究分析了來自超過90%鳥類科的363個新解序基因組，量化了三種不同類型的基因組演化速率，並結合四項飛行特徵與三項新陳代謝指標進行分析。研究結果顯示飛行型態與新陳代謝皆與多種演化速率顯著相關。進一步利用因果推論框架，研究證實新陳代謝可解釋飛行與演化速率之間總效應的43.3%，凸顯其在基因組演化中的關鍵角色。此研究建立了飛行、新陳代謝與基因組演化速率之間的穩固連結，為理解關鍵創新如何塑造基因組演化節奏提供新見解。",
+      "topicTags": [
+        "genome-evolution",
+        "avian-biology",
+        "flight-adaptation",
+        "metabolism",
+        "causal-inference"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003883",
+      "title": "Dachsous-Fat signaling shapes the Drosophila wing through mechanical forces",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-14T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003883",
+      "doi": "10.1371/journal.pbio.3003883",
+      "abstract": "Proper organ shape is critical for function. The Drosophila wing normally adopts an elongated shape, but mutations in the Dachsous-Fat pathway result in rounder wings. The mechanism by which this occurs has remained unclear. Here, we show that Ds-Fat signaling shapes the wing during the larval stage, rather than during pupal development when morphogenetic rearrangements transform the developing wing disc into the adult wing. We further find that Ds-Fat alters tissue-wide stresses in the wing disc, and genetic manipulations that reduce cytoskeletal tension result in rounder wings, whereas increasing cytoskeletal tension produces more elongated wings. Reduced tension is also associated with less oriented growth during development. Notably, increased cytoskeletal tension partially rescues the rounder shape caused by ds knockdown. These results reveal a previously unrecognized mechanism by which Ds-Fat signaling determines wing shape, involving regulation of tissue tension to orient growth and shape the wing primordia during larval development.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "果蠅Dachsous-Fat訊號透過機械力塑造翅膀形態",
+      "summaryZh": "果蠅翅膀的正常發育需要精確的形態控制，本研究揭示了Dachsous-Fat (Ds-Fat) 訊號通路在形塑翅膀過程中的關鍵角色。研究發現Ds-Fat在幼蟲期而非蛹期調控翅膀形狀，透過改變發育中的翅膀盤組織應力來影響形態。減少細胞骨架張力會導致翅膀變圓，而增加張力則使翅膀更加細長，顯示機械力在形狀決定中的重要作用。值得注意的是，增加細胞骨架張力可部分挽救Ds-RNAi造成的圓形翅膀缺陷，證實了Ds-Fat訊號透過調控組織張力來定向生長的機制。此研究發現了一個過去未知的發育機制，為理解器官形態建構的力學基礎提供重要見解。",
+      "topicTags": [
+        "developmental-biology",
+        "mechanobiology",
+        "drosophila",
+        "tissue-morphogenesis",
+        "cell-signaling"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003880",
+      "title": "Realistic monkey body animation reveals an uncanny valley in macaque body perception",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-14T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003880",
+      "doi": "10.1371/journal.pbio.3003880",
+      "abstract": "Social interactions are essential for survival in primates, relying on both facial expressions and body signals. The accurate characterization of these signals is critical for understanding the neurocomputational mechanisms underlying social communication. While previous work has focused on recognizing monkey behavior, a causal and direct manipulation of individual cues strongly benefits from believable, dynamic body avatars—analogous to those successfully developed for faces. Creating lifelike monkey avatars with realistic body motion, however, is challenging. Acquiring sufficiently accurate movement data for animation with marker-based motion capture is impractical, and markerless tracking methods require extensive manual labeling. To address this, we developed MacAction, a realistic macaque body avatar animated from multi-camera markerless tracking data. Our method reconstructs accurate trajectories for a large number of keypoints, as required for the 3D animation of realistic body models. The entire time course of individual actions is captured using only two labeled keyframes per second, with performance further validated on a large-scale human multi-view dataset. We assessed the animation quality of our dynamic avatar in a free-viewing experiment with eight macaque observers for single macaque actions, where fixation behavior was indistinguishable between our animations and matched real videos. Moreover, by systematically varying the realism of the avatar, we found an uncanny valley effect in macaque body perception, similar to that previously described in both humans and macaque faces. These findings support the commonalities of social vision across primate species, providing a foundation for controlled experiments aimed at clarifying the detailed neurocomputational mechanisms of social body perception in primates.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "逼真的猴子身體動畫揭示了獼猴身體知覺中的恐怖谷效應",
+      "summaryZh": "這項研究開發了MacAction系統，利用無標記追蹤技術從多鏡頭影像中重建精確的關鍵點軌跡，創造出逼真的獼猴身體虛擬化身，解決了過去難以獲取高品質動作資料的問題。研究人員透過自由觀看實驗發現，當虛擬化身的真實度降低時，獼猴會出現類似人類和獼猴臉部知覺中的「恐怖谷」效應，顯示靈長類物種在社會視覺神經機制上具有共通性。此研究為未來控制性實驗奠定了基礎，有助於釐清靈長類社會身體知覺的詳細神經計算機制。",
+      "topicTags": [
+        "uncanny-valley",
+        "body-perception",
+        "primate-social-vision",
+        "computer-animation",
+        "markerless-tracking"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003845",
+      "title": "Positive early-life olfactory memory is rooted in the olfactory bulb and triggers large-scale changes beyond the olfactory system",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-14T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003845",
+      "doi": "10.1371/journal.pbio.3003845",
+      "abstract": "Olfactory childhood memories are particularly important for forming one’s identity. However, we don’t know how they exert their privileged influence and shape brain structure. To address this, we modeled childhood olfactory memory in mice based on a human survey indicating that our earliest olfactory memory arises from repeated positive experiences paired with a pleasant odorant. Accordingly, mice were exposed during childhood to an attractive odorant in a playful environment. In adulthood, memory recall relied on neonatal-born granule cells (GCs) in the olfactory bulb, as their optogenetic silencing impaired retrieval, and on increased functional connectivity in the reward system. With age, memory persistence depended on re-exposure to the childhood odorant and was associated with the disengagement of neonatal-born GCs, alongside with strengthened limbic functional connectivity. Together, these findings identify neonatal neurons as a key substrate for encoding childhood olfactory memory and reveal dynamic reorganization of brain networks supporting its long-term significance.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "早期正向嗅覺記憶根植於嗅球，並觸發嗅覺系統之外的大規模腦部變化",
+      "summaryZh": "嗅覺記憶在個人身份認同形成中扮演重要角色，但科學家尚不清楚這些早期記憶如何影響並塑造大腦結構。本研究以人類調查為基礎，在小鼠中建立童年嗅覺記憶模型，發現成年後的記憶回憶依賴於嗅球中新生顆粒細胞；光遺傳學實驗證實，抑制這些新生神經元會損害記憶提取，顯示它們是編碼早期嗅覺記憶的關鍵基質。此外，研究也發現記憶鞏固伴隨著獎勵系統和邊緣系統功能連接的動態重組，揭示了腦網絡的動態重構支持嗅覺記憶的長期重要性。",
+      "topicTags": [
+        "olfaction",
+        "memory",
+        "neuroscience",
+        "neural-circuits",
+        "developmental-biology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.12.738053",
+      "title": "HiExM Enables Scalable Mapping of Organelle Morphology and Spatial Heterogeneity",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.12.738053v1",
+      "doi": "10.64898/2026.07.12.738053",
+      "abstract": "Quantitative image analysis of subcellular organization requires sufficient spatial resolution to resolve individual organelles and sample size to capture heterogeneity both within cells and between cells. Existing imaging approaches often force a tradeoff between spatial resolution and throughput, limiting the ability to measure organelle-level phenotypes across cell populations. Here, we establish high-throughputs expansion microscopy (HiExM) as a scalable pipeline for single-organelle analysis. As a benchmark, we focus on mapping late endosomes and lysosomes (LELs), a heterogeneous organelle class whose small size, dense intracellular distribution, and functional diversity make it difficult to quantify accurately using conventional light microscopy. HiExM increases effective spatial resolution while preserving compatibility with large-scale image acquisition, enabling robust segmentation and quantitative profiling of individual LELs across large cell populations. Using this pipeline, we identified differences in intracellular trafficking behavior among anti-transferrin receptor antibodies that could not be captured by conventional colocalization analysis alone. We further integrate spatial and morphological features with learned image-based representations that can define relationships between LEL morphology and subcellular position as well as how these relationships respond to perturbations. Together, our work establishes HiExM as a generalizable platform for scalable single-organelle profiling, enabling an analytical framework for quantifying discrete organelles across cells and conditions.",
+      "authors": [
+        "Day, J. H.",
+        "Farrell, J. D.",
+        "Yang, D.",
+        "Neira, F. N.",
+        "Allen, E. A.",
+        "Byrne, A. M.",
+        "Leksa, N. C.",
+        "Klinger, K. W.",
+        "de Nola, G.",
+        "Al-Jazrawe, M.",
+        "Boyer, L. A."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial resolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2025.12.19.695616",
+      "title": "Hidden sampling biases inflate performance in gene regulatory network inference",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2025.12.19.695616v2",
+      "doi": "10.64898/2025.12.19.695616",
+      "abstract": "Accurate reconstruction of gene regulatory networks (GRNs) from single-cell transcriptomic data remains a major methodological challenge. Recent machine learning approaches, particularly graph neural networks and graph autoencoders, have reported improved performance, yet these gains do not consistently translate to realistic biological settings. Here, we show that a key reason for that is the way negative regulatory interactions are sampled for supervised training and evaluation. We find that widely used sampling strategies introduce node-degree biases that allow models to exploit trivial graph-structural cues rather than biological signals. Across multiple benchmarks, simple degree-based heuristics match or exceed state-of-the-art graph neural network models under these biased evaluation protocols. We further introduce a degree-aware sampling approach that eliminates these artifacts and provides more reliable assessments of GRN inference methods. Our results call for standardized, bias-aware benchmarking practices to ensure meaningful progress in supervised GRN inference from single-cell RNA-seq data.",
+      "authors": [
+        "Stock, M.",
+        "Ratajczak, F.",
+        "Bertin, P.",
+        "Hoermanseder, E.",
+        "Bengio, Y.",
+        "Hartford, J.",
+        "Falter-Braun, P.",
+        "Heinig, M.",
+        "Tong, A.",
+        "Scialdone, A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.10.737805",
+      "title": "Integrative single-nucleus multi-omics profiling identifies candidate regulators and signaling axes in Alzheimer's disease lipid-processing microglia",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.10.737805v1",
+      "doi": "10.64898/2026.07.10.737805",
+      "abstract": "Lipid-processing microglia are among the microglial states most strongly associated with Alzheimer's disease (AD) pathology, yet whether this association reproduces across independent cohorts, what transcriptional programs define the state, and which upstream signals and small molecules can modulate it remain unsolved. We address these questions through a cross-cohort analysis of one such substate (MG4) by integrating differential expression, transcription factor activity inference, gene set enrichment, and cell-cell communication across five independent single-nucleus RNA sequencing cohorts (n_total = 140 donors), with paired single-nucleus ATAC sequencing in one multi-omic cohort for epigenomic corroboration. A held-out cohort (n = 150 donors) supported donor-level regression of MG4 proportion on ligand expression, and two spatial transcriptomics datasets (n_total = 30 donors) related ligand expression to MG4 identity in neighboring spots. MG4 was reproducibly enriched in AD across all five cohorts (pooled log2 fold change = 0.90, p = 3.0 x 10^-4;). Expression-based inference and motif accessibility jointly nominated MITF and BACH1 as regulators of a program led by V-ATPase-driven lysosomal acidification and cholesterol efflux, a lysosomal-biogenesis signature distinct from the catabolic DAM and lipid-storage LDAM programs, with AD-specific upregulation of energy metabolism. FGF1 and TGFB2 were the most supported candidate upstream ligands, each significant in donor-level regression with further spatial evidence. Computational drug repurposing nominated ten blood-brain barrier-penetrant compounds as perturbational probes. Together, these results advance a described disease-associated microglial state into a reproducible, mechanistically framed regulatory model, providing candidate regulators, upstream ligands, and pharmacological probes for functional validation.",
+      "authors": [
+        "Zheng, C.",
+        "Zhai, T.",
+        "Zhang, F.",
+        "Shen, L."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "spatial transcriptomics",
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.06.25.734628",
+      "title": "Lineage-aware stochastic modeling reveals gene-expression dynamics in development and disease",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.25.734628v2",
+      "doi": "10.64898/2026.06.25.734628",
+      "abstract": "Gene expression changes along cell lineages, but most single-cell RNA-seq analyses treat cells as independent snapshots and ignore their phylogenetic relationships. Here we present LaVOUS, a lineage-aware probabilistic framework for modeling sparse single-cell gene-expression counts on reconstructed lineage trees. LaVOUS couples Brownian motion and Ornstein--Uhlenbeck models of latent transcriptional dynamics with negative-binomial observation models and scalable variational inference, enabling likelihood-based tests for gene-expression heritability, branch-specific expression shifts, and ancestral expression reconstruction. In simulations, LaVOUS improved detection of lineage-associated expression changes over Gaussian phylogenetic models and accurately reconstructed expression histories across expression levels. Applied to lineage-resolved single-cell datasets from metastatic lung cancer, class-switching B cells, and the developing brain, LaVOUS identified expression changes associated with metastatic progression, isotype switching, and neuronal differentiation. LaVOUS provides a general framework for studying single-cell expression dynamics across development and disease.",
+      "authors": [
+        "Xing, J.",
+        "Staklinski, S. J.",
+        "Liu, Z.",
+        "Nowak, D.",
+        "Siepel, A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.01.29.701618",
+      "title": "scDiagnostics: systematic assessment of cell type annotation in single-cell transcriptomics data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.01.29.701618v3",
+      "doi": "10.64898/2026.01.29.701618",
+      "abstract": "Although cell type annotation has become an integral part of single-cell analysis workflows, the assessment of computational annotations remains challenging. Many annotation tools transfer labels from an annotated reference dataset to a new query dataset of interest, but blindly transferring labels from one dataset to another has its own set of challenges. Often enough there is no perfect alignment between datasets, especially when transferring annotations from a healthy reference atlas for the discovery of disease states. We present scDiagnostics, a new open-source software package that facilitates the detection of complex or ambiguous annotation cases that may otherwise go unnoticed, thus addressing a critical unmet need in current single-cell analysis workflows. scDiagnostics is equipped with novel diagnostic methods that are compatible with all major cell type annotation tools. We demonstrate that scDiagnostics reliably detects complex or conflicting annotations using both carefully designed simulated datasets and diverse real-world single-cell datasets. Our evaluation demonstrates that scDiagnostics reliably identifies misleading annotations that systematically distort downstream analysis and interpretation and that would otherwise remain undetected. The scDiagnostics R package is available from Bioconductor (https://bioconductor.org/packages/scDiagnostics).",
+      "authors": [
+        "Christidis, A.",
+        "Ghazi, A. R.",
+        "Chawla, S.",
+        "Turaga, N.",
+        "Gentleman, R.",
+        "Geistlinger, L."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.09.737490",
+      "title": "AI-enabled reconstruction of 3D spatial multi-omics at single-cell resolution",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.09.737490v1",
+      "doi": "10.64898/2026.07.09.737490",
+      "abstract": "Three-dimensional (3D) spatial multi-omics provides unparalleled insights into biological activities, yet remains technically prohibitive. Here, we introduce Histo3D-MO, a hybrid experimental-computational pipeline for reconstructing single-cell-resolution 3D spatial multi-omics maps. Notably, Histo3D-MO integrates sparse, omics-disjoint spatial measurements with dense Hematoxylin and Eosin (H&E) histology through SPatial multi-Omics from h&E imaGEs (SPONGE), achieving cell-level 3D mapping across multiple omics layers. Validated using held-out slices, SPONGE substantially outperforms existing omics prediction methods. We further developed an algorithmic suite for 3D cell-type propagation and tissue-domain annotation, enabling whole-volume characterization of the tumor microenvironment. Applied to the in-house hepatocellular carcinoma data, Histo3D-MO revealed spatially organized patterns of translation efficiency, volumetric decoupling between malignant cells and monocytes, and depth-associated monocyte differentiation trajectories. Together, these results establish Histo3D-MO as a scalable framework for reconstructing single-cell-resolution 3D spatial multi-omics and interrogating tissue organization across complex biological systems.",
+      "authors": [
+        "Wang, Z.",
+        "Yan, Y.",
+        "Yang, X.",
+        "Zhang, D.",
+        "Han, C.",
+        "Zou, Q.",
+        "Du, Y.",
+        "Hu, Z.",
+        "Yuan, Z."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "AI輔助單細胞解析度三維空間多體學重建技術",
+      "summaryZh": "三維空間多體學能提供生物活動的全面視角，但傳統方法技術門檻高、成本昂貴。本研究開發Histo3D-MO流程，結合稀疏的空間體學測量與密集的H&E組織學影像，透過SPONGE演算法預測細胞層級的三維體學分布，精準度超越現有方法。應用於肝細胞癌組織分析，揭示了翻譯效率的空間分布模式，並發現惡性細胞與單核球之間的體積解耦現象，以及單核球隨組織深度變化的分化軌跡。此技術為複雜生物系統的三維體學研究提供可擴展的分析框架。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "single-cell-analysis",
+        "deep-learning",
+        "cancer-biology",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.04.18.719420",
+      "title": "Interpretable Integration of CITE-seq RNA and ADT Profiles Without Explicit Modality-Weight Tuning via Tensor Decomposition-Based Unsupervised Feature Extraction",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.04.18.719420v3",
+      "doi": "10.64898/2026.04.18.719420",
+      "abstract": "CITE-seq jointly profiles cellular transcripts and surface proteins, but RNA and ADT modalities differ markedly in dimensionality, sparsity, and noise characteristics. We applied tensor-decomposition-based unsupervised feature extraction to paired CITE-seq data by constructing a gene x cell x protein tensor and performing HOSVD. The proposed workflow does not require explicit RNA/ADT modality-weight tuning or prior HVG-based gene filtering, and it provides cell-mode singular vectors together with post hoc unsupervised gene selection. Across ImmGen T-cell CITE-seq datasets, TD-derived cell representations preserved cell-type-related local structure and showed competitive kNN-based consistency compared with scMoMaT, a related factorization-based reference. However, ADT-only embeddings and Seurat WNN graphs often showed higher cell-type neighborhood consistency, indicating that TD-based UFE should not be interpreted as a replacement for marker-based or graph-based cell-type analysis. Enrichment analysis of TD-selected genes supported their biological plausibility but was interpreted as an exploratory check rather than proof of complete marker recovery. These results position TD-based UFE as a lightweight tensor-based unsupervised feature extraction framework for paired RNA/ADT data, rather than as a universally superior CITE-seq integration method.",
+      "authors": [
+        "Turki, T.",
+        "Taguchi, Y.-h."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "CITE-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1101/2025.05.30.656945",
+      "title": "Informed Data-Independent Acquisition Enables Targeted Quantification of Key Regulatory Proteins in Cell Fate Decisions at Single-Cell Resolution",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-14",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.05.30.656945v3",
+      "doi": "10.1101/2025.05.30.656945",
+      "abstract": "Low-abundance regulatory proteins, including transcription factors (TFs), remain largely inaccessible to direct quantification in single cells despite their central roles in cellular state transitions. Although single-cell proteomics by mass spectrometry (scp-MS) enables broad proteome profiling, current approaches often lack the sensitivity required to quantify these regulators at the protein level robustly. Here, we present informed data-independent acquisition (iDIA), a cross-instrument MS acquisition framework combining sensitive targeted measurements with global proteome profiling of the same cell. Thereby, iDIA significantly improves the sensitivity for predefined regulatory proteins, while preserving global proteome coverage. Applied to hematopoietic stem and progenitor cells, iDIA quantified 12 lineage-associated TFs, including GATA1 and SPI1, alongside the global proteome from single cells. Integrated analysis reconstructed the differentiation hierarchy and revealed protein-level states of early granulocytic-monocytic lineage priming and coordinated changes between erythroid TF abundance and cell-cycle progression. Thus, iDIA opens scp-MS to the regulatory architecture of cell state transitions.",
+      "authors": [
+        "Woessmann, J.",
+        "Petrosius, V.",
+        "Schovsbo, S.",
+        "Furtwaengler, B.",
+        "Arrey, T. N.",
+        "Op de Beeck, J.",
+        "Shanbhag, R.",
+        "Glindtvad, N. F.",
+        "Azad, A.",
+        "Damoc, E.",
+        "Velten, L.",
+        "Porse, B. T.",
+        "Schoof, E. M."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.13.735796",
+      "title": "Diversity in transcriptomics without cell types",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.13.735796v1",
+      "doi": "10.64898/2026.07.13.735796",
+      "abstract": "Downstream analysis in single-cell and spatial transcriptomics is highly dependent on a sequence of upstream modeling choices. The non-canonicity of these choices presents challenges for reproducibility. In particular, measures of cellular heterogeneity and diversity do not solely reflect biological variation, but are also sensitive to parameter settings. A diversity measure that is robust to modeling choices, such as clustering resolution, is therefore desirable to improve reproducibility and interpretability. Here, we introduce scDIV, a similarity-sensitive measure of cellular diversity inspired by mathematical ideas in ecological science, which is robust to graph-based clustering parameters and remains applicable even in the absence of cell-type clusters. We use scDIV to quantitatively track the progress of tissue differentiation in both single-cell and spatial mouse development datasets and to evaluate different engineered stem-cell-based embryo models. In contrast to traditional entropy-based methods, such as the Hill number, used to quantify biodiversity, scDIV remains robust to clustering.",
+      "authors": [
+        "Jiang, L.",
+        "Benjamin, K.",
+        "Veenvliet, J.",
+        "Roff, E.",
+        "Harrington, H."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.13.738237",
+      "title": "Lineage recording reveals hijacked hepatic progenitor states as a common origin of HCC and ICC",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.13.738237v1",
+      "doi": "10.64898/2026.07.13.738237",
+      "abstract": "Fatty liver disease predisposes to primary liver cancer, yet the lineage routes and niche mechanisms that select rare tumor-fated hepatocytes remain unclear. Here we developed CERAMIC, a high-capacity CRISPR-Cas9 lineage recorder that co-recovers editing scars and transcriptomes from single cells, and applied it to an AKT/NRAS-driven model of MASLD-associated liver tumor initiation. Longitudinal lineage, single-cell and spatial analyses revealed a hierarchical trajectory in which Hep_Bi-zonal cells, rather than Hep_CVlike cells, generated regenerative and neoplastic hepatocyte progenitor states that progressed toward both hepatocellular carcinoma and intrahepatic cholangiocarcinoma lineages. Tumor-fated cells preferentially expanded along a remodeled midlobular-periportal axis and depended on ACOX1-mediated peroxisomal beta-oxidation to withstand lipotoxic and oxidative stress. Spatial and lineage analyses further identified a sequential lipid-associated macrophage niche, in which monocyte-derived LAMs engaged tumor-fated hepatocytes through an LGALS9-P4HB axis, and P4HB inhibition suppressed tumor expansion. These findings define liver tumor initiation as a lineage-restricted process licensed by peroxisomal metabolic adaptation and macrophage-derived niche signals.",
+      "authors": [
+        "Fan, J.",
+        "Pei, J.",
+        "Xu, N.",
+        "Wang, X.",
+        "Mao, S.",
+        "Zhang, Y.",
+        "Yu, L.",
+        "Sun, Y.",
+        "Gong, Y.",
+        "Xiong, X.",
+        "Wang, S.",
+        "Sun, X.",
+        "Chen, L.",
+        "Liu, X."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "cancer",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "譜系記錄揭示被劫持的肝臟前驅細胞狀態為肝細胞癌與肝內膽管癌的共同起源"
+    },
+    {
+      "id": "10.64898/2026.07.13.738216",
+      "title": "Temporally distinct CDX programmes preconfigure vagal and trunk neural crest",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.13.738216v1",
+      "doi": "10.64898/2026.07.13.738216",
+      "abstract": "Neural crest cells (NCCs) are progenitor cells vital in establishing the head, heart, gut and peripheral nervous system of vertebrate embryos. Disruptions to NCC development underlie neurocristopathies, which constitute a wide array of congenital anomalies. Yet how NCCs acquire defined regional identities that enable them to generate distinct derivatives along the body axis remains unclear. Here, we identify an epiblast progenitor population in mouse embryos that transiently contributes to vagal neural crest cells and trunk-to-tail derivatives. Using single-cell spatial transcriptomics across successive stages of neural crest migration, we generate a cervicothoracic cell atlas that resolves vagal and trunk neural crest cells in situ. Combining in vivo lineage tracing with in vitro models of neural crest induction, we show that despite transiently sharing a lineage, vagal and trunk neural crest arise through separate mechanisms. Temporally discrete regionalisation events mediated by CDX transcription factors establish HOX states that define vagal versus trunk identity. These findings revise models of NCC formation by demonstrating that temporally separate epiblast regionalisation events preconfigure neural crest and neural progenitor identities. More broadly, the results suggest that primary regionalisation events coordinately govern multiple cell lineages at the cervicothoracic transition, with implications for understanding neurocristopathies involving combined enteric and trunk derivatives.",
+      "authors": [
+        "Amblard, I.",
+        "Kalaitzis, C. M.",
+        "Balaguer Balsells, I.",
+        "Andrew, I.",
+        "Choi, K. L.",
+        "Moka, H. A.",
+        "Game, L.",
+        "Vaquerizas, J. M.",
+        "Metzis, V."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "時序性差異的CDX程式預先設定迷走神經與軀幹神經嵴"
+    },
+    {
+      "id": "10.64898/2026.07.12.737936",
+      "title": "Vessel Organoids Reveal FOXF1 Variant-Specific Regulation of Mesoderm and Capillary Development",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.12.737936v1",
+      "doi": "10.64898/2026.07.12.737936",
+      "abstract": "How allelic variants in lineage-regulating transcription factors drive diverging human developmental outcomes remains poorly understood. This is partly due to the lack of human model systems. Here, we used vessel organoids from human induced pluripotent stem cells (hiPSCs) to resolve variant-specific functions of Forkhead Box F1 (FOXF1), a critical regulator of mesoderm and vascular development. Using three patient-derived hiPSC lines harboring unique FOXF1 variants, we show that heterozygous variants cause capillary maldevelopment of varying severity. Single-nucleus multiomic analysis revealed variant-specific mechanisms - a severe variant impairs differentiation of nascent mesoderm to lateral plate mesoderm and disrupts vascular progenitor specification, while moderate variants permit mesoderm differentiation but rewire vascular progenitor states and function. Restoration of wild-type FOXF1 via lipid nanoparticle-mediated mRNA delivery rescued capillary formation in a variant- and developmental-stage-dependent manner. Together, these findings demonstrate that different variants disrupt stage-specific FOXF1 functions in human mesoderm-to-vascular development, underscoring the importance of variant-specific therapeutic strategies.",
+      "authors": [
+        "Pek, N. M.",
+        "Thorner, K.",
+        "Guo, M.",
+        "Dennison, H.",
+        "Rajaguru, T.",
+        "Stan, G.",
+        "Kishimoto, K.",
+        "Rottier, R.",
+        "Kotton, D. N.",
+        "Zorn, A. M.",
+        "Gu, M."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "血管類器官揭示FOXF1變異體特異性調控中胚層與毛細血管發育"
+    },
+    {
+      "id": "10.64898/2026.07.13.736818",
+      "title": "Ependymomas are cancers of the pre-neural crest/roof plate lineage",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.13.736818v1",
+      "doi": "10.64898/2026.07.13.736818",
+      "abstract": "Distinct molecular variants of the brain cancer ependymoma are distributed along the rostral-caudal extent of the central nervous system (CNS). Historically proposed to arise from ventricular ependyma, recent studies have suggested conflicting cellular origins, including the neural radial glia and the roof plate lineages. Using single-cell transcriptomics, immunohistochemistry, and lineage tracing, we demonstrate that ependymomas across all CNS compartments transcriptionally mirror MSX1+ve pre-neural crest/roof plate (Pre-NC/RP) lineage derivatives. Ependymoma subgroups recapitulate the spatial and molecular diversity of regional Pre-NC/RP populations, while retaining conserved MSX1 expression. Expression of the oncogenic fusion ZFTA-RELA within the murine Pre-NC/RP lineage generated tumors that faithfully resembled human ependymoma. These findings identify a common embryonic cellular origin for ependymomas and reconcile previously conflicting models of tumorigenesis.",
+      "authors": [
+        "Balin, P.",
+        "Kumar, S. A.",
+        "Galton, R.",
+        "Delaidelli, A.",
+        "Orisme, W.",
+        "Haldipur, P.",
+        "Mankahla, N.",
+        "Saadeldin, A.",
+        "von Krosigk, N.",
+        "Vladoiu, M. C.",
+        "Erickson, A. W.",
+        "Barembaum, M.",
+        "Millman, J.",
+        "Banks, A. J.",
+        "Joseph, J. T.",
+        "Khan, O.",
+        "Du, S.",
+        "Sirbu, O.",
+        "Ong, W.",
+        "Faury, D.",
+        "Santa Maria Lopez, V.",
+        "Bonner, S.",
+        "Coleman, J. C.",
+        "Eigenbrood, J.",
+        "Cooper, E. A.",
+        "Duh, J. K.",
+        "Zhang, J.",
+        "Lee, J. J.",
+        "Rasnitsyn, A.",
+        "Cedillo, A. E.",
+        "Persad, G.",
+        "Hendrikse, L. D.",
+        "Saulnier, O.",
+        "Van Ommeren, R.",
+        "Przelicki, D.",
+        "Abeysundara, N.",
+        "Curry, R. N.",
+        "Ahmed, H. N.",
+        "Suarez, R. A.",
+        "Richman, C. M.",
+        "Huang, N.",
+        "Wang, H.",
+        "Su, H.",
+        "Pallott"
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "室管膜瘤為前神經嵴/屋頂板譜系的癌症"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 42,
+      "passedByScope": 27,
+      "llmClassified": 15,
+      "llmYes": 7,
+      "llmNotSure": 0,
+      "llmNo": 8,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 34,
+      "excluded": 8
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 27,
+      "llmTagged": 27,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 27,
+      "candidates": 24,
+      "featured": 12,
+      "overflow": 12,
+      "lineA": 1,
+      "lineB": 10,
+      "preprint": 13,
+      "skip": 3
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 12,
+      "llmTranslated": 4,
+      "failed": 8
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02190-4",
+        "title": "Academia should recognize community partnerships as having societal impact",
+        "journal": "Nature",
+        "publishedDate": "2026-07-14T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02190-4",
+        "doi": "10.1038/d41586-026-02190-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02187-z",
+        "title": "AI models: one country’s fears become everyone’s constraint",
+        "journal": "Nature",
+        "publishedDate": "2026-07-14T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02187-z",
+        "doi": "10.1038/d41586-026-02187-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02102-6",
+        "title": "How the calendar came to be",
+        "journal": "Nature",
+        "publishedDate": "2026-07-14T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02102-6",
+        "doi": "10.1038/d41586-026-02102-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02192-2",
+        "title": "‘Dark comet’ unmasked by its mysterious motions",
+        "journal": "Nature",
+        "publishedDate": "2026-07-14T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02192-2",
+        "doi": "10.1038/d41586-026-02192-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01855-4",
+        "title": "Seeking an industry role after your PhD? Make sure your CV reflects that",
+        "journal": "Nature",
+        "publishedDate": "2026-07-14T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01855-4",
+        "doi": "10.1038/d41586-026-01855-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01128-0",
+        "title": "My research on mice is causing me stress. How can I become more resilient?",
+        "journal": "Nature",
+        "publishedDate": "2026-07-14T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01128-0",
+        "doi": "10.1038/d41586-026-01128-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02170-8",
+        "title": "Mathematics formula found on Maya wall rivals insights of ancient masters",
+        "journal": "Nature",
+        "publishedDate": "2026-07-14T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02170-8",
+        "doi": "10.1038/d41586-026-02170-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02154-8",
+        "title": "‘Climate free fall’: why the biggest risk to our economies is yet to be recognized",
+        "journal": "Nature",
+        "publishedDate": "2026-07-14T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02154-8",
+        "doi": "10.1038/d41586-026-02154-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
