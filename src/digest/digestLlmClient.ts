@@ -36,3 +36,8 @@ export function createDigestLlmClient(
   clientCache.set(key, client);
   return client;
 }
+
+/** Test-only: clear cached clients so mocked global fetch is picked up. */
+export function resetDigestLlmClientCache(): void {
+  clientCache.clear();
+}

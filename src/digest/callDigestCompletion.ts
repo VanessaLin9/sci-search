@@ -1,4 +1,5 @@
 import type { ChatCompletion } from "openai/resources/chat/completions";
+import { createChatCompletionWithJsonResponseFormatFallback } from "../llm/createChatCompletionWithJsonResponseFormatFallback.js";
 import { resolveCompletionMaxTokens } from "../routing/batchSizing.js";
 import { estimateDigestTaggingCompletionTokens } from "./batchSizing.js";
 import type { DigestLlmConfig } from "./config.js";
@@ -13,9 +14,7 @@ export async function callDigestTaggingCompletion(
   options?: { label?: string },
 ): Promise<ChatCompletion> {
   const client = createDigestLlmClient(config);
-  const startedAt = Date.now();
   const label = options?.label ?? "digest-tag";
-  let usedJsonResponseFormat = config.preferJsonResponseFormat;
 
   const estimated = estimateDigestTaggingCompletionTokens(items.length);
   // Reasoning-heavy models (e.g. step-3.5-flash) need headroom beyond compact JSON estimates.
@@ -25,23 +24,16 @@ export async function callDigestTaggingCompletion(
     `${label}: POST chat/completions (${items.length} paper(s), max_tokens=${maxTokens}, need~${estimated}, cap=${config.maxTokens}, timeout=${config.timeoutMs}ms)`,
   );
 
-  try {
-    const completion = await client.chat.completions.create(
-      buildDigestTaggingCompletionParams(items, config, usedJsonResponseFormat, maxTokens),
-    );
-    logDigest(`${label}: HTTP ok in ${formatElapsedMs(startedAt)}`);
-    return completion;
-  } catch (error) {
-    if (!config.preferJsonResponseFormat) {
-      logDigest(`${label}: failed after ${formatElapsedMs(startedAt)}`);
-      throw error;
-    }
-
-    logDigest(`${label}: json_object failed, retrying without response_format…`);
-    const completion = await client.chat.completions.create(
-      buildDigestTaggingCompletionParams(items, config, false, maxTokens),
-    );
-    logDigest(`${label}: HTTP ok in ${formatElapsedMs(startedAt)}`);
-    return completion;
-  }
+  const { completion } = await createChatCompletionWithJsonResponseFormatFallback({
+    preferJsonResponseFormat: config.preferJsonResponseFormat,
+    create: (useJsonResponseFormat) =>
+      client.chat.completions.create(
+        buildDigestTaggingCompletionParams(items, config, useJsonResponseFormat, maxTokens),
+      ),
+    log: logDigest,
+    label,
+    formatElapsed: formatElapsedMs,
+    jsonModeFailedRetryMessage: `${label}: json_object failed, retrying without response_format…`,
+  });
+  return completion;
 }
