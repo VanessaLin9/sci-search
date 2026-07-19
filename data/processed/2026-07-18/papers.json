@@ -1,0 +1,238 @@
+{
+  "reportDate": "2026-07-18",
+  "generatedAt": "2026-07-19T11:14:17.954Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.07.06.736651",
+      "title": "LeafRank: A phylodynamic framework for inferring relative fitness from single-cell phylogenies in chromosomally unstable tumors",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-18",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.06.736651v3",
+      "doi": "10.64898/2026.07.06.736651",
+      "abstract": "Tumors contain cancer cells with diverse growth potentials that shape evolutionary trajectories, yet this fitness diversity remains difficult to quantify in cases of whole-genome duplication (WGD) and chromosomal instability. We present LeafRank, a mathematical framework that leverages single-cell DNA-seq phylogenies to infer the relative fitness of individual cells. Using a multi-type branching process model, LeafRank integrates full tree topology, including branch lengths and bifurcation patterns, to estimate marginal fitness probabilities under punctuated evolutionary regimes driven by rare driver events. To account for elevated aberration rates following WGD, we introduce a tree-rescaling strategy that adjusts for lineage-specific genomic instability. Unlike methods focused on predefined subclones, LeafRank ranks all sampled cells, enabling flexible assessment of growth heterogeneity. Simulations demonstrate high accuracy across spatial and non-spatial virtual tumors. Applied to ovarian cancer, LeafRank reveals directional and parallel selection in WGD tumors and identifies recurrent copy number events enriched in high-fitness lineages. WGD lineages do not show immediate growth advantages but acquire fitness through subsequent alterations.",
+      "authors": [
+        "Wu, C.",
+        "Leder, K.",
+        "Wang, Z.",
+        "Sun, R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer",
+        "evolution",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "LeafRank：利用單細胞系統發育樹推斷染色體不穩定腫瘤相對適應度之框架",
+      "summaryZh": "腫瘤內的癌細胞具有多樣化的生長潛力，然而在全基因組複製（WGD）與染色體不穩定的情況下，適應度差異難以量化。本研究提出LeafRank框架，運用多型分支過程模型分析單細胞DNA測序系統發育樹，透過整合完整樹拓撲結構、分支長度及分叉模式，估計各細胞的邊際適應度機率，並引入樹重新調整策略校正譜系特異性基因組不穩定性。應用於卵巢癌資料顯示，LeafRank能揭示WGD腫瘤中的定向與平行選擇作用，並識別出在高效適應度譜系中顯著富集的復發性拷貝數變異。研究發現WGD譜系並非立即展現生長優勢，而是透過後續基因變異逐步獲得適應度。",
+      "topicTags": [
+        "single-cell",
+        "cancer-evolution",
+        "phylogenetics",
+        "chromosomal-instability",
+        "ovarian-cancer"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-75551-2",
+      "title": "Convergent genomic trajectories shape adaptation to life on land across animal lineages",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-07-18T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-75551-2",
+      "doi": "10.1038/s41467-026-75551-2",
+      "abstract": "Animals have moved from water to land many times, but whether they used the same genetic routes has remained unclear. This study shows that independent land transitions relied mostly on ancient, conserved genes, with lineage-specific changes converging on similar stress-related functions.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "趨同的基因演化軌跡：動物從水生到陸生的適應機制",
+      "summaryZh": "動物從海洋遷移到陸地是演化史上多次獨立發生的重大轉變，但學界一直不清楚這些獨立的登陸事件是否依賴相同的遺傳機制。本研究分析多個動物譜系的基因組，發現不同動物登陸時主要依賴古老且高度保守的基因，而非快速演化出的新基因。值得注意的是，各譜系在登陸過程中出現的特化基因變化，趨同地指向壓力反應相關功能，顯示陸地環境的選擇壓力塑造了相似的適應策略。這項發現不僅揭示了動物適應陸地生活的普遍遺傳基礎，也為理解演化中的趨同現象提供了新的基因層面證據。",
+      "topicTags": [
+        "evolution",
+        "genomics",
+        "adaptation",
+        "land-transition",
+        "comparative-genomics"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-75664-8",
+      "title": "Process-integrated engineered resting cells for biocatalytic production of rare natural sugars from sole methanol molecules",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-07-18T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-75664-8",
+      "doi": "10.1038/s41467-026-75664-8",
+      "abstract": "Methanol use in engineered methylotrophs is constrained by toxicity and low efficiency. Here, the authors report the engineering E. coli resting cells coupled with a screened alcohol oxidase to enable biocatalytic production of rare sugars from methanol as the sole substrate.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "工程化靜止細胞以甲醇為唯一碳源生產稀有天然糖",
+      "summaryZh": "甲醇在甲基營養菌中的應用長期受限於其毒性與轉化效率低落。本研究透過工程化大腸桿菌靜止細胞，並篩選適當的醇氧化酶，成功建立一套生物催化系統，能以甲醇作為唯一基質生產稀有天然糖。此技術突破傳統甲基營養菌的限制，為永續生質化學製造提供新途徑。稀有糖類在醫藥與食品工業具有高附加價值，此研究開闢了利用簡單碳源大規模生產此類化合物的新策略。",
+      "topicTags": [
+        "biocatalysis",
+        "methanol-utilization",
+        "rare-sugars",
+        "metabolic-engineering",
+        "synthetic-biology"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 9,
+      "passedByScope": 1,
+      "llmClassified": 8,
+      "llmYes": 2,
+      "llmNotSure": 0,
+      "llmNo": 6,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 3,
+      "excluded": 6
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 3,
+      "llmTagged": 3,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 3,
+      "candidates": 3,
+      "featured": 3,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 2,
+      "preprint": 1,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 3,
+      "llmSummarized": 3,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-75865-1",
+        "title": "Scale-bridging interface design enables high-performance sustainable thermoelectrics",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-07-18T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-75865-1",
+        "doi": "10.1038/s41467-026-75865-1",
+        "abstract": "By linking device contacts with internal material interfaces, this study introduces a scale-bridging design that improves charge transport and heat management, enabling thermoelectric modules to convert waste heat into electricity more efficiently.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-75808-w",
+        "title": "Wavelength-encoded neuromorphic inference enabled by microcavity MoS2 photodetector arrays",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-07-18T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-75808-w",
+        "doi": "10.1038/s41467-026-75808-w",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-75615-3",
+        "title": "Learning ordinality-aware multimodal representations for composite materials design",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-07-18T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-75615-3",
+        "doi": "10.1038/s41467-026-75615-3",
+        "abstract": "Composite materials design is difficult due to complex, continuous design space. This work builds ORDER, a multimodal framework linking microstructures and descriptors with preserved property trends, aiding prediction, retrieval, and microstructure generation.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-75719-w",
+        "title": "Raphia hookeri seed-inspired weakly anisotropic nanocomposites",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-07-18T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-75719-w",
+        "doi": "10.1038/s41467-026-75719-w",
+        "abstract": "Inspired by densely packed sclereids with interconnected pit structures in Raphia hookeri seed, authors fabricate bioinspired structural materials with weak anisotropy and high toughness.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-73868-6",
+        "title": "Refractory inclusions in Bennu samples indicative of outer Solar System accretion",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-07-18T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-73868-6",
+        "doi": "10.1038/s41467-026-73868-6",
+        "abstract": "Refractory inclusions in samples from asteroid Bennu formed in the earliest Solar System and resemble those in Ryugu and chondritic meteorites. Their size distribution suggests that Bennu’s parent planetesimal formed beyond proto-Jupiter’s dust trap.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-75860-6",
+        "title": "Coordination electrochemistry taming reversible hypervalent bromine redox for energetic six-electron-transfer lithium-bromine battery",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-07-18T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-75860-6",
+        "doi": "10.1038/s41467-026-75860-6",
+        "abstract": "Conversion-type bromine batteries offer energy-storage potential but face limited electron transfer. Here, authors design an ethyl viologen dibromide positive electrode to unlock a six-electron redox process, boosting capacity and voltage via synergistic bromine conversion and lithium-ion storage.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
