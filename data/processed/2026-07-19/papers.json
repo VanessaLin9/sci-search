@@ -1,0 +1,127 @@
+{
+  "reportDate": "2026-07-19",
+  "generatedAt": "2026-07-20T12:11:26.037Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.07.18.739195",
+      "title": "Cell-resolved transcriptional responses during heat-induced coral bleaching and recovery",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-19",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.18.739195v1",
+      "doi": "10.64898/2026.07.18.739195",
+      "abstract": "Coral reefs depend on an intracellular symbiosis between cnidarian hosts and photosynthetic dinoflagellates that is disrupted by ocean warming, causing coral bleaching. Yet how these responses are distributed across coral cell types during stress and recovery remains unclear. Here, we generate a temporal single-cell transcriptomic atlas of the reef-building coral Stylophora pistillata, profiling 20,000 cells during seven days at 32 {degrees}C and after 45 days of recovery. Heat stress reduced symbiont abundance and photosynthetic efficiency, followed by partial restoration. Early oxidative-stress, detoxification, and proteostasis programmes gave way to mitochondrial, cytoskeletal, and vesicular remodelling. These shared responses accompanied cell type-specific changes: epidermal cells activated tissue-renewal programmes, calicoblasts repressed calcification genes, and alga-hosting cells progressively lost transport, lipid-biosynthesis, and nutrient-exchange functions. Targeted profiling of sorted alga-positive cells revealed rare transcriptional states, including a population consistent with symbiont engulfment. Our results reveal how bleaching and recovery are coordinated across coral tissues and symbiotic cell states.",
+      "authors": [
+        "Grau-Bove, X.",
+        "Montes-Espuna, L.",
+        "Ksiezopolska, E.",
+        "Najle, S. R.",
+        "Mass, T.",
+        "Levy, S.",
+        "Sebe-Pedros, A."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "珊瑚白化與復原的細胞層級轉錄反應圖譜",
+      "summaryZh": "珊瑚礁依賴於刺胞動物宿主與光合藻類之間的細胞內共生關係，然而海洋暖化會破壞這種平衡導致白化。本研究利用單細胞轉錄體學技術，針對建造珊瑚Stylophora pistillata在32°C高溫脅迫7天及45天復原期間的20,000個細胞進行分析，發現早期氧化壓力與解毒程式的反應會逐漸轉變為粒線體和囊泡的重塑。不同細胞類型展現獨特的適應策略：表皮細胞啟動組織修復程序，造骨細胞抑制鈣化基因，而攜帶藻類的細胞則逐步喪失營養交換功能。本研究揭示了珊瑚白化與復原過程中跨組織和共生細胞狀態的協調機制，為理解珊瑚對氣候變遷的生理韌性提供重要參考。",
+      "topicTags": [
+        "single-cell",
+        "coral-bleaching",
+        "symbiosis",
+        "transcriptomics",
+        "climate-change"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.13.738166",
+      "title": "EndoAge Atlas: Non-linear dynamics of endothelial aging reveal organ-specific vascular trajectories in mice",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-19",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.13.738166v1",
+      "doi": "10.64898/2026.07.13.738166",
+      "abstract": "Aging is a complex and multifactorial condition that leads to a gradual decline in organ functions and subsequent vulnerability to various diseases. Although the hallmarks of aging are well studied, the linear models developed based on these paradigms repeatedly fall short in capturing the dynamic, non-linear, and tissue-specific changes that occur because of aging. Furthermore, multi-organ level studies in humans are limited by the constraints of tissue availability and other confounding variables. This emphasises the importance of animal models in executing systemic investigations of aging. As the universal regulator of vascular function, endothelial cells (ECs) act as the initial responders to aging cues and undergo profound molecular and functional changes over time. This remodelling of the ECs is considered the central driver of multiple age-associated diseases. However, the global and tissue-specific molecular trajectories of aging in ECs are yet to be well characterised. Here, we introduce EndoAge atlas, a single-nucleus RNA-sequencing atlas comprising approximately 1.3 million ECs from 32 sex-balanced C57BL/6 mice across eight tissues and five distinct age groups. This atlas identifies tissue-specific endothelial heterogeneity, age-associated gene programs with distinct functional signatures, and uncovers non-linear gene expression trajectories across organs. Collectively, the EndoAge atlas constitutes a comprehensive reference for vascular aging across mammalian tissues, providing a foundational platform for developing targeted therapeutic strategies for age-related diseases.",
+      "authors": [
+        "Nadukkandy, A. S.",
+        "Luo, Y.",
+        "Lin, L."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "EndoAge圖譜：揭開內皮細胞老化的非線性動態與器官特異性血管軌跡",
+      "summaryZh": "老化是一個複雜的多因素過程，導致器官功能逐漸衰退，但現有線性老化模型難以捕捉動態、非線性的變化。內皮細胞作為血管功能的通用調節者，是最早響應老化信號的細胞，其分子與功能變化是多種年齡相關疾病的核心驅動因素。本研究建構了EndoAge圖譜，包含約130萬個內皮細胞，涵蓋8種組織和5個年齡組的32隻C57BL/6小鼠，揭示了組織特異性內皮細胞異質性與具有獨特功能特徵的年齡相關基因程序，並發現了跨器官的非線性基因表現軌跡。該圖譜為哺乳動物組織的血管老化提供了全面參考，可作為開發年齡相關疾病靶向治療策略的重要平台。",
+      "topicTags": [
+        "single-cell",
+        "aging",
+        "endothelial-cells",
+        "vascular-biology",
+        "multi-tissue"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 2,
+      "passedByScope": 2,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 2,
+      "excluded": 0
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 2,
+      "llmTagged": 2,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 2,
+      "candidates": 2,
+      "featured": 2,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 0,
+      "preprint": 2,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 2,
+      "llmSummarized": 2,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  }
+}
