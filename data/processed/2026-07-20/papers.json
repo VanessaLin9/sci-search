@@ -1,0 +1,808 @@
+{
+  "reportDate": "2026-07-20",
+  "generatedAt": "2026-07-21T11:51:07.835Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03160-4",
+      "title": "Exploring the human brain, from molecules to networks, using siibra",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-07-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03160-4",
+      "doi": "10.1038/s41592-026-03160-4",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "使用 siibra 探索人類大腦：從分子到網絡的多尺度研究",
+      "summaryZh": "本研究介紹 siibra 工具，能夠在分子、細胞到網絡等多個尺度上探索人類大腦結構與功能。這種多尺度整合方法對於理解大腦運作機制及相關疾病至關重要。siibra 提供統一的分析框架，有助於研究人員整合和分析多類型的腦成像數據。發表於 Nature Methods 顯示此工具對神經科學研究社群的重要價值。此研究促進了跨層級腦數據的綜合分析，為深入了解大腦架構提供新的可能。",
+      "topicTags": [
+        "neuroimaging",
+        "brain-mapping",
+        "computational-neuroscience",
+        "brain-networks",
+        "multi-scale-analysis"
+      ]
+    },
+    {
+      "id": "10.1038/s41592-026-03159-x",
+      "title": "Siibra: a software tool suite for realizing a Multilevel Human Brain Atlas from complex data resources",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-07-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03159-x",
+      "doi": "10.1038/s41592-026-03159-x",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Siibra：從複雜資料資源實現多層次人類大腦圖譜的軟體工具套件",
+      "summaryZh": "人類大腦圖譜是神經科學研究的重要工具，能幫助研究人員整合與視覺化複雜的神經影像與解剖資料。Siibra 軟體工具套件專為從多來源複雜資料中建構多層次大腦圖譜而設計，提供標準化的資料整合框架。此工具支援從微觀細胞層級到宏觀全腦結構的跨尺度分析，促進不同實驗室與資料庫之間的互操作性。發表於 Nature Methods 期刊，顯示其在生物醫學資訊學領域的重要貢獻。",
+      "topicTags": [
+        "brain-atlas",
+        "neuroscience",
+        "software",
+        "neuroimaging",
+        "data-integration"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02691-y",
+      "title": "Promoter strength and position govern promoter competition through transcript-dependent insulation",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02691-y",
+      "doi": "10.1038/s41588-026-02691-y",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "啟動子強度與位置透過轉錄依賴性絕緣調控啟動子競爭",
+      "summaryZh": "這篇研究揭示了啟動子強度與基因體位置如何共同調控啟動子之間的競爭關係。研究發現轉錄產物依賴的絕緣機制能有效緩解相鄰啟動子之間的衝突，維持基因表現的穩定性與精確性。此機制的闡明對於理解基因表現調控網路的運作原理具有重要貢獻，並可應用於合成生物學中基因線路的設計優化，以及基因治療載體的開發策略。",
+      "topicTags": [
+        "gene-regulation",
+        "promoter",
+        "transcription",
+        "genomics",
+        "synthetic-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02654-3",
+      "title": "Genome-wide association analyses of borderline personality disorder identify 11 loci and highlight shared risk with mental and somatic disorders",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02654-3",
+      "doi": "10.1038/s41588-026-02654-3",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "邊緣人格障礙的全基因組關聯分析確定了11個基因位點，並強調與精神和軀體疾病的共同風險",
+      "summaryZh": "這項發表於《自然遺傳學》的全基因組關聯研究分析了超過43,000名邊緣人格障礙患者的基因資料，確定了11個與該疾病顯著相關的基因位點。研究發現，邊緣人格障礙不僅與其他精神疾病共享遺傳風險，也與多種軀體疾病存在基因層面的關聯，揭示了精神與身體健康之間的遺傳聯繫。這些發現為理解邊緣人格障礙的生物學機制提供了重要基礎，並可能促進更精準的診斷與治療策略的發展。",
+      "topicTags": [
+        "psychiatric-genetics",
+        "borderline-personality-disorder",
+        "gwas",
+        "mental-health",
+        "genetic-architecture"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02689-6",
+      "title": "Extending genome-wide association studies to admixed cohorts with high degrees of relatedness",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02689-6",
+      "doi": "10.1038/s41588-026-02689-6",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "突破族裔混合族群的全基因體關聯研究方法限制",
+      "summaryZh": "本研究開發了新的統計方法，使全基因體關聯研究（GWAS）能夠應用於具有高度親緣關係的族裔混合族群。傳統GWAS方法假設族群血統均勻且個體間無親緣關係，限制了其在多元人類族群中的適用性。此研究對於促進健康公平具有重要意義，因為非裔及拉丁裔等混合血統族群在遺傳研究中長期被低估。研究者證實其擴展方法在容納複雜族群結構的同時仍能維持統計有效性。透過使GWAS更具包容性，這項工作使更全面的遺傳發現能夠惠及全球各地人口。",
+      "topicTags": [
+        "gwas",
+        "admixed-populations",
+        "statistical-genetics",
+        "population-structure",
+        "genetic-diversity"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03110-5",
+      "title": "Rates of passerine body plan evolution in time and space",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-07-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03110-5",
+      "doi": "10.1038/s41559-026-03110-5",
+      "abstract": "A reconstruction of the evolutionary history of passerine body plans over the past ~50 Myr shows rare bursts of phenotypic innovation near the origin of major taxonomic groups that are temporally aligned with periods of increased climatic instability. Similar patterns are reflected in contemporary spatial gradients, where higher-latitude and more seasonal environments show elevated phenotypic rates.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "雀形目身體構造演化速率的時空分布",
+      "summaryZh": "這項研究重建了雀形目鳥類過去約五千萬年的身體構造演化歷史，發現主要分類群的起源與罕見的表型創新爆發密切相關。這些創新爆發的時間點與氣候不穩定時期高度吻合，顯示環境變化可能是驅動形態多樣化的關鍵因素。研究進一步發現，當代的空間分布模式也呈現類似規律，高緯度及季節性較強的環境中，表型演化速率較高。此研究為理解生物多樣性的時空分布提供了新的演化生物學視角。",
+      "topicTags": [
+        "passerine-evolution",
+        "phenotypic-innovation",
+        "climatic-instability",
+        "spatial-gradients",
+        "evolutionary-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03111-4",
+      "title": "Increased nutrient diversity can induce loss of microbial diversity through enhanced resource uptake",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-07-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03111-4",
+      "doi": "10.1038/s41559-026-03111-4",
+      "abstract": "Increasing nutrient diversity is expected to promote microbial diversity. This study shows that more complex environments can enhance resource uptake, intensify competition and lead to microbial biodiversity loss, challenging a central ecological assumption.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "營養多樣性增加可能透過增強資源攝取導致微生物多樣性減少",
+      "summaryZh": "生態學長期以來假設營養多樣性越高，微生物多樣性也會隨之增加。然而，這項研究顛覆了這一核心假設，發現更複雜的營養環境反而可能導致微生物多樣性下降。關鍵機制在於營養多樣性提升會增強資源攝取效率，進而加劇微生物間的競爭壓力，最終導致部分物種被淘汰。這項發現對理解生態系統穩定性、微生物群落組裝過程以及人類腸道菌群等領域都具有重要啟示。",
+      "topicTags": [
+        "microbial-diversity",
+        "ecology",
+        "resource-competition",
+        "biodiversity",
+        "nutrient-availability"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03131-0",
+      "title": "Biotic interactions shape the realized niche of toxic cyanobacteria",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-07-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03131-0",
+      "doi": "10.1038/s41559-026-03131-0",
+      "abstract": "Using five years of daily lake plankton monitoring data and empirical dynamic modelling, this study shows that grazing, competition and facilitation reshape the temperature and nutrient conditions required for toxic cyanobacterial blooms.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "生物交互作用形塑有毒藍綠菌的實現生態位",
+      "summaryZh": "本研究利用五年每日湖泊浮游生物監測資料與經驗動態模型，發現生物間交互作用（包括攝食、競爭與互利共生）會改變有毒藍綠菌水華所需的溫度與營養條件。這些發現挑戰了傳統上僅以溫度與營養鹽解釋藍綠菌水華的觀點，強調生物交互作用在調控水華發生中的關鍵角色。此研究結果對於水庫與湖泊的水質管理、公共衛生風險評估，以及預測氣候變遷下水華趨勢具有重要參考價值。",
+      "topicTags": [
+        "cyanobacteria",
+        "biotic-interactions",
+        "aquatic-ecology",
+        "harmful-algal-blooms",
+        "empirical-dynamic-modeling"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02028-1",
+      "title": "Borrowed scissors for lysosome fission",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-07-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02028-1",
+      "doi": "10.1038/s41556-026-02028-1",
+      "abstract": "Mitochondria communicate extensively with the rest of the cell via metabolic and signalling pathways, but usually not as much by vesicle trafficking. A recent study expands this view by proposing that mitochondrial-derived vesicles deliver machinery that drives lysosome fission as part of a lysosome quality control process.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "借來的剪刀：粒線體調控溶酶體分裂",
+      "summaryZh": "粒線體過去被认为主要通過代謝和訊號通路與細胞其他部分溝通，但最新研究揭示了新的溝通方式。這項研究發現粒線體來源的囊泡能夠运送驅動溶酶體分裂所需的蛋白質機器，作為溶酶體品質控制機制的一部分。這一發現不僅擴展了我們對胞器間交流的理解，也挑戰了傳統上認為粒線體與溶酶體主要透過自噬途徑互動的觀點。該研究為理解細胞如何維持內環境穩定提供了嶄新的分子機制，並可能為與溶酶體功能障礙相關的疾病研究開闢新方向。",
+      "topicTags": [
+        "cell-biology",
+        "organelle-communication",
+        "lysosome",
+        "mitochondria",
+        "vesicle-trafficking"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02010-x",
+      "title": "Mitochondrial-derived vesicles drive budding-type fission of damaged lysosomes",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-07-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02010-x",
+      "doi": "10.1038/s41556-026-02010-x",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "粒線體衍生囊泡調控受損溶酶體的出芽型分裂",
+      "summaryZh": "本研究揭示了粒線體衍生囊泡（MDV）在溶酶體修復中的關鍵角色。研究團隊發現，當溶酶體受損時，粒線體會釋放特定的囊泡來驅動受損區段的出芽型分裂，進而移除並修復受損的溶酶體。此發現顛覆了傳統對溶酶體維護機制的理解，證實了粒線體與溶酶體之間存在直接的膜交通調控關係。這項研究為細胞品質控制機制提供了嶄新的視角，並可能解釋與溶酶體功能障礙相關的衰老與疾病進程。",
+      "topicTags": [
+        "cell-biology",
+        "mitochondria",
+        "lysosomes",
+        "membrane-repair",
+        "organelle-dynamics"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02369-y",
+      "title": "Adolescent exposure to the psychedelic 25C-NBOMe in rats induces lasting competitive avoidance through disrupted hippocampal–prefrontal synchrony",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-07-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02369-y",
+      "doi": "10.1038/s41593-026-02369-y",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "青少年接觸迷幻藥 25C-NBOMe 對老鼠造成持續性競爭迴避行為：海馬體-前額葉同步失常的機制"
+    },
+    {
+      "id": "10.1038/s41590-026-02598-0",
+      "title": "A second wind for leukemic lungs",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-07-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02598-0",
+      "doi": "10.1038/s41590-026-02598-0",
+      "abstract": "Single-cell and spatial analyses of acute myeloid leukemia (AML) in the lung reveal an inflamed and remodeled microenvironment. These findings demonstrate that corticosteroids or antibodies that target galectin-9 or IL-33 reduce leukemic infiltration and restore respiratory function.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "白血病肺部重獲新生：單細胞分析揭示肺臟微環境與治療新曙光",
+      "summaryZh": "急性骨髓性白血病（AML）不僅影響血液系統，還會浸潤肺部並引發發炎反應。本研究利用單細胞與空間轉錄體分析技術，首次詳細描繪白血病肺臟的微環境特徵，發現其呈現顯著的發炎與組織重構現象。重要的是，研究證實皮質類固醇或針對半乳糖凝集素-9（galectin-9）與IL-33的抗體治療，能有效減少白血病細胞浸潤並恢復呼吸功能。此發現為白血病相關肺部併發症的治療開闢了新的策略方向。",
+      "topicTags": [
+        "acute-myeloid-leukemia",
+        "lung-microenvironment",
+        "single-cell-analysis",
+        "immunotherapy",
+        "galectin-9"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02595-3",
+      "title": "Endothelial cell-intrinsic NOD2 signaling regulates the intestinal immune response through the generation of effector and memory T cells",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-07-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02595-3",
+      "doi": "10.1038/s41590-026-02595-3",
+      "abstract": "Tsankov and colleagues find that NOD2 signaling in intestinal endothelial cells drives T cell homing to the mesenteric lymph nodes during homeostasis and infection.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "內皮細胞內在性 NOD2 訊號調控腸道免疫反應：透過效應型與記憶型 T 細胞的生成"
+    },
+    {
+      "id": "10.1038/s41564-026-02416-1",
+      "title": "Mapping in-cell protein contact sites reveals hijacking of paraspeckles during influenza A virus infection",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-07-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02416-1",
+      "doi": "10.1038/s41564-026-02416-1",
+      "abstract": "In-cell cross-linking mass spectrometry maps protein contacts in influenza-infected human cells, revealing how the virus hijacks host membrane-trafficking factors and dismantles nuclear paraspeckles to enhance replication.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "繪製細胞內蛋白質接觸位點揭示 A 型流感病毒感染期間對副斑的挾持"
+    },
+    {
+      "id": "10.1038/s41564-026-02411-6",
+      "title": "All-trans retinoic acid suppresses systemic inflammation induced by severe fever with thrombocytopenia syndrome virus in mice",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-07-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02411-6",
+      "doi": "10.1038/s41564-026-02411-6",
+      "abstract": "Depletion of the vitamin A metabolite all-trans retinoic acid (ATRA) in patients infected with severe fever with thrombocytopenia syndrome virus correlates with severe inflammation. In mice, ATRA supplementation reduces IL-6 levels and hyperinflammation.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "全反式視網酸抑制發熱伴血小板低下症候群病毒在小鼠中引起的全身性發炎"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003915",
+      "title": "Noise-invariant representations of sound emerge along the canonical cortical hierarchy",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-20T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003915",
+      "doi": "10.1371/journal.pbio.3003915",
+      "abstract": "Neurons in the auditory system must represent behaviorally relevant sounds in the presence of background noise (BN) to support noise-invariant perception and behavior. Although the primary auditory cortex (ACtx) has been implicated in constructing noise-invariant representations, it remains unclear which excitatory subpopulations within ACtx carry out this transformation from noise-dependent to noise-invariant coding. To address this, we presented pure tones with and without continuous BN to head-fixed mice and used two-photon calcium imaging to record sound-evoked activity from three major excitatory subpopulations in ACtx: layer (L)2/3 intratelencephalic (IT) neurons, L5 IT neurons, and L5 extratelencephalic (ET) neurons. L2/3 IT neurons exhibited strong noise dependence at the level of single-neuron responses, pairwise interactions, and population representations. In contrast, deep-layer pathways showed greater noise invariance, with L5 IT neurons preserving stable representations most consistently and L5 ET neurons exhibiting more limited invariance at the population level. These findings reveal a functional division of labor in ACtx, in which superficial neurons remain noise-dependent and deep-layer broadcast pathways, particularly L5 IT, preferentially carry noise-invariant representations, suggesting that excitatory subpopulations contribute differentially to the construction and propagation of noise-invariant codes.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "噪音不變的聲音表徵沿典型皮質層級出現"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003869",
+      "title": "Comparative single-nucleus transcriptomics reveals asymmetric evolution of the Drosophila male and female germlines",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-20T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003869",
+      "doi": "10.1371/journal.pbio.3003869",
+      "abstract": "Reproductive organs vary widely across species yet share conserved cell types that produce gametes, sustaining species’ perpetuation. However, tissue-level comparisons mask critical differences among cell types, obscuring where evolutionary divergence occurs even between closely related species. We quantified expression divergence at cell-type resolution between two sibling species, Drosophila melanogaster and D. simulans , while disentangling adaptive and nonadaptive evolutionary mechanisms. We built a comparative single-nucleus transcriptomic atlas of over 100,000 nuclei from testes and ovaries of both species. Our analysis revealed sharply heterogeneous divergence across testis cell types, contrasting with a broader conservation across ovary cell types. Notably, in both organs, ~40% of genes showing interspecific differences did so in only one cell type. In the testis, spermatogonia were largely conserved, whereas divergence peaked in primary spermatocytes with extensive rewiring of coexpression modules linked to microtubule and mitochondrial functions. In the ovary, expression was largely conserved, except in early germline and late follicle cells, which showed shifts in oogenesis and cell-cycle-related coexpression modules. Divergent cell types in both tissues were enriched for evolutionarily young genes with narrow expression breadth and faster protein evolution rates. Additionally, the ovary exhibited a faster- X effect consistent with adaptive evolution. These findings reveal a fundamental asymmetry in how male and female germlines evolve, with functional constraints relaxed in specific testis cell types but broadly maintained across the ovary. Our work provides an evolutionary framework explaining how core reproductive functions are safeguarded during species diversification while identifying germline cells that drive evolutionary change.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "果蠅雌雄生殖系不對稱演化的單核轉錄體學解析",
+      "summaryZh": "本研究運用單核轉錄體學技術，比較兩種近緣果蠅物種的睪丸與卵巢，解析超過10萬個細胞核的基因表現差異。研究發現睪丸細胞類型間的演化分歧呈現高度異質性，而卵巢細胞類型則普遍保守。約40%的物種間差異基因僅在單一細胞類型中表現，睪丸中精原細胞保持高度保守，但初級精母細胞出現顯著的共表現模組重構，涉及微管與粒線體功能；卵巢中除了早期生殖系與晚期濾泡細胞外，整體表達模式相當穩定。本研究揭示了雌雄生殖系演化模式的基本不對稱性，為理解物種多樣化過程中生殖功能的保守與改變提供重要框架。",
+      "topicTags": [
+        "single-cell",
+        "evolutionary-biology",
+        "germline",
+        "transcriptomics",
+        "drosophila"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.14.738381",
+      "title": "Constructing a full-length single-nucleus transcriptomic atlas of the obese mouse by UURNA-seq",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-20",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.14.738381v1",
+      "doi": "10.64898/2026.07.14.738381",
+      "abstract": "Single-nucleus RNA-seq (snRNA-seq) offers advantages in sample preparation for atlas construction and data mining of gene regulation. However, current snRNA-seq protocols struggle to balance sensitivity and throughput. Here we present ultra-throughput and ultra-sensitivity single-nucleus total RNA sequencing (UURNA-seq), a platform that enables large-scale atlas construction in a single day. UURNA-seq outperforms existing single-cell and single-nucleus protocols, with reduced coverage bias, higher gene detection efficiency, and greater throughput at lower per-cell cost. This performance extends to primary tissues and is consistent in fresh and frozen samples, supporting flexible workflows for clinical and archival specimens. Notably, UURNA-seq also detects substantially more non-coding RNAs, including lncRNAs and sncRNAs, alongside mRNAs at single-nucleus resolution, uncovering previously inaccessible layers of cellular regulation in complex tissues. Leveraging these capabilities, we constructed the first comprehensive multi-tissue atlas of obesity and characterized RNA dynamics at atlas scale, revealing both conserved and tissue-specific transcriptional alterations and identifying critical dysregulation of hormone signaling and metabolic pathways. Together, these results establish UURNA-seq as a sensitive, scalable, and cost-effective platform that provides a route to dissect the molecular basis of complex diseases such as obesity.",
+      "authors": [
+        "Han, X.",
+        "Wang, X.",
+        "Yang, L.",
+        "Ma, L.",
+        "Wu, H.",
+        "Wang, R.",
+        "Guo, G."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "snRNA-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "透過 UURNA-seq 建構肥胖小鼠的全長單核轉錄體圖譜"
+    },
+    {
+      "id": "10.64898/2026.07.14.738425",
+      "title": "Large-scale single-cell mapping of concealed mitochondrial ageing",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-20",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.14.738425v1",
+      "doi": "10.64898/2026.07.14.738425",
+      "abstract": "Mitochondrial DNA (mtDNA) mutations have been linked to ageing. We find that the mtDNA mutations detected in routine bulk sequencing are greatly outnumbered by a class of concealed mutations that, despite being in a proliferative tissue, show little negative selection. Combining new scATAC-seq experiments with existing scRNA-seq, we map mtDNA mutations across 2.7 million cells from 311 individuals, covering 11 proliferative cell types and 5 tissues. We find that low-prevalence mutations (in [&le;]1% of assayed cells), concealed from routine bulk sequencing, accumulate markedly with age, with mutations unique to single cells (cryptic) predominating. We find a near universal accumulation rate across cell types and tissues, with, by age 50, approximately 40% of cells having at least one mutation affecting 30% of cellular mtDNA or more. At a correlative level we find that human age can be predicted from these concealed mutations but there is evidence of, possibly physiological, inter-individual variation. These low-prevalence mutations (unlike mutations tracking larger clones) show limited negative selection and coincide with gene-expression changes marking dysfunction.",
+      "authors": [
+        "Jethwani, H.",
+        "Sukandar, K.",
+        "Green, A. P.",
+        "Insalata, F.",
+        "Golder, Z.",
+        "Schon, K.",
+        "Asquith, B.",
+        "Chinnery, P. F.",
+        "Jones, N. S."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "scRNA-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "大規模單細胞測繪隱蔽性粒線體老化"
+    },
+    {
+      "id": "10.64898/2026.07.15.738670",
+      "title": "Uhrf1 loss disrupts Ctcf-associated chromatin organization during early mouse embryogenesis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-20",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.15.738670v1",
+      "doi": "10.64898/2026.07.15.738670",
+      "abstract": "UHRF1 is a chromatin-binding protein essential for maintaining DNA methylation and histone modification states, yet its integrated role in vivo remains incompletely understood. To define its function, we generated conditional Uhrf1 knockout embryonic stem cells (ESCs) and embryos. Uhrf1-/- ESCs exhibited near-complete loss of 5mC and 5hmC but maintained pluripotency, whereas Uhrf1-null embryos developed normally until E8.5 and then failed to develop further by E9.5, phenocopying Dnmt1 loss. Single-cell multi-omic (ME-seq) profiling of E8.5 embryos revealed impaired lineage stabilization, widespread hypomethylation, and disrupted chromatin architecture. Uhrf1 loss was associated with altered CTCF-associated chromatin signal, broad remodeling of chromatin contacts, altered cis-regulatory relationships, and reduced predicted BMP-related ligand-receptor communication, particularly within neural crest populations. These findings identify Uhrf1 as a central regulator that tightly couples DNA methylation maintenance to 3D genome organization during gastrulation, thereby, directing early lineage specification and positioning Uhrf1 as a pivotal mediator of epigenetic information transfer during early embryogenesis.",
+      "authors": [
+        "Kurowski, A.",
+        "Zhu, B.",
+        "Sun, Y.",
+        "Sargunas, P.",
+        "Jain, N.",
+        "Chan, A.",
+        "Hadri, L.",
+        "Shi, Y.",
+        "Walsh, M. J.",
+        "Ma, S."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Uhrf1 缺失在早期小鼠胚胎發育期間破壞 Ctcf 相關染色質組織"
+    },
+    {
+      "id": "10.64898/2026.07.14.738306",
+      "title": "multiScaleAC: Cell-Cell interaction with Moran's I as a function of kernel bandwidth",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-20",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.14.738306v1",
+      "doi": "10.64898/2026.07.14.738306",
+      "abstract": "Over the last decade, spatial transcriptomic technology has transformed our understanding of tissue architecture including cell-cell interactions within the tumor immune microenvironment. A specific use-case of increasing interest is leveraging the spatial statistical relationship of genes whose protein products are known to be involved in ligand-receptor interactions. One methodological limitation of this approach has been the requirement to choose one radius around a cell as a parameter that can come with selection biases. Rather, interactions between cells vary in strength across a range of spatial scales that single-radius choice may miss. To fill this gap we developed `multiScaleAC` to extended Moran's I, a correlation measure that accounts for locations of values, by employing a Gaussian kernel applied to locations and varying the bandwidth parameter h. The resulting Moranis I\\left(h\\right) then can be compared between samples using functional data analysis. In the current study, we used simulations to show that our framework has well controlled Type I error due to the use of permutations for assessing significant interactions. We also demonstrate that `multiScaleAC` has high statistical power to identify a significant interaction when a true interaction is simulated (1.00 at bandwidths greater than 5) and increasing power as bandwidth increases when negative interaction is simulated. We found `multiScaleAC` largely captures similar significant ligand-receptor profiles in 8 Visium samples of colon tissue using the same bandwidth as `spatialDM` but without removing low-weight spots from the weight matrix (73.7% - 87.2%). Applying the `multiScaleAC` framework to our previous single-cell spatial transcriptomics data (COL4A1-ITGAV in the stromal compartment of clear cell renal cell carcinoma) followed by functional principal component analysis, we found functional principal component 1 to represent global interaction elevation/depression. Associating functional principal component 1 scores with immunotherapy exposure showed significantly higher scores in stromal tissues exposed to immunotherapy than those naive to immunotherapy, indicating an overall higher interaction of cell expressing COL4A1-ITGAV. These findings recapitulate our previous study while reducing bias in neighbor selections. We believe this is the first study to apply a functional extension of Moran's I in combination with functional data analysis to understand cell-cell interaction over spatial scales.",
+      "authors": [
+        "Soupir, A. C.",
+        "Hayes, M. T.",
+        "Manley, B. J.",
+        "Wang, X.",
+        "Wrobel, J.",
+        "Peres, L. C.",
+        "Fridley, B. L."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "Visium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "multiScaleAC：以核心頻寬函數進行的細胞間互動與莫蘭指數分析"
+    },
+    {
+      "id": "10.64898/2026.04.26.720516",
+      "title": "Cell-state-specific mechanisms of 5-azacytidine response in myelodysplastic neoplasms",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-20",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.04.26.720516v2",
+      "doi": "10.64898/2026.04.26.720516",
+      "abstract": "5-azacytidine improves haematopoiesis and delays leukaemic progression in myelodysplastic neoplasms, but responses vary and are complicated by clonal mosaicism and heterogenous demethylation. Using a novel single-cell pipeline (\"SCIMETAR-seq\"), we found 5-azacytidine induced clonally distinct differentiation responses, with nuclear DNA demethylation occurring primarily in cycling progenitors. Despite the absence of significant nuclear DNA demethylation, quiescent stem cells underwent transcriptional remodelling in vivo, accompanied by 5-azacytidine-induced CG-to-GC mutations in mitochondria.",
+      "authors": [
+        "Bhuyan, G. S.",
+        "Yan, F.",
+        "Nguyen, M. N. T.",
+        "Chung, H. M.",
+        "Zou, X.",
+        "Gullapalli, V.",
+        "Vaughan, L.",
+        "Stonehouse, O.",
+        "Hampton, H. R.",
+        "Shen, S.",
+        "Truong, P.",
+        "Dissanayake, R.",
+        "Ghodousi, E. S.",
+        "Joshi, S.",
+        "Koch, F. C.",
+        "Zanini, F.",
+        "Vafaee, F.",
+        "Huang, Y.",
+        "Thoms, J. A. I.",
+        "Faridani, O.",
+        "Jolly, C. J.",
+        "Pimanda, J. E."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "5-氮雜胞苷在骨髓發育不良性腫瘤中的細胞狀態特異性反應機制"
+    },
+    {
+      "id": "10.64898/2026.07.17.738962",
+      "title": "An early CYP26A1/CRYAA progenitor-glial domain marks the presumptive macular region during human retinal development",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-20",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.17.738962v1",
+      "doi": "10.64898/2026.07.17.738962",
+      "abstract": "The human macula, a high-acuity retinal region essential for central vision, emerges early in development, but the cellular basis of its regional specialisation remains incompletely resolved. Building on recent studies that identified CYP26A1-mediated retinoic acid (RA) suppression in the presumptive macula, we define a CRYAA-positive progenitor-glial compartment in the temporal human retina from post-conception week (pcw) 7 onward. Single-cell RNA sequencing, immunohistochemistry and spatial morphometry indicate that this compartment is linked to regional gliogenic maturation and later corresponds to a specialised macular M&uumlller glial population, rather than simply reflecting uniform pan-retinal developmental timing. Spatial mapping shows that the CYP26A1-positive domain remains delimited as the surrounding retina expands. Adult tissue analysis shows that CYP26A1 expression is retained in primate macular M&uumlller glia and in corresponding acute-zone regions of visual-streak species. These findings extend current models of CYP26A1-mediated RA modulation in human acute zone/macular development by linking the early CYP26A1 domain to a regionally specialised CRYAA-positive progenitor-glial compartment. We propose that early macular patterning includes a spatially restricted glial programme that may contribute to later regional architecture and disease vulnerability.",
+      "authors": [
+        "Yang, Q.",
+        "Docampo-Seara, A.",
+        "Powner, M. B.",
+        "Chung, G. H.",
+        "Ribeiro-Bravo, I.",
+        "Rody, E.",
+        "MacDonald, R. B.",
+        "Giles, S.",
+        "Polanski, K.",
+        "Talavera-Lopez, C.",
+        "Eade, K. T.",
+        "Teichmann, S. A.",
+        "Fruttiger, M."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "早期CYP26A1/CRYAA祖細胞-膠質區域在人體視網膜發育中標記預定黃斑區"
+    },
+    {
+      "id": "10.64898/2026.07.18.739350",
+      "title": "Single-cell analysis of chromatin accessibility and gene expression in Drosophila melanogaster embryos following hypoxia treatment",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-20",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.18.739350v1",
+      "doi": "10.64898/2026.07.18.739350",
+      "abstract": "Limited oxygen supply or hypoxia can impair fetal development and lead to developmental disorders, but the molecular mechanism underlying this phenomenon remains poorly understood. It is also well known that hypoxia results in transcriptomic alterations and epigenetic reprogramming. Drosophila melanogaster (fruit fly) has been used for decades as a powerful model to dissect the molecular mechanisms regulating development. To better understand the role of early hypoxic stress on development, we performed single-cell joint analysis of chromatin accessibility and transcriptome to characterize the influence of hypoxia on Drosophila embryonic development. We identified hypoxia-induced alterations in both gene expression and chromatin accessibility across 22 cell groups, especially in the genes regulating organogenesis and development of neuronal, tracheal, and muscular systems, including a reduction of germ cells, suggesting a long-lasting influence of hypoxic stress at an early embryonic stage on development and reproduction. In summary, this study demonstrates that early embryonic hypoxia induces cell type- and dose-dependent changes in chromatin accessibility and gene expression, leading to distinct developmental phenotypic responses, such as reduced number of germ cells under both 3% and 5% O2. We further conclude that the tramtrack (ttk) gene is critical in germ cell development and reproduction in Drosophila melanogaster.",
+      "authors": [
+        "Zhou, D.",
+        "Zhu, C.",
+        "Xue, J.",
+        "Marsh, C.",
+        "Stobdan, T.",
+        "Ren, B.",
+        "Haddad, G. G."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "黑腹果蠅胚胎低氧處理後的染色質可及性與基因表現單細胞分析"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 30,
+      "passedByScope": 24,
+      "llmClassified": 6,
+      "llmYes": 2,
+      "llmNotSure": 0,
+      "llmNo": 4,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 26,
+      "excluded": 4
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 24,
+      "llmTagged": 24,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 24,
+      "candidates": 24,
+      "featured": 12,
+      "overflow": 12,
+      "lineA": 2,
+      "lineB": 15,
+      "preprint": 7,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 12,
+      "llmTranslated": 12,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02285-y",
+        "title": "Daily briefing: How to nail an industry interview",
+        "journal": "Nature",
+        "publishedDate": "2026-07-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02285-y",
+        "doi": "10.1038/d41586-026-02285-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01995-7",
+        "title": "Smuggling charges against NIH virologists trigger political uproar",
+        "journal": "Nature",
+        "publishedDate": "2026-07-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01995-7",
+        "doi": "10.1038/d41586-026-01995-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02231-y",
+        "title": "The science of foresight: how to future-proof your research",
+        "journal": "Nature",
+        "publishedDate": "2026-07-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02231-y",
+        "doi": "10.1038/d41586-026-02231-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02234-9",
+        "title": "My job interviews for industry positions are going nowhere. How do I make myself stand out?",
+        "journal": "Nature",
+        "publishedDate": "2026-07-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02234-9",
+        "doi": "10.1038/d41586-026-02234-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
