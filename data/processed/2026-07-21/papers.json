@@ -1,0 +1,757 @@
+{
+  "reportDate": "2026-07-21",
+  "generatedAt": "2026-07-22T11:49:40.460Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03163-1",
+      "title": "Design and optimization of a kinase-controlled allosteric switch",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-07-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03163-1",
+      "doi": "10.1038/s41592-026-03163-1",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "激酶控制的別構開關之設計與優化",
+      "summaryZh": "本研究開發了一套由激酶調控的別構開關系統，能夠精確控制蛋白質的活性與功能。此開關設計具有高度模組化特性，可廣泛應用於合成生物學電路與細胞程序的控制。優化後的系統展現更佳的開關效率與專一性，為研究人員提供強大的工具來操控細胞信號傳導路徑。此技術的突破可能推動精準醫療與可控蛋白質療法的發展。",
+      "topicTags": [
+        "synthetic-biology",
+        "protein-engineering",
+        "kinase",
+        "allosteric-regulation",
+        "molecular-switch"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02595-x",
+      "title": "SUMOylation fine-tunes DNMT1 to silence viral mimicry transcripts",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02595-x",
+      "doi": "10.1038/s41588-026-02595-x",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "SUMO化作用微調DNMT1以沉默病毒模擬轉錄本",
+      "summaryZh": "本研究揭示了SUMO化修飾如何精細調控DNA甲基轉移酶DNMT1的功能，進而影響細胞對病毒模擬轉錄本的沉默能力。病毒模擬轉錄本來自於內源性逆轉錄病毒等重複序列，其異常表達可能觸發先天性免疫反應。研究發現SUMO化修飾在維持DNMT1的基因組定位及催化活性方面扮演關鍵角色，確保這些潛在有害序列被穩定沉默。此機制的闡明不僅深化了我們對表觀遺傳調控的理解，也為癌症治療中利用病毒模擬機制激活免疫反應的策略提供了新的分子靶點。",
+      "topicTags": [
+        "sumoylation",
+        "dnmt1",
+        "viral-mimicry",
+        "epigenetics",
+        "dna-methylation"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02693-w",
+      "title": "The genomic position of an enhancer modulates bursting dynamics of the cognate promoter",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02693-w",
+      "doi": "10.1038/s41588-026-02693-w",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "增強子基因組位置調控啟動子表現的爆發動態",
+      "summaryZh": "本研究探討增強子在基因組上的位置如何調控啟動子的表現爆發動態。研究發現，增強子的相對位置會顯著影響基因表現的模式與強度，揭示了基因調控空間組織的重要性。這項發現對於理解發育過程中的基因表現調控機制具有重要意義，並為基因表現異常相關疾病的發生提供新的解釋框架。",
+      "topicTags": [
+        "gene-regulation",
+        "enhancer",
+        "promoter",
+        "genomics",
+        "gene-expression"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02682-z",
+      "title": "Pangenome-resolved structural variation drives adaptation and trait evolution in cucumber",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02682-z",
+      "doi": "10.1038/s41588-026-02682-z",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "黃瓜泛基因組結構變異推動適應與性狀演化",
+      "summaryZh": "本研究建構了黃瓜的泛基因組，解析了結構變異在基因組中的分布與功能。研究發現結構變異在黃瓜的適應性演化與重要性狀形成中扮演關鍵角色。這些發現為理解作物基因組結構與表型多樣性之間的關係提供了新視角，並可應用於黃瓜育種，幫助培育更具適應性的新品種。此研究方法可推廣至其他作物，促進泛基因組學在植物研究領域的發展。",
+      "topicTags": [
+        "pangenome",
+        "plant-genomics",
+        "structural-variation",
+        "crop-breeding",
+        "cucumber"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02664-1",
+      "title": "SUMOylation enhances DNMT1 function to repress mega-intergenic RNAs and viral mimicry",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02664-1",
+      "doi": "10.1038/s41588-026-02664-1",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "SUMO化修飾強化DNMT1功能以抑制巨型基因間RNAs及病毒模擬反應",
+      "summaryZh": "本研究揭示了SUMO化修飾如何增強DNMT1的功能，進而抑制巨型基因間RNAs的表現並防止病毒模擬反應。研究發現了一個連接蛋白質翻譯後修飾與表觀遺傳調控的新型分子機制，為理解細胞如何透過表觀遺傳途徑維持基因組穩定性及防禦病毒樣反應提供重要見解。此發現深化了我們對翻譯後修飾與DNA甲基化之間交互調控的認識，並為相關疾病的治療策略提供新的分子標的。",
+      "topicTags": [
+        "epigenetics",
+        "dna-methylation",
+        "sumoylation",
+        "viral-mimicry",
+        "dnmt1"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03116-z",
+      "title": "Physiological fidelity of a satellite-derived forest resilience indicator in the Amazon",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-07-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03116-z",
+      "doi": "10.1038/s41559-026-03116-z",
+      "abstract": "This analysis shows that a widely used satellite-based ecosystem resilience indicator is a real signal linked to plant physiological responses to water deficit, provided that the estimation is based on appropriate methodological choice.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "衛星遙測森林韌性指標在亞馬遜的生理學驗證",
+      "summaryZh": "這項研究驗證了廣泛使用的衛星遙測生態系統韌性指標，確實與植物面對水分脅迫時的生理反應密切相關。研究結果顯示，只要採用適當的方法學選擇，這些衛星數據就能準確反映森林的健康狀態。這對於監測亞馬遜雨林在氣候變遷下的變化至關重要，也為森林保育與氣候政策制定提供了更可靠的科學依據。",
+      "topicTags": [
+        "remote-sensing",
+        "amazon-forest",
+        "plant-physiology",
+        "climate-change",
+        "ecosystem-resilience"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03140-z",
+      "title": "Genetic trade-offs in fertility and longevity explain the maintenance of disease-associated alleles in humans",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-07-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03140-z",
+      "doi": "10.1038/s41559-026-03140-z",
+      "abstract": "Despite their detrimental health effects, disease loci persist in human populations. This study shows that disease-risk alleles are generally associated with reduced longevity and increased fertility, while alleles that increase both fertility and disease risk have been favoured by natural selection.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "為何致病基因不會消失？研究揭示生育力與壽命的演化權衡",
+      "summaryZh": "這項研究揭示了一個長久以來的演化之謎：為何對健康有害的疾病等位基因能夠在人類族群中持續存在。研究發現，疾病風險等位基因通常與壽命縮短但生育力提高有關，而那些同時增加生育力和疾病風險的等位基因則受到自然選擇的青睞。這種生育力與壽命之間的權衡取捨機制，解釋了為何許多致病基因無法被自然選擇完全清除，對理解人類遺傳多樣性與疾病演化具有重要意義。",
+      "topicTags": [
+        "evolutionary-biology",
+        "genetics",
+        "human-health",
+        "natural-selection",
+        "fertility"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03230-0",
+      "title": "ENVnet provides a global molecular resource of dissolved organic matter",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-07-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03230-0",
+      "doi": "10.1038/s41587-026-03230-0",
+      "abstract": "A resource of dissolved organic matter illuminates carbon and microbial life in Earth’s ecosystems.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "ENVnet建構全球溶解性有機質分子資料庫",
+      "summaryZh": "溶解性有機質（DOM）是連結碳循環與微生物生態系的關鍵橋樑，然而過去缺乏系統性的全球分子資源。本研究建立的ENVnet資料庫收錄了來自不同生態系的DOM分子資訊，為研究人員提供了前所未有的整合性工具。這項資源能幫助科學家追蹤碳在環境中的流動與轉化，並深入理解微生物如何參與這些過程。隨著全球氣候變遷加劇，了解陸地與海洋生態系統中的碳循環機制變得更加迫切，此資料庫的誕生正好填補了這一關鍵缺口。",
+      "topicTags": [
+        "environmental-microbiology",
+        "carbon-cycle",
+        "metabolomics",
+        "microbial-ecology",
+        "ecosystem-science"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02599-z",
+      "title": "Dysbiosis-induced expansion of AXL-positive inflammatory type 3 dendritic cells triggers preclinical autoimmunity",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-07-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02599-z",
+      "doi": "10.1038/s41590-026-02599-z",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "腸道菌相失調誘發AXL陽性第三型樹突細胞擴增 導致臨床前自體免疫",
+      "summaryZh": "本研究發現腸道菌相失調會誘發AXL陽性發炎性第三型樹突細胞的異常擴增，進而觸發臨床前自體免疫反應。此研究揭示了腸道微生物組的改變如何透過特定免疫細胞亞群影響自體免疫疾病的早期發生，並闡明腸道與自體免疫之間的關鍵連結機制。這項發現為理解自體免疫疾病的發病機轉提供重要線索，並可能為未來開發以微生物組為標的之預防性治療策略開闢新途徑。",
+      "topicTags": [
+        "immunology",
+        "microbiome",
+        "autoimmunity",
+        "dendritic-cells",
+        "dysbiosis"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02429-w",
+      "title": "Clarifying objectives to strengthen wastewater-based AMR surveillance",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-07-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02429-w",
+      "doi": "10.1038/s41564-026-02429-w",
+      "abstract": "Clarifying objectives to strengthen wastewater-based AMR surveillance",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "明確目標以強化廢水抗藥性監測",
+      "summaryZh": "抗藥性問題已成為全球公共衛生的重大威脅，廢水監測能有效偵測環境中的抗藥性菌株與基因，成為傳統臨床監測的重要補充。本研究強調建立明確的監測目標對於提升廢水抗藥性監測成效的重要性，透過標準化目標設定，可更有效追蹤抗藥性流行趨勢。此方法提供了一種具成本效益的方式，能在不依賴臨床數據的情況下監測社區層級的抗藥性狀況，對於早期發現新興抗藥性病原體及制定抗生素管理政策至關重要。",
+      "topicTags": [
+        "antimicrobial-resistance",
+        "wastewater-surveillance",
+        "public-health",
+        "epidemiology",
+        "pathogens"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02421-4",
+      "title": "Molecular and cellular insights into the parasitic infection of bloom-forming marine diatoms by Pirsonia diadema",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-07-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02421-4",
+      "doi": "10.1038/s41564-026-02421-4",
+      "abstract": "Ultrastructure expansion microscopy, live-cell imaging and time-resolved dual RNA sequencing reveal the infection dynamics of a microparasite, providing insights into how Pirsonia diadema shapes marine trophic networks.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "分子與細胞層面解析優勢藻華形成海洋矽藻遭Pirsonia diadema寄生感染之機制"
+    },
+    {
+      "id": "10.1038/s41564-026-02427-y",
+      "title": "Groundwater microbial communities across the terrestrial subsurface",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-07-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02427-y",
+      "doi": "10.1038/s41564-026-02427-y",
+      "abstract": "Here the authors propose the concept of ‘microbial frugality’ as an evolutionary outcome of life under the chronic energy limitation of the subsurface and a way to understand Earth’s hidden biogeochemical engine.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "地下水微生物群落揭示陸地深層生態的節儉策略",
+      "summaryZh": "本研究深入探討陸地地下水微生物群落的多樣性與分布範圍，發現這些棲息於地下的微生物展現出獨特的生存策略。研究團隊提出「微生物節儉」概念，闡釋微生物如何在慢性能量限制的地下環境中演化出極端的資源利用方式。這項發現不僅重新定義了我們對深層生物圈的理解，更揭示了地球隱藏生物地球化學引擎的運作機制，對於預測地下生態系統在氣候變遷中的角色具有重要參考價值。",
+      "topicTags": [
+        "microbial-ecology",
+        "subsurface-biology",
+        "groundwater",
+        "biogeochemistry",
+        "deep-biosphere"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02425-0",
+      "title": "Klebsiella pneumoniae inhibits vasodilation through capsule and T6SS-dependent pathways",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-07-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02425-0",
+      "doi": "10.1038/s41564-026-02425-0",
+      "abstract": "Vasodilation is inhibited by Klebsiella pneumonia through a multipronged approach involving type VI secretion system activity and the VgrG4 effector, plus capsule, to limit eNOS-dependent and endothelial hyperpolarization routes to vasodilation.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "肺炎克雷伯氏菌透過莢膜與第六型分泌系統抑制血管舒張",
+      "summaryZh": "本研究發現肺炎克雷伯氏菌能夠透過多重機制抑制血管舒張，包括活化第六型分泌系統與其VgrG4效應因子，以及莢膜的保護作用。這些病原體策略會阻斷內皮細胞依賴eNOS與超極化途徑的血管舒張功能。此發現揭示了細菌感染如何直接干擾宿主血管生理，對了解敗血症相關血管功能障礙具有重要意義，並為開發抗菌治療策略提供新的分子標的。",
+      "topicTags": [
+        "bacterial-pathogenesis",
+        "type-VI-secretion-system",
+        "vascular-biology",
+        "klebsiella-pneumoniae",
+        "host-pathogen-interaction"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.20.739584",
+      "title": "Single-Cell Proteomics Reveals Heterogeneous and Bimodal Proteome Responses to DNA Damage",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-21",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.20.739584v1",
+      "doi": "10.64898/2026.07.20.739584",
+      "abstract": "DNA damage response (DDR) involves coordinated activation of repair, checkpoint, and stress adaptive signalling pathways following genomic toxicity. Bulk-cell proteomics, however, averages divergent responses across neighbouring cells, obscuring the characterisation of biologically meaningful proteome remodelling during genotoxic stress. This is particularly relevant to DDR, where a subset of cells undergo apoptosis, resulting in the sampling of dead cells that confound downstream biological interpretation. Here, we applied single cell proteomics (SCP) to investigate the proteome response of U-2 OS cells to 6-thioguanine (6TG)-induced DNA damage. By filtering individual cells according to predefined morphological-, sampling- and biological-criteria, to ensure a matched comparison between control and DNA-damaged populations; 6TG treatment was found to activate canonical DDR, including mismatch repair and base excision repair, together with secondary stress responses linked to oxidative stress, mitochondrial dysfunction, inflammatory signalling and proteostasis. Using SCP, we were able to probe neighbouring cell-to-cell heterogeneity, revealing globally increased protein abundance variability following DNA-damage. Importantly, mismatch repair protein MSH3 exhibited amongst the largest abundance increases, concomitant with the greatest reduction in cell-to-cell abundance heterogeneity across all quantified proteins, highlighting it as the most robust and reproducible respond-er to 6TG-induced DNA damage. Furthermore, analysis of protein-abundance heterogeneity revealed proteins that exhibit bifurcated abundance states across neighbouring cells, with DNA damage inducing either the emergence or loss of these bimodal abundance distributions. Proteins linked to gene expression and protein synthesis were driven towards bifurcation into discrete high-low protein abundance states across neighbouring cells following DNA-damage. Conversely, 6TG abolished the intrinsic high-low abundance bimodality of several core-signalling, stress-signalling and trafficking proteins, suggesting their coordinated homogenisation in response to genotoxic stress. Collectively, these findings demonstrate the power of SCP to resolve the coordinated, yet heterogeneous, cellular response to DNA damage within a population of genetically identical cells.",
+      "authors": [
+        "Adoni, K. R.",
+        "Charlton, G. H.",
+        "Ditcham, J. E.",
+        "Cook, D. T.",
+        "Ho, J.",
+        "Kirkpatrick, J.",
+        "Zenezini Chiozzi, R.",
+        "Thalassinos, K."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "單細胞蛋白質體學揭示DNA損傷之異質性與雙峰蛋白質體反應"
+    },
+    {
+      "id": "10.64898/2026.02.07.704075",
+      "title": "An Integrative Single-Cell Epigenomic Atlas Annotates the Regulatory Genome of the Adult Mouse Brain",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-21",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.02.07.704075v2",
+      "doi": "10.64898/2026.02.07.704075",
+      "abstract": "Histone modifications underpin the cell-type-specific gene regulatory programs that drive the remarkable cellular diversity of the mammalian brain. Here, we jointly profiled four histone modifications and the transcriptome in 2.5 million nuclei from the adult mouse brain. By integrating these data with chromatin accessibility, DNA methylation, and three-dimensional genome organization, we constructed a unified epigenomic atlas spanning over 100 brain cell subclasses, and assigned active, primed, and repressive chromatin states across 81% of the genome. Active chromatin states marked by combinatorial histone modifications better nominate candidate enhancers with functional support than chromatin accessibility alone, while H3K27me3- and H3K9me3-marked chromatin states delineate distinct modes of cell-type-specific gene repression. Finally, this multimodal resource enables deep learning models that predict cell-type-specific epigenomic features and gene expression from DNA sequence, providing a comprehensive framework for annotating the brain regulatory genome and interpreting non-coding disease risk variants.",
+      "authors": [
+        "Wang, Z.",
+        "Zu, S.",
+        "Armand, E. J.",
+        "Loe, T. H.",
+        "Rink, J. A.",
+        "Wu, W.",
+        "Xie, Y.",
+        "Chang, L.",
+        "Zhu, C.",
+        "Johnson, N. D.",
+        "Lee, J.",
+        "Willier, J. K.",
+        "Cho, S.",
+        "Cao, S.",
+        "Barcoma, A. S.",
+        "Emerson, N.",
+        "Liu, H.",
+        "Wang, K.",
+        "Saravanan, B.",
+        "Gibbs, Z. A.",
+        "Gao, X.",
+        "Xu, S.",
+        "Guo, D.",
+        "Tu, Z.",
+        "Li, Y. E.",
+        "Ecker, J. R.",
+        "Behrens, M. M.",
+        "Ren, B."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "整合性單細胞表觀基因體圖譜註解成年小鼠大腦之調控基因組"
+    },
+    {
+      "id": "10.64898/2026.07.15.738754",
+      "title": "Easy-Multiome enables joint profiling of gene expression and chromatin accessibility in single cells",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-21",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.15.738754v1",
+      "doi": "10.64898/2026.07.15.738754",
+      "abstract": "Gene expression and chromatin accessibility provide complementary insights into the regulatory mechanisms that define cell states. Although methods for jointly profiling these modalities exist, plant applications remain limited because of complex workflows, inconsistent performance, and prohibitive costs. Here, we present easy-Multiome, a streamlined single-cell multiomic workflow that integrates a single in situ reverse transcription step into the standard droplet-based scATAC-seq protocol. Using easy-Multiome, we profiled more than 20,000 nuclei from maize seedlings generating paired gene expression and chromatin accessibility data, with approximately 90% of nuclei containing both high-quality RNA and chromatin accessibility profiles. The resulting transcriptome data resolved 16 clusters corresponding to nine major maize seedling cell types and enabled direct characterization of cell-type-specific chromatin accessibility from the same nuclei. Furthermore, easy-Multiome simultaneously captured cell-type-specific transcription factor expression and the accessibility of their cognate DNA-binding motifs, providing direct links between transcriptional programs and regulatory landscapes. Together, these results demonstrate that easy-Multiome enables robust and efficient joint profiling of plant gene expression and chromatin accessibility while requiring only minimal modifications to existing droplet-based scATAC-seq workflows.",
+      "authors": [
+        "ZHANG, X.",
+        "Minow, M. A. A.",
+        "Schmitz, R. J."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Easy-Multiome實現單細胞中基因表現與染色質可及性之共同分析"
+    },
+    {
+      "id": "10.1101/2025.02.28.640429",
+      "title": "Unifying multimodal single-cell data with a mixture-of-experts β-variational autoencoder framework",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-21",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.02.28.640429v3",
+      "doi": "10.1101/2025.02.28.640429",
+      "abstract": "Multimodal single-cell assays profile complementary layers of cell state, but integration is complicated by modality mismatch, sparsity, and uneven cohort coverage. We present UniVI (\\Unified Variational Inference), a scalable mixture-of-experts {beta}-variational autoencoder that learns a shared latent space while preserving modality-specific structure. UniVI couples modality-specific encoders/decoders with a shared latent prior and a symmetric cross-modal alignment objective, enabling consistent integration of paired measurements without curated feature-link graphs or pre-annotated reference atlases; optional supervised heads can be added when labels are available. Across paired RNA--protein (CITE-seq) and RNA--chromatin (10x Multiome, SHARE-seq) data spanning human PBMCs and mouse back skin---a non-hematopoietic tissue with continuous differentiation hierarchies---UniVI produces coherent embeddings, improves label transfer, and enables cross-modal reconstruction and denoising. Extending to tri-modal measurements, UniVI maintains robust three-way alignment among RNA, chromatin accessibility, and surface proteins (TEA-seq), and accommodates DNA methylation in a paired scNMT-seq mouse gastrulation proof-of-concept under beta-binomial likelihoods. Performance degrades gracefully under severe cell-type imbalance and in the presence of modality-exclusive populations. In an acute myeloid leukemia mosaic design, a paired RNA--protein bridge anchors independent RNA-only and protein+genotype cohorts, revealing genotype-associated neighborhoods that sharpen with mutation-aware fine-tuning. UniVI thus provides a flexible, interpretable framework for multimodal integration across paired, tri-modal, and mosaic study designs and supports practical reference-to-query projection in partially observed studies.",
+      "authors": [
+        "Ashford, A. J.",
+        "Enright, T.",
+        "Somers, J.",
+        "Nikolova, O.",
+        "Demir, E."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "CITE-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "以專家混合β-變分自編碼器框架整合多模態單細胞資料"
+    },
+    {
+      "id": "10.64898/2026.07.16.738997",
+      "title": "Organism-scale annotation with Pan-human Azimuth",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-21",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.16.738997v1",
+      "doi": "10.64898/2026.07.16.738997",
+      "abstract": "Single-cell atlases now span many human tissues, but inconsistent annotations across studies limit their utility as a unified reference. We introduce Pan-human Azimuth, a supervised neural network that maps human cells from diverse tissues and datasets onto a single hierarchical organism-scale typology. Developed through NIH HuBMAP, the model is trained on a uniquely curated corpus designed to maximize diversity across tissues and technologies while enforcing uniform, interpretable annotations and stringent quality control. The use of a single organism-wide reference enables us to map tens of millions of cells in the Tabula Sapiens and scBaseCamp repositories, perform cross-tissue comparisons across thousands of samples, and identify striking tissue specialization among fibroblast states. Pan-human Azimuth naturally extends to annotating spatial transcriptomic data, recovering canonical kidney cortical structures and distinguishing glomerular states consistent with expert pathology. We release Pan-human Azimuth alongside cloud, R, and Python interfaces to facilitate standardized organism-wide single-cell analysis.",
+      "authors": [
+        "Sarkar, S.",
+        "Li, Z.",
+        "Molla, G.",
+        "Shenoy, A.",
+        "Zhang, B.",
+        "Collins, D.",
+        "Vasilevsky, N.",
+        "Gaut, J. P.",
+        "Puig-Barbe, A.",
+        "Bueckle, A.",
+        "Osumi-Sutherland, D.",
+        "Börner, K.",
+        "Jain, S.",
+        "Satija, R."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "以泛人類Azimuth進行生物體尺度註解"
+    },
+    {
+      "id": "10.64898/2026.07.15.738836",
+      "title": "An automated platform for spatial functional modeling and fingerprint analysis of tissue molecular landscapes",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-21",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.15.738836v1",
+      "doi": "10.64898/2026.07.15.738836",
+      "abstract": "Spatial transcriptomics (ST) enables high resolution molecular profiling while preserving tissue architecture, creating new opportunities to investigate how disease-associated pathways are organized within tissues. However, existing analytical approaches largely focus on individual pathways or cell types and do not provide a unified framework for modeling spatially varying pathway interactions across tissue sections and anatomical planes. Here, we present an integrative framework, Spatial Fingerprints Analytics (SFinx), that combines reference-free deconvolution, pathway activity reconstruction, and Spatial Functional Data Analysis (SFDA) to map localized pathway activity and pathway phenotype interactions in complex tissues. Applying SFinx to10x Visium ST datasets from murine lupus nephritis, we reconstructed continuous spatial landscapes of pathway activity and disease-associated phenotypes across kidney sections. This approach identified anatomically restricted inflammatory domains characterized by coordinated activation of immune pathways and revealed substantial spatial heterogeneity in pathway crosstalk across renal compartments. Using generalized additive models with tensor-product splines, we quantified spatially varying associations between lupus nephritis and neutrophil activation pathways across tissue sections, uncovering regions with both positive and negative relationships that would be obscured by conventional bulk analyses. Multi-slice integration further demonstrated reproducible spatial interaction patterns while accounting for section-specific variability. Together, SFinx transforms mixed-spot transcriptomic measurements into interpretable spatial pathway landscapes and interaction maps, providing a general framework for identifying localized disease mechanisms. This approach reveals previously unrecognized spatial organization of inflammatory signaling in lupus nephritis and presents a broadly applicable strategy for studying spatially coordinated biological processes in autoimmune disorders, cancer, and neurodegenerative diseases.",
+      "authors": [
+        "Hajihosseini, M.",
+        "Patino-Martinez, E.",
+        "Ghosal, R.",
+        "Kaplan, M. J.",
+        "Pyne, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "Visium",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "自動化平台進行空間功能建模與組織分子景觀指紋分析"
+    },
+    {
+      "id": "10.64898/2026.07.16.739037",
+      "title": "SPgen: Proteome-wide Spatial Proteomics generation using multi-modality foundation models",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-21",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.16.739037v1",
+      "doi": "10.64898/2026.07.16.739037",
+      "abstract": "Spatial proteomics (SP) measures the spatial distribution of proteins within tissues, providing important insights into tissue function, disease, and therapeutic response. However, current SP technologies profile only a small fraction of the proteome and are limited by cost and measurement noise. Recent AI approaches enable predicting spatial protein expression from transcriptomic or histopathological data, but are typically restricted to paired datasets covering only tens of proteins, limiting their ability to generalize beyond experimentally measured protein panels. Here we present SPgen, a multi-modal foundation-model framework for proteome-wide spatial protein prediction. SPgen integrates protein sequences, functional annotations, transcriptomic profiles, and spatial information to learn transferable representations that enable inference beyond experimentally profiled proteins. Across diverse spatial proteomics datasets, SPgen accurately reconstructs measured spatial patterns, reduces measurement noise, and enables proteome-wide spatial prediction.",
+      "authors": [
+        "Li, J.",
+        "Yang, K.",
+        "Che, Q.",
+        "Zheng, D.",
+        "Wei, W.",
+        "Jin, C.",
+        "Yuan, Y."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial proteomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "SPgen：利用多模態基礎模型生成全蛋白質組空間蛋白質體學"
+    },
+    {
+      "id": "10.64898/2026.07.16.738892",
+      "title": "CSOA: A Novel Single-Cell Gene Set Enrichment Analysis Method with Comprehensive Benchmarking",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-21",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.16.738892v1",
+      "doi": "10.64898/2026.07.16.738892",
+      "abstract": "Single-cell gene set enrichment analysis is widely used to evaluate the activity of gene sets in individual cells, as measured by single-cell sequencing technologies. However, existing methods often generate ambiguous scores that cannot reliably distinguish cells enriched for a biological signal from background cells. To address this limitation, we developed Cell Set Overlap Analysis (CSOA), a novel method for gene set enrichment analysis that leverages gene pair relationships by quantifying pairwise overlaps between high-expression cell sets constructed for each signature gene. We benchmarked CSOA against sixteen established methods representing five methodological classes: direct scoring, rank-based scoring, model-based scoring, matrix decomposition, and overrepresentation analysis. Our evaluation framework introduces novel metrics tailored for the gene set scoring problem, such as score coverage and silhouette rank alignment. They are used alongside traditional metrics for binary classification, such as the Matthews correlation coefficient and area under the receiver operating characteristic (AUROC). CSOA showed superior accurate annotation of cell types and specific biological processes compared with competing approaches. This advantage was particularly pronounced in the class boundary determination benchmark, where it ranked the first in all evaluated datasets. CSOA also outperformed most of the compared methods in computational efficiency. Notably, CSOA's combination of outstanding performance in the score coverage metric and solid overall performance positions it as a uniquely well-suited method for distinguishing cells enriched for specific biological signals.",
+      "authors": [
+        "Stoica, A.-F.",
+        "Yao, K.",
+        "Wang, J.",
+        "Xu, X."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "CSOA：一種新型單細胞基因集富集分析方法與全面基準測試"
+    },
+    {
+      "id": "10.64898/2026.07.18.734896",
+      "title": "Quantitative Description of C. elegans mRNA Landscapes From High Coverage Single Cell Transcriptomes",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-21",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.18.734896v1",
+      "doi": "10.64898/2026.07.18.734896",
+      "abstract": "Single cell gene expression profiling provides a rich and systematic characterization of complex systems which revolutionized the way biologists can interrogate transcriptomes. However, the amount and complexity of data generated by such methods poses new challenges for biologists who are trying to extract detailed insights on the genetic programs that drive cellular functions and differentiation. We propose a radically different approach to the analysis of scRNAseq data that provides much more intuitive understanding of cell specific gene expression programs. These high coverage cells, were found in all five scRNA-seq datasets we investigated and constitute direct quantitative experimental observations of the mRNA content of individual cells. We focussed on ~4500 individual cells with coverage ranging from 15,000 to hundreds of thousands of Unique Molecular Identifiers. Clustering these cells using a supervised strategy we devised allowed to describe cell specific mRNA contents with unprecedented resolution. We identified genes that are dominating cell specific transcriptomes as well as low expression genes that are restricted to particular cell types but are all but undetectable at lower coverage threshold. For each cell type (or subtype) we characterized, we identified a set of genes with expression restricted to those cells that were not previously associated with the corresponding tissue.",
+      "authors": [
+        "Bernard, F.",
+        "Kandel, E.",
+        "Dargere, D.",
+        "Cornes, E.",
+        "Dupuy, D."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "scRNA-seq",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "以高覆蓋率單細胞轉錄組定量描述秀麗隱桿線蟲的mRNA景觀"
+    },
+    {
+      "id": "10.64898/2026.07.19.739473",
+      "title": "Mapping Functional Tumor Suppressor Networks in Esophageal Adenocarcinoma Using In Vivo CRISPR Screening and Perturb-sequencing",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-21",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.19.739473v1",
+      "doi": "10.64898/2026.07.19.739473",
+      "abstract": "Esophageal adenocarcinoma (EAC) is a genetically heterogeneous malignancy with few recurrent drivers, limiting effective targeted therapies. Although EAC arises from Barrett's esophagus (BE), mechanisms driving progression from this premalignant state to invasive cancer remain unclear. We combined pooled CRISPR-Cas9 loss-of-function screening, in vivo tumorigenicity assays, and Perturb-seq profiling to define functional drivers of BE transformation. We identified 37 tumor suppressors whose loss promotes progression to EAC, defining a functional landscape of tumor initiation. Despite genetic diversity, these losses converged on four transcriptional programs involving metabolic reprogramming, cell cycle progression, RNA processing, and cellular motility. Furthermore, we identify loss of NIPBL, TGFBR2, and RPL22 as key mediators of resistance to platinum- and taxane-based chemotherapy. Collectively, these findings provide a unifying framework for genomic heterogeneity in EAC, uncover underappreciated tumor suppressor pathways, and establish a resource to guide mechanistic and translational studies aimed at improving treatment strategies in this aggressive cancer.",
+      "authors": [
+        "Mustafa, E. H.",
+        "Papastratos, K.",
+        "Wu, K.",
+        "Thio, N.",
+        "Milne, J. V.",
+        "Mitchell, N.",
+        "Witts, S.",
+        "Pechlivanis, M.",
+        "Wong, B.",
+        "Waddell, N.",
+        "Phillips, W. A.",
+        "Clemons, N. J."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "Perturb-seq",
+        "cancer",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "使用體內CRISPR篩選與擾動定序繪製食道腺癌的功能性腫瘤抑制網絡"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 23,
+      "passedByScope": 23,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 23,
+      "excluded": 0
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 23,
+      "llmTagged": 23,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 23,
+      "candidates": 23,
+      "featured": 12,
+      "overflow": 11,
+      "lineA": 0,
+      "lineB": 13,
+      "preprint": 10,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 11,
+      "llmTranslated": 11,
+      "failed": 0
+    }
+  }
+}
