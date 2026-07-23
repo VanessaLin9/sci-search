@@ -1,0 +1,795 @@
+{
+  "reportDate": "2026-07-22",
+  "generatedAt": "2026-07-23T12:12:24.521Z",
+  "papers": [
+    {
+      "id": "10.1038/s41588-026-02680-1",
+      "title": "A tetraploid wheat pangenome reveals genomic variation and domestication footprints",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02680-1",
+      "doi": "10.1038/s41588-026-02680-1",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "四倍體小麥泛基因組揭示基因組變異與驯化痕跡",
+      "summaryZh": "四倍體小麥是現代麵包小麥的祖先之一，對全球糧食安全至關重要。本研究建構了首個四倍體小麥泛基因組，系統性地呈現了遺傳變異的完整圖譜。透過大規模基因組比較，研究團隊追蹤了小麥驯化過程中的遺傳足迹，揭示了關鍵性狀的演化軌跡。這些發現為未來小麥育種提供了豐富的基因資源，有助於開發更具抗逆性與產量潛力的新品種。",
+      "topicTags": [
+        "wheat",
+        "pangenome",
+        "domestication",
+        "crop-genetics",
+        "genomic-variation"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02678-9",
+      "title": "A pangenome of tetraploid wheat reveals the genetic architecture underlying domestication and genomic diversity for breeding",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02678-9",
+      "doi": "10.1038/s41588-026-02678-9",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "四倍體小麥泛基因組揭示驯化遺傳架構與育種潛力",
+      "summaryZh": "本研究建構了四倍體小麥的泛基因組，大幅擴展了我們對小麥遺傳多樣性的理解。研究團隊透過比較分析，解析了小麥驯化過程中的關鍵遺傳變異，為理解作物起源提供新見解。此泛基因組資源可協助育種家更精準地篩選有益性狀，加速培育適應氣候變遷與提升產量的小麥新品種。這項研究對全球糧食安全與永續農業發展具有重要意義。",
+      "topicTags": [
+        "wheat",
+        "pangenome",
+        "domestication",
+        "plant-genetics",
+        "breeding"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03132-z",
+      "title": "Forecasting cyanobacterial blooms requires improved understanding of species interactions",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-07-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03132-z",
+      "doi": "10.1038/s41559-026-03132-z",
+      "abstract": "Daily monitoring by underwater imaging of an entire lake plankton community over five years reveals that grazing, competition and facilitation dynamically modify the temperature and nutrient conditions in which toxic cyanobacterial blooms can form.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "預測藍綠菌水華需要更深入了解物種交互作用",
+      "summaryZh": "本研究透過水下影像技術，對整個湖泊浮游生物群落進行為期五年的每日監測。研究發現，放牧、競爭與互利作用會動態改變有毒藍綠菌水華形成所需的溫度與營養條件。這些發現凸顯了物種間交互作用在預測水華風險中的關鍵角色，對於水資源管理與公共衛生具有重要意義。",
+      "topicTags": [
+        "cyanobacterial-blooms",
+        "plankton-ecology",
+        "species-interactions",
+        "freshwater-ecosystems",
+        "environmental-monitoring"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03203-3",
+      "title": "A spatial view of tumor neoantigen recognition",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-07-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03203-3",
+      "doi": "10.1038/s41587-026-03203-3",
+      "abstract": "The cell-by-cell interactions between neoantigen-expressing tumor cells and tumor-specific T cells remained largely unexplored. A single-cell spatial transcriptomics framework enables mapping of neoantigen-expressing tumor cells and tumor-infiltrating T cells, as well as T cell receptor sequencing. This approach reveals distinct immune niches in the tumor microenvironment and their properties that determine tumor-specific responses.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "腫瘤新抗原辨識的空間視角",
+      "summaryZh": "腫瘤細胞與腫瘤特異性T細胞之間的互動一直是癌症免疫研究中的黑盒子。本研究開發了一套單細胞空間轉錄體學框架，能夠同時繪製表達新抗原的腫瘤細胞與浸潤腫瘤的T細胞，並進行T細胞受體定序。此技術揭示了腫瘤微環境中不同的免疫生態位及其特徵，這些發現將有助於理解腫瘤特異性免疫反應的決定因素，為癌症免疫治療提供新的策略方向。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "tumor-immunology",
+        "neoantigen",
+        "t-cells",
+        "tumor-microenvironment"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03194-1",
+      "title": "Single-nucleus multimodal spatial transcriptomics reveals spatial colocalization of neoantigen-expressing tumor cells and cognate T cells",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-07-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03194-1",
+      "doi": "10.1038/s41587-026-03194-1",
+      "abstract": "Spatial relationships between tumor neoantigens and cognate T cells are studied.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單核多模態空間轉錄體學揭示新抗原腫瘤細胞與對應T細胞的空間共定位",
+      "summaryZh": "本研究運用單核多模態空間轉錄體學技術，分析表達腫瘤新抗原的細胞與對應T細胞之間的空間關係。了解這種空間共定位模式對癌症免疫治療至關重要，能揭示免疫系統如何識別並攻擊腫�特异性抗原。這項發現有助於解釋為何某些免疫療法有效而其他療法失敗，為開發更精準的治療策略提供重要參考依據。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "neoantigens",
+        "tumor-immunology",
+        "t-cells",
+        "single-cell-analysis"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02027-2",
+      "title": "Mapping mesenchymal diversity in the human small intestine and organoids",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-07-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02027-2",
+      "doi": "10.1038/s41556-026-02027-2",
+      "abstract": "Johnson et al. combine single-cell and spatial transcriptomics approaches to build a spatially resolved atlas of the developing human intestine and intestinal organoids, uncovering spatial organization and fibroblast heterogeneity.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "解碼人類小腸間質細胞多樣性：類器官與空間轉錄體學的突破",
+      "summaryZh": "本研究結合單細胞與空間轉錄體學技術，構建了發育中人類腸道及腸道類器官的空間解析圖譜。研究揭示了小腸中先前未被識別的空間組織結構與纖維母細胞異質性。這些發現為理解腸道發育過程提供了重要見解，並可能為未來腸道疾病的治療策略提供參考。多組學整合方法較以往技術能更完整地呈現細胞多樣性，對腸胃道研究領域具有重要價值。",
+      "topicTags": [
+        "single-cell",
+        "spatial-transcriptomics",
+        "organoids",
+        "intestinal-biology",
+        "fibroblast-heterogeneity"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02358-1",
+      "title": "Cerebral venous blood flow regulates intracerebral pressure and brain clearance via meningeal lymphatic vessels",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-07-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02358-1",
+      "doi": "10.1038/s41593-026-02358-1",
+      "abstract": "The authors show that cerebral venous blood flow and meningeal lymphatics co-regulate intracranial pressure and brain clearance in mice and humans. This finding supports idiopathic intracranial hypertension as a cerebral venous disorder.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "腦靜脈血流與腦膜淋巴管共同調控顱內壓及腦部清除",
+      "summaryZh": "本研究揭示腦靜脈血流與腦膜淋巴管共同調控顱內壓與腦部清除功能。研究團隊在小鼠與人體實驗中皆證實此調控機制的存在。這項發現的重要意義在於支持「原發性顱內高壓」可能屬於腦靜脈疾病的觀點，為此類疾病的診斷與治療開闢新方向。",
+      "topicTags": [
+        "neuroscience",
+        "brain-clearance",
+        "intracranial-pressure",
+        "meningeal-lymphatics",
+        "venous-disorders"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003888",
+      "title": "Why biology must prioritize data reanalysis in the era of artificial intelligence",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-22T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003888",
+      "doi": "10.1371/journal.pbio.3003888",
+      "abstract": "New technologies have generated huge volumes of biological data, much of which is underutilized. AI-assisted data reanalysis could drive the next era of biological discovery, but realizing its full potential requires standards, validation, and responsible use. New technologies have generated an unprecedented volume of biological data, much of which remains underutilized. This Perspective argues that the next era of biological discovery is likely to emerge from AI-driven data reanalysis, but realizing its full potential will require standards, validation, and responsible use.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "生物學為何必須重視AI時代的資料重新分析",
+      "summaryZh": "新興技術已產生大量生物學資料，但其中多數尚未被充分挖掘與利用。本篇觀點文章指出，AI驅動的資料重新分析有望引領下一波生物學發現的浪潮。然而，要充分發揮其潛力，研究界必須建立統一的資料標準、強化驗證機制，並確保負責任的使用方式，方能讓這股力量真正惠及科學發展。",
+      "topicTags": [
+        "artificial-intelligence",
+        "data-reanalysis",
+        "biological-data",
+        "open-science",
+        "reproducibility"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.17.739174",
+      "title": "IntraTalker - Modelling Intracellular Signalling in1 Cellular Crosstalk",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.17.739174v1",
+      "doi": "10.64898/2026.07.17.739174",
+      "abstract": "Single-cell sequencing has advanced the study of cell-cell communication, yet most methods focus on intercellular ligand-receptor interactions while neglecting downstream intracellular signalling cascades and the possibility that downstream target genes themselves encode ligands, thereby propagating communication across multiple cells. We present IntraTalker+CrossTalkeR that combines intracellular (IntraTalker) and intercellular (CrossTalkeR) signalling from multimodal single-cell data. IntraTalker infers cell-type-specific transcription factor activities and constructs receptomes that link receptors to downstream target genes, which are then integrated with ligand-receptor predictions in CrossTalkeR. To prioritize signalling receptors, the framework performs in silico receptor perturbation. In a murine bone marrow dataset, this recovered the known function of the Il1r1 receptor in driving myeloid progenitor cell-state changes. In a human myocardial infarction dataset, it predicted a novel role for IGF1R signalling in driving the differentiation of fibroblasts towards progenitor fibroblast states.",
+      "authors": [
+        "Kloker, V.",
+        "Nagai, J. S.",
+        "Feng, Z.",
+        "Mavrommatis, L.",
+        "Hermanns, L.",
+        "Moscoso, J. M. J.",
+        "Ruiz, M.",
+        "Kuppe, C.",
+        "Costa, I. G."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "細胞對話新模型：整合細胞內與細胞間訊號傳遞分析",
+      "summaryZh": "本研究提出 IntraTalker+CrossTalkeR 計算框架，結合細胞內訊號（IntraTalker）與細胞間通訊（CrossTalkeR）分析，突破傳統方法僅專注於配體-受體交互作用的限制。該框架從單細胞多模態資料推斷細胞型別專屬的轉錄因子活性，並建構連結受體與下游標靶基因的受體組。透過模擬受體擾動，研究者能有效優先排序關鍵訊號受體。在小鼠骨髓資料中驗證了 Il1r1 受體調控骨髓前驅細胞狀態轉變的功能；在人類心肌梗塞資料中則預測了 IGF1R 訊號在驅動纖維母細胞向祖細胞狀態分化中的新角色。此工具為解析複雜細胞通訊網絡提供了重要突破。",
+      "topicTags": [
+        "single-cell-analysis",
+        "cell-cell-communication",
+        "signaling-cascades",
+        "computational-biology",
+        "receptor-perturbation"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.17.739167",
+      "title": "Tangerine: A Python framework for dynamic gene regulation analysis from transcriptomic time series",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.17.739167v1",
+      "doi": "10.64898/2026.07.17.739167",
+      "abstract": "Motivation: Time-series single-cell transcriptomics enables the study of dynamic gene regulation. However, standard computational tools frequently aggregate temporal data into static, dense topologies, obscuring the precise regulatory rewiring that drives developmental transitions. Further, navigating the inherent noise of statistical inference without losing biological interpretability remains an important bottleneck. Results: We present Tangerine, a Python framework for the dynamic reconstruction and interactive exploration of time-varying gene regulatory networks. Tangerine integrates time-constrained metacell aggregation with regularized linear modelling and non-parametric correlation to infer dynamic topologies. To solve the interpretability gap, it features a browser-based visual analytics engine. Tangerine empowers researchers to track macroscopic gene module evolution, interactively filter effect sizes, and link topological rewiring directly to raw transcriptomic evidence. Availability and implementation: Tangerine is implemented in Python and Plotly Dash. The code is available on Github at https://github.com/ntanmayee/tangerine.",
+      "authors": [
+        "Narendra, T.",
+        "Schweikert, G."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Tangerine：用於轉錄體時間序列動態基因調控分析的 Python 框架"
+    },
+    {
+      "id": "10.64898/2026.07.20.739670",
+      "title": "scLEMBAS: Context-Aware Modeling of Signaling Pathway Activity at Single-Cell Resolution",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.20.739670v1",
+      "doi": "10.64898/2026.07.20.739670",
+      "abstract": "Cells sense and integrate extracellular cues through intracellular signaling networks that reshape transcription factor activity to dictate cellular responses. Signaling activity is difficult to decipher: it is non-linear, and it contains extensive feedback and crosstalk. Furthermore, the same perturbation can elicit markedly different responses depending on context (e.g., cell type, disease state, and tissue microenvironment) such that identical stimuli produce diverse responses in multicellular populations. Consequently, there is a vast combinatorial space of complex interactions and context-dependent responses that necessitate computational models. Computational models of single-cell perturbation responses are demonstrated to predict cellular responses, but are often limited in mechanistic insight. Prior knowledge networks offer a route to bridge predictive capability and interpretability. Here we present scLEMBAS, a context-aware, gray-box neural network that models signaling pathway activity at single-cell resolution while preserving mechanistic grounding. scLEMBAS encodes a prior-knowledge network of protein-protein interactions as a recurrent neural network whose learnable edge weights correspond to signaling interaction strengths. It also captures context and individual cell variance through compositional bias terms. An adversarial approach allows the model to answer a single-cell counterfactual - what a given cell's TF activity would be under a different perturbation or context - while involving mechanistic rather than simply relational information. Across two scRNA-seq datasets spanning single- and multi-perturbation settings, scLEMBAS accurately predicts out-of-distribution combinations of perturbation and context. Capturing population variance across individual cells enables the model to predict cell subtype specific perturbation responses, despite being agnostic to such labels. Beyond prediction, scLEMBAS learned parameters are biologically interpretable: learned edge weights carry information beyond network topology and \"self-prune\" spurious interactions, while the categorical bias nominates proteins associated with cell-type-specific perturbation states. Overall, scLEMBAS enables quantitative dissection of how signaling pathway activity is reshaped by perturbation within specific cellular contexts.",
+      "authors": [
+        "Baghdassarian, H. M.",
+        "Meimetis, N.",
+        "Nordenstorm, O.",
+        "Joughin, B.",
+        "Nilsson, A.",
+        "Lauffenburger, D."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "scLEMBAS：單細胞層級的情境感知訊號傳導路徑活動建模",
+      "summaryZh": "細胞透過訊號網絡感知並整合細胞外刺激，然而訊號活動具有非線性、高度反饋與交互作用等特性，且相同刺激在不同細胞類型或微環境下可能產生截然不同的反應，使得訊號活動的解讀極具挑戰性。本研究提出scLEMBAS，一種情境感知的灰箱類神經網路方法，能在單細胞解析度下建模訊號路徑活動，並保留機制性的生物學意義。該模型將蛋白質交互作用網絡編碼為遞迴類神經網路，透過可學習的權重對應訊號交互強度，並透過組合性偏差項捕捉細胞間的異質性。scLEMBAS能回答單細胞層級的反事實問題，預測細胞在不同擾動或情境下的轉錄因子活性，並準確預測分布外的新型擾動與情境組合，甚至能預測細胞亞型專屬的擾動反應，為單細胞訊號研究提供預測能力與可解釋性兼具的新工具。",
+      "topicTags": [
+        "single-cell",
+        "signaling-pathways",
+        "neural-network",
+        "perturbation-response",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.17.739212",
+      "title": "Learning Minimal Gene Programs for Disease-Aligned Representations",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.17.739212v1",
+      "doi": "10.64898/2026.07.17.739212",
+      "abstract": "Identifying small, interpretable gene sets that robustly capture disease-associated variation in single-cell transcriptomic data remains a central challenge for biological interpretation and experimental follow-up. In practice, commonly used differential expression and sparsity-based approaches often produce large, unstable gene lists that fail to generalize across patients due to strong donor-specific confounding. We study sparse gene selection for reconstructing donor-robust, disease-aligned cellular trajectories in real single-cell RNA-seq datasets. We introduce Sparse Linear Manifold Control (SLMC), a practical workflow that defines a disease-aligned score after removing donor-associated variation and selects minimal gene programs whose expression reconstructs this score. We focus on diagnosing the structure of the resulting reconstruction objective and evaluating selection strategies under realistic health data conditions. Across five human single-cell datasets spanning oncology and neurodegeneration, we find that the reconstruction objective exhibits strong diminishing returns, explaining why simple greedy selection methods perform well in practice. Under strict donor-held-out evaluation, greedy methods consistently outperform LASSO at small gene budgets and achieve accurate reconstruction with as few as 25 genes. Together, these results highlight how careful objective design and empirical evaluation enable robust and interpretable gene selection for disease-aligned representation learning in single-cell health data.",
+      "authors": [
+        "Madduri, A.",
+        "Patel, C. J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "找出疾病關鍵基因：最小基因程式建構穩健單細胞表徵",
+      "summaryZh": "單細胞轉錄體資料中，傳統差異表現分析常產生龐大且不穩定的基因名單，難以跨患者推廣，主因是捐贈者特異性混淆效應。本研究提出Sparse Linear Manifold Control（SLMC）方法，先移除捐贈者相關變異，再篩選能重構疾病導向分數的最小基因程式。研究發現此重構目標具有強烈邊際遞減特性，說明為何簡單貪心演算法在實務上表現優異。在嚴格的捐贈者留一驗證下，貪心法在少基因預算下持續優於LASSO，且僅需25個基因即可達到精確重構。此方法已於涵蓋腫瘤學與神經退化疾病的五個人類單細胞資料集中驗證，為單細胞健康資料的疾病導向表徵學習提供可解釋且穩健的基因篩選框架。",
+      "topicTags": [
+        "single-cell",
+        "gene-expression",
+        "disease-biomarkers",
+        "machine-learning",
+        "transcriptomics"
+      ]
+    },
+    {
+      "id": "10.1101/2024.08.26.609589",
+      "title": "Transcriptional landscape of direct reprogramming toward the hematopoietic lineage",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-22",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.08.26.609589v5",
+      "doi": "10.1101/2024.08.26.609589",
+      "abstract": "Direct reprogramming of human fibroblasts into hematopoietic stem cells (HSCs) offers a promising strategy for generating autologous cells to treat blood and immune disorders. Current protocols are limited by low efficiency and insufficient tools for evaluating reprogramming outcomes. Although functional assays are the standard for confirming cell identity, they require fully reprogrammed cells, limiting their utility during protocol development. To address this, we assembled a single-cell transcriptomic reference atlas of hematopoietic reprogramming and tested an algorithmically-predicted transcription factor recipe for HSC induction. Long-read single-cell RNA sequencing of CD34+ reprogrammed cells revealed progressive loss of fibroblast identity alongside induction of early hematopoietic and endothelial programs, with reference-atlas benchmarking placing reprogrammed cells in an intermediate transcriptomic state between fibroblasts, endothelial cells, and HSCs. Isoform-level analysis further revealed transcriptional remodeling not captured by gene-level analyses. This experimental-computational framework offers a generalizable strategy for characterizing partially reprogrammed states and guiding optimization of reprogramming protocols.",
+      "authors": [
+        "Cwycyshyn, J.",
+        "Stansbury, C.",
+        "Golts, S.",
+        "Lee, H.",
+        "Pickard, J.",
+        "Meixner, W.",
+        "Rajapakse, I.",
+        "Muir, L. A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "直接重編程至造血譜系的轉錄體景觀"
+    },
+    {
+      "id": "10.64898/2026.07.21.738207",
+      "title": "Deep interpretable learning of sample representations for characterizing disease states in single-cell transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.21.738207v1",
+      "doi": "10.64898/2026.07.21.738207",
+      "abstract": "Single-cell transcriptomics technology offers unprecedented insights into molecular heterogeneity. However, capturing sample-level representations that reflect both systemic and cellular states remains challenging, especially when disease annotations are mostly available as coarse sample-level labels. Here, we introduce Phenoverse, an interpretable deep learning framework that learns sample-level disease state representations through cell type-aware residual encoding, prototype learning, and Perceiver-based aggregation. Applied to independent single-cell transcriptomic cohorts of COVID-19, Alzheimer's disease, and systemic lupus erythematosus, totaling over 5 million cells, we demonstrate that learned sample representations enable disease state prediction and encode a continuous spectrum of disease severity on unseen data that correlate with multiple clinical and pathological measures, despite being trained solely on binary phenotype labels. Further, we demonstrate that trajectory-derived genes reveal cross-cohort molecular programs and show consistently higher reproducibility than traditional case-control comparisons. Finally, prototype learning provides intrinsic model interpretability and enables the characterization of cell type-specific disease states. Taken together, Phenoverse offers an interpretable disease-phenotyping approach to dissecting sample heterogeneity, and our results highlight its utility in translating complex single-cell transcriptomic data into patient-level biological insights.",
+      "authors": [
+        "Wagle, M. M.",
+        "Wang, Y.",
+        "Samanta, S.",
+        "Liu, Z.",
+        "Patrick, E.",
+        "Yang, P.",
+        "Kellis, M."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "深度可解釋學習框架Phenoverse：單細胞轉錄體學中疾病狀態的樣本表徵新方法",
+      "summaryZh": "單細胞轉錄體學技術雖能揭示分子異質性，但要從粗略的樣本標籤中捕捉同時反映全身與細胞狀態的表徵仍具挑戰。本研究提出Phenoverse框架，透過細胞類型感知殘差編碼、原型學習與Perceiver聚合技術，從二元疾病標籤中學習可解釋的樣本層級疾病表徵。研究團隊應用於COVID-19、阿茲海默症及全身性紅斑狼瘡逾500萬個細胞的單細胞轉錄體世代資料，證實所學習的表徵能預測疾病狀態，並在未見過的資料上編碼與臨床及病理指標相關的疾病嚴重程度連續光譜。此方法不僅能揭示跨族群的分子程式，其原型學習更提供模型內在可解釋性，為複雜單細胞數據轉化為患者層級生物學洞察提供新途徑。",
+      "topicTags": [
+        "single-cell-transcriptomics",
+        "deep-learning",
+        "disease-phenotyping",
+        "interpretable-ai",
+        "covid-19"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.21.739797",
+      "title": "Single cell RNA sequencing of D. pseudoobscura testes reveals transcriptional signatures of heteromorphic spermatogenesis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.21.739797v1",
+      "doi": "10.64898/2026.07.21.739797",
+      "abstract": "Sperm heteromorphy, the production of multiple sperm morphs with distinct functions, has evolved repeatedly in animals but its developmental and molecular basis remains poorly understood. In the Drosophila obscura group, males produce fertilising eusperm and non-fertilising parasperm, yet when and how these lineages diverge is unclear. Here, we applied single-cell RNA sequencing to whole testes of D. pseudoobscura to resolve cell-type composition, developmental trajectories, and transcriptional differences between sperm morphs. Analysis of ~6,500 cells across two replicates identified germline and somatic cell populations and reconstructed spermatogenesis from stem cells to elongated spermatids. We identified a bifurcation in the germline trajectory at the early spermatocyte stage, corresponding to eusperm and parasperm lineages, which was maintained through spermiogenesis. Euspermatocytes, destined to generate longer eusperm, exhibited higher transcriptional activity than paraspermatocytes. Differentially expressed genes included structural sperm tail components, chromatin condensation proteins, post-meiotically transcribed genes and gene duplications resulting in paralogues with reciprocal expression patterns. We also identified markers of somatic cyst cells, including head and tail cyst cells, but found no evidence of morph-specific specialisation within the cyst cell lineage. The transcriptional activities of the distinct germline trajectories corresponded with differential expression of orthologues of critical transcriptional regulators known in D. melanogaster. The transcriptional activator TGIF was enriched in euspermatocytes, while the transcriptional repressor kmg was upregulated in paraspermatocytes. GFP-tagged Kmg showed higher abundance and greater chromatin localisation in paraspermatocytes. These findings demonstrate that sperm morph identity is first apparent in early primary spermatocytes and is largely germline intrinsic. We propose that differential transcriptional provisioning and developmental timing underpin sperm length, providing a framework for understanding the evolution and regulation of sperm heteromorphy.",
+      "authors": [
+        "Messer, F.",
+        "Talbot, A. T.",
+        "Williams, S.",
+        "Harmston, N.",
+        "White-Cooper, H."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "development",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "D. pseudoobscura 睪丸的單細胞 RNA 定序揭示異形精子發生的轉錄特徵"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 58,
+      "passedByScope": 15,
+      "llmClassified": 43,
+      "llmYes": 25,
+      "llmNotSure": 0,
+      "llmNo": 18,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 40,
+      "excluded": 18
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 15,
+      "llmTagged": 15,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 15,
+      "candidates": 15,
+      "featured": 12,
+      "overflow": 3,
+      "lineA": 3,
+      "lineB": 5,
+      "preprint": 7,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 3,
+      "llmTranslated": 3,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10919-4",
+        "title": "Electronic-resonance enhanced molecule for perovskite solar cells",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10919-4",
+        "doi": "10.1038/s41586-026-10919-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02299-6",
+        "title": "What counts as a moon? Huge ‘exosatellite’ sparks debate",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02299-6",
+        "doi": "10.1038/d41586-026-02299-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02219-8",
+        "title": "How do quantum computers work?",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02219-8",
+        "doi": "10.1038/d41586-026-02219-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10824-w",
+        "title": "Non-epitaxial perovskite polariton laser diode operating under direct current",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10824-w",
+        "doi": "10.1038/s41586-026-10824-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10817-9",
+        "title": "Insulator-free topological photonic multi-lane highways",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10817-9",
+        "doi": "10.1038/s41586-026-10817-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10751-w",
+        "title": "Planetary-mass exosatellite detected around the substellar companion of a star",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10751-w",
+        "doi": "10.1038/s41586-026-10751-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10811-1",
+        "title": "Non-Gaussian statistics of the order parameter across a phase transition",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10811-1",
+        "doi": "10.1038/s41586-026-10811-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10823-x",
+        "title": "Imaging of nanoscale polar textures in quantum paraelectric SrTiO3",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10823-x",
+        "doi": "10.1038/s41586-026-10823-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10802-2",
+        "title": "Semiconducting and magnetic lanthanide MXenes from intercalated halides",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10802-2",
+        "doi": "10.1038/s41586-026-10802-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02237-6",
+        "title": "A radical approach to making C-glycoside molecules",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02237-6",
+        "doi": "10.1038/d41586-026-02237-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02256-3",
+        "title": "Eyes upturned towards infinity",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02256-3",
+        "doi": "10.1038/d41586-026-02256-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02020-7",
+        "title": "Here’s what’s next for the Artemis II astronauts",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02020-7",
+        "doi": "10.1038/d41586-026-02020-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02072-9",
+        "title": "How to use AI to make a graphical abstract in minutes",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02072-9",
+        "doi": "10.1038/d41586-026-02072-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02230-z",
+        "title": "‘Good design takes mastery’: scientific illustrators sketch out AI’s future",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02230-z",
+        "doi": "10.1038/d41586-026-02230-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02273-2",
+        "title": "Air conditioning is not enough to keep people cool — can scientists find an alternative?",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02273-2",
+        "doi": "10.1038/d41586-026-02273-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02233-w",
+        "title": "Three tips to avoid AI image mistakes in science",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02233-w",
+        "doi": "10.1038/d41586-026-02233-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02245-6",
+        "title": "Geomagnetic storms caused by solar wind might be more extreme than previously thought",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02245-6",
+        "doi": "10.1038/d41586-026-02245-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02227-8",
+        "title": "Celebrating Nature’s covers — past, present and future",
+        "journal": "Nature",
+        "publishedDate": "2026-07-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02227-8",
+        "doi": "10.1038/d41586-026-02227-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
