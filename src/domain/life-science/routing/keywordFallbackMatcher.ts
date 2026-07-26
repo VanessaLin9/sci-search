@@ -32,6 +32,10 @@ function findStemMatches(titleStems: Set<string>, stems: readonly string[]): str
   return [...normalized].filter((stem) => titleStems.has(stem));
 }
 
+/**
+ * Broad-science LLM degrade 時的標題規則（PR #19）：
+ * strong-exclude → no；include hit → yes；否則 no（偏 precision，避免亂救）。
+ */
 export function matchRoutingKeywordFallback(
   title: string,
   config: RoutingKeywordsConfig,
@@ -43,6 +47,7 @@ export function matchRoutingKeywordFallback(
   const termExcludes = findTermMatches(haystack, config.excludeTerms);
   const matchedExcludes = [...phraseExcludes, ...termExcludes];
 
+  // 強排除優先：例如明顯非生命科學主題
   if (matchedExcludes.length > 0) {
     return { verdict: "no", matchedIncludes: [], matchedExcludes };
   }

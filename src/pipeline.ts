@@ -66,6 +66,10 @@ export type PipelineRunResult = {
   digest: DigestPhaseResult;
 };
 
+/**
+ * 每日管線編排：RSS + bioRxiv 收文 → life-science routing → enrich → digest。
+ * routing / bioRxiv gate 採 degrade、不中斷 cron（見各模組註解與 PR #11–#19）。
+ */
 export async function runPipeline(options: RunPipelineOptions): Promise<PipelineRunResult> {
   const sourceResults = await collectPapersFromSources(options);
   const deduped = dedupePapers(sourceResults.flatMap((result) => result.papers));
@@ -99,6 +103,7 @@ export function classifyPapers(papers: Paper[], keywords: KeywordsConfig): Class
   return classifyPapersWithKeywords(papers, keywords);
 }
 
+/** 先跑 RSS，再跑 bioRxiv API；兩條路徑各自 filter 報告日後再於上層 dedupe。PR #10 */
 async function collectPapersFromSources(options: RunPipelineOptions): Promise<SourceProcessResult[]> {
   const rssSourceIds = options.rssSourceIds ?? DEFAULT_RSS_SOURCE_IDS;
   const biorxivSourceIds = options.biorxivSourceIds ?? DEFAULT_BIORXIV_SOURCE_IDS;
@@ -152,6 +157,11 @@ function applyPerSourceFilters(
   return { deduped, onReportDate };
 }
 
+/**
+ * bioRxiv 收文漏斗（PR #10 / #14）：
+ * API 依 category 拉取 → normalize → 關鍵字初篩控量 → LLM fine screen 降假陽性 → 報告日過濾。
+ * 單源失敗只 skip 該源，不讓整條 daily 掛掉。
+ */
 async function processBiorxivSource(
   source: Source,
   reportDate: string,
@@ -181,6 +191,7 @@ async function processBiorxivSource(
       papers: normalized,
     });
 
+    // 初篩：對齊單細胞/空間組學焦點，避免 API 量大直接打爆 gate。PR #10
     const keywordMatched = filterBiorxivPapersByPrimaryKeywords(normalized, keywords);
     const gateCandidates = dedupePapers(keywordMatched);
     logBiorxivPrimaryScreenSummary({
@@ -189,6 +200,7 @@ async function processBiorxivSource(
       gateCandidates,
     });
 
+    // Fine screen：只放行 yes；LLM 失敗則 fail-open 回關鍵字結果。PR #14
     const gateResult = await applyBiorxivGate(gateCandidates);
     if (gateResult.usedFallback) {
       logBiorxivFineScreenSkipped({
@@ -243,6 +255,10 @@ async function processBiorxivSource(
   }
 }
 
+/**
+ * 單源 RSS：fetch → normalize（含 skip registry）→ 源內 dedupe / 報告日。
+ * 單源失敗只 skip，不中斷其他源（與 bioRxiv 相同策略）。
+ */
 async function processRssSource(source: Source, reportDate: string): Promise<SourceProcessResult> {
   if (source.kind !== "rss") {
     throw new Error(`Source ${source.id} is not an RSS source`);

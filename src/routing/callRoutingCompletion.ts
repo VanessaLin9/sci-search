@@ -18,6 +18,7 @@ export type RoutingCompletionCall = {
 
 export { extractLlmJsonContent as extractRoutingMessageContent } from "../llm/extractLlmJsonContent.js";
 
+/** Routing LLM 呼叫；response_format 重試交給共用 helper，domain fallback 仍在 classify。PR #21 */
 export async function callRoutingCompletion(
   items: BroadScienceRoutingInput[],
   config: RoutingLlmConfig,

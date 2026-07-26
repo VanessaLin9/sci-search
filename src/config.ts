@@ -63,6 +63,7 @@ const emailFileSchema = z.object({
 
 export type EmailFileConfig = z.infer<typeof emailFileSchema>;
 
+/** bioRxiv API 類別池；cancer_biology / developmental_biology 見 PR #17（neuroscience 評估後暫不加）。 */
 const biorxivFileSchema = z.object({
   categories: z.array(z.string().min(1)),
 });

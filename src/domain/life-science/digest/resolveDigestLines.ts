@@ -10,7 +10,10 @@ type DigestTaggedPaper = {
   digestTaggingMethod?: DigestTaggingMethod;
 };
 
-/** Merge LLM digest lines with keyword fallback (INV-030). */
+/**
+ * 合併 LLM digestLine 與 keyword fallback（INV-030）。
+ * 預印本來源硬鎖 `preprint`，禁止被標成 line-a/line-b（PR #10）。
+ */
 export function resolveDigestLines<P extends DigestTaggedPaper>(
   papers: P[],
   lineById: ReadonlyMap<string, DigestLine>,

@@ -19,6 +19,7 @@ export type BiorxivGateCompletionCall = {
 
 export { extractLlmJsonContent as extractBiorxivGateMessageContent } from "../llm/extractLlmJsonContent.js";
 
+/** bioRxiv gate LLM 呼叫；與 routing 共用 response_format fallback mechanics。PR #21 */
 export async function callBiorxivGateCompletion(
   items: BiorxivGateInput[],
   config: RoutingLlmConfig,

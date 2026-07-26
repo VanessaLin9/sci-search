@@ -12,6 +12,9 @@ export function sortPapersForDisplay(
   return [...papers].sort((a, b) => a.title.localeCompare(b.title));
 }
 
+/**
+ * 僅在字串像真正 DOI（`10.…`）時才回傳，避免把文章 URL 拼進 doi.org（Cell 舊資料曾踩雷）。PR #16
+ */
 export function paperDoi(paper: ClassifiedPaper): string | undefined {
   const doi = paper.doi?.trim();
   if (doi) return doi;

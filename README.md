@@ -1,6 +1,6 @@
 # Paper Digest
 
-Daily **life-science** paper digest: collect journal RSS feeds, filter with an LLM gate, pick up to **12 featured** articles with Traditional Chinese summaries, email subscribers, and publish the same HTML on **GitHub Pages** for preview.
+Daily **life-science** paper digest: collect journal RSS feeds and bioRxiv preprints, filter with LLM gates, pick up to **12 featured** articles with Traditional Chinese summaries, email subscribers, and publish the same HTML on **GitHub Pages** for preview.
 
 Report date defaults to **yesterday (Asia/Taipei)**.
 
@@ -16,12 +16,22 @@ Report date defaults to **yesterday (Asia/Taipei)**.
 
 ```text
 sources (config/sources.json)
-  → fetch RSS → normalize → dedupe → filter by report date
-  → life-science routing (2a): broad-science titles → LLM yes/no/not_sure
+  ├─ RSS feeds
+  │    → fetch RSS → normalize (skip rules / abstract extractors) → dedupe → filter by report date
+  └─ bioRxiv API (kind: biorxiv-api)
+       → fetch by category (config/biorxiv.json)
+       → normalize → primary keyword screen → LLM fine screen (yes only; fail-open to keywords)
+       → dedupe → filter by report date
+  → life-science routing (2a):
+       life-science-only → include by scope
+       broad-science → LLM yes/no/not_sure
+         on LLM degrade → routing-keyword-fallback (config/routing-keywords.json)
+         never abort the daily pipeline
   → enrich abstracts (Nature HTML, etc.)
   → keyword section (legacy field, still in JSON)
   → digest phase (2b, ENABLE_LLM_DIGEST=1):
        tag digestLine (line-a | line-b | preprint | skip), batch LLM
+         preprint sources hard-locked to digestLine=preprint
        select featured ≤12 (line priority → source priority)
        summarize featured: one API call per paper → titleZh, summaryZh, topicTags
        translate overflow titles: batch LLM → titleZh only
@@ -29,7 +39,7 @@ sources (config/sources.json)
   → send-digest (email) + write-preview (docs/)
 ```
 
-Papers with routing `no`, enrich drop, or digest `skip` do not appear in the email body.
+Papers with routing `no`, enrich drop, digest `skip`, or bioRxiv fine-screen `no`/`not_sure` do not appear in the email body (unless a gate fail-opens and keeps keyword survivors).
 
 ## Email layout
 
@@ -39,7 +49,7 @@ Papers with routing `no`, enrich drop, or digest `skip` do not appear in the ema
 - 繁中標題 (`titleZh`)
 - English `topicTags`
 - 繁中摘要 (`summaryZh`, 3–5 sentences from abstract)
-- Grouped by `digestLine`: 單細胞/空間組學 (A), 其他重要生物學 (B), preprint placeholder
+- Grouped by `digestLine`: 單細胞/空間組學 (A), 其他重要生物學 (B), 預印本 (bioRxiv)
 
 **Overflow (13+)** — compact list:
 
@@ -121,9 +131,11 @@ Fixtures live in [`test/fixtures/regression/`](test/fixtures/regression/) (0522:
 
 | File | Role |
 |------|------|
-| [`config/sources.json`](config/sources.json) | RSS feeds, `scope` (`life-science-only` / `broad-science`), `priority` |
-| [`config/keywords.json`](config/keywords.json) | Keyword fallback for `section` / digest line |
+| [`config/sources.json`](config/sources.json) | Feeds: `kind` `rss` or `biorxiv-api`, `scope` (`life-science-only` / `broad-science`), `priority` |
+| [`config/biorxiv.json`](config/biorxiv.json) | bioRxiv API categories to ingest |
+| [`config/keywords.json`](config/keywords.json) | Keyword fallback for `section` / digest line; bioRxiv primary screen |
 | [`config/routing.json`](config/routing.json) | Routing LLM endpoint, batch, tokens |
+| [`config/routing-keywords.json`](config/routing-keywords.json) | Title keyword fallback when broad-science LLM gate degrades |
 | [`config/digest.json`](config/digest.json) | `maxFeatured`, digest LLM limits, `summarizeConcurrency` |
 | [`config/email.json`](config/email.json) | `fromEmail`, `fromName`, `subjectPrefix` (not secrets) |
 
@@ -145,7 +157,7 @@ Fixtures live in [`test/fixtures/regression/`](test/fixtures/regression/) (0522:
 | `DIGEST_LLM_MODEL` | if digest on | e.g. `minimaxai/minimax-m2.7` on NVIDIA integrate |
 | `DEBUG_NORMALIZED` | no | `1` for verbose logs |
 
-Digest logs use `[digest]`; routing uses `[routing]` (not gated by debug).
+Digest logs use `[digest]`; routing uses `[routing]`; bioRxiv ingest uses `[biorxiv]` / `[biorxiv-gate]` (not gated by debug).
 
 ## GitHub Actions
 
@@ -160,7 +172,7 @@ Enable branch protection on `main`: require status check **`test`** before merge
 
 ### Daily digest ([`.github/workflows/daily.yml`](.github/workflows/daily.yml))
 
-- **Schedule:** 18:00 Asia/Taipei daily (`workflow_dispatch` supported)
+- **Schedule:** 18:00 Asia/Taipei daily (`workflow_dispatch` supported) — evening run catches more bioRxiv/RSS listings indexed after morning
 - **Steps:** resolve date → `dev` → `write-preview` → artifact (`retention-days: 30`) → `prune-retention` (30-day window) → commit (`git add -A data/processed docs`) → `send-digest`
 
 On `main`, only the most recent **30 days** of `data/processed/{date}/` and `docs/archive/{date}.html` are kept in the working tree. Older daily output remains in git history; pinned regression fixtures under `test/fixtures/regression/` are not pruned.
@@ -206,23 +218,31 @@ open docs/index.html
 
 ```text
 src/
-  pipeline.ts, index.ts          # orchestration
-  routing/                       # Phase 2a life-science gate
+  pipeline.ts, index.ts          # orchestration (RSS + bioRxiv → route → enrich → digest)
+  routing/                       # Phase 2a life-science gate (LLM + keyword degrade path)
+  biorxiv/                       # bioRxiv ingest funnel logs
+  biorxiv-gate/                  # preprint LLM fine screen (yes-only; fail-open)
   digest/                        # Phase 2b tag, select, summarize, translate
-  email/                         # Resend + HTML render
+  llm/                           # shared LLM helpers (JSON extract, response_format fallback)
+  domain/life-science/           # policy: scopes, keywords, digest lines, email copy, registries
+  email/                         # Resend + HTML render (shared by email + preview)
+  normalizers/                   # RSS per-journal + bioRxiv record → Paper
+  enrichers/                     # abstract enrichment registry
   commands/                      # CLI entrypoints
   retention/                     # daily output retention prune
-config/                          # sources, keywords, routing, digest
+config/                          # sources, biorxiv, keywords, routing(+keywords), digest, email
 docs/                            # GitHub Pages (generated HTML)
 data/processed/{date}/papers.json  # 30-day rolling retention on main
 ```
 
 ## MVP v1 scope / known limits
 
-- Preprint section is a **placeholder** until bioRxiv/medRxiv (or similar) is wired in `sources.json`
+- **bioRxiv** is live (`biorxiv-api` in `sources.json`); medRxiv is not wired
+- bioRxiv fine screen is yes-only (`not_sure` excluded); LLM failure fail-opens to keyword-matched set so cron is not blocked
+- Broad-science routing degrades (missing verdict / timeout / bad JSON) into keyword fallback or `no` — daily digest must still complete
 - **Zero papers** on some weekends/holidays → empty-state email and preview (expected)
 - Email and preview share one renderer; no separate “subscriber-only” content
-- LLM costs and latency scale with paper count (tagging batches + 12 summarize calls + overflow translate)
+- LLM costs and latency scale with paper count (routing + bioRxiv gate + tagging batches + ≤12 summarize + overflow translate)
 - `section` from keywords remains in JSON for compatibility; **email uses `digestLine` + `featured`**, not the old three keyword sections
 
 ## License / attribution

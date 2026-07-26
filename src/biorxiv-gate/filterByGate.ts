@@ -14,6 +14,10 @@ export type BiorxivGateFilterResult = {
   notSure: number;
 };
 
+/**
+ * Fine screen 通過規則：僅 `yes` 進 digest；`not_sure` 與 `no` 一律排除（比 routing 更嚴）。
+ * 原因：預印本量體大、假陽性成本高。PR #14
+ */
 export function filterPapersByBiorxivGate(
   papers: Paper[],
   verdictById: ReadonlyMap<string, BiorxivGateVerdict>,

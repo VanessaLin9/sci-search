@@ -21,8 +21,9 @@ export type CreateChatCompletionWithJsonResponseFormatFallbackOptions = {
 };
 
 /**
- * Request mechanics only: try with JSON response format when preferred; on failure,
- * retry once without `response_format`. Callers own params, parse, split, and domain fallback.
+ * 共用 JSON `response_format` 請求機制（PR #21 / Phase 4）。
+ * 先帶 json_object；若供應商拒收再裸請求一次。
+ * 刻意只做 request mechanics——parse / split / domain fallback 留在各 call site，避免吸進業務政策。
  */
 export async function createChatCompletionWithJsonResponseFormatFallback(
   options: CreateChatCompletionWithJsonResponseFormatFallbackOptions,
