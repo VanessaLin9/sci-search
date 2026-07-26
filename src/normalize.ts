@@ -32,6 +32,7 @@ export function normalizeRssItemToPaper(item: RssItemWithCustomFields, source: S
     return null;
   }
 
+  // Cell RSS 常把文章 URL 當 guid；真正 DOI 在 dc:identifier。PR #16
   const doi =
     extractDoi(item.guid) ??
     extractDoi(item.dcIdentifier) ??

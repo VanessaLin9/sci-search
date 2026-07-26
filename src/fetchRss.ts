@@ -11,6 +11,7 @@ export const RSS_FETCH_HEADERS = {
 const parser = new Parser({
   customFields: {
     item: [
+      // Cell 等 feed 的真實 DOI 在 dc:identifier；未註冊時會落到文章 URL。PR #16
       ["dc:identifier", "dcIdentifier"],
       ["dc:source", "source"],
       ["content:encoded", "contentEncoded"],

@@ -27,7 +27,7 @@ export const DEFAULT_BIORXIV_SOURCE_IDS = ["biorxiv"] as const;
 
 export type DefaultBiorxivSourceId = (typeof DEFAULT_BIORXIV_SOURCE_IDS)[number];
 
-/** Sources whose papers must always land in the preprint digest line (never line-a/line-b). */
+/** 預印本來源硬鎖 digestLine=preprint（不得進主線 A/B）。PR #10 */
 export const PREPRINT_SOURCE_IDS = [...DEFAULT_BIORXIV_SOURCE_IDS] as const;
 
 export function isPreprintSource(sourceId: string): boolean {

@@ -29,6 +29,10 @@ function logExcludedPapers(
   }
 }
 
+/**
+ * bioRxiv LLM fine screen（PR #14）：壓低關鍵字初篩假陽性。
+ * 失敗時 fail-open 回傳關鍵字候選，避免預印本 gate 擋住整日 digest。
+ */
 export async function applyBiorxivGate(papers: Paper[]): Promise<BiorxivGateResult> {
   if (papers.length === 0) {
     return { papers, usedFallback: false };
@@ -58,6 +62,7 @@ export async function applyBiorxivGate(papers: Paper[]): Promise<BiorxivGateResu
       },
     };
   } catch (error) {
+    // Fail-open：保留 keyword-matched，讓管線繼續。PR #14
     const message = error instanceof Error ? error.message : String(error);
     logBiorxivGate(
       `failed; falling back to keyword-only results: ${message} (${papers.length} paper(s))`,

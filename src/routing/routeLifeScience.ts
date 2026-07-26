@@ -18,6 +18,11 @@ import { toBroadScienceRoutingInput } from "./toRoutingInput.js";
 import type { LifeScienceRoutingResult } from "./types.js";
 import type { BroadScienceMergeResult } from "../domain/life-science/routing/types.js";
 
+/**
+ * Phase 2a：依 source scope 分流。
+ * - life-science-only：預設納入，不打 LLM
+ * - broad-science：LLM 判定；失敗則 keyword fallback（PR #18 / #19），絕不因 gate 掛掉中斷 daily
+ */
 export async function routeLifeSciencePapers(options: {
   papers: Paper[];
   scopeBySourceId: ReadonlyMap<string, SourceScope>;
@@ -45,6 +50,7 @@ export async function routeLifeSciencePapers(options: {
     });
   }
 
+  // 延遲載入：僅在有 broad-science 且 routing 開啟時才讀 routing-keywords.json。PR #19
   const keywordConfig = loadRoutingKeywordsConfig();
 
   try {
@@ -56,6 +62,7 @@ export async function routeLifeSciencePapers(options: {
     const llmInputs = broadScience.map(toBroadScienceRoutingInput);
     const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(llmInputs);
 
+    // 成功 LLM 與 degraded 論文分開 merge：只有 degrade 才走 keyword，避免污染 llm* 統計。PR #19
     const degradedSet = new Set(degradedPaperIds);
     const llmPapers = broadScience.filter((paper) => !degradedSet.has(paper.id));
     const degradedPapers = broadScience.filter((paper) => degradedSet.has(paper.id));
@@ -80,6 +87,7 @@ export async function routeLifeSciencePapers(options: {
       total: papers.length,
     });
   } catch (error) {
+    // Gate 級失敗（缺 key、整批不可恢復等）：broad-science 全改 keyword fallback；life-science-only 仍保留。PR #18
     const message = error instanceof Error ? error.message : String(error);
     const broadScienceMerge: BroadScienceMergeResult<Paper> =
       mergeBroadScienceWithKeywordGateFallback(broadScience, message, keywordConfig);

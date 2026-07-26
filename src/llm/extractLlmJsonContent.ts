@@ -6,8 +6,9 @@ type LlmMessage = {
 };
 
 /**
- * Prefer a parseable JSON object in `content`; otherwise try `reasoning_content`.
- * Never return long analysis prose — that breaks batch calls on reasoning-heavy models.
+ * 從 LLM 回傳取出可 parse 的 JSON（PR #9）。
+ * 部分 NVIDIA reasoning 模型會把 JSON 放在 `reasoning_content`、`content` 只剩散文；
+ * 若直接 parse prose 會弄垮整批 routing/digest。優先 content，否則從 reasoning 抽 `{...}`。
  */
 export function extractLlmJsonContent(message: LlmMessage | undefined): {
   content: string;
@@ -48,7 +49,7 @@ export function isRoutingMissingVerdictsError(error: unknown): boolean {
   return message.includes("Routing LLM missing verdicts");
 }
 
-/** Timeout / connection failures from the routing LLM client — degrade, do not abort the pipeline. */
+/** Routing LLM 傳輸層失敗（timeout/連線）。應 degrade 或拆批，不可 abort daily。PR #15 */
 export function isRoutingBatchRequestFailure(error: unknown): boolean {
   const message = error instanceof Error ? error.message : String(error);
   const name = error instanceof Error ? error.name : "";
@@ -62,6 +63,7 @@ export function isRoutingBatchRequestFailure(error: unknown): boolean {
   );
 }
 
+/** token length / 壞 JSON / 缺 verdict 等可恢復錯誤 → 對半拆批再試。PR #9 */
 export function shouldRetrySplitLlmBatch(error: unknown, finishReason: string): boolean {
   if (finishReason === "length") return true;
   const message = error instanceof Error ? error.message : String(error);

@@ -53,7 +53,10 @@ function summarizeVerdicts(verdictById: Map<string, LifeScienceRoutingVerdict>):
   return `yes ${yes}, not_sure ${notSure}, no ${no}`;
 }
 
-/** Build the one retry batch for missing verdicts (exported for tests). */
+/**
+ * 缺 verdict 時組一次 focused retry batch（PR #11）。
+ * 單一缺漏時帶半批 context，讓模型較不易再跳過同一篇。
+ */
 export function buildMissingVerdictRetryBatch(
   items: BroadScienceRoutingInput[],
   missingIds: string[],
@@ -90,6 +93,10 @@ function logMissingVerdictDiagnostic(
   );
 }
 
+/**
+ * 將論文標成 degraded，交由上層 keyword fallback（PR #19）。
+ * degradeOnlyIds：missing-retry 時不可把 context 篇誤標 degraded（PR #11 / #19）。
+ */
 function markPapersDegraded(
   degradedPaperIds: Set<string> | undefined,
   ids: string[],
@@ -108,6 +115,10 @@ function markPapersDegraded(
   }
 }
 
+/**
+ * 無法取得可靠 verdict 時的保守路徑：標 degraded（走 keyword）或直接 fallback `no`。
+ * 寧可漏收，也不要因單篇缺漏中斷整日 digest（PR #11 / #12）。
+ */
 function applyFallbackNo(
   verdictById: Map<string, LifeScienceRoutingVerdict>,
   ids: string[],
@@ -149,6 +160,13 @@ function degradeBatchForKeywordFallback(
   return new Map();
 }
 
+/**
+ * Broad-science 單批分類的恢復策略（由內而外）：
+ * 1) 缺 verdict → focused missing-retry，只合併原本缺的 id（PR #11）
+ * 2) missing-retry 請求失敗 → 對缺漏篇 fallback，不中斷（PR #12）
+ * 3) timeout / 連線失敗 / 壞 JSON / token length → 對半分批再試（PR #9 / #15）
+ * 4) 單篇仍失敗 → 標 degraded 交 keyword fallback（PR #18 / #19）
+ */
 async function classifyBatch(
   items: BroadScienceRoutingInput[],
   config: RoutingLlmConfig,
@@ -189,6 +207,7 @@ async function classifyBatch(
       `${batchLabel}: missing-retry ${retryItems.length} paper(s) (from ${parsed.missingIds.length} missing)`,
     );
 
+    // 只允許原本 missing 的 id 被標 degraded / 覆寫，避免半批 context 覆蓋第一輪結果。PR #11
     const originallyMissing = new Set(parsed.missingIds);
     let retryVerdicts: Map<string, LifeScienceRoutingVerdict>;
     try {
@@ -198,6 +217,7 @@ async function classifyBatch(
         degradeOnlyIds: originallyMissing,
       });
     } catch (retryError) {
+      // missing-retry 自身 timeout/網路錯誤：對缺漏篇 fallback，而非 abort（PR #12）
       const message = retryError instanceof Error ? retryError.message : String(retryError);
       logRouting(`${batchLabel}: missing-retry failed (${message}); applying fallback for missing verdicts`);
       retryVerdicts = new Map();
@@ -228,6 +248,7 @@ async function classifyBatch(
       (shouldRetrySplitLlmBatch(error, finishReason) || requestFailed);
 
     if (canSplit) {
+      // 大 batch timeout（如 40 篇）時對半拆，避免整晚 cron 卡死。PR #15
       const mid = Math.ceil(items.length / 2);
       const reason = requestFailed ? `request failed (${message})` : "recoverable error";
       logRouting(`${batchLabel}: ${reason}; split retry ${items.length} → ${mid} + ${items.length - mid}`);
@@ -253,6 +274,7 @@ async function classifyBatch(
       throw error;
     }
 
+    // JSON / 其他不可恢復錯誤：degrade 交 keyword，不再 throw 殺管線。PR #18
     return degradeBatchForKeywordFallback(items, batchLabel, message, degradedPaperIds, degradeOnlyIds);
   }
 }
