@@ -1,0 +1,50 @@
+{
+  "reportDate": "2026-07-26",
+  "generatedAt": "2026-07-27T12:51:43.250Z",
+  "papers": [],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 0,
+      "passedByScope": 0,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 0,
+      "excluded": 0
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 0,
+      "llmTagged": 0,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 0,
+      "candidates": 0,
+      "featured": 0,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 0,
+      "preprint": 0,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 0,
+      "llmSummarized": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  }
+}
