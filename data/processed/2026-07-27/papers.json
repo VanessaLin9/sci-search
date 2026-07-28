@@ -1,0 +1,587 @@
+{
+  "reportDate": "2026-07-27",
+  "generatedAt": "2026-07-28T11:51:20.360Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03170-2",
+      "title": "Composing a science life with music",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-07-27T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03170-2",
+      "doi": "10.1038/s41592-026-03170-2",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41592-026-03171-1",
+      "title": "What’s your name, immune cell?",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-07-27T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03171-1",
+      "doi": "10.1038/s41592-026-03171-1",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41592-026-03183-x",
+      "title": "Spike inference from calcium imaging data acquired with GCaMP8 indicators",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-07-27T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03183-x",
+      "doi": "10.1038/s41592-026-03183-x",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41588-026-02670-3",
+      "title": "Toward generalizable and interpretable AI in regulatory genomics",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-27T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02670-3",
+      "doi": "10.1038/s41588-026-02670-3",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41588-026-02677-w",
+      "title": "Genome-wide association analyses of gestational phenotypes identify context-specific genetic effects",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-27T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02677-w",
+      "doi": "10.1038/s41588-026-02677-w",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41559-026-03134-x",
+      "title": "Identifying biotic and abiotic roles in marine clade extinction",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-07-27T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03134-x",
+      "doi": "10.1038/s41559-026-03134-x",
+      "abstract": "The relative importance of biotic and abiotic factors in clade extinction is unclear. Here the authors identify 2 extinction phases in 12 extinct marine clades, an initial, gradual decline reflecting biotic factors and a second, faster decline reflecting abiotic, environmental factors.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41587-026-03229-7",
+      "title": "Engineered polyketide synthases enable a microbial chassis for recyclable plastics with tunable properties",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-07-27T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03229-7",
+      "doi": "10.1038/s41587-026-03229-7",
+      "abstract": "Polyketide synthases are engineered for the production of sustainable plastics.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1371/journal.pbio.3003903",
+      "title": "Where next for structural bioinformatics?",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-27T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003903",
+      "doi": "10.1371/journal.pbio.3003903",
+      "abstract": "Structural bioinformatics aims to answer biological questions by considering biomolecular structures at scale. We now have accurate predictions and need to ask what we can learn from them. Structural bioinformatics aims to answer biological questions by considering biomolecular structures at scale. This Perspective argues that now that we have accurate predictions, we need to ask what we can learn from them.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.07.25.740706",
+      "title": "Nutrient flux governs osteogenic fate commitment through the SLC3A1-cystine Axis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-27",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.25.740706v1",
+      "doi": "10.64898/2026.07.25.740706",
+      "abstract": "Skeletal and mesenchymal cells have limited bone-forming potential due to their rarity, tendency for senescence and/or unstable osteogenic lineage commitment. We previously identified an osteopotent CXCR4 stem cell population with unclear mechanism for its differentiation potential. Here, we found that the cystine transporter SLC3A1 was selectively enriched in CXCR4+ stem cells, uncovering a role for amino acid transport in regulating osteogenic fate commitment. Enforced SLC3A1 expression reprogrammed mesenchymal cells toward a stable osteogenic state while suppressing adipogenic differentiation. Mechanistically, SLC3A1-mediated cystine flux established a glutathione-dependent metabolic program that preserved mitochondrial fitness and restrained stem cell senescence. SLC3A1 also stabilized IGF-1 through suppression of ZMYND8-mediated ubiquitination, uncovering ZMYND8 as a previously unrecognized E3 ligase regulating osteogenic commitment. Cystine supplementation phenocopied the effects of SLC3A1 activation, promoting osteogenic differentiation and skeletal regeneration without genetic manipulation. In vivo, cystine administration accelerated bone regeneration and attenuated ovariectomy-induced bone loss, while analyses of a human osteoporosis cohort, osteoporotic specimens, and single-cell transcriptomic datasets revealed coordinated suppression of the SLC3A1-cystine-IGF-1 pathway in osteoporotic mesenchymal cells. Taken together, these findings establish SLC3A1-mediated cystine transport as a programmable metabolic determinant of osteogenic fate commitment and identify cystine metabolism as a therapeutically targetable axis for skeletal regeneration and osteoporosis.",
+      "authors": [
+        "Gao, Y.",
+        "Lin, Q.",
+        "Xu, Q.",
+        "Chen, S.",
+        "Jiang, L.",
+        "Hu, Y.",
+        "Cai, J.",
+        "James, A.",
+        "Zhang, Z.",
+        "Xu, J."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.24.740647",
+      "title": "Single-cell foundation models identify shared and divergent transcriptomic signatures of aging across invertebrates and mammals",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-27",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.24.740647v1",
+      "doi": "10.64898/2026.07.24.740647",
+      "abstract": "Here is the reformatted text with the en-dash replaced with a standard hyphen (`-`): Cross-species aging clocks have so far stayed within mammals. We asked whether a single model can predict age from single cells of fly, worm, mouse, and human, species separated by roughly 800 million years of evolution. We fine-tuned scGPT and Geneformer on 1.3 million such cells, using one parameter set per architecture. Both models classified cells as young, middle, or old, reaching 78.6% and 80.5% accuracy. SHAP attribution then showed where the two architectures agreed and where they diverged. scGPT ranked ribosomal proteins highest in every species, with RPL12 first throughout. Geneformer did the same in mouse and human but favored signaling, chromatin, and ubiquitin-ligase genes in fly and worm. Hiding all 51 ribosomal-protein genes at inference cost 22-28 percentage points of accuracy, against 0.3 points for size-matched random gene sets. Bootstrap resampling, five-fold cross-validation, and comparison with six published aging studies left the rankings largely unchanged. Age-associated signal is therefore accessible to a pooled cross-species model, but which genes carry it depends on how the model encodes expression.",
+      "authors": [
+        "Al Amin, M. A. U.",
+        "Le, K.",
+        "Qin, H."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1101/2025.04.16.648998",
+      "title": "Cell type-specific epigenomic variation and its association with genotype in the human breast",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-27",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.04.16.648998v3",
+      "doi": "10.1101/2025.04.16.648998",
+      "abstract": "BackgroundUnderstanding the interplay between genomic variation and the epigenome is fundamental to the study of development and mechanisms of disease. Previous studies have leveraged population-scale genotype surveys to associate alleles with epigenomic states in heterogenous tissue types. However, epigenomes are inherently cell type-specific, giving rise to unique genome-epigenome interactions that can influence distinct functional states and susceptibility to disease. Moreover, the extent of individual variation in cell type-specific epigenotypes remains poorly understood, posing additional challenges to accurately link genotypes with epigenomic features. ResultsWe generated comprehensive genomic and epigenomic profiles of four functionally defined human breast epithelial cell types from eight healthy individuals. To quantify inter-individual epigenomic variation, we developed a statistical framework that measures variability in histone modification landscapes across individuals. This analysis revealed substantially greater variation in repressive chromatin marked by H3K27me3 than in active chromatin marked by H3K27ac and H3K4me3. Integrative chromatin state analysis further identified enhancer elements as the principal source of epigenomic divergence between individuals. Stable enhancer states corresponded to high-confidence cis-regulatory elements that underpin cell type-specific transcriptional programs, whereas variable enhancer states were enriched for environmentally responsive regulatory circuits. Mapping genetic variants associated with chromatin state variation uncovered extensive cell type specificity, with nearly 90% of regulatory variants detected in only a single cell type. These associations were strongly enriched within active regulatory chromatin and, when integrated with gene expression, enabled the prioritization of functional regulatory variants. We experimentally validated one such variant, rs75071948, demonstrating allele-specific regulation of ANXA1 expression using CRISPR/Cas9 genome editing. ConclusionsOur study defines the landscape of normal epigenomic variation across the major human breast epithelial cell types and demonstrates that genome-epigenome interactions are highly cell type-specific. These findings establish cell type as a critical determinant of the functional interpretation of regulatory genetic variation and provide a framework for understanding how inherited genetic variation shapes normal breast biology and disease susceptibility.",
+      "authors": [
+        "Hauduc, A.",
+        "Steif, J.",
+        "Bilenky, M.",
+        "Moksa, M. M.",
+        "Cao, Q.",
+        "Ding, S.",
+        "Eaves, C. J.",
+        "Hirst, M."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "biology",
+        "development",
+        "CRISPR",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.07.23.740433",
+      "title": "Towards Principled Evaluation of Single-Cell Perturbation Prediction Models",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-27",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.23.740433v1",
+      "doi": "10.64898/2026.07.23.740433",
+      "abstract": "Single-cell perturbation experiments measure how interventions alter cellular phenotypes. However, the number of possible perturbations and biological contexts far exceeds what can be tested experimentally. Motivated by this constraint, predictive models aim to extrapolate cellular responses to unseen conditions. Despite substantial efforts in model development, benchmark studies have reached inconsistent conclusions about the capabilities of current perturbation-response models. A major challenge is that evaluation protocols vary widely across studies, making results difficult to compare. Furthermore, the lack of consensus on evaluation hampers progress because it is unclear which predictive capabilities new models should prioritize. To help build consensus on evaluation principles, we develop a taxonomy that decomposes evaluation protocols into their representation, metric, score transformation, and reporting strategies. We characterize how these choices determine which aspects of prediction quality a benchmark measures and discuss criteria for selecting and assessing protocols in relation to specific benchmarking goals. We additionally provide scPertEval, a Python package with reference implementations of selected evaluation protocols, and use it to assess protocol behavior across seven publicly available single-cell perturbation datasets. By making evaluation choices and their underlying trade-offs explicit, we aim to stimulate a community discussion about developing more comparable and task-aligned evaluation protocols.",
+      "authors": [
+        "Schäfer, P. S. L.",
+        "Reid, K.",
+        "Boldyga, Z.",
+        "Aksu, E. D.",
+        "Hakem, H.",
+        "Saez-Rodriguez, J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.24.740459",
+      "title": "Perturbation response decomposition enables biologically aligned generalization to unseen perturbations and cellular contexts",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-27",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.24.740459v1",
+      "doi": "10.64898/2026.07.24.740459",
+      "abstract": "Predicting single-cell responses to genetic perturbations could reveal the vast combinatorial space of perturbations and cellular contexts that is infeasible to measure experimentally, yet current deep learning models generalize poorly and often fail to outperform simple baselines. Here we demonstrate that generalizability in perturbation prediction requires identifying and representing distinct components of cellular response rather than on increasing model complexity alone. We introduce a decomposition framework that explicitly separates transcriptional responses into global, perturbation-specific, cell-line-specific, and perturbation-by-cell-line interaction components. Applied to four CRISPR-interference Perturb-seq screens on multiple cell lines, our framework reveals that these components have distinct structures and information requirements. The global response component is low-dimensional, reflects recurrent proliferation and stress response programs, and can be inferred from control gene expression. In contrast, the perturbation and cell-line specific components are high-dimensional and cannot be recovered from control expression. We therefore develop response-component-aligned models that map biological priors, such as gene coessentiality, onto the geometry of observed transcriptional responses. Critically, this alignment enables simple linear or multilayer perceptron (MLP) based models to outperform state-of-the-art architectures across multiple generalization settings, including unseen cell lines and combinations of unseen perturbations. Together, our framework for response decomposition and alignment provides a principled basis for evaluating and designing perturbation-prediction models, showing that generalization depends primarily on matching biological information to the response components rather than on model complexity alone.",
+      "authors": [
+        "Molina, A.",
+        "Zhang, X."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "Perturb-seq",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.23.740187",
+      "title": "Decoding the Oral-Cardiac Axis: FCN1 and LYN as Key Players in the Molecular Dialogue between Acute Myocardial Infarction and Periodontitis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-27",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.23.740187v1",
+      "doi": "10.64898/2026.07.23.740187",
+      "abstract": "Background: Acute myocardial infarction (AMI) and periodontitis (PD) have been epidemiologically linked, but the molecular mechanisms underlying this association remain elusive. We aimed to elucidate shared pathogenic signatures between AMI and PD using a comprehensive bioinformatics approach. Methods: We integrated transcriptomic data from multiple Gene Expression Omnibus datasets, including an AMI cohort profiled from enriched circulating endothelial cells (GSE66360) with whole-blood validation (GSE48060), and PD gingival tissue cohorts (GSE16134 and GSE10334). Weighted gene co-expression network analysis, protein-protein interaction network analysis, and LASSO-based feature selection were applied. Functional enrichment, immune deconvolution, transcription factor-gene regulatory network analysis, and single-cell RNA sequencing analysis were performed to characterize shared molecular features. Results: We identified 95 shared differentially expressed genes (DEGs) between AMI and PD. By intersecting the shared upregulated DEGs with disease-associated WGCNA modules, we obtained 46 candidate shared genes. LASSO-based feature selection further highlighted FCN1 and LYN as overlapping candidates, which showed good discriminative performance in both training and external validation cohorts in ROC analyses. Enrichment analyses suggested that the shared signature was mainly related to myeloid cell migration, phagocytosis, and neutrophil-related inflammatory pathways (e.g., neutrophil extracellular trap formation). Immune deconvolution in PD gingival tissues suggested increased plasma cells and neutrophils and decreased resting memory CD4+ T cells; immune deconvolution results in the AMI cohort were interpreted cautiously due to the CEC-enriched sample source. Single-cell analysis revealed that FCN1 and LYN were predominantly expressed in macrophage/monocyte-derived populations. Conclusions: Our study suggests a shared inflammatory and immune-mediated transcriptomic program linking AMI and PD, and identifies FCN1 and LYN as candidate shared immune markers. These findings provide a molecular rationale for the oral-cardiovascular association and are hypothesis-generating, warranting future experimental and prospective validation.",
+      "authors": [
+        "Zhang, K.",
+        "Wang, Y."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.07.23.739686",
+      "title": "Spaceland: Histology-Guided Reconstruction of High-Resolution Whole-Organ 3D Molecular Atlases from Sparse Spatial Transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-27",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.23.739686v1",
+      "doi": "10.64898/2026.07.23.739686",
+      "abstract": "Reconstructing whole organs in three-dimensional molecular detail is a key step toward building virtual organs for modeling tissue organization, disease progression and drug perturbation responses. However, high-resolution whole-organ spatial transcriptomic profiling remains impractical, forcing a trade-off between reconstruction fidelity and sampling density. Here, we introduce Spaceland, a morphology-guided framework that reconstructs continuous, high-resolution 3D molecular landscapes from sparsely sampled spatial transcriptomic sections and serial H&E histology. Spaceland formulates this task as learning continuous gene-expression fields within a morphology-informed histological space. It constructs a dense 3D morphological scaffold by optical-flow interpolation of foundation model-derived H&E representations and decodes sparse spot-level transcriptomic measurements onto an 8 m histology-aligned grid. Across mouse olfactory bulb, mouse hemibrain and spatiotemporal planarian regeneration, Spaceland generalized across platforms, tissue scales and biological contexts. In mouse benchmarks, Spaceland bridged 400 m molecular gaps, resolved sub-spot organization, outperformed ST-based interpolation and 2D H&E-based prediction methods, and remained robust with 160-320 m H&E intervals. In planarian regeneration, it enabled time-resolved whole-organism analysis from only four Visium sections per stage, revealing dynamic neoblast-neural spatial remodeling. Together, Spaceland shifts 3D molecular atlas construction from exhaustive experimental sampling toward data-driven virtual tissue and organ modeling, providing a scalable route to whole-organ molecular reconstruction.",
+      "authors": [
+        "Xu, F.",
+        "Zhuang, Z.",
+        "Zhu, Y.",
+        "Ying, B.",
+        "Hou, N.",
+        "Lin, W.",
+        "Wang, L.",
+        "Yang, C.",
+        "song, j."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "Visium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.23.740230",
+      "title": "An integrated single-cell atlas of human lung across the lifespan",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-27",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.23.740230v1",
+      "doi": "10.64898/2026.07.23.740230",
+      "abstract": "The healthy adult lung is largely quiescent but can respond to injury and replace damaged or lost cells. However, the identities and origins of regenerative cell states remain poorly understood. Here we present the Human Developmental Lung Cell Atlas (HDLCA), a curated single-cell reference atlas of the respiratory system across the lifespan, integrating 253 datasets from 225 studies, and comprising over 18 million cells from 3,198 samples and 2,460 individuals across 34 anatomical locations in both health and disease. The HDLCA defines 142 consensus lung cell types, including 13 rare and 8 previously undescribed ones. Notably, we identify a rare intermediate alveolar epithelial progenitor (Int AP) population in normal lungs, with transcriptional signatures shared by alveolar type 2 (AT2) and alveolar type 1 (AT1) cells. Trajectory inference indicates that Int AP cells arise from both AT2 and SCGB1A1+ secretory cells and give rise to AT1 cells, with Hippo-YAP/TAZ signalling governing lineage specification. Int AP cells are associated with genetic susceptibility to idiopathic pulmonary fibrosis and chronic obstructive pulmonary disease, and their dysfunction may contribute to abnormal alveolar repair and regenerative failure in both diseases. The HDLCA provides a unified atlas-level reference for mapping respiratory cellular diversity, uncovering reparative cell dynamics and informing regenerative and cell-based therapeutic strategies.",
+      "authors": [
+        "Huang, L.",
+        "Huang, Z.",
+        "Feng, S.",
+        "Fang, K.",
+        "Wu, J.",
+        "Ao, Y.",
+        "Huang, L.",
+        "Zhang, J.",
+        "Sun, H.",
+        "Miao, Z."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.01.27.702126",
+      "title": "Pseudotime graph diffusion for post hoc visualization of inferred single-cell trajectories",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-27",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.01.27.702126v3",
+      "doi": "10.64898/2026.01.27.702126",
+      "abstract": "Visual representations are widely used to interpret trajectories in single-cell data; however, they do not always faithfully capture inferred trajectory structure. As a result, interpretation of cellular dynamics and downstream analyses may be compromised. Here, we present Pseudotime Graph Diffusion (PGD), a lightweight and interpretable post hoc framework for smoothing cell-level features along pseudotime. PGD operates by performing random-walk diffusion on a pseudotime graph, propagating information along inferred trajectory paths to enhance continuity and structure. We demonstrate that PGD-smoothed embeddings improve visualization of increasingly complex inferred trajectories of monocytes and macrophages during wound healing. We further show that PGD extends naturally to trajectory-aware gene expression smoothing. By improving agreement between visual representations and inferred trajectories, PGD enables more faithful interpretation of dynamic cellular processes.",
+      "authors": [
+        "Lukas, B. E.",
+        "Pang, J.",
+        "Koh, T. J.",
+        "Dai, Y."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.23.740319",
+      "title": "GPSNorm: Gaussian Process Spatial Normalization for Spatial Transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-27",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.23.740319v1",
+      "doi": "10.64898/2026.07.23.740319",
+      "abstract": "Spatial transcriptomics technologies enable measurement of gene expression while preserving spatial tissue organization, but they remain highly sensitive to technical variability such as library size differences, slide-level effects, and spatial artifacts. Most existing normalization approaches treat normalization as a preprocessing step and perform downstream analyses on normalized values as fixed inputs, ignoring the uncertainty introduced during normalization. We introduce GPSNorm (Gaussian Process Spatial Normalization), a Bayesian spatial normalization framework that jointly models technical variation, spatial structure, and biological signal within a unified hierarchical model. GPSNorm represents gene expression counts using a negative binomial latent Gaussian model whose spatial component is a Gaussian Markov random field approximating a Gaussian process and performs efficient approximate Bayesian inference using the Integrated Nested Laplace Approximation (INLA), producing posterior estimates that propagate normalization uncertainty into downstream differential expression analysis. In simulations anchored to empirical spatial transcriptomics data, GPSNorm accurately recovers spatial technical structure and improves log-fold change estimation compared with existing normalization methods. Applications to three spatial transcriptomics datasets---including human dorsolateral prefrontal cortex Visium data, a GeoMx COVID-19 lung damage study, and the Spatial Organ Atlas kidney dataset---demonstrate improved preservation of biologically expected spatial patterns and marker gene contrasts. These results show that jointly modeling normalization and downstream inference can improve the robustness and interpretability of spatial transcriptomics analyses.An open-source R implementation of GPSNorm is available at https://github.com/Tiny-Quant/GPSNorm.",
+      "authors": [
+        "Taychameekiatchai, A.",
+        "Zhan, X.",
+        "Xiao, G.",
+        "Ruan, P."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "Visium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.07.23.740288",
+      "title": "RIPPLE: replicate-aware detection of cell-type-anchored proximity gradients in spatial transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-27",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.23.740288v1",
+      "doi": "10.64898/2026.07.23.740288",
+      "abstract": "Cell-cell signaling shapes tissue structure and function, yet systematically decoding these circuits with spatial transcriptomics remains an open challenge. We present RIPPLE (Replicate-Aware Inference of Paracrine Profiles via Likelihood Estimation), an R package that takes a query cell type and scans all other cell types for genes whose expression varies with distance to it. On a murine lymph node 10x Xenium dataset, RIPPLE recovers the canonical T cell zone CCL21 response program in T cells and dendritic cell subsets with unanimous sign consistency across all samples. On the public CosMx non-small cell lung cancer cohort, it identifies 515 tumor-proximity gradient genes across 17 cell types, flagging a known cancer-associated fibroblast marker (IGFBP5) as the top fibroblast hit. Overall, RIPPLE delivers ranked, cell-type-resolved paracrine candidates for experimental follow-up.",
+      "authors": [
+        "Mangana, C.",
+        "Maier, B. B."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "Xenium",
+        "CosMx",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.24.739825",
+      "title": "Lysyl oxidase drives ccRCC progression by coordinating HIF-2α transcription program with tumor microenvironment",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-27",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.24.739825v1",
+      "doi": "10.64898/2026.07.24.739825",
+      "abstract": "Clear cell renal cell carcinoma (ccRCC) is driven by persistent HIF-2[alpha]; transcription program initiated by VHL loss, yet molecular mediators sustaining this program are poorly defined. Using single-cell transcriptomics, we identified lysyl oxidase (LOX) as a driver of ccRCC progression, selectively enriched in a hypoxia/epithelial-mesenchymal transition (EMT) gene program associated with poor outcome. While LOX oxidizes and stabilizes HIF-2[alpha]; by antagonizing HUWE1-mediated ubiquitination and degradation, thereby sustaining HIF-2[alpha];-driven transcription in cancer cells, it also remodels extracellular matrix (ECM) and promotes angiogenesis in the tumor microenvironment (TME). Genetic or pharmacological inhibition of LOX destabilizes HIF-2[alpha];, disrupts ECM, inhibits angiogenesis, and suppresses tumor initiation, growth, and metastasis in vivo. LOX inhibition enhances anti-angiogenic therapy response and remains effective in belzutifan-resistant HIF-2[alpha]; G323E-mutant tumors. Nuclear LOX protein correlates with nuclear HIF-2[alpha]; in high-grade patient tumors. Together, LOX coordinates HIF-2[alpha]; transcription program with TME and is a therapeutic target in ccRCC.",
+      "authors": [
+        "Ulukan, B.",
+        "Saatci, O.",
+        "Madrigal, A.",
+        "Kim, M.",
+        "Tian, W.",
+        "Soytas, M.",
+        "Mehrjoo, Z.",
+        "Sahin, O. S.",
+        "Sreenivas, K.",
+        "Rao, C. N.",
+        "Nishimura, T.",
+        "Pillon, V.",
+        "Anoma, J.-S.",
+        "Hill, E.",
+        "Rak, J.",
+        "McInnes, C.",
+        "Park, M.",
+        "Brimo, F.",
+        "Tanguay, S.",
+        "Russell, R. C.",
+        "Najafabadi, H. S.",
+        "Riazalhosseini, Y.",
+        "Sahin, O."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 20,
+      "passedByScope": 20,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 20,
+      "excluded": 0
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 20,
+      "llmTagged": 0,
+      "fallback": 20
+    },
+    "selection": {
+      "total": 20,
+      "candidates": 20,
+      "featured": 12,
+      "overflow": 8,
+      "lineA": 0,
+      "lineB": 8,
+      "preprint": 12,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 0,
+      "failed": 12
+    },
+    "translate": {
+      "requested": 8,
+      "llmTranslated": 0,
+      "failed": 8
+    }
+  }
+}
