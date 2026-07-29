@@ -8,9 +8,7 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "noEmit": true,
-    "types": ["node"],
-    "rootDir": "./src",
-    "outDir": "dist"
+    "types": ["node"]
   },
   "include": ["src/**/*.ts"]
 }
