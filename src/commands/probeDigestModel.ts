@@ -3,25 +3,25 @@
  * 之後換 NVIDIA model 可繼續用，不必重寫。
  *
  * Usage:
- *   npx tsx scripts/probe-digest-model.ts --date 2026-07-28 --model thinkingmachines/inkling --limit 2
- *   npx tsx scripts/probe-digest-model.ts --date 2026-07-28 --model deepseek-ai/deepseek-v4-flash --smoke-only
+ *   npx tsx src/commands/probeDigestModel.ts --date 2026-07-28 --model thinkingmachines/inkling --limit 2
+ *   npx tsx src/commands/probeDigestModel.ts --date 2026-07-28 --model deepseek-ai/deepseek-v4-flash --smoke-only
  */
 import { readFileSync } from "node:fs";
-import { loadEnvFile } from "../src/loadEnv.js";
+import { loadEnvFile } from "../loadEnv.js";
 
 loadEnvFile();
 
-import { getDigestLlmConfig, maskApiKey } from "../src/digest/config.js";
-import { callDigestChatCompletion } from "../src/digest/callDigestChat.js";
-import { extractDigestMessageContent } from "../src/digest/extractDigestContent.js";
-import { parseJsonFromLlmContent } from "../src/routing/parseLlmJson.js";
+import { getDigestLlmConfig, maskApiKey } from "../digest/config.js";
+import { callDigestChatCompletion } from "../digest/callDigestChat.js";
+import { extractDigestMessageContent } from "../digest/extractDigestContent.js";
+import { parseJsonFromLlmContent } from "../routing/parseLlmJson.js";
 import {
   buildDigestSummarizeCompletionParams,
   estimateSummarizeCompletionTokens,
-} from "../src/digest/summarizePrompt.js";
-import { toDigestSummarizeInput } from "../src/digest/toSummarizeInput.js";
-import { createDigestLlmClient } from "../src/digest/digestLlmClient.js";
-import type { ClassifiedPaper, SourceScope } from "../src/types.js";
+} from "../digest/summarizePrompt.js";
+import { toDigestSummarizeInput } from "../digest/toSummarizeInput.js";
+import { createDigestLlmClient } from "../digest/digestLlmClient.js";
+import type { ClassifiedPaper, SourceScope } from "../types.js";
 import { z } from "zod";
 
 const summarizeResponseSchema = z.object({
