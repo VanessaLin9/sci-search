@@ -1,8 +1,10 @@
 /**
- * One-off probe: summarize a few featured papers from a papers.json with a model override.
+ * Local probe helper（非正式 pipeline）：對某日 papers.json 抽少數 featured 試打 summarize。
+ * 之後換 NVIDIA model 可繼續用，不必重寫。
+ *
  * Usage:
- *   npx tsx scripts/probe-digest-model.ts --date 2026-07-28 --model minimaxai/minimax-m3
- *   npx tsx scripts/probe-digest-model.ts --date 2026-07-28 --model minimaxai/minimax-m2.7 --limit 1
+ *   npx tsx scripts/probe-digest-model.ts --date 2026-07-28 --model thinkingmachines/inkling --limit 2
+ *   npx tsx scripts/probe-digest-model.ts --date 2026-07-28 --model deepseek-ai/deepseek-v4-flash --smoke-only
  */
 import { readFileSync } from "node:fs";
 import { loadEnvFile } from "../src/loadEnv.js";
