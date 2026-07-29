@@ -8,6 +8,7 @@ import { formatElapsedMs, logDigest } from "./digestLog.js";
 import { buildDigestTaggingCompletionParams } from "./taggingPrompt.js";
 import type { DigestTaggingInput } from "./types.js";
 
+/** Digest tagging LLM 呼叫；response_format 重試交給共用 helper，domain keyword fallback 仍在 `tagTitles`。PR #21 */
 export async function callDigestTaggingCompletion(
   items: DigestTaggingInput[],
   config: DigestLlmConfig,

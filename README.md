@@ -14,41 +14,58 @@ Report date defaults to **yesterday (Asia/Taipei)**.
 
 ## Pipeline
 
-```text
-sources (config/sources.json)
-  ├─ RSS feeds
-  │    → fetch RSS → normalize (skip rules / abstract extractors) → dedupe → filter by report date
-  └─ bioRxiv API (kind: biorxiv-api)
-       → fetch by category (config/biorxiv.json)
-       → normalize → primary keyword screen → LLM fine screen (yes only; fail-open to keywords)
-       → dedupe → filter by report date
-  → life-science routing (2a):
-       life-science-only → include by scope
-       broad-science → LLM yes/no/not_sure
-         on LLM degrade → routing-keyword-fallback (config/routing-keywords.json)
-         never abort the daily pipeline
-  → enrich abstracts (Nature HTML, etc.)
-  → keyword section (legacy field, still in JSON)
-  → digest phase (2b, ENABLE_LLM_DIGEST=1):
-       tag digestLine (line-a | line-b | preprint | skip), batch LLM
-         preprint sources hard-locked to digestLine=preprint
-       select featured ≤12 (line priority → source priority)
-       summarize featured: one API call per paper → titleZh, summaryZh, topicTags
-       translate overflow titles: batch LLM → titleZh only
-  → papers.json
-  → send-digest (email) + write-preview (docs/)
+```mermaid
+flowchart TD
+  S["sources.json"] --> RSS["RSS feeds"]
+  S --> BX["bioRxiv API"]
+
+  RSS --> R1["fetch → normalize → dedupe → report-date filter"]
+  BX --> B1["fetch by category → normalize"]
+  B1 --> B2["keyword primary screen"]
+  B2 --> B3["LLM fine screen<br/>yes only · fail-open to keywords"]
+  B3 --> B4["dedupe → report-date filter"]
+
+  R1 --> RT["life-science routing 2a"]
+  B4 --> RT
+
+  RT --> LS["life-science-only: include by scope"]
+  RT --> BS["broad-science: LLM yes / no / not_sure"]
+  BS -.->|LLM degrade| KF["routing-keyword-fallback"]
+
+  LS --> EN["enrich abstracts"]
+  BS --> EN
+  KF --> EN
+
+  EN --> DG["digest phase 2b"]
+
+  DG --> TAG["tag digestLine batch LLM"]
+  TAG -.->|failure| TAGF["keyword digestLine"]
+  TAG --> SEL["select featured ≤12"]
+  TAGF --> SEL
+
+  SEL --> SUM["summarize featured<br/>titleZh · summaryZh · topicTags"]
+  SUM -.->|failure| SUMF["omit 繁中 · may show EN abstract"]
+
+  SEL --> TR["translate overflow titles → titleZh"]
+  TR -.->|failure| TRF["EN title only · continue batches"]
+
+  SUM --> OUT["papers.json"]
+  SUMF --> OUT
+  TR --> OUT
+  TRF --> OUT
+  OUT --> PUB["send-digest email + write-preview docs/"]
 ```
 
-Papers with routing `no`, enrich drop, digest `skip`, or bioRxiv fine-screen `no`/`not_sure` do not appear in the email body (unless a gate fail-opens and keeps keyword survivors).
+Degrade paths (dashed) never abort the daily run. Papers with routing `no`, enrich drop, digest `skip`, or bioRxiv fine-screen `no`/`not_sure` do not appear in the email body (unless a gate fail-opens and keeps keyword survivors).
 
 ## Email layout
 
 **Featured (max 12)** — full card per paper:
 
 - English headline (link)
-- 繁中標題 (`titleZh`)
-- English `topicTags`
-- 繁中摘要 (`summaryZh`, 3–5 sentences from abstract)
+- 繁中標題 (`titleZh`) if present
+- English `topicTags` (when summarize succeeded)
+- 繁中摘要 (`summaryZh`) if present; otherwise English abstract with a note
 - Grouped by `digestLine`: 單細胞/空間組學 (A), 其他重要生物學 (B), 預印本 (bioRxiv)
 
 **Overflow (13+)** — compact list:
@@ -240,6 +257,7 @@ data/processed/{date}/papers.json  # 30-day rolling retention on main
 - **bioRxiv** is live (`biorxiv-api` in `sources.json`); medRxiv is not wired
 - bioRxiv fine screen is yes-only (`not_sure` excluded); LLM failure fail-opens to keyword-matched set so cron is not blocked
 - Broad-science routing degrades (missing verdict / timeout / bad JSON) into keyword fallback or `no` — daily digest must still complete
+- Digest LLM (tag / summarize / translate) failures skip or thin out 繁中 fields — no backup model; daily still completes (see `runDigestPhase`)
 - **Zero papers** on some weekends/holidays → empty-state email and preview (expected)
 - Email and preview share one renderer; no separate “subscriber-only” content
 - LLM costs and latency scale with paper count (routing + bioRxiv gate + tagging batches + ≤12 summarize + overflow translate)

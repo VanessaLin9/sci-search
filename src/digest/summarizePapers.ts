@@ -1,3 +1,9 @@
+/**
+ * Phase 2b：featured 逐篇 summarize（titleZh / summaryZh / topicTags）。
+ *
+ * 失敗契約：單篇失敗不中斷整批；HTTP 多用 `summarizeMaxRetries`（預設 0），
+ * 首輪失敗後再**順序重試一輪**；仍失敗則該篇不加繁中欄位（無備援模型）。
+ */
 import { z } from "zod";
 import { parseJsonFromLlmContent } from "../routing/parseLlmJson.js";
 import { callDigestChatCompletion } from "./callDigestChat.js";
@@ -96,6 +102,7 @@ async function summarizeOneFeaturedPaper(options: {
   }
 }
 
+/** 對 `featured` 論文並行 summarize；失敗篇順序再試一次後放棄。 */
 export async function summarizeFeaturedPapers(options: {
   papers: ClassifiedPaper[];
   scopeBySourceId: ReadonlyMap<string, SourceScope>;
@@ -144,6 +151,7 @@ export async function summarizeFeaturedPapers(options: {
     }
   }
 
+  // 第二輪改順序：避開首輪併發踩到的短暫 503／timeout，仍不換模型。
   if (failedPapers.length > 0) {
     logDigest(`summarize retrying ${failedPapers.length} failed paper(s) sequentially…`);
     for (const paper of failedPapers) {

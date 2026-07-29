@@ -1,3 +1,10 @@
+/**
+ * summarize / translate 用的 chat 呼叫。
+ * tagging 請走 `callDigestTaggingCompletion`（共用 PR #21 response_format fallback）。
+ *
+ * NVIDIA 路徑通常 `preferJsonResponseFormat=false`：503 等只靠 client `maxRetries`，
+ * 失敗直接 throw 給上層做 domain degrade（略過繁中／keyword）。
+ */
 import type { ChatCompletion } from "openai/resources/chat/completions";
 import type { ChatCompletionCreateParamsNonStreaming } from "openai/resources/chat/completions";
 import { resolveCompletionMaxTokens } from "../routing/batchSizing.js";

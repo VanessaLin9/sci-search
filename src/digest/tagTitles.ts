@@ -1,3 +1,10 @@
+/**
+ * Phase 2b：批次 LLM 打 digestLine（line-a / line-b / preprint / skip）。
+ *
+ * 失敗契約與 routing 類似但備援是 keyword digestLine（非「排除」）：
+ * 單 batch 掛掉 → 該批全部 keyword；缺漏 id 結尾再補 keyword（INV-030）。
+ * HTTP / response_format 重試見 `callDigestTaggingCompletion`（PR #21）。
+ */
 import { z } from "zod";
 import { parseJsonFromLlmContent } from "../routing/parseLlmJson.js";
 import { planDigestTaggingBatches } from "./batchSizing.js";
@@ -38,6 +45,7 @@ type BatchTaggingOutcome = {
   keywordFallbackIds: string[];
 };
 
+/** 回傳 lineById + llmTaggedIds；呼叫端再 `resolveDigestLines` 合併（INV-030）。 */
 export async function tagTitlesWithLlm(options: {
   papers: ClassifiedPaper[];
   scopeBySourceId: ReadonlyMap<string, SourceScope>;
@@ -83,6 +91,7 @@ export async function tagTitlesWithLlm(options: {
         fallback += 1;
       }
     } catch (error) {
+      // 單 batch 失敗：不中斷後續 batch；該批改 keyword 以保住分區。
       const message = error instanceof Error ? error.message : String(error);
       logDigest(`${batchLabel}: failed (${message}); keyword fallback for ${batch.length} paper(s)`);
       for (const item of batch) {
