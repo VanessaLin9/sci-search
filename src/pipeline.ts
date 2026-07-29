@@ -68,7 +68,8 @@ export type PipelineRunResult = {
 
 /**
  * 每日管線編排：RSS + bioRxiv 收文 → life-science routing → enrich → digest。
- * routing / bioRxiv gate 採 degrade、不中斷 cron（見各模組註解與 PR #11–#19）。
+ * routing / bioRxiv gate / digest LLM 採 degrade、不中斷 cron
+ *（routing/gate 見 PR #11–#19；digest 失敗契約見 `runDigestPhase` / Phase 2b）。
  */
 export async function runPipeline(options: RunPipelineOptions): Promise<PipelineRunResult> {
   const sourceResults = await collectPapersFromSources(options);

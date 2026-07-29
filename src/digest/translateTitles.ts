@@ -1,3 +1,9 @@
+/**
+ * Phase 2b：overflow（非 featured）批次翻英文標題 → `titleZh`。
+ *
+ * 失敗契約：單 batch 503／parse 失敗就 skip 該批（計入 failed），繼續下一批；
+ * **沒有** keyword／第二模型備援——郵件只顯示英文標題。HTTP 重試靠 `maxRetries`。
+ */
 import { z } from "zod";
 import { parseJsonFromLlmContent } from "../routing/parseLlmJson.js";
 import { callDigestChatCompletion } from "./callDigestChat.js";
@@ -22,6 +28,7 @@ const translateResponseSchema = z.object({
   results: z.array(translateRowSchema),
 });
 
+/** 僅處理非 featured 且 digestLine ≠ skip 的 overflow；失敗則該批不加 titleZh。 */
 export async function translateOverflowTitles(options: {
   papers: ClassifiedPaper[];
 }): Promise<{
@@ -65,6 +72,7 @@ export async function translateOverflowTitles(options: {
         );
       }
     } catch (error) {
+      // 安靜 degrade：不 throw、不換模型，讓 daily 繼續寄。
       const message = error instanceof Error ? error.message : String(error);
       logDigest(`${batchLabel}: failed (${message}); skip ${batch.length} paper(s)`);
       failed += batch.length;

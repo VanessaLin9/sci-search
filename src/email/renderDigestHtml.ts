@@ -1,4 +1,9 @@
-/** Sole digest HTML entry for email (`sendDigest`) and GitHub Pages preview (`writeDigestPreview`). */
+/**
+ * Sole digest HTML entry for email (`sendDigest`) and GitHub Pages preview (`writeDigestPreview`).
+ *
+ * 繁中欄位為 optional：summarize/translate degrade 後仍可寄信。
+ * featured 缺 summaryZh → 回退英文 abstract + 提示；overflow 缺 titleZh → 只留英文標題。
+ */
 import {
   digestPageTitle,
   DIGEST_HEADER_SUBTITLE,
