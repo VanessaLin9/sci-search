@@ -1,5 +1,5 @@
 /**
- * Process-wide LLM HTTP attempt timing（診斷 429 / RPM）。
+ * Process-wide LLM HTTP attempt timing（診斷 429 / RPM）。PR #26
  * Daily job 的 routing / bioRxiv / digest 常共用同一 API key，用同一個 60s 視窗計數。
  * 輸出走既有 `[routing]` / `[digest]` / `[biorxiv-gate]` console.log → `gh run view --log` 可回看。
  *

@@ -4,7 +4,7 @@
  * 失敗契約：單篇失敗不中斷整批；HTTP 多用 `summarizeMaxRetries`（預設 0），
  * 首輪失敗後再**順序重試一輪**；仍失敗則該篇不加繁中欄位（無備援模型）。
  *
- * LLM HTTP 走 `callDigestChatCompletion`（gate=`digest-summarize`）；timing 見 `llmRequestTiming.ts`。
+ * LLM HTTP 走 `callDigestChatCompletion`（gate=`digest-summarize`）；timing 見 `llmRequestTiming.ts`（PR #26）。
  */
 import { z } from "zod";
 import { parseJsonFromLlmContent } from "../routing/parseLlmJson.js";

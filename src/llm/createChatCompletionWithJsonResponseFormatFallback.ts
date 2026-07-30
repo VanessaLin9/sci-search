@@ -32,7 +32,7 @@ export type CreateChatCompletionWithJsonResponseFormatFallbackOptions = {
  * 先帶 json_object；若供應商拒收再裸請求一次。
  * 刻意只做 request mechanics——parse / split / domain fallback 留在各 call site，避免吸進業務政策。
  *
- * 每發 HTTP 另記 duration / gap / 60s 視窗次數（診斷快模型撞 RPM）；見 `llmRequestTiming.ts`。
+ * 每發 HTTP 另記 duration / gap / 60s 視窗次數（診斷快模型撞 RPM；PR #26）；見 `llmRequestTiming.ts`。
  */
 export async function createChatCompletionWithJsonResponseFormatFallback(
   options: CreateChatCompletionWithJsonResponseFormatFallbackOptions,

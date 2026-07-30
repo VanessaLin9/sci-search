@@ -43,6 +43,7 @@ function argValue(argv: string[], name: string): string | undefined {
 }
 
 async function smokeModel(model: string, apiKey: string, baseUrl: string): Promise<void> {
+  // 直打 completions（不經 callDigestChat）；仍記 PR #26 timing，gate=`digest-probe-smoke`。
   const client = createDigestLlmClient(
     {
       apiKey,

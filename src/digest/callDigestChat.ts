@@ -5,7 +5,7 @@
  * NVIDIA 路徑通常 `preferJsonResponseFormat=false`：503 等只靠 client `maxRetries`，
  * 失敗直接 throw 給上層做 domain degrade（略過繁中／keyword）。
  *
- * 每發 HTTP 記 gate/callSite + duration/gap/60s 視窗（診斷快模型撞 RPM）；見 `llmRequestTiming.ts`。
+ * 每發 HTTP 記 gate/callSite + duration/gap/60s 視窗（診斷快模型撞 RPM；PR #26）；見 `llmRequestTiming.ts`。
  */
 import type { ChatCompletion } from "openai/resources/chat/completions";
 import type { ChatCompletionCreateParamsNonStreaming } from "openai/resources/chat/completions";
