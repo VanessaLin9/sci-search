@@ -1,4 +1,5 @@
 import type { ChatCompletion } from "openai/resources/chat/completions";
+import { formatLlmRequestTimingSuffix, noteLlmRequestStart } from "./llmRequestTiming.js";
 
 export type JsonResponseFormatCompletionResult = {
   completion: ChatCompletion;
@@ -42,7 +43,7 @@ export async function createChatCompletionWithJsonResponseFormatFallback(
 
   let completion: ChatCompletion;
   try {
-    completion = await create(usedJsonResponseFormat);
+    completion = await timedCreate(create, usedJsonResponseFormat, log, label);
   } catch (error) {
     if (!preferJsonResponseFormat) {
       log(`${label}: failed after ${formatElapsed(startedAt)}`);
@@ -51,7 +52,7 @@ export async function createChatCompletionWithJsonResponseFormatFallback(
 
     log(jsonModeFailedRetryMessage);
     usedJsonResponseFormat = false;
-    completion = await create(false);
+    completion = await timedCreate(create, false, log, label);
   }
 
   log(`${label}: HTTP ok in ${formatElapsed(startedAt)}`);
@@ -60,4 +61,21 @@ export async function createChatCompletionWithJsonResponseFormatFallback(
     usedJsonResponseFormat,
     elapsedMs: Date.now() - startedAt,
   };
+}
+
+async function timedCreate(
+  create: (useJsonResponseFormat: boolean) => Promise<ChatCompletion>,
+  useJsonResponseFormat: boolean,
+  log: (message: string) => void,
+  label: string,
+): Promise<ChatCompletion> {
+  const timing = noteLlmRequestStart();
+  try {
+    const completion = await create(useJsonResponseFormat);
+    log(`${label}: request ok · ${formatLlmRequestTimingSuffix(timing)}`);
+    return completion;
+  } catch (error) {
+    log(`${label}: request failed · ${formatLlmRequestTimingSuffix(timing)}`);
+    throw error;
+  }
 }

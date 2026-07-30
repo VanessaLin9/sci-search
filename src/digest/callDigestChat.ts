@@ -7,6 +7,7 @@
  */
 import type { ChatCompletion } from "openai/resources/chat/completions";
 import type { ChatCompletionCreateParamsNonStreaming } from "openai/resources/chat/completions";
+import { formatLlmRequestTimingSuffix, noteLlmRequestStart } from "../llm/llmRequestTiming.js";
 import { resolveCompletionMaxTokens } from "../routing/batchSizing.js";
 import type { DigestLlmConfig } from "./config.js";
 import { createDigestLlmClient } from "./digestLlmClient.js";
@@ -48,7 +49,7 @@ export async function callDigestChatCompletion(
   );
 
   try {
-    const completion = await client.chat.completions.create(buildParams(maxTokens));
+    const completion = await timedDigestCreate(client, buildParams(maxTokens), options.label);
     logDigest(`${options.label}: HTTP ok in ${formatElapsedMs(startedAt)}`);
     return completion;
   } catch (error) {
@@ -63,8 +64,24 @@ export async function callDigestChatCompletion(
     }
 
     logDigest(`${options.label}: json_object failed, retrying without response_format…`);
-    const completion = await client.chat.completions.create(buildParams(maxTokens));
+    const completion = await timedDigestCreate(client, buildParams(maxTokens), options.label);
     logDigest(`${options.label}: HTTP ok in ${formatElapsedMs(startedAt)}`);
     return completion;
+  }
+}
+
+async function timedDigestCreate(
+  client: ReturnType<typeof createDigestLlmClient>,
+  params: ChatCompletionCreateParamsNonStreaming,
+  label: string,
+): Promise<ChatCompletion> {
+  const timing = noteLlmRequestStart();
+  try {
+    const completion = await client.chat.completions.create(params);
+    logDigest(`${label}: request ok · ${formatLlmRequestTimingSuffix(timing)}`);
+    return completion;
+  } catch (error) {
+    logDigest(`${label}: request failed · ${formatLlmRequestTimingSuffix(timing)}`);
+    throw error;
   }
 }
