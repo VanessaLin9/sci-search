@@ -21,6 +21,10 @@ import {
 } from "../digest/summarizePrompt.js";
 import { toDigestSummarizeInput } from "../digest/toSummarizeInput.js";
 import { createDigestLlmClient } from "../digest/digestLlmClient.js";
+import {
+  formatLlmRequestTimingSuffix,
+  noteLlmRequestStart,
+} from "../llm/llmRequestTiming.js";
 import type { ClassifiedPaper, SourceScope } from "../types.js";
 import { z } from "zod";
 
@@ -39,6 +43,7 @@ function argValue(argv: string[], name: string): string | undefined {
 }
 
 async function smokeModel(model: string, apiKey: string, baseUrl: string): Promise<void> {
+  // 直打 completions（不經 callDigestChat）；仍記 PR #26 timing，gate=`digest-probe-smoke`。
   const client = createDigestLlmClient(
     {
       apiKey,
@@ -60,6 +65,8 @@ async function smokeModel(model: string, apiKey: string, baseUrl: string): Promi
     { timeoutMs: 60_000, maxRetries: 0 },
   );
   const started = Date.now();
+  const timingMeta = { gate: "digest-probe-smoke", callSite: "probeDigestModel.smokeModel" } as const;
+  const timing = noteLlmRequestStart();
   try {
     const completion = await client.chat.completions.create({
       model,
@@ -69,9 +76,15 @@ async function smokeModel(model: string, apiKey: string, baseUrl: string): Promi
       messages: [{ role: "user", content: 'Reply with exactly: {"ok":true}' }],
     });
     const content = completion.choices[0]?.message?.content ?? "";
-    console.log(`[smoke] ${model}: OK in ${Date.now() - started}ms · finish=${completion.choices[0]?.finish_reason} · ${content.slice(0, 80)}`);
+    console.log(
+      `[smoke] ${model}: OK · ${formatLlmRequestTimingSuffix(timing, timingMeta)} · ` +
+        `wall=${Date.now() - started}ms · finish=${completion.choices[0]?.finish_reason} · ${content.slice(0, 80)}`,
+    );
   } catch (error) {
-    console.log(`[smoke] ${model}: FAIL in ${Date.now() - started}ms · ${error instanceof Error ? error.message : error}`);
+    console.log(
+      `[smoke] ${model}: FAIL · ${formatLlmRequestTimingSuffix(timing, timingMeta)} · ` +
+        `wall=${Date.now() - started}ms · ${error instanceof Error ? error.message : error}`,
+    );
   }
 }
 
@@ -151,6 +164,7 @@ async function main(): Promise<void> {
           ),
         {
           label,
+          gate: "digest-probe",
           estimatedCompletionTokens: estimateSummarizeCompletionTokens(),
           completionFloor: 2048,
           timeoutMs: config.summarizeTimeoutMs,

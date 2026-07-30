@@ -18,7 +18,9 @@ export type RoutingCompletionCall = {
 
 export { extractLlmJsonContent as extractRoutingMessageContent } from "../llm/extractLlmJsonContent.js";
 
-/** Routing LLM 呼叫；response_format 重試交給共用 helper，domain fallback 仍在 classify。PR #21 */
+/** Routing LLM 呼叫；response_format 重試交給共用 helper，domain fallback 仍在 classify。PR #21
+ * Timing：gate=`life-science-routing` callSite=`callRoutingCompletion`（PR #26）。
+ */
 export async function callRoutingCompletion(
   items: BroadScienceRoutingInput[],
   config: RoutingLlmConfig,
@@ -26,12 +28,18 @@ export async function callRoutingCompletion(
 ): Promise<RoutingCompletionCall> {
   const client = createRoutingLlmClient(config);
   const label = options?.label ?? "routing-llm";
+  const timingMeta = {
+    gate: "life-science-routing",
+    callSite: "callRoutingCompletion",
+  } as const;
 
   const estimated = estimateRoutingCompletionTokens(items.length);
   const maxTokens = resolveCompletionMaxTokens(estimated, config.maxTokens);
 
+  // POST 列也帶 gate/callSite，方便 Actions log 與 request ok/failed 對齊過濾。PR #26
   logRouting(
-    `${label}: POST chat/completions (${items.length} paper(s), max_tokens=${maxTokens}, need~${estimated}, cap=${config.maxTokens}, timeout=${config.timeoutMs}ms)`,
+    `${label}: POST chat/completions · gate=${timingMeta.gate} callSite=${timingMeta.callSite} ` +
+      `(${items.length} paper(s), max_tokens=${maxTokens}, need~${estimated}, cap=${config.maxTokens}, timeout=${config.timeoutMs}ms)`,
   );
 
   return createChatCompletionWithJsonResponseFormatFallback({
@@ -43,5 +51,6 @@ export async function callRoutingCompletion(
     log: logRouting,
     label,
     formatElapsed: formatElapsedMs,
+    timingMeta,
   });
 }
