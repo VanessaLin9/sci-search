@@ -171,7 +171,7 @@ Fixtures live in [`test/fixtures/regression/`](test/fixtures/regression/) (0522:
 | `ROUTING_LLM_MODEL` | if routing | Model id (not in repo) |
 | `ENABLE_LLM_DIGEST` | no | `1` for LLM tagging + summarize + translate |
 | `DIGEST_LLM_API_KEY` | no | Falls back to routing key |
-| `DIGEST_LLM_MODEL` | if digest on | e.g. `thinkingmachines/inkling` on NVIDIA integrate |
+| `DIGEST_LLM_MODEL` | if digest on | e.g. `deepseek-ai/deepseek-v4-flash` on NVIDIA integrate |
 | `DEBUG_NORMALIZED` | no | `1` for verbose logs |
 
 Digest logs use `[digest]`; routing uses `[routing]`; bioRxiv ingest uses `[biorxiv]` / `[biorxiv-gate]` (not gated by debug).
