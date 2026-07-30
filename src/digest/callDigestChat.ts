@@ -4,10 +4,16 @@
  *
  * NVIDIA 路徑通常 `preferJsonResponseFormat=false`：503 等只靠 client `maxRetries`，
  * 失敗直接 throw 給上層做 domain degrade（略過繁中／keyword）。
+ *
+ * 每發 HTTP 記 gate/callSite + duration/gap/60s 視窗（診斷快模型撞 RPM）；見 `llmRequestTiming.ts`。
  */
 import type { ChatCompletion } from "openai/resources/chat/completions";
 import type { ChatCompletionCreateParamsNonStreaming } from "openai/resources/chat/completions";
-import { formatLlmRequestTimingSuffix, noteLlmRequestStart } from "../llm/llmRequestTiming.js";
+import {
+  formatLlmRequestTimingSuffix,
+  noteLlmRequestStart,
+  type LlmRequestTimingMeta,
+} from "../llm/llmRequestTiming.js";
 import { resolveCompletionMaxTokens } from "../routing/batchSizing.js";
 import type { DigestLlmConfig } from "./config.js";
 import { createDigestLlmClient } from "./digestLlmClient.js";
@@ -25,6 +31,8 @@ export async function callDigestChatCompletion(
   buildParams: (maxTokens: number) => ChatCompletionCreateParamsNonStreaming,
   options: {
     label: string;
+    /** 邏輯閘標籤：digest-summarize / digest-translate / digest-probe */
+    gate: string;
     estimatedCompletionTokens: number;
     completionFloor?: number;
     preferJsonResponseFormat?: boolean;
@@ -43,13 +51,18 @@ export async function callDigestChatCompletion(
     floor,
   );
   const useJson = options.preferJsonResponseFormat ?? config.preferJsonResponseFormat;
+  const timingMeta: LlmRequestTimingMeta = {
+    gate: options.gate,
+    callSite: "callDigestChatCompletion",
+  };
 
   logDigest(
-    `${options.label}: POST chat/completions (max_tokens=${maxTokens}, need~${options.estimatedCompletionTokens}, cap=${config.maxTokens}, timeout=${timeoutMs}ms, retries=${maxRetries})`,
+    `${options.label}: POST chat/completions · gate=${timingMeta.gate} callSite=${timingMeta.callSite} ` +
+      `(max_tokens=${maxTokens}, need~${options.estimatedCompletionTokens}, cap=${config.maxTokens}, timeout=${timeoutMs}ms, retries=${maxRetries})`,
   );
 
   try {
-    const completion = await timedDigestCreate(client, buildParams(maxTokens), options.label);
+    const completion = await timedDigestCreate(client, buildParams(maxTokens), options.label, timingMeta);
     logDigest(`${options.label}: HTTP ok in ${formatElapsedMs(startedAt)}`);
     return completion;
   } catch (error) {
@@ -64,7 +77,7 @@ export async function callDigestChatCompletion(
     }
 
     logDigest(`${options.label}: json_object failed, retrying without response_format…`);
-    const completion = await timedDigestCreate(client, buildParams(maxTokens), options.label);
+    const completion = await timedDigestCreate(client, buildParams(maxTokens), options.label, timingMeta);
     logDigest(`${options.label}: HTTP ok in ${formatElapsedMs(startedAt)}`);
     return completion;
   }
@@ -74,14 +87,15 @@ async function timedDigestCreate(
   client: ReturnType<typeof createDigestLlmClient>,
   params: ChatCompletionCreateParamsNonStreaming,
   label: string,
+  timingMeta: LlmRequestTimingMeta,
 ): Promise<ChatCompletion> {
   const timing = noteLlmRequestStart();
   try {
     const completion = await client.chat.completions.create(params);
-    logDigest(`${label}: request ok · ${formatLlmRequestTimingSuffix(timing)}`);
+    logDigest(`${label}: request ok · ${formatLlmRequestTimingSuffix(timing, timingMeta)}`);
     return completion;
   } catch (error) {
-    logDigest(`${label}: request failed · ${formatLlmRequestTimingSuffix(timing)}`);
+    logDigest(`${label}: request failed · ${formatLlmRequestTimingSuffix(timing, timingMeta)}`);
     throw error;
   }
 }

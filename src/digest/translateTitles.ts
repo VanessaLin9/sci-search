@@ -3,6 +3,8 @@
  *
  * 失敗契約：單 batch 503／parse 失敗就 skip 該批（計入 failed），繼續下一批；
  * **沒有** keyword／第二模型備援——郵件只顯示英文標題。HTTP 重試靠 `maxRetries`。
+ *
+ * LLM HTTP 走 `callDigestChatCompletion`（gate=`digest-translate`）；timing 見 `llmRequestTiming.ts`。
  */
 import { z } from "zod";
 import { parseJsonFromLlmContent } from "../routing/parseLlmJson.js";
@@ -107,6 +109,7 @@ async function translateBatchOnce(
       buildDigestTranslateCompletionParams(batch, config, config.preferJsonResponseFormat, maxTokens),
     {
       label: batchLabel,
+      gate: "digest-translate",
       estimatedCompletionTokens: estimateTranslateCompletionTokens(batch.length),
       completionFloor: 1024,
     },

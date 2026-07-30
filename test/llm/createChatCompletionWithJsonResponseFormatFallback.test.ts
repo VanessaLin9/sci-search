@@ -12,14 +12,19 @@ function formatElapsed(_startedAt: number): string {
   return "0.0s";
 }
 
+const timingMeta = { gate: "test-gate", callSite: "testCallSite" } as const;
+
 function assertTimingOkLog(message: string, label: string): void {
-  assert.match(message, new RegExp(`^${label}: request ok · duration=`));
+  assert.match(message, new RegExp(`^${label}: request ok · gate=test-gate callSite=testCallSite · duration=`));
   assert.match(message, /gap=/);
   assert.match(message, /~\d+ req\/60s$/);
 }
 
 function assertTimingFailedLog(message: string, label: string): void {
-  assert.match(message, new RegExp(`^${label}: request failed · duration=`));
+  assert.match(
+    message,
+    new RegExp(`^${label}: request failed · gate=test-gate callSite=testCallSite · duration=`),
+  );
   assert.match(message, /gap=/);
   assert.match(message, /~\d+ req\/60s$/);
 }
@@ -39,6 +44,7 @@ test("JSON-mode first request succeeds: one create call", async () => {
     log: (message) => logs.push(message),
     label: "batch-1",
     formatElapsed,
+    timingMeta,
   });
 
   assert.deepEqual(calls, [true]);
@@ -66,6 +72,7 @@ test("JSON-mode first request fails: second create omits response_format", async
     log: (message) => logs.push(message),
     label: "batch-1",
     formatElapsed,
+    timingMeta,
   });
 
   assert.deepEqual(calls, [true, false]);
@@ -91,6 +98,7 @@ test("custom jsonModeFailedRetryMessage preserves digest wording", async () => {
     log: (message) => logs.push(message),
     label: "digest-tag",
     formatElapsed,
+    timingMeta,
     jsonModeFailedRetryMessage: "digest-tag: json_object failed, retrying without response_format…",
   });
 
@@ -114,6 +122,7 @@ test("JSON mode disabled and request fails: no fallback create; error propagates
         log: (message) => logs.push(message),
         label: "batch-1",
         formatElapsed,
+        timingMeta,
       }),
     (error: unknown) => error === failure,
   );
@@ -141,6 +150,7 @@ test("fallback request fails: error propagates without swallowing", async () => 
         log: (message) => logs.push(message),
         label: "batch-1",
         formatElapsed,
+        timingMeta,
       }),
     (error: unknown) => error === failure,
   );

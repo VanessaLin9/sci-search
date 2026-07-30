@@ -1,7 +1,9 @@
 /**
  * Process-wide LLM HTTP attempt timing（診斷 429 / RPM）。
- * Daily job 的 routing / bioRxiv / digest 共用同一 API key 時，用同一個視窗計數。
- * 輸出走既有 `[routing]` / `[digest]` / `[biorxiv-gate]` console.log → GitHub Actions log 可回看。
+ * Daily job 的 routing / bioRxiv / digest 常共用同一 API key，用同一個 60s 視窗計數。
+ * 輸出走既有 `[routing]` / `[digest]` / `[biorxiv-gate]` console.log → `gh run view --log` 可回看。
+ *
+ * Log 固定帶 `gate=` + `callSite=`，方便在 Actions 用 rg 過濾單一邏輯閘。
  */
 
 const WINDOW_MS = 60_000;
@@ -13,6 +15,14 @@ function prune(now: number): void {
     requestStartsMs.shift();
   }
 }
+
+/** 哪個邏輯閘 + 哪個函式打出這發 HTTP（寫進每一行 timing log）。 */
+export type LlmRequestTimingMeta = {
+  /** 例：life-science-routing / biorxiv-gate / digest-tagging / digest-summarize / digest-translate */
+  gate: string;
+  /** 例：callRoutingCompletion / callDigestChatCompletion */
+  callSite: string;
+};
 
 export type LlmRequestTimingSample = {
   startedAt: number;
@@ -36,6 +46,7 @@ export function noteLlmRequestStart(now = Date.now()): LlmRequestTimingSample {
 
 export function formatLlmRequestTimingSuffix(
   sample: LlmRequestTimingSample,
+  meta: LlmRequestTimingMeta,
   endedAt = Date.now(),
 ): string {
   const durationSec = (endedAt - sample.startedAt) / 1000;
@@ -45,7 +56,10 @@ export function formatLlmRequestTimingSuffix(
     sample.gapSincePreviousStartMs === null
       ? "first"
       : `${(sample.gapSincePreviousStartMs / 1000).toFixed(1)}s`;
-  return `duration=${duration} gap=${gap} ~${sample.requestsInLastMinute} req/60s`;
+  return (
+    `gate=${meta.gate} callSite=${meta.callSite} · ` +
+    `duration=${duration} gap=${gap} ~${sample.requestsInLastMinute} req/60s`
+  );
 }
 
 /** 測試用：清空視窗，避免用例互相污染。 */

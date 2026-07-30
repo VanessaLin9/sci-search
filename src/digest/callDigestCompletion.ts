@@ -16,13 +16,18 @@ export async function callDigestTaggingCompletion(
 ): Promise<ChatCompletion> {
   const client = createDigestLlmClient(config);
   const label = options?.label ?? "digest-tag";
+  const timingMeta = {
+    gate: "digest-tagging",
+    callSite: "callDigestTaggingCompletion",
+  } as const;
 
   const estimated = estimateDigestTaggingCompletionTokens(items.length);
   // Reasoning-heavy models (e.g. step-3.5-flash) need headroom beyond compact JSON estimates.
   const maxTokens = resolveCompletionMaxTokens(estimated, config.maxTokens, config.maxTokens);
 
   logDigest(
-    `${label}: POST chat/completions (${items.length} paper(s), max_tokens=${maxTokens}, need~${estimated}, cap=${config.maxTokens}, timeout=${config.timeoutMs}ms)`,
+    `${label}: POST chat/completions · gate=${timingMeta.gate} callSite=${timingMeta.callSite} ` +
+      `(${items.length} paper(s), max_tokens=${maxTokens}, need~${estimated}, cap=${config.maxTokens}, timeout=${config.timeoutMs}ms)`,
   );
 
   const { completion } = await createChatCompletionWithJsonResponseFormatFallback({
@@ -34,6 +39,7 @@ export async function callDigestTaggingCompletion(
     log: logDigest,
     label,
     formatElapsed: formatElapsedMs,
+    timingMeta,
     jsonModeFailedRetryMessage: `${label}: json_object failed, retrying without response_format…`,
   });
   return completion;

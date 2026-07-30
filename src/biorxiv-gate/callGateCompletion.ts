@@ -27,12 +27,17 @@ export async function callBiorxivGateCompletion(
 ): Promise<BiorxivGateCompletionCall> {
   const client = createRoutingLlmClient(config);
   const label = options?.label ?? "biorxiv-gate-llm";
+  const timingMeta = {
+    gate: "biorxiv-gate",
+    callSite: "callBiorxivGateCompletion",
+  } as const;
 
   const estimated = estimateRoutingCompletionTokens(items.length);
   const maxTokens = resolveCompletionMaxTokens(estimated, config.maxTokens);
 
   logBiorxivGate(
-    `${label}: POST chat/completions (${items.length} paper(s), max_tokens=${maxTokens}, need~${estimated}, cap=${config.maxTokens}, timeout=${config.timeoutMs}ms)`,
+    `${label}: POST chat/completions · gate=${timingMeta.gate} callSite=${timingMeta.callSite} ` +
+      `(${items.length} paper(s), max_tokens=${maxTokens}, need~${estimated}, cap=${config.maxTokens}, timeout=${config.timeoutMs}ms)`,
   );
 
   return createChatCompletionWithJsonResponseFormatFallback({
@@ -44,5 +49,6 @@ export async function callBiorxivGateCompletion(
     log: logBiorxivGate,
     label,
     formatElapsed: formatElapsedMs,
+    timingMeta,
   });
 }

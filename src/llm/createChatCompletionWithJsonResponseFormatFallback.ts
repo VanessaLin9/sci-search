@@ -1,5 +1,9 @@
 import type { ChatCompletion } from "openai/resources/chat/completions";
-import { formatLlmRequestTimingSuffix, noteLlmRequestStart } from "./llmRequestTiming.js";
+import {
+  formatLlmRequestTimingSuffix,
+  noteLlmRequestStart,
+  type LlmRequestTimingMeta,
+} from "./llmRequestTiming.js";
 
 export type JsonResponseFormatCompletionResult = {
   completion: ChatCompletion;
@@ -19,12 +23,16 @@ export type CreateChatCompletionWithJsonResponseFormatFallbackOptions = {
    * Defaults to `${label}: json_object mode failed, retrying without response_format…`
    */
   jsonModeFailedRetryMessage?: string;
+  /** RPM / gap timing 標籤（寫進每一發 request ok|failed log）。 */
+  timingMeta: LlmRequestTimingMeta;
 };
 
 /**
  * 共用 JSON `response_format` 請求機制（PR #21 / Phase 4）。
  * 先帶 json_object；若供應商拒收再裸請求一次。
  * 刻意只做 request mechanics——parse / split / domain fallback 留在各 call site，避免吸進業務政策。
+ *
+ * 每發 HTTP 另記 duration / gap / 60s 視窗次數（診斷快模型撞 RPM）；見 `llmRequestTiming.ts`。
  */
 export async function createChatCompletionWithJsonResponseFormatFallback(
   options: CreateChatCompletionWithJsonResponseFormatFallbackOptions,
@@ -35,6 +43,7 @@ export async function createChatCompletionWithJsonResponseFormatFallback(
     log,
     label,
     formatElapsed,
+    timingMeta,
     jsonModeFailedRetryMessage = `${label}: json_object mode failed, retrying without response_format…`,
   } = options;
 
@@ -43,7 +52,7 @@ export async function createChatCompletionWithJsonResponseFormatFallback(
 
   let completion: ChatCompletion;
   try {
-    completion = await timedCreate(create, usedJsonResponseFormat, log, label);
+    completion = await timedCreate(create, usedJsonResponseFormat, log, label, timingMeta);
   } catch (error) {
     if (!preferJsonResponseFormat) {
       log(`${label}: failed after ${formatElapsed(startedAt)}`);
@@ -52,7 +61,7 @@ export async function createChatCompletionWithJsonResponseFormatFallback(
 
     log(jsonModeFailedRetryMessage);
     usedJsonResponseFormat = false;
-    completion = await timedCreate(create, false, log, label);
+    completion = await timedCreate(create, false, log, label, timingMeta);
   }
 
   log(`${label}: HTTP ok in ${formatElapsed(startedAt)}`);
@@ -68,14 +77,15 @@ async function timedCreate(
   useJsonResponseFormat: boolean,
   log: (message: string) => void,
   label: string,
+  timingMeta: LlmRequestTimingMeta,
 ): Promise<ChatCompletion> {
   const timing = noteLlmRequestStart();
   try {
     const completion = await create(useJsonResponseFormat);
-    log(`${label}: request ok · ${formatLlmRequestTimingSuffix(timing)}`);
+    log(`${label}: request ok · ${formatLlmRequestTimingSuffix(timing, timingMeta)}`);
     return completion;
   } catch (error) {
-    log(`${label}: request failed · ${formatLlmRequestTimingSuffix(timing)}`);
+    log(`${label}: request failed · ${formatLlmRequestTimingSuffix(timing, timingMeta)}`);
     throw error;
   }
 }
