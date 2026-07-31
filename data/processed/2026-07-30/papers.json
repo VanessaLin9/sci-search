@@ -1,0 +1,1272 @@
+{
+  "reportDate": "2026-07-30",
+  "generatedAt": "2026-07-31T12:01:33.906Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03205-8",
+      "title": "Author Correction: A peptide-centric local stability assay enables proteome-scale identification of the protein targets and binding regions of diverse ligands",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03205-8",
+      "doi": "10.1038/s41592-026-03205-8",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41592-026-03175-x",
+      "title": "A light-controlled tetanus neurotoxin enables rapid and reversible synaptic inhibition in vivo",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03175-x",
+      "doi": "10.1038/s41592-026-03175-x",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "光控破傷風神經毒素實現體內快速可逆的突觸抑制",
+      "summaryZh": "這項研究開發了一種光控的破傷風神經毒素，能夠在活體動物中快速且可逆地抑制突觸傳遞。傳統的破傷風毒素會造成不可逆的神經損傷，而這種新型毒素透過光遺傳學技術，讓研究人員能夠精確控制抑制作用的時間與空間。這項技術為神經科學研究提供了強大的工具，可用於探討特定神經迴路在行為與疾病中的即時功能。未來有望應用於疼痛治療或神經系統疾病的調控。",
+      "topicTags": [
+        "optogenetics",
+        "synaptic-inhibition",
+        "neuroscience",
+        "tetanus-neurotoxin",
+        "in-vivo"
+      ]
+    },
+    {
+      "id": "10.1038/s41592-026-03185-9",
+      "title": "Decoding intercellular activities for more than 1,000 secreted proteins",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03185-9",
+      "doi": "10.1038/s41592-026-03185-9",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "解碼超過一千種分泌蛋白的細胞間活動",
+      "summaryZh": "這項研究開發了一種新方法，能夠同時解碼超過一千種分泌蛋白在細胞間的通訊活動。透過這種技術，科學家可以更全面地理解細胞如何透過分泌蛋白進行訊息傳遞，這對於癌症、免疫疾病等研究至關重要。該方法不僅提高了通量，還保持了高靈敏度，為未來精準醫療和藥物開發提供了強有力的工具。這項突破將加速我們對細胞間複雜互動網絡的認識。",
+      "topicTags": [
+        "secreted-proteins",
+        "cell-communication",
+        "proteomics",
+        "method-development"
+      ]
+    },
+    {
+      "id": "10.1038/s41592-026-03176-w",
+      "title": "Light-activated tetanus neurotoxin for conditional proteolysis and inducible synaptic inhibition in vivo",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03176-w",
+      "doi": "10.1038/s41592-026-03176-w",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "光控破傷風毒素：實現條件性蛋白質水解與體內可誘導突觸抑制",
+      "summaryZh": "這項研究開發了一種光激活的破傷風神經毒素（Light-activated tetanus neurotoxin），能夠在特定時間和空間條件下進行蛋白質水解，並在活體動物中實現可誘導的突觸抑制。這項技術為神經科學研究提供了前所未有的精確工具，使科學家能夠在毫秒級時間尺度上控制神經元活動，從而更深入地理解神經迴路的功能。該方法避免了傳統遺傳學或藥理學方法的局限性，為研究學習、記憶及神經疾病機制開闢了新途徑。",
+      "topicTags": [
+        "optogenetics",
+        "neuroscience",
+        "synaptic-inhibition",
+        "proteolysis",
+        "in-vivo"
+      ]
+    },
+    {
+      "id": "10.1038/s41592-026-03172-0",
+      "title": "Inference of secreted protein signaling activities in intercellular communication",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03172-0",
+      "doi": "10.1038/s41592-026-03172-0",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "推斷分泌蛋白在細胞間通訊中的訊號活動",
+      "summaryZh": "這篇論文提出了一種新方法，用於推斷分泌蛋白在細胞間通訊中的訊號活動。透過分析基因表現數據，該方法能準確預測哪些分泌蛋白在特定細胞類型中活躍，並揭示它們如何影響目標細胞。這項技術有助於理解複雜的生物過程，如發育、免疫反應和疾病機制。研究人員可以更深入地探索細胞間的通訊網絡，為治療策略提供新見解。",
+      "topicTags": [
+        "cell-communication",
+        "secreted-proteins",
+        "signaling",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02679-8",
+      "title": "Mediators of cell fate decisions in human fetal kidney development identified using spatial transcriptomics",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02679-8",
+      "doi": "10.1038/s41588-026-02679-8",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "利用空間轉錄組學揭示人類胎兒腎臟發育中細胞命運決定的調控因子",
+      "summaryZh": "這項研究利用空間轉錄組學技術，繪製了人類胎兒腎臟發育過程中的基因表達圖譜，並鑑定出調控細胞命運決定的關鍵因子。這些發現有助於理解腎臟發育的分子機制，並可能為腎臟疾病的治療提供新線索。研究結果發表於《自然·遺傳學》期刊，為發育生物學和再生醫學領域提供了重要參考。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "kidney-development",
+        "cell-fate",
+        "developmental-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02665-0",
+      "title": "Single-cell spatial mapping of human kidney development implicates the microenvironment in guiding cell fate decisions",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02665-0",
+      "doi": "10.1038/s41588-026-02665-0",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞空間圖譜揭示人類腎臟發育中微環境如何引導細胞命運決定",
+      "summaryZh": "這項研究利用單細胞空間轉錄組學技術，繪製了人類腎臟發育過程中的高解析度細胞圖譜。研究發現，腎臟細胞的命運決定不僅由內在基因調控網絡驅動，更受到局部微環境中相鄰細胞和細胞外基質的關鍵影響。透過分析不同發育階段的空間組織，團隊鑑定出多種新的細胞亞型及其在腎臟結構形成中的動態互動。這些發現為理解先天性腎臟疾病和腎臟再生醫學提供了重要的分子基礎。",
+      "topicTags": [
+        "single-cell",
+        "spatial-transcriptomics",
+        "kidney-development",
+        "cell-fate",
+        "microenvironment"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02029-0",
+      "title": "Running towards induced pluripotent stem cells",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02029-0",
+      "doi": "10.1038/s41556-026-02029-0",
+      "abstract": "Yanhong Shi is a professor and the Chair of the Department of Neurodegenerative Diseases at Beckman Research Institute of City of Hope. Yanhong looks back at a pivotal moment in her early scientific career that changed the course of her research into the realm of induced pluripotent stem cells.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41593-026-02340-x",
+      "title": "Unforgettable forgotten memories",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02340-x",
+      "doi": "10.1038/s41593-026-02340-x",
+      "abstract": "Memory is not always a faithful representation of past events; it can be lost, distorted or even fabricated. A new study provides insights into neural mechanisms that support the formation of true and false memories from forgotten learned information.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "遺忘記憶的真相：真假記憶的神經機制",
+      "summaryZh": "記憶並非總是忠實反映過去，它可能遺失、扭曲甚至被虛構。一項新研究揭示了神經機制如何從被遺忘的學習資訊中形成真實與虛假記憶。這項發現挑戰了我們對記憶可靠性的傳統認知，並可能對法律證詞、創傷治療等領域產生深遠影響。理解這些機制有助於開發改善記憶準確性的策略，或減輕錯誤記憶帶來的負面效應。",
+      "topicTags": [
+        "memory",
+        "neuroscience",
+        "false-memory",
+        "learning",
+        "cognition"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02360-7",
+      "title": "New waves in psychiatric neuroimaging",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02360-7",
+      "doi": "10.1038/s41593-026-02360-7",
+      "abstract": "The long voyage in search of neuroanatomical correlates for mental illness has faced choppy waters. A new report by Cao et al. illustrates this turbulence by quantifying low replicability in brain structural-magnetic-resonance-imaging maps for five psychiatric diagnoses. Thankfully, this finding helps to strengthen existing currents that are already moving the field towards newer approaches that promise smoother sailing.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "精神科神經影像學的新浪潮",
+      "summaryZh": "這篇發表於《自然神經科學》的論文，探討了精神疾病神經解剖學相關性研究長期以來的挑戰。Cao等人透過量化五種精神疾病診斷的腦結構磁振造影圖譜的低再現性，具體說明了此領域的波動。這項發現有助於強化現有趨勢，推動該領域轉向更可靠的新方法，為未來研究帶來更平穩的進展。",
+      "topicTags": [
+        "psychiatric-neuroimaging",
+        "reproducibility",
+        "brain-mri",
+        "mental-health"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02359-0",
+      "title": "The cross-site reproducibility of MRI morphometric phenotypes in psychiatric disorders",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02359-0",
+      "doi": "10.1038/s41593-026-02359-0",
+      "abstract": "A large analysis of MRI studies in five psychiatric disorders reveals that maps of brain volume differences in psychiatric illness are rarely reproducible, highlighting the need for alternative approaches to biomarker discovery.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "精神疾病MRI形態學表徵的跨站點再現性",
+      "summaryZh": "這項大規模分析涵蓋五種精神疾病的MRI研究，發現腦部體積差異圖譜在精神疾病中極少具有再現性。研究結果凸顯了現有生物標記發現方法的局限性，並強調需要開發替代策略來提升研究的可靠性。這對未來精神疾病的神經影像學研究具有重要指導意義。",
+      "topicTags": [
+        "mri",
+        "psychiatric-disorders",
+        "reproducibility",
+        "neuroimaging",
+        "biomarker-discovery"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02381-2",
+      "title": "Creating true and false memories from forgotten information in Drosophila",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02381-2",
+      "doi": "10.1038/s41593-026-02381-2",
+      "abstract": "Forgotten memories in Drosophila persist as silent memory traces and can be recovered by reminder cues. Manipulating reminders can create false memories, showing that memory reconstruction flexibly integrates stored information with recent experiences.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "從遺忘的資訊中創造真實與虛假記憶：果蠅研究揭示記憶重建機制",
+      "summaryZh": "這項發表於《自然神經科學》的研究發現，果蠅的遺忘記憶並未真正消失，而是以「沉默記憶痕跡」的形式持續存在，並可透過提示線索重新喚起。研究團隊進一步證明，透過操控這些提示，甚至能創造出虛假記憶，顯示記憶重建過程能靈活地將儲存的資訊與近期經驗整合。這項發現挑戰了傳統對遺忘的理解，為記憶可塑性與錯誤記憶的形成提供了新的神經生物學基礎。",
+      "topicTags": [
+        "memory",
+        "drosophila",
+        "false-memory",
+        "neuroscience",
+        "plasticity"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02377-y",
+      "title": "Representations of the intrinsic value of information in mouse orbitofrontal cortex",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02377-y",
+      "doi": "10.1038/s41593-026-02377-y",
+      "abstract": "Mice are motivated to seek information of no extrinsic value. Recording neural activity in orbitofrontal cortex reveals a representation of the value of information that is distinct from the value of physiological reward.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "小鼠眶額葉皮層中資訊內在價值的表徵",
+      "summaryZh": "這項研究發現，即使資訊沒有外在獎勵價值，小鼠仍會主動尋求資訊，顯示資訊本身具有內在價值。透過記錄眶額葉皮層的神經活動，研究團隊辨識出一個專門表徵資訊價值的神經訊號，且此訊號與生理獎勵的價值表徵截然不同。這項發現有助於理解大腦如何處理好奇心與資訊尋求行為，並可能對探討成癮或強迫行為等精神疾病提供新視角。",
+      "topicTags": [
+        "neuroscience",
+        "decision-making",
+        "curiosity",
+        "orbitofrontal-cortex",
+        "value-representation"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02452-x",
+      "title": "Focusing on full submissions",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02452-x",
+      "doi": "10.1038/s41564-026-02452-x",
+      "abstract": "Nature Microbiology no longer considers presubmission enquiries and instead evaluates all research through full manuscript submissions. This change is intended to improve fairness, rigour and efficiency, ensuring that editorial decisions are based on a complete assessment of the data.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology"
+      ],
+      "section": "biology",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41564-026-02423-2",
+      "title": "A microbial PPARadigm for gut protection",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02423-2",
+      "doi": "10.1038/s41564-026-02423-2",
+      "abstract": "Two independent studies converge on the nuclear receptor PPARα as a key node in gut microbiome communication, highlighting it as a potential therapeutic target in intestinal diseases.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "microbiome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "微生物的PPAR典範：腸道保護機制"
+    },
+    {
+      "id": "10.1038/s41564-026-02433-0",
+      "title": "Microbiota-derived 10-hydroxystearic acid activates PPARα to restore gut epithelial barrier integrity and enhance anti-retroviral therapy",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02433-0",
+      "doi": "10.1038/s41564-026-02433-0",
+      "abstract": "Lactiplantibacillus plantarum-derived fatty-acid metabolite, 10-hydroxystearic acid, interacts directly with PPARα to alter histone crotonylation and the transcriptional landscape which leads to gut barrier functional repair and enhanced viral suppression in non-human primate models when combined with anti-retroviral therapy.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "微生物群衍生的10-羥基硬脂酸活化PPARα以恢復腸道上皮屏障完整性並增強抗反轉錄病毒療法"
+    },
+    {
+      "id": "10.1038/s41564-026-02409-0",
+      "title": "Combined phage therapy and faecal microbiota transplantation to treat recurrent urinary tract infection: a case series",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02409-0",
+      "doi": "10.1038/s41564-026-02409-0",
+      "abstract": "In a small case series, combined phage therapy and faecal microbiota transplantation was safe and led to sustained reductions in recurrence, severity and antibiotic use in women with recurrent urinary tract infections, even without complete eradication of Escherichia coli.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "合併噬菌體療法與糞便微生物群移植治療復發性泌尿道感染：一系列病例"
+    },
+    {
+      "id": "10.1038/s41564-026-02428-x",
+      "title": "Cell-autonomous immunity as an integrated immune network against bacterial and viral pathogens",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-07-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02428-x",
+      "doi": "10.1038/s41564-026-02428-x",
+      "abstract": "This Review summarizes the current knowledge about the cell-intrinsic factors that act against pathogenic bacteria and viruses and the immune evasion strategies that pathogens have to counteract cell-autonomous immunity.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "細胞自主免疫作為對抗細菌與病毒病原體的整合免疫網絡"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003925",
+      "title": "Viruses help shape microbiome response to polyphenol rewiring of methane-suppressed peat microcosms",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-30T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003925",
+      "doi": "10.1371/journal.pbio.3003925",
+      "abstract": "Human activities are accelerating permafrost thaw and subsequent methane emissions from increased microbial activity, prompting microbiome engineering efforts as an emissions mitigation strategy. We recently demonstrated that catechin amendment could drastically reduce methane emissions (>80%) in peat microcosms by enriching catechin-degrading prokaryotes that outcompeted methanogens for hydrogen. However, viral contributions to such microbiome-level responses remain unexplored and we hypothesized that viral dynamics could help shape the microbiome response as nutrient amendments may alter cellular physiology in ways that could induce lytic viral activity. Here, we performed virus eco-genomics analyses of the previously-studied time-resolved multi-omics data collected from catechin-amended peat microcosms. We conservatively identified 900 putatively lytic viral operational taxonomic units (vOTUs), with 41% predicted to infect active host genomes including the most transcriptionally active vOTUs predicted to infect key catechin-degrading genera ( Clostridium and undescribed Bacillota JAGFXR01). Notably, a single JAGFXR01-targeting vOTU dominating the viral response (>40% of community viral transcription; 20–156-fold more abundant than its host), which we interpreted as induction resulting in intense lytic activity that could release catechin degradation intermediates to other community members. Consistent with this, gene expression analysis revealed elevated catechin-intermediate degradation and hydrogenase signals in 34 additional polyphenol-degrading metagenome-assembled genomes. These findings support a model consistent with a viral shunt-like process that extends our previous prokaryote-centric model: viral lysis of fast-growing catechin degraders redistributes phenolic intermediates to diverse phenol-degrading taxa that sustain methane suppression via hydrogen consumption. Beyond carbon cycling importance in this system, elucidating unintended virus-mediated responses to nutrient and prebiotic interventions will enable more predictable and effective microbiome engineering strategies across soil, ocean, and human ecosystems.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics",
+        "microbiome",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "病毒協助塑造微生物群對多酚重新調控甲烷抑制泥炭微宇宙的反應"
+    },
+    {
+      "id": "10.1371/journal.pbio.3003919",
+      "title": "siRNA-guided DNA-methylation at a sucrose transporter gene potentially contributes to climatic plant adaptation",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-07-30T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003919",
+      "doi": "10.1371/journal.pbio.3003919",
+      "abstract": "Climatic adaptation of plants involves the adjustment of carbon transport to achieve an optimal balance between carbon assimilation and carbon utilization. This study describes a potential molecular mechanism of this adjustment by investigating the climate-dependent regulation of SUCROSE TRANSPORTER 2 ( SUC2 ) in the model plant Arabidopsis thaliana . SUC2 is responsible for loading photosynthetically-produced sucrose into the leaf vascular system. Its protein and mRNA abundance in A. thaliana natural accessions were found to correlate with leaf sucrose export and summer temperature. Exploration of methylome data and epigenome editing experiments suggested that epigenetic marks on SUC2’s exon 2 contributed to the climate-dependent expression of SUC2 . Two siRNAs were identified as mediators of SUC2 methylations and their respective origins localized to the SUC5 and SUC8 genes. The analysis of plants with reduced or enhanced SUC5 or SUC8 transcriptional activity corroborated the link to SUC2 methylation. Besides illustrating a novel regulatory strategy of carbon export from leaves, our results establish exon methylation mediated by gene-derived siRNAs as yet another potential mechanism for plant adaptation.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "siRNA引導的蔗糖轉運蛋白基因DNA甲基化可能促進植物對氣候的適應"
+    },
+    {
+      "id": "10.64898/2026.07.27.740958",
+      "title": "Scale-Aware Compositional Inference Improves Reproducibility and Uncovers Convergent Aging Programs in Spatial Transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.27.740958v1",
+      "doi": "10.64898/2026.07.27.740958",
+      "abstract": "Spatial transcriptomics enables analysis of molecular organization with anatomical context. Existing spatial differential expression methods are restricted to within-sample inference, forcing between-sample comparisons to rely on approaches adapted from single-cell RNA-seq. Here, we establish a scale-aware inference framework for spatial differential expression by modeling compositional constraints and variation in total RNA abundance rather than removing them through normalization, enabling calibrated between-sample inference at cell-level resolution. Our method produces more reliable results in simulated data and different spatial platforms. When applied to aged mouse brains, the analysis reveals converging aging-associated programs involving cellular signaling, membrane homeostasis, and neurovasculature across independent datasets.",
+      "authors": [
+        "Parmaksiz, D.",
+        "Manjila, S. B.",
+        "McGovern, K.",
+        "Shin, D.",
+        "Bjerke, I. E.",
+        "Paul, A.",
+        "Silverman, J.",
+        "Kim, Y."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "尺度感知的組成推論提升空間轉錄組學的可重複性並揭示收斂的衰老程式"
+    },
+    {
+      "id": "10.64898/2026.07.27.741117",
+      "title": "LLM-powered Functional Gene Set Summarization with genesetGPT",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.27.741117v1",
+      "doi": "10.64898/2026.07.27.741117",
+      "abstract": "Transcriptomics datasets generated using next-generation sequencing techniques such as single cell RNA-sequencing (scRNA-seq) and spatially-resolved transcriptomics (SRT) allow researchers to study patterns in gene expression across celltypes, temporal processes, and spatial organization at ever-higher resolutions and depths. scRNA-seq analyses produce gene expression profiles and celltype-specific gene sets that require annotation to provide biological meaning, a process that has traditionally relied on the manual interpretations of clinical scientists. Similarly, SRT experiments typically require subjective, time-consuming annotation of spatial domains. Recent advances in large language model (LLM) methods offer opportunities to assist in the interpretation of such datasets. Many current LLM-based approaches aim to annotate transcriptomics-derived gene sets by integrating information from publicly available and online biological resources. While these approaches can be effective, they often struggle when presented with weakly-related or fully uncorrelated genes, sometimes inferring and justifying biological relationships that are not supported by existing literature. Additionally, the quality of LLM-generated interpretations is dependent on the provision of appropriate biological context and careful prompt design, both of which can present significant barriers to effective use. To address these limitations we propose genesetGPT, an efficient, LLM-based framework that emphasizes both curated biological context and iterative prompt construction, thus enabling realistic summarization of heterogeneous gene sets at scale. genesetGPT is implemented as an open-source Python package available for download at https://github.com/jr-leary7/genesetGPT.",
+      "authors": [
+        "Leary, J. R.",
+        "Pattey, S.",
+        "Bacher, R."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "scRNA-seq",
+        "spatial domains"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "以LLM驅動的功能性基因集摘要：genesetGPT"
+    },
+    {
+      "id": "10.64898/2026.07.29.741501",
+      "title": "Switch-TRIBE: Lineage-specific high-resolution profiling of endogenous RNA-protein interactions",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.29.741501v1",
+      "doi": "10.64898/2026.07.29.741501",
+      "abstract": "RNA-binding proteins (RBPs) play vital roles in regulation of cell fate and function. Here, we introduce Switch-TRIBE, which conditionally tags endogenous RBPs with the adenosine deaminase catalytic domain to detect physiological RBP-RNA interactions. We apply SwitchTRIBE to the TRIM-NHL RBPs, BRAT and MEI-P26, essential regulators of Drosophila neurogenesis. Single-cell Switch-TRIBE in neural stem cell lineages defines cell-type specific targets and identifies novel neurogenesis regulators. Beyond target identification, Switch-TRIBE highlights the complex interplay between co-regulating RBPs, uncovering distinct binding site topographies. Our analysis uncovers a potential strategy used by BRAT and MEI-P26 to regulate lineage growth through direct binding of transcripts that encode the core metabolic and translation machineries. Switch-TRIBE provides a robust tool for characterizing RBP-RNA interactions in complex systems without compromising biological fidelity.",
+      "authors": [
+        "Hu, Y.",
+        "Khademi, A.",
+        "Yang, X.",
+        "Lipshitz, H. D."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Switch-TRIBE：譜系特異性高解析度內源性RNA-蛋白質交互作用分析"
+    },
+    {
+      "id": "10.64898/2026.07.23.740230",
+      "title": "An integrated single-cell atlas of human lung across the lifespan",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.23.740230v2",
+      "doi": "10.64898/2026.07.23.740230",
+      "abstract": "The healthy adult lung is largely quiescent but can respond to injury and replace damaged or lost cells. However, the identities and origins of regenerative cell states remain poorly understood. Here we present the Human Developmental Lung Cell Atlas (HDLCA), a curated single-cell reference atlas of the respiratory system across the lifespan, integrating 253 datasets from 225 studies, and comprising over 18 million cells from 3,198 samples and 2,460 individuals across 34 anatomical locations in both health and disease. The HDLCA defines 142 consensus lung cell types, including 13 rare and 8 previously undescribed ones. Notably, we identify a rare intermediate alveolar epithelial progenitor (Int AP) population in normal lungs, with transcriptional signatures shared by alveolar type 2 (AT2) and alveolar type 1 (AT1) cells. Trajectory inference indicates that Int AP cells arise from both AT2 and SCGB1A1+ secretory cells and give rise to AT1 cells, with Hippo-YAP/TAZ signalling governing lineage specification. Int AP cells are associated with genetic susceptibility to idiopathic pulmonary fibrosis and chronic obstructive pulmonary disease, and their dysfunction may contribute to abnormal alveolar repair and regenerative failure in both diseases. The HDLCA provides a unified atlas-level reference for mapping respiratory cellular diversity, uncovering reparative cell dynamics and informing regenerative and cell-based therapeutic strategies.",
+      "authors": [
+        "Huang, L.",
+        "Huang, Z.",
+        "Feng, S.",
+        "Fang, K.",
+        "Wu, J.",
+        "Ao, Y.",
+        "Huang, L.",
+        "Zhang, J.",
+        "Sun, H.",
+        "Miao, Z."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "人類肺部跨生命週期整合性單細胞圖譜"
+    },
+    {
+      "id": "10.64898/2026.07.27.741070",
+      "title": "Quantitative assessment of cell fate commitment in single-cell transcriptomics using scCS",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.27.741070v1",
+      "doi": "10.64898/2026.07.27.741070",
+      "abstract": "Cell fate trajectory inference is one of the key downstream methods in single-cell RNA-sequencing data analysis. Multiple existing tools allow studying such and help identify continuous cell fate dynamics, important genes along the trajectory, and reconstruct the transcriptional states a cell passes to its estimated final state. These methods have been essential to study various biological systems, yet cell fate by itself currently presents mostly qualitative analysis, and existing tools do not allow to directly quantify the fate-related parameters, including commitment, transition speed, fate affinity and entropy. Such quantifications may be performed through multiple parameters and result in better understanding and description of cell fates. We present scCS (single-cell Commitment Scoring), a scverse-friendly Python framework for this problem. scCS introduces Discounted Future-Fate Propagation (DFFP), which models the source transition graph as a geometrically stopped random walk that can reach endpoint anchors or stop unresolved, with a user-defined finite expected graph horizon. For each cell, the resulting probabilities are separated into total fate reach, relative affinity among reached fates, entropy-based fate specificity and reach-supported resolved commitment, while Signed Ordering Flux independently quantifies local progression. scCS also provides endpoint-anchor, graph-coverage and horizon-sensitivity diagnostics, an instantaneous local-direction mode, standardized visualizations, gene-level analyses and replicate-aware comparisons across experimental conditions. Applications to pancreatic endocrinogenesis and neural crest-Schwann-cell differentiation illustrate the general framework. scCS converts an explicit biological fate hypothesis into auditable cell-, population- and replicate-level quantities without redefining the source dynamics.",
+      "authors": [
+        "Kriukov, E.",
+        "Ivleva, E.",
+        "Baranov, P."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "利用scCS對單細胞轉錄組學中細胞命運決定進行定量評估"
+    },
+    {
+      "id": "10.64898/2026.07.27.740999",
+      "title": "RKMR: A Rapid Kernel Machine Regression Framework for Optimal Marker Detection in Spatial Omics Data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.27.740999v1",
+      "doi": "10.64898/2026.07.27.740999",
+      "abstract": "High-throughput spatial omics technologies enable molecular profiling within intact tissue architecture, yet identifying concise, predictive, and biologically interpretable marker panels for cell types, tissue domains, and disease-associated tissue classes remains challenging. This limitation hinders the development of actionable panels for targeted validation and downstream translation. Existing pipelines rely largely on univariate differential-expression analyses, which ignore joint molecular structure and provide limited predictive insight. Multivariate machine-learning methods, including random forest, XGBoost, elastic net, and specialized single-cell panel-selection approaches, can capture predictive patterns but typically lack explicit spatial modeling and probabilistic feature selection, relying instead on model-specific importance scores or user-specified panel sizes. We develop rapid kernel machine regression (RKMR), a scalable framework for spatial-omics marker discovery that integrates nonlinear kernel modeling, spike-and-slab variable selection, and spatial dependence. RKMR uses automatic relevance determination (ARD) kernels and sparsity-inducing priors to capture nonlinear marker-outcome relationships and implicit feature interactions while producing approximate posterior inclusion probabilities (PIPs) that quantify model-based uncertainty in feature inclusion. To scale inference to large spatial datasets, RKMR combines low-rank kernel approximations with stochastic variational optimization. In simulations, RKMR consistently achieves higher AUPRC than competing methods across a range of molecular-signal and spatial-effect settings. Across spatial transcriptomics and scRNA-seq datasets, RKMR identifies parsimonious marker sets that recover reported cell-type signatures and reproducible tissue-layer markers. These results establish RKMR as a scalable and uncertainty-aware framework for translating high-dimensional spatial omics data into robust, experimentally actionable marker panels.",
+      "authors": [
+        "Seal, S.",
+        "Neelon, B.",
+        "Chakraborty, A.",
+        "Mattila, C.",
+        "Rubinstein, M.",
+        "Chung, D.",
+        "Angel, P.",
+        "Ghosh, D."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "spatial transcriptomics",
+        "spatial omics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "RKMR：用於空間體學資料最佳標記偵測的快速核機器回歸框架"
+    },
+    {
+      "id": "10.64898/2026.07.29.741525",
+      "title": "Resolving Immune Lineage and Cell-State Heterogeneity in Human PBMCs via Mass Spectrometry-Based Single-Cell Proteomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.29.741525v1",
+      "doi": "10.64898/2026.07.29.741525",
+      "abstract": "Single-cell proteomics (SCP) currently lacks validated benchmarking standards, and cell annotation often relies on transcriptomic proxies. Unsupervised clustering offers a proxy-free alternative, but its success depends on biological signal outweighing technical variation. In homogeneous samples this is achievable, but in heterogeneous populations, where closely related cell types differ only subtly, technical variation can dominate the clustering and obscure the biology needed for annotation. To address this, we developed an integrated experimental and computational pipeline for protein-level cell annotation and applied it to human PBMCs as an immune-cell test case. We isolated T cells, B cells, monocytes, and NK cells by negative-selection sorting to build a high-fidelity reference. In parallel, unsorted PBMCs from the same donor were processed on a cellenONE and acquired using label-free DIA on an Orbitrap Astral Zoom. Using the labeled reference, we systematically benchmarked normalization, imputation, and clustering methods to assess their effect on cell-type separation. Unsupervised analysis resolved functional subpopulations within each lineage, and a probabilistic SCP classifier trained on these annotations identified the corresponding cell types and states in the unsorted PBMC fraction, validating the pipeline on unenriched, heterogeneous samples. Together, this work delivers an analytically benchmarked SCP workflow that resolves immune lineage and cell-state heterogeneity in human PBMCs and provides a classifier-ready, protein-level reference for immune-cell assignment.",
+      "authors": [
+        "O'Connor, S. A.",
+        "Gletten, R. B.",
+        "Sharma, R.",
+        "Jensen, Z. N.",
+        "Lovell, B.",
+        "Garcia-Mansfield, K.",
+        "Ghoda, L. Y.",
+        "Zhang, B.",
+        "Frankhouser, D. E.",
+        "Rockne, R. C.",
+        "Trent, J. M.",
+        "Marcucci, G.",
+        "Pirrotte, P."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "透過質譜單細胞蛋白質體學解析人類周邊血單核細胞中的免疫譜系與細胞狀態異質性"
+    },
+    {
+      "id": "10.1101/2025.11.21.689845",
+      "title": "Determining gene specificity from multivariate single-cell RNA sequencing data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.11.21.689845v2",
+      "doi": "10.1101/2025.11.21.689845",
+      "abstract": "An important application of single-cell genomics experiments is to identify genes specific to biological categories or experimental conditions. Although numerous approaches have been proposed to identify such genes, we consider an axiomatic approach based on defining properties that a specificity measure should have. This leads us to develop ember (Entropy Metrics for Biological ExploRation), which we show is the only method satisfying four key desired properties for a specificity measure. Applying ember to eight tissues from eight founder mouse strains, we find that gene specificity is often unintuitive: canonical markers can be supplanted, housekeeping genes are context-dependent, and mouse strain can drive unexpected cell type switching. Unsupervised learning on entropy metrics uncovers shared genes specialized to male gonads and kidney, as well as genes specific to non-consecutive developmental stages in the kidney. To facilitate further exploration of gene specificity in mice, we have also developed a comprehensive specificity database, along with a web interface, API and MCP server. Extending ember to a human PBMC dataset collected from 255 diverse individuals, we find that variation in PBMCs is largely localized to classical monocytes. We also find genes with unique specificity by sex, age and ancestral background. Together, these applications establish ember as a powerful tool and provide a roadmap for elucidating the impact of human genetic variation using the murine model.",
+      "authors": [
+        "Swarna, N. P.",
+        "Booeshaghi, A. S.",
+        "Rebboah, E.",
+        "Gordon, M. G.",
+        "Kathail, P.",
+        "Li, T.",
+        "Alvarez, M.",
+        "Ye, C. J.",
+        "Wold, B. J.",
+        "Mortazavi, A.",
+        "Pachter, L."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "從多變量單細胞RNA定序資料判定基因特異性"
+    },
+    {
+      "id": "10.64898/2026.07.13.738237",
+      "title": "Lineage recording reveals hijacked hepatic progenitor states as a common origin of HCC and ICC",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.13.738237v3",
+      "doi": "10.64898/2026.07.13.738237",
+      "abstract": "Fatty liver disease predisposes to primary liver cancer, yet the lineage routes and niche mechanisms that select rare tumor-fated hepatocytes remain unclear. Here we developed CERAMIC, a high-capacity CRISPR-Cas9 lineage recorder that co-recovers editing scars and transcriptomes from single cells, and applied it to an AKT/NRAS-driven model of MASLD-associated liver tumor initiation. Longitudinal lineage, single-cell and spatial analyses revealed a hierarchical trajectory in which Hep_Bi-zonal cells, rather than Hep_CVlike cells, generated regenerative and neoplastic hepatocyte progenitor states that progressed toward both hepatocellular carcinoma and intrahepatic cholangiocarcinoma lineages. Tumor-fated cells preferentially expanded along a remodeled midlobular-periportal axis and depended on ACOX1-mediated peroxisomal beta-oxidation to withstand lipotoxic and oxidative stress. Spatial and lineage analyses further identified a sequential lipid-associated macrophage niche, in which monocyte-derived LAMs engaged tumor-fated hepatocytes through an LGALS9-P4HB axis, and P4HB inhibition suppressed tumor expansion. These findings define liver tumor initiation as a lineage-restricted process licensed by peroxisomal metabolic adaptation and macrophage-derived niche signals.",
+      "authors": [
+        "Fan, J.",
+        "Pei, J.",
+        "Xu, N.",
+        "Zhang, X.",
+        "Wang, X.",
+        "Mao, S.",
+        "Zhang, Y.",
+        "Yu, L.",
+        "Sun, Y.",
+        "Gong, Y.",
+        "Xiong, X.",
+        "Wang, S.",
+        "Li, L.",
+        "Shao, Z.",
+        "Sun, X.",
+        "Chen, L.",
+        "Liu, X."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "cancer",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "譜系記錄揭示被劫持的肝臟前驅細胞狀態為肝細胞癌與肝內膽管癌的共同起源"
+    },
+    {
+      "id": "10.64898/2026.07.29.741412",
+      "title": "A pan-cancer single-cell atlas of pericytes",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.29.741412v1",
+      "doi": "10.64898/2026.07.29.741412",
+      "abstract": "Pericytes display marked tissue-specific transcriptional identities, raising the question of whether tumour-associated pericytes converge towards shared adaptive states across cancers. Here, we built a pan-cancer single-cell RNA sequencing atlas of pericytes, integrating nearly four million cells across nine tissues, complemented by spatial transcriptomic analyses. Despite their physiological diversity, pericytes were recurrently expanded in tumours and converged on a common transcriptional program, the tumour-associated pericyte signature (TAPS). TAPS robustly identified pericytes across datasets, outperforming canonical markers in tumour contexts. Tumour-associated pericytes further diversified into specialised states including extracellular matrix (ECM)-associated and interferon (IFN)-responsive programs, which occupy mutually exclusive tumour ecosystems. ECM-associated pericytes were enriched in desmoplastic, fibroblast-rich regions and were associated with adverse clinical outcomes across multiple cancer types. IFN-responsive pericytes accumulated in inflammatory niches, with macrophages implicated as candidate drivers of specialisation. Together, our multi-layered analysis defines convergent and specialised tumour-associated pericyte programs across human cancers.",
+      "authors": [
+        "Martinez-Larrinaga, A.",
+        "Camargo, S.",
+        "Saraiva, M.",
+        "Cervilla, S.",
+        "Garcia-Longarte, S.",
+        "Martinez-Romero, A.",
+        "Gouveia, L.",
+        "van Splunder, H.",
+        "Barbella-Aponte, R. A.",
+        "Musulen, E.",
+        "Rodilla, V.",
+        "Galan-Moya, E. M.",
+        "Porta-Pardo, E.",
+        "Carracedo, A.",
+        "Mendizabal, I.",
+        "Graupera, M."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "泛癌周細胞單細胞圖譜"
+    },
+    {
+      "id": "10.64898/2026.07.29.738916",
+      "title": "Proteomic Profiling Identifies CLDN3 as a Tumor-Selective Therapeutic Target in Small Cell Lung Cancer",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.29.738916v1",
+      "doi": "10.64898/2026.07.29.738916",
+      "abstract": "Small cell lung cancer (SCLC) remains a highly lethal disease with limited targetable surface antigens beyond delta-like ligand 3 (DLL3). We sought to systematically identify and validate tumor-selective cell-surface targets in relapsed SCLC. To this end, we developed an integrated proteogenomic pipeline combining single-cell RNA sequencing, combinatorial optimization, mass spectrometry-based proteomics, and immunohistochemistry to systematically map the SCLC surfaceome of 49 tumors across 25 patients with relapsed SCLC. Using this approach we found claudin-3 (CLDN3) to be a consistently expressed and tumor-selective antigen, with broader coverage than DLL3, which is the current clinical benchmark. CLDN3 was highly expressed across various treatment states, while maintaining low expression in most nonmalignant tissues. Functional validation using a novel CLDN3-specific monoclonal antibody (ABN501) demonstrated NK cell-mediated cytotoxicity in vitro and tumor regression in vivo, as well as a favorable safety profile. These findings support clinical development of CLDN3-directed therapies and demonstrate the utility of integrated proteogenomic approaches for antigen discovery in solid tumors.",
+      "authors": [
+        "Schroeder, B. A.",
+        "Choi, J.",
+        "Schaffer, A. A.",
+        "Nirula, M.",
+        "Cao, Y.",
+        "Zhang, Y.",
+        "Meinhardt, A.-L.",
+        "Kwon, H.",
+        "Park, H.",
+        "Lee, S.",
+        "Shin, H. J.",
+        "Park, H. G.",
+        "Yang, H.",
+        "Hong, S.",
+        "Desai, P.",
+        "Butcher, D.",
+        "Sukprasert, P.",
+        "Wang, B.",
+        "Biery, D. N.",
+        "El Meskini, R.",
+        "Atkinson, D.",
+        "Bassel, L. L.",
+        "Weaver Ohler, Z.",
+        "Huang, Y.",
+        "Hunt, A. L.",
+        "Abulez, T.",
+        "Bateman, N. W.",
+        "Conrads, T. P.",
+        "Lake, R.",
+        "Hewitt, S. M.",
+        "Hong, S.",
+        "Kim, J.",
+        "Jung, S. H.",
+        "Lee, H. J.",
+        "Lee, S.",
+        "Shin, Y. K.",
+        "Ruppin, E.",
+        "Thomas, A."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "蛋白質體學分析鑑定CLDN3為小細胞肺癌中腫瘤選擇性治療標靶"
+    },
+    {
+      "id": "10.64898/2026.07.29.741338",
+      "title": "Custom Probe-Based Spatial Transcriptomics Enables Microbiome Detection in FFPE Colorectal Cancer Tissue",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.29.741338v1",
+      "doi": "10.64898/2026.07.29.741338",
+      "abstract": "Intratumoral bacteria have emerged as functionally relevant components of the tumor microenvironment, yet the spatial relationship between these bacterial communities and host gene expression remains poorly characterized, in part due to methodological constraints. Existing spatial transcriptomics approaches for microbial detection rely on fresh frozen tissue, excluding FFPE specimens which dominate clinical archives. Here, we describe a custom probe design pipeline targeting the variable regions of bacterial 16S rRNA, compatible with the probe-based chemistry of the 10X Genomics Visium CytAssist platform, enabling spatially resolved bacterial profiling in FFPE tissue. Applied to a pilot cohort of six FFPE colorectal cancer tumor and normal adjacent tissue specimens, we show that integration of custom microbial probes into the Visium workflow preserves host transcriptomic structure, with clustering analysis recapitulating expected colonic cell type architecture. Bacterial signal was detected across all samples in a spatially patterned and focal manner, with one tumor sample exhibiting markedly elevated signal intensity and a distinct invasive distribution pattern, driven by spatially structured Bacteroides-Phocaeicola and Porphyromonas signals with divergent intratumoral trajectories. These findings establish the feasibility of probe-based spatial metatranscriptomics in FFPE tissue and provide a generalizable framework for studying host-microbiome interactions in relevant clinical samples.",
+      "authors": [
+        "Aburajab, R.",
+        "Karmouch, J. L.",
+        "Jenq, R. R.",
+        "Craig, D. W."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "Visium",
+        "cancer",
+        "microbiome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "基於客製化探針的空間轉錄體學技術實現福馬林固定石蠟包埋大腸直腸癌組織中的微生物組檢測"
+    },
+    {
+      "id": "10.64898/2026.07.02.736148",
+      "title": "Pericyte-Derived Cancer-Associated Fibroblasts Correlate with Poor Survival and Are Enriched After Chemoradiotherapy in Glioblastoma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.02.736148v2",
+      "doi": "10.64898/2026.07.02.736148",
+      "abstract": "The role of cancer associated fibroblasts (CAFs) in glioblastoma remains unclear, as their existence in the brain tumor microenvironment is still debated, given that the normal brain parenchyma is devoid of fibroblasts. It is unclear whether cells described as CAFs represent a distinct stromal population or a transcriptional state of perivascular cells such as pericytes. The aim of this study was to determine the identity, origin, and functional relevance of CAFs in glioblastoma. We analyzed 54 single cell RNA sequencing datasets together with 88 bulk RNA sequencing samples. We identified a continuous transcriptional spectrum linking endothelial cells, pericytes, and CAFs, supporting pericytes as the most likely source of CAFs in glioblastoma. We further derived and validated robust CAF and pericyte specific gene signatures, enabling clear separation of these populations across cohorts. Reproducible CAF associated ligand receptor interactions were enriched in angiogenesis and immune modulation pathways. In bulk RNA seq data, both CAF signature scoring and deconvolution consistently demonstrated increased CAF abundance in IDH wildtype gliomas and further enrichment after chemoradiotherapy, while selective CYP1B1 expression in CAFs suggested a potential association with therapy-induced tumor adaptation. Overall, CAFs represent a distinct, pericyte related stromal population in glioblastoma with conserved transcriptional and signaling programs. High CAF signature scores were associated with poorer overall and progression-free survival and were enriched in IDH wildtype and post chemoradiotherapy gliomas, suggesting a role for CAFs in therapy-associated remodeling of the tumor microenvironment in aggressive disease.",
+      "authors": [
+        "Ismailov, A.",
+        "Poptsova, M."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "周細胞衍生的癌症相關纖維母細胞與膠質母細胞瘤的較差存活率相關，且在化放療後富集"
+    },
+    {
+      "id": "10.64898/2026.05.21.726806",
+      "title": "Spatial profiling identifies a GLIS2-associated fibroblast state linked to peritoneal recurrence in gastric cancer",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.21.726806v3",
+      "doi": "10.64898/2026.05.21.726806",
+      "abstract": "Cancer-associated fibroblasts are transcriptionally heterogeneous, yet how their reprogramming shapes gastric cancer progression remains unclear. Integrating single-cell and spatial transcriptomics, patient-derived fibroblast co-culture, and clinical cohorts, we identified a spatially organized continuum of extracellular matrix-producing fibroblasts. An inferred trajectory connected homeostatic ECMh through inflammatory-chemoattractive ECMi to tissue-remodeling ECMr, with increasing GLIS2 regulon activity and ECMr enrichment near the tumorstroma interface. ECMr co-culture induced a nonEMT epithelial program characterized by coordinated laminin332 subunit expression, hemidesmosome-associated genes, a matrix remodeling protease profile, and reduced proliferative activity. Longitudinal imaging showed progressive cancer-cell elongation and positional displacement over the fibroblast layer. ECMr-associated GLIS2 regulon activity in resected primary tumors was associated with shorter peritoneal metastasis-free survival across two gastric cancer cohorts, with a similar association in colorectal cancer. A peritoneal metastasis recapitulated the corresponding stromal and epithelial organization. Together, these findings define an ECMr centered stromal epithelial wound repair circuit linked to subsequent peritoneal dissemination.",
+      "authors": [
+        "Lee, S.",
+        "Cho, S.",
+        "Han, D.-S.",
+        "Kim, J.",
+        "Hur, H.",
+        "Kim, H. H.",
+        "Cheong, J.-H.",
+        "Kim, T.-M."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "空間分析鑑定與胃癌腹膜復發相關的GLIS2相關纖維母細胞狀態"
+    },
+    {
+      "id": "10.64898/2026.07.27.741112",
+      "title": "Interpretable spatial ecological dynamics reveal ecological retention escape and amplification in pediatric leukemia",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.27.741112v1",
+      "doi": "10.64898/2026.07.27.741112",
+      "abstract": "Spatial transcriptomics enables tumor ecosystems to be examined within their native tissue architecture, yet many computational approaches remain primarily descriptive and provide limited insight into how spatial organization may constrain or facilitate disease persistence. Here, we develop a therapy-aware spatial ecological framework that integrates ecological-context discovery, ecological opportunity landscapes, Ornstein-Uhlenbeck (OU)-like retention, Levy-like escape, and branching-like amplification to characterize pediatric leukemia tissues. Using normal bone marrow reference programs and pediatric leukemia spatial transcriptomic sections, we identify five recurrent candidate ecological contexts with distinct malignant, immune, stromal, vascular, inflammatory, and stress-associated features. These contexts form spatially heterogeneous ecological opportunity landscapes across bone marrow and extramedullary samples. OU-like summaries quantify context-specific attractor position and ecological retention, whereas Levy-like analyses identify rare cross-context displacements consistent with discontinuous ecological remodeling. Branching-like amplification integrates ecological abundance, latent displacement, opportunity, escape, and escaped-state fraction into an interpretable index of ecological expansion. An independent treatment-associated cohort shows that a primitive-state retention proxy, escape, and amplification generate coherent ecological profiles qualitatively consistent with residual persistence and relapse-associated expansion. Because the available spatial datasets are cross-sectional, these quantities are interpreted as operational summaries of tissue organization rather than direct estimates of temporal evolutionary processes. Together, the framework moves spatial transcriptomic analysis beyond static tissue mapping by providing an interpretable representation of ecological constraint, rare displacement, amplification, and therapy-associated persistence in pediatric leukemia.",
+      "authors": [
+        "Kim, S.-H."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "可解釋的空間生態動力學揭示兒童白血病中的生態保留逃逸與擴增"
+    },
+    {
+      "id": "10.64898/2026.07.29.741620",
+      "title": "Minimally invasive monitoring of clonal evolution through integrated single cell and ctDNA analysis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.29.741620v1",
+      "doi": "10.64898/2026.07.29.741620",
+      "abstract": "Abstract Circulating cell-free DNA (cfDNA) offers a minimally invasive lens into temporal tumor evolution. However, the accurate quantification of clonal composition from cfDNA remains challenging, particularly in low tumor fraction (TF) settings. Existing liquid biopsy deconvolution frameworks are frequently constrained by their reliance on bulk tissue references, simplified copy-number assumptions, and incomplete representations of clonal architecture, which collectively compromise sensitivity and bias evolutionary inferences. To address these limitations, we developed cfClone, a Bayesian framework that integrates single-cell whole-genome sequencing (scWGS) derived clonal structures with cfDNA whole-genome sequencing data to enable high-resolution, tissue-informed clonal tracking. Notably, while cfClone inherently leverages genomic instability, we demonstrate that cfClone achieves accurate TF estimates and circulating tumor DNA (ctDNA) detection even in malignancies with limited copy-number variant (CNV) burden. We validate cfClone in low and high CNV burden cases using simulated data derived from real patient data, establishing sensitive detection thresholds across a range of aneuploidy levels. By jointly modeling local copy-number alterations and allele-specific signals via Bayesian model selection and Markov chain Monte Carlo (MCMC) sampling, the algorithm yields uncertainty-aware estimates of clonal prevalence and TF. Applied to longitudinal clinical cohorts, cfClone reconstructs real-time evolutionary trajectories and uncovers clonal selection driving therapeutic resistance, including the de novo detection of emergent clonal populations. Github link: https://github.com/Roth-Lab/cfclone",
+      "authors": [
+        "Kabeer, F.",
+        "Lepur, M.",
+        "Lynch, B.",
+        "Hurtado, E.",
+        "Zaikova, E.",
+        "Senz, J.",
+        "Au, V.",
+        "Baril, C.",
+        "Ma, D.",
+        "Nicholson, S.",
+        "Ha, G.",
+        "McAlpine, J.",
+        "Aparicio, S.",
+        "Huntsman, D.",
+        "Bouchard-Cote, A.",
+        "Drew, Y.",
+        "Roth, A. J. L."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "evolution",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "透過整合單細胞與循環腫瘤DNA分析進行微創監測克隆演化"
+    },
+    {
+      "id": "10.64898/2026.07.29.740271",
+      "title": "The tripartite neural plate border is a common trait of vertebrates and tunicates",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.29.740271v1",
+      "doi": "10.64898/2026.07.29.740271",
+      "abstract": "The neural crest and neurogenic placodes, which arise from the neural plate border, give rise to morphological characteristics that distinguish vertebrates from invertebrates (Gans & Northcutt, 1983). Recent studies have suggested that embryos of ascidians, a group of tunicates that are the closest invertebrate relatives of vertebrates, possess cells that share an evolutionary origin with vertebrate neural crest cells (Abitua et al., 2012; Fatieieva et al., 2025; Ishida & Satou, 2024; Stolfi et al., 2015; Todorov et al., 2024; Waki et al., 2015) and neurogenic placode cells (Abitua et al., 2015; Ikeda et al., 2013; Liu et al., 2023; Liu & Satou, 2019; Manni et al., 2004; Mazet et al., 2005; Papadogiannis et al., 2022; Wagner & Levine, 2012). To dissect the neural plate border of ascidian embryos at the molecular level, and to gain deeper insights into evolutionary origins of the neural crest and neurogenic placodes, we comprehensively analyzed expression patterns of transcription factor genes at single-cell resolution. We demonstrated that the ascidian neural plate border consists of three domains with distinct gene expression profiles: the anterior, inner lateral, and outer lateral domains. A cross-species comparison of transcriptomes from ascidians and zebrafish suggests that the anterior domain is homologous to zebrafish neurogenic placodes, the inner lateral domain to the neural crest and tail bud and the outer lateral domain to the median fin fold ectoderm. We propose that a tripartite neural plate border was present in the last common ancestor of vertebrates and tunicates, providing a blueprint for evolutionary emergence of vertebrate morphological novelties.",
+      "authors": [
+        "Ishida, T.",
+        "Satou, Y."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "三方神經板邊界是脊椎動物與尾索動物的共同特徵"
+    },
+    {
+      "id": "10.64898/2026.07.29.741448",
+      "title": "Single-cell lineage tracing of human neuromesoderm organoids reveals TBX6-mediated posterior mesoderm fate diversification",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.29.741448v1",
+      "doi": "10.64898/2026.07.29.741448",
+      "abstract": "Neuromesodermal progenitors (NMPs) drive vertebrate posterior axis elongation, but the lineage hierarchy of human NMP derivatives remains poorly defined. Here, we integrated a CRISPR/Cas9-based single-cell lineage tracing system with paired multiomics profiling -including scRNA-seq and scATAC-seq - in human pluripotent stem cell-derived neuromesodermal organoids (NMOs) to reconstruct high-resolution lineage relationships spanning 50 days of differentiation. Our data analysis reveal that intermediate mesoderm (IM) and paraxial mesoderm (PM) originate from a shared presomitic mesoderm (PSM) progenitor downstream of NMPs, whereas lateral plate mesoderm (LPM) segregates early from committed mesodermal progenitors. Notably, TBX6 ablation disrupts both IM and somite development, demonstrating that TBX6 functions as an upstream regulator of these two lineages. Mechanistically, TBX6 loss arrests PSM at the progenitor stage and abolishes activation of development programs required for IM maturation. We further delineate neural crest differentiation pathways from NMPs, identifying pre-bifurcation molecular signatures that predict neural crest fate. This work provides a clonal-resolution lineage map of human NMP differentiation and advances our understanding of human posterior trunk development and the etiology of TBX6-associated congenital disorders affecting both the spine and the kidney.",
+      "authors": [
+        "Liao, Y.",
+        "Chen, C.",
+        "Li, M.",
+        "Wang, C.",
+        "Wang, L.",
+        "Zhu, M.",
+        "Yao, Y.",
+        "Peng, G."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "development",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "人類神經中胚層類器官的單細胞譜系追蹤揭示TBX6介導的後中胚層命運多樣化"
+    },
+    {
+      "id": "10.64898/2026.07.29.741625",
+      "title": "In vivo reconstruction of the cell lineage history of a developing mouse with DNA Typewriter, from zygote to late organogenesis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-07-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.29.741625v1",
+      "doi": "10.64898/2026.07.29.741625",
+      "abstract": "The complete cell lineage of C. elegans, mapped over four decades ago, was tractable because the animal is small, transparent, and lineage invariant. Most animals are none of these, having orders of magnitude more cells, being opaque, and developing with substantial stochasticity. Since 2016, genome editing-based lineage tracing has opened the door to dense cell lineage reconstruction in such organisms, but delivering on that promise has proven technically challenging. Here we apply DNA Typewriter, a prime editing-based recorder that writes stochastic symbolic insertions to an engineered genomic TAPE in strictly sequential order, to trace mouse development from zygote (E0) to late organogenesis (E13.5). We introduce constructs encoding a prime editor, engineered prime editing guide RNAs (epegRNAs), and Pol-III-driven circularized TAPE RNA (circTAPE) into wildtype zygotes by pronuclear injection (PNI), then assay embryos by single-nucleus transcriptional profiling (sci-RNA-seq3) with paired circTAPE recovery. From one E13.5 embryo bearing ~7 integrations of a constitutively expressed prime editor and 11 integrations of 6-unit circTAPE, we recover ~1.75M single-nucleus transcriptomes and reconstruct a time-calibrated phylogeny of 1,340,794 annotated cells with parsimony-based node support. The first cell division is marked unequivocally, and although the resulting blastomeres contribute asymmetrically to the embryo proper, they are fate-neutral and serve as internal replicates that reproduce every finding. A modest cohort of pre-gastrulation founders dominates the embryo, with inequality exceeding neutral expectation within one to two cell cycles of founder allocation, yet these founders remain broadly multipotent; a second phase of clonal dominance arises in specific lineages during organogenesis. At the finest scale, sibling cells share cell type 9-fold in excess of chance, reaching 68- to 107-fold for cell types arising from spatially restricted founder pools, while the recent differentiations of organogenesis are legible in the heterotypic structure of terminal clades. From clade co-occurrence alone, we recover germ-layer organization and a dated hierarchy of cell-type couplings with branch points from E8.5 onwards. Finally, by integrating these data with our single-cell time-series of mouse development, we impute transcriptional states and annotations for the majority of internal nodes and recover established state histories for diverse cell types. All data are made freely available, together with NextCell, an interactive browser for this annotated cellular phylogeny of mouse development from zygote to late organogenesis.",
+      "authors": [
+        "Yu, Q.",
+        "Kim, H.",
+        "Seidel, S.",
+        "Acosta-Clark, J. F.",
+        "Martin, B. K.",
+        "O'Connor, K.",
+        "Daza, R. M.",
+        "Gasperini, M.",
+        "Nathans, J. F.",
+        "Lam, M.",
+        "Gamo, E.",
+        "Vijay Kumar, S.",
+        "Kuo, L.",
+        "Lalanne, J.-B.",
+        "Simeonov, K.",
+        "Pepper, M.",
+        "Trapnell, C.",
+        "Gray, J. M.",
+        "Choi, J.",
+        "Qiu, C.",
+        "Shendure, J."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "development",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/science.aef8874",
+      "title": "Recovering signatures of archaic hominin introgression using ancestral recombination graphs",
+      "journal": "Science",
+      "publishedDate": "2026-07-30T06:00:10.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/science.aef8874?af=R",
+      "doi": "10.1126/science.aef8874",
+      "abstract": "Admixture between modern humans and extinct hominins has shaped the genomes of present-day individuals, but reconstructing this history has been constrained by the scarcity of archaic samples and unadmixed outgroup populations. We introduce TRACE, a reference- and outgroup-free approach that uses features of ancestral recombination graphs to identify archaic ancestry. Simulations show TRACE has high precision and low false discovery rates. Applied to 1000 Genomes, TRACE recovers known Neanderthal and Denisovan introgression and uncovers ghost admixture from uncharacterized hominins in both Africans and non-Africans. Ghost ancestry persists in Neanderthal and Denisovan ancestry deserts, challenging their interpretation as Homo sapiens –specific regions. In Oceanians, TRACE finds deep lineages are enriched in Denisovan compared to Neanderthal regions, supporting super-archaic introgression. TRACE enables mapping archaic introgression without archaic genomes.",
+      "sourceId": "science",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "重現古代人類基因滲入的痕跡：無需參考基因組的新方法",
+      "summaryZh": "這項研究開發了一種名為TRACE的新方法，無需依賴古代人類基因組或未混血的外群，即可從現代人類基因組中識別出已滅絕古人類（如尼安德塔人、丹尼索瓦人）的基因滲入。模擬實驗顯示TRACE具有高精確度和低偽陽性率。應用於千人基因組計畫的數據後，TRACE不僅成功復現已知的尼安德塔人與丹尼索瓦人基因滲入，更在非洲與非非洲人群中發現了來自未知古人類的「幽靈」基因滲入。這些幽靈祖先在尼安德塔人與丹尼索瓦人的「基因沙漠」區域中持續存在，挑戰了這些區域是智人特有基因組的傳統觀點。在大洋洲人群中，TRACE發現丹尼索瓦人區域比尼安德塔人區域含有更深的演化譜系，支持了「超級古老」基因滲入的假說。這項技術為研究人類演化史提供了強而有力的新工具。",
+      "topicTags": [
+        "archaic-introgression",
+        "ancestral-recombination-graphs",
+        "population-genetics",
+        "human-evolution",
+        "computational-biology"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 40,
+      "passedByScope": 39,
+      "llmClassified": 1,
+      "llmYes": 1,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 40,
+      "excluded": 0
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 40,
+      "llmTagged": 40,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 40,
+      "candidates": 37,
+      "featured": 12,
+      "overflow": 25,
+      "lineA": 2,
+      "lineB": 16,
+      "preprint": 19,
+      "skip": 3
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 25,
+      "llmTranslated": 24,
+      "failed": 1
+    }
+  }
+}
