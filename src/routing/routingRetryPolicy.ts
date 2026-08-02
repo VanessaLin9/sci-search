@@ -1,11 +1,12 @@
 import { MIN_USEFUL_REQUEST_MS } from "./routingBudget.js";
 
+/** 429 無 Retry-After／reset hint 時的預設等待（再加少量 jitter）（PR #28）。 */
 export const DEFAULT_RATE_LIMIT_WAIT_MS = 30_000;
 export const MAX_RATE_LIMIT_WAIT_MS = 60_000;
 export const RATE_LIMIT_JITTER_MAX_MS = 1_000;
-/** Short, bounded backoff for a single 5xx retry — not an exponential chain. */
+/** 5xx 最多一次短 backoff；禁止指數 retry chain（PR #28）。 */
 export const SERVER_ERROR_BACKOFF_MS = 1_000;
-/** Binary-split depth cap for length/parse recoveries (does not apply to transport failures). */
+/** parse/length 拆批深度上限；timeout/network 不走 split（PR #28）。 */
 export const MAX_SPLIT_DEPTH = 3;
 
 export type RateLimitWaitPlan = {

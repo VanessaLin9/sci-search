@@ -244,8 +244,10 @@ async function sleepWithBudget(
 }
 
 /**
- * One logical classify attempt with app-owned 429 / 5xx retry (at most one each path).
- * Timeout/network/auth do not retry here.
+ * App 擁有的單次 attempt 重試政策（PR #28）：
+ * - 429：先等 hint／預設 backoff，最多再試一次；budget 不夠則不 sleep
+ * - 5xx：短 backoff 後最多一次
+ * - timeout／network／auth：不 retry，開 breaker
  */
 async function classifyBatchOnceWithRetryPolicy(
   items: BroadScienceRoutingInput[],
@@ -351,8 +353,8 @@ async function classifyBatchOnceWithRetryPolicy(
  * 4) timeout / network / persistent 429/5xx / auth → 開 breaker，不再打 provider
  * 5) 單篇仍失敗 → 標 degraded 交 keyword fallback（PR #18 / #19）
  *
- * Why no transport split: 7/31 daily 在 timeout 後走 40→20→…→1 疊 SDK retry，routing 近一小時；
- * timeout 應立即 fail-open 到 keyword，保留已成功 verdict。
+ * Why no transport split（PR #28）：7/31 daily 在 timeout 後走 40→20→…→1 疊 SDK retry，
+ * routing 近一小時；timeout 應立即 fail-open 到 keyword，保留已成功 verdict。
  */
 async function classifyBatch(
   items: BroadScienceRoutingInput[],

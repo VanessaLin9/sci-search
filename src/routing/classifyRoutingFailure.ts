@@ -50,8 +50,8 @@ function isConfigErrorMessage(message: string): boolean {
 }
 
 /**
- * Typed failure classification for routing resilience.
- * Prefer SDK status/name; fall back to existing message heuristics used in tests.
+ * Routing 失敗分類契約（PR #28）：以 SDK status/name 為主、字串 heuristic 為輔。
+ * timeout/network 與 parse/length 必須分開——前者開 breaker 且不拆批，後者才可有限 split。
  */
 export function classifyRoutingFailure(
   error: unknown,

@@ -28,7 +28,7 @@ export { extractLlmJsonContent as extractRoutingMessageContent } from "../llm/ex
 
 /** Routing LLM 呼叫；response_format 重試交給共用 helper，domain fallback 仍在 classify。PR #21
  * Timing：gate=`life-science-routing` callSite=`callRoutingCompletion`（PR #26）。
- * Per-request timeout / maxRetries=0：app 擁有 retry 與 stage budget（routing resilience）。
+ * Per-request timeout 受 stage remaining budget 截短，且 `maxRetries=0` 避免 SDK 與 domain retry 疊加（PR #28）。
  */
 export async function callRoutingCompletion(
   items: BroadScienceRoutingInput[],
@@ -57,6 +57,7 @@ export async function callRoutingCompletion(
     preferJsonResponseFormat: config.preferJsonResponseFormat,
     create: (useJsonResponseFormat) => {
       options?.onRequestAttempt?.();
+      // in-flight 也要受 remaining budget 約束；retry 次數由 classify 層擁有（PR #28）
       return client.chat.completions.create(
         buildRoutingCompletionParams(items, config, useJsonResponseFormat, maxTokens),
         {

@@ -32,7 +32,7 @@ const routingFileSchema = z.object({
   maxInputTokens: z.number().int().positive(),
   maxTokens: z.number().int().positive(),
   timeoutMs: z.number().int().positive(),
-  /** SDK retries disabled by default (0); app owns routing retry policy. */
+  /** SDK retries 預設 0；routing retry／deadline 由 app 擁有，避免與 SDK 疊加（PR #28）。 */
   maxRetries: z.number().int().nonnegative(),
   enableThinking: z.boolean(),
 });

@@ -1,9 +1,13 @@
 import type { Clock } from "./clock.js";
 
-/** Shared deadline for one `classifyBroadSciencePapers()` LLM stage. */
+/**
+ * Shared deadline for one `classifyBroadSciencePapers()` LLM stage（PR #28）。
+ * 涵蓋 top-level batch、missing-retry、JSON fallback、split、backoff 與 in-flight request；
+ * 避免只做 request 前檢查、實際等待卻越過 stage 上限。
+ */
 export const DEFAULT_ROUTING_STAGE_BUDGET_MS = 5 * 60 * 1000;
 
-/** Skip issuing a provider call when remaining budget is below this. */
+/** 剩餘時間低於此就不發 request，直接 keyword fallback（PR #28）。 */
 export const MIN_USEFUL_REQUEST_MS = 1_000;
 
 export type RoutingBudget = {

@@ -2,6 +2,10 @@ import type { Clock } from "./clock.js";
 import { createRoutingBudget, type RoutingBudget } from "./routingBudget.js";
 import { RATE_LIMIT_JITTER_MAX_MS } from "./routingRetryPolicy.js";
 
+/**
+ * Invocation-local stop reason（PR #28）：只在本次 `classifyBroadSciencePapers` 內生效，
+ * 不持久化、不跨 bioRxiv／digest 共用。
+ */
 export type RoutingStopReason =
   | "timeout"
   | "network"
