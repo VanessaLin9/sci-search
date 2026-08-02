@@ -1,0 +1,166 @@
+{
+  "reportDate": "2026-07-31",
+  "note": "Minimal fixed fixture for empty-abstract featured selection regression (PR #27). Stubs abstracts; do not use data/processed (retention).",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03187-7",
+      "sourceId": "nature-methods",
+      "title": "Getting over ANOVA: estimation graphics for multi-group comparisons",
+      "digestLine": "line-b",
+      "abstract": "",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41592-026-03140-8",
+      "sourceId": "nature-methods",
+      "title": "SpaMTP: integrative statistical analysis and visualization of spatial metabolomics and transcriptomics data",
+      "digestLine": "line-a",
+      "abstract": "",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41592-026-03162-2",
+      "sourceId": "nature-methods",
+      "title": "CellTune: an integrative software for accurate cell classification in spatial proteomics",
+      "digestLine": "line-a",
+      "abstract": "",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41588-026-02703-x",
+      "sourceId": "nature-genetics",
+      "title": "Cumulative transcription factor binding and p300-mediated histone acetylation drive enhancer activation frequency",
+      "digestLine": "line-b",
+      "abstract": "",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41588-026-02666-z",
+      "sourceId": "nature-genetics",
+      "title": "Gene mutant dosage is associated with prognosis and metastatic tropism in 60,000 clinical cancer samples",
+      "digestLine": "line-b",
+      "abstract": "",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41593-026-02383-0",
+      "sourceId": "nature-neuroscience",
+      "title": "An activity-modulated transport route across myelin (TRAM) for motor-driven organelle transfer in oligodendrocytes",
+      "digestLine": "line-b",
+      "abstract": "Usable English abstract.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41590-026-02604-5",
+      "sourceId": "nature-immunology",
+      "title": "BCAT2 links branched-chain amino acids metabolism to interferon signaling to sustain macrophage inflammation",
+      "digestLine": "line-b",
+      "abstract": "Usable English abstract.",
+      "featured": true
+    },
+    {
+      "id": "10.1371/journal.pbio.3003924",
+      "sourceId": "plos-biology",
+      "title": "Endogenous auditory and motor brain rhythms predict individual speech tracking",
+      "digestLine": "line-b",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.01.12.699001",
+      "sourceId": "biorxiv",
+      "title": "Vimentin bridges scales to convert polarized cell locomotion into coordinated collective migration",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.28.741242",
+      "sourceId": "biorxiv",
+      "title": "Integrative spatial profiling of 3D genome organization and gene expression in tissue",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.28.740948",
+      "sourceId": "biorxiv",
+      "title": "Multiomic Integration Reveals Transposable Element-Embedded Regulatory Variants Underlying Brain Aging",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.14.738331",
+      "sourceId": "biorxiv",
+      "title": "DPCGS: a computational framework for linking GWAS to single-cell transcriptomics in complex traits and diseases",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.28.741216",
+      "sourceId": "biorxiv",
+      "title": "ChemoCalib: multiblock PLS calibration of genome-scale metabolic models improves flux prediction over expression-only integration",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.28.741192",
+      "sourceId": "biorxiv",
+      "title": "CyFj11: FlowJo v11 Workspace Import and Legacy Format Export for R-Based Flow Cytometry Analysis",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.30.741780",
+      "sourceId": "biorxiv",
+      "title": "INSM1 Regulates Neuroendocrine Plasticity and Tumor Progression in Prostate Cancer",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.30.739152",
+      "sourceId": "biorxiv",
+      "title": "Scalable and robust phylogenetic tree reconstruction from copy-number data with Sparse Rooted Neighbor Joining",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.30.741725",
+      "sourceId": "biorxiv",
+      "title": "The Capillary endothelial cell-governed niche sustains angiogenesis in proliferating infantile hemangioma via multilayer stromal support",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.29.741620",
+      "sourceId": "biorxiv",
+      "title": "Minimally invasive monitoring of clonal evolution through integrated single cell and ctDNA analysis",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.30.741572",
+      "sourceId": "biorxiv",
+      "title": "IL-1β/IL-6 signaling circuit in the tumor microenvironment drives prostate cancer development",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.30.741857",
+      "sourceId": "biorxiv",
+      "title": "Tumor-hepatocyte crosstalk drives a hepatic lactate-TGF-β axis of CD8⁺ T cell exhaustion and immunotherapy resistance in small-cell lung cancer liver metastases",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    }
+  ]
+}

@@ -207,8 +207,13 @@ test("selectFeatured underfills when eligible candidates are short", () => {
 
 for (const reportDate of ["2026-07-28", "2026-07-31"] as const) {
   test(`selectFeatured regression ${reportDate}: no empty-abstract featured cards`, async () => {
-    const processedPath = path.join(repoRoot, "data/processed", reportDate, "papers.json");
-    const processed = JSON.parse(readFileSync(processedPath, "utf8")) as {
+    // Fixed fixtures under test/fixtures — do not read data/processed (30-day retention).
+    const fixturePath = path.join(
+      repoRoot,
+      "test/fixtures/selection",
+      `empty-abstract-featured-${reportDate}.json`,
+    );
+    const fixture = JSON.parse(readFileSync(fixturePath, "utf8")) as {
       papers: Array<{
         id: string;
         sourceId: string;
@@ -219,7 +224,7 @@ for (const reportDate of ["2026-07-28", "2026-07-31"] as const) {
       }>;
     };
     const sources = await loadSources();
-    const { papers: selected, stats, diagnostics } = selectFeatured(processed.papers, {
+    const { papers: selected, stats, diagnostics } = selectFeatured(fixture.papers, {
       maxFeatured: 12,
       priorityBySourceId: buildSourcePriorityById(sources),
     });
@@ -237,7 +242,7 @@ for (const reportDate of ["2026-07-28", "2026-07-31"] as const) {
       );
     }
 
-    const historicallyEmptyFeatured = processed.papers.filter(
+    const historicallyEmptyFeatured = fixture.papers.filter(
       (paper) => paper.featured && !(paper.abstract ?? "").trim(),
     );
     assert.ok(historicallyEmptyFeatured.length >= 3, "fixture should still contain the empty-card cases");
