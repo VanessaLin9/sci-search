@@ -1,18 +1,37 @@
 import { z } from "zod";
 import { lifeScienceRoutingVerdictSchema } from "../domain/life-science/schemas.js";
-import {
-  isRoutingBatchRequestFailure,
-  shouldRetrySplitLlmBatch,
-} from "../llm/extractLlmJsonContent.js";
+import { shouldRetrySplitLlmBatch } from "../llm/extractLlmJsonContent.js";
 import type { LifeScienceRoutingVerdict } from "../types.js";
 import { planRoutingBatches } from "./batchSizing.js";
 import {
   callRoutingCompletion,
   extractRoutingMessageContent,
 } from "./callRoutingCompletion.js";
+import { systemClock, type Clock } from "./clock.js";
+import {
+  classifyRoutingFailure,
+  isFatalProviderFailure,
+  isSplitRecoverableFailure,
+  isTransportFailure,
+  type ClassifiedRoutingFailure,
+} from "./classifyRoutingFailure.js";
 import { getRoutingLlmConfig, maskApiKey, type RoutingLlmConfig } from "./config.js";
 import { parseJsonFromLlmContent } from "./parseLlmJson.js";
+import { MIN_USEFUL_REQUEST_MS } from "./routingBudget.js";
+import {
+  createRoutingExecutionContext,
+  formatRoutingStageSummary,
+  type RoutingExecutionContext,
+  type RoutingStageDiagnostics,
+  type RoutingStopReason,
+} from "./routingExecutionContext.js";
 import { logRouting } from "./routingLog.js";
+import {
+  canAffordWaitAndRequest,
+  MAX_SPLIT_DEPTH,
+  planRateLimitWait,
+  SERVER_ERROR_BACKOFF_MS,
+} from "./routingRetryPolicy.js";
 import type { BroadScienceRoutingInput } from "./types.js";
 
 const verdictSchema = lifeScienceRoutingVerdictSchema;
@@ -31,6 +50,7 @@ type ClassifyBatchOptions = {
   degradedPaperIds?: Set<string>;
   /** When set, only these paper ids may be added to degradedPaperIds. */
   degradeOnlyIds?: Set<string>;
+  splitDepth?: number;
 };
 
 type ParsedBatchResult = {
@@ -160,23 +180,215 @@ function degradeBatchForKeywordFallback(
   return new Map();
 }
 
+function recordFailureDiagnostics(
+  ctx: RoutingExecutionContext,
+  failure: ClassifiedRoutingFailure,
+): void {
+  switch (failure.kind) {
+    case "timeout":
+      ctx.noteTimeout();
+      break;
+    case "network":
+      ctx.noteNetworkError();
+      break;
+    case "rate_limit":
+      ctx.noteRateLimit();
+      break;
+    case "server_error":
+      ctx.noteServerError();
+      break;
+    case "length":
+    case "parse":
+      ctx.noteParseFailure();
+      break;
+    default:
+      break;
+  }
+}
+
+function stopReasonForFailure(failure: ClassifiedRoutingFailure): RoutingStopReason | null {
+  switch (failure.kind) {
+    case "timeout":
+      return "timeout";
+    case "network":
+      return "network";
+    case "rate_limit":
+      return "persistent_rate_limit";
+    case "server_error":
+      return "persistent_5xx";
+    case "auth":
+      return "auth";
+    case "config":
+      return "config";
+    default:
+      return null;
+  }
+}
+
+async function sleepWithBudget(
+  ctx: RoutingExecutionContext,
+  waitMs: number,
+  batchLabel: string,
+  detail: string,
+): Promise<boolean> {
+  if (!canAffordWaitAndRequest(ctx.budget.remainingMs(), waitMs)) {
+    logRouting(
+      `${batchLabel}: skip wait (${detail}); remaining=${ctx.budget.remainingMs()}ms ` +
+        `wait=${waitMs}ms insufficient for wait+request`,
+    );
+    return false;
+  }
+  logRouting(`${batchLabel}: waiting ${waitMs}ms (${detail}) · remaining=${ctx.budget.remainingMs()}ms`);
+  await ctx.clock.sleep(waitMs);
+  return true;
+}
+
+/**
+ * One logical classify attempt with app-owned 429 / 5xx retry (at most one each path).
+ * Timeout/network/auth do not retry here.
+ */
+async function classifyBatchOnceWithRetryPolicy(
+  items: BroadScienceRoutingInput[],
+  config: RoutingLlmConfig,
+  batchLabel: string,
+  ctx: RoutingExecutionContext,
+): Promise<ParsedBatchResult> {
+  let rateLimitRetried = false;
+  let serverErrorRetried = false;
+
+  for (;;) {
+    if (!ctx.canCallProvider()) {
+      throw new Error(`${batchLabel}: routing breaker open (${ctx.stopReason})`);
+    }
+    if (!ctx.budget.canStartRequest()) {
+      ctx.openBreaker("budget_exhausted");
+      throw new Error(`${batchLabel}: routing budget exhausted`);
+    }
+
+    const requestTimeoutMs = ctx.budget.requestTimeoutMs(config.timeoutMs);
+    if (requestTimeoutMs < MIN_USEFUL_REQUEST_MS) {
+      ctx.openBreaker("budget_exhausted");
+      throw new Error(`${batchLabel}: routing budget exhausted`);
+    }
+
+    logRouting(
+      `${batchLabel}: attempt · batch=${items.length} timeout=${requestTimeoutMs}ms ` +
+        `remaining=${ctx.budget.remainingMs()}ms stop=${ctx.stopReason ?? "none"}`,
+    );
+
+    try {
+      return await classifyBatchOnce(items, config, batchLabel, ctx, requestTimeoutMs);
+    } catch (error) {
+      const finishReason =
+        error instanceof Error && "finishReason" in error
+          ? String((error as Error & { finishReason: string }).finishReason)
+          : "unknown";
+      const failure = classifyRoutingFailure(error, finishReason);
+      recordFailureDiagnostics(ctx, failure);
+
+      if (failure.kind === "rate_limit" && !rateLimitRetried) {
+        rateLimitRetried = true;
+        const plan = planRateLimitWait({
+          headers: failure.headers,
+          nowMs: ctx.clock.now(),
+          jitterMs: ctx.jitterMs,
+        });
+        logRouting(
+          `${batchLabel}: 429 rate limit · hint=${plan.source} plannedWait=${plan.waitMs}ms ` +
+            `remaining=${ctx.budget.remainingMs()}ms`,
+        );
+        const waited = await sleepWithBudget(
+          ctx,
+          plan.waitMs,
+          batchLabel,
+          `429 ${plan.source}`,
+        );
+        if (!waited) {
+          // Spec: budget 不足以等待+retry 時直接 fallback，原因記為 persistent rate limit。
+          ctx.openBreaker("persistent_rate_limit");
+          throw error;
+        }
+        continue;
+      }
+
+      if (failure.kind === "server_error" && !serverErrorRetried) {
+        serverErrorRetried = true;
+        logRouting(
+          `${batchLabel}: 5xx · plannedWait=${SERVER_ERROR_BACKOFF_MS}ms remaining=${ctx.budget.remainingMs()}ms`,
+        );
+        const waited = await sleepWithBudget(
+          ctx,
+          SERVER_ERROR_BACKOFF_MS,
+          batchLabel,
+          "5xx backoff",
+        );
+        if (!waited) {
+          ctx.openBreaker("persistent_5xx");
+          throw error;
+        }
+        continue;
+      }
+
+      if (failure.kind === "rate_limit") {
+        ctx.openBreaker("persistent_rate_limit");
+      } else if (failure.kind === "server_error") {
+        ctx.openBreaker("persistent_5xx");
+      } else if (isTransportFailure(failure.kind) || isFatalProviderFailure(failure.kind)) {
+        const reason = stopReasonForFailure(failure);
+        if (reason) ctx.openBreaker(reason);
+      }
+
+      throw error;
+    }
+  }
+}
+
 /**
  * Broad-science 單批分類的恢復策略（由內而外）：
  * 1) 缺 verdict → focused missing-retry，只合併原本缺的 id（PR #11）
  * 2) missing-retry 請求失敗 → 對缺漏篇 fallback，不中斷（PR #12）
- * 3) timeout / 連線失敗 / 壞 JSON / token length → 對半分批再試（PR #9 / #15）
- * 4) 單篇仍失敗 → 標 degraded 交 keyword fallback（PR #18 / #19）
+ * 3) length / 壞 JSON → 有限 depth 對半分批再試（不再因 timeout 拆批）
+ * 4) timeout / network / persistent 429/5xx / auth → 開 breaker，不再打 provider
+ * 5) 單篇仍失敗 → 標 degraded 交 keyword fallback（PR #18 / #19）
+ *
+ * Why no transport split: 7/31 daily 在 timeout 後走 40→20→…→1 疊 SDK retry，routing 近一小時；
+ * timeout 應立即 fail-open 到 keyword，保留已成功 verdict。
  */
 async function classifyBatch(
   items: BroadScienceRoutingInput[],
   config: RoutingLlmConfig,
   batchLabel: string,
+  ctx: RoutingExecutionContext,
   options: ClassifyBatchOptions = {},
 ): Promise<Map<string, LifeScienceRoutingVerdict>> {
-  const { allowMissingVerdictRetry = true, degradedPaperIds, degradeOnlyIds } = options;
+  const {
+    allowMissingVerdictRetry = true,
+    degradedPaperIds,
+    degradeOnlyIds,
+    splitDepth = 0,
+  } = options;
+
+  if (!degradedPaperIds) {
+    throw new Error("classifyBatch requires degradedPaperIds");
+  }
+
+  if (!ctx.canCallProvider() || !ctx.budget.canStartRequest()) {
+    if (!ctx.canCallProvider()) {
+      // already stopped
+    } else {
+      ctx.openBreaker("budget_exhausted");
+    }
+    return degradeBatchForKeywordFallback(
+      items,
+      batchLabel,
+      `breaker/budget (${ctx.stopReason ?? "budget_exhausted"})`,
+      degradedPaperIds,
+      degradeOnlyIds,
+    );
+  }
 
   try {
-    const parsed = await classifyBatchOnce(items, config, batchLabel);
+    const parsed = await classifyBatchOnceWithRetryPolicy(items, config, batchLabel, ctx);
 
     if (parsed.missingIds.length === 0) {
       logRouting(`${batchLabel}: parsed (${parsed.usageLine}) · ${summarizeVerdicts(parsed.verdictById)}`);
@@ -202,6 +414,15 @@ async function classifyBatch(
       return verdictById;
     }
 
+    if (!ctx.canCallProvider() || !ctx.budget.canStartRequest()) {
+      applyFallbackNo(verdictById, parsed.missingIds, batchLabel, {
+        degradedPaperIds,
+        reason: `missing-retry skipped (${ctx.stopReason ?? "budget_exhausted"})`,
+      });
+      logRouting(`${batchLabel}: parsed (${parsed.usageLine}) · ${summarizeVerdicts(verdictById)}`);
+      return verdictById;
+    }
+
     const retryItems = buildMissingVerdictRetryBatch(items, parsed.missingIds);
     logRouting(
       `${batchLabel}: missing-retry ${retryItems.length} paper(s) (from ${parsed.missingIds.length} missing)`,
@@ -211,13 +432,14 @@ async function classifyBatch(
     const originallyMissing = new Set(parsed.missingIds);
     let retryVerdicts: Map<string, LifeScienceRoutingVerdict>;
     try {
-      retryVerdicts = await classifyBatch(retryItems, config, `${batchLabel} missing-retry`, {
+      retryVerdicts = await classifyBatch(retryItems, config, `${batchLabel} missing-retry`, ctx, {
         allowMissingVerdictRetry: false,
         degradedPaperIds,
         degradeOnlyIds: originallyMissing,
+        splitDepth,
       });
     } catch (retryError) {
-      // missing-retry 自身 timeout/網路錯誤：對缺漏篇 fallback，而非 abort（PR #12）
+      // missing-retry 自身失敗：對缺漏篇 fallback，而非 abort（PR #12）
       const message = retryError instanceof Error ? retryError.message : String(retryError);
       logRouting(`${batchLabel}: missing-retry failed (${message}); applying fallback for missing verdicts`);
       retryVerdicts = new Map();
@@ -242,39 +464,63 @@ async function classifyBatch(
         ? String((error as Error & { finishReason: string }).finishReason)
         : "unknown";
     const message = error instanceof Error ? error.message : String(error);
-    const requestFailed = isRoutingBatchRequestFailure(error);
-    const canSplit =
-      items.length > 1 &&
-      (shouldRetrySplitLlmBatch(error, finishReason) || requestFailed);
+    const failure = classifyRoutingFailure(error, finishReason);
 
-    if (canSplit) {
-      // 大 batch timeout（如 40 篇）時對半拆，避免整晚 cron 卡死。PR #15
-      const mid = Math.ceil(items.length / 2);
-      const reason = requestFailed ? `request failed (${message})` : "recoverable error";
-      logRouting(`${batchLabel}: ${reason}; split retry ${items.length} → ${mid} + ${items.length - mid}`);
-      const first = await classifyBatch(items.slice(0, mid), config, `${batchLabel}a`, options);
-      const second = await classifyBatch(items.slice(mid), config, `${batchLabel}b`, options);
-      return new Map([...first, ...second]);
-    }
-
-    if (requestFailed) {
-      if (!degradedPaperIds) {
-        throw error;
-      }
+    // Transport / fatal / persistent rate-limit already opened the breaker in the retry layer.
+    if (
+      isTransportFailure(failure.kind) ||
+      isFatalProviderFailure(failure.kind) ||
+      failure.kind === "rate_limit" ||
+      failure.kind === "server_error" ||
+      message.includes("routing budget exhausted") ||
+      message.includes("routing breaker open")
+    ) {
       return degradeBatchForKeywordFallback(
         items,
         batchLabel,
-        `request failure (${message})`,
+        `${failure.kind} (${message})`,
         degradedPaperIds,
         degradeOnlyIds,
       );
     }
 
-    if (!degradedPaperIds) {
-      throw error;
+    const canSplit =
+      items.length > 1 &&
+      splitDepth < MAX_SPLIT_DEPTH &&
+      isSplitRecoverableFailure(failure.kind) &&
+      shouldRetrySplitLlmBatch(error, finishReason) &&
+      ctx.canCallProvider() &&
+      ctx.budget.canStartRequest();
+
+    if (canSplit) {
+      const mid = Math.ceil(items.length / 2);
+      logRouting(
+        `${batchLabel}: recoverable ${failure.kind}; split retry ${items.length} → ${mid} + ${items.length - mid} ` +
+          `(depth ${splitDepth + 1}/${MAX_SPLIT_DEPTH})`,
+      );
+      const nextOptions: ClassifyBatchOptions = {
+        ...options,
+        splitDepth: splitDepth + 1,
+      };
+      const first = await classifyBatch(
+        items.slice(0, mid),
+        config,
+        `${batchLabel}a`,
+        ctx,
+        nextOptions,
+      );
+      const second = await classifyBatch(
+        items.slice(mid),
+        config,
+        `${batchLabel}b`,
+        ctx,
+        nextOptions,
+      );
+      return new Map([...first, ...second]);
     }
 
     // JSON / 其他不可恢復錯誤：degrade 交 keyword，不再 throw 殺管線。PR #18
+    // parse failures on a leaf do not mark the provider unhealthy.
     return degradeBatchForKeywordFallback(items, batchLabel, message, degradedPaperIds, degradeOnlyIds);
   }
 }
@@ -283,8 +529,14 @@ async function classifyBatchOnce(
   items: BroadScienceRoutingInput[],
   config: RoutingLlmConfig,
   batchLabel: string,
+  ctx: RoutingExecutionContext,
+  requestTimeoutMs: number,
 ): Promise<ParsedBatchResult> {
-  const { completion } = await callRoutingCompletion(items, config, { label: batchLabel });
+  const { completion } = await callRoutingCompletion(items, config, {
+    label: batchLabel,
+    requestTimeoutMs,
+    onRequestAttempt: () => ctx.noteRequest(),
+  });
 
   const usage = completion.usage;
   const usageLine = usage
@@ -304,9 +556,7 @@ async function classifyBatchOnce(
     throw extractError;
   }
   if (usedReasoningFallback) {
-    logRouting(
-      `${batchLabel}: warning: JSON taken from reasoning_content`,
-    );
+    logRouting(`${batchLabel}: warning: JSON taken from reasoning_content`);
   }
 
   let parsed;
@@ -350,26 +600,42 @@ function attachFinishReason(error: unknown, finishReason: string): Error {
 export type BroadScienceClassificationResult = {
   verdictById: Map<string, LifeScienceRoutingVerdict>;
   degradedPaperIds: string[];
+  diagnostics: RoutingStageDiagnostics;
+};
+
+export type ClassifyBroadScienceOptions = {
+  clock?: Clock;
+  budgetMs?: number;
+  jitterMs?: () => number;
 };
 
 export async function classifyBroadSciencePapers(
   items: BroadScienceRoutingInput[],
+  options: ClassifyBroadScienceOptions = {},
 ): Promise<BroadScienceClassificationResult> {
+  const clock = options.clock ?? systemClock;
+  const ctx = createRoutingExecutionContext({
+    clock,
+    budgetMs: options.budgetMs,
+    jitterMs: options.jitterMs,
+  });
+
   if (items.length === 0) {
-    return { verdictById: new Map(), degradedPaperIds: [] };
+    return {
+      verdictById: new Map(),
+      degradedPaperIds: [],
+      diagnostics: ctx.snapshot(0, 0),
+    };
   }
 
   const degradedPaperIds = new Set<string>();
 
   const config = getRoutingLlmConfig();
-  const { batches, estimatedInputTokens, estimatedCompletionTokens } = planRoutingBatches(
-    items,
-    {
-      maxInputTokens: config.maxInputTokens,
-      maxCompletionTokens: config.maxTokens,
-      maxPapersPerBatch: config.maxPapersPerBatch,
-    },
-  );
+  const { batches, estimatedInputTokens, estimatedCompletionTokens } = planRoutingBatches(items, {
+    maxInputTokens: config.maxInputTokens,
+    maxCompletionTokens: config.maxTokens,
+    maxPapersPerBatch: config.maxPapersPerBatch,
+  });
   const verdictById = new Map<string, LifeScienceRoutingVerdict>();
 
   const batchSummary = batches
@@ -381,7 +647,9 @@ export async function classifyBroadSciencePapers(
 
   logRouting(
     `LLM config: model=${config.model} base=${config.baseUrl} key=${maskApiKey(config.apiKey)} ` +
-      `maxInput=${config.maxInputTokens} maxCompletion=${config.maxTokens} maxPapers=${config.maxPapersPerBatch} thinking=${config.disableThinking ? "off" : "on"}`,
+      `maxInput=${config.maxInputTokens} maxCompletion=${config.maxTokens} maxPapers=${config.maxPapersPerBatch} ` +
+      `thinking=${config.disableThinking ? "off" : "on"} sdkMaxRetries=${config.maxRetries} ` +
+      `stageBudget=${ctx.budget.totalMs}ms`,
   );
   logRouting(
     `classifying ${items.length} broad-science paper(s) in ${batches.length} batch(es): ${batchSummary}`,
@@ -390,12 +658,39 @@ export async function classifyBroadSciencePapers(
   for (let index = 0; index < batches.length; index += 1) {
     const batch = batches[index]!;
     const batchLabel = `batch ${index + 1}/${batches.length}`;
-    const batchVerdicts = await classifyBatch(batch, config, batchLabel, { degradedPaperIds });
+
+    if (!ctx.canCallProvider() || !ctx.budget.canStartRequest()) {
+      if (ctx.canCallProvider() && !ctx.budget.canStartRequest()) {
+        ctx.openBreaker("budget_exhausted");
+      }
+      logRouting(
+        `${batchLabel}: skipped (${ctx.stopReason ?? "budget_exhausted"}); degrading ${batch.length} paper(s)`,
+      );
+      degradeBatchForKeywordFallback(
+        batch,
+        batchLabel,
+        `skipped (${ctx.stopReason ?? "budget_exhausted"})`,
+        degradedPaperIds,
+      );
+      continue;
+    }
+
+    const batchVerdicts = await classifyBatch(batch, config, batchLabel, ctx, { degradedPaperIds });
     for (const [id, verdict] of batchVerdicts) {
       verdictById.set(id, verdict);
     }
   }
 
+  // Any paper never classified and never degraded still needs keyword fallback.
+  for (const item of items) {
+    if (!verdictById.has(item.id) && !degradedPaperIds.has(item.id)) {
+      degradedPaperIds.add(item.id);
+    }
+  }
+
+  const diagnostics = ctx.snapshot(verdictById.size, degradedPaperIds.size);
   logRouting(`finished all batches · ${summarizeVerdicts(verdictById)}`);
-  return { verdictById, degradedPaperIds: [...degradedPaperIds] };
+  logRouting(formatRoutingStageSummary(diagnostics));
+
+  return { verdictById, degradedPaperIds: [...degradedPaperIds], diagnostics };
 }

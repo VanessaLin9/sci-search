@@ -32,7 +32,8 @@ const routingFileSchema = z.object({
   maxInputTokens: z.number().int().positive(),
   maxTokens: z.number().int().positive(),
   timeoutMs: z.number().int().positive(),
-  maxRetries: z.number().int().positive(),
+  /** SDK retries disabled by default (0); app owns routing retry policy. */
+  maxRetries: z.number().int().nonnegative(),
   enableThinking: z.boolean(),
 });
 

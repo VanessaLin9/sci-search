@@ -3,6 +3,6 @@ export function logRouting(message: string): void {
   console.log(`[routing] ${message}`);
 }
 
-export function formatElapsedMs(startedAt: number): string {
-  return `${((Date.now() - startedAt) / 1000).toFixed(1)}s`;
+export function formatElapsedMs(startedAt: number, now: number = Date.now()): string {
+  return `${((now - startedAt) / 1000).toFixed(1)}s`;
 }

@@ -9,6 +9,7 @@ import { routeLifeSciencePapers } from "../../src/routing/routeLifeScience.js";
 import { resetRoutingLlmClientCache } from "../../src/routing/routingLlmClient.js";
 import type { Paper } from "../../src/types.js";
 import { installPipelineTestEnv } from "../helpers/pipelineTestEnv.js";
+import { createFakeClock } from "./helpers/fakeClock.js";
 
 const scopeBySourceId = buildSourceScopeById([
   { id: "nature-methods", scope: "life-science-only" },
@@ -165,10 +166,13 @@ describe("routeLifeSciencePapers gate boundary", { concurrency: 1 }, () => {
   test("classifier degrade uses keyword fallback: HTTP 429", async () => {
     installTestEnv();
     installRoutingHttpError(429, "Rate limit exceeded");
+    const clock = createFakeClock();
 
     const result = await routeLifeSciencePapers({
       papers: [makePaper("ls-1", "nature-methods"), makePaper("bs-1", "science")],
       scopeBySourceId,
+      clock,
+      jitterMs: () => 0,
     });
 
     assert.equal(result.included.length, 1);
@@ -178,6 +182,7 @@ describe("routeLifeSciencePapers gate boundary", { concurrency: 1 }, () => {
     assert.equal(result.excluded[0]?.method, "routing-keyword-fallback");
     assert.equal(result.stats.keywordFallbackNo, 1);
     assert.equal(result.stats.llmNo, 0);
+    assert.ok(clock.sleeps.length >= 1, "429 should wait before retry");
   });
 
   test("classifier degrade uses keyword fallback: invalid JSON → broad-science excluded", async () => {

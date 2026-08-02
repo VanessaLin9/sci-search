@@ -1,6 +1,7 @@
 import type { Paper, SourceScope } from "../types.js";
 import { loadRoutingKeywordsConfig } from "../config.js";
 import { classifyBroadSciencePapers } from "./classifyBroadScience.js";
+import type { Clock } from "./clock.js";
 import { mergeBroadScienceWithKeywordGateFallback } from "./broadScienceGateFallback.js";
 import { getRoutingLlmConfig, maskApiKey } from "./config.js";
 import {
@@ -26,6 +27,10 @@ import type { BroadScienceMergeResult } from "../domain/life-science/routing/typ
 export async function routeLifeSciencePapers(options: {
   papers: Paper[];
   scopeBySourceId: ReadonlyMap<string, SourceScope>;
+  /** Injectable clock for routing-stage budget / backoff tests. */
+  clock?: Clock;
+  routingBudgetMs?: number;
+  jitterMs?: () => number;
 }): Promise<LifeScienceRoutingResult> {
   const { papers, scopeBySourceId } = options;
   const enabled = isLifeScienceRoutingEnabled();
@@ -60,7 +65,11 @@ export async function routeLifeSciencePapers(options: {
     );
 
     const llmInputs = broadScience.map(toBroadScienceRoutingInput);
-    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(llmInputs);
+    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(llmInputs, {
+      clock: options.clock,
+      budgetMs: options.routingBudgetMs,
+      jitterMs: options.jitterMs,
+    });
 
     // 成功 LLM 與 degraded 論文分開 merge：只有 degrade 才走 keyword，避免污染 llm* 統計。PR #19
     const degradedSet = new Set(degradedPaperIds);
