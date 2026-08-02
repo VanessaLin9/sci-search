@@ -111,13 +111,21 @@ export async function runDigestPhase(options: {
     taggingStats = keywordFallbackTaggingStats(papers.length);
   }
 
-  const { papers: selected, stats: selectionStats } = selectFeatured(tagged, {
+  const { papers: selected, stats: selectionStats, diagnostics } = selectFeatured(tagged, {
     maxFeatured,
     priorityBySourceId,
   });
 
   logDigest(
     `selection: ${selectionStats.featured} featured, ${selectionStats.overflow} overflow, ${selectionStats.skip} skip (max ${maxFeatured})`,
+  );
+  logDigest(
+    `selection: featured ineligible: ${diagnostics.featuredIneligibleMissingAbstract} missing abstract` +
+      (selectionStats.featured < maxFeatured
+        ? selectionStats.candidates < maxFeatured
+          ? ` (featured underfilled: only ${selectionStats.candidates} candidates)`
+          : ` (featured underfilled: only ${selectionStats.candidates - diagnostics.featuredIneligibleMissingAbstract} eligible candidates)`
+        : ""),
   );
 
   let enriched = selected;

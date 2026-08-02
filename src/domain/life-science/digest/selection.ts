@@ -19,6 +19,11 @@ export type DigestSelectionStats = {
   skip: number;
 };
 
+/** Log-only diagnostics; not part of persisted digest.selection schema. */
+export type DigestSelectionDiagnostics = {
+  featuredIneligibleMissingAbstract: number;
+};
+
 export function buildSourcePriorityById(
   sources: ReadonlyArray<{ id: string; priority: number }>,
 ): ReadonlyMap<string, number> {
@@ -31,7 +36,13 @@ type RankedPaper = {
   title: string;
   digestLine?: DigestLine;
   featured?: boolean;
+  abstract?: string;
 };
+
+/** Visible candidate with a usable English abstract for featured-card fallback. */
+export function isEligibleForFeatured(paper: RankedPaper): boolean {
+  return Boolean(paper.digestLine && paper.digestLine !== "skip" && paper.abstract?.trim());
+}
 
 export function compareForFeatured(
   a: RankedPaper,
@@ -64,12 +75,18 @@ export function selectFeatured<P extends RankedPaper>(
     maxFeatured: number;
     priorityBySourceId: ReadonlyMap<string, number>;
   },
-): { papers: P[]; stats: DigestSelectionStats } {
+): {
+  papers: P[];
+  stats: DigestSelectionStats;
+  diagnostics: DigestSelectionDiagnostics;
+} {
   const candidates = papers.filter((paper) => paper.digestLine && paper.digestLine !== "skip");
   const sorted = [...candidates].sort((a, b) =>
     compareForFeatured(a, b, options.priorityBySourceId),
   );
-  const featuredIds = new Set(sorted.slice(0, options.maxFeatured).map((paper) => paper.id));
+  const eligible = sorted.filter(isEligibleForFeatured);
+  const featuredIneligibleMissingAbstract = candidates.length - eligible.length;
+  const featuredIds = new Set(eligible.slice(0, options.maxFeatured).map((paper) => paper.id));
 
   const lineCounts = { lineA: 0, lineB: 0, preprint: 0, skip: 0 };
   for (const paper of papers) {
@@ -93,6 +110,9 @@ export function selectFeatured<P extends RankedPaper>(
       featured: featuredIds.size,
       overflow: Math.max(0, candidates.length - featuredIds.size),
       ...lineCounts,
+    },
+    diagnostics: {
+      featuredIneligibleMissingAbstract,
     },
   };
 }
