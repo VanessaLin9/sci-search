@@ -597,3 +597,157 @@ describe("classifyBroadSciencePapers missing verdict handling", { concurrency: 1
     assert.ok(lines.some((line) => line.includes("timeout=12345ms")));
   });
 });
+
+describe("classifyBroadSciencePapers JSON response_format policy", { concurrency: 1 }, () => {
+  const jsonModeOverrides = {
+    preferJsonResponseFormat: true,
+    baseUrl: "https://api.example.test/v1",
+  } as const;
+
+  async function readCompletionRequest(init?: RequestInit): Promise<{
+    response_format?: { type?: string };
+    papers: Array<{ id: string }>;
+  }> {
+    const raw =
+      typeof init?.body === "string"
+        ? init.body
+        : init?.body
+          ? await new Response(init.body).text()
+          : "";
+    const body = JSON.parse(raw) as {
+      response_format?: { type?: string };
+      messages?: Array<{ role?: string; content?: string }>;
+    };
+    const user = body.messages?.find((message) => message.role === "user")?.content ?? "";
+    const payload = JSON.parse(user.slice(user.indexOf("{"))) as { papers: Array<{ id: string }> };
+    return { response_format: body.response_format, papers: payload.papers };
+  }
+
+  test("timeout with preferJson does not immediately bare-retry", async () => {
+    const items = [paper("a")];
+    installRoutingFetchWithRequestFailures(99);
+    const { diagnostics, degradedPaperIds } = await classifyBroadSciencePapers(items, {
+      configOverrides: jsonModeOverrides,
+      jitterMs: () => 0,
+    });
+
+    assert.equal(routingCallCount, 1);
+    assert.equal(diagnostics.requestCount, 1);
+    assert.equal(diagnostics.stopReason, "timeout");
+    assert.deepEqual(degradedPaperIds, ["a"]);
+  });
+
+  test("429 with preferJson waits per policy before retry (no immediate bare fallback)", async () => {
+    const clock = createFakeClock();
+    const items = [paper("a")];
+    const formats: Array<{ type?: string } | undefined> = [];
+    routingCallCount = 0;
+    resetRoutingLlmClientCache();
+    globalThis.fetch = (async (_input, init) => {
+      routingCallCount += 1;
+      const parsed = await readCompletionRequest(init);
+      formats.push(parsed.response_format);
+      if (routingCallCount === 1) {
+        return new Response("Rate limit exceeded", {
+          status: 429,
+          headers: { "content-type": "text/plain", "retry-after": "5" },
+        });
+      }
+      return routingResponse(parsed.papers);
+    }) as typeof fetch;
+
+    const { verdictById, diagnostics } = await classifyBroadSciencePapers(items, {
+      clock,
+      jitterMs: () => 0,
+      configOverrides: jsonModeOverrides,
+    });
+
+    assert.equal(routingCallCount, 2);
+    assert.deepEqual(clock.sleeps, [5_000]);
+    assert.deepEqual(formats[0], { type: "json_object" });
+    assert.deepEqual(formats[1], { type: "json_object" });
+    assert.equal(verdictById.get("a"), "yes");
+    assert.equal(diagnostics.rateLimitCount, 1);
+  });
+
+  function jsonObjectUnsupportedResponse(): Response {
+    return new Response(
+      JSON.stringify({
+        error: {
+          message: "Invalid parameter: 'response_format' of type 'json_object' is not supported",
+          type: "invalid_request_error",
+        },
+      }),
+      { status: 400, headers: { "content-type": "application/json" } },
+    );
+  }
+
+  test("json_object failure with almost-exhausted budget does not issue second request", async () => {
+    const clock = createFakeClock();
+    const items = [paper("a")];
+    routingCallCount = 0;
+    resetRoutingLlmClientCache();
+    globalThis.fetch = (async () => {
+      routingCallCount += 1;
+      clock.advance(4_500);
+      return jsonObjectUnsupportedResponse();
+    }) as typeof fetch;
+
+    const { degradedPaperIds, diagnostics } = await classifyBroadSciencePapers(items, {
+      clock,
+      budgetMs: 5_000,
+      jitterMs: () => 0,
+      configOverrides: jsonModeOverrides,
+    });
+
+    assert.equal(routingCallCount, 1);
+    assert.equal(diagnostics.requestCount, 1);
+    assert.deepEqual(degradedPaperIds, ["a"]);
+  });
+
+  test("genuine response_format failure retries bare with freshly checked remaining budget", async () => {
+    const clock = createFakeClock();
+    const items = [paper("a")];
+    const formats: Array<{ type?: string } | undefined> = [];
+    const createTimeouts: number[] = [];
+    routingCallCount = 0;
+    resetRoutingLlmClientCache();
+
+    const originalLog = console.log;
+    console.log = ((...args: unknown[]) => {
+      const line = args.map(String).join(" ");
+      const match = line.match(/HTTP create · response_format=\S+ timeout=(\d+)ms/);
+      if (match) createTimeouts.push(Number(match[1]));
+    }) as typeof console.log;
+
+    try {
+      globalThis.fetch = (async (_input, init) => {
+        routingCallCount += 1;
+        const parsed = await readCompletionRequest(init);
+        formats.push(parsed.response_format);
+        if (routingCallCount === 1) {
+          clock.advance(1_000);
+          return jsonObjectUnsupportedResponse();
+        }
+        return routingResponse(parsed.papers);
+      }) as typeof fetch;
+
+      const { verdictById, diagnostics } = await classifyBroadSciencePapers(items, {
+        clock,
+        budgetMs: 10_000,
+        jitterMs: () => 0,
+        configOverrides: jsonModeOverrides,
+      });
+
+      assert.equal(routingCallCount, 2);
+      assert.deepEqual(formats[0], { type: "json_object" });
+      assert.equal(formats[1], undefined);
+      assert.equal(verdictById.get("a"), "yes");
+      assert.equal(diagnostics.requestCount, 2);
+      assert.equal(diagnostics.stopReason, null);
+      assert.deepEqual(createTimeouts, [10_000, 9_000]);
+    } finally {
+      console.log = originalLog;
+    }
+  });
+});

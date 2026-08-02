@@ -23,6 +23,12 @@ export type CreateChatCompletionWithJsonResponseFormatFallbackOptions = {
    * Defaults to `${label}: json_object mode failed, retrying without response_format…`
    */
   jsonModeFailedRetryMessage?: string;
+  /**
+   * When preferJson is true and the first request fails: decide whether to bare-retry.
+   * Default `() => true` preserves legacy digest/bioRxiv behavior（PR #21）。
+   * Routing 傳入 policy-aware predicate，避免 timeout／429／5xx 繞過 domain retry（PR #28）。
+   */
+  shouldRetryWithoutJsonResponseFormat?: (error: unknown) => boolean;
   /** RPM / gap timing 標籤（寫進每一發 request ok|failed log）。 */
   timingMeta: LlmRequestTimingMeta;
 };
@@ -33,6 +39,7 @@ export type CreateChatCompletionWithJsonResponseFormatFallbackOptions = {
  * 刻意只做 request mechanics——parse / split / domain fallback 留在各 call site，避免吸進業務政策。
  *
  * 每發 HTTP 另記 duration / gap / 60s 視窗次數（診斷快模型撞 RPM；PR #26）；見 `llmRequestTiming.ts`。
+ * Call site 可透過 `shouldRetryWithoutJsonResponseFormat` 擋下不該立刻裸重試的失敗（PR #28）。
  */
 export async function createChatCompletionWithJsonResponseFormatFallback(
   options: CreateChatCompletionWithJsonResponseFormatFallbackOptions,
@@ -45,6 +52,7 @@ export async function createChatCompletionWithJsonResponseFormatFallback(
     formatElapsed,
     timingMeta,
     jsonModeFailedRetryMessage = `${label}: json_object mode failed, retrying without response_format…`,
+    shouldRetryWithoutJsonResponseFormat = () => true,
   } = options;
 
   const startedAt = Date.now();
@@ -54,7 +62,7 @@ export async function createChatCompletionWithJsonResponseFormatFallback(
   try {
     completion = await timedCreate(create, usedJsonResponseFormat, log, label, timingMeta);
   } catch (error) {
-    if (!preferJsonResponseFormat) {
+    if (!preferJsonResponseFormat || !shouldRetryWithoutJsonResponseFormat(error)) {
       log(`${label}: failed after ${formatElapsed(startedAt)}`);
       throw error;
     }

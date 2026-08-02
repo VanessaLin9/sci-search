@@ -3,7 +3,6 @@ import { loadRoutingKeywordsConfig } from "../config.js";
 import { classifyBroadSciencePapers } from "./classifyBroadScience.js";
 import type { Clock } from "./clock.js";
 import { mergeBroadScienceWithKeywordGateFallback } from "./broadScienceGateFallback.js";
-import { getRoutingLlmConfig, maskApiKey } from "./config.js";
 import {
   applyScopeDefaultRouting,
   assembleRoutingResult,
@@ -59,17 +58,16 @@ export async function routeLifeSciencePapers(options: {
   const keywordConfig = loadRoutingKeywordsConfig();
 
   try {
-    const llmConfig = getRoutingLlmConfig();
-    logRouting(
-      `endpoint ${llmConfig.baseUrl} · model ${llmConfig.model} · key ${maskApiKey(llmConfig.apiKey)}`,
-    );
-
     const llmInputs = broadScience.map(toBroadScienceRoutingInput);
-    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(llmInputs, {
-      clock: options.clock,
-      budgetMs: options.routingBudgetMs,
-      jitterMs: options.jitterMs,
-    });
+    // 缺 key／model 由 classify 以 stop=config 降級並輸出 stage summary，不再在此提前 throw（PR #28）
+    const { verdictById, degradedPaperIds, diagnostics } = await classifyBroadSciencePapers(
+      llmInputs,
+      {
+        clock: options.clock,
+        budgetMs: options.routingBudgetMs,
+        jitterMs: options.jitterMs,
+      },
+    );
 
     // 成功 LLM 與 degraded 論文分開 merge：只有 degrade 才走 keyword，避免污染 llm* 統計。PR #19
     const degradedSet = new Set(degradedPaperIds);
@@ -81,13 +79,14 @@ export async function routeLifeSciencePapers(options: {
         ? mergeBroadScienceRoutingResults(llmPapers, verdictById)
         : emptyBroadScienceMergeResult();
 
+    const keywordReason =
+      diagnostics.stopReason === "config" || diagnostics.stopReason === "auth"
+        ? `routing ${diagnostics.stopReason} failure`
+        : "LLM gate degraded";
+
     const keywordMerge: BroadScienceMergeResult<Paper> =
       degradedPapers.length > 0
-        ? mergeBroadScienceWithKeywordGateFallback(
-            degradedPapers,
-            "LLM gate degraded",
-            keywordConfig,
-          )
+        ? mergeBroadScienceWithKeywordGateFallback(degradedPapers, keywordReason, keywordConfig)
         : emptyBroadScienceMergeResult();
 
     return assembleRoutingResult({
@@ -96,7 +95,7 @@ export async function routeLifeSciencePapers(options: {
       total: papers.length,
     });
   } catch (error) {
-    // Gate 級失敗（缺 key、整批不可恢復等）：broad-science 全改 keyword fallback；life-science-only 仍保留。PR #18
+    // 未預期的 gate 級失敗：broad-science 全改 keyword fallback；life-science-only 仍保留。PR #18
     const message = error instanceof Error ? error.message : String(error);
     const broadScienceMerge: BroadScienceMergeResult<Paper> =
       mergeBroadScienceWithKeywordGateFallback(broadScience, message, keywordConfig);

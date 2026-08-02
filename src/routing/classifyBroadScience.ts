@@ -16,6 +16,7 @@ import {
   type ClassifiedRoutingFailure,
 } from "./classifyRoutingFailure.js";
 import { getRoutingLlmConfig, maskApiKey, type RoutingLlmConfig } from "./config.js";
+import { isJsonResponseFormatCompatibilityFailure } from "./isJsonResponseFormatCompatibilityFailure.js";
 import { parseJsonFromLlmContent } from "./parseLlmJson.js";
 import { MIN_USEFUL_REQUEST_MS } from "./routingBudget.js";
 import {
@@ -537,6 +538,19 @@ async function classifyBatchOnce(
   const { completion } = await callRoutingCompletion(items, config, {
     label: batchLabel,
     requestTimeoutMs,
+    resolveRequestTimeoutMs: () => {
+      const timeoutMs = ctx.budget.requestTimeoutMs(config.timeoutMs);
+      if (timeoutMs < MIN_USEFUL_REQUEST_MS) {
+        ctx.openBreaker("budget_exhausted");
+        throw new Error(`${batchLabel}: routing budget exhausted`);
+      }
+      return timeoutMs;
+    },
+    // json_object 裸重試也要受 breaker／budget 約束；非相容性失敗交回 policy（PR #28）
+    shouldRetryWithoutJsonResponseFormat: (error) =>
+      isJsonResponseFormatCompatibilityFailure(error) &&
+      ctx.canCallProvider() &&
+      ctx.budget.canStartRequest(),
     onRequestAttempt: () => ctx.noteRequest(),
   });
 
@@ -609,7 +623,15 @@ export type ClassifyBroadScienceOptions = {
   clock?: Clock;
   budgetMs?: number;
   jitterMs?: () => number;
+  /** Test helper: override resolved routing LLM config (e.g. force preferJsonResponseFormat). */
+  configOverrides?: Partial<RoutingLlmConfig>;
 };
+
+function resolveConfigFailureStopReason(error: unknown): RoutingStopReason {
+  const failure = classifyRoutingFailure(error);
+  if (failure.kind === "auth") return "auth";
+  return "config";
+}
 
 export async function classifyBroadSciencePapers(
   items: BroadScienceRoutingInput[],
@@ -632,7 +654,27 @@ export async function classifyBroadSciencePapers(
 
   const degradedPaperIds = new Set<string>();
 
-  const config = getRoutingLlmConfig();
+  let config: RoutingLlmConfig;
+  try {
+    config = { ...getRoutingLlmConfig(), ...options.configOverrides };
+  } catch (error) {
+    // 缺 key／model 也走同一套 typed diagnostics，避免外層 catch 吞掉 stop reason（PR #28）
+    const message = error instanceof Error ? error.message : String(error);
+    const stopReason = resolveConfigFailureStopReason(error);
+    ctx.openBreaker(stopReason);
+    for (const item of items) {
+      degradedPaperIds.add(item.id);
+    }
+    const diagnostics = ctx.snapshot(0, degradedPaperIds.size);
+    logRouting(`config failure before LLM (${stopReason}): ${message}`);
+    logRouting(formatRoutingStageSummary(diagnostics));
+    return {
+      verdictById: new Map(),
+      degradedPaperIds: [...degradedPaperIds],
+      diagnostics,
+    };
+  }
+
   const { batches, estimatedInputTokens, estimatedCompletionTokens } = planRoutingBatches(items, {
     maxInputTokens: config.maxInputTokens,
     maxCompletionTokens: config.maxTokens,
@@ -651,7 +693,7 @@ export async function classifyBroadSciencePapers(
     `LLM config: model=${config.model} base=${config.baseUrl} key=${maskApiKey(config.apiKey)} ` +
       `maxInput=${config.maxInputTokens} maxCompletion=${config.maxTokens} maxPapers=${config.maxPapersPerBatch} ` +
       `thinking=${config.disableThinking ? "off" : "on"} sdkMaxRetries=${config.maxRetries} ` +
-      `stageBudget=${ctx.budget.totalMs}ms`,
+      `preferJson=${config.preferJsonResponseFormat} stageBudget=${ctx.budget.totalMs}ms`,
   );
   logRouting(
     `classifying ${items.length} broad-science paper(s) in ${batches.length} batch(es): ${batchSummary}`,

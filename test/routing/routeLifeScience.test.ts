@@ -145,6 +145,11 @@ describe("routeLifeSciencePapers gate boundary", { concurrency: 1 }, () => {
     assert.equal(result.stats.llmNo, 0);
     assert.ok(logLines.some((line) => line.includes("routing gate degraded")));
     assert.ok(logLines.some((line) => line.includes("routing keyword fallback")));
+    assert.ok(
+      logLines.some((line) => line.includes("stop=config")),
+      "missing key must emit typed stage summary with stop=config",
+    );
+    assert.ok(logLines.some((line) => line.includes("config failure before LLM")));
   });
 
   test("gate degrades when ROUTING_LLM_MODEL is missing", async () => {
@@ -161,6 +166,10 @@ describe("routeLifeSciencePapers gate boundary", { concurrency: 1 }, () => {
     assert.equal(result.excluded[0]?.method, "routing-keyword-fallback");
     assert.equal(result.stats.keywordFallbackNo, 1);
     assert.ok(logLines.some((line) => line.includes("routing gate degraded")));
+    assert.ok(
+      logLines.some((line) => line.includes("stop=config")),
+      "missing model must emit typed stage summary with stop=config",
+    );
   });
 
   test("classifier degrade uses keyword fallback: HTTP 429", async () => {

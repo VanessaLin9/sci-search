@@ -111,7 +111,17 @@ function installJsonModeThenPlainSuccessFetch(): {
 
     if (bodies.length === 1) {
       assert.deepEqual(body.response_format, { type: "json_object" });
-      throw new Error("json_object unsupported");
+      // Providers reject response_format via HTTP 400; fetch throw becomes Connection error
+      // and must not be treated as a json_object compatibility signal（PR #28）.
+      return new Response(
+        JSON.stringify({
+          error: {
+            message: "Invalid parameter: 'response_format' of type 'json_object' is not supported",
+            type: "invalid_request_error",
+          },
+        }),
+        { status: 400, headers: { "content-type": "application/json" } },
+      );
     }
 
     assert.equal(
