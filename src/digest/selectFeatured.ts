@@ -4,6 +4,7 @@ import {
   DIGEST_LINE_RANK,
   selectFeatured,
   sortPapersByDigestRank,
+  type DigestSelectionDiagnostics,
   type DigestSelectionStats,
 } from "../domain/life-science/digest/selection.js";
 import type { ClassifiedPaper, Source } from "../types.js";
@@ -13,6 +14,7 @@ export {
   compareForFeatured,
   DIGEST_LINE_RANK as LINE_RANK,
   sortPapersByDigestRank,
+  type DigestSelectionDiagnostics,
   type DigestSelectionStats,
 };
 
@@ -23,7 +25,11 @@ export function selectFeaturedPapers(
     maxFeatured: number;
     priorityBySourceId: ReadonlyMap<string, number>;
   },
-): { papers: ClassifiedPaper[]; stats: DigestSelectionStats } {
+): {
+  papers: ClassifiedPaper[];
+  stats: DigestSelectionStats;
+  diagnostics: DigestSelectionDiagnostics;
+} {
   return selectFeatured(papers, options);
 }
 

@@ -101,8 +101,10 @@ export {
   buildSourcePriorityById,
   compareForFeatured,
   DIGEST_LINE_RANK,
+  isEligibleForFeatured,
   selectFeatured,
   sortPapersByDigestRank,
+  type DigestSelectionDiagnostics,
   type DigestSelectionStats,
 } from "./digest/selection.js";
 

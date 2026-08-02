@@ -1,0 +1,166 @@
+{
+  "reportDate": "2026-07-28",
+  "note": "Minimal fixed fixture for empty-abstract featured selection regression (PR #27). Stubs abstracts; do not use data/processed (retention).",
+  "papers": [
+    {
+      "id": "10.1038/s41587-026-03264-4",
+      "sourceId": "nature-biotechnology",
+      "title": "EU relaxes rules for gene-edited crops",
+      "digestLine": "line-b",
+      "abstract": "Usable English abstract.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41556-026-02030-7",
+      "sourceId": "nature-cell-biology",
+      "title": "Nuclear class 3 PI3K co-activates fasting-specific chromatin remodelling",
+      "digestLine": "line-b",
+      "abstract": "",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41590-026-02608-1",
+      "sourceId": "nature-immunology",
+      "title": "Iron cleaves GSDMD",
+      "digestLine": "line-b",
+      "abstract": "",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41590-026-02610-7",
+      "sourceId": "nature-immunology",
+      "title": "Towards a universal malaria vaccine",
+      "digestLine": "line-b",
+      "abstract": "",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41590-026-02609-0",
+      "sourceId": "nature-immunology",
+      "title": "ILC2 influence pancreatic fibroblasts",
+      "digestLine": "line-b",
+      "abstract": "",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41590-026-02611-6",
+      "sourceId": "nature-immunology",
+      "title": "A new role for LCs",
+      "digestLine": "line-b",
+      "abstract": "",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41590-026-02592-6",
+      "sourceId": "nature-immunology",
+      "title": "Human lungs maintain tissue-resident memory T cells against a broad spectrum of pathogens",
+      "digestLine": "line-b",
+      "abstract": "Usable English abstract.",
+      "featured": true
+    },
+    {
+      "id": "10.1371/journal.pbio.3003833",
+      "sourceId": "plos-biology",
+      "title": "Structural basis for substrate recognition and inhibition of human glucose-6-phosphate transporter SLC37A4",
+      "digestLine": "line-b",
+      "abstract": "Usable English abstract.",
+      "featured": true
+    },
+    {
+      "id": "10.1371/journal.pbio.3003511",
+      "sourceId": "plos-biology",
+      "title": "A survey of researchers’ attitudes to preregistration in animal research reveals multiple perceived barriers to adoption",
+      "digestLine": "line-b",
+      "abstract": "Usable English abstract.",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.04.06.716818",
+      "sourceId": "biorxiv",
+      "title": "DOT1L limits regenerative activation of skeletal stromal progenitors",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.27.741009",
+      "sourceId": "biorxiv",
+      "title": "The Proposed Bone Post-Arterial Type R Capillaries Resolve into Venous and Fatty Acid-Handling Endothelial Cells",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.27.741042",
+      "sourceId": "biorxiv",
+      "title": "Cell identities along the proximal-distal and micropylar-chalazal axes in the Arabidopsis heart-stage seed",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.27.741041",
+      "sourceId": "biorxiv",
+      "title": "Analog intrinsic recoding measures RNA dynamics without chemical conversion",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.07.24.740361",
+      "sourceId": "biorxiv",
+      "title": "A multi-omics characterization reveals distinct molecular signatures in the human motor cortex and lumbar spinal cord in ALS",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": true
+    },
+    {
+      "id": "10.1101/2024.11.21.624653",
+      "sourceId": "biorxiv",
+      "title": "Identifying spatially variable genes by projecting to morphologically relevant curves",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.27.740477",
+      "sourceId": "biorxiv",
+      "title": "scINTILLA: Single-Cell Integrated Inference, Labelling, and Landscape Analysis for Cell-Type Annotation Quality Assessment",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.24.740552",
+      "sourceId": "biorxiv",
+      "title": "Baseline regulatory programs in larval and adult neural progenitors converge towards an injury-induced state after spinal cord injury",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": true
+    },
+    {
+      "id": "10.1101/2025.11.23.689975",
+      "sourceId": "biorxiv",
+      "title": "Melody: Decoding the Sequence Determinants of Locus Specific DNA Methylation Across Human Tissues",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.25.740737",
+      "sourceId": "biorxiv",
+      "title": "Dataset-Dependent Utility of Discrete Ricci Curvature for Transition-Region Ranking in Single-Cell Lineage Graphs",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.26.740828",
+      "sourceId": "biorxiv",
+      "title": "Doxycycline Modulates Uveal-Melanoma-Associated Marker Expression in BAP1-Repressed Human Ocular Organoids",
+      "digestLine": "preprint",
+      "abstract": "Usable English abstract.",
+      "featured": false
+    }
+  ]
+}
