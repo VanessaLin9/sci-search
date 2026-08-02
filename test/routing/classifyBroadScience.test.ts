@@ -3,9 +3,11 @@ import { after, before, describe, test } from "node:test";
 import type { ChatCompletion } from "openai/resources/chat/completions";
 import { ROUTING_SYSTEM_PROMPT } from "../../src/domain/life-science/prompts/routing.system.js";
 import { classifyBroadSciencePapers } from "../../src/routing/classifyBroadScience.js";
+import { DEFAULT_RATE_LIMIT_WAIT_MS, SERVER_ERROR_BACKOFF_MS } from "../../src/routing/routingRetryPolicy.js";
 import { resetRoutingLlmClientCache } from "../../src/routing/routingLlmClient.js";
 import type { BroadScienceRoutingInput } from "../../src/routing/types.js";
 import { installPipelineTestEnv } from "../helpers/pipelineTestEnv.js";
+import { createFakeClock } from "./helpers/fakeClock.js";
 
 type RoutingMockPlan = {
   omitIds?: string[];
@@ -143,16 +145,18 @@ function installRoutingFetchWithInvalidJson(): void {
       throw new Error(`Unexpected fetch: ${url}`);
     }
 
-    return new Response(
-      JSON.stringify(
-        chatCompletion("This is prose, not JSON.", 24),
-      ),
-      { status: 200, headers: { "content-type": "application/json" } },
-    );
+    return new Response(JSON.stringify(chatCompletion("This is prose, not JSON.", 24)), {
+      status: 200,
+      headers: { "content-type": "application/json" },
+    });
   }) as typeof fetch;
 }
 
-function installRoutingFetchWithHttpError(status: number, message: string): void {
+function installRoutingFetchWithHttpError(
+  status: number,
+  message: string,
+  headers?: Record<string, string>,
+): void {
   routingCallCount = 0;
   resetRoutingLlmClientCache();
 
@@ -164,7 +168,10 @@ function installRoutingFetchWithHttpError(status: number, message: string): void
       throw new Error(`Unexpected fetch: ${url}`);
     }
 
-    return new Response(message, { status, headers: { "content-type": "text/plain" } });
+    return new Response(message, {
+      status,
+      headers: { "content-type": "text/plain", ...headers },
+    });
   }) as typeof fetch;
 }
 
@@ -262,12 +269,13 @@ describe("classifyBroadSciencePapers missing verdict handling", { concurrency: 1
       new Error("Request timed out."),
     );
 
-    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(items);
+    const { verdictById, degradedPaperIds, diagnostics } = await classifyBroadSciencePapers(items);
 
     assert.ok(routingCallCount >= 2);
     assert.ok(degradedPaperIds.includes(missingId));
     assert.equal(verdictById.get(missingId), undefined);
     assert.equal(verdictById.get("d"), "yes");
+    assert.equal(diagnostics.stopReason, "timeout");
   });
 
   test("does not retry more than once for persistent missing verdicts", async () => {
@@ -281,29 +289,79 @@ describe("classifyBroadSciencePapers missing verdict handling", { concurrency: 1
     assert.equal(verdictById.get("b"), undefined);
   });
 
-  test("split retries on batch request failure then succeeds", async () => {
+  test("timeout does not split and stops further provider calls", async () => {
     const items = [paper("a"), paper("b"), paper("c"), paper("d")];
-    // SDK maxRetries=1 → two failed attempts before classifyBatch splits the batch.
-    installRoutingFetchWithRequestFailures(2);
+    installRoutingFetchWithRequestFailures(99);
 
-    const { verdictById } = await classifyBroadSciencePapers(items);
+    const { verdictById, degradedPaperIds, diagnostics } = await classifyBroadSciencePapers(items);
 
-    assert.equal(routingCallCount, 4);
-    assert.equal(verdictById.get("a"), "yes");
-    assert.equal(verdictById.get("b"), "yes");
-    assert.equal(verdictById.get("c"), "yes");
-    assert.equal(verdictById.get("d"), "yes");
+    assert.equal(routingCallCount, 1);
+    assert.equal(diagnostics.requestCount, 1);
+    assert.equal(diagnostics.timeoutCount, 1);
+    assert.equal(diagnostics.stopReason, "timeout");
+    assert.deepEqual(degradedPaperIds.sort(), ["a", "b", "c", "d"]);
+    assert.equal(verdictById.size, 0);
   });
 
-  test("marks single paper degraded when batch request keeps failing", async () => {
+  test("marks single paper degraded on first timeout with sdk maxRetries=0", async () => {
     const items = [paper("a")];
-    installRoutingFetchWithRequestFailures(2);
+    installRoutingFetchWithRequestFailures(99);
 
-    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(items);
+    const { verdictById, degradedPaperIds, diagnostics } = await classifyBroadSciencePapers(items);
 
-    assert.equal(routingCallCount, 2);
+    assert.equal(routingCallCount, 1);
+    assert.equal(diagnostics.requestCount, 1);
     assert.deepEqual(degradedPaperIds, ["a"]);
     assert.equal(verdictById.get("a"), undefined);
+  });
+
+  test("preserves first-batch LLM verdicts when a later batch times out", async () => {
+    const batch1 = Array.from({ length: 40 }, (_, i) => paper(`p${i}`));
+    const batch2 = Array.from({ length: 10 }, (_, i) => paper(`q${i}`));
+    const items = [...batch1, ...batch2];
+
+    routingCallCount = 0;
+    resetRoutingLlmClientCache();
+    let callIndex = 0;
+    globalThis.fetch = (async (input, init) => {
+      routingCallCount += 1;
+      callIndex += 1;
+      const url =
+        typeof input === "string" ? input : input instanceof URL ? input.href : input.url;
+      if (!url.includes("/chat/completions")) {
+        throw new Error(`Unexpected fetch: ${url}`);
+      }
+      if (callIndex === 1) {
+        const body =
+          typeof init?.body === "string"
+            ? init.body
+            : init?.body
+              ? await new Response(init.body).text()
+              : "";
+        const request = JSON.parse(body) as {
+          messages?: Array<{ role?: string; content?: string }>;
+        };
+        const user = request.messages?.find((message) => message.role === "user")?.content ?? "";
+        const payload = JSON.parse(user.slice(user.indexOf("{"))) as {
+          papers: Array<{ id: string }>;
+        };
+        return routingResponse(payload.papers);
+      }
+      throw new Error("Request timed out.");
+    }) as typeof fetch;
+
+    const { verdictById, degradedPaperIds, diagnostics } = await classifyBroadSciencePapers(items);
+
+    assert.equal(routingCallCount, 2);
+    assert.equal(diagnostics.stopReason, "timeout");
+    assert.equal(verdictById.size, 40);
+    assert.equal(degradedPaperIds.length, 10);
+    for (const item of batch1) {
+      assert.equal(verdictById.get(item.id), "yes");
+    }
+    for (const item of batch2) {
+      assert.ok(degradedPaperIds.includes(item.id));
+    }
   });
 
   test("marks single paper degraded when response has invalid JSON", async () => {
@@ -317,26 +375,453 @@ describe("classifyBroadSciencePapers missing verdict handling", { concurrency: 1
     assert.equal(verdictById.get("a"), undefined);
   });
 
-  test("marks single paper degraded when HTTP returns non-timeout error", async () => {
+  test("429 waits for Retry-After then retries once successfully", async () => {
+    const clock = createFakeClock();
+    const items = [paper("a")];
+    let call = 0;
+    routingCallCount = 0;
+    resetRoutingLlmClientCache();
+    globalThis.fetch = (async (input, init) => {
+      routingCallCount += 1;
+      call += 1;
+      const url =
+        typeof input === "string" ? input : input instanceof URL ? input.href : input.url;
+      if (!url.includes("/chat/completions")) throw new Error(`Unexpected fetch: ${url}`);
+      if (call === 1) {
+        return new Response("Rate limit exceeded", {
+          status: 429,
+          headers: { "content-type": "text/plain", "retry-after": "5" },
+        });
+      }
+      const body =
+        typeof init?.body === "string"
+          ? init.body
+          : init?.body
+            ? await new Response(init.body).text()
+            : "";
+      const request = JSON.parse(body) as {
+        messages?: Array<{ role?: string; content?: string }>;
+      };
+      const user = request.messages?.find((message) => message.role === "user")?.content ?? "";
+      const payload = JSON.parse(user.slice(user.indexOf("{"))) as { papers: Array<{ id: string }> };
+      return routingResponse(payload.papers);
+    }) as typeof fetch;
+
+    const { verdictById, degradedPaperIds, diagnostics } = await classifyBroadSciencePapers(items, {
+      clock,
+      jitterMs: () => 0,
+    });
+
+    assert.equal(routingCallCount, 2);
+    assert.deepEqual(clock.sleeps, [5_000]);
+    assert.equal(verdictById.get("a"), "yes");
+    assert.deepEqual(degradedPaperIds, []);
+    assert.equal(diagnostics.rateLimitCount, 1);
+    assert.equal(diagnostics.stopReason, null);
+  });
+
+  test("429 without hint uses default backoff + jitter and stops after persistent 429", async () => {
+    const clock = createFakeClock();
     const items = [paper("a")];
     installRoutingFetchWithHttpError(429, "Rate limit exceeded");
 
-    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(items);
+    const { degradedPaperIds, diagnostics } = await classifyBroadSciencePapers(items, {
+      clock,
+      jitterMs: () => 100,
+    });
 
-    assert.ok(routingCallCount >= 1);
+    assert.equal(routingCallCount, 2);
+    assert.deepEqual(clock.sleeps, [DEFAULT_RATE_LIMIT_WAIT_MS + 100]);
     assert.deepEqual(degradedPaperIds, ["a"]);
-    assert.equal(verdictById.get("a"), undefined);
+    assert.equal(diagnostics.stopReason, "persistent_rate_limit");
+    assert.equal(diagnostics.rateLimitCount, 2);
+  });
+
+  test("429 skips sleep when remaining budget cannot cover wait + request", async () => {
+    const clock = createFakeClock();
+    const items = [paper("a")];
+    installRoutingFetchWithHttpError(429, "Rate limit exceeded", { "retry-after": "30" });
+
+    const { degradedPaperIds, diagnostics } = await classifyBroadSciencePapers(items, {
+      clock,
+      budgetMs: 5_000,
+      jitterMs: () => 0,
+    });
+
+    assert.equal(routingCallCount, 1);
+    assert.deepEqual(clock.sleeps, []);
+    assert.deepEqual(degradedPaperIds, ["a"]);
+    assert.equal(diagnostics.stopReason, "persistent_rate_limit");
+  });
+
+  test("5xx retries once after short backoff then succeeds", async () => {
+    const clock = createFakeClock();
+    const items = [paper("a")];
+    let call = 0;
+    routingCallCount = 0;
+    resetRoutingLlmClientCache();
+    globalThis.fetch = (async (input, init) => {
+      routingCallCount += 1;
+      call += 1;
+      const url =
+        typeof input === "string" ? input : input instanceof URL ? input.href : input.url;
+      if (!url.includes("/chat/completions")) throw new Error(`Unexpected fetch: ${url}`);
+      if (call === 1) {
+        return new Response("unavailable", { status: 503, headers: { "content-type": "text/plain" } });
+      }
+      const body =
+        typeof init?.body === "string"
+          ? init.body
+          : init?.body
+            ? await new Response(init.body).text()
+            : "";
+      const request = JSON.parse(body) as {
+        messages?: Array<{ role?: string; content?: string }>;
+      };
+      const user = request.messages?.find((message) => message.role === "user")?.content ?? "";
+      const payload = JSON.parse(user.slice(user.indexOf("{"))) as { papers: Array<{ id: string }> };
+      return routingResponse(payload.papers);
+    }) as typeof fetch;
+
+    const { verdictById, diagnostics } = await classifyBroadSciencePapers(items, {
+      clock,
+      jitterMs: () => 0,
+    });
+
+    assert.equal(routingCallCount, 2);
+    assert.deepEqual(clock.sleeps, [SERVER_ERROR_BACKOFF_MS]);
+    assert.equal(verdictById.get("a"), "yes");
+    assert.equal(diagnostics.serverErrorCount, 1);
+    assert.equal(diagnostics.stopReason, null);
+  });
+
+  test("5xx stops further calls after retry still fails", async () => {
+    const clock = createFakeClock();
+    const items = [paper("a"), paper("b")];
+    // Force two top-level batches of 1 by using maxPapers from config (40) — use two sequential
+    // timeouts via always-503: first paper batch may be size 2 in one batch.
+    installRoutingFetchWithHttpError(503, "unavailable");
+
+    const { degradedPaperIds, diagnostics } = await classifyBroadSciencePapers(items, {
+      clock,
+      jitterMs: () => 0,
+    });
+
+    assert.equal(routingCallCount, 2);
+    assert.equal(diagnostics.stopReason, "persistent_5xx");
+    assert.deepEqual(degradedPaperIds.sort(), ["a", "b"]);
   });
 
   test("marks entire batch degraded when JSON stays invalid after split", async () => {
     const items = [paper("a"), paper("b")];
     installRoutingFetchWithInvalidJson();
 
-    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(items);
+    const { verdictById, degradedPaperIds, diagnostics } = await classifyBroadSciencePapers(items);
 
     assert.ok(routingCallCount >= 2);
+    assert.ok(diagnostics.parseFailureCount >= 1);
     assert.deepEqual(degradedPaperIds.sort(), ["a", "b"]);
     assert.equal(verdictById.get("a"), undefined);
     assert.equal(verdictById.get("b"), undefined);
+  });
+
+  test("budget exhausted skips later batches without more provider calls", async () => {
+    const clock = createFakeClock();
+    const batch1 = Array.from({ length: 40 }, (_, i) => paper(`p${i}`));
+    const batch2 = Array.from({ length: 5 }, (_, i) => paper(`q${i}`));
+    const items = [...batch1, ...batch2];
+
+    routingCallCount = 0;
+    resetRoutingLlmClientCache();
+    globalThis.fetch = (async (input, init) => {
+      routingCallCount += 1;
+      // Consume almost all budget during the first request.
+      clock.advance(4_500);
+      const body =
+        typeof init?.body === "string"
+          ? init.body
+          : init?.body
+            ? await new Response(init.body).text()
+            : "";
+      const request = JSON.parse(body) as {
+        messages?: Array<{ role?: string; content?: string }>;
+      };
+      const user = request.messages?.find((message) => message.role === "user")?.content ?? "";
+      const payload = JSON.parse(user.slice(user.indexOf("{"))) as { papers: Array<{ id: string }> };
+      return routingResponse(payload.papers);
+    }) as typeof fetch;
+
+    const { verdictById, degradedPaperIds, diagnostics } = await classifyBroadSciencePapers(items, {
+      clock,
+      budgetMs: 5_000,
+      jitterMs: () => 0,
+    });
+
+    assert.equal(routingCallCount, 1);
+    assert.equal(diagnostics.requestCount, 1);
+    assert.equal(diagnostics.stopReason, "budget_exhausted");
+    assert.equal(verdictById.size, 40);
+    assert.equal(degradedPaperIds.length, 5);
+  });
+
+  test("every paper ends in LLM verdict or keyword-fallback degrade, never both", async () => {
+    const items = [paper("a"), paper("b"), paper("c")];
+    installRoutingFetch([{ omitIds: ["b"] }, { omitIds: ["b"] }]);
+
+    const { verdictById, degradedPaperIds } = await classifyBroadSciencePapers(items);
+    const allIds = items.map((item) => item.id);
+    for (const id of allIds) {
+      const inLlm = verdictById.has(id);
+      const inDegraded = degradedPaperIds.includes(id);
+      assert.equal(inLlm || inDegraded, true, `${id} unresolved`);
+      assert.equal(inLlm && inDegraded, false, `${id} in both`);
+    }
+  });
+
+  test("logs clipped request timeout from remaining budget", async () => {
+    const clock = createFakeClock();
+    const items = [paper("a")];
+    installRoutingFetch([{}]);
+    const lines: string[] = [];
+    const originalLog = console.log;
+    console.log = ((...args: unknown[]) => {
+      lines.push(args.map(String).join(" "));
+    }) as typeof console.log;
+
+    try {
+      await classifyBroadSciencePapers(items, { clock, budgetMs: 12_345, jitterMs: () => 0 });
+    } finally {
+      console.log = originalLog;
+    }
+
+    assert.ok(lines.some((line) => line.includes("timeout=12345ms")));
+  });
+});
+
+describe("classifyBroadSciencePapers JSON response_format policy", { concurrency: 1 }, () => {
+  const jsonModeOverrides = {
+    preferJsonResponseFormat: true,
+    baseUrl: "https://api.example.test/v1",
+  } as const;
+
+  async function readCompletionRequest(init?: RequestInit): Promise<{
+    response_format?: { type?: string };
+    papers: Array<{ id: string }>;
+  }> {
+    const raw =
+      typeof init?.body === "string"
+        ? init.body
+        : init?.body
+          ? await new Response(init.body).text()
+          : "";
+    const body = JSON.parse(raw) as {
+      response_format?: { type?: string };
+      messages?: Array<{ role?: string; content?: string }>;
+    };
+    const user = body.messages?.find((message) => message.role === "user")?.content ?? "";
+    const payload = JSON.parse(user.slice(user.indexOf("{"))) as { papers: Array<{ id: string }> };
+    return { response_format: body.response_format, papers: payload.papers };
+  }
+
+  test("timeout with preferJson does not immediately bare-retry", async () => {
+    const items = [paper("a")];
+    installRoutingFetchWithRequestFailures(99);
+    const { diagnostics, degradedPaperIds } = await classifyBroadSciencePapers(items, {
+      configOverrides: jsonModeOverrides,
+      jitterMs: () => 0,
+    });
+
+    assert.equal(routingCallCount, 1);
+    assert.equal(diagnostics.requestCount, 1);
+    assert.equal(diagnostics.stopReason, "timeout");
+    assert.deepEqual(degradedPaperIds, ["a"]);
+  });
+
+  test("429 with preferJson waits per policy before retry (no immediate bare fallback)", async () => {
+    const clock = createFakeClock();
+    const items = [paper("a")];
+    const formats: Array<{ type?: string } | undefined> = [];
+    routingCallCount = 0;
+    resetRoutingLlmClientCache();
+    globalThis.fetch = (async (_input, init) => {
+      routingCallCount += 1;
+      const parsed = await readCompletionRequest(init);
+      formats.push(parsed.response_format);
+      if (routingCallCount === 1) {
+        return new Response("Rate limit exceeded", {
+          status: 429,
+          headers: { "content-type": "text/plain", "retry-after": "5" },
+        });
+      }
+      return routingResponse(parsed.papers);
+    }) as typeof fetch;
+
+    const { verdictById, diagnostics } = await classifyBroadSciencePapers(items, {
+      clock,
+      jitterMs: () => 0,
+      configOverrides: jsonModeOverrides,
+    });
+
+    assert.equal(routingCallCount, 2);
+    assert.deepEqual(clock.sleeps, [5_000]);
+    assert.deepEqual(formats[0], { type: "json_object" });
+    assert.deepEqual(formats[1], { type: "json_object" });
+    assert.equal(verdictById.get("a"), "yes");
+    assert.equal(diagnostics.rateLimitCount, 1);
+  });
+
+  function jsonObjectUnsupportedResponse(): Response {
+    return new Response(
+      JSON.stringify({
+        error: {
+          message: "Invalid parameter: 'response_format' of type 'json_object' is not supported",
+          type: "invalid_request_error",
+        },
+      }),
+      { status: 400, headers: { "content-type": "application/json" } },
+    );
+  }
+
+  test("json_object failure with almost-exhausted budget does not issue second request", async () => {
+    const clock = createFakeClock();
+    const items = [paper("a")];
+    routingCallCount = 0;
+    resetRoutingLlmClientCache();
+    globalThis.fetch = (async () => {
+      routingCallCount += 1;
+      clock.advance(4_500);
+      return jsonObjectUnsupportedResponse();
+    }) as typeof fetch;
+
+    const { degradedPaperIds, diagnostics } = await classifyBroadSciencePapers(items, {
+      clock,
+      budgetMs: 5_000,
+      jitterMs: () => 0,
+      configOverrides: jsonModeOverrides,
+    });
+
+    assert.equal(routingCallCount, 1);
+    assert.equal(diagnostics.requestCount, 1);
+    assert.equal(diagnostics.stopReason, "budget_exhausted");
+    assert.deepEqual(degradedPaperIds, ["a"]);
+  });
+
+  test("429 mentioning response_format still uses routing backoff, not bare json fallback", async () => {
+    const clock = createFakeClock();
+    const items = [paper("a")];
+    const formats: Array<{ type?: string } | undefined> = [];
+    routingCallCount = 0;
+    resetRoutingLlmClientCache();
+    globalThis.fetch = (async (_input, init) => {
+      routingCallCount += 1;
+      const parsed = await readCompletionRequest(init);
+      formats.push(parsed.response_format);
+      if (routingCallCount === 1) {
+        return new Response(
+          JSON.stringify({
+            error: { message: "rate limit while using response_format json_object" },
+          }),
+          {
+            status: 429,
+            headers: { "content-type": "application/json", "retry-after": "5" },
+          },
+        );
+      }
+      return routingResponse(parsed.papers);
+    }) as typeof fetch;
+
+    const { verdictById, diagnostics } = await classifyBroadSciencePapers(items, {
+      clock,
+      jitterMs: () => 0,
+      configOverrides: jsonModeOverrides,
+    });
+
+    assert.equal(routingCallCount, 2);
+    assert.deepEqual(clock.sleeps, [5_000]);
+    assert.deepEqual(formats[0], { type: "json_object" });
+    assert.deepEqual(formats[1], { type: "json_object" });
+    assert.equal(verdictById.get("a"), "yes");
+    assert.equal(diagnostics.rateLimitCount, 1);
+  });
+
+  test("503 mentioning response_format still uses routing 5xx backoff, not bare json fallback", async () => {
+    const clock = createFakeClock();
+    const items = [paper("a")];
+    const formats: Array<{ type?: string } | undefined> = [];
+    routingCallCount = 0;
+    resetRoutingLlmClientCache();
+    globalThis.fetch = (async (_input, init) => {
+      routingCallCount += 1;
+      const parsed = await readCompletionRequest(init);
+      formats.push(parsed.response_format);
+      if (routingCallCount === 1) {
+        return new Response(
+          JSON.stringify({
+            error: { message: "upstream failed validating response_format json_object" },
+          }),
+          { status: 503, headers: { "content-type": "application/json" } },
+        );
+      }
+      return routingResponse(parsed.papers);
+    }) as typeof fetch;
+
+    const { verdictById, diagnostics } = await classifyBroadSciencePapers(items, {
+      clock,
+      jitterMs: () => 0,
+      configOverrides: jsonModeOverrides,
+    });
+
+    assert.equal(routingCallCount, 2);
+    assert.deepEqual(clock.sleeps, [SERVER_ERROR_BACKOFF_MS]);
+    assert.deepEqual(formats[0], { type: "json_object" });
+    assert.deepEqual(formats[1], { type: "json_object" });
+    assert.equal(verdictById.get("a"), "yes");
+    assert.equal(diagnostics.serverErrorCount, 1);
+  });
+
+  test("genuine response_format failure retries bare with freshly checked remaining budget", async () => {
+    const clock = createFakeClock();
+    const items = [paper("a")];
+    const formats: Array<{ type?: string } | undefined> = [];
+    const createTimeouts: number[] = [];
+    routingCallCount = 0;
+    resetRoutingLlmClientCache();
+
+    const originalLog = console.log;
+    console.log = ((...args: unknown[]) => {
+      const line = args.map(String).join(" ");
+      const match = line.match(/HTTP create · response_format=\S+ timeout=(\d+)ms/);
+      if (match) createTimeouts.push(Number(match[1]));
+    }) as typeof console.log;
+
+    try {
+      globalThis.fetch = (async (_input, init) => {
+        routingCallCount += 1;
+        const parsed = await readCompletionRequest(init);
+        formats.push(parsed.response_format);
+        if (routingCallCount === 1) {
+          clock.advance(1_000);
+          return jsonObjectUnsupportedResponse();
+        }
+        return routingResponse(parsed.papers);
+      }) as typeof fetch;
+
+      const { verdictById, diagnostics } = await classifyBroadSciencePapers(items, {
+        clock,
+        budgetMs: 10_000,
+        jitterMs: () => 0,
+        configOverrides: jsonModeOverrides,
+      });
+
+      assert.equal(routingCallCount, 2);
+      assert.deepEqual(formats[0], { type: "json_object" });
+      assert.equal(formats[1], undefined);
+      assert.equal(verdictById.get("a"), "yes");
+      assert.equal(diagnostics.requestCount, 2);
+      assert.equal(diagnostics.stopReason, null);
+      assert.deepEqual(createTimeouts, [10_000, 9_000]);
+    } finally {
+      console.log = originalLog;
+    }
   });
 });
