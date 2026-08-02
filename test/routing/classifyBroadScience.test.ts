@@ -702,7 +702,81 @@ describe("classifyBroadSciencePapers JSON response_format policy", { concurrency
 
     assert.equal(routingCallCount, 1);
     assert.equal(diagnostics.requestCount, 1);
+    assert.equal(diagnostics.stopReason, "budget_exhausted");
     assert.deepEqual(degradedPaperIds, ["a"]);
+  });
+
+  test("429 mentioning response_format still uses routing backoff, not bare json fallback", async () => {
+    const clock = createFakeClock();
+    const items = [paper("a")];
+    const formats: Array<{ type?: string } | undefined> = [];
+    routingCallCount = 0;
+    resetRoutingLlmClientCache();
+    globalThis.fetch = (async (_input, init) => {
+      routingCallCount += 1;
+      const parsed = await readCompletionRequest(init);
+      formats.push(parsed.response_format);
+      if (routingCallCount === 1) {
+        return new Response(
+          JSON.stringify({
+            error: { message: "rate limit while using response_format json_object" },
+          }),
+          {
+            status: 429,
+            headers: { "content-type": "application/json", "retry-after": "5" },
+          },
+        );
+      }
+      return routingResponse(parsed.papers);
+    }) as typeof fetch;
+
+    const { verdictById, diagnostics } = await classifyBroadSciencePapers(items, {
+      clock,
+      jitterMs: () => 0,
+      configOverrides: jsonModeOverrides,
+    });
+
+    assert.equal(routingCallCount, 2);
+    assert.deepEqual(clock.sleeps, [5_000]);
+    assert.deepEqual(formats[0], { type: "json_object" });
+    assert.deepEqual(formats[1], { type: "json_object" });
+    assert.equal(verdictById.get("a"), "yes");
+    assert.equal(diagnostics.rateLimitCount, 1);
+  });
+
+  test("503 mentioning response_format still uses routing 5xx backoff, not bare json fallback", async () => {
+    const clock = createFakeClock();
+    const items = [paper("a")];
+    const formats: Array<{ type?: string } | undefined> = [];
+    routingCallCount = 0;
+    resetRoutingLlmClientCache();
+    globalThis.fetch = (async (_input, init) => {
+      routingCallCount += 1;
+      const parsed = await readCompletionRequest(init);
+      formats.push(parsed.response_format);
+      if (routingCallCount === 1) {
+        return new Response(
+          JSON.stringify({
+            error: { message: "upstream failed validating response_format json_object" },
+          }),
+          { status: 503, headers: { "content-type": "application/json" } },
+        );
+      }
+      return routingResponse(parsed.papers);
+    }) as typeof fetch;
+
+    const { verdictById, diagnostics } = await classifyBroadSciencePapers(items, {
+      clock,
+      jitterMs: () => 0,
+      configOverrides: jsonModeOverrides,
+    });
+
+    assert.equal(routingCallCount, 2);
+    assert.deepEqual(clock.sleeps, [SERVER_ERROR_BACKOFF_MS]);
+    assert.deepEqual(formats[0], { type: "json_object" });
+    assert.deepEqual(formats[1], { type: "json_object" });
+    assert.equal(verdictById.get("a"), "yes");
+    assert.equal(diagnostics.serverErrorCount, 1);
   });
 
   test("genuine response_format failure retries bare with freshly checked remaining budget", async () => {

@@ -547,10 +547,17 @@ async function classifyBatchOnce(
       return timeoutMs;
     },
     // json_object 裸重試也要受 breaker／budget 約束；非相容性失敗交回 policy（PR #28）
-    shouldRetryWithoutJsonResponseFormat: (error) =>
-      isJsonResponseFormatCompatibilityFailure(error) &&
-      ctx.canCallProvider() &&
-      ctx.budget.canStartRequest(),
+    shouldRetryWithoutJsonResponseFormat: (error) => {
+      if (!isJsonResponseFormatCompatibilityFailure(error) || !ctx.canCallProvider()) {
+        return false;
+      }
+      // 相容性失敗但 budget 已不足：標 budget_exhausted，避免 stage summary 出現 stop=none（PR #28）
+      if (!ctx.budget.canStartRequest()) {
+        ctx.openBreaker("budget_exhausted");
+        return false;
+      }
+      return true;
+    },
     onRequestAttempt: () => ctx.noteRequest(),
   });
 
