@@ -19,7 +19,10 @@ export type DigestSelectionStats = {
   skip: number;
 };
 
-/** Log-only diagnostics; not part of persisted digest.selection schema. */
+/**
+ * Log-only diagnostics（PR #27）：不可寫進 persisted `digest.selection`，
+ * 以免破壞歷史 papers.json 的 zod schema。
+ */
 export type DigestSelectionDiagnostics = {
   featuredIneligibleMissingAbstract: number;
 };
@@ -39,7 +42,10 @@ type RankedPaper = {
   abstract?: string;
 };
 
-/** Visible candidate with a usable English abstract for featured-card fallback. */
+/**
+ * Featured 資格（PR #27）：非 skip 且有 trimmed 英文 abstract。
+ * summarize 失敗時 renderer 需靠 abstract 回退；缺摘要只降為 overflow，不改 routing。
+ */
 export function isEligibleForFeatured(paper: RankedPaper): boolean {
   return Boolean(paper.digestLine && paper.digestLine !== "skip" && paper.abstract?.trim());
 }
@@ -80,6 +86,8 @@ export function selectFeatured<P extends RankedPaper>(
   stats: DigestSelectionStats;
   diagnostics: DigestSelectionDiagnostics;
 } {
+  // candidates = 全部可見文；featured 只從 eligible 取前 maxFeatured（PR #27）。
+  // 合格不足時寧可少於上限，也不用空摘要 paper 硬補。
   const candidates = papers.filter((paper) => paper.digestLine && paper.digestLine !== "skip");
   const sorted = [...candidates].sort((a, b) =>
     compareForFeatured(a, b, options.priorityBySourceId),
