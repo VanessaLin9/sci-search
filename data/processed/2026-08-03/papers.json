@@ -1,0 +1,740 @@
+{
+  "reportDate": "2026-08-03",
+  "generatedAt": "2026-08-04T12:02:22.853Z",
+  "papers": [
+    {
+      "id": "10.1038/s41588-026-02683-y",
+      "title": "Histone marks are conserved across eukaryotes but chromatin states are diversified",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-08-03T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02683-y",
+      "doi": "10.1038/s41588-026-02683-y",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41588-026-02695-8",
+      "title": "Mapping enhancer–gene regulatory interactions from single-cell data",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-08-03T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02695-8",
+      "doi": "10.1038/s41588-026-02695-8",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41588-026-02672-1",
+      "title": "Diversity and evolution of chromatin regulatory states across eukaryotes",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-08-03T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02672-1",
+      "doi": "10.1038/s41588-026-02672-1",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41559-026-03159-2",
+      "title": "Serving the truth or the state?",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-08-03T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03159-2",
+      "doi": "10.1038/s41559-026-03159-2",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41559-026-03142-x",
+      "title": "The shape of fitness functions and the distribution of mutational effect sizes jointly limit adaptation by regulatory mutations",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-08-03T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03142-x",
+      "doi": "10.1038/s41559-026-03142-x",
+      "abstract": "Saturation mutagenesis of the FCY1 promoter in budding yeast shows that adaptation to 5-fluorocytosine is not accessible through single cis-regulatory mutations, despite large mutational effects on protein abundance.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41587-026-03249-3",
+      "title": "Editor’s pick: Excelsior Sciences",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-08-03T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03249-3",
+      "doi": "10.1038/s41587-026-03249-3",
+      "abstract": "Each year, Nature Biotechnology highlights companies that received sizeable early-stage funding in the previous year. Excelsior Sciences is developing a closed-loop system for drug discovery using carbon building bloccs.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41587-026-03243-9",
+      "title": "Evolution of botulinum neurotoxin serotype X proteases to induce inflammatory cell death in cancer cells",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-08-03T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03243-9",
+      "doi": "10.1038/s41587-026-03243-9",
+      "abstract": "Directed evolution of proteases induces targeted, multipathway lytic cell death in cancer cells.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer",
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "演化肉毒桿菌神經毒素血清型X蛋白酶以誘導癌細胞發炎性死亡",
+      "summaryZh": "本研究透過定向演化技術改造肉毒桿菌神經毒素血清型X的蛋白酶，使其能誘導癌細胞產生多路徑的溶解性細胞死亡，為癌症治療提供新策略。",
+      "topicTags": [
+        "directed-evolution",
+        "cancer",
+        "protease",
+        "cell-death"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02408-8",
+      "title": "Arrhythmic flies restart the clock",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-08-03T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02408-8",
+      "doi": "10.1038/s41593-026-02408-8",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41593-026-02406-w",
+      "title": "Rapid trajectory learning in mice and agents",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-08-03T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02406-w",
+      "doi": "10.1038/s41593-026-02406-w",
+      "abstract": "Rapid trajectory learning in mice and agents",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41593-026-02407-9",
+      "title": "The sensory streams of a fish",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-08-03T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02407-9",
+      "doi": "10.1038/s41593-026-02407-9",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41593-026-02405-x",
+      "title": "Coupling neuroprosthetics with neuromodulation",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-08-03T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02405-x",
+      "doi": "10.1038/s41593-026-02405-x",
+      "abstract": "Coupling neuroprosthetics with neuromodulation",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41593-026-02387-w",
+      "title": "Developing mouse inhibitory neuron single-cell transcriptomes reveal distinct modes of cell-type diversification",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-08-03T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02387-w",
+      "doi": "10.1038/s41593-026-02387-w",
+      "abstract": "Researchers discover a transient inhibitory cell type, and reveal that the developing cortex builds inhibitory diversity through three routes—early commitment, gradual diversification and selective elimination.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "發育中小鼠抑制性神經元的單細胞轉錄組揭示細胞類型多樣化的不同模式",
+      "summaryZh": "研究人員發現一種短暫存在的抑制性細胞類型，並揭示發育中的皮質透過三種途徑——早期決定、逐漸多樣化與選擇性消除——來建構抑制性神經元的多樣性。",
+      "topicTags": [
+        "single-cell",
+        "neuroscience",
+        "development",
+        "inhibitory-neurons"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02596-2",
+      "title": "Tissue-resident immune cells drive genetic risk in autoimmune and lung diseases",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-08-03T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02596-2",
+      "doi": "10.1038/s41590-026-02596-2",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1371/journal.pbio.3003923",
+      "title": "The subthalamic nucleus-ventral pallidum projection targeting cholinergic circuits modulates chronic pain",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-08-03T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003923",
+      "doi": "10.1371/journal.pbio.3003923",
+      "abstract": "The cholinergic system shows promise for pain management. Although cholinergic neurons in the ventral pallidum (VP) are involved in neuropathic pain, the anatomical organization and pharmacology of the cholinergic circuit contributing to the processing of acute and chronic pain remain unknown. In the present study, we demonstrate that VP cholinergic neurons in mice received pain signals from and mediated pain modulation by glutamatergic (Glu) neurons in the subthalamic nucleus (STN) in both physiological and neuropathic pain conditions. VP cholinergic neurons were a major source of acetylcholine released in the VP upon pain stimulation, and α4 and α7 were major subunits comprising functional nicotinic acetylcholine receptors (nAChRs) in VP cholinergic, GABAergic, and Glu neurons. In neuropathic pain mouse models, VP cholinergic neurons became hyperactive and released more acetylcholine in the VP, and α4 and α7 nAChRs were differentially modified on VP GABAergic and Glu neurons. These modifications were accompanied by hyperexcitability in VP GABAergic neurons and hypoactivity in VP Glu neurons. Reversal of upregulated α4 nAChRs on VP GABAergic neurons, but not that of downregulated α4 and α7 nAChRs on VP Glu neurons, attenuated the severity of hyperalgesia in neuropathic pain. Therefore, the STN Glu -VP ChAT pathway is implicated in neuropathic pain by enhancing VP cholinergic circuits, and α4 nAChRs on VP GABAergic neurons may be potential therapeutic targets for the treatment of neuropathic pain.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "丘腦下核－腹側蒼白球投射調控膽鹼能迴路以緩解慢性疼痛",
+      "summaryZh": "本研究在小鼠中發現，丘腦下核（STN）的麩胺酸神經元會將疼痛訊號傳遞至腹側蒼白球（VP）的膽鹼能神經元，並調控疼痛。在神經病變疼痛模型中，VP膽鹼能神經元過度活躍，釋放更多乙醯膽鹼，且VP GABA神經元上的α4尼古丁受體上調。逆轉此受體上調可減輕疼痛過敏，顯示α4 nAChRs可能成為治療神經病變疼痛的潛在標靶。",
+      "topicTags": [
+        "pain",
+        "neuroscience",
+        "cholinergic-system",
+        "subthalamic-nucleus"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003909",
+      "title": "grafify online: A web app for graphing and statistical analysis",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-08-03T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003909",
+      "doi": "10.1371/journal.pbio.3003909",
+      "abstract": "grafify online is a free, browser-based app for generating publication-quality graphs and performing statistical tests and post-hoc comparisons. Users can customize plots and explore statistical results without needing R programming experience. Creating accurate graphs and performing statistical analyses can be challenging for those who lack coding experience. This Community Page introduces grafify online, a free, browser-based app for generating publication-quality graphs and performing statistical tests and post-hoc comparisons.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1371/journal.pbio.3003875",
+      "title": "Editorial Note: Interferon regulatory factor 4 mediates nonenzymatic IRE1 dependency in multiple myeloma cells",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-08-03T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003875",
+      "doi": "10.1371/journal.pbio.3003875",
+      "abstract": "by The PLOS Biology Editors",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "編輯說明：干擾素調節因子4介導多發性骨髓瘤細胞中非酶依賴性IRE1的依賴性",
+      "summaryZh": "這是一篇編輯說明，由PLOS Biology編輯團隊撰寫，針對一篇關於干擾素調節因子4（IRF4）如何介導多發性骨髓瘤細胞中非酶依賴性IRE1依賴性的研究。",
+      "topicTags": [
+        "multiple-myeloma",
+        "interferon-regulatory-factor",
+        "cell-biology"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003212",
+      "title": "Developmental factors drive the compartmentalized and discontinuous maturation of the small intestinal epithelium during the early postnatal period",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-08-03T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003212",
+      "doi": "10.1371/journal.pbio.3003212",
+      "abstract": "The temporal, spatial, and cellular diversity of the small intestinal epithelium during the postnatal period, a critical time window that accompanies the transition from placental energy supply to enteral feeding, and the establishment of the enteric microbiota and postnatal immune maturation, has not been systematically investigated. Here, we used laser capture microdissection and bulk RNA-Seq, proteomics, and single cell RNA-Seq to analyze the total, organ site, crypt- and villus-specific intestinal epithelium of specific pathogen-free, germ-free, and Salmonella -infected mice during the postnatal period. We identified key temporal and organ-site specific expression patterns that revealed a weak effect of the microbiota but strong influence of developmental regulators during early life. We also determined age-dependent signaling pathway and transcription factor activity and characterized age- and cell type-specific developmental trajectories revealing a distinct compartmentalized maturation process along the proximal-to-distal length and crypt-villus axis and a discontinuous appearance of goblet/Paneth cell and absorptive enterocyte transcriptional profiles. Finally, we described the cell type-specific response to neonatal enteric infection. Taken together, our findings identify the epithelium as an integral element in the maturation of postnatal mucosal tissues and in the establishment of host-microbe homeostasis.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "早期出生後小腸上皮的區隔化與不連續成熟",
+      "summaryZh": "本研究利用雷射顯微切割、RNA定序與蛋白質體學，系統性分析小鼠出生後小腸上皮的時空與細胞多樣性，發現微生物群影響微弱，而發育調控因子主導早期成熟過程，並揭示沿近端至遠端及絨毛-隱窩軸的區隔化成熟與杯狀/潘氏細胞及吸收性腸細胞轉錄譜的不連續出現。",
+      "topicTags": [
+        "development",
+        "intestinal-epithelium",
+        "single-cell-rnaseq",
+        "postnatal-maturation"
+      ]
+    },
+    {
+      "id": "10.1101/2025.10.17.683110",
+      "title": "Spatial Transcriptomics of Glioblastoma Defines Spatially Anchored Transcriptional Activity Informing Therapeutic Vulnerability and Resistance",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-03",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.10.17.683110v3",
+      "doi": "10.1101/2025.10.17.683110",
+      "abstract": "Intratumoral heterogeneity is thought to hinder targeted therapy in glioblastoma (GBM), but the extent of variation in known targets and tumor cell-intrinsic and extrinsic regulatory mechanisms within tissue remains unclear. In this work, we use Visium spatial transcriptomics to profile 44 tumor slides and 128,176 niche-annotated ST spots, including 14 new slides from 7 GBM specimens, along with spatial annotation from the Ivy Glioblastoma Atlas Project. First, we characterize the differential expression of AVB3, EGFR, VEGF, and PDGFRA pathway activities across space, elucidating the limited success of individual targeted therapies. Second, we identify transcription factor modules driving intratumoral heterogeneity and characterize a novel transcription factor module at the interface between core tumor and the invasive edge. Third, we identify cell type-specific receptor-ligand signaling enriched in specific spatial niches and relate these to specific molecular program alterations. Finally, we identify and characterize transcriptional pathways and their activity across spatial niches through transcription network analysis and demonstrate how these pathways can inform a combined therapeutic approach. Together, through novel insights into the spatial patterning of transcription factor regulation, cellular interactions, and biological pathway activity, our work informs rational combination therapies targeting spatial niche specific vulnerabilities.",
+      "authors": [
+        "Ravikumar, V.",
+        "Maddox, A.",
+        "Kulkarni, R.",
+        "Hara, T.",
+        "Rao, A.",
+        "Al-Holou, W."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "Visium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.06.22.733850",
+      "title": "Do Geometric Outliers Identify Important Genes in Single-Cell Foundation Models?",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-03",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.22.733850v2",
+      "doi": "10.64898/2026.06.22.733850",
+      "abstract": "Single-cell foundation models (scFMs) produce gene embeddings that are increasingly interpreted biologically, but it is unclear whether different models organise gene space consistently, or whether geometric extremes identify important genes. The same four-metric screen was applied to Geneformer, scGPT and scFoundation, which differ in architecture, training objective and expression encoding. The models agreed weakly on individual outlier genes but showed structured class-level convergence: ribosomal enrichment occurred in all three, although weaker and caller-dependent in scFoundation, while strong mitochondrial enrichment was confined to Geneformer and scGPT. Gene-level agreement was itself uneven, with Geneformer and scGPT overlapping above chance and scGPT and scFoundation not, and caller stability differed between models. Most outliers were not extreme in ESM-2 protein-sequence space, indicating principally model-specific rather than protein-sequence geometry. These patterns did not translate into the tested notions of gene importance: deleting the highest-anomaly Geneformer genes did not impair cell-type annotation beyond matched controls, and covariate-adjusted outlier status was not associated with ClinVar membership in any model. Gene-embedding geometry therefore characterises model-specific structure, but does not provide standalone evidence of downstream leverage or disease relevance.",
+      "authors": [
+        "Whalley, J. P."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "幾何離群值能否識別單細胞基礎模型中的重要基因？"
+    },
+    {
+      "id": "10.64898/2026.07.27.740999",
+      "title": "RKMR: A Rapid Kernel Machine Regression Framework for Optimal Marker Detection in Spatial Omics Data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-03",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.27.740999v3",
+      "doi": "10.64898/2026.07.27.740999",
+      "abstract": "High-throughput spatial omics technologies enable molecular profiling within intact tissue architecture, yet identifying concise, predictive, and biologically interpretable marker panels for cell types, tissue domains, and disease-associated tissue classes remains challenging. This limitation hinders the development of actionable panels for targeted validation and downstream translation. Existing pipelines rely largely on univariate differential-expression analyses, which ignore joint molecular structure and provide limited predictive insight. Multivariate machine-learning methods, including random forest, XGBoost, elastic net, and specialized single-cell panel-selection approaches, can capture predictive patterns but typically lack explicit spatial modeling and probabilistic feature selection, relying instead on model-specific importance scores or user-specified panel sizes. We develop rapid kernel machine regression (RKMR), a scalable framework for spatial-omics marker discovery that integrates nonlinear kernel modeling, spike-and-slab variable selection, and spatial dependence. RKMR uses automatic relevance determination (ARD) kernels and sparsity-inducing priors to capture nonlinear marker-outcome relationships and implicit feature interactions while producing approximate posterior inclusion probabilities (PIPs) that quantify model-based uncertainty in feature inclusion. To scale inference to large spatial datasets, RKMR combines low-rank kernel approximations with stochastic variational optimization. In simulations, RKMR consistently achieves higher AUPRC than competing methods across a range of molecular-signal and spatial-effect settings. Across spatial transcriptomics and scRNA-seq datasets, RKMR identifies parsimonious marker sets that recover reported cell-type signatures and reproducible tissue-layer markers. These results establish RKMR as a scalable and uncertainty-aware framework for translating high-dimensional spatial omics data into robust, experimentally actionable marker panels.",
+      "authors": [
+        "Seal, S.",
+        "Chakraborty, A.",
+        "Mattila, C.",
+        "Rubinstein, M.",
+        "Angel, P.",
+        "Ghosh, D.",
+        "Chung, D.",
+        "Neelon, B."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "spatial transcriptomics",
+        "spatial omics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "RKMR：一種用於空間體學資料最佳標記偵測的快速核機器迴歸框架"
+    },
+    {
+      "id": "10.1101/2024.12.23.630036",
+      "title": "A Systematic Comparison of Single-Cell Perturbation Response Prediction Models",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-03",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.12.23.630036v3",
+      "doi": "10.1101/2024.12.23.630036",
+      "abstract": "Predicting single-cell transcriptional responses to perturbations is central to dissecting gene regulation and accelerating therapeutic design, yet the field lacks a rigorous, task-spanning assessment of model behavior. We present a large-scale benchmark of 13 representative methods and baselines across 25 datasets spanning diverse perturbation modalities and species, including two primary immune-cell drug-response resources. We evaluated three core tasks-generalization to unseen single-gene perturbations, prediction of combinatorial interactions, and transfer across cell types-using 24 metrics covering expression-level accuracy, relative changes, differential expression recovery, and distributional similarity.Across tasks, performance depended strongly on perturbation effect size and evaluation perspective: expression-level agreement was highest for small-effect perturbations resembling controls, whereas delta- and DE-based metrics improved with larger effects, providing clearer signals. Models shared a conservative bias, with fine-tuned foundation models compressing variance and underestimating synergistic effects in combinations. PerturbNet showed superior recovery of DE signatures in Tasks 1 and 2, while no method consistently generalized across cell types in Task 3, where biological consistency dominated outcomes.This benchmark establishes current methodological limits, clarifies that different metrics probe distinct biological signals rather than redundant summaries of the same prediction problem, and provides a foundation for developing virtual-cell models that more faithfully capture heterogeneous perturbation responses.",
+      "authors": [
+        "Li, L.",
+        "You, Y.",
+        "Fu, Y.",
+        "Liao, W.",
+        "Fan, X.",
+        "Lu, S.",
+        "Cao, Y.",
+        "Li, B.",
+        "Ren, W.",
+        "Kong, J.",
+        "Zheng, S.",
+        "Chen, J.",
+        "Liu, X.",
+        "Tian, L."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1101/2024.10.27.620531",
+      "title": "scMultiNODE: Recovering Developmental Dynamics in Weakly Resolved Modalities through Multi-Modal Integration",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-03",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.10.27.620531v3",
+      "doi": "10.1101/2024.10.27.620531",
+      "abstract": "Measuring multiple genomic profiles (i.e., modalities) over time enhances our understanding of cell development. However, these modalities are not equally analyzable. Sparse and poorly separated measurements, such as chromatin accessibility, are difficult to interpret on their own, and the limited availability of temporal single-cell co-assay data leaves such modalities without the cross-modal cell correspondence needed to borrow structure from richer ones. As a result, critical developmental analyses and cross-modal comparisons remain underperformed for these weak modalities. Additionally, existing methods cannot integrate separately sequenced measurements while preserving cellular dynamics. We present scMultiNODE, an integration model that combines gene expression and chromatin accessibility measurements from multiple discrete timepoints for single cells, without relying on any prior cell-to-cell correspondence across modalities or time. scMultiNODE employs a scalable Quantized Gromov-Wasserstein optimal transport method to align cells across measurements, and neural ordinary differential equations with a dynamic regularization term to model cell development in a shared latent space, capturing cellular dynamics while preserving cell-type variations. Experiments across four developmental single-cell datasets demonstrate that scMultiNODE integrates separately sequenced measurements over time more effectively than existing methods that overlook cellular dynamics. Crucially, by anchoring chromatin accessibility to the shared dynamical latent space, scMultiNODE recovers developmental trajectories and cell annotations from scATAC-seq that this modality cannot support in isolation. The resulting joint latent space further supports important multi-modal downstream analyses, including complex trajectory investigation and cross-modal label transfer for cell annotation. The data, code, and supplementary notes are publicly available at https://github.com/rsinghlab/scMultiNODE.",
+      "authors": [
+        "Zhang, J.",
+        "Chakravarthy, M.",
+        "Singh, R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "scMultiNODE：透過多模態整合恢復弱解析模態中的發育動力學"
+    },
+    {
+      "id": "10.64898/2026.07.31.742073",
+      "title": "A single-cell and multi-platform spatial atlas of the human pancreas resolves a transformation-associated epithelial axis and a recurrent boundary-organized tumour microenvironment",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-03",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.31.742073v1",
+      "doi": "10.64898/2026.07.31.742073",
+      "abstract": "Most pancreatic ductal adenocarcinoma (PDAC) single-cell and spatial studies analyze one cohort or platform, obscuring recurrent biology. We assembled a human pancreas single-cell and single-nucleus reference of 1,186,130 cells from 19 studies and interpreted 176 Visium sections comprising 458,877 spots across non-diseased pancreas, chronic pancreatitis, PanIN, IPMN, primary PDAC and metastasis. Marker-supported labels were used after two RNA-based copy-number callers failed known-diploid controls. BANKSY domains, two reference-mapping methods and sample-level analyses resolved a cross-sectional epithelial axis extending from acinar-rich to malignant tissue. Five trajectory algorithms recovered similar ordering on a shared embedding; their consensus was interpreted as transformation-associated, not temporal or clonal. Malignant regions were globally segregated from fibroblast and myeloid compartments. Signed-distance analysis refined this pattern into a malignant core, a CAF/myeloid surround beginning at the tumour boundary and a more distal lymphoid compartment. Candidate extracellular-matrix communication, led by COLLAGEN, LAMININ and FN1, concentrated at the interface. Changes were reproduced in six patient-matched Normal-tumour pairs using exact patient-level tests. Visium HD resolved the same organization at single-cell resolution and showed that 8-um bins distorted immune-adjacency estimates. Xenium also revealed recurrent neighbourhoods but sample-specific stromal boundaries. We provide a confound-aware framework for identifying recurrent epithelial and microenvironmental organization in PDAC.",
+      "authors": [
+        "Liu, K.",
+        "Zhong, H.",
+        "Elangovan, R. S.",
+        "Sun, Y.",
+        "Wang, L.",
+        "Williams, A. P.",
+        "Valerio, T. I.",
+        "Furrer, C.",
+        "Adams, J. P.",
+        "Hoover, A. R.",
+        "Chen, W. R."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "Xenium",
+        "Visium",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.07.31.742119",
+      "title": "Subcellularly Resolved 3D Translatome in Mouse Oocytes and Early Embryos",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-03",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.31.742119v1",
+      "doi": "10.64898/2026.07.31.742119",
+      "abstract": "Spatial patterning of mRNA translation is a fundamental process in early embryogenesis. Existing RNA translation profiling methods lack subcellular spatial resolution at the single-molecule level, limiting our understanding of spatial RNA biology in embryogenesis. To address this, we profiled the spatial translatome of intact mouse embryos at near-genomic scale by adapting RIBOmap and incorporating multiplexed organelle staining. In oocytes, 2-cell and 4-cell embryos, we systematically analyzed RNA translation across three spatial scales: organelle, subcellular, and intercellular. We found that functionally related genes exhibit spatially and temporally controlled translation patterns near distinct organelles. Using Harmonics, a graph signal processing framework, we demonstrate that embryo asymmetry emerges at the first cell division and is amplified at later stages. This work paves the way for comprehensively investigating the fundamental spatial post-transcriptional regulation at the earliest moments of mammalian life.",
+      "authors": [
+        "Ren, J.",
+        "Furniss, S.",
+        "Zhou, C.",
+        "Zhou, H.",
+        "Hagihara, Y.",
+        "Wang, X.",
+        "Zhang, Y."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial resolution",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "小鼠卵母細胞與早期胚胎中的亞細胞解析三維轉譯組"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 35,
+      "passedByScope": 24,
+      "llmClassified": 11,
+      "llmYes": 5,
+      "llmNotSure": 0,
+      "llmNo": 6,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 29,
+      "excluded": 6
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 24,
+      "llmTagged": 0,
+      "fallback": 24
+    },
+    "selection": {
+      "total": 24,
+      "candidates": 24,
+      "featured": 12,
+      "overflow": 12,
+      "lineA": 3,
+      "lineB": 14,
+      "preprint": 7,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 5,
+      "failed": 7
+    },
+    "translate": {
+      "requested": 12,
+      "llmTranslated": 4,
+      "failed": 8
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02372-0",
+        "title": "Venus’s rift valleys could be its secret to staying active",
+        "journal": "Nature",
+        "publishedDate": "2026-08-03T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02372-0",
+        "doi": "10.1038/d41586-026-02372-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02388-6",
+        "title": "Plans for nuclear-powered merchant ships must confront risks",
+        "journal": "Nature",
+        "publishedDate": "2026-08-03T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02388-6",
+        "doi": "10.1038/d41586-026-02388-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01850-9",
+        "title": "Science-backed tips on how to avoid distractions",
+        "journal": "Nature",
+        "publishedDate": "2026-08-03T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01850-9",
+        "doi": "10.1038/d41586-026-01850-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01360-8",
+        "title": "‘A waste of time for all of us’: caught in the crossfire of the peer-review wars",
+        "journal": "Nature",
+        "publishedDate": "2026-08-03T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01360-8",
+        "doi": "10.1038/d41586-026-01360-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02436-1",
+        "title": "Controversial White House plan to overhaul US science funding faces Senate opposition",
+        "journal": "Nature",
+        "publishedDate": "2026-08-03T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02436-1",
+        "doi": "10.1038/d41586-026-02436-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02083-6",
+        "title": "Want to get more from AI? Treat every prompt like an experiment",
+        "journal": "Nature",
+        "publishedDate": "2026-08-03T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02083-6",
+        "doi": "10.1038/d41586-026-02083-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
