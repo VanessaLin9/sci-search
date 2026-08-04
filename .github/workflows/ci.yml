@@ -37,3 +37,4 @@ jobs:
           DIGEST_LLM_API_KEY: test-digest-key
           ROUTING_LLM_MODEL: test-model
           DIGEST_LLM_MODEL: test-model
+          DIGEST_LLM_FALLBACK_MODEL: test-fallback-model

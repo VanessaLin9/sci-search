@@ -8,6 +8,7 @@ export function installPipelineTestEnv(): void {
   process.env.DIGEST_LLM_API_KEY = "test-digest-key";
   process.env.ROUTING_LLM_MODEL = "test-model";
   process.env.DIGEST_LLM_MODEL = "test-model";
+  process.env.DIGEST_LLM_FALLBACK_MODEL = "test-fallback-model";
   process.env.DEBUG_NORMALIZED = "0";
 }
 

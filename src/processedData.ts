@@ -84,6 +84,8 @@ const digestStatsSchema = z.object({
     .object({
       requested: z.number(),
       llmSummarized: z.number(),
+      primarySucceeded: z.number().optional(),
+      fallbackSucceeded: z.number().optional(),
       failed: z.number(),
     })
     .optional(),

@@ -80,7 +80,13 @@ function emptyDigestBlock(): NonNullable<ProcessedPapersFile["digest"]> {
       preprint: 0,
       skip: 0,
     },
-    summarize: { requested: 0, llmSummarized: 0, failed: 0 },
+    summarize: {
+      requested: 0,
+      llmSummarized: 0,
+      primarySucceeded: 0,
+      fallbackSucceeded: 0,
+      failed: 0,
+    },
     translate: { requested: 0, llmTranslated: 0, failed: 0 },
   };
 }

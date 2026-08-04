@@ -56,6 +56,8 @@ function applyOverflowTitleZh(
 const emptySummarizeStats = (): DigestSummarizeStats => ({
   requested: 0,
   llmSummarized: 0,
+  primarySucceeded: 0,
+  fallbackSucceeded: 0,
   failed: 0,
 });
 
@@ -147,10 +149,13 @@ export async function runDigestPhase(options: {
         "Digest summarize failed entirely:",
         error instanceof Error ? error.message : error,
       );
+      const featuredCount = selected.filter((paper) => paper.featured).length;
       summarizeStats = {
-        requested: selected.filter((paper) => paper.featured).length,
+        requested: featuredCount,
         llmSummarized: 0,
-        failed: selected.filter((paper) => paper.featured).length,
+        primarySucceeded: 0,
+        fallbackSucceeded: 0,
+        failed: featuredCount,
       };
     }
 

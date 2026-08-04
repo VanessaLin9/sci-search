@@ -7,8 +7,11 @@
   "maxTokens": 8192,
   "timeoutMs": 180000,
   "maxRetries": 1,
-  "summarizeTimeoutMs": 480000,
+  "summarizeTimeoutMs": 90000,
+  "summarizeFallbackTimeoutMs": 240000,
+  "summarizeStageBudgetMs": 900000,
   "summarizeMaxRetries": 0,
   "enableThinking": false,
-  "summarizeConcurrency": 2
+  "summarizeConcurrency": 2,
+  "summarizeFallbackConcurrency": 2
 }
