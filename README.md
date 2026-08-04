@@ -43,8 +43,8 @@ flowchart TD
   TAG --> SEL["select featured ≤12"]
   TAGF --> SEL
 
-  SEL --> SUM["summarize featured<br/>titleZh · summaryZh · topicTags"]
-  SUM -.->|failure| SUMF["omit 繁中 · may show EN abstract"]
+  SEL --> SUM["summarize featured<br/>primary then fallback model"]
+  SUM -.->|both fail / budget skip| SUMF["omit 繁中 · may show EN abstract"]
 
   SEL --> TR["translate overflow titles → titleZh"]
   TR -.->|failure| TRF["EN title only · continue batches"]
@@ -172,6 +172,7 @@ Fixtures live in [`test/fixtures/regression/`](test/fixtures/regression/) (0522:
 | `ENABLE_LLM_DIGEST` | no | `1` for LLM tagging + summarize + translate |
 | `DIGEST_LLM_API_KEY` | no | Falls back to routing key |
 | `DIGEST_LLM_MODEL` | if digest on | e.g. `deepseek-ai/deepseek-v4-flash` on NVIDIA integrate |
+| `DIGEST_LLM_FALLBACK_MODEL` | no | Featured summarize fallback (e.g. `minimaxai/minimax-m3`); same NVIDIA key/base URL |
 | `DEBUG_NORMALIZED` | no | `1` for verbose logs |
 
 Digest logs use `[digest]`; routing uses `[routing]`; bioRxiv ingest uses `[biorxiv]` / `[biorxiv-gate]` (not gated by debug).
@@ -204,6 +205,7 @@ On `main`, only the most recent **30 days** of `data/processed/{date}/` and `doc
 | `ROUTING_LLM_API_KEY` | yes | Used for routing; digest can reuse via fallback |
 | `ROUTING_LLM_MODEL` | yes | |
 | `DIGEST_LLM_MODEL` | recommended | CI falls back to `ROUTING_LLM_MODEL` if unset |
+| `DIGEST_LLM_FALLBACK_MODEL` | no | Defaults to `minimaxai/minimax-m3` in daily workflow when unset |
 | `DIGEST_LLM_API_KEY` | no | Optional separate key |
 | `DIGEST_SUBJECT_PREFIX` | no | Override `config/email.json` if needed |
 
@@ -257,7 +259,7 @@ data/processed/{date}/papers.json  # 30-day rolling retention on main
 - **bioRxiv** is live (`biorxiv-api` in `sources.json`); medRxiv is not wired
 - bioRxiv fine screen is yes-only (`not_sure` excluded); LLM failure fail-opens to keyword-matched set so cron is not blocked
 - Broad-science routing degrades (missing verdict / timeout / bad JSON) into keyword fallback or `no` — daily digest must still complete
-- Digest LLM (tag / summarize / translate) failures skip or thin out 繁中 fields — no backup model; daily still completes (see `runDigestPhase`)
+- Digest LLM: tagging/translate failures skip or thin out 繁中 fields; featured summarize uses primary then optional `DIGEST_LLM_FALLBACK_MODEL` for failed papers only — daily still completes (see `runDigestPhase`)
 - **Zero papers** on some weekends/holidays → empty-state email and preview (expected)
 - Email and preview share one renderer; no separate “subscriber-only” content
 - LLM costs and latency scale with paper count (routing + bioRxiv gate + tagging batches + ≤12 summarize + overflow translate)

@@ -91,6 +91,7 @@ async function main() {
   if (result.digest.llmTagging) {
     logDigest(
       `summarize: ${result.digest.summarize.llmSummarized}/${result.digest.summarize.requested} featured` +
+        ` (primary ${result.digest.summarize.primarySucceeded}, fallback ${result.digest.summarize.fallbackSucceeded})` +
         (result.digest.summarize.failed > 0 ? `, ${result.digest.summarize.failed} failed` : ""),
     );
     if (result.digest.translate.requested > 0) {

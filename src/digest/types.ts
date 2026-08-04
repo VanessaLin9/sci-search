@@ -45,7 +45,10 @@ export type DigestTaggingStats = {
 
 export type DigestSummarizeStats = {
   requested: number;
+  /** primarySucceeded + fallbackSucceeded（相容舊欄位）。 */
   llmSummarized: number;
+  primarySucceeded: number;
+  fallbackSucceeded: number;
   failed: number;
 };
 

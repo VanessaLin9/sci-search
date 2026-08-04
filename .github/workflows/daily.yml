@@ -29,6 +29,7 @@ jobs:
       ENABLE_LLM_DIGEST: "1"
       DIGEST_LLM_API_KEY: ${{ secrets.DIGEST_LLM_API_KEY }}
       DIGEST_LLM_MODEL: ${{ secrets.DIGEST_LLM_MODEL || secrets.ROUTING_LLM_MODEL }}
+      DIGEST_LLM_FALLBACK_MODEL: ${{ secrets.DIGEST_LLM_FALLBACK_MODEL || 'minimaxai/minimax-m3' }}
     steps:
       - uses: actions/checkout@v4
 

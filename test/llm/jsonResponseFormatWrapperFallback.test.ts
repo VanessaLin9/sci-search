@@ -62,8 +62,11 @@ function digestConfig(): DigestLlmConfig {
     maxTokens: 1024,
     maxRetries: 0,
     summarizeTimeoutMs: 5_000,
+    summarizeFallbackTimeoutMs: 5_000,
+    summarizeStageBudgetMs: 60_000,
     summarizeMaxRetries: 0,
     summarizeConcurrency: 1,
+    summarizeFallbackConcurrency: 1,
     preferJsonResponseFormat: true,
     disableThinking: false,
   };

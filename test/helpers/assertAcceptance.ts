@@ -62,6 +62,13 @@ function assertSummarizeStats(processed: ProcessedPapersFile): void {
     "summarize counters should add up",
   );
   assert.equal(summarize.requested, processed.papers.filter((paper) => paper.featured).length);
+  if (summarize.primarySucceeded != null || summarize.fallbackSucceeded != null) {
+    assert.equal(
+      (summarize.primarySucceeded ?? 0) + (summarize.fallbackSucceeded ?? 0),
+      summarize.llmSummarized,
+      "primary+fallback should equal llmSummarized",
+    );
+  }
 }
 
 function assertTranslateStats(processed: ProcessedPapersFile): void {

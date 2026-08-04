@@ -15,9 +15,12 @@ const config: DigestLlmConfig = {
   timeoutMs: 180_000,
   maxTokens: 8_192,
   maxRetries: 0,
-  summarizeTimeoutMs: 180_000,
+  summarizeTimeoutMs: 90_000,
+  summarizeFallbackTimeoutMs: 240_000,
+  summarizeStageBudgetMs: 900_000,
   summarizeMaxRetries: 0,
   summarizeConcurrency: 1,
+  summarizeFallbackConcurrency: 2,
   preferJsonResponseFormat: false,
   disableThinking: true,
 };

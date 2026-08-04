@@ -12,6 +12,8 @@ export type DigestLlmConfig = {
   apiKey: string;
   baseUrl: string;
   model: string;
+  /** Optional second model for featured summarize only (`DIGEST_LLM_FALLBACK_MODEL`). */
+  fallbackModel?: string;
   maxFeatured: number;
   overflowShowTitleZh: boolean;
   maxPapersPerBatch: number;
@@ -20,8 +22,11 @@ export type DigestLlmConfig = {
   maxTokens: number;
   maxRetries: number;
   summarizeTimeoutMs: number;
+  summarizeFallbackTimeoutMs: number;
+  summarizeStageBudgetMs: number;
   summarizeMaxRetries: number;
   summarizeConcurrency: number;
+  summarizeFallbackConcurrency: number;
   preferJsonResponseFormat: boolean;
   disableThinking: boolean;
 };
@@ -48,6 +53,7 @@ export function getDigestLlmConfig(): DigestLlmConfig {
     );
   }
 
+  const fallbackModel = process.env.DIGEST_LLM_FALLBACK_MODEL?.trim() || undefined;
   const baseUrl = file.baseUrl.replace(/\/$/, "");
   const nvidia = isNvidiaIntegrateApi(baseUrl);
 
@@ -55,6 +61,7 @@ export function getDigestLlmConfig(): DigestLlmConfig {
     apiKey,
     baseUrl,
     model,
+    fallbackModel,
     maxFeatured: file.maxFeatured,
     overflowShowTitleZh: file.overflowShowTitleZh,
     maxPapersPerBatch: file.maxPapersPerBatch,
@@ -63,8 +70,11 @@ export function getDigestLlmConfig(): DigestLlmConfig {
     maxTokens: file.maxTokens,
     maxRetries: file.maxRetries,
     summarizeTimeoutMs: file.summarizeTimeoutMs,
+    summarizeFallbackTimeoutMs: file.summarizeFallbackTimeoutMs,
+    summarizeStageBudgetMs: file.summarizeStageBudgetMs,
     summarizeMaxRetries: file.summarizeMaxRetries,
     summarizeConcurrency: file.summarizeConcurrency,
+    summarizeFallbackConcurrency: file.summarizeFallbackConcurrency,
     preferJsonResponseFormat: !nvidia,
     disableThinking: nvidia && !file.enableThinking,
   };
