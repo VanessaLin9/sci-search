@@ -1,7 +1,7 @@
 /**
  * Phase 2b：featured 逐篇 summarize（titleZh / summaryZh / topicTags）。
  *
- * 雙模型備援（featured only）：
+ * 雙模型備援（featured only；PR #30）：
  * - Primary：`DIGEST_LLM_MODEL`（timeout=`summarizeTimeoutMs`）
  * - Fallback：`DIGEST_LLM_FALLBACK_MODEL`（timeout=`summarizeFallbackTimeoutMs`）；只打 primary 最終失敗篇
  * - Shared stage budget：`summarizeStageBudgetMs`（primary + fallback 共用）
@@ -9,7 +9,7 @@
  * - 529／其他 5xx／timeout／network／empty／malformed／id mismatch：不做同模型無差別 retry，直接 fallback
  * - Fallback 前檢查剩餘 budget；不足則 budget skip，該篇保留英文卡
  *
- * SDK `summarizeMaxRetries` 應為 0；retry／wait／fallback 由本層決定。
+ * SDK `summarizeMaxRetries` 應為 0；retry／wait／fallback 由本層決定（避免 SDK 再撞同一個 overloaded worker）。
  * LLM HTTP 走 `callDigestChatCompletion`（gate=`digest-summarize`）。
  */
 import { z } from "zod";
@@ -236,10 +236,12 @@ async function summarizePrimaryPaper(options: {
   });
   if (first.ok) return first;
 
+  // 529 是 worker overload：同模型立即重試幾乎無效，應把時間留給不同 model（PR #30）。
   if (first.failure.kind !== "rate_limit") {
     return first;
   }
 
+  // 429 才做一次 budget-aware primary wait/retry；仍失敗才進 MiniMax（PR #30）。
   const plan = planRateLimitWait({
     headers: first.failure.headers,
     nowMs: clock.now(),
@@ -297,6 +299,7 @@ async function summarizeFallbackPaper(options: {
   const { paper, index, total, scopeBySourceId, config, fallbackModel, budget, clock } = options;
   const label = summarizeLabel({ index, total, paper, role: "fallback" });
 
+  // Shared budget 含 primary 等待；剩餘不足時寧可英文卡，也不拖垮 daily cron（PR #30）。
   if (!budget.canStartRequest()) {
     logDigest(
       `${label}: skipped · model=${fallbackModel} role=fallback reason=budget_exhausted ` +

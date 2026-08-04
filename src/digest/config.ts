@@ -12,7 +12,7 @@ export type DigestLlmConfig = {
   apiKey: string;
   baseUrl: string;
   model: string;
-  /** Optional second model for featured summarize only (`DIGEST_LLM_FALLBACK_MODEL`). */
+  /** Featured summarize 第二層模型（`DIGEST_LLM_FALLBACK_MODEL`）；同 NVIDIA key/base，不跨 provider（PR #30）。 */
   fallbackModel?: string;
   maxFeatured: number;
   overflowShowTitleZh: boolean;
