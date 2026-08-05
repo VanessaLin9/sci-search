@@ -4,6 +4,7 @@
  * - 整體 JSON／頂層 shape 壞掉 → 整批失敗（呼叫端維持英文 fallback）
  * - results 內部分 item 壞掉 → 只丟棄不安全項，合法且 id 可確認的保留
  * - identity 只認 `id`；不靠 index／順序／title（避免 A→B 錯配）
+ * - 同批 duplicate `id`：fail closed，該 id 全部不寫入（不採第一筆）（PR #31 review）
  * - 觸發：2026-07-31 單列 `invalid_type` 曾讓整批 titleZh 消失
  */
 import { z } from "zod";
@@ -148,6 +149,7 @@ export function parseTranslateBatchResponse(
   }
 
   const titleZhById = new Map<string, string>();
+  const blockedIds = new Set<string>();
   const issues: TranslateBatchIssue[] = [];
   let valid = 0;
   let invalid = 0;
@@ -194,12 +196,17 @@ export function parseTranslateBatchResponse(
       return;
     }
 
-    if (titleZhById.has(id)) {
+    // duplicate identity：兩筆以上同 id 時內容可能衝突，整組不寫入（PR #31 review）。
+    if (blockedIds.has(id) || titleZhById.has(id)) {
+      if (titleZhById.delete(id)) {
+        valid -= 1;
+      }
+      blockedIds.add(id);
       duplicate += 1;
       issues.push({
         kind: "duplicate_id",
         path: formatZodPath(["results", rowIndex, "id"]),
-        message: `duplicate id ${id}`,
+        message: `duplicate id ${id}; all rows for this id discarded`,
         id,
       });
       return;

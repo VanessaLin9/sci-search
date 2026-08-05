@@ -110,6 +110,20 @@ describe("parseTranslateBatchResponse", () => {
     assert.deepEqual(parsed.failedIds, ["p2", "p3"]);
   });
 
+  test("fail-closes duplicate ids instead of keeping the first translation", () => {
+    const content = body([row("p1", "一"), row("p1", "重複一"), row("p2", "二")]);
+    const parsed = parseTranslateBatchResponse(content, ["p1", "p2"]);
+
+    assert.equal(parsed.titleZhById.has("p1"), false);
+    assert.equal(parsed.titleZhById.get("p2"), "二");
+    assert.deepEqual(parsed.failedIds, ["p1"]);
+    assert.equal(parsed.summary.salvaged, 1);
+    assert.equal(parsed.summary.valid, 1);
+    assert.equal(parsed.summary.duplicate, 1);
+    assert.equal(parsed.summary.missing, 1);
+    assert.equal(parsed.issues.some((issue) => issue.kind === "duplicate_id" && issue.id === "p1"), true);
+  });
+
   test("counts missing, extra, duplicate, null, and wrong-type rows", () => {
     const content = body([
       row("p1", "一"),
@@ -124,16 +138,16 @@ describe("parseTranslateBatchResponse", () => {
     const parsed = parseTranslateBatchResponse(content, IDS);
 
     assert.equal(parsed.batchFailed, false);
-    assert.equal(parsed.titleZhById.get("p1"), "一");
+    assert.equal(parsed.titleZhById.has("p1"), false);
     assert.equal(parsed.titleZhById.get("p5"), "五");
-    assert.deepEqual([...parsed.titleZhById.keys()].sort(), ["p1", "p5"]);
-    assert.deepEqual(parsed.failedIds, ["p2", "p3", "p4"]);
-    assert.equal(parsed.summary.valid, 2);
-    assert.equal(parsed.summary.salvaged, 2);
+    assert.deepEqual([...parsed.titleZhById.keys()], ["p5"]);
+    assert.deepEqual(parsed.failedIds, ["p1", "p2", "p3", "p4"]);
+    assert.equal(parsed.summary.valid, 1);
+    assert.equal(parsed.summary.salvaged, 1);
     assert.equal(parsed.summary.duplicate, 1);
     assert.equal(parsed.summary.unknown, 2);
     assert.equal(parsed.summary.invalid, 3);
-    assert.equal(parsed.summary.missing, 3);
+    assert.equal(parsed.summary.missing, 4);
 
     const kinds = parsed.issues.map((issue) => issue.kind).sort();
     assert.ok(kinds.includes("duplicate_id"));
