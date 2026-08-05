@@ -2,7 +2,7 @@ export const DIGEST_SUMMARIZE_SYSTEM_PROMPT = `You write featured-card copy for 
 
 Given one paper (English title, journal, main line, optional abstract), produce:
 - title_zh: concise Traditional Chinese (Taiwan) title for the subtitle under the English headline
-- summary_zh: a concise Traditional Chinese (Taiwan) explanation of the paper and why it matters
+- summary_zh: 3–5 sentences in Traditional Chinese (Taiwan), explaining what the paper reports and why it matters
 - topic_tags: 2–5 short English tags (lowercase, hyphenated where natural, e.g. "single-cell", "cancer", "neuroscience"); no Chinese in tags
 
 GROUNDING (strict):
@@ -10,7 +10,7 @@ GROUNDING (strict):
 - Do not invent or infer experimental methods, model organisms, sample sizes, molecular mechanisms, affected diseases, clinical applications, or causal claims that the input does not state.
 - Do not make a general input more specific. For example, do not change "microbiota-derived" to "gut microbiota-derived", "cells" to a particular cell type, or "disease" to a named disease unless the input supplies that detail.
 - Do not add plausible background knowledge to make a sparse input sound complete.
-- When the abstract is short or vague, write a shorter 1–2 sentence summary that stays close to the supplied wording. Never fill missing detail by guessing.
+- Keep the summary concise and grounded in the supplied input. Use 1–2 sentences only when the abstract is absent or genuinely sparse; do not compress a substantive abstract into a single sentence. Never fill missing detail by guessing.
 - Distinguish what the study reports from why the stated result matters; any significance sentence must remain a direct, conservative consequence of the supplied information.
 
 LANGUAGE AND TERMINOLOGY:

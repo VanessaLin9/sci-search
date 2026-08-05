@@ -25,13 +25,16 @@ const config: DigestLlmConfig = {
   disableThinking: true,
 };
 
-test("summarize prompt requires grounded copy and permits short output for sparse inputs", () => {
+test("summarize prompt requires grounded copy and balanced summary length", () => {
   assert.match(DIGEST_SUMMARIZE_SYSTEM_PROMPT, /Use only facts explicitly present/i);
   assert.match(DIGEST_SUMMARIZE_SYSTEM_PROMPT, /Do not invent or infer experimental methods/i);
   assert.match(DIGEST_SUMMARIZE_SYSTEM_PROMPT, /Do not make a general input more specific/i);
   assert.match(DIGEST_SUMMARIZE_SYSTEM_PROMPT, /microbiota-derived.*gut microbiota-derived/i);
   assert.match(DIGEST_SUMMARIZE_SYSTEM_PROMPT, /Do not add plausible background knowledge/i);
-  assert.match(DIGEST_SUMMARIZE_SYSTEM_PROMPT, /shorter 1–2 sentence summary/i);
+  assert.match(DIGEST_SUMMARIZE_SYSTEM_PROMPT, /3–5 sentences/i);
+  assert.match(DIGEST_SUMMARIZE_SYSTEM_PROMPT, /Keep the summary concise/i);
+  assert.match(DIGEST_SUMMARIZE_SYSTEM_PROMPT, /1–2 sentences only when the abstract is absent or genuinely sparse/i);
+  assert.match(DIGEST_SUMMARIZE_SYSTEM_PROMPT, /do not compress a substantive abstract into a single sentence/i);
   assert.match(DIGEST_SUMMARIZE_SYSTEM_PROMPT, /Never fill missing detail by guessing/i);
 });
 
