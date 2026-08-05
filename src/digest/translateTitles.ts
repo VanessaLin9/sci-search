@@ -1,17 +1,21 @@
 /**
  * Phase 2b：overflow（非 featured）批次翻英文標題 → `titleZh`。
  *
- * 失敗契約：單 batch 503／parse 失敗就 skip 該批（計入 failed），繼續下一批；
+ * 失敗契約：單 batch 503／整批 JSON 失敗就 skip 該批（計入 failed），繼續下一批；
+ * 部分 item schema invalid → partial salvage（只丟棄不安全項）（PR #31）。
  * **沒有** keyword／第二模型備援——郵件只顯示英文標題。HTTP 重試靠 `maxRetries`。
  *
  * LLM HTTP 走 `callDigestChatCompletion`（gate=`digest-translate`）；timing 見 `llmRequestTiming.ts`（PR #26）。
+ * 逐項解析契約 owner：`parseTranslateBatchResponse`（PR #31）。
  */
-import { z } from "zod";
-import { parseJsonFromLlmContent } from "../routing/parseLlmJson.js";
 import { callDigestChatCompletion } from "./callDigestChat.js";
 import { getDigestLlmConfig } from "./config.js";
 import { extractDigestMessageContent } from "./extractDigestContent.js";
 import { logDigest } from "./digestLog.js";
+import {
+  formatTranslateBatchSummary,
+  parseTranslateBatchResponse,
+} from "./parseTranslateBatchResponse.js";
 import { planTranslateBatches } from "./planTranslateBatches.js";
 import {
   buildDigestTranslateCompletionParams,
@@ -20,15 +24,6 @@ import {
 import { toDigestTranslateInput } from "./toTranslateInput.js";
 import type { DigestTranslateStats } from "./types.js";
 import type { ClassifiedPaper } from "../types.js";
-
-const translateRowSchema = z.object({
-  id: z.string(),
-  title_zh: z.string().min(1),
-});
-
-const translateResponseSchema = z.object({
-  results: z.array(translateRowSchema),
-});
 
 /** 僅處理非 featured 且 digestLine ≠ skip 的 overflow；失敗則該批不加 titleZh。 */
 export async function translateOverflowTitles(options: {
@@ -121,27 +116,28 @@ async function translateBatchOnce(
     logDigest(`${batchLabel}: warning: JSON taken from reasoning_content`);
   }
 
-  const parsed = translateResponseSchema.parse(parseJsonFromLlmContent(content));
-  const itemIds = new Set(batch.map((item) => item.id));
-  const titleZhById = new Map<string, string>();
-
-  for (const row of parsed.results) {
-    const id = row.id.trim();
-    if (itemIds.has(id)) {
-      titleZhById.set(id, row.title_zh.trim());
-    }
-  }
-
-  const failedIds: string[] = [];
-  for (const item of batch) {
-    if (!titleZhById.has(item.id)) {
-      failedIds.push(item.id);
-    }
-  }
-
+  // 細節計數只進 log；persisted translate stats 仍是 requested/llmTranslated/failed（PR #31）。
+  const expectedIds = batch.map((item) => item.id);
+  const parsed = parseTranslateBatchResponse(content, expectedIds);
   logDigest(
-    `${batchLabel}: parsed ${titleZhById.size}/${batch.length} (finish_reason=${finishReason})`,
+    `${batchLabel}: ${formatTranslateBatchSummary(parsed.summary)} (finish_reason=${finishReason})`,
   );
 
-  return { titleZhById, failedIds };
+  for (const issue of parsed.issues) {
+    if (issue.kind === "json_parse" || issue.kind === "schema_shape") {
+      logDigest(`${batchLabel}: ${issue.kind}: ${issue.message}`);
+      continue;
+    }
+    const idHint = issue.id ? ` id=${issue.id}` : "";
+    logDigest(`${batchLabel}: ${issue.kind} at ${issue.path}${idHint}`);
+  }
+
+  // batchFailed → 丟給外層 catch，整批維持英文（與 HTTP 失敗同契約）（PR #31）。
+  if (parsed.batchFailed) {
+    throw new Error(
+      `${batchLabel}: structured-output batch failed (${parsed.issues[0]?.kind ?? "unknown"})`,
+    );
+  }
+
+  return { titleZhById: parsed.titleZhById, failedIds: parsed.failedIds };
 }
