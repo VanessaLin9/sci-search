@@ -4,7 +4,7 @@
  * - 整體 JSON／頂層 shape 壞掉 → 整批失敗（呼叫端維持英文 fallback）
  * - results 內部分 item 壞掉 → 只丟棄不安全項，合法且 id 可確認的保留
  * - identity 只認 `id`；不靠 index／順序／title（避免 A→B 錯配）
- * - 同批 duplicate `id`：fail closed，該 id 全部不寫入（含其中一筆 schema malformed）（PR #31 review）
+ * - 同批 duplicate `id`：fail closed，該 id 全部不寫入；malformed duplicate 仍計入 invalid（PR #31 review）
  * - 觸發：2026-07-31 單列 `invalid_type` 曾讓整批 titleZh 消失
  */
 import { z } from "zod";
@@ -180,21 +180,24 @@ export function parseTranslateBatchResponse(
   results.forEach((row, rowIndex) => {
     // 先從 raw row 擷取 id：malformed 列仍要參與 duplicate fail-closed（PR #31 review）。
     const rawId = extractRawStringId(row);
+    let duplicateOccurrence = false;
     if (rawId && expectedSet.has(rawId)) {
       if (blockedIds.has(rawId) || seenExpectedIds.has(rawId)) {
         discardId(rawId, titleZhById, blockedIds, counters);
         duplicate += 1;
+        duplicateOccurrence = true;
         issues.push({
           kind: "duplicate_id",
           path: formatZodPath(["results", rowIndex, "id"]),
           message: `duplicate id ${rawId}; all rows for this id discarded`,
           id: rawId,
         });
-        return;
+      } else {
+        seenExpectedIds.add(rawId);
       }
-      seenExpectedIds.add(rawId);
     }
 
+    // duplicate 仍繼續做 schema，避免 ordering 改變 invalid 計數（PR #31 review）。
     const parsed = translateRowSchema.safeParse(row);
     if (!parsed.success) {
       invalid += 1;
@@ -230,14 +233,7 @@ export function parseTranslateBatchResponse(
       return;
     }
 
-    if (blockedIds.has(id)) {
-      duplicate += 1;
-      issues.push({
-        kind: "duplicate_id",
-        path: formatZodPath(["results", rowIndex, "id"]),
-        message: `duplicate id ${id}; all rows for this id discarded`,
-        id,
-      });
+    if (duplicateOccurrence || blockedIds.has(id)) {
       return;
     }
 

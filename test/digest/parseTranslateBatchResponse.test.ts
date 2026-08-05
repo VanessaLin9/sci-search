@@ -132,8 +132,9 @@ describe("parseTranslateBatchResponse", () => {
     assert.equal(parsed.titleZhById.get("p2"), "二");
     assert.deepEqual(parsed.failedIds, ["p1"]);
     assert.equal(parsed.summary.duplicate, 1);
-    assert.equal(parsed.summary.invalid, 0);
+    assert.equal(parsed.summary.invalid, 1);
     assert.equal(parsed.summary.salvaged, 1);
+    assert.ok(parsed.issues.some((issue) => issue.kind === "invalid_type"));
   });
 
   test("fail-closes when a malformed row is followed by a valid duplicate id", () => {
@@ -146,6 +147,7 @@ describe("parseTranslateBatchResponse", () => {
     assert.equal(parsed.summary.duplicate, 1);
     assert.equal(parsed.summary.invalid, 1);
     assert.equal(parsed.summary.salvaged, 1);
+    assert.ok(parsed.issues.some((issue) => issue.kind === "invalid_type"));
   });
 
   test("counts missing, extra, duplicate, null, and wrong-type rows", () => {
