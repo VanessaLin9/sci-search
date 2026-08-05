@@ -4,7 +4,7 @@
  * - 整體 JSON／頂層 shape 壞掉 → 整批失敗（呼叫端維持英文 fallback）
  * - results 內部分 item 壞掉 → 只丟棄不安全項，合法且 id 可確認的保留
  * - identity 只認 `id`；不靠 index／順序／title（避免 A→B 錯配）
- * - 同批 duplicate `id`：fail closed，該 id 全部不寫入（不採第一筆）（PR #31 review）
+ * - 同批 duplicate `id`：fail closed，該 id 全部不寫入（含其中一筆 schema malformed）（PR #31 review）
  * - 觸發：2026-07-31 單列 `invalid_type` 曾讓整批 titleZh 消失
  */
 import { z } from "zod";
@@ -113,6 +113,26 @@ function batchFailure(
   };
 }
 
+function extractRawStringId(row: unknown): string | undefined {
+  if (!row || typeof row !== "object" || Array.isArray(row)) return undefined;
+  const id = (row as { id?: unknown }).id;
+  if (typeof id !== "string") return undefined;
+  const trimmed = id.trim();
+  return trimmed || undefined;
+}
+
+function discardId(
+  id: string,
+  titleZhById: Map<string, string>,
+  blockedIds: Set<string>,
+  counters: { valid: number },
+): void {
+  if (titleZhById.delete(id)) {
+    counters.valid -= 1;
+  }
+  blockedIds.add(id);
+}
+
 /**
  * 解析 translate LLM content（PR #31）。
  * `expectedIds` 順序只用於 missing 回報，對應 key 一律用 `id`。
@@ -150,24 +170,38 @@ export function parseTranslateBatchResponse(
 
   const titleZhById = new Map<string, string>();
   const blockedIds = new Set<string>();
+  const seenExpectedIds = new Set<string>();
   const issues: TranslateBatchIssue[] = [];
-  let valid = 0;
+  const counters = { valid: 0 };
   let invalid = 0;
   let duplicate = 0;
   let unknown = 0;
 
   results.forEach((row, rowIndex) => {
+    // 先從 raw row 擷取 id：malformed 列仍要參與 duplicate fail-closed（PR #31 review）。
+    const rawId = extractRawStringId(row);
+    if (rawId && expectedSet.has(rawId)) {
+      if (blockedIds.has(rawId) || seenExpectedIds.has(rawId)) {
+        discardId(rawId, titleZhById, blockedIds, counters);
+        duplicate += 1;
+        issues.push({
+          kind: "duplicate_id",
+          path: formatZodPath(["results", rowIndex, "id"]),
+          message: `duplicate id ${rawId}; all rows for this id discarded`,
+          id: rawId,
+        });
+        return;
+      }
+      seenExpectedIds.add(rawId);
+    }
+
     const parsed = translateRowSchema.safeParse(row);
     if (!parsed.success) {
       invalid += 1;
       const classified = classifyRowZodIssue(parsed.error, rowIndex);
-      const rawId =
-        row && typeof row === "object" && !Array.isArray(row) && "id" in row
-          ? (row as { id?: unknown }).id
-          : undefined;
       issues.push({
         ...classified,
-        id: typeof rawId === "string" ? rawId.trim() || undefined : undefined,
+        id: rawId,
       });
       return;
     }
@@ -196,12 +230,7 @@ export function parseTranslateBatchResponse(
       return;
     }
 
-    // duplicate identity：兩筆以上同 id 時內容可能衝突，整組不寫入（PR #31 review）。
-    if (blockedIds.has(id) || titleZhById.has(id)) {
-      if (titleZhById.delete(id)) {
-        valid -= 1;
-      }
-      blockedIds.add(id);
+    if (blockedIds.has(id)) {
       duplicate += 1;
       issues.push({
         kind: "duplicate_id",
@@ -213,7 +242,7 @@ export function parseTranslateBatchResponse(
     }
 
     titleZhById.set(id, titleZh);
-    valid += 1;
+    counters.valid += 1;
   });
 
   const failedIds = expectedIds.filter((id) => !titleZhById.has(id));
@@ -226,7 +255,7 @@ export function parseTranslateBatchResponse(
     failedIds,
     summary: {
       requested: expectedIds.length,
-      valid,
+      valid: counters.valid,
       salvaged,
       invalid,
       missing,

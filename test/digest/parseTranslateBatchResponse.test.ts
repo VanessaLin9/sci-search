@@ -124,6 +124,30 @@ describe("parseTranslateBatchResponse", () => {
     assert.equal(parsed.issues.some((issue) => issue.kind === "duplicate_id" && issue.id === "p1"), true);
   });
 
+  test("fail-closes when a valid row is followed by a malformed duplicate id", () => {
+    const content = body([row("p1", "一"), { id: "p1", title_zh: null }, row("p2", "二")]);
+    const parsed = parseTranslateBatchResponse(content, ["p1", "p2"]);
+
+    assert.equal(parsed.titleZhById.has("p1"), false);
+    assert.equal(parsed.titleZhById.get("p2"), "二");
+    assert.deepEqual(parsed.failedIds, ["p1"]);
+    assert.equal(parsed.summary.duplicate, 1);
+    assert.equal(parsed.summary.invalid, 0);
+    assert.equal(parsed.summary.salvaged, 1);
+  });
+
+  test("fail-closes when a malformed row is followed by a valid duplicate id", () => {
+    const content = body([{ id: "p1", title_zh: null }, row("p1", "一"), row("p2", "二")]);
+    const parsed = parseTranslateBatchResponse(content, ["p1", "p2"]);
+
+    assert.equal(parsed.titleZhById.has("p1"), false);
+    assert.equal(parsed.titleZhById.get("p2"), "二");
+    assert.deepEqual(parsed.failedIds, ["p1"]);
+    assert.equal(parsed.summary.duplicate, 1);
+    assert.equal(parsed.summary.invalid, 1);
+    assert.equal(parsed.summary.salvaged, 1);
+  });
+
   test("counts missing, extra, duplicate, null, and wrong-type rows", () => {
     const content = body([
       row("p1", "一"),
