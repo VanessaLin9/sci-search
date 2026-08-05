@@ -4,7 +4,7 @@
  * - 整體 JSON／頂層 shape 壞掉 → 整批失敗（呼叫端維持英文 fallback）
  * - results 內部分 item 壞掉 → 只丟棄不安全項，合法且 id 可確認的保留
  * - identity 只認 `id`；不靠 index／順序／title（避免 A→B 錯配）
- * - 同批 duplicate `id`：fail closed，該 id 全部不寫入；malformed duplicate 仍計入 invalid（PR #31 review）
+ * - 同批 duplicate `id`：fail closed，該 id 全部不寫入；malformed／空標題 duplicate 仍計入 invalid（PR #31 review）
  * - 觸發：2026-07-31 單列 `invalid_type` 曾讓整批 titleZh 消失
  */
 import { z } from "zod";
@@ -113,23 +113,24 @@ function batchFailure(
   };
 }
 
+/** 正規化 raw／parsed id；空白-only 視為無 identity。 */
+function normalizeId(value: unknown): string | undefined {
+  if (typeof value !== "string") return undefined;
+  const trimmed = value.trim();
+  return trimmed || undefined;
+}
+
 function extractRawStringId(row: unknown): string | undefined {
   if (!row || typeof row !== "object" || Array.isArray(row)) return undefined;
-  const id = (row as { id?: unknown }).id;
-  if (typeof id !== "string") return undefined;
-  const trimmed = id.trim();
-  return trimmed || undefined;
+  return normalizeId((row as { id?: unknown }).id);
 }
 
 function discardId(
   id: string,
   titleZhById: Map<string, string>,
   blockedIds: Set<string>,
-  counters: { valid: number },
 ): void {
-  if (titleZhById.delete(id)) {
-    counters.valid -= 1;
-  }
+  titleZhById.delete(id);
   blockedIds.add(id);
 }
 
@@ -172,7 +173,6 @@ export function parseTranslateBatchResponse(
   const blockedIds = new Set<string>();
   const seenExpectedIds = new Set<string>();
   const issues: TranslateBatchIssue[] = [];
-  const counters = { valid: 0 };
   let invalid = 0;
   let duplicate = 0;
   let unknown = 0;
@@ -183,7 +183,7 @@ export function parseTranslateBatchResponse(
     let duplicateOccurrence = false;
     if (rawId && expectedSet.has(rawId)) {
       if (blockedIds.has(rawId) || seenExpectedIds.has(rawId)) {
-        discardId(rawId, titleZhById, blockedIds, counters);
+        discardId(rawId, titleZhById, blockedIds);
         duplicate += 1;
         duplicateOccurrence = true;
         issues.push({
@@ -197,7 +197,7 @@ export function parseTranslateBatchResponse(
       }
     }
 
-    // duplicate 仍繼續做 schema，避免 ordering 改變 invalid 計數（PR #31 review）。
+    // duplicate 仍繼續做 schema／trim 檢查，避免 ordering 改變 invalid 計數（PR #31 review）。
     const parsed = translateRowSchema.safeParse(row);
     if (!parsed.success) {
       invalid += 1;
@@ -209,7 +209,7 @@ export function parseTranslateBatchResponse(
       return;
     }
 
-    const id = parsed.data.id.trim();
+    const id = normalizeId(parsed.data.id);
     const titleZh = parsed.data.title_zh.trim();
     if (!id || !titleZh) {
       invalid += 1;
@@ -217,7 +217,7 @@ export function parseTranslateBatchResponse(
         kind: !id ? "missing_field" : "empty_title",
         path: formatZodPath(["results", rowIndex, !id ? "id" : "title_zh"]),
         message: !id ? "id empty after trim" : "title_zh empty after trim",
-        id: id || undefined,
+        id,
       });
       return;
     }
@@ -238,11 +238,9 @@ export function parseTranslateBatchResponse(
     }
 
     titleZhById.set(id, titleZh);
-    counters.valid += 1;
   });
 
   const failedIds = expectedIds.filter((id) => !titleZhById.has(id));
-  const missing = failedIds.length;
   const salvaged = titleZhById.size;
 
   return {
@@ -251,10 +249,11 @@ export function parseTranslateBatchResponse(
     failedIds,
     summary: {
       requested: expectedIds.length,
-      valid: counters.valid,
+      // valid 與 salvaged 皆為最終寫入數，避免手動 counter 與 map 不同步。
+      valid: salvaged,
       salvaged,
       invalid,
-      missing,
+      missing: failedIds.length,
       duplicate,
       unknown,
     },

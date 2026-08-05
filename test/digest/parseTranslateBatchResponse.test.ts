@@ -150,6 +150,96 @@ describe("parseTranslateBatchResponse", () => {
     assert.ok(parsed.issues.some((issue) => issue.kind === "invalid_type"));
   });
 
+  test("fail-closes missing_field duplicates with stable invalid counts either order", () => {
+    const validThenMissing = parseTranslateBatchResponse(
+      body([row("p1", "一"), { id: "p1" }, row("p2", "二")]),
+      ["p1", "p2"],
+    );
+    const missingThenValid = parseTranslateBatchResponse(
+      body([{ id: "p1" }, row("p1", "一"), row("p2", "二")]),
+      ["p1", "p2"],
+    );
+
+    for (const parsed of [validThenMissing, missingThenValid]) {
+      assert.equal(parsed.titleZhById.has("p1"), false);
+      assert.equal(parsed.titleZhById.get("p2"), "二");
+      assert.deepEqual(parsed.failedIds, ["p1"]);
+      assert.equal(parsed.summary.duplicate, 1);
+      assert.equal(parsed.summary.invalid, 1);
+      assert.equal(parsed.summary.valid, parsed.summary.salvaged);
+    }
+  });
+
+  test("fail-closes whitespace-only title duplicates with stable invalid counts either order", () => {
+    const validThenBlank = parseTranslateBatchResponse(
+      body([row("p1", "一"), row("p1", "   "), row("p2", "二")]),
+      ["p1", "p2"],
+    );
+    const blankThenValid = parseTranslateBatchResponse(
+      body([row("p1", "   "), row("p1", "一"), row("p2", "二")]),
+      ["p1", "p2"],
+    );
+
+    for (const parsed of [validThenBlank, blankThenValid]) {
+      assert.equal(parsed.titleZhById.has("p1"), false);
+      assert.equal(parsed.titleZhById.get("p2"), "二");
+      assert.deepEqual(parsed.failedIds, ["p1"]);
+      assert.equal(parsed.summary.duplicate, 1);
+      assert.equal(parsed.summary.invalid, 1);
+      assert.ok(parsed.issues.some((issue) => issue.kind === "empty_title"));
+    }
+  });
+
+  test("fail-closes when both duplicate rows are malformed", () => {
+    const parsed = parseTranslateBatchResponse(
+      body([
+        { id: "p1", title_zh: null },
+        { id: "p1", title_zh: 123 },
+        row("p2", "二"),
+      ]),
+      ["p1", "p2"],
+    );
+
+    assert.equal(parsed.titleZhById.has("p1"), false);
+    assert.equal(parsed.titleZhById.get("p2"), "二");
+    assert.deepEqual(parsed.failedIds, ["p1"]);
+    assert.equal(parsed.summary.duplicate, 1);
+    assert.equal(parsed.summary.invalid, 2);
+  });
+
+  test("fail-closes after three occurrences of the same id", () => {
+    const parsed = parseTranslateBatchResponse(
+      body([row("p1", "一"), row("p1", "二"), { id: "p1", title_zh: null }, row("p2", "ok")]),
+      ["p1", "p2"],
+    );
+
+    assert.equal(parsed.titleZhById.has("p1"), false);
+    assert.equal(parsed.titleZhById.get("p2"), "ok");
+    assert.equal(parsed.summary.duplicate, 2);
+    assert.equal(parsed.summary.invalid, 1);
+    assert.deepEqual(parsed.failedIds, ["p1"]);
+  });
+
+  test("treats trimmed ids as the same identity", () => {
+    const parsed = parseTranslateBatchResponse(
+      body([row(" p1 ", "一"), row("p1", "重複"), row("p2", "二")]),
+      ["p1", "p2"],
+    );
+
+    assert.equal(parsed.titleZhById.has("p1"), false);
+    assert.equal(parsed.titleZhById.get("p2"), "二");
+    assert.equal(parsed.summary.duplicate, 1);
+  });
+
+  test("empty results array misses every expected id without batch failure", () => {
+    const parsed = parseTranslateBatchResponse(body([]), ["p1", "p2"]);
+
+    assert.equal(parsed.batchFailed, false);
+    assert.deepEqual(parsed.failedIds, ["p1", "p2"]);
+    assert.equal(parsed.summary.missing, 2);
+    assert.equal(parsed.summary.salvaged, 0);
+  });
+
   test("counts missing, extra, duplicate, null, and wrong-type rows", () => {
     const content = body([
       row("p1", "一"),
