@@ -35,6 +35,7 @@ describe("parseTranslateBatchResponse", () => {
   });
 
   test("salvages valid items when one row has invalid_type (2026-07-31 style)", () => {
+    // 契約：單列型別錯誤不得拖垮同批合法 titleZh（PR #31）。
     // Regression: one title_zh as number used to fail the whole Zod batch parse.
     const results = [
       row("p1", "標題一"),

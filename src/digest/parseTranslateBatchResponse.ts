@@ -1,9 +1,10 @@
 /**
- * Translate batch structured-output：逐項驗證 + partial salvage。
+ * Translate batch structured-output：逐項驗證 + partial salvage（PR #31）。
  *
  * - 整體 JSON／頂層 shape 壞掉 → 整批失敗（呼叫端維持英文 fallback）
  * - results 內部分 item 壞掉 → 只丟棄不安全項，合法且 id 可確認的保留
- * - identity 只認 `id`；不靠 index／順序／title
+ * - identity 只認 `id`；不靠 index／順序／title（避免 A→B 錯配）
+ * - 觸發：2026-07-31 單列 `invalid_type` 曾讓整批 titleZh 消失
  */
 import { z } from "zod";
 import { parseJsonFromLlmContent } from "../routing/parseLlmJson.js";
@@ -112,7 +113,8 @@ function batchFailure(
 }
 
 /**
- * 解析 translate LLM content；`expectedIds` 為本批 paper id（順序僅用於 missing 回報，不作為對應 key）。
+ * 解析 translate LLM content（PR #31）。
+ * `expectedIds` 順序只用於 missing 回報，對應 key 一律用 `id`。
  */
 export function parseTranslateBatchResponse(
   content: string,

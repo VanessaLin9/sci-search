@@ -2,10 +2,11 @@
  * Phase 2b：overflow（非 featured）批次翻英文標題 → `titleZh`。
  *
  * 失敗契約：單 batch 503／整批 JSON 失敗就 skip 該批（計入 failed），繼續下一批；
- * 部分 item schema invalid → partial salvage（只丟棄不安全項）。
+ * 部分 item schema invalid → partial salvage（只丟棄不安全項）（PR #31）。
  * **沒有** keyword／第二模型備援——郵件只顯示英文標題。HTTP 重試靠 `maxRetries`。
  *
  * LLM HTTP 走 `callDigestChatCompletion`（gate=`digest-translate`）；timing 見 `llmRequestTiming.ts`（PR #26）。
+ * 逐項解析契約 owner：`parseTranslateBatchResponse`（PR #31）。
  */
 import { callDigestChatCompletion } from "./callDigestChat.js";
 import { getDigestLlmConfig } from "./config.js";
@@ -115,6 +116,7 @@ async function translateBatchOnce(
     logDigest(`${batchLabel}: warning: JSON taken from reasoning_content`);
   }
 
+  // 細節計數只進 log；persisted translate stats 仍是 requested/llmTranslated/failed（PR #31）。
   const expectedIds = batch.map((item) => item.id);
   const parsed = parseTranslateBatchResponse(content, expectedIds);
   logDigest(
@@ -130,6 +132,7 @@ async function translateBatchOnce(
     logDigest(`${batchLabel}: ${issue.kind} at ${issue.path}${idHint}`);
   }
 
+  // batchFailed → 丟給外層 catch，整批維持英文（與 HTTP 失敗同契約）（PR #31）。
   if (parsed.batchFailed) {
     throw new Error(
       `${batchLabel}: structured-output batch failed (${parsed.issues[0]?.kind ?? "unknown"})`,
