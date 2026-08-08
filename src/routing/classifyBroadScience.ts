@@ -546,6 +546,8 @@ async function classifyBatchOnce(
       }
       return timeoutMs;
     },
+    // Queue wait 也受 stage budget 約束。用 wall clock 對齊 shared scheduler（budget 只貢獻 remaining 時長）（PR #35）。
+    resolveDeadlineAtMs: () => Date.now() + Math.max(0, ctx.budget.remainingMs()),
     // json_object 裸重試也要受 breaker／budget 約束；非相容性失敗交回 policy（PR #28）
     shouldRetryWithoutJsonResponseFormat: (error) => {
       if (!isJsonResponseFormatCompatibilityFailure(error) || !ctx.canCallProvider()) {

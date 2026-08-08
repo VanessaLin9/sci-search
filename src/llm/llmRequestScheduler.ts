@@ -47,6 +47,15 @@ export class LlmRequestSchedulerError extends Error {
   }
 }
 
+/** Permit 發放當下的觀測資訊（queue wait vs HTTP duration 分離；PR #35）。 */
+export type LlmSchedulePermitContext = {
+  queuedMs: number;
+  /** Grant 是否曾被 bucket-wide 429 cooldown 延後（相對 spacing）。 */
+  waitedForCooldown: boolean;
+  /** 與同 bucket 前一發 start 的間隔；首發為 null。 */
+  gapMs: number | null;
+};
+
 export type ScheduleLlmRequestOptions<T> = {
   /**
    * Opaque quota identity（provider/base/credential fingerprint）。
@@ -62,7 +71,7 @@ export type ScheduleLlmRequestOptions<T> = {
   /** Absolute deadline on the injected clock；permit 前超時則永不 execute。 */
   deadlineAtMs?: number;
   signal?: AbortSignal;
-  execute: () => Promise<T>;
+  execute: (context: LlmSchedulePermitContext) => Promise<T>;
 };
 
 export type LlmRequestScheduler = {
@@ -81,7 +90,8 @@ export type CreateLlmRequestSchedulerOptions = {
 
 type QueueItem<T> = {
   bucketId: string;
-  execute: () => Promise<T>;
+  execute: (context: LlmSchedulePermitContext) => Promise<T>;
+  enqueuedAtMs: number;
   deadlineAtMs?: number;
   signal?: AbortSignal;
   resolve: (value: T) => void;
@@ -257,9 +267,13 @@ export function createLlmRequestScheduler(
     }
   }
 
-  async function runExecute(bucket: BucketState, item: QueueItem<unknown>): Promise<void> {
+  async function runExecute(
+    bucket: BucketState,
+    item: QueueItem<unknown>,
+    context: LlmSchedulePermitContext,
+  ): Promise<void> {
     try {
-      const value = await item.execute();
+      const value = await item.execute(context);
       settleResolve(item, value);
     } catch (error) {
       applyRateLimitCooldown(bucket, error);
@@ -303,8 +317,18 @@ export function createLlmRequestScheduler(
         // Grant 後立刻可排下一發的 spacing；不等 execute 完成（PR #35）。
         bucket.queue.shift();
         clearAbortListener(item);
-        bucket.lastStartMs = clock.now();
-        void runExecute(bucket, item);
+        const startAt = clock.now();
+        const spacingEarliest =
+          bucket.lastStartMs == null
+            ? item.enqueuedAtMs
+            : bucket.lastStartMs + bucket.minStartIntervalMs;
+        const context: LlmSchedulePermitContext = {
+          queuedMs: Math.max(0, startAt - item.enqueuedAtMs),
+          waitedForCooldown: bucket.blockedUntilMs > spacingEarliest,
+          gapMs: bucket.lastStartMs == null ? null : startAt - bucket.lastStartMs,
+        };
+        bucket.lastStartMs = startAt;
+        void runExecute(bucket, item, context);
       }
     } catch (error) {
       // Fail-safe：pump invariant 失敗時清掉仍在 queue 的 item，避免 silent drop。
@@ -340,6 +364,7 @@ export function createLlmRequestScheduler(
       const item: QueueItem<T> = {
         bucketId: options.bucket,
         execute: options.execute,
+        enqueuedAtMs: clock.now(),
         deadlineAtMs: options.deadlineAtMs,
         signal: options.signal,
         resolve,

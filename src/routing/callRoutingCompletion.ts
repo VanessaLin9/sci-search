@@ -30,6 +30,9 @@ export type CallRoutingCompletionOptions = {
    * Defaults to response-format compatibility failures only（PR #28）.
    */
   shouldRetryWithoutJsonResponseFormat?: (error: unknown) => boolean;
+  /** Absolute queue deadline for shared rate limiter（PR #35）。 */
+  resolveDeadlineAtMs?: () => number | undefined;
+  signal?: AbortSignal;
 };
 
 export { extractLlmJsonContent as extractRoutingMessageContent } from "../llm/extractLlmJsonContent.js";
@@ -38,6 +41,7 @@ export { extractLlmJsonContent as extractRoutingMessageContent } from "../llm/ex
  * Timing：gate=`life-science-routing` callSite=`callRoutingCompletion`（PR #26）。
  * Per-request timeout 受 stage remaining budget 截短，且 `maxRetries=0` 避免 SDK 與 domain retry 疊加（PR #28）。
  * json_object fallback 僅在相容性失敗時觸發，且每次 create 重新取 timeout（PR #28）。
+ * 每一發 HTTP 經 shared rate limiter（PR #35）。
  */
 export async function callRoutingCompletion(
   items: BroadScienceRoutingInput[],
@@ -70,7 +74,7 @@ export async function callRoutingCompletion(
     preferJsonResponseFormat: config.preferJsonResponseFormat,
     create: (useJsonResponseFormat) => {
       options?.onRequestAttempt?.();
-      // 每次 create（含 json fallback）重算 timeout，避免第二發沿用過期 budget（PR #28）
+      // 每次 create（含 json fallback／rate-limit 排隊後）重算 timeout（PR #28 / #35）
       const requestTimeoutMs = resolveTimeoutMs();
       logRouting(
         `${label}: HTTP create · response_format=${useJsonResponseFormat ? "json_object" : "none"} ` +
@@ -88,6 +92,12 @@ export async function callRoutingCompletion(
     label,
     formatElapsed: formatElapsedMs,
     timingMeta,
+    rateLimit: {
+      baseUrl: config.baseUrl,
+      apiKey: config.apiKey,
+      resolveDeadlineAtMs: options?.resolveDeadlineAtMs,
+      signal: options?.signal,
+    },
     // timeout／429／5xx 等交回 classify 政策；只有 response_format 相容性失敗才立刻裸重試（PR #28）
     shouldRetryWithoutJsonResponseFormat:
       options?.shouldRetryWithoutJsonResponseFormat ?? isJsonResponseFormatCompatibilityFailure,
