@@ -1,7 +1,7 @@
 /**
  * Phase 2b：featured 逐篇 summarize（titleZh / summaryZh / topicTags）。
  *
- * 雙模型備援（featured only；PR #30；跨 provider fallback）：
+ * 雙模型備援（featured only；PR #30；跨 provider：PR #34）：
  * - Primary：`DIGEST_LLM_MODEL` + primary key／baseUrl（timeout=`summarizeTimeoutMs`）
  * - Fallback：獨立 endpoint（`DIGEST_LLM_FALLBACK_MODEL` + `FALLBACK_API_KEY` + baseUrl，例如 Gemini）；
  *   只打 primary 最終失敗篇（timeout=`summarizeFallbackTimeoutMs`）

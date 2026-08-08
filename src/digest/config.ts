@@ -17,7 +17,7 @@ export type DigestLlmConfig = {
   baseUrl: string;
   model: string;
   /**
-   * Featured summarize 第二層（PR #30 起；PR 接 Gemini 後可跨 provider）。
+   * Featured summarize 第二層（PR #30 起同 NVIDIA model；PR #34 起可跨 provider）。
    * 有 `fallbackModel` 時必須同時有 fallbackApiKey／fallbackBaseUrl。
    */
   fallbackModel?: string;
@@ -55,8 +55,8 @@ export function resolveDigestProviderFlags(
 }
 
 /**
- * 把 config 切成 featured-summarize fallback 用的 endpoint view（換 key／baseUrl／model／flags）。
- * fallback 未開 → undefined。
+ * Featured-summarize fallback endpoint view（PR #34）：換 key／baseUrl／model／flags，
+ * 不能只改 model 字串還打 primary NVIDIA client。fallback 未開 → undefined。
  */
 export function withDigestFallbackEndpoint(config: DigestLlmConfig): DigestLlmConfig | undefined {
   const model = config.fallbackModel?.trim();
@@ -113,6 +113,7 @@ export function getDigestLlmConfig(): DigestLlmConfig {
       "DIGEST_LLM_FALLBACK_API_KEY is set but DIGEST_LLM_FALLBACK_MODEL is missing.",
     );
   }
+  // Fail-closed（PR #34）：有 model 無 key（或相反）比靜默 fallback-off／誤用 primary key 更安全。
   if (fallbackModel && !fallbackApiKey) {
     throw new Error(
       "DIGEST_LLM_FALLBACK_MODEL is set but DIGEST_LLM_FALLBACK_API_KEY is missing. " +

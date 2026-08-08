@@ -3,7 +3,8 @@
  * tagging 請走 `callDigestTaggingCompletion`（共用 PR #21 response_format fallback）。
  *
  * `preferJsonResponseFormat=true` 時走共用 helper：先帶 json_object，供應商拒收再裸請求
- * （`create(useJson)` 必須真的開關 response_format；舊實作 retry 仍帶 format 是 bug）。
+ * （PR #34：`create(useJson)` 必須真的開關 response_format；舊實作 retry 仍帶 format 是 bug，
+ * Gemini fallback 會踩中）。
  *
  * NVIDIA 路徑通常 `preferJsonResponseFormat=false`：失敗直接 throw 給上層 degrade。
  *

@@ -29,8 +29,8 @@ jobs:
       ENABLE_LLM_DIGEST: "1"
       DIGEST_LLM_API_KEY: ${{ secrets.DIGEST_LLM_API_KEY }}
       DIGEST_LLM_MODEL: ${{ secrets.DIGEST_LLM_MODEL || secrets.ROUTING_LLM_MODEL }}
-      # Featured-summarize fallback is a separate provider (Gemini). No MiniMax hardcode —
-      # unset secrets mean fallback off (must set model + API key together).
+      # PR #34: featured-summarize fallback is a separate provider (Gemini). No MiniMax
+      # hardcode — unset secrets mean fallback off (must set model + API key together).
       DIGEST_LLM_FALLBACK_MODEL: ${{ secrets.DIGEST_LLM_FALLBACK_MODEL }}
       DIGEST_LLM_FALLBACK_API_KEY: ${{ secrets.DIGEST_LLM_FALLBACK_API_KEY }}
       DIGEST_LLM_FALLBACK_BASE_URL: ${{ secrets.DIGEST_LLM_FALLBACK_BASE_URL }}
