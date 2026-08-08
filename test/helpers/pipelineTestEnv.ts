@@ -1,3 +1,4 @@
+import { installLlmRateLimitTestHarness } from "../../src/llm/llmTransportRateLimit.js";
 import type { PipelineRunResult } from "../../src/pipeline.js";
 import type { ProcessedPapersFile } from "../../src/processedData.js";
 
@@ -13,6 +14,8 @@ export function installPipelineTestEnv(): void {
   process.env.DIGEST_LLM_FALLBACK_BASE_URL =
     "https://generativelanguage.googleapis.com/v1beta/openai";
   process.env.DEBUG_NORMALIZED = "0";
+  // Shared rate limiter uses real 2s/5s policies in production; tests must not sleep（PR #35）。
+  installLlmRateLimitTestHarness({ minStartIntervalMs: 0 });
 }
 
 export function buildProcessedFile(

@@ -11,6 +11,16 @@ import {
   shouldRetrySplitLlmBatch,
 } from "../llm/extractLlmJsonContent.js";
 
+function isLlmSchedulerDeadlineError(error: unknown): boolean {
+  // Avoid importing llmRequestScheduler here（它會用到 classifyRoutingFailure，形成循環）（PR #35）。
+  return (
+    error instanceof Error &&
+    error.name === "LlmRequestSchedulerError" &&
+    "kind" in error &&
+    (error as { kind: unknown }).kind === "deadline"
+  );
+}
+
 export type RoutingFailureKind =
   | "timeout"
   | "network"
@@ -110,6 +120,15 @@ export function classifyRoutingFailure(
 
   if (isConfigErrorMessage(message)) {
     return { kind: "config", message, finishReason: attachedFinish };
+  }
+
+  // Shared rate-limiter queue expiry：保留可辨識訊息，domain 另開 budget_exhausted（PR #35）。
+  if (isLlmSchedulerDeadlineError(error)) {
+    return {
+      kind: "unknown",
+      message: `routing budget exhausted while queued for rate limit (${message})`,
+      finishReason: attachedFinish,
+    };
   }
 
   // Plain Error("Request timed out.") from tests / SDK message shapes.

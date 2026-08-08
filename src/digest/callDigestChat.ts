@@ -12,15 +12,12 @@
  * NVIDIA 路徑通常 `preferJsonResponseFormat=false`：失敗直接 throw 給上層 degrade。
  *
  * 每發 HTTP 記 gate/callSite + duration/gap/60s 視窗（診斷快模型撞 RPM；PR #26）；見 `llmRequestTiming.ts`。
+ * 每一發經 shared rate limiter；NVIDIA／Gemini 依 baseUrl 進獨立 bucket（PR #35）。
  */
 import type { ChatCompletion } from "openai/resources/chat/completions";
 import type { ChatCompletionCreateParamsNonStreaming } from "openai/resources/chat/completions";
 import { createChatCompletionWithJsonResponseFormatFallback } from "../llm/createChatCompletionWithJsonResponseFormatFallback.js";
-import {
-  formatLlmRequestTimingSuffix,
-  noteLlmRequestStart,
-  type LlmRequestTimingMeta,
-} from "../llm/llmRequestTiming.js";
+import type { LlmRequestTimingMeta } from "../llm/llmRequestTiming.js";
 import { resolveCompletionMaxTokens } from "../routing/batchSizing.js";
 import { isJsonResponseFormatCompatibilityFailure } from "../routing/isJsonResponseFormatCompatibilityFailure.js";
 import { MIN_USEFUL_REQUEST_MS } from "../routing/routingBudget.js";
@@ -53,12 +50,14 @@ export async function callDigestChatCompletion(
      * Defaults to response-format compatibility failures only（PR #34／對齊 PR #28）。
      */
     shouldRetryWithoutJsonResponseFormat?: (error: unknown) => boolean;
+    resolveDeadlineAtMs?: () => number | undefined;
+    signal?: AbortSignal;
   },
 ): Promise<ChatCompletion> {
-  const maxRetries = options.maxRetries ?? config.maxRetries;
+  // Per-request create 強制 maxRetries=0；client 也鎖 0 避免隱藏 attempt（PR #35）。
   const client = createDigestLlmClient(config, {
     timeoutMs: options.timeoutMs ?? config.timeoutMs,
-    maxRetries,
+    maxRetries: 0,
   });
   const floor = options.completionFloor ?? config.maxTokens;
   const maxTokens = resolveCompletionMaxTokens(
@@ -78,14 +77,14 @@ export async function callDigestChatCompletion(
 
   logDigest(
     `${options.label}: POST chat/completions · gate=${timingMeta.gate} callSite=${timingMeta.callSite} ` +
-      `(max_tokens=${maxTokens}, need~${options.estimatedCompletionTokens}, cap=${config.maxTokens}, timeout=${initialTimeoutMs}ms, retries=${maxRetries})`,
+      `(max_tokens=${maxTokens}, need~${options.estimatedCompletionTokens}, cap=${config.maxTokens}, timeout=${initialTimeoutMs}ms, retries=0)`,
   );
 
   const { completion } = await createChatCompletionWithJsonResponseFormatFallback({
     preferJsonResponseFormat: useJson,
     create: (useJsonResponseFormat) => {
       options.onRequestAttempt?.();
-      // 每次 create（含 json bare-retry）重算 timeout，避免第二發沿用過期 budget（PR #34）。
+      // 每次 create（含 json bare-retry／rate-limit 排隊後）重算 timeout（PR #34 / #35）。
       const requestTimeoutMs = resolveTimeoutMs();
       if (requestTimeoutMs < MIN_USEFUL_REQUEST_MS) {
         throw new Error(
@@ -96,13 +95,10 @@ export async function callDigestChatCompletion(
         `${options.label}: HTTP create · response_format=${useJsonResponseFormat ? "json_object" : "none"} ` +
           `timeout=${requestTimeoutMs}ms`,
       );
-      return timedDigestCreate(
-        client,
-        buildParams(maxTokens, useJsonResponseFormat),
-        options.label,
-        timingMeta,
-        { timeoutMs: requestTimeoutMs, maxRetries: 0 },
-      );
+      return client.chat.completions.create(buildParams(maxTokens, useJsonResponseFormat), {
+        timeout: requestTimeoutMs,
+        maxRetries: 0,
+      });
     },
     log: logDigest,
     label: options.label,
@@ -112,27 +108,12 @@ export async function callDigestChatCompletion(
     // 429／5xx／timeout 交回 summarize／translate 政策；只有 response_format 相容性失敗才立刻裸重試。
     shouldRetryWithoutJsonResponseFormat:
       options.shouldRetryWithoutJsonResponseFormat ?? isJsonResponseFormatCompatibilityFailure,
+    rateLimit: {
+      baseUrl: config.baseUrl,
+      apiKey: config.apiKey,
+      resolveDeadlineAtMs: options.resolveDeadlineAtMs,
+      signal: options.signal,
+    },
   });
   return completion;
-}
-
-async function timedDigestCreate(
-  client: ReturnType<typeof createDigestLlmClient>,
-  params: ChatCompletionCreateParamsNonStreaming,
-  label: string,
-  timingMeta: LlmRequestTimingMeta,
-  requestOptions: { timeoutMs: number; maxRetries: number },
-): Promise<ChatCompletion> {
-  const timing = noteLlmRequestStart();
-  try {
-    const completion = await client.chat.completions.create(params, {
-      timeout: requestOptions.timeoutMs,
-      maxRetries: requestOptions.maxRetries,
-    });
-    logDigest(`${label}: request ok · ${formatLlmRequestTimingSuffix(timing, timingMeta)}`);
-    return completion;
-  } catch (error) {
-    logDigest(`${label}: request failed · ${formatLlmRequestTimingSuffix(timing, timingMeta)}`);
-    throw error;
-  }
 }

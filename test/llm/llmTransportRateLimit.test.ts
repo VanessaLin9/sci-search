@@ -1,0 +1,549 @@
+import assert from "node:assert/strict";
+import { after, before, describe, test } from "node:test";
+import type { ChatCompletion } from "openai/resources/chat/completions";
+import { callDigestChatCompletion } from "../../src/digest/callDigestChat.js";
+import type { DigestLlmConfig } from "../../src/digest/config.js";
+import { resetDigestLlmClientCache } from "../../src/digest/digestLlmClient.js";
+import { runProbeDigestSmoke } from "../../src/digest/probeDigestSmoke.js";
+import { buildDigestSummarizeCompletionParams } from "../../src/digest/summarizePrompt.js";
+import type { DigestSummarizeInput } from "../../src/digest/types.js";
+import { resolveLlmQuotaTarget } from "../../src/llm/llmQuotaBucket.js";
+import {
+  GEMINI_MIN_START_INTERVAL_MS,
+  LlmRequestSchedulerError,
+  NVIDIA_MIN_START_INTERVAL_MS,
+  createLlmRequestScheduler,
+} from "../../src/llm/llmRequestScheduler.js";
+import {
+  installLlmRateLimitTestHarness,
+  resetLlmRateLimitTestHarness,
+  scheduleLlmTransportAttempt,
+} from "../../src/llm/llmTransportRateLimit.js";
+import { callRoutingCompletion } from "../../src/routing/callRoutingCompletion.js";
+import type { RoutingLlmConfig } from "../../src/routing/config.js";
+import { resetRoutingLlmClientCache } from "../../src/routing/routingLlmClient.js";
+import { createFakeClock } from "../routing/helpers/fakeClock.js";
+
+function deferred<T = void>(): {
+  promise: Promise<T>;
+  resolve: (value: T | PromiseLike<T>) => void;
+} {
+  let resolve!: (value: T | PromiseLike<T>) => void;
+  const promise = new Promise<T>((res) => {
+    resolve = res;
+  });
+  return { promise, resolve };
+}
+
+async function flushMicrotasks(times = 5): Promise<void> {
+  for (let i = 0; i < times; i += 1) {
+    await Promise.resolve();
+  }
+}
+
+function chatCompletion(content = '{"ok":true}'): ChatCompletion {
+  return {
+    id: "chatcmpl-rate-limit",
+    object: "chat.completion",
+    created: 0,
+    model: "test-model",
+    choices: [
+      {
+        index: 0,
+        message: { role: "assistant", content, refusal: null },
+        finish_reason: "stop",
+        logprobs: null,
+      },
+    ],
+    usage: { prompt_tokens: 1, completion_tokens: 1, total_tokens: 2 },
+  };
+}
+
+function nvidiaRoutingConfig(apiKey = "shared-nvidia-key-zzzz"): RoutingLlmConfig {
+  return {
+    apiKey,
+    baseUrl: "https://integrate.api.nvidia.com/v1",
+    model: "test-model",
+    maxPapersPerBatch: 40,
+    maxInputTokens: 28000,
+    timeoutMs: 5_000,
+    maxTokens: 256,
+    maxRetries: 0,
+    preferJsonResponseFormat: false,
+    disableThinking: true,
+  };
+}
+
+function digestConfig(options: {
+  apiKey: string;
+  baseUrl: string;
+  preferJsonResponseFormat?: boolean;
+}): DigestLlmConfig {
+  return {
+    apiKey: options.apiKey,
+    baseUrl: options.baseUrl,
+    model: "test-model",
+    maxFeatured: 12,
+    overflowShowTitleZh: true,
+    maxPapersPerBatch: 8,
+    maxInputTokens: 28000,
+    timeoutMs: 5_000,
+    maxTokens: 256,
+    maxRetries: 0,
+    summarizeTimeoutMs: 5_000,
+    summarizeFallbackTimeoutMs: 5_000,
+    summarizeStageBudgetMs: 60_000,
+    summarizeMaxRetries: 0,
+    summarizeConcurrency: 1,
+    summarizeFallbackConcurrency: 1,
+    preferJsonResponseFormat: options.preferJsonResponseFormat ?? false,
+    disableThinking: true,
+  };
+}
+
+function summarizeInput(id: string): DigestSummarizeInput {
+  return {
+    id,
+    title: "t",
+    journal: "j",
+    source_id: "s",
+    scope: "life-science-only",
+    digest_line: "line-a",
+    abstract: "a",
+  };
+}
+
+describe("llmTransportRateLimit integration", { concurrency: false }, () => {
+  let originalFetch: typeof fetch;
+  let originalConsoleLog: typeof console.log;
+
+  before(() => {
+    originalFetch = globalThis.fetch;
+    originalConsoleLog = console.log;
+  });
+
+  after(() => {
+    globalThis.fetch = originalFetch;
+    console.log = originalConsoleLog;
+    resetLlmRateLimitTestHarness();
+    resetRoutingLlmClientCache();
+    resetDigestLlmClientCache();
+  });
+
+  test("routing attempts on same NVIDIA key are start-spaced by 2s", async () => {
+    const clock = createFakeClock(1_000_000);
+    installLlmRateLimitTestHarness({ useProviderPolicies: true, clock });
+    resetRoutingLlmClientCache();
+
+    const starts: number[] = [];
+    globalThis.fetch = (async () =>
+      new Response(JSON.stringify(chatCompletion('{"results":[]}')), {
+        status: 200,
+        headers: { "content-type": "application/json" },
+      })) as typeof fetch;
+
+    const config = nvidiaRoutingConfig();
+    const paper = {
+      id: "p1",
+      title: "t",
+      journal: "j",
+      source_id: "s",
+    };
+
+    await Promise.all([
+      callRoutingCompletion([paper], config, {
+        label: "r1",
+        onRequestAttempt: () => starts.push(clock.now()),
+      }),
+      callRoutingCompletion([paper], config, {
+        label: "r2",
+        onRequestAttempt: () => starts.push(clock.now()),
+      }),
+    ]);
+
+    assert.equal(starts.length, 2);
+    assert.ok(starts[1]! - starts[0]! >= NVIDIA_MIN_START_INTERVAL_MS);
+    assert.ok(clock.sleeps.includes(NVIDIA_MIN_START_INTERVAL_MS));
+  });
+
+  test("routing + digest clients with same NVIDIA key share one bucket", async () => {
+    const clock = createFakeClock(1_000_000);
+    installLlmRateLimitTestHarness({ useProviderPolicies: true, clock });
+    resetRoutingLlmClientCache();
+    resetDigestLlmClientCache();
+
+    const starts: number[] = [];
+    globalThis.fetch = (async () =>
+      new Response(JSON.stringify(chatCompletion('{"ok":true}')), {
+        status: 200,
+        headers: { "content-type": "application/json" },
+      })) as typeof fetch;
+
+    const key = "shared-nvidia-key-zzzz";
+    const routing = nvidiaRoutingConfig(key);
+    const digest = digestConfig({
+      apiKey: key,
+      baseUrl: "https://integrate.api.nvidia.com/v1",
+    });
+    assert.equal(
+      resolveLlmQuotaTarget(routing.baseUrl, routing.apiKey).bucket,
+      resolveLlmQuotaTarget(digest.baseUrl, digest.apiKey).bucket,
+    );
+
+    await Promise.all([
+      callRoutingCompletion(
+        [{ id: "p1", title: "t", journal: "j", source_id: "s" }],
+        routing,
+        {
+          label: "routing",
+          onRequestAttempt: () => starts.push(clock.now()),
+        },
+      ),
+      callDigestChatCompletion(
+        digest,
+        (maxTokens, useJson) =>
+          buildDigestSummarizeCompletionParams(summarizeInput("p1"), digest, useJson, maxTokens),
+        {
+          label: "digest",
+          gate: "digest-summarize",
+          estimatedCompletionTokens: 64,
+          onRequestAttempt: () => starts.push(clock.now()),
+        },
+      ),
+    ]);
+
+    assert.equal(starts.length, 2);
+    assert.ok(starts[1]! - starts[0]! >= NVIDIA_MIN_START_INTERVAL_MS);
+  });
+
+  test("Gemini digest attempts use 5s policy and do not block NVIDIA", async () => {
+    const clock = createFakeClock(1_000_000);
+    installLlmRateLimitTestHarness({ useProviderPolicies: true, clock });
+    resetRoutingLlmClientCache();
+    resetDigestLlmClientCache();
+
+    const nvidiaStarts: number[] = [];
+    const geminiStarts: number[] = [];
+    globalThis.fetch = (async () =>
+      new Response(JSON.stringify(chatCompletion('{"ok":true}')), {
+        status: 200,
+        headers: { "content-type": "application/json" },
+      })) as typeof fetch;
+
+    const nvidia = nvidiaRoutingConfig("nvidia-only-key");
+    const gemini = digestConfig({
+      apiKey: "gemini-only-key",
+      baseUrl: "https://generativelanguage.googleapis.com/v1beta/openai",
+      preferJsonResponseFormat: false,
+    });
+
+    const routingPaper = {
+      id: "p1",
+      title: "t",
+      journal: "j",
+      source_id: "s",
+    };
+
+    // First starts can share the same instant (independent buckets).
+    await Promise.all([
+      callRoutingCompletion([routingPaper], nvidia, {
+        label: "n1",
+        onRequestAttempt: () => nvidiaStarts.push(clock.now()),
+      }),
+      callDigestChatCompletion(
+        gemini,
+        (maxTokens, useJson) =>
+          buildDigestSummarizeCompletionParams(summarizeInput("p1"), gemini, useJson, maxTokens),
+        {
+          label: "g1",
+          gate: "digest-summarize",
+          estimatedCompletionTokens: 64,
+          onRequestAttempt: () => geminiStarts.push(clock.now()),
+        },
+      ),
+    ]);
+    assert.equal(nvidiaStarts[0], geminiStarts[0]);
+
+    await Promise.all([
+      callRoutingCompletion([routingPaper], nvidia, {
+        label: "n2",
+        onRequestAttempt: () => nvidiaStarts.push(clock.now()),
+      }),
+      callDigestChatCompletion(
+        gemini,
+        (maxTokens, useJson) =>
+          buildDigestSummarizeCompletionParams(summarizeInput("p2"), gemini, useJson, maxTokens),
+        {
+          label: "g2",
+          gate: "digest-summarize",
+          estimatedCompletionTokens: 64,
+          onRequestAttempt: () => geminiStarts.push(clock.now()),
+        },
+      ),
+    ]);
+
+    assert.equal(nvidiaStarts.length, 2);
+    assert.equal(geminiStarts.length, 2);
+    assert.ok(nvidiaStarts[1]! - nvidiaStarts[0]! >= NVIDIA_MIN_START_INTERVAL_MS);
+    assert.ok(geminiStarts[1]! - geminiStarts[0]! >= GEMINI_MIN_START_INTERVAL_MS);
+  });
+
+  test("transport await stays unsettled until the HTTP attempt finishes (not just enqueue)", async () => {
+    installLlmRateLimitTestHarness({ useProviderPolicies: true });
+    resetDigestLlmClientCache();
+
+    const hold = deferred<Response>();
+    globalThis.fetch = (async () => hold.promise) as typeof fetch;
+
+    const digest = digestConfig({
+      apiKey: "await-contract-key",
+      baseUrl: "https://integrate.api.nvidia.com/v1",
+    });
+
+    let settled = false;
+    const pending = callDigestChatCompletion(
+      digest,
+      (maxTokens, useJson) =>
+        buildDigestSummarizeCompletionParams(summarizeInput("p1"), digest, useJson, maxTokens),
+      {
+        label: "await-contract",
+        gate: "digest-summarize",
+        estimatedCompletionTokens: 64,
+      },
+    ).then(
+      (value) => {
+        settled = true;
+        return value;
+      },
+      (error) => {
+        settled = true;
+        throw error;
+      },
+    );
+
+    await flushMicrotasks(20);
+    // Still in flight：caller／pipeline 不得把 enqueue 當成 stage 完成（PR #35）。
+    assert.equal(settled, false);
+
+    hold.resolve(
+      new Response(JSON.stringify(chatCompletion('{"ok":true}')), {
+        status: 200,
+        headers: { "content-type": "application/json" },
+      }),
+    );
+    await pending;
+    assert.equal(settled, true);
+  });
+
+  test("pipeline-style await: digest stage starts only after routing promise settles", async () => {
+    const clock = createFakeClock(1_000_000);
+    installLlmRateLimitTestHarness({ useProviderPolicies: true, clock });
+    resetRoutingLlmClientCache();
+    resetDigestLlmClientCache();
+
+    const key = "stage-order-key";
+    const order: string[] = [];
+    globalThis.fetch = (async () =>
+      new Response(JSON.stringify(chatCompletion('{"ok":true,"results":[]}')), {
+        status: 200,
+        headers: { "content-type": "application/json" },
+      })) as typeof fetch;
+
+    const routing = nvidiaRoutingConfig(key);
+    const digest = digestConfig({
+      apiKey: key,
+      baseUrl: "https://integrate.api.nvidia.com/v1",
+    });
+
+    // Mimic pipeline: await gate fully before starting the next stage.
+    await callRoutingCompletion(
+      [{ id: "p-route", title: "t", journal: "j", source_id: "s" }],
+      routing,
+      {
+        label: "stage-routing",
+        onRequestAttempt: () => order.push("routing-http"),
+      },
+    );
+    order.push("routing-settled");
+    await callDigestChatCompletion(
+      digest,
+      (maxTokens, useJson) =>
+        buildDigestSummarizeCompletionParams(summarizeInput("p1"), digest, useJson, maxTokens),
+      {
+        label: "stage-digest",
+        gate: "digest-summarize",
+        estimatedCompletionTokens: 64,
+        onRequestAttempt: () => order.push("digest-http"),
+      },
+    );
+    order.push("digest-settled");
+
+    assert.deepEqual(order, [
+      "routing-http",
+      "routing-settled",
+      "digest-http",
+      "digest-settled",
+    ]);
+  });
+
+  test("probe smoke path enters the shared scheduler", async () => {
+    const clock = createFakeClock(1_000_000);
+    installLlmRateLimitTestHarness({ useProviderPolicies: true, clock });
+    resetDigestLlmClientCache();
+
+    const logs: string[] = [];
+    globalThis.fetch = (async () =>
+      new Response(JSON.stringify(chatCompletion('{"ok":true}')), {
+        status: 200,
+        headers: { "content-type": "application/json" },
+      })) as typeof fetch;
+
+    const result = await runProbeDigestSmoke({
+      model: "test-model",
+      apiKey: "probe-smoke-key",
+      baseUrl: "https://integrate.api.nvidia.com/v1",
+      log: (message) => logs.push(message),
+    });
+
+    assert.equal(result.ok, true);
+    assert.ok(
+      logs.some((line) => line.includes("rateLimit bucket=") && line.includes("permit=")),
+      `expected permit log, got: ${logs.join(" | ")}`,
+    );
+  });
+
+  test("queue deadline rethrows typed LlmRequestSchedulerError (not plain Error)", async () => {
+    const clock = createFakeClock(1_000_000);
+    const scheduler = createLlmRequestScheduler({ clock, jitterMs: () => 0 });
+    installLlmRateLimitTestHarness({
+      useProviderPolicies: true,
+      scheduler,
+      clock,
+    });
+
+    const hold = deferred<string>();
+    const first = scheduleLlmTransportAttempt(
+      {
+        baseUrl: "https://integrate.api.nvidia.com/v1",
+        apiKey: "deadline-key",
+      },
+      async () => hold.promise,
+    );
+    await flushMicrotasks();
+
+    // Spacing earliest is +2s; deadline +100ms ⇒ never execute, keep typed error.
+    const second = scheduleLlmTransportAttempt(
+      {
+        baseUrl: "https://integrate.api.nvidia.com/v1",
+        apiKey: "deadline-key",
+        resolveDeadlineAtMs: () => clock.now() + 100,
+      },
+      async () => "should-not-run",
+    );
+    await flushMicrotasks();
+
+    await assert.rejects(second, (error: unknown) => {
+      assert.ok(error instanceof LlmRequestSchedulerError);
+      assert.equal(error.kind, "deadline");
+      return true;
+    });
+
+    hold.resolve("first");
+    assert.equal(await first, "first");
+  });
+
+  test("terminal 429 emits cooldown update log with source and blockedUntil", async () => {
+    const clock = createFakeClock(1_000_000);
+    installLlmRateLimitTestHarness({ useProviderPolicies: true, clock });
+    resetDigestLlmClientCache();
+
+    const logs: string[] = [];
+    console.log = (...args: unknown[]) => {
+      logs.push(args.map(String).join(" "));
+    };
+
+    globalThis.fetch = (async () =>
+      new Response(JSON.stringify({ error: { message: "rate limited" } }), {
+        status: 429,
+        headers: { "content-type": "application/json", "retry-after": "7" },
+      })) as typeof fetch;
+
+    const digest = digestConfig({
+      apiKey: "cooldown-log-key",
+      baseUrl: "https://integrate.api.nvidia.com/v1",
+    });
+
+    await assert.rejects(
+      () =>
+        callDigestChatCompletion(
+          digest,
+          (maxTokens, useJson) =>
+            buildDigestSummarizeCompletionParams(summarizeInput("p1"), digest, useJson, maxTokens),
+          {
+            label: "cooldown-log",
+            gate: "digest-summarize",
+            estimatedCompletionTokens: 64,
+          },
+        ),
+      (error: unknown) => error instanceof Error,
+    );
+
+    const cooldownLine = logs.find((line) => line.includes("rateLimit cooldown bucket="));
+    assert.ok(cooldownLine, `expected cooldown log, got: ${logs.join(" | ")}`);
+    assert.match(cooldownLine!, /source=retry-after/);
+    assert.match(cooldownLine!, /waitMs=7000/);
+    assert.match(cooldownLine!, /blockedUntil=\d+/);
+    assert.match(cooldownLine!, /changed=yes/);
+  });
+
+  test("json_object fallback re-enters the scheduler for a second attempt", async () => {
+    const clock = createFakeClock(1_000_000);
+    installLlmRateLimitTestHarness({ useProviderPolicies: true, clock });
+    resetDigestLlmClientCache();
+
+    const logs: string[] = [];
+    console.log = (...args: unknown[]) => {
+      logs.push(args.map(String).join(" "));
+    };
+
+    let calls = 0;
+    globalThis.fetch = (async (_input, init) => {
+      calls += 1;
+      const body = JSON.parse(String(init?.body ?? "{}")) as {
+        response_format?: { type?: string };
+      };
+      if (body.response_format?.type === "json_object") {
+        return new Response(JSON.stringify({ error: { message: "response_format unsupported" } }), {
+          status: 400,
+          headers: { "content-type": "application/json" },
+        });
+      }
+      return new Response(JSON.stringify(chatCompletion('{"ok":true}')), {
+        status: 200,
+        headers: { "content-type": "application/json" },
+      });
+    }) as typeof fetch;
+
+    const gemini = digestConfig({
+      apiKey: "gemini-json-key",
+      baseUrl: "https://generativelanguage.googleapis.com/v1beta/openai",
+      preferJsonResponseFormat: true,
+    });
+
+    await callDigestChatCompletion(
+      gemini,
+      (maxTokens, useJson) =>
+        buildDigestSummarizeCompletionParams(summarizeInput("p1"), gemini, useJson, maxTokens),
+      {
+        label: "json-fallback",
+        gate: "digest-summarize",
+        estimatedCompletionTokens: 64,
+      },
+    );
+
+    assert.equal(calls, 2);
+    const permitLogs = logs.filter((line) => line.includes("rateLimit bucket="));
+    assert.equal(permitLogs.length, 2);
+    assert.ok(clock.sleeps.includes(GEMINI_MIN_START_INTERVAL_MS));
+  });
+});

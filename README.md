@@ -246,7 +246,7 @@ src/
   biorxiv/                       # bioRxiv ingest funnel logs
   biorxiv-gate/                  # preprint LLM fine screen (yes-only; fail-open)
   digest/                        # Phase 2b tag, select, summarize, translate
-  llm/                           # shared LLM helpers (JSON extract, response_format fallback)
+  llm/                           # shared LLM helpers (JSON extract, response_format fallback, process-wide rate limiter)
   domain/life-science/           # policy: scopes, keywords, digest lines, email copy, registries
   email/                         # Resend + HTML render (shared by email + preview)
   normalizers/                   # RSS per-journal + bioRxiv record → Paper
@@ -267,6 +267,7 @@ data/processed/{date}/papers.json  # 30-day rolling retention on main
 - **Zero papers** on some weekends/holidays → empty-state email and preview (expected)
 - Email and preview share one renderer; no separate “subscriber-only” content
 - LLM costs and latency scale with paper count (routing + bioRxiv gate + tagging batches + ≤12 summarize + overflow translate)
+- Process-wide LLM request-start rate limiter (`src/llm/llmRequestScheduler.ts`): NVIDIA ~2s and Gemini ~5s start-to-start spacing per quota bucket; every controlled `chat.completions.create` (including probe smoke) queues through the shared transport layer
 - `section` from keywords remains in JSON for compatibility; **email uses `digestLine` + `featured`**, not the old three keyword sections
 
 ## License / attribution
