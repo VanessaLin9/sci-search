@@ -1,0 +1,1466 @@
+{
+  "reportDate": "2026-08-07",
+  "generatedAt": "2026-08-08T10:36:07.690Z",
+  "papers": [
+    {
+      "id": "10.1038/s41588-026-02718-4",
+      "title": "Universal cell embedding for single-cell biology",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-08-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02718-4",
+      "doi": "10.1038/s41588-026-02718-4",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41588-026-02720-w",
+      "title": "Epigenetic heterogeneity in AML",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-08-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02720-w",
+      "doi": "10.1038/s41588-026-02720-w",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41588-026-02719-3",
+      "title": "Cellular atlas of endocrine signaling",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-08-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02719-3",
+      "doi": "10.1038/s41588-026-02719-3",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41588-026-02717-5",
+      "title": "A spatial snapshot of hair follicle development",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-08-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02717-5",
+      "doi": "10.1038/s41588-026-02717-5",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03253-7",
+      "title": "Restoring pluripotency to pluripotent stem cells",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-08-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03253-7",
+      "doi": "10.1038/s41587-026-03253-7",
+      "abstract": "Human pluripotent cell lines that cannot generate cortical organoids are rescued by an epigenetic reboot.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "恢復多能幹細胞的多能性",
+      "summaryZh": "這篇發表於《Nature Biotechnology》的研究指出，無法生成皮質類器官（cortical organoids）的人類多能細胞株，可透過表觀基因體重啟（epigenetic reboot）來恢復其功能。研究顯示，表觀基因體狀態可能是影響多能幹細胞分化潛能的關鍵因素。這種恢復方式有助於挽救原本無法用於皮質類器官研究的細胞株，對相關研究領域具有實用價值。",
+      "topicTags": [
+        "pluripotent-stem-cells",
+        "cortical-organoids",
+        "epigenetics",
+        "cell-line-rescue"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03254-6",
+      "title": "Reversible epiblast regionalization determines differentiation potential of human pluripotent stem cells",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-08-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03254-6",
+      "doi": "10.1038/s41587-026-03254-6",
+      "abstract": "The differentiation variability of human pluripotent stem cell lines is diagnosed and corrected.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41556-026-02033-4",
+      "title": "PGAM1 rheostat in glycolysis and autophagy",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-08-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02033-4",
+      "doi": "10.1038/s41556-026-02033-4",
+      "abstract": "How tumour cells rewire metabolic processes in response to changing nutrient availability in the tumour microenvironment is complex. Here, Zhang et al. define a role for PGAM1 in promoting autophagy in response to nutrient deprivation that competes with its catalytic function in glycolysis, which may explain selection for PGAM1 overexpression in cancer.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41556-026-02016-5",
+      "title": "Targeting oncogenic FLT3 uncovers a ferroptosis vulnerability through selenocysteine recoding in acute myeloid leukaemia",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-08-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02016-5",
+      "doi": "10.1038/s41556-026-02016-5",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41556-026-02042-3",
+      "title": "The mitochondria enzyme OGDH defends against disulfidptosis by licensing METTL3-regulated NRF2 translation",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-08-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02042-3",
+      "doi": "10.1038/s41556-026-02042-3",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41556-026-02003-w",
+      "title": "Advanced imaging of membrane contact sites",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-08-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02003-w",
+      "doi": "10.1038/s41556-026-02003-w",
+      "abstract": "The detailed study of membrane contact sites is challenging owing to their small size and highly dynamic nature. This Review highlights advanced imaging methods and available biosensors that can be used to elucidate their composition and dynamics.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "膜接觸位點的進階影像技術",
+      "summaryZh": "膜接觸位點因體積微小且高度動態,詳細研究相當具挑戰性。本篇綜論回顧了多種進階影像技術,可用於解析膜接觸位點的組成與動態變化。文章同時介紹了現有的生物感測器工具,協助研究人員克服觀測上的限制。這些方法的彙整為細胞生物學中探討胞器間交互作用提供了重要參考。",
+      "topicTags": [
+        "membrane-contact-sites",
+        "imaging",
+        "biosensors",
+        "cell-biology",
+        "review"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02392-z",
+      "title": "Striatal endocannabinoids drive one-shot learning",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-08-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02392-z",
+      "doi": "10.1038/s41593-026-02392-z",
+      "abstract": "Endocannabinoid-dependent corticostriatal plasticity underlies avoidance learning in mice after a single experience. Disrupting this process impairs learning, revealing a nonclassical synaptic basis supporting one-shot learning.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41593-026-02391-0",
+      "title": "Pyramidal cell types and circuit organization of the mouse insular cortex reveal functional specializations",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-08-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02391-0",
+      "doi": "10.1038/s41593-026-02391-0",
+      "abstract": "A multimodal cell-type atlas of the mouse insular cortex reveals specialized pyramidal types and circuits in distinct insular subregions, as well as intra-insular functional connections that integrate sensory inputs with valence.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.08.06.743362",
+      "title": "Senescent cell networks link matrix remodeling and vascular dysfunction in human fibroids",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.06.743362v1",
+      "doi": "10.64898/2026.08.06.743362",
+      "abstract": "Uterine fibroids (leiomyomas) are highly prevalent benign tumors defined by excessive extracellular matrix (ECM) deposition, altered vascular structure, and progressive tissue stiffening, yet the cellular programs that coordinate these features remain poorly understood. Cellular senescence has been implicated in fibroid biology, but whether senescence represents a uniform state or distinct, functionally specialized cell identities within fibroids is unknown. Here, we identify the distinct heterogeneous populations of senescent cells (\"senotypes\") present in human fibroids and characterize their role in shaping the fibroid microenvironment. Using single-cell RNA sequencing (scRNA-seq) integrated with a senescence gene signature and protein-level validation, we identify senescent cells (SnC) distributed across fibroblast, mural, and endothelial compartments, each exhibiting distinct transcriptional programs. SnC endothelial cells (ECs) are enriched in fibroids relative to matched myometrium and activate TEAD4-associated mechanosensing, angiogenic, and immune signaling pathways, despite being associated with impaired vessel maturation in situ. In parallel, SnC fibroblast and mural populations in fibroids upregulated SRF-associated cytoskeletal and ECM programs, accompanied by increased COL6A3 expression and collagen VI deposition, consistent with tissue stiffening. Ligand-receptor and spatial analyses reveal that these SnC populations function as interconnected signaling hubs, coordinating immune cell recruitment and stromal remodeling. Importantly, analysis of human fibroids treated with collagenase demonstrated a reduction in both ECM density and SnC burden, supporting a reinforcing relationship between matrix mechanics and senescence. Together, these findings establish senescence in fibroids as a heterogeneous, mechanically reinforced, and network-driven process that links vascular dysfunction, immune signaling, and fibrosis, highlighting distinct SnC states as potential translational targets for non-surgical therapies.",
+      "authors": [
+        "Mejias, J. C.",
+        "Celik, N.",
+        "Nagaraj, S.",
+        "Stivers, K. B.",
+        "Nguyen, H. H.",
+        "Ramanujam, A. S.",
+        "Yu, F. H.",
+        "Browne, M. A.",
+        "Michel, R.",
+        "Islam, M. S.",
+        "Cherry, C.",
+        "Rindone, A. N.",
+        "Fennell, A.",
+        "Min, C.",
+        "Singh, B.",
+        "Krishnan, K.",
+        "Ruta, A.",
+        "Rutkowski, N.",
+        "Sabeh, M. E.",
+        "Afrin, S.",
+        "Chen, Y.",
+        "Sayed, S. E.",
+        "Wu, P.-H.",
+        "Phillip, J. M.",
+        "Fertig, E. J.",
+        "Borahay, M. A.",
+        "Segars, J.",
+        "Elisseeff, J. H."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.04.732812",
+      "title": "A confound-diagnostic toolkit for in silico perturbation with single-cell foundation models",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.04.732812v1",
+      "doi": "10.64898/2026.08.04.732812",
+      "abstract": "Deleting a gene token from a cell's input sequence offers a convenient native strategy for in silico perturbation, but the resulting embedding delta may not represent a biological knockout response. Apparent effects can instead reflect gene identity, universal responsiveness, limited tokenization coverage, library-size contamination, or circular state scoring. Here, we present a confound-diagnostic framework combining held-out increment testing, responsiveness adjustment, coverage gating, library-size diagnostics, and de-circularized state-shift analysis, together with a numerically matched reimplementation of frozen Geneformer's perturbation engine. Across Frangieh and Replogle datasets and linear and nonlinear readouts, the native embedding delta provided no reproducible held-out improvement beyond gene identity. Signal-injection calibration showed that the test detected injected residual signal, whereas native increments remained below its detection floor. Matched controls traced apparent positives to raw-count library-size structure, broad responsiveness, and self-referential scoring, while coverage constrained perturbation applicability and estimate stability without establishing biological specificity. This model-adaptable framework helps determine when foundation-model perturbation readouts warrant biological interpretation.",
+      "authors": [
+        "Qiu, R.",
+        "Zhao, M. M."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.03.739553",
+      "title": "Benchmarking single-cell foundation models in a zero-shot setting",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.03.739553v1",
+      "doi": "10.64898/2026.08.03.739553",
+      "abstract": "Single-cell foundation models have recently emerged as a promising approach for learning general-purpose representations from large-scale transcriptomic data. These models are trained on millions of cells and are designed to transfer their learned representations to a wide range of downstream tasks. However, their practical benefits compared to traditional approaches are still not fully understood. This study evaluates four foundation models, namely scGPT, SCimilarity, UCE, and Transcriptformer, across four downstream tasks: cell type annotation, human data integration, cross-species data integration, and protein expression prediction. Embeddings generated by each model were assessed using multiple public single-cell datasets and compared against conventional machine learning baselines. Performance was measured using task-specific evaluation metrics, including classification, integration, and regression metrics. The results showed that foundation model embeddings did not consistently outperform traditional approaches. In the cell type annotation task, baseline methods achieved the strongest performance across most datasets. For protein expression prediction, however, embeddings from the foundation models generally produced more accurate predictions than the baseline, with SCimilarity achieving the lowest prediction error and Transcriptformer obtaining the highest correlation scores. In the data integration task, all foundation models produced moderate results, while scVI (the baseline) achieved the strongest integration performance. Overall, the results suggest that current single-cell foundation models provide useful representations for some downstream tasks in zero-shot conditions but do not yet offer a universal replacement for task-specific methods. Their effectiveness remains dependent on the application and evaluation setting.",
+      "authors": [
+        "Gaballa, Y.",
+        "Ahmed, S.",
+        "Abdelaal, T."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.03.740741",
+      "title": "scATrans: annotating single-cell differential expression as transcription- or stabilization-weighted using unspliced RNA",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.03.740741v1",
+      "doi": "10.64898/2026.08.03.740741",
+      "abstract": "Single-cell differential expression (DE) reports changes in mature mRNA abundance, and abundance reflects both transcription and stability, so the same fold-change can arise from faster synthesis or from slower decay. Metabolic labeling resolves the two, but it is expensive, can perturb cells, and cannot be applied to the large body of unlabeled scRNA-seq already in public archives. scATrans is an open-source Python package that instead uses the spliced and unspliced counts standard quantification pipelines already produce: DE defines which genes changed, and a reference-corrected unspliced residual then annotates those changes as transcription- or stabilization-weighted. On metabolic-labeling benchmarks the residual separates the two mechanisms at matched abundance, where mature DE is at chance: matched ROC-AUC 0.68-0.74 on full-length NASC-seq2 K562 and 0.59-0.63 on 3' scEU-seq RPE1, against an oracle ceiling of {approx}0.68 on RPE1. Effect size tracks intron capture rather than model complexity, and explicit kinetic fitting does not improve on the static contrast. As a per-gene score the residual is equivalent to the bulk exon-intron contrast (EISA); what scATrans adds is the inference framework around it - DE-defined membership, gene-structure residualization, capture-regime pre-flight, induction-matched testing, and a permutation-calibrated program score whose zero is the gene set's own expectation under shuffled condition labels. Two per-gene scores that tie with the residual on the labeling benchmark lose the call entirely at the program level, which is where the framework, rather than the statistic, is shown to do the work. Because per-gene resolution is limited, binary calls are made at the program level and per-gene labels stay soft. On standard 10x data the annotation recovers textbook biology in both directions: a curated AU-rich-element program reads stabilization-weighted in LPS-stimulated PBMCs, replicated in an independent four-donor LPS series under per-donor pseudobulk DE, while a glucocorticoid program reads transcription-weighted in dexamethasone-treated A549 cells - opposite polarities without any labeling",
+      "authors": [
+        "Li, Z.",
+        "James, A.",
+        "Li, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.03.742406",
+      "title": "REFCON: Reference-free and robust copy number inference in single-cell tumor transcriptomes",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.03.742406v1",
+      "doi": "10.64898/2026.08.03.742406",
+      "abstract": "Single-cell RNA sequencing (scRNA-seq) is widely used to infer copy number profiles from tumor cells. Existing methods build on a reference-based normalization paradigm: normalizing each tumor cell against a reference of normal cells, whether supplied, in-sample, or synthesized. This makes them reference-dependent and as a result, sensitive to cohort composition, and prone to false positives. To address these limitations, we introduce REFCON, a deep learning model that enables reference-free copy number profiling from scRNA seq data. REFCON estimates local copy-number deviations and jointly optimizes them into a genome-wide per-cell profile. It profiles pure tumors, generalizes to unseen tissues and platforms, and stays robust to cohort composition. Predicted copy number profiles distinguish malignant cells with high specificity, producing far fewer false-positive calls, and improve clonal reconstruction. The model can also benefit from reference cells when available, turning a field requirement into an optional refinement. Hence, REFCON extends reliable per-cell copy number profiling to the scRNA-seq data collected without matched normals.",
+      "authors": [
+        "Gencturk, M. M.",
+        "Cicek, A. E."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.03.741871",
+      "title": "Resolving the immune response across clonal cancer evolution in situ with whole transcriptome profiling",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v1",
+      "doi": "10.64898/2026.08.03.741871",
+      "abstract": "Single-cell spatial transcriptomics is now central to studying tumors in their native tissue context. Here we present the first comprehensive, independent evaluation of Atera, a new spatial whole transcriptome platform, compared against Xenium on adjacent sections of human ductal carcinoma in situ (DCIS). We show that Atera enables granular cell-state annotation and resolves rare cell populations, which we experimentally validate by multiplex immunofluorescence (IF). We further show that its transcriptome-wide coverage enables inference of copy-number alterations at single-cell resolution, allowing us to reconstruct the clonal evolution of DCIS. We orthogonally confirm the inferred copy-number alterations by whole-genome sequencing of 16 microdissected tumor regions from a consecutive tissue section. Finally, by mapping the immune microenvironment onto this clonal architecture, we demonstrate the feasibility of tracking the changes in immune response along the clonal tumor evolution in situ. Together, our results establish Atera as a validated platform for tracking clonal evolution and immune adaptation in clinical samples.",
+      "authors": [
+        "Wu, S.",
+        "Mahajan, M.",
+        "van der Linde, R. M.",
+        "Zhu, C.",
+        "van IJzendoorn, D.",
+        "West, R. B.",
+        "Matusiak, M."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "Xenium",
+        "cancer",
+        "evolution",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.03.742620",
+      "title": "De novo transformer modeling improves recovery of genetic cell types from sparse single-cell RNA sequencing",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.03.742620v1",
+      "doi": "10.64898/2026.08.03.742620",
+      "abstract": "Single-cell RNA sequencing (scRNA-seq) simultaneously provides gene-expression profiles and genetic variants from individual cells, creating an opportunity to relate cellular phenotypes to their somatic evolutionary histories. However, delineation of genetic type (GTs) from scRNA-seq remains difficult because most variant positions are unobserved in individual cells and the observed base calls contain substantial false-positive and false-negative errors. We evaluated some existing phylogenetic and imputation methods using one simulated dataset and two empirical tumor datasets. We found that extreme sparsity prevented reliable recovery of known or independently inferred GTs when multiple GTs were present. This led us to adapt the STICI transformer architecture to train a separate model de novo on each sparse cell-variant (CV) matrix. These data-specific models predicted millions of missing bases, greatly reducing matrix sparsity. Phylogenetic analyses of the imputed CV matrices showed substantially improved recovery of GTs in both simulated and empirical datasets. In the empirical dataset, transformer-based analysis also suggested finer-scale genetic structure within some previously reported GTs that was not apparent with the existing methods. These results demonstrate that highly sparse scRNA-seq datasets contain substantially more recoverable lineage information than previously appreciated and that de novo transformer modeling provides an effective approach for recovering much of this hidden information. Nevertheless, sequencing errors persisted, limiting reconstruction of cellular lineage structure and leaving significant room for methodological improvement before expression phenotypes can be examined reliably in the context of their cellular evolutionary relationships.",
+      "authors": [
+        "Craig, J. M.",
+        "Mowlaei, M. E.",
+        "Miura, S.",
+        "Shi, X.",
+        "Kumar, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.06.743310",
+      "title": "Spatial multi-omics and single-cell transcriptomics uncover senescence-associated cellular programs during colon adenoma to cancer progression",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.06.743310v1",
+      "doi": "10.64898/2026.08.06.743310",
+      "abstract": "Colorectal cancer develops through a normal-adenoma-carcinoma sequence, yet only 5-10% of adenomas progress to malignancy, and the cellular programs governing that sequence remain poorly defined. Here we generate a spatial multi-omics atlas of human colon adenomas, combining Visium CytAssist and protein co-detection across 24 nonadvanced and advanced tubular adenomas with single-cell resolution Xenium Prime 5K profiling of 101 patient-matched normal, adenoma, and carcinoma cores from 16 patients. Integrating whole-transcriptome and 31-plex protein data identifies nine spatial clusters and two dysplastic epithelial populations that co-express stemness, proliferation, and senescence programs. These programs occupy a shared, spatially confined epithelial niche that expands from adenoma to carcinoma. Spatial analysis revealed GDF15, a senescence-associated secretory factor, mediated the coupling between senescence and stemness in advanced adenomas, and that GDF15-high epithelium locally excludes CD8+ T cells in adenoma and, more broadly, in carcinoma. These findings position senescence as a spatially instructive rather than merely tumor-suppressive program during colorectal carcinogenesis and suggest GDF15 might be a potential candidate target for cancer prevention and interception in the colon.",
+      "authors": [
+        "Yu, M.",
+        "Xie, Y.",
+        "Allen, L.",
+        "Carter, K.",
+        "Donato, E.",
+        "Cheng, L.",
+        "Kendziorski, C.",
+        "Matkowskyj, K. A.",
+        "De Marzo, A. M.",
+        "Hicks, J.",
+        "Reddi, D.",
+        "Newell, E. W.",
+        "Sun, W.",
+        "Grady, W. M."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics",
+        "Xenium",
+        "Visium",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.07.743431",
+      "title": "Spatial multi-omics reveals targetable immunosuppressive macrophage T-cell interactions in human AML bone marrow",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.07.743431v1",
+      "doi": "10.64898/2026.08.07.743431",
+      "abstract": "The immunosuppressive bone marrow microenvironment is an important contributor to the limited success of immunotherapy in acute myeloid leukemia (AML), but the cellular interactions underlying AML immune evasion are incompletely understood. We therefore generated a single-cell spatial transcriptomic and proteomic atlas using 148 bone biopsies from 113 individuals comprising pediatric and adult AML at diagnosis and non-leukemic controls. We observed an expansion of regulatory T cells (Tregs) in AML, with stronger colocalization between Tregs and macrophages compared to non-leukemic bone marrow. Distinct cellular neighborhoods were enriched for myeloid progenitor-like cells together with macrophages and T cells, which correlated with higher macrophage and T cell immune checkpoint expression. Moreover, these neighborhoods were associated with specific AML subtypes, especially KMT2A-rearranged and RUNX1::RUNX1T1 AML. These spatial patterns were validated by identification of malignant cells via in situ fusion detection in RUNX1::RUNX1T1 cases. Functional experiments revealed that macrophages and AML cells not only actively recruit Tregs, but also promote naive T cell differentiation into Tregs. Spatially informed ligand-receptor analysis predicted the involvement of the Galectin-9 - CD44/TIM-3 axis in this immunosuppressive crosstalk, which was supported by in vitro inhibition of CD44 and/or TIM-3 preventing macrophage- and AML-induced Treg differentiation. Collectively, this comprehensive spatial map of the AML bone marrow identified tripartite crosstalk between AML, macrophages, and T cells mediated by the Galectin-9 - CD44/TIM-3 axis as a key component of the immunosuppressive microenvironment. Targeting Galectin-9 - CD44/TIM-3 interactions may be a promising strategy to overcome immune evasion and enhance immunotherapeutic success in AML.",
+      "authors": [
+        "van der Meulen, M.",
+        "Pool, E. S.",
+        "Perzolli, A.",
+        "Koedijk, J. B.",
+        "Argiro, E.",
+        "Chen, L.-T.",
+        "de Jonge, W. J.",
+        "Schweighart, E.",
+        "Vermeulen, M.",
+        "Nierkens, S.",
+        "Ihlow, J.",
+        "Horst, D.",
+        "Lissat, A.",
+        "Vormoor, H. J.",
+        "Belderbos, M. E.",
+        "Veelken, H.",
+        "Penter, L.",
+        "Goemans, B. F.",
+        "van den Akker, E.",
+        "Margaritis, T.",
+        "Zwaan, C. M.",
+        "Griffioen, M.",
+        "Tjon, J. M. L.",
+        "Heidenreich, O."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.06.743308",
+      "title": "Single-cell multiomic mapping of genetic predisposition to childhood B-cell acute lymphoblastic leukemia",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.06.743308v1",
+      "doi": "10.64898/2026.08.06.743308",
+      "abstract": "Inherited genetic variation substantially increases the risk for developing childhood B-cell acute lymphoblastic leukemia (B-ALL), the most common cancer in children, yet the underlying mechanisms remain poorly understood. To address this limitation, we employ a single-cell multiomic framework to functionally dissect common regulatory variants associated with B-ALL risk. Coupling this multiomic analysis with assessment of allelic skews in chromatin accessibility, we reveal the impact of risk alleles and disruptions in transcription factor networks specific to B-cell progenitors, thereby providing mechanistic insights into altered regulatory programs underlying B-ALL predisposition. By constructing long-range variant-to-target gene maps, we identify 34 high-confidence B-ALL susceptibility genes. Among these, we uncover and functionally validate a risk allele that selectively upregulates expression of ELK3, a previously unrecognized regulator of B-cell development and leukemogenesis. Together, these findings establish a comprehensive variant-to-function map of cell state-specific regulatory disruptions underlying inherited predisposition to B-ALL and define new risk mechanisms, which could pave the way for future targeted prevention approaches.",
+      "authors": [
+        "Lee, A. J.",
+        "Neehus, A.-L.",
+        "Wahlster, L.",
+        "Agarwal, G.",
+        "Weng, C.",
+        "Zhang, A.",
+        "Liu, T.",
+        "Shelton, S.",
+        "Ye, T.",
+        "Volpe, L. d.",
+        "Cohn, O.",
+        "Poeschla, M.",
+        "King, E.",
+        "Ha, S. A.",
+        "Turvey, A. K.",
+        "Chiang, C. W. K.",
+        "Wiemels, J. L.",
+        "de Smith, A. J.",
+        "Sankaran, V. G."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.adp2955",
+      "title": "T cell–nanodrug conjugates synchronize vascular normalization and immune activation for solid tumor therapy",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adp2955?af=R",
+      "doi": "10.1126/sciadv.adp2955",
+      "abstract": "Adoptive T cell therapy requires T cells to infiltrate vascular tissues and preserve immune function. In solid tumor treatment, however, the surrounding microenvironment produces abnormal vasculature that impedes T cell infiltration. An approach that enables vascular normalization and enhances adoptive T cell function in parallel is essential for effective therapy but has not been reported. Here, we report the use of lenvatinib (LEN) to induce transient vascular normalization, thereby facilitating T cell infiltration. Moreover, LEN enhances T cell persistence by promoting the differentiation of T cells toward a memory phenotype. Our results indicate that the differentiation is by suppressing the PI3K–AKT–mTOR pathway, which drives effector differentiation, and by activating FOXO1, a transcription factor that promotes memory formation. To coordinate the transient vascular normalization and T cell enhancement, we link LEN-loaded, PD-L1–blocking micelles to T cells through acid-labile click chemistry, forming pH-responsive T cell–nanodrug conjugates. The conjugates synchronize the intratumoral release of LEN and the PD-L1 antagonist peptide OPBP-1, thereby coordinating vascular normalization, T cell differentiation, and checkpoint blockade. In vivo, the conjugates increased intratumoral CD8 + T cells and splenic memory T cells by over sixfold in B16-OVA tumors and achieved complete regression in a subset of MC38-OVA tumors without systemic toxicity, providing a promising strategy for solid tumor immunotherapy.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.adt2097",
+      "title": "Continuous contributions of the dorsolateral striatum to movement initiation and execution",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adt2097?af=R",
+      "doi": "10.1126/sciadv.adt2097",
+      "abstract": "Spikes in the dorsolateral striatum (DLS) of the basal ganglia (BG) correlate with forelimb and whole-body movements, but the extent to which they contribute to movement remains unclear. Using behavior-timed optogenetic inhibition in rats performing a lever-release reaction-time task, we found that DLS photoinhibition delayed the initiation of forelimb reaching and lever release; when delivered during ongoing reaching, it also interrupted execution. Inhibition during reward retrieval impaired locomotion, especially turning, reducing movement speed and resulting in less efficient trajectories. By contrast, inhibition before the reward-triggering nose poke had little effect despite substantial preceding DLS activity. These effects were accompanied by bidirectional changes in firing rates in the substantia nigra pars reticulata, a BG output nucleus, and were much weaker when the dorsomedial striatum was perturbed. Together, these findings suggest that execution of many, but not all, learned movement patterns depends continuously on DLS activity.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.1126/sciadv.adx9022",
+      "title": "Emergent metabolic parasitism driven by organelle sequestration",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adx9022?af=R",
+      "doi": "10.1126/sciadv.adx9022",
+      "abstract": "Stable acquisitions of metabolism, such as the endosymbiotic incorporation of eukaryotic chloroplasts, are thought to proceed through mechanisms that increase the genetic repertoire of the host and allow for vertical integration of new metabolism. Here, we test these predictions using the chloroplast-stealing marine ciliate genus Mesodinium by comparing transcriptomes from species that represent a spectrum from full heterotrophy to nearly full phototrophy. We find a notable divestment in metabolic autonomy with increased reliance on acquired photosynthesis. The highly photosynthetic, red tide-forming Mesodinium rubrum appears to have lost the capacity to synthesize amino acids, metabolize fatty acids, and produce peroxisomes. Our results portray a metabolic parasite, masquerading as a free-living ciliate that is nonetheless incapable of satisfying most of its basic anabolic needs and which provides an alternate model for understanding evolutionary transitions from heterotrophy to phototrophy.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.adz1325",
+      "title": "Gaseous liquid nitrogen–assisted cryo-printing strategies for challenging volumetric anisotropic tissues fabrication",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz1325?af=R",
+      "doi": "10.1126/sciadv.adz1325",
+      "abstract": "Engineering physiologically relevant anisotropic tissues remains a major challenge due to limitations in replicating native structural cues across complex geometries. Here, we developed a cryogenic extrusion bioprinting platform by precisely guiding ice crystal growth to achieve centimeter-scale anisotropic constructs, even with ultrasoft, low-viscosity inks (2% weight/volume GelMA). This approach enables the fabrication of anatomically matched, patient-specific constructs with tunable anisotropy, including bone graft substitutes and osteoporotic disease models. To overcome the height constraints of cryo-printing, we further developed cryo-assembly and LEGO-assembly strategies that allow integration of anisotropic units while maintaining continuous internal alignment. In vivo studies across wound healing, cranial defect, and femoral defect models validated that these anisotropic cues drive spatially guided cell migration, extracellular matrix (ECM) remodeling, and tissue site-specific regeneration, as evidenced by the ECM deposition. Our platform offers a scalable, clinically adaptable solution for engineering structurally and functionally relevant tissues, redefining the boundaries of anisotropic soft tissue fabrication.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aea3015",
+      "title": "Language-like statistical structure arises in learned signaling: evidence from birdsong",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea3015?af=R",
+      "doi": "10.1126/sciadv.aea3015",
+      "abstract": "All languages have statistically coherent subsequences (e.g., words) whose frequency distribution follows a power law. These properties facilitate language learning in humans, making them good candidates for arising through cultural transmission as a way to help faithful transmission across generations. Recently, both properties were found in whale song, which is also culturally transmitted, leading to the strong prediction that they should be found wherever complex sequential signaling is culturally transmitted. Here, we use the same tools used to analyze human data and whale song to reveal that culturally transmitted Bengalese finch song also has statistically coherent subsequences whose distribution follows a power law. We additionally show that statistical coherence increases over development, but the power law is present throughout, suggesting that it reflects a fundamental principle of learned representations. Finding these parallels between evolutionarily distant species illustrates the importance of cultural transmission in shaping communication and suggests that core properties of language arise through convergent evolution.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development",
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aea8281",
+      "title": "3D genome organization in tissue regeneration involves long-range chromatin loops",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea8281?af=R",
+      "doi": "10.1126/sciadv.aea8281",
+      "abstract": "The three-dimensional (3D) organization of the genome plays a fundamental role in gene expression regulation, yet how changes in genome architecture influence transcriptional responses during tissue regeneration remains poorly understood. Here, we used Hi-C to profile 3D chromatin conformation during Drosophila wing imaginal disc regeneration. We found that, although compartments and topologically associating domains (TADs) are largely maintained, regeneration is accompanied by reduced compartmentalization and decreased boundary insulation. We identified three long-range chromatin loops with increased contact frequency during regeneration. Targeted deletion of their anchors revealed that these loops are essential for proper disc regeneration but dispensable for normal wing development. Furthermore, disruption of any of these loops resulted in convergent changes in both gene expression and H3K4me1 3D environment, suggesting their coordinated activity during regeneration. These findings provide functional evidence that 3D genome architecture actively contributes to the regenerative process.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.1126/sciadv.aeb1136",
+      "title": "The microenvironment dictates glyco-immune surveillance via HSF1-mediated metabolism",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb1136?af=R",
+      "doi": "10.1126/sciadv.aeb1136",
+      "abstract": "Altered glucose metabolism is an auspicious feature of solid tumors, but is it an intrinsic property of tumor cells or a metabolic adaptation to the tumor microenvironment? Using normal epithelial cells cultured in a physiological culture medium under conditions that mimic the physical properties of healthy or cancerous tissues, we establish multiomics relationships between the biochemical and physical properties of the microenvironment and its impact on biosynthetic outputs of altered glucose metabolism. We find that microenvironmental properties, such as hyperglycemia, can affect the composition and thickness of the epithelial glycocalyx, in part through the activity of mechanosensitive stress responses associated with Heat Shock Factor 1 (HSF1). Because glycocalyx thickness alters immune surveillance of epithelial-origin tumor cells, we examined the relationship between the HSF1-hyperglycemia axis in human breast tumors and validate it as a druggable vulnerability to license natural killer cell lethality against cancer cells.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aeb9309",
+      "title": "TRIM29-dependent AKR1B10 degradation ameliorates MASH",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb9309?af=R",
+      "doi": "10.1126/sciadv.aeb9309",
+      "abstract": "Metabolic dysfunction–associated steatohepatitis (MASH) is a prevalent and life-threatening liver disease with limited effective therapies, necessitating the urgent identification of previously unidentified molecular targets and effective pharmacologic agents. This study identifies aldo-keto reductase family 1 member B10 (AKR1B10) as the MASH hallmark, showing elevated expression in patient tissues and serum, correlating strongly with disease severity. Genetic ablation of Akr1b10 in mice significantly attenuated high-fat/high-cholesterol (HFHC) diet–induced steatosis, inflammation, and fibrosis. Mechanistically, we found that tripartite motif protein 29 (TRIM29) functions as an E3 ubiquitin ligase that directly binds AKR1B10, promoting its ubiquitination and proteasomal degradation, which ameliorates MASH progressions. Furthermore, the natural compound coptisine (COP) allosterically facilitated TRIM29-AKR1B10 interaction, accelerating AKR1B10 degradation and showing improved efficacy in MASH mice. Moreover, Trim29 overexpression enhances COP-mediated symptoms alleviation. Our findings delineate the TRIM29/AKR1B10 axis as a druggable signaling pathway and identify COP as a promising therapeutic candidate for MASH.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec2253",
+      "title": "Ly6d expression delineates two putative postnatal thymus epithelial progenitor cells that are differentially affected by aging",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec2253?af=R",
+      "doi": "10.1126/sciadv.aec2253",
+      "abstract": "To date, the identity and maintenance of postnatal thymic epithelial progenitor cells (TEPCs) remain unclear, as does the persistence of bipotent TEPCs after birth or whether lineage-restricted progenitors independently maintain separate TEC compartments. Using an inducible lineage-tracing system based on expression of the thymoproteasomal protein β5t, which is expressed in embryonic and a subset of postnatal TEPCs, we explored the early dynamics of the relationships between thymic epithelial cell (TEC) progenitors and their progeny. Our results identified two potential lineage-biased progenitor subpopulations, distinguished by Ly6d expression. Additionally, we observed that aging disproportionately affects Ly6d − compared to Ly6d + TEPCs, with implications for rejuvenation of aging thymic epithelia. This study provides insights into the developmental pathways of TEC lineages and their maintenance, contributing to strategies for enhancing thymic function in aging and disease.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec2331",
+      "title": "MBNL1 hijacks a structured single-stranded distal DNA element to sustain FLT3 expression in KMT2A-rearranged leukemias",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec2331?af=R",
+      "doi": "10.1126/sciadv.aec2331",
+      "abstract": "The molecular mechanisms by which KMT2A-rearranged (KMT2A-r) leukemias maintain the oncogenic FLT3 expression remain largely unclear, limiting therapeutic opportunities. Here, we identify the RNA binding protein MBNL1 as an unexpected positive regulator of FLT3 by DepMap dataset exploration and combinatorial CRISPR screens. MBNL1 promotes leukemia cell survival in cell lines and primary tumors by sustaining FLT3 expression in a KMT2A-r context-dependent manner. Mechanistically, we discover that MBNL1 recognizes a structured single-stranded DNA (ssDNA) element containing five consecutive guanines within the FLT3 enhancer, through MBNL1’s zinc finger domains and the carboxyl-terminal unstructured region. Such MBNL1 protein/ssDNA interaction was evident in KMT2A-r leukemia using ChIP-seq and KAS-seq. Mutations of key amino acids of MBNL1’s ssDNA binding surface or the critical guanines in ssDNA markedly abrogate the protein-ssDNA interactions. These findings implicate MBNL1 as a distinct FLT3 activator by recognizing a structured enhancer ssDNA element, highlighting an unexpected role for RNA binding proteins in transcriptional regulation through direct ssDNA recognition.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "CRISPR"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec5359",
+      "title": "Environmental tuning of thyroid hormone signaling drives developmental plasticity",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec5359?af=R",
+      "doi": "10.1126/sciadv.aec5359",
+      "abstract": "Vertebrate developmental transitions unfold in environments increasingly altered by global change. Thyroid hormones, a deeply conserved endocrine axis, coordinate post-embryonic transformations, yet the effects of natural ecological variation on this signaling remain largely unexplored—despite their potential to shape developmental plasticity and acclimation to local environments. To address this, we investigated a common reef fish ( Acanthurus triostegus ), which undergoes a thyroid-dependent metamorphosis during settlement into coastal nurseries. By combining transcriptomic, hormonal, and metabolic profiling across distinct natural habitats, we show that settlement triggers a profound reprogramming of energy metabolism, tightly coupled to thyroid signaling. Strikingly, the magnitude and direction of thyroid hormone regulation varied with habitat, producing divergent metabolic and physiological states. These results demonstrate that thyroid hormones act not only as a developmental timer but as a dynamic integrator of environment and physiology. More broadly, they reveal a conserved mechanism of vertebrate developmental plasticity, highlighting endocrine flexibility as a potential buffer of population resilience under rapid environmental change.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec9545",
+      "title": "High-resolution mapping of embryonic genome activation unveils a decoupling of transcription activation from precocious H3K4me3 removal",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec9545?af=R",
+      "doi": "10.1126/sciadv.aec9545",
+      "abstract": "The lack of temporal resolution in transcriptomic data during mammalian embryonic genome activation (EGA) has precluded the comprehensive understanding of the functional relationships between the various gene regulatory mechanisms governing this process. Here, we finely dissect the transcriptional dynamics of mouse EGA using precision in vitro fertilization (IVF) coupled with single-embryo RNA sequencing. Our highly temporally resolved dataset uncovers an extensive, step-wise remodeling of the embryonic messenger RNA landscape, affecting ∼30% of the total detectable transcripts over a 9-hour time frame. We capture the gradual shift from maternal to embryonic messenger RNAs, successfully identify ribosome biogenesis and translation as hallmarks of EGA, and find previously unidentified gene expression dynamics. We further uncover a set of eight histone demethylating enzymes among the earliest up-regulated EGA genes and leverage our precision-IVF to dissect the transcriptional versus developmental impact of histone H3 lysine-4 trimethylation (H3K4me3) remodeling after fertilization. Our results indicate that precocious removal of H3K4me3 from embryonic chromatin only modestly affects embryonic transcription without perturbing EGA timing, arguing against a major instructive role of precocious remodeling of maternally inherited H3K4me3 after fertilization on genome activation. High-resolution transcriptome mapping coupled with functional perturbations allows us to distinguish direct gene expression effects from general impacts on developmental timing, opening avenues for further quantitative characterization of the impact of epigenome remodeling on embryonic transcription.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aed0733",
+      "title": "APOE+ macrophages and POSTN+CAFs form immune-exclusion niche driving immunotherapy resistance in clear-cell renal carcinoma",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed0733?af=R",
+      "doi": "10.1126/sciadv.aed0733",
+      "abstract": "Tumor immune barriers (TIBs) are spatially organized stromal-immune niches that restrict lymphocyte entry. To explain persistent immune-checkpoint blockade (ICB) resistance in clear cell renal cell carcinoma (ccRCC), we mapped TIBs and defined a peritumoral variant built from POSTN + cancer-associated fibroblasts (CAFs) interlaced with APOE + tumor-associated macrophages (TAMs). This niche excluded CD8 + T cells from tumor cores, and was enriched in poor-prognosis, ICB-refractory patients. Spatial transcriptomics and single-cell profiling showed TIB regions enriched for extracellular-matrix remodeling, immunosuppressive ligand-receptor circuits, and metabolic reprogramming. Mechanistically, tumor-derived TGF-β1 activated CAFs via SMAD signaling, inducing POSTN and recruiting APOE + TAMs through integrin and chemokine axes. TAMs secreted TGF-β1 and VEGFA, amplifying stromal programs and sustaining exclusion. Blocking POSTN reprogrammed macrophages, reduced matrix-mediated suppression, and restored CD8 + infiltration. In vivo, POSTN inhibition combined with ICB boosted antitumor immunity, reduced tumor burden, and reversed immunosuppressive infiltration, nominating POSTN-directed strategies to potentiate ICB.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.1126/sciadv.aed0772",
+      "title": "Deep learning reveals a neurocomputational mechanism predicting depression risk in adolescents",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed0772?af=R",
+      "doi": "10.1126/sciadv.aed0772",
+      "abstract": "Early detection and prevention of psychiatric disorders, particularly depression, remain as major global health challenges, yet reliable tools for identifying individuals before symptom onset are lacking. Here, we combine functional neuroimaging with computational modeling to identify a mechanistic biomarker of depression risk. In a population-based adolescent cohort (IMAGEN, N = 1332), we found that weakened neural representations of emotional signals were linked to depressive symptoms. Perturbation experiments in a brain-aligned deep learning model showed that this deficit reflects overregularized emotion perception, producing a negative perceptual bias. A neurocomputational signature of this mechanism predicted depression symptom onset up to 4 years later at the IMAGEN follow-up ( N = 725), was associated with both a genetic-risk variant and polygenic risk for depression, and improved depression classification in a patient cohort (STRATIFY, N = 411). These findings suggest a possible mechanism linking genetic vulnerability to altered emotion perception and future depression, and propose a predictive computational marker with potential for early detection and prevention.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.1126/sciadv.aed1318",
+      "title": "Transposable elements and homotypic niches drive immune dynamics and resistance in melanoma epigenetic-based immunotherapy",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed1318?af=R",
+      "doi": "10.1126/sciadv.aed1318",
+      "abstract": "Melanoma plasticity drives immune evasion and therapy resistance through dynamic cell-state transitions beyond genetic alterations. Although epigenetic remodeling is central to this process, its impact under therapeutic pressure remains unclear. We profiled longitudinal biopsies from patients with melanoma treated in the phase 1b NIBIT-M4 epi-immunotherapy trial [NCT02608437, DNA (cytosine-5)-methyltransferase 1 inhibitor plus anti–CTLA-4] using single-cell multiome and spatial transcriptomics. Seven malignant meta-programs were identified, including a rare Wnt/β-Catenin melanocytic state and a dedifferentiated neural crest–like state enriched in nonresponders. Spatial analyses showed that homotypic clustering stabilizes resistant programs, with neural crest–like cells forming compact niches. Responders displayed enrichment of antigen presentation/interferon program and coordinated T and B cell expansion, whereas nonresponders retained stable neural crest–like clusters. Epigenetic therapy reactivated transposable elements, priming innate immunity and enhancing immunogenicity. Nuclear factor of activated T cells, cytoplasmic 2 (NFATC2) emerged as a master regulator of neural crest–like states and resistance; its perturbation promoted differentiation and immunogenicity. These findings define mechanisms of resistance and nominate β-Catenin and NFATC2 as therapeutic vulnerabilities.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aed5470",
+      "title": "Start, speed, and direction of secondary forest succession",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed5470?af=R",
+      "doi": "10.1126/sciadv.aed5470",
+      "abstract": "Succession is a foundational concept in ecology, describing changes in populations, communities, and ecosystems over time following a disturbance. Predicting successional pathways is challenging because of high spatiotemporal variability. Here, we present a unifying mechanistic framework that integrates three core components of succession (start, speed, and direction) that define successional pathways. We monitored the first 5 years of forest succession in recently abandoned agricultural fields in six tropical landscapes across three countries that differ in land-use intensity and between dry and wet forests. We found that (i) secondary succession typically started with woody legacies and progressed slowly but directionally toward structurally complex, biodiverse forests, and (ii) the start and speed were greater in areas with short-duration, low-intensity (nonmechanized) land use associated with more biological legacies. This framework advances mechanistic understanding of succession by disentangling the start, speed, and direction, and provides a tool for designing effective forest restoration strategies.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aee2515",
+      "title": "Direct visualization of RNA virus and evaluation of drug effect in living cells by catalytically transformable DNA cube",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee2515?af=R",
+      "doi": "10.1126/sciadv.aee2515",
+      "abstract": "In situ visualization of viral RNA in living cells is critical for understanding infection dynamics and evaluating antiviral responses, yet offline methods such as polymerase chain reaction are incompatible with real-time analysis. Here, a CAtalytically Transformable DNA Cube (CAT-Cube) is presented as a structurally stable and autonomously cell-permeable DNA nanostructure for real-time viral RNA imaging in living cells. By spatially confining catalytic hairpins within a rigid scaffold, CAT-Cube increases the local reaction concentration and enhances sensitivity toward viral RNA while releasing the RNA after transformation rather than consuming it. The probe produces bright, photostable signals that support continuous tracking of transcription- and replication-competent severe acute respiratory syndrome coronavirus 2 virus-like particles at a multiplicity of infection as low as 0.1. This system also enables evaluation of antiviral agents, including angiotensin-converting enzyme 2 (ACE2) inhibitors, DNA aptamers, and the natural compound cepharanthine, and reveals mechanisms involving ACE2 and spike binding. CAT-Cube therefore provides a generalizable approach for real-time viral RNA imaging and dynamic assessment of antiviral effects in living cells.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aee7981",
+      "title": "ZPY-CpG-Ch, a broad coverage vaccine against Streptococcus pneumoniae",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee7981?af=R",
+      "doi": "10.1126/sciadv.aee7981",
+      "abstract": "Existing licensed pneumococcal vaccines, including Prevnar-13 and its higher-valency successors, have played a major role in reducing invasive pneumococcal disease worldwide. However, their effectiveness is increasingly threatened by the rise of multidrug-resistant strains and the shift in circulating serotypes toward those not targeted by current vaccines—a trend known as serotype replacement. These evolving challenges underscore the urgent need for next-generation vaccines with broader, serotype-independent protection—long considered the holy grail of pneumococcal vaccine development. Here, we report the discovery and preclinical evaluation of ZPY-CpG-Ch, a broad-coverage protein-based pneumococcal vaccine formulation. We assessed the protective efficacy and immunogenicity of ZPY-CpG-Ch in translational murine models, using both adult and neonatal mice, and tested various adjuvants, protein combinations, and doses, followed by challenge experiments with both vaccine- and non–vaccine-covered serotypes. Prevnar-13 was included as a benchmark. While Prevnar-13 ® demonstrated robust efficacy, our results show that ZPY-CpG-Ch achieves greater cross-serotype protection. We attribute this enhanced efficacy primarily to T H 17 (T helper 7)–biased immune responses. Together, these findings highlight the promise of genome-guided, protein-based vaccines in overcoming the limitations of current serotype-based approaches and represent a meaningful step toward a truly universal pneumococcal vaccine.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aee8327",
+      "title": "Distributed burst firing mediates optimized cortical encoding of natural self-motion",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee8327?af=R",
+      "doi": "10.1126/sciadv.aee8327",
+      "abstract": "Accurate perception of self-motion requires that vestibular input be transformed into neural representations suitable for integrating multisensory cues to guide action. Here, we demonstrate that vestibular cortical neurons represent the self-motion stimuli encountered during everyday activities in a fundamentally different manner than the artificial self-motion stimuli typically used. Using stimuli whose waveforms reproduce the head dynamics encountered in natural behavior, we found that neural activity no longer tracked stimulus velocity through graded firing-rate changes, as observed during artificial sinusoidal stimulation, but instead reliably encoded distinct motion features through burst firing. At the population level, these bursts formed a distributed code that enhanced information transmission by reducing redundancy. This transformation emerged only during natural stimulation and was absent in the vestibular thalamus. Together, our results demonstrate that the vestibular cortex constructs a distributed, feature-based representation of natural self-motion, fundamentally reshaping our understanding of how cortical circuits encode vestibular signals to mediate perception.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aef3201",
+      "title": "Glacier retreat shapes organic nutrient availability across lake succession",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef3201?af=R",
+      "doi": "10.1126/sciadv.aef3201",
+      "abstract": "Glacier retreat is rapidly transforming landscapes, creating thousands of new lakes that act as natural laboratories of ecological succession. In these newly formed ecosystems, colonizing animals must meet their requirements for essential organic nutrients, such as long-chain polyunsaturated fatty acids (LC-PUFAs). Here, we combined compound-specific stable isotope analyses of amino acids with fatty acid analysis to trace the origins and transfer of organic nutrients to fish (Arctic char) across a glacial-to-lacustrine lake succession in southern Greenland. Through lake succession, primary sources of nutrients shifted, coinciding with a 60% increase in LC-PUFA concentration in individual fish. In early glacial stages, Arctic char appeared to compensate for low LC-PUFA availability through endogenous biosynthesis of docosahexaenoic acid and, when connected to the fjord, by assimilating marine-derived nutrients via egg cannibalism. Overall, our results demonstrate that glacier retreat reshapes not only physical landscapes but also organic nutrient availability, with cascading consequences for animal physiology, ecosystem connectivity, and potentially long-term evolutionary trajectories.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aef7696",
+      "title": "Ribosomal protein bL27 protects translating ribosomes from tmRNA-SmpB",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef7696?af=R",
+      "doi": "10.1126/sciadv.aef7696",
+      "abstract": "Bacterial ribosomal protein bL27 is universally conserved, and its amino terminus is adjacent to the peptidyl transfer center, yet its roles in translation remain unclear. Combining genetics, biochemistry, and molecular dynamics, we show that bL27 has an unexpected role in preventing transfer-messenger RNA (tmRNA)-small protein B (SmpB), molecules involved in the trans-translation bacterial ribosome rescue mechanism, from interfering with protein synthesis. Deletion of the bL27 gene causes a 10,000-fold decrease in viability, and this defect is partially rescued by deletion of the gene encoding tmRNA. Addition of tmRNA-SmpB to in vitro translation reactions decreases the rate of protein synthesis by ribosomes lacking bL27 but has no effect on wild-type ribosomes. Molecular dynamics simulations also indicate that bL27 can slow the movement of tmRNA on the ribosome. These data link trans-translation and bL27 and support a model in which the amino terminus of bL27 acts as a gatekeeper to prevent tmRNA from sterically interfering with tRNA (transfer RNA) on the ribosome.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aef9469",
+      "title": "Capsid stabilization reprograms the nuclear fate of the HIV genome",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef9469?af=R",
+      "doi": "10.1126/sciadv.aef9469",
+      "abstract": "Capsid stabilization, induced by low-nanomolar concentrations of Lenacapavir (LEN)—a first-in-class capsid inhibitor—impedes HIV-1 replication in macrophages without disrupting reverse transcription or nuclear import. In LEN-treated cells, ultrastructural analyses reveal preserved conical capsids persisting within nuclear CPSF6-enriched puncta—HIV-1–induced membraneless organelles (HIV-1–MLOs)—which remain spatially segregated from canonical integration hubs near nuclear speckles (NSs). Rather than fusing with NSs, HIV-1–MLOs are rerouted to chromatin-associated promyelocytic leukemia nuclear bodies (PML-NBs), where molecular exchange occurs without condensate fusion. This nuclear redirection correlates with the sequestration of the viral genome within stabilized capsids, reducing the pool of viral DNA available for integration and redirecting the few accessible genomes to atypical integration sites near PML-NBs. These findings uncover a previously unrecognized mechanism of LEN action, whereby capsid stabilization reprograms the nuclear fate of the HIV-1 genome in macrophages, limiting integration and redirecting viral DNA toward more repressive nuclear environments, likely shaping the transcriptional potential of newly integrated viral DNA.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.1126/sciadv.adz8270",
+      "title": "A comprehensive and accessible database of jawed-vertebrate ohnologs",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz8270?af=R",
+      "doi": "10.1126/sciadv.adz8270",
+      "abstract": "Whole-genome duplications (WGDs) profoundly shaped early vertebrate evolution. The set of paralogs retained from these events—“ohnologs”—has had lasting impacts on genome structure and function, including disease gene enrichment. Despite this, we still lack a gold standard ohnolog database. Here, we have harnessed ancestral genome reconstructions together with phylogenetic and synteny information to produce a robust ohnolog dataset that includes details on the nature and quality of evidence and a user-friendly interface. We have been able to resolve the 1R versus 2R origins of a large number of cases, as well as including previously hard-to-detect ohnologs. We find that 1R-retained ohnologs are involved in cellular transport, while those retained after both 1R and 2R are biased toward signaling functions, especially neuronal signaling. These findings suggest that after an initial adaptation to the cellular burden of polyploidy, WGD expanded the opportunities for intercellular communication.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "evolution",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.1126/sciadv.aee7036",
+      "title": "Structural insights into a substrate translocation pathway revealed by the RND efflux pump complex MexJK from Pseudomonas aeruginosa",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee7036?af=R",
+      "doi": "10.1126/sciadv.aee7036",
+      "abstract": "Resistance–nodulation–cell division (RND) efflux pumps are the major cause of multidrug resistance in Pseudomonas aeruginosa . The inner membrane protein MexK from P. aeruginosa is a narrow-spectrum RND transporter. It assembles with membrane fusion protein MexJ and outer membrane proteins to form a tripartite efflux complex that efficiently exports drugs like triclosan. Here, we resolve the cryo-EM structures of apo-MexK at 3.4-angstrom resolution and the triclosan-bound MexJK complex at 2.6-angstrom resolution. Besides the unique architectural features of MexK, our structural data reveal a triclosan-binding pocket within the transmembrane domain of MexK protomers, distinct from known substrate-binding sites in other RND transporters. Using molecular dynamics simulations and mutagenesis, we elucidate a previously uncharacterized triclosan transport tunnel across the inner membrane with cytosolic access. The key residues for triclosan efflux are further shown essential for two other potential substrates of MexK, chloramphenicol and pyrimethamine. Our results provide the molecular basis for an unusual drug trafficking pathway in RND efflux pumps.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aef3194",
+      "title": "Formation of tertiary lymphoid structures drives Parkin antitumor immunity",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef3194?af=R",
+      "doi": "10.1126/sciadv.aef3194",
+      "abstract": "Mitochondria activate immunity, but the role in cancer is unknown. Here, we report that transgenic expression of Parkin, a regulator of mitochondrial fitness, induces inflammation and interferon (IFN) gene signatures, suppresses prostate cancer formation and generates CD8 + and CD20 + intraprostatic immune aggregates. These had hallmarks of mature tertiary lymphoid structures (TLS), expressing markers of B cell maturation (CXCL13, CCL21), germinal center formation (BCL6, GL7), mature dendritic cells (MHC-II/CD208) and high endothelial venules (LYVE-1). Parkin TLS showed high Ig gene expression, recruitment of CXCR5 + follicular T helper cells and expansion of CD69 + /KLRG1 + effector T cells. Conditioned medium from Parkin-positive cells expanded memory B and plasma cells, increased IgG1 production, and sustained B and T cell migration. Finally, conditional expression of Parkin induced TLS formation, upregulated Ig chains and inhibited prostate cancer growth, in vivo, whereas Parkin reconstitution in IFNAR1, CD8 or CD20 knockout mice had no effect. Therefore, mitochondrial immunity orchestrates antitumor responses, and TLS formation contributes to tumor suppression.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aeb3005",
+      "title": "Neural competition between prefrontal and auditory cortex constrains novel sound strategy learning",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-07T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb3005?af=R",
+      "doi": "10.1126/sciadv.aeb3005",
+      "abstract": "In nature, animals learn to replace predisposed behaviors with new strategies, yet the neural constraints on these transitions are unclear. Using an ethological search task in mice, we reveal medial prefrontal cortical (mPFC) neural correlates of a predisposed win-stay strategy that decays as animals learn to follow a more reliable auditory cue. Auditory cortex (ACx) activity predicts correct trial-by-trial sound-guided search, even on day one of training. This prognostic coding strengthens with learning and emerges from suppressed spiking, most pronounced in neurons tuned laterally to the cue’s spectrum. Chemogenetic disruption reveals ACx contributions to improving performance. Unexpectedly, the global silencing of mPFC accelerates successful usage of sound-tracking, contrary to its canonical role in flexible or stimulus-dependent behavior. Instead, a decentralized multiexpert competition model best predicts behavior and causal perturbations. These findings suggest that mPFC implements a default strategy based on prior knowledge, which actively hinders the expression of more efficient strategies.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 67,
+      "passedByScope": 22,
+      "llmClassified": 45,
+      "llmYes": 26,
+      "llmNotSure": 0,
+      "llmNo": 19,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 48,
+      "excluded": 19
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 48,
+      "llmTagged": 48,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 48,
+      "candidates": 48,
+      "featured": 12,
+      "overflow": 36,
+      "lineA": 3,
+      "lineB": 35,
+      "preprint": 10,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 2,
+      "primarySucceeded": 2,
+      "fallbackSucceeded": 0,
+      "failed": 10
+    },
+    "translate": {
+      "requested": 36,
+      "llmTranslated": 0,
+      "failed": 36
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02488-3",
+        "title": "Briefing Chat: Is DNA repair the secret to a long life? Whales and mole rats offer tantalizing hints",
+        "journal": "Nature",
+        "publishedDate": "2026-08-07T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02488-3",
+        "doi": "10.1038/d41586-026-02488-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02462-z",
+        "title": "Universal vaccine for pneumococcal disease moves closer to reality",
+        "journal": "Nature",
+        "publishedDate": "2026-08-07T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02462-z",
+        "doi": "10.1038/d41586-026-02462-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee9271",
+        "title": "Experimental violation of a Bell-like causal inequality in a photonic quantum switch",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee9271?af=R",
+        "doi": "10.1126/sciadv.aee9271",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aea2075",
+        "title": "Submillennial timescales of eruptible rhyolite magma: Converging evidence from Aira Caldera, Japan",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea2075?af=R",
+        "doi": "10.1126/sciadv.aea2075",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aec4563",
+        "title": "Monolithically integrating polarization-doped InGaN p-FET and GaN n-FET for complementary logic circuitry",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec4563?af=R",
+        "doi": "10.1126/sciadv.aec4563",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed0057",
+        "title": "Tunable dislocations overcome mechano-functional tradeoff in perovskite oxides",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed0057?af=R",
+        "doi": "10.1126/sciadv.aed0057",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed1634",
+        "title": "Periodic extreme rainfall in a warmer climate due to stronger convectively coupled waves",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed1634?af=R",
+        "doi": "10.1126/sciadv.aed1634",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed6236",
+        "title": "Ferroelectric control of the Mott insulator–topological metal transition",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed6236?af=R",
+        "doi": "10.1126/sciadv.aed6236",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee0923",
+        "title": "Global distribution and amplitudes of internal solitary waves revealed by SWOT",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee0923?af=R",
+        "doi": "10.1126/sciadv.aee0923",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee1791",
+        "title": "Metasurface-controlled high-speed tunable external cavity lasers",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee1791?af=R",
+        "doi": "10.1126/sciadv.aee1791",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee4959",
+        "title": "Decoding the chemical space of fast-ion conductors via a descriptor-guided transfer learning framework",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee4959?af=R",
+        "doi": "10.1126/sciadv.aee4959",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aef0501",
+        "title": "Optical isolation and circulation using quantum frequency conversion on a chip",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef0501?af=R",
+        "doi": "10.1126/sciadv.aef0501",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aef5518",
+        "title": "On-chip waveguide-integrated light sources using MoS2/WSe2 moiré superlattices on a silicon photonic platform",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef5518?af=R",
+        "doi": "10.1126/sciadv.aef5518",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeg0781",
+        "title": "Uncovering PFAS and halogenated chemicals using nontargeted analysis and the PFAS IMplementer for mass spectrometry (PIMMS)",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg0781?af=R",
+        "doi": "10.1126/sciadv.aeg0781",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aec6963",
+        "title": "Biomimetic hierarchical heterogeneity endows layered nanocomposite with excellent mechanical and electrical insulating properties",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec6963?af=R",
+        "doi": "10.1126/sciadv.aec6963",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee9489",
+        "title": "Two contrasting atmospheric circulation patterns linked to Kuroshio Extension variability",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee9489?af=R",
+        "doi": "10.1126/sciadv.aee9489",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aef2184",
+        "title": "Higher-order trade-offs in hypergraph community detection",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef2184?af=R",
+        "doi": "10.1126/sciadv.aef2184",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeg5930",
+        "title": "Interaction-driven flat band and charge order in Fe5GeTe2",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg5930?af=R",
+        "doi": "10.1126/sciadv.aeg5930",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aej3478",
+        "title": "Erratum for the Research Article “Forecast attribution reveals enhanced heat mortality from climate change in British Columbia heatwave” by C.Y. Shapland et al.",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-07T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aej3478?af=R",
+        "doi": "10.1126/sciadv.aej3478",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
