@@ -553,9 +553,23 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     });
 
     const starts: number[] = [];
+    const cooldownEvents: Array<{
+      source: string;
+      waitMs: number;
+      blockedUntilMs: number;
+      changed: boolean;
+    }> = [];
     const first = scheduler.schedule({
       bucket: "nvidia:fp-a",
       policy: NVIDIA_LLM_RATE_POLICY,
+      onCooldownUpdate: (event) => {
+        cooldownEvents.push({
+          source: event.source,
+          waitMs: event.waitMs,
+          blockedUntilMs: event.blockedUntilMs,
+          changed: event.changed,
+        });
+      },
       execute: async () => {
         starts.push(clock.now());
         throw rateLimitError(10);
@@ -577,6 +591,17 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     // Cooldown 10s dominates the 2s spacing.
     assert.ok(starts[1]! - starts[0]! >= 10_000);
     assert.ok(scheduler.getBlockedUntilMs("nvidia:fp-a") >= starts[0]! + 10_000);
+    assert.equal(cooldownEvents.length, 1);
+    assert.equal(cooldownEvents[0]?.source, "retry-after");
+    assert.equal(cooldownEvents[0]?.waitMs, 10_000);
+    assert.equal(cooldownEvents[0]?.changed, true);
+    // FakeClock may advance spacing sleep for the next queued item before 429 settles,
+    // so blockedUntil is based on apply-time now (≥ start), not start itself.
+    assert.ok(cooldownEvents[0]!.blockedUntilMs >= starts[0]! + 10_000);
+    assert.equal(
+      scheduler.getBlockedUntilMs("nvidia:fp-a"),
+      cooldownEvents[0]?.blockedUntilMs,
+    );
   });
 
   test("Gemini 429 does not delay NVIDIA queued items", async () => {

@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { lifeScienceRoutingVerdictSchema } from "../domain/life-science/schemas.js";
 import { shouldRetrySplitLlmBatch } from "../llm/extractLlmJsonContent.js";
+import { LlmRequestSchedulerError } from "../llm/llmRequestScheduler.js";
 import type { LifeScienceRoutingVerdict } from "../types.js";
 import { planRoutingBatches } from "./batchSizing.js";
 import {
@@ -286,6 +287,12 @@ async function classifyBatchOnceWithRetryPolicy(
         error instanceof Error && "finishReason" in error
           ? String((error as Error & { finishReason: string }).finishReason)
           : "unknown";
+      // Queue deadline 必須開 budget_exhausted，否則後續 batch 還會繼續進 queue（PR #35）。
+      if (error instanceof LlmRequestSchedulerError && error.kind === "deadline") {
+        ctx.openBreaker("budget_exhausted");
+        throw error;
+      }
+
       const failure = classifyRoutingFailure(error, finishReason);
       recordFailureDiagnostics(ctx, failure);
 
@@ -476,7 +483,8 @@ async function classifyBatch(
       failure.kind === "rate_limit" ||
       failure.kind === "server_error" ||
       message.includes("routing budget exhausted") ||
-      message.includes("routing breaker open")
+      message.includes("routing breaker open") ||
+      (error instanceof LlmRequestSchedulerError && error.kind === "deadline")
     ) {
       return degradeBatchForKeywordFallback(
         items,

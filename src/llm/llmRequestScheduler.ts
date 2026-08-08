@@ -14,7 +14,10 @@
 import type { Clock } from "../routing/clock.js";
 import { systemClock } from "../routing/clock.js";
 import { classifyRoutingFailure } from "../routing/classifyRoutingFailure.js";
-import { planRateLimitWait } from "../routing/routingRetryPolicy.js";
+import {
+  planRateLimitWait,
+  type RateLimitWaitPlan,
+} from "../routing/routingRetryPolicy.js";
 
 /** NVIDIA integrate API：保守 2,000 ms start-to-start（~30 RPM；quota 40 RPM）。 */
 export const NVIDIA_MIN_START_INTERVAL_MS = 2_000;
@@ -56,6 +59,17 @@ export type LlmSchedulePermitContext = {
   gapMs: number | null;
 };
 
+/** Emitted when a 429 updates（or attempts to update）bucket-wide cooldown（PR #35）。 */
+export type LlmCooldownUpdateEvent = {
+  bucket: string;
+  source: RateLimitWaitPlan["source"];
+  waitMs: number;
+  previousBlockedUntilMs: number;
+  blockedUntilMs: number;
+  /** False when a shorter plan did not move blockedUntil. */
+  changed: boolean;
+};
+
 export type ScheduleLlmRequestOptions<T> = {
   /**
    * Opaque quota identity（provider/base/credential fingerprint）。
@@ -72,6 +86,8 @@ export type ScheduleLlmRequestOptions<T> = {
   deadlineAtMs?: number;
   signal?: AbortSignal;
   execute: (context: LlmSchedulePermitContext) => Promise<T>;
+  /** Observability for terminal 429（不等下一發 permit 才看得到 cooldown）（PR #35）。 */
+  onCooldownUpdate?: (event: LlmCooldownUpdateEvent) => void;
 };
 
 export type LlmRequestScheduler = {
@@ -94,6 +110,7 @@ type QueueItem<T> = {
   enqueuedAtMs: number;
   deadlineAtMs?: number;
   signal?: AbortSignal;
+  onCooldownUpdate?: (event: LlmCooldownUpdateEvent) => void;
   resolve: (value: T) => void;
   reject: (reason: unknown) => void;
   settled: boolean;
@@ -121,7 +138,7 @@ function abortError(signal?: AbortSignal): LlmRequestSchedulerError {
 function deadlineError(): LlmRequestSchedulerError {
   return new LlmRequestSchedulerError(
     "deadline",
-    "LLM request deadline reached while queued; request was not sent",
+    "LLM request deadline reached while queued for rate limit; request was not sent",
   );
 }
 
@@ -200,7 +217,11 @@ export function createLlmRequestScheduler(
     return created;
   }
 
-  function applyRateLimitCooldown(bucket: BucketState, error: unknown): void {
+  function applyRateLimitCooldown(
+    bucket: BucketState,
+    error: unknown,
+    onCooldownUpdate?: (event: LlmCooldownUpdateEvent) => void,
+  ): void {
     // 重用 routing 的 429 header／default+jitter 政策，避免另寫一套不一致的 parser（PR #35）。
     const failure = classifyRoutingFailure(error);
     if (failure.kind !== "rate_limit") return;
@@ -209,9 +230,18 @@ export function createLlmRequestScheduler(
       nowMs: clock.now(),
       jitterMs,
     });
+    const previousBlockedUntilMs = bucket.blockedUntilMs;
     // 較短的新 cooldown 不得覆蓋較長既有 blockedUntil（PR #35）。
     const nextBlockedUntil = clock.now() + plan.waitMs;
     bucket.blockedUntilMs = Math.max(bucket.blockedUntilMs, nextBlockedUntil);
+    onCooldownUpdate?.({
+      bucket: bucket.id,
+      source: plan.source,
+      waitMs: plan.waitMs,
+      previousBlockedUntilMs,
+      blockedUntilMs: bucket.blockedUntilMs,
+      changed: bucket.blockedUntilMs !== previousBlockedUntilMs,
+    });
   }
 
   function itemIsExpired(item: QueueItem<unknown>, now: number): boolean {
@@ -276,7 +306,7 @@ export function createLlmRequestScheduler(
       const value = await item.execute(context);
       settleResolve(item, value);
     } catch (error) {
-      applyRateLimitCooldown(bucket, error);
+      applyRateLimitCooldown(bucket, error, item.onCooldownUpdate);
       settleReject(item, error);
     }
   }
@@ -367,6 +397,7 @@ export function createLlmRequestScheduler(
         enqueuedAtMs: clock.now(),
         deadlineAtMs: options.deadlineAtMs,
         signal: options.signal,
+        onCooldownUpdate: options.onCooldownUpdate,
         resolve,
         reject,
         settled: false,

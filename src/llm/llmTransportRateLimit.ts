@@ -7,8 +7,8 @@ import type { Clock } from "../routing/clock.js";
 import {
   createLlmRequestScheduler,
   getSharedLlmRequestScheduler,
-  LlmRequestSchedulerError,
   resetSharedLlmRequestSchedulerForTests,
+  type LlmCooldownUpdateEvent,
   type LlmQuotaBucketPolicy,
   type LlmRequestScheduler,
   type LlmSchedulePermitContext,
@@ -21,6 +21,8 @@ export type LlmTransportRateLimitOptions = {
   /** Absolute queue deadline on the scheduler clock；逾時則不送出。 */
   resolveDeadlineAtMs?: () => number | undefined;
   signal?: AbortSignal;
+  /** Optional logger for cooldown updates（通常接 routing/digest log）。 */
+  log?: (message: string) => void;
 };
 
 type TestOverrides = {
@@ -85,6 +87,7 @@ export function resolveTransportQuotaTarget(
 /**
  * Run one HTTP attempt under the shared quota scheduler.
  * `execute` 只在取得 permit 後呼叫；429 cooldown 由 scheduler 更新後再 rethrow。
+ * Queue deadline／abort 保留 `LlmRequestSchedulerError` kind，供 domain 開 budget_exhausted（PR #35）。
  */
 export async function scheduleLlmTransportAttempt<T>(
   options: LlmTransportRateLimitOptions,
@@ -94,21 +97,16 @@ export async function scheduleLlmTransportAttempt<T>(
   const scheduler = resolveScheduler();
   const deadlineAtMs = options.resolveDeadlineAtMs?.();
 
-  try {
-    return await scheduler.schedule({
-      bucket: target.bucket,
-      policy: target.policy,
-      deadlineAtMs,
-      signal: options.signal,
-      execute: (context) => execute(context, target),
-    });
-  } catch (error) {
-    // Queue deadline／abort：轉成可辨識訊息，交 domain owner degrade（不改 fallback 策略）。
-    if (error instanceof LlmRequestSchedulerError && error.kind === "deadline") {
-      throw new Error(`request budget exhausted while queued for rate limit (${error.message})`);
-    }
-    throw error;
-  }
+  return scheduler.schedule({
+    bucket: target.bucket,
+    policy: target.policy,
+    deadlineAtMs,
+    signal: options.signal,
+    execute: (context) => execute(context, target),
+    onCooldownUpdate: options.log
+      ? (event) => options.log!(formatRateLimitCooldownLog({ target, event }))
+      : undefined,
+  });
 }
 
 export function formatRateLimitPermitLog(options: {
@@ -122,5 +120,17 @@ export function formatRateLimitPermitLog(options: {
   return (
     `rateLimit bucket=${target.logLabel} permit=${permit} ` +
     `queuedMs=${context.queuedMs} gap=${gap} intervalMs=${target.policy.minStartIntervalMs}`
+  );
+}
+
+export function formatRateLimitCooldownLog(options: {
+  target: ResolvedLlmQuotaTarget;
+  event: LlmCooldownUpdateEvent;
+}): string {
+  const { target, event } = options;
+  return (
+    `rateLimit cooldown bucket=${target.logLabel} source=${event.source} ` +
+    `waitMs=${event.waitMs} previousBlockedUntil=${event.previousBlockedUntilMs} ` +
+    `blockedUntil=${event.blockedUntilMs} changed=${event.changed ? "yes" : "no"}`
   );
 }

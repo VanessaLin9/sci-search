@@ -125,8 +125,15 @@ async function timedCreate(
     return run();
   }
 
-  return scheduleLlmTransportAttempt(rateLimit, async (context, target) => {
-    log(`${label}: ${formatRateLimitPermitLog({ target, context })}`);
-    return run();
-  });
+  return scheduleLlmTransportAttempt(
+    {
+      ...rateLimit,
+      // 429 當下就打 cooldown 診斷，不要等下一發 permit（PR #35）。
+      log: (message) => log(`${label}: ${message}`),
+    },
+    async (context, target) => {
+      log(`${label}: ${formatRateLimitPermitLog({ target, context })}`);
+      return run();
+    },
+  );
 }

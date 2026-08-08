@@ -6,6 +6,7 @@ import {
   InternalServerError,
   RateLimitError,
 } from "openai/core/error.js";
+import { LlmRequestSchedulerError } from "../../src/llm/llmRequestScheduler.js";
 import { classifyRoutingFailure } from "../../src/routing/classifyRoutingFailure.js";
 
 describe("classifyRoutingFailure", () => {
@@ -37,5 +38,13 @@ describe("classifyRoutingFailure", () => {
   test("classifies length and parse recoverables", () => {
     assert.equal(classifyRoutingFailure(new Error("x"), "length").kind, "length");
     assert.equal(classifyRoutingFailure(new Error("invalid JSON")).kind, "parse");
+  });
+
+  test("maps scheduler queue deadline to budget-exhausted message", () => {
+    const failure = classifyRoutingFailure(
+      new LlmRequestSchedulerError("deadline", "queued past deadline"),
+    );
+    assert.equal(failure.kind, "unknown");
+    assert.match(failure.message, /routing budget exhausted while queued for rate limit/);
   });
 });

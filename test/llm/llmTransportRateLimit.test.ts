@@ -9,16 +9,36 @@ import type { DigestSummarizeInput } from "../../src/digest/types.js";
 import { resolveLlmQuotaTarget } from "../../src/llm/llmQuotaBucket.js";
 import {
   GEMINI_MIN_START_INTERVAL_MS,
+  LlmRequestSchedulerError,
   NVIDIA_MIN_START_INTERVAL_MS,
+  createLlmRequestScheduler,
 } from "../../src/llm/llmRequestScheduler.js";
 import {
   installLlmRateLimitTestHarness,
   resetLlmRateLimitTestHarness,
+  scheduleLlmTransportAttempt,
 } from "../../src/llm/llmTransportRateLimit.js";
 import { callRoutingCompletion } from "../../src/routing/callRoutingCompletion.js";
 import type { RoutingLlmConfig } from "../../src/routing/config.js";
 import { resetRoutingLlmClientCache } from "../../src/routing/routingLlmClient.js";
 import { createFakeClock } from "../routing/helpers/fakeClock.js";
+
+function deferred<T = void>(): {
+  promise: Promise<T>;
+  resolve: (value: T | PromiseLike<T>) => void;
+} {
+  let resolve!: (value: T | PromiseLike<T>) => void;
+  const promise = new Promise<T>((res) => {
+    resolve = res;
+  });
+  return { promise, resolve };
+}
+
+async function flushMicrotasks(times = 5): Promise<void> {
+  for (let i = 0; i < times; i += 1) {
+    await Promise.resolve();
+  }
+}
 
 function chatCompletion(content = '{"ok":true}'): ChatCompletion {
   return {
@@ -265,6 +285,90 @@ describe("llmTransportRateLimit integration", { concurrency: false }, () => {
     assert.equal(geminiStarts.length, 2);
     assert.ok(nvidiaStarts[1]! - nvidiaStarts[0]! >= NVIDIA_MIN_START_INTERVAL_MS);
     assert.ok(geminiStarts[1]! - geminiStarts[0]! >= GEMINI_MIN_START_INTERVAL_MS);
+  });
+
+  test("queue deadline rethrows typed LlmRequestSchedulerError (not plain Error)", async () => {
+    const clock = createFakeClock(1_000_000);
+    const scheduler = createLlmRequestScheduler({ clock, jitterMs: () => 0 });
+    installLlmRateLimitTestHarness({
+      useProviderPolicies: true,
+      scheduler,
+      clock,
+    });
+
+    const hold = deferred<string>();
+    const first = scheduleLlmTransportAttempt(
+      {
+        baseUrl: "https://integrate.api.nvidia.com/v1",
+        apiKey: "deadline-key",
+      },
+      async () => hold.promise,
+    );
+    await flushMicrotasks();
+
+    // Spacing earliest is +2s; deadline +100ms ⇒ never execute, keep typed error.
+    const second = scheduleLlmTransportAttempt(
+      {
+        baseUrl: "https://integrate.api.nvidia.com/v1",
+        apiKey: "deadline-key",
+        resolveDeadlineAtMs: () => clock.now() + 100,
+      },
+      async () => "should-not-run",
+    );
+    await flushMicrotasks();
+
+    await assert.rejects(second, (error: unknown) => {
+      assert.ok(error instanceof LlmRequestSchedulerError);
+      assert.equal(error.kind, "deadline");
+      return true;
+    });
+
+    hold.resolve("first");
+    assert.equal(await first, "first");
+  });
+
+  test("terminal 429 emits cooldown update log with source and blockedUntil", async () => {
+    const clock = createFakeClock(1_000_000);
+    installLlmRateLimitTestHarness({ useProviderPolicies: true, clock });
+    resetDigestLlmClientCache();
+
+    const logs: string[] = [];
+    console.log = (...args: unknown[]) => {
+      logs.push(args.map(String).join(" "));
+    };
+
+    globalThis.fetch = (async () =>
+      new Response(JSON.stringify({ error: { message: "rate limited" } }), {
+        status: 429,
+        headers: { "content-type": "application/json", "retry-after": "7" },
+      })) as typeof fetch;
+
+    const digest = digestConfig({
+      apiKey: "cooldown-log-key",
+      baseUrl: "https://integrate.api.nvidia.com/v1",
+    });
+
+    await assert.rejects(
+      () =>
+        callDigestChatCompletion(
+          digest,
+          (maxTokens, useJson) =>
+            buildDigestSummarizeCompletionParams(summarizeInput("p1"), digest, useJson, maxTokens),
+          {
+            label: "cooldown-log",
+            gate: "digest-summarize",
+            estimatedCompletionTokens: 64,
+          },
+        ),
+      (error: unknown) => error instanceof Error,
+    );
+
+    const cooldownLine = logs.find((line) => line.includes("rateLimit cooldown bucket="));
+    assert.ok(cooldownLine, `expected cooldown log, got: ${logs.join(" | ")}`);
+    assert.match(cooldownLine!, /source=retry-after/);
+    assert.match(cooldownLine!, /waitMs=7000/);
+    assert.match(cooldownLine!, /blockedUntil=\d+/);
+    assert.match(cooldownLine!, /changed=yes/);
   });
 
   test("json_object fallback re-enters the scheduler for a second attempt", async () => {
