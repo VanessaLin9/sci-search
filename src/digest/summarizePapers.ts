@@ -110,15 +110,29 @@ async function attemptSummarize(options: {
   /** Already role-specific endpoint（primary 或 withDigestFallbackEndpoint）。 */
   config: DigestLlmConfig;
   role: SummarizeModelRole;
-  timeoutMs: number;
+  /** Role cap before stage-budget clip（primary vs fallback timeout）. */
+  configuredTimeoutMs: number;
+  budget: RoutingBudget;
   attempt?: "429-retry";
   clock: Clock;
 }): Promise<SummarizeOneResult> {
-  const { paper, index, total, scopeBySourceId, config, role, timeoutMs, attempt, clock } = options;
+  const {
+    paper,
+    index,
+    total,
+    scopeBySourceId,
+    config,
+    role,
+    configuredTimeoutMs,
+    budget,
+    attempt,
+    clock,
+  } = options;
   const model = config.model;
   const label = summarizeLabel({ index, total, paper, role, attempt });
   const input = toDigestSummarizeInput(paper, scopeBySourceId);
   const startedAt = clock.now();
+  const initialTimeoutMs = budget.requestTimeoutMs(configuredTimeoutMs);
 
   try {
     const completion = await callDigestChatCompletion(
@@ -130,7 +144,9 @@ async function attemptSummarize(options: {
         gate: "digest-summarize",
         estimatedCompletionTokens: estimateSummarizeCompletionTokens(),
         completionFloor: 2048,
-        timeoutMs,
+        timeoutMs: initialTimeoutMs,
+        // json bare-retry 前重算 remaining budget，避免第二發沿用過期 timeout（PR #34）。
+        resolveRequestTimeoutMs: () => budget.requestTimeoutMs(configuredTimeoutMs),
         maxRetries: config.summarizeMaxRetries,
       },
     );
@@ -230,7 +246,8 @@ async function summarizePrimaryPaper(options: {
     scopeBySourceId,
     config,
     role: "primary",
-    timeoutMs,
+    configuredTimeoutMs: config.summarizeTimeoutMs,
+    budget,
     clock,
   });
   if (first.ok) return first;
@@ -278,7 +295,8 @@ async function summarizePrimaryPaper(options: {
     scopeBySourceId,
     config,
     role: "primary",
-    timeoutMs: retryTimeoutMs,
+    configuredTimeoutMs: config.summarizeTimeoutMs,
+    budget,
     attempt: "429-retry",
     clock,
   });
@@ -339,7 +357,8 @@ async function summarizeFallbackPaper(options: {
     scopeBySourceId,
     config,
     role: "fallback",
-    timeoutMs,
+    configuredTimeoutMs: config.summarizeFallbackTimeoutMs,
+    budget,
     clock,
   });
 }

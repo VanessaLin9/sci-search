@@ -269,4 +269,54 @@ describe("wrapper JSON response_format fallback characterization", { concurrency
       ),
     );
   });
+
+  test("callDigestChatCompletion does not bare-retry 429/rate-limit failures", async () => {
+    const bodies: CapturedBody[] = [];
+    resetDigestLlmClientCache();
+    globalThis.fetch = (async (_input, init) => {
+      const raw =
+        typeof init?.body === "string"
+          ? init.body
+          : init?.body
+            ? await new Response(init.body).text()
+            : "";
+      bodies.push(JSON.parse(raw) as CapturedBody);
+      return new Response(JSON.stringify({ error: { message: "rate limited" } }), {
+        status: 429,
+        headers: { "content-type": "application/json" },
+      });
+    }) as typeof fetch;
+
+    const config = digestConfig();
+    await assert.rejects(
+      () =>
+        callDigestChatCompletion(
+          config,
+          (maxTokens, useJsonResponseFormat) =>
+            buildDigestSummarizeCompletionParams(
+              {
+                id: "p1",
+                title: "Title",
+                journal: "Science",
+                source_id: "science",
+                scope: "broad-science",
+                digest_line: "line-b",
+                abstract: "Short abstract.",
+              },
+              config,
+              useJsonResponseFormat,
+              maxTokens,
+            ),
+          {
+            label: "digest-summarize-429",
+            gate: "digest-summarize",
+            estimatedCompletionTokens: 720,
+            completionFloor: 2048,
+            maxRetries: 0,
+          },
+        ),
+      /429/,
+    );
+    assert.equal(bodies.length, 1, "429 must not trigger json_object bare-retry");
+  });
 });
