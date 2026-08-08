@@ -158,13 +158,8 @@ async function main(): Promise<void> {
     try {
       const completion = await callDigestChatCompletion(
         config,
-        (maxTokens) =>
-          buildDigestSummarizeCompletionParams(
-            input,
-            config,
-            config.preferJsonResponseFormat,
-            maxTokens,
-          ),
+        (maxTokens, useJsonResponseFormat) =>
+          buildDigestSummarizeCompletionParams(input, config, useJsonResponseFormat, maxTokens),
         {
           label,
           gate: "digest-probe",

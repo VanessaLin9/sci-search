@@ -100,8 +100,8 @@ async function translateBatchOnce(
 ): Promise<TranslateBatchOutcome> {
   const completion = await callDigestChatCompletion(
     config,
-    (maxTokens) =>
-      buildDigestTranslateCompletionParams(batch, config, config.preferJsonResponseFormat, maxTokens),
+    (maxTokens, useJsonResponseFormat) =>
+      buildDigestTranslateCompletionParams(batch, config, useJsonResponseFormat, maxTokens),
     {
       label: batchLabel,
       gate: "digest-translate",

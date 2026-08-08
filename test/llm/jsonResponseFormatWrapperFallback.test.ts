@@ -2,9 +2,11 @@ import assert from "node:assert/strict";
 import { after, before, describe, test } from "node:test";
 import type { ChatCompletion } from "openai/resources/chat/completions";
 import { callBiorxivGateCompletion } from "../../src/biorxiv-gate/callGateCompletion.js";
+import { callDigestChatCompletion } from "../../src/digest/callDigestChat.js";
 import { callDigestTaggingCompletion } from "../../src/digest/callDigestCompletion.js";
 import type { DigestLlmConfig } from "../../src/digest/config.js";
 import { resetDigestLlmClientCache } from "../../src/digest/digestLlmClient.js";
+import { buildDigestSummarizeCompletionParams } from "../../src/digest/summarizePrompt.js";
 import { callRoutingCompletion } from "../../src/routing/callRoutingCompletion.js";
 import type { RoutingLlmConfig } from "../../src/routing/config.js";
 import { resetRoutingLlmClientCache } from "../../src/routing/routingLlmClient.js";
@@ -226,5 +228,95 @@ describe("wrapper JSON response_format fallback characterization", { concurrency
       "digest must keep wording without 'mode'",
     );
     assert.ok(logs.some((line) => line.includes("digest-tag: HTTP ok in")));
+  });
+
+  test("callDigestChatCompletion omits response_format on bare retry", async () => {
+    const { bodies, logs } = installJsonModeThenPlainSuccessFetch();
+    const config = digestConfig();
+
+    const completion = await callDigestChatCompletion(
+      config,
+      (maxTokens, useJsonResponseFormat) =>
+        buildDigestSummarizeCompletionParams(
+          {
+            id: "p1",
+            title: "Title",
+            journal: "Science",
+            source_id: "science",
+            scope: "broad-science",
+            digest_line: "line-b",
+            abstract: "Short abstract.",
+          },
+          config,
+          useJsonResponseFormat,
+          maxTokens,
+        ),
+      {
+        label: "digest-summarize",
+        gate: "digest-summarize",
+        estimatedCompletionTokens: 720,
+        completionFloor: 2048,
+      },
+    );
+
+    assert.equal(bodies.length, 2);
+    assert.deepEqual(bodies[0]?.response_format, { type: "json_object" });
+    assert.equal(bodies[1]?.response_format, undefined);
+    assert.ok(completion);
+    assert.ok(
+      logs.some((line) =>
+        line.includes("digest-summarize: json_object failed, retrying without response_format…"),
+      ),
+    );
+  });
+
+  test("callDigestChatCompletion does not bare-retry 429/rate-limit failures", async () => {
+    const bodies: CapturedBody[] = [];
+    resetDigestLlmClientCache();
+    globalThis.fetch = (async (_input, init) => {
+      const raw =
+        typeof init?.body === "string"
+          ? init.body
+          : init?.body
+            ? await new Response(init.body).text()
+            : "";
+      bodies.push(JSON.parse(raw) as CapturedBody);
+      return new Response(JSON.stringify({ error: { message: "rate limited" } }), {
+        status: 429,
+        headers: { "content-type": "application/json" },
+      });
+    }) as typeof fetch;
+
+    const config = digestConfig();
+    await assert.rejects(
+      () =>
+        callDigestChatCompletion(
+          config,
+          (maxTokens, useJsonResponseFormat) =>
+            buildDigestSummarizeCompletionParams(
+              {
+                id: "p1",
+                title: "Title",
+                journal: "Science",
+                source_id: "science",
+                scope: "broad-science",
+                digest_line: "line-b",
+                abstract: "Short abstract.",
+              },
+              config,
+              useJsonResponseFormat,
+              maxTokens,
+            ),
+          {
+            label: "digest-summarize-429",
+            gate: "digest-summarize",
+            estimatedCompletionTokens: 720,
+            completionFloor: 2048,
+            maxRetries: 0,
+          },
+        ),
+      /429/,
+    );
+    assert.equal(bodies.length, 1, "429 must not trigger json_object bare-retry");
   });
 });
