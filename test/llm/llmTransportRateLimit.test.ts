@@ -4,6 +4,7 @@ import type { ChatCompletion } from "openai/resources/chat/completions";
 import { callDigestChatCompletion } from "../../src/digest/callDigestChat.js";
 import type { DigestLlmConfig } from "../../src/digest/config.js";
 import { resetDigestLlmClientCache } from "../../src/digest/digestLlmClient.js";
+import { runProbeDigestSmoke } from "../../src/digest/probeDigestSmoke.js";
 import { buildDigestSummarizeCompletionParams } from "../../src/digest/summarizePrompt.js";
 import type { DigestSummarizeInput } from "../../src/digest/types.js";
 import { resolveLlmQuotaTarget } from "../../src/llm/llmQuotaBucket.js";
@@ -285,6 +286,130 @@ describe("llmTransportRateLimit integration", { concurrency: false }, () => {
     assert.equal(geminiStarts.length, 2);
     assert.ok(nvidiaStarts[1]! - nvidiaStarts[0]! >= NVIDIA_MIN_START_INTERVAL_MS);
     assert.ok(geminiStarts[1]! - geminiStarts[0]! >= GEMINI_MIN_START_INTERVAL_MS);
+  });
+
+  test("transport await stays unsettled until the HTTP attempt finishes (not just enqueue)", async () => {
+    installLlmRateLimitTestHarness({ useProviderPolicies: true });
+    resetDigestLlmClientCache();
+
+    const hold = deferred<Response>();
+    globalThis.fetch = (async () => hold.promise) as typeof fetch;
+
+    const digest = digestConfig({
+      apiKey: "await-contract-key",
+      baseUrl: "https://integrate.api.nvidia.com/v1",
+    });
+
+    let settled = false;
+    const pending = callDigestChatCompletion(
+      digest,
+      (maxTokens, useJson) =>
+        buildDigestSummarizeCompletionParams(summarizeInput("p1"), digest, useJson, maxTokens),
+      {
+        label: "await-contract",
+        gate: "digest-summarize",
+        estimatedCompletionTokens: 64,
+      },
+    ).then(
+      (value) => {
+        settled = true;
+        return value;
+      },
+      (error) => {
+        settled = true;
+        throw error;
+      },
+    );
+
+    await flushMicrotasks(20);
+    // Still in flight：caller／pipeline 不得把 enqueue 當成 stage 完成（PR #35）。
+    assert.equal(settled, false);
+
+    hold.resolve(
+      new Response(JSON.stringify(chatCompletion('{"ok":true}')), {
+        status: 200,
+        headers: { "content-type": "application/json" },
+      }),
+    );
+    await pending;
+    assert.equal(settled, true);
+  });
+
+  test("pipeline-style await: digest stage starts only after routing promise settles", async () => {
+    const clock = createFakeClock(1_000_000);
+    installLlmRateLimitTestHarness({ useProviderPolicies: true, clock });
+    resetRoutingLlmClientCache();
+    resetDigestLlmClientCache();
+
+    const key = "stage-order-key";
+    const order: string[] = [];
+    globalThis.fetch = (async () =>
+      new Response(JSON.stringify(chatCompletion('{"ok":true,"results":[]}')), {
+        status: 200,
+        headers: { "content-type": "application/json" },
+      })) as typeof fetch;
+
+    const routing = nvidiaRoutingConfig(key);
+    const digest = digestConfig({
+      apiKey: key,
+      baseUrl: "https://integrate.api.nvidia.com/v1",
+    });
+
+    // Mimic pipeline: await gate fully before starting the next stage.
+    await callRoutingCompletion(
+      [{ id: "p-route", title: "t", journal: "j", source_id: "s" }],
+      routing,
+      {
+        label: "stage-routing",
+        onRequestAttempt: () => order.push("routing-http"),
+      },
+    );
+    order.push("routing-settled");
+    await callDigestChatCompletion(
+      digest,
+      (maxTokens, useJson) =>
+        buildDigestSummarizeCompletionParams(summarizeInput("p1"), digest, useJson, maxTokens),
+      {
+        label: "stage-digest",
+        gate: "digest-summarize",
+        estimatedCompletionTokens: 64,
+        onRequestAttempt: () => order.push("digest-http"),
+      },
+    );
+    order.push("digest-settled");
+
+    assert.deepEqual(order, [
+      "routing-http",
+      "routing-settled",
+      "digest-http",
+      "digest-settled",
+    ]);
+  });
+
+  test("probe smoke path enters the shared scheduler", async () => {
+    const clock = createFakeClock(1_000_000);
+    installLlmRateLimitTestHarness({ useProviderPolicies: true, clock });
+    resetDigestLlmClientCache();
+
+    const logs: string[] = [];
+    globalThis.fetch = (async () =>
+      new Response(JSON.stringify(chatCompletion('{"ok":true}')), {
+        status: 200,
+        headers: { "content-type": "application/json" },
+      })) as typeof fetch;
+
+    const result = await runProbeDigestSmoke({
+      model: "test-model",
+      apiKey: "probe-smoke-key",
+      baseUrl: "https://integrate.api.nvidia.com/v1",
+      log: (message) => logs.push(message),
+    });
+
+    assert.equal(result.ok, true);
+    assert.ok(
+      logs.some((line) => line.includes("rateLimit bucket=") && line.includes("permit=")),
+      `expected permit log, got: ${logs.join(" | ")}`,
+    );
   });
 
   test("queue deadline rethrows typed LlmRequestSchedulerError (not plain Error)", async () => {

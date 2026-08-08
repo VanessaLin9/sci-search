@@ -2,6 +2,12 @@
  * Shared LLM transport rate-limit wiring（PR #35）。
  * 每次真正 HTTP attempt 經 scheduler；JSON fallback／domain retry 各自重新排隊。
  * Bucket id 與 spacing policy 分離——fingerprint Gemini id 仍掛 5s，不會掉回 NVIDIA 2s。
+ *
+ * Production create exits（caller audit；勿新增 bypass）:
+ * - callRoutingCompletion / callBiorxivGateCompletion / callDigestTaggingCompletion / callDigestChatCompletion
+ *   → createChatCompletionWithJsonResponseFormatFallback → scheduleLlmTransportAttempt
+ * - runProbeDigestSmoke → scheduleLlmTransportAttempt
+ * OpenAI clients：routingLlmClient / digestLlmClient only。
  */
 import type { Clock } from "../routing/clock.js";
 import {
