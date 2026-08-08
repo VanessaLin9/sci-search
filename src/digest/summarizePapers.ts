@@ -147,6 +147,8 @@ async function attemptSummarize(options: {
         timeoutMs: initialTimeoutMs,
         // json bare-retry 前重算 remaining budget，避免第二發沿用過期 timeout（PR #34）。
         resolveRequestTimeoutMs: () => budget.requestTimeoutMs(configuredTimeoutMs),
+        // Queue wait 對齊 shared scheduler wall clock；budget 只提供 remaining 時長（PR #35）。
+        resolveDeadlineAtMs: () => Date.now() + Math.max(0, budget.remainingMs()),
         maxRetries: config.summarizeMaxRetries,
       },
     );
