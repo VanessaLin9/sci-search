@@ -234,14 +234,19 @@ export function createLlmRequestScheduler(
     // 較短的新 cooldown 不得覆蓋較長既有 blockedUntil（PR #35）。
     const nextBlockedUntil = clock.now() + plan.waitMs;
     bucket.blockedUntilMs = Math.max(bucket.blockedUntilMs, nextBlockedUntil);
-    onCooldownUpdate?.({
-      bucket: bucket.id,
-      source: plan.source,
-      waitMs: plan.waitMs,
-      previousBlockedUntilMs,
-      blockedUntilMs: bucket.blockedUntilMs,
-      changed: bucket.blockedUntilMs !== previousBlockedUntilMs,
-    });
+    // Observer 失敗不得阻斷 settle；cooldown 狀態已更新（PR #35）。
+    try {
+      onCooldownUpdate?.({
+        bucket: bucket.id,
+        source: plan.source,
+        waitMs: plan.waitMs,
+        previousBlockedUntilMs,
+        blockedUntilMs: bucket.blockedUntilMs,
+        changed: bucket.blockedUntilMs !== previousBlockedUntilMs,
+      });
+    } catch {
+      // best-effort diagnostics only
+    }
   }
 
   function itemIsExpired(item: QueueItem<unknown>, now: number): boolean {
@@ -306,7 +311,12 @@ export function createLlmRequestScheduler(
       const value = await item.execute(context);
       settleResolve(item, value);
     } catch (error) {
-      applyRateLimitCooldown(bucket, error, item.onCooldownUpdate);
+      // void runExecute：cooldown／observer 若 throw 會讓 schedule() 永遠 pending（PR #35）。
+      try {
+        applyRateLimitCooldown(bucket, error, item.onCooldownUpdate);
+      } catch {
+        // best-effort：仍必須把原始 error 交回 caller
+      }
       settleReject(item, error);
     }
   }

@@ -716,6 +716,31 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     );
   });
 
+  test("onCooldownUpdate throw still settles schedule with the original 429", async () => {
+    const clock = createFakeClock();
+    const scheduler = createLlmRequestScheduler({
+      clock,
+      jitterMs: () => 0,
+    });
+
+    await assert.rejects(
+      () =>
+        scheduler.schedule({
+          bucket: "nvidia:fp-a",
+          policy: ZERO_SPACING,
+          onCooldownUpdate: () => {
+            throw new Error("logger failed");
+          },
+          execute: async () => {
+            throw rateLimitError(3);
+          },
+        }),
+      (error: unknown) => error instanceof RateLimitError,
+    );
+    // Cooldown still applied even though the observer threw.
+    assert.equal(scheduler.getBlockedUntilMs("nvidia:fp-a"), 1_000_000 + 3_000);
+  });
+
   test("non-429 errors do not update bucket cooldown", async () => {
     const clock = createFakeClock();
     const scheduler = createLlmRequestScheduler({
