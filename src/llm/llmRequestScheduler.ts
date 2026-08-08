@@ -7,6 +7,7 @@
  * Contracts:
  * - `schedule()` Promise = 排隊 + execute settled（成功／失敗／取消），不是只 enqueue。
  * - Spacing 以 request **start** 計算；長 request 可 overlap（rate ≠ completion serialization）。
+ * - Bucket id = opaque quota identity；spacing policy 必須另外傳入，不得用 id 字面值推 provider。
  * - 不同 bucket 完全獨立（lastStart / blockedUntil 不共用；NVIDIA 429 不得擋 Gemini）。
  * - 429 → bucket-wide cooldown，再把原始 error rethrow；scheduler 不自動無限 retry。
  */
@@ -24,6 +25,16 @@ export type LlmQuotaBucketPolicy = {
   minStartIntervalMs: number;
 };
 
+/** Built-in NVIDIA spacing policy（可掛在任意 fingerprinted NVIDIA quota id）。 */
+export const NVIDIA_LLM_RATE_POLICY: LlmQuotaBucketPolicy = {
+  minStartIntervalMs: NVIDIA_MIN_START_INTERVAL_MS,
+};
+
+/** Built-in Gemini spacing policy（可掛在任意 fingerprinted Gemini project id）。 */
+export const GEMINI_LLM_RATE_POLICY: LlmQuotaBucketPolicy = {
+  minStartIntervalMs: GEMINI_MIN_START_INTERVAL_MS,
+};
+
 export type LlmRequestSchedulerErrorKind = "deadline" | "aborted" | "invariant";
 
 export class LlmRequestSchedulerError extends Error {
@@ -37,8 +48,17 @@ export class LlmRequestSchedulerError extends Error {
 }
 
 export type ScheduleLlmRequestOptions<T> = {
-  /** Opaque quota identity（provider/base/credential fingerprint）；同 id 共用 spacing／cooldown。 */
+  /**
+   * Opaque quota identity（provider/base/credential fingerprint）。
+   * 同 id 共用 spacing／cooldown；不得用此字串推導 provider policy。
+   */
   bucket: string;
+  /**
+   * Start-spacing policy for this quota bucket（PR #35）。
+   * 與 bucket id 分離：fingerprinted Gemini id 仍可掛 GEMINI_LLM_RATE_POLICY。
+   * 同一 bucket 後續 schedule 的 policy 必須一致。
+   */
+  policy: LlmQuotaBucketPolicy;
   /** Absolute deadline on the injected clock；permit 前超時則永不 execute。 */
   deadlineAtMs?: number;
   signal?: AbortSignal;
@@ -47,9 +67,9 @@ export type ScheduleLlmRequestOptions<T> = {
 
 export type LlmRequestScheduler = {
   schedule: <T>(options: ScheduleLlmRequestOptions<T>) => Promise<T>;
-  /** Test／觀測：該 bucket 目前 blockedUntil（無 cooldown 時為 0）。 */
+  /** Test／觀測：該 bucket 目前 blockedUntil（無此 bucket 時為 0）。 */
   getBlockedUntilMs: (bucket: string) => number;
-  /** Test／觀測：queue 深度（不含 in-flight）。 */
+  /** Test／觀測：queue 深度（不含 in-flight；無此 bucket 時為 0）。 */
   getQueueSize: (bucket: string) => number;
 };
 
@@ -57,9 +77,6 @@ export type CreateLlmRequestSchedulerOptions = {
   clock?: Clock;
   /** Injected jitter for default 429 wait（tests: `() => 0`）。 */
   jitterMs?: () => number;
-  /** Per-bucket spacing policy；未知 bucket 用 defaultMinStartIntervalMs。 */
-  bucketPolicies?: Readonly<Record<string, LlmQuotaBucketPolicy>>;
-  defaultMinStartIntervalMs?: number;
 };
 
 type QueueItem<T> = {
@@ -124,24 +141,46 @@ function removeFromQueue(bucket: BucketState, item: QueueItem<unknown>): void {
   if (index >= 0) bucket.queue.splice(index, 1);
 }
 
+function validatePolicy(policy: LlmQuotaBucketPolicy): number {
+  const interval = policy.minStartIntervalMs;
+  if (!Number.isFinite(interval) || interval < 0) {
+    throw new LlmRequestSchedulerError(
+      "invariant",
+      `invalid LLM rate policy minStartIntervalMs=${String(interval)}`,
+    );
+  }
+  return interval;
+}
+
 export function createLlmRequestScheduler(
   options: CreateLlmRequestSchedulerOptions = {},
 ): LlmRequestScheduler {
   const clock = options.clock ?? systemClock;
   const jitterMs = options.jitterMs ?? (() => Math.floor(Math.random() * 1_000));
-  const bucketPolicies = options.bucketPolicies ?? {};
-  const defaultMinStartIntervalMs =
-    options.defaultMinStartIntervalMs ?? NVIDIA_MIN_START_INTERVAL_MS;
 
   const buckets = new Map<string, BucketState>();
 
-  function getOrCreateBucket(bucketId: string): BucketState {
+  function getBucket(bucketId: string): BucketState | undefined {
+    return buckets.get(bucketId);
+  }
+
+  function getOrCreateBucket(bucketId: string, policy: LlmQuotaBucketPolicy): BucketState {
+    const minStartIntervalMs = validatePolicy(policy);
     const existing = buckets.get(bucketId);
-    if (existing) return existing;
-    const policy = bucketPolicies[bucketId];
+    if (existing) {
+      // 同一 quota identity 不得中途換 spacing，避免「fingerprint id + 錯 policy」 silently 降級（PR #35）。
+      if (existing.minStartIntervalMs !== minStartIntervalMs) {
+        throw new LlmRequestSchedulerError(
+          "invariant",
+          `LLM quota bucket "${bucketId}" already uses minStartIntervalMs=${existing.minStartIntervalMs}, ` +
+            `got ${minStartIntervalMs}`,
+        );
+      }
+      return existing;
+    }
     const created: BucketState = {
       id: bucketId,
-      minStartIntervalMs: policy?.minStartIntervalMs ?? defaultMinStartIntervalMs,
+      minStartIntervalMs,
       lastStartMs: null,
       blockedUntilMs: 0,
       queue: [],
@@ -176,7 +215,8 @@ export function createLlmRequestScheduler(
   }
 
   function rejectQueuedItem(item: QueueItem<unknown>, reason: unknown): void {
-    removeFromQueue(getOrCreateBucket(item.bucketId), item);
+    const bucket = getBucket(item.bucketId);
+    if (bucket) removeFromQueue(bucket, item);
     item.cancelWait?.();
     settleReject(item, reason);
   }
@@ -288,9 +328,15 @@ export function createLlmRequestScheduler(
   }
 
   function enqueue<T>(options: ScheduleLlmRequestOptions<T>): Promise<T> {
-    const bucket = getOrCreateBucket(options.bucket);
-
     return new Promise<T>((resolve, reject) => {
+      let bucket: BucketState;
+      try {
+        bucket = getOrCreateBucket(options.bucket, options.policy);
+      } catch (error) {
+        reject(error);
+        return;
+      }
+
       const item: QueueItem<T> = {
         bucketId: options.bucket,
         execute: options.execute,
@@ -333,8 +379,8 @@ export function createLlmRequestScheduler(
 
   return {
     schedule: enqueue,
-    getBlockedUntilMs: (bucketId: string) => getOrCreateBucket(bucketId).blockedUntilMs,
-    getQueueSize: (bucketId: string) => getOrCreateBucket(bucketId).queue.length,
+    getBlockedUntilMs: (bucketId: string) => getBucket(bucketId)?.blockedUntilMs ?? 0,
+    getQueueSize: (bucketId: string) => getBucket(bucketId)?.queue.length ?? 0,
   };
 }
 
@@ -373,12 +419,7 @@ let sharedScheduler: LlmRequestScheduler | null = null;
 /** Process-wide singleton：routing／digest client 即使是不同 OpenAI instance，同 quota 仍須共用（PR #35）。 */
 export function getSharedLlmRequestScheduler(): LlmRequestScheduler {
   if (!sharedScheduler) {
-    sharedScheduler = createLlmRequestScheduler({
-      bucketPolicies: {
-        nvidia: { minStartIntervalMs: NVIDIA_MIN_START_INTERVAL_MS },
-        gemini: { minStartIntervalMs: GEMINI_MIN_START_INTERVAL_MS },
-      },
-    });
+    sharedScheduler = createLlmRequestScheduler();
   }
   return sharedScheduler;
 }

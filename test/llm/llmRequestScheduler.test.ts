@@ -3,14 +3,21 @@ import { describe, test } from "node:test";
 import { RateLimitError } from "openai/core/error.js";
 import {
   createLlmRequestScheduler,
+  GEMINI_LLM_RATE_POLICY,
   GEMINI_MIN_START_INTERVAL_MS,
   LlmRequestSchedulerError,
+  NVIDIA_LLM_RATE_POLICY,
   NVIDIA_MIN_START_INTERVAL_MS,
   resetSharedLlmRequestSchedulerForTests,
+  type LlmQuotaBucketPolicy,
 } from "../../src/llm/llmRequestScheduler.js";
 import { DEFAULT_RATE_LIMIT_WAIT_MS } from "../../src/routing/routingRetryPolicy.js";
 import type { Clock } from "../../src/routing/clock.js";
 import { createFakeClock } from "../routing/helpers/fakeClock.js";
+
+const ZERO_SPACING: LlmQuotaBucketPolicy = { minStartIntervalMs: 0 };
+const ONE_SECOND_SPACING: LlmQuotaBucketPolicy = { minStartIntervalMs: 1_000 };
+const TEN_MS_SPACING: LlmQuotaBucketPolicy = { minStartIntervalMs: 10 };
 
 function rateLimitError(retryAfterSeconds?: number): RateLimitError {
   const headers =
@@ -80,21 +87,20 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const scheduler = createLlmRequestScheduler({
       clock,
       jitterMs: () => 0,
-      bucketPolicies: {
-        nvidia: { minStartIntervalMs: NVIDIA_MIN_START_INTERVAL_MS },
-      },
     });
     const starts: number[] = [];
 
     const first = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: NVIDIA_LLM_RATE_POLICY,
       execute: async () => {
         starts.push(clock.now());
         return "a";
       },
     });
     const second = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: NVIDIA_LLM_RATE_POLICY,
       execute: async () => {
         starts.push(clock.now());
         return "b";
@@ -112,36 +118,36 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const scheduler = createLlmRequestScheduler({
       clock,
       jitterMs: () => 0,
-      bucketPolicies: {
-        nvidia: { minStartIntervalMs: NVIDIA_MIN_START_INTERVAL_MS },
-        gemini: { minStartIntervalMs: GEMINI_MIN_START_INTERVAL_MS },
-      },
     });
     const starts: { bucket: string; at: number }[] = [];
 
     const nvidiaA = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: NVIDIA_LLM_RATE_POLICY,
       execute: async () => {
         starts.push({ bucket: "nvidia", at: clock.now() });
         return "n1";
       },
     });
     const geminiA = scheduler.schedule({
-      bucket: "gemini",
+      bucket: "gemini:fp-a",
+      policy: GEMINI_LLM_RATE_POLICY,
       execute: async () => {
         starts.push({ bucket: "gemini", at: clock.now() });
         return "g1";
       },
     });
     const nvidiaB = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: NVIDIA_LLM_RATE_POLICY,
       execute: async () => {
         starts.push({ bucket: "nvidia", at: clock.now() });
         return "n2";
       },
     });
     const geminiB = scheduler.schedule({
-      bucket: "gemini",
+      bucket: "gemini:fp-a",
+      policy: GEMINI_LLM_RATE_POLICY,
       execute: async () => {
         starts.push({ bucket: "gemini", at: clock.now() });
         return "g2";
@@ -160,18 +166,121 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     assert.equal(nvidiaStarts[0], geminiStarts[0]);
   });
 
+  test("distinct Gemini quota ids both use 5s policy and stay isolated", async () => {
+    const clock = createManualClock(1_000_000);
+    const scheduler = createLlmRequestScheduler({
+      clock,
+      jitterMs: () => 0,
+    });
+
+    const starts: { bucket: string; at: number }[] = [];
+    const geminiA = "gemini:project-a#keyfp1";
+    const geminiB = "gemini:project-b#keyfp2";
+
+    const a1 = scheduler.schedule({
+      bucket: geminiA,
+      policy: GEMINI_LLM_RATE_POLICY,
+      execute: async () => {
+        starts.push({ bucket: geminiA, at: clock.now() });
+        throw rateLimitError(20);
+      },
+    });
+    const b1 = scheduler.schedule({
+      bucket: geminiB,
+      policy: GEMINI_LLM_RATE_POLICY,
+      execute: async () => {
+        starts.push({ bucket: geminiB, at: clock.now() });
+        return "b1";
+      },
+    });
+    await flushMicrotasks();
+    await assert.rejects(a1, (error: unknown) => error instanceof RateLimitError);
+    assert.equal(await b1, "b1");
+    assert.equal(starts.length, 2);
+    assert.equal(starts[0]!.at, starts[1]!.at);
+    assert.ok(scheduler.getBlockedUntilMs(geminiA) >= 1_000_000 + 20_000);
+    assert.equal(scheduler.getBlockedUntilMs(geminiB), 0);
+
+    const a2 = scheduler.schedule({
+      bucket: geminiA,
+      policy: GEMINI_LLM_RATE_POLICY,
+      execute: async () => {
+        starts.push({ bucket: geminiA, at: clock.now() });
+        return "a2";
+      },
+    });
+    const b2 = scheduler.schedule({
+      bucket: geminiB,
+      policy: GEMINI_LLM_RATE_POLICY,
+      execute: async () => {
+        starts.push({ bucket: geminiB, at: clock.now() });
+        return "b2";
+      },
+    });
+    await flushMicrotasks();
+    // B waits only Gemini 5s spacing; A is held by its own 20s cooldown.
+    assert.ok(clock.pendingSleeps.includes(GEMINI_MIN_START_INTERVAL_MS));
+    assert.ok(clock.pendingSleeps.includes(20_000));
+
+    clock.advance(GEMINI_MIN_START_INTERVAL_MS);
+    await flushMicrotasks();
+    assert.equal(await b2, "b2");
+    assert.equal(starts.filter((s) => s.bucket === geminiA).length, 1);
+
+    clock.advance(20_000 - GEMINI_MIN_START_INTERVAL_MS);
+    await flushMicrotasks();
+    assert.equal(await a2, "a2");
+
+    const aStarts = starts.filter((s) => s.bucket === geminiA).map((s) => s.at);
+    const bStarts = starts.filter((s) => s.bucket === geminiB).map((s) => s.at);
+    assert.equal(aStarts.length, 2);
+    assert.equal(bStarts.length, 2);
+    // Fingerprinted Gemini ids keep 5s policy (not NVIDIA 2s) and do not share cooldown.
+    assert.ok(bStarts[1]! - bStarts[0]! >= GEMINI_MIN_START_INTERVAL_MS);
+    assert.ok(bStarts[1]! - bStarts[0]! < 20_000);
+    assert.ok(aStarts[1]! - aStarts[0]! >= 20_000);
+  });
+
+  test("mismatched policy on the same bucket is rejected", async () => {
+    const clock = createFakeClock();
+    const scheduler = createLlmRequestScheduler({ clock, jitterMs: () => 0 });
+
+    assert.equal(
+      await scheduler.schedule({
+        bucket: "gemini:fp-shared",
+        policy: GEMINI_LLM_RATE_POLICY,
+        execute: async () => "ok",
+      }),
+      "ok",
+    );
+
+    await assert.rejects(
+      () =>
+        scheduler.schedule({
+          bucket: "gemini:fp-shared",
+          policy: NVIDIA_LLM_RATE_POLICY,
+          execute: async () => "nope",
+        }),
+      (error: unknown) => {
+        assert.ok(error instanceof LlmRequestSchedulerError);
+        assert.equal(error.kind, "invariant");
+        return true;
+      },
+    );
+  });
+
   test("FIFO ordering within a bucket", async () => {
     const clock = createFakeClock();
     const scheduler = createLlmRequestScheduler({
       clock,
       jitterMs: () => 0,
-      defaultMinStartIntervalMs: 10,
     });
     const order: string[] = [];
 
     const tasks = ["a", "b", "c"].map((id) =>
       scheduler.schedule({
         bucket: "fifo",
+        policy: TEN_MS_SPACING,
         execute: async () => {
           order.push(id);
           return id;
@@ -187,16 +296,14 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const scheduler = createLlmRequestScheduler({
       clock,
       jitterMs: () => 0,
-      bucketPolicies: {
-        nvidia: { minStartIntervalMs: NVIDIA_MIN_START_INTERVAL_MS },
-      },
     });
 
     const firstDone = deferred<void>();
     const starts: number[] = [];
 
     const firstPromise = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: NVIDIA_LLM_RATE_POLICY,
       execute: async () => {
         starts.push(clock.now());
         await firstDone.promise;
@@ -207,7 +314,8 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     assert.deepEqual(starts, [1_000_000]);
 
     const secondPromise = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: NVIDIA_LLM_RATE_POLICY,
       execute: async () => {
         starts.push(clock.now());
         return "fast";
@@ -236,14 +344,12 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const scheduler = createLlmRequestScheduler({
       clock,
       jitterMs: () => 0,
-      bucketPolicies: {
-        nvidia: { minStartIntervalMs: NVIDIA_MIN_START_INTERVAL_MS },
-      },
     });
 
     const firstHold = deferred<string>();
     const first = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: NVIDIA_LLM_RATE_POLICY,
       execute: async () => firstHold.promise,
     });
     await flushMicrotasks();
@@ -253,7 +359,8 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const secondHold = deferred<string>();
     const second = scheduler
       .schedule({
-        bucket: "nvidia",
+        bucket: "nvidia:fp-a",
+        policy: NVIDIA_LLM_RATE_POLICY,
         execute: async () => {
           secondExecuteStarted = true;
           return secondHold.promise;
@@ -267,7 +374,7 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     await flushMicrotasks();
     assert.equal(secondExecuteStarted, false);
     assert.equal(secondSettled, false);
-    assert.equal(scheduler.getQueueSize("nvidia"), 1);
+    assert.equal(scheduler.getQueueSize("nvidia:fp-a"), 1);
 
     clock.advance(NVIDIA_MIN_START_INTERVAL_MS);
     await flushMicrotasks();
@@ -290,7 +397,8 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     await assert.rejects(
       () =>
         scheduler.schedule({
-          bucket: "nvidia",
+          bucket: "nvidia:fp-a",
+          policy: NVIDIA_LLM_RATE_POLICY,
           execute: async () => {
             throw error;
           },
@@ -304,14 +412,12 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const scheduler = createLlmRequestScheduler({
       clock,
       jitterMs: () => 0,
-      bucketPolicies: {
-        nvidia: { minStartIntervalMs: NVIDIA_MIN_START_INTERVAL_MS },
-      },
     });
 
     const hold = deferred<string>();
     const first = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: NVIDIA_LLM_RATE_POLICY,
       execute: async () => hold.promise,
     });
     await flushMicrotasks();
@@ -319,7 +425,8 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const controller = new AbortController();
     let executed = false;
     const second = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: NVIDIA_LLM_RATE_POLICY,
       signal: controller.signal,
       execute: async () => {
         executed = true;
@@ -327,7 +434,7 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
       },
     });
     await flushMicrotasks();
-    assert.equal(scheduler.getQueueSize("nvidia"), 1);
+    assert.equal(scheduler.getQueueSize("nvidia:fp-a"), 1);
 
     controller.abort();
     await assert.rejects(second, (error: unknown) => {
@@ -336,7 +443,7 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
       return true;
     });
     assert.equal(executed, false);
-    assert.equal(scheduler.getQueueSize("nvidia"), 0);
+    assert.equal(scheduler.getQueueSize("nvidia:fp-a"), 0);
 
     hold.resolve("first");
     assert.equal(await first, "first");
@@ -347,21 +454,20 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const scheduler = createLlmRequestScheduler({
       clock,
       jitterMs: () => 0,
-      bucketPolicies: {
-        nvidia: { minStartIntervalMs: NVIDIA_MIN_START_INTERVAL_MS },
-      },
     });
 
     const hold = deferred<string>();
     const first = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: NVIDIA_LLM_RATE_POLICY,
       execute: async () => hold.promise,
     });
     await flushMicrotasks();
 
     let executed = false;
     const second = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: NVIDIA_LLM_RATE_POLICY,
       deadlineAtMs: clock.now() + 500,
       execute: async () => {
         executed = true;
@@ -389,12 +495,12 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const scheduler = createLlmRequestScheduler({
       clock,
       jitterMs: () => 0,
-      defaultMinStartIntervalMs: 1_000,
     });
 
     const hold = deferred<string>();
     const first = scheduler.schedule({
       bucket: "race",
+      policy: ONE_SECOND_SPACING,
       execute: async () => hold.promise,
     });
     await flushMicrotasks();
@@ -406,6 +512,7 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const pending = scheduler
       .schedule({
         bucket: "race",
+        policy: ONE_SECOND_SPACING,
         signal: controller.signal,
         execute: async () => {
           executeCount += 1;
@@ -443,14 +550,12 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const scheduler = createLlmRequestScheduler({
       clock,
       jitterMs: () => 0,
-      bucketPolicies: {
-        nvidia: { minStartIntervalMs: NVIDIA_MIN_START_INTERVAL_MS },
-      },
     });
 
     const starts: number[] = [];
     const first = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: NVIDIA_LLM_RATE_POLICY,
       execute: async () => {
         starts.push(clock.now());
         throw rateLimitError(10);
@@ -458,7 +563,8 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     });
 
     const second = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: NVIDIA_LLM_RATE_POLICY,
       execute: async () => {
         starts.push(clock.now());
         return "ok";
@@ -470,7 +576,7 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     assert.equal(starts.length, 2);
     // Cooldown 10s dominates the 2s spacing.
     assert.ok(starts[1]! - starts[0]! >= 10_000);
-    assert.ok(scheduler.getBlockedUntilMs("nvidia") >= starts[0]! + 10_000);
+    assert.ok(scheduler.getBlockedUntilMs("nvidia:fp-a") >= starts[0]! + 10_000);
   });
 
   test("Gemini 429 does not delay NVIDIA queued items", async () => {
@@ -478,24 +584,22 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const scheduler = createLlmRequestScheduler({
       clock,
       jitterMs: () => 0,
-      bucketPolicies: {
-        nvidia: { minStartIntervalMs: NVIDIA_MIN_START_INTERVAL_MS },
-        gemini: { minStartIntervalMs: GEMINI_MIN_START_INTERVAL_MS },
-      },
     });
 
     const nvidiaHold = deferred<string>();
     const nvidiaStarts: number[] = [];
 
     const geminiFail = scheduler.schedule({
-      bucket: "gemini",
+      bucket: "gemini:fp-a",
+      policy: GEMINI_LLM_RATE_POLICY,
       execute: async () => {
         throw rateLimitError(30);
       },
     });
 
     const nvidiaFirst = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: NVIDIA_LLM_RATE_POLICY,
       execute: async () => {
         nvidiaStarts.push(clock.now());
         return nvidiaHold.promise;
@@ -503,11 +607,12 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     });
     await flushMicrotasks();
     await assert.rejects(geminiFail, (error: unknown) => error instanceof RateLimitError);
-    assert.ok(scheduler.getBlockedUntilMs("gemini") >= 1_000_000 + 30_000);
-    assert.equal(scheduler.getBlockedUntilMs("nvidia"), 0);
+    assert.ok(scheduler.getBlockedUntilMs("gemini:fp-a") >= 1_000_000 + 30_000);
+    assert.equal(scheduler.getBlockedUntilMs("nvidia:fp-a"), 0);
 
     const nvidiaSecond = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: NVIDIA_LLM_RATE_POLICY,
       execute: async () => {
         nvidiaStarts.push(clock.now());
         return "n2";
@@ -532,12 +637,12 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const scheduler = createLlmRequestScheduler({
       clock,
       jitterMs: () => 0,
-      defaultMinStartIntervalMs: 0,
     });
 
     const firstHold = deferred<void>();
     const first = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: ZERO_SPACING,
       execute: async () => {
         await firstHold.promise;
         throw rateLimitError(5);
@@ -546,18 +651,19 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     await flushMicrotasks();
 
     const second = scheduler.schedule({
-      bucket: "nvidia",
+      bucket: "nvidia:fp-a",
+      policy: ZERO_SPACING,
       execute: async () => {
         throw rateLimitError(40);
       },
     });
     await flushMicrotasks();
     await assert.rejects(second, (error: unknown) => error instanceof RateLimitError);
-    assert.equal(scheduler.getBlockedUntilMs("nvidia"), 1_000_000 + 40_000);
+    assert.equal(scheduler.getBlockedUntilMs("nvidia:fp-a"), 1_000_000 + 40_000);
 
     firstHold.resolve();
     await assert.rejects(first, (error: unknown) => error instanceof RateLimitError);
-    assert.equal(scheduler.getBlockedUntilMs("nvidia"), 1_000_000 + 40_000);
+    assert.equal(scheduler.getBlockedUntilMs("nvidia:fp-a"), 1_000_000 + 40_000);
   });
 
   test("429 without headers uses bounded default wait + injected jitter", async () => {
@@ -565,13 +671,13 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const scheduler = createLlmRequestScheduler({
       clock,
       jitterMs: () => 250,
-      defaultMinStartIntervalMs: 0,
     });
 
     await assert.rejects(
       () =>
         scheduler.schedule({
-          bucket: "nvidia",
+          bucket: "nvidia:fp-a",
+          policy: ZERO_SPACING,
           execute: async () => {
             throw rateLimitError();
           },
@@ -580,7 +686,7 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     );
 
     assert.equal(
-      scheduler.getBlockedUntilMs("nvidia"),
+      scheduler.getBlockedUntilMs("nvidia:fp-a"),
       1_000_000 + DEFAULT_RATE_LIMIT_WAIT_MS + 250,
     );
   });
@@ -590,20 +696,20 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const scheduler = createLlmRequestScheduler({
       clock,
       jitterMs: () => 0,
-      defaultMinStartIntervalMs: 0,
     });
 
     await assert.rejects(
       () =>
         scheduler.schedule({
-          bucket: "nvidia",
+          bucket: "nvidia:fp-a",
+          policy: ZERO_SPACING,
           execute: async () => {
             throw new Error("server exploded");
           },
         }),
       /server exploded/,
     );
-    assert.equal(scheduler.getBlockedUntilMs("nvidia"), 0);
+    assert.equal(scheduler.getBlockedUntilMs("nvidia:fp-a"), 0);
   });
 
   test("scheduler does not auto-retry after 429", async () => {
@@ -611,14 +717,14 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const scheduler = createLlmRequestScheduler({
       clock,
       jitterMs: () => 0,
-      defaultMinStartIntervalMs: 0,
     });
     let attempts = 0;
 
     await assert.rejects(
       () =>
         scheduler.schedule({
-          bucket: "nvidia",
+          bucket: "nvidia:fp-a",
+          policy: ZERO_SPACING,
           execute: async () => {
             attempts += 1;
             throw rateLimitError(1);
@@ -634,24 +740,31 @@ describe("llmRequestScheduler", { concurrency: false }, () => {
     const scheduler = createLlmRequestScheduler({
       clock,
       jitterMs: () => 0,
-      defaultMinStartIntervalMs: 0,
     });
 
-    assert.equal(await scheduler.schedule({ bucket: "nvidia", execute: async () => 1 }), 1);
-    assert.equal(scheduler.getQueueSize("nvidia"), 0);
+    assert.equal(
+      await scheduler.schedule({
+        bucket: "nvidia:fp-a",
+        policy: ZERO_SPACING,
+        execute: async () => 1,
+      }),
+      1,
+    );
+    assert.equal(scheduler.getQueueSize("nvidia:fp-a"), 0);
 
     const controller = new AbortController();
     controller.abort();
     await assert.rejects(
       () =>
         scheduler.schedule({
-          bucket: "nvidia",
+          bucket: "nvidia:fp-a",
+          policy: ZERO_SPACING,
           signal: controller.signal,
           execute: async () => 2,
         }),
       (error: unknown) => error instanceof LlmRequestSchedulerError,
     );
-    assert.equal(scheduler.getQueueSize("nvidia"), 0);
+    assert.equal(scheduler.getQueueSize("nvidia:fp-a"), 0);
   });
 
   test("resetSharedLlmRequestSchedulerForTests clears singleton", () => {
