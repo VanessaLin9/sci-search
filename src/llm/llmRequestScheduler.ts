@@ -1,13 +1,13 @@
 /**
- * Process-wide, quota-bucket-aware LLM request-start scheduler.
+ * Process-wide, quota-bucket-aware LLM request-start scheduler（PR #35）。
  *
- * Checkpoint 1（shared rate limiter）：只提供 queue／spacing／429 cooldown primitives。
- * 尚未接 production transport callers——那是 Checkpoint 2。
+ * Checkpoint 1：只提供 queue／spacing／429 cooldown primitives；尚未接 production transport。
+ * 事故教訓：單一 caller 對 429 自行 sleep 不足——同 quota pool 的其他 gate／worker 仍會繼續送。
  *
  * Contracts:
  * - `schedule()` Promise = 排隊 + execute settled（成功／失敗／取消），不是只 enqueue。
- * - Spacing 以 request **start** 計算；長 request 可 overlap。
- * - 不同 bucket 完全獨立（lastStart / blockedUntil 不共用）。
+ * - Spacing 以 request **start** 計算；長 request 可 overlap（rate ≠ completion serialization）。
+ * - 不同 bucket 完全獨立（lastStart / blockedUntil 不共用；NVIDIA 429 不得擋 Gemini）。
  * - 429 → bucket-wide cooldown，再把原始 error rethrow；scheduler 不自動無限 retry。
  */
 import type { Clock } from "../routing/clock.js";
@@ -152,6 +152,7 @@ export function createLlmRequestScheduler(
   }
 
   function applyRateLimitCooldown(bucket: BucketState, error: unknown): void {
+    // 重用 routing 的 429 header／default+jitter 政策，避免另寫一套不一致的 parser（PR #35）。
     const failure = classifyRoutingFailure(error);
     if (failure.kind !== "rate_limit") return;
     const plan = planRateLimitWait({
@@ -159,6 +160,7 @@ export function createLlmRequestScheduler(
       nowMs: clock.now(),
       jitterMs,
     });
+    // 較短的新 cooldown 不得覆蓋較長既有 blockedUntil（PR #35）。
     const nextBlockedUntil = clock.now() + plan.waitMs;
     bucket.blockedUntilMs = Math.max(bucket.blockedUntilMs, nextBlockedUntil);
   }
@@ -258,7 +260,7 @@ export function createLlmRequestScheduler(
           continue;
         }
 
-        // Grant start permit（start-to-start；不等 execute 完成）。
+        // Grant 後立刻可排下一發的 spacing；不等 execute 完成（PR #35）。
         bucket.queue.shift();
         clearAbortListener(item);
         bucket.lastStartMs = clock.now();
@@ -368,7 +370,7 @@ async function sleepUntilCancelable(
 
 let sharedScheduler: LlmRequestScheduler | null = null;
 
-/** Process-wide singleton；routing／digest／gate 同 quota identity 必須共用。 */
+/** Process-wide singleton：routing／digest client 即使是不同 OpenAI instance，同 quota 仍須共用（PR #35）。 */
 export function getSharedLlmRequestScheduler(): LlmRequestScheduler {
   if (!sharedScheduler) {
     sharedScheduler = createLlmRequestScheduler({
