@@ -1,9 +1,10 @@
 /**
  * Phase 2b：featured 逐篇 summarize（titleZh / summaryZh / topicTags）。
  *
- * 雙模型備援（featured only；PR #30）：
- * - Primary：`DIGEST_LLM_MODEL`（timeout=`summarizeTimeoutMs`）
- * - Fallback：`DIGEST_LLM_FALLBACK_MODEL`（timeout=`summarizeFallbackTimeoutMs`）；只打 primary 最終失敗篇
+ * 雙模型備援（featured only；PR #30；跨 provider fallback）：
+ * - Primary：`DIGEST_LLM_MODEL` + primary key／baseUrl（timeout=`summarizeTimeoutMs`）
+ * - Fallback：獨立 endpoint（`DIGEST_LLM_FALLBACK_MODEL` + `FALLBACK_API_KEY` + baseUrl，例如 Gemini）；
+ *   只打 primary 最終失敗篇（timeout=`summarizeFallbackTimeoutMs`）
  * - Shared stage budget：`summarizeStageBudgetMs`（primary + fallback 共用）
  * - 429：尊重 Retry-After／reset hint，最多一次 budget-aware primary retry；仍失敗才 fallback
  * - 529／其他 5xx／timeout／network／empty／malformed／id mismatch：不做同模型無差別 retry，直接 fallback
@@ -26,7 +27,12 @@ import {
   planRateLimitWait,
 } from "../routing/routingRetryPolicy.js";
 import { callDigestChatCompletion } from "./callDigestChat.js";
-import { getDigestLlmConfig, type DigestLlmConfig } from "./config.js";
+import {
+  getDigestLlmConfig,
+  maskApiKey,
+  withDigestFallbackEndpoint,
+  type DigestLlmConfig,
+} from "./config.js";
 import { extractDigestMessageContent } from "./extractDigestContent.js";
 import { logDigest } from "./digestLog.js";
 import { runWithConcurrency } from "./runWithConcurrency.js";
@@ -101,30 +107,24 @@ async function attemptSummarize(options: {
   index: number;
   total: number;
   scopeBySourceId: ReadonlyMap<string, SourceScope>;
+  /** Already role-specific endpoint（primary 或 withDigestFallbackEndpoint）。 */
   config: DigestLlmConfig;
   role: SummarizeModelRole;
-  model: string;
   timeoutMs: number;
   attempt?: "429-retry";
   clock: Clock;
 }): Promise<SummarizeOneResult> {
-  const { paper, index, total, scopeBySourceId, config, role, model, timeoutMs, attempt, clock } =
-    options;
+  const { paper, index, total, scopeBySourceId, config, role, timeoutMs, attempt, clock } = options;
+  const model = config.model;
   const label = summarizeLabel({ index, total, paper, role, attempt });
   const input = toDigestSummarizeInput(paper, scopeBySourceId);
-  const modelConfig: DigestLlmConfig = { ...config, model };
   const startedAt = clock.now();
 
   try {
     const completion = await callDigestChatCompletion(
-      modelConfig,
-      (maxTokens) =>
-        buildDigestSummarizeCompletionParams(
-          input,
-          modelConfig,
-          modelConfig.preferJsonResponseFormat,
-          maxTokens,
-        ),
+      config,
+      (maxTokens, useJsonResponseFormat) =>
+        buildDigestSummarizeCompletionParams(input, config, useJsonResponseFormat, maxTokens),
       {
         label,
         gate: "digest-summarize",
@@ -230,18 +230,17 @@ async function summarizePrimaryPaper(options: {
     scopeBySourceId,
     config,
     role: "primary",
-    model,
     timeoutMs,
     clock,
   });
   if (first.ok) return first;
 
-  // 529 是 worker overload：同模型立即重試幾乎無效，應把時間留給不同 model（PR #30）。
+  // 529 是 worker overload：同模型立即重試幾乎無效，應把時間留給不同 endpoint（PR #30）。
   if (first.failure.kind !== "rate_limit") {
     return first;
   }
 
-  // 429 才做一次 budget-aware primary wait/retry；仍失敗才進 MiniMax（PR #30）。
+  // 429 才做一次 budget-aware primary wait/retry；仍失敗才進 fallback endpoint。
   const plan = planRateLimitWait({
     headers: first.failure.headers,
     nowMs: clock.now(),
@@ -279,7 +278,6 @@ async function summarizePrimaryPaper(options: {
     scopeBySourceId,
     config,
     role: "primary",
-    model,
     timeoutMs: retryTimeoutMs,
     attempt: "429-retry",
     clock,
@@ -291,25 +289,26 @@ async function summarizeFallbackPaper(options: {
   index: number;
   total: number;
   scopeBySourceId: ReadonlyMap<string, SourceScope>;
+  /** Full fallback endpoint config from withDigestFallbackEndpoint. */
   config: DigestLlmConfig;
-  fallbackModel: string;
   budget: RoutingBudget;
   clock: Clock;
 }): Promise<SummarizeOneResult> {
-  const { paper, index, total, scopeBySourceId, config, fallbackModel, budget, clock } = options;
+  const { paper, index, total, scopeBySourceId, config, budget, clock } = options;
+  const model = config.model;
   const label = summarizeLabel({ index, total, paper, role: "fallback" });
 
   // Shared budget 含 primary 等待；剩餘不足時寧可英文卡，也不拖垮 daily cron（PR #30）。
   if (!budget.canStartRequest()) {
     logDigest(
-      `${label}: skipped · model=${fallbackModel} role=fallback reason=budget_exhausted ` +
+      `${label}: skipped · model=${model} role=fallback reason=budget_exhausted ` +
         `remainingMs=${budget.remainingMs()}`,
     );
     return {
       ok: false,
       id: paper.id,
       role: "fallback",
-      model: fallbackModel,
+      model,
       durationMs: 0,
       failure: { kind: "unknown", message: "summarize budget exhausted before fallback request" },
       budgetSkipped: true,
@@ -319,14 +318,14 @@ async function summarizeFallbackPaper(options: {
   const timeoutMs = budget.requestTimeoutMs(config.summarizeFallbackTimeoutMs);
   if (timeoutMs < MIN_USEFUL_REQUEST_MS) {
     logDigest(
-      `${label}: skipped · model=${fallbackModel} role=fallback reason=budget_exhausted ` +
+      `${label}: skipped · model=${model} role=fallback reason=budget_exhausted ` +
         `remainingMs=${budget.remainingMs()}`,
     );
     return {
       ok: false,
       id: paper.id,
       role: "fallback",
-      model: fallbackModel,
+      model,
       durationMs: 0,
       failure: { kind: "unknown", message: "summarize budget exhausted before fallback request" },
       budgetSkipped: true,
@@ -340,7 +339,6 @@ async function summarizeFallbackPaper(options: {
     scopeBySourceId,
     config,
     role: "fallback",
-    model: fallbackModel,
     timeoutMs,
     clock,
   });
@@ -368,11 +366,13 @@ export async function summarizeFeaturedPapers(options: {
   }
 
   const budget = createRoutingBudget(clock, config.summarizeStageBudgetMs);
-  const fallbackModel = config.fallbackModel?.trim() || undefined;
+  const fallbackConfig = withDigestFallbackEndpoint(config);
 
   logDigest(
     `summarize ${featured.length} featured paper(s) · primary=${config.model}` +
-      (fallbackModel ? ` fallback=${fallbackModel}` : " fallback=off") +
+      (fallbackConfig
+        ? ` fallback=${fallbackConfig.model} fallbackBase=${fallbackConfig.baseUrl}`
+        : " fallback=off") +
       ` concurrency=${config.summarizeConcurrency}` +
       ` primaryTimeoutMs=${config.summarizeTimeoutMs}` +
       ` fallbackTimeoutMs=${config.summarizeFallbackTimeoutMs}` +
@@ -411,9 +411,10 @@ export async function summarizeFeaturedPapers(options: {
     }
   }
 
-  if (failedPapers.length > 0 && fallbackModel) {
+  if (failedPapers.length > 0 && fallbackConfig) {
     logDigest(
-      `summarize fallback for ${failedPapers.length} failed paper(s) · model=${fallbackModel} ` +
+      `summarize fallback for ${failedPapers.length} failed paper(s) · model=${fallbackConfig.model} ` +
+        `base=${fallbackConfig.baseUrl} key=${maskApiKey(fallbackConfig.apiKey)} ` +
         `concurrency=${config.summarizeFallbackConcurrency} remainingMs=${budget.remainingMs()}`,
     );
 
@@ -426,8 +427,7 @@ export async function summarizeFeaturedPapers(options: {
           index,
           total: featured.length,
           scopeBySourceId: options.scopeBySourceId,
-          config,
-          fallbackModel,
+          config: fallbackConfig,
           budget,
           clock,
         }),

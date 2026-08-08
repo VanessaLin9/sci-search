@@ -11,6 +11,8 @@ import { createFakeClock } from "../routing/helpers/fakeClock.js";
 type RequestRecord = {
   model: string;
   paperId: string;
+  url: string;
+  authorization: string;
 };
 
 function featuredPaper(id: string): ClassifiedPaper {
@@ -35,7 +37,11 @@ function digestConfig(overrides: Partial<DigestLlmConfig> = {}): DigestLlmConfig
     apiKey: "test-digest-key",
     baseUrl: "https://api.example.test/v1",
     model: "primary-model",
-    fallbackModel: "fallback-model",
+    fallbackModel: "gemini-3.1-flash-lite",
+    fallbackApiKey: "test-gemini-key",
+    fallbackBaseUrl: "https://generativelanguage.googleapis.com/v1beta/openai",
+    fallbackPreferJsonResponseFormat: true,
+    fallbackDisableThinking: false,
     maxFeatured: 12,
     overflowShowTitleZh: true,
     maxPapersPerBatch: 8,
@@ -82,7 +88,10 @@ function successBody(paperId: string): string {
   });
 }
 
-function parseRequest(init?: RequestInit): { model: string; paperId: string } {
+function parseRequest(
+  input: RequestInfo | URL,
+  init?: RequestInit,
+): { model: string; paperId: string; url: string; authorization: string } {
   const body =
     typeof init?.body === "string"
       ? init.body
@@ -99,7 +108,19 @@ function parseRequest(init?: RequestInit): { model: string; paperId: string } {
   const user = request.messages?.find((message) => message.role === "user")?.content ?? "";
   const payloadStart = user.indexOf("{");
   const payload = JSON.parse(user.slice(payloadStart)) as { paper: { id: string } };
-  return { model: request.model ?? "", paperId: payload.paper.id };
+  const url =
+    typeof input === "string"
+      ? input
+      : input instanceof URL
+        ? input.href
+        : input.url;
+  const headers = new Headers(init?.headers);
+  return {
+    model: request.model ?? "",
+    paperId: payload.paper.id,
+    url,
+    authorization: headers.get("authorization") ?? "",
+  };
 }
 
 type MockHandler = (request: RequestRecord, callIndex: number) => Response;
@@ -111,8 +132,8 @@ function installSummarizeFetch(handler: MockHandler): {
   resetDigestLlmClientCache();
   let callIndex = 0;
 
-  globalThis.fetch = (async (_input, init) => {
-    const request = parseRequest(init);
+  globalThis.fetch = (async (input, init) => {
+    const request = parseRequest(input as RequestInfo | URL, init);
     requests.push(request);
     const index = callIndex;
     callIndex += 1;
@@ -197,7 +218,7 @@ describe("summarizeFeaturedPapers dual-model fallback", () => {
 
     assert.deepEqual(
       requests.map((item) => item.model),
-      ["primary-model", "fallback-model"],
+      ["primary-model", "gemini-3.1-flash-lite"],
     );
     assert.equal(fieldsById.get("p2")?.summaryZh, "繁中摘要 p2");
     assert.deepEqual(stats, {
@@ -207,6 +228,31 @@ describe("summarizeFeaturedPapers dual-model fallback", () => {
       fallbackSucceeded: 1,
       failed: 0,
     });
+  });
+
+  test("fallback uses separate Gemini baseUrl and API key", async () => {
+    const paper = featuredPaper("p2b");
+    const { requests } = installSummarizeFetch((request) => {
+      if (request.model === "primary-model") {
+        return httpError(529, "529 status code (no body)");
+      }
+      return jsonOk(request.paperId, request.model);
+    });
+
+    await summarizeFeaturedPapers({
+      papers: [paper],
+      scopeBySourceId,
+      config: digestConfig(),
+      clock: createFakeClock(),
+      jitterMs: () => 0,
+    });
+
+    assert.equal(requests.length, 2);
+    assert.match(requests[0]?.url ?? "", /api\.example\.test/);
+    assert.match(requests[0]?.authorization ?? "", /test-digest-key/);
+    assert.match(requests[1]?.url ?? "", /generativelanguage\.googleapis\.com/);
+    assert.match(requests[1]?.authorization ?? "", /test-gemini-key/);
+    assert.equal(requests[1]?.model, "gemini-3.1-flash-lite");
   });
 
   test("both models fail keeps English card stats", async () => {
@@ -256,7 +302,7 @@ describe("summarizeFeaturedPapers dual-model fallback", () => {
 
     assert.deepEqual(
       requests.map((item) => item.model),
-      ["primary-model", "primary-model", "fallback-model"],
+      ["primary-model", "primary-model", "gemini-3.1-flash-lite"],
     );
     assert.deepEqual(clock.sleeps, [1_000]);
     assert.deepEqual(stats, {
@@ -361,8 +407,8 @@ describe("summarizeFeaturedPapers dual-model fallback", () => {
     assert.equal(fieldsById.has("fb"), true);
     assert.equal(fieldsById.has("bad"), false);
     assert.ok(requests.some((item) => item.paperId === "ok" && item.model === "primary-model"));
-    assert.ok(requests.some((item) => item.paperId === "fb" && item.model === "fallback-model"));
-    assert.ok(!requests.some((item) => item.paperId === "ok" && item.model === "fallback-model"));
+    assert.ok(requests.some((item) => item.paperId === "fb" && item.model === "gemini-3.1-flash-lite"));
+    assert.ok(!requests.some((item) => item.paperId === "ok" && item.model === "gemini-3.1-flash-lite"));
     assert.deepEqual(stats, {
       requested: 3,
       llmSummarized: 2,
@@ -394,7 +440,7 @@ describe("summarizeFeaturedPapers dual-model fallback", () => {
 
     assert.deepEqual(
       requests.map((item) => item.model),
-      ["primary-model", "fallback-model"],
+      ["primary-model", "gemini-3.1-flash-lite"],
     );
     assert.equal(fieldsById.get("p7")?.titleZh, "繁中標題 p7");
     assert.equal(stats.fallbackSucceeded, 1);

@@ -38,3 +38,5 @@ jobs:
           ROUTING_LLM_MODEL: test-model
           DIGEST_LLM_MODEL: test-model
           DIGEST_LLM_FALLBACK_MODEL: test-fallback-model
+          DIGEST_LLM_FALLBACK_API_KEY: test-fallback-key
+          DIGEST_LLM_FALLBACK_BASE_URL: https://generativelanguage.googleapis.com/v1beta/openai

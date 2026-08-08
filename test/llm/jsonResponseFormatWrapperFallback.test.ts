@@ -2,9 +2,11 @@ import assert from "node:assert/strict";
 import { after, before, describe, test } from "node:test";
 import type { ChatCompletion } from "openai/resources/chat/completions";
 import { callBiorxivGateCompletion } from "../../src/biorxiv-gate/callGateCompletion.js";
+import { callDigestChatCompletion } from "../../src/digest/callDigestChat.js";
 import { callDigestTaggingCompletion } from "../../src/digest/callDigestCompletion.js";
 import type { DigestLlmConfig } from "../../src/digest/config.js";
 import { resetDigestLlmClientCache } from "../../src/digest/digestLlmClient.js";
+import { buildDigestSummarizeCompletionParams } from "../../src/digest/summarizePrompt.js";
 import { callRoutingCompletion } from "../../src/routing/callRoutingCompletion.js";
 import type { RoutingLlmConfig } from "../../src/routing/config.js";
 import { resetRoutingLlmClientCache } from "../../src/routing/routingLlmClient.js";
@@ -226,5 +228,45 @@ describe("wrapper JSON response_format fallback characterization", { concurrency
       "digest must keep wording without 'mode'",
     );
     assert.ok(logs.some((line) => line.includes("digest-tag: HTTP ok in")));
+  });
+
+  test("callDigestChatCompletion omits response_format on bare retry", async () => {
+    const { bodies, logs } = installJsonModeThenPlainSuccessFetch();
+    const config = digestConfig();
+
+    const completion = await callDigestChatCompletion(
+      config,
+      (maxTokens, useJsonResponseFormat) =>
+        buildDigestSummarizeCompletionParams(
+          {
+            id: "p1",
+            title: "Title",
+            journal: "Science",
+            source_id: "science",
+            scope: "broad-science",
+            digest_line: "line-b",
+            abstract: "Short abstract.",
+          },
+          config,
+          useJsonResponseFormat,
+          maxTokens,
+        ),
+      {
+        label: "digest-summarize",
+        gate: "digest-summarize",
+        estimatedCompletionTokens: 720,
+        completionFloor: 2048,
+      },
+    );
+
+    assert.equal(bodies.length, 2);
+    assert.deepEqual(bodies[0]?.response_format, { type: "json_object" });
+    assert.equal(bodies[1]?.response_format, undefined);
+    assert.ok(completion);
+    assert.ok(
+      logs.some((line) =>
+        line.includes("digest-summarize: json_object failed, retrying without response_format…"),
+      ),
+    );
   });
 });
