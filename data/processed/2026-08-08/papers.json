@@ -1,0 +1,218 @@
+{
+  "reportDate": "2026-08-08",
+  "generatedAt": "2026-08-09T10:27:52.567Z",
+  "papers": [
+    {
+      "id": "10.1038/s41467-026-76506-3",
+      "title": "Allele-specific chromatin architecture shapes imprinted domains and coordinates a distal enhancer and antisense transcription at the mouse Mest-Copg2 domain",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-08-08T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-76506-3",
+      "doi": "10.1038/s41467-026-76506-3",
+      "abstract": "Here the authors show that parent-specific 3D genome architecture is a common feature of imprinted genes and identify a distal enhancer that works with antisense transcription to regulate neuron-specific imprinting.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "等位基因特異性染色質結構形塑印記基因域並協調遠端增強子與反義轉錄",
+      "summaryZh": "本研究指出，親本特異性的 3D 基因組結構是印記基因的共同特徵。研究團隊在小鼠 Mest-Copg2 基因域中，鑑定出一個能與反義轉錄協同作用的遠端增強子，共同調控神經元特異性的基因印記。這些發現揭示了染色質結構在調節印記基因表現中的關鍵作用。",
+      "topicTags": [
+        "genetics",
+        "chromatin-architecture",
+        "imprinted-genes",
+        "epigenetics"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-75862-4",
+      "title": "Targeting m6A writer METTL3 with engineered nanovesicles reduces neuroinflammation in vitro and in vivo",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-08-08T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-75862-4",
+      "doi": "10.1038/s41467-026-75862-4",
+      "abstract": "Strategies to modulate neuroinflammation have broad therapeutic potential. Here, the authors develop siMETTL3-hNVs, nanovesicles carrying siRNA targeting METTL3, and show they can reduce neuroinflammation in vitro and in vivo.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "利用工程化奈米囊泡標靶 m6A 寫入蛋白 METTL3 以減輕神經發炎",
+      "summaryZh": "本研究開發了一種名為 siMETTL3-hNVs 的奈米囊泡，透過攜帶 siRNA 來標靶 METTL3 蛋白。實驗結果顯示，該技術能在體外與體內模型中有效減輕神經發炎反應。此發現為調節神經發炎提供了新的治療策略潛力。",
+      "topicTags": [
+        "neuroinflammation",
+        "nanotechnology",
+        "mettl3",
+        "rna-interference"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-76379-6",
+      "title": "Diet-responsive proteogenomic effects following short-term restriction of animal products in humans",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-08-08T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-76379-6",
+      "doi": "10.1038/s41467-026-76379-6",
+      "abstract": "Using longitudinal proteogenomics, the authors reveal diet- and season-sensitive genetic effects on protein abundance linked to cholesterol and methionine metabolism and to immune function.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "短期限制動物性食品攝取後的飲食反應性蛋白質基因體效應",
+      "summaryZh": "本研究運用縱向蛋白質基因體學方法，探討人類在短期限制動物性食品攝取後的分子反應。作者發現，蛋白質豐度上的遺傳效應會受到飲食與季節的調控。這些效應與膽固醇代謝、甲硫胺酸代謝及免疫功能相關。整體而言，研究指出短期飲食介入可在人體引發可測量的蛋白質基因體變化。",
+      "topicTags": [
+        "proteogenomics",
+        "nutrition",
+        "human-genetics",
+        "metabolism",
+        "immunology"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-76461-z",
+      "title": "MRICombo: a deep-learning-based framework for universal volumetric segmentation grading-staging and malignancy detection across heterogeneous MRI",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-08-08T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-76461-z",
+      "doi": "10.1038/s41467-026-76461-z",
+      "abstract": "Existing magnetic resonance imaging (MRI) deep learning models are often task- or sequence-specific. Here, the authors present MRICombo, which segments anatomy, labels tumor types, and supports grading, staging and malignancy detection across heterogeneous sequences.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 8,
+      "passedByScope": 0,
+      "llmClassified": 8,
+      "llmYes": 4,
+      "llmNotSure": 0,
+      "llmNo": 4,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 4,
+      "excluded": 4
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 4,
+      "llmTagged": 4,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 4,
+      "candidates": 3,
+      "featured": 3,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 3,
+      "preprint": 0,
+      "skip": 1
+    },
+    "summarize": {
+      "requested": 3,
+      "llmSummarized": 3,
+      "primarySucceeded": 1,
+      "fallbackSucceeded": 2,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-75786-z",
+        "title": "Stratospheric impacts on Eurasian soil moisture on subseasonal timescales",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-08-08T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-75786-z",
+        "doi": "10.1038/s41467-026-75786-z",
+        "abstract": "This study shows that sudden stratospheric warmings reshape Eurasian soil moisture by increasing wetness over Iberia while warming-induced drying affects soils from the Iranian Plateau to northern India, revealing a source of subseasonal hydroclimate predictability.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-76539-8",
+        "title": "Cavity-Enabled Supramolecular Regulation of Capacitive–Redox Bromine Electrochemistry in Zinc–Bromine Batteries",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-08-08T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-76539-8",
+        "doi": "10.1038/s41467-026-76539-8",
+        "abstract": "Aqueous zinc-bromine batteries face a trade-off between capacitive power and redox capacity. Here, authors design cavity enabled supramolecular that dynamically switch from ion storage at low voltages to polybromide stabilization at high voltages, delivering high capacity, power and cycling durability.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-76247-3",
+        "title": "Human learning of probability distributions is biased toward moderate structural complexity",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-08-08T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-76247-3",
+        "doi": "10.1038/s41467-026-76247-3",
+        "abstract": "Humans build internal models from online observations to adapt to new environments. Here, the authors show that individuals are biased towards building models with moderate structural complexity, regardless of true complexity.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-76497-1",
+        "title": "Self-Assembled Multilayers Reduce Interfacial Energy Loss in Perovskite Solar Cells",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-08-08T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-76497-1",
+        "doi": "10.1038/s41467-026-76497-1",
+        "abstract": "Self-assembled interlayers improve perovskite solar cells but suffer aggregation, incomplete coverage, and weak interfaces, limiting efficiency and stability. Pan et al. design a methoxy-functionalized molecule improving wettability and interface contact, boosting efficiency and long-term stability.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
