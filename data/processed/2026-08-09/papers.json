@@ -1,0 +1,208 @@
+{
+  "reportDate": "2026-08-09",
+  "generatedAt": "2026-08-10T11:03:34.121Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.08.04.742671",
+      "title": "Virtual spatial transcriptomics from histopathology enables prognostic and therapeutic response prediction in cancer",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.04.742671v1",
+      "doi": "10.64898/2026.08.04.742671",
+      "abstract": "Spatial transcriptomics reveals cellular heterogeneity, intercellular communication, and tissue organization, but its cost and limited accessibility restrict clinical use. Here, we present VISTA, a model that integrates multi-scale histological features and spatial context to infer spatial gene expression from H&E stained tissue images. Across leave one section out cross validation and independent validation, VISTA robustly predicted thousands of genes and outperformed state-of-the-art methods. Beyond expression reconstruction, VISTA enabled clinically relevant downstream analyses. In TCGA breast cancer samples, it identified survival-associated genes, stratified prognostic risk groups, and revealed adverse tumor-associated spatial subtypes. In our inhouse intrahepatic cholangiocarcinoma cohort, it preserved tumor normal organization and identified CLDN4 and CYP3A4 as complementary spatial biomarkers. In HER2+ breast cancer, it predicted pathological response to neoadjuvant trastuzumab-based therapy and linked response-associated regions to immune and cytokine related programs. These results support virtual spatial transcriptomics from routine histopathology for oncology applications.",
+      "authors": [
+        "Jiao, S.",
+        "Yuan, Z.",
+        "Lu, D.",
+        "Xu, Y.",
+        "Dong, Y.",
+        "Peng, J."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "透過組織病理影像進行虛擬空間轉錄體分析，以預測癌症預後與治療反應",
+      "summaryZh": "研究團隊開發了名為 VISTA 的模型，能整合多尺度組織學特徵與空間背景，從常規 H&E 染色組織影像中推斷空間基因表現。此方法克服了空間轉錄體技術成本高昂與取得不易的限制，並在多項癌症研究中展現臨床應用潛力。VISTA 不僅能識別與存活率相關的基因及空間亞型，還能預測特定癌症治療的病理反應，為臨床腫瘤學提供了一種具成本效益的分析工具。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "histopathology",
+        "cancer",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.05.743110",
+      "title": "Move BeTween modAlities (MBTA) employs flow matching to predict single cell data modalities",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.05.743110v1",
+      "doi": "10.64898/2026.08.05.743110",
+      "abstract": "Integrating diverse molecular modalities to obtain a comprehensive view of cellular identity remains a major challenge in single-cell biology. A fundamental but underappreciated obstacle is structural mismatch-the phenomenon in which the neighborhood structure of a cell differs depending on which molecular modality is used to define it. Existing approaches typically embed modalities into a shared latent space, which actively erases the structural differences between modalities that make multimodal measurements scientifically valuable. Here we introduce Move BeTween modAlities (MBTA), the first framework explicitly designed to address structural mismatch. Rather than forcing modalities into a shared representation, MBTA maintains modality-specific latent spaces and connects them via flow matching, preserving the structural integrity of each modality while enabling accurate cross-modal translation. Across extensive benchmarks on multi-modal single-cell datasets, MBTA consistently outperformed existing methods, with the largest gains observed in datasets with pronounced structural mismatch. Applied to joint genomic and transcriptomic profiles of breast cancer patients, MBTA identified transcriptomic lineage relationships corroborated by genomic variation and outperformed state-of-the-art transcriptomics-based copy number inference methods. Extending this framework to mouse embryonic development, we reconstructed temporal trajectories jointly defined by gene expression and seven complementary epigenetic modalities. MBTA can connect any number of molecular readouts without erasing their individual character, serving as the computational foundation for assembling multi-layered portraits of cells.",
+      "authors": [
+        "Xu, B.",
+        "Zhang, Y.",
+        "Michor, F."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "biology",
+        "cancer",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Move BeTween modAlities (MBTA)：利用流匹配技術預測單細胞數據模態",
+      "summaryZh": "本研究提出了一種名為 MBTA 的計算框架，旨在解決單細胞生物學中不同分子模態間的結構不匹配問題。與傳統將模態強制整合至共享潛在空間的方法不同，MBTA 透過流匹配（flow matching）連接各模態的特定潛在空間，從而保留了各模態的結構完整性。在多模態單細胞數據集的基準測試中，MBTA 展現了優於現有方法的表現，特別是在結構差異顯著的數據集中。此框架能有效整合多種分子讀數，為構建細胞的多層次圖譜提供了計算基礎。",
+      "topicTags": [
+        "single-cell",
+        "computational-biology",
+        "multi-omics",
+        "flow-matching"
+      ]
+    },
+    {
+      "id": "10.64898/2026.04.22.720135",
+      "title": "A Systematic Evaluation of Single-Cell Batch Integration Metrics and sBEE, A New Metric",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.04.22.720135v2",
+      "doi": "10.64898/2026.04.22.720135",
+      "abstract": "Background: Single-cell RNA sequencing (scRNA-seq) datasets generated across laboratories and experimental conditions often exhibit batch effects that obscure biological variation. Numerous computational methods have been developed to integrate such datasets, making robust benchmarking essential. Evaluation metrics play a central role in assessing integration quality. However, existing metrics each capture only specific aspects of batch mixing and often rely on assumptions that are violated in practice, such as every cell type being present in every batch, balanced batch composition, or simple cluster geometries. Consequently, benchmarking studies frequently report discordant rankings of integration methods, complicating interpretation and method selection. Results: We systematically evaluate widely used batch integration metrics using controlled synthetic scenarios that isolate common integration challenges, including imbalanced batch composition, partial cell-type overlap, heterogeneous cluster densities, and varying cluster geometries. Our analysis reveals distinct strengths, limitations, and failure modes, demonstrating that assessments of batch mixing can change substantially across different data characteristics. These observations motivated the development of sBEE (single-cell Batch Effect Evaluator), a metric that assesses batch mixing at the single-cell level using two complementary measures: local neighborhood composition and cross-batch distance relationships. Across diverse simulated scenarios, sBEE produces stable, interpretable evaluations and remains robust to the failure modes identified in existing metrics. We further validate these findings on multiple real-world scRNA-seq datasets. Conclusions: Our work provides a comprehensive characterization of the behavior of widely used batch integration metrics and introduces sBEE, a robust metric that combines complementary neighborhood and distance-based information to provide more reliable assessments of batch mixing. By identifying the conditions under which existing metrics succeed or fail and providing a unified alternative, sBEE enables more consistent benchmarking of single-cell integration methods.",
+      "authors": [
+        "Myradov, M.",
+        "HOUDJEDJ, A.",
+        "Tastan, O.",
+        "Kazan, H."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞批次整合指標的系統性評估與新指標 sBEE",
+      "summaryZh": "單細胞 RNA 定序 (scRNA-seq) 資料常因不同實驗室與條件產生批次效應，影響後續分析。雖然已有許多批次整合方法，但現有評估指標各自僅能捕捉批次混合的特定面向，且常假設每個細胞類型都存在於每個批次、批次組成平衡或叢集幾何形狀單純，這些假設在實務上經常不成立，導致不同基準研究對整合方法的排名出現分歧。本研究透過受控的合成情境，系統性地評估常用批次整合指標在批次組成不平衡、部分細胞類型重疊、叢集密度異質及不同幾何形狀等挑戰下的表現，揭示各指標的優勢、限制與失效模式。基於這些發現，作者開發了新指標 sBEE (single-cell Batch Effect Evaluator)，結合局部鄰域組成與跨批次距離關係，在單細胞層級評估批次混合程度，並在模擬與真實資料驗證中展現穩健性與可解釋性。",
+      "topicTags": [
+        "single-cell",
+        "batch-integration",
+        "benchmarking",
+        "bioinformatics",
+        "scRNA-seq"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.04.742705",
+      "title": "FOCUS: end-to-end preprocessing, alignment and resolution-matched integration of spatial multi-omics data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-09",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.04.742705v1",
+      "doi": "10.64898/2026.08.04.742705",
+      "abstract": "Integrating spatial multi-omics data requires coordinated preprocessing, cross-modality alignment and feature registration across modalities that differ in file format, coordinate system and spatial resolution. No existing tool addresses this pipeline end-to-end from raw experimental files till aligned data object. We present FOCUS, an open-source Python package that takes raw data from spatial transcriptomics, mass spectrometry imaging, Raman spectroscopy imaging and brightfield or fluorescence microscopy through modality-specific preprocessing, interactive spatial alignment and resolution-matching registration to a unified MuData object, driven by a single configuration file. Its modular, registry-based architecture allows straightforward extension to additional modalities. FOCUS is accessible via a command-line interface, a browser-based GUI and a Python API.",
+      "authors": [
+        "Venturelli, L.",
+        "Jacobs, J.",
+        "Sifrim, A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "spatial resolution",
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "FOCUS：空間多體學資料的端到端前處理、對齊與解析度匹配整合",
+      "summaryZh": "FOCUS 是一個開源的 Python 套件，提供空間多體學資料從原始實驗檔案到整合資料物件的端到端處理流程。該工具涵蓋空間轉錄體學、質譜影像、拉曼光譜影像以及明視野或螢光顯微鏡等模態，可進行模態特定的前處理、互動式空間對齊與解析度匹配註冊，最終輸出統一的 MuData 物件。FOCUS 採用模組化、基於註冊表（registry）的架構，方便擴充至其他資料模態。使用者可透過命令列介面、瀏覽器圖形介面或 Python API 三種方式存取此工具。",
+      "topicTags": [
+        "spatial-multi-omics",
+        "bioinformatics",
+        "python",
+        "data-integration",
+        "spatial-transcriptomics"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 4,
+      "passedByScope": 4,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 4,
+      "excluded": 0
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 4,
+      "llmTagged": 4,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 4,
+      "candidates": 4,
+      "featured": 4,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 0,
+      "preprint": 4,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 4,
+      "llmSummarized": 4,
+      "primarySucceeded": 2,
+      "fallbackSucceeded": 2,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  }
+}
