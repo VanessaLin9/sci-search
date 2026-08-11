@@ -1,0 +1,1151 @@
+{
+  "reportDate": "2026-08-10",
+  "generatedAt": "2026-08-11T11:08:35.708Z",
+  "papers": [
+    {
+      "id": "10.1038/s41588-026-02692-x",
+      "title": "Prevalence and chronology of colibactin-associated mutational processes and their microbiome spectra in Japanese colorectal cancer",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-08-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02692-x",
+      "doi": "10.1038/s41588-026-02692-x",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer",
+        "microbiome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41556-026-02049-w",
+      "title": "Early human crosstalk",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-08-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02049-w",
+      "doi": "10.1038/s41556-026-02049-w",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41556-026-02051-2",
+      "title": "A chromatin remodeller silences SINE retrotransposons",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-08-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02051-2",
+      "doi": "10.1038/s41556-026-02051-2",
+      "abstract": "A chromatin remodeller silences SINE retrotransposons",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "染色質重塑因子沉默 SINE 反轉錄轉座子",
+      "summaryZh": "研究發現一種染色質重塑因子能夠沉默 SINE 反轉錄轉座子。此結果指出染色質調控在抑制轉座子活性方面扮演關鍵角色。",
+      "topicTags": [
+        "chromatin-remodelling",
+        "retrotransposons",
+        "sine-elements",
+        "gene-regulation"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02043-2",
+      "title": "Mega-enhancers compartmentalize transcriptionally active long genes in the brain",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-08-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02043-2",
+      "doi": "10.1038/s41556-026-02043-2",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41564-026-02459-4",
+      "title": "Recombitrons enable bacterial genome editing across phyla",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-08-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02459-4",
+      "doi": "10.1038/s41564-026-02459-4",
+      "abstract": "Recombitrons enable bacterial genome editing across phyla",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Recombitrons 實現跨細菌門的基因體編輯",
+      "summaryZh": "本研究於 Nature Microbiology 發表，介紹一種稱為 Recombitrons 的基因體編輯工具，能在多個細菌門中進行基因編輯。",
+      "topicTags": [
+        "genome-editing",
+        "bacteria",
+        "microbiology",
+        "recombitrons"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02440-1",
+      "title": "Bacterial symbionts and the lightness of being a prokaryote",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-08-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02440-1",
+      "doi": "10.1038/s41564-026-02440-1",
+      "abstract": "Silvia Bulgheresi muses on how studying bacterial symbionts of worms and mammals made her question whether the absence of a nucleus enables cellular freedom, potentiating architectural innovation and functional adaptation.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41564-026-02442-z",
+      "title": "Antisense transcription reveals disease-associated adaptations in the human gut microbiome",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-08-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02442-z",
+      "doi": "10.1038/s41564-026-02442-z",
+      "abstract": "Metastrand integrates strand-aware metatranscriptomic and metagenomic data to distinguish microbial sense from antisense transcription at gene-level resolution, and a use case study highlights the importance of antisense RNAs in understanding the microbial dynamics in inflammatory bowel disease.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "microbiome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "反義轉錄揭示人類腸道微生物組的疾病相關適應",
+      "summaryZh": "本研究開發了 Metastrand 工具，能整合鏈特異性宏轉錄組與宏基因組數據，在基因層級區分微生物的正義與反義轉錄。研究透過發炎性腸道疾病（IBD）的案例分析，強調了反義 RNA 在理解微生物動態變化中的重要性。這項技術為解析微生物組的轉錄調控機制提供了新的視角。",
+      "topicTags": [
+        "microbiome",
+        "metatranscriptomics",
+        "rna",
+        "inflammatory-bowel-disease"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02444-x",
+      "title": "Combination therapy with broadly neutralizing antibodies, antiretroviral therapy and CCR5 blockade limits viral reservoir seeding in infant macaque model of HIV",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-08-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02444-x",
+      "doi": "10.1038/s41564-026-02444-x",
+      "abstract": "A combined therapy using broadly neutralizing antibodies that target the HIV envelope protein, the CCR5-blocking antibody leronlimab and antiretroviral therapy limits seeding of the viral reservoir in an infant macaque model of HIV at 72 h post-infection.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "合併療法限制嬰兒獼猴 HIV 模型之病毒儲存庫建立：廣效中和抗體、抗反轉錄病毒療法與 CCR5 阻斷",
+      "summaryZh": "本研究在嬰兒獼猴 HIV 模型中測試一種合併療法，結合了針對 HIV 包膜蛋白的廣效中和抗體、CCR5 阻斷性抗體 leronlimab，以及抗反轉錄病毒療法。研究結果顯示，此合併治療能在感染後 72 小時限制病毒儲存庫的建立。這項結果支持在感染早期以合併療法介入，作為控制 HIV 病毒儲存庫的潛在策略。",
+      "topicTags": [
+        "hiv",
+        "broadly-neutralizing-antibodies",
+        "antiretroviral-therapy",
+        "ccr5-blockade",
+        "macaque-model"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003948",
+      "title": "Neural encoding of pain is robust within but unstable between individuals",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-08-10T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003948",
+      "doi": "10.1371/journal.pbio.3003948",
+      "abstract": "The perception of pain varies both within and between individuals, even when sensory input remains constant. Understanding how the brain encodes these intra- and inter-individual variations is central to elucidating the neural mechanisms of pain and to developing reliable brain-based markers for clinical use. Yet, previous findings have been inconsistent, and their robustness across time and populations remains unclear. Here, we used electroencephalography (EEG) in 161 healthy participants to re-investigate the neural patterns explaining intra- and inter-individual variations in the perception of brief painful stimuli independent of stimulus intensity. Using Bayesian multivariate multi-model regression, we related pain ratings to canonical EEG responses. To directly assess robustness, the experiment was repeated after 4 weeks in the same participants and replicated in an independent cohort ( n = 111). Neural patterns associated with inter-individual differences in pain perception were repeatable over time but not replicable across cohorts. In contrast, neural patterns underlying intra-individual fluctuations were robust both over time and across cohorts. These findings indicate that within-person and between-person variability in pain perception is encoded by distinct neural patterns that differ fundamentally in their robustness. Furthermore, they show that brain-based markers are particularly suited for tracking intra-individual fluctuations of pain, while being less sensitive to inter-individual differences. More broadly, they highlight the importance of within-person approaches for advancing both mechanistic models of pain and the development of clinically useful biomarkers.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "疼痛的神經編碼在個體內穩定，但在個體間不穩定",
+      "summaryZh": "這項研究利用腦電圖（EEG）記錄161位健康受試者對短暫疼痛刺激的神經反應，並在4週後重複實驗，同時於另一獨立群體（111人）進行驗證。研究發現，與個體間疼痛知覺差異相關的神經模式在時間上可重複，但無法在不同群體間複製；相反地，與個體內疼痛波動相關的神經模式在時間與不同群體間皆表現穩定。這些結果顯示，個體內與個體間的疼痛變異由截然不同的神經模式所編碼，且兩者在穩健性上存在根本差異。研究指出，基於腦部活動的指標特別適合追蹤個體內的疼痛波動，對個體間差異的敏感度則較低，凸顯個體內研究方法在疼痛機制與臨床生物標記發展上的重要性。",
+      "topicTags": [
+        "pain",
+        "eeg",
+        "neuroscience",
+        "biomarkers",
+        "individual-differences"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003935",
+      "title": "Lateralised neural mechanisms facilitate auditory self-other distinction and coordination in human dyads",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-08-10T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003935",
+      "doi": "10.1371/journal.pbio.3003935",
+      "abstract": "Coordinating actions with others is essential for successful social interaction. Such coordination, as in sports and musical performances, often relies on sound, requiring the brain to process and integrate acoustic information related to the actions of ‘self’ and ‘other’ while maintaining sufficient distinction between them. However, such self-other differentiation can be challenged during real-world auditory interactions due to self and other signals being mixed when arriving at the eardrum, creating the potential for agency confusion and impaired coordination. Here we combined dual-EEG and frequency tagging techniques to investigate the behavioural and brain mechanisms supporting the self-other distinction during a joint auditory-motor synchronisation task. Twenty-five dyads synchronised self-paced, finger pressure-controlled continuous sound modulations. The results revealed better synchronisation when participants were associated with distinct sounds (different frequency and brightness) and designated leadership roles, facilitating the processing of self and other information and their separation at both peripheral and central levels. The results also indicated that this neural facilitation was stronger in the right hemisphere than the left, as well as for self than other, suggesting critical roles of spectral information and control over one’s own actions for auditory self-other distinction and coordination. These findings highlight complementary behavioural and brain mechanisms compensating for self-other masking inherent to auditory interactions, opening new avenues to understanding interpersonal coordination and its disorders.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "大腦側化機制促進人類互動中的聽覺自我與他人區分及協調",
+      "summaryZh": "本研究透過雙人腦電圖（dual-EEG）與頻率標記技術，探討人類在進行聽覺運動同步任務時，如何區分自我與他人的聲音訊號。研究發現，當參與者擁有明確的聲音特徵與領導角色時，同步表現較佳，且大腦右半球在處理此類資訊時展現出更強的促進作用。這些結果顯示，大腦透過特定的神經機制來克服聽覺互動中自我與他人訊號混淆的問題，對於理解人際協調及其相關障礙提供了新的見解。",
+      "topicTags": [
+        "neuroscience",
+        "auditory-perception",
+        "social-interaction",
+        "eeg"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003271",
+      "title": "A microRNA atlas of CD4+ T cell subsets in experimental autoimmune encephalomyelitis identifies regulators of disease pathogenesis",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-08-10T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003271",
+      "doi": "10.1371/journal.pbio.3003271",
+      "abstract": "MicroRNAs (miRNAs) are key regulators of CD4 + T cell differentiation, but how they contribute to the course of an autoimmune disease in vivo remains poorly studied. Given the known roles in autoimmunity of pro-inflammatory T helper 1 (Th)1 and Th17 cells, and anti-inflammatory Foxp3 + regulatory cells, we established a triple reporter mouse for Ifng , Il17 and Foxp3, and subjected it to experimental autoimmune encephalomyelitis (EAE) to characterize the miRNomes of the corresponding CD4 + T cell subsets. We identified 110 miRNAs differentially expressed between the pro-inflammatory (Th1 and Th17 cells) and the Treg cell subsets . Among these, we found novel functions for miR-122-5p and miR-1247 as regulators of Th17 cell proliferation and Th1 cell differentiation, thus impacting the course or severity of EAE, respectively. Importantly, their expression patterns suggest miR-122-5p and miR-1247 act as peripheral brakes to CD4 + T cell pathogenicity that are subverted in the inflamed central nervous system.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "實驗性自體免疫腦脊髓炎中 CD4+ T 細胞亞群的 microRNA 圖譜與致病機制調節因子",
+      "summaryZh": "本研究透過建立三標記報告小鼠模型，分析了實驗性自體免疫腦脊髓炎（EAE）中不同 CD4+ T 細胞亞群的 microRNA 表現圖譜。研究鑑定出 110 種在促發炎與調節性 T 細胞間表現差異的 miRNAs，並發現 miR-122-5p 與 miR-1247 分別能調節 Th17 細胞增殖與 Th1 細胞分化。這些發現顯示，上述 miRNAs 在周邊組織中扮演抑制 CD4+ T 細胞致病性的角色，但在發炎的中樞神經系統中其功能可能遭到破壞。",
+      "topicTags": [
+        "microrna",
+        "cd4-t-cells",
+        "autoimmunity",
+        "eae",
+        "immunology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.08.743614",
+      "title": "Cellular senescence is associated with age-related loss of liver zonation and hepatocyte function",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.08.743614v1",
+      "doi": "10.64898/2026.08.08.743614",
+      "abstract": "The liver is organized into tightly regulated zones with distinct metabolic functions but zonation erodes with age. Cellular senescence contributes to aging and liver diseases, however, its impact on aging biology is ill-defined. As part of The Cellular Senescence Network Consortium, we used multiple spatial transcriptomics approaches (GeoMx, Visium, CosMx) with snRNA-seq to profile senescence signatures, zonation markers, and metabolic pathways in livers from wild-type (WT) mice of multiple ages. We observed a loss of canonical zone signatures in aged mouse livers characterized by 'expansion' of midlobular (zone 2) marker gene expression, accompanied by diminished expression of zone 3 marker genes by middle-age (18 months), indicative of loss of cell identity. Multiple analytic approaches identified distinct age-, zone- and sex-specific senescence signatures, which were significantly associated with zonation markers changes. This was recapitulated in Ercc1 mutant models of accelerated senescence, supporting a causal role of senescent cells in liver aging. A 'no-zone' hepatocyte-like cluster expanded with age and with the strongest Senescence-Associated Secretory Phenotype (SASP) profile. Gene expression profiles from senescent hepatocytes implicate decreased WNT signaling and increased BMP as contributing to age-related loss of zonation. Together, these data elucidate the role of senescent cells in driving aging biology in non-diseased liver through disruption of cell:cell signaling and the loss of metabolic and cell identity gene expression necessary for hepatocyte function.",
+      "authors": [
+        "Laux, L.",
+        "Aristel, A.",
+        "Ali, S.",
+        "Lande, K.",
+        "Li, M.",
+        "Evensen, K. G.",
+        "Havas, A.",
+        "Miao, Z.",
+        "Zhang, Z.",
+        "Peters, S.",
+        "Hu, J.",
+        "Angelini, L.",
+        "Klaers, M.",
+        "Brocksome, J.",
+        "Lewis, A.",
+        "Paidimukkala, N.",
+        "Brown, M. E.",
+        "Carver, C. M.",
+        "Schafer, M. J.",
+        "Albrecht, J. H.",
+        "Wehner, A.",
+        "Adams, P.",
+        "Aliferis, C.",
+        "Adeyi, O.",
+        "Khosla, M.D, S.",
+        "Dong, X.",
+        "Wang, J.",
+        "Robbins, P. D.",
+        "Zhang, N.",
+        "Niedernhofer, L. J."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "snRNA-seq",
+        "spatial transcriptomics",
+        "Visium",
+        "CosMx",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "細胞衰老與肝臟分區及肝細胞功能隨年齡下降的關聯",
+      "summaryZh": "本研究利用多種空間轉錄組學與單核 RNA 定序技術，分析小鼠肝臟隨年齡增長產生的變化。研究發現，肝臟分區特徵會隨年齡而喪失，且此過程與細胞衰老特徵密切相關。衰老細胞透過干擾細胞間訊號傳遞，導致肝細胞代謝功能與細胞識別基因表現下降。這些發現揭示了衰老細胞在非疾病狀態下，對肝臟老化生物學的驅動作用。",
+      "topicTags": [
+        "cellular-senescence",
+        "liver-aging",
+        "spatial-transcriptomics",
+        "hepatocyte-function"
+      ]
+    },
+    {
+      "id": "10.64898/2026.04.18.719417",
+      "title": "Mass Control Genes Buffer a Conserved Sublinear Scaling Law Linking Single-Cell Dry Mass to Mitochondrial Redox Efficiency",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.04.18.719417v2",
+      "doi": "10.64898/2026.04.18.719417",
+      "abstract": "Using quantitative phase microscopy and genetically-encoded metabolism probes, we simultaneously measured single-cell dry mass and mitochondrial redox efficiency across eukaryotic cell types. We discovered that single-cell mass scales with mitochondrial redox efficiency, according to a sublinear power law, across budding yeast, mouse, and human cells. Genetic and pharmacological perturbations of mitochondrial redox balance shifted the coefficient k and exponent y predictably, while preserving the scaling law, indicating a causative coupling between biomass accrual and mitochondrial redox efficiency. We also discovered that both single-cell mass and mitochondrial redox efficiency manifest log-normal distributions, providing more support for previous theories that biomass accrual is an exponential process, meaning the rate of mass increase depends on the current mass. Finally, our yeast knockout screen identified 81 mass control genes (MCGs) that disrupted the log-normality of single-cell mass. Interestingly, MCGs were enriched for mitochondrial metabolism and cristae maintenance, whereas few were related to the cell cycle. Conserved MCGs, including human TRIAP1, ATPAF1, and ACO1, also maintained human single-cell mass log-normality and sublinear scaling with mitochondrial redox efficiency. These findings reveal a shared bioenergetic principle at the single-cell level, and new techniques to study it. This scaling law provides a quantitative framework for understanding cell mass control, metabolic coupling, and disease-associated growth regulation.",
+      "authors": [
+        "Yao, Z.",
+        "Cantley, L.",
+        "Ng, S.-C."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2025.12.19.695597",
+      "title": "Methionine synthase reductase regulates heterochromatin independently of methionine synthesis through mitochondrial homeostasis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2025.12.19.695597v2",
+      "doi": "10.64898/2025.12.19.695597",
+      "abstract": "Metabolic enzymes can influence chromatin organization by modulating the availability of key metabolites, yet how specific metabolic reactions affect chromatin function remains poorly understood. Here, we show that in Caenorhabditis elegans, the methionine-cycle enzyme methionine synthase reductase (MTRR-1/MSR) regulates heterochromatin independently of methionine synthesis. Loss of MTRR-1, but not of the methionine synthase METR-1/MS, specifically reduces heterochromatic histone methylation, derepresses repetitive elements, and causes developmental delay. Multi-omics profiling revealed that mtrr-1 mutants activate transcriptional programs associated with mitochondrial stress and accumulate long-chain acylcarnitines, indicating disrupted mitochondrial homeostasis. Functional assays confirmed altered mitochondrial respiration in mtrr-1 mutants, while genetic suppression of the PMK-3/MAPK mitochondrial retrograde signaling pathway partially restored repeat silencing. Consistently, direct perturbation of mitochondrial function was sufficient to induce heterochromatin derepression in wild type animals. Together, our results reveal a previously unrecognized mitochondria-to-chromatin axis controlled by the methionine-cycle enzyme MTRR-1/MSR, demonstrating that mitochondrial homeostasis is required for heterochromatin maintenance independently of canonical methionine metabolism.",
+      "authors": [
+        "Rezende Pabst, F.",
+        "Tvardovskiy, A.",
+        "Estibariz, I.",
+        "Finazzi, V.",
+        "Couacault, P.",
+        "Artati, A.",
+        "Witting, M.",
+        "Scialdone, A.",
+        "Bartke, T.",
+        "Schneider, R.",
+        "Cabianca, D. S."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1101/2025.06.30.662349",
+      "title": "Polyamines buffer labile iron to suppress ferroptosis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.06.30.662349v3",
+      "doi": "10.1101/2025.06.30.662349",
+      "abstract": "Polyamines are essential and evolutionarily conserved metabolites present at millimolar concentrations in mammalian cells. Cells tightly regulate polyamine homeostasis through complex feedback mechanisms, yet the precise role necessitating this regulation remains unclear. Here, we show that polyamines contribute to endogenous buffering of redox-active iron, providing a molecular link between polyamine metabolism and ferroptosis. Using a genome-wide CRISPR screen, we identified a synthetic lethal dependency between polyamine depletion and the key ferroptosis suppressor, GPX4. Mechanistically, we show that polyamine deficiency triggers a redistribution of cellular iron, increasing the labile iron pool and upregulating ferritin. To directly visualize this iron buffering in living cells, we developed a genetically encoded fluorescent reporter for redox-active iron. Live-cell analysis revealed a striking inverse correlation between intracellular polyamine levels and redox-active iron at single-cell resolution. These findings reposition polyamines as key regulators of iron homeostasis, with implications for ferroptosis-linked disease states and cellular redox balance.",
+      "authors": [
+        "Sharma, P.",
+        "Keys, H. R.",
+        "Mansell, R.",
+        "Stark, J.",
+        "Girard, L.",
+        "Ausler, C.",
+        "Anderson, R.",
+        "Müller, S.",
+        "Imada, S.",
+        "Pires, I. S.",
+        "Kunchok, T.",
+        "Waite, M.",
+        "Yuan, B.",
+        "Deik, A. A.",
+        "Ferro, L.",
+        "Hammond, P. T.",
+        "Rodriguez, R.",
+        "Pandelia, M.-E.",
+        "Henry, W. S.",
+        "Jain, A."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "evolution",
+        "CRISPR",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.06.19.733432",
+      "title": "Accurate prediction in reconstructed spatial transcriptomes does not ensure valid biological discovery",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.19.733432v2",
+      "doi": "10.64898/2026.06.19.733432",
+      "abstract": "Spatial transcriptomics is increasingly extended by computational reconstruction of unmeasured genes from matched single-cell RNA-sequencing references, enabling transcriptome-wide analyses from targeted or sparse assays. Yet downstream analyses typically treat reconstructed expression as experimentally observed, overlooking prediction error and latent spatial variation that can misattribute tissue architecture to biological regulation. Here we introduce TIDEST, a framework for statistically valid inference on reconstructed spatial transcriptomes. TIDEST calibrates reconstructed expression using measured genes and adjusts for latent spatial variation before differential expression analysis. Across realistic spatial tissue simulations, TIDEST controls false discoveries where existing approaches fail, while preserving power. Across mouse and human brain, glioblastoma and breast cancer, TIDEST changes biological interpretation by correcting misleading differential-expression calls and revealing disease-associated transcriptional programs obscured by spatial confounding. Our results show that prediction accuracy alone is insufficient for reliable biological discovery and establish valid statistical inference as an essential component of reconstructed spatial transcriptomics.",
+      "authors": [
+        "Testa, L.",
+        "Lei, J.",
+        "Roeder, K."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "重建空間轉錄體學的準確預測並不保證有效的生物學發現",
+      "summaryZh": "研究指出，利用單細胞 RNA 定序參考資料重建空間轉錄體時，單純的預測準確度不足以確保生物學發現的有效性，因為預測誤差與潛在的空間變異可能導致錯誤的生物學解讀。為此，研究團隊開發了 TIDEST 框架，透過校準重建表達量並調整空間變異，能有效控制偽陽性發現。在小鼠與人類腦部、膠質母細胞瘤及乳癌樣本的測試中，TIDEST 修正了誤導性的差異表達分析結果，揭示了先前被空間混雜因素掩蓋的疾病相關轉錄程式。此研究強調，在重建空間轉錄體學中，建立有效的統計推論對於確保研究結果的可靠性至關重要。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "single-cell",
+        "bioinformatics",
+        "statistical-inference"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.24.740552",
+      "title": "Baseline regulatory programs in larval and adult neural progenitors converge towards an injury-induced state after spinal cord injury",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.24.740552v2",
+      "doi": "10.64898/2026.07.24.740552",
+      "abstract": "Regeneration after spinal cord injury requires progenitor cells to convert injury-associated signals into coordinated remodeling of gene regulatory programs. Mammalian spinal progenitors show limited neurogenic output after injury, whereas zebrafish regenerate spinal neurons and recover motor function. To investigate the regulatory changes that allow ependymo-radial glia (ERG) cells, the progenitor cells of the zebrafish spinal cord, to generate new neurons, we combined single-nucleus gene expression and chromatin accessibility profiling across embryonic, larval, and adult stages with topic-based gene regulatory network (GRN) inference. We found that larval and adult ERGs enter the injury response from distinct regulatory baselines: larval progenitors are characterized by a gliogenic program, whereas adult progenitors maintain a comparatively quiescent state. Following injury, both populations gradually change their baseline programs and shift towards a lesion-associated module marked by stress-responsive and chromatin-associated regulators, including jun, hmga1a, hmga2, ybx1, and foxj1a. The shift away from homeostatic states is supported by decreased expression of the Notch-associated regulators nuclear factor I A (nfia) and hey1 in larvae, while in adults, downregulation of the same nuclear factor and other TFs such as bhlhe41 is associated with quiescence exit. Pathway analysis showed stage-specific alterations after injury, characterized predominantly by extracellular signaling and cytoskeletal reorganization in larvae and by metabolic and translational remodeling in adults. Despite divergence from the homeostatic states, injury-induced larval and adult GRNs remain distinct from embryonic hERG regulatory programs. Thus, larval and adult progenitors follow different trajectories from their baselines towards a related lesion-reactive state, in which shared regeneration-associated features are acquired within respective contexts.",
+      "authors": [
+        "Cosacak, M. I.",
+        "Severinov, D.",
+        "Westphal, M.",
+        "Heilemann, K.",
+        "Baerhold, D.",
+        "Bretschneider, A.",
+        "Reinhardt, S.",
+        "Roscito, J. G.",
+        "Becker, T.",
+        "Becker, C. G.",
+        "Poetsch, A. R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "斑馬魚脊髓損傷後，幼體與成體神經前驅細胞的調控程式會趨向一致的損傷反應狀態",
+      "summaryZh": "本研究探討斑馬魚脊髓損傷後，室管膜放射狀膠質細胞（ERG）如何透過基因調控網路的重塑來生成新神經元。研究發現，儘管幼體與成體的前驅細胞在損傷前處於不同的調控基準狀態，但在受傷後皆會轉向一種共同的損傷反應模組，並表現出如 jun、hmga1a 及 foxj1a 等調節因子的活化。此過程伴隨著 Notch 相關調節因子的下調，且幼體與成體在損傷後的路徑調整上呈現出階段特異性的差異。這項發現揭示了不同發育階段的前驅細胞如何透過各自的路徑，最終匯聚至相似的再生相關狀態。",
+      "topicTags": [
+        "spinal-cord-injury",
+        "regeneration",
+        "neural-progenitors",
+        "gene-regulatory-networks",
+        "zebrafish"
+      ]
+    },
+    {
+      "id": "10.64898/2025.12.15.694341",
+      "title": "Mapping disease traits onto spatiotemporal domain landscapes through scalable multi-sample integration of spatial transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2025.12.15.694341v2",
+      "doi": "10.64898/2025.12.15.694341",
+      "abstract": "High-resolution spatial transcriptomics (ST) is generating massive datasets involving multiple tissue sections, continuous developmental stages, or various disease conditions. Yet, their scale, biological heterogeneity, and substantial batch effects hinder data integration for further analysis, particularly the temporal interpretation of disease-associated spatial domains within tissue organization landscapes. Here, we present STUltra, a scalable hypergraph framework that integrates multi-sample ST data for precise domain detection and genome-wide association study (GWAS)-based disease trait mapping. From ST datasets, STUltra first constructs interval-sampled integrative hypergraphs, in which hyperedges capture tissue neighborhoods within the slices as well as shared biological contexts across the slices. It then combines a robust graph autoencoder with contrastive learning to learn batch-corrected, spatially informed embeddings for identifying spatial domains across the tissue sections. These embeddings are then coupled with GWAS statistics to map trait-associated signals onto the integrated tissue sub-structure landscapes spanning different sections, developmental stages, and disease conditions. STUltra substantially outperforms competing methods, especially being much faster, on diverse integration benchmarks, enabling efficient processing of datasets containing millions of spots. As a case study on a mouse embryo dataset, STUltra recovered continuous developmental programs and mapped congenital heart disease signals beyond cardiac regions to broader programs including vascular and mesenchymal domains. On a mouse Alzheimer's disease dataset, STUltra prioritized localized AD-associated genetic signals to microglia and a disease-expanded C1QA/HEXB-high astrocyte state. Together, STUltra provides a scalable framework to bridge the gap between spatiotemporal tissue structures and complex disease traits, facilitating discoveries from previously unrecognized molecular and cellular architectures across diverse contexts.",
+      "authors": [
+        "Zhang, S.",
+        "Luo, S.",
+        "Luo, Y.",
+        "Su, S.",
+        "Shi, Y.",
+        "Liu, L.",
+        "Li, W.",
+        "Tian, T.",
+        "Li, J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "spatial domains",
+        "development",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.04.742894",
+      "title": "A Principled Statistical Framework for Analyzing Spatial Patterns in Spatially Resolved Multi-Omics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.04.742894v1",
+      "doi": "10.64898/2026.08.04.742894",
+      "abstract": "Emerging spatial multi-omics technologies enable the profiling of molecular variation within its tissue context, yet existing methods for identifying spatially variable features lack principled approaches to experimental design and cross-sample inference. Here, we present STORM, a principled Statistical TOol for spatially Resolved Multi-omics, for rigorously analyzing spatial patterns in spatial multi-omics research. STORM incorporates a robust and efficient nonparametric test that quantifies local deviations in molecular feature measurements to detect spatial dependence across transcriptomic and proteomic data. It further estimates an interpretable spatial effect size, supports power calculations for both spatial locations and biological replicates, and enables formal group-level comparisons. In several simulated and experimental spatial multi-omics case studies, STORM demonstrates reliable performance in detecting spatial structures while offering quantitative support for study design decisions. Overall, STORM provides a principled statistical framework that unifies spatial hypothesis testing, effect size estimation, power analysis, and experimental design for spatial multi-omics data.",
+      "authors": [
+        "Li, J.",
+        "Raina, M.",
+        "Wang, Y.",
+        "Zeng, S.",
+        "Yu, Y.",
+        "Yu, X.",
+        "Jin, X.",
+        "Chang, Y.",
+        "Feliciano, D.",
+        "Himmelfarb, J.",
+        "Ricardo, A. C.",
+        "Nachman, P. H.",
+        "Vazquez, M.",
+        "Caramori, M. L.",
+        "Barisoni, L.",
+        "Kretzler, M.",
+        "Jain, S.",
+        "Dagher, P. C.",
+        "El-Achkar, T. M.",
+        "Eadon, M. T.",
+        "Human Biomolecular Atlas Program,",
+        "Kidney Precision Medicine Project,",
+        "Melo Ferreira, R.",
+        "Ma, Q.",
+        "Wang, J.",
+        "Xu, D."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "用於空間解析多體學數據分析的原則性統計框架",
+      "summaryZh": "本研究提出了一種名為 STORM 的統計工具，旨在解決空間解析多體學中識別空間變異特徵的挑戰。該工具採用非參數檢定來量化分子特徵的局部偏差，並能估算空間效應大小、進行統計檢定力計算及跨樣本比較。透過在模擬與實驗數據中的驗證，STORM 為空間多體學研究提供了統一的統計框架，有助於研究設計與空間結構的可靠檢測。",
+      "topicTags": [
+        "spatial-multi-omics",
+        "statistical-framework",
+        "bioinformatics",
+        "data-analysis"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.04.742866",
+      "title": "Identifying multi-omics biomarkers for ovarian cancer survival estimation",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.04.742866v1",
+      "doi": "10.64898/2026.08.04.742866",
+      "abstract": "Ovarian cancer is among the deadliest gynecologic malignancies, and its molecular heterogeneity limits accurate prognostic stratification. Although multi-omics approaches have improved predictive modeling, many prioritize predictive performance over biological interpretability, limiting their clinical translation. We developed an interpretable three-stage machine learning framework integrating mRNA, microRNA, DNA methylation, copy number variation, and protein expression data from The Cancer Genome Atlas. Hierarchical feature selection was combined with a weighted ensemble of ElasticNet, ridge regression, support vector regression, XGBoost, and random forest models to estimate overall survival time in patients with ovarian cancer. Multi-omics integration outperformed every single-modality model, achieving a Pearson correlation of 0.752, a concordance index of 0.779, and a mean absolute error of 8.57 months between estimated and observed survival time, compared with 0.48 for the best single modality. The framework identified a 20-biomarker signature dominated by tumor-associated macrophage and complement genes. In an independent survival analysis, VSIG4 and CD163 remained significant after false discovery rate correction, and the signature raised the concordance index over clinical covariates alone from 0.615 to 0.686Enrichment analysis implicated PI3K-Akt, MAPK, focal adhesion, hypoxia, apoptosis, and p53 signaling pathways. This framework couples improved prognostic estimation with biological interpretability supporting multi-omics biomarker discovery in ovarian cancer.",
+      "authors": [
+        "Fateh, K.",
+        "Yerukala Sathipati, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics",
+        "cancer",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.07.743516",
+      "title": "scROMA: batch-aware pathway-activity inference and a ground-truth simulation framework for single-cell transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.07.743516v1",
+      "doi": "10.64898/2026.08.07.743516",
+      "abstract": "Background: Pathway-activity analysis summarizes gene-level single-cell measurements into interpretable functional modules, but widely used methods lack an integrated significance framework, do not account for the batch effects that pervade multi-sample studies, and are not natively interoperable with Python- based workflows. The field also lacks simulation resources with ground-truth pathway activity for quantitative benchmarking. Results: We present scROMA, a singular-value-decomposition-based method that quantifies pathway activity as coordinated variation, with per-cell scores, per-gene contributions, and permutation-based significance, natively integrated with the Scanpy/AnnData ecosystem. Its batch-aware extension is, to our knowledge, the first to correct batch effects within the gene-set subspace rather than across the full transcriptome, isolating technical variation at the pathway level while preserving signal in other genes. We also release a generative simulation framework producing synthetic data with fully specified ground-truth activities. On simulated benchmarks scROMA is competitive across tasks, and under batch effects its batch-aware mode recovers ordinal pathway structure that full-transcriptome integration misses. Across cystic fibrosis airway, intestinal-organoid, breast cancer, and lung cancer datasets it recovers established biology while separating it from technical and inter-donor variation; in the intestinal-organoid atlas it reproducibly recovers an inflammatory program across donors, separates its sustained from transient components, and resolves cell-type-specific niche-factor targets. Conclusions: scROMA is open-source and released with the simulation framework and pre-generated benchmark datasets as a community resource, providing a scalable, statistically grounded, and batch-aware approach to pathway-level analysis in single-cell transcriptomics.",
+      "authors": [
+        "Zhubanchaliyev, A.",
+        "Najm, M.",
+        "Laigle, V.",
+        "Bonnet, E.",
+        "Martignetti, L."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.07.743628",
+      "title": "LiverDCP: A Disease-Cell-Protein Framework for Multi-scale Modeling of Disease Biology",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.07.743628v1",
+      "doi": "10.64898/2026.08.07.743628",
+      "abstract": "Understanding how molecular interactions give rise to disease phenotypes across cellular contexts remains a central challenge in biomedical research. Here, we introduce a Disease-Cell-Protein (DCP) paradigm for modeling multi-scale disease biology, which jointly represents disease states, cellular composition, and protein interaction networks within a unified graph architecture. We instantiate this paradigm in the liver as LiverDCP by integrating a large-scale liver single-cell atlas (LiverHomo) with proteome-wide predicted protein-protein interactions to construct over 280 context-specific interactomes across diverse liver disease and cellular conditions. LiverDCP employs a multi-context representation learning strategy that enables joint training across hundreds of disease-cell environments, capturing shared interaction principles while preserving context-specific variation. LiverDCP incorporates pretrained protein sequence-derived features through a geometry-aware two-phase training scheme that preserves embedding structure while improving predictive performance. The resulting protein embeddings encode context-specific functional states and reveal extensive rewiring of protein roles across diseases. They provide a context-resolved representation of protein function, enabling interpretation of GWAS risk genes and prioritization of therapeutic targets, including recovery of known targets and nomination of candidate repurposed and novel targets for MASH. Overall, this work establishes a generalizable framework for linking molecular interactions to disease phenotypes and enabling mechanistic understanding and target discovery across complex diseases.",
+      "authors": [
+        "Shi, Z.",
+        "Song, Z.",
+        "Steveson-Lerner, H.",
+        "Dong, B.",
+        "Zhao, H."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.08.743701",
+      "title": "Double Machine Learning with Multi-Gene Shared Backgroundfor Causal Inference in Single-Cell Data: Grouping Deviation Follows a Random Walk and the Accuracy-Compute Trade-Off",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.08.743701v1",
+      "doi": "10.64898/2026.08.08.743701",
+      "abstract": "In high-throughput single-cell transcriptomics (p{approx} 20,000 genes), performing double machine learning (DML) causal inference on q{approx} 5,000 target genes requires nuisance function fits that grow linearly with the number of targets (K_{f} cross-fitting folds, K_{f}=5 or 10), far exceeding feasible computational budgets, especially with deep learning. We propose a Randomized Partition Strategy (RPS): randomly divide target genes into groups, share one background compression per group, reducing deep learning model training to q/m runs (m = group size) - a factor of m savings. The cost of grouping is accuracy loss - we prove that the cumulative deviation of the estimator follows a one-dimensional drift-free symmetric random walk, with diffusion variance growing linearly with group size and mean squared displacement equaling the mean squared error, so accuracy loss is predictable: m=1 is always optimal, accuracy cost is monotonically increasing, and a small accuracy sacrifice yields m-fold compute savings. On GSE189050 SLE single-cell data (Memory B cells, n=2120), both PCA and DL methods converge to the same conclusion, confirming the random walk mechanism is method-independent; an unexpected finding is that DL diffusion growth is only 16%, far slower than PCAs 7.4 times. This work provides a quantifiable theoretical foundation for compute strategy selection in single-cell high-dimensional causal inference.",
+      "authors": [
+        "Ye, W.",
+        "Jiang, X.",
+        "Shen, F."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞數據因果推論：雙重機器學習與多基因共享背景策略",
+      "summaryZh": "針對高通量單細胞轉錄體學中因果推論計算成本過高的問題，本研究提出了一種隨機分組策略（Randomized Partition Strategy, RPS），透過共享背景壓縮來顯著降低深度學習模型的訓練需求。研究證明分組帶來的準確度損失遵循一維無漂移對稱隨機漫步模型，其誤差與分組大小呈線性關係，提供了一種可預測的準確度與計算效率權衡機制。在系統性紅斑狼瘡（SLE）單細胞數據的實證中，該方法證實了隨機漫步機制的普遍性，並顯示深度學習在擴散增長方面優於主成分分析（PCA）。此研究為高維單細胞因果推論的計算策略選擇提供了量化的理論基礎。",
+      "topicTags": [
+        "single-cell",
+        "causal-inference",
+        "machine-learning",
+        "transcriptomics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.09.743737",
+      "title": "Sample-specific protein-protein interaction networks inferred from transcriptomics and proteomics show high similarities",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.09.743737v1",
+      "doi": "10.64898/2026.08.09.743737",
+      "abstract": "Contextualized protein-protein interaction networks provide crucial insight into diseases and other biological processes, but for a profound understanding of such processes and their distinct effects on individuals, the protein-protein interactions within individual samples must be investigated. A straightforward approach to estimate the PPI network of a sample is to restrict a general network of known PPIs to the proteins that are found in the sample. Although proteomics methods are becoming more accessible and precise, large-scale and single-cell studies still mainly target characterizing the transcriptomics profile of the samples, which is then often used as an approximation of the protein activities. The correlation of gene expression and protein abundance has been addressed in the past, but information about the deviations of the different omics-based estimates of the PPI networks is still lacking. In this study, we performed a comparative analysis of transcriptomic-based and proteomic-based sample-specific PPI network estimates to fill this gap. We created a framework for a comprehensive and transparent comparison of the two omics levels in two independent datasets, with a special focus on time-related network dynamics. We found that the size-adjusted characteristics of the different omics-based networks are very similar; the overall trend of how they change with time is also often the same, but the rate of the changes typically differs. The characteristics of the nodes present in both types of networks also show high similarity and often different time-related rates of change, but this varies among metrics. These results shed light on the properties of PPI network estimations and advise caution in interpreting them appropriately.",
+      "authors": [
+        "Zakar-Polyak, E.",
+        "Kerepesi, C."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.07.743303",
+      "title": "MYCN-induced lineage infidelity initiates SHH medulloblastoma-like tumors outside the canonical lineage of origin",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.07.743303v1",
+      "doi": "10.64898/2026.08.07.743303",
+      "abstract": "Amplification and high expression of MYCN and MYC are recurrent features of medulloblastoma and other pediatric cancers, yet how these proto-oncogenes interact with developmental programs to initiate tumorigenesis remains unclear. Here, we combine the experimental accessibility of the avian embryo with single-cell transcriptomics to investigate how MYCN overexpression reshapes cerebellar lineage trajectories. While MYCN broadly promotes transient overproliferation, enhanced biosynthesis and delayed neural maturation, we find that these effects are insufficient to drive tumorigenesis. Instead, tumorigenic competence is restricted to a discrete population of ATOH1+ isthmic progenitors, which reproducibly expands into extracerebellar tumors that transcriptionally resemble SHH medulloblastoma, partially recapitulating the granule cell lineage hierarchy. By reconstructing the earliest stages of tumor initiation, we show that MYCN first expands these progenitors and then redirects them toward a hybrid PAX6 granule cell progenitor-like state. Blocking PAX6 transcriptional activity abolishes tumorigenesis of the reprogrammed population, demonstrating that cooption of this lineage program is functionally required for tumor growth. Our findings reveal that MYCN-induced oncogenicity in the cerebellum proceeds through a three-step temporal sequence driven by the erosion of lineage restrictions.",
+      "authors": [
+        "Bouteille, L.",
+        "Fargues, W.",
+        "de Boissier, P.",
+        "Girard, G.",
+        "Saadaoui, M.",
+        "Maurange, C."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.08.743663",
+      "title": "Spatially Organized Tertiary Lymphoid Structures Emerge in Small Cell Lung Cancer and Associate with Improved Survival",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.08.743663v1",
+      "doi": "10.64898/2026.08.08.743663",
+      "abstract": "Tertiary lymphoid structures (TLS) are ectopic immune aggregates associated with improved prognosis and response to immunotherapy in multiple solid tumors. However, their presence, spatial organization, and functional relevance in small cell lung cancer (SCLC), a malignancy characterized by profound immune evasion, remain poorly understood. Using imaging mass cytometry (IMC) across 320 regions of interest spanning primary lung tumor, tumor-adjacent lung, liver and lymph node metastasis, complemented by Visium HD spatial transcriptomics, we characterized the cellular architecture and molecular programs of TLS-like niches in SCLC. TLS-like niches were identified in a subset of SCLC samples, predominantly primary lung tumor tissues and adjacent lung, spanning a continuum from loose lymphoid aggregates to compact follicle-like immune structures. Organized TLS-like niches contained CD20+ B-cell cores, closely associated with CD4+ and CD8A+ T cells, proliferating lymphocytes, HLA-DR+ antigen-presenting compartments, and SMA+ stromal scaffolds, and were enriched for canonical TLS organizer signals (CXCL13, LTB, FDCSP). Patients with TLS-positive tumors demonstrated improved overall survival, and core TLS-associated transcriptional programs were associated with favorable survival in an independent bulk RNA-seq cohort. To our knowledge, this represents one of the first spatially resolved analyses of TLS-like immune architecture in SCLC, demonstrating that organized lymphoid immunity can emerge in this classically immune-evasive disease and is associated with improved survival.",
+      "authors": [
+        "Cao, Y.",
+        "Thomas, A.",
+        "Nirula, M.",
+        "Mallory, P.",
+        "Sahoo, S.",
+        "Parmar, K.",
+        "Febres-Aldana, C."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "Visium",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.29.741620",
+      "title": "Minimally invasive monitoring of clonal evolution through integrated single cell and ctDNA analysis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.29.741620v3",
+      "doi": "10.64898/2026.07.29.741620",
+      "abstract": "Circulating cell-free DNA (cfDNA) offers a minimally invasive lens into tumor evolution. However, the accurate quantification of clonal composition from cfDNA remains challenging. Existing methods for clone tracking using liquid biopsies are constrained by issues such as their reliance on bulk tissue references, incomplete representations of clonal architecture or limited breadth of mutation panels. To address these limitations, we developed cfClone, a Bayesian framework that integrates single-cell whole-genome sequencing (scWGS) derived clonal structures with cfDNA whole-genome sequencing (cfDNA-WGS) data to enable high-resolution tissue-informed clonal tracking. By jointly modeling local copy-number alterations and haplotype-specific signals via Bayesian model selection and Markov chain Monte Carlo (MCMC) sampling, the algorithm yields uncertainty-aware estimates of clonal prevalence and tumour fraction (TF). Applied to longitudinal clinical cohorts, cfClone can be used to reconstruct evolutionary trajectories and uncovers clonal selection driving therapeutic resistance, including the de novo detection of emergent clonal populations. We demonstrate that cfClone achieves accurate TF estimates and circulating tumor DNA (ctDNA) detection in malignancies with varying degrees of copy-number variant (CNV) burden using semi-synthetic data. We then compare to the state of the art scWGS informed panel based approach, and demonstrate cfClone provides comparable accuracy while allowing for the tracking of more clones and detection of novel clones. Finally, we show how cfClone can be used to quantitatively track clonal dynamics in response to treatment in high grade serous ovarian cancer.",
+      "authors": [
+        "Kabeer, F.",
+        "Lepur, M.",
+        "Lynch, B.",
+        "Hurtado, E.",
+        "Zaikova, E.",
+        "Senz, J.",
+        "Au, V.",
+        "Baril, C.",
+        "Ma, D.",
+        "Nicholson, S.",
+        "Consortium, L.",
+        "Ha, G.",
+        "McAlpine, J.",
+        "Aparicio, S.",
+        "Huntsman, D.",
+        "Bouchard-Cote, A.",
+        "Drew, Y.",
+        "Roth, A. J. L."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "cancer",
+        "evolution",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1101/2025.09.25.678506",
+      "title": "Regional Signaling Controls Stem Cell-Mediated Regeneration in an Invertebrate Chordate",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.09.25.678506v2",
+      "doi": "10.1101/2025.09.25.678506",
+      "abstract": "Many tissues harbor quiescent stem cells that activate after injury, yet how local signals regulate this transition is not well understood. The solitary ascidian Ciona robusta provides a unique model, as upper body fragments regenerate while lower fragments fail to do so. By comparing these regenerative and non-regenerative fragments, we reveal striking differences in transcriptional dynamics and signaling environments. Combining flow cytometry, scRNA-seq, transplantation, and fate mapping, we identified a candidate stem cell population with robust proliferative and differentiation potential following transplantation. However, regenerative capacity does not simply reflect stem cell abundance, but instead depends on region-specific signaling cues. Local expression of metabolic, immune and differentiation-related factors further underscores the importance of spatially distinct environments in shaping outcomes. Our findings show how a shared injury response can diverge into regeneration versus failure, highlighting principles that may be leveraged to enhance tissue repair in other systems.",
+      "authors": [
+        "Gordon, T.",
+        "Levy, T.",
+        "Yu, C. J.",
+        "Rosental, B.",
+        "Lubeck, L.",
+        "Manni, L.",
+        "Weissman, I. L.",
+        "Voskoboynik, A."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "scRNA-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.08.743664",
+      "title": "Regulatory mutants of the Tbx1 gene alter transcription programs of lineage determination and patterning in early mesoderm.",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.08.743664v1",
+      "doi": "10.64898/2026.08.08.743664",
+      "abstract": "he Tbx1 gene is haploinsufficient in mice and in humans, where it causes a DiGeorge syndrome phenotype characterized by developmental deficits of the pharyngeal apparatus. TBX1 plays a critical role in the differentiation and regionalization of the cardiopharyngeal mesoderm lineage and its derivatives. Nevertheless, its regulation is incompletely understood. Here we used a combination of computational and wet-lab approaches to identify regulatory sequences of the Tbx1 gene, and we use single-cell molecular analysis as a read-out and to establish the consequences of their deletion. Results revealed a cluster of regulatory sequences with at least three distinct elements. Elimination of the entire cluster caused a near shut down of the gene, while individual deletions had milder, quantitative effects. Transcriptomic analyses of the deletion mutants revealed the down regulation of genes related to cardiopharyngeal lineage specification and, more surprisingly, up regulation and anteriorization of genes related to embryonic patterning, thereby providing a rationale for the severe dysmorphogenesis of the posterior pharyngeal apparatus observed in Tbx1 mutant mice.",
+      "authors": [
+        "Allegretti, S.",
+        "Lanzetta, O.",
+        "Bilio, M.",
+        "Ferrentino, R.",
+        "Salerno, P.",
+        "Zoppoli, P.",
+        "Merla, G.",
+        "Angelini, C.",
+        "Baldini, A."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.09.743789",
+      "title": "Single-locus chromatin memory enables flexible spatial fate specification in the Drosophila visual system",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.09.743789v1",
+      "doi": "10.64898/2026.08.09.743789",
+      "abstract": "Spatial patterning generates neuronal diversity by compartmentalizing progenitors into domains with distinct molecular identities. However, these patterning cues are often transient in neurogenic domains, raising the question of how spatial information can be preserved and how rigidly it constrains neuronal fates. Here we show that a single-locus chromatin memory in the Drosophila medulla enables spatial identity to be both faithfully executed and flexibly bypassed. Medulla progenitors are partitioned into three spatial domains marked by Vsx1, Optix and Bifid. Domain-resolved single-cell multiome profiling reveals that progenies from different neuroepithelial domains are nearly indistinguishable for both transcriptome and chromatin accessibility, although persistent, domain-specific accessibility is retained only at a single spatial-factor locus, either Vsx1/2 or Bifid. These same factors are absent when neuroepithelial cells are converted to neural stem cells but are re-expressed in postmitotic neurons to execute domain-specific fates. Because this bookmarking is so restricted, specific classes of neurons can skip the domain-specific re-expression program and default to a common ground state, adopting equivalent fates regardless of spatial origin. Other neurons reach the same domain-ignoring state by expressing Vsx1/2 through a program independent of their domain of origin. PRC2-mediated silencing restricts Vsx1 re-expression to its home domain, while temporal identity and Notch signaling in newborn neurons determine which neurons engage or bypass the spatial program. Thus, single-locus chromatin memory preserves spatial information without making it an obligatory determinant of every neuronal fate.",
+      "authors": [
+        "Chen, Y.-C.",
+        "Nielsen, S.",
+        "Choi, B. J.",
+        "Bakshi, A.",
+        "Coyne, R.",
+        "Ozel, M. N.",
+        "Desplan, C."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial domains"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 42,
+      "passedByScope": 30,
+      "llmClassified": 12,
+      "llmYes": 4,
+      "llmNotSure": 0,
+      "llmNo": 8,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 34,
+      "excluded": 8
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 30,
+      "llmTagged": 30,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 30,
+      "candidates": 29,
+      "featured": 12,
+      "overflow": 17,
+      "lineA": 0,
+      "lineB": 10,
+      "preprint": 19,
+      "skip": 1
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "primarySucceeded": 4,
+      "fallbackSucceeded": 8,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 17,
+      "llmTranslated": 0,
+      "failed": 17
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10984-9",
+        "title": "Author Correction: Durable all-inorganic perovskite tandem photovoltaics",
+        "journal": "Nature",
+        "publishedDate": "2026-08-10T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10984-9",
+        "doi": "10.1038/s41586-026-10984-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-10973-y",
+        "title": "Author Correction: Cooperation conflicts with equality when allocating public goods",
+        "journal": "Nature",
+        "publishedDate": "2026-08-10T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-10973-y",
+        "doi": "10.1038/s41586-026-10973-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02435-2",
+        "title": "How and when to use artificial intelligence in your science job application",
+        "journal": "Nature",
+        "publishedDate": "2026-08-10T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02435-2",
+        "doi": "10.1038/d41586-026-02435-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02447-y",
+        "title": "I caught my students using AI to cheat in an exam — here’s what universities must do to stamp this out",
+        "journal": "Nature",
+        "publishedDate": "2026-08-10T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02447-y",
+        "doi": "10.1038/d41586-026-02447-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-01681-8",
+        "title": "What to do when you have too many PhD projects on the go",
+        "journal": "Nature",
+        "publishedDate": "2026-08-10T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-01681-8",
+        "doi": "10.1038/d41586-026-01681-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02450-3",
+        "title": "Why environmental treaties must also address mental health",
+        "journal": "Nature",
+        "publishedDate": "2026-08-10T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02450-3",
+        "doi": "10.1038/d41586-026-02450-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02276-z",
+        "title": "This AI tool claims to pick the top 1% of preprints. Should researchers trust it?",
+        "journal": "Nature",
+        "publishedDate": "2026-08-10T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02276-z",
+        "doi": "10.1038/d41586-026-02276-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02453-0",
+        "title": "Despite global turmoil, Gen Z researchers are not giving up",
+        "journal": "Nature",
+        "publishedDate": "2026-08-10T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02453-0",
+        "doi": "10.1038/d41586-026-02453-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
