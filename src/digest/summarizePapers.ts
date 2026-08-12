@@ -5,6 +5,7 @@
  * - Primary：`DIGEST_LLM_MODEL` + primary key／baseUrl（timeout=`summarizeTimeoutMs`）
  * - Fallback：獨立 endpoint（`DIGEST_LLM_FALLBACK_MODEL` + `FALLBACK_API_KEY` + baseUrl，例如 Gemini）；
  *   只打 primary 最終失敗篇（timeout=`summarizeFallbackTimeoutMs`）
+ *   現行 production 範例：`gemini-3.5-flash-lite`（PR #36；維持 flash-lite 線，不是 3.5 Flash）
  * - Shared stage budget：`summarizeStageBudgetMs`（primary + fallback 共用）
  * - 429：尊重 Retry-After／reset hint，最多一次 budget-aware primary retry；仍失敗才 fallback
  * - 529／其他 5xx／timeout／network／empty／malformed／id mismatch：不做同模型無差別 retry，直接 fallback

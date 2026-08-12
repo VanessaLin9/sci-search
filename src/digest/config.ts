@@ -103,6 +103,7 @@ export function getDigestLlmConfig(): DigestLlmConfig {
     );
   }
 
+  // Production 範例 id 現為 gemini-3.5-flash-lite（PR #36）；仍只從 env／secret 讀，不硬編碼。
   const fallbackModel = process.env.DIGEST_LLM_FALLBACK_MODEL?.trim() || undefined;
   const fallbackApiKey = process.env.DIGEST_LLM_FALLBACK_API_KEY?.trim() || undefined;
   const fallbackBaseUrlRaw =

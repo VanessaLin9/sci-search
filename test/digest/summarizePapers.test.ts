@@ -37,7 +37,7 @@ function digestConfig(overrides: Partial<DigestLlmConfig> = {}): DigestLlmConfig
     apiKey: "test-digest-key",
     baseUrl: "https://api.example.test/v1",
     model: "primary-model",
-    fallbackModel: "gemini-3.1-flash-lite",
+    fallbackModel: "gemini-3.5-flash-lite",
     fallbackApiKey: "test-gemini-key",
     fallbackBaseUrl: "https://generativelanguage.googleapis.com/v1beta/openai",
     fallbackPreferJsonResponseFormat: true,
@@ -218,7 +218,7 @@ describe("summarizeFeaturedPapers dual-model fallback", () => {
 
     assert.deepEqual(
       requests.map((item) => item.model),
-      ["primary-model", "gemini-3.1-flash-lite"],
+      ["primary-model", "gemini-3.5-flash-lite"],
     );
     assert.equal(fieldsById.get("p2")?.summaryZh, "繁中摘要 p2");
     assert.deepEqual(stats, {
@@ -252,7 +252,7 @@ describe("summarizeFeaturedPapers dual-model fallback", () => {
     assert.match(requests[0]?.authorization ?? "", /test-digest-key/);
     assert.match(requests[1]?.url ?? "", /generativelanguage\.googleapis\.com/);
     assert.match(requests[1]?.authorization ?? "", /test-gemini-key/);
-    assert.equal(requests[1]?.model, "gemini-3.1-flash-lite");
+    assert.equal(requests[1]?.model, "gemini-3.5-flash-lite");
   });
 
   test("both models fail keeps English card stats", async () => {
@@ -302,7 +302,7 @@ describe("summarizeFeaturedPapers dual-model fallback", () => {
 
     assert.deepEqual(
       requests.map((item) => item.model),
-      ["primary-model", "primary-model", "gemini-3.1-flash-lite"],
+      ["primary-model", "primary-model", "gemini-3.5-flash-lite"],
     );
     assert.deepEqual(clock.sleeps, [1_000]);
     assert.deepEqual(stats, {
@@ -407,8 +407,8 @@ describe("summarizeFeaturedPapers dual-model fallback", () => {
     assert.equal(fieldsById.has("fb"), true);
     assert.equal(fieldsById.has("bad"), false);
     assert.ok(requests.some((item) => item.paperId === "ok" && item.model === "primary-model"));
-    assert.ok(requests.some((item) => item.paperId === "fb" && item.model === "gemini-3.1-flash-lite"));
-    assert.ok(!requests.some((item) => item.paperId === "ok" && item.model === "gemini-3.1-flash-lite"));
+    assert.ok(requests.some((item) => item.paperId === "fb" && item.model === "gemini-3.5-flash-lite"));
+    assert.ok(!requests.some((item) => item.paperId === "ok" && item.model === "gemini-3.5-flash-lite"));
     assert.deepEqual(stats, {
       requested: 3,
       llmSummarized: 2,
@@ -440,7 +440,7 @@ describe("summarizeFeaturedPapers dual-model fallback", () => {
 
     assert.deepEqual(
       requests.map((item) => item.model),
-      ["primary-model", "gemini-3.1-flash-lite"],
+      ["primary-model", "gemini-3.5-flash-lite"],
     );
     assert.equal(fieldsById.get("p7")?.titleZh, "繁中標題 p7");
     assert.equal(stats.fallbackSucceeded, 1);

@@ -37,11 +37,11 @@ describe("getDigestLlmConfig fallback credentials", () => {
 
   test("fallback on requires API key and defaults Gemini OpenAI-compat base URL", () => {
     setPrimaryEnv();
-    process.env.DIGEST_LLM_FALLBACK_MODEL = "gemini-3.1-flash-lite";
+    process.env.DIGEST_LLM_FALLBACK_MODEL = "gemini-3.5-flash-lite";
     process.env.DIGEST_LLM_FALLBACK_API_KEY = "gemini-key";
 
     const config = getDigestLlmConfig();
-    assert.equal(config.fallbackModel, "gemini-3.1-flash-lite");
+    assert.equal(config.fallbackModel, "gemini-3.5-flash-lite");
     assert.equal(config.fallbackApiKey, "gemini-key");
     assert.equal(config.fallbackBaseUrl, DEFAULT_DIGEST_FALLBACK_BASE_URL);
     assert.equal(config.fallbackPreferJsonResponseFormat, true);
@@ -51,14 +51,14 @@ describe("getDigestLlmConfig fallback credentials", () => {
     assert.ok(endpoint);
     assert.equal(endpoint.apiKey, "gemini-key");
     assert.equal(endpoint.baseUrl, DEFAULT_DIGEST_FALLBACK_BASE_URL);
-    assert.equal(endpoint.model, "gemini-3.1-flash-lite");
+    assert.equal(endpoint.model, "gemini-3.5-flash-lite");
     assert.equal(endpoint.preferJsonResponseFormat, true);
     assert.equal(endpoint.disableThinking, false);
   });
 
   test("FALLBACK_MODEL without API key throws", () => {
     setPrimaryEnv();
-    process.env.DIGEST_LLM_FALLBACK_MODEL = "gemini-3.1-flash-lite";
+    process.env.DIGEST_LLM_FALLBACK_MODEL = "gemini-3.5-flash-lite";
     assert.throws(() => getDigestLlmConfig(), /DIGEST_LLM_FALLBACK_API_KEY is missing/);
   });
 
