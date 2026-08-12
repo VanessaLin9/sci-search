@@ -172,7 +172,7 @@ Fixtures live in [`test/fixtures/regression/`](test/fixtures/regression/) (0522:
 | `ENABLE_LLM_DIGEST` | no | `1` for LLM tagging + summarize + translate |
 | `DIGEST_LLM_API_KEY` | no | Falls back to routing key |
 | `DIGEST_LLM_MODEL` | if digest on | Primary digest model (e.g. `minimaxai/minimax-m3` on NVIDIA integrate) |
-| `DIGEST_LLM_FALLBACK_MODEL` | no | Featured summarize fallback model (e.g. `gemini-3.1-flash-lite`); unset = fallback off |
+| `DIGEST_LLM_FALLBACK_MODEL` | no | Featured summarize fallback model (e.g. `gemini-3.5-flash-lite`); unset = fallback off |
 | `DIGEST_LLM_FALLBACK_API_KEY` | if fallback on | Gemini API key — **not** the NVIDIA／routing key chain |
 | `DIGEST_LLM_FALLBACK_BASE_URL` | no | Default `https://generativelanguage.googleapis.com/v1beta/openai/` |
 | `DEBUG_NORMALIZED` | no | `1` for verbose logs |
@@ -208,7 +208,7 @@ On `main`, only the most recent **30 days** of `data/processed/{date}/` and `doc
 | `ROUTING_LLM_MODEL` | yes | |
 | `DIGEST_LLM_MODEL` | recommended | CI falls back to `ROUTING_LLM_MODEL` if unset |
 | `DIGEST_LLM_API_KEY` | no | Optional separate primary key |
-| `DIGEST_LLM_FALLBACK_MODEL` | no | e.g. `gemini-3.1-flash-lite`; unset = summarize fallback off |
+| `DIGEST_LLM_FALLBACK_MODEL` | no | e.g. `gemini-3.5-flash-lite`; unset = summarize fallback off |
 | `DIGEST_LLM_FALLBACK_API_KEY` | if fallback on | Gemini key for featured-summarize fallback only |
 | `DIGEST_LLM_FALLBACK_BASE_URL` | no | Optional; code defaults to Gemini OpenAI-compat URL |
 | `DIGEST_SUBJECT_PREFIX` | no | Override `config/email.json` if needed |
