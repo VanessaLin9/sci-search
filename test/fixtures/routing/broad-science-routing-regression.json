@@ -1,5 +1,5 @@
 {
-  "description": "Broad-science routing keyword fallback regression fixture from 2026-06-04 through 2026-06-10",
+  "description": "Broad-science routing keyword fallback regression fixture from 2026-06-04 through 2026-06-10, plus 2026-07-31 / 2026-08-04 / 2026-08-12 observation cases",
   "papers": [
     {
       "id": "10.1038/d41586-026-01765-5",
@@ -924,6 +924,131 @@
     {
       "id": "10.1126/sciadv.aea3420",
       "title": "A Noachian hydrosphere component in the 4.1-Ga Martian meteorite Teghaza 001",
+      "verdict": "no"
+    },
+    {
+      "id": "obs-2026-07-31-lymphocyte",
+      "title": "Stiff matrix impairs cytotoxic T lymphocyte function at multiple levels",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-07-31-mitochondrial",
+      "title": "Mitochondrial control of amino acid catabolism by a fasting-inducible mitochondrial carrier",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-07-31-angiogenesis",
+      "title": "Programming angiogenesis with tunable assemblies of multifunctional peptides",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-07-31-dendritic",
+      "title": "Dendritic cell circadian clocks shape memory CD8+ T cell differentiation",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-07-31-liposarcoma",
+      "title": "PPARG governs adipogenic differentiation and cell state plasticity in well-differentiated and dedifferentiated liposarcoma",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-07-31-stem-cell",
+      "title": "TRF2 couples muscle stem cell identity to regenerative repair",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-07-31-terahertz",
+      "title": "Bidirectional terahertz frequency conversion via structural resonances at a plasma time boundary",
+      "verdict": "no"
+    },
+    {
+      "id": "obs-2026-08-04-dna-aging",
+      "title": "Could mending damaged DNA prolong life?",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-08-12-organoids",
+      "title": "Temporal uncoupling of radial glia lineage progression in cortical organoids",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-08-12-neural-control",
+      "title": "Neural basis of compositional control",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-08-12-myasthenia",
+      "title": "Myasthenia thymus reprograms class-switched B cells into BAFF-dependent survivors",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-08-12-angiogenesis",
+      "title": "GNPs-pIL-4 reprograms macrophage polarization and activates the OSM/GSNOR/ENG axis to improve angiogenesis in ischemic limbs",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-08-12-peptidergic",
+      "title": "A prefrontal peptidergic circuit for psychogenic itch",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-08-12-mitochondrial-elegans",
+      "title": "Mitochondrial stress activates ELT-2-dependent lysosomal proteostasis to extend lifespan in C. elegans",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-08-12-alzheimer",
+      "title": "A controversial Alzheimer's surgery is said to reverse symptoms — here's what scientists know",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-08-12-organoid-deep-learning",
+      "title": "Label-free characterization of neural organoids via deep learning-enhanced Raman spectroscopy",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-08-12-dendritic",
+      "title": "CD5+ dendritic cell robots mediated in situ immunocyte activation",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-08-12-staph",
+      "title": "Fibroblasts resist Staphylococcus aureus killing through interleukin-1-driven neutrophil recruitment",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-08-12-virulence",
+      "title": "Clostridioides difficile virulence at the onset of infection",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-08-12-zebrafish",
+      "title": "Mito-TEMPO rescues npc1-knockout zebrafish by restoring mitophagy",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-08-12-endothelial",
+      "title": "TAL1 controls human endothelial cell fate determination",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-08-12-mci-biomarkers",
+      "title": "Prediction of mild cognitive impairment progression using plasma biomarkers",
+      "verdict": "yes"
+    },
+    {
+      "id": "obs-2026-08-12-globular-cluster",
+      "title": "Evidence for the first globular cluster stellar stream beyond the Milky Way",
+      "verdict": "no"
+    },
+    {
+      "id": "obs-2026-08-12-porous-liquid",
+      "title": "Breaking solubility of metal-organic cages in a type II porous liquid of n-alkanes",
+      "verdict": "no"
+    },
+    {
+      "id": "obs-2026-08-12-forest-species",
+      "title": "Species intraspecific variation drives tropical forest drought resistance",
       "verdict": "no"
     }
   ]
