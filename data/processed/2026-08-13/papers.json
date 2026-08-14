@@ -1,0 +1,243 @@
+{
+  "reportDate": "2026-08-13",
+  "generatedAt": "2026-08-14T10:53:34.646Z",
+  "papers": [
+    {
+      "id": "10.1038/s41588-026-02712-w",
+      "title": "Correlations between causal effect sizes of proximal SNPs vary with functional annotations and implicate stabilizing selection",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-08-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02712-w",
+      "doi": "10.1038/s41588-026-02712-w",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "近端SNP因果效應大小之間的相關性隨功能註解而變化並暗示穩定選擇"
+    },
+    {
+      "id": "10.1038/s41559-026-03153-8",
+      "title": "Animal degradation of microbial storage polyhydroxyalkanoates",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-08-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03153-8",
+      "doi": "10.1038/s41559-026-03153-8",
+      "abstract": "This study shows that the degradation of microbial storage polyhydroxyalkanoates is not just restricted to microorganisms by finding that some animals also have the enzymes required to break down these biopolymers.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "動物對微生物儲存聚羥基烷酸酯的降解",
+      "summaryZh": "這項研究發現，微生物儲存性聚羥基烷酸酯（PHA）的降解並非僅限於微生物，部分動物體內也具備分解此類生物聚合物的酵素。此一結果挑戰了過去認為PHA降解僅由微生物執行的觀點，顯示動物界中可能也存在參與PHA分解的酵素機制。這項發現拓展了我們對PHA生物降解參與者範圍的認識。",
+      "topicTags": [
+        "polyhydroxyalkanoates",
+        "biopolymer-degradation",
+        "animal-microbiology",
+        "microbial-ecology"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03237-7",
+      "title": "Proteome-wide identification of the druggable CRBN interactome",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-08-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03237-7",
+      "doi": "10.1038/s41587-026-03237-7",
+      "abstract": "The latent interactions of molecular glue degraders are identified proteome-wide.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "全蛋白質體解析可成藥之 CRBN 交互作用組",
+      "summaryZh": "本研究在全蛋白質體範圍內系統性鑑定可成藥的 CRBN 交互作用組,聚焦於分子膠降解劑的潛在(latent)交互作用對象。這項工作繪製出 CRBN 的交互作用網絡,為拓展分子膠降解劑可成藥的靶點範圍提供基礎。",
+      "topicTags": [
+        "molecular-glue-degraders",
+        "crbn",
+        "proteomics",
+        "drug-discovery",
+        "interactome"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03245-7",
+      "title": "Characterization of microbial dark matter at scale with MetaSBT and taxonomy-aware Sequence Bloom Trees",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-08-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03245-7",
+      "doi": "10.1038/s41587-026-03245-7",
+      "abstract": "A k-mer-based clustering framework is used for constructing a scalable, updatable taxonomy of viral genomes.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "以 MetaSBT 與分類感知序列布隆樹大規模表徵微生物暗物質",
+      "summaryZh": "本研究提出一個基於 k-mer 的分群框架，用於建構可擴展且可更新的病毒基因組分類系統。該方法結合 MetaSBT 與分類感知序列布隆樹（Sequence Bloom Trees），旨在大規模表徵微生物暗物質。此框架讓研究人員能有效率地組織與更新病毒基因體資料，對於處理龐大且持續增長的病毒序列資料具有重要價值。",
+      "topicTags": [
+        "viral-genomics",
+        "metagenomics",
+        "bioinformatics",
+        "sequence-clustering",
+        "taxonomy"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02398-7",
+      "title": "Dendritic translation and neuroproteasome-mediated degradation of endogenous tau revealed by STARFISH",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-08-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02398-7",
+      "doi": "10.1038/s41593-026-02398-7",
+      "abstract": "STARFISH, a method for visualizing endogenous mRNA translation, is used to show that tau is translated exclusively in neuronal dendrites and rapidly degraded by neuroproteasomes. Failure of this degradation leads to accumulation of tau aggregates.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "STARFISH 揭示內源性 tau 的樹突轉譯與神經蛋白酶體降解",
+      "summaryZh": "STARFISH 是一種用於可視化內源性 mRNA 轉譯的新方法。本研究利用此技術發現，tau 蛋白僅在神經元的樹突中進行轉譯。新生成的 tau 會迅速被神經蛋白酶體降解；若此降解機制失效，tau 便會累積並形成聚集體。這項結果有助於釐清 tau 蛋白在神經元中的動態調控機制。",
+      "topicTags": [
+        "neuroscience",
+        "tau",
+        "protein-degradation",
+        "mrna-translation",
+        "dendrites"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02435-y",
+      "title": "Genomic catalogue of giant viruses reveals expanded diversity and functional potential",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-08-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02435-y",
+      "doi": "10.1038/s41564-026-02435-y",
+      "abstract": "This curated genome-resolved, metagenomic resource expands the known diversity of Nucleocytoviricota and Mirusviricota lineages.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "巨型病毒基因體目錄揭示多樣性與功能潛力的擴展",
+      "summaryZh": "這項研究建立了一套經策展、以基因體解析的宏基因體資源，擴展了已知 Nucleocytoviricota 與 Mirusviricota 譜系的多樣性。該目錄同時揭示了巨型病毒在功能潛力上的擴展，為後續研究巨型病毒的生物學與生態角色提供基礎。",
+      "topicTags": [
+        "giant-viruses",
+        "metagenomics",
+        "virology",
+        "virus-diversity",
+        "genomics"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02445-w",
+      "title": "Phage-encoded contingency loci enable bet-hedging against host defence mechanisms",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-08-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02445-w",
+      "doi": "10.1038/s41564-026-02445-w",
+      "abstract": "Diverse E. coli phage genomes have hypermutable DNA regions that promote reversible frameshift mutations through DNA polymerase slippage, generating population heterogeneity that enables host exploitation.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "噬菌體編碼的應變基因座能針對宿主防禦機制進行風險分散",
+      "summaryZh": "本研究指出，多種大腸桿菌（E. coli）噬菌體基因組具有高度可變異的DNA區域，可透過DNA聚合酶滑移促進可逆的移碼突變。這項機制能產生群體異質性，使噬菌體得以進行宿主剝削。此發現有助於理解噬菌體如何透過風險分散策略來應對宿主防禦機制。",
+      "topicTags": [
+        "bacteriophage",
+        "mutagenesis",
+        "microbiology"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 7,
+      "passedByScope": 7,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 7,
+      "excluded": 0
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 7,
+      "llmTagged": 7,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 7,
+      "candidates": 7,
+      "featured": 6,
+      "overflow": 1,
+      "lineA": 0,
+      "lineB": 7,
+      "preprint": 0,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 6,
+      "llmSummarized": 6,
+      "primarySucceeded": 5,
+      "fallbackSucceeded": 1,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 1,
+      "llmTranslated": 1,
+      "failed": 0
+    }
+  }
+}
