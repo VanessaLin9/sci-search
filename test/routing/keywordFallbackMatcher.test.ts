@@ -28,13 +28,56 @@ describe("matchRoutingKeywordFallback", () => {
     assert.equal(result.matchedIncludes.length, 0);
   });
 
-  test("strong exclude wins over include", () => {
+  test("strong exclude still wins when only wide stems include", () => {
     const result = matchRoutingKeywordFallback(
-      "Quantum effects on cancer therapy in mice",
+      "Quantum regulation of photonic activity",
       config,
     );
     assert.equal(result.verdict, "no");
     assert.ok(result.matchedExcludes.includes("quantum"));
+    assert.equal(result.matchedIncludes.length, 0);
+  });
+
+  test("term-level include keeps yes when exclude also hits", () => {
+    const organoid = matchRoutingKeywordFallback(
+      "Label-free characterization of neural organoids via deep learning-enhanced Raman spectroscopy",
+      config,
+    );
+    assert.equal(organoid.verdict, "yes");
+    assert.ok(organoid.matchedIncludes.includes("organoid"));
+    assert.ok(organoid.matchedExcludes.includes("deep learning"));
+
+    const malaria = matchRoutingKeywordFallback(
+      "Malaria risk under climate change in highland East Africa",
+      config,
+    );
+    assert.equal(malaria.verdict, "yes");
+    assert.ok(malaria.matchedIncludes.includes("malaria"));
+  });
+
+  test("wide stems no longer rescue astronomy or materials false positives", () => {
+    const cluster = matchRoutingKeywordFallback(
+      "Evidence for the first globular cluster stellar stream beyond the Milky Way",
+      config,
+    );
+    assert.equal(cluster.verdict, "no");
+
+    const porous = matchRoutingKeywordFallback(
+      "Breaking solubility of metal-organic cages in a type II porous liquid of n-alkanes",
+      config,
+    );
+    assert.equal(porous.verdict, "no");
+  });
+
+  test("damaged DNA aging news is yes; DNA data storage stays no", () => {
+    const aging = matchRoutingKeywordFallback("Could mending damaged DNA prolong life?", config);
+    assert.equal(aging.verdict, "yes");
+
+    const storage = matchRoutingKeywordFallback(
+      "Electric field-guided random-access DNA data storage",
+      config,
+    );
+    assert.equal(storage.verdict, "no");
   });
 
   test("ambiguous / no hit → no", () => {
@@ -46,7 +89,7 @@ describe("matchRoutingKeywordFallback", () => {
 });
 
 describe("matchRoutingKeywordFallback regression fixture", () => {
-  test("reports precision/recall on 185-paper analysis set", () => {
+  test("reports precision/recall on the analysis set", () => {
     const analysisPath = join(
       process.cwd(),
       "test/fixtures/routing/broad-science-routing-regression.json",

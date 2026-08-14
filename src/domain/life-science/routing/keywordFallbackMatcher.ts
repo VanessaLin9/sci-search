@@ -32,9 +32,28 @@ function findStemMatches(titleStems: Set<string>, stems: readonly string[]): str
   return [...normalized].filter((stem) => titleStems.has(stem));
 }
 
+function collectIncludeMatches(
+  title: string,
+  haystack: string,
+  titleStems: Set<string>,
+  config: RoutingKeywordsConfig,
+): { matchedIncludes: string[]; termLevelIncludes: string[] } {
+  const stemIncludes = findStemMatches(titleStems, config.includeStems);
+  const termIncludes = findTermMatches(haystack, [...config.includeTerms, ...config.sharedIncludeTerms]);
+  const tokenIncludes = tokenizeRoutingTitle(title).filter((token) =>
+    config.includeTerms.some((term) => term.toLowerCase() === token),
+  );
+  return {
+    matchedIncludes: [...new Set([...stemIncludes, ...termIncludes, ...tokenIncludes])],
+    termLevelIncludes: [...new Set([...termIncludes, ...tokenIncludes])],
+  };
+}
+
 /**
  * Broad-science LLM degrade 時的標題規則（PR #19）：
  * strong-exclude → no；include hit → yes；否則 no（偏 precision，避免亂救）。
+ * 強排除改為只否決「沒有 term-level include」的命中；organoid+deep learning、
+ * malaria+climate 改 yes（PR #37）。
  */
 export function matchRoutingKeywordFallback(
   title: string,
@@ -46,21 +65,20 @@ export function matchRoutingKeywordFallback(
   const phraseExcludes = findPhraseMatches(haystack, config.excludePhrases);
   const termExcludes = findTermMatches(haystack, config.excludeTerms);
   const matchedExcludes = [...phraseExcludes, ...termExcludes];
+  const { matchedIncludes, termLevelIncludes } = collectIncludeMatches(
+    title,
+    haystack,
+    titleStems,
+    config,
+  );
 
-  // 強排除優先：例如明顯非生命科學主題
-  if (matchedExcludes.length > 0) {
+  // 過寬 stem 不得蓋過 quantum/climate；term include 才可與 exclude 共存（PR #37）
+  if (matchedExcludes.length > 0 && termLevelIncludes.length === 0) {
     return { verdict: "no", matchedIncludes: [], matchedExcludes };
   }
 
-  const stemIncludes = findStemMatches(titleStems, config.includeStems);
-  const termIncludes = findTermMatches(haystack, [...config.includeTerms, ...config.sharedIncludeTerms]);
-  const tokenIncludes = tokenizeRoutingTitle(title).filter((token) =>
-    config.includeTerms.some((term) => term.toLowerCase() === token),
-  );
-  const matchedIncludes = [...new Set([...stemIncludes, ...termIncludes, ...tokenIncludes])];
-
   if (matchedIncludes.length > 0) {
-    return { verdict: "yes", matchedIncludes, matchedExcludes: [] };
+    return { verdict: "yes", matchedIncludes, matchedExcludes };
   }
 
   return { verdict: "no", matchedIncludes: [], matchedExcludes: [] };
