@@ -51,9 +51,9 @@ function collectIncludeMatches(
 
 /**
  * Broad-science LLM degrade 時的標題規則（PR #19）：
- * include hit → yes；否則 no（偏 precision，避免亂救）。
- * 強排除仍否決「只有過寬 stem」的命中（quantum + regulat）；term-level include
- * 與 exclude 同時命中時改為 yes（organoid + deep learning、malaria + climate）。
+ * strong-exclude → no；include hit → yes；否則 no（偏 precision，避免亂救）。
+ * 強排除改為只否決「沒有 term-level include」的命中；organoid+deep learning、
+ * malaria+climate 改 yes（PR #37）。
  */
 export function matchRoutingKeywordFallback(
   title: string,
@@ -72,6 +72,7 @@ export function matchRoutingKeywordFallback(
     config,
   );
 
+  // 過寬 stem 不得蓋過 quantum/climate；term include 才可與 exclude 共存（PR #37）
   if (matchedExcludes.length > 0 && termLevelIncludes.length === 0) {
     return { verdict: "no", matchedIncludes: [], matchedExcludes };
   }
