@@ -1,0 +1,644 @@
+{
+  "reportDate": "2026-08-15",
+  "generatedAt": "2026-08-16T10:21:44.383Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.08.14.744819",
+      "title": "Single-Cell Mapping of tRNA Expression Dynamics Across Human Hematopoiesis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-15",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.14.744819v1",
+      "doi": "10.64898/2026.08.14.744819",
+      "abstract": "How transfer RNA (tRNA) expression changes as hematopoietic stem cells are specified into human blood cell types remains unknown. tRNAs translate the 64-codon genetic code into the 21-amino acid protein code, and their relative abundance can influence proteomic output. Here, we introduce simultaneous single-cell tRNA and mRNA sequencing (sc-STM-seq), a scalable, high-throughput approach for profiling tRNAs alongside mRNA transcriptomes in individual cells. Applying sc-STM-seq to human bone marrow, we map tRNA expression and splicing across hematopoietic differentiation trajectories and identify tRNAs associated with stemness, differentiation, and specific cell lineages. Our study provides an atlas of the hematopoietic tRNA landscape and establishes tRNA expression as a previously underappreciated layer of cellular heterogeneity during human blood cell development.",
+      "authors": [
+        "Külp, M.",
+        "Osuna Lopez, M.",
+        "Wiegand, A.-S.",
+        "Perner, S. P.",
+        "Cetin, R.",
+        "Matthess, Y.",
+        "Günther, S.",
+        "Schmachtel, T.",
+        "Schultheis, H.",
+        "Looso, M.",
+        "Kaulich, M.",
+        "Häupl, B.",
+        "Oellerich, T.",
+        "Benes, V.",
+        "Bonig, H.",
+        "Rieger, M. A."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞解析人類造血分化中 tRNA 表現的動態變化",
+      "summaryZh": "本研究開發了一種名為 sc-STM-seq 的高通量單細胞定序技術，可在同一細胞中同時分析 tRNA 與 mRNA 表現。作者將此方法應用於人類骨髓，繪製造血分化過程中 tRNA 表現與剪接的動態圖譜，並找出與幹細胞特性、分化過程及特定細胞譜系相關的 tRNA。此研究建立了人類造血 tRNA 表現的圖譜，揭示 tRNA 表現是血液細胞發育中一個先前被忽略的細胞異質性層次。",
+      "topicTags": [
+        "single-cell",
+        "tRNA",
+        "hematopoiesis",
+        "sequencing",
+        "transcriptomics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.13.744455",
+      "title": "Trustworthy in silico labeling via semantic visual interpretability of image-to-image translation",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-15",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.13.744455v1",
+      "doi": "10.64898/2026.08.13.744455",
+      "abstract": "Cross-modality image translation promises to provide multiple layers of biological information from a single image input, yet its practical application is stalled by a lack of interpretability and the inability to account for model imperfections. In silico labeling, the inference of organelle localization from label-free images, is a primary example where this black-box nature limits adoption. We present Mask Interpreter, a generalized method for semantic visual interpretability of image-to-image translation models. By uncovering organelle-specific \"explanation signatures\", Mask Interpreter validates that models rely on authentic biological structures rather than spurious artifacts. Beyond biological validation, it outperforms traditional explainable AI (xAI) approaches, identifies batch effects and localizes prediction errors when ground-truth fluorescence is unavailable. Semantic confidence modeling further provides fine-grained reliability assessment at single-cell resolution, enabling the automated exclusion of artifacts from downstream analyses. By bridging the gap between computational inference and meaningful biological features, Mask Interpreter transforms in silico labeling into a reliable tool for scientific discovery across diverse biomedical imaging modalities.",
+      "authors": [
+        "Ben Nedava, L.",
+        "Miller, G.",
+        "Elmalam, N.",
+        "Viana, M. P.",
+        "Chen, J.",
+        "Gaudreault, N.",
+        "Rafelski, S. M.",
+        "Zaritsky, A."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "透過圖像對圖像轉換的語義視覺可解釋性實現可靠的電腦模擬標記",
+      "summaryZh": "本研究提出名為 Mask Interpreter 的通用方法，旨在為圖像對圖像轉換模型提供語義視覺可解釋性，解決電腦模擬標記（in silico labeling）缺乏可解釋性與難以處理模型瑕疵的問題。透過揭示胞器專屬的「解釋特徵」，該方法能驗證模型是否依賴真實生物結構而非偽影，並超越傳統的可解釋人工智慧方法，在無真實螢光對照時識別批次效應及定位預測誤差。此外，語義信心建模可提供單細胞解析度的細緻可靠性評估，自動排除下游分析中的偽影。這項研究彌合了計算推論與有意義生物特徵之間的差距，將電腦模擬標記轉化為跨多種生物醫學成像模態的可靠科學發現工具。",
+      "topicTags": [
+        "in-silico-labeling",
+        "image-translation",
+        "interpretability",
+        "bioimaging",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.1101/2025.10.24.684307",
+      "title": "Comparative assessment of genomic, phenomic, and metabolomic prediction models in biparental grapevine breeding populations",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-15",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.10.24.684307v2",
+      "doi": "10.1101/2025.10.24.684307",
+      "abstract": "Accelerating grapevine breeding for disease resistance and climate adaptation remains constrained by long generation cycles. We benchmarked genomic (SNP), phenomic (NIRS), and metabolomic (untargeted LC-MS) prediction for 24 agronomic traits in a biparental population phenotyped over three years. Seven statistical frameworks and four tissue x timepoint combinations (wood; vineyard leaves at budbreak and flowering; greenhouse leaves at flowering) were evaluated, together with feature-wise BLUPs across samples. Cross-year and cross-population analyses with two additional populations assessed temporal robustness and transferability. Genomic prediction was most accurate (up to r = 0.83), metabolomic prediction was intermediate (up to r = 0.59), and phenomic prediction was lowest (up to r = 0.39) despite its lower acquisition cost. Metabolite features were more heritable than NIR wavelengths, for which most unexplained variation remained residual under the fitted model. Multi-omics integration produced limited overall gains. These results support genomic selection as the primary approach, with metabolomic or phenomic screening considered only for traits and sampling designs that show reproducible predictive signal.",
+      "authors": [
+        "Borrelli, C.",
+        "Delannoy, L.",
+        "Chepca, H.",
+        "Calcaterra, M.",
+        "Chedid, E.",
+        "Arnold, G.",
+        "Dumas, V.",
+        "Baltenweck, R.",
+        "Maia-Grondard, A.",
+        "Hugueney, P.",
+        "Merdinoglu, D.",
+        "Duchene, E.",
+        "Avia, K."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "雙親葡萄育種族群中基因體、表型與代謝體預測模型的比較評估",
+      "summaryZh": "本研究針對雙親葡萄育種族群的 24 種農藝性狀，對基因體、表型與代謝體預測模型進行基準評估。結果顯示基因體預測的準確度最高，代謝體預測次之，而表型預測的準確度最低。跨年度與跨族群分析評估了時間穩健性與可轉移性，多體學整合則僅帶來有限的整體增益。這些結果支持將基因體選擇作為主要方法，並僅在顯示可重複預測訊號的性狀與採樣設計中考慮代謝體或表型篩選。",
+      "topicTags": [
+        "genomic-selection",
+        "plant-breeding",
+        "metabolomics",
+        "phenomics",
+        "grapevine"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.12.744448",
+      "title": "Detection of Spatially Aberrant Cells in Spatial Transcriptomics Data by Conformal Prediction",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-15",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.12.744448v1",
+      "doi": "10.64898/2026.08.12.744448",
+      "abstract": "The hexagonal organization of epithelial cells represents a fundamental feature of normal tissue architecture, reflecting the precise spatial coordination that underlies healthy biological structure. Disruptions to this organization-manifesting as spatially aberrant spots with abnormal gene expression and misplaced positioning-are closely associated with disease initiation and progression. Here, we introduce SPADE, a computational framework that integrates single-cell RNA sequencing and spatial transcriptomics data to quantitatively characterize and detect spatial aberrancy. SPADE leverages a variational autoencoder coupled with Gaussian mixture modeling for cell-type embedding and spatial deconvolution, and incorporates conformal prediction to enable uncertainty-calibrated identification of aberrant spots. Through extensive validation, SPADE demonstrates superior performance in identifying biologically meaningful aberrant spots.",
+      "authors": [
+        "Zhang, Z.",
+        "Zheng, X.",
+        "Yuan, Q.",
+        "Luo, R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "spatial deconvolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "以共形預測偵測空間轉錄體資料中的空間異常細胞",
+      "summaryZh": "SPADE 是一個結合單細胞 RNA 定序與空間轉錄體資料的計算框架，用於定量描述並偵測空間異常的細胞點位。此方法透過變分自編碼器搭配高斯混合模型進行細胞型態嵌入與空間解卷積，並引入共形預測以提供具不確定性校正的異常點位辨識。研究指出，表現異常基因且錯位的空間異常點位與疾病的發生及進展密切相關。經過廣泛驗證，SPADE 在辨識具生物意義的異常點位上展現優異的表現。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "single-cell",
+        "computational-biology",
+        "conformal-prediction"
+      ]
+    },
+    {
+      "id": "10.1101/2025.02.28.640792",
+      "title": "Integrative multi-omics framework identifies phenotypically impactful driver pathways in glioblastoma multiforme",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-15",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.02.28.640792v2",
+      "doi": "10.1101/2025.02.28.640792",
+      "abstract": "Glioblastoma multiforme (GBM), a highly aggressive brain tumor characterized by molecular heterogeneity, demands integrative approaches to uncover driver pathways and therapeutic targets. Here, we present gtePIDP, a computational framework that systematically integrates multi-omics data to identify Phenotypically Impactful Driver Pathways. By evaluating mutation patterns (coverage/exclusivity) and downstream regulatory cascades, this model maps somatic alterations to phenotypic outcomes using TCGA mutation profiles, expression data, and regulatory networks (transcription factors, microRNAs). Through iterative pruning of candidate driver genes and quantifying resultant perturbations in gene expression and regulatory activities, gtePIDP prioritizes gene sets maximizing mutational significance and phenotypic impact. Our analysis uncovered pivotal GBM driver pathways involving TP53, CDKN2A, MDM2, and RB1, which disrupt key cancer-associated regulators (e.g., oncogenic: NFATC2, MIR-370; tumor-suppressive: MIR-506, MIR-9, FOXJ2), driving dysregulation of angiogenesis, apoptosis, and proliferation. Notably, we identified therapeutic axes such as TP53/MIR-185/VEGFA and MDM2/SMAD4/VEGFA, suggesting anti-angiogenic targeting strategies. Furthermore, a PI3K-Akt signaling regulatory module revealed actionable targets (CDKN2A/CREBBP/OSMR and TP53/MIR-9/FGF12) for intervention. By bridging mutational landscapes with transcriptional/epigenetic dysregulation, gtePIDP advances mechanistic driver pathway discovery and prioritizes targets with clinical relevance. This study highlights the power of multi-omics integration to unravel GBM pathogenesis and accelerate precision oncology strategies. Additionally, the gtePIDP framework is readily extendable to other malignancies (such as breast carcinoma (BRCA), ovarian cancer (OV), lung adenocarcinoma (LUAD), etc.), providing a universal computational strategy for pan-cancer biomarker discovery.",
+      "authors": [
+        "Zhang, J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "整合多體學框架辨識神經膠母細胞瘤中的表型影響驅動路徑",
+      "summaryZh": "本研究提出名為 gtePIDP 的計算框架，透過系統性整合多體學資料來辨識神經膠母細胞瘤（GBM）中具表型影響的驅動路徑。該模型結合突變模式與下游調控級聯，評估突變顯著性與表型影響，藉此揭示涉及 TP53、CDKN2A、MDM2 和 RB1 等關鍵驅動路徑。研究進一步識別出如 TP53/MIR-185/VEGFA 等潛在治療軸及 PI3K-Akt 訊號調控模組，為血管新生標靶及精準腫瘤學策略提供新見解。此外，此框架亦具備擴展至其他惡性腫瘤進行泛癌症生物標記發現的潛力。",
+      "topicTags": [
+        "multi-omics",
+        "glioblastoma",
+        "computational-biology",
+        "cancer-genetics",
+        "biomarkers"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.11.743383",
+      "title": "Single-cell spatial multi-omic characterization of the tumour microenvironment in transformed follicular lymphoma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-15",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.11.743383v1",
+      "doi": "10.64898/2026.08.11.743383",
+      "abstract": "Histological examination of follicular lymphoma (FL) biopsies remains the cornerstone for diagnostic grading of FL. Single-cell sequencing approaches, while transcriptomically rich, require tissue dissociation and lose the native spatial context that underpins FL transformation to diffuse large B-cell lymphoma (DLBCL). To investigate the spatial interplay between malignant B-cells and the tumour microenvironment (TME) across disease states, we performed subcellular single-cell spatial transcriptomics and spatial proteomics on 12 paired pre/post-transformation samples and 10 non-transforming FL controls, integrated with matched single-cell whole genome sequencing (scWGS). Our analysis reveals that transformation is accompanied by a shift toward B-cell-predominant stromal and immunosuppressive cellular neighbourhoods, where the magnitude of expansion correlates with time to transformation. Prior to transformation, immunomodulatory Galectin-9 interactions move from the intra-follicular core to the extra-follicular space. Integration with scWGS demonstrates that high copy-number instability in malignant B-cells is associated with reduced supportive T-cell niches and intensified immunoregulatory crosstalk at the transformed state. Collectively, our multi-omic analysis characterizes TME remodeling during FL transformation, contributing to a refined disease evolution model.",
+      "authors": [
+        "Wu, S.",
+        "Lee, E.",
+        "Fratzscher, A.-S.",
+        "Lytle, A.",
+        "Martin, S. D.",
+        "Hsu, T.",
+        "Telenius, A.",
+        "Yin, Y.",
+        "Fong, A.",
+        "Rai, S.",
+        "Fujisawa, M.",
+        "Cheung, H.",
+        "Aparicio, S.",
+        "Huntsman, D. G.",
+        "Aoki, T.",
+        "Scott, D. W.",
+        "Steidl, C.",
+        "Roth, A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "spatial proteomics",
+        "evolution",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "轉形濾泡性淋巴腫瘤微環境之單細胞空間多體學特性分析",
+      "summaryZh": "本研究利用次細胞單細胞空間轉錄體學與空間蛋白質體學，結合單細胞全基因體定序，探討濾泡性淋巴瘤轉形為瀰漫性大 B 細胞淋巴瘤時的腫瘤微環境變化。分析顯示，轉形伴隨著轉向 B 細胞為主導的基質與免疫抑制細胞鄰近區域，其擴張幅度與轉形時間相關。轉形前，免疫調節的 Galectin-9 互動會從濾泡內核心移至濾泡外空間，且 malignant B 細胞的高度拷貝數不穩定性與轉形狀態下減少的支持性 T 細胞生態位及加強的免疫調節串擾有關。這些多體學分析結果共同描述了濾泡性淋巴瘤轉形過程中的腫瘤微環境重塑，有助於完善疾病演化模型。",
+      "topicTags": [
+        "single-cell",
+        "spatial-transcriptomics",
+        "tumor-microenvironment",
+        "lymphoma",
+        "multi-omics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.10.744047",
+      "title": "Nonparametric kernel-based detection of spatially variable genes with adaptive shrinkage and scalable multi-sample inference",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-15",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.10.744047v1",
+      "doi": "10.64898/2026.08.10.744047",
+      "abstract": "Identifying spatially variable genes (SVGs), genes whose expression varies coherently across tissue space, is a central analytic goal in spatially resolved transcriptomics. Current methods rank spatially variable genes using either significance probabilities from parametric models or effect sizes such as the proportion of spatial variance, but parametric approaches impose distributional assumptions, such as Gaussian processes or negative binomial models, that may be violated for sparse or zero-inflated data. Furthermore, most detection tools cannot jointly model multiple biological replicates, and no existing framework provides both nonparametric significance probabilities and stabilized effect-size estimates with formal uncertainty quantification. Here, we introduce CytoKspace, a nonparametric framework that combines a sparse exponential kernel constructed from nearest-neighbor graphs with a quadratic-form test statistic and adaptive permutation testing. CytoKspace employs a multi-stage adaptive permutation schedule that yields substantial computational savings over fixed-permutation baselines, an adaptive shrinkage layer built on empirical Bayes estimation that stabilizes raw spatial effect sizes and provides posterior estimates with local false sign rates, and a scalable multi-sample extension via Fisher combination of significance probabilities and inverse-variance-weighted meta-analysis that accommodates studies with multiple biological replicates. In extensive simulations across a broad range of sample sizes, gene counts, spatially variable gene fractions, and effect sizes, as well as in applications to two real datasets from the Visium and seqFISH platforms, CytoKspace demonstrates competitive sensitivity, well-calibrated false positive rates, and practical computational requirements compared to existing methods. A software implementation of our method is freely available at \\url{https://github.com/Ghoshlab/CytoKspace}.",
+      "authors": [
+        "Ghosh, T.",
+        "Ghosh, D."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "Visium",
+        "SeqFISH"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "基於非參數核心與自適應收縮的可擴展多樣本空間變異基因檢測方法",
+      "summaryZh": "本研究介紹了一種名為 CytoKspace 的非參數框架，用於在空間解析轉錄體學中檢測空間變異基因（SVGs）。該方法結合了稀疏指數核心、二次型檢定統計量以及自適應置換檢定，以克服傳統參數模型在處理稀疏或零膨脹資料時可能違反分佈假設的問題。此外，它透過經驗貝氏估計建構自適應收縮層以穩定空間效應量，並利用 Fisher 組合與逆方差加權統合分析支援多個生物重複的可擴展多樣本推論。在模擬資料與 Visium 及 seqFISH 平台的實際資料應用中，CytoKspace 展現出具競爭力的靈敏度、良好校準的偽陽性率以及實用的計算需求。",
+      "topicTags": [
+        "spatially-resolved-transcriptomics",
+        "spatial-transcriptomics",
+        "gene-expression",
+        "nonparametric",
+        "methodology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.13.744634",
+      "title": "Replication fork plasticity is a therapeutic vulnerability in acute myeloid leukemia",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-15",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.13.744634v1",
+      "doi": "10.64898/2026.08.13.744634",
+      "abstract": "Uncontrolled proliferation of myeloid progenitor cells in acute myeloid leukemia (AML) is counteracted in most patients by toxic and often ineffective systemic treatments. Poly (ADP-ribose) polymerase inhibitors (PARPi) show subtype-restricted activity - potent in RUNX1-RUNX1T1 and PML-RAR[a] fusions, limited in KMT2A-rearranged (KMT2A-r) disease - but the lack of molecular understanding has hampered their clinical implementation. We combined single-cell and single-molecule assays on DNA replication intermediates and DNA damage signalling with therapy response readouts to investigate the role of fork plasticity factors in response to PARPi and AML standard-of-care (cytarabine, araC). In PARPi-sensitive AML models, PARP inhibition deregulates RECQ1-mediated fork restart, initially triggering fork acceleration and later fork breakage within the same S phase. Conversely, PARPi resistant KMT2A-r AML lines are protected by PrimPol-dependent DNA synthesis and its inactivation promptly induces fork breakage and PARPi sensitivity. Strikingly, PrimPol overexpression in PARPi-sensitive AML models prevents fork collapse and PARPi/araC therapy response, both in vitro and in vivo, identifying PrimPol as novel predictive biomarker and therapeutic target in AML. Our data uncover novel tissue-specific mechanisms of action for PARPi and pinpoint replication fork plasticity as key molecular determinant of AML therapy response.",
+      "authors": [
+        "Doerdelmann, C.",
+        "Kan, T. F.",
+        "Gasparetto, T.",
+        "Bomfim, L. M.",
+        "So, E. C.",
+        "Lopes, M."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "複製叉可塑性是急性骨髓性白血病的一項治療弱點",
+      "summaryZh": "本研究探討急性骨髓性白血病（AML）中複製叉可塑性因子對 PARP 抑制劑及標準化學治療反應的角色。研究發現，在對 PARP 抑制劑敏感的 AML 模型中，抑制 PARP 會使 RECQ1 媒介的複製叉重啟失調，進而引發複製叉加速與斷裂；相對地，具抗藥性的 KMT2A 重組 AML 則受到 PrimPol 依賴性 DNA 合成的保護。此外，PrimPol 的過度表現會阻止複製叉崩解並影響治療反應，這項發現將 PrimPol 定位為 AML 的新型預測性生物標記與治療標靶，並揭示了 PARP 抑制劑的作用機制。",
+      "topicTags": [
+        "acute-myeloid-leukemia",
+        "dna-replication",
+        "parpi",
+        "biomarker"
+      ]
+    },
+    {
+      "id": "10.1101/2025.04.27.650697",
+      "title": "Increasing Cancer Stemness Drives Prostate Cancer Progression, Plasticity, Therapy Resistance and Poor Patient Survival",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-15",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.04.27.650697v5",
+      "doi": "10.1101/2025.04.27.650697",
+      "abstract": "Background: Cancer progression is often accompanied by dedifferentiation and acquisition of stem cell-like properties (stemness). In prostate cancer (PCa), lineage plasticity and therapy resistance remain major clinical challenges, yet a unified quantitative transcriptomic framework connecting stemness, androgen receptor (AR) signaling, castration resistance, and disease progression across the PCa continuum is lacking. Methods: We integrated 87,339 transcriptomic profiles from 33 preclinical and clinical datasets spanning the PCa continuum from normal prostate and treatment-naive primary PCa (Pri-PCa) to PCa treated with neoadjuvant ADT (nADT) and metastatic castration-resistant PCa (mCRPC), with single-cell RNA-seq analyses encompassing 115,197 cells. Cancer stemness was quantified using a transcriptome-derived mRNA-based Stemness Index (mRNAsi; hereafter Stemness), and a 12-gene PCa-Stem signature was developed to capture PCa-specific stemness. Stemness, PCa-Stem, canonical AR activity (c_AR-A), castration-reprogrammed AR activity (cr_AR-A), RB1-loss, PTEN-loss, and MYC activity signatures were quantified across cohorts. Functional validation included MYC inhibition and representative PCa-Stem signature gene depletion in PCa models. Clinical prognostic significance was evaluated in independent patient cohorts. Results: The Stemness score and c_AR-A increased concordantly during early prostate tumorigenesis but diverged with PCa progression: as Gleason grade increased, c_AR-A declined while Stemness continually increased. mCRPC exhibited the highest Stemness and lowest c_AR-A, a pattern recapitulated in Pten/Rb1/Trp53-deficient mouse models. Global Stemness increased progressively across the PCa continuum, was enriched in aggressive PAM50-LumB and PCS1 subtypes, associated with proliferative and lineage plasticity programs, and predicted poor patient survival. The newly derived 12-gene PCa-Stem signature provided a PCa-specific molecular representation of Stemness and tracked disease progression and poor patient survival. Network analyses identified a coordinated mitotic regulatory program linking MYC activity, RB1-loss, cr_AR-A, and the PCa-Stem signature. Spatial and single-cell transcriptomic analyses localized the PCa-Stem program to lineage plasticity-related epithelial cells and demonstrated progressive expansion of PCa-Stem+ epithelial cells during PCa progression. Functional perturbation of representative PCa-Stem signature genes, as well as genetic and pharmacological MYC inhibition, consistently suppressed Stemness-associated phenotypes in diverse PCa models. Conclusions: Cancer Stemness quantitatively captures PCa aggressiveness, lineage plasticity, treatment resistance, disease progression, and poor patient survival. cr_AR-A, RB1 loss, and MYC activation cooperate to reinforce the high-Stemness state and therapy resistance in mCRPC. Collectively, our work establishes a trajectory-integrated transcriptomic framework defining cancer Stemness as a quantifiable molecular and clinical determinant of PCa aggressiveness, lineage plasticity, disease progression, therapy resistance and patient survival.",
+      "authors": [
+        "Liu, X.",
+        "Jamroze, A.",
+        "Cortes, E.",
+        "Ji, Y.",
+        "Zhao, K.",
+        "Zhao, F.",
+        "Ho, J.",
+        "Liu, Y. S.",
+        "Davicioni, E.",
+        "Wu, S.",
+        "Li, W.",
+        "Feng, F. Y.",
+        "Alumkal, J. J.",
+        "Spratt, D. E.",
+        "Sweeney, C. J.",
+        "Yu, H.",
+        "Hu, Q.",
+        "Zou, C.",
+        "Zhang, D.",
+        "Lin, K.",
+        "Lu, Y.",
+        "Chatta, G.",
+        "Nastiuk, K. L.",
+        "Goodrich, D. W.",
+        "Rycaj, K.",
+        "Kirk, J. S.",
+        "Puzanov, I.",
+        "Xia, Z.",
+        "Liu, S.",
+        "Wang, J.",
+        "Tang, D. G."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "增加的癌症幹細胞特性驅動攝護腺癌進展、可塑性、治療抗性與不良患者存活率",
+      "summaryZh": "本研究整合了多個臨床與臨床前轉錄體及單細胞 RNA-seq 資料集，透過量化幹細胞指數（Stemness）與建立攝護腺癌專一性幹細胞特徵（PCa-Stem），探討其在攝護腺癌進展中的作用。研究指出，隨著攝護腺癌惡化與 Gleason 分級上升，幹細胞特性持續增加，而雄激素受體活性則出現分歧與下降，其中轉移性去勢抗性攝護腺癌（mCRPC）展現出最高的幹細胞特性與最低的雄激素受體活性。整體而言，全球幹細胞特性隨疾病進展而增加，並與譜系可塑性、侵襲性亞型及不良患者存活率顯著相關。這項研究為理解攝護腺癌的幹細胞性、治療抗性與疾病進展提供了重要的轉錄體量化框架。",
+      "topicTags": [
+        "cancer",
+        "prostate-cancer",
+        "transcriptomics",
+        "single-cell",
+        "therapy-resistance"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.13.742813",
+      "title": "A NON-CANONICAL ROLE FOR NOTCH3 IN BUILDING THE INTESTINAL LYMPHATIC NICHE",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-15",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.13.742813v1",
+      "doi": "10.64898/2026.08.13.742813",
+      "abstract": "Lymphatic dysfunction drives severe and often intractable human diseases, yet the cellular mechanisms that establish functional lymphatic vasculature remain poorly understood. In the intestine, lacteals are specialized lymphatic vessels that absorb dietary lipids and rely on surrounding villus smooth muscle to propel lymph, forming the muscular-lacteal complex (MLC). How distinct mesenchymal populations coordinate assembly of this functional lymphatic unit remains unknown. By integrating developmental single-cell profiling, genetic lineage tracing, conditional mouse genetics, and functional assays of lipid absorption, we identify Notch3 as a central organizer of MLC development that coordinates communication between distinct mesenchymal lineages. While Notch3 promotes smooth muscle differentiation within the PDGFR lineage, PDGFR{beta} lineage cells do not directly contribute to villus smooth muscle. Instead, they function as Notch3-dependent signaling hubs that instruct expansion and differentiation of neighboring PDGFR smooth muscle progenitors via paracrine TGF{beta} signaling. Loss of Notch3 in PDGFR{beta} cells disrupts MLC development, impairs intestinal lipid absorption, and causes postnatal growth failure and lethality. Restoration of TGF{beta} signaling rescues the structural, functional, and survival defects caused by Notch3 loss, identifying TGF{beta} as a critical downstream effector of the Notch3 pathway. Furthermore, selective inhibition of canonical Notch signaling in the PDGFR{beta} lineage fails to phenocopy Notch3 deletion, revealing a non-canonical mechanism of Notch3 function in intestinal mesenchymal development. Together, these findings establish PDGFR{beta} cells as essential mesenchymal signaling organizers and define a new paradigm in which lineage-specific, non-canonical Notch3 signaling coordinates villus stromal communication to build a functional intestinal lymphatic niche.",
+      "authors": [
+        "Kurpios, N. A.",
+        "Huang, L.",
+        "Sanketi, B.",
+        "Mantri, M.",
+        "Chen, Y.",
+        "Wang, C.",
+        "Tran, T.",
+        "De Vlaminck, I."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Notch3在腸道淋巴微環境建構中的非典型角色",
+      "summaryZh": "本研究發現Notch3是腸道乳糜管－平滑肌複合體（MLC）發育的核心調控者，能協調不同間質細胞譜系之間的溝通。研究團隊結合發育期單細胞分析、遺傳譜系追蹤與條件式小鼠基因功能實驗，證實PDGFRβ譜系細胞作為Notch3依賴的訊號中心，透過旁分泌TGFβ訊號調控鄰近平滑肌前驅細胞的擴增與分化。在PDGFRβ細胞中失去Notch3會破壞MLC發育、損害腸道脂質吸收，並導致出生後生長遲滯與死亡。恢復TGFβ訊號可挽回上述結構、功能與存活缺陷，確立TGFβ為Notch3路徑的關鍵下游效應分子。值得注意的是，抑制典型Notch訊號無法重現Notch3缺失的表型，揭示其作用機制為非典型訊號傳遞，並定義了譜系特異性Notch3訊號協調絨毛基質溝通以建構功能性腸道淋巴微環境的新典範。",
+      "topicTags": [
+        "notch3",
+        "intestinal-lymphatics",
+        "mesenchymal-biology",
+        "tgf-beta",
+        "developmental-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-76685-z",
+      "title": "CD36-mediated lipid-accumulation in reactive microglia contributes to retinal degeneration via the NLRP3-IL-1β pathway in mice",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-08-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-76685-z",
+      "doi": "10.1038/s41467-026-76685-z",
+      "abstract": "Metabolic stress can reshape immune cells into drivers of tissue damage. This study identifies CD36-driven lipid accumulation in reactive microglia as a mechanism linking retinal inflammation to degeneration.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "CD36 媒介反應性小膠質細胞的脂質堆積透過 NLRP3-IL-1β 路徑導致視網膜退化",
+      "summaryZh": "代謝壓力會將免疫細胞重塑為組織損傷的驅動因素。本研究指出，小鼠體內反應性小膠質細胞透過 CD36 驅動脂質堆積，是將視網膜發炎與退化連結在一起的機制。這項研究結果有助於理解視網膜發炎及退化相關病理過程。",
+      "topicTags": [
+        "microglia",
+        "retinal-degeneration",
+        "immunology",
+        "metabolism"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-76796-7",
+      "title": "Phosphorylation of OTUB1 promotes autophagy initiation under starvation",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-08-15T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-76796-7",
+      "doi": "10.1038/s41467-026-76796-7",
+      "abstract": "This study uncovers a phosphorylation-dependent regulatory mechanism controlling OTUB1’s function in nutrient deficiency-triggered autophagy initiation, providing cellular and molecular evidence supporting the therapeutic potential of fasting in alleviating MASLD.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "磷酸化 OTUB1 促進飢餓狀態下的自噬起始",
+      "summaryZh": "本研究揭示了一項磷酸化依賴的調節機制，此機制可控制 OTUB1 在營養缺乏所觸發之自噬起始中的功能。研究結果提供了細胞與分子證據，支持禁食在緩解代謝相關脂肪性肝病（MASLD）方面的治療潛力。",
+      "topicTags": [
+        "autophagy",
+        "phosphorylation",
+        "molecular-biology"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 18,
+      "passedByScope": 10,
+      "llmClassified": 8,
+      "llmYes": 2,
+      "llmNotSure": 0,
+      "llmNo": 6,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 12,
+      "excluded": 6
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "llmClassified": 12,
+      "llmTagged": 12,
+      "fallback": 0
+    },
+    "selection": {
+      "total": 12,
+      "candidates": 12,
+      "featured": 12,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 2,
+      "preprint": 10,
+      "skip": 0
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "primarySucceeded": 3,
+      "fallbackSucceeded": 9,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-76943-0",
+        "title": "Depletion of davemaoite in Earth’s ambient lower mantle",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-08-15T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-76943-0",
+        "doi": "10.1038/s41467-026-76943-0",
+        "abstract": "Davemaoite remains cubic throughout most of the lower mantle and exhibits intrinsically low shear-wave velocities. Seismic constraints indicate that it is depleted in the ambient lower mantle but enriched within LLSVPs, likely as a result of late-stage crystallization during magma-ocean differentiation.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-76743-6",
+        "title": "Atmospheric turbulence sensing with structured terahertz beams containing orbital angular momentum",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-08-15T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-76743-6",
+        "doi": "10.1038/s41467-026-76743-6",
+        "abstract": "This study introduces a method using structured THz-OAM beam to detect clear air turbulence. It overcomes optical limits by resisting saturation and misalignment, enabling robust turbulence strength sensing, hazard localization, and water vapor monitoring.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-76777-w",
+        "title": "Quantifying the role of nitrogen in achieving global Sustainable Development Goals",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-08-15T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-76777-w",
+        "doi": "10.1038/s41467-026-76777-w",
+        "abstract": "Balanced nitrogen intake and lower nitrogen releases are linked to progress across the Sustainable Development Goals, helping align human well-being with environmental protection and highlighting the need for context-specific nitrogen management.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-76407-5",
+        "title": "Focal mechanism variations reveal mechanical controls on segmentation at oceanic transform faults",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-08-15T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-76407-5",
+        "doi": "10.1038/s41467-026-76407-5",
+        "abstract": "The authors use thousands of small earthquakes to show that variations in fault zone strength control segmentation of oceanic transform faults and their distinct slip behaviors.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-76720-z",
+        "title": "Ryugu and Bennu preserve primordial isotopic heterogeneity absent from the meteorite record",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-08-15T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-76720-z",
+        "doi": "10.1038/s41467-026-76720-z",
+        "abstract": "Samples returned from Ryugu and Bennu preserve primordial isotopic heterogeneity in major planet-building elements that is not represented in meteorite collections.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-76532-1",
+        "title": "Achieving Near 21% Efficiency Organic Solar Cells through Controlled Packing of Fused-Ring Electron Acceptors",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-08-15T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-76532-1",
+        "doi": "10.1038/s41467-026-76532-1",
+        "abstract": "Non radiative energy loss remains a challenge in non-fullerene organic solar cells. Wei et al. introduce chlorobenzene-functionalized acceptors that exhibit enhanced photoluminescence quantum yield with a distinct molecular packing mode, enabling a power conversion efficiency of 20.92%.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
