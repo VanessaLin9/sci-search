@@ -87,6 +87,36 @@ test("isEligibleForFeatured requires non-skip line and trimmed abstract", () => 
   );
 });
 
+test("selectFeatured: missing abstract stays candidate overflow, never featured", () => {
+  const papers = [
+    ranked("no-abs-a", {
+      sourceId: "nature-methods",
+      title: "A spatial paper without abstract",
+      digestLine: "line-a",
+      abstract: "",
+    }),
+    ranked("ok-b", {
+      sourceId: "science",
+      title: "B eligible",
+      digestLine: "line-b",
+    }),
+  ];
+  const { papers: selected, stats, diagnostics } = selectFeatured(papers, {
+    maxFeatured: 12,
+    priorityBySourceId,
+  });
+  const withFeatured = selected as RankedPaperWithFeatured[];
+
+  assert.equal(stats.candidates, 2);
+  assert.equal(stats.featured, 1);
+  assert.equal(stats.overflow, 1);
+  assert.equal(diagnostics.featuredIneligibleMissingAbstract, 1);
+  assert.equal(withFeatured.find((paper) => paper.id === "no-abs-a")?.featured, false);
+  assert.equal(withFeatured.find((paper) => paper.id === "ok-b")?.featured, true);
+  // Missing abstract is not skip — still a visible candidate that can appear in overflow.
+  assert.equal(withFeatured.find((paper) => paper.id === "no-abs-a")?.digestLine, "line-a");
+});
+
 test("selectFeatured never features skip papers", () => {
   const papers = [
     ranked("skip-1", { sourceId: "science", title: "Skipped", digestLine: "skip" }),

@@ -124,6 +124,52 @@ for (const reportDate of ["2026-08-17", "2026-08-18", "2026-08-19"] as const) {
   });
 }
 
+test("spatial regression: missing-abstract research stays visible overflow, not skip", () => {
+  const papers = [
+    {
+      id: "missing-abs",
+      title: "A long-form spatial transcriptomics study without abstract text yet",
+      sourceId: "nature-methods",
+      section: "single-cell-spatial" as const,
+      matchedKeywords: ["spatial transcriptomics"],
+      abstract: "",
+      digestLine: "line-a" as const,
+    },
+    {
+      id: "with-abs",
+      title: "Another spatial transcriptomics study with abstract",
+      sourceId: "science",
+      section: "single-cell-spatial" as const,
+      matchedKeywords: ["spatial transcriptomics"],
+      abstract: "Usable English abstract.",
+      digestLine: "line-a" as const,
+    },
+  ];
+
+  const resolved = resolveDigestLines(
+    papers.map(toResolveInput),
+    new Map(),
+    new Set(),
+  );
+  assert.equal(resolved.find((paper) => paper.id === "missing-abs")?.digestLine, "line-a");
+  assert.equal(isVisibleInDigest(resolved.find((paper) => paper.id === "missing-abs")!), true);
+
+  const { papers: selected, stats, diagnostics } = selectFeatured(resolved, {
+    maxFeatured: 12,
+    priorityBySourceId: buildSourcePriorityById([
+      { id: "nature-methods", priority: 1 },
+      { id: "science", priority: 5 },
+    ]),
+  });
+
+  assert.equal(stats.candidates, 2);
+  assert.equal(stats.featured, 1);
+  assert.equal(stats.overflow, 1);
+  assert.equal(diagnostics.featuredIneligibleMissingAbstract, 1);
+  assert.equal(selected.find((paper) => paper.id === "missing-abs")?.featured, false);
+  assert.equal(selected.find((paper) => paper.id === "with-abs")?.featured, true);
+});
+
 test("spatial regression: named editorial fixtures stay skip and invisible", () => {
   const titles = new Set([
     "Trainee advice for a future that seems uncertain",

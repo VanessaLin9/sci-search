@@ -27,6 +27,8 @@ const EXCLUDED_ARTICLE_TYPES = new Set(
 const TITLE_NON_RESEARCH =
   /^(editorial(\s+note)?|author correction|publisher correction|corrigendum|erratum|obituary|reply to)\b/i;
 
+const TITLE_CAREER_ADVICE = /\b(trainee advice|career advice|career column)\b/i;
+
 const OBITUARY_YEARS = /\(\d{4}\s*[–-]\s*\d{4}\)\s*$/;
 
 export type DigestSkipInput = {
@@ -54,26 +56,24 @@ function hasPrimaryKeyword(matchedKeywords: readonly string[] | undefined): bool
 
 /**
  * Deterministic non-research skip before spatial A/B（PR #38）。
- * 保留舊 tagging 的 skip 意圖（editorial / correction / empty magazine items），
- * 不另開第二個 line-label LLM；不是完整重設計 skip 政策。
+ * 只用明確 non-research 訊號（articleType / editorial title / Nature 短 editorial 標題）；
+ * 缺 abstract 不是 skip——只影響 featured 資格，仍可進 overflow（PR #27 / #38）。
  */
 export function shouldSkipForDigest(paper: DigestSkipInput): boolean {
   if (isPreprintSource(paper.sourceId)) return false;
 
   const title = paper.title.trim();
-  const abstract = paper.abstract?.trim() ?? "";
   const articleType = paper.articleType?.trim().toLowerCase() ?? "";
 
   if (articleType && EXCLUDED_ARTICLE_TYPES.has(articleType)) {
     return true;
   }
 
-  if (TITLE_NON_RESEARCH.test(title) || OBITUARY_YEARS.test(title)) {
-    return true;
-  }
-
-  // Enrich 後仍無 abstract 的非預印本：多為 career / magazine / incomplete item。
-  if (!abstract) {
+  if (
+    TITLE_NON_RESEARCH.test(title) ||
+    TITLE_CAREER_ADVICE.test(title) ||
+    OBITUARY_YEARS.test(title)
+  ) {
     return true;
   }
 

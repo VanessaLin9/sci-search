@@ -2,7 +2,20 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import { shouldSkipForDigest } from "../../../../src/domain/life-science/digest/skipNonResearch.js";
 
-test("shouldSkipForDigest: missing abstract is skip", () => {
+test("shouldSkipForDigest: missing abstract alone is not skip", () => {
+  assert.equal(
+    shouldSkipForDigest({
+      title: "Spatial transcriptomics maps the developing mouse brain across regions",
+      sourceId: "nature-methods",
+      section: "single-cell-spatial",
+      matchedKeywords: ["spatial transcriptomics"],
+      abstract: undefined,
+    }),
+    false,
+  );
+});
+
+test("shouldSkipForDigest: career/advice title is skip even without abstract", () => {
   assert.equal(
     shouldSkipForDigest({
       title: "Trainee advice for a future that seems uncertain",
