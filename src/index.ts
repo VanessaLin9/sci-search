@@ -80,13 +80,19 @@ async function main() {
 
   if (result.digest.llmTagging) {
     logDigest(
-      `tagging: ${result.digest.tagging.llmTagged} LLM, ${result.digest.tagging.fallback} fallback`,
+      `spatial-classify: LLM A ${result.digest.tagging.llmLineA} / B ${result.digest.tagging.llmLineB}, ` +
+        `fallback A ${result.digest.tagging.fallbackLineA} / B ${result.digest.tagging.fallbackLineB}, ` +
+        `failures ${result.digest.tagging.failures} (threshold ${result.digest.tagging.threshold})`,
     );
   }
   logDigest(
     `featured ${result.digest.selection.featured}/${result.digest.selection.candidates} candidates ` +
       `(line-a ${result.digest.selection.lineA}, line-b ${result.digest.selection.lineB}, ` +
       `preprint ${result.digest.selection.preprint}, skip ${result.digest.selection.skip})`,
+  );
+  logDigest(
+    `featured pools: A ${result.digest.selection.featuredLineA} / B ${result.digest.selection.featuredLineB} / preprint ${result.digest.selection.featuredPreprint}; ` +
+      `overflow A ${result.digest.selection.overflowLineA} / B ${result.digest.selection.overflowLineB} / preprint ${result.digest.selection.overflowPreprint}`,
   );
   if (result.digest.llmTagging) {
     logDigest(

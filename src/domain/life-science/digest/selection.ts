@@ -1,6 +1,6 @@
 import type { DigestLine } from "../types.js";
 
-/** Featured sort priority: line-a < line-b < preprint < skip (INV-036). */
+/** Featured sort priority within a pool / email section (INV-036). */
 export const DIGEST_LINE_RANK: Record<DigestLine, number> = {
   "line-a": 0,
   "line-b": 1,
@@ -17,6 +17,12 @@ export type DigestSelectionStats = {
   lineB: number;
   preprint: number;
   skip: number;
+  featuredLineA: number;
+  featuredLineB: number;
+  featuredPreprint: number;
+  overflowLineA: number;
+  overflowLineB: number;
+  overflowPreprint: number;
 };
 
 /**
@@ -50,6 +56,18 @@ export function isEligibleForFeatured(paper: RankedPaper): boolean {
   return Boolean(paper.digestLine && paper.digestLine !== "skip" && paper.abstract?.trim());
 }
 
+export function compareSourcePriorityThenTitle(
+  a: RankedPaper,
+  b: RankedPaper,
+  priorityBySourceId: ReadonlyMap<string, number>,
+): number {
+  const priorityA = priorityBySourceId.get(a.sourceId) ?? 999;
+  const priorityB = priorityBySourceId.get(b.sourceId) ?? 999;
+  if (priorityA !== priorityB) return priorityA - priorityB;
+  return a.title.localeCompare(b.title);
+}
+
+/** Same ordering as legacy featured sort (line → source priority → title). */
 export function compareForFeatured(
   a: RankedPaper,
   b: RankedPaper,
@@ -59,12 +77,7 @@ export function compareForFeatured(
   const lineB = b.digestLine ?? "skip";
   const lineDiff = DIGEST_LINE_RANK[lineA] - DIGEST_LINE_RANK[lineB];
   if (lineDiff !== 0) return lineDiff;
-
-  const priorityA = priorityBySourceId.get(a.sourceId) ?? 999;
-  const priorityB = priorityBySourceId.get(b.sourceId) ?? 999;
-  if (priorityA !== priorityB) return priorityA - priorityB;
-
-  return a.title.localeCompare(b.title);
+  return compareSourcePriorityThenTitle(a, b, priorityBySourceId);
 }
 
 /** Same ordering as featured selection (line → source priority → title). */
@@ -75,6 +88,21 @@ export function sortPapersByDigestRank<P extends RankedPaper>(
   return [...papers].sort((a, b) => compareForFeatured(a, b, priorityBySourceId));
 }
 
+function sortPoolByPriority<P extends RankedPaper>(
+  papers: P[],
+  priorityBySourceId: ReadonlyMap<string, number>,
+): P[] {
+  return [...papers].sort((a, b) => compareSourcePriorityThenTitle(a, b, priorityBySourceId));
+}
+
+/**
+ * Featured selection：分開 A / B / preprint pool，依序填滿最多 maxFeatured（PR #38）。
+ * - 先 A（journal/source priority）
+ * - A 不足再 B 補
+ * - A+B 仍不足才用 preprint 補差額；preprint 不得取代已入選 A/B
+ * - 缺 abstract 者不合格，留在 overflow（PR #27）
+ * 不可把三池直接混進同一個排序再切前 N 篇。
+ */
 export function selectFeatured<P extends RankedPaper>(
   papers: P[],
   options: {
@@ -82,27 +110,61 @@ export function selectFeatured<P extends RankedPaper>(
     priorityBySourceId: ReadonlyMap<string, number>;
   },
 ): {
-  papers: P[];
+  papers: Array<P & { featured: boolean }>;
   stats: DigestSelectionStats;
   diagnostics: DigestSelectionDiagnostics;
 } {
-  // candidates = 全部可見文；featured 只從 eligible 取前 maxFeatured（PR #27）。
-  // 合格不足時寧可少於上限，也不用空摘要 paper 硬補。
   const candidates = papers.filter((paper) => paper.digestLine && paper.digestLine !== "skip");
-  const sorted = [...candidates].sort((a, b) =>
-    compareForFeatured(a, b, options.priorityBySourceId),
-  );
-  const eligible = sorted.filter(isEligibleForFeatured);
+  const eligible = candidates.filter(isEligibleForFeatured);
   const featuredIneligibleMissingAbstract = candidates.length - eligible.length;
-  const featuredIds = new Set(eligible.slice(0, options.maxFeatured).map((paper) => paper.id));
+
+  const poolA = sortPoolByPriority(
+    eligible.filter((paper) => paper.digestLine === "line-a"),
+    options.priorityBySourceId,
+  );
+  const poolB = sortPoolByPriority(
+    eligible.filter((paper) => paper.digestLine === "line-b"),
+    options.priorityBySourceId,
+  );
+  const poolPreprint = sortPoolByPriority(
+    eligible.filter((paper) => paper.digestLine === "preprint"),
+    options.priorityBySourceId,
+  );
+
+  const featuredIds = new Set<string>();
+  for (const pool of [poolA, poolB, poolPreprint]) {
+    for (const paper of pool) {
+      if (featuredIds.size >= options.maxFeatured) break;
+      featuredIds.add(paper.id);
+    }
+    if (featuredIds.size >= options.maxFeatured) break;
+  }
 
   const lineCounts = { lineA: 0, lineB: 0, preprint: 0, skip: 0 };
+  const featuredByLine = { featuredLineA: 0, featuredLineB: 0, featuredPreprint: 0 };
+  const overflowByLine = { overflowLineA: 0, overflowLineB: 0, overflowPreprint: 0 };
+
   for (const paper of papers) {
     const line = paper.digestLine ?? "skip";
     if (line === "line-a") lineCounts.lineA += 1;
     else if (line === "line-b") lineCounts.lineB += 1;
     else if (line === "preprint") lineCounts.preprint += 1;
     else lineCounts.skip += 1;
+  }
+
+  for (const paper of candidates) {
+    const featured = featuredIds.has(paper.id);
+    const line = paper.digestLine ?? "skip";
+    if (line === "line-a") {
+      if (featured) featuredByLine.featuredLineA += 1;
+      else overflowByLine.overflowLineA += 1;
+    } else if (line === "line-b") {
+      if (featured) featuredByLine.featuredLineB += 1;
+      else overflowByLine.overflowLineB += 1;
+    } else if (line === "preprint") {
+      if (featured) featuredByLine.featuredPreprint += 1;
+      else overflowByLine.overflowPreprint += 1;
+    }
   }
 
   const updated = papers.map((paper) => ({
@@ -118,6 +180,8 @@ export function selectFeatured<P extends RankedPaper>(
       featured: featuredIds.size,
       overflow: Math.max(0, candidates.length - featuredIds.size),
       ...lineCounts,
+      ...featuredByLine,
+      ...overflowByLine,
     },
     diagnostics: {
       featuredIneligibleMissingAbstract,

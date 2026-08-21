@@ -1,5 +1,6 @@
 {
   "maxFeatured": 12,
+  "spatialConfidenceThreshold": 0.75,
   "overflowShowTitleZh": true,
   "baseUrl": "https://integrate.api.nvidia.com/v1",
   "maxPapersPerBatch": 8,

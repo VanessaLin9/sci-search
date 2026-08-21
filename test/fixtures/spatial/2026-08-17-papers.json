@@ -1,0 +1,460 @@
+{
+  "reportDate": "2026-08-17",
+  "note": "Regression fixture for spatial classifier refactor: historical digestLine may reflect old tagging overrides.",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03201-y",
+      "sourceId": "nature-methods",
+      "title": "Amplifying multiplex spatial profiling with tyramide oligonucleotides",
+      "journal": "Nature Methods",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41592-026-03204-9",
+      "sourceId": "nature-methods",
+      "title": "Trainee advice for a future that seems uncertain",
+      "journal": "Nature Methods",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41592-026-03210-x",
+      "sourceId": "nature-methods",
+      "title": "Disruption of the research software landscape through AI software generation",
+      "journal": "Nature Methods",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41592-026-03200-z",
+      "sourceId": "nature-methods",
+      "title": "PASTA: versatile tyramide-oligonucleotide amplification for multimodal spatial biology",
+      "journal": "Nature Methods",
+      "section": "biology",
+      "matchedKeywords": [
+        "biology"
+      ],
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41588-026-02708-6",
+      "sourceId": "nature-genetics",
+      "title": "Bridging the gap between GWAS and network medicine with GNExT",
+      "journal": "Nature Genetics",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41588-026-02705-9",
+      "sourceId": "nature-genetics",
+      "title": "Rare variant effect estimation and polygenic risk prediction",
+      "journal": "Nature Genetics",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03256-4",
+      "sourceId": "nature-biotechnology",
+      "title": "A scalable platform to discover and characterize substrates of molecular glue degraders",
+      "journal": "Nature Biotechnology",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Molecular glue degraders (MGDs) induce degradation of non-native protein substrates (neo-substrates) through the E3 ubiquitin ligase CRL4CRBN. MGD discovery is largely serendipitous, and the specificity of MGD-mediated target selection remains poorly understood. We developed an MGD discovery pipeline to identify cereblon (CRBN)–MGD neo-substrates and structural determinants of MGD-mediated degradation.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41587-026-03258-2",
+      "sourceId": "nature-biotechnology",
+      "title": "Virus-like particles enable targeted gene engineering and pooled CRISPR screening in primary human myeloid cells",
+      "journal": "Nature Biotechnology",
+      "section": "biology",
+      "matchedKeywords": [
+        "CRISPR"
+      ],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Primary human myeloid cells are efficiently edited using virus-like particles.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41593-026-02410-0",
+      "sourceId": "nature-neuroscience",
+      "title": "Reusable modular architecture enables flexible cognitive operations in the mouse brain and artificial recurrent networks",
+      "journal": "Nature Neuroscience",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Mice flexibly reuse neurons specialized for stimulus processing and memory maintenance, regardless of the content, providing evidence for reusable modular organization in the brain.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41593-026-02404-y",
+      "sourceId": "nature-neuroscience",
+      "title": "Microglia activation by derepression of endogenous retroviruses drives inflammation and cellular senescence",
+      "journal": "Nature Neuroscience",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Reawakening of endogenous retroviruses due to loss of chromatin compaction causes microglia to acquire aging-associated features, leading to perturbed tissue homeostasis and behavior.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41590-026-02621-4",
+      "sourceId": "nature-immunology",
+      "title": "Where risk resides",
+      "journal": "Nature Immunology",
+      "section": "biology",
+      "matchedKeywords": [
+        "genome"
+      ],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "A comprehensive atlas of tissue-resident immune cells reveals where disease-risk variants regulate gene expression, helping connect genome-wide association study signals to disease mechanisms.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41590-026-02626-z",
+      "sourceId": "nature-immunology",
+      "title": "A NOD2 to the endothelium for protective gut immunity",
+      "journal": "Nature Immunology",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Endothelial cells form the cell migration highways between organs. New results demonstrate that NOD2-dependent microbial sensing by these structural cells promotes antigen-specific T cell accumulation in gut-associated lymphoid tissues and protective mucosal immunity.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41590-026-02625-0",
+      "sourceId": "nature-immunology",
+      "title": "Mind the Notch as AXL+ DC3s creep through the gap",
+      "journal": "Nature Immunology",
+      "section": "biology",
+      "matchedKeywords": [
+        "development"
+      ],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Notch2 deletion in dendritic cells (DCs), already known to impair type 2a DC development and intestinal immunity, is now demonstrated to promote dysbiosis and unleash inflammatory AXL-expressing type 3 DCs, driving preclinical autoimmunity.",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.08.14.744916",
+      "sourceId": "biorxiv",
+      "title": "Sex differences in senescence burden within human osteoarthritic synovial fibroblasts",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single cell"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "abstract": "Objective Cellular senescence has been shown to underlie many age-related diseases, including osteoarthritis (OA). In addition to age, biological sex is an OA risk factor with females at greater risk of hand and knee OA. We profiled the senescence burden in OA human synovial fibroblasts while accounting for these factors to understand how senescence may contribute to the increased burden of OA in females. Methods Synovial fibroblasts were isolated from tissue obtained at knee arthroplasty for OA from 10 male and 10 female donors. Single cell multiplexed immunofluorescence imaging was used to profile the senescence burden in samples age-matched to account for the differences in chronological age. Clustering was performed using stability and generalizability scoring. Results Independent of chronological age, OA synovial fibroblasts from female donors showed higher levels of senescence associated proteins p16, p21, p53, phospho-p65, IL-6, and IL-8. Assessment of oxidative stress associated proteins NRF2, SEPP1, NQO1 and TXNIP indicated a lower capacity for female cells to respond to oxidative stress. Clustering analysis revealed male and female enriched clusters. The female-enriched clusters showed higher levels of senescence-associated proteins and an increased oxidative stress response. Conclusions OA synovial fibroblasts from female donors demonstrated higher levels of senescence associated markers, lower ability to respond to oxidative stress, and increased senescence with increasing age. These findings indicate that female synovial fibroblasts are more likely to show markers of senescence and oxidative stress, suggesting senescence can contribute to the increased incidence of osteoarthritis in women.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.17.745187",
+      "sourceId": "biorxiv",
+      "title": "FluoroFate: A generalisable platform for time-resolved single-cell analysis of cell fate enables quantification of cell death dynamics",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "abstract": "Fundamental cellular decisions of life and death are governed by intricate and tightly regulated intracellular signalling pathways that determine whether cells proliferate, enter quiescence, or undergo programmed cell death (apoptosis). Live-cell fluorescence imaging enables these processes to be observed in real time at single-cell resolution, but two problems limit their study. First, existing biosensors do not allow apoptotic status and cell cycle progression to be resolved in tandem within the same cell. Second, interpreting live-cell imaging data is challenging even where multiplex reporters exist, as the biological meaning of fluorescent signals depends on their temporal ordering, and large-scale imaging experiments generate complex, multidimensional data that are difficult to analyse systematically and at scale. Here we address both problems. We present FluoroFate, a generalisable and user-friendly graphical interface-driven tool for time-resolved single-cell analysis of multiplex live-cell imaging datasets, which integrates existing, robust deep learning-based segmentation, cell tracking, and temporal classification methods to quantify fluorescent reporter dynamics in individual cells across time without the need for specialist computational expertise. Alongside FluoroFate, we develop tricistronic Fluorescent Ubiquitination-based Cell Cycle Indicator (Fucci) and apoptosis biosensors, enabling simultaneous monitoring of cell cycle progression and caspase activation within the same cell. Applying FluoroFate, we resolve apoptotic and non-apoptotic cell death at the single-cell level based on the temporal ordering of Annexin V and propidium iodide signals, identifying distinct kinetic and phenotypic cell death profiles in response to pharmacological perturbation. We highlight divergent temporal dynamics and modes of cell death between birinapant and cycloheximide treatment, reflecting differences in how TNF/TNFR1 signalling is disrupted by these agents. At the single-cell level, we uncover parallel, independently regulated death programmes, demonstrating that loss of RIPK1 selectively impairs apoptotic cell death whilst leaving non-apoptotic death largely unaffected. We then use FluoroFate to analyse timelapse images of our combined Fucci-apoptosis reporters, resolving cell cycle progression and caspase activation within the same cell over time. Together, FluoroFate and our new cell cycle and apoptosis biosensors represent a broadly applicable platform for extracting mechanistic insight from live-cell imaging data.",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.08.12.744187",
+      "sourceId": "biorxiv",
+      "title": "Metabolic disease-relevant stimuli unmask context-dependent genetic regulation of cardiometabolic loci in human adipocytes",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-nucleus",
+        "genome"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "abstract": "Genome-wide association studies (GWAS) have identified thousands of loci associated with cardiometabolic disease, yet translating these associations into regulatory mechanisms, effector genes, and cellular programs remains a major challenge. A key limitation is that genetic effects are often highly context dependent, varying across cell states and environmental conditions that are difficult to model at scale. Here, we leverage CellGenBank, a population-scale biobank of primary human adipose-derived mesenchymal stem cells (AMSCs), to implement a multi-donor cell village in vitro system to map cardiometabolic disease genetic variation across adipocyte differentiation and metabolic stress conditions. We pooled AMSCs from 118 donors into multiplexed villages, differentiated them toward adipocytes, and profiled chromatin accessibility and gene expression using single-nucleus multiome sequencing under four disease-relevant conditions: basal, elevated free fatty acids, low glucose, and hypoxia. By combining with genetic demultiplexing, we quantify how regulatory element activity, gene expression, and higher-order cellular programs are modulated by both genotype and environmental context. Across conditions, we identify widespread context-specific cis-regulatory effects, including expression and chromatin accessibility quantitative trait loci that are masked in baseline states. Genetic effects frequently converge on coordinated transcriptional programs linked to lipid metabolism, insulin responsiveness, and stress adaptation, enabling the identification of cellular program QTLs that bridge variants, genes, and disease-relevant phenotypes. Integration with cardiometabolic GWAS reveals enhanced colocalization in condition- and state-resolved analyses, highlighting the importance of modeling environmental context to resolve disease mechanisms. Together, our study establishes large-scale adipocyte cell villages as a powerful and generalizable framework to map the context-dependent regulatory architecture of cardiometabolic disease and provides a resource linking human genetic variation to adipocyte cellular programs.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.02.12.705613",
+      "sourceId": "biorxiv",
+      "title": "Genome-wide single-cell perturbation screens with VIPerturb-seq",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "Perturb-seq",
+        "CRISPR",
+        "genome"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "CRISPR-based screening combined with single-cell sequencing (i.e., Perturb-seq) enables systematic mapping of genetic perturbations to molecular phenotypes. While Perturb-seq is well-suited to profile targeted subsets of regulators, scaling to genome-wide screens presents substantial cost and throughput challenges. Here we introduce VIPerturb-seq, a platform to facilitate routine genome-wide Perturb-seq experiments using probe-based detection workflows. We describe a split probe strategy for detection of genome-wide CRISPR libraries in fixed cells that enables (i) support for phenotypic enrichment of Very Important Perturbations (VIPs) prior to single-cell profiling, and (ii) compatibility with combinatorial indexing workflows to further improve Perturb-seq throughput by 50-fold. Using a genome-wide CRISPRi library (GuEST-List), we demonstrate VIPerturb-seq on three genome-wide screens representing both unbiased and phenotypically enriched workflows. Our results demonstrate how the sensitivity, scalability, and efficiency of VIPerturb-seq can enable both individual labs with targeted research questions and large data generation platforms aiming to construct virtual cells.",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.08.12.744364",
+      "sourceId": "biorxiv",
+      "title": "Spatial microRNA profiling at single-cell resolution by in situ barcoded extension",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "Xenium",
+        "biology"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "The spatial organization of post-transcriptional regulation is a fundamental yet difficult to access layer of tissue biology. MicroRNAs (miRNAs) are small RNAs with a key role in post-transcriptional regulation, but their short length has excluded them from spatial profiling technologies, leaving them largely unexplored in spatial transcriptomics. Here, we introduce miR-Space, a method that converts individual miRNAs into extended, uniquely barcoded molecules directly in tissue, enabling their spatial detection by in situ sequencing. Across 30 mouse and human brain sections, miR-Space enabled highly multiplexed miRNA profiling at single-molecule and single-cell resolution, joint analysis with mRNA, and implementation on the automated Xenium platform. miR-Space resolved major anatomical regions and cell populations from spatial miRNA expression, identified reproducible cell-associated miRNA signatures, and uncovered previously unknown spatial and cellular distributions of multiple miRNAs. Together, these capabilities establish miR-Space as a framework for integrating miRNAs into spatial transcriptomics, enabling spatial miRNomics at anatomical and single-cell resolution.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.12.744402",
+      "sourceId": "biorxiv",
+      "title": "Decoding single-cell replication states from imaging data reveals locus-specific subnuclear position dependencies of replication initiation",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "development",
+        "genome"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Replication timing (RT) is a fundamental feature of genome regulation, tightly linked to chromatin state and three-dimensional (3D) nuclear organization. Yet how the reproducible population-level timing program emerges from stochastic replication decisions in individual cells remains unclear, because it requires measuring RT and 3D genome organization jointly in the same cell. Here, we introduce RepTile, the first systematic framework that infers allele-resolved, single-cell replication states directly from multiplexed FISH and chromosome tracing experiments. By extracting replication information from spot-count distributions while correcting for genomic and spatial detection biases, RepTile infers cell-cycle progression, locus-specific replication timing, cell-to-cell heterogeneity in replication timing, and replication states of individual allele-resolved locus copies within their native three-dimensional nuclear context. Using RepTile on mouse embryonic stem cells, we find that the association between replication timing and subnuclear position observed in population-level genomic experiments conceals fundamentally different locus-specific behaviors. We found two classes of chromatin regions: ''position-sensitive'' and ''position-insensitive''. Position-sensitive regions replicate at different times depending on their subnuclear location, typically firing earliest when positioned in their canonical locale. Strikingly, this holds even when the canonical locale is repressive, such as the nuclear envelope. On the other hand, position-insensitive loci replicate at their characteristic times regardless of subnuclear position. These classes map onto distinct regulatory regimes, which are particularly pronounced at replication initiation zones (IZ): position-sensitive IZs are enriched in domains that replicate constitutively early or late across cell types, whereas position-insensitive IZs are enriched in domains that switch RT developmentally and contain early replication control elements (ERCEs), cis-regulatory elements known to govern IZ firing times. Together, these results challenge the view that subnuclear location broadly defines replication timing, indicating that positional dependence is specific to constitutive domains, while developmental domains carry intrinsic cis-acting programs that decouple their replication from subnuclear location.",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.08.11.744176",
+      "sourceId": "biorxiv",
+      "title": "In situ Discovery of Immune Repertoire Reveals Antitumor Immunity and Therapeutic Antibodies",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "immunology",
+        "evolution"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Spatial transcriptomics offers a glimpse into the immunology of tissues. However, limitations in spatial transcriptomics preclude the detection of highly diverse, low-abundance, and previously unknown sequences, including immune repertoires and microbiota. Here, we introduce Archimap, a spatial transcriptomic platform that simultaneously profiles spatial transcriptomes, immune repertoires, and microbiota from formalin-fixed paraffin-embedded (FFPE) tissues. Using Archimap, we profile the spatial localization of TCRs, BCRs, and the microbiota landscape in archived clinical tissues at single-cell resolution. Through comprehensive benchmarking, we validate Archimap's performance and fidelity. Archimap in situ assembles the immune complex and reconstructs the clonal evolution of antibodies. Together, Archimap shows the power of in situ discovery of functional immune repertoires for their antitumor immunity.",
+      "featured": false
+    },
+    {
+      "id": "10.1101/2025.09.30.679553",
+      "sourceId": "biorxiv",
+      "title": "Long-Read epigenetic clocks identify improved brain aging predictions",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "multi-omics",
+        "genome"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Epigenetic clocks are widely used to estimate biological aging, yet most are built from array-based data from peripheral tissues of predominantly European-ancestry individuals, limiting their generalizability. Here, we present aging clocks on DNA methylation from Oxford Nanopore long-read sequencing (LRS), leveraging over 28 million CpG sites from prefrontal cortex samples across individuals of African and European ancestry. These models were developed using GenoML, an automated machine learning platform for multi-omics data that leverages a diverse catalog of existing model architectures. Our long-read-informed clocks were developed using promoter-based and whole-genome window-based features, yielding models for each individual cohort as well as a combined-cohort clock. Each of these models demonstrated favorable performance compared to existing methylation clocks and was externally validated in a cohort of Colombian individuals. We further performed enrichment analyses and nominated both shared and cohort-specific pathways, cell types, and transcription factor binding motifs which may be implicated in aging and were not fully explained by cell type proportions or postmortem interval. Altogether, our findings highlight the power of long-read methylation data for constructing accurate, ancestry-aware aging clocks and emphasize the importance of inclusive training datasets.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.11.744312",
+      "sourceId": "biorxiv",
+      "title": "Phenotype-associated spatial biomarker discovery in spatial transcriptomics with spHOT",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Spatial transcriptomics now profiles patient cohorts at single-cell resolution, enabling analysis of disease-associated cell organization in situ. However, discovering such spatial biomarkers remains challenging because relevant structures occur at unknown scales and cell- or niche-level annotations are rarely available. We present spHOT, a deep learning framework that localizes phenotype-associated spatial biomarkers from sample-level labels. spHOT combines spatial foundation model embeddings, a hierarchical domain tree for multi-resolution tissue representation, and a teacher-student multiple instance learning architecture that converts sample labels into cell-level biomarker scores. In controlled simulations and real-tissue benchmarks, spHOT outperformed existing spatial and single-cell methods in localizing ground-truth biomarkers. Across fibrotic, metabolic, and autoimmune disease datasets, spHOT recovered disease-relevant niches and tissue states reported by supervised analyses in the original studies. Cross-disease application of spHOT transferred biomarkers across chronic lung diseases without retraining. spHOT enables scalable, annotation-efficient spatial biomarker discovery in cohort-scale spatial transcriptomics.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.12.744240",
+      "sourceId": "biorxiv",
+      "title": "MOFTy: Multimodal Gaussian Process Factor Analysis with Numerical Information Field Theory",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "multi-omics"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Multimodal Gaussian process factor analysis provides a flexible framework for dimensionality reduction in temporally or spatially resolved omics data. Existing approaches, however, typically rely on pre-specified Gaussian process kernel families and do not explicitly separate each latent factor into a component capturing gradual, smooth variation and a complementary component capturing fine-scale, non-smooth variation. Here, we present MOFTy, a Bayesian multimodal factor analysis framework based on numerical information field theory (NIFTy) that replaces fixed kernel families with the flexible correlated field model in NIFTy and enables explicit additive component separation within each latent factor with quantified uncertainty. NIFTy has been successfully applied to high-resolution Bayesian imaging in astrophysics and facilitates scalable, curvature-aware variational inference for efficient posterior approximations. We validate MOFTy on simulated data; applications to published multi-omics data demonstrate that MOFTy disentangles latent spatial structures by separating smooth gradients from localized fine-scale heterogeneity in human glioblastoma and recovers cross-modal patterns in a mouse gastrulation dataset.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.12.744394",
+      "sourceId": "biorxiv",
+      "title": "SPARKLE: evidence-constrained correction of local RNA leakage in high-resolution spatial transcriptomics",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "spatial transcriptomics",
+        "Visium",
+        "Stereo-seq",
+        "cancer"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "High-resolution sequencing-based spatial transcriptomics, including Stereo-seq and Visium HD, aggregates dense capture units into cell-resolved expression matrices. During tissue processing and permeabilization, RNA released from source cells can spread to neighbouring capture locations, reducing cell-type specificity and biasing downstream analyses. Here we developed SPARKLE (Spatial Ambient RNA Kernel-based Leakage Estimator), a cell-level correction method that uses capture locations outside cell-segmentation masks as within-sample spatial evidence of leakage. SPARKLE fits sparse spatial kernels to out-of-mask observations to estimate a sample-level propagation scale and gene-specific leakage coefficients. It corrects only genes supported by out-of-mask goodness of fit and uses expression-dependent conservative shrinkage to protect highly expressing source cells. Across ten simulated scenarios, SPARKLE achieved the highest cell-wise concordance and the lowest RMSE in 9 of 10 scenarios. In axolotl brain, mouse brain and human ovarian cancer, SPARKLE removed ectopic marker signal from neighbouring cells while retaining source-cell expression, improved agreement with independent single-cell and single-nucleus references, and recovered COL1A2-SDC4 signaling of fibroblast origin that collagen diffusion had obscured. Conclusions remained stable across plausible spatial scales and background-bin sizes. Runtime scaled near-linearly with tissue-window area, and was further acceleration on GPU. SPARKLE is therefore a reference-free, fast and scalable method for correcting local RNA leakage from evidence contained within each sample, improving the reliability of cell-type localization, tissue-compartment identification and cell-cell communication inference.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.12.744148",
+      "sourceId": "biorxiv",
+      "title": "scDblFinder in Python with GPU support",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "High-throughput single-cell sequencing provides a scalable solution for characterizing cells and profiling gene expression for hundreds to millions of cells. However, this process gives rise to doublets, which can lead to inaccurate conclusions drawn from the data. A number of packages have therefore been developed to help accurately detect them, and in particular scDblFinder has been shown to outperform alternatives in the detection of doublets in single-cell (RNA) sequencing data. Being implemented in R, however, its adoption has been more limited in the Python community. Here, we present scDblFinderPy, a Python-based implementation of the scDblFinder R method, and show that it obtains similar performances. Furthermore, we include in it optional GPU support, thus further speeding up the process.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.14.742686",
+      "sourceId": "biorxiv",
+      "title": "A multilayered in silico analysis links UHRF1, DNA methylation and developmental chromatin memory to lineage-dependent prognosis in gastric, renal and adrenal cancers",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "cancer",
+        "development"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Aberrant DNA methylation is a hallmark of cancer, but its clinical interpretation remains debated. UHRF1, a key epigenetic adaptor for DNA methylation maintenance and chromatin bivalency regulation in embryonic stem cells, is frequently overexpressed yet shows context-dependent prognostic behaviour. By integrating bulk and single-cell transcriptomics, CpG-resolution methylation, developmental chromatin states, immune profiling and clinical outcomes across gastric (STAD), clear-cell renal (KIRC) and adrenal (ACC) carcinomas, we identified a four-class UHRF1-embryonic morphogenesis (UHRF1-EM) framework resolving this paradox. This axis revealed an inverse prognostic pattern: whilst across all three tumours EM-low and EM-high states mark better or worse prognosis, respectively, UHRF1-high levels associate with favourable outcome in STAD (UH-EML), and unfavourable in KIRC and ACC (UH-EMH). The classification proved reproducible and independently prognostic after adjustment for stage and molecular subtypes, outperforming existing classifiers and exceeding pathological stage in KIRC and ACC. Multivariable models incorporating UHRF1-EM yielded uniformly positive {Delta}C-indices. Hypermethylation associated with the UHRF1-EM axis was enriched at ESC bivalent developmental loci (EM and oncofoetal genes), but not at housekeeping cell-cycle sites. In STAD, this pattern was related to oncofoetal gene downregulation and best prognosis, whereas in KIRC and ACC it matched with gene-body/enhancer methylation, higher EM expression, immunosuppressive microenvironments and worst prognosis. Together, these findings establish the UHRF1-EM axis as a clinically robust molecular classifier and support a mechanistic model in which tumour-specific epigenetic engagement of developmental loci may contribute to the prognostic inversion, providing a foundation for further mechanistic experimental validation.",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.08.14.744974",
+      "sourceId": "biorxiv",
+      "title": "Spatial second-order features predict glioma malignant transformation",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single cell"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Isocitrate dehydrogenase (IDH) mutant gliomas often transform from low to high grade aggressive tumors. The genetic and molecular drivers of this Malignant Transformation (MT) are poorly understood, and predicting whether a patient will undergo MT is an unmet challenge of high clinical relevance. To stratify patients by MT risk, we applied integrated spatial DNA and RNA profiling to biopsies from 18 retrospective glioma patients which will either remain stable, undergo MT or have already transformed. The resulting dataset consisted of >600,000 single cells, measuring 962 DNA loci, 1150 RNAs, and their spatial locations. Using this dataset, we found that genetic copy number alterations (CNAs), cell types compositions, and cellular neighborhoods did not predict MT. Instead, second order effects i.e. pairwise interactions, are highly predictive of future transformation. First, we identified abnormal chromosomal contact patterns that clearly separate future stable versus future MT samples. Second, we identified 24 ligand-receptors (LR) pairs cross-expressed in neighboring cells as the main molecular factors predictive of transformation and recurrences. We then validated a cross-expressing pair of ENPP2-LPAR1 interactions with a separate cohort of patient samples. In addition, using the LR+ cell pairs as an anchor, we identified cell signaling-specific gene expression programs that can predict from bulk or single cell RNAseq data the time to recurrence. We used a cell-interaction-based foundation model (CIFM) optimized on the spatial RNA data in forward simulations and identified potential myeloid signaling factors involved in MT. Lastly, we analyzed the effect of detection sensitivity on the ability to capture pertinent LR+ neighboring cells by down-sampling transcript and showed that the ability to detect cross-expressing signaling LR transcripts (typically <10 copies per cell) decays rapidly with lower sensitivity, but is more robust to down-sampling of the areas of the tissue imaged. The importance of second-order features suggests that increased depth and dimensionality of data on a smaller quantity of samples can provide valuable insight, and that high-sensitivity and multiple-modalities spatial approaches can help identify markers to risk-stratify patients, aid in therapeutic decision making, and uncover potential therapeutic targets.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.05.742965",
+      "sourceId": "biorxiv",
+      "title": "VRK1 kinase maintains an undifferentiated proliferative state in neuroblastoma tumor cells",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Neuroblastoma is a neural crest-derived pediatric malignancy characterized by marked cellular heterogeneity and variable differentiation status. Undifferentiated tumors are associated with aggressive clinical behavior, treatment resistance and poor outcome, highlighting the need to identify molecular mechanisms that sustain tumor cell plasticity and prevent differentiation. Vaccinia-related kinase 1 (VRK1) is a serine/threonine kinase involved in cell-cycle progression, DNA-damage responses and transcriptional regulation, and has previously been associated with neuroblastoma progression. However, its role in the control of neuroblastoma differentiation remains unclear. Here, we investigated the relationship between VRK1 expression, tumor differentiation and stem-like properties in human neuroblastoma. Analysis of patient tumor datasets and tissue microarrays showed that VRK1 expression is enriched in undifferentiated neuroblastoma and stage 4 tumors, and inversely correlates with established differentiation markers, including DDC, NCAM1 and S100B. This association was maintained in MYCN-non-amplified tumors, indicating that the relationship between VRK1 and differentiation is not dependent on MYCN status. Single-cell transcriptomic analyses further demonstrated elevated VRK1 expression in developmentally immature neural crest progenitor and Schwann cell precursor-like populations. Induction of neuronal or mesenchymal differentiation consistently reduced VRK1 expression in neuroblastoma cell lines and patient-derived cells. Conversely, VRK1 silencing promoted differentiation-marker expression, reduced nestin and Ki67 expression, and produced sustained differentiation-associated changes in xenograft tumors. VRK1 was also enriched in tumorsphere cultures that select for undifferentiated stem-like neuroblastoma cells. VRK1 depletion impaired tumorsphere growth, reduced intratumoral proliferation and altered the balance between undifferentiated cells and differentiated progeny, supporting a role for VRK1 in self-renewal and maintenance of progenitor-like tumor cells. Mechanistically, VRK1 expression positively correlated with the core stemness transcription factor SOX2 in neuroblastoma tumor cells. VRK1 knockdown reduced nuclear SOX2 abundance, whereas VRK1 overexpression increased SOX2 protein levels. In addition, analysis of the VRK1 locus identified an active chromatin configuration and potential SOX2-binding sites, consistent with a regulatory relationship between these factors. Together, these findings identify VRK1 as a regulator of the undifferentiated, proliferative and stem-like state in neuroblastoma. The VRK1-SOX2 axis may contribute to stabilizing tumor-cell immaturity and represents a potential target for differentiation based therapeutic strategies in high-risk neuroblastoma.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.29.741620",
+      "sourceId": "biorxiv",
+      "title": "Minimally invasive monitoring of clonal evolution through integrated single cell and ctDNA analysis",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "cancer",
+        "evolution",
+        "genome"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Circulating cell-free DNA (cfDNA) offers a minimally invasive lens into tumor evolution. However, the accurate quantification of clonal composition from cfDNA remains challenging. Existing methods for clone tracking using liquid biopsies are constrained by issues such as their reliance on bulk tissue references, incomplete representations of clonal architecture or limited breadth of mutation panels. To address these limitations, we developed cfClone, a Bayesian framework that integrates single-cell whole-genome sequencing (scWGS) derived clonal structures with cfDNA whole-genome sequencing (cfDNA-WGS) data to enable high-resolution tissue-informed clonal tracking. By jointly modeling local copy-number alterations and haplotype-specific signals via Bayesian model selection and Markov chain Monte Carlo (MCMC) sampling, the algorithm yields uncertainty-aware estimates of clonal prevalence and tumour fraction (TF). Applied to longitudinal clinical cohorts, cfClone can be used to reconstruct evolutionary trajectories and uncovers clonal selection driving therapeutic resistance, including the de novo detection of emergent clonal populations. We demonstrate that cfClone achieves accurate TF estimates and circulating tumor DNA (ctDNA) detection in malignancies with varying degrees of copy-number variant (CNV) burden using semi-synthetic data. We then compare to the state of the art scWGS informed panel based approach, and demonstrate cfClone provides comparable accuracy while allowing for the tracking of more clones and detection of novel clones. Finally, we show how cfClone can be used to quantitatively track clonal dynamics in response to treatment in high grade serous ovarian cancer. Github link: https://github.com/Roth-Lab/cfclone",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.23.740424",
+      "sourceId": "biorxiv",
+      "title": "The Y chromosome gene KDM5D restrains CD8+ T cell antitumor immunity through TCR and cholesterol-exhaustion programs",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "cancer",
+        "CRISPR"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Sex differences in immunity shape cancer risk, autoimmunity, and responses to immunotherapy, yet the sex-chromosome genes that regulate antitumor T cell function remain incompletely defined. Here, we identify the Y chromosome-encoded KDM5D histone demethylase as a male-specific suppressor of CD8+ T cell antitumor immunity. In murine colorectal cancer (CRC) models, male CD8+ T cells displayed reduced cytokine production, proliferation, cytotoxicity, TCR{beta} abundance, and proximal TCR signaling relative to female CD8+ T cells. CRISPR-RNP-mediated KDM5D depletion in male CD8+ T cells enhanced effector function, increased TCR{beta} expression, augmented TCR signaling, and improved tumor control after adoptive transfer. Transcriptomic and functional analyses further linked KDM5D to cholesterol biosynthesis and exhaustion-associated programs, with KDM5D depletion reducing SREBP2/XBP1-associated cholesterol and exhaustion signatures. Correspondingly, human CRC single-cell analyses supported the clinical relevance of this axis, showing enrichment of exhausted and cholesterol-associated CD8+ T cell states in male tumors. Pharmacologic inhibition of cholesterol biosynthesis with lovastatin partially attenuated select exhaustion-associated markers in male CD8+ T cells and delayed tumor growth in vivo. Together, these findings define KDM5D as a sex chromosome-encoded regulator of male CD8+ T cell dysfunction and point to cholesterol-exhaustion programs as a potential therapeutic vulnerability in male CRC.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.14.744858",
+      "sourceId": "biorxiv",
+      "title": "Endothelial ANGPT2 insufficiency impairs retinal vascularization with ROP-like neovascular tufts",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "scRNA-seq",
+        "development"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "ANGPT2 is widely recognized as a critical regulator of pathological neovascularization. By analyzing scRNA-seq data from neonatal retinas, we demonstrate that Angpt2 transcripts are highly enriched in tip cells relative to other endothelial subtypes, where Angpt1/4 expression is absent. However, mechanisms underlying ANGPT2 function at angiogenic fronts remain inadequately understood. Here, we show that endothelial Angpt2 deletion severely disrupted retinal vascularization, characterized by neovascular tufts and micro-hemorrhage. Similar angiogenic defects also occurred in the brain, but were less evident in other tissues examined. Mechanistically, ANGPT2 insufficiency attenuated retinal tip cell invasion with aberrant mural cell coverage, compromising sprouting into non-vascularized tissues. Retinal RNA-seq analysis revealed that transcripts associated with endothelial migration and junction assembly were reduced in Angpt2 mutants compared to littermate controls, while upregulated genes were enriched in hypoxia-responsive pathways and mural cell development. Notably, abnormal mural-tip cell associations were detected within 48 hours post-Angpt2 deletion, displaying also a hypoxia-driven transcriptomic signature. These closely resemble the vascular pathologies observed in human retinopathy of prematurity. In contrast, Angpt1 insufficiency or Angpt4 deficiency primarily affected venous morphogenesis. Collectively, our findings imply that ANGPT2 is essential for driving tip cell invasion during sprouting angiogenesis, and that its insufficiency triggers hypoxia-driven vascular anomalies.",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.08.16.745098",
+      "sourceId": "biorxiv",
+      "title": "Reelin coordinates neuronal positioning and Muller glia scaffold maturation during retinal development",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-nucleus",
+        "development"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Reelin is a secreted extracellular matrix protein that regulates neuronal migration and layer formation in the developing brain, yet its role in retinal development remains incompletely defined. Here, we investigated Reelin function in retinal lamination using wild-type and Reeler mice, combining stage-resolved RNA in situ hybridization, immunohistochemistry, and single-nucleus RNA sequencing. We show that Reln is dynamically expressed in ganglion cell layer and inner nuclear layer neurons during retinal development and persists in discrete adult neuronal populations. Loss of Reelin leads to widespread defects in retinal organization affecting both neurons and Muller glia. In Reeler; retinas, Muller glia exhibit reduced Glul positive extensions, indicating impaired glial scaffold maturation. Early-born neuronal populations are also disrupted, with altered spatial organization markers associated with retinal ganglion cell differentiation within the ganglion cell layer at postnatal day 9. Horizontal cells are significantly reduced with dorsal-predominant vulnerability, while cone photoreceptors are generated in normal numbers but show incomplete positioning within the outer nuclear layer. Together, these findings identify Reelin as a key regulator of retinal lamination that coordinates neuronal positioning with Muller glia morphogenesis, extending its canonical role in brain development to the vertebrate retina.",
+      "featured": false
+    }
+  ]
+}

@@ -8,6 +8,7 @@ export { DIGEST_LINES } from "./constants.js";
 export {
   LIFE_SCIENCE_DIGEST_POLICY,
   MAX_FEATURED,
+  DEFAULT_SPATIAL_CONFIDENCE_THRESHOLD,
   type LifeScienceDigestPolicy,
 } from "./digestPolicy.js";
 export {
@@ -67,6 +68,7 @@ export { fallbackDigestLine, type DigestLineFallbackInput } from "./fallbackDige
 export { resolveSourceScope } from "./resolveSourceScope.js";
 export { ROUTING_SYSTEM_PROMPT } from "./prompts/routing.system.js";
 export { DIGEST_TAGGING_SYSTEM_PROMPT } from "./prompts/tagging.system.js";
+export { SPATIAL_CLASSIFIER_SYSTEM_PROMPT } from "./prompts/spatial.system.js";
 export { DIGEST_SUMMARIZE_SYSTEM_PROMPT } from "./prompts/summarize.system.js";
 export { DIGEST_TRANSLATE_SYSTEM_PROMPT } from "./prompts/translate.system.js";
 
@@ -98,8 +100,15 @@ export {
   type DigestTaggingStats as DomainDigestTaggingStats,
 } from "./digest/resolveDigestLines.js";
 export {
+  digestLineFromSpatialConfidence,
+  isValidSpatialConfidence,
+  DEFAULT_SPATIAL_CONFIDENCE_THRESHOLD as SPATIAL_CONFIDENCE_THRESHOLD_DEFAULT,
+} from "./digest/spatialConfidence.js";
+export { shouldSkipForDigest, type DigestSkipInput } from "./digest/skipNonResearch.js";
+export {
   buildSourcePriorityById,
   compareForFeatured,
+  compareSourcePriorityThenTitle,
   DIGEST_LINE_RANK,
   isEligibleForFeatured,
   selectFeatured,

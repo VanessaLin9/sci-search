@@ -7,6 +7,7 @@ import { loadSources } from "../../../../src/config.js";
 import {
   buildSourcePriorityById,
   compareForFeatured,
+  compareSourcePriorityThenTitle,
   isEligibleForFeatured,
   selectFeatured,
 } from "../../../../src/domain/life-science/digest/selection.js";
@@ -86,6 +87,36 @@ test("isEligibleForFeatured requires non-skip line and trimmed abstract", () => 
   );
 });
 
+test("selectFeatured: missing abstract stays candidate overflow, never featured", () => {
+  const papers = [
+    ranked("no-abs-a", {
+      sourceId: "nature-methods",
+      title: "A spatial paper without abstract",
+      digestLine: "line-a",
+      abstract: "",
+    }),
+    ranked("ok-b", {
+      sourceId: "science",
+      title: "B eligible",
+      digestLine: "line-b",
+    }),
+  ];
+  const { papers: selected, stats, diagnostics } = selectFeatured(papers, {
+    maxFeatured: 12,
+    priorityBySourceId,
+  });
+  const withFeatured = selected as RankedPaperWithFeatured[];
+
+  assert.equal(stats.candidates, 2);
+  assert.equal(stats.featured, 1);
+  assert.equal(stats.overflow, 1);
+  assert.equal(diagnostics.featuredIneligibleMissingAbstract, 1);
+  assert.equal(withFeatured.find((paper) => paper.id === "no-abs-a")?.featured, false);
+  assert.equal(withFeatured.find((paper) => paper.id === "ok-b")?.featured, true);
+  // Missing abstract is not skip — still a visible candidate that can appear in overflow.
+  assert.equal(withFeatured.find((paper) => paper.id === "no-abs-a")?.digestLine, "line-a");
+});
+
 test("selectFeatured never features skip papers", () => {
   const papers = [
     ranked("skip-1", { sourceId: "science", title: "Skipped", digestLine: "skip" }),
@@ -119,7 +150,131 @@ test("selectFeatured caps featured count and reports overflow stats", () => {
     lineB: 1,
     preprint: 1,
     skip: 0,
+    featuredLineA: 1,
+    featuredLineB: 1,
+    featuredPreprint: 0,
+    overflowLineA: 0,
+    overflowLineB: 0,
+    overflowPreprint: 1,
   });
+});
+
+test("selectFeatured fills A then B before preprint; preprint never replaces A/B", () => {
+  const papers = [
+    ranked("pre-1", { sourceId: "science", title: "P1", digestLine: "preprint" }),
+    ranked("pre-2", { sourceId: "science", title: "P2", digestLine: "preprint" }),
+    ranked("b-1", { sourceId: "science", title: "B1", digestLine: "line-b" }),
+    ranked("a-1", { sourceId: "nature-methods", title: "A1", digestLine: "line-a" }),
+    ranked("a-2", { sourceId: "science", title: "A2", digestLine: "line-a" }),
+  ];
+  const { papers: selected, stats } = selectFeatured(papers, {
+    maxFeatured: 3,
+    priorityBySourceId,
+  });
+  const featuredIds = new Set(
+    (selected as RankedPaperWithFeatured[]).filter((paper) => paper.featured).map((paper) => paper.id),
+  );
+  assert.deepEqual(featuredIds, new Set(["a-1", "a-2", "b-1"]));
+  assert.equal(stats.featuredPreprint, 0);
+  assert.equal(stats.overflowPreprint, 2);
+  assert.equal(stats.featured, 3);
+});
+
+test("selectFeatured uses preprint only to fill A+B shortfall", () => {
+  const papers = [
+    ranked("a-1", { sourceId: "science", title: "A1", digestLine: "line-a" }),
+    ranked("b-1", { sourceId: "science", title: "B1", digestLine: "line-b" }),
+    ranked("pre-1", { sourceId: "science", title: "P1", digestLine: "preprint" }),
+    ranked("pre-2", { sourceId: "science", title: "P2", digestLine: "preprint" }),
+  ];
+  const { papers: selected, stats } = selectFeatured(papers, {
+    maxFeatured: 3,
+    priorityBySourceId,
+  });
+  const featuredIds = new Set(
+    (selected as RankedPaperWithFeatured[]).filter((paper) => paper.featured).map((paper) => paper.id),
+  );
+  assert.deepEqual(featuredIds, new Set(["a-1", "b-1", "pre-1"]));
+  assert.equal(stats.featuredPreprint, 1);
+  assert.equal(stats.overflowPreprint, 1);
+});
+
+test("selectFeatured: when A+B already fill max, all preprint go to overflow", () => {
+  const papers = Array.from({ length: 12 }, (_, index) =>
+    ranked(`a-${index}`, {
+      sourceId: index % 2 === 0 ? "nature-methods" : "science",
+      title: `A${String(index).padStart(2, "0")}`,
+      digestLine: "line-a",
+    }),
+  ).concat([
+    ranked("b-1", { sourceId: "science", title: "B1", digestLine: "line-b" }),
+    ranked("pre-1", { sourceId: "science", title: "P1", digestLine: "preprint" }),
+  ]);
+  const { papers: selected, stats } = selectFeatured(papers, {
+    maxFeatured: 12,
+    priorityBySourceId,
+  });
+  assert.equal(stats.featured, 12);
+  assert.equal(stats.featuredLineA, 12);
+  assert.equal(stats.featuredLineB, 0);
+  assert.equal(stats.featuredPreprint, 0);
+  assert.equal(stats.overflowLineA, 0);
+  assert.equal(stats.overflowLineB, 1);
+  assert.equal(stats.overflowPreprint, 1);
+  assert.equal(
+    (selected as RankedPaperWithFeatured[]).find((paper) => paper.id === "pre-1")?.featured,
+    false,
+  );
+  assert.equal(
+    (selected as RankedPaperWithFeatured[]).find((paper) => paper.id === "b-1")?.featured,
+    false,
+  );
+});
+
+test("selectFeatured: excess A beyond max goes to overflow, not dropped", () => {
+  const papers = Array.from({ length: 14 }, (_, index) =>
+    ranked(`a-${index}`, {
+      sourceId: "science",
+      title: `A${String(index).padStart(2, "0")}`,
+      digestLine: "line-a",
+    }),
+  );
+  const { papers: selected, stats } = selectFeatured(papers, {
+    maxFeatured: 12,
+    priorityBySourceId,
+  });
+  assert.equal(stats.featured, 12);
+  assert.equal(stats.overflow, 2);
+  assert.equal(stats.overflowLineA, 2);
+  assert.equal((selected as RankedPaperWithFeatured[]).filter((paper) => paper.featured).length, 12);
+  assert.equal((selected as RankedPaperWithFeatured[]).filter((paper) => !paper.featured).length, 2);
+});
+
+test("selectFeatured sorts by journal priority within each pool", () => {
+  const papers = [
+    ranked("a-low", { sourceId: "science", title: "Z", digestLine: "line-a" }),
+    ranked("a-high", { sourceId: "nature-methods", title: "M", digestLine: "line-a" }),
+    ranked("b-low", { sourceId: "science", title: "B", digestLine: "line-b" }),
+    ranked("b-high", { sourceId: "nature-methods", title: "A", digestLine: "line-b" }),
+  ];
+  const { papers: selected } = selectFeatured(papers, {
+    maxFeatured: 3,
+    priorityBySourceId,
+  });
+  const featured = selected as RankedPaperWithFeatured[];
+  assert.equal(featured.find((paper) => paper.id === "a-high")?.featured, true);
+  assert.equal(featured.find((paper) => paper.id === "a-low")?.featured, true);
+  assert.equal(featured.find((paper) => paper.id === "b-high")?.featured, true);
+  assert.equal(featured.find((paper) => paper.id === "b-low")?.featured, false);
+
+  // Within line-a pool, nature-methods (priority 1) beats science (priority 5).
+  assert.ok(
+    compareSourcePriorityThenTitle(
+      papers.find((paper) => paper.id === "a-high")!,
+      papers.find((paper) => paper.id === "a-low")!,
+      priorityBySourceId,
+    ) < 0,
+  );
 });
 
 test("selectFeatured skips missing/blank abstracts and backfills from next eligible", () => {

@@ -69,7 +69,17 @@ function emptyDigestBlock(): NonNullable<ProcessedPapersFile["digest"]> {
   return {
     enabled: true,
     llmTagging: true,
-    tagging: { llmClassified: 0, llmTagged: 0, fallback: 0 },
+    tagging: {
+      llmClassified: 0,
+      llmTagged: 0,
+      fallback: 0,
+      threshold: 0.75,
+      llmLineA: 0,
+      llmLineB: 0,
+      fallbackLineA: 0,
+      fallbackLineB: 0,
+      failures: 0,
+    },
     selection: {
       total: 0,
       candidates: 0,
@@ -79,6 +89,12 @@ function emptyDigestBlock(): NonNullable<ProcessedPapersFile["digest"]> {
       lineB: 0,
       preprint: 0,
       skip: 0,
+      featuredLineA: 0,
+      featuredLineB: 0,
+      featuredPreprint: 0,
+      overflowLineA: 0,
+      overflowLineB: 0,
+      overflowPreprint: 0,
     },
     summarize: {
       requested: 0,

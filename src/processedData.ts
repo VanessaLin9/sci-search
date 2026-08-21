@@ -69,6 +69,12 @@ const digestStatsSchema = z.object({
     llmClassified: z.number(),
     llmTagged: z.number(),
     fallback: z.number(),
+    threshold: z.number().optional().default(0),
+    llmLineA: z.number().optional().default(0),
+    llmLineB: z.number().optional().default(0),
+    fallbackLineA: z.number().optional().default(0),
+    fallbackLineB: z.number().optional().default(0),
+    failures: z.number().optional().default(0),
   }),
   selection: z.object({
     total: z.number(),
@@ -79,6 +85,12 @@ const digestStatsSchema = z.object({
     lineB: z.number(),
     preprint: z.number(),
     skip: z.number(),
+    featuredLineA: z.number().optional().default(0),
+    featuredLineB: z.number().optional().default(0),
+    featuredPreprint: z.number().optional().default(0),
+    overflowLineA: z.number().optional().default(0),
+    overflowLineB: z.number().optional().default(0),
+    overflowPreprint: z.number().optional().default(0),
   }),
   summarize: z
     .object({

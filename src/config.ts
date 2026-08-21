@@ -41,6 +41,7 @@ export type RoutingFileConfig = z.infer<typeof routingFileSchema>;
 
 const digestFileSchema = z.object({
   maxFeatured: z.number().int().positive(),
+  spatialConfidenceThreshold: z.number().min(0).max(1),
   overflowShowTitleZh: z.boolean(),
   baseUrl: z.string().url(),
   maxPapersPerBatch: z.number().int().positive(),
@@ -160,6 +161,13 @@ export function loadDigestFileConfig(path = "config/digest.json"): DigestFileCon
     if (parsed.maxFeatured !== LIFE_SCIENCE_DIGEST_POLICY.maxFeatured) {
       throw new Error(
         `config/digest.json maxFeatured (${parsed.maxFeatured}) drifted from domain policy (${LIFE_SCIENCE_DIGEST_POLICY.maxFeatured})`,
+      );
+    }
+    if (
+      parsed.spatialConfidenceThreshold !== LIFE_SCIENCE_DIGEST_POLICY.spatialConfidenceThreshold
+    ) {
+      throw new Error(
+        `config/digest.json spatialConfidenceThreshold (${parsed.spatialConfidenceThreshold}) drifted from domain policy (${LIFE_SCIENCE_DIGEST_POLICY.spatialConfidenceThreshold})`,
       );
     }
     digestFileCache = parsed;
