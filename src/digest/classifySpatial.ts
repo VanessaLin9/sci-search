@@ -1,8 +1,8 @@
 /**
- * Phase 2b：以 ROUTING_LLM_MODEL 對非預印本打 spatial_confidence，再派生 A/B。
+ * Phase 2b：以 ROUTING_LLM_MODEL 對非預印本打 spatial_confidence，再派生 A/B（PR #38）。
  *
  * 失敗契約：單 batch／單篇失敗 → keyword fallback（PRIMARY_KEYWORDS → A，否則 B），
- * 不中斷後續 batch；預印本不進此 classifier。
+ * 不中斷後續 batch；預印本不進此 classifier。取代舊 digest tagging 的二次 A/B 決策。
  */
 import { z } from "zod";
 import { loadDigestFileConfig } from "../config.js";

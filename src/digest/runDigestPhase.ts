@@ -5,7 +5,7 @@
  * - spatial classify 整段掛掉 → keyword digestLine（PRIMARY → A，否則 B）
  * - summarize 失敗 → featured 仍寄出，缺 titleZh/summaryZh（郵件可回退英文 abstract）
  * - translate 失敗 → overflow 只留英文標題，無備援模型／關鍵字翻譯
- * - A/B 不再由第二個 digest tagging LLM 決定
+ * - A/B 不再由第二個 digest tagging LLM 決定（PR #38）
  */
 import { loadDigestFileConfig } from "../config.js";
 import {

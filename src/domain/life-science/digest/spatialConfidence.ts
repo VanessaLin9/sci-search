@@ -1,6 +1,6 @@
 import type { DigestLine } from "../types.js";
 
-/** Initial product threshold; calibrate later via regression fixtures. */
+/** 初版門檻 0.75；必須與 config/digest.json + LIFE_SCIENCE_DIGEST_POLICY 對齊，不可散落 hardcode（PR #38）。 */
 export const DEFAULT_SPATIAL_CONFIDENCE_THRESHOLD = 0.75;
 
 export function isValidSpatialConfidence(value: unknown): value is number {
@@ -8,8 +8,8 @@ export function isValidSpatialConfidence(value: unknown): value is number {
 }
 
 /**
- * Map LLM spatial_confidence to main-line A/B.
- * `confidence >= threshold` → line-a; otherwise line-b.
+ * 將 LLM spatial_confidence 映射到主線 A/B（PR #38）。
+ * `confidence >= threshold` → line-a；否則 line-b。分數是模型判斷，不宣稱為嚴格機率。
  */
 export function digestLineFromSpatialConfidence(
   confidence: number,

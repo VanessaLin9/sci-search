@@ -11,7 +11,7 @@ type DigestTaggedPaper = {
 };
 
 /**
- * 由空間分類結果派生 digestLine（不再接受第二個 LLM 的 line-a/line-b 標籤）。
+ * 由空間分類結果派生 digestLine（不再接受第二個 LLM 的 line-a/line-b 標籤）（PR #38）。
  * 預印本來源硬鎖 `preprint`（PR #10）；非預印本只用 classification map 的 A/B。
  */
 export function resolveDigestLines<P extends DigestTaggedPaper>(
@@ -49,7 +49,7 @@ export function applyKeywordDigestFallback<P extends DigestTaggedPaper>(
   }));
 }
 
-/** Spatial classifier observability（persisted under digest.tagging for schema continuity）. */
+/** Spatial classifier 觀測欄位；仍寫進 `digest.tagging` 以維持舊 papers.json schema 相容（PR #38）。 */
 export type DigestTaggingStats = {
   threshold: number;
   llmClassified: number;

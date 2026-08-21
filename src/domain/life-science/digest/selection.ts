@@ -96,11 +96,12 @@ function sortPoolByPriority<P extends RankedPaper>(
 }
 
 /**
- * Featured selection：分開 A / B / preprint pool，依序填滿最多 maxFeatured。
+ * Featured selection：分開 A / B / preprint pool，依序填滿最多 maxFeatured（PR #38）。
  * - 先 A（journal/source priority）
  * - A 不足再 B 補
  * - A+B 仍不足才用 preprint 補差額；preprint 不得取代已入選 A/B
  * - 缺 abstract 者不合格，留在 overflow（PR #27）
+ * 不可把三池直接混進同一個排序再切前 N 篇。
  */
 export function selectFeatured<P extends RankedPaper>(
   papers: P[],

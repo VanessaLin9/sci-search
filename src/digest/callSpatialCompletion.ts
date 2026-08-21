@@ -11,8 +11,9 @@ import { resolveCompletionMaxTokens } from "../routing/batchSizing.js";
 import { formatElapsedMs, logRouting } from "../routing/routingLog.js";
 
 /**
- * Spatial confidence LLM call — uses ROUTING_LLM_MODEL / routing client.
- * Timing：gate=`spatial-classify` callSite=`callSpatialClassifyCompletion`.
+ * Spatial confidence LLM call — 故意走 routing client / ROUTING_LLM_MODEL，
+ * 與 DIGEST_LLM_MODEL（summarize/translate）分離（PR #38）。
+ * Timing：gate=`spatial-classify` callSite=`callSpatialClassifyCompletion`。
  */
 export async function callSpatialClassifyCompletion(
   items: SpatialClassifyInput[],
