@@ -73,6 +73,7 @@ const emptyTranslateStats = (): DigestTranslateStats => ({
 function keywordFallbackStatsForPapers(
   papers: ClassifiedPaper[],
   threshold: number,
+  options?: { failures?: number },
 ): ReturnType<typeof keywordFallbackTaggingStats> {
   let lineA = 0;
   let lineB = 0;
@@ -82,10 +83,12 @@ function keywordFallbackStatsForPapers(
     if (line === "line-a") lineA += 1;
     else lineB += 1;
   }
-  return keywordFallbackTaggingStats(papers.filter((p) => !isPreprintSource(p.sourceId)).length, {
+  const nonPreprintCount = papers.filter((p) => !isPreprintSource(p.sourceId)).length;
+  return keywordFallbackTaggingStats(nonPreprintCount, {
     threshold,
     lineA,
     lineB,
+    failures: options?.failures ?? 0,
   });
 }
 
@@ -126,7 +129,10 @@ export async function runDigestPhase(options: {
         error instanceof Error ? error.message : error,
       );
       tagged = applyKeywordDigestFallback(papers);
-      taggingStats = keywordFallbackStatsForPapers(papers, spatialConfidenceThreshold);
+      // Whole-stage throw（缺 key／model 等）：failures = 受影響的非預印本數；LLM 關閉路徑仍為 0（PR #38）。
+      taggingStats = keywordFallbackStatsForPapers(papers, spatialConfidenceThreshold, {
+        failures: papers.filter((paper) => !isPreprintSource(paper.sourceId)).length,
+      });
     }
   } else {
     logDigest("LLM digest disabled (set ENABLE_LLM_DIGEST=1); spatial classify uses keyword fallback");

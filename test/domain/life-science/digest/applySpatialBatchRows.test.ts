@@ -46,3 +46,33 @@ test("applySpatialBatchRows: partial batch leaves missing ids for keyword fallba
   assert.deepEqual(applied.keywordFallbackIds, ["b", "c"]);
   assert.equal(applied.failures, 2);
 });
+
+test("applySpatialBatchRows: duplicate id is malformed and falls back", () => {
+  const applied = applySpatialBatchRows(
+    ["dup", "ok"],
+    [
+      { id: "dup", spatial_confidence: 0.9 },
+      { id: "dup", spatial_confidence: 0.2 },
+      { id: "ok", spatial_confidence: 0.8 },
+    ],
+    0.75,
+  );
+  assert.equal(applied.lineById.has("dup"), false);
+  assert.equal(applied.llmClassifiedIds.has("dup"), false);
+  assert.ok(applied.keywordFallbackIds.includes("dup"));
+  assert.equal(applied.lineById.get("ok"), "line-a");
+  assert.equal(applied.failures, 1);
+});
+
+test("applySpatialBatchRows: identical duplicate confidence still falls back", () => {
+  const applied = applySpatialBatchRows(
+    ["same"],
+    [
+      { id: "same", spatial_confidence: 0.9 },
+      { id: "same", spatial_confidence: 0.9 },
+    ],
+    0.75,
+  );
+  assert.deepEqual(applied.keywordFallbackIds, ["same"]);
+  assert.equal(applied.lineById.size, 0);
+});

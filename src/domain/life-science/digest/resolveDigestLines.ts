@@ -80,6 +80,8 @@ export const keywordFallbackTaggingStats = (
     threshold?: number;
     lineA?: number;
     lineB?: number;
+    /** Whole-stage classifier failure count; leave 0 when LLM is intentionally disabled. */
+    failures?: number;
   },
 ): DigestTaggingStats => ({
   threshold: options?.threshold ?? 0,
@@ -90,7 +92,7 @@ export const keywordFallbackTaggingStats = (
   fallback: paperCount,
   fallbackLineA: options?.lineA ?? 0,
   fallbackLineB: options?.lineB ?? 0,
-  failures: 0,
+  failures: options?.failures ?? 0,
 });
 
 export const emptyDigestSelectionStats = (): import("./selection.js").DigestSelectionStats => ({

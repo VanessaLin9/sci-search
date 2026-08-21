@@ -17,7 +17,8 @@ export type AppliedSpatialBatch = {
 
 /**
  * Apply one LLM spatial batch payload to requested ids.
- * Missing / invalid / out-of-range confidence → keywordFallbackIds（caller fills keyword A/B）.
+ * Missing / invalid / out-of-range confidence / duplicate id → keywordFallbackIds（caller fills keyword A/B）。
+ * Duplicate id 視為該 paper 的 malformed response（PR #38）：不可 silently keep first。
  */
 export function applySpatialBatchRows(
   itemIds: readonly string[],
@@ -27,6 +28,7 @@ export function applySpatialBatchRows(
   const lineById = new Map<string, MainLine>();
   const llmClassifiedIds = new Set<string>();
   const itemIdSet = new Set(itemIds);
+  const duplicateIds = new Set<string>();
   let failures = 0;
 
   for (const row of rows) {
@@ -38,7 +40,16 @@ export function applySpatialBatchRows(
     if (!isValidSpatialConfidence(row.spatial_confidence)) {
       continue;
     }
-    if (lineById.has(id)) continue;
+    if (duplicateIds.has(id)) {
+      continue;
+    }
+    if (lineById.has(id) || llmClassifiedIds.has(id)) {
+      // Second (or later) row for the same id: drop the earlier LLM verdict and fallback.
+      duplicateIds.add(id);
+      lineById.delete(id);
+      llmClassifiedIds.delete(id);
+      continue;
+    }
     lineById.set(id, digestLineFromSpatialConfidence(row.spatial_confidence, threshold));
     llmClassifiedIds.add(id);
   }
