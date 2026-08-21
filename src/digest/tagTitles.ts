@@ -1,5 +1,8 @@
 /**
- * Phase 2b：批次 LLM 打 digestLine（line-a / line-b / preprint / skip）。
+ * @deprecated Phase 2b A/B 已改由 `classifySpatialWithLlm`（ROUTING_LLM_MODEL）派生；
+ * 本模組僅供舊 testDigestLlm / response_format 回歸，pipeline 不再呼叫。
+ *
+ * 舊 Phase 2b：批次 LLM 打 digestLine（line-a / line-b / preprint / skip）。
  *
  * 失敗契約與 routing 類似但備援是 keyword digestLine（非「排除」）：
  * 單 batch 掛掉 → 該批全部 keyword；缺漏 id 結尾再補 keyword（INV-030）。
@@ -116,9 +119,15 @@ export async function tagTitlesWithLlm(options: {
     lineById,
     llmTaggedIds,
     stats: {
+      threshold: 0,
       llmClassified: papers.length,
       llmTagged,
+      llmLineA: 0,
+      llmLineB: 0,
       fallback,
+      fallbackLineA: 0,
+      fallbackLineB: 0,
+      failures: fallback,
     },
   };
 }

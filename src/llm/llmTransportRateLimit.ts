@@ -4,7 +4,7 @@
  * Bucket id 與 spacing policy 分離——fingerprint Gemini id 仍掛 5s，不會掉回 NVIDIA 2s。
  *
  * Production create exits（caller audit；勿新增 bypass）:
- * - callRoutingCompletion / callBiorxivGateCompletion / callDigestTaggingCompletion / callDigestChatCompletion
+ * - callRoutingCompletion / callBiorxivGateCompletion / callDigestTaggingCompletion / callDigestChatCompletion / callSpatialClassifyCompletion
  *   → createChatCompletionWithJsonResponseFormatFallback → scheduleLlmTransportAttempt
  * - runProbeDigestSmoke → scheduleLlmTransportAttempt
  * OpenAI clients：routingLlmClient / digestLlmClient only。

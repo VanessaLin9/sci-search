@@ -1,0 +1,488 @@
+{
+  "reportDate": "2026-08-18",
+  "note": "Regression fixture for spatial classifier refactor: historical digestLine may reflect old tagging overrides.",
+  "papers": [
+    {
+      "id": "10.1038/s41588-026-02742-4",
+      "sourceId": "nature-genetics",
+      "title": "Publisher Correction: Translating genomic data into healthcare practice with the Singapore National Precision Medicine program",
+      "journal": "Nature Genetics",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41559-026-03167-2",
+      "sourceId": "nature-ecology-evolution",
+      "title": "High-integrity biodiversity credits through recognition of culturally salient species",
+      "journal": "Nature Ecology & Evolution",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Building a high-integrity biodiversity credit market requires recognition of Indigenous Peoples and Local Communities as stewards of nature. Including culturally salient species as a metric in the measurement and monitoring of biodiversity credits — with the consent and guidance of Indigenous and local authorities — may be one pathway towards this pursuit.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41587-026-03293-z",
+      "sourceId": "nature-biotechnology",
+      "title": "Editor’s pick: Dispatch Biotherapeutics",
+      "journal": "Nature Biotechnology",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Each year, Nature Biotechnology highlights companies that received sizeable early-stage funding in the previous year. Dispatch Bio delivers antigens to solid tumors for CAR T immunotherapy.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41587-026-03278-y",
+      "sourceId": "nature-biotechnology",
+      "title": "Lessons from drug revenue life cycles: distributions across modalities and therapeutic areas",
+      "journal": "Nature Biotechnology",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "An analysis of FDA-approved drugs reveals uneven timing and concentration of revenue life cycles across modalities and therapeutic areas, offering evidence to guide innovation strategy and policy design in a post-Inflation Reduction Act world.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41590-026-02612-5",
+      "sourceId": "nature-immunology",
+      "title": "Antigen-sampling gut cells moonlight as organizers of immune defense",
+      "journal": "Nature Immunology",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Microfold cells are known for ferrying gut antigens to immune cells to trigger antibody responses. We identify a second function for microfold cells in Peyer’s patches in establishing a spatial niche that positions group 3 innate lymphoid cells and sustains their production of the protective cytokine interleukin-22.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41590-026-02624-1",
+      "sourceId": "nature-immunology",
+      "title": "From data to discovery: a unified framework for human immunology",
+      "journal": "Nature Immunology",
+      "section": "biology",
+      "matchedKeywords": [
+        "immunology"
+      ],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "High-throughput, high-dimensional profiling technologies have transformed the ability to generate and test hypotheses of human immunology. Investment in infrastructure has catalyzed the expansion of human cohorts and data repositories and enabled opportunities to predict disease risk, promote early diagnosis and design interventions that promote health.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41590-026-02615-2",
+      "sourceId": "nature-immunology",
+      "title": "Neutrophil-integrated syncytial CAR macrophage for cancer immunotherapy",
+      "journal": "Nature Immunology",
+      "section": "biology",
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Here the authors create a syncytial chimeric antigen receptor (CAR) cell that fuses CAR macrophages with neutrophils, equipping these cells with the antitumor functions from both cell types.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41590-026-02618-z",
+      "sourceId": "nature-immunology",
+      "title": "Hallmarks of the multidimensional immune response to trauma in humans",
+      "journal": "Nature Immunology",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Huber-Lang et al. review the multidimensional immune response to trauma. The Review discusses innate and adaptive immunity across neuroendocrine, endovascular and metabolic axes in the setting of traumatic injury.",
+      "featured": true
+    },
+    {
+      "id": "10.1371/journal.pbio.3003965",
+      "sourceId": "plos-biology",
+      "title": "Species-specific barriers restrict virus spillover potential across the Caenorhabditis genus",
+      "journal": "PLOS Biology",
+      "section": "biology",
+      "matchedKeywords": [
+        "development",
+        "evolution"
+      ],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Host range expansion and virus emergence depend on whether viral life-cycle processes align with the ecological, developmental and physiological traits of new hosts. Spillover therefore succeeds only when pathogens clear a hierarchy of mechanistic barriers, from entry and replication to transmission and evolutionary persistence, but how these barriers map onto whole-organism host competence remains poorly resolved. Here we dissect spillover barriers experimentally using the Caenorhabditis -Orsay virus system, integrating within-host viral kinetics, cellular progression, transmission, virulence and experimental evolution across six closely related host species. We show that host species identity deterministically reshapes the timing and completeness of the viral life cycle, generating distinct host-competence phenotypes that range from permissive to restrictive and evolutionary dead-end hosts. Alternative hosts disrupt viral life-cycle synchrony through delayed replication, imbalanced genomic segment production, impaired egress or truncated infection windows, reducing transmission despite occasional high viral loads. These mechanistic mismatches prevent sustained viral adaptation upon serial passage, revealing how multiple partially permeable barriers compound to block emergence. By resolving spillover barriers across biological scales, our results provide a mechanistic framework linking viral life-history traits to eco-evolutionary theory of host range, and show how temporal and stoichiometric mismatches can determine whether cross-species infections become epidemiologically and evolutionarily viable.",
+      "featured": false
+    },
+    {
+      "id": "10.1371/journal.pbio.3003963",
+      "sourceId": "plos-biology",
+      "title": "Correction: Genomic and functional adaptations in the guanylate-binding protein GBP5 highlight specificities of bat antiviral innate immunity",
+      "journal": "PLOS Biology",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "by Amandine Le Corf, Sarah Maesen, Amandine Chantharath, Clara Loyer, Juan Manuel Vazquez, M. Elise Lauterbur, Veronika Krchlikova, Lucas Sareoua, Genavieve Gray-Sandoval, Andrea Cimarelli, Carine Rey, Peter H. Sudmant, David Enard, Lucie Etienne",
+      "featured": true
+    },
+    {
+      "id": "10.1371/journal.pbio.3003956",
+      "sourceId": "plos-biology",
+      "title": "Inhibitory tone in the dentate gyrus dynamically prioritizes memory flexibility or stability by tuning a sensitivity-consistency continuum",
+      "journal": "PLOS Biology",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "A fundamental challenge for memory systems is balancing two opposing demands: sensitivity, which enables the encoding of subtle differences between similar experiences, and consistency, which preserves stable representations against interference. How the brain resolves this trade-off has remained unclear. Here, we identify inhibition in the dentate gyrus (DG) as a regulator of this balance, shifting hippocampal computation between sensitivity- and consistency-dominated regimes. Using an integrative approach that combines cell-type–specific pharmacogenetics in mice, behavioral assays, and computational modeling, we demonstrate that reducing inhibition during the encoding of overlapping experiences enhances later discrimination during recall. Computational modeling further predicted that, besides discrimination enhancement, disinhibition also increases susceptibility to interference, an effect that becomes particularly critical under high memory load, and compromises memory consistency across experiences. Conversely, increased inhibition stabilized memory representations, but reduced sensitivity, rendering similar experiences indistinguishable. These specific predictions were confirmed experimentally, showing that the DG inhibition tunes a sensitivity-consistency continuum. Together, our results uncover a systems-level principle by which hippocampal circuits dynamically prioritize flexibility or stability in memory formation depending on inhibitory tone. This framework advances our understanding of how the brain balances competing computational demands and has implications for neuropsychiatric and neurodegenerative disorders in which excitation–inhibition balance is disrupted.",
+      "featured": true
+    },
+    {
+      "id": "10.1371/journal.pbio.3003946",
+      "sourceId": "plos-biology",
+      "title": "Incomplete functional divergence drives MADS-box gene synergy during floral development in tomato",
+      "journal": "PLOS Biology",
+      "section": "biology",
+      "matchedKeywords": [
+        "development",
+        "evolution"
+      ],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Genetic synergy arises from interactions between functionally related genes that control complex traits in plants and animals. Synergy occurs when the combined effect of multiple genes exceeds the additive contribution from each individual gene. However, genetic mechanisms that drive and maintain synergy remain underexplored. Here, we investigated synergistic interactions among SEPALLATA ( SEP ) MADS-box genes during floral development in tomato. We discovered that SEP gene synergy emerges from duplicated genes that partitioned functions to regulate inflorescence architecture and floral organ identity. Moreover, synergistic interactions are reflected in non-additive expression changes that coordinate successive developmental stages. Finally, we demonstrate that SEP gene synergy occurred due to residual redundancy on the dose-sensitive FALSIFLORA/ANANTHA ( FA/AN ) module guiding floral identity. These results indicate that SEP gene synergy emerged as a consequence of incomplete functional divergence under gene dosage constraints. Our work provides insights into mechanisms through which gene families diverge to produce the substrate for biological innovations during evolution.",
+      "featured": true
+    },
+    {
+      "id": "10.1371/journal.pbio.3003941",
+      "sourceId": "plos-biology",
+      "title": "Ecological dark matter: Insect decline and the planetary monitoring gap",
+      "journal": "PLOS Biology",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Wherever we look, insect numbers are declining, but most insect life on Earth is found in locations we are not actively monitoring. The defining task of the next decade will be to build the planetary observatory that biodiversity science requires. Wherever we look, insect numbers are declining, but most insect life on Earth is found in locations we are not actively monitoring. This Perspective discusses the insect decline and how can we build in the next decade the planetary observatory that biodiversity requires.",
+      "featured": true
+    },
+    {
+      "id": "10.1371/journal.pbio.3003904",
+      "sourceId": "plos-biology",
+      "title": "Reassessment of the roles of coronin proteins as actin effectors and in signaling",
+      "journal": "PLOS Biology",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Coronin proteins are present in all known non-plant eukaryotes, and are involved in key biological processes including cytoskeletal dynamics and the regulation of cell population sizes in amoeba and mammals. How, exactly, coronin proteins exert their function is debated. On the one hand, coronins are widely considered as F-actin-binding and regulatory proteins. On the other hand, coronin proteins were also shown to act as regulators of cAMP/Ca 2+ signaling. Here, we demonstrate that endogenously expressed mammalian coronin 1, 2 and 3 did not depend on F-actin for their subcellular localization and did not impact actin-related processes that were previously reported to be coronin-dependent. We also show that the fusion of GFP or FLAG-tags to coronin proteins resulted in their increased colocalization with actin and phenocopied loss-of-function mutation in mice. Together these results suggest that inclusion of tags on coronin proteins causes increased colocalization with F-actin and can disrupt their in vivo function. Furthermore, we show that the ubiquitously expressed coronin 2 and coronin 3 regulated cAMP production regardless of the presence of F-actin. The analysis presented here may contribute to a re-evaluation of the function of coronin proteins in signaling, independently of actin modulation.",
+      "featured": true
+    },
+    {
+      "id": "10.1101/2025.10.29.685276",
+      "sourceId": "biorxiv",
+      "title": "Loss of physiological stretch elicits an inflammatory, plaque-like transcriptional state in cultured human aortic smooth muscle cells.",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Background and aims: Vascular smooth muscle cells (SMCs) cultured under standard static conditions adopt a modulated phenotype that resembles the SMC states found in atherosclerotic plaques, but the mechanical determinants of this drift are not well defined. We investigated how mechanical loading shapes SMC phenotype and inflammatory signaling. Methods: Human aortic SMCs were maintained under static conditions, physiological cyclic stretch (10% elongation), or pathological stretch (15% elongation) and analyzed by bulk and single-cell RNA sequencing. Mechanistic experiments included siRNA-mediated knockdown of IKBKB, p65 immunofluorescence, and regulon inference from single-cell transcriptomes. Results: Stretch regulated cell cycle, contractile, and inflammatory gene programs in an intensity-dependent manner: 10% stretch suppressed basal and TNF-induced inflammatory gene expression, whereas 15% stretch did not. The anti-inflammatory effect of physiological stretch required IKBKB, yet the proportion of cells with nuclear p65 was unchanged, indicating that stretch constrains NF-{kappa}B output downstream of p65 nuclear entry rather than by blocking translocation. Single-cell RNA sequencing resolved nine states for SMCs in culture whose transcriptomes overlapped substantially with the modulated mesenchymal populations of human coronary and carotid plaques, and physiological stretch attenuated pro-inflammatory gene expression across the major clusters. Regulatory network analysis identified inflammatory transcription factors (RELB, CEBPB/D, IRF1/2, STAT2) as less active under physiological stretch, whereas mechano-lineage regulators (MEF2C, TEAD1, SMAD6) were selectively induced, providing candidate mediators of the effect. Conclusions: Static culture represents a disease-like SMC baseline that physiological stretch attenuates, in part by constraining NF-{kappa}B transcriptional output at a step downstream of p65 nuclear entry",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.04.01.714123",
+      "sourceId": "biorxiv",
+      "title": "Task-dependent Performance of Single-cell Foundation Models under Low Supervision",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Single-cell foundation models are trained on millions of cells, but their value when downstream labels are scarce remains uncertain. Here we compare seven such models with three established representations across clustering, batch correction, cell type annotation, gene expression reconstruction and perturbation prediction. Frozen representations are tested directly for clustering and batch correction and with lightweight task heads for few-shot prediction. CellPLM led the aggregate clustering, annotation and batch-correction comparisons, scMulan led perturbation prediction, and principal component analysis led reconstruction. Of the seven foundation models, one exceeded the strongest classical baseline in clustering, three in batch correction, four in annotation, none in reconstruction and six in perturbation prediction. Representation analyses linked reconstruction performance to preservation of linear gene relationships, but cross-model gene-relation agreement did not exceed a dimension-matched random-projection null. These results show that the utility of a cell representation depends on the information required by the downstream task.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.17.745350",
+      "sourceId": "biorxiv",
+      "title": "Cytoskeletal-nuclear control of alveolar fibroblast identity directs lung regeneration",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Respiratory mechanics direct cell fate in the lung, but the mechanisms by which these mechanical signals are sensed and transmitted to the nucleus to control cell state remain unclear. We paired in vivo perturbations of respiratory mechanics with single-cell genomics and found that alveolar fibroblasts are highly sensitive to physical changes in their microenvironment, exhibiting persistent shifts in their transcriptional identity after injury. Surprisingly, transmission of these signals through the nuclear envelope was not essential for maintaining transcriptional or epigenetic stability during homeostasis. However, severing mechanical-nuclear signaling promoted the normalization of alveolar fibroblast identity after acute injury, resulting in improved epithelial regeneration and reduced dysplastic remodeling. These studies reveal the importance of mechanical-nuclear signaling in the regulation of alveolar cell identity and function and reveal that targeting this complex can enhance tissue regeneration.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.17.745330",
+      "sourceId": "biorxiv",
+      "title": "Perturb-ME: Scalable mechanism discovery from phenotype-enriched genome-wide screens",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "Perturb-seq",
+        "CRISPR",
+        "genome"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Perturb-seq enables pooled genetic screens with rich single-cell profiling readouts, but genome-scale profiling remains costly and may not be associated with other established functional characteristics. Moreover, as screens grow in size and complexity, interpreting the resulting data comprehensively is challenging and slow. Here, we introduce Perturb-seq with Marker Enrichment (Perturb-ME), which combines genome-scale CRISPR screening, phenotype-based enrichment and multimodal single-cell profiling. Applied to MHC-I cell surface protein expression in melanoma, Perturb-ME profiled HLA-low and HLA-high cells with matched RNA, surface-protein and guide measurements. A regulatory model with 221 impactful regulators affecting 1,998 responsive genes recovered seven coherent co-functional regulatory modules governing nine gene programs, including the canonical IFN{gamma}-MHC-I axis regulating an antigen-presentation and interferon-response program. Agentic interpretation of the entire model with an AI co-scientist linked additional modules to trafficking, proteostasis and chromatin regulation. Perturb-ME, along with agentic interpretation, provide a scalable framework for comprehensive functional discovery from phenotype-enriched genetic screens.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.13.744699",
+      "sourceId": "biorxiv",
+      "title": "Chromosomal instability shapes spatial and temporal phenotypic diversity in a malignant peripheral nerve sheath tumour",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "multi-omics",
+        "cancer",
+        "evolution"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Understanding the spatial and temporal dynamics of tumour evolution is crucial for determining the drivers of cancer progression. Linking genotype to phenotype across a tumour remains challenging, however. Here, we use single-cell and spatial multi-omics to comprehensively profile a primary malignant peripheral nerve sheath tumour (MPNST) and its multifocal recurrence. Combining the native barcoding system from extensive heterogeneity in copy number alterations with mutation data, we resolve the evolutionary tree of this tumour, revealing a branching structure suggestive of ongoing chromosomal instability. We show that gene dosage effects contribute to phenotypic diversity and scale predominantly linearly with copy number. Using spatial genomics assisted by laser capture microdissection and spatial transcriptomics, we performed in situ lineage tracing in this human tumour, elucidating the relationship between local expansions and interactions between tumour cells and the microenvironment. These findings demonstrate the potential of combined bulk, single-cell and spatial techniques to dissect cancer evolution in time and space and link genotype to phenotype in detail.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.14.744802",
+      "sourceId": "biorxiv",
+      "title": "Single-cell profiling identifies STAT3/NF-κB regulatory hubs and cytokine crosstalk in the tumor microenvironment",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "cancer"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Tumor progression is driven by dynamic interactions between malignant cells and the tumor microenvironment (TME), yet the regulatory mechanisms governing cellular heterogeneity and intercellular communication remain incompletely characterized. Here, we performed integrative single-cell RNA sequencing (scRNA-seq) analysis of publicly available datasets from non-small cell lung cancer and breast cancer to systematically map transcriptional heterogeneity and regulatory networks within the TME. Using a unified computational pipeline with Seurat v5, SCENIC, and ligand-receptor modeling, we resolved major cellular populations, including malignant epithelial cells, immune subsets, cancer-associated fibroblasts, and endothelial cells, and their transcriptional states. Malignant cells displayed pronounced intratumoral heterogeneity, occupying a continuum of proliferative, metabolic, and invasive phenotypes linked by pseudotime trajectories. Gene regulatory network inference identified STAT3, NF-{kappa}B, MYC, and HIF-1 as central hubs coordinating tumor-associated programs. Notably, we uncovered a cytokine-mediated immunoregulatory axis between malignant cells and tumor-associated macrophages, driven by IL6-IL6R and CCL2-CCR2 signaling. Cell-cell communication analysis further revealed coordinated networks supporting immune suppression, inflammation, and angiogenesis. These findings provide a systems-level framework of TME organization and highlight key transcriptional circuits and signaling pathways as promising targets for disrupting tumor-microenvironment crosstalk in precision oncology.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.14.744782",
+      "sourceId": "biorxiv",
+      "title": "PC1-guided transcriptomic stratification reveals hepatic transcriptional heterogeneity and defines a myeloid-associated 20-gene signature",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Hepatic lipid-associated inflammation contributes to metabolic liver disease and cardiometabolic complications. Treatment-based transcriptomic comparisons can obscure inter-individual heterogeneity when animals exposed to the same experimental condition show divergent molecular responses. In the public hyperlipidemic liver transcriptomic dataset GSE338111, conventional sex-adjusted comparison of Amlexanox versus DMSO identified only 21 differentially expressed genes at FDR < 0.05 and |log2FC| [&ge;] 1, and submission of this DEG set to Metascape yielded no GO Biological Process enrichment result. We therefore applied treatment-independent, PC1-guided transcriptomic stratification based on the 500 most variable genes. This analysis resolved three PC1-derived groups and enabled derivation of a myeloid-associated 20-gene signature from the G2-versus-G1 contrast. Independent bulk-transcriptomic cohorts supported responsiveness of the signature to dietary challenge and pharmacologic intervention, while single-cell analysis localized its expression predominantly to hepatic myeloid populations. Human cis-eQTL Mendelian randomization and colocalization further identified TAGLN2 as the signature gene with the strongest genetic support for coronary heart disease. Together, these findings show that PC1-guided stratification can improve resolution of heterogeneous hepatic transcriptional responses and provide a cross-cohort molecular signature for subsequent mechanistic and translational evaluation.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.15.738621",
+      "sourceId": "biorxiv",
+      "title": "Cell-Hub: a graphical interface for end-to-end single-cell RNA sequencing analysis",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Abstract Single-cell and single-nucleus RNA sequencing have become increasingly widespread, creating a significant demand for accessible analysis tools in research laboratories. Despite this need, the bioinformatics expertise required for such analyses remains rare. Cell-Hub addresses this gap by enabling single-cell data analysis for all researchers, regardless of computational background. Cell-Hub is a comprehensive, free, and open-source framework built on R/Shiny and distributed as a Docker image, integrating Seurat 5, CellChat 2, and Monocle 3 within a unified graphical interface. It supports all essential steps of single-cell RNA-seq analysis: data loading, quality control, normalization, clustering, multi-dataset integration, differential expression, and biomarker detection. Cell-Hub further incorporates ligand-receptor interaction inference powered by GaspouDB, a consolidated database of 11,563 mouse and 9,604 human interactions derived from CellChat, CellPhoneDB, CellTalkDB, and MultiNicheNet as well as trajectory inference via Monocle 3. All analyses produce publication-ready visualizations with flexible export options. By integrating these analytical frameworks into a single, intuitive interface requiring no programming expertise, Cell-Hub represents a significant step toward democratizing single-cell genomics for the broader research community.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.12.744506",
+      "sourceId": "biorxiv",
+      "title": "Single-Cell Mapping of Malignant Signaling Networks Guides Drug Combinations",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Single-cell breast cancer atlases reveal malignant, immune, and stromal diversity; however, how the recurrent signaling pathways drive untreated malignant-cell states and could inform combination therapy remains unclear. Here, we analyzed 15,753 malignant cells from untreated primary breast tumors using a cell-resolved network framework. Individual transcriptomes were projected onto a protein-protein interaction network, partitioned into Leiden communities, and annotated by pathway enrichment. Pathway recurrence was evaluated against matched null models preserving community size, protein-network degree, and gene detection rate. Before null correction, recurrent pathways included PI3K/AKT, MAPK, JAK/STAT, and HIF-1 (hypoxia-inducible factor 1) signaling. After correction, HIF-1 emerged as the dominant recurrent signal across patients, indicating convergence of diverse upstream pathways on a shared hypoxia- and stress-adaptive malignant-cell program. The recurrent JAK/STAT, cAMP, glucagon, oxytocin, and thyroid hormone signaling suggest inflammatory, metabolic, and endocrine crosstalk. These findings support rational drug combinations targeting HIF-1 together with upstream PI3K/AKT/mTOR, MAPK, or JAK/STAT signaling.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.13.744672",
+      "sourceId": "biorxiv",
+      "title": "Celldega: Integrated Toolkit for Visualization and Analysis of Spatial Data",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Spatial-transcriptomics integrates high-dimensional single-cell data with microscopy to reveal cellular states, communication, and tissue organization. Analyzing this data requires a combination of multi-modal data processing, high-dimensional data analysis, spatial analysis, and integrated visualization. However, computational analysis is increasingly becoming a bottleneck as approaches mature and dataset sizes increase. Additionally, visualization can be challenging as open-source visualization tools struggle to scale to large datasets (exceeding 1 billion transcripts), and commercial visualization tools are costly, closed source, and inflexible. We present Celldega, an open-source Python and JavaScript library for scalable, interactive visualization and analysis of spatial-omics data. Celldega integrates custom analyses, performs neighborhood analysis, implements an efficient visualization-specific file format, and enables interactive exploration in notebooks and web galleries. We demonstrate Celldega across multiple technologies, tissues, and datasets, including 3D reconstructions of the developing whole mouse head comprising over four million cells. Finally, we demonstrate how Celldega can be utilized throughout the entire lifecycle of spatial data analysis, from quality control to building a public shareable gallery.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.12.744240",
+      "sourceId": "biorxiv",
+      "title": "MOFTy: Multimodal Gaussian Process Factor Analysis with Numerical Information Field Theory",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "multi-omics"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Multimodal Gaussian process factor analysis provides a flexible framework for dimensionality reduction in temporally or spatially resolved omics data. Existing approaches, however, typically rely on pre-specified Gaussian process kernel families and do not explicitly separate each latent factor into a component capturing gradual, smooth variation and a complementary component capturing fine-scale, non-smooth variation. Here, we present MOFTy, a Bayesian multimodal factor analysis framework based on numerical information field theory (NIFTy) that replaces fixed kernel families with the flexible correlated field model in NIFTy and enables explicit additive component separation within each latent factor with quantified uncertainty. NIFTy has been successfully applied to high-resolution Bayesian imaging in astrophysics and facilitates scalable, curvature-aware variational inference for efficient posterior approximations. We validate MOFTy on simulated data; applications to published multi-omics data demonstrate that MOFTy disentangles latent spatial structures by separating smooth gradients from localized fine-scale heterogeneity in human glioblastoma and recovers cross-modal patterns in a mouse gastrulation dataset.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.05.15.725379",
+      "sourceId": "biorxiv",
+      "title": "Cross-Cohort Optimal Transport Maps Macrophage Plasticity and Competing Routes to Inflammation and Fibrosis in Human Atherosclerotic Plaques",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Single-cell transcriptomics has revealed extensive macrophage heterogeneity in atherosclerotic plaques, but how macrophages move between states, and whether transition mechanisms depend on cellular origin, remain unclear. Here we develop a computational framework that reconstructs directed cell-state transition networks from cross-sectional single-cell RNA-sequencing data by combining optimal transport with RNA velocity and systematic cross-cohort validation. Applying this approach to seven human atherosclerotic plaque cohorts, we generate an integrated atlas of 81,633 monocytes and macrophages and identify 15 statistically significant pairwise transitions, of which 11 directed transitions organize into three biological axes: monocyte fate diversification, inflammatory reactivation, and fibrotic remodeling. The strongest transition links scavenging macrophages to inflammatory macrophages, suggesting that plaque inflammation is driven predominantly by reactivation of tissue-adapted macrophages rather than by direct differentiation of newly recruited monocytes. By tracking gene expression changes along the OT target-association gradient, we find that macrophage plasticity follows an origin-dependent spectrum. Tissue-resident macrophages, in particular scavenging macrophages, acquire inflammatory programs while preserving and reinforcing their resident scavenging identity, a mechanism we term \\textit{transcriptional layering}, whereas monocyte-derived transitions proceed through selective loss of source-identity modules. Despite these distinct routes, transitions converging on the same fate activate shared destination-specific regulatory circuits, with inflammatory and fibrotic programs governed by mutually antagonistic transcription factor networks. These findings identify inflammatory reactivation of scavenging macrophages as a dominant transition axis in human atherosclerosis and suggest that macrophage origin constrains how disease-associated programs are acquired. More broadly, this framework provides a general strategy for quantifying cell-state transitions and dissecting plasticity mechanisms in chronic inflammatory disease.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.13.744615",
+      "sourceId": "biorxiv",
+      "title": "CLEAR-ST: Physics-informed probabilistic decontamination of spatial transcriptomics by modeling mRNA lateral diffusion",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "Visium"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Spatial transcriptomics is a rapidly evolving technology that allows for the measurement of gene expression in a spatially resolved manner. However, one technical problem that occurs for many sequencing-based spatial transcriptomics platforms is the presence of mRNA lateral diffusion, where mRNA from one spot can bind to probes in another spot, leading to contamination and inaccurate gene expression measurements. In Visium-like assays, this artifact is often visible as structured out-of-tissue signal and boundary-associated expression halos, yet its magnitude, spatial decay, and directional bias vary substantially across samples. Here, we present CLEAR-ST, a physics-informed probabilistic framework for correcting diffusion-like contamination in spatial transcriptomics data. CLEAR-ST infers a latent clean expression field using a denoising autoencoder and links it to the observed counts through a graph-Laplacian forward contamination model with learnable diffusion parameters, finally evaluated with a selectable count likelihood. We first conducted a comprehensive comparison between 10X official and independently generated Visium samples, demonstrating that out-of-tissue count profiles are highly related to nearby in-tissue expression, more concentrated near tissue boundaries, and diffusion directions across genes are likely coherent. Across real samples with varying contamination burden, CLEAR-ST improved spatial domain recovery, increased gene-level spatial autocorrelation, and enhanced the biological specificity of downstream analyses such as marker gene discovery, pathway identification and cell type deconvolution. Compared to benchmark methods, CLEAR-ST showed consistent gains in clustering quality and concordance with manual annotations. Together, CLEAR-ST provides an interpretable and practical approach for diffusion-aware correction of capture-based spatial transcriptomics data.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.13.744542",
+      "sourceId": "biorxiv",
+      "title": "An interoperable research agent network for scientific discovery",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "spatial proteomics",
+        "microbiome"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Recent advances in agentic systems have enabled the autonomous execution of research tasks across scientific domains. However, the rapid emergence of specialized scientific agents for areas such as computational pathology, microbiome research, gene editing, materials science, organic chemistry, and drug discovery has created a fragmented ecosystem of scientific capabilities. While these agents often demonstrate strong performance within their respective domains, limited interoperability makes it difficult to combine expertise across platforms and coordinate complex interdisciplinary workflows. Here we introduce GUIA (Guided-research Utilizing Intelligent Agents), an interoperable research-agent network built upon a flexible Agent-to-Agent (A2A) communication architecture. GUIA enables both in-house and third-party agents to collaborate within shared workflows, allowing scientific capabilities to accumulate through the integration of complementary expertise. We evaluated GUIA through four assessments spanning baseline benchmarking, third-party single-agent integration, third-party multi-agent integration, and cross-server agent collaboration. Furthermore, we demonstrate its practical utility through real-world applications involving therapeutic target discovery, drug discovery, and spatial proteomics analysis. Together, our results show that interoperable research-agent networks can coordinate specialized expertise across independently developed systems, providing a scalable framework for expanding scientific capabilities through collaboration.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.14.744792",
+      "sourceId": "biorxiv",
+      "title": "Cross-Kingdom Multi-Omics Harmonization Uncovers Coordinated Host Defense and Vector Small RNA Regulatory Networks in Begomovirus Transmission",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "multi-omics"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Begomoviruses present severe threats to global crop production through complex vector-mediated transmission by the whitefly Bemisia tabaci to host plants such as tomato (Solanum lycopersicum). Unraveling the molecular dialogue between host immune activation and vector non-coding RNA networks is essential for identifying key drivers of virus persistence and transmission. Public host transcriptomic (GSE309527) and vector small RNA (sRNA) sequencing datasets (GSE111343) were processed through a multi-omics harmonization and signal calibration pipeline. Differential expression analysis was performed using empirical Bayes moderated linear models, followed by non-parametric Spearman rank correlation modeling ([[EQUATION]]) to infer cross-kingdom co-expression dynamics and pathway enrichment profiling across host and vector bio-systems. Harmonized principal component analysis showed clear separation by infection status across host plant and vector cohorts. Differential expression analysis identified 138 significantly altered host genes (69 upregulated, 69 downregulated) and 130 differentially expressed vector sRNAs (65 upregulated, 65 downregulated). Host responses were dominated by significant upregulation of gene-silencing machinery, including Suppressor of Gene Silencing 3 (SGS3; log2 FC = 3.67, q = 7.47 x 10-5), and pathway enrichment in Jasmonate defense (q = 0.0004) and RNA Interference & Silencing (q = 0.0001). Vector sRNAs exhibited targeted dynamic alterations, with pathway enrichment in Salivary Gland Secretion ($q = 0.0030) and Gut Endosymbiont Response (q = 0.0210). Cross-kingdom correlation modeling revealed two distinct, highly anticorrelated regulatory modules (mean [[EQUATION]] = 0.76). Host SGS3 expression strongly correlated with vector sRNA VEC_0080 ([[EQUATION]] = 0.9762) and virus-derived siRNA Bt-vsiRNA-01 ([[EQUATION]] = 0.7619). These findings demonstrate a tightly synchronized tripartite molecular crosstalk between host antiviral immunity, viral siRNA accumulation, and vector small RNA remodeling. These cross-kingdom regulatory modules highlight promising targets for dual-action RNA interference strategies aimed at controlling Begomovirus transmission.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.13.744681",
+      "sourceId": "biorxiv",
+      "title": "RapidMACS: MACS3-identical peak calling, 50x faster",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "single-cell ATAC"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Motivation: MACS3 is a comprehensive peak-calling toolkit whose subcommands span single- and paired-end data, narrow and broad peaks, and a range of signal-track utilities. However, many ATAC-seq and multiomic pipelines, including our own, use just one of those capabilities: narrow peak calling. A single analysis may call peaks under different conditions, so a per-call saving is multiplied and the time recovered can be substantial. Furthermore, we wanted an efficient and embeddable narrow peak caller that could be integrated directly with our Chromap Suite aligner, so we wrote RapidMACS. Results: RapidMACS is a narrow peak caller optimized for this purpose, building its signal tracks in a single lazy sweep that avoids a global sort, processing chromosomes in parallel, and keeping intermediates in memory rather than creating temporary files. In benchmarks involving single-cell ATAC-seq, bulk ATAC-seq, ChIP-seq, and CUT&RUN, it is 3.5 to 51 times faster than MACS3 v3.0.3 depending on the applications and number of threads used. More importantly, the output is byte-identical. This means that any downstream analysis using RapidMACS will produce identical results to those using MACS3. The speed gains are largely due to these algorithmic changes rather than the choice of language, because MACS3's peak-calling code is itself compiled (Cython). RapidMACS depends only on htslib and zlib and links as a small static archive without a Python or Cython runtime. Availability and implementation: RapidMACS is open source under the MIT license at https://github.com/morphic-bio/rapidmacs, with both a standalone CLI executable (rapidmacs) and a linkable C++ library. Prebuilt containers for x86-64 and arm64 are published as biodepot/rapidmacs on Docker Hub.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.17.744644",
+      "sourceId": "biorxiv",
+      "title": "Multimodal cell communication networks nominate immunotherapies for RCC subgroups with discrete T cell recruitment or expansion",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "spatial transcriptomics",
+        "biology"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Renal cell carcinoma (RCC) is amongst the most immune-infiltrated solid tumours, but only a small subset of patients achieves durable response to immune checkpoint blockade therapy. Efforts to characterize the immune microenvironment and molecular regulators responsible for treatment responses have explored numerous facets of disease biology using compartmentalized genomics, transcriptomics, and proteomics datasets, yielding many important yet context and data specific insights. Therefore, to provide a more integrated approach to informing future precision medicine strategies, we combined the complementary strengths of multiple technological platforms to profile multi-regional, spatially annotated surgical biospecimens from 65 RCC patients by single-cell RNA sequencing with paired TCR and BCR repertoire analysis, imaging mass cytometry, suspension mass cytometry, spatial transcriptomics and deconvolved bulk RNA sequencing. With this resource dataset, we explored patient subgroups and precision immunotherapy strategies using an integrated analysis of transcripts and proteins across single cell and spatial modalities. Proximal cell interactions and distinct receptor-ligand pairings identified 7 recurrent cellular communication networks. Robustly mapping reproducible gene signatures across technologies and to a variety of publicly available datasets, we show these highly refined immune subgroups stratify patients with tumour microenvironments associated with prognosis and immunotherapy response. Notably, this reveals that highly infiltrated environments with the potential for immunotherapy response may in fact comprise two distinct communication networks, with differing modes of T cell clonal expansion and immune evasion axes associated with T cell exhaustion or myeloid and NK reprogramming, which could inform targeted combination therapeutic strategies to improve outcomes. Overall, we provide a high-dimensional multi-modal resource dataset that enables cross-platform integration, links stages of T cell clonal expansion with enabling or suppressive RCC immune cell communication networks and nominates rational strategies for combinatorial precision immunotherapy.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.17.745278",
+      "sourceId": "biorxiv",
+      "title": "Long-read single cell transcriptomics uncovers isoform preferences in developing human retina",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single cell",
+        "development"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "Retinal development has been extensively studied and key transcriptional regulators that drive fate decisions have been identified for major cell classes. These findings were confirmed and deepened in recent years with the advance of single cell RNA sequencing (Scrase). However, many processes that guide progenitor to postmitotic cell differentiation remain elusive, especially since some genes seem to yield different cell populations without apparent correlation with expression level or timing. Here, differential transcript isoform usage might play a role in diversifying the function of developmental genes. In short-read based scRNAseq, isoforms can only be identified if a read maps to a unique sequence or exon junction. However, due to the sparsity and very short reads, these events are extremely rare. We combined a commercial scRNAseq kit, that produces barcoded, full-length cDNA with Oxford Nanopore Technologies based long-read sequencing to generate the first single cell long-read sequencing dataset of fetal human retina. It can help elucidate the role of alternative splicing in retinal development and guide the design of transcript-specific gene therapies for retinal regeneration.",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41467-026-76577-2",
+      "sourceId": "nature-communications",
+      "title": "Synergistic Co–Zn dual atomic sites drive C-lignin hydrogenolysis via vicinal C–O cleavage",
+      "journal": "Nature Communications",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "C-lignin is an attractive renewable feedstock for producing catechols, but its strong chemical bonds make it difficult to break down selectively. Here, the authors develop a low-loading Co–Zn dual single-atom catalyst that enables efficient C-lignin hydrogenolysis, providing a sustainable route to valuable aromatic chemicals.",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41467-026-76879-5",
+      "sourceId": "nature-communications",
+      "title": "Molecular arrangement and modulation of extrasynaptic αβδ GABAA receptors",
+      "journal": "Nature Communications",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "abstract": "GABAA αβδ receptors regulate tonic inhibitory neurotransmission neuronal excitability and contribute to sleep, mood and motor coordination. Here, we show the subunit arrangement and molecular mechanism of modulation by a δ-subunit selective drug.",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41467-026-76354-1",
+      "sourceId": "nature-communications",
+      "title": "Global genomic surveillance uncovers emergence and spatiotemporal patterns of World Health Organization priority antibiotic resistance in invasive Salmonella",
+      "journal": "Nature Communications",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    }
+  ]
+}

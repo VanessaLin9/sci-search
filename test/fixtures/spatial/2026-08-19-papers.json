@@ -1,0 +1,574 @@
+{
+  "reportDate": "2026-08-19",
+  "note": "Regression fixture for spatial classifier refactor: historical digestLine may reflect old tagging overrides.",
+  "papers": [
+    {
+      "id": "10.1038/s41588-026-02711-x",
+      "sourceId": "nature-genetics",
+      "title": "RNA-binding protein guides polymerase recruitment during gene activation",
+      "journal": "Nature Genetics",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41588-026-02707-7",
+      "sourceId": "nature-genetics",
+      "title": "Adaptive evolution of polyploid crops",
+      "journal": "Nature Genetics",
+      "section": "biology",
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03300-3",
+      "sourceId": "nature-biotechnology",
+      "title": "From reading to writing",
+      "journal": "Nature Biotechnology",
+      "section": "biology",
+      "matchedKeywords": [
+        "biology"
+      ],
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "abstract": "DNA writing is entering a period of rapid innovation, with enzymatic and cellular approaches challenging decades-old chemistry. Although none yet delivers long, accurate DNA at the scale biology ultimately requires, continued advances promise to remove one of the field’s most persistent bottlenecks and enable experiments that are currently out of reach.",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03290-2",
+      "sourceId": "nature-biotechnology",
+      "title": "Massive-scale parallel gene synthesis with oligonucleotide hybridization",
+      "journal": "Nature Biotechnology",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "MOSAIC is a high-throughput gene synthesis method driven by hybridization (the self-assembly of complementary oligonucleotides during thermal annealing) instead of enzymatic processing. By using the full capacity of microchip-based oligonucleotide synthesis, MOSAIC enables the parallel production of over 1,000 distinct gene fragments and mutant libraries in a simple ‘one-pot’ reaction.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41587-026-03266-2",
+      "sourceId": "nature-biotechnology",
+      "title": "High-throughput synthesis of DNA fragments by molecular self-assembly of overlapping oligonucleotides",
+      "journal": "Nature Biotechnology",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03238-6",
+      "sourceId": "nature-biotechnology",
+      "title": "A blinded, prospective benchmark of in silico antibody discovery anchored to experimental affinity and developability",
+      "journal": "Nature Biotechnology",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "A prospective, blinded competition is conducted for artificial-intelligence-generated and optimized antibody discovery.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41587-026-03224-y",
+      "sourceId": "nature-biotechnology",
+      "title": "Enhanced antitumor immunity of mRNA vaccines by bioorthogonal-like delayed activation of exogeneous STING",
+      "journal": "Nature Biotechnology",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "mRNA vaccine efficacy is enhanced by delayed activation of a STING adjuvant.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41593-026-02363-4",
+      "sourceId": "nature-neuroscience",
+      "title": "Cortical thickness changes precede high levels of amyloid by at least 7 years",
+      "journal": "Nature Neuroscience",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Longitudinal MRI reveals that the cortex becomes relatively thicker years before amyloid positivity is detected on PET, providing insight into the earliest brain changes and potential consequences of amyloid accumulation in Alzheimer’s disease.",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41593-026-02395-w",
+      "sourceId": "nature-neuroscience",
+      "title": "Strong and localized recurrence controls the dimensionality of neural activity across brain areas",
+      "journal": "Nature Neuroscience",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Brain activity is complex but not arbitrary, and some patterns dominate others, with dimensionality describing how many such patterns exist. The authors show how brain connectivity controls dimensionality, allowing complexity to vary across time and behavior.",
+      "featured": true
+    },
+    {
+      "id": "10.1371/journal.pbio.3003942",
+      "sourceId": "plos-biology",
+      "title": "Heme acts as a metabolic brake on erebosis in the Drosophila gut",
+      "journal": "PLOS Biology",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Tissue homeostasis relies on the balance between proliferation of stem cells and death of differentiated cells. In Drosophila gut enterocytes, we recently identified a novel form of cell death, termed erebosis. Erebosis is a nonapoptotic, nonautophagic, and nonnecrotic process, in which affected cells accumulate Ance (angiotensin-converting enzyme) and lose many other proteins, ultimately leading to the loss of organelles and the nucleus. The underlying molecular mechanism of erebosis has remained unclear. Here, through single-cell RNA sequencing and genetic approaches, we found that the small metabolite heme regulates erebosis. Cells undergoing erebosis up-regulate the heme-degrading enzyme Heme oxygenase (Ho) and the heme exporter Mrp5 , and decrease intracellular amounts of heme. Heme depletion by Mrp5 overexpression promotes erebosis, whereas heme accumulation by knockdown of Ho or Mrp5 , or by feeding a heme precursor, suppresses it. Downstream of heme, Dpp signaling suppresses erebosis. Inhibition of erebosis reduces intestinal stem cell proliferation, indicating a cross-talk mechanism between enterocyte death and stem cell division. Our results demonstrate that reduction of cytoplasmic heme is a critical step in initiating enterocyte erebosis and coordinating stem cell proliferation, thereby maintaining gut tissue homeostasis. This work provides the first insight into the molecular mechanism regulating erebosis.",
+      "featured": false
+    },
+    {
+      "id": "10.1371/journal.pbio.3003914",
+      "sourceId": "plos-biology",
+      "title": "Encrypted immunity mediated by peptides",
+      "journal": "PLOS Biology",
+      "section": "biology",
+      "matchedKeywords": [
+        "biology"
+      ],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Computational and experimental advances have led to the discovery of a large and diverse repertoire of bioactive peptides encrypted within proteins from across the tree of life. Mounting evidence suggests that these peptides can contribute to host defense not only through direct antimicrobial activity, but also through immunomodulatory and potentially broader physiological functions. This Essay synthesizes this emerging field from a broader biological perspective and explains the conceptual logic of immunity mediated by encrypted peptides. It proposes that such ‘encrypted immunity’ represents a previously underappreciated layer of host defense and physiology, with potential implications for therapeutics, diagnostics, and fundamental biology.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.01.03.697464",
+      "sourceId": "biorxiv",
+      "title": "Spatial mapping of cellular and molecular plasticity in the maternal and postpartum mouse brain",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "MERFISH",
+        "Xenium"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "abstract": "Pregnancy is a critical window for neuroplasticity and maternal mental health, yet our understanding of the molecular and cellular changes underlying this adaptation remains incomplete. Here we profile the female mouse brain in nulliparous, late-pregnant and postpartum states with three single-cell spatial technologies (Slide-tags, MERFISH and Xenium). Together these assays resolve 1.5 million cells in one coronal plane spanning the cortex, striatum, lateral septum and preoptic area. Pregnancy is associated with changes in gene expression in most cell types, beyond the circuits previously established to govern maternal behavior. These changes resolve into three programs that are reproducible across platforms: synaptic pathways increase in neurons as growth and plasticity pathways decrease; immune and angiogenic pathways increase in glia and vascular cells; and cholesterol synthesis decreases as uptake increases across both neurons and glia. Finally, mapping human depression genetics onto these data, we find risk genes concentrated almost entirely in neurons, and this concentration changes with reproductive state in the preoptic area, basal forebrain and ventral striatum. These results place the neurons carrying depression risk among the circuits remodeled during pregnancy, providing a possible cellular substrate for peripartum vulnerability.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.12.744548",
+      "sourceId": "biorxiv",
+      "title": "An Integrated Atlas of the Human Kidney Spanning Health and Diseases",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "spatial transcriptomics",
+        "biology"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "abstract": "The human kidney contains highly specialized cell populations. Despite numerous single-cell and single-nucleus transcriptomics studies, differences in cohorts, technologies, analytical pipelines, and annotation frameworks have limited the ability to define consensus kidney cell states, identify disease-associated populations and interpret kidney disease genetic susceptibility. Here, we assembled 18 human kidney single-cell and single-nucleus RNA-sequencing datasets spanning 232 donors and five major disease contexts into a uniformly processed and computationally integrated Human Kidney Cell Atlas (HKCA), comprising over one million high-quality cells (816,895) and nuclei (215,308). The HKCA resolves 63 cell types and 120 harmonized cell states, including rare epithelial and stromal populations associated with kidney diseases. Integration with spatial transcriptomics, intercellular communication networks, and human genetic association data further defined the anatomical context and disease relevance of these populations. The HKCA also provides a framework for automated annotation of independent kidney human and mouse datasets. Together, the HKCA establishes a comprehensive reference for human kidney biology, enabling disease interpretation and genetic risk localization at cellular resolution.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.14.744845",
+      "sourceId": "biorxiv",
+      "title": "Single-cell foundation models benefit from cross-modal training: adding proteomics data beats parameter scaling",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "abstract": "Leading cellular foundation models have been trained on hundreds of millions of single-cell transcriptomes, with progress increasingly driven by larger datasets and model scaling. Here, we asked whether adding a proteomics modality can improve gene-level and cell-level representations beyond scaling RNA-only models. We introduce cross-modal continued pretraining, fine-tuning a published single-cell model (Tahoe-x1) on a large corpus of proteomic profiles. Training a 70M-parameter Tahoe-x1 model for a single epoch on 48843 proteomic samples from 440 diverse mass-spectrometry studies matched or exceeded 1B- and 3B-parameter RNA-only models across most of the original Tahoe-x1 evaluation benchmarks. This shows that with the right training recipe, heterogeneous proteomics data can improve the learned representations of single-cell RNAseq samples, demonstrating strong out-of-distribution generalization. Cross-modal pretraining also improves transfer to a held-out protein perturbation benchmark, where scaling the RNA-only model does not provide comparable benefits. These results demonstrate that careful targeted curation of proteomics data can provide larger benefits than increasing the model size alone and suggest that multimodal pretraining is a promising path toward more informative biological foundation models.",
+      "featured": false
+    },
+    {
+      "id": "10.1101/2025.06.04.657781",
+      "sourceId": "biorxiv",
+      "title": "Mantpy: a framework for extracellular matrix analysis in spatial proteomics",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "spatial proteomics"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "abstract": "Spatial proteomics technologies now profile cells and the extracellular matrix (ECM) together in situ. Yet analysis tools remain cell-centric, despite the ECM playing an essential role in health and disease. Here we present Mantpy, a framework that represents the ECM, and its interface with cells, as spatial graphs. Mantpy builds ECM graphs directly from matrix markers and links them with cell graphs for joint cell-ECM analysis, supporting graph statistics, explainable graph deep learning and visualisation. From a single ECM marker to multiplexed panels of ECM and cellular markers, Mantpy recovers layered tissue architecture in human intestine, resolves disease-associated matrix composition and organisation in infected mouse liver, and characterises cell-matrix associations in mouse lung. Released with ECM-inclusive datasets and interoperating with the scverse ecosystem, Mantpy extends the unit of spatial analysis beyond the cell, to the matrix that surrounds it.",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.04.21.719788",
+      "sourceId": "biorxiv",
+      "title": "Divergent malignant evolution converges on shared immunosuppressive ecosystems through tumor-intrinsic TMED2-ADAR1-dependent complement signalling in multifocal hepatocellular carcinoma",
+      "journal": "bioRxiv",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "multi-omics",
+        "Stereo-seq",
+        "evolution"
+      ],
+      "digestLine": "preprint",
+      "digestTaggingMethod": "llm",
+      "abstract": "Background Multifocal hepatocellular carcinoma (HCC) comprises spatially separated tumor foci with distinct evolutionary trajectories, posing a major therapeutic challenge. Whether divergent lesions retain shared immune-evasion mechanisms beyond lesion-specific heterogeneity and offer cross-focal therapeutic opportunities remains unknown. Objective To resolve malignant and microenvironmental heterogeneity across tumor foci and identify conserved immunosuppressive programs underlying multifocal HCC progression. Design Matched tumour foci and peritumoural tissues from patients with multifocal HCC underwent integrated single-cell and spatial multi-omics profiling, including scFAST-seq (n=15), scATAC-seq (n=12), and Stereo-seq (n=14). In-house RNA-seq (n=13), public scRNA-seq (HRA001748) and RNA-seq datasets (TCGA-LIHC, OEP000321) were used for validation. Multiplex immunohistochemistry (n=96) and functional assays validated key findings. Results Multifocal HCC exhibited extensive inter-focal heterogeneity in malignant genomic, transcriptional, epigenetic, and evolutionary states, accompanied by diverse immune and stromal landscapes. Despite this divergence, spatially separated tumor foci converged on shared malignant states marked by elevated TMED2 expression and conserved immunosuppressive ecosystems characterized by regulatory T-cell (Treg) and SPP1+/SPRED1+ macrophage enrichment, impaired cytotoxic CD8+ T-cell immunity, and recurrent stromal-vascular remodeling. Mechanistically, malignant hepatocytes engaged SPP1+/SPRED1+ macrophages through C3/C5 complement signaling across divergent tumor foci, while macrophages and Tregs contributed to CD8+ T-cell dysfunction through CD274-PDCD1, CD80/CD86-CTLA4/CD28, and MHC-I-CD8 interactions. A tumor-intrinsic TMED2-ADAR1-dependent A-to-I RNA editing program promoted C3/C5 complement expression and secretion, linking malignant heterogeneity to conserved tumor-immune signaling. Conclusions Despite divergent malignant evolution, multifocal HCC converges on shared immunosuppressive ecosystems. The TMED2-ADAR1-C3/C5 complement axis represents a conserved tumor-immune vulnerability that may enable therapeutic strategies targeting common immune-evasion mechanisms across heterogeneous tumor foci.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aeb7051",
+      "sourceId": "science-advances",
+      "title": "SKI is critical to counter TGF-β signaling to promote T cell function and autoimmunity",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Transforming growth factor–β (TGF-β) is central to suppressing T cell function to maintain tolerance and immune homeostasis. The current TGF-β signaling paradigm is however inadequate in explaining how TGF-β controls T cell function. Here, we found a previously unappreciated, SKI-dependent mechanism of TGF-β signaling to better explain how TGF-β restricts T cell function to bolster tolerance. We found that SKI protein was up-regulated in activated T cells and down-regulated in response to TGF-β, indicating a reciprocal relationship between SKI and TGF-β in controlling T cell function. T cell–specific SKI deletion ameliorated spontaneous lethal autoimmunity due to T cell–specific TGFβRII deletion and mitigated MOG/CFA-induced experimental autoimmune encephalomyelitis. SKI was required for activation-induced T cell function and related molecular programs. Therefore, inhibition of TGFβR not only results in the loss of Smad-dependent function but, more importantly, leads to the gain of SKI-dependent activity, which is essential for T cell–mediated autoimmunity. A critical mechanism underlying TGF-β–mediated suppression of T cell function is overcoming SKI activity.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec0162",
+      "sourceId": "science-advances",
+      "title": "Ptpn2 limits plasma cell fate and antiviral immunity by integrating B cell receptor and IFN-γ signals in B cells",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Antigen-specific humoral responses are critical for long-term protection against infectious diseases, yet the mechanisms that regulate B cell differentiation and antibody production remain incompletely defined. Here, we identify the Protein Tyrosine Phosphatase Nonreceptor Type 2 (Ptpn2) as a B cell–intrinsic regulator of plasma cell fate and isotype switching. Using a B cell–specific Ptpn2 knockout mouse model, we show that Ptpn2 restrains both B cell receptor and interferon-γ (IFN-γ) signaling by directly dephosphorylating Lyn, STAT1, and STAT3. Loss of Ptpn2 leads to hyperactivation of these two signaling pathways, resulting in transcriptional reprogramming that promotes plasma cell differentiation and increased IFN-γ–driven antibody production. Functionally, Ptpn2-deficient mice generated enhanced primary antiviral antibody responses following influenza infection and elevated virus-specific and neutralizing titers upon recall without compromising affinity. These findings identify Ptpn2 as a key intracellular checkpoint that integrates antigenic and inflammatory cues to regulate humoral immunity, with potential implications for enhancing vaccine-induced protective immunity.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec4221",
+      "sourceId": "science-advances",
+      "title": "Structural basis for target discrimination and activation by Cas13d",
+      "journal": "Science Advances",
+      "section": "biology",
+      "matchedKeywords": [
+        "CRISPR"
+      ],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "CRISPR-Cas13d is increasingly used for RNA knockdowns, but off-target cleavage of near-cognate RNAs hinders its broader adoption. Here, we solve seven cryo–electron microscopy structures of wild-type Cas13d in complex with matched and mismatched targets. These structures reveal active, intermediate, and inactive states that illustrate a detailed activation mechanism. Upon target RNA binding, the CRISPR RNA undergoes marked conformational changes. The Helical-1 domain transitions from a docked state with the amino-terminal domain to an allosterically switched conformation that stabilizes the RNA duplex. Quantitative kinetics show that a single proximal mismatch preserves the binding rate constant but abolishes nuclease activity by trapping Cas13d in an inactive state. We also identify an active site loop in the higher eukaryotes and prokaryotes nucleotide-binding (HEPN) domains that regulates substrate accessibility and can be mutated to generate both hypo- and hyperactivated variants. These findings establish the structural basis for Cas13d mismatch surveillance and provide a framework for engineering HEPN nuclease specificity and activity.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec5478",
+      "sourceId": "science-advances",
+      "title": "Reconstructing pathogen-specific antibody binding epitopes and age-dependent immune signatures from proteomic-scale peptide libraries",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "High-density peptide arrays are useful for mapping linear antibody epitopes and resolution of antibody specificity in a single-assay platform. Here, we used peptide library screening to evaluate magnitude and breadth of humoral responses to enteric pathogens in the context of public health interventions. We characterized the epitope landscape to known immunogenic proteins to several viruses, bacteria, and parasites and used that to infer immunological profiles at age 3, 14, and 28 months. The peptide libraries detected immune signatures better for viruses compared with bacteria and parasites and captured distinct dynamics of protein-level variation in immune signatures over time. We found limited sensitivity for bacterial and protozoan pathogens whose humoral responses may depend more on conformational or natively modified epitopes than linear-peptide binding. Unbiased peptide libraries have potential utility for broad analysis of antibody responses in integrated serosurveillance, but our results reveal pathogen-specific limitations where peptide-based serology would be less predictive of true infection status and where it would provide greater surveillance value. Beyond assay performance, peptide arrays are useful for studying epitope architecture, and a practical implication would require augmentation with alternative antigen formats (whole-protein or folded antigens) in a complementary hybrid approach.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec8088",
+      "sourceId": "science-advances",
+      "title": "Targeting PKGIα Cys42 attenuates cardiac dysfunction in heart failure with preserved ejection fraction",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Heart failure with preserved ejection fraction (HFpEF) is a highly prevalent condition associated with substantial morbidity and mortality, yet effective therapeutic options remain limited. As oxidation of Cys 42 in cyclic guanosine monophosphate (cGMP)-dependent protein kinase Iα (PKGIα) can enhance vessel and diastolic relaxation, processes impaired in HFpEF, we sought to target this mechanism using natural compounds with predicted thiol reactivity. Among these, urolithin A emerged as a compound with a previously unidentified and counterintuitive mode of action, directly modifying Cys 42 in PKGIα. In a multihit HFpEF model that closely mimics the human condition, urolithin A improved diastolic function and attenuated cardiac remodeling through cysteine 42–dependent activation of PKGIα. These findings were further validated in human engineered heart tissue, where urolithin A enhanced both relaxation and contraction kinetics. These findings collectively highlight Cys 42 in PKGIα as a promising therapeutic target for HFpEF and identify urolithin A as a previously unidentified activator of this protective mechanism.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aee4337",
+      "sourceId": "science-advances",
+      "title": "Unconventional role of hydroxymethylglutaryl-CoA synthase 1 in driving pathogenic TH17 cell immunity and autoimmune diseases",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "T helper 17 (T H 17) cells are heterogeneous and able to adopt pathogenic and non-pathogenic phenotypes. Identifying factors controlling pathogenic T H 17 cells is of importance for their vital role in inflammation and immune-pathology. Here, we demonstrated that HMGCS1, a cholesterol biosynthesis precursor enzyme, was highly induced by inflammatory cytokines and preferentially expressed by pathogenic T H 17 cells in vitro and in vivo. HMGCS1 specifically dictated pathogenic T H 17 cell differentiation and augmented autoimmune diseases, yet it has no discernible effect on nonpathogenic T H 17 cells. Unexpectedly, this role is independent of its canonical function in cholesterol metabolism but requires its catalytic Cys 129 residue. Notably, HMGCS1 governs pT H 17 cell generation and pathogenicity by leveraging an IRE1α-XBP1s–dependent ER stress response, which in turn transcriptionally activates the lineage-defining factor RORγt (encoded by Rorc ). Mechanistically, HMGCS1 is located to the ER membrane, where it bound and stabilized IRE1α protein. This stabilization is achieved by preventing IRE1α’s interaction with the E3 ubiquitin ligase MARCH5, thereby inhibiting its K48-linked ubiquitination and subsequent degradation. Moreover, interfering with HMGCS1 or the ER stress response in T cells impedes pT H 17 immunity and mitigates autoimmune disease in vivo. Therefore, our work unveils a noncanonical axis in which HMGCS1 sustains ER stress to license pT H 17 differentiation during autoimmune responses.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aee4389",
+      "sourceId": "science-advances",
+      "title": "Large language models enhance annotation of enzymes in metagenomes",
+      "journal": "Science Advances",
+      "section": "biology",
+      "matchedKeywords": [
+        "genome"
+      ],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Metagenomic data have notable biological potential, but their functional interpretation is frequently impeded by incomplete protein function annotations. Accurate enzyme annotation is essential for elucidating the metabolic capabilities of microbial communities within metagenomic datasets. To address this challenge, we developed FEDKEA, an enzyme annotation tool leveraging protein language models, and provided a web platform for its use. In addition, we designed a user-friendly, FEDKEA-based metagenomic pipeline, MEnzMap, which encompasses the entire analysis workflow—from raw data quality control to function prediction and downstream analyses. Applying MEnzMap to human gut metagenomic data from the iHMP2 project, we generated a comprehensive enzyme profile landscape for both healthy individuals and patients with inflammatory bowel diseases. These tools provide an efficient method for the functional annotation of microbial dark matter and facilitate the identification of disease-associated enzymes.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aee4703",
+      "sourceId": "science-advances",
+      "title": "Perspiration vapor lightens near-skin air, but hinders human evaporative cooling in arid heat",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "abstract": "Sweat evaporation is the body’s primary cooling mechanism, yet the physical factors governing it are not fully understood. We identify a “dueling buoyancy” effect in the context of the human body, in which perspiration vapor reduces the near-skin air density, counteracting the downward flow driven by cooling of warm air upon contact with the skin. In hot, arid, stagnant environments, this opposing buoyancy suppresses free convection and can reduce sweat evaporation by more than half. As a result, commonly used thermoregulation models can substantially underpredict body temperature (e.g., by 1°C after 2 hours of exposure to typical Arizona summer conditions). We develop compact, physics-informed models for free-convective heat transfer coefficients across wide temperature and humidity ranges, enabling improved thermoregulation modeling and thermal audits. These results enhance understanding of human heat balance and support more accurate heat-stress assessment to inform behavioral, infrastructural, and policy decisions for extreme-heat adaptations.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aee5583",
+      "sourceId": "science-advances",
+      "title": "Tree selection in urban greening shapes air quality for global cities",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "abstract": "Mitigating ozone pollution remains a pressing challenge for megacities worldwide. Biogenic volatile organic compounds (VOCs) are proposed as pivotal precursors to urban ozone formation. However, direct observational evidence is scarce and the extent of this effect across cities is unclear. Here, by combining an unprecedented eddy covariance flux dataset from Beijing with modeling analysis, we find that urban vegetation contributes over half of organic reactivity essential for ozone production, predominantly driving ozone exceedances during hot periods. The unexpectedly high biogenic influences are attributed to the abundance of urban trees with strong emission potentials of VOCs within the city. Model extrapolations reveal that similar or even greater challenges exist for other cities across Asia and Oceania, where urban greening strategies often favor highly emitting trees. Our findings underscore the critical need for selective urban planning in greening programs to counteract a warming climate.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aef5698",
+      "sourceId": "science-advances",
+      "title": "Isocaloric switch from low-fat to Western high-fat diet triggers transcriptomic reprogramming and ectopic olfactory receptor responses",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Although Western diet (WD) rich in saturated fat is regarded as a trigger of metabolic disease and inflammation, the role of this diet in the absence of obesity is unclear. We studied the metabolic, inflammatory, anthropometric, and adipose tissue transcriptomic responses of 92 twins to 6 weeks of WD following 6 weeks of a healthy low-fat diet while maintaining stable body weight. The WD increased total, LDL and HDL cholesterol but not triglycerides or free fatty acids and induced transient and moderate increases of insulin resistance and some inflammatory markers after 1 week, which disappeared after 6 weeks. Extensive transcriptomic changes reflected restructuring of subcutaneous abdominal adipose tissue. Olfactory receptor (OR) mRNAs were increased in correlation with insulin resistance, liver, and visceral fat, cytokines like IL-18 and VEGF, but inversely related to adiponectin and extracellular NAMPT. In conclusion, WD triggers metabolic and transcriptomic reprogramming closely linked to ectopic OR responses.",
+      "featured": true
+    },
+    {
+      "id": "10.1126/sciadv.aef8903",
+      "sourceId": "science-advances",
+      "title": "Self-sustaining leadless intracardiac pacemaker powered by triboelectric nanogenerator",
+      "journal": "Science Advances",
+      "section": "biology",
+      "matchedKeywords": [
+        "development"
+      ],
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "abstract": "Leadless intracardiac pacemakers (LIP) are a technological breakthrough that offer tremendous benefits to patients, including minimally invasive delivery, improved quality of life, and reduced financial burden. However, limited by its size and capacity, the battery component becomes a major roadblock to further advancing LIP technology toward lifelong, maintenance-free implants without the need for device retrieval or replacement. Here, we present an integrated, nanogenerator-powered LIP with a clinically compatible architecture. The LIP is solely powered by a double-oscillatory triboelectric nanogenerator (TENG) that is capable of generating a volumetric power density of 276.6 μW cc −1 driven by heartbeats. The miniaturized TENG can also fit within the battery compartment of a commercial Medtronic Micra LIP, allowing standard femoral-venous delivery by commercial catheters. When implanted in the heart of a swine model, the device delivers stable, rate-responsive electrical energy in vivo, which reliably supports the cardiac pacing function for heart rates control at physiological levels through harvested energy. Long-term intracardiac implantation further confirmed secure fixation, unaffected cardiac function and minimal tissue reaction of the fully integrated device. This development suggests a clinically compatible path toward self-sustainable intracardiac electronic systems.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aeg2362",
+      "sourceId": "science-advances",
+      "title": "Endometriosis-derived iPSCs reveal conserved stromal maturation and endocrine responsiveness",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Endometriosis is a chronic, hormone-dependent disease characterized by altered endometrial stromal function, but mechanistic and translational studies have been hindered by the lack of tractable human models. Here, we establish an induced pluripotent stem cell (iPSC)–based platform derived from patients with endometriosis to model endometrial stromal differentiation in a controlled human context. Using a defined differentiation protocol, endometriosis-derived iPSCs transition from pluripotency through mesenchymal commitment toward stromal-like states and acquire transcriptional hormone responsiveness. Transcriptomic analyses reveal coordinated repression of pluripotency and proliferative programs with induction of stromal lineage signatures. Comparison with independent transcriptomic datasets demonstrated that in vitro–derived stromal cells progressively acquired gene expression profiles resembling eutopic endometrial stromal programs in endometriosis. Conditioned media from iPSC-derived stromal cells also induced transcriptional reprogramming in THP-1 macrophage-like cells. Together, these findings establish a patient-derived platform for investigating stromal differentiation and stromal-immune interactions in endometriosis.",
+      "featured": true
+    },
+    {
+      "id": "10.1126/sciadv.aeg2679",
+      "sourceId": "science-advances",
+      "title": "H3.3 chaperone Hira primes the effector program and function of regulatory T cells",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Foxp3 + regulatory T (Treg) cells need to differentiate into effector Treg (eTreg) cells to maintain immune tolerance and tissue homeostasis. While several transcription factors such as Batf and JunB have been reported to be essential for eTreg differentiation and function, the underlying epigenetic mechanism remains unclear. Here, we show that the histone variant H3.3 is enriched in tissue Tregs compared to splenic Tregs and its chaperone Hira is a critical regulator of Treg effector program. Treg specific-deletion of Hira resulted in reduced eTreg population, impaired suppressive function and multi-organ inflammation in mice. Mechanistically, Hira-dependent H3.3 deposition establishes a permissive epigenetic environment by enhancing chromatin accessibility, facilitating H3K36me3 and preventing H3K27me3 modifications on loci of genes enriched for AP-1 family binding motifs and associated with Treg effector function. Furthermore, overexpression of Batf in Hira -deficient Treg cells largely ameliorates their regulatory defects. Together, our findings reveal a previously unreported epigenetic mechanism critical for Treg effector differentiation and function.",
+      "featured": true
+    },
+    {
+      "id": "10.1126/sciadv.aeg3424",
+      "sourceId": "science-advances",
+      "title": "HMOX1 controls a heme-ferritin switch that protects cells from ferroptosis",
+      "journal": "Science Advances",
+      "section": "biology",
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Modulating the intracellular labile iron pool (LIP) has emerged as a promising strategy to induce ferroptosis in cancer cells, offering a way to overcome resistance to apoptosis-based therapies. One of the main contributors to LIP is heme catabolism mediated by heme oxygenase-1 (HMOX1), which promotes ferroptosis sensitivity by releasing free iron. Beyond its role as an iron donor, heme can influence diverse proteins and signaling pathways that drive tumor progression, but how heme regulates ferroptosis remains poorly understood. Here, we uncover a paradoxical, protective function of heme in the absence of HMOX1 activity. When HMOX1 is inactive, heme becomes stabilized, leading to ferritin up-regulation, suppression of ferroptosis, and rescue of cell death induced by both pharmacological and genetic inhibition of GPX4. Our findings reveal an unrecognized heme-HMOX1-ferritin axis that controls ferroptosis sensitivity. Targeting this pathway may offer a new therapeutic strategy to modulate ferroptosis in cancer.",
+      "featured": true
+    },
+    {
+      "id": "10.1126/sciadv.aeg3535",
+      "sourceId": "science-advances",
+      "title": "Undoing of firing rate adaptation enables invariant population codes",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Neural adaptation supports coding efficiency by tuning responses to prevailing stimulus statistics. However, when information is represented by populations of neurons, adaptation of individual units could degrade behaviorally relevant signals. Here, we investigate how the fly olfactory system implements adaptation to background odors in olfactory receptor neurons (ORNs) and the consequences for combinatorial coding in downstream circuits. We show that adaptation of ORN firing rate is compensated at the axon terminal, where inhibitory presynaptic feedback supports background-invariant calcium responses to increases (but not decreases) in odor concentration. Computational analyses demonstrate that such invariance requires an adaptation strategy in ORNs that shifts response amplitude rather than sensitivity, diverging from efficient coding principles in single neurons. Downstream, postsynaptic projection neurons also exhibit background-invariant responses through presynaptic plasticity involving Unc13 proteins. Thus, the olfactory circuit restores stable population codes by undoing peripheral firing rate adaptation, enabling an asymmetric contrast representation that preserves stimulus identity across backgrounds.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aeg7846",
+      "sourceId": "science-advances",
+      "title": "Population-level geometric filtering generates motion-coherence selectivity in the retina",
+      "journal": "Science Advances",
+      "section": "single-cell-spatial",
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Object-motion–sensitive (OMS) circuits must ignore self-motion while remaining sensitive to independently moving objects. We show that the mouse retina solves this by geometrically filtering motion coherence. Correlative light and electron microscopy reveal that TH2 amacrine cells (GABAergic Type-2 wide-field amacrine cells in the TH-Cre mouse strain) combine a dense proximal arbor with sparse radiating distal neurites, distributing synapses uniformly across both compartments. Two-photon imaging and compartmental modeling establish that sparse inhibition and voltage-gated sodium channels allow this bipartite arbor to multiplex signals: Proximal dendrites compute locally, whereas distal neurites integrate over hundreds of micrometers. A population model built from this architecture predicts a daisy-shaped inhibitory surround for OMS ganglion cells (W3/Ultra-High-Definition), with a circular near-surround and radially orientation-selective far-surround subunits. Patch-clamp recordings confirmed this organization and revealed that the surround suppresses coherent global motion while preserving object-motion detection, even amid high densities of independently moving objects. Thus, single-cell morphology and dendritic processing scale through plexus geometry to implement motion-coherence selectivity.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aeh9625",
+      "sourceId": "science-advances",
+      "title": "A biomimetic, ultralow-power edge-AI-empowered and self-sustaining gait analysis system",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "abstract": "Smart digital health has reshaped patient monitoring, but it faces a fundamental trade-off between device intelligence and continuous, energy-efficient monitoring. Inspired by self-sustaining intelligent biospecies, we develop a biomimetic, battery-free, and high-precision edge-AI system through a harvested-energy-constrained holistic co-design that couples ultralow-power edge-AI-empowered sensor hardware with biomechanical energy harvesting and cold-start power management. Our edge-AI-empowered motion sensor performs instantaneous, context-aware on-device inference and timely result updating from raw sensor data while consuming only 86 μW. A high-output energy harvester and tailored high-efficiency power management circuitry sustain energy levels exceeding system requirements, eliminating downtime associated with charging and enabling true 24/7, hassle-free monitoring. This breakthrough establishes a paradigm for system-level, edge-AI-empowered, and self-sustaining sensing, demonstrating that intelligence and energy autonomy can coexist within a single wearable platform and pointing to next-generation always-on, personalized digital health systems.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec3712",
+      "sourceId": "science-advances",
+      "title": "ROS-responsive nanogels enable inhaled CD24 immunotherapy for selective hyperinflammation suppression in severe pneumonia",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Acute pneumonia triggered by pathogen infection and lung injury persists as a critical global life-threatening issue. Cluster of differentiation 24 (CD24), by selectively inhibiting the inflammatory response associated with damage-associated molecular patterns (DAMPs) through the interaction with Siglec, has appeared as a unique paradigm to alleviate acute pneumonia, yet its effective pulmonary delivery remains challenging. Here, we report on reactive oxygen species (ROS)–responsive and mucus-penetrable nanogels (ROSμNG) for pulmonary CD24 delivery to rescue acute pneumonia by selective inhibition of hyperinflammatory response. CD24-loaded nanogels (CD24-ROSμNG) exhibit excellent stability during nebulization, efficient mucus penetration, and inflammation-triggered CD24 release, affording over 80% drug enrichment in lung tissues through nebulization inhalation. In lipopolysaccharide-induced severe acute pneumonia mouse models, nebulized CD24-ROSμNG effectively attenuates cytokine storm, suppresses DAMP-mediated inflammation, and mitigates lung injury, achieving an over 3.5-fold increase in survival rate compared to intravenous administration of over 12-fold higher dose of free CD24. In an H1N1 virus influenza model, CD24-ROSμNG not only prevents cytokine storm but also preserves neutrophil-mediated viral clearance by limiting excessive neutrophil extracellular trap formation, thereby avoiding uncontrolled inflammation while maintaining antiviral defenses. These inhalable CD24 nanogels establish a strategy to manage pulmonary hyperinflammatory disorders.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec0811",
+      "sourceId": "science-advances",
+      "title": "Potential survivable niches for microbial life on the lunar south pole",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Most lunar surface conditions are incredibly harsh for microbial survival. High ultraviolet radiation, temperatures, and energetic particle radiation limit survival over most unprotected lunar surfaces, particularly in equatorial regions where all previous crewed exploration occurred. However, whether these harsh conditions are widespread at lunar poles has not been examined considering topographical effects. Here, we show that recent microorganism survivability data and lunar surface remote sensing reveal likely survivable niches in lunar polar regions. Analysis of topography and latitude-driven surface conditions using remote sensing data and high-resolution illumination models indicates the lunar south pole has substantial regions with persistent low temperatures and ultraviolet flux. Comparing these conditions to survivability data of specific microorganisms, we find that significant lunar polar areas likely have surface conditions amenable to microbial survival. Our findings suggest that lunar polar regions may be less hostile to microbial survival than previously assumed. This does not encompass growth likelihood, but survival in a cryptobiotic state where growth would be possible if habitable conditions were present. Potential microbial survivability at lunar poles is particularly significant given many examined microbes will likely be transported to the Moon during crewed lunar south pole exploration planned in numerous near-term missions. Thoughtfully planning exploration and tracking its impact is key to limiting and understanding potential unintended life transfer to the Moon.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.adz5561",
+      "sourceId": "science-advances",
+      "title": "Topological mixing and irreversibility in animal chromosome evolution",
+      "journal": "Science Advances",
+      "section": "biology",
+      "matchedKeywords": [
+        "development",
+        "evolution",
+        "genome"
+      ],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Animal chromosome homology can persist over hundreds of millions of years, despite fusions and translocations. The frequency, pace, and impact of these changes remain unclear. We develop a multiscale manifold representation of pan-animal genome homology to compare 5821 chromosome-scale genomes across 19 phyla and 4454 species. This “evolutionary genome topology” approach simultaneously captures chromosomal and subchromosomal organization. We find that while all 406 pairwise fusions of 29 ancestral animal linkage groups have been sampled by metazoan genome diversity, the full combinatorial potential within chromosomes remains far from explored. Our approach shows that irreversible genomic changes, caused in particular by chromosomal consolidation, dissociation, and fusion-with-mixing, place clades in distinct regions of genome architecture space. Progressive accumulation of these mixed states across genomic scales contributes to the diverging paths of animal genome evolution and has a long-lasting impact on a broad range of genes, including key developmental loci.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aed6318",
+      "sourceId": "science-advances",
+      "title": "Mitochondrial profiling across macrophage states reveals inhibition of IL-4/IL-13 reprogramming by the integrated stress response",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Mitochondria drive cellular reprogramming by integrating metabolism and signaling. In macrophages, mitochondria are central to immunometabolic responses to external cues, but the extent to which they are remodeled and participate in macrophage reprogramming remains unclear. Here, we integrate transcriptomics with whole-cell and purified mitochondrial proteomics to profile lipopolysaccharide (LPS)/interferon-γ (IFN-γ)– and interleukin-4 (IL-4)/IL-13–stimulated macrophages. We reveal a notable disconnect between mitochondrial transcript and protein levels following either stimulus and a signal transducer and activator of transcription 6 (STAT6)–dependent increase in mitochondrial DNA (mtDNA) expression and intramitochondrial translation in IL-4/IL-13 macrophages. We demonstrate that pharmacological inhibition of mitochondrial translation or individual respiratory chain complexes variably impairs reprogramming, whereas ATP synthase inhibition uniquely triggers a heme-regulated inhibitor (HRI)–dependent integrated stress response (ISR) through mitochondrial hyperpolarization, thereby preventing IL-4/IL-13 reprogramming. Mechanistically, we show that restoring mitochondrial membrane potential or inhibiting the ISR rescues IL-4/IL-13–mediated reprogramming. Together, we identify mtDNA expression, intramitochondrial translation, and mitochondrial membrane potential as critical, drug-sensitive determinants of the IL-4/IL-13 response.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aeg8240",
+      "sourceId": "science-advances",
+      "title": "Central T cell tolerance from sparse peptide sampling",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Negative selection in the thymus limits autoimmunity by eliminating T cells that react strongly to self. Individual T cells, however, are only exposed to a small fraction of all self-peptides during their “training” in the thymus, and how tolerance is generalized to the remaining “test” self-peptides across peripheral tissues in the body remains an open question. We show that this can be achieved because the immune system satisfies two conditions necessary for generalization in machine learning settings. Consequently, sparse, random sampling of only 10% of self-peptides in the thymus is sufficient to avoid reactivity to 90% of peripheral self. We support this result and validate predictions from our model with diverse experimental data. Overall, we provide a plausible answer to a long-standing question underlying adaptive immunity, and we highlight how generalization, a fundamental challenge faced by nearly every learning algorithm, is tackled by the immune system.",
+      "featured": true
+    },
+    {
+      "id": "10.1126/sciadv.aeb0774",
+      "sourceId": "science-advances",
+      "title": "Coupled Atlantic atmosphere-ocean variability modulates cutaneous leishmaniasis in North Africa, enabling long-lead seasonal forecasts",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Early warning systems for climate-driven diseases require predictors with sufficient lead time, a persistent challenge for many diseases and regions. While coupled atmosphere-ocean phenomena offer a potential solution, they remain largely underexploited in temperate zones. Here, we establish a multiscale connection between cutaneous leishmaniasis (CL) dynamics in North Africa, the North Atlantic Oscillation (NAO), and the Atlantic Multidecadal Variability (AMV). Beyond the NAO’s influence on seasonal rainfall, we uncover low-frequency variability in the NAO-AMV system that modulates interannual rainfall patterns in North Africa, yielding multiyear periods of high and low CL activity. To quantify this predictability, we develop a unified transmission model applied across Morocco and Tunisia for both anthroponotic ( Leishmania tropica ) and zoonotic ( Leishmania major ) forms. Predictive skill up to 12 months ahead improves across all contexts when we incorporate local temperature and precipitation alongside the multiscale signals of the NAO and AMV. This study shows how coupled Atlantic climate variability modulates an infectious disease across timescales, enabling an operational, long-lead seasonal forecast system for a vector-borne disease in the Mediterranean region.",
+      "featured": true
+    },
+    {
+      "id": "10.1126/sciadv.aed7393",
+      "sourceId": "science-advances",
+      "title": "China’s lakes remain carbon sources: Insights from the balance between intrinsic carbon sequestration and emissions",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "abstract": "Accurate assessments of lake carbon balance are essential for filling gaps in the global carbon budget and addressing climate change. However, persistent uncertainties arise from an incomplete understanding of intrinsic carbon sequestration and its balance with emission effects. Here, using source fingerprinting techniques, we isolated the autochthonous organic carbon (OC Auto ) burial, which represents the intrinsic carbon sequestration of lakes. We found that OC Auto burial accounted for only 53.23% of total lake carbon emissions in the 2020s, leaving China’s lakes as carbon sources (−0.83 teragrams of carbon per year). Regionally, lakes on the Qinghai-Tibet and Yunnan-Guizhou Plateaus have shifted to carbon sinks, whereas lakes in the eastern and northeastern regions remain major carbon sources. Scenario projections indicated that restoring China’s lakes to macrophyte-dominated states under the Shared Socioeconomic Pathway SSP2-4.5 scenario could transition them into stable carbon sinks before OC Auto burial peaks around 2070. To facilitate this transition, we proposed a lake classification-and-management framework based on carbon sink potential and emission risks to guide carbon sequestration and climate mitigation efforts.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aed4204",
+      "sourceId": "science-advances",
+      "title": "Screening of anti-metastasis drugs by targeting angiopellosis and cancer cluster extravasation",
+      "journal": "Science Advances",
+      "section": "biology",
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Metastasis accounts for 90% of cancer-related deaths. Extravasation is a necessary step for cancer metastasis. Currently, there are no drugs that specially target extravasation. Most cancer therapies target either proliferation or angiogenesis. We previously identified “angiopellosis” as the dominant mechanism by which vascular endothelial cells undergo conformational changes and actively “push” circulating cancer cells out of blood vessels. In this study, we developed an image-based high-throughput drug screening assay by coculturing cancer membrane–coated spheres with endothelial monolayers. Through this platform, we identified Bay 61-3606 as a lead angiopellosis inhibitor. Bay 61-3606 substantially reduced cancer cluster extravasation, an activity solely supported by angiopellosis and associated with higher metastatic potential, in both zebrafish and mouse models. Furthermore, Bay 61-3606 decreased distant metastases in murine models of lung carcinoma and triple-negative breast cancer. Mechanistically, Bay 61-3606 targeted the c-Jun amino-terminal kinase signaling pathway, down-regulating COL8A1 expression in endothelial cells and impairing the angiopellosis process.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aef3262",
+      "sourceId": "science-advances",
+      "title": "A bacterial enzyme enhances both energy metabolism and health across the life span of C. elegans and mice",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "The consequence of enhanced energy metabolism for health and life span of organisms is a fundamental yet controversially discussed issue of life and aging among others because of the fact that increasing energy metabolism often entails the risk of oxidative damage. To resolve this paradox, we introduce the bacterial-derived lipoic acid protein ligase A (LplA) as an orthogonal and defined molecular tool to enhance energy metabolism and at the same time to foster a low oxidative stress environment. Investigations in Caenorhabditis elegans ( C. elegans ) and mouse models demonstrate that LplA expression significantly enhances energy metabolism and health across the life span, without compromising maximum longevity. Our work not only transcends the long-standing paradox between energy metabolism and health life span but also provides a hereto unreported strategy to intervene in human aging.",
+      "featured": true
+    },
+    {
+      "id": "10.1126/sciadv.aee2332",
+      "sourceId": "science-advances",
+      "title": "Perceptual meta-uncertainty reveals enhanced calibration of sensory confidence in autism",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "abstract": "Atypical metacognition has been suggested to underlie autistic phenotypes, given its role in social cognition and behavioral flexibility. However, no study has quantitatively assessed metacognitive abilities in autism. Here, we measured meta-uncertainty—the noise corrupting estimates of one’s own decision uncertainty—in autism. In three experiments, autistic and non-autistic participants ( N = 145) performed orientation categorization tasks while simultaneously reporting their choice confidence. By independently manipulating each Bayesian component—sensory uncertainty, prior, and reward—and fitting a recently established process model, we assessed metacognitive abilities and their contingency on the Bayesian components while controlling for first-order decisions. Unlike non-autistic participants, autistic participants’ meta-uncertainty depended on which decision component was manipulated and was lower than that of non-autistic participants, specifically when decisions were adjusted for sensory uncertainty. These findings reveal that metacognition in autism is not generally reduced but rather enhanced for inferences that rely primarily on sensory information.",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aek5991",
+      "sourceId": "science-advances",
+      "title": "Hope for heart failure with preserved ejection fraction?",
+      "journal": "Science Advances",
+      "section": "other",
+      "matchedKeywords": [],
+      "digestLine": "skip",
+      "digestTaggingMethod": "llm",
+      "abstract": "A common form of heart failure improves when cyclic guanosine monophosphate-dependent protein kinase is activated with a novel agent that promotes cysteine-42 oxidation.",
+      "featured": false
+    }
+  ]
+}

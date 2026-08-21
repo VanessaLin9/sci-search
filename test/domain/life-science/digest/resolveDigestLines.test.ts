@@ -32,7 +32,7 @@ test("fallbackDigestLine maps other sections to line-b", () => {
   assert.equal(fallbackDigestLine({ sourceId: "science", section: "biology" }), "line-b");
 });
 
-test("resolveDigestLines uses LLM digest line when present", () => {
+test("resolveDigestLines uses spatial LLM line-a/line-b when present", () => {
   const [resolved] = resolveDigestLines(
     [paper("p-1")],
     new Map([["p-1", "line-a"]]),
@@ -42,7 +42,7 @@ test("resolveDigestLines uses LLM digest line when present", () => {
   assert.equal(resolved.digestTaggingMethod, "llm");
 });
 
-test("resolveDigestLines falls back when LLM line is missing", () => {
+test("resolveDigestLines falls back when spatial LLM line is missing", () => {
   const [resolved] = resolveDigestLines(
     [paper("p-1", { section: "single-cell-spatial" })],
     new Map(),
@@ -52,23 +52,32 @@ test("resolveDigestLines falls back when LLM line is missing", () => {
   assert.equal(resolved.digestTaggingMethod, "keyword-fallback");
 });
 
-test("resolveDigestLines forces preprint for biorxiv even when LLM tags line-a", () => {
+test("resolveDigestLines forces preprint for biorxiv even when map says line-a", () => {
   const [resolved] = resolveDigestLines(
     [paper("p-1", { sourceId: "biorxiv", section: "single-cell-spatial" })],
     new Map([["p-1", "line-a"]]),
     new Set(["p-1"]),
   );
   assert.equal(resolved.digestLine, "preprint");
-  assert.equal(resolved.digestTaggingMethod, "llm");
+  assert.equal(resolved.digestTaggingMethod, "keyword-fallback");
 });
 
-test("resolveDigestLines forces preprint for biorxiv even when LLM tags line-b", () => {
+test("resolveDigestLines forces preprint for biorxiv even when map says line-b", () => {
   const [resolved] = resolveDigestLines(
     [paper("p-1", { sourceId: "biorxiv", section: "biology" })],
     new Map([["p-1", "line-b"]]),
     new Set(["p-1"]),
   );
   assert.equal(resolved.digestLine, "preprint");
+});
+
+test("resolveDigestLines never keeps skip from keyword path for non-preprint", () => {
+  const [resolved] = resolveDigestLines(
+    [paper("p-1", { section: "other" })],
+    new Map(),
+    new Set(),
+  );
+  assert.equal(resolved.digestLine, "line-b");
 });
 
 test("applyKeywordDigestFallback tags every paper with keyword-fallback", () => {
@@ -78,9 +87,15 @@ test("applyKeywordDigestFallback tags every paper with keyword-fallback", () => 
   ]);
   assert.equal(resolved[0]?.digestLine, "line-b");
   assert.equal(resolved[1]?.digestLine, "preprint");
-  assert.deepEqual(keywordFallbackTaggingStats(2), {
+  assert.deepEqual(keywordFallbackTaggingStats(2, { lineA: 0, lineB: 1 }), {
+    threshold: 0,
     llmClassified: 0,
     llmTagged: 0,
+    llmLineA: 0,
+    llmLineB: 0,
     fallback: 2,
+    fallbackLineA: 0,
+    fallbackLineB: 1,
+    failures: 0,
   });
 });

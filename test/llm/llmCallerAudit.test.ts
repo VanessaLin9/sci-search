@@ -17,6 +17,7 @@ const CREATE_ALLOWLIST = new Set([
   "src/biorxiv-gate/callGateCompletion.ts",
   "src/digest/callDigestCompletion.ts",
   "src/digest/callDigestChat.ts",
+  "src/digest/callSpatialCompletion.ts",
   "src/digest/probeDigestSmoke.ts",
 ]);
 

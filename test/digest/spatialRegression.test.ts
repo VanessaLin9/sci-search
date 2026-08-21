@@ -1,0 +1,143 @@
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { test } from "node:test";
+import { loadSources } from "../../src/config.js";
+import { applySpatialBatchRows } from "../../src/domain/life-science/digest/applySpatialBatchRows.js";
+import { resolveDigestLines } from "../../src/domain/life-science/digest/resolveDigestLines.js";
+import {
+  buildSourcePriorityById,
+  selectFeatured,
+} from "../../src/domain/life-science/digest/selection.js";
+import { fallbackDigestLine } from "../../src/domain/life-science/fallbackDigestLine.js";
+import { isPreprintSource } from "../../src/domain/life-science/sources.js";
+
+const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+
+type FixturePaper = {
+  id: string;
+  sourceId: string;
+  title: string;
+  section: "single-cell-spatial" | "biology" | "other";
+  digestLine?: "line-a" | "line-b" | "preprint" | "skip";
+  digestTaggingMethod?: "llm" | "keyword-fallback";
+  abstract?: string;
+};
+
+function loadFixture(reportDate: string): FixturePaper[] {
+  const fixturePath = path.join(
+    repoRoot,
+    "test/fixtures/spatial",
+    `${reportDate}-papers.json`,
+  );
+  const fixture = JSON.parse(readFileSync(fixturePath, "utf8")) as { papers: FixturePaper[] };
+  return fixture.papers;
+}
+
+for (const reportDate of ["2026-08-17", "2026-08-18", "2026-08-19"] as const) {
+  test(`spatial regression ${reportDate}: keyword-spatial non-preprints stay line-a (no tagging demotion)`, () => {
+    const papers = loadFixture(reportDate);
+    const spatialNonPreprint = papers.filter(
+      (paper) => paper.section === "single-cell-spatial" && !isPreprintSource(paper.sourceId),
+    );
+
+    const resolved = resolveDigestLines(
+      spatialNonPreprint.map((paper) => ({
+        id: paper.id,
+        sourceId: paper.sourceId,
+        section: paper.section,
+      })),
+      new Map(),
+      new Set(),
+    );
+
+    for (const paper of resolved) {
+      assert.equal(
+        paper.digestLine,
+        "line-a",
+        `${paper.id} must stay line-a under keyword spatial fallback (was ${papers.find((p) => p.id === paper.id)?.digestLine} via old tagging)`,
+      );
+      assert.equal(paper.digestTaggingMethod, "keyword-fallback");
+    }
+  });
+
+  test(`spatial regression ${reportDate}: high-confidence spatial LLM cannot be demoted to B`, () => {
+    const papers = loadFixture(reportDate);
+    const nonPreprint = papers.filter((paper) => !isPreprintSource(paper.sourceId));
+    if (nonPreprint.length === 0) return;
+
+    const applied = applySpatialBatchRows(
+      nonPreprint.map((paper) => paper.id),
+      nonPreprint.map((paper) => ({
+        id: paper.id,
+        // Force spatial for historically keyword-spatial rows; others mid/low.
+        spatial_confidence: paper.section === "single-cell-spatial" ? 0.92 : 0.2,
+      })),
+      0.75,
+    );
+
+    const resolved = resolveDigestLines(
+      nonPreprint.map((paper) => ({
+        id: paper.id,
+        sourceId: paper.sourceId,
+        section: paper.section,
+      })),
+      applied.lineById,
+      applied.llmClassifiedIds,
+    );
+
+    for (const paper of resolved) {
+      const original = nonPreprint.find((item) => item.id === paper.id)!;
+      if (original.section === "single-cell-spatial") {
+        assert.equal(paper.digestLine, "line-a");
+        assert.equal(paper.digestTaggingMethod, "llm");
+      } else {
+        assert.equal(paper.digestLine, "line-b");
+      }
+    }
+  });
+
+  test(`spatial regression ${reportDate}: biorxiv always preprint pool`, () => {
+    const papers = loadFixture(reportDate);
+    const biorxiv = papers.filter((paper) => paper.sourceId === "biorxiv");
+    const resolved = resolveDigestLines(
+      biorxiv.map((paper) => ({
+        id: paper.id,
+        sourceId: paper.sourceId,
+        section: paper.section,
+      })),
+      new Map(biorxiv.map((paper) => [paper.id, "line-a" as const])),
+      new Set(biorxiv.map((paper) => paper.id)),
+    );
+    for (const paper of resolved) {
+      assert.equal(paper.digestLine, "preprint");
+    }
+  });
+}
+
+test("spatial regression selection: A+B fill before preprint on 2026-08-19 fixture", async () => {
+  const papers = loadFixture("2026-08-19").map((paper) => ({
+    ...paper,
+    digestLine: fallbackDigestLine(paper),
+    abstract: paper.abstract?.trim() ? paper.abstract : "Synthetic abstract for eligibility.",
+  }));
+  const sources = await loadSources();
+  const { stats, papers: selected } = selectFeatured(papers, {
+    maxFeatured: 12,
+    priorityBySourceId: buildSourcePriorityById(sources),
+  });
+
+  assert.ok(stats.featured <= 12);
+  assert.equal(stats.featured + stats.overflow, stats.candidates);
+
+  const featured = selected.filter((paper) => paper.featured);
+  const featuredPreprint = featured.filter((paper) => paper.digestLine === "preprint");
+  const featuredMain = featured.filter(
+    (paper) => paper.digestLine === "line-a" || paper.digestLine === "line-b",
+  );
+
+  if (featuredMain.length >= 12) {
+    assert.equal(featuredPreprint.length, 0);
+  }
+});

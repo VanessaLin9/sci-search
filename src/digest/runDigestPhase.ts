@@ -1,10 +1,11 @@
 /**
- * Phase 2b digest 編排：tagging → featured 選取 → summarize → overflow translate。
+ * Phase 2b digest 編排：spatial classify → featured 選取 → summarize → overflow translate。
  *
  * 失敗契約（與 routing degrade 同精神：寧可缺繁中，也不中斷 daily）：
- * - tagging 整段掛掉 → keyword digestLine（INV-030）
+ * - spatial classify 整段掛掉 → keyword digestLine（PRIMARY → A，否則 B）
  * - summarize 失敗 → featured 仍寄出，缺 titleZh/summaryZh（郵件可回退英文 abstract）
  * - translate 失敗 → overflow 只留英文標題，無備援模型／關鍵字翻譯
+ * - A/B 不再由第二個 digest tagging LLM 決定
  */
 import { loadDigestFileConfig } from "../config.js";
 import {
@@ -18,10 +19,12 @@ import {
   buildSourcePriorityById,
   selectFeatured,
 } from "../domain/life-science/digest/selection.js";
+import { fallbackDigestLine } from "../domain/life-science/fallbackDigestLine.js";
+import { isPreprintSource } from "../domain/life-science/sources.js";
+import { classifySpatialWithLlm } from "./classifySpatial.js";
 import { isDigestLlmEnabled } from "./config.js";
 import { logDigest } from "./digestLog.js";
 import { summarizeFeaturedPapers } from "./summarizePapers.js";
-import { tagTitlesWithLlm } from "./tagTitles.js";
 import { translateOverflowTitles } from "./translateTitles.js";
 import type { DigestPhaseResult, DigestSummarizeStats, DigestTranslateStats } from "./types.js";
 import type { ClassifiedPaper, Source, SourceScope } from "../types.js";
@@ -67,6 +70,25 @@ const emptyTranslateStats = (): DigestTranslateStats => ({
   failed: 0,
 });
 
+function keywordFallbackStatsForPapers(
+  papers: ClassifiedPaper[],
+  threshold: number,
+): ReturnType<typeof keywordFallbackTaggingStats> {
+  let lineA = 0;
+  let lineB = 0;
+  for (const paper of papers) {
+    if (isPreprintSource(paper.sourceId)) continue;
+    const line = fallbackDigestLine(paper);
+    if (line === "line-a") lineA += 1;
+    else lineB += 1;
+  }
+  return keywordFallbackTaggingStats(papers.filter((p) => !isPreprintSource(p.sourceId)).length, {
+    threshold,
+    lineA,
+    lineB,
+  });
+}
+
 /** Phase 2b 入口：LLM 關閉或失敗時仍產出可寄的 papers + stats。 */
 export async function runDigestPhase(options: {
   papers: ClassifiedPaper[];
@@ -74,7 +96,7 @@ export async function runDigestPhase(options: {
   scopeBySourceId: ReadonlyMap<string, SourceScope>;
 }): Promise<DigestPhaseResult> {
   const { papers, sources, scopeBySourceId } = options;
-  const { maxFeatured, overflowShowTitleZh } = loadDigestFileConfig();
+  const { maxFeatured, overflowShowTitleZh, spatialConfidenceThreshold } = loadDigestFileConfig();
   const priorityBySourceId = buildSourcePriorityById(sources);
   const llmTagging = isDigestLlmEnabled();
 
@@ -83,7 +105,7 @@ export async function runDigestPhase(options: {
       enabled: true,
       llmTagging,
       papers: [],
-      tagging: emptyDigestTaggingStats(),
+      tagging: emptyDigestTaggingStats(spatialConfidenceThreshold),
       selection: emptyDigestSelectionStats(),
       summarize: emptySummarizeStats(),
       translate: emptyTranslateStats(),
@@ -95,22 +117,21 @@ export async function runDigestPhase(options: {
 
   if (llmTagging) {
     try {
-      const { lineById, llmTaggedIds, stats } = await tagTitlesWithLlm({ papers, scopeBySourceId });
-      tagged = resolveDigestLines(papers, lineById, llmTaggedIds);
+      const { lineById, llmClassifiedIds, stats } = await classifySpatialWithLlm({ papers });
+      tagged = resolveDigestLines(papers, lineById, llmClassifiedIds);
       taggingStats = stats;
     } catch (error) {
-      // 整段 tagging 掛掉：仍要有 digestLine 才能選 featured／分區寄信（INV-030）。
       console.warn(
-        "Digest LLM tagging failed entirely; using keyword fallback:",
+        "Spatial classifier failed entirely; using keyword fallback:",
         error instanceof Error ? error.message : error,
       );
       tagged = applyKeywordDigestFallback(papers);
-      taggingStats = keywordFallbackTaggingStats(papers.length);
+      taggingStats = keywordFallbackStatsForPapers(papers, spatialConfidenceThreshold);
     }
   } else {
-    logDigest("LLM tagging disabled (set ENABLE_LLM_DIGEST=1); using keyword fallback");
+    logDigest("LLM digest disabled (set ENABLE_LLM_DIGEST=1); spatial classify uses keyword fallback");
     tagged = applyKeywordDigestFallback(papers);
-    taggingStats = keywordFallbackTaggingStats(papers.length);
+    taggingStats = keywordFallbackStatsForPapers(papers, spatialConfidenceThreshold);
   }
 
   const { papers: selected, stats: selectionStats, diagnostics } = selectFeatured(tagged, {
@@ -121,7 +142,10 @@ export async function runDigestPhase(options: {
   logDigest(
     `selection: ${selectionStats.featured} featured, ${selectionStats.overflow} overflow, ${selectionStats.skip} skip (max ${maxFeatured})`,
   );
-  // PR #27：區分「可見候選不足」vs「有候選但缺 abstract 致合格不足」。
+  logDigest(
+    `selection pools: featured A ${selectionStats.featuredLineA} / B ${selectionStats.featuredLineB} / preprint ${selectionStats.featuredPreprint}; ` +
+      `overflow A ${selectionStats.overflowLineA} / B ${selectionStats.overflowLineB} / preprint ${selectionStats.overflowPreprint}`,
+  );
   logDigest(
     `selection: featured ineligible: ${diagnostics.featuredIneligibleMissingAbstract} missing abstract` +
       (selectionStats.featured < maxFeatured
@@ -131,7 +155,7 @@ export async function runDigestPhase(options: {
         : ""),
   );
 
-  let enriched = selected;
+  let enriched: ClassifiedPaper[] = selected;
   let summarizeStats = emptySummarizeStats();
   let translateStats = emptyTranslateStats();
 
@@ -144,7 +168,6 @@ export async function runDigestPhase(options: {
       enriched = applySummarizeFields(enriched, fieldsById);
       summarizeStats = stats;
     } catch (error) {
-      // 不 throw：featured 英文卡照寄；缺繁中時 render 會回退 abstract。
       console.warn(
         "Digest summarize failed entirely:",
         error instanceof Error ? error.message : error,
@@ -165,7 +188,6 @@ export async function runDigestPhase(options: {
         enriched = applyOverflowTitleZh(enriched, titleZhById);
         translateStats = stats;
       } catch (error) {
-        // 不 throw：overflow 無 titleZh，郵件只顯示英文標題。
         console.warn(
           "Digest translate failed entirely:",
           error instanceof Error ? error.message : error,

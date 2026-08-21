@@ -1,5 +1,7 @@
 import type { ClassifiedPaper, SourceScope } from "../types.js";
 import type { DigestLine } from "../types.js";
+import type { DigestTaggingStats as DomainDigestTaggingStats } from "../domain/life-science/digest/resolveDigestLines.js";
+import type { DigestSelectionStats as DomainDigestSelectionStats } from "../domain/life-science/digest/selection.js";
 
 export type DigestTaggingInput = {
   id: string;
@@ -26,22 +28,10 @@ export type DigestTranslateInput = {
   journal: string;
 };
 
-export type DigestSelectionStats = {
-  total: number;
-  candidates: number;
-  featured: number;
-  overflow: number;
-  lineA: number;
-  lineB: number;
-  preprint: number;
-  skip: number;
-};
+export type DigestSelectionStats = DomainDigestSelectionStats;
 
-export type DigestTaggingStats = {
-  llmClassified: number;
-  llmTagged: number;
-  fallback: number;
-};
+/** Spatial classifier stats（field name `tagging` kept for persisted digest schema continuity）. */
+export type DigestTaggingStats = DomainDigestTaggingStats;
 
 export type DigestSummarizeStats = {
   requested: number;
