@@ -104,6 +104,7 @@ export {
   isValidSpatialConfidence,
   DEFAULT_SPATIAL_CONFIDENCE_THRESHOLD as SPATIAL_CONFIDENCE_THRESHOLD_DEFAULT,
 } from "./digest/spatialConfidence.js";
+export { shouldSkipForDigest, type DigestSkipInput } from "./digest/skipNonResearch.js";
 export {
   buildSourcePriorityById,
   compareForFeatured,

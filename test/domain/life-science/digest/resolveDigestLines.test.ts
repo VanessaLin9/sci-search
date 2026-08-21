@@ -9,12 +9,23 @@ import {
 
 type TaggedPaper = {
   id: string;
+  title: string;
   sourceId: string;
   section: "single-cell-spatial" | "biology" | "other";
+  abstract?: string;
+  matchedKeywords?: string[];
+  articleType?: string;
 };
 
 function paper(id: string, overrides: Partial<TaggedPaper> = {}): TaggedPaper {
-  return { id, sourceId: "science", section: "biology", ...overrides };
+  return {
+    id,
+    title: `Research title ${id}`,
+    sourceId: "science",
+    section: "biology",
+    abstract: "Usable English abstract for a research article.",
+    ...overrides,
+  };
 }
 
 test("fallbackDigestLine maps biorxiv to preprint", () => {
@@ -71,7 +82,25 @@ test("resolveDigestLines forces preprint for biorxiv even when map says line-b",
   assert.equal(resolved.digestLine, "preprint");
 });
 
-test("resolveDigestLines never keeps skip from keyword path for non-preprint", () => {
+test("resolveDigestLines skips deterministic non-research before A/B", () => {
+  const [resolved] = resolveDigestLines(
+    [
+      paper("p-1", {
+        title: "Trainee advice for a future that seems uncertain",
+        sourceId: "nature-methods",
+        section: "other",
+        abstract: undefined,
+        matchedKeywords: [],
+      }),
+    ],
+    new Map([["p-1", "line-b"]]),
+    new Set(["p-1"]),
+  );
+  assert.equal(resolved.digestLine, "skip");
+  assert.equal(resolved.digestTaggingMethod, "keyword-fallback");
+});
+
+test("resolveDigestLines keeps research non-preprint on keyword path as line-b", () => {
   const [resolved] = resolveDigestLines(
     [paper("p-1", { section: "other" })],
     new Map(),

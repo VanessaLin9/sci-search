@@ -76,3 +76,31 @@ test("applySpatialBatchRows: identical duplicate confidence still falls back", (
   assert.deepEqual(applied.keywordFallbackIds, ["same"]);
   assert.equal(applied.lineById.size, 0);
 });
+
+test("applySpatialBatchRows: valid first then invalid duplicate falls back", () => {
+  const applied = applySpatialBatchRows(
+    ["dup"],
+    [
+      { id: "dup", spatial_confidence: 0.9 },
+      { id: "dup", spatial_confidence: 1.5 },
+    ],
+    0.75,
+  );
+  assert.equal(applied.lineById.has("dup"), false);
+  assert.deepEqual(applied.keywordFallbackIds, ["dup"]);
+  assert.equal(applied.failures, 1);
+});
+
+test("applySpatialBatchRows: invalid first then valid duplicate falls back", () => {
+  const applied = applySpatialBatchRows(
+    ["dup"],
+    [
+      { id: "dup", spatial_confidence: 1.5 },
+      { id: "dup", spatial_confidence: 0.9 },
+    ],
+    0.75,
+  );
+  assert.equal(applied.lineById.has("dup"), false);
+  assert.deepEqual(applied.keywordFallbackIds, ["dup"]);
+  assert.equal(applied.failures, 1);
+});

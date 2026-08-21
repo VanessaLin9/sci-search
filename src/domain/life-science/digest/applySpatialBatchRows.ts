@@ -18,7 +18,7 @@ export type AppliedSpatialBatch = {
 /**
  * Apply one LLM spatial batch payload to requested ids.
  * Missing / invalid / out-of-range confidence / duplicate id → keywordFallbackIds（caller fills keyword A/B）。
- * Duplicate id 視為該 paper 的 malformed response（PR #38）：不可 silently keep first。
+ * Duplicate id 視為該 paper 的 malformed response（PR #38）：先記 seen，再驗證 confidence。
  */
 export function applySpatialBatchRows(
   itemIds: readonly string[],
@@ -28,6 +28,7 @@ export function applySpatialBatchRows(
   const lineById = new Map<string, MainLine>();
   const llmClassifiedIds = new Set<string>();
   const itemIdSet = new Set(itemIds);
+  const seenIds = new Set<string>();
   const duplicateIds = new Set<string>();
   let failures = 0;
 
@@ -37,19 +38,24 @@ export function applySpatialBatchRows(
       failures += 1;
       continue;
     }
-    if (!isValidSpatialConfidence(row.spatial_confidence)) {
-      continue;
-    }
+
     if (duplicateIds.has(id)) {
       continue;
     }
-    if (lineById.has(id) || llmClassifiedIds.has(id)) {
-      // Second (or later) row for the same id: drop the earlier LLM verdict and fallback.
+
+    if (seenIds.has(id)) {
+      // Any second row for the same id is malformed — drop any earlier LLM verdict.
       duplicateIds.add(id);
       lineById.delete(id);
       llmClassifiedIds.delete(id);
       continue;
     }
+    seenIds.add(id);
+
+    if (!isValidSpatialConfidence(row.spatial_confidence)) {
+      continue;
+    }
+
     lineById.set(id, digestLineFromSpatialConfidence(row.spatial_confidence, threshold));
     llmClassifiedIds.add(id);
   }

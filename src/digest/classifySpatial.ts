@@ -8,6 +8,7 @@ import { z } from "zod";
 import { loadDigestFileConfig } from "../config.js";
 import { applySpatialBatchRows } from "../domain/life-science/digest/applySpatialBatchRows.js";
 import type { DigestTaggingStats } from "../domain/life-science/digest/resolveDigestLines.js";
+import { shouldSkipForDigest } from "../domain/life-science/digest/skipNonResearch.js";
 import { isPreprintSource } from "../domain/life-science/sources.js";
 import { extractLlmJsonContent, shouldRetrySplitLlmBatch } from "../llm/extractLlmJsonContent.js";
 import { parseJsonFromLlmContent } from "../routing/parseLlmJson.js";
@@ -69,7 +70,9 @@ export async function classifySpatialWithLlm(options: {
   const threshold = digestFile.spatialConfidenceThreshold;
   const paperById = new Map(papers.map((paper) => [paper.id, paper]));
 
-  const candidates = papers.filter((paper) => !isPreprintSource(paper.sourceId));
+  const candidates = papers.filter(
+    (paper) => !isPreprintSource(paper.sourceId) && !shouldSkipForDigest(paper),
+  );
 
   logRouting(
     `spatial-classify endpoint ${routingConfig.baseUrl} · model ${routingConfig.model} · key ${maskApiKey(routingConfig.apiKey)} · threshold ${threshold}`,
@@ -93,9 +96,10 @@ export async function classifySpatialWithLlm(options: {
   let fallbackLineA = 0;
   let fallbackLineB = 0;
   const batchTotal = batches.length;
+  const skippedCount = papers.length - candidates.length;
 
   logRouting(
-    `spatial-classify ${candidates.length} non-preprint paper(s) in ${batchTotal} batch(es) (${papers.length - candidates.length} preprint skipped)`,
+    `spatial-classify ${candidates.length} candidate(s) in ${batchTotal} batch(es) (${skippedCount} preprint/non-research skipped)`,
   );
 
   for (let index = 0; index < batches.length; index += 1) {

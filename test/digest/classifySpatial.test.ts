@@ -14,7 +14,7 @@ function paper(
 ): ClassifiedPaper {
   return {
     id,
-    title: `Title ${id}`,
+    title: `Long-form research article about molecular pathways ${id}`,
     journal: "Nature Methods",
     publishedDate: "2026-08-19",
     url: `https://example.com/${id}`,

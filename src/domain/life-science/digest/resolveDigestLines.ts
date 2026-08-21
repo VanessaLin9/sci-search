@@ -1,18 +1,23 @@
 import { fallbackDigestLine } from "../fallbackDigestLine.js";
 import { isPreprintSource } from "../sources.js";
-import type { DigestLine, DigestTaggingMethod } from "../types.js";
+import type { DigestLine, DigestTaggingMethod, PaperSection } from "../types.js";
+import { shouldSkipForDigest } from "./skipNonResearch.js";
 
 type DigestTaggedPaper = {
   id: string;
+  title: string;
   sourceId: string;
-  section: import("../types.js").PaperSection;
+  section: PaperSection;
+  abstract?: string;
+  articleType?: string;
+  matchedKeywords?: readonly string[];
   digestLine?: DigestLine;
   digestTaggingMethod?: DigestTaggingMethod;
 };
 
 /**
  * 由空間分類結果派生 digestLine（不再接受第二個 LLM 的 line-a/line-b 標籤）（PR #38）。
- * 預印本來源硬鎖 `preprint`（PR #10）；非預印本只用 classification map 的 A/B。
+ * 預印本來源硬鎖 `preprint`（PR #10）；deterministic non-research → skip；其餘才用 A/B map。
  */
 export function resolveDigestLines<P extends DigestTaggedPaper>(
   papers: P[],
@@ -24,6 +29,14 @@ export function resolveDigestLines<P extends DigestTaggedPaper>(
       return {
         ...paper,
         digestLine: "preprint" as const,
+        digestTaggingMethod: "keyword-fallback" as const,
+      };
+    }
+
+    if (shouldSkipForDigest(paper)) {
+      return {
+        ...paper,
+        digestLine: "skip" as const,
         digestTaggingMethod: "keyword-fallback" as const,
       };
     }
@@ -42,11 +55,27 @@ export function resolveDigestLines<P extends DigestTaggedPaper>(
 export function applyKeywordDigestFallback<P extends DigestTaggedPaper>(
   papers: P[],
 ): Array<P & { digestLine: DigestLine; digestTaggingMethod: "keyword-fallback" }> {
-  return papers.map((paper) => ({
-    ...paper,
-    digestLine: fallbackDigestLine(paper),
-    digestTaggingMethod: "keyword-fallback" as const,
-  }));
+  return papers.map((paper) => {
+    if (isPreprintSource(paper.sourceId)) {
+      return {
+        ...paper,
+        digestLine: "preprint" as const,
+        digestTaggingMethod: "keyword-fallback" as const,
+      };
+    }
+    if (shouldSkipForDigest(paper)) {
+      return {
+        ...paper,
+        digestLine: "skip" as const,
+        digestTaggingMethod: "keyword-fallback" as const,
+      };
+    }
+    return {
+      ...paper,
+      digestLine: fallbackDigestLine(paper),
+      digestTaggingMethod: "keyword-fallback" as const,
+    };
+  });
 }
 
 /** Spatial classifier 觀測欄位；仍寫進 `digest.tagging` 以維持舊 papers.json schema 相容（PR #38）。 */

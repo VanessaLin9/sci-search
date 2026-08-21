@@ -10,8 +10,10 @@ import {
   buildSourcePriorityById,
   selectFeatured,
 } from "../../src/domain/life-science/digest/selection.js";
+import { shouldSkipForDigest } from "../../src/domain/life-science/digest/skipNonResearch.js";
 import { fallbackDigestLine } from "../../src/domain/life-science/fallbackDigestLine.js";
 import { isPreprintSource } from "../../src/domain/life-science/sources.js";
+import { isVisibleInDigest } from "../../src/domain/life-science/email/visibility.js";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 
@@ -23,6 +25,7 @@ type FixturePaper = {
   digestLine?: "line-a" | "line-b" | "preprint" | "skip";
   digestTaggingMethod?: "llm" | "keyword-fallback";
   abstract?: string;
+  matchedKeywords?: string[];
 };
 
 function loadFixture(reportDate: string): FixturePaper[] {
@@ -35,19 +38,29 @@ function loadFixture(reportDate: string): FixturePaper[] {
   return fixture.papers;
 }
 
+function toResolveInput(paper: FixturePaper) {
+  return {
+    id: paper.id,
+    title: paper.title,
+    sourceId: paper.sourceId,
+    section: paper.section,
+    abstract: paper.abstract,
+    matchedKeywords: paper.matchedKeywords,
+  };
+}
+
 for (const reportDate of ["2026-08-17", "2026-08-18", "2026-08-19"] as const) {
   test(`spatial regression ${reportDate}: keyword-spatial non-preprints stay line-a (no tagging demotion)`, () => {
     const papers = loadFixture(reportDate);
     const spatialNonPreprint = papers.filter(
-      (paper) => paper.section === "single-cell-spatial" && !isPreprintSource(paper.sourceId),
+      (paper) =>
+        paper.section === "single-cell-spatial" &&
+        !isPreprintSource(paper.sourceId) &&
+        !shouldSkipForDigest(paper),
     );
 
     const resolved = resolveDigestLines(
-      spatialNonPreprint.map((paper) => ({
-        id: paper.id,
-        sourceId: paper.sourceId,
-        section: paper.section,
-      })),
+      spatialNonPreprint.map(toResolveInput),
       new Map(),
       new Set(),
     );
@@ -71,24 +84,23 @@ for (const reportDate of ["2026-08-17", "2026-08-18", "2026-08-19"] as const) {
       nonPreprint.map((paper) => paper.id),
       nonPreprint.map((paper) => ({
         id: paper.id,
-        // Force spatial for historically keyword-spatial rows; others mid/low.
         spatial_confidence: paper.section === "single-cell-spatial" ? 0.92 : 0.2,
       })),
       0.75,
     );
 
     const resolved = resolveDigestLines(
-      nonPreprint.map((paper) => ({
-        id: paper.id,
-        sourceId: paper.sourceId,
-        section: paper.section,
-      })),
+      nonPreprint.map(toResolveInput),
       applied.lineById,
       applied.llmClassifiedIds,
     );
 
     for (const paper of resolved) {
       const original = nonPreprint.find((item) => item.id === paper.id)!;
+      if (shouldSkipForDigest(original)) {
+        assert.equal(paper.digestLine, "skip");
+        continue;
+      }
       if (original.section === "single-cell-spatial") {
         assert.equal(paper.digestLine, "line-a");
         assert.equal(paper.digestTaggingMethod, "llm");
@@ -102,11 +114,7 @@ for (const reportDate of ["2026-08-17", "2026-08-18", "2026-08-19"] as const) {
     const papers = loadFixture(reportDate);
     const biorxiv = papers.filter((paper) => paper.sourceId === "biorxiv");
     const resolved = resolveDigestLines(
-      biorxiv.map((paper) => ({
-        id: paper.id,
-        sourceId: paper.sourceId,
-        section: paper.section,
-      })),
+      biorxiv.map(toResolveInput),
       new Map(biorxiv.map((paper) => [paper.id, "line-a" as const])),
       new Set(biorxiv.map((paper) => paper.id)),
     );
@@ -115,6 +123,28 @@ for (const reportDate of ["2026-08-17", "2026-08-18", "2026-08-19"] as const) {
     }
   });
 }
+
+test("spatial regression: named editorial fixtures stay skip and invisible", () => {
+  const titles = new Set([
+    "Trainee advice for a future that seems uncertain",
+    "From reading to writing",
+  ]);
+  const papers = ["2026-08-17", "2026-08-19"].flatMap((date) =>
+    loadFixture(date).filter((paper) => titles.has(paper.title)),
+  );
+  assert.equal(papers.length, 2);
+
+  const resolved = resolveDigestLines(
+    papers.map(toResolveInput),
+    new Map(papers.map((paper) => [paper.id, "line-b" as const])),
+    new Set(papers.map((paper) => paper.id)),
+  );
+
+  for (const paper of resolved) {
+    assert.equal(paper.digestLine, "skip", paper.title);
+    assert.equal(isVisibleInDigest(paper), false, paper.title);
+  }
+});
 
 test("spatial regression selection: A+B fill before preprint on 2026-08-19 fixture", async () => {
   const papers = loadFixture("2026-08-19").map((paper) => ({

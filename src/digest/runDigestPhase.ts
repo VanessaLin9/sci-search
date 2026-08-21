@@ -20,6 +20,7 @@ import {
   selectFeatured,
 } from "../domain/life-science/digest/selection.js";
 import { fallbackDigestLine } from "../domain/life-science/fallbackDigestLine.js";
+import { shouldSkipForDigest } from "../domain/life-science/digest/skipNonResearch.js";
 import { isPreprintSource } from "../domain/life-science/sources.js";
 import { classifySpatialWithLlm } from "./classifySpatial.js";
 import { isDigestLlmEnabled } from "./config.js";
@@ -77,14 +78,16 @@ function keywordFallbackStatsForPapers(
 ): ReturnType<typeof keywordFallbackTaggingStats> {
   let lineA = 0;
   let lineB = 0;
+  let classified = 0;
   for (const paper of papers) {
     if (isPreprintSource(paper.sourceId)) continue;
+    if (shouldSkipForDigest(paper)) continue;
+    classified += 1;
     const line = fallbackDigestLine(paper);
     if (line === "line-a") lineA += 1;
     else lineB += 1;
   }
-  const nonPreprintCount = papers.filter((p) => !isPreprintSource(p.sourceId)).length;
-  return keywordFallbackTaggingStats(nonPreprintCount, {
+  return keywordFallbackTaggingStats(classified, {
     threshold,
     lineA,
     lineB,
@@ -131,7 +134,9 @@ export async function runDigestPhase(options: {
       tagged = applyKeywordDigestFallback(papers);
       // Whole-stage throw（缺 key／model 等）：failures = 受影響的非預印本數；LLM 關閉路徑仍為 0（PR #38）。
       taggingStats = keywordFallbackStatsForPapers(papers, spatialConfidenceThreshold, {
-        failures: papers.filter((paper) => !isPreprintSource(paper.sourceId)).length,
+        failures: papers.filter(
+          (paper) => !isPreprintSource(paper.sourceId) && !shouldSkipForDigest(paper),
+        ).length,
       });
     }
   } else {
