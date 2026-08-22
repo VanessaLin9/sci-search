@@ -1,0 +1,1383 @@
+{
+  "reportDate": "2026-08-21",
+  "generatedAt": "2026-08-22T10:39:17.083Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03208-5",
+      "title": "The physics of sculpting a living creature",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-08-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03208-5",
+      "doi": "10.1038/s41592-026-03208-5",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41559-026-03177-0",
+      "title": "Coffee spillovers",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-08-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03177-0",
+      "doi": "10.1038/s41559-026-03177-0",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03220-2",
+      "title": "Bonsai reconstructs tree representations for distortion-free visualization and exploration of high-dimensional data",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-08-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03220-2",
+      "doi": "10.1038/s41587-026-03220-2",
+      "abstract": "High-dimensional data are visualized through representation on tree structures.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Bonsai：以樹狀重建實現高維資料的無失真視覺化與探索",
+      "summaryZh": "本文介紹 Bonsai 工具，透過重建樹狀結構來呈現高維資料，達成無失真的視覺化效果。此方法讓使用者能以直觀的樹狀形式探索高維度資料。",
+      "topicTags": [
+        "data-visualization",
+        "high-dimensional-data",
+        "bioinformatics",
+        "tree-representation"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02039-y",
+      "title": "Biosensor reveals unexpected variability in the cGAS response to DNA damage",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-08-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02039-y",
+      "doi": "10.1038/s41556-026-02039-y",
+      "abstract": "We present an updated reporter as the most sensitive readout for cGAS activation. Using this biosensor, we show that cGAS activation during genotoxic stress is rare, and that it is not driven by micronuclei. Instead, subsets of chromosome bridges and complex DNA structures containing DNA–RNA hybrids were found to activate cGAS.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "生物感測器揭示 cGAS 對 DNA 損傷反應的意外變異性",
+      "summaryZh": "本研究發表了一款更新的報導基因作為 cGAS 活化的最靈敏讀值。研究團隊利用此生物感測器顯示，基因毒性壓力（genotoxic stress）期間的 cGAS 活化相當罕見，且並非由微核（micronuclei）所驅動。相反地，研究發現部分染色體橋以及包含 DNA-RNA 複合結構的複雜 DNA 結構會活化 cGAS。這項成果有助於深入理解 cGAS 在細胞受損時的活化機制。",
+      "topicTags": [
+        "cgas",
+        "dna-damage",
+        "biosensor",
+        "cell-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02037-0",
+      "title": "A versatile cGAMP reporter reveals principles of cGAS activation by DNA damage and chromosome instability",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-08-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02037-0",
+      "doi": "10.1038/s41556-026-02037-0",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41556-026-02053-0",
+      "title": "Mechanisms underlying propagation of ferroptotic cell death",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-08-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02053-0",
+      "doi": "10.1038/s41556-026-02053-0",
+      "abstract": "This Perspective discusses emerging evidence for non-cell-autonomous propagation of ferroptotic cell death and highlights the mechanisms that underlie its restriction in tissues, as well as ferroptosis surveillance beyond the cellular level.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "鐵死亡細胞死亡傳播的機制",
+      "summaryZh": "這篇發表於《Nature Cell Biology》的 Perspective 文章，探討鐵死亡（ferroptosis）以非細胞自主方式在細胞間傳播的新興證據。作者整理了目前對於鐵死亡在組織層級如何受到限制的相關機制，並進一步討論超越單一細胞層次的鐵死亡監控（surveillance）現象。整體而言，文章彙整了鐵死亡擴散與其防護機制的研究進展，有助於釐清鐵死亡在生理與病理情境下的傳播範圍。",
+      "topicTags": [
+        "ferroptosis",
+        "cell-death",
+        "cell-biology",
+        "tissue-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02616-1",
+      "title": "Collaborative functionality between three types of inflammation in idiopathic pulmonary fibrosis",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-08-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02616-1",
+      "doi": "10.1038/s41590-026-02616-1",
+      "abstract": "In this Review, Hart and colleagues summarize some of the key cellular players and soluble mediators involved in idiopathic pulmonary fibrosis progression, and how distinct types of inflammation jointly regulate disease progression in concert rather than focusing on individual cytokines or immune cells.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "特發性肺纖維化中三種發炎類型的協同功能",
+      "summaryZh": "本篇評論文章由 Hart 與其同事總結了特發性肺纖維化（idiopathic pulmonary fibrosis）進展過程中涉及的關鍵細胞參與者與可溶性介質。研究探討了不同類型的發炎如何共同協調疾病進展，而非僅專注於單一細胞激素或免疫細胞。這項綜合分析有助於理解多種發炎機制在疾病發展中所扮演的協同角色。",
+      "topicTags": [
+        "immunology",
+        "pulmonary-fibrosis",
+        "inflammation"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003968",
+      "title": "Microsaccadic eye movement generation is sufficient to enhance peripheral visual sensitivity",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-08-21T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003968",
+      "doi": "10.1371/journal.pbio.3003968",
+      "abstract": "Microsaccades have been convincingly linked to extrafoveal covert attention shifts for more than two decades. However, the direction of causality between individual microsaccade generation and an alteration in both extrafoveal visual sensitivity and behavior remains debated: do microsaccades merely reflect, perhaps probabilistically, an altered extrafoveal sensitivity, or is the act of generating microsaccades sufficient, on its own, to modify such sensitivity? Using a novel exploitation of real-time retinal image stabilization, behavior, and neurophysiology in the superior colliculus of rhesus macaque monkeys, we show that exclusive experimental control over foveal oculomotor state is entirely sufficient to influence extrafoveal sensitivity. This happens for eccentricities as large as ~50 times those associated with microsaccades, and it also takes place in the absence of any differential attentional demands. Most importantly, such influence is mediated through well-known, classic pre- and post-saccadic visual processing changes. These results were also confirmed and extended to larger saccades, using human psychophysical experiments. Thus, seemingly-innocuous subliminal eye movements do constitute an integral component of cognitive processes like attention.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1371/journal.pbio.3003967",
+      "title": "Correction: Self-allocation bias in performance-based cooperative decisions is driven by self-interest rather than distorted performance encoding",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-08-21T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003967",
+      "doi": "10.1371/journal.pbio.3003967",
+      "abstract": "by Sihui Zhang, Xue Yong, Yina Ma, Christoph W. Korn",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1371/journal.pbio.3003957",
+      "title": "Caveolin 1 is a conserved host factor mediating Bacillus cereus hemolysin BL toxin cytolytic toxicity",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-08-21T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003957",
+      "doi": "10.1371/journal.pbio.3003957",
+      "abstract": "Hemolysin BL (HBL) is a tripartite α‑pore‑forming toxin and a major Bacillus cereus virulence factor. Although LITAF and its homolog CDIP1 were previously identified as host receptors that promote HBL‑induced cytolysis, mice lacking both proteins remain only partially protected, indicating the existence of additional determinants of susceptibility. Using genome‑wide CRISPR knockout screens in Litaf −/− / Cdip1 −/− mouse embryonic fibroblasts and human HT1080 cells, we identify caveolin‑1 (CAV1), a caveola‑associated membrane protein, as a third conserved host factor required for HBL cytolytic activity. Confocal imaging and co‑immunoprecipitation analyses show that CAV1 colocalizes with HBL and physically associates with the toxin at the plasma membrane. Notably, mice lacking all three factors (Litaf/Cdip1/Cav1 triple knockouts) are completely resistant to HBL toxin challenge, establishing CAV1 as an additional host factor mediating HBL toxin cytotoxicity. These findings define a tripartite host factor system required for HBL toxin activity and position CAV1 as an additional host determinant to B. cereus virulence.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "CRISPR",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.04.01.714123",
+      "title": "Task-dependent Performance of Single-cell Foundation Models under Low Supervision",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-21",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.04.01.714123v2",
+      "doi": "10.64898/2026.04.01.714123",
+      "abstract": "Single-cell foundation models are trained on millions of cells, but their value when downstream labels are scarce remains uncertain. Here we compare seven such models with three established representations across clustering, batch correction, cell type annotation, gene expression reconstruction and perturbation prediction. Frozen representations are tested directly for clustering and batch correction and with lightweight task heads for few-shot prediction. CellPLM led the aggregate clustering, annotation and batch-correction comparisons, scMulan led perturbation prediction, and principal component analysis led reconstruction. Of the seven foundation models, one exceeded the strongest classical baseline in clustering, three in batch correction, four in annotation, none in reconstruction and six in perturbation prediction. Representation analyses linked reconstruction performance to preservation of linear gene relationships, but cross-model gene-relation agreement did not exceed a dimension-matched random-projection null. These results show that the utility of a cell representation depends on the information required by the downstream task.",
+      "authors": [
+        "Xu, Y.",
+        "Li, Y.",
+        "Yuan, Y.",
+        "Cui, P.",
+        "Tu, H.",
+        "Hu, F.",
+        "Zang, Z."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.12.744548",
+      "title": "An Integrated Atlas of the Human Kidney Spanning Health and Diseases",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-21",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.12.744548v2",
+      "doi": "10.64898/2026.08.12.744548",
+      "abstract": "The human kidney contains highly specialized cell populations. Despite numerous single-cell and single-nucleus transcriptomics studies, differences in cohorts, technologies, analytical pipelines, and annotation frameworks have limited the ability to define consensus kidney cell states, identify disease-associated populations and interpret kidney disease genetic susceptibility. Here, we assembled 18 human kidney single-cell and single-nucleus RNA-sequencing datasets spanning 232 donors and five major disease contexts into a uniformly processed and computationally integrated Human Kidney Cell Atlas (HKCA), comprising over one million high-quality cells (816,895) and nuclei (215,308). The HKCA resolves 63 cell types and 120 harmonized cell states, including rare epithelial and stromal populations associated with kidney diseases. Integration with spatial transcriptomics, intercellular communication networks, and human genetic association data further defined the anatomical context and disease relevance of these populations. The HKCA also provides a framework for automated annotation of independent kidney human and mouse datasets. Together, the HKCA establishes a comprehensive reference for human kidney biology, enabling disease interpretation and genetic risk localization at cellular resolution.",
+      "authors": [
+        "Stasinos, K.",
+        "Wang, H.",
+        "Predeus, A. V.",
+        "Richoz, N.",
+        "Menon, R.",
+        "Thokadiwala, M.",
+        "Zhu, Y.",
+        "Tian, R.",
+        "Zhou, W.",
+        "Chatzigeorgiou, A.",
+        "Yordanova, G.",
+        "Zucchi, I.",
+        "Laszik, Z.",
+        "Mueller, M. F.",
+        "The Human Cell Atlas Kidney Bionetwork,",
+        "Subramanian, A.",
+        "Greka, A.",
+        "Regev, A.",
+        "Kretzler, M.",
+        "Marioni, J.",
+        "Luecken, M. D.",
+        "Clatworthy, M.",
+        "Teichmann, S. A.",
+        "He, P."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "spatial transcriptomics",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.01.03.697464",
+      "title": "Spatial mapping of cellular and molecular plasticity in the maternal and postpartum mouse brain",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-21",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.01.03.697464v2",
+      "doi": "10.64898/2026.01.03.697464",
+      "abstract": "Pregnancy is a critical window for neuroplasticity and maternal mental health, yet our understanding of the molecular and cellular changes underlying this adaptation remains incomplete. Here we profile the female mouse brain in nulliparous, late-pregnant and postpartum states with three single-cell spatial technologies (Slide-tags, MERFISH and Xenium). Together these assays resolve 1.5 million cells in one coronal plane spanning the cortex, striatum, lateral septum and preoptic area. Pregnancy is associated with changes in gene expression in most cell types, beyond the circuits previously established to govern maternal behavior. These changes resolve into three programs that are reproducible across platforms: synaptic pathways increase in neurons as growth and plasticity pathways decrease; immune and angiogenic pathways increase in glia and vascular cells; and cholesterol synthesis decreases as uptake increases across both neurons and glia. Finally, mapping human depression genetics onto these data, we find risk genes concentrated almost entirely in neurons, and this concentration changes with reproductive state in the preoptic area, basal forebrain and ventral striatum. These results place the neurons carrying depression risk among the circuits remodeled during pregnancy, providing a possible cellular substrate for peripartum vulnerability.",
+      "authors": [
+        "Arbabi, K.",
+        "Ghazisaeidi, S.",
+        "Kim, M.",
+        "Kukreja, B.",
+        "Feng, M. Y.",
+        "Pogue, S. D.",
+        "Hudson, H.",
+        "Fafouti, M. E.",
+        "Crouch, E. E.",
+        "Galea, L. A. M.",
+        "Tripathy, S. J.",
+        "Kalish, B. T."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "MERFISH",
+        "Xenium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.07.20.739649",
+      "title": "FusedFCR: A Fused Forward Continuation-Ratio model for marker selection along cell-fate trajectories",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-21",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.20.739649v2",
+      "doi": "10.64898/2026.07.20.739649",
+      "abstract": "Time-course single-cell RNA sequencing (scRNA-seq) data collected across ordered stages provide population-level snapshots of differentiation, disease progression, and aging. Supervised pseudotime methods use observed stage labels to reconstruct continuous progression but generally do not identify marker genes associated with changes from one stage to the next. Unsupervised pseudotime-based marker selection methods infer latent trajectories directly from expression data and identify trajectory-associated genes, but do not explicitly link these associations to the observed stages. We propose FusedFCR, a regularized forward continuation-ratio model that represents cellular progression through a sequence of conditional transitions across ordered stages. FusedFCR combines a lasso penalty for gene selection with a fusion penalty that encourages similar effects across adjacent transitions while allowing transient and direction-changing associations. The resulting transition-specific coefficients support interpretable gene selection and a continuous pseudotime-like projection anchored to the observed developmental stages. In simulations, FusedFCR accurately recovers gene-effect trajectories and improved predictive performance relative to alternative methods. Applied to one mouse and three human datasets (mouse pancreatic beta-cells, human extravillous trophoblast, human induced pluripotent stem cell derived astrocytes, and human endometrial cells during the secretory phase), FusedFCR identifies biologically interpretable genes associated with distinct developmental transitions. Gene set enrichment analysis further reveals stage-specific pathway activity consistent with known developmental biology, while held-out stage-classification accuracy was competitive or superior across both datasets. Together, these results show that FusedFCR complements pseudotemporal ordering by identifying which molecular programs change and when those changes emerge along the developmental trajectory. An accompanying R package is available on GitHub.",
+      "authors": [
+        "Mattila, C.",
+        "Chakraborty, A.",
+        "Angel, P.",
+        "Cao, S.",
+        "Sonawane, K.",
+        "Hill, E.",
+        "Chung, D.",
+        "Neelon, B.",
+        "Seal, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "biology",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.03.741871",
+      "title": "Resolving the immune response across clonal cancer evolution in situ with Atera whole transcriptome profiling",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-21",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.03.741871v2",
+      "doi": "10.64898/2026.08.03.741871",
+      "abstract": "Single-cell spatial transcriptomics is now central to studying tumors in their native tissue context. Here we present the first comprehensive, independent evaluation of Atera, a new spatial whole-transcriptome platform, compared with Xenium in human ductal carcinoma in situ (DCIS). We show that Atera enables granular cell-state annotation and resolves rare cell populations, experimentally validated by multiplex immunofluorescence (IF). We further show that its transcriptome-wide coverage enables inference of copy-number alterations at single-cell resolution, allowing us to reconstruct the clonal evolution of DCIS. We orthogonally confirm the inferred copy-number alterations by whole-genome sequencing of 16 microdissected tumor regions from consecutive tissue sections. Finally, by mapping the immune microenvironment onto this clonal architecture, we demonstrate the feasibility of tracking the changes in immune response along the clonal tumor evolution in situ. Together, our results establish Atera as a validated platform for tracking clonal evolution and immune adaptation in clinical samples.",
+      "authors": [
+        "Wu, S.",
+        "Mahajan, M.",
+        "van der Linde, R. M.",
+        "Zhu, C.",
+        "West, R. B.",
+        "van IJzendoorn, D.",
+        "Matusiak, M."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "Xenium",
+        "cancer",
+        "evolution",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.08.17.745278",
+      "title": "Long-read single cell transcriptomics uncovers isoform preferences in developing human retina",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-21",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.17.745278v1",
+      "doi": "10.64898/2026.08.17.745278",
+      "abstract": "Retinal development has been extensively studied and key transcriptional regulators that drive fate decisions have been identified for major cell classes. These findings were confirmed and deepened in recent years with the advance of single cell RNA sequencing (Scrase). However, many processes that guide progenitor to postmitotic cell differentiation remain elusive, especially since some genes seem to yield different cell populations without apparent correlation with expression level or timing. Here, differential transcript isoform usage might play a role in diversifying the function of developmental genes. In short-read based scRNAseq, isoforms can only be identified if a read maps to a unique sequence or exon junction. However, due to the sparsity and very short reads, these events are extremely rare. We combined a commercial scRNAseq kit, that produces barcoded, full-length cDNA with Oxford Nanopore Technologies based long-read sequencing to generate the first single cell long-read sequencing dataset of fetal human retina. It can help elucidate the role of alternative splicing in retinal development and guide the design of transcript-specific gene therapies for retinal regeneration.",
+      "authors": [
+        "Kaplan, L.",
+        "Pang, J.",
+        "Reh, T. A."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.ady8161",
+      "title": "RNA delivery to the corneal endothelium using charge-altering releasable transporters",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.ady8161?af=R",
+      "doi": "10.1126/sciadv.ady8161",
+      "abstract": "RNA therapies hold tremendous promise for treating genetic eye diseases. However, their development is limited by the lack of non-viral delivery platforms that can target specific ocular cell types. Here, we describe a charge-altering releasable transporter (CART) that delivers RNA selectively to the corneal endothelium, a non-regenerative cell layer whose dysfunction underlies several blinding conditions. We characterize the safety of CART-RNA nanoparticles in mice and show that they facilitate delivery of diverse RNA cargoes to the corneal endothelium, including circular RNA and CRISPR/Cas9. We verify that these nanoparticles can be redosed and apply them to achieve corneal gene editing. We further demonstrate CART transfection of corneal endothelial cells from a human donor in vitro and in a non-human primate in vivo, supporting the feasibility of clinical translation. Our findings establish CARTs as a platform for non-viral gene delivery to the eye, with the potential to treat corneal dystrophies and other vision disorders.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development",
+        "CRISPR"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.adz2632",
+      "title": "3D-Printed biodegradable and multifunctional cranial device for bone repair and healing assessment",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz2632?af=R",
+      "doi": "10.1126/sciadv.adz2632",
+      "abstract": "Critical-sized bone defects pose substantial clinical challenges, requiring both regenerative and diagnostic strategies for effective treatment. Here, we report a biodegradable, multifunctional cranial device based on three-dimensional printing. The device integrates a self-electrified scaffold based on a transient zinc-molybdenum battery and an impedance sensor for simultaneous electrical stimulation and continuous assessment of bone healing. The beneficial effects of electrical cues are attributed to elevated calcium ion influx, reactive oxygen species signaling, and up-regulated osteogenesis-related genes. In a rodent cranial defect model, the device promotes osteogenesis while enabling dynamic tracking of early tissue regeneration through impedance measurements. The increase in impedance is associated with enhanced collagen deposition and matrix mineralization. By uniting therapeutic stimulation with in situ monitoring, this work offers a platform for intelligent bone repair with broad potential in regenerative medicine.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "3D列印可降解多功能顱骨裝置 用於骨修復與癒合評估",
+      "summaryZh": "研究團隊開發出一種3D列印的可降解多功能顱骨裝置，結合以暫態鋅鉬電池為基礎的自發電支架與阻抗感測器，可同時提供電刺激並持續監測骨癒合狀況。在大鼠顱骨缺損模型中，此裝置能促進骨生成，其電刺激效益與鈣離子內流增加、活性氧訊號傳遞及成骨相關基因表現量上升有關。阻抗量測結果顯示，阻抗值上升與膠原蛋白沉積及基質礦化增強相關，可作為早期組織再生的動態追蹤指標。這項技術將治療性刺激與原位監測整合於單一平台，為再生醫學中的智慧型骨修復提供了新方向。",
+      "topicTags": [
+        "3d-printing",
+        "bone-regeneration",
+        "biomaterials",
+        "regenerative-medicine",
+        "biosensors"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aea3748",
+      "title": "Spiderweb-inspired electronically conductive hygroscopic adhesive for chronic bioelectronic interface",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea3748?af=R",
+      "doi": "10.1126/sciadv.aea3748",
+      "abstract": "Long-term physiological signal monitoring is critical for accurate diagnosis and effective management of chronic diseases. However, current electrode technologies face significant drawbacks: dry electrodes exhibit high electrochemical impedance and poor adhesion to skin, while wet electrodes suffer from short service lifetimes due to water loss. Inspired by the hygroscopic properties of spider webs, we developed an electronically conductive hygroscopic adhesive (termed as “hygrotrode”) that continuously absorbs ambient moisture through a cross-linked, three-dimensional hygroscopic polymer network. This design maintains a low interface impedance and high adhesion energy for over a year, facilitated by absorbed intermediate water that electrochemically bridges the conducting polymer and skin tissue. The specific impedance of hygrotrode is 82.4 times lower compared with wet electrodes after 1 year. We further demonstrate hygrotrode’s suitability for chronic biopotential monitoring and electromyography-based gesture recognition, highlighting its wide-ranging applicability in long-term wearable electronics and human-machine interfaces.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aeb1346",
+      "title": "Geneformer-guided multiomics integration identifies Pbx1 as a network hub of hematopoietic stem cell aging",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb1346?af=R",
+      "doi": "10.1126/sciadv.aeb1346",
+      "abstract": "Hematopoietic stem cells (HSCs) constitute an organized hematopoietic system that undergoes age-related alterations, including increased platelet production and decreased erythropoiesis. The fundamental mechanisms driving these shifts remain incompletely understood. We used single-cell RNA sequencing data to show that old HSCs contain two distinct transcriptional programs: one shared with megakaryocytes and the other reflecting the most primitive HSC state. Developmental time-series profiling further suggests that the acquisition of these programs begins early in life, with the primitive module rising prenatally and megakaryocytic priming emerging after birth. Using a fine-tuned Geneformer (transformer-based deep learning model) to capture higher-order differences between young and old HSCs, coupled with transcriptomic and epigenetic profiling, as well as transcription factor screens, we identified Pbx1 as a key regulator of these age-related transcriptional and differentiation changes. Specifically, Pbx1 suppresses erythroid differentiation by repressing Gata1 expression. These findings provide insight into HSC aging and may inform approaches to modulate age-associated HSC dysfunction.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "透過 Geneformer 引導的多體學整合識別出 Pbx1 為造血幹細胞老化的網路樞紐",
+      "summaryZh": "本研究探討造血幹細胞（HSCs）隨年齡增長產生的改變，包含血小板生成增加與紅血球生成減少。研究團隊運用單細胞 RNA 定序及發育時間序列分析，指出老化的造血幹細胞包含兩種不同的轉錄程式，且這些程式在生命早期即開始建立。透過微調的 Geneformer 深度學習模型，結合轉錄體學、表觀基因體學及轉錄因子篩檢，研究識別出 Pbx1 是調控這些年齡相關轉錄與分化變化的關鍵調節因子。具體而言，Pbx1 透過抑制 Gata1 的表現來壓抑紅血球分化，這些發現有助於深入理解造血幹細胞老化機制。",
+      "topicTags": [
+        "single-cell",
+        "stem-cells",
+        "aging",
+        "deep-learning",
+        "multiomics"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aeb8744",
+      "title": "Constitutively active glucagon receptor (GCGR) physiologically regulates body temperature in lizards",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeb8744?af=R",
+      "doi": "10.1126/sciadv.aeb8744",
+      "abstract": "Endotherms use complex internal mechanisms to maintain a steady body temperature, whereas ectotherms rely on environmental factors and behaviors for thermoregulation. Certain ectothermic animals, like some lizards, can also physiologically regulate their body temperature to some extent, with interspecies variations in thermoregulatory capacity under low-temperature conditions. However, the molecular mechanisms underlying this physiological regulation have remained unclear since its discovery about 80 years ago. Here, we reveal that the hepatic expression of constitutively active glucagon receptor (GCGR) in lizards, particularly in iguana, correlated with their thermoregulatory capacity when kept at low temperatures. When Pogona vitticeps and Phrynocephalus vlangalii with thermoregulatory capacity were treated with short hairpin RNA– GCGR or GCGR antagonist, their body temperatures dropped, and the expression of genes related to energy metabolism and respiratory metabolic rate was down-regulated. In contrast, Eremias argus , lacking thermoregulatory ability, revealed low hepatic GCGR expression. Overexpression of P. vitticeps GCGR (pv GCGR ) in the liver of E. argus increased body temperature and enhanced energy metabolism. Furthermore, in mice with reduced thermoregulatory ability by chlorpromazine administration, overexpression of constitutively active GCGR ligand-independently increased body temperature under cold conditions. In conclusion, constitutively active GCGR drives the physiological thermoregulation in lizards, and our study offered previously unidentified insights into expression regulation of constitutively active GPCR into physiological adaptations responding to environmental changes.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "具組成性活性的升糖素受體（GCGR）在生理上調節蜥蜴的體溫",
+      "summaryZh": "本研究揭示了蜥蜴肝臟中具組成性活性的升糖素受體（GCGR）表現，與其在低溫條件下的體溫調節能力相關。實驗表明，抑制或阻斷具體溫調節能力之蜥蜴的 GCGR 會導致體溫下降及能量代謝相關基因表現下調，而缺乏此能力的蜥蜴過度表現 GCGR 則能提高體溫並增強能量代謝。此外，在體溫調節能力受損的小鼠中，過度表現組成性活性的 GCGR 也能在寒冷條件下不依賴配體地提高體溫。這些發現闡明了組成性活性 GCGR 驅動蜥蜴生理性體溫調節的機制，並為組成性活性 G 蛋白偶聯受體（GPCR）在響應環境變化的生理適應中提供了新見解。",
+      "topicTags": [
+        "physiology",
+        "thermoregulation",
+        "receptor",
+        "metabolism"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aec0156",
+      "title": "Impacts of land use and fallowing on coccidioidomycosis incidence in California: A population-based longitudinal study",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec0156?af=R",
+      "doi": "10.1126/sciadv.aec0156",
+      "abstract": "Coccidioidomycosis (Valley fever) is a growing public health concern in the western U.S., with California reporting more than an eightfold rise in cases over the past two decades. As climate change, groundwater regulation, and prolonged drought drive major agricultural land-use shifts in the state, including widespread retirement of cultivated lands (i.e., fallowing), understanding their effects on this soil-borne fungal infection is critical. We linked 65,657 confirmed, geolocated cases (2008–2021) to high-resolution maps distinguishing natural vegetation, crop types, and fallowed fields to quantify how land use and land cover were associated with disease rates. Flexible statistical models showed that natural land covers, shrubland, barren ground, and grassland, were associated with higher incidence. Some agricultural uses (grain/hay, field crops, corn, and cotton) were associated with higher incidence, whereas others (orchards, rice, and truck crops/berries) were associated with lower incidence. Recently fallowed land (1 to 4 years) was linked to higher incidence, but the effect depended on prior cultivation. These findings indicate that land use changes may inadvertently impact coccidioidomycosis risk, underscoring the need for dust control and other measures to protect communities.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec3893",
+      "title": "Enriched experience increases reciprocal synaptic connectivity and coding sparsity in higher-order cortex",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec3893?af=R",
+      "doi": "10.1126/sciadv.aec3893",
+      "abstract": "The integration of new information during sleep reshapes cortical representations that support categorical knowledge. Autoassociative attractor network theories predict that reciprocal excitatory connections help form stable categorical attractors, but direct evidence is missing. We tested this using 10 weeks of enriched experience [environmental enrichment (ENR)] in mice as a model for knowledge accumulation and recorded single-unit activity across the hippocampus and neocortex. ENR induced significant remodeling in high-level but not low-level neocortex, with a major shift from unidirectional to bidirectional functional excitatory-excitatory connections, suggestive of increased “cell assemblies.” This was accompanied by increased inhibitory-to-excitatory connections and sparser, more orthogonal population activity during awake rest and slow-wave sleep, particularly in deep layers. Thus, ENR reorganizes cortical circuits into a symmetric, inhibition-balanced network that improves coding efficiency, supporting long-standing attractor network predictions.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "豐富環境經驗提升高階皮質雙向突觸連結與編碼稀疏度",
+      "summaryZh": "研究以小鼠接受十週豐富環境（ENR）經驗作為知識累積的模型，並記錄海馬迴與新皮質的單細胞活動。結果顯示，ENR 誘發高階（但非低階）新皮質顯著重塑，功能性興奮性—興奮性連結由單向大幅轉為雙向，暗示「細胞組合」增加。同時，抑制性—興奮性連結也上升，且在清醒靜息與慢波睡眠期間，特別是深層皮質中，群體活動變得更稀疏、更正交。整體而言，ENR 將皮質迴路重組為對稱且抑制平衡的網路，提升編碼效率，支持吸引子網路理論的長期預測。",
+      "topicTags": [
+        "neuroscience",
+        "cortical-circuits",
+        "enriched-environment",
+        "attractor-network",
+        "single-unit-recording"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aec5063",
+      "title": "Large-scale proteomics to identify novel biomarkers linking social determinants of health to heart failure risk",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec5063?af=R",
+      "doi": "10.1126/sciadv.aec5063",
+      "abstract": "Adverse social determinants of health (SDOH) associate with greater heart failure (HF) risk. Among 9879 community-based participants of the Atherosclerosis Risk in Communities (ARIC) cohort study, we assessed 4955 plasma proteins using an aptamer-based platform (SomaLogic). We derived an SDOH factor comprising income, education, and area deprivation index (ADI) in Black and white participants. Proteins associated with this factor at Bonferroni significance were tested for associations with incident HF using multivariable Cox proportional hazard models. Among Black participants, 36 proteins were associated with both the SDOH factor and incident HF, 126 were among white participants, and 12 were shared between race strata. Eight of these demonstrated significant mediation effect in causal mediation models. Key results were replicated in 49,396 participants in UK Biobank. Mendelian randomization and colocalization suggested a potentially causal effect of C1q tumor necrosis factor–related protein 1 (C1QTNF1), an adiponectin paralog, on HF. We demonstrate protein biomarkers associated with SDOH burden and HF risk.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec7066",
+      "title": "Sphingosine kinase 2 regulates adipocyte browning and whole-body metabolism",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec7066?af=R",
+      "doi": "10.1126/sciadv.aec7066",
+      "abstract": "Obesity increases circulating levels of the bioactive sphingolipid metabolite sphingosine-1-phosphate (S1P). Here, we identify adipocyte-expressed sphingosine kinase 2 (SPHK2), an enzyme that produces S1P, as a regulator of adipose tissue browning. Mice with adipocyte-specific deletion of Sphk2 were protected from Western diet–induced obesity concomitantly with elevated energy expenditure and browning of subcutaneous fat. Sphk2 deletion also enhanced expression of Ucp1 and key thermogenic genes, resulting in reduced adiposity and hepatic steatosis, improved glucose tolerance, and insulin sensitivity. Mechanistically, obesogenic diet promoted nuclear localization of SPHK2 in adipocytes, where it cooperated with transcription factors to suppress the thermogenic transcriptome. Adipocyte SPHK2 contributes to homeostatic circulating S1P levels and drive the pathogenic rise of S1P in response to obesogenic diet. Our findings reveal a distinct role of adipocyte SPHK2 in regulation of the thermogenic program important for whole-body metabolic homeostasis and energy expenditure, highlighting SPHK2 as a potential therapeutic target for treatment of metabolic disorders.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec8746",
+      "title": "δ2-Protocadherins organize parallel indirect basal ganglia circuits",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec8746?af=R",
+      "doi": "10.1126/sciadv.aec8746",
+      "abstract": "The basal ganglia (BG) contain multiple parallel neural circuits, each of which may control different behaviors. However, how the distinct parallel BG circuits are molecularly organized is not known. Here, we show that two δ2-protocadherins (PCDHs), PCDH17 and PCDH10, which are homophilic cell adhesion molecules, establish and define two distinct indirect BG circuits that regulate different behaviors. PCDH17 and PCDH10 are expressed in a complementary expression pattern in the BG, anatomically defining two parallel indirect BG connections. Indirect pathway–specific Pcdh17 and Pcdh10 conditional knockout (cKO) mice show impaired establishment of the indirect BG circuits in a region-preferential manner. Last, the Pcdh17 cKO mice show defects in task learning, while the Pcdh10 cKO mice show defects in motor/sensory habituation. These results identify PCDH17 and PCDH10 as the molecular organizers for two distinct indirect BG circuits regulating different behaviors and reveal the molecular mechanisms for organizing parallel BG circuits.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aed2521",
+      "title": "Abscisic acid–regulated stability of CmABF1 and CmBRM modulates salt tolerance in chrysanthemum via epigenetic regulation of CmHSFA4",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed2521?af=R",
+      "doi": "10.1126/sciadv.aed2521",
+      "abstract": "Soil salinization poses a major threat to global agricultural productivity and plant biodiversity. The phytohormone abscisic acid (ABA) is central to plant adaptation to abiotic stress; however, the mechanisms by which ABA coordinates posttranslational modifications of signaling proteins with epigenetic regulation remain poorly understood. Here, we show that salt stress–induced ABA accumulation up-regulates Heat Shock Factor 4 ( CmHSFA4 ), a gene that is known to enhance chrysanthemum salt tolerance. The ABA responsive transcription factor ABRE binding factor 1 (CmABF1) binds to the CmHSFA4 promoter to activate its expression and also recruits the chromatin remodeler BRAHMA (CmBRM) to repress transcription by limiting H3 lysine-4 trimethylation (H3K4me3) deposition. We further demonstrate that the ABA-activated sucrose non-fermenting-1-related protein kinase 2.2 (CmSnRK2.2) phosphorylates and stabilizes CmABF1, while concurrently phosphorylating and promoting CmBRM degradation under salt stress. This dual regulation enhances H3K4me3 enrichment at the CmHSFA4 promoter, thereby inducing its transcription and conferring salt tolerance. Together, our findings reveal an ABA-SnRK2.2-ABF1/BRM signaling module that integrates phosphorylation-dependent protein stabilization and degradation with histone methylation dynamics to fine-tune salt stress–responsive gene expression in chrysanthemum.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "離層素調控 CmABF1 與 CmBRM 之穩定性，透過 CmHSFA4 的表觀遺傳調控來調節菊花的耐鹽性",
+      "summaryZh": "本研究探討了植物荷爾蒙離層素（ABA）如何透過信號蛋白的轉譯後修飾與表觀遺傳調控的協調，來幫助植物適應鹽分逆境。研究發現，鹽分逆境誘導的 ABA 累積會透過 CmSnRK2.2 激酶磷酸化並穩定 CmABF1，同時促進染色質重塑因子 CmBRM 的降解。這種雙重調節機制限制了組蛋白甲基化（H3K4me3）的沉積，並活化了有助於增強菊花耐鹽性的 CmHSFA4 基因表現。這些發現揭示了一個整合磷酸化依賴性蛋白穩定與降解及組蛋白甲基化動態的 ABA-SnRK2.2-ABF1/BRM 信號模組。",
+      "topicTags": [
+        "plant-biology",
+        "epigenetics",
+        "stress-response",
+        "molecular-biology"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aee1634",
+      "title": "Metabolic-epigenetic rewiring of CCR5hi monocytes sustains long-term trained immunity against lethal sepsis",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee1634?af=R",
+      "doi": "10.1126/sciadv.aee1634",
+      "abstract": "Trained immunity enhances innate host defense by endowing monocytes with memory-like properties, yet the underlying integrated metabolic and epigenetic mechanisms remain elusive. Here, we demonstrate that coimmunization with Bacille Calmette-Guérin (BCG) and bacterial lipoprotein (BLP) induces a durable form of trained immunity that provides robust, long-term protection against polymicrobial sepsis from early life into adulthood. Single-cell RNA sequencing revealed that this effect is mediated by an expansion of CCR5 hi memory-like monocytes with enhanced antimicrobial capacity. Mechanistically, BCG + BLP vaccination activated the AKT–mTOR–HIF-1α axis, driving glycolytic reprogramming and lactate accumulation. Elevated lactate enhanced KAT2B-dependent histone H3K18 lactylation, an epigenetic mark directly facilitating the transcription of phagocytic and inflammatory genes. In addition, BCG + BLP stimulation of human cord blood mononuclear cells induced CCR5 hi monocytes that recapitulated trained immunity features. These findings identify a lactate-KAT2B-H3K18la epigenetic axis that orchestrates the long-term reprogramming of CCR5 hi monocytes, highlighting CCR5 hi monocytes as a promising therapeutic target for modulating innate immunity against lethal sepsis.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aef4377",
+      "title": "High–spatiotemporal resolution deuterium metabolic imaging enables in vivo phenotyping of intra- and intertumoral heterogeneity",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef4377?af=R",
+      "doi": "10.1126/sciadv.aef4377",
+      "abstract": "Intra- and intertumoral heterogeneities raise fundamental biological questions and have important implications for accurate cancer diagnosis, prognosis, and treatment. These heterogeneities reflect tumor complexity, including a pronounced diversity in metabolic phenotypes and profiles. This study demonstrates that in vivo deuterium metabolic imaging (DMI) data acquired with sufficiently high spatiotemporal resolution provide a minimally invasive approach to assess these heterogeneities. A multifrequency DMI approach was used to examine tumor heterogeneities within and between colon cancer models. Regions of high and low glucose enrichment and labeled lactate accumulation could thus be detected; these were analyzed using unsupervised clustering strategies based on k -means clustering of area-under-the-curve information, and principal components analysis with Gaussian mixture modeling. Spatial alignment of these imaging-derived clusters for 2 H-glucose and 2 H-lactate showed good agreement with each other as well as with histological sections, validating the biological relevance of the identified subregions. Immunohistochemical analyses showed that glucose-enriched subregions were positively correlated with the expression of GLUT1 and DLAT, while lactate-enriched areas showed elevated expression of LDHA and MCT4. These results demonstrate that in vivo DMI can distinguish metabolically distinct subregions within viable tumors and between tumor models. DMI-based metabolic maps could thus provide the means to characterize intra- and intertumoral heterogeneities, paving the way for imaging-based metabolic phenotyping in precision oncology.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aef7087",
+      "title": "Matrix stress relaxation drives glioblastoma cell response in viscoelastic biomaterials",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef7087?af=R",
+      "doi": "10.1126/sciadv.aef7087",
+      "abstract": "The extracellular matrix (ECM) of glioblastoma (GBM) is known to modulate cell behavior, yet the specific contributions of matrix biochemical and biomechanical signaling remain poorly understood. To address this, we engineer a tunable hyaluronan-elastin-like protein (HELP) hydrogel to independently control ligand presentation and matrix viscoelasticity. Two peptides mimicking fibronectin (FBN) and tenascin-C (TNC) are incorporated into HELP along with hyaluronan, all of which are highly up-regulated in GBM. Using dynamic covalent chemistry, we develop hydrogels with matched stiffness but distinct stress relaxation profiles. Slow stress-relaxing matrices promote cell clustering and elevated expression of P-selectin, a GBM invasion marker. These matrices also result in increased nascent ECM production, increased lipid droplet storage, and altered cytokine secretion. Our results highlight the benefit of protein-engineered, viscoelastic biomaterials for modeling the tumor microenvironment and reveal matrix viscoelasticity as a critical regulator of GBM cell state, offering a tool for identifying previously unrecognized therapeutic targets.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aef8133",
+      "title": "Orthogonal DNA barcoding enables subpopulation-resolved extracellular vesicle miRNA profiling",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef8133?af=R",
+      "doi": "10.1126/sciadv.aef8133",
+      "abstract": "Extracellular vesicle–associated microRNAs (EV-miRNAs) hold promise for liquid biopsy, but their clinical utility is hindered by EV heterogeneity. Here, we report DEEPER, a DNA-encoded orthogonal recognition platform for selective barcoding of tumor-derived EV subpopulations and in situ miRNA profiling. DEEPER uses four aptamers targeting Cluster of Differentiation 44 (CD44), Epidermal Growth Factor Receptor‌ (EGFR), Human Epidermal Growth Factor Receptor 2‌ (HER2), and ‌Programmed Death-Ligand 1(PD-L1) to generate orthogonal barcodes that distinguish 15 EV subpopulations. Barcoded EVs then undergo targeted membrane fusion with liposome probes, enabling sensitive in situ analysis of subpopulation-specific miRNAs. In a 60-sample cohort of patients with gastric cancer (GC) and healthy donors (HDs), DEEPER identified a high-performing signature, GC-EV miRNA Prime, comprising EGFR + , EGFR + HER2 + , and EGFR + HER2 + CD44 + EVs, which achieved 98.3% diagnostic accuracy. The same profiling framework also assessed tumor invasiveness with 95.5% accuracy. Mechanistic studies further showed that these EV-miRNAs contribute to tumor progression. In summary, DEEPER not only confirmed the clinical application value of EV-miRNA–based liquid biopsy but also provided unique insights through the EV subpopulations into the mechanisms driving cancer development.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer",
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aef8347",
+      "title": "Single-cell quantification reveals divergent mixotrophic strategies underlying niche partitioning in marine Synechococcus",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef8347?af=R",
+      "doi": "10.1126/sciadv.aef8347",
+      "abstract": "Marine Synechococcus is among the most widespread and productive autotrophs in the ocean, yet the quantitative role of mixotrophy in different lineages remains poorly constrained. Here, we compared organic nitrogen (urea and leucine) and carbon (glucose) utilization in nutrient-depleted versus nutrient-rich Synechococcus lineages by combining NanoSIMS-based single-cell measurements from field and laboratory incubations with omics analyses. Our findings revealed distinct mixotrophic strategies in different lineages. In nutrient-depleted lineages, elevated urea uptake supplied approximately 40–63% of the estimated total nitrogen demand. This pattern aligned with genomic evidence of enhanced urea transport, particularly the up-regulation of the high-affinity urea transporter DUR3 in low-nitrogen environments. In contrast, nutrient-rich lineages exhibited greater glucose uptake, although the amended organic substrates contributed only 2 to 4% to the estimated cellular carbon demand. These lineage-specific mixotrophic strategies underpinned niche partitioning in marine Synechococcus , refining our understanding of their trophic differentiation and its implications for marine biogeochemical cycling.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞定量揭示海洋聚球藻中支持生態棲位分化的相異混合營養策略",
+      "summaryZh": "本研究結合了 NanoSIMS 單細胞測量與體學分析，比較了海洋聚球藻（Synechococcus）在不同譜系中對於有機氮與有機碳的利用情形。結果顯示，不同譜系展現出相異的混合營養策略，其中貧營養譜系透過提升尿素攝取來供應顯著比例的氮需求。相較之下，富營養譜系則表現出較高的葡萄糖攝取量，儘管其對碳需求的貢獻有限。這些譜系特異的混合營養策略支持了海洋聚球藻的生態棲位分化，並深化了對其營養分化及海洋生物地化循環意涵的理解。",
+      "topicTags": [
+        "single-cell",
+        "marine-biology",
+        "microbial-ecology",
+        "biogeochemistry"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aeg0031",
+      "title": "Modeling the effects of climate risk on primates globally: New perspectives on conservation priorities",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg0031?af=R",
+      "doi": "10.1126/sciadv.aeg0031",
+      "abstract": "Rapid climate change poses a severe threat to biodiversity, and phylogenetic diversity—a key metric capturing evolutionary uniqueness and adaptive potential—is critical for conservation. Integrating a well-resolved phylogenetic tree of 424 primate species, we combined spatial analysis and climate risk modeling to explore global spatiotemporal patterns of primates and assess their vulnerability under future climate scenarios. The results suggest a pronounced latitudinal pattern in primate distribution, with isothermality and annual mean precipitation as key drivers. Primate species in the American tropics (Mexico, Central, and South America) and southern China showed later divergence times and lower phylogenetic diversity, emerging as neo-hotspots for primates. Under future climate change, species in these neo-hotspots will face higher climate risks than those in paleo-hotspots of primate diversity. In addition, high human pressure, high climate risk, and limited protected area coverage increase species and population survival risks in hotspot regions. Overall, this global study deepens our understanding of biodiversity conservation under current climate change scenarios and synergistically advances the preservation of numerous natural services essential to ecosystem health and human well-being. Our study provides a spatially explicit framework to fulfill Targets 3 and 8 of the Kunming-Montreal Global Biodiversity Framework.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aeg3586",
+      "title": "Thermal bottlenecks constrain early-life survival of native fish in regulated rivers",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg3586?af=R",
+      "doi": "10.1126/sciadv.aeg3586",
+      "abstract": "Climate change is reshaping thermal regimes worldwide, threatening species whose early development depends on narrow temperature ranges. Yet directly linking warming to reproductive failure in wild populations remains intractable, particularly in aquatic ecosystems. We developed an empirical framework integrating stable isotope thermometry of archival tissues, landscape-scale temperature modeling, and field surveys to identify when and where successful reproduction occurs. Applying this approach to endangered winter-run Chinook salmon confined below a large dam, we revealed a narrow “critical thermal window” during early development. Surviving juveniles experienced temperatures below 12.5°C within ∼15 days of fertilization, and modest warming during this period sharply reduced survival. In warm years, dam-released cold-water overlapped only briefly with this window, restricting successful reproduction to a small fraction of the total spawning season. These results show how climate warming and river regulation interact to constrain population persistence and provide a framework to guide research on assessing climate vulnerability in temperature-sensitive species.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aec7792",
+      "title": "Antigen-experienced airway CD8+ effector memory T cells promote a detour pathway for mycobacterial killing in the spleen",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec7792?af=R",
+      "doi": "10.1126/sciadv.aec7792",
+      "abstract": "A 3-week delay in the onset of T cell immunity to Mycobacterium tuberculosis ( Mtb ) infection compromises lung bacterial control, resulting in tuberculosis (TB). Restoring T cell function is a priority. We identified how airway CD44 + CD62L − KLRG1 + CD8 + effector memory T cells (T EM ) in the lung enhance mycobacterial clearance via the spleen. Unexpectedly, a secondary immune response following repeated exposure of mice to Bacille Calmette-Guérin generated lower numbers of T EM versus primary. Paradoxically, lower numbers correlated with faster bacterial clearance, due to enhanced trafficking of secondary T EM to the spleen, where they responded to antigen. Further, secondary T EM recruited dendritic cells, which accelerated bacterial translocation from the lung to the spleen. Treating mice with a threshold number of airway-derived secondary T EM significantly reduced Mtb burden in the lung and spleen. Notably, Mtb killing was expedited by at least 15 days. Repeated antigen encounter bypassed priming requirements and enhanced T EM durability, uncovering a spleen-centered protective mechanism with implications for improved TB vaccines and therapies.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "具抗原經歷的呼吸道 CD8+ 效應記憶 T 細胞促進分枝桿菌在脾臟中清除的繞道途徑",
+      "summaryZh": "本研究發現呼吸道中的 CD8+ 效應記憶 T 細胞（$T_{EM}$）能透過脾臟增強分枝桿菌的清除。反覆接觸抗原所產生的次級 $T_{EM}$ 數量雖較少，但因其能增強至脾臟的走向並招募樹突細胞，反而能加速細菌自肺部向脾臟的移位。以閾值數量的呼吸道來源次級 $T_{EM}$ 治療小鼠，能顯著減少肺部與脾臟中的結核分枝桿菌（Mtb）負擔，並使殺菌時間提前至少 15 天。這項研究揭示了一種以脾臟為中心的保護機制，對改進結核病疫苗與療法具有重要意義。",
+      "topicTags": [
+        "immunology",
+        "tuberculosis",
+        "t-cells",
+        "infectious-disease"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.aed3119",
+      "title": "A multi-functional oral small molecule targeting energy and lipid metabolism to treat obesity and related metabolic disorders",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed3119?af=R",
+      "doi": "10.1126/sciadv.aed3119",
+      "abstract": "Obesity and related metabolic disorders have surged globally, and are mechanistically interconnected through dysregulated energy and lipid metabolism pathways. Current incretin-based obesity treatments act to decrease food intake, but are associated with gastrointestinal side effects and muscle wasting. Here, we identified an orally bioavailable multi-functional small molecule, 5-tetradecyloxy-2-furoic acid (TOFA), that promotes energy expenditure and rebalances lipid synthesis, thereby significantly alleviating obesity, abnormal glucose homeostasis and fatty liver-related diseases without affecting food intake or muscle mass. Mechanistically, TOFA inhibits the lipogenic enzymes acetyl-CoA carboxylases 1 and 2 (ACC1/2) and activates the Peroxisome Proliferator-Activated Receptors alpha and delta (PPARα/δ), key regulators of energy expenditure and lipid metabolism gene expression programs. TOFA acted more than additively with incretin analogs such as semaglutide and tirzepatide to improve obesity, dyslipidemia, and insulin resistance. Our findings suggest that the coordinated multi-targeting of energy metabolism and lipid homeostasis by TOFA is an effective approach to address multiple associated metabolic diseases.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "針對能量與脂質代謝的多功能口服小分子，可治療肥胖及相關代謝疾病",
+      "summaryZh": "本研究指出，口服生物可利用的多功能小分子 5-tetradecyloxy-2-furoic acid (TOFA) 能促進能量消耗並重新平衡脂質合成，在不影響食欲或肌肉量的情況下，顯著緩解肥胖、異常葡萄糖恆定及脂肪肝相關疾病。在機制上，TOFA 會抑制脂肪生成酶乙醯輔酶A羧化酶 1 與 2 (ACC1/2)，並活化過氧化體增殖物活化受體阿爾法與德塔 (PPARα/δ)，藉此作為能量消耗與脂質代謝基因表現程式的關鍵調節因子。研究亦發現，TOFA 與腸泌素類似物（如 semaglutide 與 tirzepatide）併用時，在改善肥胖、血脂異常與胰島素阻抗方面展現出加乘效果。這些發現顯示，以 TOFA 協同多重標靶能量代謝與脂質恆定，是應對多種相關代謝疾病的有效方法。",
+      "topicTags": [
+        "obesity",
+        "lipid-metabolism",
+        "energy-metabolism",
+        "small-molecule",
+        "metabolic-disorders"
+      ]
+    },
+    {
+      "id": "10.1126/sciadv.adz6665",
+      "title": "Multilocus basis of incipient reproductive isolation in hybridizing populations is revealed by pangenomic and epigenetic divergence",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.adz6665?af=R",
+      "doi": "10.1126/sciadv.adz6665",
+      "abstract": "Incipient reproductive isolation in the presence of gene flow has traditionally been attributed to a small number of major-effect loci under strong selection. Here, using the Heliconius erato adaptive radiation, we apply a pangenome framework to examine how mutational divergence, regulatory variation, and structural variants contribute to genome-wide divergence. In contrast to earlier studies, our high-resolution analyses reveal widespread divergence across the genome, consistent with a multilocus barrier to gene flow. Our findings support a model in which selection acts on regulatory phenotypes under migration-selection balance, with genetic differentiation becoming more pronounced as gene flow declines. By integrating population-level sampling, we show that apparent population-specific structural and regulatory variation inferred from single-reference genomes is overestimated, reflecting pervasive reference bias. While structural variants contribute to genomic variation, in our system, most are shared or polymorphic rather than fixed differences between populations. Together, our results show that the genomic landscape of H. erato divergence reflects the combined contributions of regulatory variation and mutational change, while highlighting the importance of accounting for reference bias when interpreting structural and regulatory divergence. This multilocus framework provides a more accurate view of how reproductive barriers emerge and strengthen under ongoing gene flow.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aeh5460",
+      "title": "Regulating phonon-carrier transport by interfacial symmetry breaking in thermoelectric multilayers",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeh5460?af=R",
+      "doi": "10.1126/sciadv.aeh5460",
+      "abstract": "More than half of global primary energy is dissipated as low-grade waste heat, yet thermoelectric conversion remains constrained by the intrinsic coupling between phonon and charge transport. Here, we introduce graded interfacial size distribution as a thermodynamic design variable that breaks translational symmetry in multilayers, enabling anisotropic regulation of phonon-carrier transport. Using bismuth telluride (Bi 2 Te 3 )/metal [gold, silver, and platinum (Pt)] multilayers as a model system, we demonstrate that multiscale interface distributions induce broadband phonon suppression through the coexistence of interfacial scattering, coherent interference, and localization. This yields an ultralow cross-plane thermal conductivity of 0.22 watts per meter per kelvin and a high room-temperature ZT of 1.51 in Bi 2 Te 3 /Pt films. Concurrently, asymmetric metal-semiconductor interfaces create quasi–two-dimensional accumulation channels that enhance in-plane carrier mobility while preserving energy filtering, delivering a power factor of 176.2 microwatts per centimeter per square kelvin at 300 kelvin. The graded architecture enables high performance in both vertical and flexible planar devices, illustrating a general strategy in which interface distribution, not merely composition, governs anisotropic heat-charge transport. Our findings establish statistical interface engineering as a platform for thermoelectric energy harvesting and solid-state cooling.",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false
+    },
+    {
+      "id": "10.1126/sciadv.aek2171",
+      "title": "Erratum for the Research Article “Simple technologies and diverse food strategies of the Late Pleistocene and Early Holocene at Huaca Prieta, Coastal Peru” by T. Dillehay et al.",
+      "journal": "Science Advances",
+      "publishedDate": "2026-08-21T07:00:00.000Z",
+      "url": "https://www.science.org/doi/abs/10.1126/sciadv.aek2171?af=R",
+      "doi": "10.1126/sciadv.aek2171",
+      "sourceId": "science-advances",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 65,
+      "passedByScope": 16,
+      "llmClassified": 40,
+      "llmYes": 20,
+      "llmNotSure": 0,
+      "llmNo": 20,
+      "keywordFallbackClassified": 9,
+      "keywordFallbackYes": 4,
+      "keywordFallbackNo": 5,
+      "included": 40,
+      "excluded": 25
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 31,
+      "llmTagged": 31,
+      "llmLineA": 2,
+      "llmLineB": 29,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 39,
+      "candidates": 37,
+      "featured": 12,
+      "overflow": 25,
+      "lineA": 2,
+      "lineB": 29,
+      "preprint": 6,
+      "skip": 2,
+      "featuredLineA": 2,
+      "featuredLineB": 10,
+      "featuredPreprint": 0,
+      "overflowLineA": 0,
+      "overflowLineB": 19,
+      "overflowPreprint": 6
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "primarySucceeded": 4,
+      "fallbackSucceeded": 8,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 25,
+      "llmTranslated": 0,
+      "failed": 25
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02596-0",
+        "title": "Earth-shaking thunder probes underground geology",
+        "journal": "Nature",
+        "publishedDate": "2026-08-21T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02596-0",
+        "doi": "10.1038/d41586-026-02596-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02566-6",
+        "title": "Why we must stop talking about artificial general intelligence — and instead build ‘pro-worker’ AI",
+        "journal": "Nature",
+        "publishedDate": "2026-08-21T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02566-6",
+        "doi": "10.1038/d41586-026-02566-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02352-4",
+        "title": "Sleuth identifies dozens of studies that used the wrong antibody",
+        "journal": "Nature",
+        "publishedDate": "2026-08-21T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02352-4",
+        "doi": "10.1038/d41586-026-02352-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aec8232",
+        "title": "Fate of heat approaching the Filchner-Ronne Ice Shelf mediated by continental shelf eddies",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec8232?af=R",
+        "doi": "10.1126/sciadv.aec8232",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee4668",
+        "title": "Dynamically manipulated interface polarization via symmetry engineering for self-gated electronics",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee4668?af=R",
+        "doi": "10.1126/sciadv.aee4668",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee7066",
+        "title": "A triboelectric airflow field sensor enables cross-scale multi-parameter sensing in meter-scale flapping-wing aircrafts",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee7066?af=R",
+        "doi": "10.1126/sciadv.aee7066",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee8016",
+        "title": "Interaction topology theory deciphers multiscale codes of MOF-like materials",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee8016?af=R",
+        "doi": "10.1126/sciadv.aee8016",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aee8946",
+        "title": "Stress-induced ripping enables fabrication of nanopores with dimensions smaller than the resolution limit of the employed lithography",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aee8946?af=R",
+        "doi": "10.1126/sciadv.aee8946",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aef5458",
+        "title": "Multidimensional spectro-temporal imaging of exciton dynamics under propagating acoustic strain in two-dimensional semiconductors",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef5458?af=R",
+        "doi": "10.1126/sciadv.aef5458",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aef5993",
+        "title": "Pulseometry: A differential readout to compensate signal drift of potentiometric probes",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef5993?af=R",
+        "doi": "10.1126/sciadv.aef5993",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aef7693",
+        "title": "Molecular-driven lead-free halide photoferroelectric solid solution for high-temperature sensitive self-powered x-ray detection",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef7693?af=R",
+        "doi": "10.1126/sciadv.aef7693",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeg3333",
+        "title": "A ciliated intravascular soft millirobot for multimodal in-flow collective manipulation",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg3333?af=R",
+        "doi": "10.1126/sciadv.aeg3333",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeg8096",
+        "title": "Imaging Earth’s subsurface with thunderstorm-generated seismic waves",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg8096?af=R",
+        "doi": "10.1126/sciadv.aeg8096",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeg8624",
+        "title": "Mortise-and-tenon molecular chains enable polymeric hexagonal crystallinity with superior high-temperature capacitor performance",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeg8624?af=R",
+        "doi": "10.1126/sciadv.aeg8624",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeh0436",
+        "title": "Unifying energy and information harvesting for high-rate self-powered sensing",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeh0436?af=R",
+        "doi": "10.1126/sciadv.aeh0436",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeh7273",
+        "title": "Rapid fabrication of stretchable, ultratough, and rigid polymer materials",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeh7273?af=R",
+        "doi": "10.1126/sciadv.aeh7273",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeh9096",
+        "title": "Strong anharmonicity driven wave-like thermal transport and high thermoelectric performance in TlCu5Se3",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeh9096?af=R",
+        "doi": "10.1126/sciadv.aeh9096",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aei2400",
+        "title": "Nonlocal microwave engineering: Shaping dispersion relations and enabling pulse transformations via time-switched long-range couplings",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aei2400?af=R",
+        "doi": "10.1126/sciadv.aei2400",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aef8657",
+        "title": "End-to-end all-optical in-sensor computing system using photonic integrated circuits",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef8657?af=R",
+        "doi": "10.1126/sciadv.aef8657",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aec4385",
+        "title": "Tailored nanoporous architecture in flexible polymeric aerogel enabling ultrabroadband PHz (VL)–THz–GHz wireless communication",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec4385?af=R",
+        "doi": "10.1126/sciadv.aec4385",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aed6417",
+        "title": "Intrinsic timing, not temporal prediction, underlies ramping dynamics in visual and parietal cortex during passive behavior",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aed6417?af=R",
+        "doi": "10.1126/sciadv.aed6417",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aef9320",
+        "title": "Slow bleaching of water-insoluble brown carbon from biomass burning: Implication for direct radiative effect",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aef9320?af=R",
+        "doi": "10.1126/sciadv.aef9320",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aeh5537",
+        "title": "Brush-mediated angular constraints reshape structure, rigidity, and percolation in colloidal depletion gels",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aeh5537?af=R",
+        "doi": "10.1126/sciadv.aeh5537",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aec8678",
+        "title": "Inverse scattering in biological samples via beam propagation",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aec8678?af=R",
+        "doi": "10.1126/sciadv.aec8678",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1126/sciadv.aea3128",
+        "title": "Engineering a biomimetic multiphasic suture anchor system for enhanced rotator cuff enthesis regeneration",
+        "journal": "Science Advances",
+        "publishedDate": "2026-08-21T07:00:00.000Z",
+        "url": "https://www.science.org/doi/abs/10.1126/sciadv.aea3128?af=R",
+        "doi": "10.1126/sciadv.aea3128",
+        "sourceId": "science-advances"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    }
+  ]
+}
