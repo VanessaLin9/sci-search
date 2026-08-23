@@ -1,0 +1,366 @@
+{
+  "reportDate": "2026-08-22",
+  "generatedAt": "2026-08-23T10:19:28.882Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.08.13.744615",
+      "title": "CLEAR-ST: Physics-informed probabilistic decontamination of spatial transcriptomics by modeling mRNA lateral diffusion",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.13.744615v1",
+      "doi": "10.64898/2026.08.13.744615",
+      "abstract": "Spatial transcriptomics is a rapidly evolving technology that allows for the measurement of gene expression in a spatially resolved manner. However, one technical problem that occurs for many sequencing-based spatial transcriptomics platforms is the presence of mRNA lateral diffusion, where mRNA from one spot can bind to probes in another spot, leading to contamination and inaccurate gene expression measurements. In Visium-like assays, this artifact is often visible as structured out-of-tissue signal and boundary-associated expression halos, yet its magnitude, spatial decay, and directional bias vary substantially across samples. Here, we present CLEAR-ST, a physics-informed probabilistic framework for correcting diffusion-like contamination in spatial transcriptomics data. CLEAR-ST infers a latent clean expression field using a denoising autoencoder and links it to the observed counts through a graph-Laplacian forward contamination model with learnable diffusion parameters, finally evaluated with a selectable count likelihood. We first conducted a comprehensive comparison between 10X official and independently generated Visium samples, demonstrating that out-of-tissue count profiles are highly related to nearby in-tissue expression, more concentrated near tissue boundaries, and diffusion directions across genes are likely coherent. Across real samples with varying contamination burden, CLEAR-ST improved spatial domain recovery, increased gene-level spatial autocorrelation, and enhanced the biological specificity of downstream analyses such as marker gene discovery, pathway identification and cell type deconvolution. Compared to benchmark methods, CLEAR-ST showed consistent gains in clustering quality and concordance with manual annotations. Together, CLEAR-ST provides an interpretable and practical approach for diffusion-aware correction of capture-based spatial transcriptomics data.",
+      "authors": [
+        "Ma, K.",
+        "Huang, Y.",
+        "Ho, J. W. K."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "Visium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "CLEAR-ST：以物理模型校正空間轉錄體中的 mRNA 側向擴散汙染",
+      "summaryZh": "空間轉錄體技術能以空間解析方式測量基因表現，但基於定序的平台（如 Visium）常面臨 mRNA 側向擴散造成的訊號汙染問題，表現為組織外訊號與邊緣暈圈。研究團隊提出 CLEAR-ST 框架，結合去噪自編碼器與圖形拉普拉斯前向擴散模型，並透過可學習的擴散參數與可選的計數概似函數，從觀察到的計數推估乾淨的潛在表現場。在 10X 官方與獨立產生的 Visium 樣本比較中，研究發現組織外計數與鄰近組織內表現高度相關，且擴散方向在不同基因間具有一致性。應用於多個真實樣本後，CLEAR-ST 改善了空間域辨識、提升基因空間自相關，並強化標記基因發現、訊息路徑鑑定與細胞類型解卷積等下游分析的生物特異性。與既有基準方法相比，CLEAR-ST 在分群品質與人工註解一致性上皆呈現穩定提升，提供一個可解釋且實用的擴散感知校正方案。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "mrna-diffusion",
+        "bioinformatics",
+        "visium",
+        "data-correction"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.21.746324",
+      "title": "On the robustness of scRNA-seq foundation models for plant perturbation response prediction under cross-experiment shift",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.21.746324v1",
+      "doi": "10.64898/2026.08.21.746324",
+      "abstract": "Foundation models for single-cell transcriptomics promise to learn generalizable representations of cellular states. However, recent evidence suggests they often fail to outperform simple machine learning baselines. Furthermore, their ability to generalize across unseen experimental conditions remains poorly understood, particularly in plants, where rigorous evaluation beyond cell type annotation and batch integration is lacking. To address this, we introduce an Arabidopsis thaliana foundation model, scAraFM, and benchmark it across several perturbation conditions under three increasingly challenging protocols: random splits from a single experiment, replicate-based splits, and cross-experiment transfer learning. We found that random splits overestimate performance by up to 30 points relative to cross-experiment evaluations. Across representation strategies, preserving gene identity consistently outperforms the standard pooled embeddings. Moreover, simple baselines using raw reads remain competitive in single-experiment settings, challenging current claims of universal advantage of foundation models. In contrast, under cross-experiment transfer, pretrained representations show added value, particularly with few labelled samples, suggesting that the benefits of foundation models emerge precisely in the regimes that matter for practical deployment. Overall, our results demonstrate that conclusions about foundation models depend critically on the evaluation design, and that preserving per-gene structure aids generalization in downstream tasks, supporting robust predictions across unseen experimental contexts.",
+      "authors": [
+        "Fernandez Burda, M.",
+        "Bonazzola, R.",
+        "Valli, A. A.",
+        "Castrillo, G.",
+        "Stegmayer, G.",
+        "Ferrante, E.",
+        "Milone, D. H."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "探討 scRNA-seq 基礎模型在跨實驗情境下對植物擾動反應預測的穩健性",
+      "summaryZh": "本研究提出一個適用於阿拉伯芥 (Arabidopsis thaliana) 的單細胞轉錄體基礎模型 scAraFM，並在三種難度漸增的評估協定下，對其在多項擾動條件中的表現進行基準測試。研究發現，相較於跨實驗評估，隨機切分資料會高估模型表現最多達 30 個百分點，且在單一實驗設定下，使用原始讀取計數的簡易基準模型仍具競爭力。然而，在跨實驗遷移學習情境中，預訓練表示確實能帶來額外價值，特別是在標註樣本稀少時更為明顯。整體而言，本研究顯示對基礎模型的結論高度仰賴評估設計，而保留個別基因的結構資訊有助於提升模型在未見過的實驗情境下的泛化能力。",
+      "topicTags": [
+        "single-cell",
+        "foundation-models",
+        "plant-biology",
+        "transfer-learning",
+        "benchmarking"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.18.745357",
+      "title": "Spatial vascular/BTB remodeling and malignant-state plasticity in glioblastoma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.18.745357v1",
+      "doi": "10.64898/2026.08.18.745357",
+      "abstract": "Background: Glioblastoma (GBM) contains spatially heterogeneous malignant and vascular states, but blood-tumor barrier (BTB) remodeling is often described as a binary functional phenotype. We asked whether anatomically distinct GBM compartments contain separable vascular programs that coexist with malignant-state plasticity. Methods: We performed donor-aware cross-sectional analyses of 38 histopathology-annotated spatial transcriptomic sections from 6 donors and a separately analyzed endothelial single-nucleus layer from the same GBM-Space atlas. Complementary external datasets tested patient-paired regional remodeling, anatomical replication, cross-technology source localization, and malignant-state architecture. Results: THSD1-FLT4 Recognition increased from leading edge to infiltrative tumor (median adjusted effect +0.02875; 4/4 donors positive). Priming increased across this boundary (+0.14814; 3/4) but decreased from infiltrative to cellular tumor (-0.16409; 0/4), whereas Gate remodeling increased from infiltrative to cellular tumor (+0.21296; 4/4). Remodeled endothelium showed higher PLVAP detection (+0.26409; 12/12 donors) and PLVAP pseudobulk expression (+1.61784 log1pCPM; 11/12), with lower MFSD2A pseudobulk expression (-0.71448; 10/12 negative). External cohorts supported regional vascular/BTB remodeling, while GSE131928 supported broad malignant-state architecture and an exploratory within-tumor pseudotemporal continuum. Conclusions: GBM contains spatially partitioned vascular/BTB-associated programs alongside malignant-state plasticity. Recognition-Priming-Gate is a cross-sectional discovery framework, not a validated temporal cascade, and the data do not establish BTB permeability, causal tumor-vascular signaling, or therapeutic-delivery benefit.",
+      "authors": [
+        "Zheng, L.",
+        "Gan, L."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "膠質母細胞瘤中空間性血管與血腦腫瘤屏障重塑及惡性狀態可塑性",
+      "summaryZh": "這項研究利用空間轉錄體學分析38個來自6位捐贈者的膠質母細胞瘤（GBM）組織切片，探討腫瘤內不同解剖區域是否具有可分離的血管程式。研究團隊提出「辨識—啟動—閘門（Recognition-Priming-Gate）」的橫斷面分析框架，描述從腫瘤前緣到浸潤性腫瘤再到細胞性腫瘤的血腦腫瘤屏障（BTB）重塑模式。重塑的內皮細胞呈現PLVAP表現量上升、MFSD2A表現量下降，與BTB功能改變一致。研究亦發現惡性狀態可塑性與這些血管程式在空間上共存。作者強調此為橫斷面探索性框架，並非經驗證的時間序列，也未確立BTB通透性或治療輸送效益。",
+      "topicTags": [
+        "glioblastoma",
+        "spatial-transcriptomics",
+        "blood-tumor-barrier",
+        "tumor-microenvironment",
+        "vascular-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-77068-0",
+      "title": "Glucagon-like Peptide-1 Receptor Agonists and Risk of Tuberculosis in Type 2 Diabetes",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-08-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-77068-0",
+      "doi": "10.1038/s41467-026-77068-0",
+      "abstract": "A large international study found that certain diabetes drugs (GLP-1 receptor agonists) may link to a lower risk of tuberculosis than other common treatments. These medications may offer added protection against tuberculosis in type 2 diabetes.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "GLP-1受體促效劑與第二型糖尿病患者的結核病風險",
+      "summaryZh": "這項大型國際研究探討了第二型糖尿病患者使用GLP-1受體促效劑與結核病風險之間的關聯。研究結果顯示，相較於其他常見的糖尿病治療藥物，GLP-1受體促效劑可能與較低的結核病風險相關。這些藥物或許能為第二型糖尿病患者提供對結核病的額外保護。",
+      "topicTags": [
+        "diabetes",
+        "tuberculosis",
+        "glp-1-receptor-agonists",
+        "epidemiology"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-76147-6",
+      "title": "Longitudinal digital phenotyping of activity rhythms and biological aging using commercial wearables",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-08-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-76147-6",
+      "doi": "10.1038/s41467-026-76147-6",
+      "abstract": "Long-term links between free-living rest-activity rhythms and biological aging remain unclear. Here, the authors show that Fitbit-derived rest-activity rhythms are associated with biological aging trajectories in All of Us Research Program.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "以商用穿戴裝置縱向分析活動節律與生物老化之數位表型",
+      "summaryZh": "這項研究探討自由生活狀態下的休息—活動節律與生物老化之間的長期關聯，目前相關知識仍不明確。研究團隊利用 Fitbit 商用穿戴裝置所收集的資料，對受試者的休息—活動節律進行數位表型分析。結果顯示，這些節律特徵與生物老化的變化軌跡具有相關性。本研究的資料來自「All of Us」研究計畫。",
+      "topicTags": [
+        "digital-phenotyping",
+        "wearables",
+        "aging",
+        "circadian-rhythms",
+        "population-health"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-76840-6",
+      "title": "An LRR-truncated NLR natural variant confers dual resistance to drought and blast in rice",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-08-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-76840-6",
+      "doi": "10.1038/s41467-026-76840-6",
+      "abstract": "Genetic resources with combined resistance to drought and blast disease are scarce. Here, the authors identify NLR8-Hap2, a natural allele of the rice NLR gene NLR8 that encodes an LRR-truncated protein, and show that it enhances resistance to both stresses by stabilizing two distinct transcription factors.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "一個LRR截短的NLR天然變異賦予水稻抗旱與抗稻熱病的雙重抗性",
+      "summaryZh": "同時具備抗旱與抗稻熱病特性的遺傳資源相當稀少。本研究鑑定出水稻NLR基因NLR8的一個天然等位基因NLR8-Hap2，該變異編碼一個LRR截短的蛋白質。研究顯示NLR8-Hap2能透過穩定兩個不同的轉錄因子，同時增強水稻對乾旱與稻熱病的抗性。這項發現為水稻抗逆育種提供了一個具雙重功能的候選基因。",
+      "topicTags": [
+        "plant-genetics",
+        "rice",
+        "disease-resistance",
+        "drought-tolerance",
+        "nlr-genes"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-76869-7",
+      "title": "Data-driven construction of an imine reductase library capable of broad-scope reductive amination at equimolar substrate concentrations",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-08-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-76869-7",
+      "doi": "10.1038/s41467-026-76869-7",
+      "abstract": "Reductive amination catalysed by imine reductases and reductive aminases is a powerful method for the asymmetric synthesis of chiral amines, yet the generality and practical limitations of these enzymes remain poorly understood. Here, the authors combine large-scale, iterative activity screening, sequence analysis and machine-learning-guided exploration to profile reductive amination performance across 175 enzymes and structurally diverse substrate panels.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "數據驅動建構亞胺還原酶工具庫 實現等莫耳基質濃度下的廣泛還原胺化",
+      "summaryZh": "還原胺化反應是合成手性胺的重要方法,但亞胺還原酶與還原胺酶的通用性與實際應用限制仍不清楚。本研究結合大規模迭代活性篩選、序列分析與機器學習導向的探索,系統性地評估 175 種酶在結構多樣基質上的還原胺化表現。研究成果建構出一套可在等莫耳基質濃度下進行廣泛還原胺化的亞胺還原酶工具庫,為不對稱合成手性胺類提供了實用的酶資源。",
+      "topicTags": [
+        "enzyme-engineering",
+        "biocatalysis",
+        "machine-learning",
+        "chiral-amines",
+        "directed-evolution"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-76862-0",
+      "title": "XPO1-mediated TRIM21 nuclear export reprograms TREM2+ macrophage polarization by targeting IRF3 to augment anti-PD-1 efficacy in small cell lung cancer",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-08-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-76862-0",
+      "doi": "10.1038/s41467-026-76862-0",
+      "abstract": "Small cell lung cancer (SCLC) is an aggressive malignancy characterized by an immunosuppressive tumor microenvironment (TME) resistant to Immune checkpoint inhibitor (ICI) therapy. Here, the authors define an XPO1-TRIM21-TNFSF15 axis that promotes the polarization of immunosuppressive TREM2+ macrophages, which ultimately orchestrates immune exclusion by impairing antigen presentation. Importantly, targeting XPO1 enhances the efficacy of anti-PD1 immunotherapy in mice.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "XPO1 調控 TRIM21 核輸出重塑 TREM2+ 巨噬細胞極化以增強小細胞肺癌抗 PD-1 療效",
+      "summaryZh": "小細胞肺癌（SCLC）是一種侵襲性強的惡性腫瘤，其免疫抑制的腫瘤微環境（TME）對免疫檢查點抑制劑（ICI）治療具有抗性。本研究定義出一條 XPO1–TRIM21–TNFSF15 訊號軸，該軸會促進免疫抑制性 TREM2+ 巨噬細胞的極化，進而透過損害抗原呈現來協調免疫排除現象。在小鼠模式中，靶向 XPO1 能增強抗 PD-1 免疫療法的療效。此發現為克服 SCLC 對免疫治療的抗性提供了潛在策略。",
+      "topicTags": [
+        "small-cell-lung-cancer",
+        "immunotherapy",
+        "tumor-microenvironment",
+        "macrophages",
+        "immune-checkpoint"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 11,
+      "passedByScope": 3,
+      "llmClassified": 8,
+      "llmYes": 5,
+      "llmNotSure": 0,
+      "llmNo": 3,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 8,
+      "excluded": 3
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 5,
+      "llmTagged": 5,
+      "llmLineA": 0,
+      "llmLineB": 5,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 8,
+      "candidates": 8,
+      "featured": 8,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 5,
+      "preprint": 3,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 5,
+      "featuredPreprint": 3,
+      "overflowLineA": 0,
+      "overflowLineB": 0,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 8,
+      "llmSummarized": 8,
+      "primarySucceeded": 8,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-76856-y",
+        "title": "Asian summer monsoon orbital variability directly paced by CO2 and precession, not eccentricity",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-08-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-76856-y",
+        "doi": "10.1038/s41467-026-76856-y",
+        "abstract": "Asian summer monsoon variability is investigated using climate model simulations covering the last 800 kyr. Greenhouse gases drive 100-kyr variability via its thermal forcing, while precession governs 20-kyr variability.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-76661-7",
+        "title": "Time-Temperature-Transformation Diagrams to Navigate the Nucleation and Quenchability of Metastable α-Li₃PS4",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-08-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-76661-7",
+        "doi": "10.1038/s41467-026-76661-7",
+        "abstract": "Here authors investigate the mechanisms underlying the synthesis and retention of metastable α-Li₃PS₄, a solid-state electrolyte with high ionic conductivity, which can be formed and quenched at low temperatures despite being a high-temperature equilibrium phase.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77053-7",
+        "title": "Ru-enabled dehydration-reductive amination of α-, β-hydroxy acids into amino acids",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-08-22T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77053-7",
+        "doi": "10.1038/s41467-026-77053-7",
+        "abstract": "Biomass derived α-, β-hydroxy acids can provide greener routes to valuable amino acids, but selective conversion remains difficult. This study shows isolated ruthenium sites can drive a new pathway from hydroxy acids to amino acids.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
