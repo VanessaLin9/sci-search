@@ -1,0 +1,248 @@
+{
+  "reportDate": "2026-08-23",
+  "generatedAt": "2026-08-24T10:34:28.384Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.08.21.746071",
+      "title": "Single-cell and spatial transcriptomics resolve airway obliteration in bronchiolitis obliterans syndrome",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.21.746071v1",
+      "doi": "10.64898/2026.08.21.746071",
+      "abstract": "Background: Chronic lung allograft dysfunction (CLAD) is the leading cause of death beyond the first year after lung transplantation, and its most frequent phenotype is bronchiolitis obliterans syndrome (BOS), a fibrotic small-airway disease. Mechanistic work has focused on the immune compartment, yet intensified immunosuppression does not alter established disease. Aim: To resolve which structural cell states populate the BOS graft and how they are spatially organized during airway obliteration. Methods: We profiled explanted lungs from 33 BOS patients undergoing re-transplantation and 33 controls, combining single-nucleus RNA sequencing (14 BOS, 13 controls) with targeted spatial transcriptomics of 108 regions (27 BOS, 24 controls) and multiplex immunofluorescence validation. Single-nucleus data were integrated with a published restrictive allograft syndrome (RAS) atlas. Results: Across 175,128 nuclei and 1.67 million spatially resolved cells, BOS lungs harbored a profibrotic circuit of Aberrant Basaloid cells and CTHRC1+ fibrotic fibroblasts previously described in fibrotic lung diseases, including RAS. Spatial mapping identified a CXCL14+TNC+ injury-associated basal cell state arising early in the obliterative cascade, identifying basal cells as their major reservoir. CTHRC1+ fibroblasts expanded subepithelially replacing resident peribronchial fibroblasts, alongside a peribronchial vascular shift toward systemic venous endothelium. The circuit extended beyond the airway wall to the alveolar interface, defining two convergent remodeling fronts. Conclusion: BOS engages structural-cell circuits largely shared with RAS and fibrotic lung diseases, but along an airway-centered rather than parenchyma-centered axis. CLAD thus emerges as a spatial rather than cellular spectrum, defined by anatomical distribution more than cell identity. Shared structural programs may therefore be targetable across CLAD phenotypes.",
+      "authors": [
+        "Ruwisch, J.",
+        "Yilmaz, H.",
+        "Christian, L.",
+        "Neubert, L.",
+        "Leiber, L. M.",
+        "Brueggemann, A.",
+        "Banerjee, S.",
+        "Greer, M.",
+        "Rackwitz, W.",
+        "Giercke, L.",
+        "Werlein, C.",
+        "Pawlow, C. A.",
+        "Engelhardt, R.",
+        "Coppens, A.",
+        "Ballmaier, M.",
+        "Chichelnitskiy, E.",
+        "Simon, S.",
+        "Salman, J.",
+        "Aburahma, K.",
+        "Yildirim, A. O.",
+        "Gote-Schniering, J.",
+        "Hohlfeld, J.",
+        "Vanaudenaerde, B.",
+        "Jonigk, D. D.",
+        "Dettmer, S.",
+        "Ius, F.",
+        "Hoeper, M. M.",
+        "Gaedcke, S.",
+        "Kaminski, N.",
+        "Li, Y.",
+        "Verleden, S. E.",
+        "Gottlieb, J.",
+        "Falk, C.",
+        "Kamp, J. C.",
+        "Schupp, J. C."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "單細胞與空間轉錄體學解析閉塞性支氣管炎症候群中的氣道閉塞",
+      "summaryZh": "本研究結合單核RNA定序、標靶空間轉錄體學及多重免疫螢光驗證，分析閉塞性支氣管炎症候群（BOS）患者與對照組的肺部組織，以解析BOS移植肺中結構細胞的狀態與空間組織。結果顯示，BOS肺部含有與多種纖維化肺部疾病相似的異常基底細胞與纖維化成纖維細胞組成的促纖維化迴路，且基底細胞為早期主要的細胞儲存庫。空間對應分析發現，此纖維化迴路自氣道壁延伸至肺泡介面，形成兩個匯聚的重塑前端。這顯示慢性肺移植失能（CLAD）可能屬於一種空間而非細胞層面的譜系，取決於解剖學上的分佈勝過細胞本身的特性。",
+      "topicTags": [
+        "single-cell",
+        "spatial-transcriptomics",
+        "fibrosis",
+        "lung-transplantation"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.21.745996",
+      "title": "Time-resolved operator archetypes characterize dynamical sensitivity during cell-state transitions",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.21.745996v1",
+      "doi": "10.64898/2026.08.21.745996",
+      "abstract": "During development, cells traverse gene expression states where their local dynamical sensitivity changes sharply, yet existing computational methods provide limited access to when and where this sensitivity peaks along a trajectory. Here we introduce scJDO (single-cell Jacobian Differential Operators), a framework that characterizes how local dynamical sensitivity evolves during cell fate transitions, together with an explicit account of what that representation can and cannot recover from snapshot data. scJDO treats time-indexed Jacobians as explicit analytical objects, projecting the temporal sequence of operators into a shared subspace and decomposing it into recurrent operator archetypes with interpretable temporal activation profiles. Unlike methods that derive Jacobians from splicing-kinetic vector fields, scJDO learns a neural drift field directly from cell-state geometry via diffusion score matching, enabling Jacobian analysis on trajectory-resolved scRNA-seq datasets regardless of splicing-data availability. Applied to a dense time-course of induced pluripotent stem cell (iPSC) reprogramming, scJDO resolves a quantitative operator-level signature that distinguishes diverted from productive fate: the productive trajectory executes a sequential handoff from an early MEF-exit operator regime to a late pluripotency-associated regime, whereas the diverted trajectory maintains the early regime and instead activates a distinct stress-associated archetype. We validate scJDO across four settings: synthetic benchmarks with analytically known ground truth, branching hematopoiesis, dense real time-course reprogramming, and a perturbational setting using Schrodinger bridges in K562 CRISPRi Perturb-seq. We compare against the two most widely used single-cell Jacobian methods on a dataset where all three are runnable, finding that scJDO shares significantly more gene-level and directional operator structure with Dynamo than expected by chance while providing operator-level analysis on datasets without splicing kinetics. We further characterize the boundary of the representation directly. At a fate-decision saddle, eight mathematically distinct readouts of the same learned drift field are consistent with a single explanation: a drift field fit to snapshot density reproduces density-dominant separation between committed branches rather than the low-variance transverse instability that defines the decision. Together, scJDO provides an operator-level view of single-cell dynamics and an explicit characterization of its own identifiability boundary.",
+      "authors": [
+        "Redd, D. M.",
+        "Green, S. G.",
+        "Terooatea, T. W."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "Perturb-seq",
+        "development",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "時間解析運算子原型：表徵細胞狀態轉變過程中的動態敏感度",
+      "summaryZh": "本研究推出了 scJDO（single-cell Jacobian Differential Operators）框架，用以表徵細胞命運轉變期間局部動態敏感度的演變，並明確說明此種表徵從快照數據中能還原與不能還原的部分。有別於從剪接動力學向量場推導 Jacobian 的方法，scJDO 透過擴散分數匹配（diffusion score matching）直接從細胞狀態幾何學中學習神經漂移場，使我們能在不依賴剪接數據的情況下對軌跡解析的單細胞 RNA 定序（scRNA-seq）數據集進行 Jacobian 分析。應用於誘導性多能幹細胞（iPSC）重編程的密集時間序列時，scJDO 解析出能區分偏離命運與生產性命運的定量運算子層級特徵。作者在合成基準、分支造血作用、密集真實時間序列重編程以及擾動設定等四種情境中驗證了 scJDO。",
+      "topicTags": [
+        "single-cell",
+        "computational-biology",
+        "gene-expression",
+        "cell-state-transitions"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.18.745314",
+      "title": "sc-pcQTL: hurdle-based co-expression modeling for multi-gene QTL mapping in single-cell RNA-seq data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.18.745314v1",
+      "doi": "10.64898/2026.08.18.745314",
+      "abstract": "Motivation: Single-cell expression quantitative trait locus (eQTL) studies can resolve cell-type-specific genetic effects, but conventional gene-by-gene analyses do not directly capture coordinated genetic regulation of neighboring genes. Principal-component QTL (pcQTL) mapping can summarize such multi-gene effects, but existing approaches were developed for bulk expression and are not designed for sparse single-cell counts. Results: We developed sc-pcQTL, a framework that applies two-component hurdle modeling and sliding-window clustering to identify local co-expression clusters, summarizes each cluster using principal components, and maps cis-pcQTLs. In simulations, the individual hurdle components controlled type I error, while the component-union screening rule was substantially more powerful than donor-level pseudobulk correlation tests. Applied to 1.24 million peripheral blood mononuclear cells from 982 OneK1K donors across 10 cell types, sc-pcQTL identified 2,485 local co-expression clusters and conducted QTL mapping for 4,353 cluster-PC phenotypes at single-cell resolution, of which 2,040 had at least one significant cis-pcQTL association. Fine-mapping and colocalization with genome-wide association study loci across 1,163 phenotypes in the FinnGen study identified 394 colocalized QTL-GWAS signal groups. Each group comprised fine-mapped QTL and GWAS signals connected through one or more colocalization links within the same cell type and local gene cluster. Of these groups, 46 were pcQTL-specific and contained no colocalized single-gene eQTL from a constituent gene. Locus-level analyses further revealed cell-type-specific multi-gene regulatory effects. Thus, sc-pcQTL complements conventional single-gene eQTL analysis by identifying trait-relevant regulatory signals shared across neighboring genes.",
+      "authors": [
+        "Zhang, J.",
+        "Huang, Y.",
+        "Claussnitzer, M.",
+        "Kanai, M.",
+        "Zhou, W."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "sc-pcQTL：針對單細胞 RNA-seq 資料的多基因 QTL 定位之雙組分障礙共表現建模",
+      "summaryZh": "本研究開發了 sc-pcQTL 框架，透過應用雙組分障礙建模與滑動視窗分群來識別局部共表現群集，並以主成分總結群集以進行 cis-pcQTL 定位。應用於 982 名捐贈者的周邊血液單核細胞資料時，sc-pcQTL 識別出局部共表現群集並進行了單細胞解析度的 QTL 定位，其中許多群集具有顯著的 cis-pcQTL 關聯。進一步的精細定位與全基因組關聯研究共定位分析，識別出了共定位的 QTL-GWAS 信號組，且部分信號組為 pcQTL 專屬且不包含構成基因的單基因 eQTL。這項方法補充了傳統的單基因 eQTL 分析，能識別跨相鄰基因共有的性狀相關調控信號。",
+      "topicTags": [
+        "single-cell",
+        "eqtl",
+        "transcriptomics",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.18.745447",
+      "title": "Implicit Hierarchical Tensor Decomposition of Single-Cell Four-Omics Data Reveals Cell-Type-Associated Enhancer--Promoter Regulatory Programs",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-08-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.18.745447v1",
+      "doi": "10.64898/2026.08.18.745447",
+      "abstract": "Single-cell multi-omics provides complementary views of gene regulation, but integrating modalities with natural features comprising enhancers, genes, and three-dimensional (3D) genomic loci remains challenging. This study developed an implicit hierarchical tensor decomposition framework and applied it to the CHARM single-cell four-omics mouse brain data (GSE303006) by jointly analyzing ATAC, H3K27ac, RNA, and reconstructed 3D enhancer--promoter (E--P) distances. After quality control, 730,969 E--P pairs, 42,669 enhancers, 16,239 genes, 391,435 20-kb bin pairs, and 4,258 cells were retained. Each modality was independently reduced to 20 components and mapped to an implicit 730,969x4, 258x20x4 tensor, which was decomposed without materializing the full array. All 12 distinct cell components represented among the 100 largest Tucker core elements showed greater cell-type effects than replicate effects (P=2.44 x 10-4, sign test). A representative core linked the Inh_Ndnf/Lamp5--Ex_L3/4_IT cell axis to contrasting presynaptic-transmission and developmental/morphogenetic E--P programs. Backprojection showed reproducible ATAC, H3K27ac, and 3D effects across three biological replicates, whereas module-level RNA effects were weaker. The framework reveals the regulatory structure that is shared across molecular modalities while remaining distinct from any single molecular modality.",
+      "authors": [
+        "Taguchi, Y.-h.",
+        "Turki, T."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "隱式階層式張量分解單細胞四體學數據以揭示細胞類型相關的強化子與啟動子調控程式",
+      "summaryZh": "本研究開發了一種隱式階層式張量分解框架，並將其應用於單細胞四體學（four-omics）小鼠大腦數據，以聯合分析 ATAC、H3K27ac、RNA 以及重建的三維基因體強化子與啟動子（E--P）距離。透過不實體化完整陣列的分解方式，研究顯示所有在前 100 大 Tucker 核心元素中代表的相異細胞組分皆表現出大於重複效應的細胞類型效應。此框架揭示了跨越不同分子模態共用、且同時異於單一分子模態的調控結構。",
+      "topicTags": [
+        "single-cell",
+        "multi-omics",
+        "tensor-decomposition",
+        "gene-regulation",
+        "genomics"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 4,
+      "passedByScope": 4,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 4,
+      "excluded": 0
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 0,
+      "llmTagged": 0,
+      "llmLineA": 0,
+      "llmLineB": 0,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 4,
+      "candidates": 4,
+      "featured": 4,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 0,
+      "preprint": 4,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 0,
+      "featuredPreprint": 4,
+      "overflowLineA": 0,
+      "overflowLineB": 0,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 4,
+      "llmSummarized": 4,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 4,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  }
+}
