@@ -1,0 +1,389 @@
+{
+  "reportDate": "2026-09-05",
+  "generatedAt": "2026-09-06T13:28:32.814Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.09.01.748618",
+      "title": "SCG: Spatially Co-Expressed Gene Identification through Spatially Varying Networks",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-05",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.01.748618v1",
+      "doi": "10.64898/2026.09.01.748618",
+      "abstract": "Spatial transcriptomics has enabled the advancement of gene expression analysis, yet spatial co-expression remains understudied. We introduce spatial covariance regression (SCR), a scalable Bayesian factor-model-based framework for estimation of spatially-resolved gene co-expression networks across tissue domains. These networks provide the spatial map of gene-gene correlations and enable the identification of spatially co-expressed genes (SCGs), which serve as potential prognostic biomarkers and therapeutic targets.",
+      "authors": [
+        "Buker, I. E.",
+        "Ni, Y.",
+        "Hicks, S. C.",
+        "Kang, J.",
+        "Acharyya, S."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "透過空間變異網路識別空間共表現基因之 SCG 方法",
+      "summaryZh": "空間轉錄體學推動了基因表現分析的進展，但空間共表現仍有待深入研究。本研究介紹了空間共變異數迴歸（SCR），這是一個基於可擴展貝氏因子模型的框架，用於估計組織區域中具有空間解析度的基因共表現網路。這些網路提供了基因相關性的空間圖譜，並能識別出作為潛在預後生物標記與治療標的的空間共表現基因（SCG）。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "gene-expression",
+        "bayesian-model",
+        "biomarkers"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.10.743911",
+      "title": "Covariance Nonstationarity is Evident in Spatial Transcriptomics and Provides a New Categorization of Spatially Varying Genes",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-05",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.10.743911v2",
+      "doi": "10.64898/2026.08.10.743911",
+      "abstract": "Gaussian process models underlie many spatial transcriptomics tools but typically assume stationary covariance. Covariance non-stationarity has long been recognized in spatial statistics as an important feature of spatial data, yet it has received little attention in spatial transcriptomics. We show that this omission is consequential: covariance non-stationarity is substantially evident across spatial transcriptomic datasets and alters the characterization of spatially varying genes. While typically ignored, non-stationarity of spatial covariance in gene expression may correspond to tissue heterogeneity or cell aggregates. Across 12 Visium datasets, we use approximate Bayes factors from R-INLA to compare stationary and non-stationary Mat'ern covariance functions. Evidence for covariance non-stationarity appears in 3% to 50% of genes across tissue samples. We find that gene sets associated with immune, cytokine, and other effector functions are enriched among genes favoring non-stationary spatial covariance. Covariance stationarity is therefore not a benign technical simplification in spatial transcriptomics; it is frequently violated, the violation is biologically structured, and it changes the definition and classification of spatially varying genes.",
+      "authors": [
+        "Velidi, P.",
+        "Wei, Z.",
+        "Nathoo, F."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "Visium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "空間轉錄體學中的共變異數非平穩性及其對空間變異基因的新分類",
+      "summaryZh": "本研究指出，高斯過程模型在空間轉錄體學工具中常假設共變異數具平穩性，然而共變異數非平穩性在多個空間轉錄體學資料集中相當明顯，且會改變空間變異基因的特性描述。研究透過分析 12 個 Visium 資料集，發現有 3% 至 50% 的基因支援非平穩空間共變異數，且與免疫、細胞激素及其他效應功能相關的基因集在其中特別顯著。這顯示共變異數平穩性並非一項無害的技術簡化，而是經常被違反且具有生物學結構，進而改變了空間變異基因的定義與分類。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "spatial-statistics",
+        "gene-expression",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.05.26.727917",
+      "title": "platpy: A spatial-first framework for multi-layer spatial transcriptomic analysis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-05",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.26.727917v2",
+      "doi": "10.64898/2026.05.26.727917",
+      "abstract": "Background The emergence of accessible spatial transcriptomic platforms such as 10x Genomics Visium HD and Xenium has created demand for analysis tools that can handle the complexity and scale of spatial datasets. Current frameworks approach spatial data primarily as an extension of single-cell RNA-seq pipelines, where spatial coordinates are retained as metadata rather than treated as a first-class organizing principle. As a result, common tasks such as multi-modal data alignment, region-of-interest selection, and cross-resolution visualization require manually managing disparate data types, coordinates, and scales, making spatial analysis unnecessarily time-consuming and error-prone. Results We present platpy (pipeline for layered analysis of transcriptomics), a Python-based \"spatial-first\" framework that treats absolute physical micron coordinates as the organizing principle for all data types. All data -- morphology images, transcript point clouds, expression matrices, segmented cells, and user-defined regions -- are stored as typed objects (\"Channels\") that carry their own spatial metadata, keeping all layers in automatic registration regardless of platform, resolution, or analysis operation. Two complementary interfaces simplify access to underlying data: the ViewPort, a compositing engine for efficient multi-channel visualization, and the DataPort, which extracts raw data in its native format for downstream analysis. A set of spatial analysis tools demonstrates the practical benefits of the framework, including ROI-based expression binning, cortical unfolding, and sub-micron fine alignment of transcript and image data. The use of modern Python data management methods helps maintain the efficiency of the framework, allowing for quick visualizations and analysis with a low memory footprint. Conclusions Platpy is designed to complement rather than replace widely used tools in the spatial analysis ecosystem (scanpy, squidpy, CellPose, StarDist), by handling the spatial mechanics of large datasets so that the analyst can focus on the biology. Platpy is freely available under the MIT license at https://github.com/maynardt/platpy.",
+      "authors": [
+        "Maynard, T. M."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "Xenium",
+        "Visium",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "platpy：用於多層次空間轉錄體學分析的空間優先框架",
+      "summaryZh": "本研究提出了 platpy，這是一個基於 Python 的「空間優先」框架，將絕對物理微米座標視為所有資料類型的組織原則。該框架透過將形態學影像、轉錄本點雲、表達矩陣、分割細胞和使用者定義區域儲存為帶有自身空間元資料的型別化物件，使所有圖層在各種平台、解析度或分析操作下皆能保持自動對齊。這項工具透過 ViewPort 與 DataPort 介面簡化了多通道視覺化與原始資料提取，並支援區域特異性表達量分箱、皮質展開以及轉錄本與影像資料的亞微米級精細對齊等空間分析任務。platpy 的設計旨在與現有工具互補，以低記憶體佔用處理空間資料分析的複雜性與規模。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "computational-biology",
+        "python",
+        "bioinformatics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.01.748633",
+      "title": "Evaluating the Robustness of Path-Preservation Benchmarks for Dimensionality Reduction Across Point-Density Thresholds: Linear and Cyclic Single-Cell Trajectories",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-05",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.01.748633v1",
+      "doi": "10.64898/2026.09.01.748633",
+      "abstract": "Motivation: Comparative studies of trajectory inference (TI) methods evaluate complete computational pipelines, making it impossible to isolate how much distortion is introduced specifically by the dimensionality reduction (DR) step. To our knowledge, no study has directly and systematically evaluated how well DR methods alone preserve a known reference path when projecting high-dimensional single-cell data to two dimensions, and no current study has introduced a dedicated set of metrics to quantify the degree of path-preservation quality after dimensionality reduction. This gap matters because DR is a universal preprocessing choice that shapes all downstream trajectory analysis, yet its independent geometric effect on path structure remains uncharacterized, and practitioners have no principled way to quantify it. Methods: We tested a panel of candidate path-preservation metrics on two single-cell datasets with known reference trajectories, one linear and one cyclic, to determine whether the resulting metric values, DR-method rankings, and overall conclusions are sensitive to the number of points used to construct and display the path, and whether they remain stable once that choice is fixed. The primary linear dataset is a CD4+ T-cell surface-protein dataset (3,096 cells, 51 proteins); a ground-truth reference path was constructed from cells lying close to the first principal component (PC1) of a single cluster, providing a known linear trajectory in the high-dimensional space. Sixteen DR methods were applied and twelve geometric path-preservation metrics were computed, spanning log-ratio distortions of length, curvature, and spatial similarity; Spearman rank correlations of pairwise distances and segment lengths; and structural complexity measures including self-intersection frequency and coiling. To test the sensitivity of this evaluation framework to path density, we varied the fraction of cells used to define the reference path from 1% to 10% (31-310 path points) and tracked how method rankings responded. The same analysis was repeated on a topologically distinct reference, a closed B-cell cell-cycle loop detected by persistent homology in a separate CyTOF dataset, to test whether these conclusions about metric and method stability hold for cyclic as well as linear trajectories. Results: The central sensitivity question, whether the number of points used to construct the reference path changes the evaluation's conclusions, was answered negatively on both datasets. On the linear PC1 trajectory, absolute values of all twelve metrics shifted smoothly as the path-density threshold was varied from 1% to 10% (31-310 points), reflecting the broadening of the reference band, but each method's composite rank remained stable across every threshold: no method changed performance tier as the hyperparameter varied. A composite rank aggregating all twelve metrics identified the same consistently high-performing methods (UMAP, MDS, CNPE, TSNE, SPE, LPMIP) and consistently low-performing methods (SPMDS, LPP, DVE, LAPEIG, PHATE) at every density level tested. Considered on its own, `SpatDistSpear`, the single most discriminating metric, separated a high-fidelity group (LPMIP, DM, MDS, SPMDS, DVE, CISOMAP, CNPE; all r > 0.80) from a mid-range group (LAPEIG, SPE, PHATE, UMAP, TSNE, FOSMOD) and a low-fidelity group (PFA, NNP, LPP); global distance preservation and overall composite performance therefore do not always agree on the same \"top tier\" of methods, but this disagreement in which metric identifies the best methods is itself density-independent rather than an artifact of the specific threshold chosen. The cyclic loop reproduced the same density-independence: absolute metric values drifted with the per-segment band width, yet each method's composite rank again held constant across all eleven density levels. The identity of the best and worst performers was largely, though not entirely, conserved between the two topologies, with CNPE, LPMIP, SPE, and MDS as top performers and LAPEIG, DVE, and SPMDS as poor performers on both the linear path and the closed loop. UMAP and TSNE were exceptions, dropping from top performers on the linear path to the middle of the sixteen-method panel, rather than the worst tier, on the closed loop. This topology-dependence is a property of the reference geometry rather than of path density: it holds consistently regardless of how many points are used to define the path. Significance: This work introduces a direct, pipeline-independent evaluation of how DR methods distort trajectory geometry, a benchmarking dimension absent from existing TI comparisons. The within-dataset rank stability result, demonstrated on both a linear and a cyclic reference trajectory, validates the use of a fixed reference-path threshold as a robust operating point for large-scale DR benchmarking; however, the partial reordering of top performers between topologies shows that a method's DR benchmark ranking is trajectory-shape-dependent and should not be assumed to transfer from a linear to a cyclic reference.",
+      "authors": [
+        "Bombina, P.",
+        "Coombes, K. R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "評估降維路徑保留基準在不同點密度閾值下的強韌性：線性與循環單細胞軌跡",
+      "summaryZh": "本研究探討了評估降維（dimensionality reduction, DR）方法在將高維單細胞資料投影至二維時，維持已知參考路徑能力的方法。作者測試了一組候選路徑保留指標，並利用具備已知線性與循環參考軌跡的單細胞資料集，檢驗評估結果是否對建構及顯示路徑時所使用的點數敏感。這項研究有助於了解降維步驟本身對路徑結構帶來的幾何影響，並為實務工作者提供量化路徑保留品質的評估架構。",
+      "topicTags": [
+        "single-cell",
+        "dimensionality-reduction",
+        "trajectory-inference",
+        "benchmarking"
+      ]
+    },
+    {
+      "id": "10.64898/2025.12.10.691030",
+      "title": "The petal identity gene PhDEF has a major binding and regulatory action in the epidermis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-05",
+      "url": "https://www.biorxiv.org/content/10.64898/2025.12.10.691030v4",
+      "doi": "10.64898/2025.12.10.691030",
+      "abstract": "In flowering plants, floral organ identity is specified by the combinatorial action of homeotic genes. While the role of these genes in the early specification of organ identity is well established, their late function throughout floral organ development and in specific cell types is much less characterized. In particular, since plant organs are structured in clonally-independent cell layers, whether and how homeotic identity interacts with cell layer identity is unknown. We have previously identified cell layer-specific mutants for the petal identity gene PhDEF in petunia flowers, resulting in drastically different petal phenotypes whether PhDEF is expressed in the petal epidermis or in the mesophyll. In this study, using a combination of single-cell RNA-Seq and chromatin immunoprecipitation on phdef cell layer-specific mutants, we find that PhDEF regulates a different set of target genes in the petal epidermis and mesophyll, with a major regulatory action in the epidermis. We uncover a high diversity of binding profiles in PhDEF target genes, with a complex combination of layer-specific or non-specific binding sites, and a much more prominent binding of PhDEF in the epidermis than in the mesophyll. Our study highlights that floral homeotic genes like PhDEF can have different regulatory actions in different cell contexts, here different cell layers, demonstrating that cell layer identity indeed influences the regulatory processes underlying homeotic identity.",
+      "authors": [
+        "Desert, E.",
+        "Cavallini-Speisser, Q.",
+        "Duvernois-Berthet, E.",
+        "Chambrier, P.",
+        "Morel, P.",
+        "Letcher, B.",
+        "Rey, C.",
+        "Just, J.",
+        "Rodrigues Bento, S.",
+        "Bouyer, D.",
+        "Monniaux, M."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "花瓣識別基因 PhDEF 在表皮中具有主要的結合與調控作用",
+      "summaryZh": "本研究探討開花植物中花器官識別基因在不同細胞層的功能，特別是針對矮牽牛（petunia）的花瓣識別基因 PhDEF 進行分析。研究團隊結合單細胞 RNA 定序與染色質免疫沉澱技術，發現 PhDEF 在花瓣表皮與葉肉細胞中調控不同的目標基因，且在表皮中具有更顯著的結合與調控作用。此結果顯示，細胞層識別確實會影響花器官同源識別背後的調控過程。",
+      "topicTags": [
+        "plant-biology",
+        "gene-regulation",
+        "single-cell",
+        "genetics"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-77312-7",
+      "title": "Steric control of signaling bias in the immunometabolic receptor GPR84",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-05T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-77312-7",
+      "doi": "10.1038/s41467-026-77312-7",
+      "abstract": "This study reveals how subtle changes in ligand structure control signaling bias at the immunometabolic receptor GPR84, providing structural details for the rational design of drugs with tailored signalling properties.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "免疫代謝受體 GPR84 中訊息傳遞偏向性的位阻調控",
+      "summaryZh": "本研究揭示配體結構的細微變化如何調控免疫代謝受體 GPR84 的訊息傳遞偏向性。這些研究結果為具備客製化訊息傳遞特性的藥物之合理設計，提供了結構上的詳細資訊。這對於深入理解受體機制具有重要意義。",
+      "topicTags": [
+        "structural-biology",
+        "immunometabolism",
+        "receptor-signaling",
+        "drug-design"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-77379-2",
+      "title": "OXR1 is a dual redox–mitochondrial checkpoint governing osteoclast differentiation and bone loss in an osteoporosis mouse model",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-05T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-77379-2",
+      "doi": "10.1038/s41467-026-77379-2",
+      "abstract": "Osteoclasts need to manage reactive oxygen species by coordinating redox control and mitochondrial quality maintenance. Here, the authors identify OXR1 as a regulator of osteoclastogenesis and mitophagy, and show that genetic or pharmacological targeting of OXR1 attenuates bone loss in an osteoporosis mouse model.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "OXR1 作為雙重氧化還原與粒線體檢查點，調控蝕骨細胞分化與骨質疏鬆小鼠模型的骨質流失",
+      "summaryZh": "本研究指出蝕骨細胞需要透過協調氧化還原控制與粒線體品質維持來管理活性氧類。作者在此鑑定出 OXR1 為蝕骨細胞生成（osteoclastogenesis）與 mitophagy（粒線體自噬）的調節因子。研究結果顯示，對 OXR1 進行基因或藥理學上的標靶干預，能減輕骨質疏鬆小鼠模型中的骨質流失。這項發現有助於理解骨質流失機轉並提供潛在的治療方向。",
+      "topicTags": [
+        "redox",
+        "mitochondria",
+        "bone-loss",
+        "osteoporosis"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-77389-0",
+      "title": "Whole genome sequencing of 1427 Mexican individuals from the oriGen cohort",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-05T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-77389-0",
+      "doi": "10.1038/s41467-026-77389-0",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "來自oriGen世代的1427名墨西哥個體之全基因組測序"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 12,
+      "passedByScope": 5,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 7,
+      "keywordFallbackYes": 3,
+      "keywordFallbackNo": 4,
+      "included": 8,
+      "excluded": 4
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 3,
+      "llmTagged": 0,
+      "llmLineA": 0,
+      "llmLineB": 0,
+      "fallback": 3,
+      "fallbackLineA": 0,
+      "fallbackLineB": 3,
+      "failures": 3
+    },
+    "selection": {
+      "total": 8,
+      "candidates": 8,
+      "featured": 7,
+      "overflow": 1,
+      "lineA": 0,
+      "lineB": 3,
+      "preprint": 5,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 2,
+      "featuredPreprint": 5,
+      "overflowLineA": 0,
+      "overflowLineB": 1,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 7,
+      "llmSummarized": 7,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 7,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 1,
+      "llmTranslated": 1,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77570-5",
+        "title": "Optical excitation of nonreciprocal antiferromagnetic magnons at sub-terahertz frequencies",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-05T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77570-5",
+        "doi": "10.1038/s41467-026-77570-5",
+        "abstract": "The authors demonstrate that optically excited subterahertz magnons in canted antiferromagnetic hematite propagate nonreciprocally at high group velocities, offering potential for ultrafast spintronic applications.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77413-3",
+        "title": "Unconditional and exponentially large violation of classicality",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-05T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77413-3",
+        "doi": "10.1038/s41467-026-77413-3",
+        "abstract": "The authors introduce a practical game that distinguishes quantum from classical behaviour without relying on unproven assumptions. Quantum computers achieve exponentially larger scores than any classical strategy, a result confirmed in experiments.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77256-y",
+        "title": "Dysregulated tissue immunity in human fatal asthma",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-05T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77256-y",
+        "doi": "10.1038/s41467-026-77256-y",
+        "abstract": "Immune mechanisms driving severe asthma and fatal outcomes remain elusive. Through cross-tissue immune profiling of organ donors who died of fatal asthma versus other causes, the authors here reveal mucosal immune dysregulation marked by enhanced T- and B-cell memory, reduced Tregs, and increased lung Th2 and Th1 effectors linked to priming in gut-associated lymph nodes.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77247-z",
+        "title": "Selectively intraparticle oxygen dissociation and metalloid mineralization for long-term groundwater remediation",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-05T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77247-z",
+        "doi": "10.1038/s41467-026-77247-z",
+        "abstract": "Toxic arsenic, antimony and selenium in groundwater are mineralized inside lattice-modified iron nanoparticles with a 98-fold greater stability during long-term aging in groundwater, offering an economic in-situ remediation strategy.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    }
+  ]
+}
