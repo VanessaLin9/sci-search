@@ -1,0 +1,237 @@
+{
+  "reportDate": "2026-09-06",
+  "generatedAt": "2026-09-07T15:26:00.594Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.09.02.746746",
+      "title": "A Multi-Omics Study of Cognitive Resilience to Alzheimer's Disease",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.02.746746v1",
+      "doi": "10.64898/2026.09.02.746746",
+      "abstract": "Alzheimers disease (AD) is the most severe form of dementia. While significant efforts have been made to identify AD risk factors and develop therapeutics, much less attention has been given to neurobiological factors and molecular signatures associated with cognitive resilience. Substantial evidence suggests that modifiable factors, such as physical and mental activity, may contribute to cognitive reserve and resilience. To this end, we developed a resilient cohort of paired genetics, transcriptomics and proteomics data from the prefrontal cortex of 282 cognitively normal older adults. We conducted extensive preprocessing and rigorous quality control (QC), including QC on sequence metrics and sample matching across multiomics. This cohort can be leveraged for identification of molecular signatures of cognitive resilience to AD and is freely shared with the research community.",
+      "authors": [
+        "Wang, E.",
+        "Xie, B.",
+        "Wang, M.",
+        "Fu, Y.",
+        "Wang, X.",
+        "Li, Y.",
+        "Xu, P.",
+        "Liu, H.",
+        "Ho, L.",
+        "Tu, Z.",
+        "Mobbs, C.",
+        "Gaiteri, C.",
+        "Ehrlich, M. E.",
+        "Bennett, D. A.",
+        "Haroutunian, V.",
+        "Peng, J.",
+        "Zhang, B."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "阿茲海默症認知韌性的多體學研究",
+      "summaryZh": "阿茲海默症是最嚴重的失智症形式，過去研究多聚焦於風險因子與治療開發，對於認知韌性的神經生物學基礎與分子特徵著墨較少。本研究建立了一個由 282 位認知正常高齡者前額葉皮質所組成的世代，涵蓋配對的基因體、轉錄體與蛋白體資料。研究團隊進行了嚴謹的預處理與品質管制，包括序列指標檢核與跨體學樣本匹配。此資料集可作為探尋阿茲海默症認知韌性分子特徵的資源，並已免費開放給研究社群使用。",
+      "topicTags": [
+        "multi-omics",
+        "alzheimers-disease",
+        "cognitive-resilience",
+        "dementia",
+        "prefrontal-cortex"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.19.745674",
+      "title": "RevPert: predicting candidate drivers of transcriptomic state transitions via gallery-native reverse perturbation",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.19.745674v2",
+      "doi": "10.64898/2026.08.19.745674",
+      "abstract": "Cellular state transitions underlie adaptation, ageing and disease, yet prioritizing catalogued genetic perturbations whose expression signatures match an observed transcriptomic shift remains difficult. Most models predict phenotype from a nominated intervention, whereas genetic inverse benchmarks are largely restricted to within-screen identity recovery. Here we introduce RevPert, a gallery-native reverse perturbation model that ranks a fixed genetic catalog for a query contrast {Delta}Y* = YB - YA by combining signed Pearson connectivity with a learned residual. Across Replogle Essential Perturb-seq (four lines) and LINCS-KO screens (ten lines), RevPert recovered held-out interventions at leading performance relative to matched baselines. Applied to public drug-resistance contrasts in HCC and CML, dual-arm ranking placed pre-specified disease anchors far higher on the expected arms than ranking the same signatures by differential-expression magnitude alone (Essential residual model for HCC; a transductive GWPS residual for CML). RevPert therefore couples within-screen reverse ranking to a screen-external signed-geometry check; the latter calibrates literature anchors and is not claimed as held-out recovery.",
+      "authors": [
+        "Liang, S.",
+        "Yang, C.",
+        "Wang, J.",
+        "Li, y."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "Perturb-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "RevPert：透過原生反向擾動預測轉錄體狀態轉變的候選驅動因子",
+      "summaryZh": "細胞狀態轉變是適應、老化與疾病的基礎，但要從已收錄的基因擾動中找出最能解釋觀察到轉錄體變化的候選者，一直是個難題。本文提出 RevPert，一種原生反向擾動模型，結合帶正負號的皮爾森相關性與學習殘差，對固定基因目錄進行排序以匹配查詢對比 ΔY* = YB - YA。在 Replogle Essential Perturb-seq（四個細胞株）與 LINCS-KO 螢幕（十個細胞株）上，RevPert 在保留干預的恢復任務中表現領先。應用於 HCC 與 CML 的公開抗藥性對比時，雙臂排序將預設疾病錨點排在預期側，優於單純依差異表現量大小排序。整體而言，RevPert 將螢幕內反向排序與螢幕外帶正負號幾何檢查結合，後者用於校正文獻錨點，並非作為保留恢復的宣稱。",
+      "topicTags": [
+        "perturb-seq",
+        "transcriptomics",
+        "computational-biology",
+        "drug-resistance",
+        "reverse-perturbation"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.02.748773",
+      "title": "From code to natural language: MErlin - a multiomics toolkit for bacterial epigenomics delivered as Claude agent skill.",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.02.748773v1",
+      "doi": "10.64898/2026.09.02.748773",
+      "abstract": "Interpreting a bacterial methylome is a multi-omics problem. It requires integrating modified-base calls with genome annotation, motif inventories, methyltransferase genotypes, transcript abundance, replichore position and, increasingly, chromosome conformation. These data types are commonly generated in incompatible formats, use inconsistent sequence and gene identifiers, and originate from different analytical workflows. The relevant algorithms are available, but assembling them into a coherent and statistically defensible analysis remains a substantial data-integration and interface problem. We present MErlin (Methylation-driven Expression & Regulation Linkage in Interacting Nuclear-domains), a multi-omics toolkit comprising seventeen composable modules, from basecalled modBAM files to ranked gene-level evidence and a self-contained HTML report. MErlin is distributed both as a conventional Python package and as an agent skill: a structured, version-controlled layer of procedural knowledge that enables a compatible large language model (LLM) assistant to select and operate the audited package without generating a new analysis implementation for each request. This design treats natural language as an interface to fixed analytical operations rather than as a substitute for tested scientific software. The skill encodes module-selection rules, mandatory preflight checks, questions that require human input, design-to-inference constraints, and interpretation guidance. We describe MErlin's architecture and statistics, validate it against a synthetic dataset with planted ground truth, and illustrate the conversational interface on a real methylome-transcriptome comparison in Pseudoalteromonas haloplanktis TAC125. MErlin is open source and available at https://github.com/IacopoPasseri/MErlin",
+      "authors": [
+        "Passeri, I.",
+        "Pety, S.",
+        "Giovannini, M.",
+        "Fondi, M.",
+        "Mengoni, A.",
+        "Perrin, E."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "從程式碼到自然語言：MErlin——以 Claude 代理技能形式發表的細菌表觀基因體多體學工具組",
+      "summaryZh": "這篇預印本介紹 MErlin（Methylation-driven Expression & Regulation Linkage in Interacting Nuclear-domains），一套專門用於解析細菌甲基體（methylome）的多體學工具組。細菌甲基體的詮釋涉及修飾鹼基註解、基因體註解、motif 清查、甲基轉移酶基因型、轉錄豐度、replichore 位置與染色體構形等多種異質資料，整合上極具挑戰。MErlin 包含十七個可組合的模組，從 modBAM 檔一路產出基因層級的排序證據與自含式 HTML 報告。除了傳統的 Python 套件形式外，作者也將其打包為 Claude 代理技能（agent skill），讓大型語言模型能以自然語言介面呼叫經審核的分析流程，而非自行生成新實作。研究團隊以合成資料集（內含已知真值）驗證其架構與統計方法，並以 Pseudoalteromonas haloplanktis TAC125 的甲基體—轉錄體比較展示對話式介面的實際應用。",
+      "topicTags": [
+        "bacterial-epigenomics",
+        "methylome",
+        "multi-omics",
+        "bioinformatics",
+        "llm-agent"
+      ]
+    },
+    {
+      "id": "10.1101/2024.09.08.611898",
+      "title": "MorphoNavigator-3D: Generalizable single-cell phenotyping of cancer spheroids using Bayesian-optimized deep-learning workflows",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-06",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.09.08.611898v2",
+      "doi": "10.1101/2024.09.08.611898",
+      "abstract": "Accurate quantification of drug responses in 3D tumor-immune co-cultures remains challenging because complex spatial architecture and cellular heterogeneity limit the interpretability of bulk viability assays. Here, we present MorphoNavigator-3D ('Morphological Navigator in 3D';MoNa-3D), an automated framework for high-resolution, annotation-free single-cell analysis in complex 3D co-cultures. The approach integrates optimized live-cell staining, deep learning-based segmentation, and Bayesian optimization (BO) to adapt end-to-end image-analysis workflows across diverse experimental conditions. MoNa-3D was applied to clear cell renal cell carcinoma (ccRCC)-immune cell 3D-spheroid co-cultures, exposed to PI3K/mTOR pathway inhibitors and immunomodulatory compounds in a high-content imaging-based drug screen. The pipeline was used to extract multiscale phenotypic features encompassing ATP-based cell viability, morphology, nuclear remodeling, spatial dispersion, and immune infiltration. This analysis resolved distinct drug-induced phenotypes: PI3K/mTOR inhibitors promoted spheroid disintegration, nuclear enlargement, and immune exclusion, whereas immunomodulators preserved spheroid architecture and T-cell engagement. Multivariate phenotypic integration distinguished drug classes and revealed intra-class variation, including divergent spatial responses to dual PI3K/mTOR versus mTORC1 inhibition. These phenotypes were consistent with known drug mechanisms, supporting the biological interpretability of the framework. Together, these findings establish MoNa-3D as a generalizable platform for multidimensional phenotypic profiling across complex 3D multicellular systems, supporting applications in drug discovery, tumor-immune interaction studies, and precision oncology.",
+      "authors": [
+        "Mogollon, I.",
+        "Feodoroff, M.",
+        "Nylund, A.",
+        "Montedeoca, A.",
+        "Atarsaikhan, G.",
+        "Neto, P.",
+        "Horvath, P.",
+        "Rannikko, A.",
+        "Cerullo, V.",
+        "Pietiainen, V.",
+        "Paavolainen, L."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "MorphoNavigator-3D：利用貝氏最佳化深度學習工作流程進行癌症球體之通用單細胞表型分析",
+      "summaryZh": "本研究提出 MorphoNavigator-3D（MoNa-3D）這項自動化框架，結合最佳化活細胞染色、深度學習分割與貝氏最佳化，實現複雜 3D 共培養中的高解析度、免標註單細胞分析。研究團隊將此方法應用於透明細胞腎細胞癌（ccRCC）與免疫細胞的 3D 球體共培養，以進行藥物篩選並提取多尺度表型特徵。分析結果成功解析了不同藥物引起的表型，例如 PI3K/mTOR 抑制劑促進球體解體、細胞核增大與免疫排斥，而免疫調節劑則維持球體架構與 T 細胞結合。這些發現確立了 MoNa-3D 作為可用於複雜 3D 多細胞系統之多維表型分析的通用平台。",
+      "topicTags": [
+        "single-cell",
+        "cancer",
+        "deep-learning",
+        "drug-discovery",
+        "3d-culture"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 4,
+      "passedByScope": 4,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 4,
+      "excluded": 0
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 0,
+      "llmTagged": 0,
+      "llmLineA": 0,
+      "llmLineB": 0,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 4,
+      "candidates": 4,
+      "featured": 4,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 0,
+      "preprint": 4,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 0,
+      "featuredPreprint": 4,
+      "overflowLineA": 0,
+      "overflowLineB": 0,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 4,
+      "llmSummarized": 4,
+      "primarySucceeded": 3,
+      "fallbackSucceeded": 1,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  }
+}
