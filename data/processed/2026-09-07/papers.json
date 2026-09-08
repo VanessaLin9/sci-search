@@ -1,0 +1,559 @@
+{
+  "reportDate": "2026-09-07",
+  "generatedAt": "2026-09-08T14:08:35.482Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03215-6",
+      "title": "Rapid robust high-fidelity 3D neuronal extraction from multiview calcium imaging datasets",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-09-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03215-6",
+      "doi": "10.1038/s41592-026-03215-6",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03286-y",
+      "title": "Integration of proteomic aging clocks in a phase 2a clinical trial supports simultaneous geroprotective assessment",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-09-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03286-y",
+      "doi": "10.1038/s41587-026-03286-y",
+      "abstract": "Six proteomic clocks are applied in a clinical trial to assess anti-aging effects.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "整合蛋白質體老化時鐘於二a期臨床試驗中，以支援同時評估抗衰老效果",
+      "summaryZh": "本研究將六種蛋白質體老化時鐘應用於一項臨床試驗中，藉此評估抗衰老效果。這項研究支援了同時進行的抗衰老（geroprotective）評估，展示了在臨床試驗框架內整合老化時鐘的應用價值。",
+      "topicTags": [
+        "aging",
+        "clinical-trial",
+        "proteomics",
+        "biomarkers"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02058-9",
+      "title": "Tissue flow acts as a guidance cue for immune cell polarization and directional migration",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-09-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02058-9",
+      "doi": "10.1038/s41556-026-02058-9",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41593-026-02447-1",
+      "title": "Ethical considerations for implantable human brain–computer interfaces",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-09-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02447-1",
+      "doi": "10.1038/s41593-026-02447-1",
+      "abstract": "Implanted brain–computer interfaces hold great promise for restoring communication and other functions and for revealing new aspects of human brain physiology. Yet as the number of implantations in humans expands, ethical clarity must keep pace with technical ambition. We propose that this should involve distinguishing research participation from patient care, ensuring long-term support for study participants, ensuring that research participants do not bear disproportionate risks for benefits realized mainly by others, and grounding research in meaningful clinical purpose.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "植入式人腦—電腦介面的倫理考量",
+      "summaryZh": "植入式腦—電腦介面在恢復溝通與其他功能，以及揭示人類大腦生理新面向方面具有極大潛力。然而，隨著人體植入案例增加，倫理上的釐清必須跟上技術發展的腳步。本文提出四項原則：區分研究參與與臨床照護、確保研究參與者獲得長期支持、避免參與者承擔與其獲益不成比例的風險，以及將研究奠基於有意義的臨床目的之上。",
+      "topicTags": [
+        "brain-computer-interface",
+        "neuroethics",
+        "neuroscience",
+        "clinical-research"
+      ]
+    },
+    {
+      "id": "10.1101/2025.05.29.656912",
+      "title": "A Transcriptionally Distinct Intermediate Activation State Precedes Langerhans Cell Migration from the Epidermis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-07",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.05.29.656912v3",
+      "doi": "10.1101/2025.05.29.656912",
+      "abstract": "Langerhans cells (LC) are antigen-presenting cells that form dense epidermal networks for immune surveillance. Upon antigen uptake, LCs are activated and subsequently orchestrate immune responses by migrating into the lymphatic system. However, the regulation of transcriptional programs during activation and the behavior of LCs in vivo during this transition remain poorly understood. Therefore, this study combines single-cell transcriptomic analysis with intravital imaging to reconstruct the activation trajectory of epidermal LCs. In particular, the study generates a high-resolution single-cell transcriptomic dataset comprising over 22,000 high-quality epidermal LCs under both homeostatic and injury conditions. Notably, a distinct intermediate activated state that precedes LC migration was identified and characterized at the level of signaling pathways and transcription factors. The integration of this dataset with external datasets from homeostatic and injured skin reveals wound-specific fibroblasts as the major source of C3, which is the central component of the complement cascade. Moreover, intravital imaging of C3-deficient mice and pegcetacoplan treatment demonstrates that C3 contributes to LC accumulation adjacent to wound sites. Collectively, the study findings identify an activated epidermal LC population and implicate complement signaling in the regulation of LC behavior during skin injury.",
+      "authors": [
+        "Kiselev, A.",
+        "Schmitter-Sanchez, A. D.",
+        "Mishra, S.",
+        "Kim, H.",
+        "Williams, S.",
+        "Park, S."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "蘭格漢斯細胞遷移出表皮前出現轉錄獨特的中間活化狀態",
+      "summaryZh": "蘭格漢斯細胞（LC）是表皮中負責免疫監察的抗原呈現細胞。本研究結合單細胞轉錄體分析與活體影像技術，重建表皮蘭格漢斯細胞的活化軌跡，並在超過 22,000 個細胞的高解析度資料中鑑定出一個先於遷移發生的獨特中間活化狀態。研究進一步整合外部資料集，發現傷口特有的纖維母細胞是補體級聯核心成分 C3 的主要來源。透過 C3 基因缺陷小鼠與 pegcetacoplan 處理實驗，證實 C3 訊號有助於蘭格漢斯細胞在傷口處聚集。整體而言，本研究揭示了表皮蘭格漢斯細胞的活化族群，並指出補體訊號在皮膚損傷時調控蘭格漢斯細胞行為的角色。",
+      "topicTags": [
+        "langerhans-cells",
+        "single-cell",
+        "immunology",
+        "complement-signaling",
+        "wound-healing"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.04.739550",
+      "title": "BCOR mutations establish a persistent culture-adaptive state in human induced pluripotent stem cells",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.04.739550v1",
+      "doi": "10.64898/2026.09.04.739550",
+      "abstract": "Human induced pluripotent stem cells (hiPSCs) are widely used for disease modelling and regenerative medicine, yet their utility depends on maintaining molecular integrity during long-term culture. BCOR (BCL6 Co-Repressor) mutations are among the most recurrent culture-acquired alterations in hiPSCs, but their functional consequences remain poorly understood. Here, we show that hiPSC BCOR mutations are predominantly truncating indels enriched in exon 7, defining a mutational landscape distinct from that observed in cancer. Multi-omics profiling reveals that BCOR loss drives widespread chromatin, transcriptomic and proteomic remodelling, with coordinated activation of developmental, pluripotency-associated and mitochondrial metabolism programmes. To facilitate routine surveillance, we develop a cost-effective TaqMan qPCR assay that accurately identifies BCOR-mutant hiPSCs across independent cell lines. Finally, we demonstrate that correction of BCOR mutation by CRISPR-Cas9 only partially restores the wildtype molecular state, highlighting the importance of early detection and monitoring of adaptive mutations in hiPSC cultures.",
+      "authors": [
+        "Badja, C.",
+        "Boushaki, S.",
+        "Kumar, Y.",
+        "Roumeliotis, T. I.",
+        "Curle, A. J.",
+        "Guiloff, A. E.",
+        "Degasperi, A.",
+        "Momen, S.",
+        "Robert, F.",
+        "Memari, Y.",
+        "Shooter, S.",
+        "Kozik, Z.",
+        "Zhao, S. J.",
+        "Toong, P. J.",
+        "Baker, I.",
+        "Hendrich, B.",
+        "Barker, R. A.",
+        "Choudhary, J.",
+        "Koh, G. C. C.",
+        "Nik-Zainal, S."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics",
+        "cancer",
+        "development",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "BCOR 突變在人類誘導多能幹細胞中建立持久的培養適應狀態",
+      "summaryZh": "本研究探討人類誘導多能幹細胞（hiPSCs）中常見的 BCOR 突變，並指出其多以第 7 外顯子的截短型嵌入缺失為主，呈現出不同於癌症的突變景觀。多體學分析顯示，BCOR 的缺失會驅動廣泛的染色質、轉錄體及蛋白質體重塑，並協調活化發育、多能性相關及粒線體代謝程式。研究團隊亦開發出具成本效益的 TaqMan qPCR 檢測法，能跨獨立細胞株準確識別帶有 BCOR 突變的 hiPSCs。最後，透過 CRISPR-Cas9 矯正 BCOR 突變僅能部分恢復野生型分子狀態，凸顯早期偵測與監控 hiPSC 培養中適應性突變的重要性。",
+      "topicTags": [
+        "stem-cells",
+        "mutations",
+        "multi-omics",
+        "gene-editing"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.02.748420",
+      "title": "Long read sequencing of retinal RNA improves killifish transcriptome annotation",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.02.748420v1",
+      "doi": "10.64898/2026.09.02.748420",
+      "abstract": "Purpose The African Turquoise Killifish has recently emerged as a powerful model for aging and age-related disease research studies. However, molecular based investigations have been limited by preliminary genome and transcriptome builds with incomplete reference genome sequence, fragmented chromosome assembly, and missing gene annotations. These issues make primary (alignment and quantification) and secondary (Gene Ontology, Gene Set Enrichment Analysis, cross-species comparisons) analyses difficult to reliably implement and interpret. This study seeks to generate a complete retinal reference transcriptome to facilitate future killifish transcriptomic, epigenetic, and proteomic studies of the visual system. Methods We generated an enhanced retina transcriptome using long-read PacBio RNAseq data that was processed using a robust computational pipeline to merge reads, classify genes, and annotate with nearest orthologous gene names from other species. This new annotation was compared to available references and validated using bulk and single cell RNAseq datasets. Results Comparison of the widely used Nfu_20140520 and the newly released NfurGRZ-RIMD1 genome builds identified NfurGRZ-RIMD1 to be more contiguous and complete. However, we identified limitations with both transcriptomes, including the lack of annotation of certain retina specific genes and many uninformative gene names. Using long-read PacBio sequencing of RNA collected from young and old Killifish retinas, we annotated a deep retinal transcriptome onto the NfurGRZ-RIMD1 reference genome. This analysis identified thousands of previously unannotated transcripts from retinas of young and old killifish. By matching each translated protein sequence to its nearest ortholog, we increased the number and proportion of genes with meaningful gene names. Mapping of bulk and single-cell RNAseq data showed substantial increase in mapping rate and identified hundreds of genes and transcripts with age-dependent expression dynamics. Conclusions Assembly of an enhanced retinal transcriptome for the killifish improved both primary and secondary analyses of bulk and single cell RNAseq data. Improvements will benefit future studies investigating the mechanisms of aging in the killifish and to best utilize this powerful model to understand human disease.",
+      "authors": [
+        "Rebba, S.",
+        "van Schalkwyk, L.",
+        "Krzywanska, A. M.",
+        "MacDonald, R. B.",
+        "Clark, B. B.",
+        "Ruzycki, P. A."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "長讀長定序改善視網膜 RNA 轉錄體註解以提升生命科學研究",
+      "summaryZh": "本研究利用長讀長 PacBio RNA 定序資料與強健的計算流程，針對非洲黃金鱂（African Turquoise Killifish）的視網膜建立並改善了轉錄體註解。研究指出先前基因體組裝與轉錄體建構的不完整性，並透過此新註解修正了未註解基因與缺乏資訊的基因名稱等問題。透過比對年輕與年老鱂魚視網膜的轉錄體，本研究識別出數千個先前未註解的轉錄本，並大幅增加具意義的基因名稱數量與比例。將大量與單細胞 RNA 定序資料進行對應後，顯示對應率顯著提升，並識別出數百個具年齡依賴性表現的基因與轉錄本。",
+      "topicTags": [
+        "long-read sequencing",
+        "transcriptome",
+        "retina",
+        "killifish",
+        "aging"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.02.748725",
+      "title": "Single-Cell Indel Detection Enhances Genetic Ancestry and Cellular Lineage Analysis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.02.748725v1",
+      "doi": "10.64898/2026.09.02.748725",
+      "abstract": "Small insertions and deletions (Indels) provide critical information for cancer genomics and clonal evolution, yet their detection from single-cell sequencing (SCS) such as scRNA-seq and scATAC-seq remains challenging due to sparse coverage, alignment artifacts, and RNA editing. Here, we present Monopogen-Indel, a bioinformatics framework for accurate germline and somatic Indel detection through haplotype-aware variant calling, dynamic template matching in repetitive regions, and cell-population- based allele segregation analysis. We validated germline Indel detection in human retina snRNA-seq with matched bulk whole genome sequencing (WGS). Monopogen-Indel detected 41,000-45,000 germline Indels per sample, with >70% precision and >90% genotyping accuracy. Using 65 heart left ventricle snATAC-seq samples, indel-based global ancestry inference segregated genetic ancestry comparably to SNVs, establishing indels as an independent marker of genetic diversity in SCS. In scRNA-seq from 43,717 cells across four anatomic sites of a patient with high grade serous ovarian cancer (HGSOC), Monopogen- Indel identified ~50,000 germline Indels per sample at 86% WGS-validated precision and an average of 1,040 de novo Indels per sample. Approximately 50% of de novo Indels reflected biological sources, including variants WGS variants, RNA editing, and cell-type-specific patterns. Somatic SNVs were correctly restricted to CD45- cells, indicating high specificity in delineating somatic from germline variants. In summary, Monopogen-indel is the first framework dedicated to indel detection from SCS and expands the utility of existing single-cell data for population genetics and cancer evolution. The module is integrated into Monopogen repository https://github.com/KChen-lab/Monopogen.",
+      "authors": [
+        "Wang, Z.",
+        "Chen, K.",
+        "Dou, J."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "snRNA-seq",
+        "cancer",
+        "evolution",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "單細胞插入缺失檢測提升遺傳祖源與細胞譜系分析",
+      "summaryZh": "本研究提出 Monopogen-Indel 生物資訊學框架，透過單倍型感知變異檢測、重複區域動態模板匹配以及細胞群體等位基因分離分析，克服了單細胞定序（SCS）中小型插入與缺失（Indels）檢測的困難。研究利用人類視網膜 snRNA-seq、心臟左心室 snATAC-seq 以及高級漿液性卵巢癌（HGSOC）單細胞資料進行驗證，證實該框架能準確檢測種系與體細胞 Indels，並可作為遺傳多樣性的獨立標記。此為首個專門用於單細胞 Indel 檢測的框架，擴展了現有單細胞資料在群體遺傳學與癌症演化研究中的應用價值。",
+      "topicTags": [
+        "single-cell",
+        "bioinformatics",
+        "cancer-genomics",
+        "genetics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.02.748772",
+      "title": "WGCNA+: AI-powered WGCNA for Integration of Multi-Omics Data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.02.748772v1",
+      "doi": "10.64898/2026.09.02.748772",
+      "abstract": "Background: Weighted Gene Co-expression Network Analysis (WGCNA) is a widely adopted systems biology method to discover gene modules and module-trait associations, mostly from transcriptomics. Designed for a single layer, it cannot jointly analyze multi-omics layers, a consequential limitation in modern biomedical research. WGCNA modules are often hard to interpret, requiring vast follow-up for contextualization. Moreover, no integrated framework exists to visualize condition-specific, cross-omics relationships at module or feature level. Results: To address these limitations, we developed WGCNA+, a novel R package extending WGCNA to multi-omics. WGCNA+ offers key innovations: (i) a unified multi-omics pipeline for per-layer network inference and cross-layer module enrichment; (ii) SVD-accelerated topological overlap matrix calculation that greatly reduces computation time; (iii) a consensus framework identifying modules reproducible across independent datasets/conditions; (iv) LASAGNA, a companion R package for phenotype-conditioned, multi-partite graph visualization of cross-omics relationships; (v) AI-powered annotation and infographics offering immediate biological insight. We tested WGCNA+ across public transcriptomics, proteomics, and miRNA datasets. WGCNA+ detects biologically meaningful modules, cross-omics feature and phenotype correlations, and provides AI-powered interpretation that accelerates research. Conclusions: WGCNA+ addresses existing gaps with a principled, efficient framework for co-expression network analysis across omics. It detects cross-omics regulatory modules and their phenotype association to support basic research, biomarker discovery and pathway analysis. It uniquely offers AI-assisted interpretation and infographics, aiding hypothesis generation. Complementing WGCNA+, LASAGNA is a phenotype-aware multi-partite visualization framework to explore cross-omics relationships. Altogether, these features make WGCNA+ an innovative, powerful tool for clinical and translational research. Availability and implementation: WGCNA+ and LASAGNA are implemented in R language for statistical computing, version[&ge;]3.5. WGCNA+ and LASAGNA are fully and freely available with no restrictions (https://github.com/bigomics/WGCNAplus; https://github.com/bigomics/lasagna)",
+      "authors": [
+        "Zito, A.",
+        "Escriba' Montagut, X.",
+        "Cano-Muniz, S.",
+        "Martinelli, A.",
+        "Akhmedov, M.",
+        "Kwee, I. W."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "WGCNA+：以 AI 驅動的 WGCNA 擴展工具，整合多體學資料",
+      "summaryZh": "傳統的加權基因共表現網路分析（WGCNA）多用於轉錄體資料，難以同時分析多體學層次。本研究推出 R 套件 WGCNA+，將 WGCNA 擴展至多體學整合分析，提供統一的網路推論與跨層次模組富集流程，並以奇異值分解（SVD）加速拓撲重疊矩陣運算，大幅縮短計算時間。WGCNA+ 同時內建跨資料集共識模組鑑定框架，以及搭配的 LASAGNA 套件，可進行表型條件式的多部圖視覺化，呈現跨體學關聯。工具亦結合 AI 註解與資訊圖表功能，協助研究者快速解讀結果，並已在公開的轉錄體、蛋白體與 miRNA 資料集上驗證其能找出具生物意義的模組與表型關聯。",
+      "topicTags": [
+        "multi-omics",
+        "bioinformatics",
+        "gene-coexpression",
+        "r-package",
+        "ai-annotation"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.02.748851",
+      "title": "EISCA and EISTA: Full-Spectrum Pipelines for Single-Cell and Spatial Transcriptomics Analysis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.02.748851v1",
+      "doi": "10.64898/2026.09.02.748851",
+      "abstract": "Single-cell and spatial transcriptomics are transforming our understanding of cellular heterogeneity and tissue organization, yet their analytical complexity remains a major bottleneck. Here, we present EISCA and EISTA, two standardized, end-to-end pipelines for single-cell RNA-seq and imaging-based spatial transcriptomics analysis. Built on the Nextflow nf-core framework, both pipelines implement modular, scalable, and reproducible workflows spanning primary, secondary, and tertiary analyses, from raw data processing to advanced downstream analyses. EISCA supports droplet- and plate-based scRNA-seq technologies, while EISTA is tailored for high-resolution spatial platforms including Vizgen MERFISH and 10x Xenium. Together, they integrate state-of-the-art methods for quality control, normalization, clustering, integration, cell-type annotation, differential expression, and cell-cell communication, with EISTA further enabling spatial statistical analyses. A central design principle is to balance standardization with flexibility: workflows can be executed end-to-end or modularly, enabling iterative, exploratory analyses with minimal overhead. Both pipelines deliver rapid preliminary results alongside an out-of-the-box report, facilitating immediate data assessment and accelerating downstream discovery. Case studies in plant immunity and human sepsis demonstrate that EISTA and EISCA reproducibly can be used to recover biologically meaningful insights. Collectively, these pipelines provide efficient, flexible, and scalable solutions for comprehensive single-cell and spatial transcriptomics analyses.",
+      "authors": [
+        "Wu, H.",
+        "Lister, A.",
+        "Macaulay, I. C.",
+        "Long, K.",
+        "Uauy, C.",
+        "Lan, Y.",
+        "Wickham, G. J.",
+        "Swarbreck, D.",
+        "Videm, P.",
+        "Stubbs, A.",
+        "Soranzo, N.",
+        "de Waard-van Baardwijk, M.",
+        "Nilchi, A. N.",
+        "Papatheodorou, I."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "spatial transcriptomics",
+        "MERFISH",
+        "Xenium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "EISCA 與 EISTA：單細胞與空間轉錄體分析的全方位流程",
+      "summaryZh": "本文介紹 EISCA 與 EISTA 兩個標準化的端到端分析流程，分別用於單細胞 RNA 定序與影像式空間轉錄體分析。兩者皆建構於 Nextflow nf-core 框架上，提供模組化、可擴展且可重現的工作流程，涵蓋從原始資料處理到進階下游分析的一、二、三級分析。EISCA 支援微滴式與孔盤式 scRNA-seq 技術，EISTA 則針對 Vizgen MERFISH 與 10x Xenium 等高解析度空間平台所設計。流程整合了品質管控、標準化、分群、整合、細胞類型註解、差異表現與細胞間通訊等最先進方法，EISTA 還能執行空間統計分析。植物免疫與人類敗血症的案例研究顯示，這兩個流程能可重現地獲得具生物意義的結果。",
+      "topicTags": [
+        "single-cell",
+        "spatial-transcriptomics",
+        "bioinformatics",
+        "pipeline",
+        "nf-core"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.21.746295",
+      "title": "PSEN1 Expression Identifies a Developmentally Distinct Favorable-Prognosis State in SHH α Medulloblastoma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.21.746295v3",
+      "doi": "10.64898/2026.08.21.746295",
+      "abstract": "Background: Although PSEN1 is best known for its role in Alzheimer's disease, it also regulates neural development and cerebellar morphogenesis. Medulloblastoma (MB) is the most common malignant pediatric brain tumor and arises from disrupted cerebellar developmental programs. The clinical significance of PSEN1 in MB remains unknown. We investigated the prognostic value and transcriptional correlates of PSEN1 expression across molecular subgroups and subtypes of MB. Methods: Public bulk and single-cell transcriptomic datasets were used to examine PSEN1 expression, associations with overall survival (OS), and transcriptional correlates in MB. The SHH -associated transcriptional pattern was evaluated in an independent cohort, and PSEN1 expression was further examined in the developing human cerebellum and across pediatric brain tumor types. Genes strongly correlated with PSEN1 in SHH MB were subjected to Gene Ontology (GO) enrichment analysis. Results: High PSEN1 expression was consistently associated with significantly longer OS exclusively in SHH MB. The PSEN1-associated transcriptional pattern was reproduced in an independent SHH cohort. PSEN1 was expressed across developing cerebellar cell populations and pediatric brain tumor types, with MB showing intermediate expression among the tumor entities examined. In SHH MB, PSEN1 was associated with a coordinated transcriptional program enriched for RNA homeostasis, intracellular membrane trafficking, protein quality control, lipid and calcium signaling, and developmental pathways. Conclusions: High PSEN1 expression identifies a favorable-prognosis subset of SHH MB and is associated with a distinct transcriptional program related to endomembrane organization and cellular homeostasis rather than canonical SHH signaling. These findings suggest that PSEN1 may mark a developmentally distinct tumor state and generate new hypotheses regarding subtype-specific developmental programs in MB.",
+      "authors": [
+        "Vanini, J.",
+        "Thomaz, A.",
+        "Lupatini, M. M.",
+        "Brunetto, A. T.",
+        "de Farias, C. B.",
+        "Jaeger, M.",
+        "Roesler, R."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "PSEN1 表達識別出 SHH α 型髓母細胞瘤中具備良好預後的發育獨特狀態",
+      "summaryZh": "本研究探討了 PSEN1 在髓母細胞瘤（medulloblastoma, MB）各分子亞型中的預後價值與轉錄相關性。利用公開的批量與單細胞轉錄體數據集，研究發現高 PSEN1 表達與 SHH 類型 MB 患者顯著較長的整體存活期（OS）相關。在 SHH MB 中，PSEN1 與一個富含 RNA 恆定、細胞內膜運輸、蛋白質品質控制及發育途徑的協調轉錄程式有關，但與典型 SHH 信號傳遞無關。這些結果表明，高 PSEN1 表達可標識出具有良好預後的 SHH MB 次群體，並呈現出發育獨特的腫瘤狀態。",
+      "topicTags": [
+        "medulloblastoma",
+        "neuroscience",
+        "transcriptomics",
+        "pediatric-cancer"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.30.748106",
+      "title": "Chromosomal mutational signatures of DNA damaging agents at single cell resolution",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.30.748106v1",
+      "doi": "10.64898/2026.08.30.748106",
+      "abstract": "The chromosomal-scale mutational spectrum of small molecules that interact with DNA has been hard to study at scale, as mutational events are distributed in location and occur in parallel in different cells. Here, we present a framework that pairs phylogenetic ancestry reconstruction with mutational signature decomposition to characterise recent, cell-private copy number alteration (CNA) mutational patterns at single-cell resolution. We used this framework to characterise the cell-wise mutational spectrum of contemporaneous CNAs generated by double-strand-break-inducing chemotherapeutic drugs. We demonstrate that platinum salts, G-quadruplex stabilizers and topoisomerase II inhibitors, although mechanistically distinct, converge on a mutational signature dominated by telomere-bounded copy-number gains and losses. This signature is observed in different genetic backgrounds and in vivo in drug-treated patient-derived xenografts. We also observe a high rate of endogenous telomere-bounded mutational foreground in BRCA1 deficient cells. We show that the single cell genome derived signature exposures are drug dose-dependent, and use this to identify the decay of mutational load after drug withdrawal. We observe that both cisplatin and a G4 binder molecule (CX5461) exhibit foreground mutational signature persistence for at least 3 weeks after drug withdrawal, suggesting that residual effects of exposure may last longer than anticipated. Finally, extending the framework to serially drug-treated patient-derived xenograft (PDX) models, we show that telomere-bounded CNA signature exposure is associated with tumoural response to drug, consistent with loss of mutational activity on the genome after acquired resistance emerges. Together, our results show that our framework applied on scWGS identifies contemporaneous chromosomal mutation patterns induced by small molecules in human tissues.",
+      "authors": [
+        "Andronescu, M.",
+        "Adrian-Hamazaki, A.",
+        "Yap, D. B.",
+        "Daniels, W.",
+        "Sarvar, A.",
+        "Zaikova, E.",
+        "Furman, B.",
+        "Au, V.",
+        "Richter, A.",
+        "Van Vliet, M.",
+        "Baril, C.",
+        "Wang, B.",
+        "Beatty, S.",
+        "Kabeer, F.",
+        "O'Flanagan, C.",
+        "Tran, H.",
+        "Cherkasova, V.",
+        "Kim, B.",
+        "De Algara, T. R.",
+        "Means, S.",
+        "Westereng, N.",
+        "Tan, J.",
+        "Chan, J.",
+        "Zhong, J.",
+        "Reinert, R.",
+        "Micla, J.",
+        "Prevost-Potvin, B.",
+        "Mojtahedzadeh, B.",
+        "Xu, H.",
+        "Moore, R.",
+        "Mungall, A.",
+        "Lai, D.",
+        "Aparicio, S."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "單細胞解析度下DNA受損劑的染色體突變特徵",
+      "summaryZh": "本研究提出一個結合系統發生祖先重建與突變特徵分解的框架，能在單細胞解析度下解析近期且細胞專屬的拷貝數變異（CNA）突變模式。研究藉此探討雙股斷裂誘導化療藥物所產生的同步CNA細胞突變光譜，並發現多種化學性質不同的藥物會收斂於以端粒界定的拷貝數增減為主的突變特徵。此特徵在不同基因背景與藥物處理之患者來源異種移植（PDX）體內皆可觀察到，且其暴露量呈藥物劑量依賴性，並在藥物撤除後仍可持續一段時間。延伸應用至連續藥物處理的PDX模型時，亦顯示此特徵暴露量與腫瘤對藥物的反應有關。這項成果有助於在人類組織中辨識由小分子誘導的同步染色體突變模式。",
+      "topicTags": [
+        "single-cell",
+        "mutational-signatures",
+        "genomics",
+        "chemotherapy",
+        "copy-number-alteration"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 19,
+      "passedByScope": 12,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 7,
+      "keywordFallbackYes": 5,
+      "keywordFallbackNo": 2,
+      "included": 17,
+      "excluded": 2
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 4,
+      "llmTagged": 0,
+      "llmLineA": 0,
+      "llmLineB": 0,
+      "fallback": 4,
+      "fallbackLineA": 0,
+      "fallbackLineB": 4,
+      "failures": 4
+    },
+    "selection": {
+      "total": 12,
+      "candidates": 12,
+      "featured": 10,
+      "overflow": 2,
+      "lineA": 0,
+      "lineB": 4,
+      "preprint": 8,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 2,
+      "featuredPreprint": 8,
+      "overflowLineA": 0,
+      "overflowLineB": 2,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 10,
+      "llmSummarized": 10,
+      "primarySucceeded": 4,
+      "fallbackSucceeded": 6,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 2,
+      "llmTranslated": 0,
+      "failed": 2
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02808-7",
+        "title": "Isaac Newton’s remarkable year — and the plagiarism accusations that followed",
+        "journal": "Nature",
+        "publishedDate": "2026-09-07T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02808-7",
+        "doi": "10.1038/d41586-026-02808-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02822-9",
+        "title": "Anthropic AI ‘formalizes’ proof of Fermat’s last theorem — a milestone for mathematics",
+        "journal": "Nature",
+        "publishedDate": "2026-09-07T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02822-9",
+        "doi": "10.1038/d41586-026-02822-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    }
+  ]
+}
