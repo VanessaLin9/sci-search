@@ -1,0 +1,402 @@
+{
+  "reportDate": "2026-09-12",
+  "generatedAt": "2026-09-13T14:00:32.986Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.09.08.750101",
+      "title": "tTEscanR: A user-friendly integrative R package for quantifying and visualizing translation efficiency from sequencing data in diverse biological systems",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-12",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.08.750101v1",
+      "doi": "10.64898/2026.09.08.750101",
+      "abstract": "Translation elongation relies on accurate codon-anticodon pairing. Here, we present tTEscanR, an R package designed to investigate this translational interface. By quantifying mRNA codon demand alongside tRNA anticodon availability, tTEscanR provides scalable estimates of translation rates directly from standard transcriptomic and chromatin accessibility count matrices, where genomic features are represented as rows and experimental conditions as columns. tTEscanR seamlessly integrates into existing bulk and single-cell pipelines and provides modular functions for quality control, filtering, normalization, statistical analysis, and visualization. A structured data object centralizes workflow outputs and associated metadata. A built-in multilevel visualization module generates customizable, publication-ready graphical outputs to facilitate data interpretation and reproducibility of the complex translational landscape. We demonstrate the utility of tTEscanR across cancer biology, aging, and neurodegeneration datasets, uncovering critical translational regulatory programs overlooked by conventional analyses. tTEscanR is available in an open-source repository as a standalone tool or workflow plug-in.",
+      "authors": [
+        "Varas Sanchez, A.",
+        "Gallardo Dodd, C. J.",
+        "Li, Q.",
+        "Gao, W.",
+        "Ringner, M.",
+        "Kutter, C."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "tTEscanR：從定序數據量化與視覺化轉譯效率的親民整合型 R 套件",
+      "summaryZh": "本研究發表名為 tTEscanR 的 R 套件，旨在探討依賴精準密碼子與反密碼子配對的轉譯延伸。透過量化 mRNA 密碼子需求與 tRNA 反密碼子可用性，該工具能直接從標準轉錄體與染色質可近性計數矩陣中，具可擴展性地估算轉譯速率。tTEscanR 可無縫整合至現有的批次與單細胞分析流程，並提供品質控制、過濾、標準化、統計分析及視覺化等模組化功能。作者展示了其在癌症生物學、老化及神經退化性疾病資料集中的應用，揭示了常規分析所忽略的關鍵轉譯調節程式。",
+      "topicTags": [
+        "r-package",
+        "translation-efficiency",
+        "transcriptomics",
+        "bioinformatics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.08.750196",
+      "title": "CellMAGE: cell-type deconvolution for multi-parent population analysis of gene expression",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-12",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.08.750196v1",
+      "doi": "10.64898/2026.09.08.750196",
+      "abstract": "Single-cell RNA-sequencing remains prohibitively expensive for multiparental population (MPP) studies. Existing deconvolution methods treat bulk RNA-seq as genetically anonymous mixtures, but in MPPs, the proportional contribution of each parental strain to each progeny's transcriptome is already known. CellMAGE (Cell-type deconvolution for Multi-parent Analysis of Gene Expression) weights parental cell-type profiles by each progeny's known genetic composition, requiring no model training and no minimum sample size. Validated in 16 Diversity Outbred mice across 12 prefrontal cortex cell types and 23,116 genes, predicted and measured gene expression were statistically equivalent (0.05) in all cell types (pooled Spearman = 0.923, 95% CI: 0.910, 0.934). CIBERSORTx required 96 additional samples to resolve at most 12.4% of genes and only 3 cell types; CellMAGE outperformed it even within this restricted comparison (per-cell-type median : 0.908-0.974 vs. 0.353-0.641). CellMAGE is applicable to any MPP with parental single-cell data, including diploid crop MAGIC populations.",
+      "authors": [
+        "Ball, R. L.",
+        "Klein, A.",
+        "Auth, A. A.",
+        "Skelly, D. A.",
+        "He, H.",
+        "Philip, V. M.",
+        "Gagnon, L. H.",
+        "Chesler, E. J."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "CellMAGE：用於多親本群體基因表現分析的細胞類型解convolution方法",
+      "summaryZh": "本研究報導了一種名為 CellMAGE 的細胞類型解convolution方法，用於多親本群體（MPP）的基因表現分析。由於單細胞 RNA 定序在多親本群體研究中的成本過高，現有方法又將大量 RNA 定序視為基因上匿名的混合物，CellMAGE 則利用每個後代已知的基因組成來加權親本細胞類型特徵，且不需要模型訓練或最小樣本量。研究在 16 隻 Diversity Outbred 小鼠、12 種前額葉皮質細胞類型和 23,116 個基因中進行驗證，顯示預測與測得的基因表現具統計顯著等效性。這項方法克服了現有工具的限制，並可應用於任何具備親本單細胞數據的多親本群體。",
+      "topicTags": [
+        "single-cell",
+        "gene-expression",
+        "computational-biology",
+        "transcriptomics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.05.749632",
+      "title": "spAlignDE unifies cross-sample and cross-modal spatial alignment with mismatch-aware differential expression",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-12",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.05.749632v1",
+      "doi": "10.64898/2026.09.05.749632",
+      "abstract": "Comparative analysis of spatial omics requires aligning data across samples and modalities to a common coordinate system. Existing methods can be computationally intensive for large datasets, and cross-modal alignment is difficult when datasets lack comparable molecular features. In addition, residual alignment errors can cause locations assigned to the same coordinates to represent different biological regions, producing false differential expression signals. Here we propose spAlignDE, a computational method that integrates structure-guided spatial alignment with mismatch-aware local differential expression analysis. spAlignDE represents structures from spatial transcriptomics, spatial ATAC-seq, histology, and anatomical atlases as continuous fields and aligns them by shooting-based diffeomorphic registration without requiring shared molecular features. In cross-sample benchmarks against 12 methods, spAlignDE achieved the highest agreement in gene expression patterns and anatomical annotations. It also scaled to 20 MERFISH brain sections containing 1.45 million cells. For cross-modal tasks, spAlignDE accurately aligned spatial transcriptomics with histology, the Allen Mouse Brain Common Coordinate Framework, and spatial ATAC-seq. After alignment, spAlignDE estimates local expression contrasts on a shared grid and inflates their variances according to mismatch risk estimated from putatively stable genes and local observation density. The analysis can also adjust for cell-type composition. Simulations showed improved false discovery control without systematic loss of power. In real-data applications, spAlignDE localized age-associated changes in gene expression and T-cell distribution in the mouse brain and spatially restricted expression differences between normal and injured kidney sections.",
+      "authors": [
+        "Xu, S.",
+        "Wang, Y.",
+        "Meng, L.",
+        "Dalal, A.",
+        "Yin, Y.",
+        "Song, D."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "spatial omics",
+        "MERFISH"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "spAlignDE：結合具錯配感知之差異表達分析的跨樣本與跨模態空間對齊方法",
+      "summaryZh": "本研究提出名為 spAlignDE 的計算方法，整合了結構引導的空間對齊與具錯配感知的局部差異表達分析。此方法利用射擊式微分同胚配準（shooting-based diffeomorphic registration）將來自空間轉錄體學、空間 ATAC-seq、組織學及解剖圖譜的結構對齊至共同坐標系，且不需共有的分子特徵。在基準測試與實際應用中，spAlignDE 展現了高效能的擴展性、精確的跨模態對齊能力，並能透過估計錯配風險來改善偽陽性控制。這項研究有助於更準確地進行空間體學的比較分析。",
+      "topicTags": [
+        "spatial-omics",
+        "computational-biology",
+        "spatial-transcriptomics",
+        "single-cell"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.05.749598",
+      "title": "Explainable Machine Learning and Epigenomic Profiling Decipher the Topological Determinants of Lentiviral Integration and Longitudinal Persistence in SCID-X1 Gene Therapy",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-12",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.05.749598v1",
+      "doi": "10.64898/2026.09.05.749598",
+      "abstract": "Lentiviral vectors (LVs) are clinically established for SCID-X1 gene therapy, yet the quantitative epigenomic and spatial determinants governing integration targeting and long-term clonal persistence across chromosomes remain incompletely characterized. Using clinical multi-omics datasets from SCID-X1 trials, we curated 274,959 unique clinical integration sites (VIS) across 276,839 clonal records from 10 patients (hg38). Balanced against length-weighted genomic controls (total N = 549,918), five epigenomic and topological features were modeled. We evaluated Logistic Regression, XGBoost, and a Deep Genomic ResNet using inner 5-fold chromosome-grouped cross-validation and evaluation on held-out test chromosomes (chr19-22, chrX). Statistical uncertainty was quantified via 1-Mb block-bootstrap (5,000 replicates) and 1-Mb block permutations (10,000 replicates). On held-out chromosomes, Deep ResNet achieved an ROC-AUC of 0.7857 [95% CI: 0.7672-0.8029] and PR-AUC of 0.8027 [95% CI: 0.7640-0.8337] over the 0.5755 prevalence baseline, outperforming linear baselines. 1-Mb block permutations confirmed significant proximity to scATAC-seq peaks (Cliff's {delta}=-0.3364, P_perm<0.0001) and TSSs ({delta}=-0.2446, P_perm<0.0001), alongside 82.71% gene body overlap (OR = 3.47). Targeted analysis showed 99.91% of VIS reside distal (>100 kb) from proto-oncogenes without proximal enrichment (OR = 1.05, P = 0.617). Furthermore, longitudinal tracking identified 79,587 persistent clones ([&ge;]2 time points), which exhibited a significant 31% depletion near proto-oncogenes (OR = 0.69, P = 0.014). Compact topological and epigenomic features robustly predict lentiviral integration without spatial data leakage. The long-term depletion of persistent clones near oncogenes confirms the insertional safety of SIN lentiviral gene therapy.",
+      "authors": [
+        "Saber, H.",
+        "Mousavipour, Z."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "以可解釋性機器學習與表觀基因體分析解碼 SCID-X1 基因治療中慢病毒整合與長期持續性的拓樸決定因素",
+      "summaryZh": "本研究利用臨床多體學資料集，探討 SCID-X1 基因治療中慢病毒載體的整合標靶與長期群落持續性。研究團隊運用 Logistic Regression、XGBoost 與 Deep Genomic ResNet 等模型，評估表觀基因體與拓樸特徵對病毒整合的預測能力。結果顯示，深度學習模型在保留的測試染色體上展現出顯著的預測效能，且多數整合位點位於遠離原癌基因的位置。此外，長期追蹤識別出的持續性群落展現出原癌基因附近的顯著耗竭，此結果確認了 SIN 慢病毒基因治療的插入安全性。",
+      "topicTags": [
+        "machine-learning",
+        "epigenomics",
+        "gene-therapy",
+        "virology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.05.749559",
+      "title": "SpaCoEx: Sparse Gene Selection for Spatially Varying Co-expression in Spatial Transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-12",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.05.749559v1",
+      "doi": "10.64898/2026.09.05.749559",
+      "abstract": "Spatial transcriptomics enables gene expression to be measured while preserving tissue location, but most existing analyses focus on spatial variation in individual genes or expression-defined domains. Here, we introduce SpaCoEx, a sparse spatial representation framework that integrates gene-expression levels with spatially varying gene-gene co-expression. SpaCoEx first estimates local co-expression matrices from neighboring spatial spots, maps them into a log-Euclidean representation, and performs structured gene selection by retaining or removing the full row and column associated with each gene. The selected genes are then used to construct both expression-level features and local co-expression features, which are combined through an -weighted joint representation for downstream spatial analysis. We applied SpaCoEx to human cutaneous squamous cell carcinoma and annotated human breast cancer spatial transcriptomics datasets. In the cutaneous squamous cell carcinoma dataset, SpaCoEx selected 29 of 45 keratinocyte-related genes while preserving 96.74% of the spatial co-expression variation. In the breast cancer dataset, SpaCoEx identified spatially varying co-expression between B2M and HLA-C, a biologically meaningful major histocompatibility complex (MHC) class I antigen-presentation gene pair. Their local correlation was significantly higher in cancer-associated regions than in non-cancer regions (mean difference = 0.30, spatially adjusted SE = 0.045, P<1.0x10^(-10)), whereas B2M and HLA-C expression individually did not differ significantly between cancer and non-cancer. In benchmarking against manual tissue annotations, co-expression-only SpaCoEx achieved the strongest spatial coherence (percentage of abnormal spots [PAS] = 0.076), while the joint expression/co-expression representation achieved the highest annotation agreement, with an adjusted Rand Index (ARI) of 0.584 at = 0.60 and and normalized mutual information (NMI) of 0.663 at = 0.40. By integrating marginal gene-expression information with local gene-gene co-expression structure, SpaCoEx provides a sparse, low-dimensional, and interpretable representation of spatial transcriptomics data that captures complementary aspects of tissue organization beyond expression-based variation alone.",
+      "authors": [
+        "Jian, M.",
+        "Pei, S.",
+        "Alterovitz, G."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "SpaCoEx：空間轉錄體學中用於空間變異共表達的稀疏基因選擇",
+      "summaryZh": "本篇研究介紹了 SpaCoEx，這是一個稀疏空間表現框架，旨在整合基因表達水準與空間變異的基因間共表達。透過結合區域共表達矩陣與結構化基因選擇，該方法能夠同時建構表達水準特徵與區域共表達特徵，用於下游的空間分析。研究團隊將其應用於人類皮膚鱗狀細胞癌與人類乳癌空間轉錄體學資料集，展示了其在識別空間變異共表達與增進空間分析上的表現。這項方法有助於深入解析空間轉錄體學資料中的基因共表達關係。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "gene-selection",
+        "co-expression",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-76876-8",
+      "title": "Loss of oxytocin receptor function disrupts neural signatures of pair bonding and fidelity in the nucleus accumbens",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-76876-8",
+      "doi": "10.1038/s41467-026-76876-8",
+      "abstract": "Oxytocin receptor signaling in the nucleus accumbens supports pair bonding, but its role in attachment-related neural activity is unclear. Here, the authors show that Oxtr loss sex-specifically alters pair bonding and nucleus accumbens activity in prairie voles; in males, early activity predicts partner preference.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "催產素受體功能喪失會破壞伏隔核中伴侶結和忠誠的神經特徵",
+      "summaryZh": "本研究探討了催產素受體訊息傳遞在伏隔核中對伴侶結的支持作用及其與依附相關神經活動的關聯。研究人員發現，催產素受體（Oxtr）的缺失會以具備性別特異性的方式改變草原田鼠的伴侶結以及伏隔核活性。在雄性個體中，早期的神經活動能夠預測其對伴侶的偏好。這些發現有助於釐清催產素受體在神經活動與伴侶結之間的關聯機制。",
+      "topicTags": [
+        "neuroscience",
+        "oxytocin-receptor",
+        "pair-bonding",
+        "nucleus-accumbens"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-77657-z",
+      "title": "Leveraging high-throughput proteomics and AI-based protein folding to accelerate VAV1 molecular glue discovery",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-77657-z",
+      "doi": "10.1038/s41467-026-77657-z",
+      "abstract": "VAV1 is a blood-cell signaling protein linked to leukemia and autoimmune disease. Here, the authors discover CRBN molecular glues that degrade VAV1 via a non-canonical degron, using proteomics and AI-based structural modeling to guide the design of more potent degraders.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "利用高通量蛋白質體學與基於 AI 的蛋白質摺疊加速 VAV1 分子膠發現",
+      "summaryZh": "本研究探討 VAV1 這種與血球訊息傳遞、白血病及自體免疫疾病相關的蛋白質。作者透過高通量蛋白質體學與基於 AI 的結構建模，發現能透過非典型降解子（degron）降解 VAV1 的 CRBN 分子膠（molecular glues）。這項研究有助於引導設計出更具效力的降解劑。",
+      "topicTags": [
+        "proteomics",
+        "ai",
+        "protein-folding",
+        "molecular-glue",
+        "drug-discovery"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 13,
+      "passedByScope": 5,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 8,
+      "keywordFallbackYes": 2,
+      "keywordFallbackNo": 6,
+      "included": 7,
+      "excluded": 6
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 2,
+      "llmTagged": 0,
+      "llmLineA": 0,
+      "llmLineB": 0,
+      "fallback": 2,
+      "fallbackLineA": 0,
+      "fallbackLineB": 2,
+      "failures": 2
+    },
+    "selection": {
+      "total": 7,
+      "candidates": 7,
+      "featured": 7,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 2,
+      "preprint": 5,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 2,
+      "featuredPreprint": 5,
+      "overflowLineA": 0,
+      "overflowLineB": 0,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 7,
+      "llmSummarized": 7,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 7,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77786-5",
+        "title": "Disentangling the effect of space and electric field on photoelectrochemical water splitting",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77786-5",
+        "doi": "10.1038/s41467-026-77786-5",
+        "abstract": "Photoelectrochemical performance strongly depends on charge separation within space charge layer, but the precise mechanisms remain unclear. Here, the authors disentangle the effect of space charge layer width and built-in electric field on charge dynamics using in-situ time-resolved techniques.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77687-7",
+        "title": "CG14075/Mmt promotes amino acid catabolism and cooperates with AKH during starvation in Drosophila",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77687-7",
+        "doi": "10.1038/s41467-026-77687-7",
+        "abstract": "How animals survive without food depends on more than stored fat and sugar. This study shows that the fruit fly hormone CG14075/Marmite helps redirect amino acid use during starvation, working with a key hormone, AKH, to sustain energy balance.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77501-4",
+        "title": "Widespread declines of formerly common species reshape local assemblages over time",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77501-4",
+        "doi": "10.1038/s41467-026-77501-4",
+        "abstract": "Human-driven environmental change is reshaping ecological communities worldwide. Analysing 4,748 sites across 129 studies, we show that formerly common species decline disproportionately compared to rare species in marine and terrestrial assemblages.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77633-7",
+        "title": "Reprogramming the Rossmann fold signature motif creates orthogonal redox biocatalysts",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77633-7",
+        "doi": "10.1038/s41467-026-77633-7",
+        "abstract": "Developing NMN⁺ as an orthogonal redox cofactor could help biomanufacturing approach theoretical maximum yields. Here, the authors show that engineering the Rossmann fold can convert NAD(P)-dependent enzymes to selectively use the noncanonical cofactor NMN(H).",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77393-4",
+        "title": "A single-nucleus atlas of ligular region uncovers brassinosteroid-driven cell fate transitions controlling leaf angle in maize",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77393-4",
+        "doi": "10.1038/s41467-026-77393-4",
+        "abstract": "Here the authors integrate single-nucleus transcriptomic and cellular analyse to reveal that brassinosteroid drives cell division, elongation, and subsequent lignification in the ligular region, thereby controlling leaf angle diversity in maize.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77629-3",
+        "title": "Two-dimensional metal oxide polaritonics",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77629-3",
+        "doi": "10.1038/s41467-026-77629-3",
+        "abstract": "Metal oxides support a broad range of polaritons. In this review, the authors extend this to the emerging family of two-dimensional metal oxides and cover the impact of crystal structure and extrinsic manipulation on the polaritons along with synthesis approaches and future photonics applications.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    }
+  ]
+}
