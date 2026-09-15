@@ -1,6 +1,6 @@
 {
   "reportDate": "2026-09-14",
-  "generatedAt": "2026-09-14T16:06:58.595Z",
+  "generatedAt": "2026-09-15T14:35:46.450Z",
   "papers": [
     {
       "id": "10.1038/s41592-026-03216-5",
@@ -94,13 +94,41 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "keyword-fallback",
       "featured": true,
-      "titleZh": "生態系統穩定性受多重互動全球變遷因子下的資源與性狀協調所塑造",
-      "summaryZh": "生態群落日益暴露於多種人為驅動因子之下。作者利用為期 13 年的田野實驗，顯示高達四種互動的全球變遷因子對草原生產力與穩定性的影響，會隨著時間動態重新組織，部分是透過物種非同步性與性狀組成的變化來達成。這項研究有助於理解生態系統在面對多重環境變遷時的動態反應與穩定機制。",
+      "titleZh": "生態系統穩定性由多重交互作用全球變遷因子下的資源—性狀協調所形塑",
+      "summaryZh": "本研究利用一項為期 13 年的田野實驗，探討多達四種交互作用的全球變遷因子對草原生產力與穩定性的影響。研究顯示，這些影響會隨著時間動態重新組織，部分原因是透過物種非同步性與性狀組成的改變來達成。這項發現有助於理解生態社群在面對多重人為驅動因素時的動態反應。",
       "topicTags": [
+        "ecology",
         "ecosystem-stability",
         "global-change",
-        "trait-composition",
-        "ecology"
+        "biodiversity",
+        "field-experiment"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03308-9",
+      "title": "An engineered nanopore identifies saccharides, amino acids, peptides and ribonucleotides",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-09-14T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03308-9",
+      "doi": "10.1038/s41587-026-03308-9",
+      "abstract": "Modified nanopore simultaneously identifies diverse biomolecules and their modifications.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "經工程改造的奈米孔可識別醣類、胺基酸、胜肽及核糖核苷酸",
+      "summaryZh": "本研究報導了一種經修改的奈米孔，能同時識別多種生物分子及其修飾物。這項成果有助於提升對多樣化生物分子的檢測能力，並為相關領域的研究提供了新的技術工具。",
+      "topicTags": [
+        "nanopore",
+        "biomolecules",
+        "amino-acids",
+        "peptides"
       ]
     },
     {
@@ -140,12 +168,12 @@
       "digestTaggingMethod": "keyword-fallback",
       "featured": true,
       "titleZh": "腹側海馬迴中重疊的表徵支持快速的恐懼記憶提取",
-      "summaryZh": "本研究指出，恐懼學習會增加腹側 CA1 中威脅與中立情境表徵的相似性。相較於背側 CA1，此機制可能有助於更快地重建威脅記憶。這項發現闡明了腹側海馬迴在大腦處理恐懼記憶時的作用。",
+      "summaryZh": "本研究指出，恐懼學習會增加腹側 CA1 中威脅與中性情境表徵的相似性。相較於背側 CA1，此機制可能有助於更快速地重現威脅記憶。這項發現闡明了不同海馬迴區域在恐懼記憶提取機制上的差異。",
       "topicTags": [
         "neuroscience",
-        "memory",
-        "fear-learning",
-        "hippocampus"
+        "fear-memory",
+        "hippocampus",
+        "learning"
       ]
     },
     {
@@ -168,8 +196,8 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "keyword-fallback",
       "featured": true,
-      "titleZh": "將土壤微生物體知識轉化為農業決策",
-      "summaryZh": "本篇研究指出，為了成功將土壤微生物體（microbiome）知識轉化為農民的實際介入措施，研究設計必須以農業為核心，並從回顧性觀察轉向預測性行動。這項轉變對於發展出具實用價值的農業策略至關重要。",
+      "titleZh": "將土壤微生物組知識轉化為農業決策",
+      "summaryZh": "本篇發表於《Nature Microbiology》的研究指出，為了成功將微生物組知識轉化為農民的實際介入措施，研究設計必須以農業為出發點。研究強調，相關工作需要從回顧性觀察轉變為具預測性的行動。這項探討有助於指引未來如何將土壤微生物組的研究成果應用於實際農業決策中。",
       "topicTags": [
         "soil-microbiome",
         "agriculture",
@@ -194,12 +222,13 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "keyword-fallback",
       "featured": true,
-      "titleZh": "空氣汙染對傳染病影響之建模研究",
-      "summaryZh": "本研究探討空氣汙染如何增加侵襲性肺炎球菌疾病（invasive pneumococcal disease）的風險，並指出細菌譜系會改變該風險的時間點。這顯示病原體的基因體多樣性為一項效應修飾因子（effect modifier）。此發現有助於理解環境因素與病原體特性如何共同影響疾病風險。",
+      "titleZh": "空氣污染對傳染病影響之建模研究",
+      "summaryZh": "本研究探討空氣污染如何增加侵襲性肺炎鏈球菌疾病的風險，並指出細菌譜系會改變該風險的時間點。研究結果顯示，病原體的基因體多樣性在此過程中扮演了效應修飾因子的角色。這項發現對於理解環境因素與病原體特性如何共同影響疾病風險具有重要意義。",
       "topicTags": [
         "air-pollution",
         "infectious-disease",
-        "pathogen-genomics"
+        "genomics",
+        "pathogen-diversity"
       ]
     },
     {
@@ -220,13 +249,13 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "keyword-fallback",
       "featured": true,
-      "titleZh": "肺炎鏈球菌族群結構影響南韓空氣污染對侵襲性疾病風險的作用",
-      "summaryZh": "本研究指出，空氣品質與氣候因子會改變如腦膜炎等侵襲性肺炎鏈球菌疾病的風險。研究發現，循環細菌的譜系與血清型等族群結構，會進一步影響暴露後數週內疾病風險升高的速度。這項發現有助於理解環境因素與病原體特性如何共同作用影響疾病風險。",
+      "titleZh": "肺炎鏈球菌族群結構會影響南非空氣污染對侵襲性疾病風險的作用",
+      "summaryZh": "空氣品質與氣候因素會改變腦膜炎等侵襲性肺炎鏈球菌疾病的風險。研究指出，循環細菌的譜系與血清型（族群結構）會改變暴露後數週內疾病風險上升的速度。這項發現有助於理解環境因子與病原體特性如何共同作用影響疾病風險。",
       "topicTags": [
         "pneumococcal-disease",
         "air-pollution",
-        "bacterial-population-structure",
-        "infectious-disease"
+        "population-structure",
+        "microbiology"
       ]
     },
     {
@@ -373,15 +402,49 @@
       "digestLine": "preprint",
       "digestTaggingMethod": "keyword-fallback",
       "featured": true,
-      "titleZh": "中國四合一家庭 Y 染色體的完整端到端組裝",
-      "summaryZh": "本研究針對中國四合一家庭（Chinese Quartet, CQ）中的父親，提出了 Y 染色體的完整端到端（T2T）組裝序列（CQ_chrY）。研究團隊整合了 Oxford Nanopore 超長讀取、PacBio 高保真讀取與 Hi-C 資料，成功解決了高度重複且複雜的結構，獲得 68.50 Mb 的高準確度序列。此項成果補足了先前以家系為基礎的組裝中所缺乏的 Y 染色體序列，擴充了 CQ 參考標準系統。這項研究為群體遺傳學、結構變異分析及東亞基因體標準化提供了穩健的基礎資源。",
+      "titleZh": "中國四合一譜系中 Y 染色體的完整端對端組裝",
+      "summaryZh": "本研究針對中國四合一譜系（Chinese Quartet, CQ）中的父親，提出了 Y 染色體的完整端對端（telomere-to-telomere, T2T）組裝序列 CQ_chrY。透過整合多種定序與染色體構造數據，此組件成功解析了高度重複與異染色質區域，並達到極高的鹼基準確度與結構品質。此項成果補足了先前家系組裝中缺乏的 Y 染色體序列，作為重要的父系資源延伸，為群體遺傳學、結構變異分析及東亞基因體標準化提供穩固的基礎。",
       "topicTags": [
         "y-chromosome",
         "genomics",
         "telomere-to-telomere",
-        "east-asian",
-        "reference-assembly"
+        "population-genetics"
       ]
+    },
+    {
+      "id": "10.64898/2026.09.11.748700",
+      "title": "Single-cell splice isoform usage reveals distinct axes of cellular identity and senescence",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.11.748700v1",
+      "doi": "10.64898/2026.09.11.748700",
+      "abstract": "Alternative splicing greatly expands the diversity of gene products encoded by the human genome. Single-cell transcriptomic atlases have characterized human cell types through gene-level expression, but short-read sequencing has limited the ability to resolve full-length isoforms and their functional consequences. Here, we present a cross-tissue single-cell long-read isoform atlas spanning 26 human tissues. We identify hundreds of thousands of novel isoforms along with their cell-type-specific usage, and discover that over one-third of expressed isoforms are absent from existing reference databases. We further demonstrate that isoform usage is a structured, measurable axis of cellular identity that is distinct from gene expression. Applying this framework to cellular senescence, we resolve p16INK4a and p14ARF transcripts from the CDKN2A locus in individual cells and uncover cell-type-dependent isoform remodeling associated with the p16INK4a senescence program. This isoform-resolved single-cell atlas offers a versatile framework to dissect the cellular logic of isoform regulation in senescence and beyond.",
+      "authors": [
+        "Mantri, M.",
+        "Detweiler, A. M.",
+        "Lee, J.",
+        "Kwon, J. H.-Y.",
+        "Zhou, A.",
+        "Tong, L.",
+        "Jones, R. C.",
+        "Neff, N. F.",
+        "Tabula Sapiens Consortium,",
+        "Quake, S. R."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
     },
     {
       "id": "10.64898/2026.04.13.718197",
@@ -412,7 +475,7 @@
       "digestTaggingMethod": "keyword-fallback",
       "featured": true,
       "titleZh": "使用 spatialFDA 進行多樣本與多條件實驗的差異共定位分析",
-      "summaryZh": "本研究提出名為 spatialFDA 的分析框架，結合空間統計學與函數資料分析方法，以準確量化並檢定不同條件下細胞共定位（CCoL）在各個空間尺度上的差異。模擬研究顯示該方法在受控設定中表現良好，且能重現第一型糖尿病中的已知生物學過程並提供空間共定位強度的見解。此框架已作為開源的 Bioconductor R 套件發布。",
+      "summaryZh": "本研究發表了名為 spatialFDA 的新分析框架，結合空間統計學與函數資料分析方法，以準確量化並檢定多種條件下細胞共定位（CCoL）在空間尺度上的差異。透過兩項模擬研究，作者展示了該方法在受控設定中的良好表現，並能重現第一型糖尿病中已知的生物學過程，同時增進對空間中共定位強度的理解。此工具已作為開源的 Bioconductor R 套件發布。",
       "topicTags": [
         "spatial-omics",
         "spatial-statistics",
@@ -514,14 +577,339 @@
       "digestLine": "preprint",
       "digestTaggingMethod": "keyword-fallback",
       "featured": true,
-      "titleZh": "空間轉錄體學資料中利用領域分割進行生態位識別之基準測試",
-      "summaryZh": "本研究指出空間組織微環境中的空間領域與生物生態位並不完全等同，並透過註釋人類濾泡性淋巴增生淋巴結的單細胞解析度 CosMx ST 資料建立高解析度參考。研究團隊系統性評估了 16 種當代的領域分割演算法，發現多數方法在預設配置下無法重現生物學上定義的生態位邊界。分析顯示，關鍵功能譜系的離散空間分佈常因周邊細胞型態的隨機浸潤而模糊，導致空間訊號雜訊比降低成為現有演算法的主要瓶頸。透過對核心功能譜系進行策略性加權，部分領域分割框架得以恢復空間生態位的解析度。這項工作闡明了現有範式的侷限性，並指出結構領域分割與功能生態位發現之間的根本差異。",
+      "titleZh": "空間轉錄體學資料中透過域分割進行生態位識別之基準測試",
+      "summaryZh": "本研究利用人類濾泡性淋巴增生淋巴結的單細胞解析度 CosMx ST 資料，建立了高解析度的參考資料，並系統性基準測試了 16 種當代的域分割演算法。研究顯示，大多數預設配置的方法無法重現生物學上定義的生態位邊界，其主要瓶頸在於周邊細胞型態的隨機浸潤遮蔽了關鍵功能譜系的空間分佈，降低了空間訊號雜訊比。透過策略性加權核心功能譜系，部分域分割框架得以恢復空間生態位的解析度。此工作釐清了結構域分割與功能生態位發現之間的根本差異，並指出了現有範式的侷限性。",
       "topicTags": [
         "spatial-transcriptomics",
+        "benchmark",
         "computational-biology",
-        "single-cell",
-        "benchmark"
+        "single-cell"
       ]
+    },
+    {
+      "id": "10.64898/2026.09.08.750130",
+      "title": "LIGER2: Scalable Single-Cell Integration with On-Disk Datasets",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.08.750130v1",
+      "doi": "10.64898/2026.09.08.750130",
+      "abstract": "Correcting batch effects and integrating single-cell sequencing datasets has been a crucial step in large-scale biological studies. Many methods have been published for this task, and excel in various scenarios. Our previous work, LIGER, leveraging integrative non-negative matrix factorization (iNMF), stands out in providing an interpretable low-dimensional representation. To adapt to the modern need for integrating millions of cells, we developed a highly-optimized parallel factorization solution with on-demand loading from disk. The upgraded LIGER algorithm shows significant improvements in time and memory efficiency for single-cell data integration. We also developed a new downstream embedding alignment method significantly improved performance in conserving biological variation while still aligning corresponding cell types across datasets.",
+      "authors": [
+        "Wang, Y.",
+        "Robbins, A.",
+        "Gadhvi, G.",
+        "Welch, J. D."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.09.08.750024",
+      "title": "LucaCell: a sequence-centric foundation model for cross-species single-cell analysis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.08.750024v1",
+      "doi": "10.64898/2026.09.08.750024",
+      "abstract": "Single-cell foundation models have transformed transcriptomic analysis, yet most rely on fixed gene identifiers that limit transfer across species and data types. Here we present LucaCell, a sequence-centric foundation model that represents genes through pre-trained mRNA sequence embeddings rather than static gene annotations. Gene expression is discretized into bins and modeled with a Transformer encoder, enabling sequence-informed cell representation without a fixed gene-ID vocabulary. Pre-training on 85 million human and mouse single cells, LucaCell is evaluated on human, mouse and lemur gene expression profiles, human chromatin accessibility data, unaligned reads from more than 50 prokaryotic taxa, and five influenza A virus genomes. LucaCell enables manual-mapping-free cross-species cell type annotation and an alignment-free microbial embedding framework that simultaneously distinguishes bacterial species identity and intra-species physiological states. It also improves gene expression reconstruction by incorporating donor-specific exonic SNP information into mRNA sequence embeddings, and predicts cellular viral load across influenza A virus strains while highlighting infection-like transcriptional states in mock-infected cells. These results show that sequence-informed gene representation can improve the generalization of single-cell foundation models across species, data types, and predictive tasks.",
+      "authors": [
+        "Sun, Y.",
+        "He, Y.",
+        "Ren, M.",
+        "Wang, Y.",
+        "Xu, P.",
+        "Hou, Y.",
+        "Kang, Y.",
+        "Hou, T.",
+        "Ye, J.",
+        "Yang, H.",
+        "Wang, Z."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.09.08.750170",
+      "title": "Dynamics of bleomycin-induced lung injury at single-nucleus resolution",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.08.750170v1",
+      "doi": "10.64898/2026.09.08.750170",
+      "abstract": "Single-cell RNA sequencing (scRNA-seq) has emerged as a powerful tool for studying individual cell populations in complex tissues during injury and repair. However, it involves extensive sample manipulation, limiting its application in rare and difficult-to-dissociate cell populations. Single-nucleus RNA sequencing (snRNA-seq) bypasses several of these challenges, but its performance in lung disease models is not well characterized. In a longitudinal murine model of bleomycin-induced lung injury, we performed whole lung snRNA-seq to systematically map 46 cell populations and states with minimal tissue processing. Our approach captured the emergence of Krt8+/Cdkn1a+ transitional alveolar cells and an expansion of macrophage populations during injury. Additionally, we identified sizeable populations of rare cell types, such as pericytes, and cells sensitive to digestion protocols, including a population of activated fibroblasts. These results indicate that snRNA-seq recapitulates the dynamic changes associated with injury as previously reported using single-cell methods and outperforms these approaches in the representation of cell types that are sensitive to processing, thereby highlighting its utility for high resolution analysis of heterogenous tissues such as lung.",
+      "authors": [
+        "Lopez-Martinez, C.",
+        "Chow, Y.-H.",
+        "Altemeier, W. A.",
+        "Gharib, S. A. A.",
+        "Hung, C. F."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "scRNA-seq",
+        "snRNA-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.09.03.749125",
+      "title": "AnnoAudit: a marker-based protocol for auditing single-cell atlas annotations reveals systematic, state-dependent annotation failure in a widely used traumatic brain injury resource",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.03.749125v2",
+      "doi": "10.64898/2026.09.03.749125",
+      "abstract": "Single-cell atlas annotations are routinely treated as ground truth but rarely validated before use. We present AnnoAudit, a marker-based audit protocol that combines four convergent checks - marker scoring, unsupervised clustering, margin-gated module scoring, and applicability-gated pretrained models - into a composite Annotation Contamination Score (ACS), plus an independent-gene discrimination step that distinguishes genuine mis-assignment from ambient-RNA detection artifacts, and a trajectory-correlation fingerprint tracing suspicious signals to their cell type of origin. Applied to CEREBRI (GSE269748), a widely used single-cell TBI atlas (73 citations; 65 citing works; six re-analysis studies, none of which validated the annotations), the audit shows that contamination is systematic: the official \"glutamatergic neuron\" label is 97.8% non-excitatory by markers, with at least 67.4% of its cells independently confirmed as non-neuronal (microglia-dominated); the GABAergic (46.6%), OPC (66.1%), and astrocyte (37.7%) labels are likewise contaminated by marker-confirmed microglia, whereas the microglial, oligodendrocyte, endothelial, and pericyte labels are largely clean (85-96% self-confirmed). The contamination is state-dependent: astrocyte and OPC labels are largely correct in uninjured controls (76.0% OPC self-marker; 18.5% discrimination-confirmed contamination for the astrocyte label) but collapse in the acute 24-h window (14-16% self-marker; 57-71% microglia), recovering by 6 months - so the annotation failure concentrates precisely in the window of maximal injury response. This temporal structure generates coherent false signals - a biphasic trajectory for 40 of 307 ion-channel genes, a KCNC3-specific OXPHOS signature, and an inverted KCNC3 trajectory at 7 days - whereas the corrected response is a sustained acute KCNC3 up-regulation conserved across three independent datasets and three injury models. Simulation-calibrated ACS is 82.6% for CEREBRI. In a human ALS atlas (GSE330130), an ambient-aware re-analysis shows that the official neuron labels are largely correct (1.8-6.1% contamination after discrimination), confirming that the audit does not flag well-annotated resources, and that marker-only estimates on snRNA data with high ambient RNA must be interpreted with the discrimination step. AnnoAudit needs only the deposited count matrix and a canonical panel; we propose it as a routine quality step for atlas-based re-analysis.",
+      "authors": [
+        "Zhang, L.",
+        "Yan, Q.",
+        "Rao, H.",
+        "Li, M.",
+        "Qian, X.",
+        "Zhang, Y.",
+        "Gao, R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "AnnoAudit：用於稽核單細胞圖譜標註的標記基協議揭示了一個廣泛使用的創傷性腦損傷資源中存在系統性且具狀態依賴性的標註失效",
+      "summaryZh": "本研究提出 AnnoAudit，這是一個結合四項一致性檢查、獨立基因鑑別步驟與軌跡相關性指紋的標記基稽核協議，旨在評估單細胞圖譜標註。當應用於廣泛使用的創傷性腦損傷（traumatic brain injury, TBI）單細胞圖譜 CEREBRI 時，該稽核顯示標註汙染是系統性且具狀態依賴性的，特別集中在急性損傷反應視窗中。這種標註失效會產生具體且不正確的信號，而修正後的結果則顯示出跨不同數據集與損傷模型的保守急性基因上調現象。此協議有助於揭示並辨識單細胞圖譜中的標註汙染與鑑別 artifacts。",
+      "topicTags": [
+        "single-cell",
+        "traumatic-brain-injury",
+        "annotation",
+        "bioinformatics"
+      ]
+    },
+    {
+      "id": "10.1101/2024.10.18.619140",
+      "title": "Integrative pan-cancer analysis suggests ISG15-linked immune and phosphoproteomic divergence between KIRC and KICH",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-14",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.10.18.619140v2",
+      "doi": "10.1101/2024.10.18.619140",
+      "abstract": "Background: Interferon-stimulated gene 15 (ISG15) is a ubiquitin-like modifier induced by inflammatory cues, yet its functional relevance in cancer remains unclear and context dependent. Although frequently used as an interferon marker, whether ISG15 reflects effective antitumor immunity or dysfunctional immune states across cancers has not been systematically resolved. Methods: We performed an integrative pan-cancer analysis using TCGA, CPTAC, GEO, and immunotherapy and single-cell RNA-seq cohorts. ISG15 was examined at transcriptomic, proteomic, epigenetic, genetic, immune-infiltration, and phosphoproteomic levels. Survival-modeling, mutation and copy-number analyses, pathway-enrichment, protein-protein interaction networks, and kinase enrichment were used to define functional associations, with focused comparisons between renal clear cell carcinoma (KIRC) and chromophobe carcinoma (KICH). Results: ISG15 was upregulated in all studied cancers but downregulated in KICH. Its prognostic associations were bidirectional, correlating with poor survival in KIRC, LIHC, COAD, and LGG, yet favorable outcomes in SKCM, MESO, and OV. In KIRC, high ISG15 was associated with early promoter hypomethylation, interferon signaling, immune infiltration, T-cell exhaustion signatures, and broad immune-associated phosphokinase activity. In contrast, KICH showed preserved methylation, weak interferon coupling, limited immune engagement, and phosphoproteomic enrichment of structural and trafficking pathways. Genetic alterations and deep deletions of ISG15 were associated with shorter progression-free survival. Conclusion: This study indicates that ISG15 is associated with dysfunctional immune states rather than a direct effector of tumor control. These findings highlight ISG15 as a context-specific biomarker whose functional impact likely depends on tumor type and microenvironment, warranting further mechanistic and experimental validation.",
+      "authors": [
+        "Chatterjee, S.",
+        "Mahata, J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.06.23.734064",
+      "title": "Stability-driven multi-omics integration for reproducible latent structure",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.23.734064v4",
+      "doi": "10.64898/2026.06.23.734064",
+      "abstract": "High-dimensional multi-omics data integration offers novel opportunities to characterize complex biological systems. Even though sampling variability frequently compromises findings, particularly in small cohorts, the reproducibility and generalizability of the derived latent structures are insufficiently evaluated. We propose a Stability-driven framework for multi-omics integration that combines sparse generalized canonical correlation analysis with repeated cross-validation, out-of-sample projection, and systematic evaluation of both component-level and feature-level stability. We apply this framework to untargeted metabolomic and Olink targeted inflammation proteomic profiles in a thyroid cancer case-control cohort (n = 162). Our Stability-driven integration identified reproducible metabolomic and proteomic latent components that showed consistent out-of-sample disease associations and tracked temporally structured changes relative to time to diagnosis. The proposed framework provides a generalizable strategy for identifying reproducible latent structures that improve robustness of biological inference in multi-omics studies.",
+      "authors": [
+        "Guan, H.",
+        "Gerwen, M. v.",
+        "Kim-Schulze, S.",
+        "Colicino, E.",
+        "Dolios, G.",
+        "Petrick, L."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.09.13.751267",
+      "title": "A massively parallel synthetic gene atlas for learning compact cis-regulatory grammar across cellular contexts",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.13.751267v1",
+      "doi": "10.64898/2026.09.13.751267",
+      "abstract": "Virtual-cell models increasingly learn from large perturbation atlases, but their view of cis regulation remains limited to endogenous genes embedded in broad native regulatory contexts. Here we introduce Therna Biosciences' Chronos platform and its first public dataset release, comprising two complementary modules of a massively parallel synthetic gene atlas: Penta-47x27K for 5' UTRs/internal-promoter elements and Tria-47x28K for 3' UTR stability elements. Together, these datasets measure ~60,000 compact cis-regulatory elements across approximately 50 cell lines in one pooled experiment. The choice of cell lines here, provided to us courtesy of Tahoe Tx, was rooted in our aim to make this dataset maximally useful for the virtual-cell modeling community. At Therna, we routinely apply Chronos -- part of our RNA-Logix(TM) platform -- beyond cancer cell-line pools, to systems such as primary cells and organoids, via LNP-formulated mRNA delivery. Chronos captures both transcriptional and post-transcriptional gene expression control. Episomal DNA delivery measures DNA-normalized mRNA output, while direct RNA delivery with longitudinal sampling reliably quantifies RNA decay. The RNA-delivery arm uses chemically modified synthetic mRNA incorporating N1-methylpseudouridine, a modification widely used in mRNA therapeutics. To resolve high-complexity libraries of up to 30,000 elements, Chronos pushes the sensitivity limits of single-cell RNA sequencing to quantify individual RNA molecules within single cells. By massively expanding gene regulatory networks with synthetic genes whose variable regulatory code is short and defined, Chronos provides an auxiliary cis-regulatory lens for virtual-cell modeling and enables context-specific cis-trans regulatory interactions to be learned directly.",
+      "authors": [
+        "Hagen, T.",
+        "Liu, I.",
+        "Nagainis, A.",
+        "Khosrojerdi, N.",
+        "Yousefi, H.",
+        "Gunnels, T.",
+        "Moarefi, A.",
+        "Green, K.",
+        "Azimi, N.",
+        "Momen-Roknabadi, A.",
+        "Kipp, K. R.",
+        "Goodarzi, H."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "用於跨細胞背景學習簡明順式調節語法的大規模平行合成基因圖譜",
+      "summaryZh": "本研究介紹了 Chronos 平台及其首個公開資料集發布，包含針對 5' UTR 與內部啟動子元件的 Penta-47x27K，以及針對 3' UTR 穩定性元件的 Tria-47x28K 兩個模組。這些資料集在單一混合實驗中，於大約 50 個細胞株內測量了約 60,000 個簡明順式調節元件（cis-regulatory elements）。Chronos 透過附加的順式調節視角擴展了基因調節網絡，並能直接學習特定背景的順式與反式調節交互作用。這項工作為虛擬細胞建模社群提供了有用的資料與方法。",
+      "topicTags": [
+        "synthetic-biology",
+        "gene-regulation",
+        "transcriptomics",
+        "genomics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.11.751068",
+      "title": "Single-cell proteomics reveals cell-type-specific functional coordination in PBMCs",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.11.751068v1",
+      "doi": "10.64898/2026.09.11.751068",
+      "abstract": "The coordination of molecular networks defines cellular functions. This is reflected in molecular covariation within a cell type, which is more subtle than the differences separating cell types and has therefore been difficult to quantify. To achieve the depth, consistency and accuracy required to resolve such covariation, we leveraged single-cell proteomics (plexDIA) and transcriptomics (Smart-seq3xpress) to analyze the proteomes and transcriptomes of thousands of single peripheral blood mononuclear cells (PBMCs). plexDIA quantified more protein-coding gene products per cell with higher data completeness while Smart-seq3xpress quantified more gene products across all cells. The protein measurements revealed cell-type-specific proteome architecture -- shaped in part by protein stability, and complex coordination -- that was undetectable in our mRNA data. Specifically, protein covariation within a cell type suggests cell-type-specific protein-protein interactions and functional rewiring of biological pathways independent of previously characterized abundance differences. Covariation analysis within cell types resolves a B cell-specific axis of translational states inversely covarying with GDF6 cytokine abundance. Our framework captures cell-type-specific functional coordination representing a distinct information layer accessible via single-cell proteomics.",
+      "authors": [
+        "Koury, L.",
+        "Leduc, A.",
+        "Khan, S.",
+        "Hagemann-Jensen, M.",
+        "Michaelsson, J.",
+        "Mold, J. E.",
+        "Slavov, N."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.09.11.750491",
+      "title": "Multi-omics reveals a monocyte-macrophage-fibroblast axis in post-COVID-19 fibroinflammatory lung remodelling",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.11.750491v1",
+      "doi": "10.64898/2026.09.11.750491",
+      "abstract": "Post-COVID-19 residual lung abnormalities (RLA) are associated with persistent respiratory symptoms and radiological changes, yet the underlying mechanisms remain unclear. We performed integrated multi-omic profiling of paired bronchoalveolar lavage and blood samples from patients with post-COVID-19 RLA and healthy controls, combining single-cell RNA sequencing, CITE-seq, single-cell T cell receptor sequencing, bronchoalveolar lavage fluid proteomics and functional fibroblast assays. In post-COVID-19 RLA lungs, we identified an increased abundance of profibrotic SPP1hi monocyte-derived alveolar macrophages, arising from an expanded circulating HLA-DRlowCD163+PDE4Dhi classical monocyte progenitor population, supporting a blood-lung myeloid axis. Cell-cell communication modelling positioned macrophages as central hubs of immune-stromal crosstalk, promoting monocyte recruitment with profibrotic priming, and fibroblast activation. Proteomic analysis of bronchoalveolar lavage fluid from post-COVID-19 RLA and idiopathic pulmonary fibrosis, compared with healthy controls, revealed shared and distinct signatures. These alveolar proteins in post-COVID-19 RLA were predominantly attributed to myeloid cells and predicted to engage fibroblast receptors. Bronchoalveolar lavage fluid induced fibroblast proliferation, differentiation and collagen deposition in vitro, with proliferation attenuated by the antifibrotic drug nintedanib. We also identified compartment-specific lymphoid dysregulation, including depletion of mucosal-associated invariant T (MAIT) cells in both the lung and blood, decreased natural killer (NK) cells with oligoclonal T cell expansion in the lung, and expansion of regulatory and cytotoxic T cells in the blood. These findings support a persistent monocyte-macrophage-fibroblast axis linking immune dysregulation to fibroproliferative remodelling after COVID-19 and highlights candidate therapeutic targets for post-viral lung fibrosis. We provide a publicly available atlas (on publication).",
+      "authors": [
+        "Mehta, P.",
+        "Mawer, C. M. A.",
+        "Beattie, G.",
+        "Smith, D. J. F.",
+        "Nikola, F.",
+        "Selway-Clarke, H.",
+        "Zhao, A. Y.",
+        "Adams, T. S.",
+        "Kunzemann-Martinez, A.",
+        "Stanel, S. C.",
+        "Worlock, K. B.",
+        "Yoshida, M.",
+        "Walters, R.",
+        "Goldsworthy, S.",
+        "Uddin, I.",
+        "Barnes, J. L.",
+        "Rockett, G. J.",
+        "Nikolic, M. Z.",
+        "Piazza, P.",
+        "Plate, M.",
+        "Stewart, I.",
+        "Porter, J. C.",
+        "Nair, A.",
+        "Jacob, J.",
+        "Yan, X.",
+        "Kaminski, N.",
+        "Alhendi, A. S. N.",
+        "Chambers, R. C."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics",
+        "CITE-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
     },
     {
       "id": "10.64898/2026.09.10.750253",
@@ -605,15 +993,7 @@
       "section": "single-cell-spatial",
       "digestLine": "preprint",
       "digestTaggingMethod": "keyword-fallback",
-      "featured": true,
-      "titleZh": "間質代謝程式透過抑制自然殺手細胞免疫來驅動HER2低表現乳癌的腫瘤進展",
-      "summaryZh": "本研究指出，富含S100A4的癌相關纖維母細胞（CAFs）會在HER2低表現乳癌進展期間擴增，並建立代謝免疫抑制的微環境。研究發現這些CAFs會透過支鏈胺基酸分解代謝與支鏈酮酸（BCKAs）的累積，直接抑制自然殺手細胞（NK cells）的干擾素-γ（IFN-γ）生產與細胞毒殺作用。抑制支鏈胺基轉移酶BCAT1則能減少CAFs媒介的NK細胞抑制並恢復抗腫瘤細胞毒殺作用。這些發現揭示了一項由CAFs驅動的代謝免疫檢查點，並為瓦解間質媒介的免疫抑制提供了可能的策略。",
-      "topicTags": [
-        "cancer",
-        "tumor-microenvironment",
-        "immunology",
-        "metabolism"
-      ]
+      "featured": true
     },
     {
       "id": "10.64898/2026.09.07.749713",
@@ -649,103 +1029,56 @@
       "featured": false
     },
     {
-      "id": "10.1038/s41467-026-77722-7",
-      "title": "RICTOR regulates an interspecies crosstalk that influences longevity through a methionine cycle-mitophagy axis",
-      "journal": "Nature Communications",
-      "publishedDate": "2026-09-14T00:00:00.000Z",
-      "url": "https://www.nature.com/articles/s41467-026-77722-7",
-      "doi": "10.1038/s41467-026-77722-7",
-      "abstract": "Physiological traits are modulated in response to diet. Here the authors show that RICTOR restrains host responses to vitamin B12 in C. elegans by modulating organellar quality control and regulating lifespan.",
-      "sourceId": "nature-communications",
+      "id": "10.64898/2026.09.11.750961",
+      "title": "Intravital microscopy and statistical image analysis of early engraftment of haematopoietic stem cells reveal dynamic and evolving cellular behaviours linked to progressive differentiation.",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.11.750961v1",
+      "doi": "10.64898/2026.09.11.750961",
+      "abstract": "Haematopoietic stem cells (HSCs) have long been used in the clinic for bone marrow transplantation applications, critical for the survival of an increasingly wide range of patients with haematological, oncological and immunological pathologies. Despite this, little is known about the mechanisms through which relatively few stem cells are able to regenerate the entire haematopoietic tissue of transplant recipients. To gain insights on this biological process, we used intravital microscopy of calvarium bone marrow, collecting tissue-wide images and a total of 850 hours of tracks of engrafting haematopoietic stem and progenitor cells from 24 hours to 8 days following injection in lethally irradiated recipients. Analysis of the data revealed that regenerating HSCs and their immediate progeny are highly dynamic, migrating through the parenchyma at both the microscopic and near-macroscopic scales, i.e. within and in-and-out of fields of view. HSC-derived cell clusters, expanded locally between day 2 and day 4 post-transplant, leading to patches of densely populated bone marrow by day 8. Single cell level analysis highlighted increasingly heterogenous cellular behaviours over time. Track clustering based on migration and niche interaction parameters combined with post-tracking whole mount immunostaining revealed that persistence in the vicinity of nestin-GFP perivascular cells and relatively slow movement correlated with stemness, while more heterogeneous niche interactions coupled with slowest or faster migration correlated with differentiation, validated through flow cytometry analysis and functional studies. The findings presented here shed light on the fundamental principles driving haematopoietic regeneration in transplantation settings.",
+      "authors": [
+        "Gonzalez Anton, S.",
+        "Liu, C.",
+        "Khorshed, R. A.",
+        "Romero-Mulero, M. C.",
+        "Adams, G.",
+        "Partridge, B.",
+        "Lu, Z. A.",
+        "Cabezas-Wallscheid, N.",
+        "Pospori, C.",
+        "Lee, C. F.",
+        "Duffy, K. R.",
+        "Lo Celso, C."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
       "lifeScienceRouting": {
         "verdict": "yes",
-        "method": "routing-keyword-fallback"
-      },
-      "matchedKeywords": [],
-      "section": "other",
-      "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
-      "featured": true,
-      "titleZh": "RICTOR 調控影響壽命的跨物種串擾",
-      "summaryZh": "本研究探討生理性狀如何隨飲食調節，並指出 RICTOR 在線蟲（C. elegans）中透過調節胞器品質控制與調節壽命，來抑制宿主對維生素 B12 的反應。這項發現揭示了 RICTOR 在調節跨物種串擾及壽命上的重要機制。",
-      "topicTags": [
-        "longevity",
-        "c-elegans",
-        "mitophagy",
-        "methionine-cycle"
-      ]
-    },
-    {
-      "id": "10.1038/s41467-026-77414-2",
-      "title": "Telomere length of both parents contributes to heritable POT1 cancer-predisposition syndrome",
-      "journal": "Nature Communications",
-      "publishedDate": "2026-09-14T00:00:00.000Z",
-      "url": "https://www.nature.com/articles/s41467-026-77414-2",
-      "doi": "10.1038/s41467-026-77414-2",
-      "abstract": "Using haplotype-specific nanopore sequencing, the authors show that cancer-associated POT1 mutations reshape telomere inheritance across generations through germline and post-fertilization remodeling of the shortest telomeres.",
-      "sourceId": "nature-communications",
-      "lifeScienceRouting": {
-        "verdict": "yes",
-        "method": "routing-keyword-fallback"
+        "method": "scope-default"
       },
       "matchedKeywords": [
-        "cancer"
+        "single cell"
       ],
-      "section": "biology",
-      "digestLine": "line-b",
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
       "digestTaggingMethod": "keyword-fallback",
-      "featured": true,
-      "titleZh": "雙親端粒長度共同影響具遺傳性 POT1 癌症易感症候群",
-      "summaryZh": "本研究利用單體型特異性奈米孔定序（haplotype-specific nanopore sequencing），顯示與癌症相關的 POT1 突變會透過生殖細胞及受精後對最短端粒的重塑，來改變跨世代的端粒遺傳。這項發現闡明了端粒長度與遺傳性 POT1 癌症易感症候群之間的關聯，對於理解癌症易感性的跨世代遺傳機制具有重要意義。",
-      "topicTags": [
-        "telomere",
-        "cancer-predisposition",
-        "genetics",
-        "nanopore-sequencing"
-      ]
-    },
-    {
-      "id": "10.1038/s41467-026-77481-5",
-      "title": "Angiotensin II exacerbates intracerebral hemorrhage in mice via heparin-like antithrombin activation and coagulation dysfunction",
-      "journal": "Nature Communications",
-      "publishedDate": "2026-09-14T00:00:00.000Z",
-      "url": "https://www.nature.com/articles/s41467-026-77481-5",
-      "doi": "10.1038/s41467-026-77481-5",
-      "abstract": "Here, the authors show that angiotensin II acts as a key coagulation regulator with heparin-like antithrombin activation function in mediating hemorrhage. Targeting the angiotensin II coagulation pathway could be a novel strategy to mitigate cerebral bleeding events.",
-      "sourceId": "nature-communications",
-      "lifeScienceRouting": {
-        "verdict": "yes",
-        "method": "routing-keyword-fallback"
-      },
-      "matchedKeywords": [],
-      "section": "other",
-      "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
-      "featured": true,
-      "titleZh": "血管收縮素II透過類肝素抗凝血酶活化與凝血功能障礙惡化小鼠之腦內出血",
-      "summaryZh": "本研究指出，血管收縮素II（Angiotensin II）具有類肝素抗凝血酶活化功能，在調節凝血及調控出血中扮演關鍵角色，並會惡化小鼠的腦內出血。研究結果表明，針對血管收縮素II凝血路徑進行干預，可能成為減輕腦部出血事件的新型策略。",
-      "topicTags": [
-        "coagulation",
-        "neuroscience",
-        "vascular-biology",
-        "animal-model"
-      ]
+      "featured": false
     }
   ],
   "routing": {
     "enabled": true,
     "stats": {
-      "total": 35,
-      "passedByScope": 21,
+      "total": 43,
+      "passedByScope": 33,
       "llmClassified": 0,
       "llmYes": 0,
       "llmNotSure": 0,
       "llmNo": 0,
-      "keywordFallbackClassified": 14,
-      "keywordFallbackYes": 4,
-      "keywordFallbackNo": 10,
-      "included": 25,
-      "excluded": 10
+      "keywordFallbackClassified": 10,
+      "keywordFallbackYes": 3,
+      "keywordFallbackNo": 7,
+      "included": 36,
+      "excluded": 7
     }
   },
   "digest": {
@@ -753,42 +1086,42 @@
     "llmTagging": true,
     "tagging": {
       "threshold": 0.75,
-      "llmClassified": 13,
+      "llmClassified": 11,
       "llmTagged": 0,
       "llmLineA": 0,
       "llmLineB": 0,
-      "fallback": 13,
+      "fallback": 11,
       "fallbackLineA": 0,
-      "fallbackLineB": 13,
-      "failures": 13
+      "fallbackLineB": 11,
+      "failures": 11
     },
     "selection": {
-      "total": 24,
-      "candidates": 24,
+      "total": 33,
+      "candidates": 33,
       "featured": 12,
-      "overflow": 12,
+      "overflow": 21,
       "lineA": 0,
-      "lineB": 13,
-      "preprint": 11,
+      "lineB": 11,
+      "preprint": 22,
       "skip": 0,
       "featuredLineA": 0,
-      "featuredLineB": 8,
-      "featuredPreprint": 4,
+      "featuredLineB": 6,
+      "featuredPreprint": 6,
       "overflowLineA": 0,
       "overflowLineB": 5,
-      "overflowPreprint": 7
+      "overflowPreprint": 16
     },
     "summarize": {
       "requested": 12,
-      "llmSummarized": 12,
+      "llmSummarized": 11,
       "primarySucceeded": 0,
-      "fallbackSucceeded": 12,
-      "failed": 0
+      "fallbackSucceeded": 11,
+      "failed": 1
     },
     "translate": {
-      "requested": 12,
+      "requested": 21,
       "llmTranslated": 0,
-      "failed": 12
+      "failed": 21
     }
   },
   "excludedPapers": [
@@ -836,6 +1169,20 @@
     },
     {
       "paper": {
+        "id": "10.1038/d41586-026-02829-2",
+        "title": "Science philanthropy is rising in Brazil ― upending a long tradition",
+        "journal": "Nature",
+        "publishedDate": "2026-09-14T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02829-2",
+        "doi": "10.1038/d41586-026-02829-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
         "id": "10.1038/d41586-026-02608-z",
         "title": "UK universities are on the brink — what is their greatest source of stress?",
         "journal": "Nature",
@@ -864,74 +1211,13 @@
     },
     {
       "paper": {
-        "id": "10.1038/s41467-026-77732-5",
-        "title": "Mineral-integrated electrochemical system enabling membrane-free pH swing and active chlorine species generation for urine valorization",
-        "journal": "Nature Communications",
+        "id": "10.1038/d41586-026-02915-5",
+        "title": "Daily briefing: How this year’s super El Niño is different",
+        "journal": "Nature",
         "publishedDate": "2026-09-14T00:00:00.000Z",
-        "url": "https://www.nature.com/articles/s41467-026-77732-5",
-        "doi": "10.1038/s41467-026-77732-5",
-        "abstract": "A membrane‑free electrochemical alkalization and electrooxidation system for urine valorization enables efficient phosphorus recovery and urea stabilization, providing a scalable route for nutrient recycling and sustainable fertilizer production.",
-        "sourceId": "nature-communications"
-      },
-      "reason": "life-science-routing",
-      "verdict": "no",
-      "method": "routing-keyword-fallback"
-    },
-    {
-      "paper": {
-        "id": "10.1038/s41467-026-77793-6",
-        "title": "Built-in electric field-boosted attomolar Pb²⁺ sensing on carboxylated black phosphorene",
-        "journal": "Nature Communications",
-        "publishedDate": "2026-09-14T00:00:00.000Z",
-        "url": "https://www.nature.com/articles/s41467-026-77793-6",
-        "doi": "10.1038/s41467-026-77793-6",
-        "abstract": "Lead ion (Pb²⁺) contamination remains a threat to environmental safety and human health, requiring sensitive detectors. Here, the authors report the realization of carboxyl-functionalized black phosphorene modified surface plasmon resonance sensors with detection limit down to 10⁻¹⁹ M and good selectivity against other metal ions.",
-        "sourceId": "nature-communications"
-      },
-      "reason": "life-science-routing",
-      "verdict": "no",
-      "method": "routing-keyword-fallback"
-    },
-    {
-      "paper": {
-        "id": "10.1038/s41467-026-77600-2",
-        "title": "Metamaterial-enabled battery-free wireless sensor networks for unencumbered human-machine interactions",
-        "journal": "Nature Communications",
-        "publishedDate": "2026-09-14T00:00:00.000Z",
-        "url": "https://www.nature.com/articles/s41467-026-77600-2",
-        "doi": "10.1038/s41467-026-77600-2",
-        "abstract": "A battery-free wireless body sensor network enabled by metamaterial textiles is reported. Using a smartphone as a hub, it wirelessly powers distributed sensors for unencumbered human-machine interactions in robotics, VR, and digital twins.",
-        "sourceId": "nature-communications"
-      },
-      "reason": "life-science-routing",
-      "verdict": "no",
-      "method": "routing-keyword-fallback"
-    },
-    {
-      "paper": {
-        "id": "10.1038/s41467-026-77648-0",
-        "title": "Studying the failure mechanism in Li-metal electrode by a reversible fluorescence analysis methodology",
-        "journal": "Nature Communications",
-        "publishedDate": "2026-09-14T00:00:00.000Z",
-        "url": "https://www.nature.com/articles/s41467-026-77648-0",
-        "doi": "10.1038/s41467-026-77648-0",
-        "abstract": "Understanding Li electrode failure is challenged by efficient evaluation of solid electrolyte interphase. Here, authors develop a qualitative and quantitative fluorescent method to correlate solid byproducts and accumulated dead Li in the solid electrolyte interphase, identifying the underlying role of side reactions.",
-        "sourceId": "nature-communications"
-      },
-      "reason": "life-science-routing",
-      "verdict": "no",
-      "method": "routing-keyword-fallback"
-    },
-    {
-      "paper": {
-        "id": "10.1038/s41467-026-77736-1",
-        "title": "Tackling chlorine poisoning for robust upcycling of PVC-contaminated plastic streams",
-        "journal": "Nature Communications",
-        "publishedDate": "2026-09-14T00:00:00.000Z",
-        "url": "https://www.nature.com/articles/s41467-026-77736-1",
-        "doi": "10.1038/s41467-026-77736-1",
-        "abstract": "Chlorine released from mixed plastic waste can deactivate catalysts and hinder recycling. Here, the authors report a room-temperature treatment to clean ruthenium surfaces, restoring highly active and reusable catalysts for plastic upcycling.",
-        "sourceId": "nature-communications"
+        "url": "https://www.nature.com/articles/d41586-026-02915-5",
+        "doi": "10.1038/d41586-026-02915-5",
+        "sourceId": "nature"
       },
       "reason": "life-science-routing",
       "verdict": "no",
