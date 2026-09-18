@@ -1,0 +1,695 @@
+{
+  "reportDate": "2026-09-17",
+  "generatedAt": "2026-09-18T14:04:14.290Z",
+  "papers": [
+    {
+      "id": "10.1038/s41587-026-03319-6",
+      "title": "Gene editing using large insertions",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-09-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03319-6",
+      "doi": "10.1038/s41587-026-03319-6",
+      "abstract": "While technologies for smaller gene edits, such as base editing, have already entered clinical trials, larger gene cargoes face different challenges, including low editing efficiencies, delivery vehicle size constraints, and possible immunogenicity. Programmable genome engineering systems using recombinases; transposases, including CRISPR-associated transposases (CASTs); genome writing systems; and retrotransposons promise different avenues for therapy, but each system has unique limitations. What are the most promising strategies to further develop these technologies, and which parameters need to be further improved to make them efficient and safe for therapy? We asked three experts in the field to share their thoughts on the challenges and opportunities.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "CRISPR",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "使用大型插入的基因編輯",
+      "summaryZh": "雖然較小型的基因編輯技術已進入臨床試驗，但大型基因酬載（gene cargoes）仍面臨編輯效率低落、遞送載體大小限制以及可能的免疫原性等挑戰。可編程基因組工程系統（包含重組酶、轉位酶、CRISPR 相關轉位酶、基因組寫入系統及反轉錄轉位酶）為治療提供了不同途徑，但各系統皆有其獨特限制。本文邀請三位領域專家分享他們對相關挑戰與機會的想法，探討最具潛力的發展策略以及為使其實現治療之安全與高效所需改善的參數。這項討論有助於指引未來克服大型基因插入技術瓶頸的研究方向。",
+      "topicTags": [
+        "gene-editing",
+        "genome-engineering",
+        "therapeutics"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02631-2",
+      "title": "Spatiotemporal single-cell profiling reveals T cell clonal dynamics and phenotypic plasticity in human graft-versus-host disease",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-09-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02631-2",
+      "doi": "10.1038/s41590-026-02631-2",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41564-026-02473-6",
+      "title": "AP2-HS and a GDV1 regulatory feedback loop mediate environmental induction of sexual conversion in Plasmodium falciparum",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-09-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02473-6",
+      "doi": "10.1038/s41564-026-02473-6",
+      "abstract": "This study describes the complex transcriptional regulatory mechanism enabling fine-tuned and rapid regulation of Plasmodium falciparum investment in transmission under changing blood conditions.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "AP2-HS 與 GDV1 調控迴路介導惡性瘧原蟲有性轉化的環境誘導",
+      "summaryZh": "本研究描述了一項複雜的轉錄調控機制，使惡性瘧原蟲（Plasmodium falciparum）能在多變的血液條件下，對傳播投資進行精細且快速的調控。此機制涉及 AP2-HS 與 GDV1 調控迴路，藉此介導環境對有性轉化的誘導。這項發現有助於理解寄生蟲因應環境變化而調整傳播策略的過程。",
+      "topicTags": [
+        "plasmodium-falciparum",
+        "transcriptional-regulation",
+        "gene-regulation",
+        "parasitology"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02483-4",
+      "title": "Sequential gene loss promotes expansion of monophasic Salmonella Typhimurium ST34",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-09-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02483-4",
+      "doi": "10.1038/s41564-026-02483-4",
+      "abstract": "Genomic and functional analyses reveal sequential gene loss events affecting dinB and fljB in monophasic Salmonella Typhimurium ST34 conferring a competitive advantage during gut infection and potentially contributing to emergence of this lineage.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "依序基因遺失促進單相沙門氏桿菌 ST34 的擴張",
+      "summaryZh": "這項研究透過基因體與功能分析，揭示了單相沙門氏桿菌 ST34 中影響 dinB 與 fljB 的依序基因遺失事件。這些基因遺失賦予了該菌株在腸道感染期間的競爭優勢，並可能促成了此一譜系的興起。這項發現對於理解特定細菌譜系的演化與擴張提供了重要的機制見解。",
+      "topicTags": [
+        "microbiology",
+        "genomics",
+        "bacterial-evolution",
+        "infection"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02471-8",
+      "title": "In vivo CRISPRi screens reveal Escherichia coli functional adaptations in the mouse gut",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-09-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02471-8",
+      "doi": "10.1038/s41564-026-02471-8",
+      "abstract": "In vivo silencing of genes in E. coli strains using CRISPRi reveals specific genetic factors and metabolic adaptations that influence colonization in the mouse gut under variable physiological conditions.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "CRISPR"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "活體 CRISPRi 篩檢揭示大腸桿菌在小鼠腸道中的功能適應",
+      "summaryZh": "本研究利用活體內的 CRISPRi 技術對大腸桿菌進行基因靜默，揭示了在小鼠腸道可變生理條件下，影響其定殖的特定基因因素與代謝適應。這項研究有助於理解細菌在宿主體內的生存機制。相關成果發表於《Nature Microbiology》。",
+      "topicTags": [
+        "crispri",
+        "escherichia-coli",
+        "microbiome",
+        "metabolic-adaptation"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02493-2",
+      "title": "Functional capacities drive recruitment of bacteria into plant root microbiota",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-09-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02493-2",
+      "doi": "10.1038/s41564-026-02493-2",
+      "abstract": "Functional versatility plays a key role in shaping root microbiota.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "功能能力驅動細菌招募進入植物根系微生物群",
+      "summaryZh": "本研究探討植物根系微生物群的組成機制，發現功能多樣性在塑造根系微生物群落的過程中扮演關鍵角色。這項研究揭示了功能能力如何驅動細菌被招募至植物根系，進一步增進我們對微生物群落組成機制的理解。",
+      "topicTags": [
+        "microbiota",
+        "plant-root",
+        "bacteria",
+        "microbiology"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02449-6",
+      "title": "Bacterial growth rate in populations and single cells",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-09-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02449-6",
+      "doi": "10.1038/s41564-026-02449-6",
+      "abstract": "In this Perspective, Levin and Wang give a brief history of bacterial growth rate and discuss how it is connected to nutrient availability and macromolecule synthesis, with a focus on (p)ppGpp as a central hub regulating resource allocation and, indirectly, growth rate at the single-cell level.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "細菌在群體與單細胞層面的生長速率",
+      "summaryZh": "這篇觀點文章回顧了細菌生長速率的簡短歷史，並討論其如何與營養可用性及大分子合成相互連結。文章聚焦於 (p)ppGpp 作為中央樞紐，探討其在單細胞層面調控資源分配及間接影響生長速率的角色。這些討論有助於理解細菌生長與資源分配機制的關聯。",
+      "topicTags": [
+        "bacterial-growth",
+        "single-cell",
+        "resource-allocation"
+      ]
+    },
+    {
+      "id": "10.64898/2026.04.27.721124",
+      "title": "Predictive control of human pancreatic cell fate using a digital model of in vitro differentiation",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-17",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.04.27.721124v3",
+      "doi": "10.64898/2026.04.27.721124",
+      "abstract": "The controlled generation of mature stem cell-derived islets (SC-islets) remains a barrier to scalable cell therapy for diabetes. Here, we develop a predictive digital model defining the cell-state-specific regulatory logic governing fate specification during human SC-islet differentiation. We integrate 400,603 cells from 9 original single-cell multiomic datasets and 52 public single-cell RNA-seq and ATAC-seq datasets across 4 cell lines and 7 differentiation protocols. This model resolves transcriptional and chromatin accessibility dynamics while enabling time-resolved inference and in silico perturbation of cell-state-specific gene regulatory networks. We identify regulators across trajectories from endoderm progenitors to pancreatic exocrine and endocrine lineages, nominating new candidate regulators. Among these candidates, we validate previously unreported roles for STAT1 as an exocrine driver and ZEB1 as a dynamic regulator of early endocrine specification and later off-target serotonergic islet cell fate. This work provides an experimentally supported predictive framework and an interactive resource comprising 1,116 simulations to prioritize transcription factors and intervention windows for refining SC-islet differentiation.",
+      "authors": [
+        "Sanchez-Castro, E. E.",
+        "Ishahak, M.",
+        "Le, T.",
+        "Maestas, M. M.",
+        "Hernandez-Rincon, D. C.",
+        "Mukherjee, N.",
+        "Bradley, K.",
+        "Lu, J.",
+        "Gale, S. E.",
+        "Millman, J. R."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "利用體外分化數位模型進行人類胰臟細胞命運的預測控制",
+      "summaryZh": "本研究開發了一個預測性數位模型，用以定義人類幹細胞衍生胰島（SC-islets）分化過程中細胞狀態特定的調控邏輯。研究團隊整合了多個單細胞多體學與單細胞 RNA-seq 及 ATAC-seq 資料集，解析轉錄與染色質開放性動態，並實現細胞狀態特定基因調控網路的時間解析推論與電腦模擬干擾。透過此模型，研究人員識別出橫跨各譜系的調節因子，並驗證了 STAT1 作為外分泌驅動因子以及 ZEB1 作為早期內分泌特化與後期非目標血清素能胰島細胞命運動態調節因子的角色。這項工作提供了一個具實驗支持的預測框架與互動資源，有助於優先排序轉錄因子與干預窗口以精進 SC-islets 分化。",
+      "topicTags": [
+        "single-cell",
+        "stem-cell",
+        "computational-model",
+        "gene-regulatory-networks",
+        "pancreatic-cells"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.15.751746",
+      "title": "Timing of DNA damage checkpoint adaptation predicts post-mitotic proliferative competence",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-17",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.15.751746v1",
+      "doi": "10.64898/2026.09.15.751746",
+      "abstract": "Persistent DNA damage creates a conflict between checkpoint-enforced arrest and continued proliferation. Although adaptation enables cells to escape this arrest, checkpoint bypass does not ensure renewed proliferation. Here, we show that the duration of checkpoint-associated metaphase arrest predicts proliferative re-entry after telomere dysfunction in budding yeast. Using population-level analyses and single-cell live imaging, we resolved adaptation into checkpoint attenuation, anaphase entry, mitotic completion and renewed proliferation. These transitions were separable: cells could enter anaphase yet fail to resume proliferation. Among cells that bypassed the checkpoint, each additional 100 min of metaphase arrest was associated with an 80% reduction in the odds of complete proliferative re-entry. This inverse relationship was reproducible across independent experiments and persisted across changes in spindle assembly checkpoint activity, the severity of telomere dysfunction and DNA-end metabolism, despite context-dependent shifts in arrest timing and overall proliferative competence. Comparisons across damage contexts and checkpoint states further showed that the predictive value of metaphase duration depends on the trajectory in which arrest develops. Thus, checkpoint bypass and productive proliferation are separable outcomes, with arrest duration providing a context-dependent predictor of proliferative competence after adaptation.",
+      "authors": [
+        "Dondi, A.",
+        "Calabrese, E.",
+        "Visintin, C.",
+        "Spreafico, S.",
+        "Visintin, R."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1101/2025.06.16.659944",
+      "title": "Single cell transcriptomics in a treatment-segregated cohort exposes a STAT3-regulated therapeutic gap in idiopathic pulmonary fibrosis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-17",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.06.16.659944v3",
+      "doi": "10.1101/2025.06.16.659944",
+      "abstract": "Idiopathic pulmonary fibrosis (IPF) is a progressive fibrotic pulmonary disease of unknown etiology. Since approved IPF drugs only slow disease progression, novel therapeutics are required that improve clinical outcomes. Here we report a single cell lung RNA-Seq and gene regulatory network analysis of the largest IPF cohort assembled to date. Segregating this cohort based on status of treatment with approved first-generation IPF antifibrotics (untreated, nintedanib- and pirfenidone-treated), we describe for the first time the transcriptional landscape of untreated IPF across 40 lung cell types, and the elements of this program that are impacted by these antifibrotics. On average, nearly 60% of the untreated IPF-dysregulated transcriptome is refractory to treatment with these drugs, a transcriptional deficit we refer to as the IPF therapeutic gap. Gene regulatory network analysis indicated a dominant functional footprint for the transcription factor STAT3 in both untreated IPF and the IPF therapeutic gap. Validating our analysis in a translational precision cut lung slice platform that recapitulates IPF explants, pharmacological inhibition of STAT3 reduced the IPF therapeutic gap in numerous lung cell types. Finally, we resolved a STAT3-anchored master regulatory network comprising numerous profibrotic transcription factors in IPF alveolar fibroblasts, a critical fibrotic lineage. Our study represents a comprehensive resource for translational lung fibrosis research and introduces a strategy for drug discovery that is adaptable to human disease more broadly.",
+      "authors": [
+        "McKenna, N.",
+        "Ochsner, S. A.",
+        "Cohen, A. W.",
+        "Cala-Garcia, J.",
+        "Echartea, M. E.",
+        "Grimm, S. L.",
+        "Poli, F.",
+        "Castillo, R. C.",
+        "Zuluaga, J. D.",
+        "Poli, S.",
+        "Adams, T. S.",
+        "Pineda, R.",
+        "Moss, B.",
+        "Ryter, S.",
+        "Pillich, R. T.",
+        "Villalba, J.",
+        "Kato, K.",
+        "Hecker, L.",
+        "Celada, L. J.",
+        "Sauler, M.",
+        "Koenigshoff, M.",
+        "Kaminski, N.",
+        "Raby, B.",
+        "Agarwal, S. K.",
+        "Tsoyi, K.",
+        "Coarfa, C.",
+        "Rosas, I."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "單細胞轉錄體學於治療分層世代揭示特發性肺纖維化中由 STAT3 調控的治療缺口",
+      "summaryZh": "本研究透過單細胞肺部 RNA-Seq 與基因調控網路分析，針對特發性肺纖維化（IPF）世代進行探討，並依現有核准抗纖維化藥物治療狀態進行分層。研究指出，平均近 60% 未接受治療的 IPF 失調轉錄體對現有藥物無反應，形成了所謂的 IPF 治療缺口。基因調控網路分析顯示轉錄因子 STAT3 在未治療的 IPF 與治療缺口中具有主要的功能足跡。在轉譯切片肺組織平台的驗證中，藥理學抑制 STAT3 減少了許多肺細胞類型中的 IPF 治療缺口，並解析出 IPF 肺泡纖維母細胞中由 STAT3 錨定的主要調控網路。此研究為轉譯肺纖維化研究提供了全面的資源，並引入了一種適用於更廣泛人類疾病的藥物發現策略。",
+      "topicTags": [
+        "single-cell",
+        "transcriptomics",
+        "idiopathic-pulmonary-fibrosis",
+        "stat3",
+        "drug-discovery"
+      ]
+    },
+    {
+      "id": "10.1101/2024.03.12.584638",
+      "title": "CDK4 or CDK6 upregulation induces DNA replication stress and genomic instability to cause EGFR targeted therapy resistance in lung cancer",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-17",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.03.12.584638v3",
+      "doi": "10.1101/2024.03.12.584638",
+      "abstract": "Epidermal growth factor receptor (EGFR) mutant lung adenocarcinomas (LUAD) harbor a complex landscape of genetic co-alterations and potential oncogenic interactions. Among them are recurrent amplifications of the cell cycle regulatory genes CDK4 and CDK6, which have been clinically implicated in resistance to EGFR tyrosine kinase inhibitors (TKIs). However, the mechanisms by which CDK4/6 upregulation promotes therapy resistance remain poorly defined. Here, we demonstrate that CDK4 or CDK6 overexpression limits EGFR inhibitor-induced proliferative arrest, promoting continued cell cycle progression. This is accompanied by elevated replication stress, increased TPX2 expression, DNA damage leading to ATM activation, and ultimately genomic instability. Integrative transcriptomic and copy number analyses of EGFR-mutant LUAD tumors from both patients and preclinical models revealed that CDK4 or CDK6 amplification is associated with the upregulation of genes linked to tumor progression, including AGR2, ASNS, and STEAP1. CDK4 amplification was also highly correlated with gene expression changes associated with epithelial-to-mesenchymal transition (EMT) in a single-cell RNA sequencing dataset from patient biopsies. In preclinical models, co-treatment with CDK4/6 and EGFR inhibitors restored proliferative arrest, induced tumor cell apoptosis, and reduced replication stress, DNA damage, and genomic instability. Our findings uncover a mechanistic basis for EGFR inhibitor resistance of CDK4 and CDK6 amplified EGFR-mutant LUAD. They also provide a rationale for the biomarker-driven clinical development of combination EGFR and CDK4/6-targeted therapies for the treatment of a subset of EGFR-mutant LUAD patients.",
+      "authors": [
+        "Gini, B.",
+        "Gui, P.",
+        "Wu, W.",
+        "Kerr, D. L.",
+        "Tan, L.",
+        "Barbosa, D.",
+        "Olivas, V.",
+        "Allegakoen, P.",
+        "Gomez, C.",
+        "Halliday, P.",
+        "Elmes, S.",
+        "Steri, V.",
+        "Chakrabarti, T.",
+        "Bivona, T. G.",
+        "Blakely, C. M."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "CDK4 或 CDK6 的上調會誘導DNA複製壓力與基因體不穩定，進而導致肺癌對 EGFR 標靶治療產生抗藥性",
+      "summaryZh": "本研究探討了細胞週期調節基因 CDK4 或 CDK6 的擴增如何促成表皮生長因子受體（EGFR）突變肺腺癌對 EGFR 酪胺酸激酶抑制劑（TKI）產生抗藥性。研究顯示，CDK4 或 CDK6 的過度表現會限制 EGFR 抑制劑所引起的增殖停止，並促進持續的細胞週期進展，同時伴隨升高的複製壓力、DNA 損傷以及基因體不穩定。整合性分析顯示，CDK4 或 CDK6 擴增與腫瘤進展相關基因的 upregulation（上調）以及上皮間質轉化（EMT）相關的基因表現變化有關。在臨床前模型中，合併使用 CDK4/6 與 EGFR 抑制劑的共同治療恢復了細胞增殖停止、誘導腫瘤細胞凋亡，並減少了複製壓力、DNA 損傷與基因體不穩定。這些發現揭示了 CDK4 與 CDK6 擴增導致 EGFR 突變肺腺癌對 EGFR 抑制劑產生抗藥性的機制基礎，並為針對此類患者群體發展以生物標記為導向的聯合標靶治療提供了理論依據。",
+      "topicTags": [
+        "cancer",
+        "lung-cancer",
+        "cell-cycle",
+        "targeted-therapy",
+        "genomic-instability"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.27.747513",
+      "title": "Functional spatial transcriptomics uncover LMO7 as a fusion-regulated and clinically relevant driver of metastasis in Ewing sarcoma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-17",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.27.747513v2",
+      "doi": "10.64898/2026.08.27.747513",
+      "abstract": "Metastatic dissemination represents the major determinant of poor clinical outcome across cancer entities. Yet, how driver oncogenes shape transcriptional programs facilitating metastasis is poorly understood. In Ewing sarcoma (EwS) - a highly aggressive pediatric bone and soft-tissue sarcoma driven by chimeric FET::ETS transcription factors - low activity of the fusion oncoproteins is thought to promote metastasis, but the underlying molecular mechanisms remain largely elusive. Here, using spatially resolved functional transcriptomics in EwS patient tumors, we identify a distinct transcriptional state at the invasive tumor front, that in contrast to the tumor core, is characterized by lower FET::ETS activity and induction of the multifunctional shuttle LIM domain only protein 7 (LMO7). Integrating these data with clinical information reveals that high LMO7 expression is associated with poor outcomes. Gene network analysis of patient tumors and integrated proteomic and transcriptomic profiling of EwS cell lines following inducible LMO7 silencing highlight LMO7 as a central regulatory hub orchestrating epithelial-mesenchymal transition (EMT) and cytoskeletal remodeling in EwS. Functional experiments demonstrate that LMO7 silencing decreases clonogenicity and migratory capacity in vitro and suppresses primary tumor growth and metastatic dissemination in vivo. Collectively, these findings identify LMO7 as a clinically relevant effector of FET::ETS fusions in EwS, and illustrate how integrating functional, spatial and clinical data can uncover oncogene-driven effectors of metastasis.",
+      "authors": [
+        "Bursic, V.",
+        "Luo, H.",
+        "Henon, C.",
+        "Mao, L.",
+        "Ehlers, A. C.",
+        "Yershova, A.",
+        "Lego, J.-A. M.",
+        "Li, J.",
+        "Carreno Gonzalez, M. J.",
+        "Arndt, R.",
+        "Sastre, A.",
+        "Alonso, J.",
+        "Dirksen, U.",
+        "Hartmann, W.",
+        "Kumar Jayavelu, A.",
+        "Gerstung, M.",
+        "Gruenewald, T. G. P.",
+        "Cidre-Aranaz, F."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "功能性空間轉錄體學揭示 LMO7 為尤文氏肉瘤中受融合蛋白調控且具臨床相關性的轉移驅動因子",
+      "summaryZh": "本研究透過在尤文氏肉瘤（Ewing sarcoma, EwS）患者腫瘤中使用具空間解析度的功能性轉錄體學，發现在侵襲性腫瘤前沿存在一個具有較低 FET::ETS 活性與誘導 LMO7 表達的獨特轉錄狀態。臨床資料整合顯示高 LMO7 表達與不良預後相關，且基因網路分析與細胞株實驗指出 LMO7 為協調上皮間質轉化（EMT）及細胞骨架重塑的核心調節樞紐。功能實驗進一步證明，沉默 LMO7 能在體外降低群落形成與遷移能力，並在體內抑制原發腫瘤生長與轉移擴散。這些發現將 LMO7 定位為 EwS 中具臨床相關性的 FET::ETS 融合效應因子，並說明如何整合功能、空間與臨床資料以揭示致癌基因驅動的轉移效應因子。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "ewing-sarcoma",
+        "metastasis",
+        "cancer"
+      ]
+    },
+    {
+      "id": "10.64898/2026.02.23.707276",
+      "title": "Local Tumor Microenvironment Niches Correlate with Survival and Immunotherapy Response in Human Glioblastoma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-17",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.02.23.707276v2",
+      "doi": "10.64898/2026.02.23.707276",
+      "abstract": "Background: Glioblastoma (GBM) is an aggressive form of primary brain cancer. Recent efforts to characterize GBM using single-cell or spatial transcriptomics have revealed tremendous intra-tumoral heterogeneity among malignant cells and across different tumor areas. However, most studies have focused on malignant cells, and the spatial and cellular heterogeneity of the tumor microenvironment (TME) remains poorly understood. Consequently, it is unclear how TME compositions and organizations influence clinical outcomes for patients. Results: Spatial transcriptomics on 25 tumors, integrated with single-cell RNA sequencing and histological analyses, enabled the estimation of cellular composition within the TME across 46,000 spots (55-m wide). This analysis identified spatial associations between mesenchymal-like cancer cells and monocyte-derived macrophages and revealed six unique niches (N1-N6) characterized by distinct cellular composition and biological pathway activations. Deconvolution of large-scale bulk RNA-seq datasets using a spatial transcriptomics reference revealed that tumor niche composition significantly associated with patient survival and response to immunotherapy. Specifically, the N1 niche, characterized by the enrichment of mesenchymal-like cancer cells and monocyte-derived macrophages alongside hypoxic signature, was associated with lower overall survival. In contrast, the N5 niche, characterized by the enrichment of oligodendrocyte progenitor-like cancer cells and microglia-derived tumor-associated macrophages, was associated with longer patients survival. Analysis of data from patients treated with immunotherapy identified that niches N1 and N3, characterized by mixed mesenchymal-like and astrocyte-like cells, were associated with poor response to anti-PD-1 immune checkpoint inhibitors. Conclusions: Our results demonstrate that GBM exhibits significant spatial heterogeneity within the TMEs, comprising distinct niche classes, and that the specific niche compositions are associated with overall survival and immunotherapy responsiveness. Our results suggest incorporation of TME niche categories as biomarkers for risk stratification and therapeutic decisions for GBM patients.",
+      "authors": [
+        "Petitprez, F.",
+        "Graham, N. C.",
+        "Webb, S.",
+        "Morrison, G.",
+        "Merotto, L.",
+        "Webb, J.",
+        "Xie, Y.",
+        "Guney, E.",
+        "Weiss, W. A.",
+        "Finotello, F.",
+        "Kitamura, T.",
+        "Pollard, S. M.",
+        "Pollard, J. W."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "人類神經膠母細胞瘤的局部腫瘤微環境生態位與存活率及免疫療法反應相關",
+      "summaryZh": "本研究利用空間轉錄體學、單細胞 RNA 定序與組織學分析，探討神經膠母細胞瘤（GBM）腫瘤微環境（TME）的空間與細胞異質性。研究團隊辨識出六個具有獨特細胞組成與生物學途徑活化的微環境生態位（N1-N6），並發現其組成與患者的存活率及免疫療法反應顯著相關。具體而言，富含間質樣癌細胞與單核球衍生巨噬細胞的 N1 生態位與較低的整體存活率相關，而富含寡樹突膠質前驅細胞樣癌細胞與小膠質細胞衍生腫瘤相關巨噬細胞的 N5 生態位則與較長的存活率相關。此外，N1 與 N3 生態位亦與對抗 PD-1 免疫檢查點抑制劑的較差反應相關。這些結果顯示 GBM 的腫瘤微環境具有顯著的空間異質性與不同的生態位類別。",
+      "topicTags": [
+        "glioblastoma",
+        "tumor-microenvironment",
+        "spatial-transcriptomics",
+        "single-cell",
+        "immunotherapy"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.16.751792",
+      "title": "Oncogenic fusions induce an extensive cancer-restricted cryptic proteome in Ewing sarcoma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-17",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.16.751792v1",
+      "doi": "10.64898/2026.09.16.751792",
+      "abstract": "How tumors generate a cryptic \"dark\" proteome absent from healthy tissues, and whether it can be reversibly activated, remains unclear. In Ewing sarcoma, all tumors are driven by EWSR1::ETS fusions, making it a tractable model to study dark proteome activation. Integrating matched transcriptomes, translatomes and proteomes from 48 patient tumors with long-read RNA sequencing, single-cell Ribo-seq, proteomics and immunopeptidomics in cell line models, we show that EWSR1::FLI1 acts as a reversible switch recurrently inducing hundreds of cancer-specific neoproteins. Many arise from canonical coding regions via intragenic transcription start sites, generating truncated or out-of-frame neoproteins. We uncover a fusion-dependent increase in ribosomal readthrough into poly(A) tails, generating a stable 80-amino-acid TRPM4 neoprotein that, despite lacking a stop codon, is the most abundant tumor-specific microprotein across patients. Proteomic, immunopeptidomic, and immunofluorescence analyses validate neoproteins as tumor-restricted antigens, revealing a therapeutically actionable cancer dark proteome controlled by one oncogenic fusion.",
+      "authors": [
+        "Broeils, L. A.",
+        "Pilet, J.",
+        "Koshkina, M. K.",
+        "Li, J.",
+        "Grossetete, S.",
+        "Westerink, E. G. A.",
+        "Jay, O.",
+        "Smit, L.",
+        "Luo, T.",
+        "Narmanli, E.",
+        "Pinheiro Lopes, A. P.",
+        "Geyer, F. H.",
+        "Engels, S. A. G.",
+        "Henon, C.",
+        "Aljakouch, K.",
+        "Krijgsveld, J.",
+        "Jamail, I.",
+        "Baulande, S.",
+        "Lameiras, S.",
+        "Carreno-Gonzalez, M. J.",
+        "Omlor, G. W.",
+        "Mudge, J. M.",
+        "Nguyen, V. U.",
+        "Swirski, M. I.",
+        "Tjeldnes, H.",
+        "Valen, E.",
+        "Lehner, B.",
+        "Dirksen, U.",
+        "Faigle, W.",
+        "Lalanne, A. I.",
+        "Lantz, O.",
+        "Laud-Duval, K.",
+        "Michail, C.",
+        "VanInsberghe, M.",
+        "van Oudenaarden, A.",
+        "Hahnen, N.",
+        "Gmelin, N.",
+        "Merks, J. H. M.",
+        "Alkan, F.",
+        "Waterfall, J. J.",
+        "Gruenewald, T. G. P."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "致癌融合基因在尤文氏肉瘤中誘導廣泛的癌症受限隱匿蛋白質體",
+      "summaryZh": "本研究探討腫瘤如何產生正常組織所沒有的隱匿「黑暗」蛋白質體，並以尤文氏肉瘤（Ewing sarcoma）為模型進行研究。研究團隊整合了病患腫瘤的轉錄體、轉譯體、蛋白質體以及長讀長 RNA 定序、單細胞 Ribo-seq 與免疫肽體學等分析，發現 EWSR1::FLI1 作為可逆開關，會反覆誘導數百種癌症特異性新蛋白質。許多新蛋白質源自典型編碼區域，而融合基因亦會促使核糖體轉譯延伸至聚腺苷酸尾，產生穩定的微小蛋白質。這些分析驗證了新蛋白質作為受限於腫瘤之抗原的角色，揭示了由單一致癌融合基因所控制且具治療潛力的癌症黑暗蛋白質體。",
+      "topicTags": [
+        "ewing-sarcoma",
+        "oncogenic-fusion",
+        "proteomics",
+        "transcriptomics"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 23,
+      "passedByScope": 14,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 9,
+      "keywordFallbackYes": 3,
+      "keywordFallbackNo": 6,
+      "included": 17,
+      "excluded": 6
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 7,
+      "llmTagged": 0,
+      "llmLineA": 0,
+      "llmLineB": 0,
+      "fallback": 7,
+      "fallbackLineA": 2,
+      "fallbackLineB": 5,
+      "failures": 7
+    },
+    "selection": {
+      "total": 14,
+      "candidates": 14,
+      "featured": 12,
+      "overflow": 2,
+      "lineA": 2,
+      "lineB": 5,
+      "preprint": 7,
+      "skip": 0,
+      "featuredLineA": 1,
+      "featuredLineB": 5,
+      "featuredPreprint": 6,
+      "overflowLineA": 1,
+      "overflowLineB": 0,
+      "overflowPreprint": 1
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 12,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 2,
+      "llmTranslated": 0,
+      "failed": 2
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02898-3",
+        "title": "Mercury is shrinking with age — faster than thought",
+        "journal": "Nature",
+        "publishedDate": "2026-09-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02898-3",
+        "doi": "10.1038/d41586-026-02898-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02896-5",
+        "title": "Schoolhouse meals serve up an income bump",
+        "journal": "Nature",
+        "publishedDate": "2026-09-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02896-5",
+        "doi": "10.1038/d41586-026-02896-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02913-7",
+        "title": "How fast are you ageing? Ask AI",
+        "journal": "Nature",
+        "publishedDate": "2026-09-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02913-7",
+        "doi": "10.1038/d41586-026-02913-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02621-2",
+        "title": "Exclusive: New evidence for hidden chambers beyond Tutankhamun’s tomb",
+        "journal": "Nature",
+        "publishedDate": "2026-09-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02621-2",
+        "doi": "10.1038/d41586-026-02621-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02910-w",
+        "title": "Who gets credit in the AI era? OpenAI maths bombshell sparks debate",
+        "journal": "Nature",
+        "publishedDate": "2026-09-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02910-w",
+        "doi": "10.1038/d41586-026-02910-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77760-1",
+        "title": "Omaveloxolone functions as a molecular crowbar-like degrader of STING to alleviate aging-related inflammation",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77760-1",
+        "doi": "10.1038/s41467-026-77760-1",
+        "abstract": "Aging-related inflammation can have excessive activation of the STING pathway as some of its features. Here the authors look at the function of Omaveloxolone and show this compound binds to the base of the STING ligand-binding domain and destabilises STING leading to STING K27-linked ubiquitination and proteasomal degradation and show Omaveloxolone reducing aging associated inflammation in aged male mice.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    }
+  ]
+}
