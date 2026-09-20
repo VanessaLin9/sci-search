@@ -1,0 +1,318 @@
+{
+  "reportDate": "2026-09-19",
+  "generatedAt": "2026-09-20T13:51:32.438Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.09.17.752063",
+      "title": "Single-Cell Study Designs Are Systematically Underpowered for Small-Effect Genes",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-19",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.17.752063v1",
+      "doi": "10.64898/2026.09.17.752063",
+      "abstract": "Single cell differential expression analysis enables biologists to make statistical conclusions about which genes are up or downregulated in a particular cell type, between two conditions, such as those with or without a disease. However, due to biological and technical noise, these differences are hard to detect reliably. Determining if an experiment has sufficient power is often derived from simulations or small pilot samples, if done at all. Here, we use sex-biased differential expression on 1,494 donors in three brain cell types to derive empirically grounded power estimates for a variety of experimental setups. Our work reveals a substantial lack of power for reliably detecting the small effects in the range that many studies report, even in experiments containing 600 donors. When reducing the astrocyte data to the poor sequencing characteristics of microglia, over half the differentially expressed genes (DEGs) detected in the full set were lost, highlighting the damage caused by insufficient sequencing depth and cell counts. Despite standard thresholds of adjusted p-value with multiple testing correction, only the top quartile of significant genes were reproducible. Furthermore, from fitting a predictive model to the empirical outcomes, we find cell count and expression levels of genes to be a strong determinant of power. As such, we advocate for future studies to employ cell type enrichment and deeper sequencing, especially for rarer populations like microglia, emphasise the importance of powering experiments of this type when seeking robust findings, and suggest stricter significance thresholds for future discoveries.",
+      "authors": [
+        "Crampton, C.",
+        "Fawad, S.",
+        "Clark, T.",
+        "Dash, H.",
+        "Köver, B.",
+        "Cotton, G.",
+        "Lee, D.",
+        "Duff, E.",
+        "Bottolo, L.",
+        "Matthews, P. M.",
+        "Skene, N."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "單細胞研究設計在偵測小效應基因時普遍缺乏統計檢定力",
+      "summaryZh": "本研究指出，單細胞差異表現分析在偵測小效應基因時普遍缺乏足夠的統計檢定力。研究團隊利用 1,494 位捐贈者的大腦細胞類型數據進行分析，發現即使樣本數達到 600 個，許多研究通報的小效應仍難以被可靠地偵測出來。此外，不足的定序深度與細胞數會導致顯著差異基因大量丟失，且僅有前四分位數的顯著基因具備可重複性。這些發現強調了在未來研究中確保實驗檢定力、採用細胞類型富集以及提高定序深度的重要性。",
+      "topicTags": [
+        "single-cell",
+        "differential-expression",
+        "statistical-power",
+        "genomics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.13.751326",
+      "title": "Multi-model biological and sequence information fusion for gene regulatory network inference from single-cell transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-19",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.13.751326v1",
+      "doi": "10.64898/2026.09.13.751326",
+      "abstract": "Identification of transcription factor target gene interactions and construction of the gene regulatory networks (GRNs) are essential for understanding the molecular mechanisms underlying transcriptional gene regulation. Large scale single cell transcriptomics across different tissues offers unprecedented resolution of cellular diversity and regulatory dynamics by capturing gene expression heterogeneity. However, existing methods often lack effective multimodal integration and fail to fully exploit the hierarchical structure in Gene Ontology (GO) and gene sequence level representations, which limits their ability for predictive performance and biological interpretability. We present scMGFGRN, a multi-model deep learning framework that integrates single-cell transcriptomic profiles with GO hierarchical relationships, gene sequences by leveraging denoising auto encoders, graph attention feature extraction and pertained DNA language model to capture multi-source dependencies within multi-model biological knowledge, while its gated multi head attention module effectively identifies informative regulatory signatures and integrate complementary features from different sources to predict accurate gene regulatory networks. Benchmarking on the seven datasets of human and mouse demonstrates that scMGFGRN outperforms state of the art methods in identifying GRNs. Further analyses reveal that scMGFGRN effectively identifies novel TF gene interactions (TGIs) and reconstructs cell type specific GRNs. Interpretability analysis reveals the contribution patterns of heterogeneous biological sources, demonstrating the ability of scMGFGRN to integrate transcriptomic profiles with multi model structure information.",
+      "authors": [
+        "zhong, l.",
+        "Yan, B.",
+        "Wang, J.",
+        "xie, m."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "利用多模型生物學與序列資訊融合進行單細胞轉錄體學基因調控網路推論",
+      "summaryZh": "本研究提出名為 scMGFGRN 的多模型深度學習框架，旨在結合單細胞轉錄體學資料、基因本體論（Gene Ontology, GO）階層關係與基因序列資訊來推論基因調控網路（GRNs）。該方法運用去噪自動編碼器、圖注意力特徵提取與預訓練 DNA 語言模型等技術，藉此捕捉多源生物學知識中的相依性。在人類與小鼠的七個資料集進行基準測試後，證實 scMGFGRN 在識別基因調控網路方面優於現有方法，並能有效辨識新的轉錄因子與標靶基因互動及重建細胞類型特異性基因調控網路。",
+      "topicTags": [
+        "single-cell",
+        "gene-regulatory-networks",
+        "deep-learning",
+        "transcriptomics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.13.751277",
+      "title": "Cross-species spatial profiling links progranulin to an immune suppressive niche in brain metastasis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-19",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.13.751277v1",
+      "doi": "10.64898/2026.09.13.751277",
+      "abstract": "Immune checkpoint inhibitors (ICI) have revolutionized the treatment of brain metastasis (BM), demonstrating intracranial response rates and durability not previously seen with other therapies. However, approximately 50% of patients do not respond to ICI, and the brain-specific interactions that shape anti-tumor immunity remain poorly understood. We profiled five syngeneic BM models using spatial transcriptomics, identifying myeloid-rich niches enriched for interferon-responsive and disease-associated microglia (DAM)-like programs. Ligand-receptor colocalization analyses identified progranulin (PGRN) as a candidate mediator of these niches. Host- or tumor-cell Grn loss reduced BM burden, and Grn-deficient macrophages exhibited altered metabolic programs and tumor-cell engulfment in vitro. Across independent human BM datasets, GRN expression was associated with conserved lysosomal and DAM-like myeloid programs, and GRN-high myeloid regions colocalized with immunosuppressive signatures and dysfunctional CD8+ T cell states. These cross-species findings identify PGRN as a candidate mediator of the BM immune niche and support further investigation of its therapeutic relevance.",
+      "authors": [
+        "Eskow, N. M.",
+        "Prutisto-Chang, K.",
+        "Gomez-Munoz, M. A.",
+        "Kang, M.",
+        "Illa Bochaca, I.",
+        "Ibrahim, M.",
+        "Shadaloey, S. A. A.",
+        "Flores Yanke, A.",
+        "Geraldo, L. H.",
+        "Barisano, G.",
+        "Sathe, A.",
+        "Nunez, P.",
+        "Solomon, D. A.",
+        "Karasu, E. T.",
+        "Ji, H.",
+        "Lund, A.",
+        "Umeh Garcia, M.",
+        "Hayden Gephart, M.",
+        "Wang, J.",
+        "Hernando, E."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "跨物種空間分析將前顆蛋白素連結至腦轉移中的免疫抑制生態位",
+      "summaryZh": "本研究利用空間轉錄體學分析了五種同基因腦轉移（BM）模型，辨識出富含干擾素反應與疾病相關微膠細胞（DAM）樣程式的骨髓細胞豐富生態位。配受體共定位分析指出前顆蛋白素（PGRN）為這些生態位的候選介質，且宿主或腫瘤細胞的 Grn 缺失能減少腦轉移負荷。在人類腦轉移數據集中，GRN 表現與保守的溶小體及 DAM 樣骨髓細胞程式相關，且 GRN 高表現的骨髓細胞區域與免疫抑制特徵及功能失常的 CD8+ T 細胞狀態共定位。這些跨物種發現將 PGRN 定位為腦轉移免疫生態位的候選介質，支持進一步探討其治療相關性。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "brain-metastasis",
+        "immunology",
+        "myeloid-cells"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-77027-9",
+      "title": "Anti-thymocyte globulin triggers TNF-dependent cell death in T-cell acute lymphoblastic leukemia",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-77027-9",
+      "doi": "10.1038/s41467-026-77027-9",
+      "abstract": "Anti-thymocyte globulin (ATG) is a potent immunosuppressant used to prevent and treat acute organ transplant rejection and severe aplastic anemia. Here, the authors discover that ATG can be repurposed to induce TNF-driven cell death in T cell acute lymphoblastic leukemia.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "抗胸腺細胞球蛋白觸發T細胞急性淋巴性白血病中依賴TNF的細胞死亡",
+      "summaryZh": "本研究發現，常用於預防與治療急性器官移植排斥及嚴重再生不良性貧血的強效免疫抑制劑抗胸腺細胞球蛋白（ATG），可被重新定位以誘導T細胞急性淋巴性白血病發生腫瘤壞死因子（TNF）驅動的細胞死亡。這項發現揭示了該藥物在白血病治療上的新潛在用途，擴展了現有免疫抑制劑的應用範疇。",
+      "topicTags": [
+        "t-cell",
+        "leukemia",
+        "cell-death",
+        "drug-repurposing"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 10,
+      "passedByScope": 3,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 7,
+      "keywordFallbackYes": 1,
+      "keywordFallbackNo": 6,
+      "included": 4,
+      "excluded": 6
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 1,
+      "llmTagged": 0,
+      "llmLineA": 0,
+      "llmLineB": 0,
+      "fallback": 1,
+      "fallbackLineA": 0,
+      "fallbackLineB": 1,
+      "failures": 1
+    },
+    "selection": {
+      "total": 4,
+      "candidates": 4,
+      "featured": 4,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 1,
+      "preprint": 3,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 1,
+      "featuredPreprint": 3,
+      "overflowLineA": 0,
+      "overflowLineB": 0,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 4,
+      "llmSummarized": 4,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 4,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77463-7",
+        "title": "Virtual sensing to enable real-time monitoring of inaccessible locations &amp; unmeasurable parameters",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-19T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77463-7",
+        "doi": "10.1038/s41467-026-77463-7",
+        "abstract": "The authors introduce an operator-learning framework for real-time virtual sensing that reconstructs inaccessible interior physical fields from sparse, heterogeneous measurements and operating conditions.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77550-9",
+        "title": "Single-fiber hyperspectral imaging via nanophotonic disordered dispersion",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-19T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77550-9",
+        "doi": "10.1038/s41467-026-77550-9",
+        "abstract": "Researchers show that a single optical fiber can transmit hyperspectral images using a tiny nanophotonic encoder, opening a path toward compact, flexible probes for imaging and sensing.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77880-8",
+        "title": "Kirigami-actuated reconfigurable topological photonic crystals",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-19T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77880-8",
+        "doi": "10.1038/s41467-026-77880-8",
+        "abstract": "Using kirigami, the authors create a photonic crystal whose topology can be mechanically reconfigured, allowing corner states and light-routing paths to be switched after fabrication.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77864-8",
+        "title": "Resonance-enhanced integrated acousto-optic beam steering",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-19T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77864-8",
+        "doi": "10.1038/s41467-026-77864-8",
+        "abstract": "The authors combine molecular-dimer calculations with simplified, coarse-grained simulations to predict the crystal structure of metal-organic cages and show how cage shape and the directionality of interactions influence the structures formed.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77768-7",
+        "title": "Bayesian bilevel operator learning with low-rank adaptation for efficient uncertainty quantification of PDE inverse problems",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-19T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77768-7",
+        "doi": "10.1038/s41467-026-77768-7",
+        "abstract": "Estimating parameters of partial differential equations from data with quantified uncertainty is computationally demanding. Here, authors combine bilevel local operator learning with low rank adaptation to enable efficient gradient-based posterior sampling without adjoint equations, pretraining data, or sampling network weights.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77985-0",
+        "title": "Checkerboard-type Zhang-Rice states in overdoped cuprate superconductors",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-19T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77985-0",
+        "doi": "10.1038/s41467-026-77985-0",
+        "abstract": "In cuprate superconductors, the overdoped regime has received comparatively limited attention. Here, broadband optical spectroscopy and DQMC calculations reveal an electronic reconstruction in LSCO beyond x > 0.2, consistent with a checkerboard Zhang–Rice configuration hosting coexisting localized and itinerant carriers.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    }
+  ]
+}
