@@ -1,0 +1,266 @@
+{
+  "reportDate": "2026-09-21",
+  "generatedAt": "2026-09-21T16:09:33.272Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03219-2",
+      "title": "SVPG: a pangenome-based structural variant detection approach and rapid augmentation of pangenome graphs with new samples",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-09-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03219-2",
+      "doi": "10.1038/s41592-026-03219-2",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41588-026-02757-x",
+      "title": "Protein interactions reveal the hidden wiring of the genome",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-09-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02757-x",
+      "doi": "10.1038/s41588-026-02757-x",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41588-026-02763-z",
+      "title": "Interpreting human genetic variation at atomic resolution",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-09-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02763-z",
+      "doi": "10.1038/s41588-026-02763-z",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41588-026-02747-z",
+      "title": "Genetic landscape of an in vivo protein interactome",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-09-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02747-z",
+      "doi": "10.1038/s41588-026-02747-z",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41593-026-02422-w",
+      "title": "Tibial bone compression promotes recovery after brain injury through osteocyte PIEZO1",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-09-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02422-w",
+      "doi": "10.1038/s41593-026-02422-w",
+      "abstract": "Mechanical loading of the tibia improves survival and recovery after brain surgery in mice and pigs. This bone–brain axis is mediated by osteocyte PIEZO1, which triggers the release of neuroprotective factors into the circulation.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "脛骨壓迫透過骨細胞 PIEZO1 促進腦損傷後的恢復",
+      "summaryZh": "本研究指出，對脛骨施加機械負荷能改善小豬與小鼠在腦手術後的存活率與恢復狀況。此骨－腦軸線是由骨細胞中的 PIEZO1 所介導，會促使神經保護因子釋放到血液循環中。這項發現揭示了一種透過骨骼機械刺激來促進腦部損傷後恢復的機制。",
+      "topicTags": [
+        "bone-brain-axis",
+        "neuroscience",
+        "mechanotransduction"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02655-8",
+      "title": "Deletion of a distal IRF4 element prevents inflammation-induced reprogramming of human regulatory T cell fate",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-09-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02655-8",
+      "doi": "10.1038/s41590-026-02655-8",
+      "abstract": "Tang and colleagues identify a distal IRF4 chromatin regulatory region that governs human Treg cell stability.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "刪除遠端 IRF4 元件可防止發炎誘導的人類調節性 T 細胞命運重編程",
+      "summaryZh": "Tang 及其同事識別出一個調控人類調節性 T 細胞 (Treg cell) 穩定性的遠端 IRF4 染色質調控區域。研究顯示，刪除這個遠端 IRF4 元件能夠防止發炎誘導的人類調節性 T 細胞命運重編程。這項發現有助於理解人類調節性 T 細胞穩定性的調控機制。",
+      "topicTags": [
+        "immunology",
+        "t-cells",
+        "chromatin-regulation",
+        "inflammation"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 13,
+      "passedByScope": 6,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 7,
+      "keywordFallbackYes": 2,
+      "keywordFallbackNo": 5,
+      "included": 8,
+      "excluded": 5
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 6,
+      "llmTagged": 0,
+      "llmLineA": 0,
+      "llmLineB": 0,
+      "fallback": 6,
+      "fallbackLineA": 0,
+      "fallbackLineB": 6,
+      "failures": 6
+    },
+    "selection": {
+      "total": 6,
+      "candidates": 6,
+      "featured": 2,
+      "overflow": 4,
+      "lineA": 0,
+      "lineB": 6,
+      "preprint": 0,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 2,
+      "featuredPreprint": 0,
+      "overflowLineA": 0,
+      "overflowLineB": 4,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 2,
+      "llmSummarized": 2,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 2,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 4,
+      "llmTranslated": 0,
+      "failed": 4
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02932-4",
+        "title": "Six principles for supporting academic freedom in universities",
+        "journal": "Nature",
+        "publishedDate": "2026-09-21T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02932-4",
+        "doi": "10.1038/d41586-026-02932-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02928-0",
+        "title": "Losing your way of life to climate change matters — and we need a way to measure it",
+        "journal": "Nature",
+        "publishedDate": "2026-09-21T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02928-0",
+        "doi": "10.1038/d41586-026-02928-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02987-3",
+        "title": "Edible batteries inspired by rice paper power medical devices in the body",
+        "journal": "Nature",
+        "publishedDate": "2026-09-21T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02987-3",
+        "doi": "10.1038/d41586-026-02987-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02931-5",
+        "title": "AI co-scientists are revolutionizing how research is done",
+        "journal": "Nature",
+        "publishedDate": "2026-09-21T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02931-5",
+        "doi": "10.1038/d41586-026-02931-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02441-4",
+        "title": "How do I change labs gracefully during my PhD?",
+        "journal": "Nature",
+        "publishedDate": "2026-09-21T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02441-4",
+        "doi": "10.1038/d41586-026-02441-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    }
+  ]
+}
