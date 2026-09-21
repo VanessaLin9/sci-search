@@ -86,8 +86,13 @@ npm run check
 | `npm run write-preview` | `docs/index.html` + `docs/archive/{date}.html` |
 | `npm run prune-retention` | Remove `data/processed/{date}/` and `docs/archive/{date}.html` older than `--days` (default 30); use `--dry-run` to preview |
 | `npm run daily` | `dev` → `send-digest` → `write-preview` |
-| `npm run test-routing-llm` | One-paper routing smoke test |
+| `npm run test-routing-llm` | Alias → `probe:routing` |
 | `npm run test-digest-llm` | One-paper digest tagging smoke test |
+| `npm run probe:endpoint` | List / smoke-check OpenAI-compatible models (`.env`; masked keys) |
+| `npm run probe:routing` | Life-science routing fixture (bio / physics) |
+| `npm run probe:summarize` | Featured Traditional Chinese summarize probe |
+| `npm run probe:translate` | Overflow titleZh translate probe |
+| `npm run probe-llm` | Alias → `probe:endpoint` |
 | `npm run test:e2e` | Golden + RSS snapshot pipeline tests (mock LLM, no network) |
 | `npm run test:regression` | Render-only regression from committed `papers.json` fixtures |
 | `npm run test` | All of the above |
@@ -171,7 +176,7 @@ Fixtures live in [`test/fixtures/regression/`](test/fixtures/regression/) (0522:
 | `ROUTING_LLM_MODEL` | if routing | Model id (not in repo) |
 | `ENABLE_LLM_DIGEST` | no | `1` for LLM tagging + summarize + translate |
 | `DIGEST_LLM_API_KEY` | no | Falls back to routing key |
-| `DIGEST_LLM_MODEL` | if digest on | Primary digest model (e.g. `minimaxai/minimax-m3` on NVIDIA integrate) |
+| `DIGEST_LLM_MODEL` | if digest on | Primary digest model (e.g. `meta/muse-glimmer-30b` on NVIDIA integrate) |
 | `DIGEST_LLM_FALLBACK_MODEL` | no | Featured summarize fallback model (e.g. `gemini-3.5-flash-lite`); unset = fallback off |
 | `DIGEST_LLM_FALLBACK_API_KEY` | if fallback on | Gemini API key — **not** the NVIDIA／routing key chain |
 | `DIGEST_LLM_FALLBACK_BASE_URL` | no | Default `https://generativelanguage.googleapis.com/v1beta/openai/` |
@@ -192,7 +197,7 @@ Enable branch protection on `main`: require status check **`test`** before merge
 
 ### Daily digest ([`.github/workflows/daily.yml`](.github/workflows/daily.yml))
 
-- **Schedule:** 18:00 Asia/Taipei daily (`workflow_dispatch` supported) — evening run catches more bioRxiv/RSS listings indexed after morning
+- **Schedule:** 18:23 Asia/Taipei daily (`workflow_dispatch` supported) — evening run catches more bioRxiv/RSS listings; `:23` avoids GitHub cron pile-up at `:00`
 - **Steps:** resolve date → `dev` → `write-preview` → artifact (`retention-days: 30`) → `prune-retention` (30-day window) → commit (`git add -A data/processed docs`) → `send-digest`
 
 On `main`, only the most recent **30 days** of `data/processed/{date}/` and `docs/archive/{date}.html` are kept in the working tree. Older daily output remains in git history; pinned regression fixtures under `test/fixtures/regression/` are not pruned.
@@ -255,6 +260,7 @@ src/
   retention/                     # daily output retention prune
 config/                          # sources, biorxiv, keywords, routing(+keywords), digest, email
 docs/                            # GitHub Pages (generated HTML)
+scripts/llm-probe/               # Durable LLM endpoint / routing / summarize / translate probes
 data/processed/{date}/papers.json  # 30-day rolling retention on main
 ```
 

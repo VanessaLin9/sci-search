@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "purpose": "Durable DIGEST summarize probe samples (short / medium / long abstract).",
+    "sourcedFrom": [
+      "2026-09-21",
+      "2026-09-17",
+      "2026-09-19"
+    ],
+    "buckets": [
+      "short (<=300)",
+      "medium (301-800)",
+      "long (>800)"
+    ],
+    "note": "Stripped of titleZh/summaryZh/topicTags so probes exercise generation, not cached output. Safe to keep after prune-retention."
+  },
+  "papers": [
+    {
+      "id": "10.1038/s41593-026-02422-w",
+      "title": "Tibial bone compression promotes recovery after brain injury through osteocyte PIEZO1",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-09-21T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02422-w",
+      "doi": "10.1038/s41593-026-02422-w",
+      "abstract": "Mechanical loading of the tibia improves survival and recovery after brain surgery in mice and pigs. This bone–brain axis is mediated by osteocyte PIEZO1, which triggers the release of neuroprotective factors into the circulation.",
+      "sourceId": "nature-neuroscience",
+      "matchedKeywords": [],
+      "section": "other",
+      "featured": true,
+      "digestLine": "line-b"
+    },
+    {
+      "id": "10.1038/s41587-026-03319-6",
+      "title": "Gene editing using large insertions",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-09-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03319-6",
+      "doi": "10.1038/s41587-026-03319-6",
+      "abstract": "While technologies for smaller gene edits, such as base editing, have already entered clinical trials, larger gene cargoes face different challenges, including low editing efficiencies, delivery vehicle size constraints, and possible immunogenicity. Programmable genome engineering systems using recombinases; transposases, including CRISPR-associated transposases (CASTs); genome writing systems; and retrotransposons promise different avenues for therapy, but each system has unique limitations. What are the most promising strategies to further develop these technologies, and which parameters need to be further improved to make them efficient and safe for therapy? We asked three experts in the field to share their thoughts on the challenges and opportunities.",
+      "sourceId": "nature-biotechnology",
+      "matchedKeywords": [
+        "CRISPR",
+        "genome"
+      ],
+      "section": "biology",
+      "featured": true,
+      "digestLine": "line-b"
+    },
+    {
+      "id": "10.64898/2026.09.17.752063",
+      "title": "Single-Cell Study Designs Are Systematically Underpowered for Small-Effect Genes",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-19",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.17.752063v1",
+      "doi": "10.64898/2026.09.17.752063",
+      "abstract": "Single cell differential expression analysis enables biologists to make statistical conclusions about which genes are up or downregulated in a particular cell type, between two conditions, such as those with or without a disease. However, due to biological and technical noise, these differences are hard to detect reliably. Determining if an experiment has sufficient power is often derived from simulations or small pilot samples, if done at all. Here, we use sex-biased differential expression on 1,494 donors in three brain cell types to derive empirically grounded power estimates for a variety of experimental setups. Our work reveals a substantial lack of power for reliably detecting the small effects in the range that many studies report, even in experiments containing 600 donors. When reducing the astrocyte data to the poor sequencing characteristics of microglia, over half the differentially expressed genes (DEGs) detected in the full set were lost, highlighting the damage caused by insufficient sequencing depth and cell counts. Despite standard thresholds of adjusted p-value with multiple testing correction, only the top quartile of significant genes were reproducible. Furthermore, from fitting a predictive model to the empirical outcomes, we find cell count and expression levels of genes to be a strong determinant of power. As such, we advocate for future studies to employ cell type enrichment and deeper sequencing, especially for rarer populations like microglia, emphasise the importance of powering experiments of this type when seeking robust findings, and suggest stricter significance thresholds for future discoveries.",
+      "articleType": "genomics",
+      "authors": [
+        "Crampton, C.",
+        "Fawad, S.",
+        "Clark, T.",
+        "Dash, H.",
+        "Köver, B.",
+        "Cotton, G.",
+        "Lee, D.",
+        "Duff, E.",
+        "Bottolo, L.",
+        "Matthews, P. M.",
+        "Skene, N."
+      ],
+      "sourceId": "biorxiv",
+      "matchedKeywords": [
+        "single cell",
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "featured": true,
+      "digestLine": "preprint"
+    }
+  ]
+}

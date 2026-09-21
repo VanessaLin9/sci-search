@@ -82,6 +82,8 @@ export type LlmTestCliOptions = {
   fixture: "default" | "physics";
   skipParse: boolean;
   useRoutingEnv: boolean;
+  /** Use DIGEST_LLM_FALLBACK_* (Gemini) endpoint instead of routing NVIDIA defaults. */
+  useDigestFallback: boolean;
 };
 
 export function parseVerdictTestCli(argv: string[]): LlmTestCliOptions {
@@ -89,6 +91,7 @@ export function parseVerdictTestCli(argv: string[]): LlmTestCliOptions {
     fixture: "default",
     skipParse: false,
     useRoutingEnv: false,
+    useDigestFallback: false,
   };
 
   for (let index = 0; index < argv.length; index += 1) {
@@ -130,6 +133,9 @@ export function parseVerdictTestCli(argv: string[]): LlmTestCliOptions {
     }
     if (arg === "--use-routing") {
       options.useRoutingEnv = true;
+    }
+    if (arg === "--use-digest-fallback") {
+      options.useDigestFallback = true;
     }
   }
 

@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "purpose": "Durable DIGEST overflow-title translate probe samples.",
+    "note": "featured=false + digestLine≠skip so translate probe selects them. Synthetic titles; not tied to processed dates."
+  },
+  "papers": [
+    {
+      "id": "probe-translate-1",
+      "title": "A neural circuit for stress-induced memory linking in mice",
+      "journal": "Science",
+      "publishedDate": "2026-07-28",
+      "url": "https://example.com/probe-translate-1",
+      "abstract": "",
+      "authors": [],
+      "sourceId": "science",
+      "matchedKeywords": [],
+      "section": "other",
+      "featured": false,
+      "digestLine": "line-b"
+    },
+    {
+      "id": "probe-translate-2",
+      "title": "Single-cell atlas of aging across human tissues",
+      "journal": "Nature",
+      "publishedDate": "2026-07-28",
+      "url": "https://example.com/probe-translate-2",
+      "abstract": "",
+      "authors": [],
+      "sourceId": "nature",
+      "matchedKeywords": [],
+      "section": "other",
+      "featured": false,
+      "digestLine": "line-b"
+    },
+    {
+      "id": "probe-translate-3",
+      "title": "Room-temperature superconductivity in a lanthanum hydride superconductor",
+      "journal": "Science",
+      "publishedDate": "2026-07-28",
+      "url": "https://example.com/probe-translate-3",
+      "abstract": "",
+      "authors": [],
+      "sourceId": "science",
+      "matchedKeywords": [],
+      "section": "other",
+      "featured": false,
+      "digestLine": "line-b"
+    },
+    {
+      "id": "probe-translate-4",
+      "title": "α-Synuclein aggregation drives microglial PIEZO1-dependent neuroinflammation",
+      "journal": "Cell",
+      "publishedDate": "2026-07-28",
+      "url": "https://example.com/probe-translate-4",
+      "abstract": "",
+      "authors": [],
+      "sourceId": "cell",
+      "matchedKeywords": [],
+      "section": "other",
+      "featured": false,
+      "digestLine": "line-b"
+    },
+    {
+      "id": "probe-translate-5",
+      "title": "CRISPR–Cas9 base editing corrects a pathogenic HBB mutation in patient-derived HSPCs",
+      "journal": "Nature Medicine",
+      "publishedDate": "2026-07-28",
+      "url": "https://example.com/probe-translate-5",
+      "abstract": "",
+      "authors": [],
+      "sourceId": "nature-medicine",
+      "matchedKeywords": [],
+      "section": "other",
+      "featured": false,
+      "digestLine": "line-b"
+    }
+  ]
+}
