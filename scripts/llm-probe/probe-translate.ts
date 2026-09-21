@@ -1,13 +1,12 @@
 /**
- * Translate probe：overflow 標題 → titleZh（正式 translate prompt；production 無 fallback）。
+ * Translate probe：overflow 標題 → titleZh（正式 translate prompt；PR #39）。
+ * Production translate **仍無** Gemini fallback；`--use-digest-fallback` 僅供 probe 對照。
+ * 預設讀 `fixtures/translate-samples.json`（不綁 processed date）。
  *
- * 預設讀進 git 的 fixture：
  *   npm run probe:translate -- --model meta/muse-glimmer-30b
  *   npm run probe:translate -- --use-digest-fallback
  *   npm run probe:translate -- --limit 5
  *   npm run probe:translate -- --smoke-only
- *
- * 可選：
  *   npm run probe:translate -- --file path/to/papers.json --limit 3
  */
 import { readFileSync } from "node:fs";

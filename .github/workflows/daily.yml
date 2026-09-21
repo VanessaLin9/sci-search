@@ -3,7 +3,7 @@ name: Daily Paper Digest
 on:
   workflow_dispatch:
   schedule:
-    # 18:23 Asia/Taipei (10:23 UTC) — :23 avoids GitHub schedule pile-up at :00
+    # 18:23 Asia/Taipei (10:23 UTC) — :23 avoids GitHub schedule pile-up at :00（PR #39）
     - cron: "23 10 * * *"
 
 concurrency:

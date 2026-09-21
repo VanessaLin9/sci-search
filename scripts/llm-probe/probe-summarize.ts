@@ -1,12 +1,10 @@
 /**
- * Summarize probe：用正式 summarize prompt 試打 featured 繁中摘要。
+ * Summarize probe：用正式 summarize prompt 試打 featured 繁中摘要（PR #39）。
+ * 預設 fixture；`--date`／`--file` 才讀 processed／自訂路徑（processed 可能已被 prune）。
  *
- * 預設讀進 git 的 fixture（不依賴 data/processed 是否還在）：
  *   npm run probe:summarize -- --model meta/muse-glimmer-30b --limit 2
  *   npm run probe:summarize -- --use-digest-fallback --limit 2
  *   npm run probe:summarize -- --smoke-only
- *
- * 可選覆寫：
  *   npm run probe:summarize -- --date 2026-09-19 --limit 2
  *   npm run probe:summarize -- --file path/to/papers.json
  */
@@ -54,6 +52,7 @@ function resolvePapersPath(argv: string[]): { path: string; source: "fixture" | 
   const date = argValue(argv, "date");
   if (date) {
     const processed = `data/processed/${date}/papers.json`;
+    // 缺檔就明示失敗，不要再 silent 落到 /tmp（PR #39）
     if (!existsSync(processed)) {
       throw new Error(
         `No papers at ${processed}. Use default fixture (omit --date) or pass --file.`,

@@ -1,6 +1,6 @@
 # Probe fixtures（進 git）
 
-固定測資，**不依賴** `data/processed/{date}/`（會被 prune／換日）。
+固定測資，**不依賴** `data/processed/{date}/`（會被 prune／換日；PR #39）。
 
 | 檔案 | 給誰用 | 內容 |
 | --- | --- | --- |
