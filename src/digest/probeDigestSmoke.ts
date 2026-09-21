@@ -1,6 +1,6 @@
 /**
  * Probe smoke HTTP path（PR #35）：必須經 shared rate limiter，不得直打 create。
- * CLI：`probeDigestModel.ts`；offline tests 可直接呼叫本函式。
+ * CLI：`scripts/llm-probe/probe-endpoint.ts` / `probe-summarize.ts`；offline tests 可直接呼叫本函式。
  */
 import {
   formatRateLimitPermitLog,

@@ -3,6 +3,8 @@ dist/
 .env
 .DS_Store
 tmp/
+scripts/llm-probe/notes/**
+!scripts/llm-probe/notes/README.md
 original_materials/
 data/raw/**/*.json
 !data/raw/.gitkeep
