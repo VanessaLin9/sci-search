@@ -1,6 +1,6 @@
 /**
- * Digest HTML footer lines for the day's routing／digest LLM models.
- * Names always come from persisted usage — never hardcoded provider ids.
+ * Digest footer 組字（PR #40）：名稱只來自 persisted usage，禁止硬編碼 provider id。
+ * 缺 models／殘缺欄位 fail-open：省略該行，不讓 render 炸掉。
  */
 import type { DigestLlmModelsSnapshot, LlmModelUsage } from "../llm/llmModelUsage.js";
 import { displayLlmModel } from "../llm/llmModelUsage.js";
@@ -70,6 +70,7 @@ function formatSummarizeLine(
 
   const total = summarize.requested;
   const primaryName = displayLlmModel(summarize.primary);
+  // 分母是精選篇數；每篇只算 primary 或 fallback 一側。fallback 未設定則省略子句（PR #40）
   let line = `summarize: ${primaryName} ${summarize.primary.succeeded}/${total}`;
 
   if (summarize.fallback) {

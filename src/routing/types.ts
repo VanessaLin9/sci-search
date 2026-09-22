@@ -10,7 +10,7 @@ export type BroadScienceRoutingInput = DomainBroadScienceRoutingInput;
 export type ExcludedPaper<P = DomainExcludedPaper["paper"]> = DomainExcludedPaper<P>;
 export type LifeScienceRoutingStats = DomainLifeScienceRoutingStats;
 
-/** Orchestrator result: domain routing outcome plus optional runtime model usage. */
+/** Orchestrator 附加當日 routing model（PR #40）；不進 domain 政策型別。 */
 export type LifeScienceRoutingResult<P = DomainExcludedPaper["paper"]> =
   DomainLifeScienceRoutingResult<P> & {
     model?: LlmModelUsage;

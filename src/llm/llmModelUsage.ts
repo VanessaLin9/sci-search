@@ -1,6 +1,6 @@
 /**
- * Runtime LLM model recording for daily digest footer.
- * Display never hardcodes provider ids — persist requested env + API `completion.model`.
+ * 當日 LLM model 紀錄（PR #40）：digest footer 用 requested env + API `completion.model`。
+ * 顯示層禁止硬編碼 muse／Gemini 等 provider id。
  */
 
 export type LlmModelUsage = {
@@ -55,7 +55,7 @@ export function llmModelUsage(
   return unique.length > 0 ? { requested, observed: unique } : { requested };
 }
 
-/** Footer display: API-returned id wins; otherwise the requested env id. */
+/** Footer 顯示契約（PR #40）：有 observed 用 API 回傳 id；否則退回當天 requested env。 */
 export function displayLlmModel(usage: LlmModelUsage): string {
   if (!usage.observed?.length) return usage.requested;
   if (usage.observed.length === 1) return usage.observed[0]!;

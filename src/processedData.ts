@@ -64,6 +64,7 @@ const routingStatsSchema = z.object({
   excluded: z.number(),
 });
 
+// Optional（PR #40）：舊 papers.json 無 routing.model／digest.models 仍須 parse。
 const llmModelUsageSchema = z.object({
   requested: z.string().min(1),
   observed: z.array(z.string().min(1)).optional(),
@@ -172,6 +173,7 @@ export type ProcessedPapersFile = {
   excludedPapers?: ExcludedPaper[];
 };
 
+/** 把 pipeline 當日 model snapshot 寫進 papers.json；render／寄信只讀檔、不讀當下 env（PR #40）。 */
 export function toProcessedPapersFile(input: {
   reportDate: string;
   generatedAt?: string;

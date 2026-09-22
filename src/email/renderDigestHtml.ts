@@ -31,7 +31,7 @@ export type RenderDigestHtmlOptions = {
   papers: ClassifiedPaper[];
   generatedAt?: string;
   priorityBySourceId?: ReadonlyMap<string, number>;
-  /** Optional day’s LLM model snapshot; omit for legacy files. */
+  /** 當日 LLM snapshot（PR #40）；legacy 檔省略 → footer 只留 Sent by。 */
   modelFooter?: DigestModelFooterSource;
 };
 

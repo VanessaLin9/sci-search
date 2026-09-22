@@ -289,6 +289,7 @@ function buildDigestModelsSnapshot(input: {
   summarize?: DigestSummarizeModels;
   translate?: DigestTranslateModels;
 }): DigestLlmModelsSnapshot | undefined {
+  // digest LLM 關閉不寫假 model 名稱；footer 就不會長出 spatial／summarize／translate（PR #40）
   if (!input.llmTagging) return undefined;
   const snapshot: DigestLlmModelsSnapshot = {};
   if (input.spatial) snapshot.spatial = input.spatial;
