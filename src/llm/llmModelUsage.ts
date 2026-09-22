@@ -74,3 +74,88 @@ export function noteObservedModel(
   const observed = observedLlmModel(completion);
   if (observed) sink.push(observed);
 }
+
+/** Persist 進來的 model blob fail-open：空字串／非字串／空 observed 丟掉，不擋整份 papers.json（PR #40）。 */
+export function sanitizePersistedLlmModelUsage(raw: unknown): LlmModelUsage | undefined {
+  if (!raw || typeof raw !== "object") return undefined;
+  const record = raw as Record<string, unknown>;
+  const requested = typeof record.requested === "string" ? record.requested.trim() : "";
+  if (!requested) return undefined;
+  const observed = Array.isArray(record.observed)
+    ? record.observed.filter((item): item is string => typeof item === "string")
+    : [];
+  return llmModelUsage(requested, observed);
+}
+
+export function sanitizeDigestLlmModelsSnapshot(raw: unknown): DigestLlmModelsSnapshot | undefined {
+  if (!raw || typeof raw !== "object") return undefined;
+  const record = raw as Record<string, unknown>;
+  const snapshot: DigestLlmModelsSnapshot = {};
+
+  const spatialUsage = sanitizePersistedLlmModelUsage(record.spatial);
+  if (spatialUsage) {
+    const llmTagged = finiteNumber(
+      record.spatial && typeof record.spatial === "object"
+        ? (record.spatial as { llmTagged?: unknown }).llmTagged
+        : undefined,
+    );
+    snapshot.spatial = llmTagged == null ? spatialUsage : { ...spatialUsage, llmTagged };
+  }
+
+  const summarize = sanitizeSummarizeModels(record.summarize);
+  if (summarize) snapshot.summarize = summarize;
+
+  const translate = sanitizeTranslateModels(record.translate);
+  if (translate) snapshot.translate = translate;
+
+  return Object.keys(snapshot).length > 0 ? snapshot : undefined;
+}
+
+function finiteNumber(value: unknown): number | undefined {
+  return typeof value === "number" && Number.isFinite(value) ? value : undefined;
+}
+
+function sanitizeSummarizeModels(raw: unknown): DigestSummarizeModels | undefined {
+  if (!raw || typeof raw !== "object") return undefined;
+  const record = raw as Record<string, unknown>;
+  const requested = finiteNumber(record.requested);
+  const failed = finiteNumber(record.failed);
+  const primaryUsage = sanitizePersistedLlmModelUsage(record.primary);
+  const primarySucceeded = finiteNumber(
+    record.primary && typeof record.primary === "object"
+      ? (record.primary as { succeeded?: unknown }).succeeded
+      : undefined,
+  );
+  if (requested == null || failed == null || !primaryUsage || primarySucceeded == null) {
+    return undefined;
+  }
+
+  const summarize: DigestSummarizeModels = {
+    requested,
+    failed,
+    primary: { ...primaryUsage, succeeded: primarySucceeded },
+  };
+
+  const fallbackUsage = sanitizePersistedLlmModelUsage(record.fallback);
+  const fallbackSucceeded = finiteNumber(
+    record.fallback && typeof record.fallback === "object"
+      ? (record.fallback as { succeeded?: unknown }).succeeded
+      : undefined,
+  );
+  if (fallbackUsage && fallbackSucceeded != null) {
+    summarize.fallback = { ...fallbackUsage, succeeded: fallbackSucceeded };
+  }
+  return summarize;
+}
+
+function sanitizeTranslateModels(raw: unknown): DigestTranslateModels | undefined {
+  if (!raw || typeof raw !== "object") return undefined;
+  const record = raw as Record<string, unknown>;
+  const requested = finiteNumber(record.requested);
+  const succeeded = finiteNumber(record.succeeded);
+  const failed = finiteNumber(record.failed);
+  const model = sanitizePersistedLlmModelUsage(record.model);
+  if (requested == null || succeeded == null || failed == null || !model) return undefined;
+  return { requested, succeeded, failed, model };
+}
+

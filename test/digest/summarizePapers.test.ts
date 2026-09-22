@@ -449,7 +449,7 @@ describe("summarizeFeaturedPapers dual-model fallback", () => {
       return jsonOk(request.paperId, request.model);
     });
 
-    const { fieldsById, stats } = await summarizeFeaturedPapers({
+    const { fieldsById, stats, models } = await summarizeFeaturedPapers({
       papers: [paper],
       scopeBySourceId,
       config: digestConfig(),
@@ -463,6 +463,9 @@ describe("summarizeFeaturedPapers dual-model fallback", () => {
     );
     assert.equal(fieldsById.get("p7")?.titleZh, "繁中標題 p7");
     assert.equal(stats.fallbackSucceeded, 1);
+    assert.deepEqual(models.primary.observed, ["primary-model"]);
+    assert.equal(models.primary.succeeded, 0);
+    assert.deepEqual(models.fallback?.observed, ["gemini-3.5-flash-lite"]);
   });
 
   test("id mismatch on primary goes to fallback", async () => {

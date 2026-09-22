@@ -12,7 +12,12 @@ import {
 import type { ClassifiedPaper } from "./types.js";
 import type { ExcludedPaper, LifeScienceRoutingResult, LifeScienceRoutingStats } from "./routing/types.js";
 import type { DigestPhaseResult } from "./digest/types.js";
-import type { LlmModelUsage } from "./llm/llmModelUsage.js";
+import {
+  sanitizeDigestLlmModelsSnapshot,
+  sanitizePersistedLlmModelUsage,
+  type DigestLlmModelsSnapshot,
+  type LlmModelUsage,
+} from "./llm/llmModelUsage.js";
 
 // Pre-classify shape: routing happens before classify, so excluded papers never carry these fields.
 // Kept optional+strip-tolerant so legacy JSON files (which embedded the placeholder values) still parse.
@@ -65,37 +70,7 @@ const routingStatsSchema = z.object({
 });
 
 // Optional（PR #40）：舊 papers.json 無 routing.model／digest.models 仍須 parse。
-const llmModelUsageSchema = z.object({
-  requested: z.string().min(1),
-  observed: z.array(z.string().min(1)).optional(),
-});
-
-const digestModelsSchema = z
-  .object({
-    spatial: llmModelUsageSchema
-      .extend({
-        llmTagged: z.number().optional(),
-      })
-      .optional(),
-    summarize: z
-      .object({
-        requested: z.number(),
-        failed: z.number(),
-        primary: llmModelUsageSchema.extend({ succeeded: z.number() }),
-        fallback: llmModelUsageSchema.extend({ succeeded: z.number() }).optional(),
-      })
-      .optional(),
-    translate: z
-      .object({
-        requested: z.number(),
-        succeeded: z.number(),
-        failed: z.number(),
-        model: llmModelUsageSchema,
-      })
-      .optional(),
-  })
-  .optional();
-
+// 殘缺／空字串／缺 primary 丟棄該段 metadata，不讓整份 digest 無法寄出（PR #40 Codex P2）。
 const digestStatsSchema = z.object({
   enabled: z.boolean(),
   llmTagging: z.boolean(),
@@ -142,7 +117,7 @@ const digestStatsSchema = z.object({
         failed: z.number(),
       })
       .optional(),
-    models: digestModelsSchema,
+    models: z.unknown().optional(),
   });
 
 const processedPapersFileSchema = z.object({
@@ -153,7 +128,7 @@ const processedPapersFileSchema = z.object({
     .object({
       enabled: z.boolean(),
       stats: routingStatsSchema,
-      model: llmModelUsageSchema.optional(),
+      model: z.unknown().optional(),
     })
     .optional(),
   digest: digestStatsSchema.optional(),
@@ -169,7 +144,9 @@ export type ProcessedPapersFile = {
     stats: LifeScienceRoutingStats;
     model?: LlmModelUsage;
   };
-  digest?: z.infer<typeof digestStatsSchema>;
+  digest?: Omit<z.infer<typeof digestStatsSchema>, "models"> & {
+    models?: DigestLlmModelsSnapshot;
+  };
   excludedPapers?: ExcludedPaper[];
 };
 
@@ -210,17 +187,27 @@ export async function readProcessedPapersFile(path: string): Promise<ProcessedPa
 
 export function validateProcessedPapersFile(data: unknown): ProcessedPapersFile {
   const parsed = processedPapersFileSchema.parse(data);
+  const routingModel = parsed.routing
+    ? sanitizePersistedLlmModelUsage(parsed.routing.model)
+    : undefined;
   return {
     ...parsed,
     routing: parsed.routing
       ? {
-          ...parsed.routing,
+          enabled: parsed.routing.enabled,
           stats: {
             ...parsed.routing.stats,
             keywordFallbackClassified: parsed.routing.stats.keywordFallbackClassified ?? 0,
             keywordFallbackYes: parsed.routing.stats.keywordFallbackYes ?? 0,
             keywordFallbackNo: parsed.routing.stats.keywordFallbackNo ?? 0,
           },
+          ...(routingModel ? { model: routingModel } : {}),
+        }
+      : undefined,
+    digest: parsed.digest
+      ? {
+          ...parsed.digest,
+          models: sanitizeDigestLlmModelsSnapshot(parsed.digest.models),
         }
       : undefined,
   } as ProcessedPapersFile;

@@ -11,7 +11,7 @@ import type { DigestTaggingStats } from "../domain/life-science/digest/resolveDi
 import { shouldSkipForDigest } from "../domain/life-science/digest/skipNonResearch.js";
 import { isPreprintSource } from "../domain/life-science/sources.js";
 import { extractLlmJsonContent, shouldRetrySplitLlmBatch } from "../llm/extractLlmJsonContent.js";
-import { llmModelUsage, observedLlmModel, type LlmModelUsage } from "../llm/llmModelUsage.js";
+import { llmModelUsage, noteObservedModel, type LlmModelUsage } from "../llm/llmModelUsage.js";
 import { parseJsonFromLlmContent } from "../routing/parseLlmJson.js";
 import { getRoutingLlmConfig, maskApiKey } from "../routing/config.js";
 import { logRouting } from "../routing/routingLog.js";
@@ -45,7 +45,6 @@ type BatchSpatialOutcome = {
   llmClassifiedIds: Set<string>;
   keywordFallbackIds: string[];
   failures: number;
-  observedModels: string[];
 };
 
 function mainLineFromKeywords(paper: ClassifiedPaper): MainLine {
@@ -112,8 +111,7 @@ export async function classifySpatialWithLlm(options: {
       batchTotal > 1 ? `spatial batch ${index + 1}/${batchTotal}` : "spatial batch 1/1";
 
     try {
-      const outcome = await classifySpatialBatch(batch, threshold, batchLabel);
-      observedModels.push(...outcome.observedModels);
+      const outcome = await classifySpatialBatch(batch, threshold, batchLabel, observedModels);
       for (const [id, line] of outcome.lineById) {
         lineById.set(id, line);
         llmClassifiedIds.add(id);
@@ -201,7 +199,7 @@ function resolveBatchSpatialResults(
   const counts = countLines(applied.lineById);
   logRouting(`${batchLabel}: parsed · line-a ${counts.a}, line-b ${counts.b}`);
 
-  return { ...applied, observedModels: [] };
+  return applied;
 }
 
 function mergeBatchOutcomes(a: BatchSpatialOutcome, b: BatchSpatialOutcome): BatchSpatialOutcome {
@@ -218,7 +216,6 @@ function mergeBatchOutcomes(a: BatchSpatialOutcome, b: BatchSpatialOutcome): Bat
     llmClassifiedIds,
     keywordFallbackIds: [...a.keywordFallbackIds, ...b.keywordFallbackIds],
     failures: a.failures + b.failures,
-    observedModels: [...a.observedModels, ...b.observedModels],
   };
 }
 
@@ -226,17 +223,28 @@ async function classifySpatialBatch(
   items: SpatialClassifyInput[],
   threshold: number,
   batchLabel: string,
+  observedSink: string[],
 ): Promise<BatchSpatialOutcome> {
   try {
-    return await classifySpatialBatchOnce(items, threshold, batchLabel);
+    return await classifySpatialBatchOnce(items, threshold, batchLabel, observedSink);
   } catch (error) {
     if (items.length <= 1 || !shouldRetrySplitLlmBatch(error, "unknown")) {
       throw error;
     }
     const mid = Math.ceil(items.length / 2);
     logRouting(`${batchLabel}: split retry ${items.length} → ${mid} + ${items.length - mid}`);
-    const first = await classifySpatialBatch(items.slice(0, mid), threshold, `${batchLabel}a`);
-    const second = await classifySpatialBatch(items.slice(mid), threshold, `${batchLabel}b`);
+    const first = await classifySpatialBatch(
+      items.slice(0, mid),
+      threshold,
+      `${batchLabel}a`,
+      observedSink,
+    );
+    const second = await classifySpatialBatch(
+      items.slice(mid),
+      threshold,
+      `${batchLabel}b`,
+      observedSink,
+    );
     return mergeBatchOutcomes(first, second);
   }
 }
@@ -245,11 +253,12 @@ async function classifySpatialBatchOnce(
   items: SpatialClassifyInput[],
   threshold: number,
   batchLabel: string,
+  observedSink: string[],
 ): Promise<BatchSpatialOutcome> {
   const config = getRoutingLlmConfig();
   const completion = await callSpatialClassifyCompletion(items, config, { label: batchLabel });
   const finishReason = completion.choices[0]?.finish_reason ?? "unknown";
-  const observed = observedLlmModel(completion);
+  noteObservedModel(observedSink, completion);
 
   let content: string;
   let usedReasoningFallback: boolean;
@@ -281,8 +290,5 @@ async function classifySpatialBatchOnce(
     throw wrapped;
   }
 
-  return {
-    ...resolveBatchSpatialResults(items, parsed.results, threshold, batchLabel),
-    observedModels: observed ? [observed] : [],
-  };
+  return resolveBatchSpatialResults(items, parsed.results, threshold, batchLabel);
 }

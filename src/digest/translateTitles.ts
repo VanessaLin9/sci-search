@@ -12,7 +12,7 @@ import { callDigestChatCompletion } from "./callDigestChat.js";
 import { getDigestLlmConfig } from "./config.js";
 import { extractDigestMessageContent } from "./extractDigestContent.js";
 import { logDigest } from "./digestLog.js";
-import { llmModelUsage, observedLlmModel, type DigestTranslateModels } from "../llm/llmModelUsage.js";
+import { llmModelUsage, noteObservedModel, type DigestTranslateModels } from "../llm/llmModelUsage.js";
 import {
   formatTranslateBatchSummary,
   parseTranslateBatchResponse,
@@ -61,8 +61,7 @@ export async function translateOverflowTitles(options: {
     const batchLabel = batchTotal > 1 ? `translate ${index + 1}/${batchTotal}` : "translate 1/1";
 
     try {
-      const outcome = await translateBatchOnce(batch, config, batchLabel);
-      if (outcome.observed) observed.push(outcome.observed);
+      const outcome = await translateBatchOnce(batch, config, batchLabel, observed);
       for (const [id, titleZh] of outcome.titleZhById) {
         titleZhById.set(id, titleZh);
         llmTranslated += 1;
@@ -102,13 +101,13 @@ export async function translateOverflowTitles(options: {
 type TranslateBatchOutcome = {
   titleZhById: Map<string, string>;
   failedIds: string[];
-  observed?: string;
 };
 
 async function translateBatchOnce(
   batch: ReturnType<typeof toDigestTranslateInput>[],
   config: ReturnType<typeof getDigestLlmConfig>,
   batchLabel: string,
+  observedSink: string[],
 ): Promise<TranslateBatchOutcome> {
   const completion = await callDigestChatCompletion(
     config,
@@ -121,7 +120,7 @@ async function translateBatchOnce(
       completionFloor: 1024,
     },
   );
-  const observed = observedLlmModel(completion);
+  noteObservedModel(observedSink, completion);
 
   const finishReason = completion.choices[0]?.finish_reason ?? "unknown";
   const { content, usedReasoningFallback } = extractDigestMessageContent(completion.choices[0]?.message);
@@ -152,5 +151,5 @@ async function translateBatchOnce(
     );
   }
 
-  return { titleZhById: parsed.titleZhById, failedIds: parsed.failedIds, observed };
+  return { titleZhById: parsed.titleZhById, failedIds: parsed.failedIds };
 }

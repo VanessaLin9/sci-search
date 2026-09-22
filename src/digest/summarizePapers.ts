@@ -76,6 +76,7 @@ type SummarizeOneFailure = {
   id: string;
   role: SummarizeModelRole;
   model: string;
+  observed?: string;
   durationMs: number;
   failure: ClassifiedRoutingFailure;
   budgetSkipped?: boolean;
@@ -136,6 +137,7 @@ async function attemptSummarize(options: {
   const input = toDigestSummarizeInput(paper, scopeBySourceId);
   const startedAt = clock.now();
   const initialTimeoutMs = budget.requestTimeoutMs(configuredTimeoutMs);
+  let observed: string | undefined;
 
   try {
     const completion = await callDigestChatCompletion(
@@ -155,6 +157,8 @@ async function attemptSummarize(options: {
         maxRetries: config.summarizeMaxRetries,
       },
     );
+    // HTTP 一回來就記 observed；parse／id mismatch 失敗仍要留下實際打到的 model（PR #40）
+    observed = observedLlmModel(completion);
 
     const finishReason = completion.choices[0]?.finish_reason ?? "unknown";
     const usage = completion.usage;
@@ -177,7 +181,6 @@ async function attemptSummarize(options: {
     }
 
     const durationMs = clock.now() - startedAt;
-    const observed = observedLlmModel(completion);
     logDigest(
       `${label}: ok · model=${model}` +
         (observed && observed !== model ? ` observed=${observed}` : "") +
@@ -201,7 +204,9 @@ async function attemptSummarize(options: {
     const durationMs = clock.now() - startedAt;
     const failure = classifyRoutingFailure(error);
     logDigest(
-      `${label}: failed · model=${model} role=${role} durationMs=${durationMs} ` +
+      `${label}: failed · model=${model}` +
+        (observed && observed !== model ? ` observed=${observed}` : "") +
+        ` role=${role} durationMs=${durationMs} ` +
         `kind=${failure.kind}` +
         (failure.status != null ? ` status=${failure.status}` : "") +
         ` (${failure.message})`,
@@ -211,6 +216,7 @@ async function attemptSummarize(options: {
       id: paper.id,
       role,
       model,
+      observed,
       durationMs,
       failure,
     };
@@ -448,10 +454,10 @@ export async function summarizeFeaturedPapers(options: {
     if (result.ok) {
       fieldsById.set(result.id, result.fields);
       primarySucceeded += 1;
-      if (result.observed) primaryObserved.push(result.observed);
     } else {
       failedPapers.push({ paper: featured[index], index });
     }
+    if (result.observed) primaryObserved.push(result.observed);
   }
 
   if (failedPapers.length > 0 && fallbackConfig) {
@@ -480,10 +486,10 @@ export async function summarizeFeaturedPapers(options: {
       if (result.ok) {
         fieldsById.set(result.id, result.fields);
         fallbackSucceeded += 1;
-        if (result.observed) fallbackObserved.push(result.observed);
       } else {
         failed += 1;
       }
+      if (result.observed) fallbackObserved.push(result.observed);
     }
   } else if (failedPapers.length > 0) {
     failed = failedPapers.length;

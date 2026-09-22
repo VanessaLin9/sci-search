@@ -4,6 +4,8 @@ import {
   displayLlmModel,
   llmModelUsage,
   observedLlmModel,
+  sanitizeDigestLlmModelsSnapshot,
+  sanitizePersistedLlmModelUsage,
   uniqueModels,
 } from "../../src/llm/llmModelUsage.js";
 
@@ -34,5 +36,23 @@ describe("llmModelUsage", () => {
 
   test("uniqueModels keeps first-seen order", () => {
     assert.deepEqual(uniqueModels(["b", "a", "b", "a"]), ["b", "a"]);
+  });
+
+  test("sanitizePersistedLlmModelUsage drops empty requested and blank observed", () => {
+    assert.equal(sanitizePersistedLlmModelUsage({ requested: "" }), undefined);
+    assert.equal(sanitizePersistedLlmModelUsage({ requested: "  " }), undefined);
+    assert.equal(sanitizePersistedLlmModelUsage("nope"), undefined);
+    assert.deepEqual(sanitizePersistedLlmModelUsage({ requested: "env", observed: ["", " api "] }), {
+      requested: "env",
+      observed: ["api"],
+    });
+  });
+
+  test("sanitizeDigestLlmModelsSnapshot drops summarize when primary is missing", () => {
+    const snapshot = sanitizeDigestLlmModelsSnapshot({
+      spatial: { requested: "routing" },
+      summarize: { requested: 10, failed: 0 },
+    });
+    assert.deepEqual(snapshot, { spatial: { requested: "routing" } });
   });
 });
