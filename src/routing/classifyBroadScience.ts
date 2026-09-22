@@ -2,6 +2,7 @@ import { z } from "zod";
 import { lifeScienceRoutingVerdictSchema } from "../domain/life-science/schemas.js";
 import { shouldRetrySplitLlmBatch } from "../llm/extractLlmJsonContent.js";
 import { LlmRequestSchedulerError } from "../llm/llmRequestScheduler.js";
+import { observedLlmModel } from "../llm/llmModelUsage.js";
 import type { LifeScienceRoutingVerdict } from "../types.js";
 import { planRoutingBatches } from "./batchSizing.js";
 import {
@@ -570,6 +571,7 @@ async function classifyBatchOnce(
     },
     onRequestAttempt: () => ctx.noteRequest(),
   });
+  ctx.noteObservedModel(observedLlmModel(completion));
 
   const usage = completion.usage;
   const usageLine = usage
@@ -634,6 +636,8 @@ export type BroadScienceClassificationResult = {
   verdictById: Map<string, LifeScienceRoutingVerdict>;
   degradedPaperIds: string[];
   diagnostics: RoutingStageDiagnostics;
+  requestedModel?: string;
+  observedModels: string[];
 };
 
 export type ClassifyBroadScienceOptions = {
@@ -666,6 +670,7 @@ export async function classifyBroadSciencePapers(
       verdictById: new Map(),
       degradedPaperIds: [],
       diagnostics: ctx.snapshot(0, 0),
+      observedModels: [],
     };
   }
 
@@ -689,6 +694,8 @@ export async function classifyBroadSciencePapers(
       verdictById: new Map(),
       degradedPaperIds: [...degradedPaperIds],
       diagnostics,
+      requestedModel: process.env.ROUTING_LLM_MODEL?.trim() || undefined,
+      observedModels: [],
     };
   }
 
@@ -753,5 +760,11 @@ export async function classifyBroadSciencePapers(
   logRouting(`finished all batches · ${summarizeVerdicts(verdictById)}`);
   logRouting(formatRoutingStageSummary(diagnostics));
 
-  return { verdictById, degradedPaperIds: [...degradedPaperIds], diagnostics };
+  return {
+    verdictById,
+    degradedPaperIds: [...degradedPaperIds],
+    diagnostics,
+    requestedModel: config.model,
+    observedModels: ctx.observedModels(),
+  };
 }

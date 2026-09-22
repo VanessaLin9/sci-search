@@ -2,6 +2,7 @@ import type { ClassifiedPaper, SourceScope } from "../types.js";
 import type { DigestLine } from "../types.js";
 import type { DigestTaggingStats as DomainDigestTaggingStats } from "../domain/life-science/digest/resolveDigestLines.js";
 import type { DigestSelectionStats as DomainDigestSelectionStats } from "../domain/life-science/digest/selection.js";
+import type { DigestLlmModelsSnapshot } from "../llm/llmModelUsage.js";
 
 export type DigestTaggingInput = {
   id: string;
@@ -58,4 +59,5 @@ export type DigestPhaseResult = {
   selection: DigestSelectionStats;
   summarize: DigestSummarizeStats;
   translate: DigestTranslateStats;
+  models?: DigestLlmModelsSnapshot;
 };

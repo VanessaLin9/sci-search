@@ -1,3 +1,4 @@
+import assert from "node:assert/strict";
 import { after, before, describe, it } from "node:test";
 import { buildSourcePriorityById } from "../../src/digest/selectFeatured.js";
 import { renderDigestHtml } from "../../src/email/renderDigestHtml.js";
@@ -44,8 +45,13 @@ describe("golden pipeline e2e", () => {
       papers: processed.papers,
       generatedAt: processed.generatedAt,
       priorityBySourceId: buildSourcePriorityById(sources),
+      modelFooter: {
+        routing: processed.routing,
+        digest: processed.digest,
+      },
     });
 
     assertSyntheticDigestHtml(html, processed);
+    assert.match(html, /test-model/);
   });
 });

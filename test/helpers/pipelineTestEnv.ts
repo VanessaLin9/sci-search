@@ -1,6 +1,6 @@
 import { installLlmRateLimitTestHarness } from "../../src/llm/llmTransportRateLimit.js";
 import type { PipelineRunResult } from "../../src/pipeline.js";
-import type { ProcessedPapersFile } from "../../src/processedData.js";
+import { toProcessedPapersFile, type ProcessedPapersFile } from "../../src/processedData.js";
 
 export function installPipelineTestEnv(): void {
   process.env.ROUTE_LIFE_SCIENCE = "1";
@@ -22,21 +22,11 @@ export function buildProcessedFile(
   reportDate: string,
   result: PipelineRunResult,
 ): ProcessedPapersFile {
-  return {
+  return toProcessedPapersFile({
     reportDate,
     generatedAt: new Date().toISOString(),
     papers: result.papers,
-    routing: {
-      enabled: result.routing.enabled,
-      stats: result.routing.stats,
-    },
-    digest: {
-      enabled: result.digest.enabled,
-      llmTagging: result.digest.llmTagging,
-      tagging: result.digest.tagging,
-      selection: result.digest.selection,
-      summarize: result.digest.summarize,
-      translate: result.digest.translate,
-    },
-  };
+    routing: result.routing,
+    digest: result.digest,
+  });
 }

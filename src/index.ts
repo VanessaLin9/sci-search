@@ -17,6 +17,7 @@ import { logDigest } from "./digest/digestLog.js";
 import { runPipeline } from "./pipeline.js";
 import { logRouting } from "./routing/routingLog.js";
 import { buildSourceScopeById } from "./routing/sourceScope.js";
+import { toProcessedPapersFile } from "./processedData.js";
 import { writeJsonFile } from "./writeJson.js";
 
 type CliOptions = {
@@ -109,24 +110,16 @@ async function main() {
   }
 
   const outputPath = `data/processed/${reportDate}/papers.json`;
-  await writeJsonFile(outputPath, {
-    reportDate,
-    generatedAt: new Date().toISOString(),
-    papers: result.papers,
-    routing: {
-      enabled: result.routing.enabled,
-      stats: result.routing.stats,
-    },
-    digest: {
-      enabled: result.digest.enabled,
-      llmTagging: result.digest.llmTagging,
-      tagging: result.digest.tagging,
-      selection: result.digest.selection,
-      summarize: result.digest.summarize,
-      translate: result.digest.translate,
-    },
-    excludedPapers: result.routing.excluded.length > 0 ? result.routing.excluded : undefined,
-  });
+  await writeJsonFile(
+    outputPath,
+    toProcessedPapersFile({
+      reportDate,
+      generatedAt: new Date().toISOString(),
+      papers: result.papers,
+      routing: result.routing,
+      digest: result.digest,
+    }),
+  );
 
   console.log(
     `Wrote ${outputPath} (${result.papers.length} papers` +

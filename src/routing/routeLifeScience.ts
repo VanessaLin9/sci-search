@@ -13,6 +13,7 @@ import {
   splitPapersByRoutingScope,
 } from "../domain/life-science/routing/route.js";
 import { isLifeScienceRoutingEnabled } from "../domain/life-science/routing/config.js";
+import { llmModelUsage, requestedModelFromEnv } from "../llm/llmModelUsage.js";
 import { logRouting } from "./routingLog.js";
 import { toBroadScienceRoutingInput } from "./toRoutingInput.js";
 import type { LifeScienceRoutingResult } from "./types.js";
@@ -47,11 +48,14 @@ export async function routeLifeSciencePapers(options: {
 
   if (broadScience.length === 0) {
     logRouting("no broad-science papers; skipping LLM");
-    return assembleRoutingResult({
-      scopeDefaultIncluded,
-      broadScienceMerge: emptyBroadScienceMergeResult(),
-      total: papers.length,
-    });
+    return withRoutingModel(
+      assembleRoutingResult({
+        scopeDefaultIncluded,
+        broadScienceMerge: emptyBroadScienceMergeResult(),
+        total: papers.length,
+      }),
+      requestedModelFromEnv("ROUTING_LLM_MODEL"),
+    );
   }
 
   // 延遲載入：僅在有 broad-science 且 routing 開啟時才讀 routing-keywords.json。PR #19
@@ -60,7 +64,8 @@ export async function routeLifeSciencePapers(options: {
   try {
     const llmInputs = broadScience.map(toBroadScienceRoutingInput);
     // 缺 key／model 由 classify 以 stop=config 降級並輸出 stage summary，不再在此提前 throw（PR #28）
-    const { verdictById, degradedPaperIds, diagnostics } = await classifyBroadSciencePapers(
+    const { verdictById, degradedPaperIds, diagnostics, requestedModel, observedModels } =
+      await classifyBroadSciencePapers(
       llmInputs,
       {
         clock: options.clock,
@@ -89,21 +94,37 @@ export async function routeLifeSciencePapers(options: {
         ? mergeBroadScienceWithKeywordGateFallback(degradedPapers, keywordReason, keywordConfig)
         : emptyBroadScienceMergeResult();
 
-    return assembleRoutingResult({
-      scopeDefaultIncluded,
-      broadScienceMerge: combineBroadScienceMergeResults(llmMerge, keywordMerge),
-      total: papers.length,
-    });
+    return withRoutingModel(
+      assembleRoutingResult({
+        scopeDefaultIncluded,
+        broadScienceMerge: combineBroadScienceMergeResults(llmMerge, keywordMerge),
+        total: papers.length,
+      }),
+      requestedModel ?? requestedModelFromEnv("ROUTING_LLM_MODEL"),
+      observedModels,
+    );
   } catch (error) {
     // 未預期的 gate 級失敗：broad-science 全改 keyword fallback；life-science-only 仍保留。PR #18
     const message = error instanceof Error ? error.message : String(error);
     const broadScienceMerge: BroadScienceMergeResult<Paper> =
       mergeBroadScienceWithKeywordGateFallback(broadScience, message, keywordConfig);
 
-    return assembleRoutingResult({
-      scopeDefaultIncluded,
-      broadScienceMerge,
-      total: papers.length,
-    });
+    return withRoutingModel(
+      assembleRoutingResult({
+        scopeDefaultIncluded,
+        broadScienceMerge,
+        total: papers.length,
+      }),
+      requestedModelFromEnv("ROUTING_LLM_MODEL"),
+    );
   }
+}
+
+function withRoutingModel(
+  result: LifeScienceRoutingResult,
+  requested?: string,
+  observed: Array<string | undefined> = [],
+): LifeScienceRoutingResult {
+  if (!requested) return result;
+  return { ...result, model: llmModelUsage(requested, observed) };
 }

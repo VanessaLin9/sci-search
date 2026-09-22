@@ -10,7 +10,14 @@ import {
   paperSectionSchema,
 } from "./domain/life-science/index.js";
 import type { ClassifiedPaper } from "./types.js";
-import type { ExcludedPaper, LifeScienceRoutingStats } from "./routing/types.js";
+import type { ExcludedPaper, LifeScienceRoutingResult, LifeScienceRoutingStats } from "./routing/types.js";
+import type { DigestPhaseResult } from "./digest/types.js";
+import {
+  sanitizeDigestLlmModelsSnapshot,
+  sanitizePersistedLlmModelUsage,
+  type DigestLlmModelsSnapshot,
+  type LlmModelUsage,
+} from "./llm/llmModelUsage.js";
 
 // Pre-classify shape: routing happens before classify, so excluded papers never carry these fields.
 // Kept optional+strip-tolerant so legacy JSON files (which embedded the placeholder values) still parse.
@@ -62,6 +69,8 @@ const routingStatsSchema = z.object({
   excluded: z.number(),
 });
 
+// Optional（PR #40）：舊 papers.json 無 routing.model／digest.models 仍須 parse。
+// 殘缺／空字串／缺 primary 丟棄該段 metadata，不讓整份 digest 無法寄出（PR #40 Codex P2）。
 const digestStatsSchema = z.object({
   enabled: z.boolean(),
   llmTagging: z.boolean(),
@@ -101,14 +110,15 @@ const digestStatsSchema = z.object({
       failed: z.number(),
     })
     .optional(),
-  translate: z
-    .object({
-      requested: z.number(),
-      llmTranslated: z.number(),
-      failed: z.number(),
-    })
-    .optional(),
-});
+    translate: z
+      .object({
+        requested: z.number(),
+        llmTranslated: z.number(),
+        failed: z.number(),
+      })
+      .optional(),
+    models: z.unknown().optional(),
+  });
 
 const processedPapersFileSchema = z.object({
   reportDate: z.string(),
@@ -118,6 +128,7 @@ const processedPapersFileSchema = z.object({
     .object({
       enabled: z.boolean(),
       stats: routingStatsSchema,
+      model: z.unknown().optional(),
     })
     .optional(),
   digest: digestStatsSchema.optional(),
@@ -131,10 +142,43 @@ export type ProcessedPapersFile = {
   routing?: {
     enabled: boolean;
     stats: LifeScienceRoutingStats;
+    model?: LlmModelUsage;
   };
-  digest?: z.infer<typeof digestStatsSchema>;
+  digest?: Omit<z.infer<typeof digestStatsSchema>, "models"> & {
+    models?: DigestLlmModelsSnapshot;
+  };
   excludedPapers?: ExcludedPaper[];
 };
+
+/** 把 pipeline 當日 model snapshot 寫進 papers.json；render／寄信只讀檔、不讀當下 env（PR #40）。 */
+export function toProcessedPapersFile(input: {
+  reportDate: string;
+  generatedAt?: string;
+  papers: ClassifiedPaper[];
+  routing: Pick<LifeScienceRoutingResult, "enabled" | "stats" | "model" | "excluded">;
+  digest: DigestPhaseResult;
+}): ProcessedPapersFile {
+  return {
+    reportDate: input.reportDate,
+    generatedAt: input.generatedAt,
+    papers: input.papers,
+    routing: {
+      enabled: input.routing.enabled,
+      stats: input.routing.stats,
+      ...(input.routing.model ? { model: input.routing.model } : {}),
+    },
+    digest: {
+      enabled: input.digest.enabled,
+      llmTagging: input.digest.llmTagging,
+      tagging: input.digest.tagging,
+      selection: input.digest.selection,
+      summarize: input.digest.summarize,
+      translate: input.digest.translate,
+      ...(input.digest.models ? { models: input.digest.models } : {}),
+    },
+    excludedPapers: input.routing.excluded.length > 0 ? input.routing.excluded : undefined,
+  };
+}
 
 export async function readProcessedPapersFile(path: string): Promise<ProcessedPapersFile> {
   const raw = await readFile(path, "utf8");
@@ -143,17 +187,27 @@ export async function readProcessedPapersFile(path: string): Promise<ProcessedPa
 
 export function validateProcessedPapersFile(data: unknown): ProcessedPapersFile {
   const parsed = processedPapersFileSchema.parse(data);
+  const routingModel = parsed.routing
+    ? sanitizePersistedLlmModelUsage(parsed.routing.model)
+    : undefined;
   return {
     ...parsed,
     routing: parsed.routing
       ? {
-          ...parsed.routing,
+          enabled: parsed.routing.enabled,
           stats: {
             ...parsed.routing.stats,
             keywordFallbackClassified: parsed.routing.stats.keywordFallbackClassified ?? 0,
             keywordFallbackYes: parsed.routing.stats.keywordFallbackYes ?? 0,
             keywordFallbackNo: parsed.routing.stats.keywordFallbackNo ?? 0,
           },
+          ...(routingModel ? { model: routingModel } : {}),
+        }
+      : undefined,
+    digest: parsed.digest
+      ? {
+          ...parsed.digest,
+          models: sanitizeDigestLlmModelsSnapshot(parsed.digest.models),
         }
       : undefined,
   } as ProcessedPapersFile;

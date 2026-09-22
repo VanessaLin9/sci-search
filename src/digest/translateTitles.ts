@@ -12,6 +12,7 @@ import { callDigestChatCompletion } from "./callDigestChat.js";
 import { getDigestLlmConfig } from "./config.js";
 import { extractDigestMessageContent } from "./extractDigestContent.js";
 import { logDigest } from "./digestLog.js";
+import { llmModelUsage, noteObservedModel, type DigestTranslateModels } from "../llm/llmModelUsage.js";
 import {
   formatTranslateBatchSummary,
   parseTranslateBatchResponse,
@@ -31,6 +32,7 @@ export async function translateOverflowTitles(options: {
 }): Promise<{
   titleZhById: Map<string, string>;
   stats: DigestTranslateStats;
+  models: DigestTranslateModels;
 }> {
   const overflow = options.papers.filter(
     (paper) => !paper.featured && paper.digestLine && paper.digestLine !== "skip",
@@ -41,6 +43,7 @@ export async function translateOverflowTitles(options: {
     return {
       titleZhById,
       stats: { requested: 0, llmTranslated: 0, failed: 0 },
+      models: { requested: 0, succeeded: 0, failed: 0, model: llmModelUsage(config.model) },
     };
   }
 
@@ -49,6 +52,7 @@ export async function translateOverflowTitles(options: {
   const batchTotal = batches.length;
   let llmTranslated = 0;
   let failed = 0;
+  const observed: string[] = [];
 
   logDigest(`translate ${overflow.length} overflow title(s) in ${batchTotal} batch(es)`);
 
@@ -57,7 +61,7 @@ export async function translateOverflowTitles(options: {
     const batchLabel = batchTotal > 1 ? `translate ${index + 1}/${batchTotal}` : "translate 1/1";
 
     try {
-      const outcome = await translateBatchOnce(batch, config, batchLabel);
+      const outcome = await translateBatchOnce(batch, config, batchLabel, observed);
       for (const [id, titleZh] of outcome.titleZhById) {
         titleZhById.set(id, titleZh);
         llmTranslated += 1;
@@ -85,6 +89,12 @@ export async function translateOverflowTitles(options: {
       llmTranslated,
       failed,
     },
+    models: {
+      requested: overflow.length,
+      succeeded: llmTranslated,
+      failed,
+      model: llmModelUsage(config.model, observed),
+    },
   };
 }
 
@@ -97,6 +107,7 @@ async function translateBatchOnce(
   batch: ReturnType<typeof toDigestTranslateInput>[],
   config: ReturnType<typeof getDigestLlmConfig>,
   batchLabel: string,
+  observedSink: string[],
 ): Promise<TranslateBatchOutcome> {
   const completion = await callDigestChatCompletion(
     config,
@@ -109,6 +120,7 @@ async function translateBatchOnce(
       completionFloor: 1024,
     },
   );
+  noteObservedModel(observedSink, completion);
 
   const finishReason = completion.choices[0]?.finish_reason ?? "unknown";
   const { content, usedReasoningFallback } = extractDigestMessageContent(completion.choices[0]?.message);

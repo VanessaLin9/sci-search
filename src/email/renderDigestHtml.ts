@@ -22,6 +22,7 @@ import {
   sortPapersForDisplay,
 } from "./digestHtmlHelpers.js";
 import { escapeHtml } from "./escapeHtml.js";
+import { toDigestModelFooterLines, type DigestModelFooterSource } from "./digestModelFooter.js";
 
 export { buildDigestSubject };
 
@@ -30,6 +31,8 @@ export type RenderDigestHtmlOptions = {
   papers: ClassifiedPaper[];
   generatedAt?: string;
   priorityBySourceId?: ReadonlyMap<string, number>;
+  /** 當日 LLM snapshot（PR #40）；legacy 檔省略 → footer 只留 Sent by。 */
+  modelFooter?: DigestModelFooterSource;
 };
 
 function renderFeaturedArticle(paper: ClassifiedPaper): string {
@@ -158,7 +161,7 @@ function groupFeaturedByLine(featured: ClassifiedPaper[]): Record<"line-a" | "li
 }
 
 export function renderDigestHtml(options: RenderDigestHtmlOptions): string {
-  const { reportDate, papers, generatedAt, priorityBySourceId } = options;
+  const { reportDate, papers, generatedAt, priorityBySourceId, modelFooter } = options;
   const generatedLine = generatedAt
     ? `<p style="margin:0;font-size:12px;color:#888;">Generated at ${escapeHtml(generatedAt)}</p>`
     : "";
@@ -196,6 +199,14 @@ export function renderDigestHtml(options: RenderDigestHtmlOptions): string {
   const metaFeatured = featured.length;
   const metaOverflow = overflow.length;
 
+  const modelLines = toDigestModelFooterLines(modelFooter);
+  const modelFooterHtml = modelLines
+    .map(
+      (line) =>
+        `<p style="margin:0 0 4px;font-size:12px;color:#888;">${escapeHtml(line)}</p>`,
+    )
+    .join("");
+
   return `<!DOCTYPE html>
 <html lang="zh-Hant">
   <head>
@@ -215,7 +226,8 @@ export function renderDigestHtml(options: RenderDigestHtmlOptions): string {
       </header>
       ${body}
       <footer style="margin-top:40px;padding-top:16px;border-top:1px solid #e2e2dc;color:#888;font-size:12px;text-align:center;">
-        Sent by paper-digest (Resend)
+        ${modelFooterHtml}
+        <p style="margin:0;font-size:12px;color:#888;">Sent by paper-digest (Resend)</p>
       </footer>
     </div>
   </body>

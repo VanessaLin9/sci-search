@@ -37,6 +37,7 @@ import {
 import { extractDigestMessageContent } from "./extractDigestContent.js";
 import { logDigest } from "./digestLog.js";
 import { runWithConcurrency } from "./runWithConcurrency.js";
+import { llmModelUsage, observedLlmModel, type DigestSummarizeModels } from "../llm/llmModelUsage.js";
 import {
   buildDigestSummarizeCompletionParams,
   estimateSummarizeCompletionTokens,
@@ -66,6 +67,7 @@ type SummarizeOneSuccess = {
   fields: PaperSummarizeFields;
   role: SummarizeModelRole;
   model: string;
+  observed?: string;
   durationMs: number;
 };
 
@@ -74,6 +76,7 @@ type SummarizeOneFailure = {
   id: string;
   role: SummarizeModelRole;
   model: string;
+  observed?: string;
   durationMs: number;
   failure: ClassifiedRoutingFailure;
   budgetSkipped?: boolean;
@@ -134,6 +137,7 @@ async function attemptSummarize(options: {
   const input = toDigestSummarizeInput(paper, scopeBySourceId);
   const startedAt = clock.now();
   const initialTimeoutMs = budget.requestTimeoutMs(configuredTimeoutMs);
+  let observed: string | undefined;
 
   try {
     const completion = await callDigestChatCompletion(
@@ -153,6 +157,8 @@ async function attemptSummarize(options: {
         maxRetries: config.summarizeMaxRetries,
       },
     );
+    // HTTP 一回來就記 observed；parse／id mismatch 失敗仍要留下實際打到的 model（PR #40）
+    observed = observedLlmModel(completion);
 
     const finishReason = completion.choices[0]?.finish_reason ?? "unknown";
     const usage = completion.usage;
@@ -176,7 +182,9 @@ async function attemptSummarize(options: {
 
     const durationMs = clock.now() - startedAt;
     logDigest(
-      `${label}: ok · model=${model} role=${role} durationMs=${durationMs} ` +
+      `${label}: ok · model=${model}` +
+        (observed && observed !== model ? ` observed=${observed}` : "") +
+        ` role=${role} durationMs=${durationMs} ` +
         `(${parsed.topic_tags.length} tags, finish_reason=${finishReason}${usageHint})`,
     );
     return {
@@ -189,13 +197,16 @@ async function attemptSummarize(options: {
       },
       role,
       model,
+      observed,
       durationMs,
     };
   } catch (error) {
     const durationMs = clock.now() - startedAt;
     const failure = classifyRoutingFailure(error);
     logDigest(
-      `${label}: failed · model=${model} role=${role} durationMs=${durationMs} ` +
+      `${label}: failed · model=${model}` +
+        (observed && observed !== model ? ` observed=${observed}` : "") +
+        ` role=${role} durationMs=${durationMs} ` +
         `kind=${failure.kind}` +
         (failure.status != null ? ` status=${failure.status}` : "") +
         ` (${failure.message})`,
@@ -205,6 +216,7 @@ async function attemptSummarize(options: {
       id: paper.id,
       role,
       model,
+      observed,
       durationMs,
       failure,
     };
@@ -376,19 +388,31 @@ export async function summarizeFeaturedPapers(options: {
 }): Promise<{
   fieldsById: Map<string, PaperSummarizeFields>;
   stats: DigestSummarizeStats;
+  models: DigestSummarizeModels;
 }> {
   const featured = options.papers.filter((paper) => paper.featured);
   const config = options.config ?? getDigestLlmConfig();
   const clock = options.clock ?? systemClock;
   const jitterMs = options.jitterMs ?? (() => Math.floor(Math.random() * 1_001));
   const fieldsById = new Map<string, PaperSummarizeFields>();
+  const fallbackConfig = withDigestFallbackEndpoint(config);
 
   if (featured.length === 0) {
-    return { fieldsById, stats: emptyStats() };
+    return {
+      fieldsById,
+      stats: emptyStats(),
+      models: {
+        requested: 0,
+        failed: 0,
+        primary: { ...llmModelUsage(config.model), succeeded: 0 },
+        ...(fallbackConfig
+          ? { fallback: { ...llmModelUsage(fallbackConfig.model), succeeded: 0 } }
+          : {}),
+      },
+    };
   }
 
   const budget = createRoutingBudget(clock, config.summarizeStageBudgetMs);
-  const fallbackConfig = withDigestFallbackEndpoint(config);
 
   logDigest(
     `summarize ${featured.length} featured paper(s) · primary=${config.model}` +
@@ -421,6 +445,8 @@ export async function summarizeFeaturedPapers(options: {
   let primarySucceeded = 0;
   let fallbackSucceeded = 0;
   let failed = 0;
+  const primaryObserved: string[] = [];
+  const fallbackObserved: string[] = [];
   const failedPapers: Array<{ paper: ClassifiedPaper; index: number }> = [];
 
   for (let index = 0; index < primaryResults.length; index += 1) {
@@ -431,6 +457,7 @@ export async function summarizeFeaturedPapers(options: {
     } else {
       failedPapers.push({ paper: featured[index], index });
     }
+    if (result.observed) primaryObserved.push(result.observed);
   }
 
   if (failedPapers.length > 0 && fallbackConfig) {
@@ -462,6 +489,7 @@ export async function summarizeFeaturedPapers(options: {
       } else {
         failed += 1;
       }
+      if (result.observed) fallbackObserved.push(result.observed);
     }
   } else if (failedPapers.length > 0) {
     failed = failedPapers.length;
@@ -484,6 +512,19 @@ export async function summarizeFeaturedPapers(options: {
       primarySucceeded,
       fallbackSucceeded,
       failed,
+    },
+    models: {
+      requested: featured.length,
+      failed,
+      primary: { ...llmModelUsage(config.model, primaryObserved), succeeded: primarySucceeded },
+      ...(fallbackConfig
+        ? {
+            fallback: {
+              ...llmModelUsage(fallbackConfig.model, fallbackObserved),
+              succeeded: fallbackSucceeded,
+            },
+          }
+        : {}),
     },
   };
 }

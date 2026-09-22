@@ -50,6 +50,10 @@ async function main() {
     papers: processed.papers,
     generatedAt: processed.generatedAt,
     dryRun: cli.dryRun,
+    modelFooter: {
+      routing: processed.routing,
+      digest: processed.digest,
+    },
   });
 
   if (result.dryRun) {
