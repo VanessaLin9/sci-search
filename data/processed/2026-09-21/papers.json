@@ -1,27 +1,7 @@
 {
   "reportDate": "2026-09-21",
-  "generatedAt": "2026-09-21T16:09:33.272Z",
+  "generatedAt": "2026-09-22T15:12:44.114Z",
   "papers": [
-    {
-      "id": "10.1038/s41592-026-03219-2",
-      "title": "SVPG: a pangenome-based structural variant detection approach and rapid augmentation of pangenome graphs with new samples",
-      "journal": "Nature Methods",
-      "publishedDate": "2026-09-21T00:00:00.000Z",
-      "url": "https://www.nature.com/articles/s41592-026-03219-2",
-      "doi": "10.1038/s41592-026-03219-2",
-      "sourceId": "nature-methods",
-      "lifeScienceRouting": {
-        "verdict": "yes",
-        "method": "scope-default"
-      },
-      "matchedKeywords": [
-        "genome"
-      ],
-      "section": "biology",
-      "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
-      "featured": false
-    },
     {
       "id": "10.1038/s41588-026-02757-x",
       "title": "Protein interactions reveal the hidden wiring of the genome",
@@ -39,8 +19,9 @@
       ],
       "section": "biology",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
-      "featured": false
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "蛋白質交互作用揭示基因組的隱藏連接"
     },
     {
       "id": "10.1038/s41588-026-02763-z",
@@ -57,8 +38,9 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
-      "featured": false
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "以原子解析度詮釋人類遺傳變異"
     },
     {
       "id": "10.1038/s41588-026-02747-z",
@@ -75,8 +57,9 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
-      "featured": false
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "體內蛋白質交互作用體的遺傳景觀"
     },
     {
       "id": "10.1038/s41593-026-02422-w",
@@ -94,14 +77,16 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": true,
-      "titleZh": "脛骨壓迫透過骨細胞 PIEZO1 促進腦損傷後的恢復",
-      "summaryZh": "本研究指出，對脛骨施加機械負荷能改善小豬與小鼠在腦手術後的存活率與恢復狀況。此骨－腦軸線是由骨細胞中的 PIEZO1 所介導，會促使神經保護因子釋放到血液循環中。這項發現揭示了一種透過骨骼機械刺激來促進腦部損傷後恢復的機制。",
+      "titleZh": "脛骨壓縮促進腦損傷後恢復，涉及成骨細胞 PIEZO1",
+      "summaryZh": "研究指出，對脛骨進行機械性負載可在小鼠與豬接受腦手術後改善存活率與恢復情形。該骨腦軸效應由成骨細胞上的 PIEZO1 介導。活化 PIEZO1 會促使神經保護因子釋放到循環中。結果顯示骨骼機械刺激可透過循環因子影響腦損傷後的預後。",
       "topicTags": [
         "bone-brain-axis",
-        "neuroscience",
-        "mechanotransduction"
+        "mechanotransduction",
+        "piezo1",
+        "neuroprotection",
+        "mechanical-loading"
       ]
     },
     {
@@ -120,32 +105,239 @@
       "matchedKeywords": [],
       "section": "other",
       "digestLine": "line-b",
-      "digestTaggingMethod": "keyword-fallback",
+      "digestTaggingMethod": "llm",
       "featured": true,
-      "titleZh": "刪除遠端 IRF4 元件可防止發炎誘導的人類調節性 T 細胞命運重編程",
-      "summaryZh": "Tang 及其同事識別出一個調控人類調節性 T 細胞 (Treg cell) 穩定性的遠端 IRF4 染色質調控區域。研究顯示，刪除這個遠端 IRF4 元件能夠防止發炎誘導的人類調節性 T 細胞命運重編程。這項發現有助於理解人類調節性 T 細胞穩定性的調控機制。",
+      "titleZh": "刪除遠端 IRF4 元件可阻止發炎誘導的人類調節性 T 細胞命運重編程",
+      "summaryZh": "Tang 等人研究指出，存在一個遠端的 IRF4 染色質調控區域。該區域與人類調節性 T 細胞的穩定性相關。刪除此遠端 IRF4 元件可防止發炎誘導下的人類調節性 T 細胞命運重編程。研究結果顯示此染色質調控區域在維持人類 Treg 細胞穩定性上具有作用。",
       "topicTags": [
-        "immunology",
-        "t-cells",
+        "regulatory-t-cells",
+        "irf4",
         "chromatin-regulation",
-        "inflammation"
+        "immunology"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004011",
+      "title": "Regeneration programs buffer genetic defects in animal development",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-09-21T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004011",
+      "doi": "10.1371/journal.pbio.3004011",
+      "abstract": "Regeneration programs enable animals to restore damaged or lost tissues, and the range of stimuli for these programs is incompletely understood. Here, we used zebrafish, a vertebrate species with exceptional regenerative capacity, to identify chemically induced mutations that alter regeneration-associated gene activation. Transgenic zebrafish with a permissive promoter and EGFP cassette inserted in the vicinity of the pro-regenerative factor gene fgf20a were mutagenized, and larvae homozygous for ENU-induced mutations were assessed for disruptions in fgf20a -directed reporter gene expression following fin fold amputation. One line was identified with heritable, elevated fgf20a : EGFP presence in the absence of experimental injury, localized to regions of fin fold tissue undergoing degeneration. Whole-genome sequencing (WGS) identified a mutation within exon 72 of the fraser syndrome 1 ( fras1 ) gene, mutated in patients with inherited skin disease. fras1 mutant larvae spontaneously displayed broader signatures of regeneration, and zebrafish crispants for homologs of other genes mutated in human developmental diseases also displayed regeneration-associated gene expression in regions of dysmorphology. Tempering Fgf signaling by transgenic expression of a dominant-negative Fgf receptor in fras1 mutants exacerbated the disease phenotype. Our findings provide evidence that regeneration programs are harnessed in response to developmental defects caused by genetic mutations, potentially buffering deleterious phenotypes.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "再生程序緩衝動物發育中的基因缺陷",
+      "summaryZh": "研究團隊利用具有 exceptional 再生能力的斑馬魚，篩選化學誘變後影響再生相關基因活化的突變。轉基因斑馬魚在促再生因子基因 fgf20a 附近插入 permissive promoter 與 EGFP cassette，經 ENU 誘變後，以鰭褶切除評估 fgf20a 驅動的報告基因表現。篩選出一條系譜在無實驗性傷害下仍呈現可遺傳性升高且侷限於退化中鰭褶組織的 fgf20a:EGFP 表現。基因體定序發現該系譜帶有 fraser syndrome 1 基因 fras1 第 72 個外顯子的突變，該基因在人類遺傳性皮膚病患者中亦有突變。fras1 突變幼魚自發性出現更廣泛的再生特徵，且針對其他人類發育疾病基因同源物的斑馬魚 crispants 也在畸形區域顯示再生相關基因表現。透過轉基因表現 dominant-negative Fgf 受體降低 Fgf 訊號，會使 fras1 突變的疾病表型惡化。結果顯示再生程序可能被動員以回應基因突變造成的發育缺陷，從而緩衝有害表型。",
+      "topicTags": [
+        "regeneration",
+        "zebrafish",
+        "developmental-genetics",
+        "fgf-signaling",
+        "genetic-mutation"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004008",
+      "title": "Monovalent cations differentially regulate the activity of eukaryotic fluoride channels and impact fluoride resistance",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-09-21T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004008",
+      "doi": "10.1371/journal.pbio.3004008",
+      "abstract": "Fluoride is an environmentally prevalent inhibitor of fungi, plants, and other eukaryotes. The fluoride exporter (FEX) is the major resistance mechanism that prevents intracellular fluoride accumulation in eukaryotes. FEX activity is sodium-dependent, but the mechanism for Na + activation and the impact of other cations on FEX function remain poorly understood. Here, we show that sodium and lithium have different effects on channel activity. We leverage these differences to understand how monovalent cations regulate FEX. Functional assays in a reconstituted system show that lithium acts as a competitive antagonist of channel activation by competing with sodium for the central cation binding site. We further demonstrate that lithium markedly reduces fluoride tolerance of yeast. A cryo-EM structure of Candida albicans FEX with Li + , together with molecular dynamics (MD) simulations, reveals that differences in the preferred coordination sphere underlie the cation dependence of FEX activity. Whereas sodium binding supports a dynamic structure with a broader pore radius, lithium coordination favors a more rigid conformation that is more compact in the channel’s vestibule. These changes perturb the tilt angle of a pore lining helix, and alter the rotamer of a key phenylalanine in the pore, which together constrict the permeation pathway. In addition to providing general insight into the mechanism of fluoride channel regulation by monovalent cations, these results identify lithium as a previously unknown environmental antagonist of eukaryotic fluoride export and tie cellular fluoride stress tolerance to the abundance of additional ions in the cellular milieu.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.1371/journal.pbio.3004006",
+      "title": "The nematode Caenorhabditis elegans has a cationic amphiphilic drug (CAD) defense system",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-09-21T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004006",
+      "doi": "10.1371/journal.pbio.3004006",
+      "abstract": "Cationic Amphiphilic Drugs (CADs) severely disrupt lysosomal function, which leads to a cellular pathology in humans characterized by excess phospholipids called phospholipidosis. Through a forward genetic screen and mining of published datasets, we discovered that CADs induce the expression of the CYP-35B family of cytochrome P450s and the PGP-13 p-glycoprotein pump via the nuclear receptors NHR-70 and NHR-107 in the nematode C. elegans . A pgp-13 fluorescent reporter revealed hundreds of human drugs that up-regulate the CAD defense system in vivo. Chemoinformatic analyses indicate that the pgp-13 reporter may be useful in identifying CADs that have pathogenic potential in humans. Mutant analyses coupled to metabolomics and structural modeling show that the CYP-35Bs are necessary and sufficient for CAD metabolism, and that CYP-35B2 D311 is key in mediating electrostatic interactions with the positively charged CADs. We also show that CAD metabolites are effluxed via PGP-13 acting partially redundantly with PGP-14 and that an intact defense system is necessary to resist CAD-induced pathology. Finally, we demonstrate that bacteria that likely cohabitate with C. elegans in nature trigger the CAD defense system, providing a plausible explanation for why a pathway that protects against anthropogenic small molecules exists in nematodes.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "線蟲 Caenorhabditis elegans 具有陽離子兩親性藥物防禦系統",
+      "summaryZh": "研究團隊透過前向遺傳篩選與已發表資料集的挖掘，發現陽離子兩親性藥物 CADs 在線蟲 C. elegans 中會經由核受體 NHR-70 與 NHR-107 誘導表現細胞色素 P450 家族 CYP-35B 以及 PGP-13 p-糖蛋白泵。利用 pgp-13 螢光報告基因，研究人員在體內觀察到數百種人類藥物可上調此 CAD 防禦系統。化學資訊分析顯示 pgp-13 報告基因可能有助於辨識具有人類致病潛力的 CADs。突變體分析結合代謝體學與結構建模顯示 CYP-35Bs 對 CAD 代謝是必要且充分的，且 CYP-35B2 的 D311 在與帶正電的 CADs 的靜電交互作用中具關鍵作用。研究也指出 CAD 代謝物經由 PGP-13 部分冗餘地與 PGP-14 一起外排，且完整的防禦系統對於抵抗 CAD 誘發的病理變化是必要的。此外，團隊發現與 C. elegans 在自然環境中可能共生的細菌會觸發 CAD 防禦系統。",
+      "topicTags": [
+        "nematode",
+        "cationic-amphiphilic-drugs",
+        "detoxification",
+        "cytochrome-p450",
+        "drug-toxicity"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004004",
+      "title": "Gene flow drives periods of both evolutionary stasis and change in a wild bird population",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-09-21T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004004",
+      "doi": "10.1371/journal.pbio.3004004",
+      "abstract": "The struggle to explain the absence of evolutionary change in heritable, fitness-related traits of free-living populations has become emblematic of our ignorance of the evolutionary process in the wild. Yet while this ‘paradox of stasis’ has been the subject of much discussion, it is primarily identified a posteriori and rarely subject to direct quantification. We examined the evolution of clutch size in neighbouring populations of great tits ( Parus major ) before, during and after an experimental evolutionary perturbation. Interannual genetic changes in clutch size were directionally consistent with selection (refuting absolute stasis) but were smaller than predicted by adaptive evolutionary models (supporting relative stasis). Yet accounting for the contribution of post-selective immigration (i.e., explicitly recognising the distinction between adaptation and evolution) greatly improved our forecast accuracy and this tendency toward overprediction. Indeed, attributing interannual genetic change to its contributing demographic processes revealed immigration to be key to explaining periods of both evolutionary stasis and change, with its evolutionary impact varying across time and space in a manner analogous to the dynamism of natural selection. Our multi-decadal study of clutch size evolution thus shows that recognising the impact of gene flow is crucial to explaining contemporary evolutionary change and stasis of a key determinant of life history.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.1371/journal.pbio.3004002",
+      "title": "AlloPool is a deep learning framework that infers protein allostery from molecular dynamics simulations",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-09-21T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004002",
+      "doi": "10.1371/journal.pbio.3004002",
+      "abstract": "Recent advances in artificial intelligence have transformed protein structure prediction and design. However, protein function is governed not only by static structures but also by the conformational dynamics that allow proteins to access distinct functional states. Predicting these dynamic transitions, central to many biological processes, remains challenging due to the scarcity of high-resolution experimental data, which limits the training of machine-learning models for dynamic and energetic property prediction. Here, we present AlloPool, a graph neural network (GNN)-based framework that interprets molecular dynamics simulations by iteratively pruning residue–residue interactions to uncover minimal, time-resolved interaction networks that govern protein conformational dynamics and structural responses to chemical or mechanical perturbations, collectively known as allostery. By integrating temporal attention with graph aggregation, AlloPool learns evolving interaction graphs from equilibrium and non-equilibrium molecular dynamics simulations, enabling accurate reconstruction of dynamic trajectories and the interaction networks that drive conformational transitions. Validated across diverse dynamic protein systems, including binding domains, mechanosensors, signaling receptors, and enzymes, AlloPool maps allosteric communication pathways, predicts the effects of ligand binding, mechanical forces, and mutations, discovers transient dynamic states and outperforms existing machine-learning approaches in dynamic trajectory reconstruction. This advance provides a general framework for interpreting protein dynamics with broad implications for drug discovery, synthetic biology, and protein engineering.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology",
+        "synthetic biology"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.1371/journal.pbio.3003992",
+      "title": "Myelin sheath lengths in the central nervous system scale to axon diameter via oligodendroglial Piezo1",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-09-21T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003992",
+      "doi": "10.1371/journal.pbio.3003992",
+      "abstract": "Myelin sheath lengths vary by an order of magnitude in the central nervous system (CNS) and tune the timing of neuronal signaling. Thus, variation in myelin sheath length has been proposed to coordinate the timing of neuronal signaling to ultimately impact behavior. The mechanisms to establish myelin sheath length are unknown. For decades, reports have documented that in vivo myelin sheath size scales with the diameter of the ensheathed axon. We previously demonstrated diameter is sufficient to instruct myelin sheath lengths formed by rat oligodendrocytes using a synthetic axon culture system. The mechanisms of oligodendrocyte diameter-sensing and its translation into sheath elongation are still unknown. Here, we demonstrate that diameter-sensing and sheath length is locally regulated: each individual myelin sheath responds to the underlying fiber diameter. We uncover a novel mechanism for scaling myelin sheath length to fiber diameter, through mechanosensitive ion channel Piezo1. In mice in vivo, Piezo1 impacts the elongation of myelin sheaths on large diameter axons, recapitulating our in vitro results. Yet, surprisingly, there is no impact on myelin thickness with conditional Piezo1 loss. We propose Piezo1 provides a mechanism to establish hard-wired myelin sheath patterns, where oligodendrocytes transduce axon diameter into generating myelin segments with vastly different lengths.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "中樞神經髓鞘長度隨軸突直徑縮放，依賴少突膠細胞 Piezo1",
+      "summaryZh": "研究指出中樞神經系統的髓鞘鞘段長度相差達十倍，並會調節神經訊號傳導時序，但其建立機制不明。作者先前以合成軸突培養系統顯示軸突直徑足以指示大鼠少突膠細胞形成的髓鞘長度。本研究發現直徑感測與鞘段長度為局部調控，每條個別髓鞘會回應其下方纖維的直徑。研究揭示機械敏感離子通道 Piezo1 是將髓鞘長度與纖維直徑連結的新機制。在小鼠體內，條件性剔除 Piezo1 會影響大直徑軸突上髓鞘的伸長，與體外結果一致，但對髓鞘厚度無影響。作者提出 Piezo1 可作為建立固定髓鞘模式的機制，讓少突膠細胞將軸突直徑轉譯為長度差異極大的髓鞘片段。",
+      "topicTags": [
+        "myelin",
+        "oligodendrocyte",
+        "mechanosensation",
+        "piezo1",
+        "central-nervous-system"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003985",
+      "title": "MucD regulates alginate biosynthesis through the proteolytic control of AlgX and AlgK in Pseudomonas aeruginosa",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-09-21T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003985",
+      "doi": "10.1371/journal.pbio.3003985",
+      "abstract": "Pseudomonas aeruginosa is an opportunistic human pathogen capable of infecting a wide range of tissues and organs. Its persistence during chronic infection is strongly associated with biofilm formation, which depends on extracellular polysaccharides such as alginate. The HtrA-like periplasmic serine protease MucD is a key regulator of bacterial virulence, stress response, and alginate production, yet its molecular mechanism has remained largely unclear. Here, we discovered the alginate acetylation and export proteins AlgX and AlgK as MucD substrates, and characterized their degradation by mass spectrometry and bioinformatic analysis. We further determined the cryo-EM structure of MucD bound to an AlgK-derived substrate peptide, offering atomic insights into MucD oligomerization assembly, substrate recognition, and specificity. Together with structure-guided mutagenesis and biochemical assays, our results revealed that MucD proteolytic activity is governed by an equilibrium between a resting 12-mer and an active trimer. Crucially, we demonstrate that MucD represses alginate biosynthesis post-translationally, in addition to its previously implicated role in transcriptional regulation. These findings define a distinct activation mechanism and regulatory function for MucD and provide new insight into bacterial HtrA-like serine proteases.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "MucD透過蛋白酶作用調控AlgX與AlgK以調節Pseudomonas aeruginosa藻酸鹽合成",
+      "summaryZh": "本研究針對機會性人類病原菌Pseudomonas aeruginosa的周質絲氨酸蛋白酶MucD進行探討，發現藻酸鹽乙醯化與輸出蛋白AlgX與AlgK為MucD的底物，並以質譜與生物資訊分析描述其降解情形。研究團隊解析了MucD結合AlgK衍生底物胜肽的冷凍電子顯微鏡結構，提供MucD寡聚化組裝、底物辨識與專一性的原子層見解。結合結構導向突變與生化實驗，結果顯示MucD的蛋白酶活性受靜止態12聚體與活性三聚體間的平衡所調控。研究進一步證實MucD除先前被認為的轉錄調控角色外，還能以轉譯後方式抑制藻酸鹽生物合成。",
+      "topicTags": [
+        "pseudomonas-aeruginosa",
+        "alginate",
+        "htra-protease",
+        "cryo-em",
+        "biofilm"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003945",
+      "title": "The kinetoplastid-specific transcription factor mtTF1 is essential for mitochondrial gene expression and maxicircle replication in Trypanosoma brucei",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-09-21T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003945",
+      "doi": "10.1371/journal.pbio.3003945",
+      "abstract": "Mitochondrial DNA replication and gene expression are essential for cell survival. In Trypanosoma brucei , a protozoan animal and human parasite, the mitochondrial RNA polymerase (mtRNAP, Tb927.11.5780) plays roles in both transcription and DNA replication. This study identifies and characterizes the first mitochondrial transcription factor (mtTF1, Tb927.6.4510) in the Kinetoplastea. The mtRNAP and mtTF1 form a high-molecular-weight complex that localizes to the kinetoplast DNA (kDNA) and is essential for parasite survival in both life cycle stages. Their localization is interdependent, and both proteins influence maxicircle replication, but not minicircle replication. Knockdown of either protein results in altered gene expression, particularly affecting the minor strand of the mitochondrial genome. mTF1 specifically binds to kDNA and since it is unique to the Kinetoplastea, it might prove to be a promising drug target.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "線粒體轉錄因子 mtTF1 對基因表現與 maxicircle 複製不可或缺",
+      "summaryZh": "本研究在 Kinetoplastea 中鑑定並描述了首個粒線體轉錄因子 mtTF1, Tb927.6.4510，並探討其與粒線體 RNA 聚合酶 mtRNAP, Tb927.11.5780 的功能關係。mtRNAP 與 mtTF1 形成高分子量複合體，定位於 kinetoplast DNA, 且在 Trypanosoma brucei 兩種生活史階段中皆為寄生蟲存活所必需。兩者的定位互為依賴，皆影響 maxicircle 複製，但不影響 minicircle 複製。敲降任一蛋白會改變基因表現，特別影響粒線體基因組的次要鏈。mtTF1 特異性結合 kDNA，且僅存在於 Kinetoplastea，可能成為有潛力的藥物標靶。",
+      "topicTags": [
+        "kinetoplastid",
+        "mitochondrial-transcription",
+        "trypanosoma-brucei",
+        "drug-target",
+        "maxicircle-replication"
       ]
     }
   ],
   "routing": {
     "enabled": true,
     "stats": {
-      "total": 13,
-      "passedByScope": 6,
-      "llmClassified": 0,
-      "llmYes": 0,
+      "total": 22,
+      "passedByScope": 13,
+      "llmClassified": 9,
+      "llmYes": 3,
       "llmNotSure": 0,
-      "llmNo": 0,
-      "keywordFallbackClassified": 7,
-      "keywordFallbackYes": 2,
-      "keywordFallbackNo": 5,
-      "included": 8,
-      "excluded": 5
+      "llmNo": 6,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 16,
+      "excluded": 6
     }
   },
   "digest": {
@@ -153,45 +345,59 @@
     "llmTagging": true,
     "tagging": {
       "threshold": 0.75,
-      "llmClassified": 6,
-      "llmTagged": 0,
+      "llmClassified": 13,
+      "llmTagged": 13,
       "llmLineA": 0,
-      "llmLineB": 0,
-      "fallback": 6,
+      "llmLineB": 13,
+      "fallback": 0,
       "fallbackLineA": 0,
-      "fallbackLineB": 6,
-      "failures": 6
+      "fallbackLineB": 0,
+      "failures": 0
     },
     "selection": {
-      "total": 6,
-      "candidates": 6,
-      "featured": 2,
-      "overflow": 4,
+      "total": 13,
+      "candidates": 13,
+      "featured": 10,
+      "overflow": 3,
       "lineA": 0,
-      "lineB": 6,
+      "lineB": 13,
       "preprint": 0,
       "skip": 0,
       "featuredLineA": 0,
-      "featuredLineB": 2,
+      "featuredLineB": 10,
       "featuredPreprint": 0,
       "overflowLineA": 0,
-      "overflowLineB": 4,
+      "overflowLineB": 3,
       "overflowPreprint": 0
     },
     "summarize": {
-      "requested": 2,
-      "llmSummarized": 2,
-      "primarySucceeded": 0,
-      "fallbackSucceeded": 2,
-      "failed": 0
+      "requested": 10,
+      "llmSummarized": 7,
+      "primarySucceeded": 7,
+      "fallbackSucceeded": 0,
+      "failed": 3
     },
     "translate": {
-      "requested": 4,
-      "llmTranslated": 0,
-      "failed": 4
+      "requested": 3,
+      "llmTranslated": 3,
+      "failed": 0
     }
   },
   "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11160-9",
+        "title": "Chemist-aligned retrosynthesis by ensembling diverse inductive bias models",
+        "journal": "Nature",
+        "publishedDate": "2026-09-21T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11160-9",
+        "doi": "10.1038/s41586-026-11160-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
     {
       "paper": {
         "id": "10.1038/d41586-026-02932-4",
@@ -204,7 +410,7 @@
       },
       "reason": "life-science-routing",
       "verdict": "no",
-      "method": "routing-keyword-fallback"
+      "method": "llm"
     },
     {
       "paper": {
@@ -218,21 +424,21 @@
       },
       "reason": "life-science-routing",
       "verdict": "no",
-      "method": "routing-keyword-fallback"
+      "method": "llm"
     },
     {
       "paper": {
-        "id": "10.1038/d41586-026-02987-3",
-        "title": "Edible batteries inspired by rice paper power medical devices in the body",
+        "id": "10.1038/d41586-026-02890-x",
+        "title": "China punishes prominent academics exposed by research sleuth",
         "journal": "Nature",
         "publishedDate": "2026-09-21T00:00:00.000Z",
-        "url": "https://www.nature.com/articles/d41586-026-02987-3",
-        "doi": "10.1038/d41586-026-02987-3",
+        "url": "https://www.nature.com/articles/d41586-026-02890-x",
+        "doi": "10.1038/d41586-026-02890-x",
         "sourceId": "nature"
       },
       "reason": "life-science-routing",
       "verdict": "no",
-      "method": "routing-keyword-fallback"
+      "method": "llm"
     },
     {
       "paper": {
@@ -246,7 +452,7 @@
       },
       "reason": "life-science-routing",
       "verdict": "no",
-      "method": "routing-keyword-fallback"
+      "method": "llm"
     },
     {
       "paper": {
@@ -260,7 +466,7 @@
       },
       "reason": "life-science-routing",
       "verdict": "no",
-      "method": "routing-keyword-fallback"
+      "method": "llm"
     }
   ]
 }
