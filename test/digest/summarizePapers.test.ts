@@ -199,6 +199,25 @@ describe("summarizeFeaturedPapers dual-model fallback", () => {
     });
   });
 
+  test("records API-returned model id separately from requested env model", async () => {
+    const paper = featuredPaper("alias");
+    installSummarizeFetch(() => jsonOk("alias", "provider-alias"));
+
+    const { models } = await summarizeFeaturedPapers({
+      papers: [paper],
+      scopeBySourceId,
+      config: digestConfig({ model: "env-primary" }),
+      clock: createFakeClock(),
+      jitterMs: () => 0,
+    });
+
+    assert.equal(models.primary.requested, "env-primary");
+    assert.deepEqual(models.primary.observed, ["provider-alias"]);
+    assert.equal(models.primary.succeeded, 1);
+    assert.equal(models.fallback?.requested, "gemini-3.5-flash-lite");
+    assert.equal(models.fallback?.succeeded, 0);
+  });
+
   test("primary 529 goes to fallback without same-model retry", async () => {
     const paper = featuredPaper("p2");
     const { requests } = installSummarizeFetch((request) => {

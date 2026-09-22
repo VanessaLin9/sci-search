@@ -44,6 +44,8 @@ export type RoutingExecutionContext = {
   noteRateLimit(): void;
   noteServerError(): void;
   noteParseFailure(): void;
+  noteObservedModel(model?: string): void;
+  observedModels(): string[];
   snapshot(llmClassifiedCount: number, keywordFallbackCount: number): RoutingStageDiagnostics;
 };
 
@@ -72,6 +74,7 @@ export function createRoutingExecutionContext(
     parseFailureCount: 0,
     stopReason: null as RoutingStopReason | null,
   };
+  const observed: string[] = [];
 
   const ctx: RoutingExecutionContext = {
     clock,
@@ -106,6 +109,13 @@ export function createRoutingExecutionContext(
     },
     noteParseFailure() {
       diagnostics.parseFailureCount += 1;
+    },
+    noteObservedModel(model?: string) {
+      const value = model?.trim();
+      if (value) observed.push(value);
+    },
+    observedModels() {
+      return [...observed];
     },
     snapshot(llmClassifiedCount: number, keywordFallbackCount: number) {
       return {

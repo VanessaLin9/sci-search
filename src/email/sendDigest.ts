@@ -6,12 +6,14 @@ import type { ClassifiedPaper } from "../types.js";
 import { loadEmailConfig } from "./config.js";
 import { renderDigestHtml } from "./renderDigestHtml.js";
 import { sendWithResend } from "./sendWithResend.js";
+import type { DigestModelFooterSource } from "./digestModelFooter.js";
 
 export type SendDigestEmailOptions = {
   reportDate: string;
   papers: ClassifiedPaper[];
   generatedAt?: string;
   dryRun?: boolean;
+  modelFooter?: DigestModelFooterSource;
 };
 
 export type SendDigestEmailResult = {
@@ -39,6 +41,7 @@ export async function sendDigestEmail(
     papers: options.papers,
     generatedAt: options.generatedAt,
     priorityBySourceId,
+    modelFooter: options.modelFooter,
   });
 
   if (options.dryRun) {

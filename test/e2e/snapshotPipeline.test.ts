@@ -63,6 +63,10 @@ describe("RSS snapshot pipeline e2e", () => {
         papers: processed.papers,
         generatedAt: processed.generatedAt,
         priorityBySourceId: buildSourcePriorityById(sources),
+        modelFooter: {
+          routing: processed.routing,
+          digest: processed.digest,
+        },
       });
 
       assertBusyDayDigestHtml(html, processed);

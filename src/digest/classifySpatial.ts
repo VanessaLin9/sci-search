@@ -11,6 +11,7 @@ import type { DigestTaggingStats } from "../domain/life-science/digest/resolveDi
 import { shouldSkipForDigest } from "../domain/life-science/digest/skipNonResearch.js";
 import { isPreprintSource } from "../domain/life-science/sources.js";
 import { extractLlmJsonContent, shouldRetrySplitLlmBatch } from "../llm/extractLlmJsonContent.js";
+import { llmModelUsage, observedLlmModel, type LlmModelUsage } from "../llm/llmModelUsage.js";
 import { parseJsonFromLlmContent } from "../routing/parseLlmJson.js";
 import { getRoutingLlmConfig, maskApiKey } from "../routing/config.js";
 import { logRouting } from "../routing/routingLog.js";
@@ -36,6 +37,7 @@ export type ClassifySpatialWithLlmResult = {
   lineById: Map<string, MainLine>;
   llmClassifiedIds: Set<string>;
   stats: DigestTaggingStats;
+  model: LlmModelUsage;
 };
 
 type BatchSpatialOutcome = {
@@ -43,6 +45,7 @@ type BatchSpatialOutcome = {
   llmClassifiedIds: Set<string>;
   keywordFallbackIds: string[];
   failures: number;
+  observedModels: string[];
 };
 
 function mainLineFromKeywords(paper: ClassifiedPaper): MainLine {
@@ -88,6 +91,7 @@ export async function classifySpatialWithLlm(options: {
 
   const lineById = new Map<string, MainLine>();
   const llmClassifiedIds = new Set<string>();
+  const observedModels: string[] = [];
   let llmTagged = 0;
   let fallback = 0;
   let failures = 0;
@@ -109,6 +113,7 @@ export async function classifySpatialWithLlm(options: {
 
     try {
       const outcome = await classifySpatialBatch(batch, threshold, batchLabel);
+      observedModels.push(...outcome.observedModels);
       for (const [id, line] of outcome.lineById) {
         lineById.set(id, line);
         llmClassifiedIds.add(id);
@@ -160,6 +165,7 @@ export async function classifySpatialWithLlm(options: {
   return {
     lineById,
     llmClassifiedIds,
+    model: llmModelUsage(routingConfig.model, observedModels),
     stats: {
       threshold,
       llmClassified: candidates.length,
@@ -195,7 +201,7 @@ function resolveBatchSpatialResults(
   const counts = countLines(applied.lineById);
   logRouting(`${batchLabel}: parsed · line-a ${counts.a}, line-b ${counts.b}`);
 
-  return applied;
+  return { ...applied, observedModels: [] };
 }
 
 function mergeBatchOutcomes(a: BatchSpatialOutcome, b: BatchSpatialOutcome): BatchSpatialOutcome {
@@ -212,6 +218,7 @@ function mergeBatchOutcomes(a: BatchSpatialOutcome, b: BatchSpatialOutcome): Bat
     llmClassifiedIds,
     keywordFallbackIds: [...a.keywordFallbackIds, ...b.keywordFallbackIds],
     failures: a.failures + b.failures,
+    observedModels: [...a.observedModels, ...b.observedModels],
   };
 }
 
@@ -242,6 +249,7 @@ async function classifySpatialBatchOnce(
   const config = getRoutingLlmConfig();
   const completion = await callSpatialClassifyCompletion(items, config, { label: batchLabel });
   const finishReason = completion.choices[0]?.finish_reason ?? "unknown";
+  const observed = observedLlmModel(completion);
 
   let content: string;
   let usedReasoningFallback: boolean;
@@ -273,5 +281,8 @@ async function classifySpatialBatchOnce(
     throw wrapped;
   }
 
-  return resolveBatchSpatialResults(items, parsed.results, threshold, batchLabel);
+  return {
+    ...resolveBatchSpatialResults(items, parsed.results, threshold, batchLabel),
+    observedModels: observed ? [observed] : [],
+  };
 }

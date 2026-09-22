@@ -29,6 +29,14 @@ import { summarizeFeaturedPapers } from "./summarizePapers.js";
 import { translateOverflowTitles } from "./translateTitles.js";
 import type { DigestPhaseResult, DigestSummarizeStats, DigestTranslateStats } from "./types.js";
 import type { ClassifiedPaper, Source, SourceScope } from "../types.js";
+import {
+  llmModelUsage,
+  requestedModelFromEnv,
+  type DigestLlmModelsSnapshot,
+  type DigestSummarizeModels,
+  type DigestTranslateModels,
+  type LlmModelUsage,
+} from "../llm/llmModelUsage.js";
 
 function applySummarizeFields(
   papers: ClassifiedPaper[],
@@ -120,12 +128,14 @@ export async function runDigestPhase(options: {
 
   let tagged: ClassifiedPaper[];
   let taggingStats: DigestPhaseResult["tagging"];
+  let spatialModel: DigestLlmModelsSnapshot["spatial"] = undefined;
 
   if (llmTagging) {
     try {
-      const { lineById, llmClassifiedIds, stats } = await classifySpatialWithLlm({ papers });
+      const { lineById, llmClassifiedIds, stats, model } = await classifySpatialWithLlm({ papers });
       tagged = resolveDigestLines(papers, lineById, llmClassifiedIds);
       taggingStats = stats;
+      spatialModel = { ...model, llmTagged: stats.llmTagged };
     } catch (error) {
       console.warn(
         "Spatial classifier failed entirely; using keyword fallback:",
@@ -138,6 +148,7 @@ export async function runDigestPhase(options: {
           (paper) => !isPreprintSource(paper.sourceId) && !shouldSkipForDigest(paper),
         ).length,
       });
+      spatialModel = requestedUsage("ROUTING_LLM_MODEL", { llmTagged: 0 });
     }
   } else {
     logDigest("LLM digest disabled (set ENABLE_LLM_DIGEST=1); spatial classify uses keyword fallback");
@@ -169,15 +180,18 @@ export async function runDigestPhase(options: {
   let enriched: ClassifiedPaper[] = selected;
   let summarizeStats = emptySummarizeStats();
   let translateStats = emptyTranslateStats();
+  let summarizeModels: DigestSummarizeModels | undefined;
+  let translateModels: DigestTranslateModels | undefined;
 
   if (llmTagging) {
     try {
-      const { fieldsById, stats } = await summarizeFeaturedPapers({
+      const { fieldsById, stats, models } = await summarizeFeaturedPapers({
         papers: selected,
         scopeBySourceId,
       });
       enriched = applySummarizeFields(enriched, fieldsById);
       summarizeStats = stats;
+      summarizeModels = models;
     } catch (error) {
       console.warn(
         "Digest summarize failed entirely:",
@@ -191,13 +205,15 @@ export async function runDigestPhase(options: {
         fallbackSucceeded: 0,
         failed: featuredCount,
       };
+      summarizeModels = fallbackSummarizeModels(featuredCount);
     }
 
     if (overflowShowTitleZh) {
       try {
-        const { titleZhById, stats } = await translateOverflowTitles({ papers: enriched });
+        const { titleZhById, stats, models } = await translateOverflowTitles({ papers: enriched });
         enriched = applyOverflowTitleZh(enriched, titleZhById);
         translateStats = stats;
+        translateModels = models;
       } catch (error) {
         console.warn(
           "Digest translate failed entirely:",
@@ -211,6 +227,7 @@ export async function runDigestPhase(options: {
           llmTranslated: 0,
           failed: overflowCount,
         };
+        translateModels = fallbackTranslateModels(overflowCount);
       }
     }
   }
@@ -223,5 +240,59 @@ export async function runDigestPhase(options: {
     selection: selectionStats,
     summarize: summarizeStats,
     translate: translateStats,
+    models: buildDigestModelsSnapshot({
+      llmTagging,
+      spatial: spatialModel,
+      summarize: summarizeModels,
+      translate: translateModels,
+    }),
   };
+}
+
+function requestedUsage<T extends Record<string, unknown>>(
+  envName: string,
+  extra: T,
+): (LlmModelUsage & T) | undefined {
+  const requested = requestedModelFromEnv(envName);
+  if (!requested) return undefined;
+  return { ...llmModelUsage(requested), ...extra };
+}
+
+function fallbackSummarizeModels(featuredCount: number): DigestSummarizeModels | undefined {
+  const primary = requestedModelFromEnv("DIGEST_LLM_MODEL");
+  if (!primary) return undefined;
+  const fallbackRequested = requestedModelFromEnv("DIGEST_LLM_FALLBACK_MODEL");
+  return {
+    requested: featuredCount,
+    failed: featuredCount,
+    primary: { ...llmModelUsage(primary), succeeded: 0 },
+    ...(fallbackRequested
+      ? { fallback: { ...llmModelUsage(fallbackRequested), succeeded: 0 } }
+      : {}),
+  };
+}
+
+function fallbackTranslateModels(overflowCount: number): DigestTranslateModels | undefined {
+  const requested = requestedModelFromEnv("DIGEST_LLM_MODEL");
+  if (!requested) return undefined;
+  return {
+    requested: overflowCount,
+    succeeded: 0,
+    failed: overflowCount,
+    model: llmModelUsage(requested),
+  };
+}
+
+function buildDigestModelsSnapshot(input: {
+  llmTagging: boolean;
+  spatial?: DigestLlmModelsSnapshot["spatial"];
+  summarize?: DigestSummarizeModels;
+  translate?: DigestTranslateModels;
+}): DigestLlmModelsSnapshot | undefined {
+  if (!input.llmTagging) return undefined;
+  const snapshot: DigestLlmModelsSnapshot = {};
+  if (input.spatial) snapshot.spatial = input.spatial;
+  if (input.summarize) snapshot.summarize = input.summarize;
+  if (input.translate) snapshot.translate = input.translate;
+  return Object.keys(snapshot).length > 0 ? snapshot : undefined;
 }

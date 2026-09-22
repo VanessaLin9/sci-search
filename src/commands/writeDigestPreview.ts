@@ -65,6 +65,10 @@ async function main() {
     papers: processed.papers,
     generatedAt: processed.generatedAt,
     priorityBySourceId: buildSourcePriorityById(sources),
+    modelFooter: {
+      routing: processed.routing,
+      digest: processed.digest,
+    },
   });
 
   const indexPath = cli.output ?? join("docs", "index.html");
