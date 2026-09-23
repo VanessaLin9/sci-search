@@ -1,0 +1,737 @@
+{
+  "reportDate": "2026-09-22",
+  "generatedAt": "2026-09-23T15:11:19.909Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03225-4",
+      "title": "NanoTS: a deep learning tool for accurate SNP calling in nanopore long-read transcriptome data",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-09-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03225-4",
+      "doi": "10.1038/s41592-026-03225-4",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "NanoTS：用於奈米孔長讀取轉錄組資料中精準 SNP 呼叫的深度學習工具"
+    },
+    {
+      "id": "10.1038/s41559-026-03203-1",
+      "title": "Aurochs admixture",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-09-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03203-1",
+      "doi": "10.1038/s41559-026-03203-1",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41559-026-03175-2",
+      "title": "Mating imperatives drive plasticity of the daily temporal niche in fruit flies",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-09-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03175-2",
+      "doi": "10.1038/s41559-026-03175-2",
+      "abstract": "A study of daily activity of Drosophila species under naturalistic conditions shows that sociosexual interactions, via dopamine signalling, expand their temporal niche in a species-specific way according to their sensory ecology.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41587-026-03321-y",
+      "title": "The novel transcripts we keep rediscovering",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-09-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03321-y",
+      "doi": "10.1038/s41587-026-03321-y",
+      "abstract": "Interpreting transcript diversity requires moving beyond ‘known’ versus ‘novel’ and towards a multidimensional framework based on technical credibility, contextual prevalence, reproducibility, molecular consequence and phenotypic relevance.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "超越已知與新型的轉錄本詮釋",
+      "summaryZh": "本文指出解讀轉錄本多樣性需要超越「已知」與「新型」的二分法。作者提出應採用多維度框架，考量技術可信度、情境盛行率、可重複性、分子後果與表型相關性。此框架旨在更準確地評估轉錄本的意義，避免反覆重新發現新型轉錄本的問題。",
+      "topicTags": [
+        "transcriptomics",
+        "transcript-diversity",
+        "genomics",
+        "bioinformatics"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02654-9",
+      "title": "Updating the symbols of ten cytokines and their receptors: report of the IUIS Cytokine Nomenclature Sub-Committee",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-09-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02654-9",
+      "doi": "10.1038/s41590-026-02654-9",
+      "abstract": "Updating the symbols of ten cytokines and their receptors: report of the IUIS Cytokine Nomenclature Sub-Committee",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "十種細胞激素及其受體符號更新報告",
+      "summaryZh": "本文為國際免疫學會聯盟 IUIS 細胞激素命名小組委員會的報告，提出更新十種細胞激素及其受體的符號。報告內容聚焦於細胞激素與受體命名符號的修訂。該更新旨在為相關研究提供一致的命名參考。",
+      "topicTags": [
+        "cytokine",
+        "nomenclature",
+        "immunology",
+        "receptor"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02641-0",
+      "title": "Metastasis enables immunogenicity through migrasome-mediated antigen release",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-09-22T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02641-0",
+      "doi": "10.1038/s41590-026-02641-0",
+      "abstract": "Here the authors show that circulating tumor cells shed migrasomes that carry tumor antigens, which in turn can activate CD8+ T cells through cross-presentation to restrict metastasis.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "轉移促進免疫原性：migrasome 介導抗原釋放",
+      "summaryZh": "本研究指出，循環腫瘤細胞會釋放攜帶腫瘤抗原的 migrasome。這些 migrasome 能透過交叉呈現活化 CD8+ T 細胞。活化的 CD8+ T 細胞可限制轉移。研究結果顯示轉移過程本身可能透過 migrasome 介導的抗原釋放產生免疫原性。",
+      "topicTags": [
+        "metastasis",
+        "immunogenicity",
+        "migrasome",
+        "tumor-antigen",
+        "cd8-t-cell"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004016",
+      "title": "Pathogen subversion of neuro-epidermal signaling impairs lysosomal function to disrupt collagen homeostasis in Caenorhabditis elegans",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-09-22T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004016",
+      "doi": "10.1371/journal.pbio.3004016",
+      "abstract": "The epidermis relies on collagen-rich extracellular matrices (ECMs) to maintain barrier integrity against pathogens. Lysosomes regulate cuticle collagen turnover, yet how neuronal signaling modulates epidermal lysosomal function and collagen organization during infection remains unclear. Using Pseudomonas aeruginosa PA14- Caenorhabditis elegans infection model, we demonstrate that pathogen-induced neuronal signaling disrupts epidermal lysosomal activity and collagen remodeling. PA14 infection triggers neurons to secrete NSIF-1 (Neuronal Secreted Immune Factor 1), which translocates to the epidermis and impairs lysosomal acidification, maturation, and degradation by suppressing the transcription factor ELT-3. This disruption leads to disorganized collagen structure, compromising cuticle integrity and host resistance. Genetic mutation of nsif-1 restores lysosomal function, enhances collagen density, and improves survival, while neuron-specific nsif-1 knockdown confirms its neuronal origin. Moreover, NSIF-1 inhibits ELT-3 nuclear localization, blocking its role in lysosomal-dependent ECM repair. Our study reveals a neuro-epidermal axis wherein pathogens exploit neuronal signals to disrupt lysosomal function and collagen homeostasis, identifying NSIF-1 and ELT-3 as potential targets to counteract infection-driven ECM dysregulation.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "病原體劫持神經-表皮訊號 削弱溶酶體功能破壞膠原蛋白恆定",
+      "summaryZh": "本研究利用 Pseudomonas aeruginosa PA14 與 Caenorhabditis elegans 感染模型，探討神經訊號如何調控表皮溶酶體功能與膠原蛋白組織。研究發現感染誘發神經元分泌 NSIF-1，NSIF-1 轉位至表皮後抑制轉錄因子 ELT-3，進而損害溶酶體酸化、成熟與降解功能。溶酶體功能受損導致膠原蛋白結構紊亂，削弱角質層完整性並降低宿主抗性。基因突變 nsif-1 可恢復溶酶體功能、提升膠原蛋白密度並改善存活，神經特異性敲降亦證實其神經來源。研究揭示病原體可利用神經-表皮軸干擾溶酶體功能與膠原蛋白恆定，並指出 NSIF-1 與 ELT-3 為潛在干預目標。",
+      "topicTags": [
+        "neuro-epidermal signaling",
+        "lysosomal function",
+        "collagen homeostasis",
+        "host-pathogen interaction",
+        "caenorhabditis-elegans"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004013",
+      "title": "Coordinated P450–UGT detoxification contributes to furanocoumarin tolerance associated with host plant range divergence in Helicoverpa",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-09-22T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004013",
+      "doi": "10.1371/journal.pbio.3004013",
+      "abstract": "Plants and herbivorous insects are engaged in a continuous evolutionary arms race driven by chemical defences and counter-defences. How insects integrate distinct detoxification systems to overcome diverse phytochemicals, and how such mechanisms contribute to host-range divergence, remains poorly understood. Here, we uncover a cooperative cytochrome P450–UDP-glycosyltransferase (UGT) cascade that mediates furanocoumarin tolerance in Helicoverpa armigera . Comparative genomic analyses across Helicoverpa and related noctuid species revealed that the UGT33 family is the most extensively expanded and dynamically diversified UGT lineage in Helicoverpa . Targeted CRISPR–Cas9 knockouts of UGT33 gene clusters in polyphagous H. armigera demonstrated their essential roles in detoxifying the furanocoumarins xanthotoxin and imperatorin. Combined metabolic and functional assays further established a sequential detoxification pathway, in which the cytochrome P450 CYP6AE19 catalyses either the O-dealkylation of xanthotoxin to yield xanthotoxol or the aromatic-carbon hydroxylation of xanthotoxin to form 5-hydroxyxanthotoxin, which are subsequently glycosylated by UGT33 enzymes to form their less-toxic glucosides. In contrast, impaired CYP6AE19–UGT33 coordination in the oligophagous Helicoverpa assulta was associated with reduced xanthotoxin detoxification and high sensitivity to this compound. Together, these findings provide direct evidence for coordinated Phase I–Phase II detoxification of a plant defensive compound in insects and show that functional divergence in this pathway contributes to interspecific differences in plant toxin tolerance, which are associated with contrasting dietary breadth in closely related herbivorous insects.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution",
+        "CRISPR"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "P450 與 UGT 協同解毒促成 Helicoverpa 對呋喃香豆素耐受性與寄主範圍分化",
+      "summaryZh": "研究發現 Helicoverpa armigera 透過協同的細胞色素 P450 與 UDP-糖基轉移酶 UGT 解毒級聯作用來耐受呋喃香豆素。比較基因體分析顯示，在 Helicoverpa 及相關夜蛾類物種中，UGT33 家族是 Helicoverpa 內擴張最廣且動態多樣化的 UGT 系譜。針對多食性 H. armigera 的 UGT33 基因簇進行 CRISPR–Cas9 敲除，證實其在解毒呋喃香豆素 xanthotoxin 與 imperatorin 上具有必要作用。代謝與功能實驗建立了序列解毒途徑：CYP6AE19 可催化 xanthotoxin 的 O-去烷基化產生 xanthotoxol，或催化芳香碳羥基化形成 5-hydroxyxanthotoxin，後續再由 UGT33 酶糖基化為毒性較低的葡萄糖苷。相較之下，寡食性 Helicoverpa assulta 中 CYP6AE19–UGT33 的協調受損，與 xanthotoxin 解毒能力下降及高敏感性相關。這些結果提供了昆蟲中植物防禦化合物經協調的 Phase I–Phase II 解毒的直接證據，並顯示該途徑的功能分化與近緣植食性昆蟲飲食廣度的差異相關。",
+      "topicTags": [
+        "insect detoxification",
+        "p450",
+        "ugt",
+        "furanocoumarin",
+        "host range"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004009",
+      "title": "Antibodies targeting phage fiber and nozzle proteins impair Acinetobacter baumannii phage therapy by blocking infection and promoting immune clearance",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-09-22T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004009",
+      "doi": "10.1371/journal.pbio.3004009",
+      "abstract": "Phage therapy represents a promising strategy to tackle the growing threat of antimicrobial resistance. Increasing evidence has demonstrated that phage-specific antibodies may compromise the efficacy of phage therapy. Nevertheless, little is known about how phage protein specificity of antibodies modulates phage therapeutic outcomes. Herein, we utilized AbP20, a podovirus against Acinetobacter baumannii , to explore the effects of antibodies elicited by each structural protein on phage therapy efficacy in a mouse infection model. Intraperitoneal administration of AbP20 once a day for 7 consecutive days induced robust phage-specific antibody responses that impaired phage therapy. Genome-guided antigen screening identified that antibodies elicited by the nozzle and fiber proteins of AbP20, rather than those targeting the portal, capsid, or adaptor proteins, are the dominant drivers of phage therapy failure. Specifically, fiber-specific and nozzle-specific antibodies block bacterial adsorption and genomic injection of AbP20, respectively. Meanwhile, both antibody subsets efficiently induce large phage aggregates and potentiate macrophage phagocytosis via an Fc receptor-independent pathway. An evolved AbP20 variant with improved neutralization escape capacity exhibited comparable antibody-accelerated phagocytosis and host immune clearance, yet partially rescued therapeutic failure caused by neutralizing antibodies. Collectively, this study elucidates that nozzle- and fiber-elicited neutralizing antibodies impair phage therapy via dual synergistic mechanisms, which offers novel insights into the multifaceted modulation of phage-specific antibodies against phage therapeutic efficacy.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "抗噬菌體纖維與噴嘴蛋白抗體阻礙抗生素抗藥性菌治療",
+      "summaryZh": "本研究以針對 Acinetobacter baumannii 的噬菌體 AbP20 為模型，在小鼠感染模型中探討噬菌體結構蛋白誘發的抗體如何影響噬菌體治療效果。腹腔注射 AbP20 連續 7 天誘發強烈的噬菌體特異性抗體反應，並削弱治療效果。基因組導向抗原篩選顯示，針對噴嘴蛋白與纖維蛋白的抗體，而非針對門孔、衣殼或接頭蛋白的抗體，是導致治療失敗的主要驅動因子。纖維特異性抗體阻斷細菌吸附，噴嘴特異性抗體阻斷基因體注入；兩者皆能誘導噬菌體形成大聚合物並透過 Fc 受體非依賴途徑促進巨噬細胞吞噬。具有較佳中和逃逸能力的演化 AbP20 變異株仍表現類似的抗體加速吞噬與免疫清除，但部分挽救了中和抗體造成的治療失敗。",
+      "topicTags": [
+        "phage therapy",
+        "antimicrobial resistance",
+        "acinetobacter baumannii",
+        "neutralizing antibodies",
+        "immune clearance"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003988",
+      "title": "Who Eats Whom? A global food web derived from citizen science",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-09-22T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003988",
+      "doi": "10.1371/journal.pbio.3003988",
+      "abstract": "Citizen science contains abundant yet underutilized data about species interactions. We present Who Eats Whom, a database and public engagement tool for searching and visualizing thousands of feeding relationships derived from iNaturalist data. Citizen science photographs contain a vast and underused record of species interactions. This Community Page introduces Who Eats Whom, an interactive, searchable food web created from photographs uploaded to iNaturalist.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "誰吃誰？源自公民科學的全球食物網",
+      "summaryZh": "本文介紹 Who Eats Whom，一個由 iNaturalist 照片建構的互動式可搜尋食物網。作者指出公民科學包含大量尚未充分利用的物種交互作用資料，而公民科學照片則記錄了豐富且未被充分使用的物種交互紀錄。Who Eats Whom 作為資料庫與公眾參與工具，提供數千筆攝食關係的搜尋與視覺化功能。該社群頁面展示此食物網是由上傳至 iNaturalist 的照片所建立。",
+      "topicTags": [
+        "citizen-science",
+        "food-web",
+        "species-interactions",
+        "ecology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.12.744548",
+      "title": "An Integrated Atlas of the Human Kidney Spanning Health and Diseases",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.12.744548v3",
+      "doi": "10.64898/2026.08.12.744548",
+      "abstract": "The human kidney contains highly specialized cell populations. Despite numerous single-cell and single-nucleus transcriptomics studies, differences in cohorts, technologies, analytical pipelines, and annotation frameworks have limited the ability to define consensus kidney cell states, identify disease-associated populations and interpret kidney disease genetic susceptibility. Here, we assembled 18 human kidney single-cell and single-nucleus RNA-sequencing datasets spanning 232 donors and five major disease contexts into a uniformly processed and computationally integrated Human Kidney Cell Atlas (HKCA), comprising over one million high-quality cells (816,895) and nuclei (215,308). The HKCA resolves 63 cell types and 120 harmonized cell states, including rare epithelial and stromal populations associated with kidney diseases . Integration with spatial transcriptomics, intercellular communication networks, and human genetic association data further defined the anatomical context and disease relevance of these populations. The HKCA also provides a framework for automated annotation of independent kidney human and mouse datasets. Together, the HKCA establishes a comprehensive reference for human kidney biology, enabling disease interpretation and genetic risk localization at cellular resolution.",
+      "authors": [
+        "Stasinos, K.",
+        "Wang, H.",
+        "Predeus, A.",
+        "Richoz, N.",
+        "Menon, R.",
+        "Thokadiwala, M.",
+        "Zhu, Y.",
+        "Tian, R.",
+        "Zhou, W.",
+        "Chatzigeorgiou, A.",
+        "Yordanova, G.",
+        "Zucchi, I.",
+        "Laszik, Z.",
+        "Müller, M.",
+        "The Human Cell Atlas Kidney Bionetwork,",
+        "Subramanian, A.",
+        "Greka, A.",
+        "Regev, A.",
+        "Kretzler, M.",
+        "Marioni, J.",
+        "Luecken, M. D.",
+        "Clatworthy, M.",
+        "Teichmann, S. A.",
+        "He, P."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "spatial transcriptomics",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "整合健康與疾病的人類腎臟細胞圖譜",
+      "summaryZh": "研究整合18個人類腎臟單細胞與單核RNA定序資料集，涵蓋232名捐贈者與五種主要疾病情境，經統一處理後建構人類腎臟細胞圖譜 Human Kidney Cell Atlas, HKCA。圖譜包含816,895個細胞與215,308個核，共超過一百萬個高品質細胞與核，解析出63種細胞類型與120個協調細胞狀態，包含與腎臟疾病相關的稀有上皮與間質族群。研究進一步整合空間轉錄組學、細胞間通訊網絡與人類遺傳關聯資料，以定義這些族群的解剖脈絡與疾病相關性。HKCA亦提供自動註解獨立人類與小鼠腎臟資料集的框架，建立細胞解析度的參考以解讀疾病並定位遺傳風險。",
+      "topicTags": [
+        "single-cell",
+        "kidney",
+        "transcriptomics",
+        "atlas",
+        "human"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.18.752622",
+      "title": "Folate deficiency disrupts key metabolic transitions within the developing neural ectoderm",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.18.752622v1",
+      "doi": "10.64898/2026.09.18.752622",
+      "abstract": "Despite long-standing epidemiological associations, the mechanism linking folate availability to gestational neural tube defects remains unclear, partly because measuring and interpreting metabolic activity in dynamic biological systems remains challenging. Here, we apply a deep-learning-based graph-guided variational autoencoder (MeRN; Metabolic Representation Network) to infer single-cell metabolic activity and states from scRNA-seq data of mouse embryogenesis. By analyzing folate-deficient embryogenesis from E7.0 to E9.0, we identify a transient state within the nascent neural lineage that is acutely sensitive to folate availability, leading to an interconnected disruption between key bioenergetic pathways and de novo purine biosynthesis. Moreover, metabolically induced growth defects lead to permanent morphological disruptions along the dorsal-ventral axis, which we confirm by generating whole-embryo fate maps using a prime-editing-based lineage recorder (PEtracer). Collectively, our results establish a highly scalable framework for interpreting dynamic changes in embryonic metabolism and elucidating the mechanistic bases underlying environmentally linked congenital disorders.",
+      "authors": [
+        "Dias, N.",
+        "Lewinsohn, D. P.",
+        "Colgan, W. N.",
+        "Wang, M.",
+        "Kijima, Y.",
+        "Villagrana, J.",
+        "Hou, T.-C. J.",
+        "Gowri, G.",
+        "Chau, A.",
+        "Aktas, T.",
+        "Sumigray, K.",
+        "Weissman, J. S.",
+        "Koblan, L. W.",
+        "Wagner, A.",
+        "Smith, Z. D."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "葉酸缺乏干擾發育中神經外胚層的關鍵代謝轉換",
+      "summaryZh": "儘管流行病學上長期將葉酸供應與妊娠期神經管缺陷關聯，連結葉酸可用性與缺陷的機制仍不清楚，部分原因在於測量與詮釋動態生物系統的代謝活性具有挑戰性。研究團隊以深度學習的圖引導變分自編碼器 MeRN；Metabolic Representation Network，從小鼠胚胎發生的 scRNA-seq 資料推斷單細胞代謝活性與狀態。分析 E7.0 至 E9.0 的葉酸缺乏胚胎發生時，發現新生神經譜系中一個對葉酸可用性高度敏感的短暫狀態，並導致關鍵生物能量途徑與 de novo 胞嘧啶？嘌呤生物合成之間出現相互關聯的干擾。代謝誘發的生長缺陷更造成沿背腹軸的永久形態破壞，並以 prime-editing 為基礎的譜系記錄器 PEtracer 建立全胚胎命運圖譜加以確認。整體結果提出一個可高度擴展的框架，用以詮釋胚胎代謝的動態變化，並釐清環境相關先天性疾病的機制基礎。",
+      "topicTags": [
+        "folate-deficiency",
+        "neural-ectoderm",
+        "single-cell-rna-seq",
+        "embryonic-development",
+        "metabolism"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.18.752607",
+      "title": "DeepSCENIC: transfer learning from sequence-to-function models enables causal gene regulatory network inference",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.18.752607v1",
+      "doi": "10.64898/2026.09.18.752607",
+      "abstract": "Sequence-to-function (S2F) deep learning models have become an important aid to decipher the genomic cis-regulatory code. However, current S2F models do not take the cellular trans-environment of transcription factors (TF) into account. Conversely, methods for gene regulatory network (GRN) inference often rely on heuristics or simple position weight matrices (PWMs), without exploiting the combinatorial grammar of genomic enhancers. Here, we present DeepSCENIC, a deep learning framework that enables causal GRN inference by performing transfer learning from S2F models to single-cell multiome atlases. We first test and validate DeepSCENIC on ENCODE cell lines, demonstrating that the framework accurately predicts single-cell gene expression and chromatin accessibility by leveraging pretrained S2F models like Enformer and Borzoi. We show that DeepSCENIC recovers TF-region (TF-RE) interactions with high fidelity, and captures de novo TF binding motifs without prior PWM knowledge. The model improves enhancer-gene associations (RE-TG) over correlation-based baselines when benchmarked against large-scale CRISPRi screens. After training a DeepSCENIC model, it enables the prediction of perturbation effects during cell state changes by acting as a mechanistic simulator. In a melanoma cell line atlas, the model accurately recapitulates the transcriptional shift from melanocytic to mesenchymal states, and predicted knock-down effects show high concordance with experimental time series data. Finally, we use DeepSCENIC to identify mouse-human cortex conserved GRNs, finding high cross-species concordance in TF activity programs across matched neuronal subclasses and validating top-ranked enhancers against experimental reporter assays. By unifying S2F enhancer representations with single-cell multiomics, DeepSCENIC provides a new paradigm for jointly modeling and simulating cis-sequence and trans-cellular perturbations.",
+      "authors": [
+        "Partel, G.",
+        "De Winter, S.",
+        "Konstantakos, V.",
+        "Blaauw, C. H.",
+        "Aerts, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "從序列到功能模型轉移學習推斷因果基因調控網絡",
+      "summaryZh": "研究團隊提出 DeepSCENIC，一個以序列到功能模型為基礎的深度學習框架，透過轉移學習將預訓練的 S2F 模型應用於單細胞多組學圖譜，以進行因果基因調控網絡推斷。該框架在 ENCODE 細胞系上測試，據稱能準確預測單細胞基因表現與染色質可及性，並利用 Enformer 與 Borzoi 等預訓練模型恢復轉錄因子-區域交互作用，且可在無先驗 PWM 知識下捕捉從頭轉錄因子結合基序。相較於相關性基線，DeepSCENIC 在大規模 CRISPRi 篩選基準測試中提升了增強子-基因關聯的準確度，並可作為機制模擬器預測細胞狀態變化中的擾動效應。在黑色素瘤細胞系圖譜中，模型據稱能重現黑色素細胞向間質細胞的轉錄變化，且預測的敲降效應與實驗時間序列數據高度一致。研究亦以 DeepSCENIC 找出小鼠與人類大腦皮質保守的基因調控網絡，並在配對神經元亞類中觀察到轉錄因子活性程序的高跨物種一致性，且以實驗報告基因檢測驗證了排名靠前的增強子。",
+      "topicTags": [
+        "gene-regulatory-network",
+        "single-cell",
+        "transfer-learning",
+        "deep-learning",
+        "chromatin-accessibility"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.18.752621",
+      "title": "Selective depletion of upper-layer somatostatin interneuron subtypes in schizophrenia",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.18.752621v1",
+      "doi": "10.64898/2026.09.18.752621",
+      "abstract": "Schizophrenia (SCZ) is associated with cortical GABAergic dysfunction, but whether inhibitory interneurons are lost or persist in an altered molecular state remains unresolved. Here, we harmonized seven prefrontal post-mortem single-nucleus RNA-seq datasets onto a fine-grained taxonomy of cortical cell types and meta-analyzed their gene expression and abundance changes in SCZ (298 controls, 171 SCZ). First, we find a subclass-wide reduction of SST mRNA within somatostatin (Sst) neurons. Second, we find reduced abundance (depletion) of a subset of upper-layer Sst interneurons and increased abundance of L6b excitatory neurons, with both changes confirmed in spatial transcriptomics (12 controls, 12 SCZ). Notably, SCZ genetic risk is enriched in the most depleted Sst cells. Depleted Sst subtypes highly express HCN1, partially correspond to primate-specialized CALB1-expressing double-bouquet cells, and are among the cells lost earliest in Alzheimer's disease. These upper-layer Sst interneurons constitute an intrinsically vulnerable population and a promising target for neuroprotective and compensatory therapies.",
+      "authors": [
+        "Endresz, N.",
+        "Fafouti, M. E.",
+        "Arbabi, K.",
+        "Zhou, X.",
+        "DeLong, T.",
+        "Gonzalez-Burgos, G.",
+        "Duncan, L.",
+        "Sibille, E.",
+        "Tripathy, S. J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "思覺失調症中上層生長抑素中間神經元亞型的選擇性耗竭"
+    },
+    {
+      "id": "10.64898/2026.09.14.751638",
+      "title": "Spatial transcriptomics reveals selective vulnerability of cardiac neural crest-derived glial cells in human myocardial infarction",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.14.751638v1",
+      "doi": "10.64898/2026.09.14.751638",
+      "abstract": "Cardiac neural crest-derived glial cells (CNGs) are recently identified glial cells that support cardiac autonomic innervation and maintain sympathetic-parasympathetic balance. Their fate in myocardial infarction (MI) is unknown. Here, we analyzed 16 human cardiac spatial transcriptomes spanning normal myocardium (n=4), infarct zone (n=5), border zone (inner, n=1; outer, n=3), and remote zone (n=3). CNGs (S100B+/GFAP+, CD68- spots) were selectively lost along a spatial gradient from healthy tissue to the infarct core (Spearman rho = -0.92, p = 4.5 x 10-7). Tissue-area-corrected analysis confirmed that CNG loss (26% retained in infarct zone vs. normal; p = 0.016) vastly exceeded overall tissue loss, indicating selective vulnerability rather than bulk tissue destruction. Mechanistically, oxidative phosphorylation (OXPHOS) activity in CNG-positive spots correlated positively with CNG survival (partial rho = 0.65, p = 0.009 after controlling for spot composition), consistent with a high metabolic demand underlying their ischemic sensitivity. Pyroptosis - but not ferroptosis or apoptosis - signatures correlated with CNG loss (partial rho = -0.67, p = 0.006). These findings identify CNGs as selectively vulnerable cellular components of the cardiac autonomic system in MI and nominate metabolic failure and pyroptosis as candidate mechanisms, providing a spatially resolved foundation for future mechanistic and interventional studies.",
+      "authors": [
+        "Xia, X.",
+        "Ding, Y.",
+        "Zhao, X.",
+        "He, Q.",
+        "Zhang, H.",
+        "Gu, Y.",
+        "Bai, H.",
+        "Pan, D."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "空間轉錄體學揭示人類心肌梗塞中心臟神經嵴衍生膠質細胞的選擇性脆弱性"
+    },
+    {
+      "id": "10.64898/2026.09.16.751717",
+      "title": "MINT infers the latent single-cell spatial transcriptome from paired histology",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.16.751717v1",
+      "doi": "10.64898/2026.09.16.751717",
+      "abstract": "Sequencing-based spatial transcriptomics captures transcriptome-wide molecular information, yet the corresponding cell-resolved tissue map remains incomplete. Histology records dense cellular morphology, tissue architecture and local context. Here, we present MINT (Morphological Integrative Network for Transcriptomics), which combines this latent cellular organisation with sample-specific spatial measurements to infer tissue-wide, cell-resolved transcriptomes without an external single-cell reference. MINT reconstructs expression from sparse Slide-tags profiles across unmatched adjacent sections; its shared nucleus-centred representation also resolves pooled Visium measurements into cell-level profiles. MINT improved Slide-tags alignment and expression recovery under controlled nuclear loss and cross-section perturbation. It also outperformed reference-free Visium disaggregation methods against Xenium ground truth and was validated with Visium HD sequencing. In human lung adenocarcinoma, MINT reconstructed the tumour immune microenvironment cell by cell and resolved tertiary lymphoid structures and their maturity. These results establish paired histology as a quantitative, sample-intrinsic complement to molecularly rich but cellularly incomplete spatial-transcriptomic assays.",
+      "authors": [
+        "Chen, L.",
+        "Zhang, Z.",
+        "Wang, B.",
+        "Ren, W.",
+        "Peng, H.",
+        "Lu, S.",
+        "Xu, M.",
+        "Zhou, Y.",
+        "Luo, X.",
+        "Ye, T.",
+        "Zhu, Q.",
+        "Yan, F.",
+        "Tian, L."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "Xenium",
+        "Visium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "MINT 從配對組織學推斷潛在單細胞空間轉錄體"
+    },
+    {
+      "id": "10.64898/2026.09.21.752624",
+      "title": "SPECTRA: predicting cellular perturbation responses with Graph Learning over Gene Regulatory Networks",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.21.752624v1",
+      "doi": "10.64898/2026.09.21.752624",
+      "abstract": "Predicting the transcriptomic consequences of cellular perturbations is challenging due to the sparsity of single-cell transcriptional responses, heterogeneous perturbation efficiency, and the difficulty of identifying the small subset of genes that are truly differentially expressed after perturbation. Current approaches typically encode interventions as latent shifts from unperturbed to perturbed cellular state, making the models hard to interpret. Here we introduce SPECTRA (SPEctral CRISPR Transcriptome Regulatory Autoencoder) a graph-based model that treats CRISPR perturbations as interpretable, localized signals injected into a Gene Regulatory Network and propagated through directed graph neural networks. SPECTRA combines a variational control-cell encoder and a directed heterophilic graph decoder, integrating single-cell expression, pretrained transcriptomic context, and prior regulatory topology into a single node-level representation. We evaluate SPECTRA on a large-scale single-cell CRISPRi benchmark, measuring differentially expressed gene recovery through precision, F1 score, and AUPRC-based DEG classification. Since perturbations in SPECTRA are interpretable, we tested the predictions of the model against known biology, in cases where the effects of a gene knock out have been repeatedly demonstrated with orthogonal experiments. Our results show that graph-based signal propagation is a biologically grounded alternative to latent-shift perturbation modeling and can improve the recovery of sparse perturbation-induced transcriptional effects.",
+      "authors": [
+        "Calabro, M.",
+        "Sheehan, P.",
+        "Cambuli, F.",
+        "Sottoriva, A."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "SPECTRA：利用基因調控網絡上的圖學習預測細胞擾動反應"
+    },
+    {
+      "id": "10.64898/2026.09.18.752722",
+      "title": "mc-ASTRA maps population-level variation to interpretable multicellular tissue organization processes",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.18.752722v1",
+      "doi": "10.64898/2026.09.18.752722",
+      "abstract": "Single-cell and spatial technologies increasingly enable detailed molecular profiling of tissues across biological contexts, creating opportunities to relate variation across samples to the multicellular processes that give rise to differences in tissue organisation and function. However, existing tools typically treat these aspects separately, either representing variation across samples or interpreting specific molecular and spatial features. To bridge this gap, we developed multicellular Analysis of Sample Tissue Representations and Associations (mc-ASTRA; https://github.com/saezlab/mc-astra), an open-source Python package for constructing maps of tissue-state variability that combine diverse tissue descriptors, including molecular, compositional and spatial features, together with complementary sample-level information such as clinical measurements or technical covariates, and biological prior knowledge of processes of interest. By combining available flexible semi-supervised factor models with established tools for the inference of biological processes from omics data, mc-ASTRA makes these tissue-state maps interpretable by quantifying how different tissue descriptors contribute to variation across samples and by resolving the specific coordinated multicellular programs underlying these differences. We illustrate the capabilities of mc-ASTRA across multiple single-cell and spatial omics datasets to infer multicellular programs that are contextualized by technical and biological prior knowledge and to describe distinct trajectories of tissue remodeling. mc-ASTRA provides a framework for building interpretable sample maps that connect tissue organization and multicellular mechanisms with variation observed across samples.",
+      "authors": [
+        "Ramirez Flores, R. O.",
+        "Kruger Serrano, K. S.",
+        "Gaspar Vieira, F.",
+        "Vulliard, L.",
+        "Saez-Rodriguez, J."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "mc-ASTRA 將族群層級變異映射至可解釋的多細胞組織過程",
+      "summaryZh": "研究團隊開發了開源 Python 套件 multicellular Analysis of Sample Tissue Representations and Associations，簡稱 mc-ASTRA，用於建構組織狀態變異圖譜。該方法結合分子、組成與空間特徵等多元組織描述子，並整合樣本層級資訊如臨床測量或技術共變量，以及生物先驗知識。mc-ASTRA 透過半監督因子模型與從組學資料推斷生物過程的工具，量化不同組織描述子對樣本間變異的貢獻，並解析背後的協調多細胞程序。作者以多個單細胞與空間組學資料集展示其能力，說明可依技術與生物先驗知識推斷多細胞程序並描述組織重塑的差異軌跡。",
+      "topicTags": [
+        "single-cell",
+        "spatial-omics",
+        "tissue-organization",
+        "computational-biology",
+        "preprint"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.18.752662",
+      "title": "Spatially-resolved multimodal profiling identifies functionally-heterogeneous cancer-associated fibroblasts associated with poor radiotherapy outcomes in muscle-invasive bladder cancer.",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-22",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.18.752662v1",
+      "doi": "10.64898/2026.09.18.752662",
+      "abstract": "Background: Cancer-associated fibroblasts (CAFs) contribute to systemic therapy resistance in muscle-invasive bladder cancer (MIBC), but their functional heterogeneity and relevance to curative bladder-preserving radiotherapy, are poorly understood. Methods: Transcriptomic analysis was performed on 279 tumours from BC2001, a phase 3 radiotherapy clinical trial. To study CAF heterogeneity, we integrated bulk RNA-seq, single-cell spatial analysis of multiplex immunofluorescence images and quantification of extracellular matrix (ECM) features in 155 MIBC biopsies. The functional heterogeneity of distinct CAF populations was evaluated by single-nuclear RNA-seq. Spatial interactions between CAF populations and CD8+ T-cells was assessed and the relevance of lymphocytes to radiation responses was evaluated in a CAF-enriched murine bladder cancer model (BBN963). Results: BC2001 patients with CAF-enriched tumours had worse overall survival (HR=1.671, 95% CI 1.221-2.287, Log-rank p=0.0012). CAF abundance and antigen expression was highly heterogenous. Podoplanin (PDPN) was expressed on the majority of CAFs and was associated with inflammatory pathways. Enrichment of CAF gene signatures was associated with a significant increase in CAFs expressing fibroblast activation protein (FAP) (p=0.004) and dense ECM features (p=0.0004). Fifty-three percent of tumours exhibited stromal CD8+ T-cell exclusion with significant enrichment in FAP-dominant neighbourhoods (p<0.001). In vivo, lymphocytes were critical for radiation-induced tumour control, indicating that immune cold or excluded tumours may have limited radiotherapy responses. Conclusion: In MIBC, CAFs are associated with poor radiotherapy outcomes. Multiple mechanisms are deployed by functionally-heterogeneous CAFs, including promotion of chronic inflammation by PDPN+ CAFs and ECM remodelling by FAP+ CAFs which impact CD8+ T-cell distribution and radiation responses.",
+      "authors": [
+        "Burley, A.",
+        "O'Fee, K.",
+        "Dromby, M.",
+        "Chan, M. C.",
+        "Gusterson, B.",
+        "Larkeryd, A.",
+        "Westlund, E.",
+        "Narayanan, P. L.",
+        "Sakr, C.",
+        "Silveira, T.",
+        "Foster, R.",
+        "Portillo, M.",
+        "Rabionet Diaz, M.",
+        "Lund, T.",
+        "Melcher, A.",
+        "Arwert, E. N.",
+        "Bryan, R.",
+        "Zeegers, M.",
+        "Cheng, K. K.",
+        "Choudhury, A.",
+        "Jones, K.",
+        "Hafeez, S.",
+        "Hussain, S.",
+        "Huddart, R.",
+        "Hall, E.",
+        "James, N.",
+        "Wilkins, A. C."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "空間解析多模態分析鑑定出與肌肉浸潤性膀胱癌不良放射治療結果相關的功能異質性癌症相關纖維母細胞"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 19,
+      "passedByScope": 19,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 19,
+      "excluded": 0
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b"
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 9,
+      "llmTagged": 9,
+      "llmLineA": 0,
+      "llmLineB": 9,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 19,
+      "candidates": 18,
+      "featured": 12,
+      "overflow": 6,
+      "lineA": 0,
+      "lineB": 9,
+      "preprint": 9,
+      "skip": 1,
+      "featuredLineA": 0,
+      "featuredLineB": 8,
+      "featuredPreprint": 4,
+      "overflowLineA": 0,
+      "overflowLineB": 1,
+      "overflowPreprint": 5
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 11,
+      "primarySucceeded": 11,
+      "fallbackSucceeded": 0,
+      "failed": 1
+    },
+    "translate": {
+      "requested": 6,
+      "llmTranslated": 6,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 9
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 1,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 11
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 6,
+        "succeeded": 6,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        }
+      }
+    }
+  }
+}
