@@ -88,6 +88,7 @@ function formatTranslateLine(
 ): string | undefined {
   if (!translate || translate.requested <= 0) return undefined;
   const name = displayLlmModel(translate.model);
+  // 沒有 fallback 紀錄時分子用 succeeded，舊信尾格式不變（PR #41）。
   if (!translate.fallback) {
     return `translate: ${name} ${translate.succeeded}/${translate.requested}`;
   }

@@ -62,6 +62,7 @@ export function resolveDigestProviderFlags(
 /**
  * Featured-summarize fallback endpoint view（PR #34）：換 key／baseUrl／model／flags，
  * 不能只改 model 字串還打 primary NVIDIA client。fallback 未開 → undefined。
+ * Overflow translate 也走這個 endpoint（PR #41）。Spatial／routing 不接。
  */
 export function withDigestFallbackEndpoint(config: DigestLlmConfig): DigestLlmConfig | undefined {
   const model = config.fallbackModel?.trim();

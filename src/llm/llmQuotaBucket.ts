@@ -35,7 +35,7 @@ export function credentialFingerprint(apiKey: string): string {
 
 /**
  * `profile` 省略時依 baseUrl 推斷（未知 host 為 generic，不是 NVIDIA 2s）。
- * 呼叫端若已解析 env profile，必須傳入，否則明示 generic 仍會被 NVIDIA host 蓋掉。
+ * 呼叫端若已解析 env profile，必須傳入，否則明示 generic 仍會被 NVIDIA host 蓋掉（PR #41）。
  */
 export function resolveLlmQuotaTarget(
   baseUrl: string,

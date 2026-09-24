@@ -159,6 +159,7 @@ function sanitizeTranslateModels(raw: unknown): DigestTranslateModels | undefine
   const succeeded = finiteNumber(record.succeeded);
   const failed = finiteNumber(record.failed);
   const model = sanitizePersistedLlmModelUsage(record.model);
+  // 舊 papers.json 只有 model／succeeded。缺 primarySucceeded 或 fallback 仍留這段，不能整段丟掉（PR #41）。
   if (requested == null || succeeded == null || failed == null || !model) return undefined;
 
   const translate: DigestTranslateModels = { requested, succeeded, failed, model };

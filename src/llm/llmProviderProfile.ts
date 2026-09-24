@@ -4,6 +4,7 @@
  * 未設定 profile env 時，只對已知 host 套用 nvidia／gemini。
  * 其餘 host，以及明示 `generic`，不送 `chat_template_kwargs`，也不套 NVIDIA 2s 間隔。
  * Prompt builder 仍只看 `disableThinking`／`preferJsonResponseFormat`，換模型不用改它們。
+ * 非法 profile env 直接 throw，不靜默當成 nvidia（PR #41）。
  */
 import {
   GEMINI_LLM_RATE_POLICY,

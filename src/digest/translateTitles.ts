@@ -2,9 +2,9 @@
  * Phase 2b：overflow（非 featured）批次翻英文標題 → `titleZh`。
  *
  * 失敗契約：
- * - 整批 HTTP／JSON 失敗 → 同一批改打 digest fallback endpoint（若有設定）
- * - fallback 也失敗 → 該批留英文標題，繼續下一批，不中斷 daily
- * - 部分 item schema invalid → 保留合法項；缺的 id 才送 fallback（PR #31 salvage）
+ * - 整批 HTTP／JSON 失敗 → 同一批改打 digest fallback endpoint（若有設定）（PR #41）
+ * - fallback 也失敗 → 該批留英文標題，繼續下一批，不中斷 daily（PR #41）
+ * - 部分 item schema invalid → 保留合法項（PR #31 salvage）；缺的 id 才送 fallback（PR #41）
  *
  * LLM HTTP 走 `callDigestChatCompletion`（gate=`digest-translate`）。
  * 逐項解析契約 owner：`parseTranslateBatchResponse`。
