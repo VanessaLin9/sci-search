@@ -103,7 +103,13 @@ function emptyDigestBlock(): NonNullable<ProcessedPapersFile["digest"]> {
       fallbackSucceeded: 0,
       failed: 0,
     },
-    translate: { requested: 0, llmTranslated: 0, failed: 0 },
+    translate: {
+      requested: 0,
+      llmTranslated: 0,
+      primarySucceeded: 0,
+      fallbackSucceeded: 0,
+      failed: 0,
+    },
   };
 }
 

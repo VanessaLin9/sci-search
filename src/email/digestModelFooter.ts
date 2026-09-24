@@ -88,5 +88,17 @@ function formatTranslateLine(
 ): string | undefined {
   if (!translate || translate.requested <= 0) return undefined;
   const name = displayLlmModel(translate.model);
-  return `translate: ${name} ${translate.succeeded}/${translate.requested}`;
+  if (!translate.fallback) {
+    return `translate: ${name} ${translate.succeeded}/${translate.requested}`;
+  }
+
+  const primarySucceeded =
+    translate.primarySucceeded ?? translate.succeeded - translate.fallback.succeeded;
+  let line =
+    `translate: ${name} ${primarySucceeded}/${translate.requested}` +
+    `，fallback: ${displayLlmModel(translate.fallback)} ${translate.fallback.succeeded}/${translate.requested}`;
+  if (translate.failed > 0) {
+    line += `，failed ${translate.failed}`;
+  }
+  return line;
 }

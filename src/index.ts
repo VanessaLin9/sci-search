@@ -104,6 +104,7 @@ async function main() {
     if (result.digest.translate.requested > 0) {
       logDigest(
         `translate: ${result.digest.translate.llmTranslated}/${result.digest.translate.requested} overflow` +
+          ` (primary ${result.digest.translate.primarySucceeded}, fallback ${result.digest.translate.fallbackSucceeded})` +
           (result.digest.translate.failed > 0 ? `, ${result.digest.translate.failed} without titleZh` : ""),
       );
     }

@@ -19,9 +19,13 @@ export type DigestSummarizeModels = {
 
 export type DigestTranslateModels = {
   requested: number;
+  /** primary + fallback 成功篇數。舊 footer 在沒有 fallback 時仍用這個當分子。 */
   succeeded: number;
   failed: number;
+  /** Primary model。歷史 papers.json 只寫這欄。 */
   model: LlmModelUsage;
+  primarySucceeded?: number;
+  fallback?: LlmModelUsage & { succeeded: number };
 };
 
 export type DigestLlmModelsSnapshot = {
@@ -156,6 +160,20 @@ function sanitizeTranslateModels(raw: unknown): DigestTranslateModels | undefine
   const failed = finiteNumber(record.failed);
   const model = sanitizePersistedLlmModelUsage(record.model);
   if (requested == null || succeeded == null || failed == null || !model) return undefined;
-  return { requested, succeeded, failed, model };
+
+  const translate: DigestTranslateModels = { requested, succeeded, failed, model };
+  const primarySucceeded = finiteNumber(record.primarySucceeded);
+  if (primarySucceeded != null) translate.primarySucceeded = primarySucceeded;
+
+  const fallbackUsage = sanitizePersistedLlmModelUsage(record.fallback);
+  const fallbackSucceeded = finiteNumber(
+    record.fallback && typeof record.fallback === "object"
+      ? (record.fallback as { succeeded?: unknown }).succeeded
+      : undefined,
+  );
+  if (fallbackUsage && fallbackSucceeded != null) {
+    translate.fallback = { ...fallbackUsage, succeeded: fallbackSucceeded };
+  }
+  return translate;
 }
 

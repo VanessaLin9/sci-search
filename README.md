@@ -275,7 +275,7 @@ data/processed/{date}/papers.json  # 30-day rolling retention on main
 - **bioRxiv** is live (`biorxiv-api` in `sources.json`); medRxiv is not wired
 - bioRxiv fine screen is yes-only (`not_sure` excluded); LLM failure fail-opens to keyword-matched set so cron is not blocked
 - Broad-science routing degrades (missing verdict / timeout / bad JSON) into keyword fallback or `no` — daily digest must still complete
-- Digest LLM: tagging/translate failures skip or thin out 繁中 fields; featured summarize uses primary then optional cross-provider fallback (`DIGEST_LLM_FALLBACK_*`, e.g. Gemini) for failed papers only — daily still completes (see `runDigestPhase`)
+- Digest LLM: tagging failures skip or thin out 繁中 fields; featured summarize and overflow translate both use the primary digest model, then the same optional cross-provider fallback (`DIGEST_LLM_FALLBACK_*`, e.g. Gemini) for failures only — daily still completes (see `runDigestPhase`)
 - **Zero papers** on some weekends/holidays → empty-state email and preview (expected)
 - Email and preview share one renderer; no separate “subscriber-only” content
 - LLM costs and latency scale with paper count (routing + bioRxiv gate + tagging batches + ≤12 summarize + overflow translate)

@@ -39,6 +39,27 @@ describe("toDigestModelFooterLines", () => {
     ]);
   });
 
+  test("formats translate primary/fallback counts when fallback is recorded", () => {
+    const lines = toDigestModelFooterLines({
+      digest: {
+        models: {
+          translate: {
+            requested: 8,
+            succeeded: 6,
+            failed: 2,
+            model: { requested: "env-primary", observed: ["api-primary"] },
+            primarySucceeded: 4,
+            fallback: { requested: "env-fallback", observed: ["api-fallback"], succeeded: 2 },
+          },
+        },
+      },
+    });
+
+    assert.deepEqual(lines, [
+      "translate: api-primary 4/8，fallback: api-fallback 2/8，failed 2",
+    ]);
+  });
+
   test("appends failed N and omits fallback clause when unset", () => {
     const lines = toDigestModelFooterLines({
       digest: {

@@ -81,6 +81,13 @@ function assertTranslateStats(processed: ProcessedPapersFile): void {
 
   assert.equal(translate.llmTranslated + translate.failed, translate.requested);
   assert.equal(translate.requested, overflowCount);
+  if (translate.primarySucceeded != null || translate.fallbackSucceeded != null) {
+    assert.equal(
+      (translate.primarySucceeded ?? 0) + (translate.fallbackSucceeded ?? 0),
+      translate.llmTranslated,
+      "primary+fallback should equal llmTranslated",
+    );
+  }
 }
 
 /** Shared schema + invariants for any non-empty pipeline run. */
