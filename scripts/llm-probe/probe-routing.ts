@@ -17,7 +17,7 @@ import {
   getDigestLlmConfig,
 } from "../../src/digest/config.js";
 import { callRoutingCompletion } from "../../src/routing/callRoutingCompletion.js";
-import { getRoutingLlmConfig, isNvidiaIntegrateApi, maskApiKey } from "../../src/routing/config.js";
+import { getRoutingLlmConfig, maskApiKey } from "../../src/routing/config.js";
 import { buildRoutingCompletionParams } from "../../src/routing/routingPrompt.js";
 import type { BroadScienceRoutingInput } from "../../src/routing/types.js";
 import {
@@ -82,12 +82,18 @@ async function main(): Promise<void> {
         "--use-digest-fallback requires DIGEST_LLM_FALLBACK_MODEL and DIGEST_LLM_FALLBACK_API_KEY in .env",
       );
     }
+    const fallbackProfile = digest.fallbackProviderProfile;
+    if (!fallbackProfile) {
+      throw new Error(
+        "--use-digest-fallback requires a resolved digest fallback profile (DIGEST_LLM_FALLBACK_MODEL + API key).",
+      );
+    }
     config.model = cli.model ?? fallbackModel;
     config.apiKey = fallbackApiKey;
     config.baseUrl = fallbackBaseUrl;
-    const nvidia = isNvidiaIntegrateApi(config.baseUrl);
-    config.preferJsonResponseFormat = !nvidia;
-    config.disableThinking = false;
+    config.providerProfile = fallbackProfile;
+    config.preferJsonResponseFormat = fallbackProfile.preferJsonResponseFormat;
+    config.disableThinking = fallbackProfile.disableThinking;
   } else if (cli.model) {
     config.model = cli.model;
   }

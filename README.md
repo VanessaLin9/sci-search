@@ -174,12 +174,15 @@ Fixtures live in [`test/fixtures/regression/`](test/fixtures/regression/) (0522:
 | `ROUTE_LIFE_SCIENCE` | no | `1` to enable routing (on in CI) |
 | `ROUTING_LLM_API_KEY` | if routing | Or `NVIDIA_API_KEY` / `OPENAI_API_KEY` |
 | `ROUTING_LLM_MODEL` | if routing | Model id (not in repo) |
+| `ROUTING_LLM_PROFILE` | no | `nvidia` / `gemini` / `generic`. Unset infers from [`config/routing.json`](config/routing.json) `baseUrl`. Unknown hosts and `generic` do not send thinking kwargs and do not use the NVIDIA 2s rate |
 | `ENABLE_LLM_DIGEST` | no | `1` for LLM tagging + summarize + translate |
 | `DIGEST_LLM_API_KEY` | no | Falls back to routing key |
 | `DIGEST_LLM_MODEL` | if digest on | Primary digest model (e.g. `meta/muse-glimmer-30b` on NVIDIA integrate) |
+| `DIGEST_LLM_PROFILE` | no | Same ids as `ROUTING_LLM_PROFILE`. Unset infers from [`config/digest.json`](config/digest.json) `baseUrl` |
 | `DIGEST_LLM_FALLBACK_MODEL` | no | Featured summarize fallback model (e.g. `gemini-3.5-flash-lite`); unset = fallback off |
 | `DIGEST_LLM_FALLBACK_API_KEY` | if fallback on | Gemini API key — **not** the NVIDIA／routing key chain |
 | `DIGEST_LLM_FALLBACK_BASE_URL` | no | Default `https://generativelanguage.googleapis.com/v1beta/openai/` |
+| `DIGEST_LLM_FALLBACK_PROFILE` | no | Same ids. Unset infers from the fallback base URL |
 | `DEBUG_NORMALIZED` | no | `1` for verbose logs |
 
 Digest logs use `[digest]`; routing uses `[routing]`; bioRxiv ingest uses `[biorxiv]` / `[biorxiv-gate]` (not gated by debug).
@@ -211,11 +214,14 @@ On `main`, only the most recent **30 days** of `data/processed/{date}/` and `doc
 | `RESEND_ACCOUNT_EMAIL` | yes (sandbox) | Your Resend login email — required while `DIGEST_FROM_EMAIL` is `onboarding@resend.dev` |
 | `ROUTING_LLM_API_KEY` | yes | Used for routing; digest can reuse via fallback |
 | `ROUTING_LLM_MODEL` | yes | |
+| `ROUTING_LLM_PROFILE` | no | `nvidia` / `gemini` / `generic`. Unset keeps host inference |
 | `DIGEST_LLM_MODEL` | recommended | CI falls back to `ROUTING_LLM_MODEL` if unset |
+| `DIGEST_LLM_PROFILE` | no | Same ids as `ROUTING_LLM_PROFILE` |
 | `DIGEST_LLM_API_KEY` | no | Optional separate primary key |
 | `DIGEST_LLM_FALLBACK_MODEL` | no | e.g. `gemini-3.5-flash-lite`; unset = summarize fallback off |
 | `DIGEST_LLM_FALLBACK_API_KEY` | if fallback on | Gemini key for featured-summarize fallback only |
 | `DIGEST_LLM_FALLBACK_BASE_URL` | no | Optional; code defaults to Gemini OpenAI-compat URL |
+| `DIGEST_LLM_FALLBACK_PROFILE` | no | Same ids. Unset infers from the fallback base URL |
 | `DIGEST_SUBJECT_PREFIX` | no | Override `config/email.json` if needed |
 
 **Resend sandbox:** `onboarding@resend.dev` only delivers to your account inbox. Set `RESEND_ACCOUNT_EMAIL` to that address; extra recipients in `DIGEST_TO_EMAIL` are skipped (warning in log) until you verify a domain and change `DIGEST_FROM_EMAIL`.

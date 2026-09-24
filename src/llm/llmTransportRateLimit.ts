@@ -20,10 +20,16 @@ import {
   type LlmSchedulePermitContext,
 } from "./llmRequestScheduler.js";
 import { resolveLlmQuotaTarget, type ResolvedLlmQuotaTarget } from "./llmQuotaBucket.js";
+import type { LlmProviderProfile } from "./llmProviderProfile.js";
 
 export type LlmTransportRateLimitOptions = {
   baseUrl: string;
   apiKey: string;
+  /**
+   * Explicit profile from the caller config. Omit only when the caller has not
+   * resolved one; the quota target then infers from baseUrl (unknown → generic).
+   */
+  profile?: LlmProviderProfile;
   /** Absolute queue deadline on the scheduler clock；逾時則不送出。 */
   resolveDeadlineAtMs?: () => number | undefined;
   signal?: AbortSignal;
@@ -53,7 +59,7 @@ function createAutoAdvanceClock(startMs = 1_000_000): Clock {
 /** Offline tests：安裝可注入 clock 的 scheduler。預設 0-spacing；CP2 整合測試可改用 provider policies。 */
 export function installLlmRateLimitTestHarness(options?: {
   minStartIntervalMs?: number;
-  /** Keep NVIDIA 2s / Gemini 5s from resolveLlmQuotaTarget（不覆蓋 policy）。 */
+  /** Keep resolved NVIDIA 2s / Gemini 5s / generic 5s from resolveLlmQuotaTarget（不覆蓋 policy）。 */
   useProviderPolicies?: boolean;
   scheduler?: LlmRequestScheduler;
   clock?: Clock;
@@ -83,7 +89,7 @@ function resolveScheduler(): LlmRequestScheduler {
 export function resolveTransportQuotaTarget(
   options: LlmTransportRateLimitOptions,
 ): ResolvedLlmQuotaTarget {
-  const target = resolveLlmQuotaTarget(options.baseUrl, options.apiKey);
+  const target = resolveLlmQuotaTarget(options.baseUrl, options.apiKey, options.profile);
   if (testOverrides?.policy) {
     return { ...target, policy: testOverrides.policy };
   }
