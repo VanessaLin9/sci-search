@@ -1,0 +1,397 @@
+{
+  "reportDate": "2026-09-24",
+  "generatedAt": "2026-09-25T15:21:49.997Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03212-9",
+      "title": "ResolVI: addressing noise and bias in spatial transcriptomics",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-09-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03212-9",
+      "doi": "10.1038/s41592-026-03212-9",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "ResolVI：解決空間轉錄組學中的雜訊與偏差"
+    },
+    {
+      "id": "10.1038/s41592-026-03222-7",
+      "title": "Solid-state nanopore sensing: the next workhorse of biophysical characterization",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-09-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03222-7",
+      "doi": "10.1038/s41592-026-03222-7",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "固態奈米孔感測：生物物理表徵的下一代主力工具"
+    },
+    {
+      "id": "10.1038/s41588-026-02746-0",
+      "title": "Human facial development atlas illuminates enhancer-based control of facial individuality",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-09-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02746-0",
+      "doi": "10.1038/s41588-026-02746-0",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "人類面部發育圖譜揭示增強子對面部個體差異的調控"
+    },
+    {
+      "id": "10.1038/s41588-026-02748-y",
+      "title": "Atlas of cell types and regulatory elements underlying human facial diversity",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-09-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02748-y",
+      "doi": "10.1038/s41588-026-02748-y",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "人類面部多樣性背後的細胞類型與調控元件圖譜"
+    },
+    {
+      "id": "10.1038/s41588-026-02745-1",
+      "title": "Divergent medulloblastoma chromatin states disclose KDM2B as a selective dependency",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-09-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02745-1",
+      "doi": "10.1038/s41588-026-02745-1",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "分歧的髓母細胞瘤染色質狀態揭示 KDM2B 為選擇性依賴"
+    },
+    {
+      "id": "10.1038/s41556-026-02070-z",
+      "title": "Scientific culture in the age of AI",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-09-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02070-z",
+      "doi": "10.1038/s41556-026-02070-z",
+      "abstract": "Recent changes in Genentech’s scientific organization, occurring as the company makes artificial intelligence (AI) increasingly central to its research strategy, highlight a broader question facing biomedical research: how will the growing use of AI reshape the process of scientific discovery?",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "AI時代的科學文化",
+      "summaryZh": "本文以Genentech近期科學組織的變動為例，指出該公司正將人工智慧愈加置於研究策略的核心。這些組織變化凸顯了生物醫學研究面臨的更廣泛問題。作者提出，隨著AI使用日益增加，科學發現的過程將如何被重塑。",
+      "topicTags": [
+        "artificial-intelligence",
+        "scientific-culture",
+        "biomedical-research",
+        "research-organization"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02079-4",
+      "title": "Taxane-induced conformational changes in the microtubule lattice activate GEF-H1-dependent RhoA signalling",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-09-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02079-4",
+      "doi": "10.1038/s41556-026-02079-4",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "紫杉烷誘導的微管晶格構形變化活化 GEF-H1 依賴性 RhoA 信號傳導"
+    },
+    {
+      "id": "10.1038/s41556-026-02067-8",
+      "title": "The dual-enhanced graph learning framework DePass allows paired data integration in single-cell and spatial multiomics",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-09-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02067-8",
+      "doi": "10.1038/s41556-026-02067-8",
+      "abstract": "Li, Jiang and colleagues present DePass, a graph-based deep learning framework for integrating paired multi-omics data in spatial and single-cell contexts. A dual-enhancement approach is used to remove noise from raw omics data using neighbourhood aggregation.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "雙增強圖學習框架 DePass 整合單細胞與空間多體學配對資料",
+      "summaryZh": "Li、Jiang 等人提出 DePass，一個基於圖的深度學習框架，用於整合空間與單細胞情境中的配對多體學資料。該框架採用雙增強方法，利用鄰域聚合來降低原始體學資料的雜訊。DePass 針對配對多體學資料的整合設計，適用於單細胞與空間多體學情境。",
+      "topicTags": [
+        "single-cell",
+        "spatial-omics",
+        "multiomics",
+        "graph-learning",
+        "deep-learning"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02468-w",
+      "title": "Reconciling global collaboration and data sovereignty in neuroscience",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-09-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02468-w",
+      "doi": "10.1038/s41593-026-02468-w",
+      "abstract": "Tension exists between the need for an open science culture and data sovereignty in global brain research. Ray et al. propose practical mechanisms for secure and equitable international collaboration.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "neuroscience"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "調和全球合作與神經科學資料主權",
+      "summaryZh": "Ray 等人在《Nature Neuroscience》指出，全球腦科學研究中存在開放科學文化需求與資料主權之間的張力。該文針對此議題提出實務機制，以促進國際合作。作者主張這些機制可兼顧安全與公平，讓跨國神經科學研究在尊重資料主權的前提下進行。",
+      "topicTags": [
+        "neuroscience",
+        "data-sovereignty",
+        "open-science",
+        "international-collaboration"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02663-8",
+      "title": "Remodeling of a distal IRF4 element spurs human regulatory T cell instability under inflammatory conditions",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-09-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02663-8",
+      "doi": "10.1038/s41590-026-02663-8",
+      "abstract": "In an in vitro model, human regulatory T cells undergo inflammatory cytokine-driven reprogramming, resulting in increased chromatin accessibility at AP-1-binding sites, increased IRF4 expression and, ultimately, loss of lineage identity and suppressive function. Deletion of an open chromatin region distal to IRF4 protects cells from this cytokine-induced destabilization.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "遠端 IRF4 元素重塑促使人類調節性 T 細胞在發炎條件下不穩定",
+      "summaryZh": "該研究在體外模型中觀察到，人類調節性 T 細胞在發炎性細胞激素驅動的重編程下會失去譜系特性和抑制功能。重編程伴隨 AP-1 結合位點的染色質可及性增加，以及 IRF4 表現上升。研究指出，IRF4 遠端的一個開放染色質區域在該過程中被重塑。刪除此遠端開放染色質區域可使細胞免於細胞激素誘導的不穩定化。",
+      "topicTags": [
+        "regulatory-t-cells",
+        "irf4",
+        "chromatin-remodeling",
+        "inflammation",
+        "immunology"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02469-2",
+      "title": "Pseudomonas aeruginosa induces the generation of pathogenic IFNγ+Th17 cells that promote lung damage and chronic inflammation in cystic fibrosis",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-09-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02469-2",
+      "doi": "10.1038/s41564-026-02469-2",
+      "abstract": "Pseudomonas aeruginosa drives harmful immune responses in cystic fibrosis by reprogramming protective Th17 cells into pathogenic populations that damage lung tissue and sustain chronic inflammation.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "綠膿桿菌誘發致病性 IFNγ+ Th17 細胞，加劇囊性纖維化肺損傷與慢性發炎",
+      "summaryZh": "該研究指出，Pseudomonas aeruginosa 在囊性纖維化中驅動有害的免疫反應。細菌會將原本具保護性的 Th17 細胞重新編程為致病性族群。這些致病性 IFNγ+ Th17 細胞會促進肺組織損傷並維持慢性發炎。研究結果顯示此免疫重編程與囊性纖維化肺部病理相關。",
+      "topicTags": [
+        "pseudomonas-aeruginosa",
+        "cystic-fibrosis",
+        "th17-cells",
+        "lung-inflammation",
+        "immunology"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 18,
+      "passedByScope": 11,
+      "llmClassified": 7,
+      "llmYes": 3,
+      "llmNotSure": 2,
+      "llmNo": 2,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 16,
+      "excluded": 2
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 11,
+      "llmTagged": 11,
+      "llmLineA": 4,
+      "llmLineB": 7,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 11,
+      "candidates": 11,
+      "featured": 5,
+      "overflow": 6,
+      "lineA": 4,
+      "lineB": 7,
+      "preprint": 0,
+      "skip": 0,
+      "featuredLineA": 1,
+      "featuredLineB": 4,
+      "featuredPreprint": 0,
+      "overflowLineA": 3,
+      "overflowLineB": 3,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 5,
+      "llmSummarized": 5,
+      "primarySucceeded": 5,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 6,
+      "llmTranslated": 6,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 11
+      },
+      "summarize": {
+        "requested": 5,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 5
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 6,
+        "succeeded": 6,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03024-z",
+        "title": "AI agent hacks government website for first time: why this breach matters",
+        "journal": "Nature",
+        "publishedDate": "2026-09-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03024-z",
+        "doi": "10.1038/d41586-026-03024-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03029-8",
+        "title": "Daily briefing: Will AI really be the death of us all?",
+        "journal": "Nature",
+        "publishedDate": "2026-09-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03029-8",
+        "doi": "10.1038/d41586-026-03029-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
