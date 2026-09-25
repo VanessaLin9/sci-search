@@ -66,7 +66,7 @@ npm run probe:translate -- --file path/to/papers.json --limit 3
 ## 選型提醒
 
 - **ROUTING**：速度 + JSON verdict；中文品質次要
-- **Summarize／Translate**：繁中品質重要；translate **沒有** Gemini fallback（除非你改 production）
+- **Summarize／Translate**：繁中品質重要。兩邊失敗都會走 `DIGEST_LLM_FALLBACK_*`；`--use-digest-fallback` 是讓 probe 一開始就打 fallback endpoint
 - NVIDIA free 下架很常見：先 `probe:endpoint`，再打對應階段 probe
 - 單篇／短樣 OK ≠ daily 連打 OK（留意 429／503）
 

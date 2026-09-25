@@ -147,6 +147,31 @@ describe("profile env on routing and digest config", () => {
     assert.equal(config.providerProfile?.policy, GENERIC_LLM_RATE_POLICY);
   });
 
+  test("ROUTING_LLM_BASE_URL overrides routing.json and inference follows that host", () => {
+    process.env.ROUTING_LLM_API_KEY = "routing-key";
+    process.env.ROUTING_LLM_MODEL = "some-model";
+    delete process.env.ROUTING_LLM_PROFILE;
+    process.env.ROUTING_LLM_BASE_URL = "https://llm.example.test/v1/";
+
+    const config = getRoutingLlmConfig();
+    assert.equal(config.baseUrl, "https://llm.example.test/v1");
+    assert.equal(config.providerProfile?.id, "generic");
+    assert.equal(config.providerProfile?.policy, GENERIC_LLM_RATE_POLICY);
+  });
+
+  test("DIGEST_LLM_BASE_URL overrides digest.json", () => {
+    process.env.DIGEST_LLM_API_KEY = "digest-key";
+    process.env.DIGEST_LLM_MODEL = "some-model";
+    delete process.env.DIGEST_LLM_PROFILE;
+    delete process.env.DIGEST_LLM_FALLBACK_MODEL;
+    delete process.env.DIGEST_LLM_FALLBACK_API_KEY;
+    process.env.DIGEST_LLM_BASE_URL = "https://llm.example.test/v1/";
+
+    const config = getDigestLlmConfig();
+    assert.equal(config.baseUrl, "https://llm.example.test/v1");
+    assert.equal(config.providerProfile?.id, "generic");
+  });
+
   test("DIGEST_LLM_PROFILE=generic overrides the primary NVIDIA host", () => {
     process.env.DIGEST_LLM_API_KEY = "digest-key";
     process.env.DIGEST_LLM_MODEL = "some-model";

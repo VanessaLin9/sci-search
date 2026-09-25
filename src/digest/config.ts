@@ -137,7 +137,8 @@ export function getDigestLlmConfig(): DigestLlmConfig {
     );
   }
 
-  const baseUrl = file.baseUrl.replace(/\/$/, "");
+  // 未設時沿用 digest.json。換端點只改 env，不必改 repo（PR #41）。
+  const baseUrl = (process.env.DIGEST_LLM_BASE_URL?.trim() || file.baseUrl).replace(/\/$/, "");
   const primaryProfile = resolveDigestProviderFlags(
     baseUrl,
     file.enableThinking,

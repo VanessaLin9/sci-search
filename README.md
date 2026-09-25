@@ -174,12 +174,14 @@ Fixtures live in [`test/fixtures/regression/`](test/fixtures/regression/) (0522:
 | `ROUTE_LIFE_SCIENCE` | no | `1` to enable routing (on in CI) |
 | `ROUTING_LLM_API_KEY` | if routing | Or `NVIDIA_API_KEY` / `OPENAI_API_KEY` |
 | `ROUTING_LLM_MODEL` | if routing | Model id (not in repo) |
-| `ROUTING_LLM_PROFILE` | no | `nvidia` / `gemini` / `generic`. Unset infers from [`config/routing.json`](config/routing.json) `baseUrl`. Unknown hosts and `generic` do not send thinking kwargs and do not use the NVIDIA 2s rate |
+| `ROUTING_LLM_PROFILE` | no | `nvidia` / `gemini` / `generic`. Unset infers from the resolved routing base URL. Unknown hosts and `generic` do not send thinking kwargs and do not use the NVIDIA 2s rate |
+| `ROUTING_LLM_BASE_URL` | no | Overrides [`config/routing.json`](config/routing.json) `baseUrl`. Unset keeps the file |
 | `ENABLE_LLM_DIGEST` | no | `1` for LLM tagging + summarize + translate |
 | `DIGEST_LLM_API_KEY` | no | Falls back to routing key |
 | `DIGEST_LLM_MODEL` | if digest on | Primary digest model (e.g. `meta/muse-glimmer-30b` on NVIDIA integrate) |
-| `DIGEST_LLM_PROFILE` | no | Same ids as `ROUTING_LLM_PROFILE`. Unset infers from [`config/digest.json`](config/digest.json) `baseUrl` |
-| `DIGEST_LLM_FALLBACK_MODEL` | no | Featured summarize fallback model (e.g. `gemini-3.5-flash-lite`); unset = fallback off |
+| `DIGEST_LLM_PROFILE` | no | Same ids as `ROUTING_LLM_PROFILE`. Unset infers from the resolved digest base URL |
+| `DIGEST_LLM_BASE_URL` | no | Overrides [`config/digest.json`](config/digest.json) `baseUrl`. Unset keeps the file |
+| `DIGEST_LLM_FALLBACK_MODEL` | no | Fallback for featured summarize and overflow translate (e.g. `gemini-3.5-flash-lite`); unset = fallback off |
 | `DIGEST_LLM_FALLBACK_API_KEY` | if fallback on | Gemini API key — **not** the NVIDIA／routing key chain |
 | `DIGEST_LLM_FALLBACK_BASE_URL` | no | Default `https://generativelanguage.googleapis.com/v1beta/openai/` |
 | `DIGEST_LLM_FALLBACK_PROFILE` | no | Same ids. Unset infers from the fallback base URL |
@@ -215,11 +217,13 @@ On `main`, only the most recent **30 days** of `data/processed/{date}/` and `doc
 | `ROUTING_LLM_API_KEY` | yes | Used for routing; digest can reuse via fallback |
 | `ROUTING_LLM_MODEL` | yes | |
 | `ROUTING_LLM_PROFILE` | no | `nvidia` / `gemini` / `generic`. Unset keeps host inference |
+| `ROUTING_LLM_BASE_URL` | no | Overrides `config/routing.json`. Unset keeps the file |
 | `DIGEST_LLM_MODEL` | recommended | CI falls back to `ROUTING_LLM_MODEL` if unset |
 | `DIGEST_LLM_PROFILE` | no | Same ids as `ROUTING_LLM_PROFILE` |
 | `DIGEST_LLM_API_KEY` | no | Optional separate primary key |
-| `DIGEST_LLM_FALLBACK_MODEL` | no | e.g. `gemini-3.5-flash-lite`; unset = summarize fallback off |
-| `DIGEST_LLM_FALLBACK_API_KEY` | if fallback on | Gemini key for featured-summarize fallback only |
+| `DIGEST_LLM_BASE_URL` | no | Overrides `config/digest.json`. Unset keeps the file |
+| `DIGEST_LLM_FALLBACK_MODEL` | no | e.g. `gemini-3.5-flash-lite`; unset = summarize and translate fallback off |
+| `DIGEST_LLM_FALLBACK_API_KEY` | if fallback on | Gemini key for featured summarize and overflow translate |
 | `DIGEST_LLM_FALLBACK_BASE_URL` | no | Optional; code defaults to Gemini OpenAI-compat URL |
 | `DIGEST_LLM_FALLBACK_PROFILE` | no | Same ids. Unset infers from the fallback base URL |
 | `DIGEST_SUBJECT_PREFIX` | no | Override `config/email.json` if needed |

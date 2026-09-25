@@ -52,7 +52,8 @@ export function getRoutingLlmConfig(): RoutingLlmConfig {
     );
   }
 
-  const baseUrl = file.baseUrl.replace(/\/$/, "");
+  // 未設時沿用 routing.json。換端點只改 env，不必改 repo（PR #41）。
+  const baseUrl = (process.env.ROUTING_LLM_BASE_URL?.trim() || file.baseUrl).replace(/\/$/, "");
   const providerProfile = resolveLlmProviderProfile({
     baseUrl,
     profileId: readLlmProviderProfileId("ROUTING_LLM_PROFILE"),

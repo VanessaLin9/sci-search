@@ -116,6 +116,7 @@ async function main(): Promise<void> {
     model: config.model,
     apiKey: config.apiKey,
     baseUrl: config.baseUrl,
+    profile: config.providerProfile,
   });
   if (argv.includes("--smoke-only")) return;
 

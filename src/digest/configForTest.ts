@@ -18,15 +18,16 @@ export function getDigestLlmConfigForTest(options?: {
 
   const routing = getRoutingLlmConfig();
   const file = loadDigestFileConfig();
+  const baseUrl = (process.env.DIGEST_LLM_BASE_URL?.trim() || file.baseUrl).replace(/\/$/, "");
   const providerProfile = resolveLlmProviderProfile({
-    baseUrl: file.baseUrl,
+    baseUrl,
     profileId: readLlmProviderProfileId("DIGEST_LLM_PROFILE"),
     enableThinking: file.enableThinking,
   });
 
   return {
     apiKey: routing.apiKey,
-    baseUrl: file.baseUrl,
+    baseUrl,
     model: options?.modelOverride ?? routing.model,
     maxFeatured: file.maxFeatured,
     overflowShowTitleZh: file.overflowShowTitleZh,
