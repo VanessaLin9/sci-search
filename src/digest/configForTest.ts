@@ -1,6 +1,7 @@
 import { loadDigestFileConfig } from "../config.js";
 import { getDigestLlmConfig, type DigestLlmConfig } from "./config.js";
-import { getRoutingLlmConfig, isNvidiaIntegrateApi } from "../routing/config.js";
+import { readLlmProviderProfileId, resolveLlmProviderProfile } from "../llm/llmProviderProfile.js";
+import { getRoutingLlmConfig } from "../routing/config.js";
 
 /** One-off digest LLM config: reuse routing credentials (same .env as test-routing-llm). */
 export function getDigestLlmConfigForTest(options?: {
@@ -17,11 +18,16 @@ export function getDigestLlmConfigForTest(options?: {
 
   const routing = getRoutingLlmConfig();
   const file = loadDigestFileConfig();
-  const nvidia = isNvidiaIntegrateApi(file.baseUrl);
+  const baseUrl = (process.env.DIGEST_LLM_BASE_URL?.trim() || file.baseUrl).replace(/\/$/, "");
+  const providerProfile = resolveLlmProviderProfile({
+    baseUrl,
+    profileId: readLlmProviderProfileId("DIGEST_LLM_PROFILE"),
+    enableThinking: file.enableThinking,
+  });
 
   return {
     apiKey: routing.apiKey,
-    baseUrl: file.baseUrl,
+    baseUrl,
     model: options?.modelOverride ?? routing.model,
     maxFeatured: file.maxFeatured,
     overflowShowTitleZh: file.overflowShowTitleZh,
@@ -36,7 +42,8 @@ export function getDigestLlmConfigForTest(options?: {
     summarizeMaxRetries: file.summarizeMaxRetries,
     summarizeConcurrency: file.summarizeConcurrency,
     summarizeFallbackConcurrency: file.summarizeFallbackConcurrency,
-    preferJsonResponseFormat: !nvidia,
-    disableThinking: nvidia && !file.enableThinking,
+    preferJsonResponseFormat: providerProfile.preferJsonResponseFormat,
+    disableThinking: providerProfile.disableThinking,
+    providerProfile,
   };
 }

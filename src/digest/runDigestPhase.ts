@@ -4,7 +4,7 @@
  * 失敗契約（與 routing degrade 同精神：寧可缺繁中，也不中斷 daily）：
  * - spatial classify 整段掛掉 → keyword digestLine（PRIMARY → A，否則 B）
  * - summarize 失敗 → featured 仍寄出，缺 titleZh/summaryZh（郵件可回退英文 abstract）
- * - translate 失敗 → overflow 只留英文標題，無備援模型／關鍵字翻譯
+ * - translate 整批或單篇失敗 → 同一批缺的 id 改打 digest fallback endpoint；再失敗才留英文標題
  * - A/B 不再由第二個 digest tagging LLM 決定（PR #38）
  */
 import { loadDigestFileConfig } from "../config.js";
@@ -76,6 +76,8 @@ const emptySummarizeStats = (): DigestSummarizeStats => ({
 const emptyTranslateStats = (): DigestTranslateStats => ({
   requested: 0,
   llmTranslated: 0,
+  primarySucceeded: 0,
+  fallbackSucceeded: 0,
   failed: 0,
 });
 
@@ -225,6 +227,8 @@ export async function runDigestPhase(options: {
         translateStats = {
           requested: overflowCount,
           llmTranslated: 0,
+          primarySucceeded: 0,
+          fallbackSucceeded: 0,
           failed: overflowCount,
         };
         translateModels = fallbackTranslateModels(overflowCount);
@@ -275,11 +279,16 @@ function fallbackSummarizeModels(featuredCount: number): DigestSummarizeModels |
 function fallbackTranslateModels(overflowCount: number): DigestTranslateModels | undefined {
   const requested = requestedModelFromEnv("DIGEST_LLM_MODEL");
   if (!requested) return undefined;
+  const fallbackRequested = requestedModelFromEnv("DIGEST_LLM_FALLBACK_MODEL");
   return {
     requested: overflowCount,
     succeeded: 0,
     failed: overflowCount,
     model: llmModelUsage(requested),
+    primarySucceeded: 0,
+    ...(fallbackRequested
+      ? { fallback: { ...llmModelUsage(fallbackRequested), succeeded: 0 } }
+      : {}),
   };
 }
 

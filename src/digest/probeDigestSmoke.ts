@@ -2,6 +2,7 @@
  * Probe smoke HTTP path（PR #35）：必須經 shared rate limiter，不得直打 create。
  * CLI：`scripts/llm-probe/probe-endpoint.ts` / `probe-summarize.ts`；offline tests 可直接呼叫本函式。
  */
+import type { LlmProviderProfile } from "../llm/llmProviderProfile.js";
 import {
   formatRateLimitPermitLog,
   scheduleLlmTransportAttempt,
@@ -23,6 +24,11 @@ export async function runProbeDigestSmoke(options: {
   model: string;
   apiKey: string;
   baseUrl: string;
+  /**
+   * 必須傳呼叫端已解析的 profile。省略時 scheduler 會依 host 推論，
+   * 明示 generic 的 NVIDIA URL 會和後面的正式請求拆成兩個 bucket（PR #41）。
+   */
+  profile?: LlmProviderProfile;
   log?: (message: string) => void;
 }): Promise<ProbeDigestSmokeResult> {
   const { model, apiKey, baseUrl } = options;
@@ -59,6 +65,7 @@ export async function runProbeDigestSmoke(options: {
       {
         baseUrl,
         apiKey,
+        profile: options.profile,
         log: (message) => log(`[smoke] ${message}`),
       },
       async (context, target) => {

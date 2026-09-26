@@ -174,12 +174,17 @@ Fixtures live in [`test/fixtures/regression/`](test/fixtures/regression/) (0522:
 | `ROUTE_LIFE_SCIENCE` | no | `1` to enable routing (on in CI) |
 | `ROUTING_LLM_API_KEY` | if routing | Or `NVIDIA_API_KEY` / `OPENAI_API_KEY` |
 | `ROUTING_LLM_MODEL` | if routing | Model id (not in repo) |
+| `ROUTING_LLM_PROFILE` | no | `nvidia` / `gemini` / `generic`. Unset infers from the resolved routing base URL. Unknown hosts and `generic` do not send thinking kwargs and do not use the NVIDIA 2s rate |
+| `ROUTING_LLM_BASE_URL` | no | Overrides [`config/routing.json`](config/routing.json) `baseUrl`. Unset keeps the file |
 | `ENABLE_LLM_DIGEST` | no | `1` for LLM tagging + summarize + translate |
 | `DIGEST_LLM_API_KEY` | no | Falls back to routing key |
 | `DIGEST_LLM_MODEL` | if digest on | Primary digest model (e.g. `meta/muse-glimmer-30b` on NVIDIA integrate) |
-| `DIGEST_LLM_FALLBACK_MODEL` | no | Featured summarize fallback model (e.g. `gemini-3.5-flash-lite`); unset = fallback off |
+| `DIGEST_LLM_PROFILE` | no | Same ids as `ROUTING_LLM_PROFILE`. Unset infers from the resolved digest base URL |
+| `DIGEST_LLM_BASE_URL` | no | Overrides [`config/digest.json`](config/digest.json) `baseUrl`. Unset keeps the file |
+| `DIGEST_LLM_FALLBACK_MODEL` | no | Fallback for featured summarize and overflow translate (e.g. `gemini-3.5-flash-lite`); unset = fallback off |
 | `DIGEST_LLM_FALLBACK_API_KEY` | if fallback on | Gemini API key — **not** the NVIDIA／routing key chain |
 | `DIGEST_LLM_FALLBACK_BASE_URL` | no | Default `https://generativelanguage.googleapis.com/v1beta/openai/` |
+| `DIGEST_LLM_FALLBACK_PROFILE` | no | Same ids. Unset infers from the fallback base URL |
 | `DEBUG_NORMALIZED` | no | `1` for verbose logs |
 
 Digest logs use `[digest]`; routing uses `[routing]`; bioRxiv ingest uses `[biorxiv]` / `[biorxiv-gate]` (not gated by debug).
@@ -211,11 +216,16 @@ On `main`, only the most recent **30 days** of `data/processed/{date}/` and `doc
 | `RESEND_ACCOUNT_EMAIL` | yes (sandbox) | Your Resend login email — required while `DIGEST_FROM_EMAIL` is `onboarding@resend.dev` |
 | `ROUTING_LLM_API_KEY` | yes | Used for routing; digest can reuse via fallback |
 | `ROUTING_LLM_MODEL` | yes | |
+| `ROUTING_LLM_PROFILE` | no | `nvidia` / `gemini` / `generic`. Unset keeps host inference |
+| `ROUTING_LLM_BASE_URL` | no | Overrides `config/routing.json`. Unset keeps the file |
 | `DIGEST_LLM_MODEL` | recommended | CI falls back to `ROUTING_LLM_MODEL` if unset |
+| `DIGEST_LLM_PROFILE` | no | Same ids as `ROUTING_LLM_PROFILE` |
 | `DIGEST_LLM_API_KEY` | no | Optional separate primary key |
-| `DIGEST_LLM_FALLBACK_MODEL` | no | e.g. `gemini-3.5-flash-lite`; unset = summarize fallback off |
-| `DIGEST_LLM_FALLBACK_API_KEY` | if fallback on | Gemini key for featured-summarize fallback only |
+| `DIGEST_LLM_BASE_URL` | no | Overrides `config/digest.json`. Unset keeps the file |
+| `DIGEST_LLM_FALLBACK_MODEL` | no | e.g. `gemini-3.5-flash-lite`; unset = summarize and translate fallback off |
+| `DIGEST_LLM_FALLBACK_API_KEY` | if fallback on | Gemini key for featured summarize and overflow translate |
 | `DIGEST_LLM_FALLBACK_BASE_URL` | no | Optional; code defaults to Gemini OpenAI-compat URL |
+| `DIGEST_LLM_FALLBACK_PROFILE` | no | Same ids. Unset infers from the fallback base URL |
 | `DIGEST_SUBJECT_PREFIX` | no | Override `config/email.json` if needed |
 
 **Resend sandbox:** `onboarding@resend.dev` only delivers to your account inbox. Set `RESEND_ACCOUNT_EMAIL` to that address; extra recipients in `DIGEST_TO_EMAIL` are skipped (warning in log) until you verify a domain and change `DIGEST_FROM_EMAIL`.
@@ -269,7 +279,7 @@ data/processed/{date}/papers.json  # 30-day rolling retention on main
 - **bioRxiv** is live (`biorxiv-api` in `sources.json`); medRxiv is not wired
 - bioRxiv fine screen is yes-only (`not_sure` excluded); LLM failure fail-opens to keyword-matched set so cron is not blocked
 - Broad-science routing degrades (missing verdict / timeout / bad JSON) into keyword fallback or `no` — daily digest must still complete
-- Digest LLM: tagging/translate failures skip or thin out 繁中 fields; featured summarize uses primary then optional cross-provider fallback (`DIGEST_LLM_FALLBACK_*`, e.g. Gemini) for failed papers only — daily still completes (see `runDigestPhase`)
+- Digest LLM: tagging failures skip or thin out 繁中 fields; featured summarize and overflow translate both use the primary digest model, then the same optional cross-provider fallback (`DIGEST_LLM_FALLBACK_*`, e.g. Gemini) for failures only — daily still completes (see `runDigestPhase`)
 - **Zero papers** on some weekends/holidays → empty-state email and preview (expected)
 - Email and preview share one renderer; no separate “subscriber-only” content
 - LLM costs and latency scale with paper count (routing + bioRxiv gate + tagging batches + ≤12 summarize + overflow translate)
