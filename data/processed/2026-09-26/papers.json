@@ -1,0 +1,373 @@
+{
+  "reportDate": "2026-09-26",
+  "generatedAt": "2026-09-27T15:12:54.426Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.09.25.754573",
+      "title": "SHERLOCK: Structured representation learning and causal inference of downstream perturbation effects",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-26",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.25.754573v1",
+      "doi": "10.64898/2026.09.25.754573",
+      "abstract": "Understanding the effects of genetic, molecular, and experimental perturbations is essential for decoding cellular mechanisms and guiding biomedical interventions. Existing computational approaches are typically designed for individual tasks, such as predicting perturbation responses, characterizing downstream transcriptional effects, or modeling perturbation combinations, and therefore do not provide a unified framework for learning interpretable perturbation representations while enabling causal analysis of downstream effects and characterization of condition-dependent responses. We present SHERLOCK, an interpretable deep generative framework for single-cell perturbation analysis that represents perturbation effects as structured interventions on a latent baseline cellular state. SHERLOCK learns correlated and sparse perturbation representations that organize genetic and pharmacological perturbations according to shared transcriptional responses. % By formulating perturbations as interventions within a structural causal model, it enables counterfactual estimation of their downstream transcriptional effects under explicit identifiability assumptions. The same framework quantifies how perturbation responses vary across conditions and compositionally models combinatorial perturbations, enabling prediction of held-out combinations and classification of genetic interactions. Across genome-scale CRISPR, chemical, and spatial perturbation datasets, SHERLOCK recovers perturbation relationships concordant with known biological pathways and pharmacological properties, identifies condition-dependent responses, and predicts combinatorial perturbation effects. Together, SHERLOCK provides a unified framework for interpretable and causal analysis of perturbation effects across diverse single-cell perturbation experiments.",
+      "authors": [
+        "Zhang, M.",
+        "Myers, J. D.",
+        "Shi, L.",
+        "Giglio, R. M.",
+        "Chatterjee, S.",
+        "McFaline-Figueroa, J. L.",
+        "Azizi, E."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "CRISPR",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "SHERLOCK：結構化表徵學習與下游干擾效應因果推論",
+      "summaryZh": "研究團隊提出 SHERLOCK，一個可解釋的深度生成框架，用於單細胞干擾分析。該框架將干擾效應表徵為對潛在基線細胞狀態的結構化介入，並學習相關且稀疏的干擾表徵，使基因與藥理干擾依共享轉錄反應而組織。透過將干擾以結構因果模型中的介入方式表述，SHERLOCK 在明確可識別性假設下可進行反事實估計下游轉錄效應。同一框架可量化干擾反應在不同條件下的變化，並以組合方式建模組合干擾，從而預測未見組合並分類基因交互作用。在基因規模 CRISPR、化學與空間干擾資料集中，SHERLOCK 回收與已知生物途徑和藥理特性一致的干擾關係，辨識條件依賴性反應並預測組合干擾效應。",
+      "topicTags": [
+        "single-cell",
+        "perturbation",
+        "causal-inference",
+        "deep-learning",
+        "genomics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.09.25.754560",
+      "title": "Pop-Corn: Predicting Perturbation Phenotype Effects Across Single-Cell and Spatial Contexts",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-26",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.25.754560v1",
+      "doi": "10.64898/2026.09.25.754560",
+      "abstract": "Genetic perturbations can reshape cell populations by altering the relative abundance of specific cell types and states within the profiled population, including increases, decreases and states that become detectable after perturbation. Pooled single-cell screens, such as Perturb-seq, measure such responses at scale. However, only a small fraction of possible perturbations can be tested experimentally. A central challenge is therefore to predict compositional shifts induced by unseen perturbations. Many perturbation-prediction methods do not directly optimize for this outcome; instead, they predict gene-expression responses and infer cell-type and cell-state composition downstream. Surprisingly, we find that even models that accurately predict perturbation-induced changes in average gene expression perform poorly at forecasting these compositional shifts. To address this gap, we present Pop-Corn, a method that directly predicts how a perturbation reshapes cell-type composition without reconstructing gene expression. In the primary T-cell benchmark, Pop-Corn predicted the overall cell-state composition of held-out perturbations more accurately than the evaluated expression-prediction pipelines, while better preserving the diversity of observed cell states. We further extend Pop-Corn to intact tissue, where it predicts perturbation-induced cell-type proportion changes in local cellular neighborhoods and uses attention patterns to generate hypotheses about context-dependent cellular interactions. Retrospective virtual screens support the use of Pop-Corn to prioritize perturbations for experimental follow-up according to their predicted effects on cell-state composition.",
+      "authors": [
+        "Chen, J.",
+        "Cui, Y.",
+        "Shao, Y.",
+        "Sun, N.",
+        "Martinez, M. R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "Perturb-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "Pop-Corn：跨單細胞與空間情境預測擾動表型效應",
+      "summaryZh": "本研究提出 Pop-Corn，一種直接預測擾動如何重塑細胞類型組成的方法，而不重建基因表現。作者指出，即使能準確預測擾動誘發的平均基因表現變化，許多方法仍難以預測組成性變化。在主要 T 細胞基準測試中，Pop-Corn 預測被保留擾動的整體細胞狀態組成時，比評估的表現預測流程更準確，且較好地保留了觀察到的細胞狀態多樣性。方法亦延伸至完整組織，可預測擾動誘發的局部細胞鄰域中細胞類型比例變化，並利用注意力模式產生關於情境依賴細胞交互作用的假說。回顧性虛擬篩選顯示 Pop-Corn 可依預測的細胞狀態組成效應來優先排序擾動以供實驗後續驗證。",
+      "topicTags": [
+        "single-cell",
+        "perturbation-prediction",
+        "spatial-transcriptomics",
+        "cell-composition",
+        "preprint"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-77197-6",
+      "title": "Global spatiotemporal dynamics of mortality from carbapenem-resistant Gram-negative infections over the past three decades",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-77197-6",
+      "doi": "10.1038/s41467-026-77197-6",
+      "abstract": "Long-term mortality from carbapenem-resistant Gram-negative infections is poorly characterised worldwide. Here, authors analyse data from 204 countries and territories, revealing divergent trajectories by region, pathogen, and pandemic period.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "過去三十年碳青黴烯抗藥性革蘭氏陰性菌感染死亡率的全球時空變化",
+      "summaryZh": "本研究針對全球碳青黴烯抗藥性革蘭氏陰性菌感染的長期死亡率進行分析，指出此議題在全球範圍內仍缺乏完整描述。作者彙整204個國家和地區的資料，探討其死亡率的時空趨勢。結果顯示不同地區、不同病原體以及疫情期間的軌跡存在分歧。該分析提供了過去三十年相關死亡率變化的全球概況。",
+      "topicTags": [
+        "antimicrobial-resistance",
+        "mortality",
+        "global-health",
+        "infectious-disease",
+        "carbapenem-resistant"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78079-7",
+      "title": "Alteromonas macleodii breaches the diatom frustule triggering protoplast emergence and programmed necrosis-like death in Thalassiosira rotula",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78079-7",
+      "doi": "10.1038/s41467-026-78079-7",
+      "abstract": "In this study, the authors show that the marine bacterium Alteromonas macleodii exploits the diatom Thalassiosira rotula by triggering programmed necrosis-like cell death. By forcing cells out of their silica shells and lysing them, this interaction may affect ocean carbon cycling.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "海洋細菌 Alteromonas macleodii 破壞矽藻殼引發原生質體釋出與程序性壞死樣死亡",
+      "summaryZh": "研究顯示海洋細菌 Alteromonas macleodii 能利用矽藻 Thalassiosira rotula，並誘發程序性壞死樣細胞死亡。細菌使細胞從其二氧化矽殼中被迫釋出並裂解。作者指出此種互作可能影響海洋碳循環。",
+      "topicTags": [
+        "marine-microbiology",
+        "diatoms",
+        "programmed-cell-death",
+        "carbon-cycling"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-77487-z",
+      "title": "Microglia regulate nucleus accumbens synaptic development and circuit function underlying threat avoidance behaviors in mice",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-77487-z",
+      "doi": "10.1038/s41467-026-77487-z",
+      "abstract": "Microglial synapse removal has been heavily studied. Here, the authors reveal roles for microglia in synapse formation by showing that absence of nucleus accumbens microglia during development reduces synapse number and alters avoidance behaviors.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "微膠細胞調節小鼠伏隔核突觸發育與威脅迴避行為的電路功能",
+      "summaryZh": "本研究探討微膠細胞在突觸形成中的角色，並指出微膠細胞的移除突觸現象已被廣泛研究。作者發育期間缺乏伏隔核微膠細胞會減少突觸數量，並改變威脅迴避行為。這些發現揭示了微膠細胞對於突觸發育與相關迴避行為電路功能的重要性。",
+      "topicTags": [
+        "microglia",
+        "synaptic-development",
+        "circuit-function",
+        "neuroscience"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78058-y",
+      "title": "PARP10 condensation inhibits viral replication via targeting NAD+ homeostasis",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78058-y",
+      "doi": "10.1038/s41467-026-78058-y",
+      "abstract": "While specific antiviral mechanisms of certain ADP-ribosyltransferases remain unclear, this study uses vesicular stomatitis virus to reveal that PARP10 forms condensates to amplify enzyme activity. This in turn decreases local NAD+ levels to block viral replication.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "PARP10 凝聚體透過調控 NAD+ 恆定抑制病毒複製",
+      "summaryZh": "本研究以水泡性口炎病毒探討 ADP-核糖轉移酶的抗病毒機制。研究發現 PARP10 能形成凝聚體，並藉此放大其酶活性。凝聚體相關的活性增加會降低局部 NAD+ 濃度。該 NAD+ 水平的下降可阻斷病毒複製。結果顯示 PARP10 凝聚與 NAD+ 恆定調控在抗病毒中的關聯。",
+      "topicTags": [
+        "parp10",
+        "viral-replication",
+        "nad-homeostasis",
+        "phase-separation",
+        "antiviral"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78077-9",
+      "title": "Early insights into predicted efficacy of Ebola monoclonal antibodies for the 2026 Bundibugyo virus disease outbreak",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-26T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78077-9",
+      "doi": "10.1038/s41467-026-78077-9",
+      "abstract": "Rapid predictive methods narrow the solution space in an outbreak setting. In this computational study, the authors find that cocktail treatments for Ebola Zaire could be more effective than monotherapies against the 2026 Bundibugyo strain.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "預測伊波拉單株抗體對2026年邦迪布焦病毒疫情之療效",
+      "summaryZh": "這是一項計算研究，探討伊波拉單株抗體對2026年邦迪布焦病毒疾病爆發的預測療效。作者指出，在疫情情境下，快速預測方法可縮小解決方案範圍。研究發現，相較於單一療法，用於伊波拉扎伊爾的雞尾酒治療可能對2026年邦迪布焦株更有效。",
+      "topicTags": [
+        "ebola",
+        "monoclonal-antibody",
+        "computational-modeling",
+        "outbreak-response"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 10,
+      "passedByScope": 2,
+      "llmClassified": 8,
+      "llmYes": 5,
+      "llmNotSure": 0,
+      "llmNo": 3,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 7,
+      "excluded": 3
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 5,
+      "llmTagged": 5,
+      "llmLineA": 0,
+      "llmLineB": 5,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 7,
+      "candidates": 7,
+      "featured": 7,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 5,
+      "preprint": 2,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 5,
+      "featuredPreprint": 2,
+      "overflowLineA": 0,
+      "overflowLineB": 0,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 7,
+      "llmSummarized": 7,
+      "primarySucceeded": 6,
+      "fallbackSucceeded": 1,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 5
+      },
+      "summarize": {
+        "requested": 7,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 6
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "observed": [
+            "gemini-3.5-flash-lite"
+          ],
+          "succeeded": 1
+        }
+      },
+      "translate": {
+        "requested": 0,
+        "succeeded": 0,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b"
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77967-2",
+        "title": "Efficient transport kinetics of indirect excitons in van der Waals heterostructure",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-26T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77967-2",
+        "doi": "10.1038/s41467-026-77967-2",
+        "abstract": "Here, the authors investigate the transport kinetics of indirect excitons (IXs) in a MoSe2/WSe2 van der Waals heterostructure, and observe anomalously high IX mobility, consistent with IX superfluidity.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77965-4",
+        "title": "Manipulation of ferromagnetism with a light-driven nonlinear Edelstein-Zeeman field",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-26T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77965-4",
+        "doi": "10.1038/s41467-026-77965-4",
+        "abstract": "Ultrafast non-thermal control of magnetism is a major goal of spintronics, however, in centrosymmetric materials, symmetry typically forbids direct control via electric fields. Here, Lv, Meese and coauthors use the non-linear Edelstein effect to create a non-equilibrium magnetic density in the van der Waals magnetic semiconductor Cr2Ge2Te6.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78046-2",
+        "title": "Branched-type nanocluster-junction fluorofluidic-gels for interface-adaptive thermal conduction and mechanical resistance",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-26T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78046-2",
+        "doi": "10.1038/s41467-026-78046-2",
+        "abstract": "‘Conventional thermal interface materials often suffer from a certain degree of mismatch between their thermal conductivity and contact thermal resistance. Here the authors develop a thermal interface fluorofluidic-gel with a branched-type nanocluster-junction network exhibiting high thermal conductivity and low contact thermal resistance.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
