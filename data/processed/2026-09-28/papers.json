@@ -1,0 +1,827 @@
+{
+  "reportDate": "2026-09-28",
+  "generatedAt": "2026-09-28T18:15:26.273Z",
+  "papers": [
+    {
+      "id": "10.1038/s41588-026-02774-w",
+      "title": "A human single-cell atlas identifies OLR1+ scar-associated macrophages as a potential therapeutic target for chronic liver disease",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02774-w",
+      "doi": "10.1038/s41588-026-02774-w",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "一個人類單細胞圖譜鑑定出 OLR1+ 疤痕相關巨噬細胞為慢性肝病的潛在治療標靶"
+    },
+    {
+      "id": "10.1038/s41588-026-02752-2",
+      "title": "Germline homologous recombination deficiency influences TP53-mutant clonal hematopoiesis fitness during platinum and PARP inhibitor treatment",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02752-2",
+      "doi": "10.1038/s41588-026-02752-2",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "遺傳性同源重組缺陷影響鉑類藥物與 PARP 抑制劑治療期間 TP53 突變克隆性造血的適應度"
+    },
+    {
+      "id": "10.1038/s41559-026-03181-4",
+      "title": "Global sea-level rise will create a new biological invasion front",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03181-4",
+      "doi": "10.1038/s41559-026-03181-4",
+      "abstract": "Sea-level rise may create a new front for the landward expansion of marine invaders into inundated areas. The authors explore the probability of this, projecting that more than two-thirds of inundated land areas would be suitable for 122 non-native animals already established in adjacent marine ecoregions under future sea-level-rise scenarios.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "全球海平面上升將形成新的生物入侵前線",
+      "summaryZh": "研究指出海平面上升可能為海洋入侵種向陸地擴張創造新的前線，使其進入被淹沒的區域。作者評估此可能性，並在未來海平面上升情境下進行推估。推估結果顯示，超過三分之二的淹沒土地面積將適合來自鄰近海洋生態區的122種已建立的非本地動物。該結果顯示海平面上升可能擴大海洋入侵種的潛在棲地範圍。",
+      "topicTags": [
+        "sea-level-rise",
+        "biological-invasion",
+        "marine-ecology",
+        "invasive-species"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03178-z",
+      "title": "A microbial therapy-mimicry assay shows how spatial resource dynamics control resistance escape",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03178-z",
+      "doi": "10.1038/s41559-026-03178-z",
+      "abstract": "This experimental and computational study asks how spatial structure and nutrient availability impact spread of resistant mutants and explores the impact of several treatment schedules to find a strategy that balances population control and resistance confinement.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "微生物療法模擬實驗揭示空間資源動態如何控制抗藥性逃逸",
+      "summaryZh": "這是一項實驗與計算研究，探討空間結構與營養可用性如何影響抗藥性突變株的擴散。研究以微生物療法模擬實驗為基礎，檢視不同治療時程對抗藥性擴散的影響。結果顯示空間資源動態會控制抗藥性的逃逸。研究嘗試找出能在族群控制與抗藥性侷限之間取得平衡的策略。",
+      "topicTags": [
+        "microbial ecology",
+        "antimicrobial resistance",
+        "spatial dynamics",
+        "resource dynamics"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03297-9",
+      "title": "Cargo size matters when designing lipid nanoparticles for delivery of large gene editors",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03297-9",
+      "doi": "10.1038/s41587-026-03297-9",
+      "abstract": "Lipid nanoparticles often show reduced performance when delivering the large messenger RNAs that encode gene editors. Screening ionizable lipids with a gene-editor-sized RNA identified LC-1, which forms a structure that enhances endosomal escape and enables efficient genome editing in the liver, lung and brain of mice.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "設計脂質奈米粒子遞送大型基因編輯器時，載荷大小關鍵",
+      "summaryZh": "脂質奈米粒子在遞送編碼基因編輯器的較大信使RNA時常表現下降。研究團隊以基因編輯器大小的RNA篩選可離子化脂質，並鑑定出LC-1。LC-1形成特定結構，可提升內體逃逸效率。該脂質奈米粒子在小鼠肝臟、肺部與腦部實現了有效的基因組編輯。",
+      "topicTags": [
+        "lipid-nanoparticles",
+        "gene-editing",
+        "mrna-delivery",
+        "drug-delivery"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03330-x",
+      "title": "AI-guided optimization for thermostable mRNA vaccines",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03330-x",
+      "doi": "10.1038/s41587-026-03330-x",
+      "abstract": "AGENT, an AI-driven framework integrating high-throughput experimentation with Bayesian optimization, enables the rapid engineering of thermostable, solid-state mRNA vaccines. These formulations retained full bioactivity after storage at 37 °C for 2 months, elicited immune responses non-inferior to fresh vaccines, and enabled cold-chain-free delivery via microneedle patches in rodents and nonhuman primates.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "AI 導向優化開發熱穩定 mRNA 疫苗",
+      "summaryZh": "研究團隊提出 AGENT，一個整合高通量實驗與貝葉斯優化的 AI 驅動框架，用於快速設計熱穩定的固態 mRNA 疫苗。該製劑在 37 °C 下儲存 2 個月後仍保持完整生物活性，且誘發的免疫反應與新鮮疫苗非劣。研究亦以微針貼片實現無冷鏈遞送，並在啮齒類動物與非人靈長類中驗證。結果顯示 AI 協助的配方優化可提升 mRNA 疫苗的熱穩定性與遞送可行性。",
+      "topicTags": [
+        "mRNA-vaccine",
+        "thermostability",
+        "ai-optimization",
+        "microneedle",
+        "vaccine-delivery"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03298-8",
+      "title": "Lipid nanoparticles optimized for large RNA cargo and tissue targeting enhance in vivo genome editing",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03298-8",
+      "doi": "10.1038/s41587-026-03298-8",
+      "abstract": "Lipid nanoparticles are improved by including RNA cargo size in the design process.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "針對大型 RNA 貨物與組織靶向優化的脂質奈米粒子提升體內基因編輯",
+      "summaryZh": "該研究發表於 Nature Biotechnology，報告脂質奈米粒子經優化以承載大型 RNA 貨物並進行組織靶向後，可提升體內基因編輯的效果。論文指出，脂質奈米粒子的設計納入 RNA 貨物大小後得以改善。研究聚焦於將 RNA 貨物大小納入設計流程以優化脂質奈米粒子。這些結果顯示針對大型 RNA 貨物與組織靶向進行優化的脂質奈米粒子在體內基因編輯情境中具有潛力。",
+      "topicTags": [
+        "lipid-nanoparticles",
+        "genome-editing",
+        "rna-delivery",
+        "tissue-targeting"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03331-w",
+      "title": "Accelerated discovery of thermostable mRNA–lipid nanoparticle vaccines using data-efficient AI",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03331-w",
+      "doi": "10.1038/s41587-026-03331-w",
+      "abstract": "The thermostability of RNA vaccines is improved with AI.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "利用數據高效 AI 加速開發耐熱 mRNA 脂質奈米粒子疫苗",
+      "summaryZh": "該研究報告利用數據高效 AI 加速發現耐熱的 mRNA–脂質奈米粒子疫苗。摘要指出，RNA 疫苗的耐熱性透過 AI 得到改善。",
+      "topicTags": [
+        "mrna-vaccine",
+        "lipid-nanoparticle",
+        "thermostability",
+        "ai-drug-discovery"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02074-9",
+      "title": "Cell atlas of the developing human meninges reveals a dura-like nature of meningiomas",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02074-9",
+      "doi": "10.1038/s41556-026-02074-9",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "發育中人類腦膜細胞圖譜揭示腦膜瘤具有類似硬腦膜的特性"
+    },
+    {
+      "id": "10.1038/s41556-026-02075-8",
+      "title": "Spatially resolved multiomics of human meningeal development reveal lineage and disease dynamics",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02075-8",
+      "doi": "10.1038/s41556-026-02075-8",
+      "abstract": "To, Pett, Dufva et al. perform single-nucleus RNA and ATAC sequencing, as well as spatial transcriptomics, to study human meninges at 6–21 weeks post conception.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "spatial transcriptomics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "人類腦膜發育的空間多體學解析譜系與疾病動態",
+      "summaryZh": "To、Pett、Dufva 等人對 6 至 21 週後受精的人類腦膜進行研究。研究使用單核 RNA 定序與 ATAC 定序，以及空間轉錄體學。該工作旨在探討人類腦膜發育的譜系與疾病相關動態。",
+      "topicTags": [
+        "single-nucleus",
+        "spatial-transcriptomics",
+        "meninges",
+        "development",
+        "multiomics"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02491-4",
+      "title": "Convergent receptor use at the coronavirus One Health interface",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02491-4",
+      "doi": "10.1038/s41564-026-02491-4",
+      "abstract": "Two independent studies identified host species-specific aminopeptidase N as the entry receptor for hedgehog merbecoviruses, revealing convergent receptor use with alphacoronaviruses, but through a distinct binding site. Defining barriers to receptor use across species could help predict future host jumps and emerging transmission risks at the wildlife–veterinary–human interface.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "冠狀病毒 One Health 介面上的趨同受體使用",
+      "summaryZh": "兩項獨立研究指出，刺蝟 merbecovirus 的宿主進入受體為宿主物種特異性的胺基肽酶 N。研究發現此受體使用與 alphacoronavirus 趨同，但結合位點不同。該結果顯示不同冠狀病毒支系可能以不同方式利用相同類型的受體。作者指出，釐清跨物種受體使用的屏障，有助於預測未來宿主跳躍與野生動物—獸醫—人類介面上的新興傳播風險。",
+      "topicTags": [
+        "coronavirus",
+        "receptor",
+        "one-health",
+        "zoonosis",
+        "merbecovirus"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02467-4",
+      "title": "Prophylactic treatment with broadly neutralizing antibody VRC01 selects for escape mutants after infection in Antibody-Mediated Prevention trials",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02467-4",
+      "doi": "10.1038/s41564-026-02467-4",
+      "abstract": "Prophylactic bnAb VRC01 selected for escape mutations in 31% of HIV breakthrough infections, but these mutations were rare in circulating viruses suggesting a fitness cost. More potent bnAbs such as N6 and 1-18 largely retained activity against escape variants.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "預防性廣效中和抗體 VRC01 使用後感染出現逃脫突變",
+      "summaryZh": "研究指出，在抗體介導預防試驗中，預防性廣效中和抗體 bnAb VRC01 在 HIV 突破性感染後會篩選出逃脫突變。約 31% 的突破性感染出現了 VRC01 選擇的逃脫突變，但這些突變在流行病毒中較為罕見，暗示可能存在適應度成本。相較之下，更具活性的廣效中和抗體如 N6 與 1-18 對這些逃脫變異株仍 largely 保留活性。",
+      "topicTags": [
+        "hiv",
+        "broadly-neutralizing-antibody",
+        "prophylaxis",
+        "viral-escape",
+        "antibody-mediated-prevention"
+      ]
+    },
+    {
+      "id": "10.64898/2026.04.14.718485",
+      "title": "Inferring division-associated stochasticity from time-series single-cell transcriptomes",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.04.14.718485v2",
+      "doi": "10.64898/2026.04.14.718485",
+      "abstract": "Cell division is fundamental to multicellular organisms, and stochastic partitioning of cellular components can strongly affect genome-wide gene expression. However, how cell division-associated stochasticity shapes cellular dynamics is poorly understood. Here, we propose scDIVIDE, a neural stochastic differential equation framework to jointly infer division rates and continuous cellular dynamics from time-series single-cell RNA sequencing data. We combined birth-death-mutation processes from population genetics with dynamical optimal transport and revealed that the birth (division) rate is embedded in the diffusion coefficient. scDIVIDE accurately inferred birth rates in synthetic data and the inferred birth rates recapitulated turnover-related programs in mouse hematopoiesis, mouse reprogramming, and human primordial germ cell-like cell induction data. By exploiting the birth-diffusion coupling, scDIVIDE provides a biologically informed constraint on growth rate estimation, outperforming existing methods in predicting future cell distributions. scDIVIDE offers a conceptual avenue for quantitatively dissecting how cell division shapes fate decisions in multicellular systems.",
+      "authors": [
+        "Okochi, Y.",
+        "Sawazaki, Y.",
+        "Kondo, Y.",
+        "Naoki, H."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "從時序單細胞轉錄組推斷分裂相關的隨機性"
+    },
+    {
+      "id": "10.64898/2026.09.03.749125",
+      "title": "AnnoAudit: a marker-based protocol for auditing single-cell atlas annotations reveals systematic, state-dependent annotation failure in a widely used traumatic brain injury resource",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.03.749125v3",
+      "doi": "10.64898/2026.09.03.749125",
+      "abstract": "Motivation. Single-cell atlas annotations are routinely used as ground truth without validation. We present AnnoAudit, a marker-based protocol with four convergent checks and an ambient-aware discrimination step (D1) that audits labels before re-analysis. Results. We applied AnnoAudit to labels generated by our own labelling pipeline for a public TBI single-cell dataset (CEREBRI, GSE269748). The audit exposed a permissive fallback rule that assigns a glutamatergic identity to any pan-neuronal-marker-positive cell lacking a subtype marker, manufacturing a 45,051-cell population that four independent reference-mapping models assign predominantly to choroid plexus (46.2%), astrocytes (22.4%) and microglia/macrophage (10.7%), with only 1.2% receiving any neuronal assignment (all inhibitory) and none assigned to an excitatory class. Marker- and depth-based controls show that the count matrices we analysed contain no neuronal-level expression of canonical neuronal genes (maximum Snap25 count 14 across 342,857 cells; Slc17a7 >= 5 in 5 cells), with transthyretin accounting for ~4% of all UMIs. The case illustrates the failure mode the protocol is designed to detect: permissive labelling rules can manufacture plausible-looking neuronal populations from data that lack neuronal-level signal. A simulation benchmark delimits the protocol's ambient boundary, and a literature screen identified six published re-analyses of the same dataset, none of which validated the annotations they inherited. No claim is made in this version about the cell-type annotations of any other resource. Availability and implementation. AnnoAudit is implemented in Python (scanpy); MIT-licensed source at github.com/ronnygao/AnnoAudit (doi:10.5281/zenodo.22274752). Contact. gaorong1234@suda.edu.cn",
+      "authors": [
+        "Zhang, L.",
+        "Yan, Q.",
+        "Rao, H.",
+        "Li, M.",
+        "Qian, X.",
+        "Zhang, Y.",
+        "Gao, R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "AnnoAudit：基於標記的單細胞圖譜註解稽核流程揭示廣泛使用的創傷性腦損傷資源中系統性、狀態依賴的註解失敗"
+    },
+    {
+      "id": "10.64898/2026.09.22.753522",
+      "title": "A framework for designing splice-junction experiments in deep 3' single-cell RNA sequencing",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.22.753522v1",
+      "doi": "10.64898/2026.09.22.753522",
+      "abstract": "Alternative splicing is cell-type-specific and disease-relevant, but single-cell RNA sequencing is optimized for gene-level quantification, and how sequencing depth governs splice-junction recovery in the dominant 3'-biased chemistries has not been quantified, so experiments cannot be designed to a depth target and datasets cannot be interpreted against expected recovery. We generated deep single-cell RNA sequencing of human airway epithelial cells (12 samples, 102 to 803 million uniquely mapped reads per sample) and benchmarked junction recovery in five annotated samples against matched bulk RNA sequencing from a 190-donor cohort. Junction detection did not saturate with depth, and validity was governed by read support rather than annotation status. Recovering 90% of the observed full-depth junction complement required approximately 52,250 reads per cell, several-fold more than gene-level analysis. Quantifying splicing was more depth-limited than detecting it, and rare cell types were limited by cell number rather than depth. Against matched bulk, single-cell recall plateaued at a practical ceiling set by sample size and sparse sampling, and was independent of distance from the 3' end. These results establish a framework for designing splicing experiments in deep 3'-biased single-cell RNA sequencing, and provide an airway-epithelial dataset with matched bulk for benchmarking splicing methods.",
+      "authors": [
+        "Saferali, A.",
+        "Liu, C.",
+        "Vendrame, A. S.",
+        "Bankoti, K.",
+        "Santos Cabrera, J.",
+        "Tesfaigzi, Y.",
+        "Castaldi, P."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "深層 3' 單細胞 RNA 定序中剪接接合點實驗設計的框架"
+    },
+    {
+      "id": "10.64898/2026.09.22.753496",
+      "title": "AtlasOT - The Fused Unbalanced Gromov-Wasserstein for Multimodal Integration of Disease Atlases",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.22.753496v1",
+      "doi": "10.64898/2026.09.22.753496",
+      "abstract": "Single-cell and spatial multiomics technologies are transforming disease atlas construction, but computational integration of unpaired modalities remains challenging, as existing methods overlook two biological constraints of data with matching samples. First, cells should only be mapped across modalities within the same donor or biospecimen, and second, cell recovery frequently differs substantially between modalities. To address these gaps, we present AtlasOT, an optimal-transport framework based on the fused unbalanced Gromov-Wasserstein (FUGW) formulation for multi-modal integration. AtlasOT jointly models a shared cross-modality feature space and modality-specific geometric structures while restricting transport to within-sample cell pairs. Moreover, AtlasOT relaxes strict mass conservation of the balanced optimal transport optimization to accommodate unbalanced cell numbers. We benchmark AtlasOT against state-of-the-art methods on scRNA-scATAC and scRNA-spatial transcriptomics mapping scenarios. Our results indicate that AtlasOT outperforms baselines and state-of-the-art methods in all considered scenarios. Moreover, we demonstrate that AtlasOT's transport plan can be used to improve several relevant tasks such as the detection of rare cell populations, spot-level cell-type deconvolution, spatial gene imputation, and reconstruction of transcription-factor-driven spatial regulatory dynamics. These results establish AtlasOT as a unified, biologically constrained framework for multimodal integration in disease atlas studies, with broad applicability to label transfer, imputation, and regulatory network analysis.",
+      "authors": [
+        "Peng, K.",
+        "Ruiz, M.",
+        "Caron, B.",
+        "Kuppe, C.",
+        "Nagai, J.",
+        "Gesteira Costa Filho, I."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "AtlasOT - 用於疾病圖譜多模態整合的融合非平衡 Gromov-Wasserstein 方法"
+    },
+    {
+      "id": "10.64898/2026.09.24.754209",
+      "title": "Spatial immune profiling reveals lymphocyte confinement to myeloid-mesenchymal niches and heterogeneous therapeutic T-cell opportunity in pediatric ependymoma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.24.754209v1",
+      "doi": "10.64898/2026.09.24.754209",
+      "abstract": "Pediatric posterior fossa group A (PFA) ependymoma is an aggressive, chemo-resistant brain tumor with a poor 10-year overall survival and no therapeutic options at relapse. Although conventionally classified as immune-cold, the spatial organization and therapeutic relevance of its rare immune infiltrates remain poorly characterized. Here, we present a spatially resolved immune analysis of 14 PFA ependymoma sections using published Visium spatial transcriptomics data analyzed through a multi-stage immune-focused computational framework combining reference-guided deconvolution, functional lymphocyte state scoring, ligand-receptor inference, and {beta}/{gamma}{delta} T cell immunotherapy opportunity scoring. Lymphocyte-associated hotspots were identified in 6 of 14 sections and, among confidently classified hotspots, were dominated by inflammatory-associated and retention-associated transcriptional states rather than cytotoxic or exhausted programs. These hotspots were preferentially confined to myeloid- and mesenchymal-rich tumor zones with near-complete exclusion from epithelial regions; ligand-receptor analysis identified four candidate restriction axes (SPP1-CD44, FN1-integrin, collagen VI-integrin, and APP-CD74). Immunotherapy opportunity scoring revealed heterogeneous and spatially compartmentalized {beta} and {gamma}{delta} T cell recognition landscapes across sections: {beta}T ligand availability and immunosuppressive tone both rose in the mesenchymal compartment, while the two components of {gamma}{delta} phosphoantigen-mediated recognition were spatially and transcriptionally dissociated from one another. Together, these findings reframe PFA ependymoma not as a monolithic immune desert but as a tumor type with spatially compartmentalized, mechanistically tractable immune niches, and provide a generalizable computational strategy for mapping immune architecture and T cell therapy susceptibility in low-infiltrated pediatric CNS tumors.",
+      "authors": [
+        "Truong, P.",
+        "Mirzazadeh, R.",
+        "Lundeberg, J.",
+        "Blomgren, K.",
+        "Boutin, L."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "Visium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "空間免疫分析揭示淋巴細胞受限於髓系-間質細胞生態位，以及兒童室管膜瘤中異質性的治療性 T 細胞機會"
+    },
+    {
+      "id": "10.64898/2026.09.24.754227",
+      "title": "Spatial analysis of canine glioma reveals heterogeneous intratumoral niches characterized by distinct patterns of cell plasticity and immunosuppression",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.24.754227v1",
+      "doi": "10.64898/2026.09.24.754227",
+      "abstract": "Glioma is a fatal tumor of the central nervous system (CNS) with limited therapeutic options. While immune checkpoint inhibitors (ICI) are gaining traction as a novel alternative treatment for human gliomas (HG), clinical trials have yielded mixed results. A proposed major barrier to ICI therapy in cancer is epithelial-mesenchymal plasticity (EMP)-driven intratumoral immunosuppression. However, studying this mechanism is difficult in ex vivo and murine models, which fail to adequately replicate cancer cell-immune cell interactions. Formalin-fixed, paraffin-embedded (FFPE) patient-derived canine glioma (CG) samples represent an attractive alternative approach. Although mechanistic perturbation is unachievable in archival FFPE tissues, CG is notoriously 'cold' immunologically and is actively being investigated as a comparative model of HG. Moreover, the immune microenvironment in CG advantageously develops under exposure to environmental conditions directly shared with humans. Yet, it remains unknown whether CGs harbor heterogeneous niches combining varied plastic phenotypes and immunosuppressive populations. Defining the immune landscape of CG in relation to EMP is therefore critical to determining its potential as a comparative model for immunotherapy response in HG. By combining standard histology, immunohistochemistry, and tissue microarray-based spatial transcriptomics, we analyzed 30 low-grade (LGr) and high-grade (HGr) FFPE CG cases (n=10 cases/subtype): astrocytomas (4xLGr, 6xHGr), oligodendrogliomas (1xLGr, 9xHGr), and undefined gliomas (3LxGr, 7xHGr). All CG subtypes harbored heterogeneous immunosuppressive niches associated with varied EMP phenotypes. Astrocytomas exhibited a more-mesenchymal identity correlated with recruitment of tumor-associated macrophages (TAMs). Oligodendrogliomas displayed a strong stem-like signature and uniquely upregulated a FOXP3/LAG3/SNAI1 triad, positioned directly at the interface of immunosuppression and EMP. Across all CG subtypes, a more-mesenchymal phenotype co-occurred with TAMs, and intratumoral T-cell dysfunction and exhaustion. We conclude that CG replicates the EMP-immunosuppression heterogeneity seen in humans. Importantly, our results emphasize the existence of subtype-specific mechanisms of EMP and immune evasion, underscoring the major relevance of subtyping for translational applications.",
+      "authors": [
+        "Nelissen, S. R.",
+        "Stephanou, A.",
+        "Glass, E. N.",
+        "Hammond, J.",
+        "Silver, G.",
+        "Sethupathy, P.",
+        "de Vlaminck, I.",
+        "Miller, A. D.",
+        "Demeter, E. A."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "犬類膠質瘤的空間分析揭示異質性瘤內生態區，其特徵為細胞可塑性與免疫抑制的獨特模式"
+    },
+    {
+      "id": "10.64898/2026.09.21.753234",
+      "title": "Recording proteome dynamics in the late-stage embryo at hour-timescale, spatial, and single-cell resolution with MEMBRYO",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.21.753234v2",
+      "doi": "10.64898/2026.09.21.753234",
+      "abstract": "Cell fate during development is directed by new gene expression states that replace prior ones. When and where a protein is first translated, and how long it will remain in the cell, dictate the timing and extent of a gene's phenotypic effect. Accessing protein synthesis and turnover information in the rapidly developing embryo remains a major challenge. Here we present MEMBRYO: a method for continuous stable isotope labeling (SILAC) of newly synthesized proteins throughout the live embryo at the hour-timescales of developmental phenotypes. We extend embryo culture into the late stages of organogenesis, thereby accessing the proteome of neurogenesis in the forebrain ex utero. Variations in protein synthesis and turnover activity lead to expression patterns that diverge from the corresponding transcripts, impacting molecular pathways and key milestones of cortical neuron differentiation. The high labeling depth enabled both spatial and single-cell SILAC proteomics analysis of cortical cells, revealing distinct layers of post-transcriptional gene expression regulation in progenitors and neurons. By continuous metabolic labeling in the live embryo, MEMBRYO tracks the past, present, and future of the developmental proteome.",
+      "authors": [
+        "Couce-Iglesias, M.",
+        "Oliani, E.",
+        "Kerridge, R.",
+        "Mutschler, F.",
+        "Valdes, D. S.",
+        "Welter, A. S.",
+        "Lukaszewska-McGreal, B.",
+        "Meierhofer, D.",
+        "Imami, K.",
+        "Fornasiero, E. F.",
+        "Coscia, F.",
+        "Selbach, M.",
+        "Kraushar, M. L."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "以 MEMBRYO 記錄晚期胚胎於小時時間尺度、空間及單細胞解析度的蛋白體動態"
+    },
+    {
+      "id": "10.1038/s41467-026-78277-3",
+      "title": "Building-block synthesis as a determinant of antibiotic persistence",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78277-3",
+      "doi": "10.1038/s41467-026-78277-3",
+      "abstract": "Reduced antibiotic target activity is a major driver of antibiotic treatment failure. While this has mostly been linked to the presence of low-energy bacteria, a recent study by Taher and colleagues suggests that reduced building-block synthesis can also promote antibiotic survival during nitrogen starvation — a route distinct from energy limitation.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "建築區塊合成決定抗生素持續存活",
+      "summaryZh": "抗生素治療失敗主要與抗生素作用目標活性降低有關，此現象過去多被連結到低能量細菌的存在。Taher 等人的研究指出，氮飢餓下建築區塊合成的降低也能促進抗生素存活。該研究提出此為不同於能量限制的另一條途徑。研究結果顯示建築區塊合成可能是影響抗生素持續存活的決定因素。",
+      "topicTags": [
+        "antibiotic-persistence",
+        "bacterial-physiology",
+        "nitrogen-starvation",
+        "building-block-synthesis"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78023-9",
+      "title": "Environmental stochasticity reduces human planning effort",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78023-9",
+      "doi": "10.1038/s41467-026-78023-9",
+      "abstract": "The real world is stochastic, making it difficult to know when planning is worthwhile. Here the authors show that as stochasticity increases, people spend less effort planning and adopt simpler, less value-sensitive decision policies.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "not_sure",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "環境隨機性降低人類規劃投入",
+      "summaryZh": "本研究探討真實世界具隨機性時，規劃是否值得投入的問題。作者指出，隨著環境隨機性增加，人們花在規劃上的努力會減少。隨機性升高時，受試者傾向採用更簡單、對價值較不敏感的決策策略。研究結果顯示環境不確定性會影響人類的規劃行為與決策複雜度。",
+      "topicTags": [
+        "decision-making",
+        "human-behavior",
+        "planning",
+        "stochasticity"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-77510-3",
+      "title": "mHolmes improves cross anatomical cadaveric microbiome forecasting for postmortem interval estimation",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-77510-3",
+      "doi": "10.1038/s41467-026-77510-3",
+      "abstract": "This study presents mHolmes, a transfer-learning framework that forecasts postmortem microbiome changes across body sites, improving postmortem interval estimation and highlighting microbial features with forensic potential.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "microbiome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "mHolmes 改善跨解剖屍體微生物群預測以估算死後時間間隔"
+    },
+    {
+      "id": "10.1038/s41467-026-78159-8",
+      "title": "Metal cofactor-level chassis engineering enables aerobic expression of tungsten formate dehydrogenases in Escherichia coli",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78159-8",
+      "doi": "10.1038/s41467-026-78159-8",
+      "abstract": "Tungsten-dependent enzyme production is limited by complex metal cofactor requirements and poor compatibility with expression hosts. Here the authors engineer E. coli to support the aerobic production of various tungsten-dependent formate dehydrogenases.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "金屬輔因子層級的底盤工程使大腸桿菌中鎢甲酸鹽脫氫酶的需氧表達成為可能"
+    },
+    {
+      "id": "10.1038/s41467-026-78114-7",
+      "title": "Nighttime warming dominates the thermal evolution of lakes across China",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78114-7",
+      "doi": "10.1038/s41467-026-78114-7",
+      "abstract": "A 25-year analysis of 613 Chinese lakes shows that lake warming is largely driven by nighttime temperature increases, with atmospheric longwave radiation and human activities reinforcing this trend.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "夜間暖化主導中國各地湖泊的熱演變"
+    },
+    {
+      "id": "10.1038/s41467-026-77949-4",
+      "title": "“Descending Enkephalinergic neurons in Barrington’s nucleus gate sex-biased control of micturition”",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-77949-4",
+      "doi": "10.1038/s41467-026-77949-4",
+      "abstract": "The neural control of LUT (lower urinary tract) function is not fully understood. Here authors demonstrate that transcriptionally distinct enkephalinergic neurons in Barrington’s nucleus are recruited during voiding to selectively control external urethral sphincter relaxation and regulate urinary behaviors in a sex-specific manner.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "巴林頓核下降性腦啡肽神經元調控排尿的性別差異",
+      "summaryZh": "本研究探討下泌尿道功能的神經控制。作者指出，巴林頓核中轉錄本上不同的腦啡肽能神經元在排尿時被招募。這些神經元會選擇性地控制外尿道括約肌鬆弛，並以性別特異的方式調節排尿行為。研究顯示該神經群參與排尿的調控，且其作用具性別差異。",
+      "topicTags": [
+        "urinary-tract",
+        "neuroscience",
+        "sex-differences",
+        "enkephalin",
+        "micturition"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 31,
+      "passedByScope": 19,
+      "llmClassified": 12,
+      "llmYes": 9,
+      "llmNotSure": 1,
+      "llmNo": 2,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 29,
+      "excluded": 2
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 18,
+      "llmTagged": 18,
+      "llmLineA": 3,
+      "llmLineB": 15,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 25,
+      "candidates": 25,
+      "featured": 12,
+      "overflow": 13,
+      "lineA": 3,
+      "lineB": 15,
+      "preprint": 7,
+      "skip": 0,
+      "featuredLineA": 1,
+      "featuredLineB": 11,
+      "featuredPreprint": 0,
+      "overflowLineA": 2,
+      "overflowLineB": 4,
+      "overflowPreprint": 7
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "primarySucceeded": 12,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 13,
+      "llmTranslated": 13,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 18
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 12
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 13,
+        "succeeded": 13,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02959-7",
+        "title": "Stephen Hawking biography explores an ‘exceptionally clear, uncluttered mind’",
+        "journal": "Nature",
+        "publishedDate": "2026-09-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02959-7",
+        "doi": "10.1038/d41586-026-02959-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02277-y",
+        "title": "Paid to peer review: firms are paying researchers to assess manuscripts for journals",
+        "journal": "Nature",
+        "publishedDate": "2026-09-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02277-y",
+        "doi": "10.1038/d41586-026-02277-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
