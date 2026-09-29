@@ -47,7 +47,10 @@ export type DigestSummarizeStats = {
 
 export type DigestTranslateStats = {
   requested: number;
+  /** primarySucceeded + fallbackSucceeded。 */
   llmTranslated: number;
+  primarySucceeded: number;
+  fallbackSucceeded: number;
   failed: number;
 };
 

@@ -53,6 +53,7 @@ export async function callSpatialClassifyCompletion(
     rateLimit: {
       baseUrl: config.baseUrl,
       apiKey: config.apiKey,
+      profile: config.providerProfile,
       signal: options?.signal,
     },
   });

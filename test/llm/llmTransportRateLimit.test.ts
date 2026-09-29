@@ -8,6 +8,7 @@ import { runProbeDigestSmoke } from "../../src/digest/probeDigestSmoke.js";
 import { buildDigestSummarizeCompletionParams } from "../../src/digest/summarizePrompt.js";
 import type { DigestSummarizeInput } from "../../src/digest/types.js";
 import { resolveLlmQuotaTarget } from "../../src/llm/llmQuotaBucket.js";
+import { resolveLlmProviderProfile } from "../../src/llm/llmProviderProfile.js";
 import {
   GEMINI_MIN_START_INTERVAL_MS,
   LlmRequestSchedulerError,
@@ -410,6 +411,39 @@ describe("llmTransportRateLimit integration", { concurrency: false }, () => {
       logs.some((line) => line.includes("rateLimit bucket=") && line.includes("permit=")),
       `expected permit log, got: ${logs.join(" | ")}`,
     );
+  });
+
+  test("probe smoke keeps an explicit generic profile on an NVIDIA host", async () => {
+    const clock = createFakeClock(1_000_000);
+    installLlmRateLimitTestHarness({ useProviderPolicies: true, clock });
+    resetDigestLlmClientCache();
+
+    const logs: string[] = [];
+    globalThis.fetch = (async () =>
+      new Response(JSON.stringify(chatCompletion('{"ok":true}')), {
+        status: 200,
+        headers: { "content-type": "application/json" },
+      })) as typeof fetch;
+
+    const profile = resolveLlmProviderProfile({
+      baseUrl: "https://integrate.api.nvidia.com/v1",
+      profileId: "generic",
+      enableThinking: false,
+    });
+    const result = await runProbeDigestSmoke({
+      model: "test-model",
+      apiKey: "probe-explicit-profile-key",
+      baseUrl: "https://integrate.api.nvidia.com/v1",
+      profile,
+      log: (message) => logs.push(message),
+    });
+
+    assert.equal(result.ok, true);
+    const permit = logs.find((line) => line.includes("rateLimit bucket="));
+    assert.ok(permit, `expected permit log, got: ${logs.join(" | ")}`);
+    assert.match(permit, /bucket=generic\|https:\/\/integrate\.api\.nvidia\.com\/v1\|/);
+    assert.match(permit, /intervalMs=5000/);
+    assert.doesNotMatch(permit, /bucket=nvidia\|/);
   });
 
   test("queue deadline rethrows typed LlmRequestSchedulerError (not plain Error)", async () => {

@@ -5,6 +5,8 @@ import {
   getDigestLlmConfig,
   withDigestFallbackEndpoint,
 } from "../../src/digest/config.js";
+import { GENERIC_LLM_RATE_POLICY } from "../../src/llm/llmProviderProfile.js";
+import { GEMINI_LLM_RATE_POLICY } from "../../src/llm/llmRequestScheduler.js";
 
 const saved = { ...process.env };
 
@@ -60,6 +62,30 @@ describe("getDigestLlmConfig fallback credentials", () => {
     setPrimaryEnv();
     process.env.DIGEST_LLM_FALLBACK_MODEL = "gemini-3.5-flash-lite";
     assert.throws(() => getDigestLlmConfig(), /DIGEST_LLM_FALLBACK_API_KEY is missing/);
+  });
+
+  test("DIGEST_LLM_FALLBACK_PROFILE=generic does not keep the Gemini rate policy", () => {
+    setPrimaryEnv();
+    process.env.DIGEST_LLM_FALLBACK_MODEL = "gemini-3.5-flash-lite";
+    process.env.DIGEST_LLM_FALLBACK_API_KEY = "gemini-key";
+    process.env.DIGEST_LLM_FALLBACK_PROFILE = "generic";
+
+    const config = getDigestLlmConfig();
+    assert.equal(config.fallbackProviderProfile?.id, "generic");
+    assert.equal(config.fallbackDisableThinking, false);
+    assert.equal(config.fallbackPreferJsonResponseFormat, true);
+    assert.equal(config.fallbackProviderProfile?.policy, GENERIC_LLM_RATE_POLICY);
+    assert.notEqual(config.fallbackProviderProfile?.policy, GEMINI_LLM_RATE_POLICY);
+
+    const endpoint = withDigestFallbackEndpoint(config);
+    assert.equal(endpoint?.providerProfile?.id, "generic");
+    assert.equal(endpoint?.disableThinking, false);
+  });
+
+  test("invalid DIGEST_LLM_PROFILE throws", () => {
+    setPrimaryEnv();
+    process.env.DIGEST_LLM_PROFILE = "muse";
+    assert.throws(() => getDigestLlmConfig(), /DIGEST_LLM_PROFILE must be one of/);
   });
 
   test("FALLBACK_API_KEY without model throws", () => {

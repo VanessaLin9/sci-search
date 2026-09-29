@@ -1,11 +1,13 @@
 import { loadRoutingFileConfig } from "../config.js";
 import { isLifeScienceRoutingEnabled } from "../domain/life-science/routing/config.js";
+import {
+  isNvidiaIntegrateApi,
+  readLlmProviderProfileId,
+  resolveLlmProviderProfile,
+  type LlmProviderProfile,
+} from "../llm/llmProviderProfile.js";
 
-export { isLifeScienceRoutingEnabled };
-
-export function isNvidiaIntegrateApi(baseUrl: string): boolean {
-  return baseUrl.includes("integrate.api.nvidia.com");
-}
+export { isLifeScienceRoutingEnabled, isNvidiaIntegrateApi };
 
 export type RoutingLlmConfig = {
   apiKey: string;
@@ -18,10 +20,15 @@ export type RoutingLlmConfig = {
   timeoutMs: number;
   maxTokens: number;
   maxRetries: number;
-  /** OpenAI json_object mode; skipped on NVIDIA if unsupported. */
+  /** OpenAI json_object mode; nvidia profile leaves this off. */
   preferJsonResponseFormat: boolean;
-  /** GLM / NVIDIA: disable chain-of-thought for cheap routing. */
+  /** True only for the nvidia profile when enableThinking is false. */
   disableThinking: boolean;
+  /**
+   * Resolved provider profile. Production getters always set this.
+   * Omitted only by hand-built test configs; transport then infers from baseUrl.
+   */
+  providerProfile?: LlmProviderProfile;
 };
 
 export function getRoutingLlmConfig(): RoutingLlmConfig {
@@ -45,8 +52,13 @@ export function getRoutingLlmConfig(): RoutingLlmConfig {
     );
   }
 
-  const baseUrl = file.baseUrl.replace(/\/$/, "");
-  const nvidia = isNvidiaIntegrateApi(baseUrl);
+  // 未設時沿用 routing.json。換端點只改 env，不必改 repo（PR #41）。
+  const baseUrl = (process.env.ROUTING_LLM_BASE_URL?.trim() || file.baseUrl).replace(/\/$/, "");
+  const providerProfile = resolveLlmProviderProfile({
+    baseUrl,
+    profileId: readLlmProviderProfileId("ROUTING_LLM_PROFILE"),
+    enableThinking: file.enableThinking,
+  });
 
   return {
     apiKey,
@@ -57,8 +69,9 @@ export function getRoutingLlmConfig(): RoutingLlmConfig {
     timeoutMs: file.timeoutMs,
     maxTokens: file.maxTokens,
     maxRetries: file.maxRetries,
-    preferJsonResponseFormat: !nvidia,
-    disableThinking: nvidia && !file.enableThinking,
+    preferJsonResponseFormat: providerProfile.preferJsonResponseFormat,
+    disableThinking: providerProfile.disableThinking,
+    providerProfile,
   };
 }
 

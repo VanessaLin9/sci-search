@@ -1,5 +1,10 @@
 import { loadDigestFileConfig } from "../config.js";
-import { isNvidiaIntegrateApi, maskApiKey } from "../routing/config.js";
+import {
+  readLlmProviderProfileId,
+  resolveLlmProviderProfile,
+  type LlmProviderProfile,
+} from "../llm/llmProviderProfile.js";
+import { maskApiKey } from "../routing/config.js";
 
 export { maskApiKey };
 
@@ -23,7 +28,8 @@ export type DigestLlmConfig = {
   fallbackModel?: string;
   fallbackApiKey?: string;
   fallbackBaseUrl?: string;
-  /** Derived from fallbackBaseUrl；僅在 fallback 開啟時有值。 */
+  /** Derived from the fallback profile；僅在 fallback 開啟時有值。 */
+  fallbackProviderProfile?: LlmProviderProfile;
   fallbackPreferJsonResponseFormat?: boolean;
   fallbackDisableThinking?: boolean;
   maxFeatured: number;
@@ -41,22 +47,22 @@ export type DigestLlmConfig = {
   summarizeFallbackConcurrency: number;
   preferJsonResponseFormat: boolean;
   disableThinking: boolean;
+  /** Production getters always set this. Test configs may omit it. */
+  providerProfile?: LlmProviderProfile;
 };
 
 export function resolveDigestProviderFlags(
   baseUrl: string,
   enableThinking: boolean,
-): { preferJsonResponseFormat: boolean; disableThinking: boolean } {
-  const nvidia = isNvidiaIntegrateApi(baseUrl);
-  return {
-    preferJsonResponseFormat: !nvidia,
-    disableThinking: nvidia && !enableThinking,
-  };
+  profileId?: LlmProviderProfile["id"],
+): LlmProviderProfile {
+  return resolveLlmProviderProfile({ baseUrl, profileId, enableThinking });
 }
 
 /**
  * Featured-summarize fallback endpoint view（PR #34）：換 key／baseUrl／model／flags，
  * 不能只改 model 字串還打 primary NVIDIA client。fallback 未開 → undefined。
+ * Overflow translate 也走這個 endpoint（PR #41）。Spatial／routing 不接。
  */
 export function withDigestFallbackEndpoint(config: DigestLlmConfig): DigestLlmConfig | undefined {
   const model = config.fallbackModel?.trim();
@@ -71,13 +77,22 @@ export function withDigestFallbackEndpoint(config: DigestLlmConfig): DigestLlmCo
     );
   }
 
+  const normalizedBase = baseUrl.replace(/\/$/, "");
+  const providerProfile =
+    config.fallbackProviderProfile ??
+    resolveLlmProviderProfile({
+      baseUrl: normalizedBase,
+      enableThinking: !(config.fallbackDisableThinking ?? false),
+    });
+
   return {
     ...config,
     apiKey,
-    baseUrl: baseUrl.replace(/\/$/, ""),
+    baseUrl: normalizedBase,
     model,
-    preferJsonResponseFormat: config.fallbackPreferJsonResponseFormat ?? true,
-    disableThinking: config.fallbackDisableThinking ?? false,
+    providerProfile,
+    preferJsonResponseFormat: providerProfile.preferJsonResponseFormat,
+    disableThinking: providerProfile.disableThinking,
   };
 }
 
@@ -122,27 +137,39 @@ export function getDigestLlmConfig(): DigestLlmConfig {
     );
   }
 
-  const baseUrl = file.baseUrl.replace(/\/$/, "");
-  const primaryFlags = resolveDigestProviderFlags(baseUrl, file.enableThinking);
+  // 未設時沿用 digest.json。換端點只改 env，不必改 repo（PR #41）。
+  const baseUrl = (process.env.DIGEST_LLM_BASE_URL?.trim() || file.baseUrl).replace(/\/$/, "");
+  const primaryProfile = resolveDigestProviderFlags(
+    baseUrl,
+    file.enableThinking,
+    readLlmProviderProfileId("DIGEST_LLM_PROFILE"),
+  );
+  const fallbackProfileId = readLlmProviderProfileId("DIGEST_LLM_FALLBACK_PROFILE");
 
   let fallbackFields: Pick<
     DigestLlmConfig,
     | "fallbackModel"
     | "fallbackApiKey"
     | "fallbackBaseUrl"
+    | "fallbackProviderProfile"
     | "fallbackPreferJsonResponseFormat"
     | "fallbackDisableThinking"
   > = {};
 
   if (fallbackModel && fallbackApiKey) {
     const fallbackBaseUrl = fallbackBaseUrlRaw.replace(/\/$/, "");
-    const fallbackFlags = resolveDigestProviderFlags(fallbackBaseUrl, file.enableThinking);
+    const fallbackProfile = resolveLlmProviderProfile({
+      baseUrl: fallbackBaseUrl,
+      profileId: fallbackProfileId,
+      enableThinking: file.enableThinking,
+    });
     fallbackFields = {
       fallbackModel,
       fallbackApiKey,
       fallbackBaseUrl,
-      fallbackPreferJsonResponseFormat: fallbackFlags.preferJsonResponseFormat,
-      fallbackDisableThinking: fallbackFlags.disableThinking,
+      fallbackProviderProfile: fallbackProfile,
+      fallbackPreferJsonResponseFormat: fallbackProfile.preferJsonResponseFormat,
+      fallbackDisableThinking: fallbackProfile.disableThinking,
     };
   }
 
@@ -164,7 +191,8 @@ export function getDigestLlmConfig(): DigestLlmConfig {
     summarizeMaxRetries: file.summarizeMaxRetries,
     summarizeConcurrency: file.summarizeConcurrency,
     summarizeFallbackConcurrency: file.summarizeFallbackConcurrency,
-    preferJsonResponseFormat: primaryFlags.preferJsonResponseFormat,
-    disableThinking: primaryFlags.disableThinking,
+    preferJsonResponseFormat: primaryProfile.preferJsonResponseFormat,
+    disableThinking: primaryProfile.disableThinking,
+    providerProfile: primaryProfile,
   };
 }

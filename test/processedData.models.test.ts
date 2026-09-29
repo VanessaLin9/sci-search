@@ -145,5 +145,51 @@ describe("processed papers.json model fields", () => {
     assert.equal(parsed.digest?.models?.spatial, undefined);
     assert.equal(parsed.digest?.models?.summarize, undefined);
     assert.equal(parsed.digest?.models?.translate?.model.requested, "ok");
+    assert.equal(parsed.digest?.models?.translate?.fallback, undefined);
+  });
+
+  test("keeps translate primary and fallback usage when both are present", () => {
+    const parsed = validateProcessedPapersFile({
+      reportDate: "2026-09-23",
+      papers: [],
+      digest: {
+        enabled: true,
+        llmTagging: true,
+        tagging: { llmClassified: 0, llmTagged: 0, fallback: 0 },
+        selection: {
+          total: 0,
+          candidates: 0,
+          featured: 0,
+          overflow: 0,
+          lineA: 0,
+          lineB: 0,
+          preprint: 0,
+          skip: 0,
+        },
+        translate: {
+          requested: 4,
+          llmTranslated: 3,
+          primarySucceeded: 1,
+          fallbackSucceeded: 2,
+          failed: 1,
+        },
+        models: {
+          translate: {
+            requested: 4,
+            succeeded: 3,
+            failed: 1,
+            model: { requested: "env-primary", observed: ["api-primary"] },
+            primarySucceeded: 1,
+            fallback: { requested: "env-fallback", observed: ["api-fallback"], succeeded: 2 },
+          },
+        },
+      },
+    });
+
+    assert.equal(parsed.digest?.translate?.primarySucceeded, 1);
+    assert.equal(parsed.digest?.translate?.fallbackSucceeded, 2);
+    assert.equal(parsed.digest?.models?.translate?.primarySucceeded, 1);
+    assert.equal(parsed.digest?.models?.translate?.fallback?.succeeded, 2);
+    assert.deepEqual(parsed.digest?.models?.translate?.fallback?.observed, ["api-fallback"]);
   });
 });

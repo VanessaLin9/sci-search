@@ -95,6 +95,7 @@ export async function callRoutingCompletion(
     rateLimit: {
       baseUrl: config.baseUrl,
       apiKey: config.apiKey,
+      profile: config.providerProfile,
       resolveDeadlineAtMs: options?.resolveDeadlineAtMs,
       signal: options?.signal,
     },

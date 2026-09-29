@@ -1,6 +1,7 @@
 /**
  * Translate probe：overflow 標題 → titleZh（正式 translate prompt；PR #39）。
- * Production translate **仍無** Gemini fallback；`--use-digest-fallback` 僅供 probe 對照。
+ * Production translate 失敗會走 digest fallback endpoint（PR #41）。
+ * `--use-digest-fallback` 讓這次 probe 一開始就打 fallback endpoint。
  * 預設讀 `fixtures/translate-samples.json`（不綁 processed date）。
  *
  *   npm run probe:translate -- --model meta/muse-glimmer-30b
@@ -79,6 +80,7 @@ async function main(): Promise<void> {
     model: config.model,
     apiKey: config.apiKey,
     baseUrl: config.baseUrl,
+    profile: config.providerProfile,
   });
   if (argv.includes("--smoke-only")) return;
 

@@ -88,5 +88,18 @@ function formatTranslateLine(
 ): string | undefined {
   if (!translate || translate.requested <= 0) return undefined;
   const name = displayLlmModel(translate.model);
-  return `translate: ${name} ${translate.succeeded}/${translate.requested}`;
+  // 沒有 fallback 紀錄時分子用 succeeded，舊信尾格式不變（PR #41）。
+  if (!translate.fallback) {
+    return `translate: ${name} ${translate.succeeded}/${translate.requested}`;
+  }
+
+  const primarySucceeded =
+    translate.primarySucceeded ?? translate.succeeded - translate.fallback.succeeded;
+  let line =
+    `translate: ${name} ${primarySucceeded}/${translate.requested}` +
+    `，fallback: ${displayLlmModel(translate.fallback)} ${translate.fallback.succeeded}/${translate.requested}`;
+  if (translate.failed > 0) {
+    line += `，failed ${translate.failed}`;
+  }
+  return line;
 }

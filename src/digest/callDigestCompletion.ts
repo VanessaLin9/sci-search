@@ -52,6 +52,7 @@ export async function callDigestTaggingCompletion(
     rateLimit: {
       baseUrl: config.baseUrl,
       apiKey: config.apiKey,
+      profile: config.providerProfile,
       signal: options?.signal,
     },
   });
