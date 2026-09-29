@@ -13,7 +13,7 @@
 | `npm run probe:endpoint` | `/models` 目錄 + 最小 chat smoke |
 | `npm run probe:routing` | 正式 routing prompt（生醫／physics fixture） |
 | `npm run probe:summarize` | featured 繁中摘要（正式 summarize prompt） |
-| `npm run probe:translate` | overflow 標題翻譯（正式 translate prompt；**無 production fallback**） |
+| `npm run probe:translate` | overflow 標題翻譯（正式 translate prompt；失敗會走 `DIGEST_LLM_FALLBACK_*`） |
 
 舊別名仍可用：`probe-llm` → endpoint；`test-routing-llm` → routing。
 
