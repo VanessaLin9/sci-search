@@ -1,0 +1,907 @@
+{
+  "reportDate": "2026-09-30",
+  "generatedAt": "2026-09-30T16:30:53.978Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03224-5",
+      "title": "CytoVI: deep generative modeling of antibody-based single cell data",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-09-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03224-5",
+      "doi": "10.1038/s41592-026-03224-5",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "CytoVI：基於抗體的單細胞數據深度生成建模"
+    },
+    {
+      "id": "10.1038/s41559-026-03191-2",
+      "title": "An ancient evolutionary origin for IL-1 cytokines",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-09-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03191-2",
+      "doi": "10.1038/s41559-026-03191-2",
+      "abstract": "Protein-structure prediction identifies a family of IL-1 protein homologues in Eumetazoa, which are characterized for expression, localization and function in sea lamprey and purple sea urchin.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "IL-1細胞激素的古老演化起源",
+      "summaryZh": "本研究利用蛋白質結構預測，在Eumetazoa中鑑定出一家族IL-1蛋白同源物。研究團隊針對七鰓鰻與紫海膽進行表現、定位與功能的特性描述。結果顯示IL-1相關蛋白在演化上具有古老的起源。該發現為理解IL-1細胞激素家族的演化歷史提供了結構層面的證據。",
+      "topicTags": [
+        "evolution",
+        "cytokine",
+        "immunology",
+        "protein-structure",
+        "comparative-genomics"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03170-7",
+      "title": "Global patterns in plant–pollinator specialization",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-09-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03170-7",
+      "doi": "10.1038/s41559-026-03170-7",
+      "abstract": "Plant–pollinator networks vary tremendously across ecosystems. Here the authors use a global standardized dataset of plant–pollinator interactions to explore geographic patterns of specialization and their dependence on climate variables and taxonomic and functional identity.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "植物與傳粉者專化性的全球模式",
+      "summaryZh": "植物與傳粉者網路在各生態系中差異巨大。本研究利用全球標準化的植物與傳粉者互動資料集，探討專化性的地理模式及其對氣候變數、分類學與功能特徵的依賴性。這些全球性模式有助於理解生態系中物種互動的地理變異與影響因素。",
+      "topicTags": [
+        "ecology",
+        "plant-pollinator",
+        "global-patterns",
+        "biodiversity"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02423-9",
+      "title": "CLOK: a chemigenetic multicolor labeling system to visualize neuronal birthdate and circuit integration",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-09-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02423-9",
+      "doi": "10.1038/s41593-026-02423-9",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "CLOK：化學遺傳多色標記系統用於視覺化神經元出生日期與電路整合"
+    },
+    {
+      "id": "10.1038/s41593-026-02436-4",
+      "title": "A population code for semantics in human hippocampus",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-09-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02436-4",
+      "doi": "10.1038/s41593-026-02436-4",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "人類海馬體中語義的族群編碼"
+    },
+    {
+      "id": "10.1038/s41590-026-02673-6",
+      "title": "Clonal blood reshapes its home",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-09-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02673-6",
+      "doi": "10.1038/s41590-026-02673-6",
+      "abstract": "Clonal hematopoiesis does more than alter blood cells. Fibroblast-rich inflammatory pockets in bone marrow may help mutant stem cells persist and set the stage for disease.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "克隆血液重塑其棲所",
+      "summaryZh": "這篇刊載於《Nature Immunology》的研究指出，克隆性造血不僅改變血液細胞本身。研究提到骨髓中富含纖維母細胞的發炎性區域，可能有助於突變的幹細胞持續存在。這些區域被認為可能為疾病發展鋪路。該發現提示克隆性造血對微環境的影響可能超出既有認知。",
+      "topicTags": [
+        "clonal-hematopoiesis",
+        "bone-marrow",
+        "fibroblasts",
+        "inflammation"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02622-3",
+      "title": "Epithelial antigen presentation shapes barrier memory",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-09-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02622-3",
+      "doi": "10.1038/s41590-026-02622-3",
+      "abstract": "Bacterial antigens injected into the cytosol of intestinal epithelial cells are preferentially presented by MHC II for induction of antigen-specific T cell responses and long-term epithelial cell-associated CD4 tissue-resident memory T cells.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "上皮抗原呈現形塑屏障記憶",
+      "summaryZh": "該研究指出，細菌抗原被注入腸道上皮細胞胞質後，會優先透過 MHC II 呈現。此呈現方式可誘發抗原特異性的 T 細胞反應。研究也觀察到長期與上皮細胞相關的 CD4 組織駐留記憶 T 細胞的形成。結果顯示上皮細胞的抗原呈現參與調控屏障記憶。",
+      "topicTags": [
+        "mucosal-immunity",
+        "mhc-ii",
+        "tissue-resident-memory",
+        "intestinal-epithelium",
+        "cd4-t-cells"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02668-3",
+      "title": "Prefibrotic bone marrow microenvironment is a hallmark of clonal hematopoiesis",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-09-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02668-3",
+      "doi": "10.1038/s41590-026-02668-3",
+      "abstract": "Patients with CHIP (clonal hematopoiesis of indeterminate potential) exhibit an abnormal bone marrow environment, which might contribute to malignant development and progression. Multiomic analyses of the bone marrow microenvironment by Tikhonova and colleagues reveal an inflammatory–fibrotic link between immune cells and altered bone marrow-resident fibroblasts.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "前纖維化骨髓微環境為克隆性造血的特徵",
+      "summaryZh": "研究指出，具 CHIP（clonal hematopoiesis of indeterminate potential） 的患者骨髓微環境異常，可能與惡性發展和進展有關。Tikhonova 等人以多體學分析骨髓微環境，發現免疫細胞與改變的骨髓駐留纖維母細胞之間存在發炎與纖維化的關聯。該發現將前纖維化骨髓微環境描述為克隆性造血的特徵。",
+      "topicTags": [
+        "clonal-hematopoiesis",
+        "bone-marrow-microenvironment",
+        "fibrosis",
+        "multiomics",
+        "immunology"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02656-7",
+      "title": "Barrier immune memory is programmed by intestinal epithelial cell presentation of cytosol-delivered bacterial antigens",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-09-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02656-7",
+      "doi": "10.1038/s41590-026-02656-7",
+      "abstract": "Intestinal epithelial cells can present antigen to CD4 T cells. Here the authors show that epithelial cells must present translocated bacterial antigen for local CD4 resident memory T cells to be established.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "腸上皮細胞呈現胞質內細菌抗原 決定屏障免疫記憶",
+      "summaryZh": "研究指出腸上皮細胞可向 CD4 T 細胞呈現抗原。作者顯示，上皮細胞必須呈現經轉位至胞質的細菌抗原，才能建立局部的 CD4 居留記憶 T 細胞。該結果將腸上皮細胞的抗原呈現與屏障免疫記憶的建立連結起來。研究聚焦於腸道屏障免疫記憶的程式化機制。",
+      "topicTags": [
+        "intestinal-epithelium",
+        "immune-memory",
+        "cd4-t-cells",
+        "antigen-presentation"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02498-x",
+      "title": "Wild rice locus enables microbiome re-domestication for enhanced nitrogen-use efficiency",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-09-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02498-x",
+      "doi": "10.1038/s41564-026-02498-x",
+      "abstract": "Hybridization of wild and cultivated rice plants improves nitrogen use efficiency through microbiome re-domestication.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "microbiome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "野生稻基因座促進微生物群再馴化提升氮利用效率",
+      "summaryZh": "研究指出野生稻與栽培稻雜交可透過微生物群再馴化提升氮利用效率。論文標題指出野生稻基因座能啟動微生物群再馴化，從而增強氮利用效率。該研究發表於 Nature Microbiology。研究結果將雜交帶來的氮利用效率提升與微生物群再馴化連結。",
+      "topicTags": [
+        "rice",
+        "microbiome",
+        "nitrogen-use-efficiency",
+        "hybridization",
+        "domestication"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02477-2",
+      "title": "Host cell traversal by Plasmodium parasites drives sterilizing T cell-mediated immunity following immunization",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-09-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02477-2",
+      "doi": "10.1038/s41564-026-02477-2",
+      "abstract": "Whole-organism malaria vaccine efficacy relies on host cell traversal by Plasmodium parasites, which promotes protective liver-resident CD8 T cell responses independently of intrahepatic parasite development.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "瘧原蟲穿透宿主細胞驅動無菌性 T 細胞免疫",
+      "summaryZh": "該研究指出，整體性瘧疾疫苗的效力依賴於瘧原蟲對宿主細胞的穿透。宿主細胞穿透會促進保護性的肝臟駐留 CD8 T 細胞反應。此效應與肝內寄生蟲發育無關。研究結果顯示穿透行為本身可驅動接種後具無菌性的 T 細胞介導免疫。",
+      "topicTags": [
+        "malaria",
+        "vaccine",
+        "t-cell-immunity",
+        "plasmodium",
+        "liver-resident-cd8"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02460-x",
+      "title": "Innate immune sensing of Plasmodium sporozoite cell traversal drives protective T cell responses",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-09-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02460-x",
+      "doi": "10.1038/s41564-026-02460-x",
+      "abstract": "Plasmodium sporozoites trigger innate immune activation through cell traversal-induced membrane damage. This wounding response, sensed via γδ T cells, is required for protective CD8+ T cell priming and underlies the immunogenicity of sporozoites.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "瘧原蟲孢子體穿越細胞引發先天免疫感應並驅動保護性 T 細胞反應",
+      "summaryZh": "研究指出，Plasmodium 孢子體透過穿越細胞造成的膜損傷觸發先天免疫活化。此傷口反應由 γδ T 細胞感應，並對保護性 CD8+ T 細胞的致敏是必要的。該發現顯示孢子體穿越誘發的損傷感應與孢子體的免疫原性相關。",
+      "topicTags": [
+        "innate-immunity",
+        "malaria",
+        "sporozoite",
+        "t-cells",
+        "gamma-delta-t-cells"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02468-3",
+      "title": "A generalized lineage nomenclature for viral genomic epidemiology",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-09-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02468-3",
+      "doi": "10.1038/s41564-026-02468-3",
+      "abstract": "This study extends the Pango lineage nomenclature system beyond SARS-CoV-2, introducing a dynamic framework for tracking and communicating viral diversity, demonstrated through its application to CHIKV.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "通用病毒基因體流行病學系譜命名法",
+      "summaryZh": "本研究將原本用於 SARS-CoV-2 的 Pango 系譜命名系統擴展至其他病毒，提出一套動態框架以追蹤並傳達病毒多樣性。該框架旨在提供一致的命名方式，適用於病毒基因體流行病學。研究以 CHIKV 為例展示此通用命名法的應用。此擴展有助於跨病毒比較與溝通病毒變異資訊。",
+      "topicTags": [
+        "viral-genomics",
+        "lineage-nomenclature",
+        "genomic-epidemiology",
+        "chikungunya"
+      ]
+    },
+    {
+      "id": "10.64898/2026.01.22.700673",
+      "title": "Generative modeling reveals the connection between nuclear morphology and gene expression",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.01.22.700673v2",
+      "doi": "10.64898/2026.01.22.700673",
+      "abstract": "How transcriptional programs shape nuclear morphology, and how morphological features in turn reflect and influence cell identity and function, remains poorly understood. Here, we introduce COSMIC, a bidirectional generative framework that enables quantitative decomposition of transcriptional variance reflected in nuclear morphology and morphological variance explained by gene expression. Pretrained on over 21 million segmented nuclei, COSMIC models cross-modal relationships by using a multimodal dataset acquired with IRIS, a technology that captures high-resolution images and transcriptomes from the same single cells. COSMIC learns relationships between gene expression and nuclear morphology, enabling the identification of genes whose expression covaries with nuclear morphological variation. In prostate cancer cells, COSMIC distinguishes chemotherapy-responsive and -resistant cell states through coordinated morphological and transcriptional changes, revealing morphology-associated genes linked to tumour state. Applied to spatial transcriptomics of zebrafish embryogenesis, COSMIC reveals how local cellular neighborhoods influence morphology-expression relationships. These results demonstrate that generative modeling powered by paired single-cell measurements can quantify the information shared between nuclear morphology and gene expression, opening new avenues for mechanistic discovery in both basic and translational cell biology.",
+      "authors": [
+        "Wen, S.",
+        "Vinas, R.",
+        "Bues, J.",
+        "Lambert, C.",
+        "Grenningloh, N.",
+        "Ferrari, T.",
+        "Bugani, E.",
+        "Pezoldt, J.",
+        "Love, J.",
+        "Wan, Y.",
+        "Karthaus, W.",
+        "Deplancke, B.",
+        "Brbic, M."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "spatial transcriptomics",
+        "biology",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "生成建模揭示核形態與基因表現之間的關聯"
+    },
+    {
+      "id": "10.64898/2026.09.26.754667",
+      "title": "Accurate and scalable demultiplexing of single-cell RNA sequencing using BEACON",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.26.754667v1",
+      "doi": "10.64898/2026.09.26.754667",
+      "abstract": "Barcode-based multiplexing strategies can significantly increase sample throughput and decrease costs, while mitigating batch effects of single-cell RNA sequencing experiments. However, these approaches can be limited by inaccurate or inefficient demultiplexing, resulting in cell loss and reduced statistical power. Here, we present BEACON, a novel sample demultiplexing method that efficiently learns the background count distribution from data and removes it from individual cells, thereby improving classification accuracy. BEACON outperforms other state-of-the-art methods on multiple human data sets. We apply it to cancer cell line time course experiments in vitro, enabling the identification of genes associated with aggressive tumors in vivo. Finally, we adapt BEACON to multimodal protein-transcriptome profiling, enhancing protein signal recovery to identify a CD161-positive effector memory CD4 T-cell population with a Th17-like phenotype, which we prospectively validate. BEACON can therefore be applied to other droplet-based single-cell sequencing methodologies.",
+      "authors": [
+        "Ji, B. W.",
+        "Lammers, M.",
+        "Houser, A.",
+        "Chan, N.",
+        "Rodriguez, J.",
+        "Chae, H.",
+        "Xiang, C.",
+        "Bui, J.",
+        "Li, H.",
+        "Ji, A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "使用 BEACON 進行準確且可擴展的單細胞 RNA 定序去多重化"
+    },
+    {
+      "id": "10.64898/2026.09.24.753940",
+      "title": "DECIPHER integrates disentangled representation learning and prototype-based cell-type deconvolution across molecular modalities",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.24.753940v2",
+      "doi": "10.64898/2026.09.24.753940",
+      "abstract": "The growing availability of single-cell resources creates new opportunities to extract cell-type-resolved information from the vast body of existing bulk omics data through cell-type deconvolution. Conventional deconvolution methods often rely on linear mixture models or specific probabilistic assumptions and can be sensitive to batch effects, whereas many deep-learning approaches are modality-specific or lack a unified end-to-end learning framework. Here, we developed DECIPHER, an end-to-end representation-learning framework for cell-type deconvolution that can be applied across multiple molecular modalities. DECIPHER learns a domain-constant representation (Zc) for deconvolution and a domain-specific representation (Zs) to model domain-associated variation. By integrating nonlinear representation learning with differentiable non-negative least-squares optimization, DECIPHER estimates cell-type proportions from Zc. Across simulated datasets, experimentally generated bulk-cell mixtures, real-world datasets, and multiple molecular modalities, DECIPHER showed robust and competitive cell-type deconvolution performance. Beyond cell-type proportion estimation, the learned Zc supported chronological age prediction across independent cohorts and prognostic stratification in lung adenocarcinoma, demonstrating that DECIPHER can transform high-dimensional bulk omics data into low-dimensional, biologically informative representations. DECIPHER thus broadens the utility of existing bulk omics resources for biological discovery and clinical research.",
+      "authors": [
+        "Lai, W.",
+        "Li, C.",
+        "Deng, Q.",
+        "Zhu, Y.",
+        "Liu, C.",
+        "Li, Z.",
+        "Luo, O. J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "DECIPHER 整合解耦表徵學習與原型基礎細胞類型解卷積於分子模態間"
+    },
+    {
+      "id": "10.1101/2025.08.22.671789",
+      "title": "Contrastive Poincare Maps: uncovering developmental lineages from single-cell data with scalable hyperbolic embeddings",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-09-30",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.08.22.671789v4",
+      "doi": "10.1101/2025.08.22.671789",
+      "abstract": "Embedding hierarchical data in low dimensions is a problem common to many domains: the number of distinct states grows exponentially with depth, whereas Euclidean area grows only polynomially with radius, so branches crowd, cross, and collapse. Hyperbolic geometry, whose area grows exponentially with radius, matches this expansion. Developmental single-cell RNA sequencing (scRNA-seq) data is a demanding instance of this problem, and one in which embeddings are the primary lens on lineage structure, yet the dominant tools, t-SNE, UMAP, and PHATE, are Euclidean. Existing hyperbolic methods such as Poincare Maps (PM) rely on precomputed pairwise similarity matrices and hand-tuned manifold metrics, scale quadratically in memory, and require PCA preprocessing. We present Contrastive Poincare Maps (CPM), which learns hyperbolic embeddings directly from raw expression through a contrastive objective, processing data in batches without dimensionality reduction, batch correction, or feature engineering. On a synthetic differentiation tree, CPM uniquely combines faithful global hierarchy with low worst-case distortion, reducing distortion roughly 15-fold relative to PM (1.7 vs. 25.9), while its peak GPU memory stays essentially constant with dataset size and over 120-fold below PM at 25,200 cells. Across two case studies (116,312 mouse gastrulation cells and mouse hematopoiesis), CPM preserves global developmental hierarchies, aligns embedding geometry with biological axes, and supports trajectory analysis without additional processing. By coupling hyperbolic geometry with contrastive learning, CPM delivers scalable, structure-preserving embeddings for developmental scRNA-seq data. Code: https://github.com/NithyaBhasker/ContrastivePoincareMaps",
+      "authors": [
+        "Bhasker, N.",
+        "Chung, H.",
+        "Boucherie, L.",
+        "Kim, V.",
+        "Speidel, S.",
+        "Weber, M."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "對比龐加萊映射：利用可擴展雙曲嵌入從單細胞數據揭示發育譜系"
+    },
+    {
+      "id": "10.1038/s41467-026-77925-y",
+      "title": "SARS-CoV-2-specific monoclonal antibody AER002 in Long COVID: an exploratory randomized phase 2a mechanistic trial",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-77925-y",
+      "doi": "10.1038/s41467-026-77925-y",
+      "abstract": "In this exploratory randomized trial, the monoclonal antibody AER002 was safe but did not improve clinical or biomarker outcomes in Long COVID. Post-hoc findings suggest baseline antibody levels and drug exposure may inform future studies.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "SARS-CoV-2 單株抗體 AER002 於長新冠的探索性隨機二期 a 機制試驗",
+      "summaryZh": "這是一項針對長新冠的探索性隨機試驗，評估 SARS-CoV-2 特異性單株抗體 AER002 的安全性與效果。研究結果顯示 AER002 是安全的，但未改善長新冠患者的臨床或生物標記結果。事後分析指出，基線抗體水平與藥物暴露可能有助於規劃後續研究。",
+      "topicTags": [
+        "long-covid",
+        "monoclonal-antibody",
+        "clinical-trial",
+        "sars-cov-2",
+        "mechanistic-study"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-77970-7",
+      "title": "Metabolization of human milk oligosaccharides by Streptococcus pneumoniae",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-77970-7",
+      "doi": "10.1038/s41467-026-77970-7",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "肺炎鏈球菌代謝人類乳汁寡糖"
+    },
+    {
+      "id": "10.1038/s41467-026-77884-4",
+      "title": "Clock neurons modulate seizure timing through a diurnal switch",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-09-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-77884-4",
+      "doi": "10.1038/s41467-026-77884-4",
+      "abstract": "Neural mechanisms that drive diurnal oscillations in seizure susceptibility are not fully understood. Here, in this manuscript, fruit flies show the daily rhythm of seizure risks, driven by brain clock neurons and independent of sleep amount. Silencing these neurons suppressed seizures, further demonstrating the role for brain clock neurons in modulating daily seizure risk.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "時鐘神經元透過晝夜切換調控癲癇發作時間",
+      "summaryZh": "本研究探討驅動癲癇易感性晝夜振盪的神經機制，目前仍未完全了解。研究在果蠅中觀察到癲癇風險的日週期節律，該節律由腦部時鐘神經元驅動，且與睡眠量無關。沉默這些時鐘神經元可抑制癲癇發作。結果進一步顯示腦部時鐘神經元在調節每日癲癇風險中扮演角色。",
+      "topicTags": [
+        "circadian-rhythm",
+        "seizure",
+        "fruit-fly",
+        "neuroscience"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 67,
+      "passedByScope": 17,
+      "llmClassified": 50,
+      "llmYes": 33,
+      "llmNotSure": 1,
+      "llmNo": 16,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 51,
+      "excluded": 16
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 16,
+      "llmTagged": 16,
+      "llmLineA": 1,
+      "llmLineB": 15,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 20,
+      "candidates": 20,
+      "featured": 12,
+      "overflow": 8,
+      "lineA": 1,
+      "lineB": 15,
+      "preprint": 4,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 12,
+      "featuredPreprint": 0,
+      "overflowLineA": 1,
+      "overflowLineB": 3,
+      "overflowPreprint": 4
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "primarySucceeded": 11,
+      "fallbackSucceeded": 1,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 8,
+      "llmTranslated": 8,
+      "primarySucceeded": 8,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 16
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 11
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "observed": [
+            "gemini-3.5-flash-lite"
+          ],
+          "succeeded": 1
+        }
+      },
+      "translate": {
+        "requested": 8,
+        "succeeded": 8,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        },
+        "primarySucceeded": 8,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02777-x",
+        "title": "2D semiconductor aims to turbocharge development of high-performance electronics",
+        "journal": "Nature",
+        "publishedDate": "2026-09-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02777-x",
+        "doi": "10.1038/d41586-026-02777-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02991-7",
+        "title": "Elena, Aris, Marcus: AI-generated ‘ghosts’ are polluting the scientific literature",
+        "journal": "Nature",
+        "publishedDate": "2026-09-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02991-7",
+        "doi": "10.1038/d41586-026-02991-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02978-4",
+        "title": "How did Earth get its water? Inside the extreme machine seeking answers",
+        "journal": "Nature",
+        "publishedDate": "2026-09-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02978-4",
+        "doi": "10.1038/d41586-026-02978-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03047-6",
+        "title": "Beware sham scientific societies: the research community must be more vigilant",
+        "journal": "Nature",
+        "publishedDate": "2026-09-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03047-6",
+        "doi": "10.1038/d41586-026-03047-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03015-0",
+        "title": "How to spend $25 billion on science: OpenAI’s staggeringly rich research charity gets under way",
+        "journal": "Nature",
+        "publishedDate": "2026-09-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03015-0",
+        "doi": "10.1038/d41586-026-03015-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02201-4",
+        "title": "I turn up late to meetings to dodge small talk. Am I wrong?",
+        "journal": "Nature",
+        "publishedDate": "2026-09-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02201-4",
+        "doi": "10.1038/d41586-026-02201-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11068-4",
+        "title": "X-ray liquidography decodes complex motions in azobenzene isomerization",
+        "journal": "Nature",
+        "publishedDate": "2026-09-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11068-4",
+        "doi": "10.1038/s41586-026-11068-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11108-z",
+        "title": "Carbene transfer from thianthrenium ylides for cyclopropanation",
+        "journal": "Nature",
+        "publishedDate": "2026-09-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11108-z",
+        "doi": "10.1038/s41586-026-11108-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11047-9",
+        "title": "Wafer-scale epitaxy growth of high-mobility p-type boron carbon nitride",
+        "journal": "Nature",
+        "publishedDate": "2026-09-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11047-9",
+        "doi": "10.1038/s41586-026-11047-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11036-y",
+        "title": "Scalable decision-making for games of imperfect information",
+        "journal": "Nature",
+        "publishedDate": "2026-09-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11036-y",
+        "doi": "10.1038/s41586-026-11036-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11086-2",
+        "title": "Self-aligned optical microcomb emerging between octave-separated lasers",
+        "journal": "Nature",
+        "publishedDate": "2026-09-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11086-2",
+        "doi": "10.1038/s41586-026-11086-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77810-8",
+        "title": "Ligand engineering enables an alkaline iron-chromium redox flow battery",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77810-8",
+        "doi": "10.1038/s41467-026-77810-8",
+        "abstract": "Iron-chromium redox flow batteries are promising for long-duration energy storage but suffer from sluggish chromium(II/III) chemistry. Here, authors use a strong-field ligand to unlock a chromium(III/IV) posolyte and establish a 1.15 V alkaline iron chromium redox flow battery.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78167-8",
+        "title": "Reversible six-electron tellurium redox enabled by selenium-modulated hypervalent activation in aqueous sodium/zinc hybrid batteries",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78167-8",
+        "doi": "10.1038/s41467-026-78167-8",
+        "abstract": "Aqueous sodium-based batteries are attractive for safe, low-cost storage but are limited by low-capacity redox electrode chemistries. Here, authors use selenium modulation to enable reversible six-electron tellurium redox, achieving high capacity and a pouch-cell demonstration.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78141-4",
+        "title": "High-energy low-repetition broadband ultrafast lasers empowered by hollow-core fiber",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78141-4",
+        "doi": "10.1038/s41467-026-78141-4",
+        "abstract": "This work demonstrates a hollow-core-fiber-enabled high-energy low-repetition ultrafast laser that provides broadband coherent swept sources for high-speed optical imaging, dynamic spectral characterization, and precision vibration sensing.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78118-3",
+        "title": "Generative design of high-fidelity microstructures using physics-aware machine learning",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78118-3",
+        "doi": "10.1038/s41467-026-78118-3",
+        "abstract": "This study uses physics-aware AI to generate high-fidelity microstructures beyond existing data distributions, resulting in a bimodal grain structure that enables improved strength and ductility.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78073-z",
+        "title": "Chiral trions in enantiopure single-wall carbon nanotubes",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-09-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78073-z",
+        "doi": "10.1038/s41467-026-78073-z",
+        "abstract": "Here, the authors unveil the circular dichroism of trions in enantiopure single-walled carbon nanotubes, indicating chiroptical characteristics that reflect those of the parent excitons and remain robust in a Coulomb-bound three-body system.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
