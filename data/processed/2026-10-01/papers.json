@@ -1,0 +1,827 @@
+{
+  "reportDate": "2026-10-01",
+  "generatedAt": "2026-10-01T17:08:38.591Z",
+  "papers": [
+    {
+      "id": "10.1016/j.cell.2026.09.002",
+      "title": "Glioma margins gain a third dimension before surgery ends",
+      "journal": "Cell",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01071-8?rss=yes",
+      "doi": "10.1016/j.cell.2026.09.002",
+      "abstract": "In this issue of Cell, Liu et al. introduce ULTRA, which combines rapid tissue clearing, single-channel stimulated Raman scattering, and AI to generate cell-resolved three-dimensional virtual histology of intact glioma specimens in about 30 minutes—fast enough to expose depth-dependent infiltration before surgery ends.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "術中即見膠質瘤邊界的三維樣貌",
+      "summaryZh": "Cell 期刊刊載 Liu 等人提出 ULTRA 方法。ULTRA 結合快速組織透明化、單通道受激拉曼散射 stimulated Raman scattering 與 AI，用於產生完整膠質瘤檢體的細胞解析度三維虛擬組織學。該流程約 30 分鐘即可完成，速度足以在手術結束前呈現。研究指出此方法可揭露深度依賴性的浸潤情形。",
+      "topicTags": [
+        "glioma",
+        "intraoperative-imaging",
+        "tissue-clearing",
+        "stimulated-raman-scattering",
+        "virtual-histology"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.09.006",
+      "title": "Taking the heat: Breaking the temperature limits of eukaryotic life",
+      "journal": "Cell",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01075-5?rss=yes",
+      "doi": "10.1016/j.cell.2026.09.006",
+      "abstract": "What’s the highest temperature at which complex life can grow? It’s an old question. Here, Rappaport and colleagues describe a thermophilic amoeba that breaks the previous record, which was set at ∼60°C, and suggest the beginnings of an answer to what innovations enable this organism to take the heat.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "耐熱極限：突破真核生物的溫度上限",
+      "summaryZh": "Rappaport 等人在 Cell 發表研究，描述一種耐熱變形蟲，打破先前約 60°C 的紀錄。該研究針對複雜生命可生長的最高溫度提出新的觀察。作者也提出此生物能耐熱的創新可能為何，開啟對真核生物耐熱極限的初步解答。",
+      "topicTags": [
+        "thermophile",
+        "eukaryote",
+        "amoeba",
+        "extremophile",
+        "temperature-limits"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.09.003",
+      "title": "Mitochondria before we knew them",
+      "journal": "Cell",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01072-X?rss=yes",
+      "doi": "10.1016/j.cell.2026.09.003",
+      "abstract": "In this issue of Cell, Chen et al. chart mitochondrial proteome diversity across eukaryotes, revealing an unexpectedly complex ancestral proteome alongside extensive lineage-specific innovation. Their broad phylogenetic reconstruction provides new insights into the mitochondrial proteome of the last eukaryotic common ancestor while unearthing a wealth of unexplored mitochondrial biology outside of traditional model systems.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "我們認識之前的粒線體",
+      "summaryZh": "Cell 期刊刊載 Chen 等人的研究，描繪了真核生物中粒線體蛋白體的多樣性。研究發現祖先粒線體蛋白體出乎意料地複雜，並伴隨廣泛的譜系特異性創新。透過廣泛的系統發育重建，研究為最後真核共同祖先的粒線體蛋白體提供了新見解。研究也揭示了傳統模式系統之外尚未探索的粒線體生物學內容。",
+      "topicTags": [
+        "mitochondria",
+        "proteomics",
+        "phylogenetics",
+        "evolution",
+        "eukaryotes"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.09.007",
+      "title": "Decoding mitochondrial proteomes of diverse eukaryotes",
+      "journal": "Cell",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01076-7?rss=yes",
+      "doi": "10.1016/j.cell.2026.09.007",
+      "abstract": "Our textbook view of mitochondria, which has been shaped by studies in animals and yeast, fails to do justice to the organelle’s broader eukaryotic diversity. While most mitochondria retain a tiny genome, the overwhelming majority of their proteins are nuclear-encoded and vary extensively across lineages. To map this diversity, the MitoCarta Tree of Life Consortium developed experimental and computational workflows to generate high-accuracy mitochondrial proteomes across diverse eukaryotes—helping to lay a foundation for comparative mitochondrial biology with broad implications for physiology, evolution, and disease.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology",
+        "evolution",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "解碼多樣真核生物的粒線體蛋白體",
+      "summaryZh": "傳統教科書對粒線體的觀點主要來自動物與酵母的研究，未能充分反映其在更廣泛真核生物中的多樣性。大部分粒線體保留極小的基因組，而絕大多數蛋白質由細胞核編碼，且在不同譜系間變化很大。為描繪此多樣性，MitoCarta Tree of Life Consortium 開發了實驗與計算流程，用以產生多樣真核生物的高準確度粒線體蛋白體。該工作有助於建立比較粒線體生物學的基礎。研究指出此基礎對生理、演化與疾病具有廣泛意涵。",
+      "topicTags": [
+        "mitochondria",
+        "proteomics",
+        "evolution",
+        "comparative-biology"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.08.056",
+      "title": "Mitochondrial proteome of Acanthamoeba delineates aerobic and anaerobic pathways dynamically regulated by oxygen",
+      "journal": "Cell",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01067-6?rss=yes",
+      "doi": "10.1016/j.cell.2026.08.056",
+      "abstract": "The complete mitochondrial proteome of Acanthamoeba castellanii—an infectious amoeba that causes blindness—catalogs 1,122 proteins, with over a third having no human or yeast counterpart, including potential drug candidates. Oxygen levels rewire this organism’s bioenergetic machinery, switching on an anaerobic pathway that produces H2 gas via a mitochondrial hydrogenase.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "阿米巴粒線體蛋白體揭示氧氣調控的有氧與厭氧途徑",
+      "summaryZh": "研究團隊完成致盲性感染阿米巴 Acanthamoeba castellanii 的完整粒線體蛋白體，鑑定出 1,122 個蛋白質。其中超過三分之一沒有人類或酵母菌的對應蛋白，包含潛在的藥物標靶。氧氣濃度會重塑此生物的生物能量學機制，在缺氧條件下啟動厭氧途徑。該厭氧途徑透過粒線體氫化酶產生 H2 氣體。",
+      "topicTags": [
+        "mitochondria",
+        "proteomics",
+        "acanthamoeba",
+        "anaerobic-metabolism",
+        "hydrogenase"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.08.027",
+      "title": "A high-confidence plant mitochondrial proteome via protein correlation profiling",
+      "journal": "Cell",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01000-7?rss=yes",
+      "doi": "10.1016/j.cell.2026.08.027",
+      "abstract": "A high-confidence mitochondrial proteome inventory of Arabidopsis thaliana (AtMitoCarta) is defined using serial enrichment of mitochondria, mass spectrometry, and protein correlation profiling.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "以蛋白質相關性分析建立高可信度植物粒線體蛋白體",
+      "summaryZh": "研究團隊以阿拉伯芥 Arabidopsis thaliana 為材料，透過粒線體串聯富集、質譜分析與蛋白質相關性分析，定義出高可信度的粒線體蛋白體清單 AtMitoCarta。該清單整合了富集與相關性資訊，用以辨識粒線體蛋白。AtMitoCarta 的建立提供了一個針對植物粒線體的蛋白體參考資源。",
+      "topicTags": [
+        "plant-mitochondria",
+        "proteomics",
+        "arabidopsis-thaliana",
+        "protein-correlation-profiling"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.08.029",
+      "title": "Comparative analysis of mitochondrial proteomes across the tree of life",
+      "journal": "Cell",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01002-0?rss=yes",
+      "doi": "10.1016/j.cell.2026.08.029",
+      "abstract": "Comparative analysis of experimentally defined and computationally predicted mitoproteomes prioritizes candidate targets for protozoan diseases and predicts an ancestral mitochondrion with aerobic and anaerobic capacities that was a late addition to the eukaryotic cell.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "跨生命樹的粒線體蛋白體比較分析",
+      "summaryZh": "本研究對實驗定義與計算預測的粒線體蛋白體進行比較分析，涵蓋生命樹中的多個物種。分析結果優先排序了可用於原蟲疾病的候選標靶。研究並推測祖先粒線體同時具有有氧與厭氧能力，且是後期加入真核細胞的結構。",
+      "topicTags": [
+        "mitochondria",
+        "proteomics",
+        "comparative-analysis",
+        "protozoan-disease",
+        "evolution"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.08.057",
+      "title": "Acanthamoeba ATP synthase structure reveals the TCA cycle is tethered to OXPHOS",
+      "journal": "Cell",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01068-8?rss=yes",
+      "doi": "10.1016/j.cell.2026.08.057",
+      "abstract": "Acanthamoeba castellanii, a pathogenic amoeba, belongs to an evolutionary branch distinctly removed from humans and fungi. Cryo-EM of the organism’s ATP synthase enzyme using raw mitochondrial lysates reveals an unexpected metabolic adaptation that allows it to wire the TCA cycle directly into the ATP-making apparatus itself.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "阿米巴 ATP 合成酶結構顯示 TCA 循環與氧化磷酸化相連",
+      "summaryZh": "本研究針對病原性阿米巴 Acanthamoeba castellanii 的 ATP 合成酶進行結構解析，該物種在演化上與人類和真菌明顯分離。研究團隊以原始粒線體裂解液進行冷凍電子顯微鏡觀察。結果顯示一種意外的代謝適應，使 TCA 循環能直接連接到 ATP 生成裝置本身。該發現揭示了此遠緣真核生物中 ATP 合成酶與代謝途徑的特殊連接方式。",
+      "topicTags": [
+        "atp-synthase",
+        "mitochondria",
+        "metabolism",
+        "cryo-em",
+        "acanthamoeba"
+      ]
+    },
+    {
+      "id": "10.1038/s41592-026-03243-2",
+      "title": "Times are changing but order matters: transferable prediction of small-molecule liquid chromatography retention times",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03243-2",
+      "doi": "10.1038/s41592-026-03243-2",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "時代在變，但順序很重要：小分子液相層析保留時間的可轉移預測"
+    },
+    {
+      "id": "10.1038/s41588-026-02770-0",
+      "title": "Reactivation of the embryonic ζ-globin gene ameliorates severe forms of α-thalassemia",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02770-0",
+      "doi": "10.1038/s41588-026-02770-0",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "重新活化胚胎 ζ-珠蛋白基因可改善嚴重型 α-地中海貧血"
+    },
+    {
+      "id": "10.1038/s41587-026-03307-w",
+      "title": "Deep learning perturbation models can outperform baselines on calibrated metrics",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03307-w",
+      "doi": "10.1038/s41587-026-03307-w",
+      "abstract": "Calibration-aware evaluation of perturbation models shows that deep learning models can outperform baselines.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "校準指標下深度學習擾動模型優於基準",
+      "summaryZh": "該研究針對擾動模型進行校準感知評估。評估結果顯示，深度學習模型在校準指標上可以優於基準模型。研究以《Nature Biotechnology》發表。結果凸顯校準感知評估對比較擾動模型表現的重要性。",
+      "topicTags": [
+        "deep-learning",
+        "perturbation-model",
+        "model-evaluation",
+        "calibration"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02090-9",
+      "title": "Retraction Note: Chromosomal translocation-derived aberrant Rab22a drives metastasis of osteosarcoma",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02090-9",
+      "doi": "10.1038/s41556-026-02090-9",
+      "abstract": "Retraction Note: Chromosomal translocation-derived aberrant Rab22a drives metastasis of osteosarcoma",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "撤稿聲明：染色體易位衍生的異常 Rab22a 驅動骨肉瘤轉移",
+      "summaryZh": "《Nature Cell Biology》發布撤稿聲明，撤回題為「Chromosomal translocation-derived aberrant Rab22a drives metastasis of osteosarcoma」的論文。該撤稿說明指出原研究關於染色體易位衍生的異常 Rab22a 驅動骨肉瘤轉移的結論已被撤回。",
+      "topicTags": [
+        "retraction",
+        "osteosarcoma",
+        "metastasis",
+        "rab22a",
+        "chromosomal-translocation"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02477-9",
+      "title": "Brain stimulation boosts CSF flow",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02477-9",
+      "doi": "10.1038/s41593-026-02477-9",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "腦部刺激促進腦脊液流動"
+    },
+    {
+      "id": "10.1038/s41593-026-02478-8",
+      "title": "WHOLISTIC tracks the entire body",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02478-8",
+      "doi": "10.1038/s41593-026-02478-8",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "WHOLISTIC 追蹤全身"
+    },
+    {
+      "id": "10.1038/s41593-026-02476-w",
+      "title": "Embeddedness under psilocybin",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02476-w",
+      "doi": "10.1038/s41593-026-02476-w",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41593-026-02443-5",
+      "title": "In conversation with Sergey Stavisky",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02443-5",
+      "doi": "10.1038/s41593-026-02443-5",
+      "abstract": "As part of our special issue on Neurotechnology, we spoke with Sergey Stavisky, Associate Professor at the University of California, Davis, about the breakthroughs that have transformed speech neuroprostheses from proof-of-concept demonstrations into practical communication systems. He reflects on the scientific surprises, engineering challenges and ethical questions that are shaping the future of neural interfaces.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "與 Sergey Stavisky 對談"
+    },
+    {
+      "id": "10.1038/s41593-026-02467-x",
+      "title": "In conversation with Miguel Nicolelis",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02467-x",
+      "doi": "10.1038/s41593-026-02467-x",
+      "abstract": "As part of our special issue on neurotechnology, we spoke with Miguel Nicolelis, Professor Emeritus at Duke University and founder of the Edmond and Lily Safra International Neuroscience Institute, about the bold ideas that have defined his career, from helping to pioneer brain–machine interfaces to establishing a neuroscience institute in northeastern Brazil with the goal of driving social transformation. He considers the scientific discoveries, technological hurdles and ethical questions that continue to shape the future of neural interfaces and neurorehabilitation.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "neuroscience"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "與 Miguel Nicolelis 對談"
+    },
+    {
+      "id": "10.1038/s41593-026-02450-6",
+      "title": "In conversation with Richard Andersen",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02450-6",
+      "doi": "10.1038/s41593-026-02450-6",
+      "abstract": "As part of our special issue on neurotechnology, we spoke with Richard Andersen, James G. Boswell Professor of Neuroscience at Caltech, about the discoveries that helped to establish the posterior parietal cortex as a key hub for intention and action planning. He looks back on decades of discoveries in the posterior parietal cortex and discusses how advances in neural recording, decoding and computation are reshaping our understanding of cognition.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "neuroscience"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "與 Richard Andersen 對談"
+    },
+    {
+      "id": "10.1038/s41593-026-02453-3",
+      "title": "In conversation with Edward Chang",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02453-3",
+      "doi": "10.1038/s41593-026-02453-3",
+      "abstract": "As part of our special issue on neurotechnology, we spoke with Edward Chang, Margaret Liu Collins and Edward B. Collins distinguished Professor and Chair of neurosurgery at the University of California, San Francisco, about the evolution of speech brain–computer interfaces (BCIs). He discusses how advances in AI are accelerating the translation of BCIs into the clinic, the challenge of restoring natural communication, and why large-scale neural datasets may ultimately help build computational models of the human brain.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "與 Edward Chang 對談：語音腦機介面的演進",
+      "summaryZh": "這篇為《Nature Neuroscience》神經科技特刊的對談，採訪了加州大學舊金山分校神經外科教授 Edward Chang。對談聚焦語音腦機介面（BCIs）的發展歷程。Chang 提到人工智慧的進展正加速腦機介面邁向臨床應用的轉譯。他也談到恢復自然溝通的挑戰，以及大型神經資料集可能有助於建立人類大腦的計算模型。",
+      "topicTags": [
+        "neurotechnology",
+        "brain-computer-interface",
+        "speech",
+        "ai"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02451-5",
+      "title": "In conversation with Jennifer Collinger",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02451-5",
+      "doi": "10.1038/s41593-026-02451-5",
+      "abstract": "As part of our special issue on neurotechnology, we spoke with Jennifer Collinger, Professor at the University of Pittsburgh, about how sensory feedback is reshaping brain–computer interfaces, the surprising stability of neural representations after spinal cord injury, and the scientific and engineering challenges of building truly bidirectional neuroprosthetic systems that restore movement and touch.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "與 Jennifer Collinger 對談：感官回饋重塑腦機介面",
+      "summaryZh": "這篇刊載於《Nature Neuroscience》神經科技特刊的對談，訪問了匹茲堡大學教授 Jennifer Collinger。對談內容聚焦於感官回饋如何改變腦–電腦介面，以及脊髓損傷後神經表徵出人意料的穩定性。Collinger 也談到建構能恢復動作與觸覺的真正雙向神經義肢系統時所面臨的科學與工程挑戰。該對談呈現了雙向神經義肢發展的現況與關鍵議題。",
+      "topicTags": [
+        "neurotechnology",
+        "brain-computer-interface",
+        "neuroprosthetics",
+        "sensory-feedback"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02492-3",
+      "title": "Carbohydrate-active enzymes from a core root mycobiota member enable infection of multiple plant hosts",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02492-3",
+      "doi": "10.1038/s41564-026-02492-3",
+      "abstract": "Host-induced fungal CAZymes act as disease determinants and drive multihost compatibility.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "來自核心根部真菌群成員的碳水化合物活性酶使多種植物宿主感染成為可能"
+    },
+    {
+      "id": "10.1038/s41564-026-02497-y",
+      "title": "Fusobacterium nucleatum enhances enterotoxigenic Bacteroides fragilis-mediated neuron loss and intestinal motility dysfunction",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-10-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02497-y",
+      "doi": "10.1038/s41564-026-02497-y",
+      "abstract": "Fusobacterium nucleatum promotes toxin expression in enterotoxigenic Bacteroides fragilis that induces apoptosis in enteric neurons. This eventually leads to gut dysmotility that persists even after bacterial clearance but can be alleviated by using a probiotic cocktail.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "具核梭桿菌增強產腸毒素脆弱擬桿菌介導的神經元損失與腸道運動功能障礙"
+    },
+    {
+      "id": "10.64898/2026.03.05.709897",
+      "title": "Quantum Hamiltonian-Based Generative Modeling of Single-Cell Transcriptomics for Gene Regulatory Network Inference",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-01",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.03.05.709897v2",
+      "doi": "10.64898/2026.03.05.709897",
+      "abstract": "We introduce a novel quantum Hamiltonian-based gene expression model (QHGM), a generative framework for modeling pseudotime-ordered single-cell gene expression data. In QHGM, gene interactions are encoded via a parameterized Hamiltonian, and the outcomes of quantum measurements provide a discrete representation of the gene expression profile. To learn the Hamiltonian parameters and infer gene regulatory networks (GRNs), we develop a scalable variational quantum algorithm for network inference (VQ-Net) based on empirical risk minimization. We derive finite-sample recovery guarantees for accurate parameter estimation, demonstrating polynomial scaling with the number of genes. Experiments on synthetic data demonstrate accurate GRN recovery, with VQ-NET achieving over 25% improvement in edge recovery and over 50% improvement in parameter-sign recovery compared to state-of-the-art classical methods. We further apply the framework to glioblastoma scRNA-seq data, where it identifies biologically plausible regulatory interactions associated with cancer progression, highlighting the potential of quantum-like modeling beyond classical probabilistic frameworks.",
+      "authors": [
+        "Sohail, M. A.",
+        "Sudharshan, R. R.",
+        "Pradhan, S. S.",
+        "Rao, A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "基於量子哈密頓量的單細胞轉錄組生成建模用於基因調控網絡推斷"
+    },
+    {
+      "id": "10.1101/2022.02.28.482296",
+      "title": "Defining transcriptomic niches in human fibrotic lung with multi-sample spatial transcriptomics analysis using the MAPLE algorithm",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-01",
+      "url": "https://www.biorxiv.org/content/10.1101/2022.02.28.482296v4",
+      "doi": "10.1101/2022.02.28.482296",
+      "abstract": "Idiopathic pulmonary fibrosis (IPF) is an age-related lung disease marked by patchy parenchymal fibrosis that disrupts gas exchange and leads to respiratory failure. Single-cell RNA-seq studies have revealed cellular heterogeneity in IPF, but the spatial contexts underlying alveolar epithelial cell loss, honeycomb cyst formation, and fibroblastic foci remain unclear, motivating comparisons based on multi-sample spatial transcriptomics (ST) across clinical and anatomical conditions. Here, we present a comprehensive pipeline for analyzing multi-sample lung ST data that accounts for experimental design, featuring the MAPLE algorithm to jointly identify cell-spot subpopulations and discover spatial biomarkers, with validation using 10X Xenium ST data. Our analysis reveals that IPF progression involves epithelial-to-mesenchymal state transitions and region-specific fibrotic programs, characterized by extracellular matrix remodeling in the upper lobes and B-cell-enriched immune niches in the lower lobes. We identify fibrotic regions with senescent cell (SnC) enrichment and demonstrate their spatial colocalization with aberrant basaloid niches.",
+      "authors": [
+        "Jeon, H.",
+        "Allen, C.",
+        "Vanegas, N.-D. P.",
+        "Xie, J.",
+        "Ghobashi, A. H.",
+        "Rodriguez-Lopez, J.",
+        "Rosas, L.",
+        "Wang, C.",
+        "Cheng, H.",
+        "Chang, Y.",
+        "Shilo, K.",
+        "Ma, A.",
+        "Mora, A. L.",
+        "Rojas, M.",
+        "Ma, Q.",
+        "Chung, D."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "Xenium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "利用 MAPLE 算法進行多樣本空間轉錄組分析，定義人類纖維化肺部的轉錄組生態位"
+    },
+    {
+      "id": "10.64898/2026.09.21.753263",
+      "title": "A Metacell Model of Single Cell RNA-seq Counts Yields a Gaussian Mixture Model in PCA Space",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-01",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.21.753263v1",
+      "doi": "10.64898/2026.09.21.753263",
+      "abstract": "Single cell RNA sequencing (scRNAseq) has revolutionized cellular biology over the past decade. At its most basic, a scRNAseq dataset is a cell by gene matrix with entries giving the transcription count of a particular gene in a particular cell. A common workflow applies log-normalization and z-scoring to the count matrix and then embeds the cells in a lower dimensional space using principal component analysis (PCA). A large number of computational tools use the PCA embedding as a starting point, but statistical models for the distribution of cells in the PCA space are lacking. As a result, many tools depend on ad-hoc assumptions that likely lead to signal loss. In this work, we address this gap using the metacell model, a statistical model of count matrices introduced by previous authors. We show that application of the workflow to count matrices generated under a metacell model yields PCA embeddings distributed as a Gaussian mixture model (GMM). To our knowledge, this is the first result connecting a statistical model of counts to the distribution of cells in PCA space. Our derivation depends on methods from random matrix theory (RMT) and we extend and establish connections between RMT and scRNAseq count matrices. We then use the predicted GMM to test the metacell model on 11 datasets. The predictions are accurate for counts generated by the metacell model but underestimate the variance of real cells for most of our datasets. We show that this error largely arises from gene correlations within metacells, which the metacell model does not capture. Some of our datasets are fit relatively well by the metacell model, suggesting that the fit of the metacell model to true datasets depends on sufficiently dense sampling. Finally, we show that the strength of noise in the PCA space varies significantly across metacells, suggesting that statistical modeling of PCA embeddings can improve existing downstream workflows. Our results provide a framework for deriving and testing statistical models of PCA embeddings from statistical models of counts and identify a limitation of the metacell description for scRNAseq datasets.",
+      "authors": [
+        "Leviyang, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "biology",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "單細胞 RNA-seq 計數的元細胞模型在主成分分析空間中產生高斯混合模型"
+    },
+    {
+      "id": "10.64898/2026.09.15.751768",
+      "title": "Pretrained gene representations transfer mean expression more broadly than spatial patterns in virtual spatial transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-01",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.15.751768v2",
+      "doi": "10.64898/2026.09.15.751768",
+      "abstract": "Virtual spatial transcriptomics models combine tissue images with pretrained gene representations to predict expression for unseen genes, but what these representations contribute is unclear. We separated their effects into overall gene-mean and spatial variation using held-out genes and individuals across four cohorts spanning three human brain regions and HER2-positive breast cancer. With fixed representations derived from regulatory DNA sequences and representations pretrained on single-cell transcriptomes, reductions in gene-mean error accounted for 91-96% of the total mean squared error reductions over matched random vectors. Mean-only models using gene representations without images retained 82-99% of the corresponding full-matrix correlation gain. Spatial gains were smaller, increased with expression variation in training tissue, and varied across cohorts and representations. Thus, pretrained gene representations broadly transfer mean expression but only selectively support spatial recovery, showing that gene-panel extension alone does not establish spatial recovery for new targets.",
+      "authors": [
+        "Chen, T.",
+        "Hicks, S. C."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "預訓練基因表徵在虛擬空間轉錄組學中比空間模式更廣泛地轉移平均表達"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 31,
+      "passedByScope": 26,
+      "llmClassified": 5,
+      "llmYes": 2,
+      "llmNotSure": 0,
+      "llmNo": 3,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 28,
+      "excluded": 3
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 21,
+      "llmTagged": 21,
+      "llmLineA": 0,
+      "llmLineB": 21,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 26,
+      "candidates": 25,
+      "featured": 12,
+      "overflow": 13,
+      "lineA": 0,
+      "lineB": 21,
+      "preprint": 4,
+      "skip": 1,
+      "featuredLineA": 0,
+      "featuredLineB": 12,
+      "featuredPreprint": 0,
+      "overflowLineA": 0,
+      "overflowLineB": 9,
+      "overflowPreprint": 4
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "primarySucceeded": 12,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 13,
+      "llmTranslated": 13,
+      "primarySucceeded": 13,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 21
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 12
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 13,
+        "succeeded": 13,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        },
+        "primarySucceeded": 13,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03044-9",
+        "title": "Sign of the times: AI lingo muscles into esteemed dictionary",
+        "journal": "Nature",
+        "publishedDate": "2026-10-01T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03044-9",
+        "doi": "10.1038/d41586-026-03044-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03101-3",
+        "title": "Gaze into the cosmos and through the eyes of a bee — September’s best science images",
+        "journal": "Nature",
+        "publishedDate": "2026-10-01T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03101-3",
+        "doi": "10.1038/d41586-026-03101-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03118-8",
+        "title": "Battle of the Anthropocene: allegations re-ignite row over proposed geologic epoch",
+        "journal": "Nature",
+        "publishedDate": "2026-10-01T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03118-8",
+        "doi": "10.1038/d41586-026-03118-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
