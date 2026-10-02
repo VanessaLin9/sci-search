@@ -90,6 +90,7 @@ npm run check
 | `npm run test-digest-llm` | One-paper digest tagging smoke test |
 | `npm run probe:endpoint` | List / smoke-check OpenAI-compatible models (`.env`; masked keys) |
 | `npm run probe:routing` | Life-science routing fixture (bio / physics) |
+| `npm run eval:life-science-gate` | Offline life-science gate dataset validate / review export / score (no API key) |
 | `npm run probe:summarize` | Featured Traditional Chinese summarize probe |
 | `npm run probe:translate` | Overflow titleZh translate probe |
 | `npm run probe-llm` | Alias → `probe:endpoint` |
@@ -267,8 +268,10 @@ src/
   normalizers/                   # RSS per-journal + bioRxiv record → Paper
   enrichers/                     # abstract enrichment registry
   commands/                      # CLI entrypoints
+  eval/lifeScienceGate/          # offline gate dataset validate / review / score
   retention/                     # daily output retention prune
 config/                          # sources, biorxiv, keywords, routing(+keywords), digest, email
+eval/life-science-gate/          # versioned gate eval dataset (not pruned with daily output)
 docs/                            # GitHub Pages (generated HTML)
 scripts/llm-probe/               # Durable LLM endpoint / routing / summarize / translate probes
 data/processed/{date}/papers.json  # 30-day rolling retention on main
