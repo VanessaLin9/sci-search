@@ -1,0 +1,4926 @@
+{
+  "datasetId": "life-science-gate",
+  "datasetVersion": "1.0.0",
+  "policyId": "life-science-routing-title-only-v1",
+  "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1",
+  "createdAt": "2026-10-03T00:00:00.000Z",
+  "changelog": [
+    "1.0.0: first historical sample of 100 broad-science gate cases with AI drafts; gold pending Vanessa review."
+  ],
+  "sampling": {
+    "seed": 20261003,
+    "dateRange": {
+      "start": "2026-05-22",
+      "end": "2026-10-02"
+    },
+    "targetSize": 100,
+    "devFraction": 0.6,
+    "quotas": {
+      "general.science": 12,
+      "general.nature": 20,
+      "general.nature-communications": 16,
+      "general.science-advances": 22,
+      "hard.news_commentary": 8,
+      "hard.vague_title": 6,
+      "hard.interdisciplinary": 8,
+      "hard.keyword_fallback": 5,
+      "hard.historical_disagreement": 3
+    },
+    "notes": [
+      "hard tag interdisciplinary: wanted 8, got 6",
+      "hard tag historical_disagreement: wanted 3, got 0",
+      "topped up 5 general cases after hard-tag shortfalls"
+    ]
+  },
+  "inventoryGaps": [
+    {
+      "id": "pnas-zero",
+      "detail": "PNAS is a broad-science source but 0 recoverable papers appeared in processed history (working tree + git)."
+    },
+    {
+      "id": "actions-artifacts-inaccessible",
+      "detail": "GitHub Actions run 36598521687 could not be fetched (API 403). 2026-09-30 processed papers.json in git remains the recoverable snapshot for that day."
+    },
+    {
+      "id": "raw-rss-not-used",
+      "detail": "data/raw is gitignored; RSS snapshots under test/fixtures/rss-snapshots are 2026-05-22/24 only and are not treated as gate gold."
+    },
+    {
+      "id": "probe-fixtures-not-gold",
+      "detail": "scripts/llm-probe/fixtures/routing-samples.json has two synthetic smoke titles (adq9999 / adp0001) and is not historical gold."
+    },
+    {
+      "id": "hard-tag-shortfalls",
+      "detail": "hard tag interdisciplinary: wanted 8, got 6 hard tag historical_disagreement: wanted 3, got 0 topped up 5 general cases after hard-tag shortfalls"
+    }
+  ],
+  "cases": [
+    {
+      "caseId": "ls-gate-v1-0001",
+      "groupId": "doi:10.1038/d41586-026-01389-9",
+      "input": {
+        "id": "10.1038/d41586-026-01389-9",
+        "title": "A global capital for AI safety is emerging — and it's not in Silicon Valley",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-16",
+        "path": "data/processed/2026-07-16/papers.json",
+        "gitCommit": "a2356df0715fe842d3f33107521b0a1262290640",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-16",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-07-16/papers.json",
+            "gitCommit": "a2356df0715fe842d3f33107521b0a1262290640"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "AI 安全地點的新聞／政策報導，不是生命科學研究。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0002",
+      "groupId": "doi:10.1038/d41586-026-01690-7",
+      "input": {
+        "id": "10.1038/d41586-026-01690-7",
+        "title": "Scientists have a bad case of AI FOMO, Nature poll reveals",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-09",
+        "path": "data/processed/2026-06-09/papers.json",
+        "gitCommit": "12706fce1bd0a5c4aa720269058ac84345b659a9",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-09",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-09/papers.json",
+            "gitCommit": "12706fce1bd0a5c4aa720269058ac84345b659a9"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "民調新聞，不是研究論文。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0003",
+      "groupId": "doi:10.1038/d41586-026-01701-7",
+      "input": {
+        "id": "10.1038/d41586-026-01701-7",
+        "title": "Light slows down carbon nanotubes in water",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-10",
+        "path": "data/processed/2026-06-10/papers.json",
+        "gitCommit": "5931f6fea77db8a7b645234470fc7160220cefb5",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-10",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-10/papers.json",
+            "gitCommit": "5931f6fea77db8a7b645234470fc7160220cefb5"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "奈米碳管與光學，屬物理／材料。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0004",
+      "groupId": "doi:10.1038/d41586-026-01794-0",
+      "input": {
+        "id": "10.1038/d41586-026-01794-0",
+        "title": "The surprising career parallels between footballers and researchers",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-26",
+        "path": "data/processed/2026-06-26/papers.json",
+        "gitCommit": "32564bb2ef129c6a7360eda8df92ac8980c2b349",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-26",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-06-26/papers.json",
+            "gitCommit": "32564bb2ef129c6a7360eda8df92ac8980c2b349"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "職涯評論，現行政策排除非研究內容。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0005",
+      "groupId": "doi:10.1038/d41586-026-01796-y",
+      "input": {
+        "id": "10.1038/d41586-026-01796-y",
+        "title": "Human migration has surged since 2000 — these maps reveal where people are going",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-10",
+        "path": "data/processed/2026-06-10/papers.json",
+        "gitCommit": "5931f6fea77db8a7b645234470fc7160220cefb5",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-10",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-10/papers.json",
+            "gitCommit": "5931f6fea77db8a7b645234470fc7160220cefb5"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "人類遷徙地圖新聞，不是生命科學研究。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0006",
+      "groupId": "doi:10.1038/d41586-026-01819-8",
+      "input": {
+        "id": "10.1038/d41586-026-01819-8",
+        "title": "Five winning images of scientists at work",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-10",
+        "path": "data/processed/2026-06-10/papers.json",
+        "gitCommit": "5931f6fea77db8a7b645234470fc7160220cefb5",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-10",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-10/papers.json",
+            "gitCommit": "5931f6fea77db8a7b645234470fc7160220cefb5"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "科學影像得獎報導，不是研究論文。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0007",
+      "groupId": "doi:10.1038/d41586-026-02072-9",
+      "input": {
+        "id": "10.1038/d41586-026-02072-9",
+        "title": "How to use AI to make a graphical abstract in minutes",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-22",
+        "path": "data/processed/2026-07-22/papers.json",
+        "gitCommit": "d1b018a90cb2ddb7a4238850b17e11fbe02ad88e",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-22",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-07-22/papers.json",
+            "gitCommit": "d1b018a90cb2ddb7a4238850b17e11fbe02ad88e"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "用 AI 做 graphical abstract 的職涯／工具教學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0008",
+      "groupId": "doi:10.1038/d41586-026-02083-6",
+      "input": {
+        "id": "10.1038/d41586-026-02083-6",
+        "title": "Want to get more from AI? Treat every prompt like an experiment",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-03",
+        "path": "data/processed/2026-08-03/papers.json",
+        "gitCommit": "03ad5b0693cf3fc9858079362c073fe6523fa257",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-03",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-08-03/papers.json",
+            "gitCommit": "03ad5b0693cf3fc9858079362c073fe6523fa257"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "AI 使用建議的職涯評論。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0009",
+      "groupId": "doi:10.1038/d41586-026-02090-7",
+      "input": {
+        "id": "10.1038/d41586-026-02090-7",
+        "title": "How to advance revolutionary science: high turnover, high risk and a licence to fail",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-08",
+        "path": "data/processed/2026-07-08/papers.json",
+        "gitCommit": "0e89e477abf1e0f5d1ff0e80e483c5095475c5c7",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-08",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-07-08/papers.json",
+            "gitCommit": "0e89e477abf1e0f5d1ff0e80e483c5095475c5c7"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "科學體制評論，不是研究論文。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0010",
+      "groupId": "doi:10.1038/d41586-026-02340-8",
+      "input": {
+        "id": "10.1038/d41586-026-02340-8",
+        "title": "Obituary: Susumu Tonegawa, Japan’s first Nobel prizewinner in physiology or medicine",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-29",
+        "path": "data/processed/2026-07-29/papers.json",
+        "gitCommit": "9d818ef07170379a04c8a86bcf41480ef03005ac",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "news_commentary"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-29",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-07-29/papers.json",
+            "gitCommit": "9d818ef07170379a04c8a86bcf41480ef03005ac"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "訃聞，屬非研究內容。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0011",
+      "groupId": "doi:10.1038/d41586-026-02359-x",
+      "input": {
+        "id": "10.1038/d41586-026-02359-x",
+        "title": "Was art key to ancient humans' success? The secrets of Hohle Fels cave",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-29",
+        "path": "data/processed/2026-07-29/papers.json",
+        "gitCommit": "9d818ef07170379a04c8a86bcf41480ef03005ac",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-29",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-07-29/papers.json",
+            "gitCommit": "9d818ef07170379a04c8a86bcf41480ef03005ac"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "考古洞穴藝術新聞特寫，不是生命科學研究。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0012",
+      "groupId": "doi:10.1038/d41586-026-02435-2",
+      "input": {
+        "id": "10.1038/d41586-026-02435-2",
+        "title": "How and when to use artificial intelligence in your science job application",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-10",
+        "path": "data/processed/2026-08-10/papers.json",
+        "gitCommit": "b5aca78571a81b6a988525d4a2cf43db47731807",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-10",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-08-10/papers.json",
+            "gitCommit": "b5aca78571a81b6a988525d4a2cf43db47731807"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "求職使用 AI 的職涯建議。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0013",
+      "groupId": "doi:10.1038/d41586-026-02450-3",
+      "input": {
+        "id": "10.1038/d41586-026-02450-3",
+        "title": "Why environmental treaties must also address mental health",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-10",
+        "path": "data/processed/2026-08-10/papers.json",
+        "gitCommit": "b5aca78571a81b6a988525d4a2cf43db47731807",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-10",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-08-10/papers.json",
+            "gitCommit": "b5aca78571a81b6a988525d4a2cf43db47731807"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "環境條約評論，不是研究論文。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0014",
+      "groupId": "doi:10.1038/d41586-026-02610-5",
+      "input": {
+        "id": "10.1038/d41586-026-02610-5",
+        "title": "Rudolph A. Marcus obituary: theoretical chemist who explained how electrons jump between molecules",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-19",
+        "path": "data/processed/2026-08-19/papers.json",
+        "gitCommit": "f1e96a1ce0c7e5035e1fb608dc862d3fefb122bd",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "news_commentary"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-19",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-08-19/papers.json",
+            "gitCommit": "f1e96a1ce0c7e5035e1fb608dc862d3fefb122bd"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "理論化學家訃聞。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0015",
+      "groupId": "doi:10.1038/d41586-026-02687-y",
+      "input": {
+        "id": "10.1038/d41586-026-02687-y",
+        "title": "Why are rich people so pessimistic? What the numbers say",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-31",
+        "path": "data/processed/2026-08-31/papers.json",
+        "gitCommit": "a7acfd08ca42ca59f94392c4f73d982015893168",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-31",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-08-31/papers.json",
+            "gitCommit": "a7acfd08ca42ca59f94392c4f73d982015893168"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "社會科學新聞特寫，不是生命科學研究。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0016",
+      "groupId": "doi:10.1038/d41586-026-02732-w",
+      "input": {
+        "id": "10.1038/d41586-026-02732-w",
+        "title": "Briefing Chat: How Dolly Parton left her mark on science",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-28",
+        "path": "data/processed/2026-08-28/papers.json",
+        "gitCommit": "b0ecd964c6227dc0fdaed086cb46a8ca53dad1c6",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-28",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-08-28/papers.json",
+            "gitCommit": "b0ecd964c6227dc0fdaed086cb46a8ca53dad1c6"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "Briefing 新聞對談，不是研究論文。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0017",
+      "groupId": "doi:10.1038/d41586-026-02763-3",
+      "input": {
+        "id": "10.1038/d41586-026-02763-3",
+        "title": "El Niño goes viral — and scientists learn what makes people care about the climate",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-11",
+        "path": "data/processed/2026-09-11/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": true
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "interdisciplinary",
+        "keyword_fallback"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-11",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-09-11/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "氣候傳播新聞；viral 為比喻，不是病毒學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0018",
+      "groupId": "doi:10.1038/d41586-026-02800-1",
+      "input": {
+        "id": "10.1038/d41586-026-02800-1",
+        "title": "Briefing Chat: How 1,000 pairs of buried underpants helped measure soil health",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-04",
+        "path": "data/processed/2026-09-04/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": true
+      },
+      "sampleGroup": "general",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-04",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-09-04/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "Briefing 新聞，不是可判定的生命科學研究。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0019",
+      "groupId": "doi:10.1038/d41586-026-02820-x",
+      "input": {
+        "id": "10.1038/d41586-026-02820-x",
+        "title": "Hello Equal Earth: what the UN’s new world map will change",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-09",
+        "path": "data/processed/2026-09-09/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": true
+      },
+      "sampleGroup": "general",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-09",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-09-09/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "聯合國地圖新聞。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0020",
+      "groupId": "doi:10.1038/d41586-026-02907-5",
+      "input": {
+        "id": "10.1038/d41586-026-02907-5",
+        "title": "Why Nepal floods resulted in a disaster even after satellites spotted danger",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-15",
+        "path": "data/processed/2026-09-15/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": true
+      },
+      "sampleGroup": "general",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-15",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-09-15/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "災害與衛星監測新聞，屬地球科學／報導。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0021",
+      "groupId": "doi:10.1038/s41467-026-73236-4",
+      "input": {
+        "id": "10.1038/s41467-026-73236-4",
+        "title": "Climate and regional plant richness drive diet specialization in butterfly caterpillars",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-01",
+        "path": "data/processed/2026-06-01/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "interdisciplinary"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-01",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-06-01/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "植物豐富度與蝴蝶幼蟲食性，屬生態學研究。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0022",
+      "groupId": "doi:10.1038/s41467-026-73331-6",
+      "input": {
+        "id": "10.1038/s41467-026-73331-6",
+        "title": "Demonstrating real-time and low-latency quantum error correction with superconducting qubits",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-01",
+        "path": "data/processed/2026-06-01/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-01",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-01/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "量子糾錯與超導量子位元，屬物理。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0023",
+      "groupId": "doi:10.1038/s41467-026-73545-8",
+      "input": {
+        "id": "10.1038/s41467-026-73545-8",
+        "title": "Long-term comparative analysis of AAV9-mediated gene replacement therapies for spinal muscular atrophy in mice",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-05-23",
+        "path": "data/processed/2026-05-23/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-05-23",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-05-23/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "小鼠脊髓性肌萎縮症基因治療，屬生物醫學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0024",
+      "groupId": "doi:10.1038/s41467-026-73762-1",
+      "input": {
+        "id": "10.1038/s41467-026-73762-1",
+        "title": "Delayed cation dynamics enables dual-doped organic electrochemical transistors with high current sensitivity",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-01",
+        "path": "data/processed/2026-06-01/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-01",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-01/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "有機電化學電晶體，屬材料／工程。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0025",
+      "groupId": "doi:10.1038/s41467-026-73780-z",
+      "input": {
+        "id": "10.1038/s41467-026-73780-z",
+        "title": "Giant magnetic moment increase by ultrafast laser light",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-03",
+        "path": "data/processed/2026-06-03/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-03",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-03/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "磁矩與超快雷射，屬物理。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0026",
+      "groupId": "doi:10.1038/s41467-026-73860-0",
+      "input": {
+        "id": "10.1038/s41467-026-73860-0",
+        "title": "Network completeness enables angstrom-scale transport pathways in polymer membranes",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-02",
+        "path": "data/processed/2026-06-02/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-02",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-02/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "高分子膜傳輸路徑，屬材料。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0027",
+      "groupId": "doi:10.1038/s41467-026-73972-7",
+      "input": {
+        "id": "10.1038/s41467-026-73972-7",
+        "title": "Closed-loop high-precision two-photon lithography based on a multiplexed single-cavity dual-comb laser",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-03",
+        "path": "data/processed/2026-06-03/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-03",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-03/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "雙光梳雷射微影，屬物理／工程。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0028",
+      "groupId": "doi:10.1038/s41467-026-74054-4",
+      "input": {
+        "id": "10.1038/s41467-026-74054-4",
+        "title": "Probing contact electrification processes from interfacial charge transfer to bulk transport in semicrystalline polymers",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-02",
+        "path": "data/processed/2026-06-02/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-02",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-02/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "聚合物接觸帶電，屬材料／物理。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0029",
+      "groupId": "doi:10.1038/s41467-026-74177-8",
+      "input": {
+        "id": "10.1038/s41467-026-74177-8",
+        "title": "Grain boundary engineered aluminum current collector for energy-dense initially anode-free sodium metal batteries",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-06",
+        "path": "data/processed/2026-06-06/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-06",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-06/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "鈉金屬電池集電體，屬能源材料。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0030",
+      "groupId": "doi:10.1038/s41467-026-74221-7",
+      "input": {
+        "id": "10.1038/s41467-026-74221-7",
+        "title": "Pair density modulation from nematic superconductivity in systems with intra-unit-cell symmetry breaking",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-12",
+        "path": "data/processed/2026-06-12/papers.json",
+        "gitCommit": "454ffbd512b0a92234fc3731b0f39b61756cfebc",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-12",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-12/papers.json",
+            "gitCommit": "454ffbd512b0a92234fc3731b0f39b61756cfebc"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "向列超導，屬物理。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0031",
+      "groupId": "doi:10.1038/s41467-026-74347-8",
+      "input": {
+        "id": "10.1038/s41467-026-74347-8",
+        "title": "Compositionality of social gaze in the prefrontal-amygdala circuits",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-12",
+        "path": "data/processed/2026-06-12/papers.json",
+        "gitCommit": "454ffbd512b0a92234fc3731b0f39b61756cfebc",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-12",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-06-12/papers.json",
+            "gitCommit": "454ffbd512b0a92234fc3731b0f39b61756cfebc"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "前額葉－杏仁核迴路的社會凝視，屬神經科學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0032",
+      "groupId": "doi:10.1038/s41467-026-74822-2",
+      "input": {
+        "id": "10.1038/s41467-026-74822-2",
+        "title": "A likelihood-based method for identifying replay from spike sequences",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-04",
+        "path": "data/processed/2026-07-04/papers.json",
+        "gitCommit": "793abe88d86c314e8ab6cee0238a55a9e0eb8c99",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-04",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-07-04/papers.json",
+            "gitCommit": "793abe88d86c314e8ab6cee0238a55a9e0eb8c99"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "神經 spike replay 鑑定，屬神經科學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0033",
+      "groupId": "doi:10.1038/s41467-026-74974-1",
+      "input": {
+        "id": "10.1038/s41467-026-74974-1",
+        "title": "Waned mantle upwelling contributes to a heavily deformed northern smooth plains on Mercury",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-29",
+        "path": "data/processed/2026-09-29/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": true
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-29",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-09-29/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "水星地質，屬行星科學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0034",
+      "groupId": "doi:10.1038/s41467-026-75146-x",
+      "input": {
+        "id": "10.1038/s41467-026-75146-x",
+        "title": "Dielectric-dependent hybrid functional based on meta-GGA",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-04",
+        "path": "data/processed/2026-07-04/papers.json",
+        "gitCommit": "793abe88d86c314e8ab6cee0238a55a9e0eb8c99",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-04",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-07-04/papers.json",
+            "gitCommit": "793abe88d86c314e8ab6cee0238a55a9e0eb8c99"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "meta-GGA 泛函，屬計算化學／物理。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0035",
+      "groupId": "doi:10.1038/s41467-026-75320-1",
+      "input": {
+        "id": "10.1038/s41467-026-75320-1",
+        "title": "Widespread controls of precipitation sensitivity on drought recovery of global forests",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-04",
+        "path": "data/processed/2026-07-04/papers.json",
+        "gitCommit": "793abe88d86c314e8ab6cee0238a55a9e0eb8c99",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-04",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-07-04/papers.json",
+            "gitCommit": "793abe88d86c314e8ab6cee0238a55a9e0eb8c99"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "全球森林乾旱恢復，屬生態學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0036",
+      "groupId": "doi:10.1038/s41467-026-75551-2",
+      "input": {
+        "id": "10.1038/s41467-026-75551-2",
+        "title": "Convergent genomic trajectories shape adaptation to life on land across animal lineages",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-18",
+        "path": "data/processed/2026-07-18/papers.json",
+        "gitCommit": "8d0bbecd55601883f53a2d391c6bdf947ac6678c",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-18",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-07-18/papers.json",
+            "gitCommit": "8d0bbecd55601883f53a2d391c6bdf947ac6678c"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "動物登陸適應的基因組軌跡，屬演化／基因組學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0037",
+      "groupId": "doi:10.1038/s41467-026-76461-z",
+      "input": {
+        "id": "10.1038/s41467-026-76461-z",
+        "title": "MRICombo: a deep-learning-based framework for universal volumetric segmentation grading-staging and malignancy detection across heterogeneous MRI",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-08",
+        "path": "data/processed/2026-08-08/papers.json",
+        "gitCommit": "3645cd595f2356cfcc556d433f9c839e69b6c9d4",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-08",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-08-08/papers.json",
+            "gitCommit": "3645cd595f2356cfcc556d433f9c839e69b6c9d4"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "MRI 惡性偵測的醫學 AI，屬 AI-for-biology／醫學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0038",
+      "groupId": "doi:10.1038/s41467-026-77331-4",
+      "input": {
+        "id": "10.1038/s41467-026-77331-4",
+        "title": "Persistent chromatin alterations and gene expression reprogramming follow widespread DNA damage in glioblastoma",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-29",
+        "path": "data/processed/2026-08-29/papers.json",
+        "gitCommit": "b0ecd964c6227dc0fdaed086cb46a8ca53dad1c6",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-29",
+            "included": true,
+            "verdict": "yes",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-08-29/papers.json",
+            "gitCommit": "b0ecd964c6227dc0fdaed086cb46a8ca53dad1c6"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "膠質母細胞瘤染色質與 DNA 損傷，屬生物醫學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0039",
+      "groupId": "doi:10.1038/s41467-026-77970-7",
+      "input": {
+        "id": "10.1038/s41467-026-77970-7",
+        "title": "Metabolization of human milk oligosaccharides by Streptococcus pneumoniae",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-30",
+        "path": "data/processed/2026-09-30/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": false
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-30",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-09-30/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "人乳寡糖與肺炎鏈球菌，屬微生物學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0040",
+      "groupId": "doi:10.1038/s41467-026-77985-0",
+      "input": {
+        "id": "10.1038/s41467-026-77985-0",
+        "title": "Checkerboard-type Zhang-Rice states in overdoped cuprate superconductors",
+        "journal": "Nature Communications",
+        "source_id": "nature-communications"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-19",
+        "path": "data/processed/2026-09-19/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": true
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-19",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-09-19/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "銅氧化物超導，屬物理。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0041",
+      "groupId": "doi:10.1038/s41586-026-10692-4",
+      "input": {
+        "id": "10.1038/s41586-026-10692-4",
+        "title": "Enantioselective hydrogen atom relay via non-covalent catalyst assembly",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-01",
+        "path": "data/processed/2026-06-01/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-01",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-01/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "對映選擇性氫原子接力，屬有機化學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0042",
+      "groupId": "doi:10.1038/s41586-026-10788-x",
+      "input": {
+        "id": "10.1038/s41586-026-10788-x",
+        "title": "Reply to: Dataset artefacts can partially drive the measured decline in disruption",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-12",
+        "path": "data/processed/2026-08-12/papers.json",
+        "gitCommit": "1a63c7560e3f2b12eb802cbf7850397393c0c3ab",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "news_commentary"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-12",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-08-12/papers.json",
+            "gitCommit": "1a63c7560e3f2b12eb802cbf7850397393c0c3ab"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "Reply／評論，屬非研究內容。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0043",
+      "groupId": "doi:10.1038/s41586-026-10848-2",
+      "input": {
+        "id": "10.1038/s41586-026-10848-2",
+        "title": "Alternating CO2 and bicycloalkane copolymerization to circular polyesters",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-29",
+        "path": "data/processed/2026-07-29/papers.json",
+        "gitCommit": "9d818ef07170379a04c8a86bcf41480ef03005ac",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-29",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-07-29/papers.json",
+            "gitCommit": "9d818ef07170379a04c8a86bcf41480ef03005ac"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "二氧化碳共聚合聚酯，屬化學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0044",
+      "groupId": "doi:10.1038/s41586-026-10889-7",
+      "input": {
+        "id": "10.1038/s41586-026-10889-7",
+        "title": "Luminescent-reaction-enabled super-resolution imaging",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-12",
+        "path": "data/processed/2026-08-12/papers.json",
+        "gitCommit": "1a63c7560e3f2b12eb802cbf7850397393c0c3ab",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "vague_title",
+        "keyword_fallback"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-12",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-08-12/papers.json",
+            "gitCommit": "1a63c7560e3f2b12eb802cbf7850397393c0c3ab"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "not_sure",
+      "draftReason": "超解析影像方法未標明領域，標題不足以可靠判定。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0045",
+      "groupId": "doi:10.1038/s41586-026-10973-y",
+      "input": {
+        "id": "10.1038/s41586-026-10973-y",
+        "title": "Author Correction: Cooperation conflicts with equality when allocating public goods",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-10",
+        "path": "data/processed/2026-08-10/papers.json",
+        "gitCommit": "b5aca78571a81b6a988525d4a2cf43db47731807",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "news_commentary"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-10",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-08-10/papers.json",
+            "gitCommit": "b5aca78571a81b6a988525d4a2cf43db47731807"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "Author Correction，且原文為公共財分配，非生命科學研究。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0046",
+      "groupId": "doi:10.1038/s41586-026-10984-9",
+      "input": {
+        "id": "10.1038/s41586-026-10984-9",
+        "title": "Author Correction: Durable all-inorganic perovskite tandem photovoltaics",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-10",
+        "path": "data/processed/2026-08-10/papers.json",
+        "gitCommit": "b5aca78571a81b6a988525d4a2cf43db47731807",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [
+        "news_commentary"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-10",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-08-10/papers.json",
+            "gitCommit": "b5aca78571a81b6a988525d4a2cf43db47731807"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "鈣鈦礦光伏的 Author Correction，屬非研究且非生命科學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0047",
+      "groupId": "doi:10.1038/s41586-026-11013-5",
+      "input": {
+        "id": "10.1038/s41586-026-11013-5",
+        "title": "Development of a random background to understand ligand optimization",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-16",
+        "path": "data/processed/2026-09-16/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": true
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-16",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-09-16/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "not_sure",
+      "draftReason": "ligand optimization 可能是藥物或材料化學，標題不足以判定。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0048",
+      "groupId": "doi:10.1038/s41586-026-11019-z",
+      "input": {
+        "id": "10.1038/s41586-026-11019-z",
+        "title": "Road transport of trapped antiprotons",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-16",
+        "path": "data/processed/2026-09-16/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": true
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "vague_title",
+        "keyword_fallback"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-16",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-09-16/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "反質子運輸，屬物理。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0049",
+      "groupId": "doi:10.1038/s41586-026-11036-y",
+      "input": {
+        "id": "10.1038/s41586-026-11036-y",
+        "title": "Scalable decision-making for games of imperfect information",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-30",
+        "path": "data/processed/2026-09-30/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": true
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-30",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-09-30/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "不完全資訊賽局決策，屬資訊科學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0050",
+      "groupId": "doi:10.1038/s41586-026-11055-9",
+      "input": {
+        "id": "10.1038/s41586-026-11055-9",
+        "title": "Identification of broadly tumour-reactive γδ TCRs from multiple myeloma",
+        "journal": "Nature",
+        "source_id": "nature"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-16",
+        "path": "data/processed/2026-09-16/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": true
+      },
+      "sampleGroup": "general",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-16",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-09-16/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "多發性骨髓瘤腫瘤反應性 γδ TCR，屬生物醫學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0051",
+      "groupId": "doi:10.1126/sciadv.adx3959",
+      "input": {
+        "id": "10.1126/sciadv.adx3959",
+        "title": "Tumor-targeted bispecific antibodies effectively inhibit oncogenic pathways while minimizing toxicity",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-05-22",
+        "path": "data/processed/2026-05-22/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-05-22",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-05-22/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "腫瘤標的雙特異性抗體，屬生物醫學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0052",
+      "groupId": "doi:10.1126/sciadv.adx6486",
+      "input": {
+        "id": "10.1126/sciadv.adx6486",
+        "title": "Wnt and Nodal asymmetries stratify mouse laterality phenotypes in the absence of node flow",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-23",
+        "path": "data/processed/2026-07-23/papers.json",
+        "gitCommit": "f8a233ebbceb36379abdff94b399d2fc2570b504",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-23",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-07-23/papers.json",
+            "gitCommit": "f8a233ebbceb36379abdff94b399d2fc2570b504"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "小鼠左右不對稱的 Wnt／Nodal，屬發育生物學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0053",
+      "groupId": "doi:10.1126/sciadv.ady8204",
+      "input": {
+        "id": "10.1126/sciadv.ady8204",
+        "title": "Varicose projection astrocytes: Conserved reactive cells in brain pathology",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-17",
+        "path": "data/processed/2026-07-17/papers.json",
+        "gitCommit": "df2afbdf97ce0236ea162506693421bc8c5c3b3c",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-17",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-07-17/papers.json",
+            "gitCommit": "df2afbdf97ce0236ea162506693421bc8c5c3b3c"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "腦病理中的星狀膠細胞，屬神經科學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0054",
+      "groupId": "doi:10.1126/sciadv.adz5561",
+      "input": {
+        "id": "10.1126/sciadv.adz5561",
+        "title": "Topological mixing and irreversibility in animal chromosome evolution",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-19",
+        "path": "data/processed/2026-08-19/papers.json",
+        "gitCommit": "f1e96a1ce0c7e5035e1fb608dc862d3fefb122bd",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "interdisciplinary"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-19",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-08-19/papers.json",
+            "gitCommit": "f1e96a1ce0c7e5035e1fb608dc862d3fefb122bd"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "動物染色體演化，屬基因組學／演化。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0055",
+      "groupId": "doi:10.1126/sciadv.adz6832",
+      "input": {
+        "id": "10.1126/sciadv.adz6832",
+        "title": "Drought dynamics explain once in a century yellow fever virus outbreak in Brazil with implications for climate change",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-14",
+        "path": "data/processed/2026-08-14/papers.json",
+        "gitCommit": "8f11d32e4f17327a9f3ce79f6126fdc9c82641d3",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "interdisciplinary"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-14",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-08-14/papers.json",
+            "gitCommit": "8f11d32e4f17327a9f3ce79f6126fdc9c82641d3"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "黃熱病疫情與氣候，屬流行病學／病毒學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0056",
+      "groupId": "doi:10.1126/sciadv.aeb2877",
+      "input": {
+        "id": "10.1126/sciadv.aeb2877",
+        "title": "Genetic screening identifies WNT5A/RYK as a determinant of extracellular vesicle fate",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-31",
+        "path": "data/processed/2026-07-31/papers.json",
+        "gitCommit": "c72e971c168d794d31f2e2a26a6d34ec94d52ee3",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-31",
+            "included": true,
+            "verdict": "yes",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-07-31/papers.json",
+            "gitCommit": "c72e971c168d794d31f2e2a26a6d34ec94d52ee3"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "WNT5A 與細胞外囊泡命運，屬細胞生物學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0057",
+      "groupId": "doi:10.1126/sciadv.aeb2915",
+      "input": {
+        "id": "10.1126/sciadv.aeb2915",
+        "title": "SIRT2 antagonizes MOF function during mitotic entry",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-19",
+        "path": "data/processed/2026-06-19/papers.json",
+        "gitCommit": "ba34ae5530f13dcd838bf8dc076cd86d4e0e2214",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-19",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-06-19/papers.json",
+            "gitCommit": "ba34ae5530f13dcd838bf8dc076cd86d4e0e2214"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "SIRT2 與有絲分裂，屬細胞生物學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0058",
+      "groupId": "doi:10.1126/sciadv.aeb3363",
+      "input": {
+        "id": "10.1126/sciadv.aeb3363",
+        "title": "Annotating the pangenome reveals the diversity in the genetic basis for metabolic enzymes",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-01",
+        "path": "data/processed/2026-07-01/papers.json",
+        "gitCommit": "eceb464de94e858159d5401bd4607f055d482207",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-01",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-07-01/papers.json",
+            "gitCommit": "eceb464de94e858159d5401bd4607f055d482207"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "泛基因組與代謝酶，屬基因組學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0059",
+      "groupId": "doi:10.1126/sciadv.aeb7930",
+      "input": {
+        "id": "10.1126/sciadv.aeb7930",
+        "title": "Combinatorial optimization with Kerr solitons",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-05-22",
+        "path": "data/processed/2026-05-22/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "vague_title"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-05-22",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-05-22/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "Kerr soliton 組合最佳化，屬物理。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0060",
+      "groupId": "doi:10.1126/sciadv.aec3482",
+      "input": {
+        "id": "10.1126/sciadv.aec3482",
+        "title": "Fatigue-resistant and tough double network granular elastomers",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-10",
+        "path": "data/processed/2026-07-10/papers.json",
+        "gitCommit": "5dfa9e692f0d10c491db2a8e00697e1e12483c50",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-10",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-07-10/papers.json",
+            "gitCommit": "5dfa9e692f0d10c491db2a8e00697e1e12483c50"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "彈性體材料力學，不是生命科學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0061",
+      "groupId": "doi:10.1126/sciadv.aec3824",
+      "input": {
+        "id": "10.1126/sciadv.aec3824",
+        "title": "Quantum convolutional HLA immunogenic peptide prediction (Q-CHIPP): Next-generation neoantigen prediction with quantum neural network",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-24",
+        "path": "data/processed/2026-07-24/papers.json",
+        "gitCommit": "30651c3f1214b531efe94b9ba9b5f82a0d0e359a",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "interdisciplinary"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-24",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-07-24/papers.json",
+            "gitCommit": "30651c3f1214b531efe94b9ba9b5f82a0d0e359a"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "HLA 新抗原預測，屬免疫學／AI-for-biology。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0062",
+      "groupId": "doi:10.1126/sciadv.aec4153",
+      "input": {
+        "id": "10.1126/sciadv.aec4153",
+        "title": "An octopamine-glutamate cotransmitting neuron gates aggressive escalation through layered inhibition in Drosophila",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-14",
+        "path": "data/processed/2026-08-14/papers.json",
+        "gitCommit": "8f11d32e4f17327a9f3ce79f6126fdc9c82641d3",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-14",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-08-14/papers.json",
+            "gitCommit": "8f11d32e4f17327a9f3ce79f6126fdc9c82641d3"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "果蠅攻擊行為的神經調控，屬神經科學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0063",
+      "groupId": "doi:10.1126/sciadv.aec4519",
+      "input": {
+        "id": "10.1126/sciadv.aec4519",
+        "title": "Sorting of lysosomal enzyme and autophagy are regulated by the GGA1-induced TGN lipid scrambling",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-28",
+        "path": "data/processed/2026-08-28/papers.json",
+        "gitCommit": "b0ecd964c6227dc0fdaed086cb46a8ca53dad1c6",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-28",
+            "included": true,
+            "verdict": "yes",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-08-28/papers.json",
+            "gitCommit": "b0ecd964c6227dc0fdaed086cb46a8ca53dad1c6"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "溶酶體酶與自噬，屬細胞生物學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0064",
+      "groupId": "doi:10.1126/sciadv.aec5478",
+      "input": {
+        "id": "10.1126/sciadv.aec5478",
+        "title": "Reconstructing pathogen-specific antibody binding epitopes and age-dependent immune signatures from proteomic-scale peptide libraries",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-19",
+        "path": "data/processed/2026-08-19/papers.json",
+        "gitCommit": "f1e96a1ce0c7e5035e1fb608dc862d3fefb122bd",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-19",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-08-19/papers.json",
+            "gitCommit": "f1e96a1ce0c7e5035e1fb608dc862d3fefb122bd"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "病原體抗體表位，屬免疫學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0065",
+      "groupId": "doi:10.1126/sciadv.aec6633",
+      "input": {
+        "id": "10.1126/sciadv.aec6633",
+        "title": "Topological acoustic synapse for high-dimensional neuromorphic computing",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-12",
+        "path": "data/processed/2026-06-12/papers.json",
+        "gitCommit": "454ffbd512b0a92234fc3731b0f39b61756cfebc",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "interdisciplinary"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-12",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-12/papers.json",
+            "gitCommit": "454ffbd512b0a92234fc3731b0f39b61756cfebc"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "拓撲聲學突觸用於神經形態計算，屬工程／物理隱喻。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0066",
+      "groupId": "doi:10.1126/sciadv.aec6879",
+      "input": {
+        "id": "10.1126/sciadv.aec6879",
+        "title": "Extreme-range precipitation probability across global weather systems",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-05-27",
+        "path": "data/processed/2026-05-27/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-05-27",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-05-27/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "全球降水機率，屬大氣／地球科學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0067",
+      "groupId": "doi:10.1126/sciadv.aec7011",
+      "input": {
+        "id": "10.1126/sciadv.aec7011",
+        "title": "Bio-integrated μBots with overtone ultrawideband magnetoelectric antennas for wireless telemetry",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-01",
+        "path": "data/processed/2026-07-01/papers.json",
+        "gitCommit": "eceb464de94e858159d5401bd4607f055d482207",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-01",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-07-01/papers.json",
+            "gitCommit": "eceb464de94e858159d5401bd4607f055d482207"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "not_sure",
+      "draftReason": "生物整合微型機器人與天線遙測，生醫裝置與材料工程難以從標題判定。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0068",
+      "groupId": "doi:10.1126/sciadv.aed2198",
+      "input": {
+        "id": "10.1126/sciadv.aed2198",
+        "title": "Mid-infrared long-range surface polaritons in two-dimensional van der Waals materials",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-05",
+        "path": "data/processed/2026-08-05/papers.json",
+        "gitCommit": "326fe51d323840d3cf760891c5d4e4c7bfc29ce1",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-05",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-08-05/papers.json",
+            "gitCommit": "326fe51d323840d3cf760891c5d4e4c7bfc29ce1"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "二維材料中紅外 polaritons，屬物理。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0069",
+      "groupId": "doi:10.1126/sciadv.aed2816",
+      "input": {
+        "id": "10.1126/sciadv.aed2816",
+        "title": "Symbiotic peptides modulate rhizobial physiology without terminal differentiation",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-26",
+        "path": "data/processed/2026-06-26/papers.json",
+        "gitCommit": "32564bb2ef129c6a7360eda8df92ac8980c2b349",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-26",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-06-26/papers.json",
+            "gitCommit": "32564bb2ef129c6a7360eda8df92ac8980c2b349"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "根瘤菌共生胜肽生理，屬微生物／植物科學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0070",
+      "groupId": "doi:10.1126/sciadv.aed3793",
+      "input": {
+        "id": "10.1126/sciadv.aed3793",
+        "title": "Structural basis for modulation of group III mGlu receptors by transsynaptic interactions",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-04",
+        "path": "data/processed/2026-09-04/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": false
+      },
+      "sampleGroup": "general",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-04",
+            "included": true,
+            "verdict": "yes",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-09-04/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "mGlu 受體跨突觸調控，屬神經科學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0071",
+      "groupId": "doi:10.1126/sciadv.aee0698",
+      "input": {
+        "id": "10.1126/sciadv.aee0698",
+        "title": "Projected public health benefits of a hypothetical HSV-1 vaccine in the United States: A mathematical modeling analysis",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-03",
+        "path": "data/processed/2026-06-03/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-03",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-06-03/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "HSV-1 疫苗公共衛生模型，屬流行病學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0072",
+      "groupId": "doi:10.1126/sciadv.aee4501",
+      "input": {
+        "id": "10.1126/sciadv.aee4501",
+        "title": "Piezoionic copolymer ionogel with tunable hydrogen bond enables epidermal blood pressure analyzer",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-11",
+        "path": "data/processed/2026-09-11/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": true
+      },
+      "sampleGroup": "general",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-11",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-09-11/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "表皮血壓分析的生物電子裝置，屬生物技術／生醫工程。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0073",
+      "groupId": "doi:10.1126/sciadv.aee5305",
+      "input": {
+        "id": "10.1126/sciadv.aee5305",
+        "title": "CD5+ dendritic cell robots mediated in situ immunocyte activation",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-12",
+        "path": "data/processed/2026-08-12/papers.json",
+        "gitCommit": "1a63c7560e3f2b12eb802cbf7850397393c0c3ab",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-12",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-08-12/papers.json",
+            "gitCommit": "1a63c7560e3f2b12eb802cbf7850397393c0c3ab"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "樹突細胞機器人活化免疫細胞，屬免疫學／生物技術。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0074",
+      "groupId": "doi:10.1126/sciadv.aee7533",
+      "input": {
+        "id": "10.1126/sciadv.aee7533",
+        "title": "Curiosity-driven development of action and language in robots through self-exploration",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-23",
+        "path": "data/processed/2026-07-23/papers.json",
+        "gitCommit": "f8a233ebbceb36379abdff94b399d2fc2570b504",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-23",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-07-23/papers.json",
+            "gitCommit": "f8a233ebbceb36379abdff94b399d2fc2570b504"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "機器人探索語言與動作，屬資訊／機器人學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0075",
+      "groupId": "doi:10.1126/sciadv.aee9688",
+      "input": {
+        "id": "10.1126/sciadv.aee9688",
+        "title": "Implantable bioelectronic outlet",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-08",
+        "path": "data/processed/2026-07-08/papers.json",
+        "gitCommit": "0e89e477abf1e0f5d1ff0e80e483c5095475c5c7",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "vague_title"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-08",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-07-08/papers.json",
+            "gitCommit": "0e89e477abf1e0f5d1ff0e80e483c5095475c5c7"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "not_sure",
+      "draftReason": "植入式生物電子插座，標題過短、領域不明。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0076",
+      "groupId": "doi:10.1126/sciadv.aef0411",
+      "input": {
+        "id": "10.1126/sciadv.aef0411",
+        "title": "Core formation resolves Earth’s siderophile excess without a late veneer",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-25",
+        "path": "data/processed/2026-09-25/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": true
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-25",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-09-25/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "地球核心形成，屬地質／行星科學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0077",
+      "groupId": "doi:10.1126/sciadv.aef1694",
+      "input": {
+        "id": "10.1126/sciadv.aef1694",
+        "title": "Targeting LOXL4-driven matrix stiffening with acetyldigoxin restores CD8+ T cell function in lung cancer",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-11",
+        "path": "data/processed/2026-09-11/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": false
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-11",
+            "included": true,
+            "verdict": "yes",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-09-11/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "肺癌基質硬化與 T 細胞，屬生物醫學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0078",
+      "groupId": "doi:10.1126/sciadv.aef4858",
+      "input": {
+        "id": "10.1126/sciadv.aef4858",
+        "title": "The origin of Cretaceous-Palaeogene impactor revealed by nickel isotopes",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-17",
+        "path": "data/processed/2026-07-17/papers.json",
+        "gitCommit": "df2afbdf97ce0236ea162506693421bc8c5c3b3c",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-17",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-07-17/papers.json",
+            "gitCommit": "df2afbdf97ce0236ea162506693421bc8c5c3b3c"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "K-Pg 撞擊體鎳同位素，屬地質學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0079",
+      "groupId": "doi:10.1126/sciadv.aef6263",
+      "input": {
+        "id": "10.1126/sciadv.aef6263",
+        "title": "Deep learning–enabled versatile shape perception for soft robots via single-ended multimode fiber",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-12",
+        "path": "data/processed/2026-06-12/papers.json",
+        "gitCommit": "454ffbd512b0a92234fc3731b0f39b61756cfebc",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-12",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-12/papers.json",
+            "gitCommit": "454ffbd512b0a92234fc3731b0f39b61756cfebc"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "軟體機器人形狀感知，屬機器人／工程。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0080",
+      "groupId": "doi:10.1126/sciadv.aef7696",
+      "input": {
+        "id": "10.1126/sciadv.aef7696",
+        "title": "Ribosomal protein bL27 protects translating ribosomes from tmRNA-SmpB",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-07",
+        "path": "data/processed/2026-08-07/papers.json",
+        "gitCommit": "ae13bafe4b2d8d4ca343c9d1be251d21c1a87871",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-07",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-08-07/papers.json",
+            "gitCommit": "ae13bafe4b2d8d4ca343c9d1be251d21c1a87871"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "核糖體蛋白與 tmRNA，屬分子生物學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0081",
+      "groupId": "doi:10.1126/sciadv.aeg1621",
+      "input": {
+        "id": "10.1126/sciadv.aeg1621",
+        "title": "Superoxide formation upon photochemical aging of secondary organic aerosols derived from biomass burning precursors",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-04",
+        "path": "data/processed/2026-09-04/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": false
+      },
+      "sampleGroup": "general",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-04",
+            "included": true,
+            "verdict": "yes",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-09-04/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "生質燃燒氣膠光化學老化，屬大氣化學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0082",
+      "groupId": "doi:10.1126/sciadv.aeg2624",
+      "input": {
+        "id": "10.1126/sciadv.aeg2624",
+        "title": "Pliny the Younger advances geochronology",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-25",
+        "path": "data/processed/2026-09-25/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": true
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "vague_title"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-25",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-09-25/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "地質年代學短文，不是生命科學研究。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0083",
+      "groupId": "doi:10.1126/sciadv.aeh2640",
+      "input": {
+        "id": "10.1126/sciadv.aeh2640",
+        "title": "An ASXL3–thyroid hormone axis in parvalbumin interneurons controls autism-like behaviors",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-23",
+        "path": "data/processed/2026-09-23/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": false
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-23",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-09-23/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "ASXL3、甲狀腺激素與自閉樣行為，屬神經科學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0084",
+      "groupId": "doi:10.1126/sciadv.aeh3921",
+      "input": {
+        "id": "10.1126/sciadv.aeh3921",
+        "title": "Hillslope memory of sequential earthquakes",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-02",
+        "path": "data/processed/2026-09-02/papers.json",
+        "gitCommit": "ca1cdc195e7863e5d190894f8bd65b62691d8b72",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "vague_title",
+        "keyword_fallback"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-02",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-09-02/papers.json",
+            "gitCommit": "ca1cdc195e7863e5d190894f8bd65b62691d8b72"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "山坡與地震記憶，屬地質學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0085",
+      "groupId": "doi:10.1126/sciadv.aei9227",
+      "input": {
+        "id": "10.1126/sciadv.aei9227",
+        "title": "Erratum for the Research Article “Highly efficient light-gated COF membrane for precise multistage molecular separation” by L. Zhai et al.",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-05",
+        "path": "data/processed/2026-06-05/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "news_commentary"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-05",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-05/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "Erratum，現行政策排除勘誤；原文亦為材料分離膜。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0086",
+      "groupId": "doi:10.1126/sciadv.aej3478",
+      "input": {
+        "id": "10.1126/sciadv.aej3478",
+        "title": "Erratum for the Research Article “Forecast attribution reveals enhanced heat mortality from climate change in British Columbia heatwave” by C.Y. Shapland et al.",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-07",
+        "path": "data/processed/2026-08-07/papers.json",
+        "gitCommit": "ae13bafe4b2d8d4ca343c9d1be251d21c1a87871",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "news_commentary"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-07",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-08-07/papers.json",
+            "gitCommit": "ae13bafe4b2d8d4ca343c9d1be251d21c1a87871"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "Erratum，屬非研究內容。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0087",
+      "groupId": "doi:10.1126/sciadv.aek2171",
+      "input": {
+        "id": "10.1126/sciadv.aek2171",
+        "title": "Erratum for the Research Article “Simple technologies and diverse food strategies of the Late Pleistocene and Early Holocene at Huaca Prieta, Coastal Peru” by T. Dillehay et al.",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-08-21",
+        "path": "data/processed/2026-08-21/papers.json",
+        "gitCommit": "3515484c9101d71c66defa42811f25c4a46747a6",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "news_commentary",
+        "keyword_fallback"
+      ],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-08-21",
+            "included": true,
+            "verdict": "yes",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-08-21/papers.json",
+            "gitCommit": "3515484c9101d71c66defa42811f25c4a46747a6"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "考古 Erratum，屬非研究內容。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0088",
+      "groupId": "doi:10.1126/sciadv.ael7024",
+      "input": {
+        "id": "10.1126/sciadv.ael7024",
+        "title": "Erratum for the Research Article “Beyond seizure control: Identifying deficits in cognitive networks in absence epilepsy” by G. Vantomme et al.",
+        "journal": "Science Advances",
+        "source_id": "science-advances"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-25",
+        "path": "data/processed/2026-09-25/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": false
+      },
+      "sampleGroup": "hard",
+      "hardTags": [
+        "news_commentary"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-25",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-09-25/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "Erratum，即使原文像神經科學也依政策排除勘誤。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0089",
+      "groupId": "doi:10.1126/science.adv8291",
+      "input": {
+        "id": "10.1126/science.adv8291",
+        "title": "Chemically induced skin tumors arise from long-lived stem cells of the upper hair follicle",
+        "journal": "Science",
+        "source_id": "science"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-11",
+        "path": "data/processed/2026-06-11/papers.json",
+        "gitCommit": "dbd7a7f04551f4700c58349787ee7e04202c7bb7",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-11",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-06-11/papers.json",
+            "gitCommit": "dbd7a7f04551f4700c58349787ee7e04202c7bb7"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "皮膚腫瘤與毛囊幹細胞，屬生物醫學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0090",
+      "groupId": "doi:10.1126/science.aeb0822",
+      "input": {
+        "id": "10.1126/science.aeb0822",
+        "title": "De novo design of orthogonal far-red, orange, and green fluorophore-binding proteins for multiplexed imaging",
+        "journal": "Science",
+        "source_id": "science"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-16",
+        "path": "data/processed/2026-07-16/papers.json",
+        "gitCommit": "a2356df0715fe842d3f33107521b0a1262290640",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-16",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-07-16/papers.json",
+            "gitCommit": "a2356df0715fe842d3f33107521b0a1262290640"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "螢光蛋白設計用於成像，屬結構生物學／生物技術。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0091",
+      "groupId": "doi:10.1126/science.aeb2672",
+      "input": {
+        "id": "10.1126/science.aeb2672",
+        "title": "A Hormone Cell Atlas maps the human endocrine system at cellular resolution",
+        "journal": "Science",
+        "source_id": "science"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-05-28",
+        "path": "data/processed/2026-05-28/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-05-28",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-05-28/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "人類內分泌系統細胞圖譜，屬生物醫學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0092",
+      "groupId": "doi:10.1126/science.aec2171",
+      "input": {
+        "id": "10.1126/science.aec2171",
+        "title": "Hierarchical sensory processing in zebrafish thalamocortical-like circuits",
+        "journal": "Science",
+        "source_id": "science"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-02",
+        "path": "data/processed/2026-07-02/papers.json",
+        "gitCommit": "13449c80280d94580d65a947d91a5a9d33ec9d27",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-02",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-07-02/papers.json",
+            "gitCommit": "13449c80280d94580d65a947d91a5a9d33ec9d27"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "斑馬魚類丘腦皮質迴路，屬神經科學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0093",
+      "groupId": "doi:10.1126/science.aef0766",
+      "input": {
+        "id": "10.1126/science.aef0766",
+        "title": "Vicinal disubstitution of alkyl C–X synthons via alkene radical cation generation",
+        "journal": "Science",
+        "source_id": "science"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-09",
+        "path": "data/processed/2026-07-09/papers.json",
+        "gitCommit": "f6c4f7744518252228dc69ef058b7be13c6c0956",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-09",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-07-09/papers.json",
+            "gitCommit": "f6c4f7744518252228dc69ef058b7be13c6c0956"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "烷基合成子有機反應，屬化學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0094",
+      "groupId": "doi:10.1126/science.aef1777",
+      "input": {
+        "id": "10.1126/science.aef1777",
+        "title": "Long-range extended chains arising from polymerization-driven spontaneous assembly",
+        "journal": "Science",
+        "source_id": "science"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-04",
+        "path": "data/processed/2026-06-04/papers.json",
+        "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-04",
+            "included": false,
+            "verdict": "no",
+            "method": null,
+            "path": "data/processed/2026-06-04/papers.json",
+            "gitCommit": "8b3dbf842dcb54adbfcc8868d911f80aaa09c079"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "聚合驅動組裝，屬高分子化學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0095",
+      "groupId": "doi:10.1126/science.aef5355",
+      "input": {
+        "id": "10.1126/science.aef5355",
+        "title": "Indium-free perovskite/silicon tandem solar cells with tin oxide recombination layer and electrodes",
+        "journal": "Science",
+        "source_id": "science"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-18",
+        "path": "data/processed/2026-06-18/papers.json",
+        "gitCommit": "d01f0888923cbafba1c9d48e76b468f8951e42be",
+        "recoverableExcluded": true,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-18",
+            "included": false,
+            "verdict": "no",
+            "method": "llm",
+            "path": "data/processed/2026-06-18/papers.json",
+            "gitCommit": "d01f0888923cbafba1c9d48e76b468f8951e42be"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "鈣鈦礦／矽串聯太陽能電池，屬材料／能源。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0096",
+      "groupId": "doi:10.1126/science.aeh0665",
+      "input": {
+        "id": "10.1126/science.aeh0665",
+        "title": "Laser phase plate improves structure determination of small proteins by cryo-EM",
+        "journal": "Science",
+        "source_id": "science"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-06-11",
+        "path": "data/processed/2026-06-11/papers.json",
+        "gitCommit": "dbd7a7f04551f4700c58349787ee7e04202c7bb7",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "eval",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-06-11",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-06-11/papers.json",
+            "gitCommit": "dbd7a7f04551f4700c58349787ee7e04202c7bb7"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "cryo-EM 相位板解析小蛋白，屬生物分子結構生物學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0097",
+      "groupId": "doi:10.1126/science.aeh1348",
+      "input": {
+        "id": "10.1126/science.aeh1348",
+        "title": "Manipulation of protein translation and stem cell self-renewal by CRISPR activation of rRNA transcription",
+        "journal": "Science",
+        "source_id": "science"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-02",
+        "path": "data/processed/2026-07-02/papers.json",
+        "gitCommit": "13449c80280d94580d65a947d91a5a9d33ec9d27",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-02",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-07-02/papers.json",
+            "gitCommit": "13449c80280d94580d65a947d91a5a9d33ec9d27"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "rRNA 轉錄、轉譯與幹細胞，屬生物醫學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0098",
+      "groupId": "doi:10.1126/science.aeh1834",
+      "input": {
+        "id": "10.1126/science.aeh1834",
+        "title": "A CDK1 phospho-switch reprograms TRAIP to unload replisomes in mitosis",
+        "journal": "Science",
+        "source_id": "science"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-02",
+        "path": "data/processed/2026-07-02/papers.json",
+        "gitCommit": "13449c80280d94580d65a947d91a5a9d33ec9d27",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-02",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-07-02/papers.json",
+            "gitCommit": "13449c80280d94580d65a947d91a5a9d33ec9d27"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "CDK1 與有絲分裂 replisome，屬細胞生物學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0099",
+      "groupId": "doi:10.1126/science.aeh2300",
+      "input": {
+        "id": "10.1126/science.aeh2300",
+        "title": "TTF2 processes sites of incomplete DNA replication during mitosis via sister-chromatid exchanges",
+        "journal": "Science",
+        "source_id": "science"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-07-02",
+        "path": "data/processed/2026-07-02/papers.json",
+        "gitCommit": "13449c80280d94580d65a947d91a5a9d33ec9d27",
+        "recoverableExcluded": false,
+        "notes": "recovered from git history after daily retention prune"
+      },
+      "sampleGroup": "general",
+      "hardTags": [],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-07-02",
+            "included": true,
+            "verdict": "yes",
+            "method": "llm",
+            "path": "data/processed/2026-07-02/papers.json",
+            "gitCommit": "13449c80280d94580d65a947d91a5a9d33ec9d27"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "yes",
+      "draftReason": "有絲分裂中未完成 DNA 複製的處理，屬細胞生物學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    },
+    {
+      "caseId": "ls-gate-v1-0100",
+      "groupId": "doi:10.1126/science.aeh6251",
+      "input": {
+        "id": "10.1126/science.aeh6251",
+        "title": "Stereoselective polysubstituted bicyclo[1.1.0]butane synthesis by rhodium-catalyzed kinetic resolution",
+        "journal": "Science",
+        "source_id": "science"
+      },
+      "provenance": {
+        "kind": "historical_processed",
+        "reportDate": "2026-09-08",
+        "path": "data/processed/2026-09-08/papers.json",
+        "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86",
+        "recoverableExcluded": true
+      },
+      "sampleGroup": "general",
+      "hardTags": [
+        "keyword_fallback"
+      ],
+      "split": "dev",
+      "historical": {
+        "referenceOnly": true,
+        "observations": [
+          {
+            "reportDate": "2026-09-08",
+            "included": false,
+            "verdict": "no",
+            "method": "routing-keyword-fallback",
+            "path": "data/processed/2026-09-08/papers.json",
+            "gitCommit": "918d3a7b0537aeeda7b6e801073d3db690252c86"
+          }
+        ]
+      },
+      "annotationStatus": "pending_review",
+      "draftVerdict": "no",
+      "draftReason": "銠催化雙環丁烷合成，屬有機化學。",
+      "draftAnnotator": {
+        "kind": "ai-draft",
+        "model": "cursor-grok-4.6",
+        "promptVersion": "life-science-gate-draft-v1",
+        "policyId": "life-science-routing-title-only-v1",
+        "policyHash": "5a1015a109b66daf15874701ca385d687826cb63efc5a06728192bc9abe60bc1"
+      },
+      "goldVerdict": null,
+      "goldReason": null,
+      "reviewer": null,
+      "reviewedAt": null
+    }
+  ]
+}
