@@ -137,6 +137,10 @@ function addProduct(counts: ProductCounts, gold: "include" | "exclude", pred: "i
   if (gold === "exclude" && pred === "exclude") counts.goldExcludePredExclude += 1;
 }
 
+/**
+ * 離線評分：語意混淆矩陣、服務失敗、fallback 後產品結果分開報（PR #42）。
+ * datasetVersion／hash／missing／duplicate／unknown IDs 不得靜默通過。
+ */
 export function scorePredictionRun(options: {
   dataset: LifeScienceGateDataset;
   datasetHash: string;

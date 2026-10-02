@@ -58,6 +58,7 @@ export function parseEvalCli(argv: string[]): ParsedEvalCli {
   throw new Error("Usage: validate | export-review | apply-review | export-request | score");
 }
 
+/** stdout 只放 JSON；進度與診斷走 stderr，避免污染可機器讀取輸出（PR #42）。 */
 function emitJson(io: EvalCliIo, value: unknown): void {
   io.stdout(`${JSON.stringify(value, null, 2)}\n`);
 }

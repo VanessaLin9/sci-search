@@ -20,6 +20,7 @@ const FORBIDDEN_REQUEST_KEYS = [
   "abstract",
 ];
 
+/** 模型請求只含正式 gate 可見欄位；gold／draft／historical 洩漏直接失敗（PR #42）。 */
 export function exportModelRequest(
   dataset: LifeScienceGateDataset,
   datasetHash: string,

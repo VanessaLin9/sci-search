@@ -2,6 +2,7 @@ export const LIFE_SCIENCE_GATE_DATASET_ID = "life-science-gate" as const;
 
 export const LIFE_SCIENCE_GATE_POLICY_ID = "life-science-routing-title-only-v1" as const;
 
+/** 獨立於會被 prune 的 `data/processed/{date}/`（PR #42）。 */
 export const DEFAULT_DATASET_PATH = "eval/life-science-gate/v1/dataset.json" as const;
 
 export const ROUTING_VERDICTS = ["yes", "no", "not_sure"] as const;

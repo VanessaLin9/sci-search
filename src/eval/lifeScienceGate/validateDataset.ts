@@ -13,6 +13,7 @@ function issue(code: string, message: string, caseId?: string): DatasetIssue {
   return caseId ? { code, message, caseId } : { code, message };
 }
 
+/** 只有 Vanessa 覆核後的 gold 能進正式分數；AI 初標與爭議題不行（PR #42）。 */
 export function officialGoldCase(gateCase: LifeScienceGateCase): boolean {
   return gateCase.annotationStatus === "reviewed" && gateCase.goldVerdict !== null;
 }
@@ -47,6 +48,7 @@ export function validateLifeScienceGateDataset(
     }
 
     const previousSplit = groupsBySplit.get(gateCase.groupId);
+    // 同篇文章不得同時出現在 dev 與 eval，避免用驗收集調 prompt（PR #42）。
     if (previousSplit && previousSplit !== gateCase.split) {
       issues.push(
         issue(

@@ -16,6 +16,7 @@ export function currentLifeScienceGatePolicy(): { policyId: string; policyHash: 
   };
 }
 
+/** 產品層沿用 routing merge：yes／not_sure 保留，只有 no 排除。不得把 not_sure 當 no（PR #42）。 */
 export function productOutcomeFromVerdict(verdict: RoutingVerdict): "include" | "exclude" {
   return verdict === "no" ? "exclude" : "include";
 }
@@ -27,6 +28,11 @@ export type ModelOrFallbackOutcome = {
   fallbackMethod: "none" | "routing-keyword-fallback";
 };
 
+/**
+ * 模型失敗與語意 no 必須分開（PR #42）。
+ * timeout／429／空回應等：modelOutcome=unavailable，再套既有 keyword fallback；
+ * fallback 成功不得算成模型成功。
+ */
 export function modelAndFallbackOutcomes(options: {
   verdict?: RoutingVerdict;
   errorKind?: PredictionErrorKind;
