@@ -1,0 +1,198 @@
+{
+  "reportDate": "2026-10-03",
+  "generatedAt": "2026-10-04T15:25:23.749Z",
+  "papers": [
+    {
+      "id": "10.1038/s41467-026-78050-6",
+      "title": "Near-atomistic simulations reveal the molecular principles that control chromatin structure and phase separation",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-03T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78050-6",
+      "doi": "10.1038/s41467-026-78050-6",
+      "abstract": "Russell et al. introduce a 10 × faster, chemically detailed chromatin model bridging molecular and genomic scales, revealing how DNA sequence, spacing and histone acetylation govern chromatin folding and phase separation.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "近原子模擬揭示染色質結構與相分離的分子原理",
+      "summaryZh": "Russell 等人提出一種化學細節的染色質模型，可在分子與基因組尺度之間橋接，且模擬速度提升約10倍。該模型用於探討染色質折疊與相分離的調控。研究指出DNA序列、間距以及組蛋白乙醯化會影響染色質折疊與相分離。該模型提供更快速且具化學細節的工具來研究染色質組織。",
+      "topicTags": [
+        "chromatin",
+        "phase-separation",
+        "molecular-simulation",
+        "genomics"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 5,
+      "passedByScope": 0,
+      "llmClassified": 5,
+      "llmYes": 1,
+      "llmNotSure": 0,
+      "llmNo": 4,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 1,
+      "excluded": 4
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 1,
+      "llmTagged": 1,
+      "llmLineA": 0,
+      "llmLineB": 1,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 1,
+      "candidates": 1,
+      "featured": 1,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 1,
+      "preprint": 0,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 1,
+      "featuredPreprint": 0,
+      "overflowLineA": 0,
+      "overflowLineB": 0,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 1,
+      "llmSummarized": 1,
+      "primarySucceeded": 1,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 1
+      },
+      "summarize": {
+        "requested": 1,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 1
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 0,
+        "succeeded": 0,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b"
+        },
+        "primarySucceeded": 0,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78416-w",
+        "title": "Volitional control of wearable robots",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-03T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78416-w",
+        "doi": "10.1038/s41467-026-78416-w",
+        "abstract": "This Comment motivates the development of human–machine interfaces that decode spinal motor neuron activity and resulting muscle force information in moving humans. Such interfaces could enable users across the neuromuscular functional spectrum to volitionally control wearable robots with muscle-like behaviour.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77973-4",
+        "title": "Thermally programmed disassembly and reconstruction of 2D polymer platelets via melting-governed crystallization-driven self-assembly",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-03T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77973-4",
+        "doi": "10.1038/s41467-026-77973-4",
+        "abstract": "‘Crystallization-driven self-assembly is a useful tool for the synthesis of polymer nanostructures with precise dimensions, but the melting behavior of polymer crystals grown in solution has remained largely unexplored. Here, the authors show that melting temperature is a structurally sensitive descriptor and an active design parameter for 2D platelets.’",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78261-x",
+        "title": "Sustainability cost of defect engineering in color centers for quantum communications",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-03T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78261-x",
+        "doi": "10.1038/s41467-026-78261-x",
+        "abstract": "Sustainable manufacturing is becoming an increasingly important consideration for emerging quantum technologies. Here, the authors assess the environmental, chemical, human-health, and economic impacts of defect engineering strategies for color-center platforms used in quantum communications, highlighting trade-offs between quantum functionality and resource demands while identifying lower-impact solutions.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78039-1",
+        "title": "Bulk mesophases modeling of ferroelectric nematic liquid crystals",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-03T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78039-1",
+        "doi": "10.1038/s41467-026-78039-1",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
