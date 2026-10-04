@@ -33,4 +33,6 @@ export const PREDICTION_ERROR_KINDS = [
   "other",
 ] as const;
 
+export { LIFE_SCIENCE_GATE_FALLBACK_POLICY_ID } from "./fallbackPolicy.js";
+
 export const HISTORICAL_METHODS = ["llm", "routing-keyword-fallback"] as const;

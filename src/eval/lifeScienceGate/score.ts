@@ -1,15 +1,18 @@
 import type { RoutingKeywordsConfig } from "../../domain/life-science/routing/keywordFallbackMatcher.js";
-import { ROUTING_VERDICTS } from "./constants.js";
+import { DATASET_SPLITS, ROUTING_VERDICTS, SAMPLE_GROUPS } from "./constants.js";
+import { fallbackPolicyHash } from "./fallbackPolicy.js";
 import { modelAndFallbackOutcomes, productOutcomeFromVerdict } from "./policy.js";
 import { predictionRunSchema } from "./schema.js";
 import type {
   DatasetIssue,
+  DatasetSplit,
   LifeScienceGateCase,
   LifeScienceGateDataset,
   MetricValue,
   PredictionErrorKind,
-  PredictionRun,
+  PredictionRow,
   RoutingVerdict,
+  SampleGroup,
 } from "./types.js";
 import { officialGoldCase } from "./validateDataset.js";
 
@@ -17,6 +20,34 @@ export type ConfusionMatrix = {
   labels: typeof ROUTING_VERDICTS;
   /** rows = gold, cols = prediction */
   counts: number[][];
+};
+
+export type ProductCounts = {
+  goldIncludePredInclude: number;
+  goldIncludePredExclude: number;
+  goldExcludePredInclude: number;
+  goldExcludePredExclude: number;
+  unavailable: number;
+};
+
+export type QualitySlice = {
+  nGold: number;
+  nSuccessful: number;
+  nErrors: number;
+  nMissing: number;
+  notSureRate: MetricValue;
+  accuracy: MetricValue;
+  confusion: ConfusionMatrix;
+  precision: Record<RoutingVerdict, MetricValue>;
+  recall: Record<RoutingVerdict, MetricValue>;
+  goldYesPredNo: number;
+  goldNoPredYes: number;
+  abstainWhenGoldDecisive: number;
+  nFallbackApplied: number;
+  nFallbackSuccessNotModelSuccess: number;
+  modelOnly: ProductCounts;
+  afterFallback: ProductCounts;
+  serviceFailures: Record<PredictionErrorKind | "none", number>;
 };
 
 export type ScoreReport = {
@@ -31,10 +62,16 @@ export type ScoreReport = {
   promptHash: string;
   issues: DatasetIssue[];
   scoringScope: {
+    split: DatasetSplit | "all";
     officialGold: number;
     excludedFromOfficial: Array<{ caseId: string; reason: string }>;
+    outOfScope: number;
     bySplit: Record<string, number>;
     bySampleGroup: Record<string, number>;
+  };
+  fallbackPolicy: {
+    id: string;
+    hash: string;
   };
   semantic: {
     nGold: number;
@@ -57,19 +94,15 @@ export type ScoreReport = {
     modelOnly: ProductCounts;
     afterFallback: ProductCounts;
   };
+  slices: {
+    bySplit: Record<DatasetSplit, QualitySlice>;
+    bySampleGroup: Record<SampleGroup, QualitySlice>;
+  };
   resources: {
     cost: ResourceSummary;
     tokens: ResourceSummary;
     latencyMs: LatencySummary;
   };
-};
-
-type ProductCounts = {
-  goldIncludePredInclude: number;
-  goldIncludePredExclude: number;
-  goldExcludePredInclude: number;
-  goldExcludePredExclude: number;
-  unavailable: number;
 };
 
 type ResourceSummary = {
@@ -107,7 +140,7 @@ function emptyProduct(): ProductCounts {
   };
 }
 
-function emptyServiceFailures(): ScoreReport["serviceFailures"] {
+function emptyServiceFailures(): QualitySlice["serviceFailures"] {
   return {
     timeout: 0,
     http_429: 0,
@@ -137,87 +170,32 @@ function addProduct(counts: ProductCounts, gold: "include" | "exclude", pred: "i
   if (gold === "exclude" && pred === "exclude") counts.goldExcludePredExclude += 1;
 }
 
-/**
- * 離線評分：語意混淆矩陣、服務失敗、fallback 後產品結果分開報（PR #42）。
- * datasetVersion／hash／missing／duplicate／unknown IDs 不得靜默通過。
- */
-export function scorePredictionRun(options: {
-  dataset: LifeScienceGateDataset;
-  datasetHash: string;
-  run: unknown;
+function inScoreScope(gateCase: LifeScienceGateCase, split: DatasetSplit | "all"): boolean {
+  return split === "all" || gateCase.split === split;
+}
+
+function precisionRecall(confusion: ConfusionMatrix): {
+  precision: Record<RoutingVerdict, MetricValue>;
+  recall: Record<RoutingVerdict, MetricValue>;
+} {
+  const precision = {} as Record<RoutingVerdict, MetricValue>;
+  const recall = {} as Record<RoutingVerdict, MetricValue>;
+  for (const [col, label] of ROUTING_VERDICTS.entries()) {
+    const predicted = confusion.counts.reduce((sum, row) => sum + row[col], 0);
+    const goldCount = confusion.counts[col].reduce((sum, value) => sum + value, 0);
+    const truePositive = confusion.counts[col][col];
+    precision[label] = ratio(truePositive, predicted);
+    recall[label] = ratio(truePositive, goldCount);
+  }
+  return { precision, recall };
+}
+
+function scoreOfficialSlice(options: {
+  official: LifeScienceGateCase[];
+  predById: Map<string, PredictionRow>;
   keywordConfig: RoutingKeywordsConfig;
-}): ScoreReport {
-  const run = predictionRunSchema.parse(options.run);
-  const issues: DatasetIssue[] = [];
-
-  if (run.datasetVersion !== options.dataset.datasetVersion) {
-    issues.push({
-      code: "dataset_version_mismatch",
-      message: `predictions datasetVersion ${run.datasetVersion} != ${options.dataset.datasetVersion}`,
-    });
-  }
-  if (run.datasetHash !== options.datasetHash) {
-    issues.push({
-      code: "dataset_hash_mismatch",
-      message: `predictions datasetHash ${run.datasetHash} != ${options.datasetHash}`,
-    });
-  }
-
-  const byCaseId = new Map(options.dataset.cases.map((gateCase) => [gateCase.caseId, gateCase]));
-  const seenPredIds = new Set<string>();
-  const predById = new Map<string, (typeof run.predictions)[number]>();
-
-  for (const prediction of run.predictions) {
-    if (seenPredIds.has(prediction.caseId)) {
-      issues.push({
-        code: "duplicate_prediction_id",
-        message: `duplicate prediction for ${prediction.caseId}`,
-        caseId: prediction.caseId,
-      });
-      continue;
-    }
-    seenPredIds.add(prediction.caseId);
-    if (!byCaseId.has(prediction.caseId)) {
-      issues.push({
-        code: "unknown_prediction_id",
-        message: `prediction caseId ${prediction.caseId} is not in the dataset`,
-        caseId: prediction.caseId,
-      });
-      continue;
-    }
-    if (prediction.errorKind && prediction.verdict) {
-      issues.push({
-        code: "malformed_prediction",
-        message: "prediction cannot include both verdict and errorKind",
-        caseId: prediction.caseId,
-      });
-    }
-    if (!prediction.errorKind && !prediction.verdict) {
-      issues.push({
-        code: "malformed_prediction",
-        message: "prediction needs verdict or errorKind",
-        caseId: prediction.caseId,
-      });
-    }
-    predById.set(prediction.caseId, prediction);
-  }
-
-  const excludedFromOfficial: Array<{ caseId: string; reason: string }> = [];
-  const official: LifeScienceGateCase[] = [];
-  for (const gateCase of options.dataset.cases) {
-    if (officialGoldCase(gateCase)) {
-      official.push(gateCase);
-      continue;
-    }
-    const reason =
-      gateCase.annotationStatus === "disputed"
-        ? "disputed"
-        : gateCase.annotationStatus === "pending_review"
-          ? "pending_review"
-          : "gold_not_final";
-    excludedFromOfficial.push({ caseId: gateCase.caseId, reason });
-  }
-
+  issues?: DatasetIssue[];
+}): QualitySlice {
   const confusion = emptyConfusion();
   const serviceFailures = emptyServiceFailures();
   const modelOnly = emptyProduct();
@@ -232,20 +210,16 @@ export function scorePredictionRun(options: {
   let nFallbackSuccessNotModelSuccess = 0;
   let notSureSuccessful = 0;
   let correct = 0;
-  const latencies: number[] = [];
-  const cost = { present: 0, missing: 0, total: 0 as number | "unavailable" };
-  const tokens = { present: 0, missing: 0, total: 0 as number | "unavailable" };
-
   const indexOf = (verdict: RoutingVerdict) => ROUTING_VERDICTS.indexOf(verdict);
 
-  for (const gateCase of official) {
+  for (const gateCase of options.official) {
     const gold = gateCase.goldVerdict;
     if (!gold) continue;
-    const prediction = predById.get(gateCase.caseId);
+    const prediction = options.predById.get(gateCase.caseId);
     if (!prediction) {
       nMissing += 1;
       serviceFailures.missing += 1;
-      issues.push({
+      options.issues?.push({
         code: "missing_prediction_id",
         message: `official gold case ${gateCase.caseId} has no prediction`,
         caseId: gateCase.caseId,
@@ -256,24 +230,6 @@ export function scorePredictionRun(options: {
     }
 
     const errorKind = prediction.errorKind || (prediction.verdict ? undefined : "malformed");
-    if (prediction.cost == null) {
-      cost.missing += 1;
-    } else {
-      cost.present += 1;
-      if (cost.total !== "unavailable") cost.total += prediction.cost;
-    }
-    if (prediction.tokens == null) {
-      tokens.missing += 1;
-    } else {
-      tokens.present += 1;
-      if (tokens.total !== "unavailable") tokens.total += prediction.tokens;
-    }
-    if (prediction.latencyMs == null) {
-      // counted later in latency summary
-    } else {
-      latencies.push(prediction.latencyMs);
-    }
-
     const outcomes = modelAndFallbackOutcomes({
       verdict: prediction.verdict,
       errorKind,
@@ -305,32 +261,213 @@ export function scorePredictionRun(options: {
     if (gold !== "not_sure" && prediction.verdict === "not_sure") abstainWhenGoldDecisive += 1;
   }
 
-  const precision = {} as Record<RoutingVerdict, MetricValue>;
-  const recall = {} as Record<RoutingVerdict, MetricValue>;
-  for (const [col, label] of ROUTING_VERDICTS.entries()) {
-    const predicted = confusion.counts.reduce((sum, row) => sum + row[col], 0);
-    const goldCount = confusion.counts[col].reduce((sum, value) => sum + value, 0);
-    const truePositive = confusion.counts[col][col];
-    precision[label] = ratio(truePositive, predicted);
-    recall[label] = ratio(truePositive, goldCount);
+  const { precision, recall } = precisionRecall(confusion);
+  return {
+    nGold: options.official.length,
+    nSuccessful,
+    nErrors,
+    nMissing,
+    notSureRate: ratio(notSureSuccessful, nSuccessful),
+    accuracy: ratio(correct, nSuccessful),
+    confusion,
+    precision,
+    recall,
+    goldYesPredNo,
+    goldNoPredYes,
+    abstainWhenGoldDecisive,
+    nFallbackApplied,
+    nFallbackSuccessNotModelSuccess,
+    modelOnly,
+    afterFallback,
+    serviceFailures,
+  };
+}
+
+function resourceTotals(official: LifeScienceGateCase[], predById: Map<string, PredictionRow>) {
+  const latencies: number[] = [];
+  const cost = { present: 0, missing: 0, total: 0 as number | "unavailable" };
+  const tokens = { present: 0, missing: 0, total: 0 as number | "unavailable" };
+
+  for (const gateCase of official) {
+    const prediction = predById.get(gateCase.caseId);
+    if (!prediction) {
+      cost.missing += 1;
+      tokens.missing += 1;
+      continue;
+    }
+    if (prediction.cost == null) {
+      cost.missing += 1;
+    } else {
+      cost.present += 1;
+      if (cost.total !== "unavailable") cost.total += prediction.cost;
+    }
+    if (prediction.tokens == null) {
+      tokens.missing += 1;
+    } else {
+      tokens.present += 1;
+      if (tokens.total !== "unavailable") tokens.total += prediction.tokens;
+    }
+    if (prediction.latencyMs != null) {
+      latencies.push(prediction.latencyMs);
+    }
   }
 
-  if (cost.present === 0) cost.total = "unavailable";
-  if (tokens.present === 0) tokens.total = "unavailable";
-  const latencyMissing = official.length - latencies.length;
+  // 缺任何一筆就把加總標成 unavailable，避免部分加總被當成完整 run 成本（PR #42）。
+  if (cost.present === 0 || cost.missing > 0) cost.total = "unavailable";
+  if (tokens.present === 0 || tokens.missing > 0) tokens.total = "unavailable";
   latencies.sort((a, b) => a - b);
+  return {
+    cost: { present: cost.present, missing: cost.missing, total: cost.total },
+    tokens: { present: tokens.present, missing: tokens.missing, total: tokens.total },
+    latencyMs: {
+      present: latencies.length,
+      missing: official.length - latencies.length,
+      p50: percentile(latencies, 50),
+      p95: percentile(latencies, 95),
+    },
+  };
+}
 
-  const bySplit: Record<string, number> = { dev: 0, eval: 0 };
-  const bySampleGroup: Record<string, number> = { general: 0, hard: 0 };
+/**
+ * 離線評分：語意混淆矩陣、服務失敗、fallback 後產品結果分開報（PR #42）。
+ * datasetVersion／hash／missing／duplicate／unknown IDs 不得靜默通過。
+ * split scope 必須對應 export-request；afterFallback 用 dataset 內的 keyword 快照，不用 live config。
+ */
+export function scorePredictionRun(options: {
+  dataset: LifeScienceGateDataset;
+  datasetHash: string;
+  run: unknown;
+  keywordConfig?: RoutingKeywordsConfig;
+  split?: DatasetSplit;
+}): ScoreReport {
+  const run = predictionRunSchema.parse(options.run);
+  const issues: DatasetIssue[] = [];
+  const split: DatasetSplit | "all" = options.split ?? run.split ?? "all";
+  // split scope 對齊 export-request；範圍外的官方 gold 不列 missing（PR #42）。
+  const snapshotKeywords = options.dataset.fallbackPolicy.keywords;
+
+  if (run.datasetVersion !== options.dataset.datasetVersion) {
+    issues.push({
+      code: "dataset_version_mismatch",
+      message: `predictions datasetVersion ${run.datasetVersion} != ${options.dataset.datasetVersion}`,
+    });
+  }
+  if (run.datasetHash !== options.datasetHash) {
+    issues.push({
+      code: "dataset_hash_mismatch",
+      message: `predictions datasetHash ${run.datasetHash} != ${options.datasetHash}`,
+    });
+  }
+  if (options.keywordConfig) {
+    const liveHash = fallbackPolicyHash(options.keywordConfig);
+    if (liveHash !== options.dataset.fallbackPolicy.hash) {
+      issues.push({
+        code: "fallback_policy_hash_mismatch",
+        message: `live keyword config hash ${liveHash} != dataset fallbackPolicy.hash ${options.dataset.fallbackPolicy.hash}`,
+      });
+    }
+  }
+
+  const byCaseId = new Map(options.dataset.cases.map((gateCase) => [gateCase.caseId, gateCase]));
+  const seenPredIds = new Set<string>();
+  const predById = new Map<string, PredictionRow>();
+
+  for (const prediction of run.predictions) {
+    if (seenPredIds.has(prediction.caseId)) {
+      issues.push({
+        code: "duplicate_prediction_id",
+        message: `duplicate prediction for ${prediction.caseId}`,
+        caseId: prediction.caseId,
+      });
+      continue;
+    }
+    seenPredIds.add(prediction.caseId);
+    const gateCase = byCaseId.get(prediction.caseId);
+    if (!gateCase) {
+      issues.push({
+        code: "unknown_prediction_id",
+        message: `prediction caseId ${prediction.caseId} is not in the dataset`,
+        caseId: prediction.caseId,
+      });
+      continue;
+    }
+    if (!inScoreScope(gateCase, split)) {
+      continue;
+    }
+    if (prediction.errorKind && prediction.verdict) {
+      issues.push({
+        code: "malformed_prediction",
+        message: "prediction cannot include both verdict and errorKind",
+        caseId: prediction.caseId,
+      });
+    }
+    if (!prediction.errorKind && !prediction.verdict) {
+      issues.push({
+        code: "malformed_prediction",
+        message: "prediction needs verdict or errorKind",
+        caseId: prediction.caseId,
+      });
+    }
+    predById.set(prediction.caseId, prediction);
+  }
+
+  const excludedFromOfficial: Array<{ caseId: string; reason: string }> = [];
+  const official: LifeScienceGateCase[] = [];
+  let outOfScope = 0;
+  for (const gateCase of options.dataset.cases) {
+    if (!inScoreScope(gateCase, split)) {
+      outOfScope += 1;
+      continue;
+    }
+    if (officialGoldCase(gateCase)) {
+      official.push(gateCase);
+      continue;
+    }
+    const reason =
+      gateCase.annotationStatus === "disputed"
+        ? "disputed"
+        : gateCase.annotationStatus === "pending_review"
+          ? "pending_review"
+          : "gold_not_final";
+    excludedFromOfficial.push({ caseId: gateCase.caseId, reason });
+  }
+
+  const overall = scoreOfficialSlice({
+    official,
+    predById,
+    keywordConfig: snapshotKeywords,
+    issues,
+  });
+
+  const bySplitCounts: Record<string, number> = { dev: 0, eval: 0 };
+  const bySampleGroupCounts: Record<string, number> = { general: 0, hard: 0 };
   for (const gateCase of official) {
-    bySplit[gateCase.split] += 1;
-    bySampleGroup[gateCase.sampleGroup] += 1;
+    bySplitCounts[gateCase.split] += 1;
+    bySampleGroupCounts[gateCase.sampleGroup] += 1;
+  }
+
+  const bySplit = {} as Record<DatasetSplit, QualitySlice>;
+  for (const splitName of DATASET_SPLITS) {
+    bySplit[splitName] = scoreOfficialSlice({
+      official: official.filter((gateCase) => gateCase.split === splitName),
+      predById,
+      keywordConfig: snapshotKeywords,
+    });
+  }
+  const bySampleGroup = {} as Record<SampleGroup, QualitySlice>;
+  for (const group of SAMPLE_GROUPS) {
+    bySampleGroup[group] = scoreOfficialSlice({
+      official: official.filter((gateCase) => gateCase.sampleGroup === group),
+      predById,
+      keywordConfig: snapshotKeywords,
+    });
   }
 
   const blocking = issues.some((item) =>
     [
       "dataset_version_mismatch",
       "dataset_hash_mismatch",
+      "fallback_policy_hash_mismatch",
       "duplicate_prediction_id",
       "unknown_prediction_id",
       "missing_prediction_id",
@@ -350,41 +487,39 @@ export function scorePredictionRun(options: {
     promptHash: run.promptHash,
     issues,
     scoringScope: {
+      split,
       officialGold: official.length,
       excludedFromOfficial,
-      bySplit,
-      bySampleGroup,
+      outOfScope,
+      bySplit: bySplitCounts,
+      bySampleGroup: bySampleGroupCounts,
+    },
+    fallbackPolicy: {
+      id: options.dataset.fallbackPolicy.id,
+      hash: options.dataset.fallbackPolicy.hash,
     },
     semantic: {
-      nGold: official.length,
-      nSuccessful,
-      nErrors,
-      nMissing,
-      notSureRate: ratio(notSureSuccessful, nSuccessful),
-      accuracy: ratio(correct, nSuccessful),
-      confusion,
-      precision,
-      recall,
-      goldYesPredNo,
-      goldNoPredYes,
-      abstainWhenGoldDecisive,
+      nGold: overall.nGold,
+      nSuccessful: overall.nSuccessful,
+      nErrors: overall.nErrors,
+      nMissing: overall.nMissing,
+      notSureRate: overall.notSureRate,
+      accuracy: overall.accuracy,
+      confusion: overall.confusion,
+      precision: overall.precision,
+      recall: overall.recall,
+      goldYesPredNo: overall.goldYesPredNo,
+      goldNoPredYes: overall.goldNoPredYes,
+      abstainWhenGoldDecisive: overall.abstainWhenGoldDecisive,
     },
-    serviceFailures,
+    serviceFailures: overall.serviceFailures,
     product: {
-      nFallbackApplied,
-      nFallbackSuccessNotModelSuccess,
-      modelOnly,
-      afterFallback,
+      nFallbackApplied: overall.nFallbackApplied,
+      nFallbackSuccessNotModelSuccess: overall.nFallbackSuccessNotModelSuccess,
+      modelOnly: overall.modelOnly,
+      afterFallback: overall.afterFallback,
     },
-    resources: {
-      cost: { present: cost.present, missing: cost.missing, total: cost.total },
-      tokens: { present: tokens.present, missing: tokens.missing, total: tokens.total },
-      latencyMs: {
-        present: latencies.length,
-        missing: latencyMissing,
-        p50: percentile(latencies, 50),
-        p95: percentile(latencies, 95),
-      },
-    },
+    slices: { bySplit, bySampleGroup },
+    resources: resourceTotals(official, predById),
   };
 }

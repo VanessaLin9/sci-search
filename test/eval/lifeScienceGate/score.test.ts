@@ -2,15 +2,9 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { scorePredictionRun } from "../../../src/eval/lifeScienceGate/score.js";
 import { contentHash } from "../../../src/eval/lifeScienceGate/hash.js";
-import { testCase, testDataset } from "./helpers.js";
+import { TEST_KEYWORD_CONFIG, testCase, testDataset } from "./helpers.js";
 
-const keywordConfig = {
-  includeStems: ["mice", "gene"],
-  includeTerms: ["cancer"],
-  sharedIncludeTerms: [],
-  excludeTerms: ["quantum"],
-  excludePhrases: ["black hole"],
-};
+const keywordConfig = TEST_KEYWORD_CONFIG;
 
 function paper(id: string, title: string) {
   return {
@@ -95,8 +89,11 @@ describe("life-science gate scoring", () => {
     assert.equal(report.product.nFallbackApplied, 1);
     assert.equal(report.product.nFallbackSuccessNotModelSuccess, 1);
     assert.equal(report.product.afterFallback.goldExcludePredExclude, 1);
-    assert.notEqual(report.resources.cost.total, 0);
+    assert.equal(report.resources.cost.total, "unavailable");
     assert.equal(report.resources.cost.missing, 1);
+    assert.equal(report.slices.bySampleGroup.general.accuracy, 2 / 3);
+    assert.equal(report.slices.bySampleGroup.hard.nErrors, 1);
+    assert.equal(report.slices.bySampleGroup.hard.accuracy, "N/A");
   });
 
   it("marks zero-denominator metrics N/A for all-not_sure and all-failure runs", () => {
@@ -290,5 +287,216 @@ describe("life-science gate scoring", () => {
     assert.equal(report.scoringScope.excludedFromOfficial[0]?.reason, "pending_review");
     assert.equal(report.semantic.nSuccessful, 1);
     assert.equal(report.semantic.accuracy, 1);
+  });
+
+  it("scores only the requested split and still fails on missing in-scope ids", () => {
+    const dataset = testDataset([
+      testCase({
+        caseId: "dev-yes",
+        input: paper("dev-yes", "Gene regulation in mice"),
+        split: "dev",
+        sampleGroup: "general",
+        annotationStatus: "reviewed",
+        goldVerdict: "yes",
+      }),
+      testCase({
+        caseId: "eval-no",
+        input: paper("eval-no", "Room-temperature superconductivity"),
+        split: "eval",
+        sampleGroup: "hard",
+        annotationStatus: "reviewed",
+        goldVerdict: "no",
+      }),
+    ]);
+    const evalOnly = scorePredictionRun({
+      dataset,
+      datasetHash: contentHash(dataset),
+      keywordConfig,
+      split: "eval",
+      run: {
+        runId: "eval-only",
+        datasetVersion: dataset.datasetVersion,
+        datasetHash: contentHash(dataset),
+        model: "test-model",
+        provider: "test",
+        promptVersion: "p1",
+        promptHash: "abc",
+        split: "eval",
+        predictions: [{ caseId: "eval-no", verdict: "no" }],
+      },
+    });
+    assert.equal(evalOnly.ok, true);
+    assert.equal(evalOnly.scoringScope.split, "eval");
+    assert.equal(evalOnly.scoringScope.officialGold, 1);
+    assert.equal(evalOnly.scoringScope.outOfScope, 1);
+    assert.equal(evalOnly.semantic.nGold, 1);
+    assert.equal(evalOnly.semantic.accuracy, 1);
+    assert.equal(evalOnly.slices.bySplit.eval.accuracy, 1);
+    assert.equal(evalOnly.slices.bySplit.dev.nGold, 0);
+    assert.equal(evalOnly.slices.bySampleGroup.hard.accuracy, 1);
+    assert.equal(evalOnly.slices.bySampleGroup.general.nGold, 0);
+
+    const devOnly = scorePredictionRun({
+      dataset,
+      datasetHash: contentHash(dataset),
+      keywordConfig,
+      split: "dev",
+      run: {
+        runId: "dev-only",
+        datasetVersion: dataset.datasetVersion,
+        datasetHash: contentHash(dataset),
+        model: "test-model",
+        provider: "test",
+        promptVersion: "p1",
+        promptHash: "abc",
+        predictions: [{ caseId: "dev-yes", verdict: "yes" }],
+      },
+    });
+    assert.equal(devOnly.ok, true);
+    assert.equal(devOnly.scoringScope.split, "dev");
+    assert.equal(devOnly.semantic.nGold, 1);
+    assert.equal(devOnly.slices.bySplit.dev.accuracy, 1);
+    assert.equal(devOnly.slices.bySplit.eval.nGold, 0);
+
+    const missingInScope = scorePredictionRun({
+      dataset,
+      datasetHash: contentHash(dataset),
+      keywordConfig,
+      split: "eval",
+      run: {
+        runId: "missing-eval",
+        datasetVersion: dataset.datasetVersion,
+        datasetHash: contentHash(dataset),
+        model: "test-model",
+        provider: "test",
+        promptVersion: "p1",
+        promptHash: "abc",
+        predictions: [{ caseId: "dev-yes", verdict: "yes" }],
+      },
+    });
+    assert.equal(missingInScope.ok, false);
+    assert.equal(
+      missingInScope.issues.some((item) => item.code === "missing_prediction_id" && item.caseId === "eval-no"),
+      true,
+    );
+    assert.equal(
+      missingInScope.issues.some((item) => item.code === "missing_prediction_id" && item.caseId === "dev-yes"),
+      false,
+    );
+  });
+
+  it("does not silently change afterFallback when live keyword config drifts", () => {
+    const dataset = testDataset([
+      testCase({
+        caseId: "timeout-exclude",
+        input: paper("timeout-exclude", "Quantum gravity"),
+        split: "eval",
+        sampleGroup: "general",
+        annotationStatus: "reviewed",
+        goldVerdict: "no",
+      }),
+      testCase({
+        caseId: "timeout-include",
+        input: paper("timeout-include", "Gene regulation in mice"),
+        split: "eval",
+        sampleGroup: "general",
+        annotationStatus: "reviewed",
+        goldVerdict: "yes",
+      }),
+    ]);
+    const predictions = [
+      { caseId: "timeout-exclude", errorKind: "timeout" as const },
+      { caseId: "timeout-include", errorKind: "timeout" as const },
+    ];
+    const pinned = scorePredictionRun({
+      dataset,
+      datasetHash: contentHash(dataset),
+      keywordConfig,
+      run: {
+        runId: "pinned",
+        datasetVersion: dataset.datasetVersion,
+        datasetHash: contentHash(dataset),
+        model: "test-model",
+        provider: "test",
+        promptVersion: "p1",
+        promptHash: "abc",
+        predictions,
+      },
+    });
+    assert.equal(pinned.ok, true);
+    assert.equal(pinned.product.afterFallback.goldExcludePredExclude, 1);
+    assert.equal(pinned.product.afterFallback.goldIncludePredInclude, 1);
+    assert.equal(pinned.fallbackPolicy.hash, dataset.fallbackPolicy.hash);
+
+    const drifted = scorePredictionRun({
+      dataset,
+      datasetHash: contentHash(dataset),
+      keywordConfig: {
+        includeStems: [],
+        includeTerms: ["quantum"],
+        sharedIncludeTerms: [],
+        excludeTerms: [],
+        excludePhrases: [],
+      },
+      run: {
+        runId: "drifted",
+        datasetVersion: dataset.datasetVersion,
+        datasetHash: contentHash(dataset),
+        model: "test-model",
+        provider: "test",
+        promptVersion: "p1",
+        promptHash: "abc",
+        predictions,
+      },
+    });
+    assert.equal(drifted.ok, false);
+    assert.equal(
+      drifted.issues.some((item) => item.code === "fallback_policy_hash_mismatch"),
+      true,
+    );
+    assert.equal(drifted.product.afterFallback.goldExcludePredExclude, 1);
+    assert.equal(drifted.product.afterFallback.goldIncludePredInclude, 1);
+    assert.equal(drifted.product.afterFallback.goldExcludePredInclude, 0);
+  });
+
+  it("publishes a numeric cost total only when every in-scope gold row has cost", () => {
+    const dataset = testDataset([
+      testCase({
+        caseId: "a",
+        input: paper("a", "Gene regulation in mice"),
+        split: "eval",
+        sampleGroup: "general",
+        annotationStatus: "reviewed",
+        goldVerdict: "yes",
+      }),
+      testCase({
+        caseId: "b",
+        input: paper("b", "A neural circuit in mice"),
+        split: "eval",
+        sampleGroup: "general",
+        annotationStatus: "reviewed",
+        goldVerdict: "yes",
+      }),
+    ]);
+    const complete = scorePredictionRun({
+      dataset,
+      datasetHash: contentHash(dataset),
+      keywordConfig,
+      run: {
+        runId: "complete-cost",
+        datasetVersion: dataset.datasetVersion,
+        datasetHash: contentHash(dataset),
+        model: "test-model",
+        provider: "test",
+        promptVersion: "p1",
+        promptHash: "abc",
+        predictions: [
+          { caseId: "a", verdict: "yes", cost: 0.01, tokens: 10 },
+          { caseId: "b", verdict: "yes", cost: 0.02, tokens: 20 },
+        ],
+      },
+    });
+    assert.equal(complete.resources.cost.total, 0.03);
+    assert.equal(complete.resources.tokens.total, 30);
   });
 });

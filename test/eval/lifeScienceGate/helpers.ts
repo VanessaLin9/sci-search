@@ -1,5 +1,14 @@
 import { currentLifeScienceGatePolicy } from "../../../src/eval/lifeScienceGate/policy.js";
+import { snapshotFallbackPolicy } from "../../../src/eval/lifeScienceGate/fallbackPolicy.js";
 import type { LifeScienceGateCase, LifeScienceGateDataset } from "../../../src/eval/lifeScienceGate/types.js";
+
+export const TEST_KEYWORD_CONFIG = {
+  includeStems: ["mice", "gene"],
+  includeTerms: ["cancer"],
+  sharedIncludeTerms: [],
+  excludeTerms: ["quantum"],
+  excludePhrases: ["black hole"],
+};
 
 const policy = currentLifeScienceGatePolicy();
 
@@ -53,6 +62,7 @@ export function testDataset(cases: LifeScienceGateCase[]): LifeScienceGateDatase
     datasetVersion: "test-1",
     policyId: policy.policyId,
     policyHash: policy.policyHash,
+    fallbackPolicy: snapshotFallbackPolicy(TEST_KEYWORD_CONFIG),
     createdAt: "2026-10-03T00:00:00.000Z",
     changelog: ["test fixture"],
     sampling: {

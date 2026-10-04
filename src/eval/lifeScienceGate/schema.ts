@@ -5,6 +5,7 @@ import {
   HARD_TAGS,
   HISTORICAL_METHODS,
   LIFE_SCIENCE_GATE_DATASET_ID,
+  LIFE_SCIENCE_GATE_FALLBACK_POLICY_ID,
   LIFE_SCIENCE_GATE_POLICY_ID,
   PREDICTION_ERROR_KINDS,
   PROVENANCE_KINDS,
@@ -84,6 +85,21 @@ export const lifeScienceGateDatasetSchema = z
     datasetVersion: z.string().min(1),
     policyId: z.literal(LIFE_SCIENCE_GATE_POLICY_ID),
     policyHash: z.string().min(1),
+    fallbackPolicy: z
+      .object({
+        id: z.literal(LIFE_SCIENCE_GATE_FALLBACK_POLICY_ID),
+        hash: z.string().min(1),
+        keywords: z
+          .object({
+            includeStems: z.array(z.string()),
+            includeTerms: z.array(z.string()),
+            sharedIncludeTerms: z.array(z.string()),
+            excludeTerms: z.array(z.string()),
+            excludePhrases: z.array(z.string()),
+          })
+          .strict(),
+      })
+      .strict(),
     createdAt: z.string().min(1),
     changelog: z.array(z.string()),
     sampling: z
@@ -133,6 +149,7 @@ export const predictionRunSchema = z
     provider: z.string().min(1),
     promptVersion: z.string().min(1),
     promptHash: z.string().min(1),
+    split: z.enum(DATASET_SPLITS).optional(),
     predictions: z.array(predictionRowSchema),
   })
   .strict() satisfies z.ZodType<PredictionRun>;

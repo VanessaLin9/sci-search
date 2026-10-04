@@ -147,6 +147,12 @@ function parseOptionalVerdict(value: string): RoutingVerdict | null {
   throw new Error(`Invalid goldVerdict: ${value}`);
 }
 
+export function nextDatasetVersion(current: string): string {
+  const match = /^(\d+)\.(\d+)\.(\d+)$/.exec(current);
+  if (match) return `${match[1]}.${match[2]}.${Number(match[3]) + 1}`;
+  return `${current}+review`;
+}
+
 export function applyReviewRows(
   dataset: LifeScienceGateDataset,
   rows: ReviewRow[],
@@ -184,5 +190,12 @@ export function applyReviewRows(
     };
   }
 
-  return { ...dataset, cases };
+  const datasetVersion = nextDatasetVersion(dataset.datasetVersion);
+  // 成功匯入覆核列才進新版本；不完整 gold 由 CLI 在寫檔前擋下（PR #42）。
+  return {
+    ...dataset,
+    datasetVersion,
+    changelog: [...dataset.changelog, `${datasetVersion}: apply-review gold update`],
+    cases,
+  };
 }

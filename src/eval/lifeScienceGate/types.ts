@@ -1,3 +1,4 @@
+import type { FallbackPolicySnapshot } from "./fallbackPolicy.js";
 import type {
   ANNOTATION_STATUSES,
   DATASET_SPLITS,
@@ -92,6 +93,7 @@ export type LifeScienceGateDataset = {
   datasetVersion: string;
   policyId: string;
   policyHash: string;
+  fallbackPolicy: FallbackPolicySnapshot;
   createdAt: string;
   changelog: string[];
   sampling: SamplingManifest;
@@ -116,6 +118,7 @@ export type PredictionRun = {
   provider: string;
   promptVersion: string;
   promptHash: string;
+  split?: DatasetSplit;
   predictions: PredictionRow[];
 };
 

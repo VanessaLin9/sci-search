@@ -1,4 +1,5 @@
 import { SOURCE_SCOPE_BY_ID } from "../../domain/life-science/sources.js";
+import { fallbackPolicyHash } from "./fallbackPolicy.js";
 import { currentLifeScienceGatePolicy } from "./policy.js";
 import { lifeScienceGateDatasetSchema } from "./schema.js";
 import type { DatasetIssue, LifeScienceGateCase, LifeScienceGateDataset } from "./types.js";
@@ -32,6 +33,16 @@ export function validateLifeScienceGateDataset(
       issue(
         "policy_hash_mismatch",
         `dataset policyHash ${dataset.policyHash} does not match current routing prompt hash ${expectedHash}`,
+      ),
+    );
+  }
+
+  const expectedFallbackHash = fallbackPolicyHash(dataset.fallbackPolicy.keywords);
+  if (dataset.fallbackPolicy.hash !== expectedFallbackHash) {
+    issues.push(
+      issue(
+        "fallback_policy_hash_mismatch",
+        `dataset fallbackPolicy.hash ${dataset.fallbackPolicy.hash} does not match snapshot keywords ${expectedFallbackHash}`,
       ),
     );
   }

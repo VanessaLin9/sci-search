@@ -43,6 +43,8 @@ describe("review table and request export", () => {
     assert.equal(updated.cases[0]?.goldVerdict, "yes");
     assert.equal(updated.cases[0]?.goldReason, "同意初標。");
     assert.equal(updated.cases[0]?.annotationStatus, "reviewed");
+    assert.equal(updated.datasetVersion, "test-1+review");
+    assert.equal(updated.changelog.at(-1)?.includes("apply-review gold update"), true);
   });
 
   it("keeps gold and historical verdicts out of model request export", () => {

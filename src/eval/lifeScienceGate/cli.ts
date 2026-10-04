@@ -6,6 +6,7 @@ import { loadDatasetFromPath } from "./loadDataset.js";
 import { exportModelRequest } from "./requestExport.js";
 import { scorePredictionRun } from "./score.js";
 import { currentLifeScienceGatePolicy } from "./policy.js";
+import { validateLifeScienceGateDataset } from "./validateDataset.js";
 
 export type EvalCliIo = {
   stdout: (chunk: string) => void;
@@ -17,7 +18,7 @@ export type ParsedEvalCli =
   | { command: "export-review"; datasetPath: string; outPath?: string }
   | { command: "apply-review"; datasetPath: string; reviewPath: string; outPath?: string }
   | { command: "export-request"; datasetPath: string; outPath?: string; split?: "dev" | "eval" }
-  | { command: "score"; datasetPath: string; predictionsPath: string; outPath?: string };
+  | { command: "score"; datasetPath: string; predictionsPath: string; outPath?: string; split?: "dev" | "eval" };
 
 function readFlag(argv: string[], name: string): string | undefined {
   for (let index = 0; index < argv.length; index += 1) {
@@ -53,7 +54,14 @@ export function parseEvalCli(argv: string[]): ParsedEvalCli {
   if (command === "score") {
     const predictionsPath = readFlag(argv, "predictions");
     if (!predictionsPath) throw new Error("score requires --predictions <json>");
-    return { command, datasetPath, predictionsPath, outPath: readFlag(argv, "out") };
+    const splitFlag = readFlag(argv, "split");
+    let split: "dev" | "eval" | undefined;
+    if (splitFlag === "dev" || splitFlag === "eval") {
+      split = splitFlag;
+    } else if (splitFlag) {
+      throw new Error("--split must be dev or eval");
+    }
+    return { command, datasetPath, predictionsPath, outPath: readFlag(argv, "out"), split };
   }
   throw new Error("Usage: validate | export-review | apply-review | export-request | score");
 }
@@ -117,6 +125,18 @@ export async function runEvalCli(
 
   if (parsed.command === "apply-review") {
     const updated = applyReviewRows(loaded.dataset, parseReviewCsv(await readFile(parsed.reviewPath, "utf8")));
+    const { issues } = validateLifeScienceGateDataset(updated);
+    // 寫入前先驗證；失敗非零退出並保留原檔，避免 README 的 --out 覆寫掉有效 dataset（PR #42）。
+    if (issues.length > 0) {
+      emitJson(io, {
+        ok: false,
+        command: "apply-review",
+        datasetVersion: loaded.dataset.datasetVersion,
+        issues,
+        outPath: parsed.outPath ?? null,
+      });
+      return 1;
+    }
     const serialized = `${JSON.stringify(updated, null, 2)}\n`;
     if (parsed.outPath) {
       await writeFile(parsed.outPath, serialized, "utf8");
@@ -150,6 +170,7 @@ export async function runEvalCli(
     datasetHash: loaded.fileHash,
     run: rawPredictions,
     keywordConfig: loadRoutingKeywordsConfig(),
+    split: parsed.split,
   });
   if (parsed.outPath) {
     await writeFile(parsed.outPath, `${JSON.stringify(report, null, 2)}\n`, "utf8");

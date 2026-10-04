@@ -4,7 +4,7 @@ Offline dataset and scoring for the **broad-science life-science gate** (`yes` /
 
 ## What is in v1
 
-- `v1/dataset.json` — 100 historical cases, AI drafts, **gold pending review**
+- `v1/dataset.json` — 100 historical cases, AI drafts, **gold pending review**, pinned keyword-fallback snapshot
 - `v1/review.csv` — review table for Vanessa
 - `v1/CHANGELOG.md` — version and hashes
 - `SOURCE_INVENTORY.md` — recoverable sources, bias, gaps
@@ -18,12 +18,12 @@ npm run eval:life-science-gate -- validate
 npm run eval:life-science-gate -- export-review --out eval/life-science-gate/v1/review.csv
 npm run eval:life-science-gate -- apply-review --review eval/life-science-gate/v1/review.csv --out eval/life-science-gate/v1/dataset.json
 npm run eval:life-science-gate -- export-request --split eval
-npm run eval:life-science-gate -- score --predictions path/to/predictions.json
+npm run eval:life-science-gate -- score --predictions path/to/predictions.json --split eval
 ```
 
-Stdout is JSON. Progress and diagnostics go to stderr. `score` exits `1` if IDs, dataset version, or hash checks fail.
+Stdout is JSON. Progress and diagnostics go to stderr. `score` exits `1` if IDs, dataset version, hash, or fallback-policy checks fail. `apply-review` validates the updated dataset before writing; a failed import keeps the original file.
 
-After review, only `annotationStatus=reviewed` rows enter official scores. Pending and disputed rows are listed and excluded.
+After review, only `annotationStatus=reviewed` rows enter official scores. Pending and disputed rows are listed and excluded. `score --split` must match `export-request --split`: only that split is checked for missing IDs and counted in official scores.
 
 ## Annotation rules
 
@@ -40,9 +40,11 @@ Reports, separately:
 2. Service failures (`timeout`, `http_429`, `http_5xx`, `empty`, `malformed`, `missing`)
 3. Product include/exclude using the existing rule: `yes` and `not_sure` include, `no` excludes; keyword fallback is applied only when the model result is unavailable
 
-`not_sure` is never treated as `no`. Keyword-fallback success is never counted as model success. Missing cost / tokens / latency is `unavailable`, not `0`. Zero denominators are `N/A`.
+`not_sure` is never treated as `no`. Keyword-fallback success is never counted as model success. Missing cost / tokens / latency is `unavailable`, not `0`; a partial cost/token total is also `unavailable`. Zero denominators are `N/A`.
 
-General vs hard, and dev vs eval, are counted separately in the report. Do not read the hard set as online accuracy.
+Keyword fallback is scored from `dataset.fallbackPolicy`, not from the live `routing-keywords.json`. A live config hash mismatch fails the run instead of silently changing `afterFallback`.
+
+General vs hard, and dev vs eval, each get their own quality slice (`accuracy` / precision / recall / product counts). Do not read the hard set as online accuracy.
 
 ## Online comparison protocol (for a later ticket)
 

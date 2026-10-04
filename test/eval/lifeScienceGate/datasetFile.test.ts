@@ -15,6 +15,8 @@ describe("committed v1 dataset", () => {
     assert.equal(loaded.dataset.cases.every((item) => item.annotationStatus === "pending_review"), true);
     assert.equal(loaded.dataset.cases.every((item) => item.goldVerdict === null), true);
     assert.equal(loaded.dataset.cases.filter(officialGoldCase).length, 0);
+    assert.equal(loaded.dataset.fallbackPolicy.id, "routing-keyword-fallback-v1");
+    assert.equal(loaded.dataset.fallbackPolicy.hash.length, 64);
 
     const request = exportModelRequest(loaded.dataset, loaded.fileHash, { split: "eval" });
     assert.deepEqual(

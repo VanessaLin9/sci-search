@@ -1,6 +1,8 @@
 import { fileURLToPath } from "node:url";
 import { readFile, writeFile } from "node:fs/promises";
+import { loadRoutingKeywordsConfig } from "../../config.js";
 import { DRAFT_ANNOTATOR_MODEL, DRAFT_LABELS_BY_PAPER_ID, DRAFT_PROMPT_VERSION } from "./draftLabels.js";
+import { snapshotFallbackPolicy } from "./fallbackPolicy.js";
 import { currentLifeScienceGatePolicy } from "./policy.js";
 import { validateLifeScienceGateDataset, assertDatasetUsable } from "./validateDataset.js";
 import type { LifeScienceGateCase, LifeScienceGateDataset } from "./types.js";
@@ -46,9 +48,12 @@ async function main() {
     datasetVersion: "1.0.0",
     policyId: policy.policyId,
     policyHash: policy.policyHash,
+    // 重算 afterFallback 必須綁當時的 keyword 快照，不能跟 live routing-keywords.json 漂移（PR #42）。
+    fallbackPolicy: snapshotFallbackPolicy(loadRoutingKeywordsConfig()),
     createdAt: "2026-10-03T00:00:00.000Z",
     changelog: [
       "1.0.0: first historical sample of 100 broad-science gate cases with AI drafts; gold pending Vanessa review.",
+      "1.0.0: pin keyword fallback snapshot so rescoring cannot silently drift with live routing-keywords.json.",
     ],
     sampling: {
       seed: 20261003,
