@@ -15,6 +15,7 @@
     "probe:routing": "node --import tsx scripts/llm-probe/probe-routing.ts",
     "probe:summarize": "node --import tsx scripts/llm-probe/probe-summarize.ts",
     "probe:translate": "node --import tsx scripts/llm-probe/probe-translate.ts",
+    "eval:life-science-gate": "node --import tsx src/commands/evalLifeScienceGate.ts",
     "check": "tsc --noEmit && tsc --noEmit -p tsconfig.test.json",
     "test:types": "tsc --noEmit -p tsconfig.test.json",
     "export-regression-fixture": "node --import tsx src/commands/exportRegressionFixture.ts",
