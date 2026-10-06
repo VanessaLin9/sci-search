@@ -1,0 +1,831 @@
+{
+  "reportDate": "2026-10-06",
+  "generatedAt": "2026-10-06T16:55:30.559Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03242-3",
+      "title": "Flexible discovery of disease-associated tissue structures",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-10-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03242-3",
+      "doi": "10.1038/s41592-026-03242-3",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "疾病相關組織結構的靈活發現"
+    },
+    {
+      "id": "10.1038/s41592-026-03236-1",
+      "title": "Accurate and well-powered case–control analysis of spatial molecular data",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-10-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03236-1",
+      "doi": "10.1038/s41592-026-03236-1",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "空間分子數據的準確且效能充足的病例對照分析"
+    },
+    {
+      "id": "10.1038/s41559-026-03200-4",
+      "title": "Biodiversity safeguards ecosystem services and functions worldwide",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-10-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03200-4",
+      "doi": "10.1038/s41559-026-03200-4",
+      "abstract": "An analysis of a global database of 423 studies and >200,000 data points outlines the strength and generality of biodiversity relationships with ecosystem functioning and services.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "生物多樣性守護全球生態系服務與功能",
+      "summaryZh": "本研究分析了涵蓋423項研究、超過20萬筆資料點的全球資料庫。分析旨在描繪生物多樣性與生態系功能及服務之間關係的強度與普遍性。研究結果顯示生物多樣性與生態系功能及服務存在關聯，並強調其在全球尺度上的重要性。",
+      "topicTags": [
+        "biodiversity",
+        "ecosystem-services",
+        "ecosystem-functioning",
+        "meta-analysis"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03329-4",
+      "title": "Shotgun engineering fires up mammalian metabolic design",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-10-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03329-4",
+      "doi": "10.1038/s41587-026-03329-4",
+      "abstract": "By testing random combinations of genes at scale, shotgun genetic engineering enables discovery of new productive metabolic pathways in mammalian cells, including solutions for synthesizing two essential amino acids.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "隨機基因組合篩選推動哺乳動物代謝設計",
+      "summaryZh": "該研究提出 shotgun genetic engineering 方法，透過大規模測試隨機基因組合來探索代謝設計。研究顯示此方法可在哺乳動物細胞中發現新的生產性代謝途徑。文中指出已找到合成兩種必需胺基酸的解決方案。這種以隨機組合為基礎的篩選策略為哺乳動物細胞的代謝工程提供新的發現途徑。",
+      "topicTags": [
+        "metabolic-engineering",
+        "mammalian-cells",
+        "synthetic-biology",
+        "shotgun-engineering",
+        "amino-acid-synthesis"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03317-8",
+      "title": "High-throughput metabolic engineering in mammalian cells",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-10-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03317-8",
+      "doi": "10.1038/s41587-026-03317-8",
+      "abstract": "Engineering complex phenotypes into mammalian cells holds profound potential but remains a largely intractable engineering challenge. We developed shotgun genetic engineering (SGE), a multiplexed strategy that screens millions of combinatorial solutions in a single experiment. This approach uses selection strategies that reveal effective designs, facilitating rapid engineering of complex biological functions.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "哺乳動物細胞的高通量代謝工程",
+      "summaryZh": "研究團隊提出 shotgun genetic engineering, SGE，一種多重化的策略，聲稱可在單一實驗中篩選數百萬種組合方案。該方法使用選擇策略來揭示有效設計，以促進複雜生物功能的快速工程化。論文指出將複雜表型工程化至哺乳動物細胞具有深遠潛力，但仍是難以克服的工程挑戰。作者認為此方法有助於加速複雜生物功能的工程化。",
+      "topicTags": [
+        "metabolic-engineering",
+        "mammalian-cells",
+        "high-throughput",
+        "synthetic-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03303-0",
+      "title": "Decoding systemic vascular health and hypertensive disorders in pregnancy through retinal imaging and Visionary AI",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-10-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03303-0",
+      "doi": "10.1038/s41587-026-03303-0",
+      "abstract": "An interpretable artificial intelligence framework predicts hypertensive disorders of pregnancy using retinal images and vascular modeling.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "以視網膜影像與視覺化AI解讀全身血管健康及妊娠高血壓疾病",
+      "summaryZh": "本研究提出一個可解釋的人工智慧框架，利用視網膜影像與血管建模來預測妊娠高血壓疾病。該框架以視網膜影像為輸入，結合血管模型進行分析。研究聚焦於透過視網膜影像解碼全身血管健康狀態。成果顯示此方法可應用於妊娠高血壓疾病的預測。",
+      "topicTags": [
+        "artificial-intelligence",
+        "retinal-imaging",
+        "vascular-health",
+        "pregnancy",
+        "hypertensive-disorders"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03318-7",
+      "title": "Highly multiplexed mammalian metabolic engineering with a shotgun approach",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-10-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03318-7",
+      "doi": "10.1038/s41587-026-03318-7",
+      "abstract": "Metabolic engineering of mammalian cells is simplified and scaled by screening ‘shotgun’ modifications.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "霰彈槍式高通量哺乳動物代謝工程",
+      "summaryZh": "該論文發表於 Nature Biotechnology，提出以霰彈槍式方法進行哺乳動物細胞的代謝工程。研究指出，透過篩選霰彈槍式修飾，可簡化哺乳動物細胞的代謝工程流程。該方法同時被描述為可擴大代謝工程的規模。研究聚焦於哺乳動物細胞的代謝工程，並以篩選霰彈槍式修飾作為核心策略。",
+      "topicTags": [
+        "metabolic-engineering",
+        "mammalian-cells",
+        "shotgun-screening",
+        "high-throughput"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02505-1",
+      "title": "Bacteria regulate collective behaviour by mechanosensing cell–cell collisions",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-10-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02505-1",
+      "doi": "10.1038/s41564-026-02505-1",
+      "abstract": "Density-dependent regulation of collective order through collision sensing and collision-induced reversals provides a navigational advantage to Pseudomonas aeruginosa during surface colonization and navigation through micromazes.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "細菌透過機械感測細胞碰撞調控集體行為",
+      "summaryZh": "該研究指出，Pseudomonas aeruginosa 會以密度依賴的方式調控集體有序性。集體秩序的調控透過碰撞感測與碰撞誘發的反轉來進行。研究顯示此機制在表面定殖期間提供導航優勢。研究也觀察到此優勢存在於微迷宮中的導航。",
+      "topicTags": [
+        "bacteria",
+        "mechanosensing",
+        "collective-behavior",
+        "pseudomonas-aeruginosa"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.05.756653",
+      "title": "Conserved Fibroblast Subsets Drive Shared Fibrotic Mechanisms in Osteoarthritis Synovium and Systemic Sclerosis Skin",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756653v1",
+      "doi": "10.64898/2026.10.05.756653",
+      "abstract": "Osteoarthritis (OA) and systemic sclerosis (SSc) are diseases with distinct etiologies but similar disease phenotypes, most prominently fibrosis, a process governed by the pathological activation of fibroblasts. Mechanisms underpinning fibrosis in these diseases are widely studied, though have yet to be directly compared. We employed single-cell RNA-seq and high-resolution spatial transcriptomics to describe the functional plasticity and the range of fibroblast activation states in both diseases. We identified disease-enriched fibroblast subsets conserved in both diseases, including fibrogenic myofibroblast-like cells, chemokine- and cytokine-expressing inflammatory fibroblasts, and lining-like fibroblasts. These subsets exhibited convergent fibrotic programs also observed in idiopathic pulmonary fibrosis, as well as overlapping osteochondral transcriptional programs. Xenium 5K spatial transcriptomics revealed that conserved, disease-associated fibroblasts reside in highly similar anatomic niches in OA synovium and SSc skin. These consisted of a fibrotic ECM-rich niche harboring myofibroblast-like cells and an inflammatory niche containing inflammatory fibroblasts adjacent to infiltrating immune cells. Disease-associated transcriptional remodeling converged on shared functional pathways and common putative upstream molecular regulators. These findings identify conserved cellular states, spatial niches, and regulatory programs across OA and SSc, suggesting that fibrotic disease is underpinned by shared pathogenic stromal states and candidate targets for therapeutic strategies are applicable across both diseases.",
+      "authors": [
+        "Mohan, A.",
+        "Newton, M. D.",
+        "Bhate, N.",
+        "Khmelevskaya, A.",
+        "Hanna, T. M.",
+        "DiCarlo, E.",
+        "Ospelt, C.",
+        "Orange, D.",
+        "Varga, J.",
+        "Maerz, T."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "Xenium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "關節炎與硬皮症纖維母細胞亞群保守且共用纖維化機制",
+      "summaryZh": "本研究以單細胞RNA定序與高解析度空間轉錄體學比較骨關節炎與系統性硬化症的纖維母細胞活化狀態。研究者在兩種疾病中鑑定出疾病富集且保守的纖維母細胞亞群，包括纖維生成性肌纖維母細胞樣細胞、分泌趨化因子與細胞因子的發炎性纖維母細胞，以及襯裡樣纖維母細胞。這些亞群展現出與特發性肺纖維化相似的收斂性纖維化程序，並具有重疊的骨軟骨轉錄程序。Xenium 5K空間轉錄體學顯示保守的疾病相關纖維母細胞位於解剖位置高度相似的微環境中，分別為富含纖維性細胞外基質且含有肌纖維母細胞樣細胞的纖維化區，以及鄰近浸潤免疫細胞的發炎區。疾病相關的轉錄重塑收斂於共享的功能途徑與共同的潛在上游分子調控因子。",
+      "topicTags": [
+        "fibroblast",
+        "fibrosis",
+        "single-cell",
+        "spatial-transcriptomics",
+        "osteoarthritis"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.05.756860",
+      "title": "Conservation of gene co-expression networks and neuropsychiatric-neurological disease gene programs between mouse and human frontal cortex at single-cell resolution",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756860v1",
+      "doi": "10.64898/2026.10.05.756860",
+      "abstract": "Mouse models are widely used in translational neuroscience, but whether a gene has the same partners in mouse and human prefrontal cortex (PFC) is unknown. The genes whose expression rises and falls with a given gene across samples (its co-expression partners) indicate the molecular program to which it belongs. We compared the co-expression of 13,214 genes between mouse medial PFC and human dorsolateral PFC in 246,211 single-nucleus RNA-sequencing profiles. These two regions are not homologous, so part of any measured difference may reflect region and not species. The study has five main findings. First, the similarity of partners for single genes was modest (median 0.169; 0, unrelated; 1, identical). This median was below that of every comparison among human datasets but within the range of comparisons among mouse datasets, and correction for measurement noise raised it to 0.349 at most. Second, groups of co-expressed genes (modules) were strongly preserved. Third, neuropsychiatric disease genes were modestly more conserved than other genes, but no more than control genes matched for mutational constraint and expression, consistent with general gene properties and with how these genes are discovered. Fourth, no disease gene was shown to have different partners in the two species. Fifth, four of five human modules recurred in an independent human dataset. We also identified two sources of error: analyzing only the most variable genes excludes most disease genes, and networks built from few samples, as for glial cells, underestimate the similarity between species. Scores and code are released for cross-species studies.",
+      "authors": [
+        "Sun, Q.-Q.",
+        "Cao, T.",
+        "Zhang, C."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "neuroscience"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "小鼠與人類前額葉皮質單細胞共表達網絡保守性研究",
+      "summaryZh": "本研究比較小鼠內側前額葉皮質與人類背外側前額葉皮質的基因共表達，使用246,211個單核RNA定序樣本分析13,214個基因。單一基因的共表達夥伴相似度中等，樣本間中位數為0.169，經測量雜訊校正後最高達0.349。共表達基因模組在物種間呈強保守。神經精神疾病基因的保守度略高於其他基因，但與依突變限制與表現量配對的對照基因相比並無差異，且未發現任一疾病基因在兩物種間具有不同的夥伴。四個人類模組在獨立人類資料集中重現。研究亦指出僅分析最變異基因會排除多數疾病基因，以及樣本數少時會低估物種間相似度等誤差來源。",
+      "topicTags": [
+        "single-cell",
+        "co-expression",
+        "neuropsychiatric",
+        "cross-species",
+        "prefrontal-cortex"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.06.756924",
+      "title": "MERFISH-based pooled genetic screening reveals cell non-autonomous phenotypes in intact tissue",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.06.756924v1",
+      "doi": "10.64898/2026.10.06.756924",
+      "abstract": "Genetic perturbations can reshape both the state of a targeted cell and the behavior of neighboring cells. Measuring these effects systematically in intact tissues requires pooled screening methods that jointly identify perturbations, molecular phenotypes, and spatial context of individual cells. Here, we report an imaging-based pooled screening method that detects perturbation identities and endogenous RNAs without enzymatic amplification. Relative to our previous enzymatic-amplification-based workflow, amplification-free MERFISH detection with direct hybridization increased recovery of perturbation barcodes by ~10-fold and endogenous transcripts by 2.5-fold, improving perturbation assignment as well as molecular profiling of both perturbed and neighboring cells. Applying this method to a genetic mosaic mouse liver screen targeting ~200 genes in hepatocytes, we profiled 1.5 million cells in intact tissues and mapped both cell-autonomous responses of perturbed hepatocytes and cell non-autonomous changes in neighboring immune and vascular populations. These included localized accumulation of pDC-like cells near hepatocytes with impaired V-ATPase function and angiogenic responses in vascular cells near Vhl-perturbed hepatocytes with hypoxia activation. Our method provides a simplified, scalable approach to linking genetic perturbations with cell state, multicellular response, and tissue organization.",
+      "authors": [
+        "Jin, K.",
+        "Saunders, R. A.",
+        "Zhang, J.",
+        "Lu, J.",
+        "Halpern, A. A.",
+        "Sandhu, J.",
+        "Pan, X.",
+        "Wang, C. Y.",
+        "Li, A. M.",
+        "Allen, W. E.",
+        "Weissman, J. S.",
+        "Zhuang, X."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "MERFISH"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "基於 MERFISH 的 pooled 遺傳篩選揭示完整組織中的細胞非自主表型"
+    },
+    {
+      "id": "10.64898/2026.10.05.756660",
+      "title": "RNA and protein are not interchangeable in single-cell spatial multi-omics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756660v1",
+      "doi": "10.64898/2026.10.05.756660",
+      "abstract": "Spatial transcriptomics is increasingly used to infer cellular phenotypes, molecular interactions, and functional tissue organization from RNA, although most of these biological processes are ultimately mediated by proteins. Here, we directly tested the interchangeability of spatial RNA and protein measurements using paired Xenium profiling of 21 matched targets across ~1.8 million cells from primary lung adenocarcinoma and metastatic castration-resistant prostate cancer. After accounting for marker- and dataset-specific protein background, we quantified concordance at multiple levels, including single-cell detection, expression magnitude, cell-type distribution, patient-level abundance, and spatial organization. Agreement at single-cell level was strongly marker-dependent. Canonical lineage markers generally showed concordant RNA and protein patterns, whereas several molecules, including in our study PD-1, PD-L1, and LAG-3, showed little concordance across modalities. Importantly, spatial organization remained substantially more discordant between modalities than overall abundance, indicating that spatial biomarkers are not directly transferable across modalities. Together, our results show that spatial RNA and protein measurements provide largely overlapping information for lineage markers and overall abundance, but can diverse for specific molecules and for higher-order spatial features, where the two layers provide complementary rather than equivalent readouts. These findings provide practical guidance on when spatial transcriptomic readouts can be interpreted as proxies for protein and when orthogonal protein validation is advisable.",
+      "authors": [
+        "Cervilla, S.",
+        "Grases, D.",
+        "Montesdeoca, N.",
+        "Font, A.",
+        "Fernandez-Saorin, M.",
+        "Etxaniz, O.",
+        "Pardo, J. C.",
+        "Ochoa-de-Olza, M.",
+        "Figols, M.",
+        "Sala-Gonzalez, N.",
+        "Fina, C.",
+        "Rodriguez, M.",
+        "de Torres, J. P.",
+        "Lozano, M. D.",
+        "Montuenga, L. M.",
+        "de Andrea, C.",
+        "Pio, R.",
+        "Ruiz de Porras, V.",
+        "Porta-Pardo, E."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "multi-omics",
+        "Xenium",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "單細胞空間多組學中 RNA 與蛋白質不可互換"
+    },
+    {
+      "id": "10.64898/2026.10.05.756028",
+      "title": "In situ identification of pre-hematopoietic stem cells and their niche",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756028v1",
+      "doi": "10.64898/2026.10.05.756028",
+      "abstract": "Definitive hematopoietic stem cells (HSCs) emerge predominantly along the ventral surface of the dorsal aorta in the embryonic aorta-gonad-mesonephros (AGM) region, yet the spatial organization of the niche underlying this developmental asymmetry remains poorly understood. Defining the native niche of pre-HSCs has also been hindered by their rarity, transient nature and lack of a single definitive marker for their identification in situ. Here, we integrated single-cell and spatial transcriptomics to construct a spatiotemporal atlas of the niche in the AGM. Neural cells and chondrogenic mesenchyme predominated dorsally, whereas N-cadherin mesenchymal stromal cells (N-cad+ MSCs) formed a ventral layer between the aortic endothelium and mesonephric cells. BMP and SHH signaling showed overall dorsal enrichment, whereas WNT, NOTCH and KIT signaling were enriched ventrally, with these cellular and signaling patterns dynamically remodeled across HSC ontogeny. Imaging-based spatial transcriptomics validated the findings and further enabled the identification of individual pre-HSCs in situ and revealed a multicellular niche comprising endothelial cells, N-cad+ MSCs, intra-aortic hematopoietic cluster cells and macrophages. TGF{beta} and NOTCH signals were primarily supplied locally, whereas major sources of BMP and WNT were more distant. Functional perturbation identified niche-derived CD200 as an immune-regulatory signal promoting HSC development, validating a spatially predicted niche interaction. Together, our findings link tissue-scale spatial organization with the local multicellular niche supporting the preferential development of HSCs along the ventral aorta.",
+      "authors": [
+        "Mao, X.",
+        "Zhang, N.",
+        "Bennett, L.",
+        "He, X.",
+        "Scott, A.",
+        "Hall, K.",
+        "Petentler, K.",
+        "Malloy, S.",
+        "Huang, S.",
+        "Kroesen, A.",
+        "McKinney, S.",
+        "Ploumakis, A.",
+        "Yang, Z.",
+        "Dong, R.",
+        "Javier, J.",
+        "Haug, J.",
+        "Li, H.",
+        "Yu, Z.",
+        "Perera, A.",
+        "Vlachos, I.",
+        "Chen, F.",
+        "Trainor, P.",
+        "Speck, N. A.",
+        "Li, L."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "原位鑑定前造血幹細胞及其微環境",
+      "summaryZh": "本研究整合單細胞與空間轉錄體學，建構胚胎 aorta-gonad-mesonephros 區域在造血幹細胞發生過程中的時空圖譜。研究發現神經細胞與軟骨生成間充質主要分布於背側，而 N-cadherin 間充質基質細胞形成位於主動脈內皮與中腎細胞之間的腹側層。BMP 與 SHH 訊號整體在背側富集，WNT、NOTCH 與 KIT 訊號則在腹側富集，且這些細胞與訊號模式隨 HSC 發生而動態重塑。影像型空間轉錄體學驗證結果並使個別前造血幹細胞得以原位辨識，顯示其微環境包含內皮細胞、N-cad+ MSC、主動脈內造血簇細胞與巨噬細胞。功能性干擾指出微環境來源的 CD200 為促進 HSC 發展的免疫調節訊號，驗證了空間預測的微環境交互作用。",
+      "topicTags": [
+        "hematopoietic-stem-cells",
+        "spatial-transcriptomics",
+        "developmental-biology",
+        "niche",
+        "preprint"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78460-6",
+      "title": "Real-time visualization of G2L4 reverse transcriptase in DNA repair via microhomology-mediated end joining",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78460-6",
+      "doi": "10.1038/s41467-026-78460-6",
+      "abstract": "The error-prone microhomology-mediated end joining (MMEJ) pathway is important for double strand break repair. Here, the authors use high-speed atomic force microscopy to visualize how the Pseudomonas aeruginosa chromosomally encoded group II intron-like reverse transcriptase (G2L4 RT) act on MMEJ substrates.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "即時觀測 G2L4 反轉錄酶參與微同源性介導末端接合修復",
+      "summaryZh": "本研究聚焦於易錯的微同源性介導末端接合 Microhomology-mediated end joining, MMEJ 路徑，該路徑對雙股斷裂修復具有重要性。作者利用高速原子力顯微鏡，視覺化 Pseudomonas aeruginosa 染色體編碼的類群 II 內含子反轉錄酶 G2L4 RT 在 MMEJ 底物上的作用。研究提供了 G2L4 RT 在 DNA 修復過程中的即時觀測證據。該結果有助於理解反轉錄酶如何參與 MMEJ 相關的修復機制。",
+      "topicTags": [
+        "dna-repair",
+        "microhomology-mediated-end-joining",
+        "reverse-transcriptase",
+        "atomic-force-microscopy",
+        "real-time-imaging"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78178-5",
+      "title": "Embryonic origin of cancer in newborn twins",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78178-5",
+      "doi": "10.1038/s41467-026-78178-5",
+      "abstract": "Identical twins with the same cancer can reveal how childhood tumours arise and spread before birth. Here, the authors use whole-genome sequencing of tumour, normal and placental tissues to show that a sarcoma that originated in one twin spread to the other in utero, and trace early embryonic lineages that contributed differently to the twins and placenta.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "新生雙胞胎癌症的胚胎起源",
+      "summaryZh": "研究團隊針對一對罹患相同癌症的同卵雙胞胎進行分析，探討兒童腫瘤在出生前如何發生與擴散。作者以全基因組定序分析腫瘤、正常組織與胎盤組織，發現其中一例肉瘤起源於一胞胎並在子宮內擴散至另一胞胎。研究同時追溯了早期胚胎譜系，顯示這些譜系對雙胞胎與胎盤的貢獻存在差異。該結果提供了腫瘤在子宮內傳播的直接證據，並連結了胚胎發育與新生兒癌症的關聯。",
+      "topicTags": [
+        "cancer",
+        "twins",
+        "embryonic-origin",
+        "whole-genome-sequencing",
+        "placenta"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78444-6",
+      "title": "Distinct T cell correlates of COVID-19 risk before and after a second booster in previously SARS-CoV-2 infected versus naïve COVAIL trial participants",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78444-6",
+      "doi": "10.1038/s41467-026-78444-6",
+      "abstract": "Vaccines to SARS-CoV-2 clearly stimulate virus specific T cell and antibody responses but T cell-mediated protection is challenging to show. Here the authors use PBMC samples from an open-label clinical trial of different prototype and variant-specific COVID-19 vaccine boosters to examine the function and phenotype of T cell populations and how T cell response levels associate with risk of, and with protection against, symptomatic SARS-CoV-2 infection.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "第二劑追加接種前後，感染史不同族群的 T 細胞與 COVID-19 風險相關性差異",
+      "summaryZh": "研究使用 COVAIL 試驗的 PBMC 樣本，探討不同原型與變異株特異性 COVID-19 疫苗追加劑引發的 T 細胞功能與表型。作者比較先前曾感染 SARS-CoV-2 與未感染者在第二劑追加接種前後的 T 細胞反應。結果顯示 T 細胞反應程度與症狀性 SARS-CoV-2 感染的風險及保護相關性存在差異。該研究試圖釐清疫苗誘發的病毒特異性 T 細胞與抗體反應中，T 細胞介導保護的證據。",
+      "topicTags": [
+        "t-cells",
+        "covid-19",
+        "vaccine-booster",
+        "correlates-of-protection"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 35,
+      "passedByScope": 13,
+      "llmClassified": 22,
+      "llmYes": 8,
+      "llmNotSure": 0,
+      "llmNo": 14,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 21,
+      "excluded": 14
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 11,
+      "llmTagged": 11,
+      "llmLineA": 2,
+      "llmLineB": 9,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 16,
+      "candidates": 16,
+      "featured": 12,
+      "overflow": 4,
+      "lineA": 2,
+      "lineB": 9,
+      "preprint": 5,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 9,
+      "featuredPreprint": 3,
+      "overflowLineA": 2,
+      "overflowLineB": 0,
+      "overflowPreprint": 2
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "primarySucceeded": 12,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 4,
+      "llmTranslated": 4,
+      "primarySucceeded": 4,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 11
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 12
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 4,
+        "succeeded": 4,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        },
+        "primarySucceeded": 4,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03176-y",
+        "title": "Maintaining global science collaboration during conflict requires fairer rules",
+        "journal": "Nature",
+        "publishedDate": "2026-10-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03176-y",
+        "doi": "10.1038/d41586-026-03176-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02973-9",
+        "title": "Scientists take a radiometer for a spin in a hot-air balloon",
+        "journal": "Nature",
+        "publishedDate": "2026-10-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02973-9",
+        "doi": "10.1038/d41586-026-02973-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03177-x",
+        "title": "Preprints must not leak sensitive research information",
+        "journal": "Nature",
+        "publishedDate": "2026-10-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03177-x",
+        "doi": "10.1038/d41586-026-03177-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03175-z",
+        "title": "AI could undermine scientific independence in subtle ways",
+        "journal": "Nature",
+        "publishedDate": "2026-10-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03175-z",
+        "doi": "10.1038/d41586-026-03175-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02798-6",
+        "title": "Rising numbers of Asian and African PhD students choose to study in China",
+        "journal": "Nature",
+        "publishedDate": "2026-10-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02798-6",
+        "doi": "10.1038/d41586-026-02798-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03105-z",
+        "title": "How digital breakdowns affect supply chains — and endanger the global economy",
+        "journal": "Nature",
+        "publishedDate": "2026-10-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03105-z",
+        "doi": "10.1038/d41586-026-03105-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03131-x",
+        "title": "Why smart glasses are about to create a major privacy crisis",
+        "journal": "Nature",
+        "publishedDate": "2026-10-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03131-x",
+        "doi": "10.1038/d41586-026-03131-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03092-1",
+        "title": "Nobel physics prize awarded for detection of cosmic neutrinos",
+        "journal": "Nature",
+        "publishedDate": "2026-10-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03092-1",
+        "doi": "10.1038/d41586-026-03092-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03130-y",
+        "title": "How to mobilize the agile science needed in a crisis",
+        "journal": "Nature",
+        "publishedDate": "2026-10-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03130-y",
+        "doi": "10.1038/d41586-026-03130-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78564-z",
+        "title": "Ultrathin high-performance circular polarizers based on MoOCl2/NbOCl2 van der Waals heterostructures",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78564-z",
+        "doi": "10.1038/s41467-026-78564-z",
+        "abstract": "Circularly polarized light can be used in several applications, but normally requires bulky optical components. Here, the authors report the realization of sub-micron-thick circular polarizers based on the natural phase modulation capability of NbOCl2 and polarization selectivity of MoOCl2 crystals, showing their integration into a LED chip.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78265-7",
+        "title": "A generative diffusion framework for physically consistent 3D turbulence",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78265-7",
+        "doi": "10.1038/s41467-026-78265-7",
+        "abstract": "Three-dimensional turbulence contains complex multiscale fluctuations that challenge even state-of-the-art generative models. Here, the authors develop a generative diffusion framework that produces physically consistent 3D turbulence with accurate multiscale statistics.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78192-7",
+        "title": "MOF-mediated cascade photoreactions under nanoconfinement for defluorination of per- and polyfluoroalkyl substances",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78192-7",
+        "doi": "10.1038/s41467-026-78192-7",
+        "abstract": "Here, authors report a nanoconfinement strategy to encapsulate a MOF photocatalyst within a graphene aerogel matrix. This not only allows cascade reduction-oxidation reactions but also provides kinetic and thermodynamic advantages for efficient defluorination of various PFASs.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78350-x",
+        "title": "Symmetry-engineered and electrically tunable in-plane anomalous Hall effect in oxide heterostructures",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78350-x",
+        "doi": "10.1038/s41467-026-78350-x",
+        "abstract": "The authors demonstrate that engineering crystal symmetry in oxide heterostructures creates a robust in-plane anomalous Hall effect, enabling direct readout of in-plane magnetization and a wide range of fully reversible electrical ON/OFF switching.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78230-4",
+        "title": "Anthropogenic aerosol reduction contributes to faster flash drought onset in a changing climate",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78230-4",
+        "doi": "10.1038/s41467-026-78230-4",
+        "abstract": "Anthropogenic aerosol reduction contributes to faster flash drought onset by enhancing soil moisture depletion induced by higher temperature and increased shortwave radiation.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
