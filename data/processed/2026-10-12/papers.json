@@ -1,0 +1,890 @@
+{
+  "reportDate": "2026-10-12",
+  "generatedAt": "2026-10-12T19:56:47.969Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03267-8",
+      "title": "Early-career balancing act: training, moving, relationships and language learning",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03267-8",
+      "doi": "10.1038/s41592-026-03267-8",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "早期職涯的平衡：訓練、搬遷、人際關係與語言學習"
+    },
+    {
+      "id": "10.1038/s41588-026-02782-w",
+      "title": "Micronuclear ecDNA constrains tumor cell fitness and is associated with favorable patient survival",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02782-w",
+      "doi": "10.1038/s41588-026-02782-w",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "微核 ecDNA 限制腫瘤細胞適應性並與患者生存預後良好相關"
+    },
+    {
+      "id": "10.1038/s41587-026-03355-2",
+      "title": "Engrafting human cortical organoids",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03355-2",
+      "doi": "10.1038/s41587-026-03355-2",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03324-9",
+      "title": "Genome editing",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03324-9",
+      "doi": "10.1038/s41587-026-03324-9",
+      "abstract": "Recent patents relating to systems, methods and compositions for use in genome editing.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03353-4",
+      "title": "Tracing the origins of CRISPR–Cas",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03353-4",
+      "doi": "10.1038/s41587-026-03353-4",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "CRISPR"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "追溯 CRISPR–Cas 的起源"
+    },
+    {
+      "id": "10.1038/s41587-026-03349-0",
+      "title": "FDA nod for rare neurology drug",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03349-0",
+      "doi": "10.1038/s41587-026-03349-0",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "FDA 核准罕見神經疾病藥物"
+    },
+    {
+      "id": "10.1038/s41587-026-03363-2",
+      "title": "RevMed’s pancreatic cancer drug first",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03363-2",
+      "doi": "10.1038/s41587-026-03363-2",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "RevMed 胰腺癌藥物首度獲批"
+    },
+    {
+      "id": "10.1038/s41587-026-03347-2",
+      "title": "Biotech news from around the world",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03347-2",
+      "doi": "10.1038/s41587-026-03347-2",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "全球生技新聞"
+    },
+    {
+      "id": "10.1038/s41587-026-03354-3",
+      "title": "Live-cell imaging goes WHOLISTIC",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03354-3",
+      "doi": "10.1038/s41587-026-03354-3",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03340-9",
+      "title": "Five questions with Bowen Li",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03340-9",
+      "doi": "10.1038/s41587-026-03340-9",
+      "abstract": "A true multidisciplinary scientist, Bowen Li finds that some of the most interesting questions are located precisely at the boundaries between fields.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "與 Bowen Li 的五個問題",
+      "summaryZh": "《Nature Biotechnology》刊出「Five questions with Bowen Li」專訪。文中描述 Bowen Li 是一位跨領域科學家，他認為最有趣的問題位於不同領域的交界處。",
+      "topicTags": [
+        "interview",
+        "career-profile",
+        "multidisciplinary-science"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02492-w",
+      "title": "Alus harbor genetic variants that shape the human cortex",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02492-w",
+      "doi": "10.1038/s41593-026-02492-w",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Alu 元素攜帶塑造人類大腦皮質的遺傳變異"
+    },
+    {
+      "id": "10.1038/s41593-026-02462-2",
+      "title": "Investigating molecular and hemodynamic effects of LSD in the human brain",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02462-2",
+      "doi": "10.1038/s41593-026-02462-2",
+      "abstract": "Using simultaneous PET–MRI, McCulloch, Larsen and colleagues quantify LSD’s dose–occupancy relationship at the serotonin 2A receptor and reveal hemodynamic effects of LSD that contrast with those of psilocybin.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "探討LSD對人類大腦分子與血流動力學的影響",
+      "summaryZh": "McCulloch、Larsen等團隊使用同步PET–MRI研究LSD在人類大腦的作用。研究量化了LSD在血清素2A受體上的劑量–佔據關係。研究同時揭示了LSD的血流動力學效應。該效應與psilocybin的表現形成對比。",
+      "topicTags": [
+        "pet-mri",
+        "psychedelics",
+        "serotonin-2a-receptor",
+        "hemodynamics",
+        "human-brain"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02481-z",
+      "title": "Genome-wide analysis of common structural variants in Alzheimer’s disease identifies a risk-associated regulatory CCG repeat in FAM193B",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02481-z",
+      "doi": "10.1038/s41593-026-02481-z",
+      "abstract": "This study identifies common structural variants contributing to Alzheimer’s disease heritability. An expanded promoter CCG repeat increases FAM193B expression and disease risk, linking its expression to DNA damage and cell death pathways in neurons.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "全基因組分析發現與阿茲海默症風險相關的 FAM193B 調控 CCG 重複序列",
+      "summaryZh": "本研究透過全基因組分析鑑定出對阿茲海默症遺傳度有貢獻的常見結構變異。研究發現 FAM193B 啟動子區域的 CCG 重複序列擴增會提高該基因的表現並與疾病風險相關。FAM193B 的表現被連結至神經元中的 DNA 損傷與細胞死亡途徑。此發現將常見結構變異與阿茲海默症風險連結，並指向一個可調控的基因重複標記。",
+      "topicTags": [
+        "alzheimers-disease",
+        "structural-variants",
+        "repeat-expansion",
+        "genetics",
+        "neuroscience"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02675-4",
+      "title": "Zbtb44-mediated transcriptional repression critically regulates colonic inflammation",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02675-4",
+      "doi": "10.1038/s41590-026-02675-4",
+      "abstract": "Poojary and colleagues show that the transcription factor Zbtb44 suppresses colonic inflammation and epithelial cell damage by deregulated T cells.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Zbtb44 介導的轉錄抑制關鍵調控結腸發炎",
+      "summaryZh": "Poojary 等人研究指出，轉錄因子 Zbtb44 與結腸發炎的調控相關。研究顯示 Zbtb44 透過轉錄抑制作用影響結腸發炎。該因子被認為可抑制結腸發炎並減少上皮細胞損傷，其作用與失調的 T 細胞有關。此發現點出 Zbtb44 在調控結腸發炎中的關鍵角色。",
+      "topicTags": [
+        "transcription-factor",
+        "colonic-inflammation",
+        "t-cells",
+        "immunology"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02507-z",
+      "title": "Family matters in the root microbiota",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02507-z",
+      "doi": "10.1038/s41564-026-02507-z",
+      "abstract": "The root microbiota remains an untapped resource for sustainable agriculture — resolving its recruitment cues is a research priority for moving towards translational applications. Family-conserved functional repertoires emerge as building blocks of the root microbiota in distinct plants, opening new avenues for the rational manipulation of biological interactions at the root–soil continuum.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "家族保守功能塑造根系微生物群",
+      "summaryZh": "研究指出根系微生物群仍是永續農業中未被充分利用的資源，釐清其招募線索被視為推動轉譯應用的研究重點。論文發現家族保守的功能庫在不同植物中成為根系微生物群的建構單元。該結果為在根–土壤連續體上理性操縱生物交互作用提供了新方向。",
+      "topicTags": [
+        "root-microbiota",
+        "plant-microbiome",
+        "sustainable-agriculture",
+        "microbial-ecology"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004052",
+      "title": "Recombination shapes the dynamics of selective constraint in global populations of human gut bacteria",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-10-12T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004052",
+      "doi": "10.1371/journal.pbio.3004052",
+      "abstract": "The ratio of nonsynonymous to synonymous substitutions (dN/dS) encodes important information about the selection pressures acting on protein-coding genes. In bacterial populations, dN/dS often declines with the sequence divergence between strains, but the mechanisms responsible for this broad empirical trend are still debated. Existing models have primarily focused on de novo mutations, overlooking the older genetic variants that are continually introduced through horizontal gene transfer and recombination. Here we introduce a phenomenological model of dN/dS in recombining populations of bacteria, which allows us to disentangle the effects of recombination among pairs of closely related strains. We find that clonally inherited regions of the genome exhibit consistently higher dN/dS ratios, and that the accumulation of recombined segments can quantitatively explain the majority of the decline in dN/dS. We use these observations to re-examine models of purifying selection and adaptive reversion in human gut bacteria, and uncover evidence for widespread weak selection at a large fraction of protein-coding sites. Our findings show that horizontal gene transfer can be an important factor in shaping genome-wide patterns of selective constraint, and raise new questions about the effectiveness of natural selection in complex bacterial populations.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "重組形塑人類腸道細菌全球族群的選擇限制動態",
+      "summaryZh": "本研究探討非同義與同義取代比率 dN/dS 如何反映蛋白質編碼基因所受的選擇壓力，並指出在細菌族群中 dN/dS 常隨菌株間序列分歧度增加而下降，但其機制仍有爭議。作者提出一個描述性模型來分析重組族群中的 dN/dS，以區分密切相關菌株間重組的效應。結果顯示，克隆遺傳的基因組區域具有較高的 dN/dS 比率，且重組片段的累積可定量解釋 dN/dS 下降的大部分變化。基於此觀察，研究重新檢視人類腸道細菌中純化選擇與適應性回返的模型，並發現蛋白質編碼位點中存在廣泛的弱選擇證據。研究指出水平基因轉移可能是形塑基因組範圍選擇限制模式的重要因素，並對複雜細菌族群中自然選擇的有效性提出新問題。",
+      "topicTags": [
+        "bacterial-genomics",
+        "horizontal-gene-transfer",
+        "selection-pressure",
+        "human-gut-microbiota",
+        "dnds"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004033",
+      "title": "Does perturbed adaptive myelination contribute to cognitive dysfunction in Alzheimer’s disease?",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-10-12T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004033",
+      "doi": "10.1371/journal.pbio.3004033",
+      "abstract": "The consequences of oligodendrocyte involvement in Alzheimer’s disease are poorly understood. Could a key role of gray-matter oligodendrocytes—activity-dependent adaptive myelination to sustain changes in activity—be perturbed, leading to cognitive loss? The consequences of oligodendrocyte involvement in Alzheimer’s disease are poorly understood. This Perspective suggests that activity-dependent adaptive myelination, a key role of grey-matter oligodendrocytes, could be perturbed, leading to cognitive loss.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "失調的適應性髓鞘化是否導致阿茲海默症認知功能障礙？",
+      "summaryZh": "這篇刊載於 PLOS Biology 的 Perspective 指出，阿茲海默症中寡突膠細胞的角色仍不清楚。文章提出灰質寡突膠細胞的一個關鍵功能是活動依賴性的適應性髓鞘化，用以維持活動的變化。作者推測此適應性髓鞘化機制可能受擾，進而導致認知功能喪失。該文為觀點性論述，並未提供實驗證據。",
+      "topicTags": [
+        "alzheimer-disease",
+        "myelination",
+        "oligodendrocytes",
+        "cognitive-dysfunction",
+        "perspective"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004031",
+      "title": "The Cryptococcus neoformans titanide is a pathogenic cell type that arises from typical yeast cells in response to host conditions",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-10-12T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004031",
+      "doi": "10.1371/journal.pbio.3004031",
+      "abstract": "Fungal morphogenesis is a major driver of disease outcome. For the opportunistic fungal pathogen Cryptococcus neoformans , extreme morphological heterogeneity within the lung environment drives dissemination, immune evasion, and drug resistance. One such cell type is the small, oval, titanide (2–4 µm). This poorly understood cell type is prevalent in lung histology as well as host-relevant in vitro conditions. In conditions that generate cellular heterogeneity, titanides comprise 4%–10% of cells 24 hours post-induction and by 72 hours are the dominant cell type. Despite their prevalence and the significance of cryptococcal morphogenesis for virulence, key questions pertaining to their origin, fate, and underlying biology remain unstudied. Using TEM, SEM, and fluorescence microscopy we demonstrate that titanides display distinct morphological features; they possess thin cell walls, single birth scars, and capsules, with reduced Pathogen-Associated Molecular Pattern exposure and altered distribution. These features distinguish titanides from previously described C. neoformans ‘small cells’ such as in vivo seed cells (6 µm, high cell-wall mannan content) and micro cells (round, C. neoformans cell biology and pathogenesis.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "新型隱球菌 Titanide 為宿主條件誘發的致病細胞型態",
+      "summaryZh": "研究聚焦於機會性真菌病原新型隱球菌 Cryptococcus neoformans 在肺部環境中的形態異質性，並指出其中一種小而橢圓的細胞型態 Titanide 約 2–4 µm。該細胞型態在肺部組織學以及宿主相關體外條件中常見，在產生細胞異質性的條件下，誘導後 24 小時約占 4%–10%，至 72 小時成為優勢細胞型態。作者以 TEM、SEM 與螢光顯微鏡顯示 Titanide 具有薄細胞壁、單一出生疤痕與莢膜，並呈現 Pathogen-Associated Molecular Pattern 暴露減少與分布改變等特徵。這些特徵使其與先前描述的新型隱球菌小細胞，如體內種子細胞與微細胞有所區別。",
+      "topicTags": [
+        "cryptococcus-neoformans",
+        "fungal-morphogenesis",
+        "titanide",
+        "pathogenesis",
+        "immune-evasion"
+      ]
+    },
+    {
+      "id": "10.64898/2026.01.22.701166",
+      "title": "Histology-aware Inference of Cell-cell Communication in Spatial Transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-12",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.01.22.701166v3",
+      "doi": "10.64898/2026.01.22.701166",
+      "abstract": "Cell-cell communication (CCC) is fundamental to tissue organization and function, yet inferring communication from spatial transcriptomics (ST) remains challenging because molecular and spatial information does not fully capture the anatomical context of signaling. Paired hematoxylin and eosin (H&E)-stained images provide complementary insights into tissue architecture and cellular morphology, which remain underutilized as the explicit contextual constraint of CCC inference. Here we present HARMONIC, a histology-aware graph learning framework for anatomically contextualized CCC inference from ST and H&E images. HARMONIC uses conditional mutual information to model dependencies among tissue architecture, ligand-receptor-mediated signaling, gene expression and morphology, and integrates these representations through self-supervised graph learning. Across synthetic and biological datasets spanning platforms, species and tissues, HARMONIC suppresses less anatomically plausible interactions while recovering context-supported signaling across tumor-immune interfaces, necrotic transitions, anatomical compartments and microvascular structures. These findings establish tissue architecture as the explicit contextual constraint of spatial CCC inference.",
+      "authors": [
+        "Wang, X.",
+        "Tao, C.",
+        "Jiang, Y.",
+        "Jiang, Y.",
+        "Liu, H.",
+        "Jiang, Z.",
+        "Zhu, P.",
+        "Que, N.",
+        "Xi, J.",
+        "Price, S.",
+        "Qian, B.",
+        "Xu, J.",
+        "Li, C."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "具組織學感知的空間轉錄組學細胞間通訊推論"
+    },
+    {
+      "id": "10.64898/2026.10.05.756880",
+      "title": "Beyond the Final Layer: Evaluating Single-Cell Foundation Model Representations for Molecular Prediction",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-12",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756880v1",
+      "doi": "10.64898/2026.10.05.756880",
+      "abstract": "Single-cell foundation models (scFMs) are commonly benchmarked using final-layer embeddings, although useful depth may depend on the task. We evaluate Geneformer, scBERT, scGPT, and scFoundation as frozen feature extractors for cell-type and perturbation-response prediction using layer-wise probes, leave-one-dataset-out (LODO) selection, readout controls, representation diagnostics, centered kernel alignment (CKA), and retrieval/collapse analyses. Intermediate layers significantly improve cell-type accuracy for scGPT and scBERT in several settings, while Geneformer and scFoundation generally show performance comparable to their final layers. For perturbation prediction, LODO identifies layer 1 as an earliest-on-par candidate across all four models, without establishing universal superiority. Paired scGPT CLS and mean-pooling analyses show that readout affects preferred depth. CKA and representation metrics reveal model- and task-dependent geometric changes, while retrieval and collapse checks support the robustness of perturbation findings. We recommend reporting extraction depth, readout, selection protocol, and task-specific diagnostics. A validated non-final layer may also reduce computation, although efficiency was not directly benchmarked.",
+      "authors": [
+        "Wen, M.-C. C.",
+        "Lyu, Y.",
+        "Robbins, A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "超越最終層：評估單細胞基礎模型表徵於分子預測的效能"
+    },
+    {
+      "id": "10.64898/2026.08.10.743911",
+      "title": "Covariance Nonstationarity is Evident in Spatial Transcriptomics and Provides a New Categorization of Spatially Varying Genes",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-12",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.10.743911v4",
+      "doi": "10.64898/2026.08.10.743911",
+      "abstract": "Gaussian process models underlie many spatial transcriptomics tools but typically assume stationary covariance. To test this assumption, we use approximate Bayes factors from R-INLA to compare stationary and non-stationary Matern covariance functions across 12 Visium datasets; covariance non-stationarity is substantially evident as it appears in 3% to 50% of genes across datasets. We find that gene sets associated with effector functions are enriched among genes favoring non-stationary spatial covariance.",
+      "authors": [
+        "Velidi, P.",
+        "Wei, Z.",
+        "Nathoo, F."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "Visium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "共變異數非平穩性在空間轉錄體學中顯而易見，並提供空間變異基因的新分類"
+    },
+    {
+      "id": "10.1038/s41467-026-78369-0",
+      "title": "Neuronal signatures of successful one-shot memory in mid-level visual cortex",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78369-0",
+      "doi": "10.1038/s41467-026-78369-0",
+      "abstract": "Neural mechanisms underlying one-shot memory are not fully understood. In this study, macaque monkeys were trained to perform a continuous image recognition task and simultaneously recorded from groups of neurons in area V4. The authors found that the perceptual building blocks of fast, high-capacity memory are present in mid-level sensory cortex.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "中階視覺皮質中一次學習記憶的神經特徵",
+      "summaryZh": "本研究探討一次學習記憶的神經機制尚未完全清楚的問題。研究人員訓練獼猴執行連續影像辨識任務，並同時記錄視覺皮質 V4 區域的神經群活動。結果顯示，快速且高容量記憶的感知構成要素存在於中階感覺皮質中。",
+      "topicTags": [
+        "neuroscience",
+        "visual-cortex",
+        "memory",
+        "one-shot-learning",
+        "macaque"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78397-w",
+      "title": "The mechanosensitive PIEZO1 channel promotes CD54+/iNOS+ neutrophil expansion in pulmonary fibrosis",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78397-w",
+      "doi": "10.1038/s41467-026-78397-w",
+      "abstract": "Neutrophils have been shown to be involved in pulmonary fibrosis (PF). Here, the authors identify an expanded pro-inflammatory neutrophil state marked by CD54 in human PF and by iNOS in murine PF, demonstrate that iNOS+ neutrophils promote PF whilst Arg+ neutrophils are less effective, and show that mechanical activation of the PIEZO1 channel contributes to the promotion of PF by CD54 + /iNOS+ neutrophils.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "機械敏感性 PIEZO1 通道促進肺纖維化中 CD54+/iNOS+ 中性球的擴增"
+    },
+    {
+      "id": "10.1038/s41467-026-78418-8",
+      "title": "Serine-65 phosphorylated ubiquitin associates with soluble tau and seeding activity in Alzheimer’s disease",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78418-8",
+      "doi": "10.1038/s41467-026-78418-8",
+      "abstract": "Not all selective markers of seeding-competent Tau are known. Here, the authors identify pS65-Ub-associated tau linked to pathological Tau spreading and elevated in Alzheimer’s disease. Removal of pS65-Ub reduces tau seeding activity.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Ser65 磷酸化泛素與可溶性 tau 及播種活性相關",
+      "summaryZh": "本研究指出，並非所有選擇性標記都能辨識具播種能力的 tau。作者發現 pS65-Ub 相關的 tau 與病理性 tau 擴散有關，且在阿茲海默症中升高。移除 pS65-Ub 可降低 tau 播種活性。該發現提供了與病理性 tau 擴散相關的標記線索。",
+      "topicTags": [
+        "alzheimers-disease",
+        "tau",
+        "ubiquitin",
+        "seeding",
+        "neurodegeneration"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78635-1",
+      "title": "Interpretable AI-guided discovery of degradable ionizable lipids with enhanced hepatic mRNA delivery in vivo",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78635-1",
+      "doi": "10.1038/s41467-026-78635-1",
+      "abstract": "Ionizable-lipid discovery remains largely empirical. Here, the authors integrate interpretable machine learning with modular degradable lipid chemistry to prioritize candidates for experimental testing and identify a lead lipid for hepatic mRNA delivery.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "可解釋 AI 導向發現可降解可離子化脂質，提升體內肝臟 mRNA 遞送",
+      "summaryZh": "本研究指出可離子化脂質的發現目前仍多依賴經驗。作者整合可解釋機器學習與模組化可降解脂質化學，用以優先挑選候選物進行實驗測試。透過此策略，他們鑑定出一個用於肝臟 mRNA 遞送的先導脂質。該工作展示結合可解釋 AI 與可降解脂質化學設計來推進脂質發現的方法。",
+      "topicTags": [
+        "machine-learning",
+        "interpretable-ai",
+        "lipid-nanoparticles",
+        "mrna-delivery",
+        "drug-delivery"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78225-1",
+      "title": "The central coupler of ClpXP controls intersubunit communication and couples intrasubunit chemical energy with force generation",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78225-1",
+      "doi": "10.1038/s41467-026-78225-1",
+      "abstract": "What is the mechanism by which ClpXP utilizes ATP to unfold proteins? Using single-molecule, biochemical and structural methods, the authors find that the central coupler facilitates the conversion of chemical energy into a quick motion of substrate translocating loops to generate force.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "ClpXP 中央耦合器調控亞單元間通訊並將化學能轉為力量",
+      "summaryZh": "本研究探討 ClpXP 如何利用 ATP 展開蛋白質。作者使用單分子、生化與結構方法進行分析。研究發現中央耦合器促進化學能轉換為基質轉位環的快速運動，以產生力量。結果顯示中央耦合器控制亞單元間通訊，並將細胞內亞單元化學能與力量產生耦合。",
+      "topicTags": [
+        "clpxp",
+        "protein-unfolding",
+        "atpase",
+        "single-molecule",
+        "structural-biology"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 39,
+      "passedByScope": 21,
+      "llmClassified": 18,
+      "llmYes": 8,
+      "llmNotSure": 1,
+      "llmNo": 9,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 30,
+      "excluded": 9
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 20,
+      "llmTagged": 20,
+      "llmLineA": 0,
+      "llmLineB": 20,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 26,
+      "candidates": 23,
+      "featured": 12,
+      "overflow": 11,
+      "lineA": 0,
+      "lineB": 20,
+      "preprint": 3,
+      "skip": 3,
+      "featuredLineA": 0,
+      "featuredLineB": 12,
+      "featuredPreprint": 0,
+      "overflowLineA": 0,
+      "overflowLineB": 8,
+      "overflowPreprint": 3
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "primarySucceeded": 12,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 11,
+      "llmTranslated": 11,
+      "primarySucceeded": 11,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 20
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 12
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 11,
+        "succeeded": 11,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        },
+        "primarySucceeded": 11,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03225-6",
+        "title": "Keep medical doctors in academia — without them, health-care research will suffer",
+        "journal": "Nature",
+        "publishedDate": "2026-10-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03225-6",
+        "doi": "10.1038/d41586-026-03225-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03251-4",
+        "title": "Economics Nobel awarded for work on stabilizing economies in crisis",
+        "journal": "Nature",
+        "publishedDate": "2026-10-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03251-4",
+        "doi": "10.1038/d41586-026-03251-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02970-y",
+        "title": "Beyond the solvent fog: watching molecules dance in the crowd",
+        "journal": "Nature",
+        "publishedDate": "2026-10-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02970-y",
+        "doi": "10.1038/d41586-026-02970-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03181-1",
+        "title": "What does a PhD pay? Data reveal huge gaps across Europe",
+        "journal": "Nature",
+        "publishedDate": "2026-10-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03181-1",
+        "doi": "10.1038/d41586-026-03181-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02714-y",
+        "title": "I told ChatGPT to ‘continue’ — it went too far",
+        "journal": "Nature",
+        "publishedDate": "2026-10-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02714-y",
+        "doi": "10.1038/d41586-026-02714-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03224-7",
+        "title": "Does the decline of book reading mark the end of rational thinking?",
+        "journal": "Nature",
+        "publishedDate": "2026-10-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03224-7",
+        "doi": "10.1038/d41586-026-03224-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03227-4",
+        "title": "Private, offline and yours: how to search the literature with local AI systems",
+        "journal": "Nature",
+        "publishedDate": "2026-10-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03227-4",
+        "doi": "10.1038/d41586-026-03227-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78310-5",
+        "title": "Continuous-time noise mitigation in analogue quantum simulation",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78310-5",
+        "doi": "10.1038/s41467-026-78310-5",
+        "abstract": "Mitigating errors in analogue quantum simulators - that is, reducing noise-induced bias in expectation values - would greatly improve their operation and scalability. Here, the authors propose a time-continuous error cancellation protocol, based on introducing an auxiliary system and engineering the joint dissipation of the new, extended system.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78115-6",
+        "title": "Block-fitness modeling of the global air mobility network",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78115-6",
+        "doi": "10.1038/s41467-026-78115-6",
+        "abstract": "Origin-destination data on air travel are essential for studying global mobility and epidemic risk but are often proprietary. Here, authors introduce a maximum-entropy network method that reconstructs air passenger flows from open data and enables accurate reproduction of epidemic dynamics.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
