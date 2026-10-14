@@ -1,7 +1,44 @@
 {
   "reportDate": "2026-10-13",
-  "generatedAt": "2026-10-13T17:42:33.828Z",
+  "generatedAt": "2026-10-14T15:20:14.822Z",
   "papers": [
+    {
+      "id": "10.1038/s41592-026-03276-7",
+      "title": "The companion website",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-10-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03276-7",
+      "doi": "10.1038/s41592-026-03276-7",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41592-026-03255-y",
+      "title": "Near-infrared photochromic miniprotein enables photoacoustic molecular imaging of acute inflammation and intracellular antigens",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-10-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03255-y",
+      "doi": "10.1038/s41592-026-03255-y",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "近紅外光致變色微蛋白實現急性發炎與細胞內抗原的光聲分子影像"
+    },
     {
       "id": "10.1038/s41588-026-02779-5",
       "title": "Clonal heterogeneity in human pancreatic ductal adenocarcinoma and its impact on tumor progression",
@@ -19,7 +56,7 @@
       "digestLine": "line-b",
       "digestTaggingMethod": "llm",
       "featured": false,
-      "titleZh": "人類胰腺導管腺癌中的克隆異質性及其對腫瘤進展的影響"
+      "titleZh": "人類胰管腺癌的克隆異質性及其對腫瘤進展的影響"
     },
     {
       "id": "10.1038/s41559-026-03224-w",
@@ -58,10 +95,10 @@
       "digestTaggingMethod": "llm",
       "featured": true,
       "titleZh": "蛋白體年齡時鐘首次進入臨床試驗",
-      "summaryZh": "《Nature Biotechnology》報導的研究首次在臨床試驗中部署六種蛋白體年齡時鐘。該研究將這些時鐘應用於臨床試驗情境，屬於首次嘗試。結果顯示所獲得的資訊更多關於時鐘本身，而非關於受試藥物。這凸顯蛋白體年齡時鐘在臨床應用上的特性與限制值得進一步釐清。",
+      "summaryZh": "《Nature Biotechnology》報導，六種蛋白體年齡時鐘首次被部署於臨床試驗。研究顯示這次試驗揭示了更多關於時鐘本身的資訊，而非關於藥物的資訊。該結果反映了蛋白體年齡時鐘在臨床情境中的應用現況。",
       "topicTags": [
         "proteomics",
-        "aging-clocks",
+        "aging",
         "clinical-trial",
         "biomarkers"
       ]
@@ -116,13 +153,160 @@
       "digestTaggingMethod": "llm",
       "featured": true,
       "titleZh": "低中收入國家免疫學教育的公平導向模式",
-      "summaryZh": "本文提出一種用於免疫學教育的模式，作者指出該模式對教師與學生具轉型效果，並促進導師制度、包容性與跨國合作。框架強調將培訓嵌入在地脈絡，以培養早期職涯科學家的信心、技能與領導力。這些要素有助於促進科學自主性，並使永續的全球參與成為可能。",
+      "summaryZh": "本文提出一種用於免疫學教育的模式，作者表示該模式對教師與學生具轉型效果。模式強調導師制度、包容性與跨國合作，並將培訓嵌入在地脈絡。透過此框架，早期職涯科學家在信心、技能與領導力方面獲得提升。作者指出，這些要素有助於培育科學自主性，並促進永續的全球參與。",
       "topicTags": [
         "immunology-education",
         "equity",
         "global-health",
         "mentorship",
         "capacity-building"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004047",
+      "title": "Eye movements reflect capacity-dependent organization of working memory",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-10-13T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004047",
+      "doi": "10.1371/journal.pbio.3004047",
+      "abstract": "Human cognition is capacity-limited, requiring strategies to actively structure information. Eye movements offer a natural mechanism for sequential sampling, but whether such sequences reflect memory organization is unknown. We developed a working-memory task where color-frequency pairings created a latent ordinal structure to optimally reduce memory load. Across two experiments, gaze patterns spontaneously aligned with this structure. Participants sampled items following this sequence during encoding and revisited them during maintenance. Critically, the expression of this structure depended on cognitive demand. In a 3-item task, high performers showed robust sequential sampling during encoding, whereas lower performers compensated with replay-like revisitation during maintenance. Under higher demand (4 items), encoding-based organization was disrupted, and structured revisitation emerged primarily during maintenance. These findings suggest that eye movements provide an overt expression of an internally generated organizational process that flexibly adapts to cognitive demands, revealing a behavioral analogue to neural replay when encoding resources are strained.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "眼動反映工作記憶的容量依賴性組織",
+      "summaryZh": "研究開發一個工作記憶任務，利用顏色-頻率配對創造潛在序位結構以降低記憶負荷。兩項實驗發現注視模式自發與此結構一致，參與者在編碼時依序取樣項目，維持期則回訪該項目。結構的表現依認知需求而異。在三項目任務中，高表現者於編碼期呈現穩健的序位取樣，而低表現者則以類似重播的回訪來補償，發生於維持期。在更高需求的四項目條件下，編碼期的組織受干擾，結構化回訪主要出現在維持期。結果顯示眼動提供內部產生的組織過程的外顯表現，能依認知需求彈性調整，並在編碼資源受限時呈現類似神經重播的行為對應。",
+      "topicTags": [
+        "working-memory",
+        "eye-tracking",
+        "cognition",
+        "memory-organization"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004003",
+      "title": "Interindividual vocal tract diversity influences the phonetic diversification of spoken languages",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-10-13T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004003",
+      "doi": "10.1371/journal.pbio.3004003",
+      "abstract": "Human vocal tracts, like other physical traits, exhibit extensive interindividual variation. However, little is known about how this variation translates into phonetic diversity between speakers, and ultimately, across languages. Here we develop a biocultural model of phonetic evolution, analogous to Russell Lande’s model of multivariate phenotypic evolution. We show that individual vocal tract morphologies and associated articulatory strategies leave consistent acoustic signatures, resulting in a characteristic pattern of phonetic variation within speaker groups that correlates with the pattern observed between groups. Recalling a central tenet of evolutionary biology—that within-group variation feeds between-group diversification—our findings suggest that phonologically similar vowel systems can attain phonetically diverse realizations according to a neutral-like evolutionary process. Our model serves as a null hypothesis for disentangling the biological versus cultural mechanisms underlying phonetic diversification, where deviations from the neutral expectation may indicate culturally mediated language change.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology",
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "個體發音道差異影響語言音韻多樣化",
+      "summaryZh": "本研究指出人類發音道如同其他身體特徵一樣存在廣泛的個體間變異，但此變異如何轉化為說話者間的音韻多樣性，以及最終跨語言的差異仍知之甚少。作者發展出一個類比於 Russell Lande 多變量表型演化模型的生物文化音韻演化模型。研究顯示個體發音道形態及其相關的發音策略會留下一致的聲學特徵，導致說話者群體內的音韻變異模式與群體間的模式相關。作者援引演化生物學中「群內變異促進群間分化」的觀點，提出音系上相似的元音系統可透過類似中性的演化過程獲得音韻上多樣的實現。該模型可作為區分音韻多樣化背後生物與文化機制的零假設。",
+      "topicTags": [
+        "phonetics",
+        "language-evolution",
+        "vocal-tract",
+        "biocultural-model",
+        "acoustic-variation"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003995",
+      "title": "Bridging energy and proteome allocation models allows prediction of the resource cost of traits across environments",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-10-13T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003995",
+      "doi": "10.1371/journal.pbio.3003995",
+      "abstract": "Many traits divert resources from reproduction and are costly due to the physiological trade-offs organisms face. These traits might require the allocation of different resources, e.g., energy expenditure or production of macromolecules, and it is unclear how their costs can be compared given their different units. Moreover, the effect of environmental conditions and genetic background on the cost of traits is not well understood. Two different frameworks have been proposed to quantify the resource costs of traits, focusing on either energy allocation or proteome allocation. These frameworks implicitly assume energy provisioning or protein production limits growth, respectively, but the connection between the two limitations has been underexplored. To better connect these frameworks, we develop a framework that considers limitations in energy provisioning and macromolecule biosynthesis simultaneously to quantify and compare the cost of traits that require different resources. Using this model, we explore how environmental quality and genetic background affect the cost of traits. Notably, our model predicts that increasing food quality increases the cost of traits that require the production of new structures, while decreasing the cost of traits requiring energy expenditure. Moreover, our model makes novel predictions about the effect of degradation, recycling, and energetic demands for maintenance on the relationship between the macromolecular composition of the cells and growth rate (also known as bacterial growth laws).",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "整合能量與蛋白質體分配模型預測性狀資源成本",
+      "summaryZh": "本研究提出一個同時考慮能量供應與大分子生物合成限制的框架，用以量化並比較需要不同資源的性狀成本。該框架整合了先前分別聚焦能量分配與蛋白質體分配的兩種量化方法。模型探討環境品質與遺傳背景如何影響性狀成本。模型預測，食物品質提升會提高需要產生新結構的性狀成本，同時降低需要能量消耗的性狀成本。此外，模型對降解、回收以及維持所需能量對細胞大分子組成與生長速率關係的影響提出新預測。",
+      "topicTags": [
+        "resource-allocation",
+        "proteome",
+        "energy-metabolism",
+        "growth-laws",
+        "theoretical-model"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003778",
+      "title": "PrimeStack editors enable efficient and site-specific integration of large multigene cargos in plants",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-10-13T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003778",
+      "doi": "10.1371/journal.pbio.3003778",
+      "abstract": "Precise, site-specific integration of large DNA sequences into plant genomes is a long-standing goal of crop biotechnology and synthetic biology, yet remains constrained by random insertion, inefficient homologous recombination, and gene targeting. Here, we present PrimeStack, a DSB-independent platform that integrates PE with the unidirectional large serine integrase Bxb1, leveraging evolved variants for enhanced activity, to achieve the programmable insertion of multigene, multikilobase cargos at predefined genomic safe harbors (GSH) in rice ( Oryza sativa ). Optimized prime editors first install attP landing sites with high fidelity and heritability followed by Bxb1-mediated recombination that generates irreversible integration of genetic information. PrimeStack enabled targeted large-cargo integration in regenerated rice plants with efficiencies of up to 45%, as determined by junction-specific PCR analyses. No obvious morphological differences from WT plants were observed at 5 weeks after transfer to soil under the evaluated conditions. We validate its utility by achieving targeted insertion of a carotenoid cassette at an experimentally confirmed genomic safe harbor. PrimeStack delivers a modular, site-specific gene stacking platform that enables predictable, multigene trait pyramiding and pathway construction at GSH, thereby accelerating the development of improved and resilient crop varieties, as well as scalable plant-based biomanufacturing and a powerful chassis for synthetic biology.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology",
+        "development",
+        "genome",
+        "synthetic biology"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "PrimeStack 編輯器實現水稻基因組安全港的大型多基因載荷定點整合",
+      "summaryZh": "研究團隊提出 PrimeStack，一個不依賴雙股斷裂的平台，將 Prime Editing 與單向大型絲胺酸整合酶 Bxb1 結合，並使用演化後的高活性變異體，以在水稻 Oryza sativa 的預定義基因組安全港進行多基因、多千鹼基載荷的可程式化插入。優化後的 prime editor 先以高保真且可遺傳的方式安裝 attP 降落位點，接著由 Bxb1 介導的重組產生不可逆的整合。PrimeStack 在再生水稻植株中實現定點大型載荷整合，效率最高達 45%，以接合點特異性 PCR 分析判定。在評估條件下，轉移至土壤後 5 週未觀察到與野生型植株明顯的形態差異。研究以在實驗確認的基因組安全港定點插入類胡蘿蔔素 cassette 驗證其用途。",
+      "topicTags": [
+        "prime editing",
+        "site-specific integration",
+        "plant biotechnology",
+        "synthetic biology",
+        "crop engineering"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003709",
+      "title": "An inositol receptor Itr4 coordinates carbon catabolite regulation and virulence in Cryptococcus neoformans",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-10-13T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003709",
+      "doi": "10.1371/journal.pbio.3003709",
+      "abstract": "Nutrient sensing and utilization are critical for microbes to adapt to their environment and evade predators. The encapsuled yeast Cryptococcus neoformans has a unique ability to sense and utilize the sugar inositol as both a signaling molecule and as a carbon source. This trait is advantageous not only in the natural environment but also to promote its pathogenesis, including invasion of the central nervous system. In this study, we have identified a novel inositol transporter-like receptor (transceptor) Itr4 that coordinates inositol and glucose metabolism by regulating inositol transporters ( ITR s) and glucose sensor Hxs1. Itr4 binds inositol and regulates the function of other ITR s and its loss leads to a significant decrease in inositol uptake activity, resulting in a lack of mating, reduced capsule size, reduced blood–brain barrier (BBB) penetration, and virulence attenuation. Mutagenesis analysis of Itr4 protein identified an essential N-terminal tail and two amino acids, Q388 and Q389, as sites of functional importance. The ITR4 Q388A, Q389A allele showed a dominant phenotype with increased inositol uptake, enlarged capsule and significantly attenuated virulence. In summary, we identify a new C. neoformans inositol transceptor, Itr4, the first such example in eukaryotes, with novel regulatory roles in both inositol and glucose metabolism and fungal virulence.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "肌醇受體 Itr4 調控碳源利用與致病性",
+      "summaryZh": "本研究在包囊酵母 Cryptococcus neoformans 中鑑定出新型肌醇轉運體樣受體 Itr4，據稱是真核生物中首例此類肌醇轉受體。Itr4 能結合肌醇，並透過調控肌醇轉運蛋白 ITRs 與葡萄糖感應器 Hxs1 來協調肌醇與葡萄糖代謝。失去 Itr4 會顯著降低肌醇攝取活性，導致交配缺失、包囊大小減少、血腦屏障穿透力下降以及毒力減弱。突變分析指出 Itr4 的 N 端尾部為必需，且胺基酸 Q388 與 Q389 在功能上重要。Itr4 Q388A、Q389A 等位基因呈現顯性表型，肌醇攝取增加、包囊增大且毒力顯著減弱。",
+      "topicTags": [
+        "fungal-pathogenesis",
+        "carbon-metabolism",
+        "inositol-signaling",
+        "cryptococcus-neoformans",
+        "virulence-regulation"
       ]
     },
     {
@@ -163,15 +347,48 @@
       "section": "single-cell-spatial",
       "digestLine": "preprint",
       "digestTaggingMethod": "keyword-fallback",
-      "featured": true,
-      "titleZh": "突破複製危機與永生化先於複雜基因體演化",
-      "summaryZh": "人類體細胞的端粒縮短會誘導複製性衰老與危機，而癌前細胞必須克服這些障礙以獲得複製永生化。透過對危機細胞進行單細胞DNA股特異性基因體定序，研究揭示了以複雜染色體異常為特徵的極端基因體不穩定性。然而，自發出現的危機後細胞株卻顯示出相對較少且簡單的結構變異。隨著危機後細胞不斷分裂，這些永生化細胞的基因體會進一步演化並累積基因體變異，包含四倍體化事件以及隨之而來的單一染色體喪失與獲得。這些數據指向了一項新的腫瘤生成模型，其中危機扮演了強烈的選擇屏障，能抵禦具有異常核型的細胞，而高度核型複雜性則是在永生化與逃脫危機之後才獲得的。",
-      "topicTags": [
-        "genomics",
-        "cancer",
+      "featured": false,
+      "titleZh": "逃脫複製危機與不朽化先於複雜基因組演化"
+    },
+    {
+      "id": "10.64898/2026.10.12.758409",
+      "title": "Rethinking Syndecan-1 as a Marker of Trauma-Induced Endothelial Injury",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-13",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.12.758409v1",
+      "doi": "10.64898/2026.10.12.758409",
+      "abstract": "Syndecan-1 (SDC1), a transmembrane proteoglycan and component of the glycocalyx, is widely considered the key circulating biomarker of endothelial dysfunction in trauma and critical illness. However, the tissue distribution of SDC1 and the cellular origin of plasma SDC1 in health and disease are incompletely understood. This series of experiments integrates immunostaining, spatial transcriptomics (GeoMx Digital Spatial Profiler (DSP) and Xenium), and single-cell atlases to map SDC1, as well as the other three members of the syndecan family, syndecan-2 (SDC2), syndecan-3 (SDC3), and syndecan-4 (SDC4), across mouse and human tissues, including the lung, gastrointestinal tract, and brain. Across modalities, SDC1 primarily localizes to epithelial compartments, as demonstrated by colocalization with epithelial markers and enrichment in epithelial cell types in the lung and gut. Spatial profiling further identifies SDC1 and SDC4 enrichment in airway epithelial niches, SDC3 in endothelial-rich regions, and SDC2 distributed more broadly across compartments. Mouse and human single-cell atlases confirm epithelial predominance of SDC1. These findings define the cellular and spatial landscape of syndecan expression in healthy tissues and support SDC1 as an epithelial-enriched proteoglycan. These results also challenge the specificity of circulating SDC1 as a biomarker of endotheliopathy and raise the possibility that epithelial injury contributes substantially to circulating SDC1 after trauma and critical illness.",
+      "authors": [
+        "Pati, S.",
+        "Geng, H.",
+        "Trivedi, A.",
+        "Keane, C.",
+        "Barry, M.",
+        "Pathipati, P.",
+        "Bertram, K. A.",
+        "Moore, E. E.",
+        "Schreiber, M.",
+        "Cuschieri, J.",
+        "Holcomb, J. B.",
+        "Zacco, E.",
+        "Nair, A. B."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
         "single-cell",
-        "chromosomal-instability"
-      ]
+        "spatial transcriptomics",
+        "Xenium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "重新思考 Syndecan-1 作為創傷誘發內皮損傷的標記"
     },
     {
       "id": "10.64898/2026.10.12.758490",
@@ -214,7 +431,7 @@
       "digestTaggingMethod": "keyword-fallback",
       "featured": true,
       "titleZh": "以生物模組為語彙單位的單細胞基礎模型",
-      "summaryZh": "本文提出 BioMod，一個約 5 千萬參數的單細胞基礎模型，將細胞狀態的表示從基因層級序列改為生物模組層級。模型建構出 660 個重疊的生物模組語彙，來源為 curated pathways 與資料驅動的基因程式，並以此取代數千個基因輸入。BioMod 在約 7,300 萬個人類細胞上以高比例模組遮罩與非對稱解碼器進行預訓練。作者報告模型在細胞型別註解、零樣本批次整合、擾動反應預測與藥物反應預測等任務上達到 state-of-the-art 表現，且可在單張 GPU 上進行高效推論。模組層級分析顯示模型能捕捉具生物意義的細胞程式並保留路徑層級組織。",
+      "summaryZh": "本文提出 BioMod，一個約 5 千萬參數的單細胞基礎模型，將細胞狀態的表徵從基因層級提升至生物模組層級。模型建構出 660 個重疊的生物模組語彙，來源為 curated pathways 與資料驅動的基因程式，並以此取代數千個基因輸入。BioMod 在約 7,300 萬個人類細胞上以高比例模組遮罩與非對稱解碼器進行預訓練。作者報告模型在細胞型別註解、零樣本批次整合、擾動反應預測與藥物反應預測等任務上達到 state-of-the-art 表現，且可在單張 GPU 上進行高效推論。模組層級分析顯示 BioMod 能捕捉具生物意義的細胞程式並保留路徑層級組織。",
       "topicTags": [
         "single-cell",
         "foundation-model",
@@ -275,13 +492,100 @@
       "digestTaggingMethod": "keyword-fallback",
       "featured": true,
       "titleZh": "整合組織學與空間分子程序的多模態基礎模型",
-      "summaryZh": "研究指出組織學與空間轉錄體學提供癌症形態與分子組織的互補觀點，但其空間對應關係尚未在大規模上被學習。作者開發了 SQUALL，一個多模態基礎模型，於 histMol 上預訓練，包含來自 33 種組織、12 個平台的 3,446 個切片中 19.3 億個空間對齊的組織學-轉錄體學 spots/bins。透過學習空間形態-分子對應，SQUALL 可實現虛擬空間轉錄體學、腫瘤微環境特徵描述，以及用於臨床預測的分子資訊型組織學表徵。SQUALL 在不同隊列、癌症與平台間泛化虛擬空間基因表現分析，其表徵可解析腫瘤微環境，包括乳癌中與進展相關的腫瘤軌跡，以及卵巢腫瘤中與復發相關的免疫排除區域，並伴隨其下方的轉錄程序。應用於全切片組織學時，SQUALL 可進行預後與治療反應預測，並揭示與風險相關的可解釋特徵。",
+      "summaryZh": "研究指出組織學與空間轉錄體學提供癌症形態與分子組織的互補觀點，但其空間對應關係尚未在大規模上被學習。作者開發了 SQUALL，一個多模態基礎模型，於 histMol 上預訓練，包含來自 33 種組織、12 個平台的 3,446 個切片中 19.3 億個空間對齊的組織學-轉錄體學 spots/bins。透過學習空間形態-分子對應，SQUALL 可實現虛擬空間轉錄體學、腫瘤微環境特徵描述，以及用於臨床預測的分子資訊型組織學表徵。SQUALL 在不同隊列、癌症與平台間泛化虛擬空間基因表現分析，其表徵可解析腫瘤微環境，包括乳癌中與進展相關的腫瘤軌跡，以及卵巢腫瘤中與復發相關的免疫排除區域，並伴隨底層轉錄程序。在全切片組織學上的應用顯示 SQUALL 可進行預後與治療反應預測，並揭示與風險相關的可解釋特徵。",
       "topicTags": [
         "multimodal",
         "foundation-model",
         "histology",
         "spatial-transcriptomics",
         "tumor-microenvironment"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.05.756906",
+      "title": "A split-control criterion for few-shot adaptation in single-cell perturbation prediction",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-13",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.05.756906v1",
+      "doi": "10.64898/2026.10.05.756906",
+      "abstract": "Few-shot adaptation can help or harm single-cell perturbation prediction, but conventional evaluation shares a control estimate between calibration responses and held-out targets. We show how methods carry control error into their predictions and derive its contribution to score inflation. Nested control-depth experiments support inverse-depth scaling of inner-product inflation; correlation inflation also depends on the control noise-to-signal ratio. Independent-control scoring changed the rank of 40 of 52 configuration-dataset entries. We introduce SafeDelta, a split-control criterion that uses calibration data to decide whether to adapt. Across six datasets, mean gated gain was non-negative under the original two-control evaluation. On a deep plate, fixed predictions and decisions retained positive mean gains under three additional independent control references. The same reproducibility principle identified a fibrosis programme that localises to scar in human liver. These results inform adaptation decisions and control-depth planning.",
+      "authors": [
+        "Liang, W.-L.",
+        "Yang, Y.-B.",
+        "Zhang, Q.-Y.",
+        "Feng, J.-C.",
+        "Wang, Q.-F.",
+        "Zou, D.",
+        "Tang, J.-L.",
+        "Liu, Y.",
+        "Wang, S.-Y.",
+        "Duan, J.",
+        "Bai, Y.",
+        "Li, Y.-F.",
+        "Sun, W.-Y.",
+        "Cao, Y.-F.",
+        "He, R.-R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "單細胞擾動預測中少樣本適應的分離對照準則",
+      "summaryZh": "本預印本探討少樣本適應對單細胞擾動預測可能產生幫助或傷害，並指出傳統評估共用對照估計於校準回應與保留目標的問題。作者說明方法如何將對照誤差帶入預測並推導其對分數膨脹的貢獻，並以巢狀對照深度實驗支持內積膨脹隨深度反向縮放，以及相關膨脹依賴對照雜訊與訊號比。採用獨立對照評分後，52個組態資料集項目中有40個的排名改變。作者提出 SafeDelta，一個使用校準資料決定是否適應的分離對照準則。在六個資料集上，原本的雙對照評估下平均閘控增益為非負。在深度盤上，固定預測與決策在三個額外的獨立對照參考下仍保持正平均增益。同一可重現性原則亦辨識出一個纖維化程式，其在人類肝臟中定位於疤痕。",
+      "topicTags": [
+        "single-cell",
+        "perturbation-prediction",
+        "few-shot-learning",
+        "evaluation-metrics",
+        "preprint"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.06.757026",
+      "title": "ALBIS: simulation of multi-resolution and multi-dimensional spatial transcriptomics data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-13",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.06.757026v1",
+      "doi": "10.64898/2026.10.06.757026",
+      "abstract": "The rapid adoption of spatial transcriptomics (ST) technologies has been accompanied by substantial growth in computational methods, creating an increasing need for systematic and reliable benchmarking, particularly as analyses increasingly extend from individual tissue sections to three-dimensional (3D) tissue reconstruction. Existing benchmarks often rely on a small and similar set of experimentally-derived datasets because they offer a reliable ground truth label, which is hard to find in practice. Simulated or synthetic data provide an alternative, yet most existing simulators either adapt single-cell RNA-sequencing models to spatial coordinates or generate individual sections in a two-dimensional (2D) space at predefined resolutions. More recent approaches can simulate 2D and 3D tissues, but generally do not derive multiple spatial resolutions from the same molecular realization. Here, we introduce ALBIS (A muLti-resolution Biological In-silico Simulator for spatial transcriptomics), a statistically grounded and highly customizable framework that generates synthetic ST data from an in silico 3D tissue. ALBIS defines spatially structured cell populations with corresponding markers for gene expression, then initializes individual mRNA molecules in 3D space to create cell-level information with a ground truth 3D coordinate for each molecule and cell. From this common realization, ALBIS cuts the 3D tissue into multiple 2D tissue sections with cell-, bin-, and spot-level measurements, enabling direct comparison across spatial resolutions. Properties of the simulated data, including spatial domains, cell type composition, gene-expression effects, batch effects, measurement resolution, and tissue scale, can be systematically varied, enabling rigorous stress-testing of computational methods under known and increasingly challenging conditions.",
+      "authors": [
+        "Matthias, J. H.",
+        "Yao, J.",
+        "Hicks, S. C."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "spatial resolution",
+        "spatial domains"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "多解析度多維度空間轉錄組模擬器 ALBIS",
+      "summaryZh": "研究團隊提出 ALBIS，一個統計基礎且高度可客製化的框架，用於從體內模擬 3D 組織生成合成空間轉錄組學資料。ALBIS 先定義具有基因表現標記的空間結構化細胞族群，並在 3D 空間中初始化個別 mRNA 分子，為每個分子與細胞建立真實的 3D 座標。從同一組模擬結果，ALBIS 可將 3D 組織切成多個 2D 組織切片，並產生細胞、bin 與 spot 等不同解析度的測量。模擬資料的空間域、細胞類型組成、基因表現效應、批次效應、測量解析度與組織尺度等特性皆可系統性調整。該方法旨在提供已知條件下對計算方法進行嚴格壓力測試的基準，特別針對從單一組織切片到三維重建的分析需求。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "simulation",
+        "benchmarking",
+        "multi-resolution",
+        "3d-tissue"
       ]
     },
     {
@@ -325,15 +629,8 @@
       "section": "single-cell-spatial",
       "digestLine": "preprint",
       "digestTaggingMethod": "keyword-fallback",
-      "featured": true,
-      "titleZh": "空間解析腫瘤微環境結構與不可切除肝母細胞瘤治療反應相關",
-      "summaryZh": "本研究整合 10x Genomics Visium 空間轉錄組學與 NanoString CosMx 單細胞空間分子影像，分析術後化療肝母細胞瘤切除標本，樣本包含復發傾向不可切除、非復發不可切除與可切除三組臨床定義族群。研究在 11 個腫瘤的 Visium 資料與 3 個腫瘤的 CosMx 資料中辨識出三種與臨床結果相關的空間結構。復發傾向腫瘤呈現中央化、由腫瘤微環境主導的組織，富集前驅樣、增殖與壓力反應腫瘤細胞狀態，並與 SPP1+ 肥大細胞樣巨噬細胞與癌症相關纖維母細胞共定位，且富集缺氧反應、細胞外基質重塑與 Midkine (MDK-LRP1) 訊號。非復發腫瘤則呈現分散式結構，具有區隔化的腫瘤-免疫交互作用、較高的免疫參與以及保留的上皮分化，包含發炎性肝細胞樣狀態。可切除樣本顯示腫瘤細胞狀態異質性降低且腫瘤微環境-免疫組織較均勻。作者認為區域與單細胞空間轉錄組學整合顯示化療重塑後的腫瘤結構編碼了空間組織化的腫瘤細胞-腫瘤微環境交互作用，作為治療反應的關鍵決定因素。",
-      "topicTags": [
-        "hepatoblastoma",
-        "spatial-transcriptomics",
-        "tumor-microenvironment",
-        "pediatric-oncology"
-      ]
+      "featured": false,
+      "titleZh": "空間解析的腫瘤-微環境結構決定不可切除肝母細胞瘤的治療反應"
     },
     {
       "id": "10.64898/2026.10.10.758236",
@@ -373,15 +670,41 @@
       "section": "single-cell-spatial",
       "digestLine": "preprint",
       "digestTaggingMethod": "keyword-fallback",
-      "featured": true,
-      "titleZh": "三陰性乳癌細胞異質性的空間脈絡揭示可作用亞型",
-      "summaryZh": "本研究針對三陰性乳癌（TNBC）此一侵襲性且異質性高、標靶治療選擇有限的疾病，利用大量與空間轉錄體學以及乳房組織的細胞映射，分析來自大型病人群體的資料。研究鑑定出三種可重複的TNBC生態系統亞型，其編碼不同的空間腫瘤-微環境結構與臨床相關的治療反應表型。第一型為與免疫檢查點療法相關的免疫耗竭亞型，第二型為高度纖維化／缺氧亞型，第三型為以核受體與脂肪酸訊號為特徵的代謝重編程亞型。空間分析進一步顯示各亞型在腫瘤中心與侵襲邊緣的上皮、免疫與基質程序具有亞型特異性的組織方式，且多重影像獨立支持免疫浸潤與基質排除的對比結構。研究指出這些亞型的獨特標記可作為分型基礎並提供候選治療脆弱點，為個人化醫療提供框架。",
-      "topicTags": [
-        "triple-negative breast cancer",
+      "featured": false,
+      "titleZh": "三陰性乳癌中細胞異質性的空間脈絡揭示可作用亞型"
+    },
+    {
+      "id": "10.64898/2026.10.12.758400",
+      "title": "Spatial transcriptomics reveals interferon pathway enrichment in early relapsing serous carcinoma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-13",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.12.758400v1",
+      "doi": "10.64898/2026.10.12.758400",
+      "abstract": "High-grade serous carcinoma (HGSC) is characterized by extensive inter and intra-patient heterogeneity, complicating the identification of reliable prognostic biomarkers and the prediction of treatment response. In clinical practice, the origin of diagnostic biopsies varies, from tubo-ovarian (adnexal) tissue to omental or peritoneal metastatic foci. Whether the different sites provide similar information for molecular characterization or treatment decisions remains unclear. Studies comparing site-specific molecular details and the spatial relationship of HGSC tissue from patients with different treatment outcomes could provide answers to the open questions. Here, we used spatial transcriptomics to profile matched treatment-naive adnexal and omental tumor samples from nine HGSC patients stratified by platinum-free interval (PFI). Pathway enrichment analysis revealed several differences between short and medium- and long PFI tumors, however most of these differences were site-agnostic. Most strikingly, tumor epithelium from short PFI patients showed an inflammatory phenotype driven by increased interferon response signaling, carried by effector interferon-stimulated gene expression at both tumor sites. Further, medium- and long PFI tumors were enriched for proliferative and cell cycle regulatory programs. Differential gene expression and copy-number analyses identified three genes, complement gene C3, and interferon-related genes IFI27 and BST2, consistently associated with short PFI across adnexal and omental sites. These were validated at the tissue level using RNA in-situ hybridization. A case study of copy-number-defined subclones further suggested that this phenotype can arise as a distinct subclonal population within a single tumor. Outcome analysis, using two publicly available ovarian cancer cohorts, showed that high C3 expression was significantly associated with shorter platinum-free survival. Together, these findings implicate complement and interferon signaling as concurrent features of treatment-naive HGSC tumors with early relapse in both adnexal and omental tissue, and nominate C3 as a candidate prognostic biomarker and potential therapeutic target.",
+      "authors": [
+        "Niemeyer, F.",
+        "Aho, N.",
+        "Hanninen, S.",
+        "Youssef, O.",
+        "Carpen, O. M.",
+        "Erickson, A. M.",
+        "Laury, A. R."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
         "spatial transcriptomics",
-        "tumor microenvironment",
-        "personalized medicine"
-      ]
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "空間轉錄體學揭示早期復發漿液性癌症中干擾素路徑富集"
     },
     {
       "id": "10.64898/2026.10.07.757272",
@@ -423,119 +746,24 @@
       "section": "single-cell-spatial",
       "digestLine": "preprint",
       "digestTaggingMethod": "keyword-fallback",
-      "featured": true,
-      "titleZh": "單細胞多模態分析揭示母體糖尿病與 Nkx2-5 交互作用導致先天性心臟病",
-      "summaryZh": "研究提出先天性心臟病（CHD）的病因複雜性來自基因與環境因素的交互作用，並假設環境暴露可能放大基因易感性而增加特定心臟缺陷的發生率。研究使用表現嚴重高血糖（>28 mmol/L）且無血脂異常的 betaV59M+ 雌性小鼠作為模擬人類糖尿病胚胎病之模型，並與 Nkx2-5 雜合不足的雄性小鼠交配。基因易感性與高血糖母體環境的組合使心臟畸形頻率與嚴重度升高，包括涉及肌肉室中隔的室間隔缺損、單心室形態，以及心肌擴張與變薄。結構異常伴隨心室心肌收縮身份的轉錄變化。對 E9.5 心臟區域進行單核多組學分析（snRNA-seq 與 snATAC-seq）顯示，母體糖尿病與 Nkx2-5 雜合不足的交互作用顯著重塑轉錄與染色質可及性景觀。這些變化影響代謝途徑，也影響第二心原區（SHF）前驅細胞的細胞週期進展，可能促成觀察到的結構缺陷。多組學整合進一步指出後部 SHF 前驅細胞中間接的 Nkx2-5-Aldh1a2 調控軸受干擾，並顯示母體糖尿病選擇性影響與心肌細胞成熟相關的受限 Nkx2-5 依賴性調控元件。研究建立了全面的單細胞多組學資源，有助於整合人類 GWAS 等基因體資料集。",
-      "topicTags": [
-        "single-cell",
-        "congenital-heart-disease",
-        "gene-environment-interaction",
-        "maternal-diabetes",
-        "nkx2-5"
-      ]
-    },
-    {
-      "id": "10.1038/s41467-026-74719-0",
-      "title": "Unmet care needs at the end-of-life among older adults with activity limitations",
-      "journal": "Nature Communications",
-      "publishedDate": "2026-10-13T00:00:00.000Z",
-      "url": "https://www.nature.com/articles/s41467-026-74719-0",
-      "doi": "10.1038/s41467-026-74719-0",
-      "abstract": "Formal end-of-life care expansion in the US, Europe, and South Korea has not fully compensated for declining informal care, resulting in care gaps. Demographic transitions interact with development contexts to create distinct care landscapes.",
-      "sourceId": "nature-communications",
-      "lifeScienceRouting": {
-        "verdict": "yes",
-        "method": "llm"
-      },
-      "matchedKeywords": [
-        "development"
-      ],
-      "section": "biology",
-      "digestLine": "line-b",
-      "digestTaggingMethod": "llm",
-      "featured": true,
-      "titleZh": "年長活動受限者臨終未滿足照護需求",
-      "summaryZh": "本研究探討年長且有活動限制者在臨終階段的未滿足照護需求。研究指出，美國、歐洲與南韓的正式臨終照護擴張，未能完全彌補非正式照護的下降，因而出現照護缺口。人口結構轉變與發展脈絡的交互作用，形成了不同的照護樣貌。",
-      "topicTags": [
-        "end-of-life-care",
-        "older-adults",
-        "healthcare-policy",
-        "care-needs",
-        "demographic-transition"
-      ]
-    },
-    {
-      "id": "10.1038/s41467-026-78451-7",
-      "title": "NiCLIP: neuroimaging contrastive language-image pretraining model for predicting text from brain activation images",
-      "journal": "Nature Communications",
-      "publishedDate": "2026-10-13T00:00:00.000Z",
-      "url": "https://www.nature.com/articles/s41467-026-78451-7",
-      "doi": "10.1038/s41467-026-78451-7",
-      "abstract": "Researchers developed NiCLIP, an AI model that decodes cognitive tasks, concepts, and domains from brain activation patterns. Trained on over 23,000 papers, NiCLIP excels at group-level decoding, outperforming traditional decoders.",
-      "sourceId": "nature-communications",
-      "lifeScienceRouting": {
-        "verdict": "yes",
-        "method": "llm"
-      },
-      "matchedKeywords": [],
-      "section": "other",
-      "digestLine": "line-b",
-      "digestTaggingMethod": "llm",
-      "featured": true,
-      "titleZh": "NiCLIP：利用神經影像對比語言影像預訓練模型，由大腦活化圖像預測文字",
-      "summaryZh": "研究人員開發出 NiCLIP，這是一個能從大腦活化模式解碼認知任務、概念與領域的人工智慧模型。該模型在超過 23,000 篇論文的數據上進行訓練，在群體層級的解碼表現上表現優異，且優於傳統的解碼器。這項研究展現了透過 AI 結合神經影像與文字預測的潛力。",
-      "topicTags": [
-        "neuroimaging",
-        "ai",
-        "machine-learning",
-        "cognitive-science"
-      ]
-    },
-    {
-      "id": "10.1038/s41467-026-78527-4",
-      "title": "Scellmate enables contamination aware curation and host mobilome linkage analysis of large SAG datasets",
-      "journal": "Nature Communications",
-      "publishedDate": "2026-10-13T00:00:00.000Z",
-      "url": "https://www.nature.com/articles/s41467-026-78527-4",
-      "doi": "10.1038/s41467-026-78527-4",
-      "abstract": "In this study, the authors develop a computational framework, Scellmate, that curates and analyzes large-scale microbial single-cell datasets from complex environments, and show that this helps to reveal microbial diversity and infer microbe–plasmid and microbe–phage associations in sewage.",
-      "sourceId": "nature-communications",
-      "lifeScienceRouting": {
-        "verdict": "yes",
-        "method": "llm"
-      },
-      "matchedKeywords": [
-        "single-cell"
-      ],
-      "section": "single-cell-spatial",
-      "digestLine": "line-a",
-      "digestTaggingMethod": "llm",
-      "featured": true,
-      "titleZh": "Scellmate 支援污染感知篩選與宿主動態體關聯分析的大型單細胞基因體資料集",
-      "summaryZh": "本研究開發了計算框架 Scellmate，用於整理與分析來自複雜環境的大規模微生物單細胞資料集。作者展示此框架有助於揭示微生物多樣性。研究亦指出 Scellmate 可推斷污水樣本中的微生物與質體、微生物與噬菌體的關聯。該工作發表於 Nature Communications。",
-      "topicTags": [
-        "single-cell",
-        "microbial-genomics",
-        "computational-biology",
-        "mobilome",
-        "contamination-control"
-      ]
+      "featured": false,
+      "titleZh": "單細胞多模態分析揭示母體糖尿病-Nkx2-5 交互作用於再現人類胚胎病變的遺傳模型中的先天性心臟病"
     }
   ],
   "routing": {
     "enabled": true,
     "stats": {
-      "total": 33,
-      "passedByScope": 11,
-      "llmClassified": 22,
-      "llmYes": 6,
+      "total": 39,
+      "passedByScope": 22,
+      "llmClassified": 17,
+      "llmYes": 5,
       "llmNotSure": 0,
-      "llmNo": 16,
+      "llmNo": 12,
       "keywordFallbackClassified": 0,
       "keywordFallbackYes": 0,
       "keywordFallbackNo": 0,
-      "included": 17,
-      "excluded": 16
+      "included": 27,
+      "excluded": 12
     },
     "model": {
       "requested": "meta/muse-glimmer-30b",
@@ -549,42 +777,42 @@
     "llmTagging": true,
     "tagging": {
       "threshold": 0.75,
-      "llmClassified": 7,
-      "llmTagged": 7,
-      "llmLineA": 1,
-      "llmLineB": 6,
+      "llmClassified": 10,
+      "llmTagged": 10,
+      "llmLineA": 0,
+      "llmLineB": 10,
       "fallback": 0,
       "fallbackLineA": 0,
       "fallbackLineB": 0,
       "failures": 0
     },
     "selection": {
-      "total": 14,
-      "candidates": 13,
+      "total": 22,
+      "candidates": 20,
       "featured": 12,
-      "overflow": 1,
-      "lineA": 1,
-      "lineB": 6,
-      "preprint": 6,
-      "skip": 1,
-      "featuredLineA": 1,
-      "featuredLineB": 5,
-      "featuredPreprint": 6,
+      "overflow": 8,
+      "lineA": 0,
+      "lineB": 10,
+      "preprint": 10,
+      "skip": 2,
+      "featuredLineA": 0,
+      "featuredLineB": 8,
+      "featuredPreprint": 4,
       "overflowLineA": 0,
-      "overflowLineB": 1,
-      "overflowPreprint": 0
+      "overflowLineB": 2,
+      "overflowPreprint": 6
     },
     "summarize": {
       "requested": 12,
       "llmSummarized": 12,
-      "primarySucceeded": 10,
-      "fallbackSucceeded": 2,
+      "primarySucceeded": 12,
+      "fallbackSucceeded": 0,
       "failed": 0
     },
     "translate": {
-      "requested": 1,
-      "llmTranslated": 1,
-      "primarySucceeded": 1,
+      "requested": 8,
+      "llmTranslated": 8,
+      "primarySucceeded": 8,
       "fallbackSucceeded": 0,
       "failed": 0
     },
@@ -594,7 +822,7 @@
         "observed": [
           "meta/muse-glimmer-30b"
         ],
-        "llmTagged": 7
+        "llmTagged": 10
       },
       "summarize": {
         "requested": 12,
@@ -604,19 +832,16 @@
           "observed": [
             "meta/muse-glimmer-30b"
           ],
-          "succeeded": 10
+          "succeeded": 12
         },
         "fallback": {
           "requested": "gemini-3.5-flash-lite",
-          "observed": [
-            "gemini-3.5-flash-lite"
-          ],
-          "succeeded": 2
+          "succeeded": 0
         }
       },
       "translate": {
-        "requested": 1,
-        "succeeded": 1,
+        "requested": 8,
+        "succeeded": 8,
         "failed": 0,
         "model": {
           "requested": "meta/muse-glimmer-30b",
@@ -624,7 +849,7 @@
             "meta/muse-glimmer-30b"
           ]
         },
-        "primarySucceeded": 1,
+        "primarySucceeded": 8,
         "fallback": {
           "requested": "gemini-3.5-flash-lite",
           "succeeded": 0
@@ -719,12 +944,12 @@
     },
     {
       "paper": {
-        "id": "10.1038/d41586-026-03247-0",
-        "title": "Is this idea from AI or humans? A detector claims it can tell",
+        "id": "10.1038/d41586-026-03306-6",
+        "title": "Daily briefing: What makes a happy scientist at work?",
         "journal": "Nature",
         "publishedDate": "2026-10-13T00:00:00.000Z",
-        "url": "https://www.nature.com/articles/d41586-026-03247-0",
-        "doi": "10.1038/d41586-026-03247-0",
+        "url": "https://www.nature.com/articles/d41586-026-03306-6",
+        "doi": "10.1038/d41586-026-03306-6",
         "sourceId": "nature"
       },
       "reason": "life-science-routing",
@@ -796,66 +1021,6 @@
         "url": "https://www.nature.com/articles/d41586-026-02715-x",
         "doi": "10.1038/d41586-026-02715-x",
         "sourceId": "nature"
-      },
-      "reason": "life-science-routing",
-      "verdict": "no",
-      "method": "llm"
-    },
-    {
-      "paper": {
-        "id": "10.1038/s41467-026-78155-y",
-        "title": "Population-resolved single-emitter spectroscopy",
-        "journal": "Nature Communications",
-        "publishedDate": "2026-10-13T00:00:00.000Z",
-        "url": "https://www.nature.com/articles/s41467-026-78155-y",
-        "doi": "10.1038/s41467-026-78155-y",
-        "abstract": "Traditional methods struggle to quantify the optical heterogeneity in nanomaterials. Here the authors develop a new spectroscopic tool that rapidly extracts trends in single-particle spectra and apply it to ZnSeTe nanocrystals, revealing the origin of their low color purity.",
-        "sourceId": "nature-communications"
-      },
-      "reason": "life-science-routing",
-      "verdict": "no",
-      "method": "llm"
-    },
-    {
-      "paper": {
-        "id": "10.1038/s41467-026-78271-9",
-        "title": "Reinforcement learning guided robotic platform that investigates and discovers asymmetric reactions",
-        "journal": "Nature Communications",
-        "publishedDate": "2026-10-13T00:00:00.000Z",
-        "url": "https://www.nature.com/articles/s41467-026-78271-9",
-        "doi": "10.1038/s41467-026-78271-9",
-        "abstract": "Autonomous robotic platforms have accelerated chemical discovery but remain limited in exploring asymmetric reaction landscapes with unknown stereochemical outcomes. Here, the authors report a deep reinforcement learning-guided robotic workflow that autonomously discovers highly enantioselective catalytic reactions through simulation-trained decision-making.",
-        "sourceId": "nature-communications"
-      },
-      "reason": "life-science-routing",
-      "verdict": "no",
-      "method": "llm"
-    },
-    {
-      "paper": {
-        "id": "10.1038/s41467-026-78305-2",
-        "title": "Securing critical rare-earth supply through end-of-life NdFeB magnets recycling via molten salt electrolysis with consumable Mg-cathode",
-        "journal": "Nature Communications",
-        "publishedDate": "2026-10-13T00:00:00.000Z",
-        "url": "https://www.nature.com/articles/s41467-026-78305-2",
-        "doi": "10.1038/s41467-026-78305-2",
-        "abstract": "Molten-salt electrolysis with a consumable magnesium cathode recovers neodymium from end-of-life NdFeB magnets at high current efficiency, while life-cycle and economic analyses indicate potential for industrial-scale recycling.",
-        "sourceId": "nature-communications"
-      },
-      "reason": "life-science-routing",
-      "verdict": "no",
-      "method": "llm"
-    },
-    {
-      "paper": {
-        "id": "10.1038/s41467-026-78383-2",
-        "title": "Colossal visible birefringence and ultraviolet hyperbolicity in wide bandgap semiconductor CuAlO2",
-        "journal": "Nature Communications",
-        "publishedDate": "2026-10-13T00:00:00.000Z",
-        "url": "https://www.nature.com/articles/s41467-026-78383-2",
-        "doi": "10.1038/s41467-026-78383-2",
-        "abstract": "Materials combining large optical anisotropy with a wide band gap are desirable for broadband anisotropic photonics. Here, the authors show for CuAlO2 a colossal ultraviolet–visible optical anisotropy with a maximum birefringence of 3.67 alongside a wide direct band gap of 3.71 eV.",
-        "sourceId": "nature-communications"
       },
       "reason": "life-science-routing",
       "verdict": "no",
