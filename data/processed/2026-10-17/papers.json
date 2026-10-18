@@ -1,0 +1,319 @@
+{
+  "reportDate": "2026-10-17",
+  "generatedAt": "2026-10-18T14:04:29.134Z",
+  "papers": [
+    {
+      "id": "10.1101/2024.10.08.617260",
+      "title": "Spatial Single-Cell Mapping of Transcriptional Differences Across Genetic Backgrounds in Mouse Brains",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-17",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.10.08.617260v3",
+      "doi": "10.1101/2024.10.08.617260",
+      "abstract": "Genetic variation can alter organ structure and, in turn, function. Comparative statistical analysis of organs across genetic backgrounds requires spatial, single-cell, atlas-scale data in replicates, which current technologies do not provide at scale. We introduce Atlas-scale Transcriptome Localization using Aggregate Signatures (ATLAS), a scalable tissue mapping method. ATLAS learns transcriptional signatures from scRNAseq data, encodes them in situ with tens of thousands of oligonucleotide probes, and decodes them to infer cell types and imputed transcriptomes. We validated ATLAS in the mouse brain by comparing its cell type inferences with direct MERFISH measurements of marker genes and quantitative comparisons to four other technologies. Using ATLAS, we mapped the central brains of five male and five female C57BL/6J (B6) mice and five male BTBR T+ tf/J (BTBR) mice, an idiopathic model of autism, collectively profiling 40 million cells across over 400 coronal sections. Our analysis revealed over 40 significant differences in cell type distributions and identified 16 regional composition changes across male-female and B6-BTBR comparisons. ATLAS thus enables systematic comparative studies, facilitating organ-level structure-function analysis of disease models.",
+      "authors": [
+        "Hemminger, Z.",
+        "Sanchez-Tam, G.",
+        "De Ocampo, H.",
+        "Wang, A.",
+        "Underwood, T.",
+        "Xie, F.",
+        "Zhao, Q.",
+        "Song, D.",
+        "Li, J. J.",
+        "Dong, H.",
+        "Wollman, R."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "MERFISH"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "跨基因背景小鼠腦部空間單細胞轉錄差異圖譜",
+      "summaryZh": "研究團隊提出 ATLAS，一種可擴展的組織映射方法，ATLAS 從 scRNAseq 資料學習轉錄特徵，並以數萬條寡核苷酸探針原位編碼，解碼後推斷細胞類型與推估轉錄體。該方法在小鼠腦中以 MERFISH 標記基因測量及與另外四種技術的定量比較進行驗證。研究使用 ATLAS 對五隻雄性與五隻雌性 C57BL/6J 小鼠，以及五隻雄性 BTBR T+ tf/J 小鼠的中央腦進行 mapping，BTBR 為自閉症的特發性模型，合計在超過 400 個冠狀切片中描繪約 4000 萬個細胞。分析發現超過 40 個細胞類型分布的顯著差異，並在雄雌與 B6-BTBR 比較中辨識出 16 個區域組成變化。作者指出 ATLAS 有助於系統性比較研究，促進疾病模型的器官層級結構功能分析。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "single-cell",
+        "mouse-brain",
+        "atlas-scale",
+        "autism-model"
+      ]
+    },
+    {
+      "id": "10.1101/2025.04.04.647096",
+      "title": "Mapping the spatial architecture of glioblastoma from core to edge delineates niche-specific tumor cell states and intercellular interactions",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-17",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.04.04.647096v3",
+      "doi": "10.1101/2025.04.04.647096",
+      "abstract": "Treatment resistance in glioblastoma (GBM) is largely driven by the extensive multi-level heterogeneity that typifies this disease. Despite significant progress toward elucidating GBM's genomic and transcriptional heterogeneity, a critical knowledge gap remains in defining this heterogeneity at the spatial level. To address this, we employed spatial transcriptomics to map the architecture of the GBM ecosystem. This revealed tumor cell states that are jointly defined by gene expression and spatial localization, and multicellular niches whose composition varies along the tumor core-edge axis. Ligand-receptor interaction analysis uncovered a complex network of intercellular communication, including niche- and region-specific interactions. Finally, we found that CD8+GZMK+ T cells colocalize with LYVE1+ CD163+ myeloid cells in vascular regions, suggesting a potential mechanism for immune evasion. These findings provide novel insights into the GBM tumor microenvironment, highlighting previously unrecognized patterns of spatial organization and intercellular interactions, and novel therapeutic avenues to disrupt tumor-promoting interactions and overcome immune resistance.",
+      "authors": [
+        "Khan, S. M.",
+        "Wang, A. Z.",
+        "Desai, R. R.",
+        "Kim, G. D.",
+        "McCornack, C. R.",
+        "Sun, R.",
+        "Dahiya, S. M.",
+        "Foltz, J. A.",
+        "Sherpa, N. D.",
+        "Xu, K.",
+        "Olszewski, H.",
+        "Anzaldua-Campos, M.",
+        "Song, Y.",
+        "Seider, E.",
+        "Gadens, N. P.",
+        "Maldonado, J.",
+        "Leavitt, L.",
+        "West, T. R.",
+        "Wang, A. F.",
+        "Choi, B. D.",
+        "Leuthardt, E. C.",
+        "Patel, B.",
+        "Pfaff, K.",
+        "Nieman, L.",
+        "Krbanjevic, A.",
+        "Charest, A.",
+        "Kim, A. H.",
+        "Dunn, G. P.",
+        "Petti, A. A."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "從核心到邊緣描繪膠質母細胞瘤空間架構",
+      "summaryZh": "本研究以空間轉錄組學描繪膠質母細胞瘤的生態系統架構。研究發現腫瘤細胞狀態同時由基因表現與空間定位共同定義，並觀察到多細胞微環境的組成沿腫瘤核心至邊緣軸線變化。配體-受體交互作用分析顯示存在複雜的細胞間通訊網絡，且交互作用具有微環境與區域特異性。研究另發現 CD8+GZMK+ T 細胞與 LYVE1+ CD163+ 髓系細胞在血管區域共定位，暗示可能的免疫逃逸機制。這些結果提供了關於膠質母細胞瘤腫瘤微環境的新見解，指出先前未被認識的空間組織與細胞間交互作用模式。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "glioblastoma",
+        "tumor-microenvironment",
+        "immune-evasion",
+        "cell-communication"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78604-8",
+      "title": "Spatially resolving isomeric trisaccharides on surfaces with Orbitrap-SIMS",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78604-8",
+      "doi": "10.1038/s41467-026-78604-8",
+      "abstract": "Structural isomers can be difficult to distinguish and map by mass alone. This study shows that Orbitrap-SIMS can separate and image isomeric sugars directly on surfaces, offering a new route to study complex biomolecules.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "以 Orbitrap-SIMS 在表面空間解析異構三糖",
+      "summaryZh": "結構異構物僅靠質譜難以區分與繪製分布。本研究顯示 Orbitrap-SIMS 能直接在表面上分離並成像異構糖類。該方法針對三糖異構物進行空間解析。研究指出此技術為研究複雜生物分子提供新的途徑。",
+      "topicTags": [
+        "mass-spectrometry",
+        "imaging-mass-spectrometry",
+        "glycobiology",
+        "surface-analysis"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78906-x",
+      "title": "Brassinosteroids improve nitrogen utilization by antagonizing BIN2-mediated SnRK1 activation",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78906-x",
+      "doi": "10.1038/s41467-026-78906-x",
+      "abstract": "Brassinosteroids are widely used in agriculture, but their modes of action remain incompletely understood. Here, the authors show that brassinosteroids inhibit BIN2, leading to KIN10 degradation and activation of gene expression and nitrogen assimilation enzymes.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "類黃酮類植物激素改善氮利用效率",
+      "summaryZh": "本研究探討類黃酮類植物激素在農業上的作用機制。作者顯示類黃酮類植物激素會抑制 BIN2，進而導致 KIN10 降解。KIN10 降解與基因表現及氮同化酶的活化相關。該結果提供了類黃酮類植物激素調控氮利用的一種作用模式。",
+      "topicTags": [
+        "brassinosteroids",
+        "nitrogen-assimilation",
+        "plant-signaling",
+        "bin2",
+        "snrk1"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 7,
+      "passedByScope": 2,
+      "llmClassified": 5,
+      "llmYes": 2,
+      "llmNotSure": 0,
+      "llmNo": 3,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 4,
+      "excluded": 3
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 2,
+      "llmTagged": 2,
+      "llmLineA": 0,
+      "llmLineB": 2,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 4,
+      "candidates": 4,
+      "featured": 4,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 2,
+      "preprint": 2,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 2,
+      "featuredPreprint": 2,
+      "overflowLineA": 0,
+      "overflowLineB": 0,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 4,
+      "llmSummarized": 4,
+      "primarySucceeded": 4,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 2
+      },
+      "summarize": {
+        "requested": 4,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 4
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 0,
+        "succeeded": 0,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b"
+        },
+        "primarySucceeded": 0,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78649-9",
+        "title": "Breaking water-structure constraints by Hofmeister effects in interfacial polymerization for polyamide membranes",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78649-9",
+        "doi": "10.1038/s41467-026-78649-9",
+        "abstract": "Water structures govern the behaviour of solutes across aqueous bulk and interfacial environments. Here the authors use weakly hydrated anions to reshape hydration in the bulk and at interfaces, thereby regulating amine monomer partitioning and interfacial transport while suppressing acyl chloride hydrolysis during polyamide-forming interfacial polymerization.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78524-7",
+        "title": "Optical-handedness-driven enantioselective synthesis and programmable chirality encoding of covalent organic frameworks",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78524-7",
+        "doi": "10.1038/s41467-026-78524-7",
+        "abstract": "Covalent organic frameworks (COFs) typically require chiral precursors or catalysts to achieve asymmetry. Here, the authors report the enantioselective synthesis of chemically chiral COFs using circularly polarized light as the sole chiral director.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78873-3",
+        "title": "Size-dependent catalysis of Ru nanoparticles for selective reductive amination of PET plastic",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78873-3",
+        "doi": "10.1038/s41467-026-78873-3",
+        "abstract": "Turning waste plastic into valuable chemicals requires precise control of competing reactions. This study shows that tuning ruthenium particle size enables selective conversion of polyethylene terephthalate into p-xylylenediamine.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
