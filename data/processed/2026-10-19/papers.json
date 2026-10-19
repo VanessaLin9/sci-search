@@ -1,0 +1,930 @@
+{
+  "reportDate": "2026-10-19",
+  "generatedAt": "2026-10-19T17:04:47.538Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03245-0",
+      "title": "Multi-immersion oblique plane microscope (miOPM): a reconfigurable platform for high-resolution light-sheet fluorescence microscopy",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03245-0",
+      "doi": "10.1038/s41592-026-03245-0",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "多浸沒式斜面平面顯微鏡 (miOPM)：高解析度光片螢光顯微鏡的可重構平台"
+    },
+    {
+      "id": "10.1038/s41588-026-02791-9",
+      "title": "RNA ends connect genetic risk to brain disease",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02791-9",
+      "doi": "10.1038/s41588-026-02791-9",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "RNA 端點連接遺傳風險與腦部疾病"
+    },
+    {
+      "id": "10.1038/s41588-026-02764-y",
+      "title": "Establishing Polycomb regulatory landscapes in human early development",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02764-y",
+      "doi": "10.1038/s41588-026-02764-y",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "在人類早期發育中建立 Polycomb 調控景觀"
+    },
+    {
+      "id": "10.1038/s41559-026-03196-x",
+      "title": "The kinetic basis of photosynthetic heat tolerance",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03196-x",
+      "doi": "10.1038/s41559-026-03196-x",
+      "abstract": "The authors develop a mechanistic theory for heat inactivation of photosynthesis, based on principles of chemical kinetics, that predicts a photosynthetic heat tolerance upper acclimatization limit of ~60 °C.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "光合作用耐熱性的動力學基礎",
+      "summaryZh": "作者提出一個以化學動力學原理為基礎的機制理論，用以解釋光合作用的熱失活。該理論預測光合作用耐熱性的上調適極限約為60 °C。研究聚焦於光合作用熱耐受的動力學基礎。該預測為理解光合作用在高溫下的耐受上限提供了理論框架。",
+      "topicTags": [
+        "photosynthesis",
+        "heat-tolerance",
+        "plant-physiology",
+        "chemical-kinetics"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03345-4",
+      "title": "Editor’s pick: Bioptimus",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03345-4",
+      "doi": "10.1038/s41587-026-03345-4",
+      "abstract": "Each year, Nature Biotechnology highlights companies that received sizeable early-stage funding in the previous year. Bioptimus is developing multimodal and multiscale AI pathology models for biomarker and drug treatment prediction.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41556-026-02100-w",
+      "title": "Monocyte surface Y RNAs potentiate innate immunity",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02100-w",
+      "doi": "10.1038/s41556-026-02100-w",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "單核細胞表面 Y RNA 增強先天免疫"
+    },
+    {
+      "id": "10.1038/s41590-026-02691-4",
+      "title": "A distinct serological signature of preterm birth",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02691-4",
+      "doi": "10.1038/s41590-026-02691-4",
+      "abstract": "Preterm birth is the leading cause of death in children globally. We determined proteome-wide autoantibody profiles for 2,195 pregnant individuals, revealing a shared humoral program of normal pregnancy and a distinct, expanded autoreactive signature that precedes preterm birth.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "早產的特異血清學特徵",
+      "summaryZh": "研究團隊針對2,195名孕婦進行蛋白質體範圍的自體抗體分析。分析顯示正常懷孕存在共享的體液程序，並發現一種在早產前出現的特異且擴增的自體反應特徵。早產為全球兒童的主要死因。此發現描繪出早產前可辨識的血清學特徵。",
+      "topicTags": [
+        "preterm-birth",
+        "autoantibody",
+        "serology",
+        "pregnancy",
+        "immunology"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02696-z",
+      "title": "The bidirectional double burden of non-communicable diseases and infections",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02696-z",
+      "doi": "10.1038/s41590-026-02696-z",
+      "abstract": "The alarming rise in NCDs, particularly in low- and middle-income countries, is closely linked to infectious diseases. Despite growing evidence of a bidirectional, mutually reinforcing relationship, these links have received insufficient attention from researchers and healthcare stakeholders.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "非傳染病與感染的雙向雙重負擔",
+      "summaryZh": "該文指出非傳染病，特別是在低收入與中等收入國家中的快速上升，與傳染病密切相關。作者強調兩者之間存在雙向且相互強化的關係，但此連結仍未獲得研究人員與醫療保健相關方的充分關注。文章呼籲對非傳染病與感染的交互作用給予更多重視。",
+      "topicTags": [
+        "non-communicable-diseases",
+        "infectious-diseases",
+        "public-health",
+        "bidirectional-relationship"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02519-9",
+      "title": "From professional isolation to global connection with Women in Phage",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02519-9",
+      "doi": "10.1038/s41564-026-02519-9",
+      "abstract": "The creation of a network that brings together like-minded colleagues transforms professional isolation into global connections that reaffirm commitment to phage research, writes Fatma Abdelrahman.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "從專業孤立到全球連結：Women in Phage",
+      "summaryZh": "Fatma Abdelrahman 在 Nature Microbiology 發表評論，指出建立一個凝聚志同道合同事的網絡，能將專業上的孤立轉化為全球性的連結。該網絡被描述為能重申對噬菌體研究的投入。文章聚焦於 Women in Phage 所帶來的社群連結作用。",
+      "topicTags": [
+        "phage",
+        "women-in-science",
+        "professional-network",
+        "science-community"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02509-x",
+      "title": "G-protein-coupled receptor sensing of farnesol controls fungal dormancy and is susceptible to bacterial interference",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02509-x",
+      "doi": "10.1038/s41564-026-02509-x",
+      "abstract": "A farnesnol-responsive sensor controls fungal dormancy of a plant pathogen and is susceptible to interference by rhizosphere bacteria.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "G蛋白偶聯受體感測法呢醇調控真菌休眠且易受細菌干擾",
+      "summaryZh": "研究指出一種 G 蛋白偶聯受體可感測 farnesol，並控制植物病原真菌的休眠。該 farnesol 反應性感測器與真菌休眠的調控相關。研究也發現此感測機制易受根際細菌的干擾。該發現連結了真菌休眠調控與細菌干擾的可能性。",
+      "topicTags": [
+        "g-protein-coupled-receptor",
+        "fungal-dormancy",
+        "plant-pathogen",
+        "microbiome-interference"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02511-3",
+      "title": "SIV reservoir depletion and clearance from neonatal macaques following transient CCR5 depletion",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02511-3",
+      "doi": "10.1038/s41564-026-02511-3",
+      "abstract": "Transiently depleting cells that express the HIV co-receptor, CCR5, using a CCR5/CD3 bispecific antibody after stopping antiretroviral therapy in monkeys maintains them virus-free for at least several months.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "新生猕猴中短暫剔除 CCR5 後 SIV 儲存庫清除",
+      "summaryZh": "研究使用 CCR5/CD3 雙特異性抗體在停用抗反轉錄病毒治療後，短暫剔除表現 HIV 共受體 CCR5 的細胞。實驗在新生猕猴中進行，針對 SIV 儲存庫進行處理。處理後，猴隻在至少數個月內維持無病毒狀態。結果顯示短暫 CCR5 剔除與停藥後維持病毒清除的關聯。",
+      "topicTags": [
+        "siv",
+        "crr5",
+        "bispecific-antibody",
+        "nonhuman-primate",
+        "viral-reservoir"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02453-w",
+      "title": "Disentangling microbiota-dependent and -independent impacts of antibiotics on host physiology",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02453-w",
+      "doi": "10.1038/s41564-026-02453-w",
+      "abstract": "Using a computational tool called CompoRes, the authors show that antibiotics can alter feeding behaviour, immunity and circadian regulation, revealing a non-microbial pathway by which antibiotic treatment reshapes host physiology.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "抗生素對宿主生理的微生物依賴與非依賴影響",
+      "summaryZh": "研究團隊使用名為 CompoRes 的計算工具，探討抗生素對宿主生理的影響。結果顯示抗生素可改變攝食行為、免疫以及晝夜節律調控。這些發現揭示了一條非微生物途徑，說明抗生素治療如何重塑宿主生理。該研究將抗生素的效應區分為微生物依賴與非依賴的影響。",
+      "topicTags": [
+        "antibiotics",
+        "microbiota",
+        "host-physiology",
+        "circadian-regulation",
+        "feeding-behavior"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02508-y",
+      "title": "Genomic surveillance of an imported recombinant Clade Ib and IIb monkeypox virus case in India",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02508-y",
+      "doi": "10.1038/s41564-026-02508-y",
+      "abstract": "A recombinant Clade Ib and IIb monkeypox virus has been isolated from a travel-associated mpox case in India. Characterization of the recombinant shows that it clusters with a recently reported UK recombinant.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "印度境內輸入性重組天花病毒株的基因監測",
+      "summaryZh": "本研究從印度一起旅遊相關的mpox病例中分離出重組Clade Ib與IIb的猴痘病毒。對該重組病毒的特徵分析顯示，其與近期在英國報告的重組株聚類。研究提供了對輸入性重組株的基因監測資訊。",
+      "topicTags": [
+        "monkeypox",
+        "genomic-surveillance",
+        "recombinant-virus",
+        "public-health"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.16.759572",
+      "title": "Two populations with different cell dynamics maintain urethral epithelial homeostasis in female and male mice",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-19",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.16.759572v1",
+      "doi": "10.64898/2026.10.16.759572",
+      "abstract": "The urethra is an understudied organ in both humans and animal models. Here we investigate the mouse urethra to gain insights into its tissue architecture, maintenance mechanisms, and epithelial cell dynamics in homeostasis. For this, we generated a single-cell RNA sequencing dataset that includes cells from the entire urethra of both female and male, with detailed regional information. Using lineage tracing and cell proliferation assays, we focused on two potential progenitor cell types, the Keratin 5+ and Keratin 14+ cells, which we found both capable of generating the full thickness of the epithelium, yet with opposite and complementary patterns of self-renewal. Our results further highlight key differences between females and males, as we observed a higher epithelium stratification, a unique pattern of keratins expression and a higher tissue turnover in females compared to males. This work provides valuable insights that can support future tissue engineering efforts aimed at developing urethral grafts for treating urethral disorders.",
+      "authors": [
+        "Kaklamanou, I.",
+        "Gubbala, U. R.",
+        "Axelsen, O. B.",
+        "Andrejeva, D.",
+        "Hannezo, E.",
+        "Aragona, M."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "兩種具有不同細胞動態的族群維持雌雄小鼠尿道上皮穩態"
+    },
+    {
+      "id": "10.64898/2026.10.17.758293",
+      "title": "Spatial proteomic profiling of cardiac stromal populations and microenvironments in systemic sclerosis-associated primary myocardial involvement",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-19",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.17.758293v1",
+      "doi": "10.64898/2026.10.17.758293",
+      "abstract": "Objectives: To define cardiac stromal heterogeneity and spatial stromal-immune organization in systemic sclerosis-associated virus-negative myocarditis (SSc-VNM), a manifestation of primary SSc heart involvement. Methods: Imaging mass cytometry, a single-cell multiplexed spatial proteomic technology, was applied to endomyocardial biopsies from ten patients with SSc-VNM, seven with VNM associated with other systemic autoimmune rheumatic diseases (a-VNM) and nine with isolated VNM (i-VNM). Single-cell phenotyping, cellular-neighborhood and spatial-interaction analyses, and correlations with histological fibrosis were performed at patient level. Results: Among 82,673 segmented cells, we identified seven fibroblast phenotypes and one CD34+ stromal-cell population. The overall fibroblast/stromal compartment was expanded in SSc-VNM compared with i-VNM (adjusted p = 0.00973). The composition of fibroblasts/stromal cells differed profoundly in SSc-VNM compared with a-VNM and i-VNM, with numerical increases in CD34+ stromal cells and SOX9+ and PI16high/POSTNhigh fibroblasts and de-enrichment of FAPhigh/POSTNhigh fibroblasts and myofibroblasts. Spatial analysis identified ten cellular neighborhoods and revealed distinct SSc-VNM-associated patterns, including altered stromal-immune interaction networks. These included enriched interactions of CD34+ stromal cells and PI16high/POSTNhigh fibroblasts with CD163high/HLA-DR+ macrophages and CD68+ mast cells. PI16high/POSTNhigh and PI16-/POSTNhigh fibroblasts demonstrated the highest collagen type 1 expression among all stromal cell subsets across all VNM entities and PI16high/POSTNhigh fibroblasts were numerically increased in biopsies with [&ge;]10% fibrotic remodeling and were spatially associated with collagen-rich areas. Conclusions: Our findings refine current concepts of human fibrotic myocardial remodeling and support therapeutic targeting of specific stromal players such as POSTNhigh fibroblast subpopulations. Keywords: Systemic Sclerosis; Myocarditis; Myocardial Fibrosis; Fibroblasts; Imaging Mass Cytometry.",
+      "authors": [
+        "Stuetz, A. N.",
+        "De Luca, G.",
+        "Matei, A.-E.",
+        "Li, Y.-N.",
+        "Filla, T.",
+        "Batani, V.",
+        "Tuemerdem, B. S.",
+        "Rigau, A. R.",
+        "Bruno, C.",
+        "Merkt, W.",
+        "Zweck, E.",
+        "Buettner-Herold, M.",
+        "Rizzo, S.",
+        "Peretto, G.",
+        "De Gaspari, M.",
+        "Eckstein, M.",
+        "Schett, G.",
+        "Basso, C.",
+        "Matucci-Cerinic, M.",
+        "Distler, J.",
+        "Gyoerfi, A.-H."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "系統性硬化症相關原發性心肌受累中心臟間質族群與微環境的空間蛋白體學分析"
+    },
+    {
+      "id": "10.64898/2026.10.17.759846",
+      "title": "LineageFlow: Growth-Corrected State Dynamics for Probabilistic Cell-Fate Prediction",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-19",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.17.759846v1",
+      "doi": "10.64898/2026.10.17.759846",
+      "abstract": "Single-cell lineage tracing links early transcriptional states to the fates of their descendants, but forecasting clonal fate remains challenging because differentiation and unequal cell expansion jointly shape descendant populations. Here we introduce LineageFlow, a computational framework that combines continuous-time cell-state transitions, relative net growth and state-conditioned generative flows to predict future fate distributions and transcriptional profiles from early single-cell measurements. In clone-disjoint evaluations of lineage-traced hematopoiesis, LineageFlow improves fate prediction and expression-distribution accuracy over matched computational baselines. A separately retrained analysis of cord-blood lineage data shows a similar advantage at a longer prediction horizon. Controlled simulations show that accounting for differential growth improves fate prediction when descendant states expand at different rates, while offering little benefit under equal growth. These findings highlight the importance of modeling state transitions and relative expansion together when predicting the fate of unseen clones.",
+      "authors": [
+        "Liu, Y.",
+        "Liu, Q.",
+        "Wang, W.",
+        "Liu, J.",
+        "Wang, Y.",
+        "Zhang, W."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "LineageFlow：用於機率性細胞命運預測的生長校正狀態動態"
+    },
+    {
+      "id": "10.64898/2026.10.18.759996",
+      "title": "U-Chrom: a unified framework for single-cell and spatial 3D genome data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-19",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.18.759996v1",
+      "doi": "10.64898/2026.10.18.759996",
+      "abstract": "Single-cell Hi-C, spatial Hi-C and chromatin tracing measure the same genomes in incompatible formats. ChromData, one data model, indexes all three by cell and genomic bin; an open-source toolkit, linked browser and 22-dataset atlas build on it. Applied to ten mouse brain datasets of all three assays, the same calls rank cell types alike by short- over long-range proximity, and contact-based reconstructions largely place cell-type differences where imaging does.",
+      "authors": [
+        "Zhang, L.",
+        "Chen, Y.",
+        "Zhong, Q.",
+        "Xu, W."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "U-Chrom：單細胞與空間三維基因組數據的統一框架"
+    },
+    {
+      "id": "10.64898/2026.10.12.758706",
+      "title": "Auditing Confidence-Calibrated Benchmarking of Single-Cell Perturbation Models",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-19",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.12.758706v1",
+      "doi": "10.64898/2026.10.12.758706",
+      "abstract": "Single-cell perturbation models are increasingly assessed for both predictive performance and calibrated uncertainty under distribution shift. We constructed such an evaluation harness (two datasets, Norman 2019 and Replogle 2022; four split types over six dataset-split combinations; three models, scVI, CPA and a linear Ridge baseline; three uncertainty quantification methods, MC dropout, quantile regression and split conformal prediction) and then audited it against null baselines it had never included. Most of its headline results measure something other than what their metric names claim. The harness supplied each test cell to the model as input and then scored the model on reproducing that same cell's expression, so an identity predictor returning the input unchanged attains a perturbation-effect correlation of 1.0 on all six splits: any model given the target cell is measured against this echo ceiling rather than against a null. Against a constant train-mean predictor, scVI wins on 99.7% of Norman cells but only 0.2% of Replogle cells. One split held out sequencing batches rather than perturbations; another scores no genuinely novel perturbation after label collapse; unseen perturbations are silently replaced with a negative-control sentinel at inference; and the most convention-sensitive decision-value entry moves 29.2 percentage points under a library-size convention that changes that row's all-gene MSE by 0.01%. Because a validation budget is spent on a ranked shortlist rather than on a marginal interval, we also score each uncertainty signal by the DE-gene error it avoids in the top k: the worst-calibrated method is the best ranker, and a benchmark reporting only coverage orders the two backwards. We document six failure modes, each with its mechanism, the diagnostic that exposes it, and a detection procedure transferable to other harnesses. One result survives, with a boundary condition: split-conformal coverage calibrated on K562 residuals under-covers on RPE1 (0.900 to 0.847), and marginal coverage at the nominal 0.900 is compatible with covering 0.271 to 0.342 of the DE-gene intervals a prioritization decision would rest on. We continue to recommend conformal prediction, recalibrated per cellular context and reported per gene set rather than marginally.",
+      "authors": [
+        "Gallone, M.",
+        "Ravidath, S.",
+        "Madireddy, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "審計單細胞擾動模型的信心校準基準測試"
+    },
+    {
+      "id": "10.64898/2026.10.13.758713",
+      "title": "DCAF: Unifying Data Validity, Evaluation Validity and Predictive Modeling for Single-cell Perturbation Simulation",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-19",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.13.758713v1",
+      "doi": "10.64898/2026.10.13.758713",
+      "abstract": "Single-cell perturbation profiling is limited by cost and throughput, while computational methods remain constrained by inconsistent evaluation and underperformance relative to simple baselines. Here we present DCAF, a unified framework for single-cell perturbation simulation that that jointly addresses data validity, evaluation validity and predictive modeling. Among its three components, DCAF-data addresses the single-measurement limitation by reconstructing pre- and post-perturbation status using entropy-regularized optimal transport, and is demonstrated on both cell line and multi-cell type datasets. DCAF-criterion evaluates log fold changes in non-silenced genes to improve sensitivity to model error and robustness to zero inflation noise, validated on synthetic datasets. DCAF-model combines JEPA with explicit modeling for regulatory-dynamics modeling for interpretable prediction. Across benchmarks, DCAF outperforms state-of-the-art deep-learning methods, as well as mean and linear baselines in cross-gene, cross-cell-type and cross-region generalization. In adult Mouse brain, DCAF recapitulates known cell-type-specific regulatory heterogeneity of Dgcr8 knockdown at both cell type and gene levels. DCAF thus provides a rigorous and biologically grounded foundation for reliable perturbation simulation across development, disease and therapeutic discovery.",
+      "authors": [
+        "Xia, T.",
+        "Lei, C.",
+        "Chen, N.",
+        "Hou, H.",
+        "Zhang, H.",
+        "Qin, H.",
+        "Wang, D.",
+        "Li, Q.",
+        "Zhang, Y.",
+        "Fang, S.",
+        "Li, Y."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "DCAF：統一單細胞擾動模擬的數據有效性、評估有效性與預測建模"
+    },
+    {
+      "id": "10.64898/2026.10.16.759604",
+      "title": "Genetic Perturbation Prediction Models Fail Out-of-Distribution: A Rigorous Benchmark and Systematic Evaluation",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-19",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.16.759604v1",
+      "doi": "10.64898/2026.10.16.759604",
+      "abstract": "Perturbation prediction models - which forecast transcriptional responses to gene inactivation - are increasingly proposed as in silico surrogates for genome-scale drug discovery screens. Yet, rigorous evaluation of whether these models genuinely generalize beyond their training distribution has been lacking. Existing benchmarks rely predominantly on random train-test splits, obscuring systematic failure modes that only emerge under realistic out-of-distribution (OOD) conditions. Here we introduce EL-PERTURB (Extrapolative Learning for PERTURBation Prediction), a benchmarking framework that stress-tests 20 perturbation prediction models spanning six architecture classes on both essential gene and genome-wide Perturb-seq screens, using a novel stratified OOD splitting strategy that partitions train and test sets into functionally distinct regions of transcriptional space. We find that model performance degrades substantially under OOD conditions, and that architectural complexity - including single-cell foundation model embeddings - confers no reliable advantage over well-tuned simpler baselines. EL-PERTURB establishes a rigorous benchmark for perturbation effect prediction across a gradient of generalization difficulty, providing a guide for building models that can genuinely serve as surrogates for wet-lab screening.",
+      "authors": [
+        "Tiwari, K.",
+        "Mahajan, G.",
+        "Bellad, R. P.",
+        "Dhruw, N. K.",
+        "Jha, A. K."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "Perturb-seq",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "基因擾動預測模型在分佈外數據上失效：嚴格基準與系統性評估"
+    },
+    {
+      "id": "10.1038/s41467-026-78794-1",
+      "title": "Passive abortive infection mechanisms targeting phage long tail fiber proteins",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78794-1",
+      "doi": "10.1038/s41467-026-78794-1",
+      "abstract": "Cheng et al. characterize two bacterial anti-phage systems that act via either protease-mediated cleavage or kinase-dependent phosphorylation to target phage tail-fiber proteins, establishing the concept passive abortive infection.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "針對噬菌體長尾纖維蛋白的被動中止感染機制"
+    },
+    {
+      "id": "10.1038/s41467-026-78413-z",
+      "title": "Cadonilimab plus gemcitabine and cisplatin as first-line treatment for unresectable locally advanced or metastatic biliary tract malignancies: the phase II bicureX clinical trial",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78413-z",
+      "doi": "10.1038/s41467-026-78413-z",
+      "abstract": "Response rates with approved chemoimmunotherapy regimens remain modest in patients with biliary tract cancer (BTC). Here the authors report the results of a phase II study testing the anti-PD1/CTLA4 bispecific antibody cadonilimab in combination with gemcitabine and cisplatin as first-line treatment for unresectable locally advanced or metastatic BTCs.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "卡度尼利單抗合併吉西他濱與順鉑一線治療不可切除膽道癌的二期試驗",
+      "summaryZh": "本文報告一項二期臨床試驗 bicureX，評估抗 PD-1/CTLA-4 雙特異性抗體卡度尼利單抗 cadonilimab 合併吉西他濱與順鉑作為不可切除局部晚期或轉移性膽道癌的二線治療。研究對象為接受一線治療的膽道癌患者。作者指出，目前核准的化療免疫療法在膽道癌患者中的反應率仍屬有限。該研究旨在探討此組合在該族群中的療效。",
+      "topicTags": [
+        "biliary-tract-cancer",
+        "immunotherapy",
+        "phase-ii-trial",
+        "bispecific-antibody",
+        "chemotherapy"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78814-0",
+      "title": "A genetic platform to deconvolve efficacy and toxicity reveals the on-target effects of CDK11 inhibition in vivo",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78814-0",
+      "doi": "10.1038/s41467-026-78814-0",
+      "abstract": "CDK11 encodes a poorly-characterized cyclin-dependent kinase. Here, the authors demonstrate that CDK11 is essential for cancer proliferation, but the function(s) of CDK11 in normal tissue limits the efficacy of CDK11 inhibition as a therapeutic strategy.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "遺傳平台解析療效與毒性，揭示體內 CDK11 抑制的靶向效應",
+      "summaryZh": "CDK11 編碼一種特性尚不明確的 cyclin-dependent kinase。作者利用遺傳平台來區分療效與毒性，並探討 CDK11 抑制在體內的靶向效應。研究顯示 CDK11 對癌症增殖是必需的，但 CDK11 在正常組織中的功能限制了 CDK11 抑制作為治療策略的療效。",
+      "topicTags": [
+        "cdk11",
+        "kinase-inhibition",
+        "cancer-proliferation",
+        "drug-toxicity",
+        "in-vivo"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78833-x",
+      "title": "A randomized trial of supported versus self-fitting over-the-counter hearing aids in older adults",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78833-x",
+      "doi": "10.1038/s41467-026-78833-x",
+      "abstract": "In a multicenter pragmatic trial, structured primary care physician or remote audiologist support improved the benefits and sustained use of over-the-counter hearing aids in older adults compared with self-fitting.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "支持式與自行配戴的非處方助聽器隨機試驗",
+      "summaryZh": "這項多中心務實試驗比較了年長者在非處方助聽器使用上，接受結構化支持與自行配戴的差異。支持方式包括初級照護醫師或遠端聽力師的協助。結果顯示，相較於自行配戴，有結構化支持的組別在助聽器帶來的益處與持續使用上有所改善。研究聚焦於年長族群的非處方助聽器使用情境。",
+      "topicTags": [
+        "hearing-aids",
+        "randomized-trial",
+        "older-adults",
+        "over-the-counter",
+        "audiology"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78725-0",
+      "title": "dITP shifts the assembly equilibrium of Kongming to activate NAD+ hydrolysis",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-19T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78725-0",
+      "doi": "10.1038/s41467-026-78725-0",
+      "abstract": "Nucleotide signals activate bacterial immune defenses against phages. Here, authors show that dITP activates the Kongming system by shifting protein assemblies toward a catalytically active state",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "dITP 改變 Kongming 組裝平衡以活化 NAD+ 水解",
+      "summaryZh": "本研究探討核苷酸訊號如何活化細菌對噬菌體的免疫防禦。作者指出 dITP 能活化 Kongming 系統，並將蛋白質組裝的平衡轉向具催化活性的狀態。該發現顯示 dITP 透過調控 Kongming 的組裝來促進 NAD+ 水解。研究將核苷酸訊號與細菌免疫防禦機制連結起來。",
+      "topicTags": [
+        "bacterial-immunity",
+        "phage-defense",
+        "nad-hydrolysis",
+        "protein-assembly"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 38,
+      "passedByScope": 20,
+      "llmClassified": 18,
+      "llmYes": 8,
+      "llmNotSure": 1,
+      "llmNo": 9,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 29,
+      "excluded": 9
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 17,
+      "llmTagged": 17,
+      "llmLineA": 0,
+      "llmLineB": 17,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 25,
+      "candidates": 24,
+      "featured": 12,
+      "overflow": 12,
+      "lineA": 0,
+      "lineB": 17,
+      "preprint": 7,
+      "skip": 1,
+      "featuredLineA": 0,
+      "featuredLineB": 12,
+      "featuredPreprint": 0,
+      "overflowLineA": 0,
+      "overflowLineB": 5,
+      "overflowPreprint": 7
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "primarySucceeded": 12,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 12,
+      "llmTranslated": 12,
+      "primarySucceeded": 12,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 17
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 12
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 12,
+        "succeeded": 12,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        },
+        "primarySucceeded": 12,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03237-2",
+        "title": "Light and mirrors move large quantum computers closer to reality",
+        "journal": "Nature",
+        "publishedDate": "2026-10-19T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03237-2",
+        "doi": "10.1038/d41586-026-03237-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03275-w",
+        "title": "Climate scientists face deluge of public-records requests about fossil-fuel studies",
+        "journal": "Nature",
+        "publishedDate": "2026-10-19T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03275-w",
+        "doi": "10.1038/d41586-026-03275-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03315-5",
+        "title": "‘Fiercely stubborn’: the US scientists continuing their research amid funding cuts",
+        "journal": "Nature",
+        "publishedDate": "2026-10-19T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03315-5",
+        "doi": "10.1038/d41586-026-03315-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03313-7",
+        "title": "Three reasons why AI is not conscious and perhaps never will be",
+        "journal": "Nature",
+        "publishedDate": "2026-10-19T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03313-7",
+        "doi": "10.1038/d41586-026-03313-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03309-3",
+        "title": "How to compare and strengthen research systems",
+        "journal": "Nature",
+        "publishedDate": "2026-10-19T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03309-3",
+        "doi": "10.1038/d41586-026-03309-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02623-0",
+        "title": "Lessons from Katrina: how to rebuild academia from the ground up",
+        "journal": "Nature",
+        "publishedDate": "2026-10-19T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02623-0",
+        "doi": "10.1038/d41586-026-02623-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78711-6",
+        "title": "Transforming electrified railway into mechanical energy storage for electricity system decarbonization",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-19T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78711-6",
+        "doi": "10.1038/s41467-026-78711-6",
+        "abstract": "Coordinating train operations can transform electrified railways into mechanical energy storage for electricity system decarbonization, reducing the need for newly built storage while lowering system costs and carbon emissions.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78863-5",
+        "title": "The 2023 North Atlantic marine heatwave could have evolved into a far more extreme event",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-19T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78863-5",
+        "doi": "10.1038/s41467-026-78863-5",
+        "abstract": "Model simulations show that the 2023 North Atlantic marine heatwave could have evolved into a substantially longer and more intense event under comparable present-day conditions.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78423-x",
+        "title": "Sudden collapse of ice mélange under increasing submarine melt at tidewater glaciers",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-19T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78423-x",
+        "doi": "10.1038/s41467-026-78423-x",
+        "abstract": "This study models the collapse of ice mélange in glacial fjords in response increasing submarine melt rates. It shows that perennial mélange today is vulnerable to collapse subject to increasing melt, potentially accelerating glacier mass loss.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
