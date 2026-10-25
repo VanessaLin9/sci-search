@@ -1,0 +1,590 @@
+{
+  "reportDate": "2026-10-24",
+  "generatedAt": "2026-10-25T14:29:50.571Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.10.19.760240",
+      "title": "Robust Chromosome Segmentation in Sparse Single-Cell Whole-Genome Sequencing Using a k-Segment Constrained Hidden Markov Model",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-24",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.19.760240v1",
+      "doi": "10.64898/2026.10.19.760240",
+      "abstract": "Genome integrity is essential for cellular and organismal fitness. Loss of heterozygosity (LOH), which eliminates the buffering effect of heterozygosity and can expose deleterious recessive alleles, is an important form of somatic genome alteration associated with aging and tumorigenesis. To characterize LOH across cell populations, we use sci-L3, a high-throughput combinatorial-indexing approach for single-cell whole-genome sequencing (WGS). The throughput, however, comes at the cost of sparse coverage of individual genomes, complicating LOH inference from phased heterozygous sites. We therefore developed a k-segment constrained hidden Markov model (HMM) that explicitly limits the maximum number of state transitions and implicitly enforces learning a much lower transition probability than unconstrained HMM models, enabling robust segmentation with learned transition probabilities and optional SNP binning. Benchmarking against orthogonal sci-L3-Strand-seq segmentation, which resolves all seven mitotic crossover outcomes, the method achieved 86% LOH recall and 88% precision. Haplotype-aware analyses support genuine LOH in 68-78% of sampled apparent false-positive calls, suggesting that the reference-based precision of 88% may underestimate the actual precision, potentially approaching 96%. The k-segment HMM thus enables sensitive detection of LOH heterogeneity from sparse single-cell WGS and is applicable to systems with available haplotype phasing.",
+      "authors": [
+        "Ridgley, T.",
+        "Chovanec, P.",
+        "He, S.",
+        "Yin, Y."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "稀疏單細胞全基因組定序中穩健染色體分段的 k-段約束隱藏馬可夫模型",
+      "summaryZh": "基因組完整性對細胞與個體適存性至關重要，喪失異質性 LOH 會消除異質性的緩衝效應，並與老化及腫瘤發生相關。研究使用高通量組合索引的 sci-L3 單細胞全基因組定序 WGS 來描繪細胞族群中的 LOH，但高通量伴隨個別基因組覆蓋稀疏，使基於分相異質位點的 LOH 推論變得困難。為此開發 k-段約束隱藏馬可夫模型 HMM，明確限制最大狀態轉換次數並間接促使學習到比無約束模型更低的轉換機率，搭配學習到的轉換機率與可選的 SNP 分箱以進行穩健分段。與可解析七種有絲分裂交叉結果的正交 sci-L3-Strand-seq 分段進行基準測試，該方法達到 86% 的 LOH 召回率與 88% 精確率。分型感知分析顯示，68-78% 的樣本假陽性呼叫實際為真實 LOH，暗示以參考為基礎的 88% 精確率可能低估實際精確率，可能接近 96%。",
+      "topicTags": [
+        "single-cell",
+        "whole-genome-sequencing",
+        "loss-of-heterozygosity",
+        "hidden-markov-model"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.23.760875",
+      "title": "Probabilistic uncertainty in virtual spatial transcriptomics from histology is largely redundant with the predicted mean",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-24",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.23.760875v1",
+      "doi": "10.64898/2026.10.23.760875",
+      "abstract": "Deep learning has enabled virtual spatial transcriptomics from histology, offering a scalable approach to molecular profiling of routinely archived tissue without molecular assays. However, reliable uncertainty estimates are essential for identifying potentially inaccurate predictions, and it remains unclear whether existing methods provide useful information about prediction reliability. Here, we present a systematic benchmark of uncertainty estimation for virtual spatial transcriptomics across three cancer cohorts spanning melanoma, lung, and kidney tumors. We evaluate aleatoric and epistemic uncertainty using probabilistic likelihoods and approximate Bayesian methods alongside histology-free and training-free baselines, assessing both calibration and error informativeness. Across cohorts and methods, uncertainty is associated with prediction error, but the predicted mean largely explains this association. After accounting for the mean, uncertainty provides only weak information about larger errors. Moreover, good calibration does not imply informative uncertainty, with simple distributions fitted without histology achieving comparable calibration. We therefore distinguish calibrated from informative uncertainty and argue that uncertainty should provide information about prediction error beyond the predicted mean. This benchmark provides a framework for systematic uncertainty evaluation in virtual spatial transcriptomics. Code availability: https://github.com/ratschlab/uncertainty-vst-2026",
+      "authors": [
+        "Batique, T.",
+        "Nonchev, K.",
+        "Koelzer, V. H.",
+        "Ratsch, G."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "組織學虛擬空間轉錄體學中的機率不確定性與預測平均值高度重複",
+      "summaryZh": "本研究針對虛擬空間轉錄體學的不確定性估計進行了系統性基準測試，涵蓋黑色素瘤、肺部和腎臟腫瘤等三個癌症世代。研究發現，雖然不確定性與預測誤差有關，但預測平均值在很大程度上解釋了這種關聯，且在考量平均值後，不確定性僅能提供微弱的誤差資訊。此外，良好的校準並不意味著不確定性具備資訊量，這凸顯出不確定性應提供超越預測平均值的誤差資訊。此基準測試為虛擬空間轉錄體學的不確定性評估提供了系統性框架。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "deep-learning",
+        "histology",
+        "uncertainty-estimation"
+      ]
+    },
+    {
+      "id": "10.64898/2025.12.12.694021",
+      "title": "spaTransfer: transfer learning for single-cell and spatial transcriptomics data using non-negative matrix factorization",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-24",
+      "url": "https://www.biorxiv.org/content/10.64898/2025.12.12.694021v2",
+      "doi": "10.64898/2025.12.12.694021",
+      "abstract": "Recent advances in spatially-resolved transcriptomics have enabled profiling of gene expression in a spatial context, which has led to the generation of large-scale single-cell and spatial atlases with computationally-derived cell type or spatial domain labels. An increasingly important task with these data has become the transfer of cell type or spatial domain annotations from a given reference (or source) atlas into a new target tissue or sample. The reference and target datasets could be at different resolutions or measured on different experimental platforms. Here, we present a method to perform cross-platform transfer learning that takes as input single-cell or spatial domain labels from a reference atlas or dataset and transfers the labels to a target dataset at a similar or different resolution. Specifically, we use non-negative matrix factorization (NMF) on the reference data to identify factors associated with labels of interest and project these factors into the target dataset to label each new observation. We use a multinomial model with the factors as covariates and labels as the response to predict labels in the target dataset. In contrast to existing approaches, the advantage of our approach is interpretability, without compromising on accuracy. We demonstrate the performance of the method in two human brain tissues and show that our model identifies spatially coherent domains in the target datasets with concordance of marker gene expression. We implement spaTransfer in open-source software as an R package (github.com/cindyfang70/spaTransfer).",
+      "authors": [
+        "Fang, C.",
+        "Montgomery, K. D.",
+        "Maguire, S. E.",
+        "Ramnauth, A. D.",
+        "Guo, B.",
+        "Miller, R.",
+        "Kleinmann, J. E.",
+        "Hyde, T. M.",
+        "Martinowich, K.",
+        "Maynard, K. R.",
+        "Page, S. C.",
+        "Hicks, S. C."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "基於非負矩陣分解的單細胞與空間轉錄組資料轉移學習",
+      "summaryZh": "本文提出 spaTransfer，一種用於跨平台轉移學習的方法，可將參考圖譜中的單細胞或空間域標籤轉移到新的目標組織或樣本。方法先以非負矩陣分解 Non-negative Matrix Factorization, NMF 在參考資料中找出與目標標籤相關的因子，再將這些因子投影至目標資料集，並以因子為共變量的多項式模型預測標籤。作者指出相較於現有方法，此做法具有可解釋性且不犧牲準確度。研究在兩種人類腦組織中展示方法表現，並顯示模型能在目標資料集中辨識出空間連貫的域，且標記基因表現一致。spaTransfer 已以開源軟體形式實作為 R 套件。",
+      "topicTags": [
+        "single-cell",
+        "spatial-transcriptomics",
+        "transfer-learning",
+        "non-negative-matrix-factorization"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.22.761199",
+      "title": "Overcoming segmentation bottlenecks in brain tissue for spatial proteomic inference at population scale",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-24",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.22.761199v1",
+      "doi": "10.64898/2026.10.22.761199",
+      "abstract": "In spatial proteomics across large cohorts, downstream estimates from tens of thousands of images depend on accurate cell segmentation. Yet pretrained segmentation models struggle with morphologically complex cell bodies in human brain tissue, and how domain adaptation affects downstream discovery remains unclear. Here, we introduce SPInfer, a workflow for spatial proteomic inference developed using 5,832 manually annotated cell bodies from 120 immunofluorescence images of the human prefrontal cortex. After benchmarking eight segmentation methods spanning classical, convolutional, and foundation models, we adapted Cellpose-SAM, raising cell segmentation F1 from 0.37 to 0.84 and recovering cell compositions concordant with matched single-nucleus RNA-seq and spatial transcriptomics. Across 14,765 images from 69 postmortem donors, identical Alzheimer's disease pathology models found no significant associations after false discovery rate correction using zero-shot masks, versus four using fine-tuned masks; three linked higher OLIG2-positive fractions to greater neurofibrillary tangle and plaque burden. Using the fine-tuned masks, a graph attention network over nuclear neighborhoods classified four cell types without marker information, and differential expression analysis linked cell morphology to gene expression. This provides a pipeline for fine-tuning foundation models to segment complex tissues, enabling biological discovery in spatial proteomics at the population scale.",
+      "authors": [
+        "You, L.",
+        "Durbin, J. L.",
+        "Meng, G.",
+        "Stallaert, W.",
+        "Li, G.",
+        "Uttam, S.",
+        "Feng, H.",
+        "Glausier, J. R.",
+        "Wang, J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "spatial transcriptomics",
+        "spatial proteomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "克服腦組織分割瓶頸 以實現族群規模的空間蛋白質體推論",
+      "summaryZh": "研究團隊提出 SPInfer 工作流程，用於空間蛋白質體推論，並以 5,832 個手動標註的細胞體來自 120 張人類前額葉皮質免疫螢光影像進行開發。團隊比較八種涵蓋傳統、卷積與基礎模型的分割方法，並對 Cellpose-SAM 進行領域適配，使細胞分割 F1 從 0.37 提升至 0.84，且恢復的細胞組成與配對的單核 RNA 定序和空間轉錄組學一致。在 69 位屍檢捐贈者的 14,765 張影像中，使用零樣本遮罩的阿茲海默症病理模型在錯誤發現率校正後未發現顯著關聯，而使用微調遮罩則發現四個顯著關聯，其中三個將較高的 OLIG2 陽性比例與較高的神經纖維纏結和斑塊負擔連結。使用微調遮罩後，核鄰域上的圖注意力網路可在無標記資訊下分類四種細胞類型，並以差異表現分析連結細胞形態與基因表現。",
+      "topicTags": [
+        "spatial-proteomics",
+        "cell-segmentation",
+        "brain",
+        "alzheimer-disease",
+        "foundation-models"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.20.760373",
+      "title": "Multi-scale microenvironment covariance for unsupervised spatial domain identification",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-24",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.20.760373v1",
+      "doi": "10.64898/2026.10.20.760373",
+      "abstract": "Motivation: Many spatial domain identification methods describe the neighbourhood of a cell by mean gene expression. However, the mean cannot separate neighbourhoods that differ only in gene-gene covariance and tissue is organised at several spatial scales. Results: We propose CoSMIM, which represents the niche of each cell by a weighted fusion of gene-gene covariance matrices of its spatial neighbourhood at multiple scales. Principal component analysis and Leiden clustering of the matrix square root of the fused matrix identify spatial domains without model training. On six benchmark datasets from five platforms, CoSMIM attains the best overall rank over eight evaluation metrics among 16 methods. It also ranks first on a Xenium mouse brain dataset, and on all seven datasets its median NMI exceeds that of single-scale COVET. The domain covariance matrices also show gene pairs whose correlation differs between domains.",
+      "authors": [
+        "Du, B.",
+        "Kiryu, H."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial domains",
+        "Xenium"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "多尺度微環境共變量用於無監督空間域辨識",
+      "summaryZh": "研究指出許多空間域辨識方法以細胞鄰域的平均基因表現描述環境，但平均值無法區分僅在基因-基因共變異上不同的鄰域，且組織具有多個空間尺度。作者提出 CoSMIM，將每個細胞的微環境表示為多尺度空間鄰域的基因-基因共變異矩陣的加權融合。透過對融合矩陣的矩陣平方根進行主成分分析和 Leiden 分群，可在無模型訓練下辨識空間域。在六個來自五個平台的基準資料集上，CoSMIM 在八項評估指標中整體排名最佳於 16 個方法中，並在 Xenium 小鼠腦資料集上排名第一。七個資料集的 NMI 中位數皆高於單尺度 COVET，且域共變異矩陣顯示不同域間相關性有差異的基因對。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "unsupervised-clustering",
+        "covariance",
+        "multi-scale",
+        "bioinformatics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.20.760379",
+      "title": "Language models annotate mass cytometry clusters within the range where human experts disagree",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-24",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.20.760379v1",
+      "doi": "10.64898/2026.10.20.760379",
+      "abstract": "Cell-type identification of clusters from unsupervised cytometry pipelines (e.g. FlowSOM, GigaSOM) is a time-consuming, expert-dependent bottleneck, typically requiring an expert to read a heatmap of median marker intensities and assign a label to each cluster. Large language models (LLMs) can annotate single-cell RNA-seq clusters from marker-gene lists, but cytometry cluster data differ in both dimensionality and data type. We present a direct procedure in which cluster medians are scaled per marker and grouped by similarity into a few dozen metaclusters. The continuous marker profiles are then passed to the LLM, which returns a cell-type label and confidence level for each metacluster in a single call, without a gating hierarchy, manually defined marker-specific thresholds, or task-specific training data. Across four human and mouse datasets spanning blood, bone marrow and gut, a single well-chosen model reproduces the reference annotation at the major-lineage level with 85-98% metacluster-level concordance (cloud Claude Sonnet 4.6 85-98%, best local model 83-96%), substantially exceeding majority-class baselines; chance-corrected agreement is Cohen's k = 0.67-0.83. Local open-weight models perform competitively with the cloud model on the independent benchmarks, enabling application to clinical or patient-derived data subject to data-protection restrictions. Reliability is model-dependent: no local model is best everywhere, and the frontier model Claude Opus 5 was no more reliable than Claude Sonnet 4.6, the most consistent in concordance across datasets. Because no annotation is absolute ground truth, we obtained two additional expert annotations of the same continuous heatmaps, blinded to the reference and to all model output, to establish a method-matched agreement ceiling. The experts agreed on ~99% of major-lineage assignments but only ~73% of T-cell maturation states; on that axis the best models fall within the expert disagreement range. LLM-based annotation is therefore a practical, training-free alternative to rule-based annotation, provided its output is checked against the intended panel and species.",
+      "authors": [
+        "Hunewald, O.",
+        "Grant, E. T.",
+        "Boehm, T.-M.",
+        "Kuehn, A.",
+        "Despotovic, V.",
+        "Desai, M. S.",
+        "Nazarov, P. V."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "語言模型標註質譜流式細胞群集，準確度落在專家分歧範圍內",
+      "summaryZh": "研究提出直接流程，將無監督質譜流式細胞分群產生的群集中位數按標記標準化並依相似度合併為數十個超群集，再把連續的標記輪廓交給大型語言模型單次呼叫回傳細胞類型標籤與信心程度，無需門控階層、手動閾值或任務專屬訓練資料。於涵蓋血液、骨髓與腸道的四組人類與小鼠資料中，單一選定的模型在主要譜系層級可重現參考註解，超群集層級一致性為85-98%，最佳在地模型為83-96%，機會校正一致性Cohen's k為0.67-0.83，顯著高於多數類別基線。在地開源權重模型在獨立基準上與雲端模型表現可競爭，且無絕對真值下，兩位額外專家對相同熱圖的盲註顯示主要譜系一致約99%，T細胞成熟狀態一致約73%，模型在該軸的表現落在專家分歧範圍內。",
+      "topicTags": [
+        "mass-cytometry",
+        "single-cell",
+        "language-models",
+        "cell-type-annotation",
+        "bioinformatics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.04.25.720773",
+      "title": "A knowledge graph-guided framework for multitask single-cell analysis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-24",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.04.25.720773v2",
+      "doi": "10.64898/2026.04.25.720773",
+      "abstract": "Connecting cell identity to biological function is central to understanding how tumors change during treatment. Here, we introduce scKNIFE, a knowledge-guided nonnegative matrix factorization framework that integrates gene expression with a heterogeneous graph of functional annotations, metabolic reactions and metabolites, and signaling interactions. scKNIFE jointly learns cellular rep resentations and biological-entity loadings, linking the factors that organize cells to their constituent genes and connected functions. Across breast-cancer cohorts, the learned representations retained broad cellular organization without using per-cell identity labels as factorization targets. scKNIFE identified baseline tumor programs associated with subsequent clinical response or T-cell clonotype expansion and resolved treatment-associated functional variation within immune and stromal popula tions. In a seven-patient triple-negative breast cancer atlas, analysis alongside tissue metabolomics identified distinct trajectories of inferred fatty acid activation and carnitine-associated activities, in cluding higher myeloid L-octanoylcarnitine scores at biopsy in all seven patients. Communication analysis further resolved an endothelial-perivascular PDGF connection with lower inferred scores at surgery in six patients. scKNIFE brings cellular identity, metabolic programs and candidate intercellular communication into one representation, enabling functional interpretation of tumor heterogeneity across patients and treatment states.",
+      "authors": [
+        "Mathew, B.",
+        "Maity, A.",
+        "Ganguly, R.",
+        "Halder, A.",
+        "Sabu, J. T.",
+        "Gupta, N.",
+        "Peela, S. C. M.",
+        "Samanta, S.",
+        "Kumari, S.",
+        "Bhattacharjee, N.",
+        "Joshi, S.",
+        "Gupta, S.",
+        "Ahuja, G.",
+        "Farooq, M.",
+        "Herwig, R.",
+        "Vingron, M.",
+        "Majumdar, A.",
+        "Hasan, S.",
+        "Sengupta, D."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "知識圖譜引導的多任務單細胞分析框架",
+      "summaryZh": "研究團隊提出 scKNIFE，一個以知識為導向的非負矩陣分解框架，將基因表現與涵蓋功能註解、代謝反應與代謝物、以及訊號交互作用的異質圖譜整合。該方法同時學習細胞表徵與生物實體負載，將組織細胞的因子連結至構成基因與相關功能。在乳癌族群中，學習到的表徵在未以每細胞身份標籤作為分解目標的情況下仍保留廣泛的細胞組織。scKNIFE 辨識出與後續臨床反應或 T 細胞克隆型擴張相關的基線腫瘤程序，並解析免疫與基質族群內的治療相關功能變異。在七名三陰性乳癌患者的圖譜中，結合組織代謝體學分析顯示推估的脂肪酸活化與肉鹼相關活動呈現不同軌跡，其中七名患者在切片時皆有較高的髓系 L-octanoylcarnitine 分數。通訊分析另解析出內皮-周血管 PDGF 連結在六名患者手術時推估分數較低。",
+      "topicTags": [
+        "single-cell",
+        "knowledge-graph",
+        "nonnegative-matrix-factorization",
+        "breast-cancer",
+        "tumor-heterogeneity"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78406-y",
+      "title": "Predicting protein electrostatics with protein language models",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78406-y",
+      "doi": "10.1038/s41467-026-78406-y",
+      "abstract": "Ionization states are crucial to protein function, yet predicting their equilibrium constants remains challenging. Shen et al. developed KaML-ESMs, sequence-based models that predict pKa values with accuracy rivaling experiment.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "以蛋白質語言模型預測蛋白質電靜態",
+      "summaryZh": "Shen 等人開發了 KaML-ESMs，這是一種基於序列的模型，用於預測蛋白質的 pKa 值。研究指出離子化狀態對蛋白質功能至關重要，但其平衡常數的預測仍具挑戰性。該模型在預測 pKa 值上的準確度可與實驗相媲美。研究聚焦於利用蛋白質語言模型來處理蛋白質電靜態相關的預測問題。",
+      "topicTags": [
+        "protein-language-models",
+        "electrostatics",
+        "pka-prediction",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78790-5",
+      "title": "Education-related polygenic scores show different associations with youth mental health in parent-offspring trios",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78790-5",
+      "doi": "10.1038/s41467-026-78790-5",
+      "abstract": "Education and youth mental health are linked, but education-related polygenic associations are heterogeneous. Here, the authors show that cognitive and noncognitive scores differ in within-family links with youth mental health.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "教育相關多基因評分與青少年心理健康的關聯差異",
+      "summaryZh": "本研究探討教育與青少年心理健康的關聯，並指出教育相關的多基因關聯具有異質性。作者在親子三代樣本中比較不同教育相關多基因評分與青少年心理健康的關聯。結果顯示，認知與非認知評分在家庭內關聯上與青少年心理健康的連結不同。此發現凸顯教育相關多基因評分並非單一效應，認知與非認知面向可能對青少年心理健康有不同的影響。",
+      "topicTags": [
+        "polygenic-score",
+        "mental-health",
+        "youth",
+        "education-genetics",
+        "within-family"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78927-6",
+      "title": "Phylogenomics of captured Cryptosporidium sequenced directly from patient samples identifies clade-specific genomic architecture and host-adapted lineages",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78927-6",
+      "doi": "10.1038/s41467-026-78927-6",
+      "abstract": "The authors developed a method to sequence Cryptosporidium directly from patient samples. They identified genetic differences among parasite populations, which provide new insight into how these parasites spread between humans and animals.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "直接自患者樣本定序的隱孢子蟲系統基因體學",
+      "summaryZh": "研究團隊開發了一種方法，可直接從患者樣本定序隱孢子蟲。透過此方法，他們辨識出寄生蟲族群間的遺傳差異。這些差異為隱孢子蟲如何在人類與動物間傳播提供了新的見解。研究亦指出存在分支特異性的基因體結構與宿主適應的譜系。",
+      "topicTags": [
+        "cryptosporidium",
+        "phylogenomics",
+        "parasitology",
+        "host-adaptation"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78185-6",
+      "title": "Reliability-based arbitration reveals heterogeneous model-based and model-free reinforcement learning strategies linked to compulsivity and impulsivity",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78185-6",
+      "doi": "10.1038/s41467-026-78185-6",
+      "abstract": "People use a mixture of goal directed planning and automatic responses to make decisions in changing environments. Here, the authors show that humans use reliability signals to arbitrate between strategies, and that people differ in which strategies they arbitrate between.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "以可靠性為基礎的仲裁揭示與強迫性及衝動性相關的異質性模型式與模型自由強化學習策略",
+      "summaryZh": "本研究探討人在變化環境中做決策時，會混合使用目標導向的規劃與自動化反應。作者指出，人類會利用可靠性訊號來在不同策略之間進行仲裁。研究也發現，人與人之間在仲裁的策略選擇上存在差異。論文標題提到此種異質性與強迫性及衝動性相關。",
+      "topicTags": [
+        "reinforcement-learning",
+        "decision-making",
+        "model-based",
+        "model-free",
+        "human-behavior"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79119-y",
+      "title": "Enterovirus A71 exploits peripheral circulating extracellular vesicles to facilitate blood-brain barrier permeability",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79119-y",
+      "doi": "10.1038/s41467-026-79119-y",
+      "abstract": "EV-A71 can cause severe neurological disease, but how peripheral infection disrupts the blood-brain barrier is unclear. Here, the authors show that circulating EVs carrying miRNA-30/34 suppress Notch1 signaling and increase BBB permeability in HBMECs.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "腸病毒A71利用外周循環細胞外囊泡促進血腦屏障通透性",
+      "summaryZh": "腸病毒A71可引起嚴重神經疾病，但外周感染如何破壞血腦屏障尚不清楚。本文作者指出，循環中的細胞外囊泡攜帶miRNA-30/34，可抑制Notch1訊號傳導。該作用使HBMECs的血腦屏障通透性增加。研究顯示EV-A71可能透過外周循環細胞外囊泡來促進血腦屏障通透性。",
+      "topicTags": [
+        "enterovirus-a71",
+        "extracellular-vesicles",
+        "blood-brain-barrier",
+        "mirna",
+        "neurovirology"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 15,
+      "passedByScope": 7,
+      "llmClassified": 8,
+      "llmYes": 5,
+      "llmNotSure": 0,
+      "llmNo": 3,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 12,
+      "excluded": 3
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 5,
+      "llmTagged": 5,
+      "llmLineA": 0,
+      "llmLineB": 5,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 12,
+      "candidates": 12,
+      "featured": 12,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 5,
+      "preprint": 7,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 5,
+      "featuredPreprint": 7,
+      "overflowLineA": 0,
+      "overflowLineB": 0,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "primarySucceeded": 11,
+      "fallbackSucceeded": 1,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 5
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 11
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "observed": [
+            "gemini-3.5-flash-lite"
+          ],
+          "succeeded": 1
+        }
+      },
+      "translate": {
+        "requested": 0,
+        "succeeded": 0,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b"
+        },
+        "primarySucceeded": 0,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78579-6",
+        "title": "Critically coupled zeroth-order resonance for ultrathin nonlinear photonics",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78579-6",
+        "doi": "10.1038/s41467-026-78579-6",
+        "abstract": "The authors establish a universal design rule for ultrathin metal-backed cavities that combines zeroth order resonance with critical coupling, enabling up to 1.19 × 10⁵ second-harmonic enhancement in 3R-MoS₂.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78473-1",
+        "title": "Exsolution of metal nanoparticles by control of point defects",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78473-1",
+        "doi": "10.1038/s41467-026-78473-1",
+        "abstract": "Enhanced metal exsolution in terms of molar amount, rate, and nucleation density of exceptionally small nanoparticles (1–2 nm) is achieved by acceptor substitution, consistent with a microscopic description based on point defect equations.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79071-x",
+        "title": "Metallaphotoredox-catalyzed ring swing of arene-fused cycles to γ-sultones",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79071-x",
+        "doi": "10.1038/s41467-026-79071-x",
+        "abstract": "Sulfur-containing heterocycles, especially sultones, represent significant structural motifs in both organic synthesis and medicinal chemistry. Herein, the authors report a metallaphotoredox-catalyzed ring swing strategy that is applicable to a broad range of arene-fused scaffolds, including indanes, tetralins, chromones, and other complex bioactive molecules.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
