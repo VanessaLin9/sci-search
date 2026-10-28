@@ -1,0 +1,768 @@
+{
+  "reportDate": "2026-10-28",
+  "generatedAt": "2026-10-28T16:46:30.391Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03290-9",
+      "title": "CopilotJ: a conversational multi-agent system for intelligent and efficient bioimage analysis",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-10-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03290-9",
+      "doi": "10.1038/s41592-026-03290-9",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "CopilotJ：用於智慧且高效生物影像分析的對話式多智能體系統"
+    },
+    {
+      "id": "10.1038/s41592-026-03305-5",
+      "title": "Thyra: bridging mass spectrometry imaging and SpatialData for unified multimodal analysis",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-10-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03305-5",
+      "doi": "10.1038/s41592-026-03305-5",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Thyra：連結質譜影像與 SpatialData 以實現統一多模態分析"
+    },
+    {
+      "id": "10.1038/s41592-026-03251-2",
+      "title": "Cellular-resolution three-photon ultra-deep imaging (TrUDI) of neuronal population activity at 2-mm depth in the mammalian brain",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-10-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03251-2",
+      "doi": "10.1038/s41592-026-03251-2",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "細胞解析度三光子超深層影像（TrUDI）於哺乳動物大腦 2 毫米深度之神經元群體活動"
+    },
+    {
+      "id": "10.1038/s41592-026-03284-7",
+      "title": "Aptamer-mediated multivalent endogenous ADAR1 recruitment for highly efficient RNA editing",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-10-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03284-7",
+      "doi": "10.1038/s41592-026-03284-7",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "以適體介導之多價內源性 ADAR1 招募實現高效 RNA 編輯"
+    },
+    {
+      "id": "10.1038/s41556-026-02096-3",
+      "title": "Tubulin acetylation regulates nuclear shape fluctuations and DNA repair",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-10-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02096-3",
+      "doi": "10.1038/s41556-026-02096-3",
+      "abstract": "Wallis, Tse et al. propose that DNA double-strand breaks (DSBs) induce microtubule acetylation, affecting nuclear shape and promoting DNA DSB mobility.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "微管乙醯化調控核形變動與DNA修復",
+      "summaryZh": "Wallis、Tse等人提出DNA雙股斷裂會誘導微管乙醯化。該乙醯化影響細胞核形狀，並促進DNA雙股斷裂的移動性。研究將微管乙醯化與核形狀波動及DNA雙股斷裂的動態連結。該發現為DNA損傷反應如何透過細胞骨架調控核內動態提供了觀點。",
+      "topicTags": [
+        "tubulin-acetylation",
+        "nuclear-morphology",
+        "dna-repair",
+        "microtubule",
+        "dna-damage"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02097-2",
+      "title": "Motile vesicles (MoVes) are a cancer cell migration-associated extracellular vesicle population",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-10-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02097-2",
+      "doi": "10.1038/s41556-026-02097-2",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "運動性囊泡（MoVes）為癌細胞遷移相關之細胞外囊泡族群"
+    },
+    {
+      "id": "10.1038/s41593-026-02482-y",
+      "title": "Serotonin signaling enhances phagocytosis by brain macrophages through Htr2b and alleviates brain injury after stroke",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-10-28T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02482-y",
+      "doi": "10.1038/s41593-026-02482-y",
+      "abstract": "The serotonin receptor Htr2b activation enhances lysosome biogenesis and phagocytic clearance of debris to mitigate neuroinflammation and brain injury after stroke. The study proposes a potential monocyte-derived macrophage-targeted immune therapy to improve neurological outcomes after ischemic stroke.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "血清素訊號透過 Htr2b 促進腦巨噬細胞吞噬作用，減輕中風後腦損傷",
+      "summaryZh": "該研究指出血清素受體 Htr2b 的活化可增強溶酶體生成，並促進碎屑的吞噬清除。透過此機制，神經發炎與中風後的腦損傷獲得緩解。研究聚焦於腦巨噬細胞的吞噬功能，並提出針對單核細胞衍生巨噬細胞的免疫治療可能性。作者認為此策略可能有助於改善缺血性中風後的神經學預後。",
+      "topicTags": [
+        "serotonin",
+        "phagocytosis",
+        "macrophages",
+        "stroke",
+        "neuroinflammation"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.26.762078",
+      "title": "Single-cell RNA-seq of amniotic fluid provides unique insight into fetal development",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.26.762078v1",
+      "doi": "10.64898/2026.10.26.762078",
+      "abstract": "Background: Human fetal development is difficult to study due to ethical and practical constraints on the collection and use of human fetal tissue. Amniotic fluid (AF) is routinely collected during clinical amniocentesis and contains live fetal cells shed from developing tissues. Thus, we use single-cell RNA-sequencing (scRNA-seq) to build the first cell atlas of amniotic fluid from healthy second-trimester fetuses. Methods: scRNA-seq was performed on AF samples collected from seven euploid, structurally normal pregnancies at 15-25 weeks' gestation, all of which resulted in live births of healthy infants. Mapping to a modified transcriptome was used to help reduce counts sparsity. Supervised cell type annotation, unsupervised clustering and marker gene analyses were used to determine the cell types present in AF. Gestational age-related differences between earlier (<=19 weeks) and later (>= weeks) gestation samples were examined using differential gene expression (DGE) and differential proportion analyses. Results: Fetal skin cells were the most abundant cell type in AF, followed by myeloid and lymphoid cell types. We observed significant gestational age-related shifts in cell type composition, with an increased proportion of lung epithelium cells in later-age samples, coinciding with the canalicular phase of lung development. DGE analysis of fetal skin cells between earlier and later gestation revealed numerous gene expression changes that recapitulated known developmental processes across the second trimester. These were also enriched in an independent AF dataset from pregnancies with diverse fetal pathologies. Our dataset provides an annotated atlas of 11,414 healthy fetal human cells, permitting further study into normal second trimester development. We provide an integrated fetal cell atlas of 45,048 cells combining previous data with our healthy samples. Conclusions: This study applied novel analytical approaches to demonstrate the utility of scRNA-seq in characterising AF and its capacity to capture a diverse range of viable fetal cell types. Our results suggest that changes in AF cellular composition mirror organ development, underscoring the potential of AF scRNA-seq to deepen our understanding of normal and pathological fetal biology.",
+      "authors": [
+        "Grima, C. V.",
+        "Atukorala, I.",
+        "Beard, S.",
+        "Guleria, S.",
+        "Neil, L.",
+        "Hannan, N.",
+        "Pal, B.",
+        "Maksimovic, J.",
+        "Hui, L.",
+        "Oshlack, A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "biology",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "羊水單細胞RNA定序描繪健康第二孕期胎兒細胞圖譜",
+      "summaryZh": "研究團隊以單細胞RNA定序建構首個來自健康第二孕期胎兒的羊水細胞圖譜。樣本來自七例染色體正常且結構正常的妊娠，採集週數為15至25週，全部順利產下健康嬰兒。分析顯示羊水中最豐富的細胞類型為胎兒皮膚細胞，其次為髓系與淋巴系細胞。比較較早（≤19週）與較晚（≥週）妊娠樣本，觀察到細胞組成隨孕齡變化，較晚樣本中肺上皮細胞比例增加，與肺發育的管腔期相符。對胎兒皮膚細胞進行差異基因表現分析發現第二孕期間的表現變化，相關訊號也在來自多種胎兒病理妊娠的獨立羊水資料集中富集。研究提供11,414個健康胎兒人類細胞的註解圖譜，並整合既有資料形成45,048細胞的胎兒細胞圖譜。",
+      "topicTags": [
+        "single-cell",
+        "amniotic-fluid",
+        "fetal-development",
+        "preprint"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.27.762082",
+      "title": "Spatialsnake: a flexible workflow for spatial transcriptomics analysis across platforms",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.27.762082v1",
+      "doi": "10.64898/2026.10.27.762082",
+      "abstract": "Background: Spatial transcriptomics technologies measure gene expression at different spatial resolutions and generate diverse data outputs. Existing workflows support a range of platforms and analyses, but combining methods and extending analyses to selected populations or tissue regions can require additional scripts and repeated data preparation. Findings: We developed Spatialsnake, a flexible workflow built on SpatialData and Snakemake for analysing processed outputs from Visium, Visium HD, Stereo-seq, Xenium and MERFISH. A common command-line interface supports single- and multi-sample analysis, with adjustable parameters and saved intermediate results. Users can select populations, tissue regions or distance-based neighborhoods, repeat clustering and annotation, and map refined labels back to the full dataset. Additional modules support cell-type composition estimation, spatial-domain identification, cell-cell communication inference, regulon analysis and sample-level comparisons. We demonstrate these functions using mouse-brain Visium and colorectal cancer Visium HD datasets. Joint analysis of three colorectal cancer sections retained 1,527,987 bins and enabled further analysis of 223,632 epithelial bins, linking epithelial subpopulation annotations to their locations within the complete tissue. Conclusions: Spatialsnake provides a unified workflow for spatial transcriptomics analysis across sequencing- and imaging-based platforms. Its flexible analysis modules support both whole-tissue analysis and further investigation of selected cell populations and tissue regions.",
+      "authors": [
+        "Lin, Z.",
+        "zhang, z.",
+        "Huang, N.",
+        "Lu, Z.",
+        "Xu, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "spatial resolution",
+        "MERFISH",
+        "Xenium",
+        "Visium",
+        "Stereo-seq",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "跨平台空間轉錄組學彈性分析流程 Spatialsnake",
+      "summaryZh": "研究指出現有空間轉錄組學技術在解析度與資料輸出上各異，整合方法與針對特定族群或組織區域延伸分析常需額外腳本與重複資料準備。作者開發 Spatialsnake，一個以 SpatialData 與 Snakemake 建構的彈性流程，可分析 Visium、Visium HD、Stereo-seq、Xenium 與 MERFISH 的處理後輸出。流程提供共通指令列介面支援單一樣本與多樣本分析，並可調整參數與保存中間結果，使用者能選取族群、組織區域或距離基礎鄰域，重複聚類與註解並將精煉標籤映射回完整資料集。額外模組支援細胞型組成估算、空間域辨識、細胞間通訊推論、調控子分析與樣本層級比較，並以小鼠腦 Visium 與大腸直腸癌 Visium HD 資料集展示功能，其中三張大腸直腸癌切片的聯合分析保留 1,527,987 個 bins，並針對 223,632 個上皮 bins 進行後續分析。結論認為 Spatialsnake 為定序與影像基礎平台提供統一工作流程，兼顧全組織分析與選定細胞族群與組織區域的深入探討。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "bioinformatics-workflow",
+        "single-cell",
+        "spatial-data",
+        "snakemake"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.26.759076",
+      "title": "Single-cell profiling quantifies the dose gap between population-average and complete pY-STAT1/3 suppression by JAK inhibitors",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.26.759076v1",
+      "doi": "10.64898/2026.10.26.759076",
+      "abstract": "Inhibitor potency is commonly assessed from population-average responses, but how much single-cell signaling remains under strong average suppression is less clear. We measured nuclear STAT1 and STAT3 tyrosine phosphorylation in two human monocytic cell lines stimulated with IFN-{gamma}; and IL-10 and treated with six JAK-pathway inhibitors. Across 24 profiles, we compared arithmetic-mean inhibition and inhibition of the mean of log10-transformed single-cell responses (log-mean) with the fractions of cells leaving the stimulated range (partial inhibition) or entering the non-stimulated range (complete inhibition). At the lowest tested doses where arithmetic-mean or log-mean inhibition reached at least 80%, median fractions remaining above the non-stimulated range were 76% and 37%, respectively. Thus, strong average suppression frequently left substantial fractions of cells with tangibly elevated pY-STAT responses. Log-mean inhibition generally approximated partial-inhibition occupancy, whereas the apparent IC50 for complete-inhibition occupancy was a median 2.4-fold higher than the log-mean IC50 and 7.4-fold higher than the arithmetic-mean IC50. These relationships provide an empirical guide for estimating cell fractions from conventional inhibition curves.",
+      "authors": [
+        "Zakrzewska, K. E.",
+        "Walczak, J.",
+        "Nienałtowski, K.",
+        "Topolewski, P.",
+        "Wagner, C. M.",
+        "Braniewska, A.",
+        "Rygiel, T.",
+        "Moriggl, R.",
+        "Komorowski, M."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "單細胞分析量化 JAK 抑制劑對 pY-STAT1/3 的族群平均與完全抑制劑量差距",
+      "summaryZh": "研究以兩株人類單核細胞系為模型，在 IFN-γ 與 IL-10 刺激下，測定核內 STAT1 與 STAT3 酪胺酸磷酸化，並以六種 JAK 路徑抑制劑處理，共 24 組條件。作者比較算術平均抑制與單細胞反應 log10 轉換後平均的 log-mean 抑制，並與細胞離開刺激範圍的比例與進入未刺激範圍的比例相對照。於算術平均或 log-mean 抑制達至少 80% 的最低測試劑量，仍有中位數 76% 與 37% 的細胞維持在高於未刺激範圍的反應。結果顯示強烈的平均抑制下仍有相當比例細胞保留可觀的 pY-STAT 反應。log-mean 抑制大致對應部分抑制佔有率，而完全抑制佔有率的表觀 IC50 中位數較 log-mean IC50 高 2.4 倍、較算術平均 IC50 高 7.4 倍。作者指出此關係可作為從傳統抑制曲線估算細胞比例的經驗參考。",
+      "topicTags": [
+        "single-cell",
+        "jak-inhibitor",
+        "stat-signaling",
+        "pharmacology",
+        "dose-response"
+      ]
+    },
+    {
+      "id": "10.64898/2026.07.08.737173",
+      "title": "Predicting clonal mutations from tumour spatial transcriptomics data using a graph convolutional neural network",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.08.737173v2",
+      "doi": "10.64898/2026.07.08.737173",
+      "abstract": "Spatial transcriptomics (ST) has revolutionized our understanding of tumour biology but inherently lacks information on the upstream somatic driver mutations. We developed a spatially-aware graph convolutional neural network approach (SPOT-Mut) that infers mutated (sub)clones directly from ST data. SPOT-Mut was trained on virtual ST slides with clones simulated from a large collection of existing RNA and matched DNA sequencing data. SPOT-Mut was first evaluated for predicting mutations in TP53, the most frequently mutated gene in human cancer. Precision and recall values exceeded 95% in most analysed cancer types and the model was validated on ST and matched DNA sequencing data from serial slices obtained from cutaneous SCC samples. SPOT-Mut was then trained on 62 frequently mutated driver genes, resulting in highly performing somatic mutation prediction models for 40 driver genes, including KRAS, KEAP1, CTNNB1 and APC. With the increasing availability of ST data and upcoming atlases, SPOT-Mut potentiates the localization of (sub)clonal alterations in TP53 and other common driver mutations.",
+      "authors": [
+        "Luijts, T.",
+        "Hoogstoel, S.",
+        "Wen, S.",
+        "Pappaert, E.",
+        "De Meester, E.",
+        "Van Nieuwerburgh, F.",
+        "Van Hamme, E.",
+        "De Schepper, S.",
+        "Willaert, W.",
+        "Vral, A.",
+        "Hoorens, I.",
+        "Van den Eynden, J."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "biology",
+        "cancer",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "利用圖卷積神經網路從腫瘤空間轉錄體學資料預測克隆突變",
+      "summaryZh": "空間轉錄體學能揭示腫瘤生物學，但本身缺乏上游體細胞驅動突變資訊。研究團隊開發了名為 SPOT-Mut 的空間感知圖卷積神經網路方法，可直接從空間轉錄體學資料推斷突變的亞克隆。模型以模擬自大量現有 RNA 與配對 DNA 定序資料的虛擬空間轉錄體學切片進行訓練。SPOT-Mut 先針對人類癌症中最常突變的基因 TP53 進行評估，在多數分析的癌症類型中精確率與召回率均超過 95%，並以來自表皮鱗狀細胞癌連續切片的空間轉錄體學與配對 DNA 定序資料進行驗證。後續以 62 個常見突變驅動基因訓練，得到 40 個驅動基因的高表現體細胞突變預測模型，包含 KRAS、KEAP1、CTNNB1 與 APC。隨著空間轉錄體學資料與圖譜的增加，SPOT-Mut 有助於定位 TP53 等常見驅動突變的亞克隆變異。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "graph-convolutional-network",
+        "tumor-heterogeneity",
+        "mutation-prediction"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 58,
+      "passedByScope": 11,
+      "llmClassified": 47,
+      "llmYes": 24,
+      "llmNotSure": 0,
+      "llmNo": 23,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 35,
+      "excluded": 23
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 7,
+      "llmTagged": 7,
+      "llmLineA": 1,
+      "llmLineB": 6,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 11,
+      "candidates": 11,
+      "featured": 6,
+      "overflow": 5,
+      "lineA": 1,
+      "lineB": 6,
+      "preprint": 4,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 2,
+      "featuredPreprint": 4,
+      "overflowLineA": 1,
+      "overflowLineB": 4,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 6,
+      "llmSummarized": 6,
+      "primarySucceeded": 6,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 5,
+      "llmTranslated": 5,
+      "primarySucceeded": 5,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 7
+      },
+      "summarize": {
+        "requested": 6,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 6
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 5,
+        "succeeded": 5,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        },
+        "primarySucceeded": 5,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11348-z",
+        "title": "Switchable Chlorine Atom Transfer Radical Reactions",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11348-z",
+        "doi": "10.1038/s41586-026-11348-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11335-4",
+        "title": "Back-to-monomer depolymerization of silicones by deoxygenative chlorination",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11335-4",
+        "doi": "10.1038/s41586-026-11335-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03486-1",
+        "title": "Why did ancient humans avoid this lush paradise",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03486-1",
+        "doi": "10.1038/d41586-026-03486-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03484-3",
+        "title": "This Arabian desert was once a lush paradise. Why did ancient humans avoid it?",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03484-3",
+        "doi": "10.1038/d41586-026-03484-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03260-3",
+        "title": "Accounting of Africa’s water reveals a management gap",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03260-3",
+        "doi": "10.1038/d41586-026-03260-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03263-0",
+        "title": "Tethered to stone: how rock and water availability shaped early desert occupation",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03263-0",
+        "doi": "10.1038/d41586-026-03263-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02202-3",
+        "title": "What students think about my teaching doesn’t matter. Am I wrong?",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02202-3",
+        "doi": "10.1038/d41586-026-02202-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03445-w",
+        "title": "Preprint-centric publishing model gets major boost",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03445-w",
+        "doi": "10.1038/d41586-026-03445-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03325-3",
+        "title": "These three red flags could unmask dodgy journals",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03325-3",
+        "doi": "10.1038/d41586-026-03325-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03476-3",
+        "title": "Is research funding now a lottery? Elite funder ERC swamped by applications",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03476-3",
+        "doi": "10.1038/d41586-026-03476-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03415-2",
+        "title": "Could a giant sunshade in space ‘solve global warming’? Scientists are taking the idea seriously",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03415-2",
+        "doi": "10.1038/d41586-026-03415-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03248-z",
+        "title": "How the pandemic changed trust in science — in four charts",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03248-z",
+        "doi": "10.1038/d41586-026-03248-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03298-3",
+        "title": "Ribbon made of carbon pentagons and heptagons has metallic properties",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03298-3",
+        "doi": "10.1038/d41586-026-03298-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03107-x",
+        "title": "Where have all the saucers flown?",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03107-x",
+        "doi": "10.1038/d41586-026-03107-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02670-7",
+        "title": "The shifting sands of research independence: why mid-career scientists crave security",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02670-7",
+        "doi": "10.1038/d41586-026-02670-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11180-5",
+        "title": "Stone and water governed early human settlement of the desert",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11180-5",
+        "doi": "10.1038/s41586-026-11180-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11223-x",
+        "title": "Delayed electron–hole recombination in a pseudo-direct semiconductor",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11223-x",
+        "doi": "10.1038/s41586-026-11223-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11202-2",
+        "title": "Narrow carbon pentaheptite nanoribbon as a covalent metal",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11202-2",
+        "doi": "10.1038/s41586-026-11202-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11214-y",
+        "title": "Subcycle videography of Landau–Zener–Majorana transitions in graphene",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11214-y",
+        "doi": "10.1038/s41586-026-11214-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11222-y",
+        "title": "Monolithically and in situ integrated PbS infrared imagers",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11222-y",
+        "doi": "10.1038/s41586-026-11222-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11227-7",
+        "title": "Time-reversal-symmetry-breaking spin injection from a compensated magnet",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11227-7",
+        "doi": "10.1038/s41586-026-11227-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11147-6",
+        "title": "A single-molecule spin–photon interface",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11147-6",
+        "doi": "10.1038/s41586-026-11147-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11199-8",
+        "title": "Spatial and sectoral water demand assessment for the African continent",
+        "journal": "Nature",
+        "publishedDate": "2026-10-28T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11199-8",
+        "doi": "10.1038/s41586-026-11199-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
