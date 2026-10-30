@@ -1,0 +1,858 @@
+{
+  "reportDate": "2026-10-30",
+  "generatedAt": "2026-10-30T16:49:42.940Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03271-y",
+      "title": "Foundation models unlock robust phenotypic representations from Cell Painting images",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03271-y",
+      "doi": "10.1038/s41592-026-03271-y",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "基礎模型解鎖 Cell Painting 影像的穩健表型表徵"
+    },
+    {
+      "id": "10.1038/s41592-026-03275-8",
+      "title": "Continuous mass measurement of single proteins",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03275-8",
+      "doi": "10.1038/s41592-026-03275-8",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "單一蛋白質的連續質量測量"
+    },
+    {
+      "id": "10.1038/s41592-026-03285-6",
+      "title": "Multivalent ADAR1 recruitment for precise RNA editing",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03285-6",
+      "doi": "10.1038/s41592-026-03285-6",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "多價 ADAR1 招募實現精準 RNA 編輯"
+    },
+    {
+      "id": "10.1038/s41592-026-03289-2",
+      "title": "Spatial single-cell mapping of transcriptional differences across genetic backgrounds in mouse brains",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03289-2",
+      "doi": "10.1038/s41592-026-03289-2",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "小鼠大腦中跨基因背景的轉錄差異空間單細胞圖譜"
+    },
+    {
+      "id": "10.1038/s41588-026-02824-3",
+      "title": "Ethical challenges in patient-focused drug development for rare genetic diseases",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02824-3",
+      "doi": "10.1038/s41588-026-02824-3",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "罕見遺傳疾病以患者為中心的藥物開發中的倫理挑戰"
+    },
+    {
+      "id": "10.1038/s41588-026-02819-0",
+      "title": "A haplotype reference panel constructed from 490,319 UK Biobank genomes improves genotype imputation for global populations",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02819-0",
+      "doi": "10.1038/s41588-026-02819-0",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "由 490,319 個 UK Biobank 基因組建構的單倍型參考面板改善全球族群的基因型推斷"
+    },
+    {
+      "id": "10.1038/s41556-026-02089-2",
+      "title": "Rewired decoding fuels KRAS-driven cancer growth and drug resistance",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02089-2",
+      "doi": "10.1038/s41556-026-02089-2",
+      "abstract": "Dimethylation of the translation elongation factor eEF1A at lysine 55 by the dual methyltransferase METTL13 enhances decoding of a discrete set of low-frequency codons with weak wobble-position base pairing. This process selectively sustains synthesis of oncoproteins, including KRAS. METTL13 ablation restores sensitivity to inhibitors of the KRAS-G12C mutant and prolongs survival in models of lung adenocarcinoma.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "重編解碼促進 KRAS 驅動癌症生長與藥物抗性",
+      "summaryZh": "研究指出，雙功能甲基轉移酶 METTL13 對翻譯延伸因子 eEF1A 的賴氨酸 55 位進行二甲基化，可增強對一組特定低頻密碼子、且擺動位置鹼基配對較弱的解碼效率。此重編解碼過程選擇性地維持包括 KRAS 在內的致癌蛋白合成。剔除 METTL13 能恢復對 KRAS-G12C 突變抑制劑的敏感性，並在肺腺癌模型中延長存活。結果顯示翻譯解碼的修飾與 KRAS 驅動癌症生長及藥物抗性相關。",
+      "topicTags": [
+        "translation",
+        "kras",
+        "cancer-drug-resistance",
+        "lung-adenocarcinoma",
+        "epigenetics"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02108-2",
+      "title": "Cancer cells have got ‘MoVes’",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02108-2",
+      "doi": "10.1038/s41556-026-02108-2",
+      "abstract": "Motile vesicles (MoVes) are a previously undescribed population of large extracellular vesicles released from the trailing edge of actively migrating cancer cells. MoVes carry the entire genome and mutational landscape of the parental tumour cell, together with intracellular organelles, including mitochondria, and proteins associated with epithelial-to-mesenchymal transition and organelle biology.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology",
+        "cancer",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "癌細胞釋放具移動性的囊泡 MoVes",
+      "summaryZh": "研究描述了一種先前未被描述的囊泡族群，稱為 Motile vesicles，簡稱 MoVes。MoVes 是由活躍遷移的癌細胞後緣釋放的大型細胞外囊泡。這些囊泡攜帶親代腫瘤細胞的完整基因組與突變 landscape，並包含細胞內胞器，包括粒線體，以及與上皮-間質轉換和胞器生物學相關的蛋白質。",
+      "topicTags": [
+        "cancer",
+        "extracellular-vesicles",
+        "cell-migration",
+        "motile-vesicles"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02115-3",
+      "title": "Twenty years of induced pluripotent stem cells",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02115-3",
+      "doi": "10.1038/s41556-026-02115-3",
+      "abstract": "In 2006, Shinya Yamanaka and Kazutoshi Takahashi used OCT4, SOX2, KLF4 and MYC (OSKM; also known as Yamanaka factors) to generate induced pluripotent stem cells (iPSCs) from somatic cells. Twenty years later, the field has made remarkable progress, both technically and in terms of its applications. To celebrate the twentieth anniversary of iPSCs, we asked experts around the globe about their view on the most striking achievements and next challenges to overcome.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "誘導多能幹細胞二十年回顧",
+      "summaryZh": "本文回顧2006年Shinya Yamanaka與Kazutoshi Takahashi以OCT4、SOX2、KLF4與MYC（OSKM，亦稱Yamanaka factors）從體細胞誘導產生誘導多能幹細胞（iPSCs）的里程碑。二十年後，作者指出該領域在技術與應用方面均有顯著進展。為慶祝iPSC二十週年，作者邀請全球專家分享其對最突出成就的看法，以及未來需要克服的挑戰。",
+      "topicTags": [
+        "induced-pluripotent-stem-cells",
+        "stem-cell-biology",
+        "review",
+        "anniversary"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02111-7",
+      "title": "Microtubule lattice state regulates Rho GTPase",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02111-7",
+      "doi": "10.1038/s41556-026-02111-7",
+      "abstract": "Taxanes are effective anti-cancer microtubule (MT) drugs, yet why they clinically outperform other spindle poisons is unclear. New work shows that taxanes, unlike other MT-stabilizing agents, force MT lattices into an expanded state that evicts GEF-H1, coupling MT pharmacology to Rho signalling and actin remodelling in interphase.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "微管晶格狀態調控 Rho GTPase",
+      "summaryZh": "研究指出，紫杉烷類是有效的抗癌微管藥物，但其臨床表現優於其他紡錘體毒劑的原因尚不清楚。新工作顯示，紫杉烷與其他微管穩定劑不同，會使微管晶格進入擴張狀態。該擴張狀態會驅逐 GEF-H1，並將微管藥理學與 Rho 訊號傳導及間期期的肌動蛋白重塑耦合起來。",
+      "topicTags": [
+        "microtubule",
+        "rho-gtpase",
+        "taxanes",
+        "actin-remodelling"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02099-0",
+      "title": "Phase separation of SMARCAL1 orchestrates epigenetic reprogramming and methionine metabolism to foster radioresistance and immunosuppression",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02099-0",
+      "doi": "10.1038/s41556-026-02099-0",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "SMARCAL1 相分離協調表觀遺傳重編程與蛋胺酸代謝以促進放射抗性與免疫抑制"
+    },
+    {
+      "id": "10.1038/s41590-026-02722-0",
+      "title": "Linda J. Miller (1958–2026)",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02722-0",
+      "doi": "10.1038/s41590-026-02722-0",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41564-026-02512-2",
+      "title": "Turning a Staphylococcus aureus virulence factor into an antibacterial therapy",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02512-2",
+      "doi": "10.1038/s41564-026-02512-2",
+      "abstract": "We describe FibriLysins, dual-action proteins that dismantle the fibrin structures encapsulating Staphylococcus aureus multicellular communities and kill the bacteria within. In a mouse model of device-associated infection, FibriLysins demonstrate higher antibacterial efficacy compared with the standard-of-care antibiotic vancomycin. These findings highlight the potential of FibriLysins to treat recalcitrant S. aureus infections.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "將金黃色葡萄球菌毒力因子轉化為抗菌療法",
+      "summaryZh": "研究團隊描述了 FibriLysins，這是一種雙重作用蛋白，能拆解包覆金黃色葡萄球菌多細胞群落的纖維蛋白結構，並殺死其中的細菌。在裝置相關感染的小鼠模型中，FibriLysins 的抗菌效果優於標準治療抗生素萬古黴素。研究結果顯示 FibriLysins 有潛力治療頑固的金黃色葡萄球菌感染。",
+      "topicTags": [
+        "staphylococcus-aureus",
+        "antibacterial-therapy",
+        "fibrin",
+        "device-associated-infection",
+        "virulence-factor"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.29.762343",
+      "title": "Systemic Analysis of Patient Derived Esophageal Epithelial Organoid Model Reveals Cell State Heterogeneity and Conservation of Differentiation Hierarchy",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.29.762343v1",
+      "doi": "10.64898/2026.10.29.762343",
+      "abstract": "Background and Aims: Eosinophilic esophagitis (EoE) features prominent epithelial dysregulation that persists despite resolution of eosinophilia. Interleukin-13 (IL-13) is known to be a key upstream driver of epithelial abnormalities in EoE. We sought to benchmark an IL-13 esophageal organoid model against the in vivo epithelial state in EoE at a single cell resolution, to define in the role of IL-13 in aberrant epithelial development and inflammation in EoE, and to validate the IL-13 organoid as a model system to study the epithelial changes seen in EoE. Methods: We performed scRNA-Seq on esophageal biopsies from control and EoE patients, and esophageal biopsy-derived organoids with or without IL-13. We compared cellular composition, differentiation trajectories, pathway enrichment, and differential gene expression within both systems, and assessed findings at a protein level. Results: Seven distinct epithelial cell clusters were identified and preserved in both biopsies and organoids. EoE biopsies demonstrated expansion of cycling cells, whereas IL-13-treated organoids showed shift in the composition of the suprabasal compartments. Pseudotime topology was preserved across tissues, with a shift away from terminal differentiation in both EoE biopsies and IL-13-treated organoids. IL-13 reproduced changes in the transcription of central EoE genes and the dysregulation of epithelial proliferation and differentiation pathways seen in EoE. There was broad activation of immune related pathways within both EoE biopsies and IL-13-treated organoids, however, biopsies additionally showed activation in several immune and extracellular matrix remodeling programs that IL-13 alone did not reproduce. Conclusion: IL-13-treated esophageal organoids replicate key epithelial features of EoE including dysregulated epithelial development, impaired cornification, and inflammatory signals, while preserving lineage architecture, providing a tractable platform for epithelial-targeted mechanistic and therapeutic studies.",
+      "authors": [
+        "Baccarella, A.",
+        "Zhou, Y.",
+        "Karakasheva, T. A.",
+        "Gautam, R.",
+        "Lal, M.",
+        "Beers, J.",
+        "Mrozek, Z.",
+        "Semeao, A.",
+        "Mirchandani, L.",
+        "Teranishi, R.",
+        "Itami, T.",
+        "Kennedy, K.",
+        "Mahon, M.",
+        "Ogbolu, E.",
+        "Kelsen, J. R.",
+        "Whelan, K. A.",
+        "Wechsler, J.",
+        "Muir, A.",
+        "Ruffner, M. A."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "scRNA-seq",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "系統性分析患者來源食道上皮類器官模型揭示細胞狀態異質性與分化層級的保守性"
+    },
+    {
+      "id": "10.64898/2026.10.29.762960",
+      "title": "Molecule-resolved inference reveals the spatial organization of transcriptional programs",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.29.762960v1",
+      "doi": "10.64898/2026.10.29.762960",
+      "abstract": "Transcriptional programs encode cellular identity and physiological activity, linking gene regulation to cellular phenotypes. Although spatial transcriptomics measures individual RNA molecules across intact tissues, most analyses aggregate them into cells or pixels, obscuring molecular level functional dynamics. We introduce FICTURE2, a statistical model that infers the transcriptional program from which each individual molecule is generated, using gene identity and spatial context alone without segmentation or binning. FICTURE2 learns programs with distinct spatial distributions, ranging from millimeter-scale continuous transition to micron-scale subcellular localization, the coexisting patterns of which then reveal both cellular identity and physiological activity with unified interpretations. FICTURE2 supports both unsupervised and reference-guided inference and is orders of magnitude more efficient than alternative approaches, enabling systematic analysis of large-scale spatial datasets as we demonstrate in data across diverse tissue types profiled by various spatial technologies.",
+      "authors": [
+        "Si, Y.",
+        "Lee, C.",
+        "Cheng, W.",
+        "Sweeney, M. D.",
+        "Yun, J. H.",
+        "Kim, M.",
+        "Jun, G.",
+        "Lee, J. H.",
+        "Kang, H. M."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "分子解析推論揭示轉錄程序的空間組織"
+    },
+    {
+      "id": "10.64898/2026.10.29.762853",
+      "title": "Evolution of immune infiltration and immune triad formation across early melanoma progression",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.29.762853v1",
+      "doi": "10.64898/2026.10.29.762853",
+      "abstract": "Tumor-infiltrating lymphocytes (TIL) in melanoma are a clinically important prognostic marker and are routinely used to inform patient care. However, when immune recognition of transformed melanocytes begins and how it evolves during early melanoma progression is not well understood. Using spatial transcriptomics and a unique cohort of patient-matched lesions representing multiple stages of early evolution, we investigate T cells, dendritic cells (DCs) and multi-cell immune \"triads\" during melanoma initiation. We find that T cell and DC density, triad density, and triad proximity to melanoma cells are elevated in regions of Stage I invasive melanoma as compared to Stage 0 in situ lesions and nevi. Further, we find that triad abundance correlates with both T cell and DC density, but is not predicted by clustering patterns of these cell types over larger spatial scales. We conclude that immune recognition of melanoma and engagement with the lesion significantly increases with progression from Stage 0 to Stage I disease. Further, using nevi that are depth-matched in the dermis to Stage I invasive lesions, we demonstrate this increased immune recognition is not a consequence of dermal invasion alone. This points to a paradigm where immune engagement of invasive melanoma reflects recognition of melanoma cell-intrinsic changes that emerge in Stage I disease.",
+      "authors": [
+        "Marks, K. A.",
+        "Florell-Orton, A.",
+        "Hu, M.",
+        "Lawlor, B.",
+        "Florell, S.",
+        "Stark, M. S.",
+        "Green, K. J.",
+        "Deacon, D. C.",
+        "Adler, F. R.",
+        "Judson-Torres, R. L.",
+        "Reeves, M. Q."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "早期黑色素瘤進展中免疫浸潤與免疫三聯體形成的演變"
+    },
+    {
+      "id": "10.64898/2026.10.28.762640",
+      "title": "Anatomically matched spatial comparisons identify Trps1 as a regulator of knee interzone formation",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.28.762640v1",
+      "doi": "10.64898/2026.10.28.762640",
+      "abstract": "How the interzone forms and gives rise to articular cartilage, ligaments, and synovium is incompletely understood. Using our previously generated spatial and single-cell transcriptomic atlas of the mouse hindlimb, we compared the knee interzone with neighboring tissues and with the ankle interzone at matched positions, and identified Trps1 as a knee interzone-enriched candidate. Pseudotime analysis placed Trps1-high cells in a transitional state between chondrogenic progenitors and matrix-producing chondrocytes, with higher chondrogenic and lower fibroblastic program scores. Targeted Trps1 knockdown in hindlimb explants disrupted joint formation, permitted Col2a1 expression within the interzone, and reduced adjacent cartilage formation. The associated chondrogenic program was conserved in the human embryonic knee, whereas TRPS1 expression in osteoarthritic cartilage was associated with a fibroblastic matrix program. These results support a role for Trps1 in knee interzone development and show that anatomically matched spatial comparison with explant perturbation can nominate and test joint regulators.",
+      "authors": [
+        "Cahan, P.",
+        "Yea, J.-h.",
+        "Onggo, S. E. S.",
+        "Cho, H. C."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "解剖對位空間比較發現 Trps1 調控膝關節間區形成",
+      "summaryZh": "研究團隊利用先前建立的小鼠後肢空間與單細胞轉錄組圖譜，將膝關節間區與鄰近組織及解剖位置相匹配的踝關節間區進行比較，發現 Trps1 為膝關節間區富集的候選因子。擬時間分析顯示 Trps1 高表現細胞位於軟骨生成前驅細胞與產生基質的軟骨細胞之間的過渡狀態，且軟骨生成程序分數較高、纖維母細胞程序分數較低。針對後肢外植體進行 Trps1 敲降後，關節形成受干擾，間區內出現 Col2a1 表現，並減少鄰近軟骨形成。相關的軟骨生成程序在人類胚胎膝關節中保守，而在骨關節炎軟骨中 TRPS1 表現則與纖維母細胞基質程序相關。結果支持 Trps1 在膝關節間區發育中的作用，並顯示解剖對位的空間比較結合外植體干擾可提名並驗證關節調控因子。",
+      "topicTags": [
+        "joint development",
+        "spatial transcriptomics",
+        "single-cell",
+        "mouse hindlimb",
+        "trps1"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.29.762763",
+      "title": "Regionalisation of muscle nucleus heterogeneity in foetal skeletal muscle",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-10-30",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.29.762763v1",
+      "doi": "10.64898/2026.10.29.762763",
+      "abstract": "Skeletal muscle is organized into functional domains with attachments at both extremities to tendons via the myotendinous junction (MTJ) and innervation in the middle via the neuromuscular junction (NMJ). In adult muscle, the molecular heterogeneity of muscle domains is described at the level of myonuclei with specialized MTJ and NMJ myonuclei at the tips and middle of muscle fibre. However, how molecular heterogeneity emerges during development remains poorly understood. Combining single-cell and single-nucleus RNA sequencing approaches with in situ hybridization experiments to limb muscles of chicken embryos, we uncover transcriptionally distinct muscle nuclei according to tip and central domains, both in myofibres and in mononucleated myogenic cells. At early foetal stage, all myonuclei display either a tip or a central domain identity. Immature mononucleated myogenic cells are enriched in the tip domain. Tip myonuclei of foetal muscles show a robust transcriptional signal transduction signature, which highlights molecular crosstalks between tip myonuclei and adjacent tendon fibroblasts but also with the adjacent immature mononucleated myogenic cells. We propose that the tip muscle domain is a signalling centre interacting with tendon fibroblasts to regulate muscle/tendon attachment and with adjacent mononucleated muscle cells to regulate myogenesis in limb foetal muscles.",
+      "authors": [
+        "KUROSAWA, T.",
+        "BLAVET, C.",
+        "BONNIN, M.-A.",
+        "GHARSALLI, T.",
+        "DELFINI, M.-C.",
+        "HIRSINGER, E.",
+        "DUPREZ, D."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "胎兒骨骼肌中肌肉細胞核異質性的區域化"
+    },
+    {
+      "id": "10.1038/s41467-026-78592-9",
+      "title": "Ancestry-specific and multi-ancestry genome-wide association studies of restless legs syndrome",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78592-9",
+      "doi": "10.1038/s41467-026-78592-9",
+      "abstract": "The genetics of restless legs syndrome have mostly been studied in European populations. Here, the authors perform a multi-ancestry genetic study of the condition, revealing differences in genetic risk across populations with different ancestries.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "祖源特異與多祖源全基因組關聯研究探討不安腿症候群",
+      "summaryZh": "本研究針對不安腿症候群進行多祖源的遺傳研究。過去該疾病的遺傳研究多集中於歐洲族群。作者透過多祖源的基因體關聯分析，發現不同祖源族群間的遺傳風險存在差異。",
+      "topicTags": [
+        "genome-wide association study",
+        "restless legs syndrome",
+        "ancestry",
+        "genetics"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78965-0",
+      "title": "A multilamellar organelle for chemosymbiosis in an aplacophoran mollusc adapted to anoxic cold seep sediment",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78965-0",
+      "doi": "10.1038/s41467-026-78965-0",
+      "abstract": "Animals living in the deep sea often form symbiotic partnerships with chemosynthetic bacteria. Here authors discover a multilamellar organelle in the worm-mollusc Chaetoderma shenloong containing bacteria and name it dracosphera (‘dragon ball’).",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "適應缺氧冷泉沉積的無板綱軟體動物化能共生多層膜胞器",
+      "summaryZh": "作者在棲息於深海冷泉沉積的蟲形軟體動物 Chaetoderma shenloong 中發現一種含有細菌的多層膜胞器，並將其命名為 dracosphera（‘dragon ball’）。論文指出，深海動物常與化能合成細菌形成共生夥伴關係。此發現描述了該物種體內一種新的胞器結構與其共生細菌的共存。該結果為理解深海無氧環境中軟體動物的化能共生適應提供了新的形態學線索。",
+      "topicTags": [
+        "chemosymbiosis",
+        "deep-sea",
+        "mollusc",
+        "organelle",
+        "aplacophoran"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79050-2",
+      "title": "Process-dependent shifts in conspecific negative density dependence during boreal forest succession",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79050-2",
+      "doi": "10.1038/s41467-026-79050-2",
+      "abstract": "Conspecific negative density dependence may maintain diversity, but its role during succession is unclear. This study shows that changes depend on demographic processes and species abundance rather than following a uniform community-wide trend.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "北方森林演替中同種負密度依賴的過程依賴性變化",
+      "summaryZh": "本研究探討同種負密度依賴在北方森林演替中的作用，並指出其在演替期間的角色尚不明確。研究結果顯示，變化並非遵循一致的群落整體趨勢。變化取決於人口統計過程與物種豐度。該發現提示同種負密度依賴維持多樣性的作用可能隨演替而改變。",
+      "topicTags": [
+        "forest succession",
+        "conspecific negative density dependence",
+        "biodiversity",
+        "ecology"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78611-9",
+      "title": "Sequential protonation and deprotonation reactions govern alternating access in a Major Facilitator Superfamily proton/multidrug antiporter",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78611-9",
+      "doi": "10.1038/s41467-026-78611-9",
+      "abstract": "The molecular mechanisms underlying proton-coupled drug efflux are not fully resolved. Here the authors assess the timing and mechanism of proton coupling in the multidrug transporter LmrP, a prototypical exporter of clinically relevant antibiotics and toxins.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "序列質子化與去質子化調控主要促進因子超家族質子／多藥抗porter交替可及性",
+      "summaryZh": "質子偶聯藥物外排的分子機制尚未完全釐清。本文聚焦於多藥物轉運蛋白 LmrP 的質子偶聯時序與機制。LmrP 被描述為臨床相關抗生素與毒素的原型外排蛋白。作者探討質子化與去質子化反應如何調控其交替可及性。",
+      "topicTags": [
+        "proton-coupled transport",
+        "major-facilitator-superfamily",
+        "multidrug-resistance",
+        "membrane-transporter"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78958-z",
+      "title": "Synthetic tools to redirect the ubiquitin E3 ligase activity of a plant-specific N-recognin",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78958-z",
+      "doi": "10.1038/s41467-026-78958-z",
+      "abstract": "The Arg/N-degron pathway plays a central role in plant development, germination, and submersion tolerance. Here, the authors show that PRT1 recruits the UBC35-UEV1A complex via RING1 of PRT1, demonstrate an off-switch for calmodulin-controlled ubiquitination, and engineer nanobodies that can redirect PRT1.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "重定向植物特有 N-辨識素泛素 E3 連接酶活性的合成工具",
+      "summaryZh": "本研究聚焦於植物 Arg/N-degron 路徑，該路徑在植物發育、萌發與淹水耐受中扮演核心角色。作者顯示 PRT1 透過其 RING1 招募 UBC35-UEV1A 複合體。研究亦展示了鈣調蛋白控制的泛素化關閉開關。作者進一步工程化奈米抗體以重定向 PRT1。",
+      "topicTags": [
+        "ubiquitin",
+        "plant-biology",
+        "protein-degradation",
+        "synthetic-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79161-w",
+      "title": "Weakened association between sequential phenological events corresponds to interphase extension",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-10-30T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79161-w",
+      "doi": "10.1038/s41467-026-79161-w",
+      "abstract": "Seasonal events in temperate deciduous trees, from leaf-out to leaf fall, follow a fixed annual sequence. This study shows that the timing of consecutive events is statistically associated in European trees, but that the association between fruiting and leaf coloration has weakened in some species as the interval between these phases has increased.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "連續物候事件關聯減弱與相位間隔延長相符",
+      "summaryZh": "本研究探討溫帶落葉樹的季節性事件，從展葉到落葉遵循固定的年度序列。研究發現，在歐洲樹木中，連續事件的發生時間在統計上具有關聯性。研究指出，部分物種中結果與葉色變化的關聯已減弱，且這與這兩個物候相位之間的間隔增加一致。該結果顯示物候序列內不同事件的時間耦合可能發生變化。",
+      "topicTags": [
+        "phenology",
+        "deciduous-trees",
+        "seasonal-ecology",
+        "plant-biology"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 30,
+      "passedByScope": 18,
+      "llmClassified": 12,
+      "llmYes": 6,
+      "llmNotSure": 0,
+      "llmNo": 6,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 24,
+      "excluded": 6
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 18,
+      "llmTagged": 18,
+      "llmLineA": 1,
+      "llmLineB": 17,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 24,
+      "candidates": 23,
+      "featured": 12,
+      "overflow": 11,
+      "lineA": 1,
+      "lineB": 17,
+      "preprint": 5,
+      "skip": 1,
+      "featuredLineA": 0,
+      "featuredLineB": 11,
+      "featuredPreprint": 1,
+      "overflowLineA": 1,
+      "overflowLineB": 6,
+      "overflowPreprint": 4
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "primarySucceeded": 12,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 11,
+      "llmTranslated": 11,
+      "primarySucceeded": 11,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 18
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 12
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 11,
+        "succeeded": 11,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        },
+        "primarySucceeded": 11,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11337-2",
+        "title": "Author Correction: Rh3+ stabilized in KRh@MFI catalyses regioselective hydroformylation",
+        "journal": "Nature",
+        "publishedDate": "2026-10-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11337-2",
+        "doi": "10.1038/s41586-026-11337-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03543-9",
+        "title": "Patrick Stewart dies: how Captain Picard inspired today’s science leaders",
+        "journal": "Nature",
+        "publishedDate": "2026-10-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03543-9",
+        "doi": "10.1038/d41586-026-03543-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03368-6",
+        "title": "Somewhere over the transcontinental burrito tunnel",
+        "journal": "Nature",
+        "publishedDate": "2026-10-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03368-6",
+        "doi": "10.1038/d41586-026-03368-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03502-4",
+        "title": "I built the UK government’s metascience unit — here’s what countries need to know",
+        "journal": "Nature",
+        "publishedDate": "2026-10-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03502-4",
+        "doi": "10.1038/d41586-026-03502-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03512-2",
+        "title": "Are dinosaur fossils hogging top journals? Analysis sparks debate over ‘charismatic’ finds",
+        "journal": "Nature",
+        "publishedDate": "2026-10-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03512-2",
+        "doi": "10.1038/d41586-026-03512-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79008-4",
+        "title": "Spatial patterning of hierarchical lamellar-cellular structured hydrogels for programmable deformation-coupled information encryption",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-10-30T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79008-4",
+        "doi": "10.1038/s41467-026-79008-4",
+        "abstract": "Hydrogel actuators have potential in a range of applications, but combining rapid actuation and complex deformation is challenging. Here, the authors report a lamellar confined assembly polymerisation strategy for preparing programmable shape-morphing and information-encoding hydrogels.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
