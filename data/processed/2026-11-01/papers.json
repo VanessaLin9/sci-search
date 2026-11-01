@@ -1,0 +1,356 @@
+{
+  "reportDate": "2026-11-01",
+  "generatedAt": "2026-11-01T16:53:14.892Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.10.30.763227",
+      "title": "Pycea: a scverse toolkit for single-cell lineage tracing analysis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-01",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.30.763227v1",
+      "doi": "10.64898/2026.10.30.763227",
+      "abstract": "Lineage tracing enables reconstruction of cellular histories in development, regeneration, and disease, but integrating lineage data into single-cell analysis workflows remains challenging. We introduce Pycea, a Python toolkit for lineage analysis and visualization, and TreeData, an extension of AnnData that stores lineage trees alongside cellular measurements. TreeData is compatible with Scanpy and other scverse tools, enabling integrated analysis without converting between formats. Pycea provides scalable methods for tree visualization, clade identification, distance comparisons, ancestral state inference, and lineage statistics. This software is open source and available at https://github.com/YosefLab/pycea.",
+      "authors": [
+        "Colgan, W. N.",
+        "Weine, E.",
+        "Koblan, L. W.",
+        "Jones, M. G.",
+        "Weissman, J. S.",
+        "Yosef, N."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "Pycea：整合單細胞與譜系樹的 scverse 分析工具包",
+      "summaryZh": "研究團隊提出 Pycea，一個用於譜系分析與視覺化的 Python 工具包，並推出 TreeData 作為 AnnData 的延伸，可同時儲存譜系樹與細胞測量資料。TreeData 與 Scanpy 等 scverse 工具相容，聲稱可在不轉換格式的情況下進行整合分析。Pycea 提供樹狀視覺化、分支辨識、距離比較、祖先狀態推斷與譜系統計等可擴展方法。該軟體為開源，並提供 GitHub 連結。",
+      "topicTags": [
+        "single-cell",
+        "lineage-tracing",
+        "bioinformatics",
+        "scverse",
+        "software-tool"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79210-4",
+      "title": "Excess type I interferon disrupts developmental crosstalk and promotes premature distalization in trisomy 21 lungs",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79210-4",
+      "doi": "10.1038/s41467-026-79210-4",
+      "abstract": "Congenital lung anomalies are associated with Trisomy 21 lungs. Here, authors show that hyperactivation of the type I IFN signaling pathway promotes precocious epithelial cell differentiation, contributing to the T21 related lung pathologies.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "過量第一型干擾素干擾發育交互作用並促進21三體肺部提早遠端化",
+      "summaryZh": "本研究探討先天性肺部異常與21三體肺的關聯。作者指出，在21三體肺中，第一型干擾素訊號路徑出現過度活化。該過度活化會促進上皮細胞的早熟分化。研究認為此機制有助於解釋21三體相關的肺部病理。",
+      "topicTags": [
+        "trisomy-21",
+        "lung-development",
+        "type-i-interferon",
+        "congenital-anomalies"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79326-7",
+      "title": "Spatiotemporal modulation of microalgae to boost biofuel generation from CO2 by the stick-to-culture strategy",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79326-7",
+      "doi": "10.1038/s41467-026-79326-7",
+      "abstract": "Balancing biomass growth and lipid accumulation remains a challenge in microalgal biofuel production. Here the authors report extracellular matrix-mimicking hydrogel scaffolds that dynamically reconfigure the microenvironment of spatially organized microalgae, allowing controlled switching between the two states.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "以黏附培養策略時空調控微藻提升二氧化碳製油",
+      "summaryZh": "平衡生物量生長與脂質累積是微藻生質燃料生產的挑戰。作者報告了模擬細胞外基質的水凝膠支架。該支架可動態重構空間組織微藻的微環境。研究顯示此方法允許在兩種狀態間受控切換。",
+      "topicTags": [
+        "microalgae",
+        "biofuel",
+        "hydrogel",
+        "carbon-dioxide",
+        "spatiotemporal-modulation"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79129-w",
+      "title": "Metabolic reprogramming modulates cardiomyocyte hypertrophy via GLS1 in chronic kidney disease in male mice",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79129-w",
+      "doi": "10.1038/s41467-026-79129-w",
+      "abstract": "Chronic kidney disease often causes heart enlargement, a serious complication whose mechanisms remain unclear. Here, the authors show that excess phosphate activates the metabolic enzyme GLS1, promoting heart enlargement, while blocking GLS1 protects against this effect in male mice.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "代謝重編程透過 GLS1 調控慢性腎病中的心肌細胞肥大",
+      "summaryZh": "慢性腎病常導致心臟肥大，這是一種嚴重併發症，其機制仍不清楚。本文作者顯示，過量磷酸鹽會活化代謝酶 GLS1，進而促進心臟肥大。在雄性小鼠中，阻斷 GLS1 可對抗此效應。研究將代謝重編程與慢性腎病相關的心肌肥大連結起來。該結果為理解慢性腎病引起心臟肥大的機制提供了線索。",
+      "topicTags": [
+        "chronic-kidney-disease",
+        "cardiomyocyte-hypertrophy",
+        "metabolic-reprogramming",
+        "gls1",
+        "male-mice"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79315-w",
+      "title": "The gene ivory:mir-193 controls scale type differentiation in Heliconius butterflies",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79315-w",
+      "doi": "10.1038/s41467-026-79315-w",
+      "abstract": "Butterfly wing scales are diverse cell types that generate the colours and structures used in communication and adaptation. This study shows that the non-coding RNA ‘ivory’ controls alternative scale-cell states, linking regulatory evolution to phenotypic diversity.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "基因 ivory:mir-193 調控 Heliconius 蝴蝶鱗片類型分化",
+      "summaryZh": "蝴蝶翅膀鱗片是多樣化的細胞類型，產生用於溝通與適應的顏色和結構。本研究顯示非編碼 RNA ‘ivory’ 控制替代的鱗片細胞狀態。該發現將調控演化與表型多樣性連結起來，並指出 ivory:mir-193 在 Heliconius 蝴蝶鱗片類型分化中的作用。",
+      "topicTags": [
+        "butterfly",
+        "wing-scales",
+        "non-coding-rna",
+        "evolutionary-development",
+        "phenotypic-diversity"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79103-6",
+      "title": "Volumetric scattering microscopy",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79103-6",
+      "doi": "10.1038/s41467-026-79103-6",
+      "abstract": "Volumetric scattering microscopy (VSM) enables non-invasive and scan-free 3D fluorescence imaging through scattering biological tissues, allowing clearer visualization across multiple scales, including cells, tissues, and intact organisms.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "not_sure",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41467-026-79165-6",
+      "title": "Small-molecule targeting of kinesin-13 KIF2C enhances double-strand break DNA repair and slows down aging",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79165-6",
+      "doi": "10.1038/s41467-026-79165-6",
+      "abstract": "DNA damage is associated with aging and premature aging disorders. Here, the authors show that small molecule activation of the kinesin-13 KIF2C improves double-strand break DNA repair in aged cells and extends lifespan in progeria mice.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "小分子調控 kinesin-13 KIF2C 促進雙股斷裂修復並延緩老化",
+      "summaryZh": "研究指出 DNA 損傷與老化及早衰疾病相關。作者發現小分子活化 kinesin-13 KIF2C 可改善老化細胞的雙股斷裂 DNA 修復。該處理在早衰小鼠中延長壽命。結果顯示靶向 KIF2C 可能影響 DNA 修復與老化相關表型。",
+      "topicTags": [
+        "aging",
+        "dna-repair",
+        "kinesin",
+        "progeria"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79101-8",
+      "title": "PRMT1 methylates SKP1 to inhibit the ubiquitination of pro-proliferative phosphoproteins during hepatocyte proliferation",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-01T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79101-8",
+      "doi": "10.1038/s41467-026-79101-8",
+      "abstract": "During liver regeneration, EGF upregulates PRMT1, leading to increased asymmetric arginine dimethylation at R81 of SKP1. This impedes the interaction between SKP1 and FBXW7, protects pro-proliferative phosphoproteins from ubiquitin-mediated degradation, and thereby maintains hepatocyte proliferation.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "PRMT1 甲基化 SKP1 調控肝細胞增殖",
+      "summaryZh": "在肝臟再生期間，EGF 上調 PRMT1，導致 SKP1 的 R81 位點發生不對稱精胺酸二甲基化增加。此修飾阻礙 SKP1 與 FBXW7 之間的交互作用。交互作用受阻使促增殖磷酸化蛋白免於泛素介導的降解。研究指出此機制有助於維持肝細胞增殖。",
+      "topicTags": [
+        "prmt1",
+        "skp1",
+        "ubiquitination",
+        "hepatocyte-proliferation",
+        "liver-regeneration"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 9,
+      "passedByScope": 1,
+      "llmClassified": 8,
+      "llmYes": 6,
+      "llmNotSure": 1,
+      "llmNo": 1,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 8,
+      "excluded": 1
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 6,
+      "llmTagged": 6,
+      "llmLineA": 0,
+      "llmLineB": 6,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 8,
+      "candidates": 7,
+      "featured": 7,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 6,
+      "preprint": 1,
+      "skip": 1,
+      "featuredLineA": 0,
+      "featuredLineB": 6,
+      "featuredPreprint": 1,
+      "overflowLineA": 0,
+      "overflowLineB": 0,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 7,
+      "llmSummarized": 7,
+      "primarySucceeded": 7,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 6
+      },
+      "summarize": {
+        "requested": 7,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 7
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 0,
+        "succeeded": 0,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b"
+        },
+        "primarySucceeded": 0,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79179-0",
+        "title": "Li+-locked domain effect for breaking the temperature stability bottleneck in thermal-detection high-entropy energy storage ceramics",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-01T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79179-0",
+        "doi": "10.1038/s41467-026-79179-0",
+        "abstract": "Dielectric energy-storage ceramics lose polarization at high temperatures, limiting harsh-environment use. Here, the authors show a Li+- locked domain effect in high-entropy BNT-based ceramics, achieving Wrec = 11.43 J cm−3, η = 84.67%, Δη/η < 0.3% up to 320 °C, with self-diagnostic thermometry.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
