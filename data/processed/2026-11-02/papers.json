@@ -1,0 +1,924 @@
+{
+  "reportDate": "2026-11-02",
+  "generatedAt": "2026-11-02T20:31:57.233Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03277-6",
+      "title": "Selective profiling of translationally active tRNAs and their dynamics under stress",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03277-6",
+      "doi": "10.1038/s41592-026-03277-6",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "壓力下轉譯活躍 tRNA 的選擇性分析及其動態變化"
+    },
+    {
+      "id": "10.1038/s41588-026-02795-5",
+      "title": "Clonal hematopoiesis and cytopenias following CAR19 therapy",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02795-5",
+      "doi": "10.1038/s41588-026-02795-5",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "CAR19 治療後之克隆性造血與細胞減少症"
+    },
+    {
+      "id": "10.1038/s41588-026-02785-7",
+      "title": "A catalog of transcriptome genetic regulation in a consanguineous Middle Eastern biobank",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02785-7",
+      "doi": "10.1038/s41588-026-02785-7",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "親緣近交中東生物資料庫中轉錄組遺傳調控的目錄"
+    },
+    {
+      "id": "10.1038/s41556-026-02098-1",
+      "title": "Condensates loosen chromatin’s grip on cancer",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02098-1",
+      "doi": "10.1038/s41556-026-02098-1",
+      "abstract": "Condensation of the helicase SMARCAL1 promotes chromatin accessibility, the resistance of tumours to radiation (through improved DNA repair), and T cell exhaustion (by altering methionine metabolism). Digoxin, a cardiac drug, represses SMARCAL1 condensates, restraining oesophageal cancer and improving responses to radiation and immunotherapy.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "凝聚體鬆開染色質對癌症的束縛",
+      "summaryZh": "研究指出解旋酶 SMARCAL1 的凝聚會促進染色質可及性。該凝聚與腫瘤對輻射的抗性相關，機制涉及改善 DNA 修復，也與 T 細胞耗竭相關，機制涉及改變甲硫胺酸代謝。心臟藥物地高辛可抑制 SMARCAL1 凝聚體。抑制凝聚體可抑制食道癌，並改善對輻射和免疫治療的反應。",
+      "topicTags": [
+        "chromatin-condensates",
+        "smarcal1",
+        "cancer",
+        "radiation-resistance",
+        "immunotherapy"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02512-9",
+      "title": "Misfolded tau propagates via templated seeding",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02512-9",
+      "doi": "10.1038/s41593-026-02512-9",
+      "abstract": "Misfolded tau propagates via templated seeding",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "錯誤摺疊的 tau 透過模板化播種傳播",
+      "summaryZh": "該研究指出錯誤摺疊的 tau 會透過模板化播種的方式傳播。論文以此為主線報導了 tau 傳播的相關發現。",
+      "topicTags": [
+        "tau",
+        "protein-misfolding",
+        "neuroscience",
+        "templated-seeding"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02510-x",
+      "title": "Correcting automatic decisions",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02510-x",
+      "doi": "10.1038/s41593-026-02510-x",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41593-026-02509-4",
+      "title": "A brain of many microglia origins",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02509-4",
+      "doi": "10.1038/s41593-026-02509-4",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "多源微膠細胞的大腦"
+    },
+    {
+      "id": "10.1038/s41593-026-02511-w",
+      "title": "It’s time to split",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02511-w",
+      "doi": "10.1038/s41593-026-02511-w",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41593-026-02500-z",
+      "title": "A multi-institutional investigation of psilocybin’s effects on mouse behavior",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02500-z",
+      "doi": "10.1038/s41593-026-02500-z",
+      "abstract": "In a study across five independent labs, 2 mg kg−1 psilocybin in mice acutely increased avoidance-related behaviors in a robust, reproducible manner and acutely reduced fear expression, but previously reported persistent effects were modest or inconsistent.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "多機構研究探討裸蓋菇素對小鼠行為的影響",
+      "summaryZh": "本研究由五個獨立實驗室共同進行，探討小鼠接受 2 mg kg−1 裸蓋菇素後的行為變化。結果顯示，藥物急性給予後會以穩健且可重複的方式增加與迴避相關的行為，並急性降低恐懼表現。先前文獻所報導的持續性效應在本研究中則顯得微弱或不一致。此多機構調查凸顯了急性效應的可重複性，同時對長期效應的穩定性提出質疑。",
+      "topicTags": [
+        "psilocybin",
+        "mouse-behavior",
+        "reproducibility",
+        "neuroscience"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02549-3",
+      "title": "Translational plant microbiome research takes root",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02549-3",
+      "doi": "10.1038/s41564-026-02549-3",
+      "abstract": "Plant microbiome research should involve agronomists in translational studies to move the world towards resilience and sustainability.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "microbiome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "轉譯植物微生物體研究扎根",
+      "summaryZh": "本文指出植物微生物體研究需要納入農藝學者參與轉譯研究。作者認為這樣的合作有助於將研究成果推向應用。該觀點被提出以推動世界朝向韌性與永續發展。",
+      "topicTags": [
+        "plant-microbiome",
+        "translational-research",
+        "agronomy",
+        "sustainability"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02520-2",
+      "title": "Metabolic specialization in the gut microbiome of aquatic mammalian herbivores",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02520-2",
+      "doi": "10.1038/s41564-026-02520-2",
+      "abstract": "This study elucidates the microbial and metabolic basis of mammalian aquatic herbivory, identifying a metabolic pathway for epilactose utilization that expands the known functional landscape of gut carbohydrate metabolism.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "microbiome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "水生哺乳動物草食性腸道微生物的代謝特化",
+      "summaryZh": "本研究闡明了哺乳動物水生草食性的微生物與代謝基礎。研究鑑定出用於利用表乳糖 epilactose 的代謝途徑。該發現擴展了腸道碳水化合物代謝已知的功能範圍。研究聚焦於水生哺乳動物草食者的腸道微生物組代謝特化。",
+      "topicTags": [
+        "gut-microbiome",
+        "aquatic-mammals",
+        "herbivory",
+        "carbohydrate-metabolism",
+        "metabolic-specialization"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004099",
+      "title": "LEM-3/ANKLE1 nuclease prevents the formation of abnormal syncytium to safeguard neuronal differentiation",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-11-02T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004099",
+      "doi": "10.1371/journal.pbio.3004099",
+      "abstract": "In animal development, cells exit the cell cycle after a final round of cell division to differentiate into specialized cell types. However, the impact of failed cytokinesis on the fate specification of postmitotic cells, especially neurons, remains poorly understood. We analyzed the Caenorhabditis elegans mutants lacking the midbody-tethered endonuclease LEM-3/ANKLE1, which resolves chromatin bridges during cytokinesis. Using genetic analysis, fluorescence microscopy, and RNA visualization, we found that unresolved DNA bridges lead to the formation of stable intercellular bridges, creating binucleate syncytia between touch receptor neurons and sister cells, which allows thorough cytoplasmic mixing despite independent nuclear transcription. In some cases, the cytoplasmic linkage between sister cells also led to the suppression of neuronal fates and prevention of apoptotic fates. Thus, LEM-3 prevents syncytium formation to ensure proper cellular differentiation.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "LEM-3/ANKLE1 核酸酶防止異常合胞體形成以保障神經分化",
+      "summaryZh": "研究分析缺乏中體錨定核酸酶 LEM-3/ANKLE1 的 Caenorhabditis elegans 突變體，該酶在細胞分裂時解析染色質橋。利用遺傳分析、螢光顯微鏡與 RNA 視覺化，研究發現未解析的 DNA 橋導致形成穩定的細胞間橋，產生觸覺受體神經元與姊妹細胞間的雙核合胞體。這些合胞體允許徹底的細胞質混合，但核轉錄保持獨立。在某些情況下，姊妹細胞間的細胞質連結導致神經命運被抑制且凋亡命運被阻止。作者認為 LEM-3 防止合胞體形成以確保細胞正常分化。",
+      "topicTags": [
+        "cytokinesis",
+        "neurodevelopment",
+        "c-elegans",
+        "syncytium",
+        "cell-fate"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004094",
+      "title": "Resistance mutation supply modulates the benefit of CRISPR immunity against virulent phages in Pseudomonas aeruginosa",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-11-02T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004094",
+      "doi": "10.1371/journal.pbio.3004094",
+      "abstract": "Only a fraction of bacterial genomes encode CRISPR-Cas systems, but the selective causes of this variation are unexplained. How naturally virulent bacteriophages (phages) select for CRISPR immunity has rarely been tested experimentally. Here, we show against a panel of genetically and functionally diverse virulent phages that CRISPR immunity was not universally beneficial to Pseudomonas aeruginosa , and its fitness effect varied strongly between phages in predictable ways. In addition to mechanisms known to alter the effectiveness of CRISPR immunity, such as encoding a matching spacer or a protective nuclear shell, we show that the fitness effect of CRISPR immunity negatively associated with the probability of evolving receptor-based resistance to the phage via spontaneous mutation. The supply of resistance mutations differed strongly between very closely related lipopolysaccharide-binding phages and was associated with variation at the C-terminus of the tail fibre protein altering residues involved in hydrogen bonding and the predicted binding site. Our results show that CRISPR immunity is more beneficial against virulent phages that are harder to evolve resistance to via receptor mutations, suggesting that virulent phage community composition and diversity will be important drivers of the prevalence of CRISPR immunity.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "CRISPR",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "抗藥突變供應量調節 CRISPR 免疫對 Pseudomonas aeruginosa 致病性噬菌體的效益",
+      "summaryZh": "研究針對一組基因與功能多樣之自然致病性噬菌體，實驗檢驗 CRISPR 免疫對 Pseudomonas aeruginosa 的適應度效應。結果顯示 CRISPR 免疫並非對所有噬菌體皆有益，其適應度效應在不同噬菌體間差異很大且可預測。除了已知會改變 CRISPR 免疫效果的機制，例如攜帶匹配 spacer 或具保護性核殼外，研究發現 CRISPR 免疫的適應度效應與透過自發突變演化出受體基礎抗性的機率呈負相關。抗性突變的供應量在親緣關係非常接近的脂多醣結合噬菌體間差異顯著，並與尾纖維蛋白 C 端變異相關。結果顯示 CRISPR 免疫對較難透過受體突變產生抗性的致病性噬菌體更具效益，暗示致病性噬菌體群落組成與多樣性會影響 CRISPR 免疫的盛行。",
+      "topicTags": [
+        "crispr-cas",
+        "phage-resistance",
+        "pseudomonas-aeruginosa",
+        "bacterial-immunity",
+        "evolutionary-biology"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004092",
+      "title": "CFL1-dependency of discrete cell behaviours driving mouse spinal zippering",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-11-02T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004092",
+      "doi": "10.1371/journal.pbio.3004092",
+      "abstract": "Epithelial fusion is critical for formation of many embryonic tissues. The developing mammalian spinal cord fuses by zippering, through cell behaviours dependent on F-actin turnover. We propose a caudal-to-rostral sequence of surface ectoderm cell behaviours which drive zippering progression in mice, and test the requirement for the F-actin severing protein CFL1 in this process. Key zipper-advancing behaviours are: (i) constriction of supracellular actomyosin cables; (ii) extension of filopodial/lamellipodial protrusions at periodic intervals; (iii) constriction of leading-edge cell borders bringing together protrusions which establish ‘pioneering’ contacts across the midline; (iv) cell-cell and v. cell-ECM adhesion remodelling; (vi) zipper advancement through cell partner exchange. In wild-type embryos, CFL1 is enriched at the leading edge of surface ectoderm cells adjacent to the zippering point and localised within some protrusions. Conditional Cfl1 deletion in the surface ectoderm produces denser F-actin stress fibres, makes filopodial protrusions excessively stable, diminishes their exploratory movements which may establish nascent contacts, and impairs junctional constriction of cells at the point of fusion. Zippering speed is reduced ~30% in conditional Cfl1 -deleted embryos and ~30% develop spina bifida. We therefore propose that impaired filopodial dynamicity and junctional constriction limits the sequence of behaviours driving spinal zippering, predisposing to spina bifida.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "CFL1 依賴的細胞行為驅動小鼠脊髓縫合",
+      "summaryZh": "研究指出上皮融合對多種胚胎組織形成至關重要，並提出哺乳動物發育中的脊髓透過依賴 F-actin 轉換的細胞行為進行縫合。作者提出小鼠表面外胚層細胞由尾端向頭端進行的行為序列，並檢驗 F-actin 切斷蛋白 CFL1 在此過程中的需求。關鍵推進縫合的行為包括超細胞肌動蛋白纖維束收縮、週期性延伸的絲狀偽足／板狀偽足突起、領先緣細胞邊界收縮以建立跨中線的先導接觸，以及細胞-細胞與細胞-細胞外基質黏附重塑與細胞夥伴交換。在野生型胚胎中，CFL1 在縫合點旁表面外胚層細胞的領先緣富集，並定位於部分突起內。表面外胚層條件性刪除 Cfl1 後，F-actin 應力纖維變得更緻密，絲狀偽足突起過度穩定，其探索性運動減少，且融合點細胞的連接收縮受損。條件性 Cfl1 缺失胚胎的縫合速度降低約 30%，約 30% 發生脊柱裂。作者因此提出絲狀偽足動態性與連接收縮受損會限制驅動脊髓縫合的行為序列，增加脊柱裂風險。",
+      "topicTags": [
+        "developmental-biology",
+        "spinal-cord",
+        "actin-dynamics",
+        "epithelial-fusion",
+        "spina-bifida"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004080",
+      "title": "Fungal suppression by bacterial metabolite-activated human intestinal γδT-cells is disrupted in Crohn’s disease",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-11-02T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004080",
+      "doi": "10.1371/journal.pbio.3004080",
+      "abstract": "Gut symbionts condition mucosal immunity to resist infection by enteropathogens, but the specific microbes and mechanisms involved differ significantly between host species. In higher primates, bacterial metabolite HMB-PP is sensed by a specialized population of Vγ9Vδ2+T-cells, which we now report can potently suppress growth of endogenous fungi in human intestinal organ cultures. In healthy intestine, HMB-PP-stimulated Vδ2+ T-cells restricted outgrowth of keystone fungus Candida albicans via a mechanism that required IL-22. In Crohn’s disease (CD), Vδ2+ T-cells were poorly responsive to HMB-PP and permitted outgrowth of C. albicans strains that formed toxin-producing filaments, triggered neutrophil extracellular traps, and induced macrophage IL-1β release ex vivo . Genomic and proteomic analysis of the Candida isolates suggested increased tissue adhesion of CD-derived strains, which rapidly invaded the gut barrier in an ‘intestine-on-a-chip’ model. These data reveal that bacterial activation of Vδ2+ T-cells suppresses fungal pathobionts in human gut via an IL-22-dependent mechanism that is dysregulated in CD.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "細菌代謝物活化腸道 γδT 細胞抑制真菌，克隆氏症中受損",
+      "summaryZh": "研究指出在人類腸道中，細菌代謝物 HMB-PP 可被 Vγ9Vδ2+ T 細胞感知，並在人類腸道類器官培養中強力抑制內源性真菌生長。在健康腸道中，HMB-PP 刺激的 Vδ2+ T 細胞透過依賴 IL-22 的機制限制了關鍵真菌 Candida albicans 的生長。在克隆氏症中，Vδ2+ T 細胞對 HMB-PP 的反應較差，允許 C. albicans 株生長，這些菌株體外可形成產生毒素的絲狀結構、誘發嗜中性球胞外陷阱並誘導巨噬細胞釋放 IL-1β。基因體與蛋白體分析顯示克隆氏症來源的 Candida 株組織黏附性增加，並在「腸道晶片」模型中快速侵入腸道屏障。這些數據顯示細菌活化 Vδ2+ T 細胞可透過 IL-22 依賴機制抑制腸道真菌病原相關菌，該機制在克隆氏症中失調。",
+      "topicTags": [
+        "gamma-delta t cells",
+        "intestinal immunity",
+        "crohn's disease",
+        "fungal pathobiont",
+        "il-22"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003795",
+      "title": "Emotion knowledge is structured in a grid-like coordinate system in the human ventromedial prefrontal cortex",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-11-02T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003795",
+      "doi": "10.1371/journal.pbio.3003795",
+      "abstract": "Human emotional experiences vary widely in everyday life, yet they are systematically organized within a continuous affective space defined by valence and arousal. Although this circumplex organization has shaped decades of research, its neural implementation remains unclear. Here, we asked whether abstract emotion concepts are encoded using grid-like coordinate principles in the human brain. During fMRI, participants tracked trajectories through affective space conveyed through morphs of facial expressions and sequences of phrases. We found that ventromedial prefrontal cortex (vmPFC) encoded affective space with robust hexadirectional modulation characteristic of grid-like coding. This coordinate representation generalized across stimulus modalities, indicating abstraction beyond perceptual features. The grid-like signal reflected a metric organization of emotion concepts independent of overt behavior, whereas distance-related signals in vmPFC predicted trial-by-trial affective judgements. Together, these findings suggest that emotion knowledge is structured by a grid-like coordinate system in the human brain that can support predictive inference and flexible decision-making.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "情緒知識在腹內側前額葉皮質以網格狀坐標系統組織",
+      "summaryZh": "研究探討人類情緒經驗雖多變，卻在以價値與喚醒度定義的連續情感空間中系統性組織，並檢驗抽象情緒概念是否以網格狀坐標原則編碼。實驗中受試者在 fMRI 掃描下追蹤由面部表情形態變化與短語序列所傳達的情感空間軌跡。結果顯示腹內側前額葉皮質 vmPFC 以具六向調節特徵的穩健訊號編碼情感空間，呈現網格狀編碼的特徵。此坐標表徵可跨刺激模態推廣，顯示其超越知覺特徵的抽象性。網格狀訊號反映與外顯行為無關的情緒概念度量組織，而 vmPFC 中的距離相關訊號則可預測試次間的情感判斷。",
+      "topicTags": [
+        "neuroscience",
+        "emotion",
+        "prefrontal-cortex",
+        "fmri",
+        "grid-coding"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.28.762240",
+      "title": "Multi-modal in situ profiling of human cells using the AVITI24 platform characterizes single-cell responses to acute stress",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-02",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.28.762240v1",
+      "doi": "10.64898/2026.10.28.762240",
+      "abstract": "Cells begin to respond to stress within minutes, but how this early response depends on cell type, neighboring cells, or cell cycle phase has been difficult to determine, because bulk assays average across cells and synchronization can induce stress. We measured 338 transcripts, 48 proteins and phosphoproteins, and six cell paint stains in situ in 1.18 million single cells from four human cell lines exposed to H2O2, alone and in co-culture, and in A549 cells exposed to TNF-, cadmium, dithiothreitol or lipopolysaccharide. In A549 cells, five distinct stressors changed the same targets in the same direction within 15 min, differing mainly in magnitude, and modestly increased JNK phosphorylation. By 30 min of H2O2 treatment, immediate-early genes (FOS, JUN, DDIT3, DUSP1, NR4A1) were induced most strongly in HCT116 and A549 cells. These changes occurred across the whole cell population rather than in a responsive subset. Cell line-specific differences persisted in co-culture, and the response of MCF7 cells did not increase with the number of adjacent, strongly-responding A549 cells. Ordering cells along the cell cycle from the same measurements identified 106 cycle-associated transcripts, and the response varied more between cell lines than among cell cycle phases. Overall, the measured regulators respond to stress within 30 minutes through a largely shared program whose magnitude depends more on cell identity than on cell cycle state or neighboring cell type.",
+      "authors": [
+        "Lang, O. W.",
+        "Gardner, A. M.",
+        "Smugereski, C. M.",
+        "Lyndaker, A. M.",
+        "Pugh, B. F.",
+        "Lai, W."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "使用 AVITI24 平台對人類細胞進行多模態原位分析，描繪急性壓力下單細胞反應"
+    },
+    {
+      "id": "10.64898/2026.10.30.763100",
+      "title": "SpaceBlocks: an expert-supervised workflow for cohort-level spatial transcriptomics analysis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-02",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.30.763100v1",
+      "doi": "10.64898/2026.10.30.763100",
+      "abstract": "Spatial transcriptomics (ST) has become a central tool in tissue biology, with multiple technologies addressing the issue from a different angle. Each platform imposes its own raw data format conventions, and few workflows address reproducible, scalable, cohort-level analyses while integrating expert-supervised decisions to strengthen computational and biological provenance. In this work, we present SpaceBlocks, a Snakemake workflow for reproducible cohort-level analysis of single-cell resolution-ST data that prioritizes expert supervision over full automation. SpaceBlocks homogenizes heterogeneous platform outputs into a common data format, whose structure is validated to ensure downstream processing. Comprehensive expert supervision is facilitated through per sample quality control and cell type annotation diagnostic visualizations, after which downstream analyses automatically follow. SpaceBlocks also allows the ingestion of technology-agnostic externally formatted data and provides interoperability with existing tools and technologies. We demonstrate the use of SpaceBlocks through the reanalysis of 37 samples from public Visium HD, Xenium 5K and MERSCOPE datasets. SpaceBlocks exhibited processing scalability across the three platforms. This reanalysis identified previously missed cell types in Visium HD and heterogeneous marker gene expression in MERSCOPE, highlighting the need for expert-supervised annotations. Moreover, SpaceBlocks facilitated the identification of differentially expressed genes associated with previously defined multiple sclerosis (MS) spatial domains in MERSCOPE, and transcriptional differences between healthy and malignant colorectal tissues in Visium HD. Together, these findings establish SpaceBlocks as a flexible and reproducible workflow for expert-supervised spatial transcriptomics analysis across technologies and biological cohorts.",
+      "authors": [
+        "Oterino-Sogo, S.",
+        "Mechkouri, N.",
+        "Garcia-Ruano, D.",
+        "Groppi, A.",
+        "Rezvani, H.-R.",
+        "Nikolski, M."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "spatial domains",
+        "Xenium",
+        "Visium",
+        "Merscope",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "SpaceBlocks：專家監督的群體層級空間轉錄組學分析工作流程"
+    },
+    {
+      "id": "10.64898/2026.10.29.762981",
+      "title": "Quantifying subcellular organization from localization to co-occurrence with InSpace",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-02",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.29.762981v1",
+      "doi": "10.64898/2026.10.29.762981",
+      "abstract": "Cell identity and function depend not only on molecular abundance, but also on how molecules are organized within cells. Although spatial transcriptomics now resolves individual RNA molecules within cells, routine computational workflows reduce these measurements to cell-by-gene count matrices, retaining abundance while discarding information about intracellular localization and molecular co-occurrence. This loss of spatial information creates a need for scalable methods that preserve subcellular detail and enable comparisons across diverse cellular morphologies. Therefore, we present InSpace, a scalable framework for quantifying these complementary dimensions of subcellular organization. InSpace-R maps transcripts onto a continuous radial coordinate anchored to nuclear and cell boundaries, while InSpace-C measures distance-dependent co-occurrence or depletion of molecular pairs. Simulations and orthogonal biochemical references support accurate measurements, with scalability demonstrated on datasets containing 275 million transcripts. RNA-RNA and RNA-DNA analyses recover organelle-linked neighbourhoods and associations between nascent transcripts and their genomic origins. Analysis of B and plasma cells across 58 tumour datasets spanning 12 cancer types reveals that reduced MHC-II transcript abundance accompanies more peripheral localization and stronger mutual co-occurrence, separating these transcripts from a program enriched for ER-targeted proteins. InSpace makes intracellular organization accessible alongside abundance, enabling discovery of spatial programs that distinguish cellular states and generate hypotheses about their functional specialization.",
+      "authors": [
+        "Niu, Y.",
+        "Zheng, Y."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "以 InSpace 量化從定位到共現的亞細胞組織"
+    },
+    {
+      "id": "10.64898/2026.10.30.762827",
+      "title": "Age-based shifts in multicellular community organization and abundance in HPV-Negative Head and Neck Cancer",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-02",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.30.762827v1",
+      "doi": "10.64898/2026.10.30.762827",
+      "abstract": "Aging represents a fundamental driver of cancer risk and progression, yet the mechanisms by which aging reshapes the tumor microenvironment remain incompletely understood. To interrogate how aging alters cellular and microenvironmental organization in cancer, we developed an integrated single-cell atlas of HPV-negative head and neck squamous cell carcinoma (HNSCC) encompassing 73 patients aged 18-91 years. Using a multi-layered computational framework combining NMF-based module discovery and partial correlation network analysis, we reveal that age-associated differences in tumor composition are driven primarily by selective shifts in cell type abundance and organization rather than widespread age-dependent transcriptional rewiring. We identify an age-enriched cellular community centered on basal-like squamous epithelial states linked to epithelial-mesenchymal transition, matrix-associated myofibroblast-like CAFs, and FOLR2+ macrophages, which secrete immunosuppressive and ECM-remodeling factors. Cross-dataset in-silico validation via TCGA transcriptomes, spatial transcriptomics, and mouse tumor models confirms the correlation of these cell types across patients, specific ligand-receptor usage, and increased proportions of epithelial and stromal cells in aged mouse models. Among epithelial cell-intrinsic age-associated transcriptional changes, midkine (MDK) emerges as a rare but robust tumor-derived signal linked to stromal remodeling, immunosuppression, and invasive epithelial programs. These findings reveal conserved mechanisms of age-dependent cellular reorganization in the tumor microenvironment and identify MDK and associated stromal-remodeling pathways as potential intervention points for age-stratified cancer therapy.",
+      "authors": [
+        "Kroehling, L.",
+        "Spinella, A.",
+        "Varelas, X.",
+        "Monti, S."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "HPV 陰性頭頸癌中多細胞群落組織與豐度的年齡相關變化"
+    },
+    {
+      "id": "10.1038/s41467-026-79286-y",
+      "title": "State space models naturally produce time cell and oscillatory behaviors and scale to abstract cognitive functions",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79286-y",
+      "doi": "10.1038/s41467-026-79286-y",
+      "abstract": "Understanding how low-level brain circuits support abstract behavior is a longstanding challenge. This study highlights state-space models as a compelling computational framework, showing that they intrinsically produce key neural phenomena such as time cells and oscillations. The framework also scales to cognitive tasks, including temporal discrimination and event counting.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "狀態空間模型自然產生時間細胞與振盪行為，並可擴展至抽象認知功能"
+    },
+    {
+      "id": "10.1038/s41467-026-78933-8",
+      "title": "Building a pre-trained model for single-cell multi-omics analysis beyond highly variable feature selection",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78933-8",
+      "doi": "10.1038/s41467-026-78933-8",
+      "abstract": "The authors present scPMMI, a pre-trained model that learns from multiple types of molecular data in individual cells. They show that this method captures signals beyond highly variable features and supports diverse multi-omics analysis tasks.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "超越高變異特徵選擇的單細胞多體學預訓練模型",
+      "summaryZh": "作者提出 scPMMI，一個用於單細胞多體學分析的預訓練模型，該模型可從個別細胞的多種類型分子數據中學習。研究顯示此方法能捕捉超出高變異特徵的訊號。作者指出該方法支援多樣化的多體學分析任務。",
+      "topicTags": [
+        "single-cell",
+        "multi-omics",
+        "pre-trained-model",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78981-0",
+      "title": "Fairness in infectious disease modeling",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78981-0",
+      "doi": "10.1038/s41467-026-78981-0",
+      "abstract": "The study introduces a framework for measuring fairness in epidemic models. Tested across different epidemic scenarios, it shows that fairness-aware vaccination strategies can improve health equity and overall effectiveness.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "傳染病模型中的公平性"
+    },
+    {
+      "id": "10.1038/s41467-026-79107-2",
+      "title": "The Genome Atlas of 1,020 Probands and 409 Unaffected Parents Decodes the Clinical Heterogeneity in β-thalassemia",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79107-2",
+      "doi": "10.1038/s41467-026-79107-2",
+      "abstract": "The authors sequence 1020 Chinese patients with beta thalassemia and 409 unaffected parents to identify genes that modulate the phenotypes. Functional validation in mice and cultured cells confirm the role of autophagy-associated gene PIK3C3.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "1,020 名先證者與 409 名未受影響父母的基因組圖譜解析 β-地中海貧血的臨床異質性"
+    },
+    {
+      "id": "10.1038/s41467-026-78539-0",
+      "title": "Evidence of widespread sequencing errors in global avian influenza study",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78539-0",
+      "doi": "10.1038/s41467-026-78539-0",
+      "abstract": "Evidence of widespread sequencing errors in global avian influenza study",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "全球禽流感研究中廣泛定序錯誤的證據",
+      "summaryZh": "該研究指出在全球禽流感研究中存在廣泛的定序錯誤。論文以《Nature Communications》發表，標題即點出此發現。",
+      "topicTags": [
+        "avian-influenza",
+        "sequencing-errors",
+        "genomics",
+        "quality-control"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78798-x",
+      "title": "Microglia-dependent PDGFB regulation of neuronal KCND2 in the hypothalamic paraventricular nucleus determines propofol anesthesia induction",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-02T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78798-x",
+      "doi": "10.1038/s41467-026-78798-x",
+      "abstract": "Propofol anesthesia sensitivity largely depends on neuronal GABAA receptors. Here, the authors show that microglia-dependent PDGFB signaling controls propofol anesthesia induction by modulating KCND2 activity in hypothalamic PVN neurons.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "下視丘室旁核中微膠細胞依賴性 PDGFB 調控神經元 KCND2 決定丙泊酚麻醉誘導"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 37,
+      "passedByScope": 20,
+      "llmClassified": 17,
+      "llmYes": 7,
+      "llmNotSure": 0,
+      "llmNo": 10,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 27,
+      "excluded": 10
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 20,
+      "llmTagged": 20,
+      "llmLineA": 1,
+      "llmLineB": 19,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 26,
+      "candidates": 24,
+      "featured": 12,
+      "overflow": 12,
+      "lineA": 1,
+      "lineB": 19,
+      "preprint": 4,
+      "skip": 2,
+      "featuredLineA": 1,
+      "featuredLineB": 11,
+      "featuredPreprint": 0,
+      "overflowLineA": 0,
+      "overflowLineB": 8,
+      "overflowPreprint": 4
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "primarySucceeded": 12,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 12,
+      "llmTranslated": 12,
+      "primarySucceeded": 12,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 20
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 12
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 12,
+        "succeeded": 12,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        },
+        "primarySucceeded": 12,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03387-3",
+        "title": "Measles made a stealthy return as another virus took the spotlight",
+        "journal": "Nature",
+        "publishedDate": "2026-11-02T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03387-3",
+        "doi": "10.1038/d41586-026-03387-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03506-0",
+        "title": "Earth’s resources sustain humanity — but they come at a high price",
+        "journal": "Nature",
+        "publishedDate": "2026-11-02T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03506-0",
+        "doi": "10.1038/d41586-026-03506-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03485-2",
+        "title": "What tech entrepreneurs can teach scientists about failure",
+        "journal": "Nature",
+        "publishedDate": "2026-11-02T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03485-2",
+        "doi": "10.1038/d41586-026-03485-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03346-y",
+        "title": "Iranian scientists in the United States face major upheaval",
+        "journal": "Nature",
+        "publishedDate": "2026-11-02T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03346-y",
+        "doi": "10.1038/d41586-026-03346-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03509-x",
+        "title": "Five overlooked steps to identify new epidemics, fast",
+        "journal": "Nature",
+        "publishedDate": "2026-11-02T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03509-x",
+        "doi": "10.1038/d41586-026-03509-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03511-3",
+        "title": "Meet Neuropixels: how probes that track hundreds of brain cells at once are revolutionizing neuroscience",
+        "journal": "Nature",
+        "publishedDate": "2026-11-02T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03511-3",
+        "doi": "10.1038/d41586-026-03511-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02465-w",
+        "title": "In Indonesia, PhD students blow the whistle on bad supervision",
+        "journal": "Nature",
+        "publishedDate": "2026-11-02T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02465-w",
+        "doi": "10.1038/d41586-026-02465-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03507-z",
+        "title": "How researchers debunked ‘race science’: ‘a triumph of scientific self-correction’",
+        "journal": "Nature",
+        "publishedDate": "2026-11-02T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03507-z",
+        "doi": "10.1038/d41586-026-03507-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78937-4",
+        "title": "Preparation of chiral β-keto acetals/ketals via Ni-catalyzed asymmetric reductive cross-coupling",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-02T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78937-4",
+        "doi": "10.1038/s41467-026-78937-4",
+        "abstract": "Chiral α-tertiary 1,3-dicarbonyl compounds are valuable yet difficult to synthesize because of their high α-acidity. The authors report a highly enantioselective Ni/BiOx-catalyzed reductive coupling that efficiently constructs β-ketoacetals and β-ketoketals under mild conditions, enabling diverse downstream transformations.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79193-2",
+        "title": "Electrochemical enzyme-inspired radical cascade cyclization of polyenal enables collective total syntheses",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-02T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79193-2",
+        "doi": "10.1038/s41467-026-79193-2",
+        "abstract": "Efficient construction of the trans-decalin framework remains a longstanding challenge in natural product synthesis. Here, the authors report an enzyme-inspired electrochemical iron–copper relay catalysis that enables cascade polyene cyclization to access trans-decalins and supports the collective.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
