@@ -1,0 +1,1032 @@
+{
+  "reportDate": "2026-11-04",
+  "generatedAt": "2026-11-04T18:11:20.689Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03250-3",
+      "title": "RobPicker: a meta-learning framework for robust identification of macromolecules in cryo-electron tomograms",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-04T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03250-3",
+      "doi": "10.1038/s41592-026-03250-3",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "RobPicker：用於冷凍電子斷層影像中大分子穩健識別的元學習框架"
+    },
+    {
+      "id": "10.1038/s41592-026-03297-2",
+      "title": "More is more: why cell number matters in microscopy",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-04T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03297-2",
+      "doi": "10.1038/s41592-026-03297-2",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "越多越好：為何細胞數量在顯微鏡中重要"
+    },
+    {
+      "id": "10.1038/s41559-026-03225-9",
+      "title": "A risk framework for addressing nature’s harmful contributions to people",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-11-04T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03225-9",
+      "doi": "10.1038/s41559-026-03225-9",
+      "abstract": "Some aspects of nature can be harmful to people and have become contentious issues in biodiversity research and policy. This Perspective proposes a new conceptual framework for assessing and managing nature’s harmful contributions to people, drawing parallels with the concept of climate risk.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "因應自然對人類有害影響的風險框架",
+      "summaryZh": "本文為一篇觀點文章，指出自然的某些面向可能對人類造成危害，並已成為生物多樣性研究與政策中的爭議議題。作者提出一個新的概念框架，用以評估與管理自然對人類的有害貢獻。該框架的構想與氣候風險的概念相呼應。文章旨在為處理此類議題提供風險評估與管理的思路。",
+      "topicTags": [
+        "biodiversity",
+        "risk-framework",
+        "conservation-policy",
+        "nature-human-interaction"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02471-1",
+      "title": "The human claustrum tracks uncertainty and prediction error",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-11-04T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02471-1",
+      "doi": "10.1038/s41593-026-02471-1",
+      "abstract": "Single-neuron recordings provide direct evidence that the human claustrum tracks uncertainty and prediction errors during adaptive behavior. Its responses differed from those in the anterior cingulate cortex, which raises the possibility that these regions make distinct contributions to updating beliefs and guiding behavior in ever-changing environments.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "人類腦島核追蹤不確定性與預測誤差",
+      "summaryZh": "研究以單一神經元記錄提供直接證據，顯示人類腦島核 claustrum 在適應性行為中追蹤不確定性與預測誤差。腦島核的反應與前扣帶皮質 anterior cingulate cortex 不同。作者指出此差異顯示兩區可能對信念更新與在不斷變化的環境中引導行為作出不同的貢獻。",
+      "topicTags": [
+        "neuroscience",
+        "claustrum",
+        "prediction-error",
+        "uncertainty",
+        "human-neurons"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02496-6",
+      "title": "Single-neuron encoding of rapidly learned visual information reshapes human perception",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-11-04T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02496-6",
+      "doi": "10.1038/s41593-026-02496-6",
+      "abstract": "The authors show that rapid learning modulates neuronal activity in the human visual cortex, requiring extra processing time to support recognition and relaying signals to memory-related regions without requiring feedback.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單神經元編碼快速學習的視覺資訊重塑人類知覺",
+      "summaryZh": "作者顯示快速學習會調節人類視覺皮質的神經元活動。該活動需要額外處理時間以支持辨識。訊號會傳遞至記憶相關區域，且此過程不需要回饋。研究指出單神經元層級的編碼變化與知覺改變相關。",
+      "topicTags": [
+        "single-neuron",
+        "visual-cortex",
+        "learning",
+        "human-neuroscience",
+        "perception"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02527-9",
+      "title": "Engineering commensal Lachnospiraceae for programmable therapeutic delivery in the mouse gut",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-04T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02527-9",
+      "doi": "10.1038/s41564-026-02527-9",
+      "abstract": "The development of expression and secretion systems for the gut Lachnospiraceae family enables the engineering of a member species to deliver therapeutics in mouse models of metabolic dysfunction-associated steatotic liver disease.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "工程共生 Lachnospiraceae 實現小鼠腸道可程式化治療遞送",
+      "summaryZh": "研究開發了腸道 Lachnospiraceae 族群的表現與分泌系統。利用該系統可將該族群的成員物種進行工程化。工程化後的菌株能在小鼠腸道中遞送治療物。研究在代謝功能障礙相關脂肪性肝病的小鼠模型中進行。該工作展示了以腸道共生菌作為治療遞送載體的可行性。",
+      "topicTags": [
+        "synthetic-biology",
+        "microbiome",
+        "gut",
+        "therapeutic-delivery",
+        "liver-disease"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02487-0",
+      "title": "The microbial making and breaking of dimethylsulfoniopropionate and related compounds",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-04T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02487-0",
+      "doi": "10.1038/s41564-026-02487-0",
+      "abstract": "This Review reports the current understanding of the microbially mediated dimethylsulfoniopropionate cycle—the biodiversity, regulation and importance of genes and pathways that impact this sulfur compound.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "微生物對二甲基碸丙酸鹽的合成與分解",
+      "summaryZh": "這篇刊載於 Nature Microbiology 的綜述回顧了微生物介導的二甲基碸丙酸鹽循環的現況。文章聚焦於影響此硫化合物的基因與途徑的多樣性、調控及其重要性。綜述整理了微生物如何參與二甲基碸丙酸鹽及其相關化合物的生成與分解。內容提供對該循環中微生物功能與基因途徑的整體理解。",
+      "topicTags": [
+        "microbiome",
+        "sulfur-cycle",
+        "review",
+        "dimethylsulfoniopropionate",
+        "microbial-metabolism"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.03.763975",
+      "title": "Sex-specific bone marrow populations regulate skeletal phenotype and identify CD74-marked osteoclast precursor subsets",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-04",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.03.763975v1",
+      "doi": "10.64898/2026.11.03.763975",
+      "abstract": "While there are clear differences in bone accrual and maintenance between men and women due to hormonal regulation, the potential cell-intrinsic factors governing this difference are poorly understood. To investigate this, we performed bone marrow transplantation assays using male or female bone marrow transplantation into male hosts. Micro-CT analyses of lethally irradiated 8-week-old male mice transplanted with female bone marrow exhibited increased vertebral body trabecular and cortical bone mass. To identify cell types mediating these effects, we performed comparative single cell sequencing analyses and identified several CD11B+CD74+ myeloid cell clusters. Male donor BM chimeric mice had a higher proportion of Cd74-expressing clusters compared to female donor BM chimeric mice. We confirmed that males have greater numbers of bone marrow-resident CD11B+CD74+ cells under physiological conditions. Elevated expression of X-linked genes Tlr7 and Kdm6a marked a population of CD11B+CD74+ cells. Lastly, we show that female CD11B+CD74+ cells exhibit diminished osteoclastogenesis. These findings demonstrate that male and female bone marrow-resident cells have cell-intrinsic differences that regulate bone mass and that CD74 marks a subset of osteoclast precursor-enriched myeloid populations.",
+      "authors": [
+        "Koroth, J.",
+        "Karkache, I. Y.",
+        "Vu, E. K.",
+        "Manser, J. C.",
+        "Mitchell, S.",
+        "Shimak, M. J.",
+        "Robertson, N.",
+        "Patterson, E.",
+        "Kiraguri, S.",
+        "Mansky, K. M.",
+        "Bradley, E."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "性別特異性骨髓族群調控骨骼表型並鑑定 CD74 標記的破骨細胞前驅亞群"
+    },
+    {
+      "id": "10.64898/2026.11.03.763791",
+      "title": "Comparative molecular analysis of histopathologic subtypes reveals shared epithelial remodeling yet distinct fibroblast programs in scleroderma lung disease",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-04",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.03.763791v1",
+      "doi": "10.64898/2026.11.03.763791",
+      "abstract": "Rationale: Interstitial lung disease (ILD) drives mortality in systemic sclerosis (SSc), with a subset developing progressive pulmonary fibrosis (PPF) resembling idiopathic pulmonary fibrosis (IPF). Despite recognition of two distinct histopathologic patterns, the cellular basis of nonspecific interstitial pneumonia (NSIP) and usual interstitial pneumonia (UIP) remains poorly understood. Objectives: To define shared and distinct cellular and molecular features of SSc-NSIP and SSc-UIP compared to IPF. Methods: Single-nucleus RNA sequencing and spatial transcriptomics were performed on explanted lungs from patients with SSc-NSIP (n=6), SSc-UIP (n=6), or IPF (n=6), and control donors (n=12) with immunohistochemistry and western blot validation. Main Results: Across 120,254 nuclei from 35 cell types, there was striking similarity across fibrotic subgroups in epithelial, endothelial, and immune compartments, including alveolar type 1 cell loss, pathologic alveolar type 2 (AT2) gene expression, and expansion of COL15A1 endothelial cells and profibrotic macrophages. Diseased AT2s showed activation of the p53/DNA damage pathway. Aberrant basaloid (AB) cells were present in both SSc-ILD subtypes and transcriptionally similar to IPF ABs. They consistently neighbored profibrotic CTHRC1 fibroblasts, even in SSc-NSIP, despite lacking fibroblast foci. Fibroblast heterogeneity differentiated the histopathologic subtypes. Inflammatory fibroblasts were enriched in SSc-NSIP and CTHRC1 fibroblasts in UIP. AB-to-pathologic fibroblast crosstalk was defined by profibrotic signaling, with amplified TGF-{beta} signaling in UIP. Conclusions: Convergent epithelial remodeling is a hallmark of PPF in SSc-ILD and IPF. Fibroblast heterogeneity characterized by altered TGF-beta signaling distinguishes SSc-NSIP from SSc-UIP and IPF. Accelerated aging, DNA damage, and p53-dependent senescence pathways may represent shared drivers of PPF.",
+      "authors": [
+        "Yang, M. M.",
+        "Auyeung, V. C.",
+        "Kim, S. M. C.",
+        "Flynn, E.",
+        "Naikawadi, R. P.",
+        "Bazarov, A. V.",
+        "Lea, A.",
+        "Deiter, F.",
+        "Neely, J.",
+        "Kukreja, J.",
+        "Matthay, M. A.",
+        "Jones, K. D.",
+        "Greenland, J. R.",
+        "Sirota, M.",
+        "Wolters, P. J."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "硬皮症肺病組織亞型分子比較：上皮重塑共通、纖維母細胞程式各異",
+      "summaryZh": "本研究以單核RNA定序與空間轉錄體學分析硬皮症非特異性間質性肺炎 SSc-NSIP、硬皮症常見間質性肺炎 SSc-UIP、特發性肺纖維化 IPF 的移植肺組織，並以免疫組織化學與西方墨點法驗證。從 120,254 個細胞核、35 種細胞型別的資料中，纖維化亞群在上皮、內皮與免疫區室呈現高度相似，包括肺泡型 1 細胞流失、病理性肺泡型 2 細胞 AT2 基因表現、COL15A1 內皮細胞與促纖維化巨噬細胞擴張。病理性 AT2 顯示 p53/DNA 損傷路徑活化。異常基底樣 AB 細胞存在於兩種 SSc-ILD 亞型且與 IPF 的 AB 細胞轉錄相似，並持續鄰近促纖維化 CTHRC1 纖維母細胞，即使在 SSc-NSIP 中缺乏纖維母細胞灶。纖維母細胞異質性可區分組織病理亞型，發炎性纖維母細胞在 SSc-NSIP 中富集，CTHRC1 纖維母細胞在 UIP 中富集。AB 細胞與病理性纖維母細胞的交互作用以促纖維化訊號為特徵，UIP 中 TGF-β 訊號更為放大。研究指出 SSc-ILD 與 IPF 的進行性肺纖維化 PPF 具有共通的上皮重塑，而纖維母細胞異質性與 TGF-β 訊號差異可區分 SSc-NSIP、SSc-UIP 與 IPF。",
+      "topicTags": [
+        "systemic sclerosis",
+        "interstitial lung disease",
+        "single-nucleus rna-seq",
+        "spatial transcriptomics",
+        "pulmonary fibrosis"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.01.763474",
+      "title": "Single-Cell RNA Sequencing Reveals Distinct Cellular and Molecular Features of Steroid-Induced Osteonecrosis of the Femoral Head Compared to Alcohol-Induced Osteonecrosis and Hip Osteoarthritis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-04",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.01.763474v1",
+      "doi": "10.64898/2026.11.01.763474",
+      "abstract": "Osteonecrosis of the femoral head (ONFH) remains a devastating complication of glucocorticoid therapy and alcohol abuse, yet the pathophysiology is poorly understood. Using single-cell RNA sequencing, we analyzed femoral head specimens from patients undergoing total hip arthroplasty due to steroid-induced ONFH, alcohol-induced ONFH, or hip osteoarthritis (OA). Our comprehensive analysis across conditions revealed etiology-specific cellular compositions and transcriptional profiles. Steroid-induced ONFH demonstrated a distinctive immunological signature characterized by a neutrophil-predominant, elevated innate-to-adaptive immune cell ratio compared to alcohol-induced ONFH or OA. T cell analysis revealed impaired maturation in steroid-induced ONFH, with abundant naive T cells but reduced mature CD4+ T cells and CD4+ memory T cells compared to both alcohol-induced ONFH and OA. In addition, compared to alcohol-induced ONFH, steroid-induced ONFH was associated with an increase in exhausted/dysfunctional CD8+ T cells which suggests an impaired response to stress and reflects chronic immune dysfunction. Within stromal cell populations, steroid-induced ONFH demonstrated an increase in pericytes, endothelial cells, and mesenchymal cell with osteogenic features as compared to both alcohol-induced ONFH or OA. These findings collectively reveal novel cellular mechanisms underlying steroid-induced ONFH which may contribute to further investigation of etiology-specific pathogenesis and treatment strategies.",
+      "authors": [
+        "Sarkar, A.",
+        "Gallo, M. C.",
+        "Bell, J. A.",
+        "Mayfield, C. K.",
+        "Ball, J. R.",
+        "Hernandez, F.",
+        "Lechtholz-Zey, E.",
+        "Shelby, T.",
+        "Sugiyama, O.",
+        "Evseenko, D.",
+        "Lieberman, J. R."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "單細胞 RNA 定序揭示類固醇誘發股骨頭壞死相較於酒精誘發股骨頭壞死與髖關節骨關節炎的獨特細胞與分子特徵"
+    },
+    {
+      "id": "10.64898/2026.11.03.763980",
+      "title": "RAPTORGraph: graph-based pathway modeling for causal discovery in single-cell perturbations",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-04",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.03.763980v1",
+      "doi": "10.64898/2026.11.03.763980",
+      "abstract": "Experiments involving the perturbation of individual cells are central to understanding cellular mechanisms and can accelerate drug discovery. Causal representation learning allows us to uncover the latent factors that regulate biological systems and predict the impact of novel perturbations. Unfortunately, existing methods fail to address intervention spillover in a closed-world setting where intervention targets are known a priori, such as in Perturb-seq experiments, due to their reliance on dense encoders. Furthermore, incorporating curated biological pathways into the model imposes a confirmatory bias, forcing it to explain the data through preexisting pathways and reducing the set of hypotheses the model can explore, while discarding novel signals that lie outside the annotated pathways. In this work, we introduce RAPTORGraph, a {beta}-variational autoencoder with a GraphPathway encoder that explicitly models complex gene-to-gene interactions within learned pathways. Moreover, our model's preconditioning isolates the influence of perturbed genes, yielding clean, single-node latent interventions required for identifiable causal discovery and eliminating spillover. Finally, we train the model on data preprocessed with optimal-transport alignment, which guarantees a well-defined mapping between control and perturbed samples and further stabilizes the learned latent representations. We demonstrate that RAPTORGraph improves state-of-the-art performance on downstream analyses of unseen perturbations, such as non-additive interactions, while performing competitively on objective metrics, such as mean squared error and maximum mean discrepancy. The source code is available at https://github.com/sXperfect/RAPTORGraph.",
+      "authors": [
+        "Adhisantoso, Y. G.",
+        "Schröder, S. K.",
+        "Gress, M.",
+        "Hernaez, M.",
+        "Voges, J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "Perturb-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "RAPTORGraph：用於單細胞擾動因果發現的圖形化路徑建模"
+    },
+    {
+      "id": "10.64898/2026.07.07.736532",
+      "title": "SPARC Reveals Distinct Osteoclastogenesis-Associated Malignant States in Metastatic Osteosarcoma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-04",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.07.736532v2",
+      "doi": "10.64898/2026.07.07.736532",
+      "abstract": "Single-cell studies of metastatic cancer have revealed extensive transcriptional heterogeneity and cellular plasticity as malignant populations establish themselves in distant organs. The growing availability of paired single-cell profiles from primary tumors and matched metastases offers new opportunities to investigate how malignant-cell states evolve during metastasis in relation to progression within the primary tumor. Static comparisons between these sites have identified differences in cellular composition and molecular programs, but can reduce heterogeneous populations to site-level summaries and overlook changes in gene-expression programs along possible routes of metastatic progression. Investigating these dynamics calls for trajectory inference that reconstructs state progression within each condition and transitions between conditions. However, existing trajectory inference tools have limitations in jointly modeling these relationships under biological ordering constraints. Traditional and widely used trajectory inference tools, such as Monocle 3 and Slingshot, do not impose direction constraints based on biological knowledge or the sampling design during graph construction. Optimal transport-based tools, such as moscot, incorporate temporal order to infer cross-condition correspondences, but these mappings alone do not reconstruct progression within each condition. More recent methods, including CStreet and CellRank 2, incorporate both transition types, but construct the two components separately through distinct modeling or graph-construction strategies. Here we introduce SPARC (Shortest Path Algorithmic Reconstruction of Cross-state Evolution), a unified graph-based optimization framework that evaluates both types of relationships under a common connectivity formulation to reconstruct complete, directionally constrained candidate trajectories. Across benchmarks, SPARC improved recovery of candidate metastatic precursors and complete progression routes in simulations, showed strong directed-trajectory reconstruction in conventional time-course settings, and performed competitively in real tumor lineage-tracing datasets. To examine metastatic progression in a model where lung lesions arise through spontaneous dissemination, we generated, to our knowledge, the first paired scRNA-seq dataset of primary osteosarcoma tumors and spontaneous lung metastases from the same mice, together with the first patient-derived osteosarcoma Visium HD dataset. The biological analyses revealed differences among metastatic tumor states in their association with osteoclast-like myeloid populations and candidate supportive signals, suggesting that certain malignant states may preferentially promote osteoclastogenesis. Together, SPARC provides a framework for investigating biologically ordered cell-state progression and identifying state-specific programs associated with metastatic disease.",
+      "authors": [
+        "Wu, S.",
+        "Walker, W. C.",
+        "Nirala, B. K.",
+        "Martin, C.",
+        "Yustein, J. T.",
+        "Samee, M. A. H."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "Visium",
+        "cancer",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "SPARC 揭示轉移性骨肉瘤中與破骨細胞生成相關的獨特惡性狀態"
+    },
+    {
+      "id": "10.64898/2026.11.03.763929",
+      "title": "Marker-specific pixel attribution for single-cell protein quantification with PixAQ",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-04",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.03.763929v1",
+      "doi": "10.64898/2026.11.03.763929",
+      "abstract": "Imaging mass cytometry (IMC) typically quantifies all markers within the same cell mask, although their signals have distinct spatial distributions. This quantification method may omit relevant signals or include signals from neighboring cells. We present PixAQ, which improves single-cell protein quantification in IMC through marker-specific probabilistic pixel attribution. PixAQ combines spatial proximity with anchor-group intensity models to assign pixel-marker observations among neighboring cells and an explicit residual component. Original intensities are averaged over marker-specific supports. Across three cohorts (680 regions), comparisons in 366 patients showed improved agreement with predefined population-marker relationships, with cohort-median patient-paired gains of 1.99 to 4.83 percentage points in expected-marker share over shared-mask quantification. Ablation analyses showed that both spatial and intensity evidence contributed to these gains. Conventional and high-resolution IMC images linked supports to visible local and intracellular signal structures. PixAQ improves single-cell protein quantification by determining which local signals contribute to each marker measurement without changing cell segmentation.",
+      "authors": [
+        "Zha, Y.",
+        "Liang, C.",
+        "Lin, Y.",
+        "Li, G.",
+        "Zhang, C.",
+        "Huang, Z.",
+        "Wang, Z.",
+        "Zhang, L.",
+        "Tong, M.",
+        "Jiang, W.",
+        "Xiao, X.",
+        "Yu, R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "PixAQ 以標記特異像素歸屬提升單細胞蛋白定量",
+      "summaryZh": "本研究針對影像質譜細胞計量術 Imaging mass cytometry, IMC 提出 PixAQ 方法，改善單細胞蛋白定量。傳統方法以同一細胞遮罩量化所有標記，但標記訊號空間分布不同，可能遺漏相關訊號或納入鄰近細胞訊號。PixAQ 透過標記特異的機率性像素歸屬，結合空間鄰近性與錨定群組強度模型，將像素-標記觀測分配給鄰近細胞並保留顯式殘差成分，再以標記特異支援區域平均原始強度。研究在三個世代共 680 個區域、366 位患者的比較中顯示，相較於共享遮罩量化，PixAQ 在預期標記佔比上呈現一致性改善，世代中位數患者配對增益為 1.99 至 4.83 個百分點。消融分析顯示空間與強度證據均有貢獻，且支援區域與可見的局部與細胞內訊號結構相符。該方法在不改變細胞分割的前提下，決定哪些局部訊號貢獻於各標記測量。",
+      "topicTags": [
+        "imaging-mass-cytometry",
+        "single-cell",
+        "protein-quantification",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.02.763657",
+      "title": "scPCIP: cross-species annotation of plant cell types with conserved gene programs",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-04",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.02.763657v1",
+      "doi": "10.64898/2026.11.02.763657",
+      "abstract": "Single-cell atlases now cover many plant species and organs, yet their cell types are still annotated with marker genes that often fail to transfer between species. Here we show that plant cell identities are captured by gene programs conserved across species. We learned programs for root, leaf, flower and seed cell types on ortholog groups from 112,905 author-labelled cells and implemented them in scPCIP, which annotates cells of species absent from training without a reference. Across 26 held-out datasets, scPCIP outperformed marker-based and plant deep-learning methods, matched supervised classifiers trained on the same atlas and transferred, at lower accuracy, to an independent study; its programs followed tissue position in spatial transcriptomes. The conserved core of each program separated cell types better than its periphery in all 11 held-out species, whereas most species-specific markers turned over. Across organs, leaf bundle-sheath cells carried a root endodermis program in 8 of 12 studies.",
+      "authors": [
+        "Yang, S.",
+        "Si, C.",
+        "Wu, Y.",
+        "Sun, Z.",
+        "Yao, C.",
+        "Sun, X.",
+        "Wang, L.",
+        "Li, W.",
+        "Zhong, Q."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "scPCIP：利用保守基因程序進行跨物種植物細胞類型註解"
+    },
+    {
+      "id": "10.64898/2026.11.03.761870",
+      "title": "Lineage tracing in rhabdoid tumor organoids and orthotopic xenografts reveals convergent transcriptional states",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-04",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.03.761870v1",
+      "doi": "10.64898/2026.11.03.761870",
+      "abstract": "Malignant rhabdoid tumors (MRTs) are aggressive pediatric malignancies driven by loss of a single SWI/SNF subunit in an otherwise near-silent genome, yet they display extensive transcriptional heterogeneity. Whether this heterogeneity reflects the outgrowth of transcriptionally distinct clones, or states adopted independently of lineage, is unknown. Here we combined lentiviral lineage barcoding with single-cell RNA sequencing in two patient-derived renal MRT organoid models, followed through long-term in vitro culture and in a novel orthotopic xenograft setting. In both modalities, tumors and cultures became progressively restricted to a small number of lineages, and the clones that expanded were transcriptionally distinct from one another. Decomposing into gene expression programs showed that some transcriptional states were used broadly across lineages while others were confined to a few, and that lineages expanding independently, in separate cultures and separate animals, converged on the same restricted states. Individual lineages generally maintained their transcriptional identity across passaging and across anatomical sites, including in metastases, which arose from clones already expanded in the matched primary tumor. Which lineages came to dominate, however, differed between animals given the same starting population. Clonal outcome is therefore variable while the transcriptional states available to a tumor are drawn from a constrained and recurring repertoire.",
+      "authors": [
+        "Perticari, G.",
+        "DeMartino, J.",
+        "Fumagalli, A.",
+        "Ayyildiz, D.",
+        "Doulkeridou, S.",
+        "Kester, L.",
+        "Kooiman, J.",
+        "Margaritis, T.",
+        "Drost, J."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "類癌腫瘤類器官與原位異種移植的譜系追蹤顯示轉錄狀態趨同",
+      "summaryZh": "惡性類癌腫瘤是侵襲性兒童惡性腫瘤，由單一 SWI/SNF 亞基缺失驅動，基因組近乎沉默卻呈現廣泛的轉錄異質性。研究結合慢病毒譜系條碼與單細胞 RNA 定序，追蹤兩株病人來源腎臟 MRT 類器官模型在長期體外培養及新型原位異種移植中的變化。在兩種模式下，腫瘤與培養物逐漸受限於少數譜系，且擴增的克隆在轉錄上彼此不同。基因表現程式分解顯示，部分轉錄狀態廣泛存在於各譜系，部分則侷限於少數譜系，且在不同培養與不同動物中獨立擴增的譜系會收斂到相同的受限狀態。個別譜系在傳代與不同解剖部位間通常維持轉錄身份，轉移來自原發腫瘤中已擴增的克隆。相同起始族群在不同動物間主導的譜系不同，顯示克隆結果具變異性，而腫瘤可用的轉錄狀態來自受限且重複出現的庫。",
+      "topicTags": [
+        "rhabdoid tumor",
+        "lineage tracing",
+        "single-cell rna-seq",
+        "organoid",
+        "xenograft"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.03.763704",
+      "title": "MET inhibition exploits conserved regulatory dependencies in malignant rhabdoid tumors",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-04",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.03.763704v1",
+      "doi": "10.64898/2026.11.03.763704",
+      "abstract": "Malignant rhabdoid tumors (MRTs) are lethal, yet genomically simple childhood cancers characterised by universal SWI/SNF dysregulation. Despite this shared molecular framework, the regulatory programs sustaining MRTs and how they wire actionable dependencies, remain poorly defined. Here, we integrated single-cell multi-omic profiling and spatial transcriptomics across anatomically and molecularly diverse MRTs, generating a comprehensive multimodal MRT dataset at single-cell resolution. We leveraged this resource to identify candidate tumor-specific dependencies, which were subsequently functionally validated in vitro and in vivo in matched patient-derived models. We found that distinct malignant subpopulations are spatially patterned in complex environmentally shaped topologies, consistent with reciprocal interactions with stromal and immune compartments contributing to intratumoral transcriptional diversity. We identified recurrent transcriptional metaprograms conserved across patients and molecular subtypes, including a previously undescribed shared core rhabdoid program, as well as a metaprogram characterized by extracellular matrix interactions, and preferentially localized in tumor-stroma intermixed neighborhoods, supporting identification of niche conditioning cues. Mechanistically, we identified regulatory wiring driving these metaprograms, with the core shared rhabdoid programme coordinated by a circuit centred on TCF12, ZNF148 and CHD2. Guided by target nominations from our integrated analyses, we performed a curated drug screen using patient-derived MRT models and validated HGF/MET signaling as a selective vulnerability in extrarenal rhabdoid tumors. Pharmacologic MET inhibition was cytotoxic in sensitive models and induced a complete response in vivo using a clinically approved compound. Importantly, MET expression in primary tumors correlated with response, supporting biomarker-guided patient stratification for immediate clinical translation. Collectively, our findings define the molecular architecture of MRTs, reveal conserved regulatory programs beyond anatomical and molecular subtypes, and highlight a targetable signaling axis with immediate translational potential, establishing a framework for precision therapy in this lethal pediatric malignancy.",
+      "authors": [
+        "Sentis, I.",
+        "Cebria-Xart, A.",
+        "Rovira, Q.",
+        "Melon-Ardanaz, E.",
+        "Rodriguez Hernandez, C. J.",
+        "Morabito, S.",
+        "Caballe, A.",
+        "Ruano, I.",
+        "Urpi, A.",
+        "Caballero, M.",
+        "Garcia Palomino, S.",
+        "Rodriguez, E.",
+        "Maspero, D.",
+        "Caratu, G.",
+        "Onieva, A.",
+        "Marchese, D.",
+        "Ruiz, M.",
+        "Lorden, P.",
+        "Ramos, I.",
+        "Lavarino, C. E.",
+        "Castaneda, A.",
+        "Pascual-Reguant, A.",
+        "Mora, J.",
+        "Nieto, J. C.",
+        "Heyn, H.",
+        "Avgustinova, A."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "MET 抑制利用惡性橫紋瘤腫瘤的保守調控依賴",
+      "summaryZh": "本研究針對惡性橫紋瘤腫瘤進行單細胞多體學分析與空間轉錄組學，並建立跨解剖與分子多樣性樣本的單細胞解析度多模態資料集。研究發現不同惡性亞群在腫瘤內呈空間分佈模式，並鑑定出跨患者與分子亞型保守的轉錄後設程式，包括一個先前未描述的共同核心橫紋瘤程式，以及與細胞外基質交互作用相關的後設程式。核心橫紋瘤程式的調控被指出與 TCF12、ZNF148 與 CHD2 為中心的迴路相關。藥物篩選在患者來源模型中驗證 HGF/MET 訊號傳導為腎外橫紋瘤的選擇性脆弱性，且藥理學 MET 抑制在敏感模型中具細胞毒性並在體內誘發完全反應。研究亦指出原發腫瘤中 MET 表現與反應相關，支持以生物標記進行患者分層。",
+      "topicTags": [
+        "malignant-rhabdoid-tumor",
+        "single-cell",
+        "spatial-transcriptomics",
+        "met-inhibition",
+        "drug-screen"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.13.758108",
+      "title": "MCT4-Associated Lactate Export Defines Myeloid Metabolic Reprogramming during Head and Neck Cancer Progression",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-04",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.13.758108v2",
+      "doi": "10.64898/2026.10.13.758108",
+      "abstract": "Head and neck squamous cell carcinoma (HNSCC) development is accompanied by metabolic remodeling of the tumor microenvironment, yet how metabolic programs evolve across specific cell populations during tumor progression remains poorly understood. We integrated single-cell RNA-sequencing data from five HNSCC cohorts comprising 645,351 cells from 114 patients and inferred metabolic flux using single-cell Flux Estimation Analysis (scFEA). Myeloid cells showed the highest and most consistent metabolic allocation to lactate export among major cell types. In ten patients with paired normal mucosa and carcinoma, myeloid lactate-export allocation increased from 1.72% to 3.31% of total inferred metabolic flux, with an increase in every patient. SPP1+ macrophages showed the highest lactate-export allocation in carcinoma. Lactate export was predominantly associated with MCT4/SLC16A3. In carcinoma, myeloid SLC16A3 expression exceeded SLC16A1 by 17-fold, and CPTAC-HNSCC confirmed tumor enrichment of MCT4 protein. Together, these findings identify increased MCT4-associated lactate export as a prominent feature of myeloid metabolic reprogramming during HNSCC progression.",
+      "authors": [
+        "Tilton, T.",
+        "Park, Y. M.",
+        "Zhu, H.",
+        "Paolillo, J.",
+        "Zhang, C.",
+        "Lin, D.-C."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "MCT4相關乳酸輸出定義頭頸癌進展期間髓系代謝重編程",
+      "summaryZh": "本研究整合五個頭頸部鱗狀細胞癌HNSCC群組的單細胞RNA定序資料，共計645,351個細胞來自114名患者，並以單細胞通量估計分析scFEA推估代謝通量。結果顯示在主要細胞類型中，髓系細胞對乳酸輸出的代謝分配最高且最一致。在十名配對正常黏膜與癌症患者的樣本中，髓系乳酸輸出分配由1.72%上升至3.31%的總推估代謝通量，且每位患者皆增加。癌症中SPP1+巨噬細胞的乳酸輸出分配最高，且乳酸輸出主要與MCT4/SLC16A3相關。在癌症中，髓系SLC16A3表現量超過SLC16A1達17倍，CPTAC-HNSCC亦證實腫瘤中MCT4蛋白富集。研究指出MCT4相關乳酸輸出增加是HNSCC進展期間髓系代謝重編程的顯著特徵。",
+      "topicTags": [
+        "head-and-neck-cancer",
+        "single-cell",
+        "metabolism",
+        "myeloid-cells",
+        "lactate-export"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.03.763907",
+      "title": "Single-cell transcriptomics of enriched rare neural lineages of Tribolium castaneum",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-04",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.03.763907v1",
+      "doi": "10.64898/2026.11.03.763907",
+      "abstract": "Background Single-cell transcriptomic atlases have transformed our understanding of cell diversity. However, studies designed to profile entire tissues or organisms often omit or underrepresent rare cell populations. Enriching selected populations before sequencing offers a powerful approach to overcoming this limitation, but its application in insects has largely focused on Drosophila, limiting opportunities for comparative studies. Here, we establish complementary workflows for targeted transcriptomic profiling of rare neural populations in the red flour beetle, Tribolium castaneum. Results We developed two workflows combining population enrichment with single-cell or single-nucleus RNA sequencing. First, we generated cell suspensions from a transgenic reporter line labelling embryonic neuroblasts, enriched fluorescently labelled cells by fluorescence-activated cell sorting, and performed single-cell RNA sequencing. Second, we immunolabelled first-instar larval brains with an antibody against the nuclear transcription factor Rx, isolated and sorted labelled nuclei, and performed single-nucleus RNA sequencing. Both workflows yielded material suitable for transcriptomic profiling, demonstrating complementary reporter-based and antibody-based strategies for accessing selected neural populations at different developmental stages. Conclusions These workflows establish a methodological framework for targeted single-cell and single-nucleus transcriptomic studies of rare or specific neural populations in Tribolium. They provide practical starting points for adaptation to other insect systems, expanding opportunities for comparative investigations of neural development and cell-type evolution.",
+      "authors": [
+        "Cabanas, N.",
+        "Veloso, A.",
+        "Zinzen, R.",
+        "Bucher, G.",
+        "Mau, C."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "development",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "紅擬谷盜稀有神經譜系富集的單細胞轉錄體學"
+    },
+    {
+      "id": "10.1038/s41467-026-79258-2",
+      "title": "Wt1 splice isoforms bias lineage programmes during formative pluripotency",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-04T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79258-2",
+      "doi": "10.1038/s41467-026-79258-2",
+      "abstract": "Here they uncover an unexpectedly early role for Wt1 in biasing lineage programmes before gastrulation and show that Wt1 isoforms differing only by a three-amino-acid KTS motif encode divergent anterior-posterior lineage biases.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Wt1剪接異構體在形成期多能性中偏向譜系程式",
+      "summaryZh": "該研究發現Wt1在原腸胚形成前就具有意料之外的早期作用，會偏向譜系程式。研究指出Wt1的剪接異構體僅因三個胺基酸的KTS基序而不同，卻編碼出分歧的前後軸譜系偏向。結果顯示Wt1異構體在形成期多能性階段即可影響譜系選擇方向。此發現為Wt1在早期發育中的譜系調控角色提供了新的線索。",
+      "topicTags": [
+        "pluripotency",
+        "developmental-biology",
+        "lineage-specification",
+        "splice-isoforms"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78409-9",
+      "title": "Decoding microprotein interactome via a minimal genetically encoded photocatalytic proximity labeling system",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-04T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78409-9",
+      "doi": "10.1038/s41467-026-78409-9",
+      "abstract": "Shi, Yan, and colleagues present FlashID, an ultra-compact light-activated proximity-labeling system that maps microprotein interactions with minimal perturbation across bacteria, mammalian cells, worms and plants.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "光活化近接標記系統解析微蛋白互作組",
+      "summaryZh": "Shi, Yan 等人在《Nature Communications》發表 FlashID，一種超緊湊的光活化近接標記系統。該系統用於描繪微蛋白的互作，並聲稱在細菌、哺乳動物細胞、線蟲與植物中均可使用且干擾極小。研究聚焦於以最小遺傳編碼的 photocatalytic proximity labeling 方法來解碼微蛋白互作組。",
+      "topicTags": [
+        "proximity-labeling",
+        "microprotein",
+        "photocatalysis",
+        "interactome",
+        "genetically-encoded"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 77,
+      "passedByScope": 18,
+      "llmClassified": 59,
+      "llmYes": 40,
+      "llmNotSure": 2,
+      "llmNo": 17,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 60,
+      "excluded": 17
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 9,
+      "llmTagged": 9,
+      "llmLineA": 0,
+      "llmLineB": 9,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 20,
+      "candidates": 20,
+      "featured": 12,
+      "overflow": 8,
+      "lineA": 0,
+      "lineB": 9,
+      "preprint": 11,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 7,
+      "featuredPreprint": 5,
+      "overflowLineA": 0,
+      "overflowLineB": 2,
+      "overflowPreprint": 6
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "primarySucceeded": 12,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 8,
+      "llmTranslated": 8,
+      "primarySucceeded": 8,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 9
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 12
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 8,
+        "succeeded": 8,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        },
+        "primarySucceeded": 8,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03344-0",
+        "title": "A guide to Nature Index tables",
+        "journal": "Nature",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03344-0",
+        "doi": "10.1038/d41586-026-03344-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11368-9",
+        "title": "Carbon radical generation by irreversible metal-to-ligand charge transfer",
+        "journal": "Nature",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11368-9",
+        "doi": "10.1038/s41586-026-11368-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03423-2",
+        "title": "X-ray stopwatch can measure durations of just attoseconds",
+        "journal": "Nature",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03423-2",
+        "doi": "10.1038/d41586-026-03423-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03295-6",
+        "title": "Faint exoplanets detected using computational approach to remove glare from stars",
+        "journal": "Nature",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03295-6",
+        "doi": "10.1038/d41586-026-03295-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03267-w",
+        "title": "People’s social networks can be unintentionally reshaped during randomized interventions",
+        "journal": "Nature",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03267-w",
+        "doi": "10.1038/d41586-026-03267-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03420-5",
+        "title": "Infrared image detectors grown directly on read-out chips",
+        "journal": "Nature",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03420-5",
+        "doi": "10.1038/d41586-026-03420-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11218-8",
+        "title": "A two-dimensional reticular triaxial molecularly woven fabric",
+        "journal": "Nature",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11218-8",
+        "doi": "10.1038/s41586-026-11218-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11133-y",
+        "title": "Accelerating commercialization and deployment of indoor photovoltaics",
+        "journal": "Nature",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11133-y",
+        "doi": "10.1038/s41586-026-11133-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11225-9",
+        "title": "Observation of prethermal dynamical phase transitions and resonant melting",
+        "journal": "Nature",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11225-9",
+        "doi": "10.1038/s41586-026-11225-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11238-4",
+        "title": "Towards observing interstitial hydrogen in solution in metal lattices",
+        "journal": "Nature",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11238-4",
+        "doi": "10.1038/s41586-026-11238-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11226-8",
+        "title": "Conjugation-regulated self-assembled molecules for tandem solar cells",
+        "journal": "Nature",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11226-8",
+        "doi": "10.1038/s41586-026-11226-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11245-5",
+        "title": "Hard X-ray attosecond metrology",
+        "journal": "Nature",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11245-5",
+        "doi": "10.1038/s41586-026-11245-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11156-5",
+        "title": "The deep Earth origin of the Great Unconformity",
+        "journal": "Nature",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11156-5",
+        "doi": "10.1038/s41586-026-11156-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11274-0",
+        "title": "Twist-angle-dependent quantum phase diagrams in moiré bilayer MoTe2",
+        "journal": "Nature",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11274-0",
+        "doi": "10.1038/s41586-026-11274-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11213-z",
+        "title": "Imaging exoplanets below the telescope stability limit",
+        "journal": "Nature",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11213-z",
+        "doi": "10.1038/s41586-026-11213-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78934-7",
+        "title": "Highly efficient and durable Ga-doped Ni/Al2O3 catalyst enhanced by interfacial Ga3+ for low-temperature ammonia decomposition",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78934-7",
+        "doi": "10.1038/s41467-026-78934-7",
+        "abstract": "Ammonia could enable carbon-free hydrogen production, but efficient decomposition at low temperatures remains difficult. Trace gallium helps nickel catalysts remove surface hydrogen, markedly boosting low temperature activity.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79246-6",
+        "title": "Pressure-driven regime shifts in graphitization rewrite carbon fate during metamorphism",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-04T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79246-6",
+        "doi": "10.1038/s41467-026-79246-6",
+        "abstract": "This study demonstrates that pressure, metamorphic duration and organic precursor type are key controls on graphitization. The resulting kinetic framework provides constraints on carbon retention and structural partitioning during metamorphism and subduction.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
