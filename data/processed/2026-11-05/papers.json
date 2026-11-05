@@ -1,0 +1,710 @@
+{
+  "reportDate": "2026-11-05",
+  "generatedAt": "2026-11-05T18:12:23.524Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03288-3",
+      "title": "Unlocking spatial diversity of circular RNAs with abcFISH",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-05T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03288-3",
+      "doi": "10.1038/s41592-026-03288-3",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "以 abcFISH 解鎖環狀 RNA 的空間多樣性"
+    },
+    {
+      "id": "10.1038/s41592-026-03338-w",
+      "title": "Making AI approachable, one byte at a time",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-05T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03338-w",
+      "doi": "10.1038/s41592-026-03338-w",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "讓 AI 更易親近，一次一個位元組"
+    },
+    {
+      "id": "10.1038/s41592-026-03269-6",
+      "title": "Biological foundation models",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-05T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03269-6",
+      "doi": "10.1038/s41592-026-03269-6",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41592-026-03253-0",
+      "title": "Nondisruptive 3D profiling of combinations of epigenetic marks in single cells",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-05T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03253-0",
+      "doi": "10.1038/s41592-026-03253-0",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "單細胞中表觀遺傳標記組合的非破壞性三維分析"
+    },
+    {
+      "id": "10.1038/s41592-026-03299-0",
+      "title": "abcFISH enables multiplexed, single-molecule visualization of circular RNA spatial heterogeneity",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-05T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03299-0",
+      "doi": "10.1038/s41592-026-03299-0",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "abcFISH 實現環狀 RNA 空間異質性的多重單分子視覺化"
+    },
+    {
+      "id": "10.1038/s41592-026-03303-7",
+      "title": "Automated identification of individual birds by song enables multi-year recapture from passive acoustic monitoring data",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-05T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03303-7",
+      "doi": "10.1038/s41592-026-03303-7",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "透過鳴聲自動辨識個體鳥類，使被動聲學監測資料得以多年重捕"
+    },
+    {
+      "id": "10.1038/s41592-026-03282-9",
+      "title": "Integration and annotation of spatial multi-omic data with DIRAC",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-05T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03282-9",
+      "doi": "10.1038/s41592-026-03282-9",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "以 DIRAC 整合與註解空間多體學資料"
+    },
+    {
+      "id": "10.1038/s41556-026-02118-0",
+      "title": "Tau monomers and fibrils escape microglial clearance via distinct cellular mechanisms",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-11-05T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02118-0",
+      "doi": "10.1038/s41556-026-02118-0",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Tau 單體與纖維透過不同的細胞機制逃避免微膠細胞清除"
+    },
+    {
+      "id": "10.1038/s41556-026-02126-0",
+      "title": "Positional replication fork instability drives PARP inhibitor cytotoxicity",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-11-05T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02126-0",
+      "doi": "10.1038/s41556-026-02126-0",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "位置性複製叉不穩定性驅動 PARP 抑制劑細胞毒性"
+    },
+    {
+      "id": "10.1038/s41593-026-02534-3",
+      "title": "Editorial Expression of Concern: NgR1 and NgR3 are receptors for chondroitin sulfate proteoglycans",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-11-05T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02534-3",
+      "doi": "10.1038/s41593-026-02534-3",
+      "abstract": "Editorial Expression of Concern: NgR1 and NgR3 are receptors for chondroitin sulfate proteoglycans",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41590-026-02713-1",
+      "title": "Germinal centers as evolutionary islands",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-11-05T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02713-1",
+      "doi": "10.1038/s41590-026-02713-1",
+      "abstract": "Antibody affinity maturation can favor a few high-affinity clones. Spatially isolated germinal centers limit clonal dominance and preserve antibody response breadth.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "生殖中心作為演化孤島",
+      "summaryZh": "該研究探討生殖中心在抗體親和力成熟中的作用。抗體親和力成熟可能使少數高親和力克隆獲得優勢。研究指出，空間上隔離的生殖中心可限制克隆優勢。由此有助於維持抗體反應的廣度。",
+      "topicTags": [
+        "germinal-center",
+        "antibody-affinity-maturation",
+        "immunology",
+        "evolution"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.08.757494",
+      "title": "Scalable methylome-transcriptome profiling resolves clonal organization in human hematopoiesis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-05",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.08.757494v2",
+      "doi": "10.64898/2026.10.08.757494",
+      "abstract": "Understanding human tissue maintenance and remodeling requires linking clonal ancestry to molecular state, yet scalable joint measurement remains challenging. Here, we introduce Droplet-MT and an integrated computational workflow for joint transcriptome and methylome profiling at ~10,000 cells per library. Methylation epimutations enable mutation-independent clonal reconstruction from high-coverage methylomes, while reference-based label transfer assigns cells to established clones at ~0.2% CpG coverage, reducing sequencing cost. Clone-aggregated somatic variants provide genetic annotation without additional single-cell genotyping. Across ~21,000 paired profiles from healthy blood and longitudinal acute myeloid leukemia, we resolved small and expanded clones with heterogeneous lineage output. In leukemia, the framework distinguished changes in malignant clonal abundance, state remodeling within persistent clones, and recovery of healthy polyclonal hematopoiesis. Malignant monocytes remained transcriptionally and epigenetically distinct from healthy and recovery-associated cells despite treatment-associated remodeling. Droplet-MT enables scalable analysis of human tissues by linking clonal organization with molecular state and retrospective genetic annotation.",
+      "authors": [
+        "Shao, J.",
+        "Chen, M.",
+        "Liu, Y.",
+        "Sun, J.",
+        "Zhang, G.",
+        "Yan, Z.-Y.",
+        "Lin, H.",
+        "Ren, M.",
+        "Pei, S.",
+        "Peng, J.",
+        "Gong, Y.",
+        "Wang, S.-W."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "可擴展甲基組-轉錄組分析解析人類造血的克隆組織",
+      "summaryZh": "研究團隊提出 Droplet-MT 與整合計算流程，可在每座圖書館約 10,000 個細胞的規模下進行聯合轉錄組與甲基組分析。甲基化表觀突變可實現不依賴突變的克隆重建，而基於參考的標籤轉移在約 0.2% CpG 覆蓋下即可將細胞指派至既定克隆，降低定序成本。克隆聚合的體細胞變異提供遺傳註解，無需額外單細胞基因分型。在約 21,000 個來自健康血液與縱向急性骨髓性白血病的配對樣本中，研究解析出小型與擴增克隆及其異質的譜系輸出。在白血病中，該框架可區分惡性克隆豐度的變化、持續克隆內的狀態重塑，以及健康多克隆造血的恢復。惡性單核細胞在治療相關重塑下仍在轉錄與表觀遺傳上與健康及恢復相關細胞不同。",
+      "topicTags": [
+        "single-cell",
+        "methylome",
+        "transcriptome",
+        "hematopoiesis",
+        "clonal-dynamics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.04.763740",
+      "title": "Mapping the regulatory wiring of endothelial cell differentiation reveals a critical role for Hippo mechanosignaling",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-05",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.04.763740v1",
+      "doi": "10.64898/2026.11.04.763740",
+      "abstract": "At each step of development, stem cells encounter a branching decision to differentiate into one type of cell or another. This decision is executed through the action of competing gene programs that specify different cellular identities. Consequently, creating a comprehensive map of the gene programs that drive each branching step of human cell differentiation remains a long-sought goal of developmental and stem cell biology. Here, we introduce a framework combining genome-wide CRISPR screens, single-cell readouts, and gene program inference to systematically discover and characterize regulators of cell differentiation. This framework includes a method for CRISPR perturbations paired with single-cell RNA-seq called circular capture Perturb-seq (CC-Perturb-seq), which improves gRNA detection from split-pool combinatorial indexing protocols and enables perturbing many candidate regulators to map their effects on gene programs. We applied this framework to map how human pluripotent stem cells differentiate into arterial endothelial cells (ECs), and identified 174 regulators that promote or inhibit EC differentiation. By tracking gene programs across three stages of differentiation, we resolved when and how regulators divert cells toward alternative fates. This map revealed an unexpected requirement for the Hippo mechanosignaling pathway in EC specification. During lateral mesoderm differentiation, Hippo mechanosignaling was required to activate ETV2, the master transcriptional regulator of endothelial identity. Inhibiting Hippo blocked ETV2 even in the presence of VEGF and diverted progenitors to a mesenchymal fate in vitro. Likewise, Hippo signaling was required for maximal etv2 expression in developing zebrafish embryos. Conversely, pharmacologically activating the Hippo pathway increased the purity of both arterial and venous EC differentiation in vitro. Our framework thus identifies novel regulators of endothelial cell differentiation, improves stem-cell differentiation protocols via manipulation of mechanosignaling, and provides a generalizable platform for mapping the regulatory wiring of human development.",
+      "authors": [
+        "Nguyen, T. C.",
+        "King, H. D.",
+        "Amgalan, D.",
+        "Pushkarev, O.",
+        "Mo, Y. A.",
+        "Munger, C. J.",
+        "McCreery, C.",
+        "Gupta, R.",
+        "Zeng, T.",
+        "Zhou, R.",
+        "Conley, S. D.",
+        "Batta, S. P. R.",
+        "Sheth, M. U.",
+        "Mattei, E.",
+        "Masaltseva, A.",
+        "Kang, H. Y.",
+        "Ma, X. R.",
+        "Tran, N.",
+        "Gaskell, L.",
+        "Shoresh, N.",
+        "Orlova, V.",
+        "Kundaje, A.",
+        "Sumanas, S.",
+        "Ang, L. T.",
+        "Loh, K. M.",
+        "Engreitz, J. M."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "Perturb-seq",
+        "biology",
+        "development",
+        "CRISPR",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.11.01.763496",
+      "title": "OncoSpot enables benchmarking of cancer spatial transcriptomics methods across tumor evolutionary modes",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-05",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.01.763496v1",
+      "doi": "10.64898/2026.11.01.763496",
+      "abstract": "Spatial transcriptomics (ST) is increasingly used to map clonal architecture within tumors, yet methods for analyzing cancer ST data are difficult to evaluate because real tumors lack ground truth for copy-number alterations (CNAs), subclonal identity, and malignant cell fraction. Existing ST simulators model normal tissue and do not represent tumor evolution, CNA-driven expression, or the spatial organization of malignant subclones. We present OncoSpot, a cancer-aware simulator of Visium-like spot-based ST data. OncoSpot combines a spatial evolutionary scaffold from DEMON, CNAs generated along the resulting clonal phylogeny with CNAsim, cancer-type-specific malignant transcriptional programs, and spatially clustered nonmalignant cell types, and aggregates cells into spots with known malignant fraction, subclone, and copy-number profiles. We demonstrate OncoSpot on high-grade serous ovarian carcinoma, colorectal cancer, and hepatocellular carcinoma, which represent three distinct modes of tumor evolution. Simulated subclones were spatially clustered and showed stronger phylogeny-space concordance than those generated by scCube under matched subclone populations. Benchmarking CopyKAT, CancerFinder, Clonalscope, and RCTD revealed cancer-dependent performance: Clonalscope recovered copy-number signals more accurately in ovarian and colorectal cancer, whereas CopyKAT performed better in hepatocellular carcinoma, reflecting both the assumptions of each method and the copy-number landscapes of the three cancers. OncoSpot's ground truth also exposed a failure mode in Clonalscope's malignant spot identification, in which tumor and normal labels were inverted, and allowed us to trace its cause. These method-dependent behaviors would be difficult to detect in real data. OncoSpot provides a framework for benchmarking CNA inference, subclone detection, malignant spot identification, and normal spot deconvolution, and its modular design and guidelines allow extension to additional cancer types. OncoSpot is freely available at https://github.com/compbio-mallory/OncoSpot.",
+      "authors": [
+        "Bhattarai, P.",
+        "Yuan, W.",
+        "Zhou, X. M.",
+        "Mallory, X."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "Visium",
+        "cancer",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "OncoSpot 模擬癌症空間轉錄體學以跨腫瘤演化模式評測方法",
+      "summaryZh": "研究團隊提出 OncoSpot，一個針對 Visium 類點狀空間轉錄體學的癌症感知模擬器。OncoSpot 結合 DEMON 的空間演化骨架、CNAsim 沿克隆系統發育產生的拷貝數變異、癌症類型特異性的惡性轉錄程序，以及空間聚集的非惡性細胞類型，並將細胞彙整為具有已知惡性比例、亞克隆與拷貝數輪廓的點。模擬在高分化漿液性卵巢癌、大腸直腸癌與肝細胞癌上展示，這三種癌代表不同的腫瘤演化模式。模擬的亞克隆呈空間聚集，且在相同亞克隆族群下，相較於 scCube 產生的亞克隆，其系統發育與空間一致性更強。對 CopyKAT、CancerFinder、Clonalscope 與 RCTD 的基準測試顯示方法表現具癌症依賴性，並以 OncoSpot 的真值揭露 Clonalscope 在惡性點辨識上的標籤反轉失效模式。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "cancer-simulation",
+        "copy-number-variation",
+        "benchmarking",
+        "tumor-evolution"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.04.764099",
+      "title": "Benchmarking Statistical Methods for Differential Composition Analysis in Population-Scale Single-Cell Data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-05",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764099v1",
+      "doi": "10.64898/2026.11.04.764099",
+      "abstract": "Population-scale single-cell RNA sequencing (scRNA-seq) data capture cellular composition across cohorts ranging from several dozen to thousands of individuals, enabling the detection of cell-type composition differences between conditions. These differences reveal cellular shifts in disease pathogenesis and suggest potential targets for therapeutic intervention. However, differential composition analysis in scRNA-seq data is challenged by the unique features of cell count data, such as compositionality, prevalence of zeros, overdispersion, and confounding by technical and biological covariates. While this analysis is routinely performed, no study has yet systematically evaluated existing methods. Here, we benchmarked 12 methods for differential composition analysis using three population-scale scRNA-seq datasets with diverse and representative characteristics. Analyses of real data revealed low agreement across methods, while permutations and simulations based on the real data demonstrated excessive false discoveries for most methods. Overall, LOCOM emerged as the top-performing method that controls the false discovery rate while maintaining good statistical power, followed by ANCOM-BC and linear regression with centered-log-ratio transformation. Integrating evidence from real-data analyses and data-informed permutation and simulation experiments, we provide practical guidance tailored to common real-world challenges in differential composition analysis.",
+      "authors": [
+        "Wu, W.",
+        "He, M.",
+        "Hu, Y.",
+        "Su, C."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "族群規模單細胞資料差異組成分析方法基準測試",
+      "summaryZh": "本研究針對族群規模單細胞RNA定序資料中的差異組成分析進行方法學基準測試。作者以三個族群規模的scRNA-seq資料集評估12種方法，並指出細胞計數資料具有組成性、零值普遍、過度離散以及技術與生物共變數干擾等特性。真實資料分析顯示各方法間一致性低，而基於真實資料的排列與模擬顯示多數方法存在過度假發現。整體而言，LOCOM在控制錯誤發現率的同時保有較佳統計檢定力，其次為ANCOM-BC與以中心對數比轉換的線性回歸。作者據此提供針對實際挑戰的實務指引。",
+      "topicTags": [
+        "single-cell",
+        "differential-composition",
+        "benchmarking",
+        "scRNA-seq",
+        "statistics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.30.762911",
+      "title": "A comparative transcriptomic framework across kidney organoid, assembloid, and transplantation models",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-05",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.30.762911v1",
+      "doi": "10.64898/2026.10.30.762911",
+      "abstract": "Human kidney organoids recapitulate key aspects of renal development and have emerged as valuable platforms for disease modeling, nephrotoxicity screening, and therapeutic development. The field now includes a wide range of emerging protocols with distinct cellular compositions and maturation states, which complicates systematic comparison and model selection. Here, we integrated single-cell and single-nucleus transcriptomes from 11 studies spanning kidney organoid and assembloids, both in vitro and following transplantation, benchmarked against fetal and adult kidney references. Transcriptional maturation toward adult identity is compartment specific and does not correlate with protocol complexity. Assembloid protocols show the most adult-like podocyte and distal nephron signatures, transplantation is associated with enhanced tubular oxidative metabolic features, only protocols incorporating ureteric progenitors reliably generate collecting-duct lineages, and no protocol achieves mature adult proximal tubule identity. Annotating against either fetal or adult kidney reference alone leads to misassignment, because early fetal nephron epithelium transcriptionally resembles injury-dedifferentiated adult proximal tubule cells. Assembloid and transplantation models share elevated mechanosensing pathway expression independently of vascularization. Together, these findings provide a framework for kidney organoid model selection.",
+      "authors": [
+        "Glibetic, N.",
+        "Lee, K. C. Y.",
+        "Barnhill, J.",
+        "Ortega, M. A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "跨腎臟類器官、組裝體與移植模型的轉錄體比較框架",
+      "summaryZh": "本研究整合來自11篇研究的單細胞與單核轉錄體資料，涵蓋體外及移植後的腎臟類器官與組裝體，並以胎兒與成人腎臟為參考進行基準比較。結果顯示，朝向成人身份的轉錄成熟具區室特異性，且與培養流程複雜度無相關。組裝體流程在足細胞與遠端腎單位的成人樣特徵上最為接近，移植與腎小管氧化代謝特徵增強相關，僅納入輸尿管前驅細胞的流程可穩定產生集合管譜系，且無一流程達到成熟成人近端小管身份。單獨以胎兒或成人腎臟參考註解會導致錯配，因早期胎兒腎單位上皮在轉錄上類似受傷去分化的成人近端小管細胞。組裝體與移植模型在血管化獨立情況下均表現出升高的機械感應路徑表現。",
+      "topicTags": [
+        "kidney-organoid",
+        "single-cell-transcriptomics",
+        "assembloid",
+        "transplantation",
+        "nephrogenesis"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.03.763902",
+      "title": "Reconstruction of Cellular Trajectories with Biologically Interpretable States",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-05",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.03.763902v1",
+      "doi": "10.64898/2026.11.03.763902",
+      "abstract": "Elucidating the trajectories of cellular evolution provides biologists with deeper insights into biological systems and disease progression, ultimately facilitating more informed discovery of mechanisms and therapeutic design. Single-cell RNA sequencing (scRNA-seq) is widely used to study cellular evolution. However, it faces two primary limitations. First, because the process destroys cells during gene-expression measurement, it is impossible to track the gene-expression profile of the same cell throughout the entire trajectory. Second, because scRNA-seq captures cells at discrete time points, it provides only static snapshots rather than continuous trajectories, limiting its ability to resolve the full dynamics of cellular transitions. Consequently, various computational approaches have been developed to address these challenges. However, existing models fail to capture the hidden state of each cell, which is essential for reconstructing gene expression at unobserved time points. As the gene expression profiles depend on the cell state, and may vary according to time, we propose a Latent Cell-State Model, where we approximate cell state transition as a Markov chain and obtain the gene expression of each cell at unobserved timepoints depending on the cell state, time, and a latent variable that represents the high-dimensional gene expression profile of a cell. Our model is able to infer biologically meaningful cell states and generate high-quality gene expression profiles at unobserved timepoints, showing potential for accurate trajectory reconstruction.",
+      "authors": [
+        "Wang, Y.",
+        "Rattray, M.",
+        "Barber, D."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "以可解釋細胞狀態重建細胞軌跡",
+      "summaryZh": "本研究針對單細胞RNA定序無法追蹤同一細胞在整個過程中的基因表現，且只能取得離散時間點的靜態快照而難以解析連續軌跡的限制，提出一個潛在細胞狀態模型。模型將細胞狀態轉換近似為馬可夫鏈，並依賴細胞狀態、時間與代表高維基因表現的潛在變數來推估未觀測時間點的基因表現。作者指出模型能夠推斷出具有生物學意義的細胞狀態，並產生高品質的未觀測時間點基因表現。研究認為此方法對準確重建細胞軌跡具有潛力。",
+      "topicTags": [
+        "single-cell",
+        "trajectory-inference",
+        "latent-model",
+        "scRNA-seq",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.04.764238",
+      "title": "MorphoProt: RNA-Conditioned Integration of Multiscale Histology for Spatial Protein Inference",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-05",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764238v1",
+      "doi": "10.64898/2026.11.04.764238",
+      "abstract": "Spatially resolved protein abundance reveals cellular states and tissue organization that RNA expression cannot fully capture, yet direct spatial protein profiling remains costly and limited in coverage. Histology images routinely accompany spatial transcriptomics and offer complementary morphological information for protein inference. Here, we introduce MorphoProt, a multimodal framework that jointly predicts spatial protein abundance from RNA expression, multiscale histology and tissue neighborhoods. MorphoProt uses RNA-guided cross-attention over five histological fields of view, so that the morphological context read for each spot is conditioned on its molecular state. The fused representation is refined by gated aggregation of RNA-derived information from physical and transcriptomic neighborhoods before joint protein prediction. On held-out sections of human tonsil, mouse spleen and human liver, MorphoProt achieves mean proteinwise Spearman correlations of 0.652, 0.604 and 0.372, outperforming matched RNA-only and graph-based baselines and the histology-based HIPI and multimodal SPRINT baselines in all three tissues. Combining fields of view, rather than any single one, carries the histology gain: in spleen and liver, the multiscale model outperforms every single-field model, and its learned scale preference separates white-pulp from red-pulp compartments. Predicted proteins preserve protein-defined tissue domains and their marker identity, and recover pathologist-annotated germinal centers as accurately as measured proteins.",
+      "authors": [
+        "Xu, L.",
+        "Zheng, L.",
+        "Zhan, Y.",
+        "Zhang, Y.",
+        "Zhang, K."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "RNA 條件化多尺度組織學整合推論空間蛋白",
+      "summaryZh": "研究團隊提出 MorphoProt，一個多模態框架，用於從 RNA 表達、多尺度組織學影像與組織鄰域共同預測空間蛋白豐度。模型以 RNA 指導的跨注意力機制處理五個組織學視野，使每個點的形態上下文以其分子狀態為條件，並以門控聚合方式整合物理與轉錄組鄰域的 RNA 衍生資訊後進行蛋白聯合預測。在人類扁桃體、鼠脾臟與人類肝臟的保留切片上，MorphoProt 的平均蛋白別 Spearman 相關係數分別為 0.652、0.604 與 0.372，優於對應的 RNA 僅模型、圖形化基線，以及組織學基線 HIPI 與多模態基線 SPRINT。結合多個視野而非單一視野帶來組織學增益，多尺度模型在脾臟與肝臟中優於所有單視野模型，且其學習到的尺度偏好可區分白髓與紅髓區間。預測的蛋白保留蛋白定義的組織域及其標記身份，並能與測量蛋白一樣準確地恢復病理學家註解的生發中心。",
+      "topicTags": [
+        "spatial-proteomics",
+        "histology",
+        "multimodal-learning",
+        "spatial-transcriptomics",
+        "protein-inference"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.04.764360",
+      "title": "Response to azacitidine and the TIM-3 inhibitor, sabatolimab, in MDS and CMML is associated with distinct immune and antigen-presentation states",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-05",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764360v1",
+      "doi": "10.64898/2026.11.04.764360",
+      "abstract": "Targeting the immune checkpoint TIM-3 is of interest in myeloid neoplasms, yet the hematopoietic and immune changes associated with anti-TIM-3 therapy remain poorly characterized. We used single-cell RNA sequencing to profile bone marrow (BM) and peripheral blood from patients with myelodysplastic syndrome (MDS) and chronic myelomonocytic leukemia (CMML) treated with the hypomethylating agent azacitidine combined with sabatolimab, a monoclonal antibody targeting TIM-3, and integrated Human Cell Atlas reference datasets for comparison. CITE-seq profiling showed that TIM-3 was predominantly expressed on dendritic cells and NK cells, with variable expression across other populations, including CD34 cells and CD8 T cells. At baseline, we identified a population of CD34 myeloid-biased progenitors specific to MDS/CMML samples (\"HSPC-like\") characterized by inflammatory gene expression programs and features of impaired differentiation. In MDS, elevated baseline HLA class II expression across hematopoietic stem and progenitor cells (HSPCs), HSPC-like cells, and multiple myeloid populations was associated with response. Consistent with this finding, trajectory analysis suggested that nonresponders bypassed HLA class II-high states during myeloid differentiation. In MDS, the presence of distinct CD8 T-cell populations and increased interferon-response programs in CD8 T and NK cells at baseline was also associated with response. In both MDS and CMML, treatment among responders was associated with contraction of BM CD8 and CD4 T-cell populations characterized by type I interferon-responsive and inflammatory programs, including IFIT1, IFIT2, and TNF, along with expansion of a distinct GZMH/IFITM1-expressing cytotoxic CD8 T-cell population. Together, these findings identify baseline antigen-presentation and immune-response programs associated with therapeutic response and reveal coordinated remodeling of myeloid and lymphoid compartments during azacitidine/sabatolimab treatment in MDS and CMML.",
+      "authors": [
+        "Dey, A.",
+        "Smith, N.",
+        "Tirard, A.",
+        "Arnold, B.",
+        "Chan, T.",
+        "Lombardi-Story, J.",
+        "Casson, T.",
+        "Behnan, T. T.",
+        "Aguilar-Fernandez, S.",
+        "Fathi, A. T.",
+        "Hobbs, G. S.",
+        "Hock, H.",
+        "Amrein, P. C.",
+        "Reeves, P.",
+        "Jan, M.",
+        "Bod, L.",
+        "Graubert, T. A.",
+        "Brunner, A. M.",
+        "Narayan, R.",
+        "Villani, A.-C."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "CITE-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "阿扎胞苷合併 TIM-3 抑制劑 sabatolimab 治療 MDS 與 CMML 的反應與免疫與抗原呈現狀態相關",
+      "summaryZh": "本研究以單細胞 RNA 定序分析接受低甲基化藥物阿扎胞苷合併抗 TIM-3 單株抗體 sabatolimab 治療的骨髓與周邊血液，並與 Human Cell Atlas 參考資料集整合比較。CITE-seq 顯示 TIM-3 主要表現於樹突細胞與 NK 細胞，亦在 CD34 細胞與 CD8 T 細胞等族群中呈現變異表現。研究者在 MDS/CMML 樣本中辨識出特有的 CD34 髓系偏向前驅細胞族群「HSPC-like」，其具有發炎基因表現與分化受損特徵。在 MDS 中，造血幹細胞與前驅細胞、HSPC-like 細胞及多種髓系族群的基線 HLA class II 表現升高與治療反應相關，且軌跡分析顯示無反應者於髓系分化過程中繞過 HLA class II 高表現狀態。MDS 中基線存在特異 CD8 T 細胞族群，以及 CD8 T 與 NK 細胞的干擾素反應程序增加，亦與反應相關。在 MDS 與 CMML 中，反應者的治療後骨髓 CD8 與 CD4 T 細胞族群呈現收縮，該族群具有第一型干擾素反應與發炎程序，包含 IFIT1、IFIT2 與 TNF，並伴隨 GZMH/IFITM1 表現的細胞毒性 CD8 T 細胞族群擴張。",
+      "topicTags": [
+        "single-cell",
+        "myelodysplastic-syndrome",
+        "cmml",
+        "immune-checkpoint",
+        "antigen-presentation"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 22,
+      "passedByScope": 19,
+      "llmClassified": 3,
+      "llmYes": 1,
+      "llmNotSure": 0,
+      "llmNo": 2,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 20,
+      "excluded": 2
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 9,
+      "llmTagged": 9,
+      "llmLineA": 4,
+      "llmLineB": 5,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 19,
+      "candidates": 17,
+      "featured": 9,
+      "overflow": 8,
+      "lineA": 4,
+      "lineB": 5,
+      "preprint": 8,
+      "skip": 2,
+      "featuredLineA": 0,
+      "featuredLineB": 1,
+      "featuredPreprint": 8,
+      "overflowLineA": 4,
+      "overflowLineB": 4,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 9,
+      "llmSummarized": 8,
+      "primarySucceeded": 8,
+      "fallbackSucceeded": 0,
+      "failed": 1
+    },
+    "translate": {
+      "requested": 8,
+      "llmTranslated": 8,
+      "primarySucceeded": 8,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 9
+      },
+      "summarize": {
+        "requested": 9,
+        "failed": 1,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 8
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 8,
+        "succeeded": 8,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        },
+        "primarySucceeded": 8,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11351-4",
+        "title": "Hydrogen Derivatives Enable Cost-Effective Carbon Neutrality in China",
+        "journal": "Nature",
+        "publishedDate": "2026-11-05T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11351-4",
+        "doi": "10.1038/s41586-026-11351-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03568-0",
+        "title": "The hidden cost of flexible work in academia: women do more parenting",
+        "journal": "Nature",
+        "publishedDate": "2026-11-05T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03568-0",
+        "doi": "10.1038/d41586-026-03568-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
