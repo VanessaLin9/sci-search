@@ -1,0 +1,938 @@
+{
+  "reportDate": "2026-11-06",
+  "generatedAt": "2026-11-06T17:39:35.268Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03336-y",
+      "title": "Author Correction: Microbial community resemblance methods differ in their ability to detect biologically relevant patterns",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03336-y",
+      "doi": "10.1038/s41592-026-03336-y",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41588-026-02854-x",
+      "title": "Mapping somatic mutations in every corner of the genome",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02854-x",
+      "doi": "10.1038/s41588-026-02854-x",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "描繪基因組每個角落的體細胞突變"
+    },
+    {
+      "id": "10.1038/s41588-026-02857-8",
+      "title": "MMEJ repair safeguards cancer ecDNA",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02857-8",
+      "doi": "10.1038/s41588-026-02857-8",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "MMEJ 修復守護癌症 ecDNA"
+    },
+    {
+      "id": "10.1038/s41588-026-02855-w",
+      "title": "New neuronal microexons linked to autism",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02855-w",
+      "doi": "10.1038/s41588-026-02855-w",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "與自閉症相關的新神經元微小外顯子"
+    },
+    {
+      "id": "10.1038/s41588-026-02856-9",
+      "title": "Quantitative lineage tracing in mouse embryogenesis",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02856-9",
+      "doi": "10.1038/s41588-026-02856-9",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "小鼠胚胎發生中的定量譜系追蹤"
+    },
+    {
+      "id": "10.1038/s41588-026-02798-2",
+      "title": "Efficient and accurate mixed model association tool for single-cell eQTL analysis",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02798-2",
+      "doi": "10.1038/s41588-026-02798-2",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "單細胞 eQTL 分析的高效精確混合模型關聯工具"
+    },
+    {
+      "id": "10.1038/s41588-026-02780-y",
+      "title": "Robust fine-mapping in the presence of linkage disequilibrium mismatch",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02780-y",
+      "doi": "10.1038/s41588-026-02780-y",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "連鎖不平衡不匹配下穩健的精細定位"
+    },
+    {
+      "id": "10.1038/s41587-026-03339-2",
+      "title": "Cas12a-based combinatorial knockout screens define the genetic architecture of the DNA damage response",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-11-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03339-2",
+      "doi": "10.1038/s41587-026-03339-2",
+      "abstract": "A genetic interaction map of the DNA damage response (DDR) identifies functional relationships among DDR genes and pathways.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Cas12a 基礎組合敲除篩選解析 DNA 損傷反應遺傳架構",
+      "summaryZh": "該研究以 Cas12a 為基礎的組合敲除篩選探討 DNA 損傷反應的遺傳架構。研究建立了 DNA 損傷反應的遺傳交互作用圖譜。圖譜辨識出 DDR 基因與路徑間的功能關係。",
+      "topicTags": [
+        "crispr",
+        "cas12a",
+        "genetic-screen",
+        "dna-damage-response",
+        "functional-genomics"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02537-7",
+      "title": "Farnesol keeps fungal spores asleep",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02537-7",
+      "doi": "10.1038/s41564-026-02537-7",
+      "abstract": "Fungal spores must balance long-term survival in dormancy against the need to germinate and infect a host. A farnesol-sensing receptor controls this decision, and can be influenced by rhizosphere bacteria, shifting the balance between fungal persistence and plant disease based on cell density and nutrient availability.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "法尼醇讓真菌孢子保持休眠",
+      "summaryZh": "研究指出真菌孢子需要在長期休眠存活與萌發感染宿主之間取得平衡。論文描述一種感應法尼醇的受體可控制此決策。該受體還能受根際細菌影響，並依細胞密度與營養可利用性改變真菌持續存在與植物病害之間的平衡。",
+      "topicTags": [
+        "fungal-spores",
+        "dormancy",
+        "farnesol",
+        "rhizosphere",
+        "plant-disease"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.04.764000",
+      "title": "A Dynamic Stem Cell State Links Environmental Cues to Skeletal and Regenerative Fates",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764000v1",
+      "doi": "10.64898/2026.11.04.764000",
+      "abstract": "Stem cells faithfully generate tissue architecture during development, yet how their identity and regenerative output are reshaped as anatomical niches mature and environmental signals change with aging and injury remains poorly understood. Rare skeletal stem cells (SSCs) across diverse skeletal sites are defined by combinations of cell-surface markers, precluding their genetic interrogation in vivo. Here, using spatially informed single cell transcriptomics, we identify Pannexin-3 (Panx3) to mark a dynamic functional state within bona fide SSCs and establish Panx3-CreERT2 mice for its longitudinal interrogation. Panx3 SSCs exhibit long-term clonal persistence, self-renewal and multipotency, whereas Panx3- SSCs can acquire this state. Successive SSC cohorts engage the Panx3 state during skeletal development, osteoanabolic stimulation expands pre-existing Panx3 SSC clones and injury induces it locally in previously unlabeled progenitors. Thus, anatomically distinct progenitors can converge on a common stem cell state in response to different environmental inputs. Three-dimensional reconstruction of chondrogenic niches further identifies signals that redirect Panx3-lineage cells towards stable cartilage, enabling durable regeneration in aged and osteoarthritic joints and with human SSCs. These findings establish anatomical origin, stem cell state and lineage fate as separable dimensions of stem cell identity and provide genetic access for interrogating and directing endogenous SSC function.",
+      "authors": [
+        "Wang, Y.",
+        "Zhao, L.",
+        "Chen, K.",
+        "Xiang, J.",
+        "Hunt, E. J.",
+        "Sokol, J.",
+        "Ding, K.",
+        "Steininger, H. M.",
+        "Martinez, N. R.",
+        "Weldon, K. C.",
+        "Chan, E.",
+        "Morales, D. A.",
+        "Martinez, C.",
+        "Wang, S.",
+        "Marquez-Arreguin, G.",
+        "Chen, H.",
+        "Hoover, M. Y.",
+        "Lu, W.-J.",
+        "Xiao, J.",
+        "Guo, F.",
+        "Longaker, M. T.",
+        "Weissman, I. L.",
+        "Chan, C. K. F.",
+        "Ambrosi, T. H."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "動態幹細胞狀態連結環境訊號與骨骼再生命運",
+      "summaryZh": "研究指出稀有的骨骼幹細胞在不同骨骼部位以細胞表面標記組合定義，難以在體內進行遺傳學追蹤。作者以空間資訊單細胞轉錄體學鑑定出 Pannexin-3（Panx3）標記真實骨骼幹細胞中的動態功能狀態，並建立 Panx3-CreERT2 小鼠以進行縱向追蹤。Panx3 陽性骨骼幹細胞展現長期克隆持續性、自更新與多能性，而 Panx3 陰性細胞可獲得此狀態。骨骼發育過程中連續的幹細胞群會進入 Panx3 狀態，成骨刺激可擴增既有 Panx3 克隆，損傷則在先前未標記的祖細胞中局部誘導此狀態。研究另以三維重建軟骨微環境，發現可將 Panx3 來源細胞導向穩定軟骨的訊號，並在老化與骨關節炎關節以及人類骨骼幹細胞中促成持久再生。",
+      "topicTags": [
+        "stem-cells",
+        "skeletal-stem-cells",
+        "regeneration",
+        "single-cell-transcriptomics",
+        "pannexin-3"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.05.763441",
+      "title": "Multicellular Perturb-seq Reveals Lineage-Specific Transcriptional Control During Human Cardiac Organoid Development",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.05.763441v1",
+      "doi": "10.64898/2026.11.05.763441",
+      "abstract": "Heart development requires the coordinated differentiation of multiple cell lineages, including cardiomyocytes (CMs) and endothelial cells (ECs). Transcription factors (TFs) orchestrate lineage specification, morphogenesis, and maturation, yet how cardiac and vascular TFs shape multicellular organization and their interactions remain poorly understood. Many TFs exhibit pleiotropic and stage-dependent effects across cardiac lineages, particularly in cardiac progenitor cells, suggesting the presence of shared regulatory networks that synchronize cardiac and vascular programs during development and in response to stress. Human induced pluripotent stem cell (hiPSC) differentiated cardiac organoid provides a physiologically relevant 3D model to study these multicellular interactions, enabling simultaneous differentiation of ECs and CMs within a human genetic context. When combined with CRISPR interference (CRISPRi) based Perturb-seq, this system allows systematic, high-throughput dissection of TF-driven regulatory programs at single-cell resolution. In this study, we investigated how cardiac and vascular TFs coordinate lineage commitment and the cross-lineage signaling in human cardiovascular differentiation.",
+      "authors": [
+        "Klosa, P.",
+        "Cai, K.",
+        "Nansubuga, C.",
+        "Sun, Y.",
+        "Lin, X.",
+        "Liu, C."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "Perturb-seq",
+        "development",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "多細胞 Perturb-seq 揭示人類心臟類器官發育中的譜系特異性轉錄調控",
+      "summaryZh": "本研究聚焦心臟發育中心肌細胞與內皮細胞等多條譜系的協調分化，並指出轉錄因子在譜系指定、形態發生與成熟中的調控作用仍不明確。作者以人類誘導多能幹細胞分化的心臟類器官作為三維模型，可在人類遺傳背景下同時分化內皮細胞與心肌細胞。結合 CRISPR 干擾 CRISPRi 基礎的 Perturb-seq 系統，研究旨在以單細胞解析度系統性解析轉錄因子驅動的調控程序。研究探討心臟與血管轉錄因子如何協調譜系承諾以及跨譜系訊號傳遞於人類心血管分化中的作用。",
+      "topicTags": [
+        "cardiac-organoid",
+        "perturb-seq",
+        "transcription-factor",
+        "single-cell",
+        "human-iPSC"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.04.764292",
+      "title": "scDisentangle: sequential disentanglement for single-cell perturbation response prediction",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764292v1",
+      "doi": "10.64898/2026.11.04.764292",
+      "abstract": "Predicting the transcriptional response of single cells to perturbation is a central goal of single-cell modeling, with broad application to analysis and experimental design. Existing methods often fail to beat simple baselines and offer little insight into how biological variation is organized. We present scDisentangle, a model that decomposes single-cell expression into observed attributes and a sequence of residual components, generating counterfactuals that preserve source cell identity. scDisentangle outperformed current models and naive baselines on cytokine stimulation, liver infection, and unseen combinatorial genetic perturbations, on which accuracy was largely independent of how closely a response resembled the average perturbation effect. In an immune checkpoint inhibitor-associated myocarditis cohort, cell-resolved counterfactuals predicted donor-specific intracardiac CD8+ T cell states from peripheral blood. In a castration-regeneration prostate atlas, predictions recapitulated luminal dynamics and progenitor-marker kinetics upon androgen add-back. scDisentangle's coarse-to-fine latent structure aligned with hematopoietic lineage organization, with early levels capturing a less differentiated core progressively refined into cell-type-specific programs.",
+      "authors": [
+        "El Mejjad, S.",
+        "Enezari, S.",
+        "Bedraoui, A.",
+        "El Hajji, F. Z.",
+        "El Fatimy, R.",
+        "Hofree, M.",
+        "Daouda, T."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "scDisentangle：用於單細胞擾動反應預測的序列解耦"
+    },
+    {
+      "id": "10.64898/2026.11.05.764599",
+      "title": "scCont: Interpretable Contrastive Learning for Functional Characterization of Cellular State Transitions",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.05.764599v1",
+      "doi": "10.64898/2026.11.05.764599",
+      "abstract": "Timecourse single-cell RNA (scRNA) datasets have become indispensable biological tools for studying and uncovering the underlying regulatory processes driving continuous cell-state transitions such as the epithelial-to-mesenchymal transition. However, these highly fluid, non-linear gene program dynamics remain difficult to disentangle. While deep neural network models can effectively map complex topologies, they are biological black boxes, lacking the gene-level interpretability required by experimental practitioners. Here, we introduce scCont, a fully unsupervised contrastive learning framework for extracting interpretable functional transition units from scRNA-seq data. Rather than relying on explicit temporal labels or clustering priors, scCont uses an unsupervised k-nearest neighbors approach to project local transcriptomic neighborhoods into a low-dimensional embedding. During post-training analysis, scCont employs Shapley network attribution to determine gene-latent relationships, mapping latent dimensions directly into functional gene programs. We quantitatively and qualitatively validate this representation by demonstrating that scCont captures biologically interpretable dynamics more effectively than baseline methods such as LDVAE. Evaluated across 13 diverse EMT timecourse datasets and four simulated datasets, scCont exposes interpretable functional dynamics and effectively maps context-dependent functional groups, helping to bridge the gap between deep learning representation and translational biological utility. scCont is an open source software available on GitHub (https://github.com/nramani611/scCont).",
+      "authors": [
+        "Kewalramani, N.",
+        "Wuchty, S.",
+        "Crovella, M.",
+        "Paul, I.",
+        "Emili, A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "可解釋對比學習解析細胞狀態轉換的功能單元",
+      "summaryZh": "研究團隊提出 scCont，一個完全無監督的對比學習框架，用於從 scRNA-seq 資料中提取可解釋的功能轉換單元。方法不依賴明確的時間標籤或聚類先驗，而是使用無監督的 k-nearest neighbors 方法將局部轉錄組鄰域投影至低維嵌入。後續分析以 Shapley network attribution 決定基因與潛在維度的關係，將潛在維度映射為功能基因程序。作者在 13 個多樣化的 EMT 時間序列資料集與四個模擬資料集上進行定量與定性驗證，指出 scCont 相較於基線方法如 LDVAE 能更有效地捕捉生物學上可解釋的動態。scCont 為開源軟體，已公開於 GitHub。",
+      "topicTags": [
+        "single-cell",
+        "contrastive-learning",
+        "epithelial-mesenchymal-transition",
+        "interpretability"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.04.764438",
+      "title": "Virtual dynamics of spatiotemporal single-cell interactions",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764438v1",
+      "doi": "10.64898/2026.11.04.764438",
+      "abstract": "Building virtual cells and tissues requires reconstructing how interacting cell populations evolve in space and time, yet spatial omics experiments provide only sparse snapshots of this process. Here, we introduce CytoBridge, a computational method that reconstructs continuous virtual cell dynamics from discrete spatial transcriptomic data. Starting from a joint transcriptomic-spatial space, CytoBridge learns stochastic trajectories of cell states, positions, and population sizes through an unbalanced mean-field Schrodinger bridge formulation that explicitly incorporates cell-cell interaction as a dynamical driver. A time-varying interaction graph built from spatial proximity and ligand-receptor priors allows the velocity to be decomposed into an interaction component estimated from observed neighborhoods and ligand-receptor features, and an intrinsic-context component that captures intrinsic regulatory processes and unmeasured contextual influences. Applied to five datasets across three spatial transcriptomics platforms and spanning development, regeneration, and neurodegeneration, CytoBridge accurately generates tissue dynamics at unmeasured time points, follows ligand-receptor signaling through measured and unmeasured stages, and supports hypothesis-generating in silico perturbation. CytoBridge provides a general method for turning heterogeneous spatiotemporal transcriptomic measurements into continuously evolving virtual tissues.",
+      "authors": [
+        "Zhang, Z.",
+        "Wang, Z.",
+        "Tian, Q.",
+        "Hou, H.",
+        "Han, J.",
+        "Shen, J.",
+        "Sun, Y.",
+        "Zhou, X.",
+        "Peng, Q.",
+        "Nie, Q.",
+        "Li, T.",
+        "Zhou, P."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "spatial omics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "時空單細胞交互作用的虛擬動態"
+    },
+    {
+      "id": "10.64898/2026.11.04.764463",
+      "title": "DisCell: Separating Spillover from Niche Response in Spatial Transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764463v1",
+      "doi": "10.64898/2026.11.04.764463",
+      "abstract": "Spatial transcriptomics at single-cell resolution measures every cell in its place in the tissue, but diffusion and segmentation errors also add transcripts of neighboring cells to a cell's counts. This spillover makes a cell resemble its neighbors, and a response to the niche makes cells in the same niche resemble each other. Both tie a cell's expression to its surroundings. The count data alone cannot tell the two apart. Findings from single-cell transcriptomes, such as a gene program that is higher in one niche than in another or signaling genes that change depending on the neighborhood, may therefore be artifacts of spillover. Current models describe a cell by its intrinsic state together with either its niche response or spillover, but none models all three. We present DisCell, the first method that models all three components jointly and measures how robust each finding is to spillover. DisCell is a generative model that describes single-cell gene expression profiles in terms of two latent variables, an intrinsic state and a response to the niche, and adds spillover from its neighbors as a separate term. DisCell fits the model at increasing levels of spillover and recomputes each finding on the spillover-free expression to see how much spillover it withstands. DisCell also estimates the most spillover a section can contain, and a finding that holds even at that amount is not explained by spillover. In simulated tissue, DisCell recovers each cell's intrinsic state and response and tells findings created by spillover apart from genuine responses. On five sections of ovarian and lung tissue, the intrinsic state keeps more of each cell's own properties, measured by its cell-cycle phase, than any competing method that holds as little of its neighborhood. Within each cell type, the model partitions the variation of each gene into intrinsic state, niche response and spillover. Using DisCell, we rank findings about niches by their robustness to spillover and confirm that a previously reported finding withstands spillover, that esophageal cancer cells in niches infiltrated by immune or stromal cells express more of an epithelial-mesenchymal transition program. DisCell also predicts what the gene expression of a cell type would be in another niche, with its spillover part separated, at lower error on most tasks than the competing method built for this purpose. Training the model takes under ten minutes on one consumer GPU for sections of up to 400,000 cells.",
+      "authors": [
+        "Molen, R.",
+        "Toosi, H.",
+        "Ferreira, P. F.",
+        "Lagergren, J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.11.05.764509",
+      "title": "Agentic AI enables cell segmentation-free cell-type inference and cell-type-guided cell segmentation in spatial transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.05.764509v1",
+      "doi": "10.64898/2026.11.05.764509",
+      "abstract": "Cell-type identification in spatial transcriptomics often relies on cell segmentation, which can introduce inaccuracies in cell boundaries and transcript assignment. Segmentation-free or cell-free methods have been developed to completely avoid cell segmentation, but inaccurate cell typing hinder accurate downstream analysis. Here, we introduce SSAF-T, a segmentation-free agentic framework that identifies cell types directly from spatial gene expression without predefined reference datasets. For the reference-free cell typing, SSAF-T incorporates CeLLMan, which employs expert-level agents for each organ to annotate cell types using a literature-grounded knowledge graph. We benchmark SSAF-T on both array-based and imaging-based spatial transcriptomics datasets in terms of accuracy, reproducibility, and scalability. We further show that SSAF-T provides an accurate cell segmentation based on the segmentation-free mapping, which ensure compatibility to existing downstream analysis ecosystem, and eventually enable quantitative analysis at single-cell level.",
+      "authors": [
+        "Jeong, Y.",
+        "Lee, H.",
+        "Lee, D.",
+        "Kim, H.-M.",
+        "Kim, S.-H.",
+        "Park, S.",
+        "Bae, J.",
+        "Cho, E. S.",
+        "Choi, Y.-L.",
+        "Kwon, O.",
+        "Kim, J.-I.",
+        "Lee, H.",
+        "Park, J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "代理式 AI 實現無細胞分割的細胞型別推斷與細胞型別導向分割",
+      "summaryZh": "本研究提出 SSAF-T，一個無需細胞分割的代理式框架，可直接從空間基因表現推斷細胞型別，且不依賴預先定義的參考資料集。為實現無參考的細胞分型，SSAF-T 整合 CeLLMan，該模組為每個器官配置專家級代理，利用文獻基礎的知識圖譜進行細胞型別註解。研究在陣列式與影像式空間轉錄組學資料集上，以準確性、可重現性與可擴展性進行基準測試。作者進一步指出，SSAF-T 能基於無分割的映射提供準確的細胞分割，確保與現有下游分析生態系相容，並最終支援單細胞層級的定量分析。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "cell-type-inference",
+        "agentic-ai",
+        "cell-segmentation"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.05.764594",
+      "title": "Rapid, accurate, and memory-frugal sub-gene-level quantification of probe-based, multiplexed single-cell data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.05.764594v1",
+      "doi": "10.64898/2026.11.05.764594",
+      "abstract": "Probe-based, multiplexed single-cell assays enable accurate transcriptome profiling while processing multiple samples in parallel. Their predefined probe sequences and additional sample barcodes introduce computational requirements that differ from those of poly(A)-based assays, for which many existing single-cell quantification tools were developed. We extend simpleaf to enable efficient demultiplexing and quantification of probe-based single-cell libraries. A new, cache-friendly dictionary specializes lookup to small probe references, while a shared thread budget balances parallel decompression and mapping. We extend RAD and downstream tools with reusable sample-scoped correction plans and external-memory collation of hierarchically barcoded data, retaining probe identities through quantification to enable rapid mapping and quantification with a small working memory budget. Across five 10x Genomics Flex datasets comprising 44 samples, simpleaf had the shortest runtime and lowest peak memory use of the three tools on every library, while producing gene-expression estimates, cell clusters, and marker genes concordant with cyto and Cell Ranger. Compared with cyto, simpleaf was on average 2 times faster and used approximately one-thirteenth as much memory. simpleaf also exports probe-level quantification results, allowing a range of analyses at sub-gene resolution. Here, we show that individual probe counts reveal expression changes obscured by gene-level aggregation, identify the transcript groups contributing to gene-level changes, and provide insight into splicing dynamics across cell types. These results demonstrate the computational and biological value of retaining probe-level information in multiplexed singlecell analysis.",
+      "authors": [
+        "He, D.",
+        "Gao, Y.",
+        "Patro, R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "探針式多重單細胞資料的快速低記憶體次基因層級定量",
+      "summaryZh": "論文提出擴充 simpleaf 以進行探針式多重單細胞圖庫的解多重化與定量。作者設計快取友善字典專門處理小型探針參考序列，並以共享執行緒預算平衡平行解壓縮與比對，同時延伸 RAD 與下游工具加入可重用的樣本層級校正計畫與外部記憶體彙整，並保留探針身分至定量階段以維持小工作記憶體預算。在五個 10x Genomics Flex 資料集共 44 個樣本的比較中，simpleaf 在每個圖庫的執行時間最短、峰值記憶體使用最低，且基因表現估計、細胞群集與標記基因與 cyto 及 Cell Ranger 一致。相較於 cyto，simpleaf 平均快約 2 倍，記憶體使用約為其十三分之一，並可輸出探針層級定量結果。作者展示個別探針計數可揭示基因層級彙總所掩蓋的表現變化、辨識貢獻於基因層級變化的轉錄本群組，並提供細胞類型間剪接動態的線索。",
+      "topicTags": [
+        "single-cell",
+        "probe-based",
+        "quantification",
+        "bioinformatics",
+        "multiplexing"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.05.764481",
+      "title": "Inferring gene regulatory networks from single-cell perturbation data by optimizing causal reach of latent mediator dynamics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.05.764481v1",
+      "doi": "10.64898/2026.11.05.764481",
+      "abstract": "Resolving the causal structure of gene regulatory networks is central to understanding cellular regulation. Pooled CRISPR screens with single-cell RNA readouts measure the transcriptional consequences of many interventions in parallel, providing a powerful resource for causal discovery. Combinatorial designs that perturb multiple regulators per cell increase throughput and can reveal responses that single-gene perturbations do not. However, inferring causal gene networks from these experiments remains challenging because gene regulatory interactions are nonlinear, dynamic, and often involve feedback. Thus, attributing the combined effect of several perturbations to individual regulators remains difficult. Additionally, transcriptional regulation is ultimately carried out by proteins, while single-cell perturbation datasets generally measure only RNA levels. Existing methods often simplify regulatory dynamics or rely on assumptions that conflict with gene regulation, such as acyclicity. Moreover, current evaluation practices usually rely on expression prediction error, which is readily computable in real datasets, but does not necessarily reflect graph quality. A complementary metric is needed to assess inferred regulatory connections using observed perturbation responses in real data. To address these challenges, we present CausalODE, a differentiable framework for learning causal graphs from single-cell perturbation data. Our approach incorporates three central insights to improve upon previous methods. First, genes that are differentially expressed when a gene is perturbed should be downstream of the target gene in the regulatory network; we quantify this property with a metric we term causal reach. Second, causal interactions involve transient cellular responses in RNA transcription, splicing, and degradation. Third, gene regulatory interactions are mediated by proteins, whose levels are not directly measured in single-cell RNA-seq experiments. Building on these insights, CausalODE learns a graph that optimizes the causal reach metric, captures transient cellular responses to perturbation, and explicitly models the latent dynamics of protein levels. Together, these components allow nonlinear responses, feedback loops, and time-lagged regulation. Across simulated Perturb-seq datasets with different sparsities and graph structures, CausalODE improves AUPRC and precision among top-ranked edges compared with baselines and competing methods, while achieving competitive AUROC. We introduce a metric to evaluate the causal reach of inferred graphs on real data by measuring how well the graphs explain differentially expressed genes in single-cell perturbation experiments. Using this metric, CausalODE outperforms the strongest competing method or baseline by approximately 60% on the CaRPool-seq knockdown dataset and 80% on the Norman et al. activation dataset. Its top-ranked edges generally show greater enrichment for high-confidence evidence from cell-type-matched ChIP-seq, CollecTRI, and regulatory STRING than those of other methods. The inferred graphs also distinguish non-additive from approximately additive genetic interactions in held-out perturbation pairs. Finally, ablation analyses show that optimizing causal reach improves performance on held-out perturbations, and the learned latent regulator activities track simulated protein dynamics, with median temporal correlations ranging from 0.79 to 0.99.",
+      "authors": [
+        "Qian, W.",
+        "Song, Y.",
+        "Welch, J. D."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "Perturb-seq",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "從單細胞擾動資料優化潛在中介動態因果可達性推論基因調控網絡",
+      "summaryZh": "解析基因調控網絡的因果結構是理解細胞調控的核心。作者指出，結合單細胞RNA讀出的 pooled CRISPR 篩選可在平行下測量多種干預的轉錄後果，而組合式設計可提升通量並揭示單基因擾動無法呈現的反應。然而，由於基因調控交互作用具非線性、動態且常含回饋，從此類實驗推論因果網絡仍具挑戰，且轉錄調控最終由蛋白質執行，但單細胞擾動資料通常僅測量RNA。現有方法常簡化調控動態或依賴與基因調控衝突的假設，例如無環性，且以表現預測誤差評估圖品質可能無法反映真實連接品質。為此作者提出 CausalODE，一個用於從單細胞擾動資料學習因果圖的可微分框架，並以因果可達性等概念納入擾動下差異表現基因應位於下游、轉錄與剪接降解的瞬時反應，以及由未直接測量的蛋白質介導調控等觀點。",
+      "topicTags": [
+        "single-cell",
+        "gene-regulatory-network",
+        "causal-inference",
+        "crispr-screen",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.04.764362",
+      "title": "Single-Cell Transcriptomics Reveals Tumorigenic Lineages and Interactions Persisting and Evolving From Premalignancy to Cancer in the Stomach",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764362v1",
+      "doi": "10.64898/2026.11.04.764362",
+      "abstract": "Background & Aims Gastric cancer is often diagnosed at advanced stages, making the premalignant window critical for early detection. However, the epithelial changes that characterize this stage remain poorly defined. We used CTLA4-knockdown (CTLA4KD) mice, which model human CTLA4 insufficiency-associated gastric cancer, that develops autoimmune gastritis, metaplasia, and adenocarcinoma, to define molecular changes across disease progression. Methods Single-cell RNA sequencing and 40-color spectral flow cytometry were performed on gastric tissue across premalignant and cancer stages. We evaluated epithelial lineage relationships, cell-cell communication pathways, and candidate markers at the transcript and protein levels in murine and human gastric adenocarcinoma. Results We identified a metaplastic/tumorigenic population in CTLA4KD mice that emerged in premalignancy with a chief cell transcriptomic origin. Cell-cell communication analysis revealed a progressive increase in fibronectin (FN1) signaling from premalignancy through cancer, transitioning from stromal to autocrine signaling in the metaplastic/tumorigenic population. Expression of Embigin (EMB), a fibronectin receptor, increased at both transcript and protein levels in premalignancy and remained elevated in cancer. EMB epithelial cells co-expressed CD133, a cancer stem cell marker, consistent with a stem-like phenotype. EMB expression was also higher in human gastric adenocarcinoma than in matched normal tissue. Conclusions Using a model that captures the full histopathological cascade of gastric tumorigenesis, we delineate single-cell transcriptional programs that persist and evolve from premalignancy to adenocarcinoma. In-depth computational analyses identified novel markers involved in cell-cell communication during tumorigenesis, including EMB, an epithelial marker that persists from premalignancy through cancer in the murine model and validated in human gastric adenocarcinoma, suggesting EMB as a marker of premalignant progression.",
+      "authors": [
+        "Vazquez, E. N.",
+        "Lozano, C. C.",
+        "Sun, X.",
+        "Torres Juvier, D.",
+        "Li, C. M.",
+        "El-Rifai, W.",
+        "Zaika, A.",
+        "Ban, Y.",
+        "Guo, Y.",
+        "Cai, X.",
+        "Chen, Z."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "單細胞轉錄體學揭示胃部從癌前病變到癌症持續並演化的致瘤譜系與交互作用"
+    },
+    {
+      "id": "10.64898/2026.11.05.764666",
+      "title": "Regenerative epithelial spike cells instruct immune niche homeostasis in zebrafish fin epidermis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.05.764666v1",
+      "doi": "10.64898/2026.11.05.764666",
+      "abstract": "Epithelia comprise diverse specialized epithelial cells that interact with immune cells, yet how these interactions sustain immune cell pools remain poorly understood. Here, we integrated single-cell RNA sequencing (scRNA-seq) analysis with transgenic assays in zebrafish and discovered a previously unrecognized epithelial population marked by advillin (avil). We identified epithelial cells exhibiting unique morphology and localization, characterized by an apical spike projecting outward from the body - which we term spike cells. These cells exhibit features reminiscent of mammalian tuft cells. Notably, avil+ spike cells exhibit close spatial association with a subset of mpeg1+ immune cells. Following fin amputation, spike cells are replenished de novo from precursors and undergo dynamic changes in density, morphology, and orientation, and their regeneration depends on Alk signaling. Moreover, spike cells dynamically interact with mpeg1+ immune cells to maintain the immune cell population. Together, our findings identify a unique epithelial population in zebrafish fins and define their roles in maintaining immune cell niche dynamics.",
+      "authors": [
+        "Cao, S.",
+        "Keating, M. K.",
+        "O'Hagan, J.",
+        "Rodriguez-Parks, A.",
+        "Hou, Y.",
+        "Robertson, T. F.",
+        "Huttenlocher, A.",
+        "Kang, J."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "斑馬魚鰭表皮再生上皮尖刺細胞調控免疫微環境",
+      "summaryZh": "研究團隊整合單細胞RNA定序與斑馬魚轉基因實驗，在斑馬魚鰭中發現一個先前未被認識的上皮細胞族群，以 advillin（avil）為標記。這些細胞具有獨特形態與定位，頂端向外突出形成尖刺，因此命名為 spike cells，其特徵與哺乳動物 tuft cells 相似。avil+ spike cells 與一群 mpeg1+ 免疫細胞在空間上密切相鄰。鰭切除後，spike cells 能由前驅細胞重新生成，其密度、形態與方向會動態改變，且再生依賴 Alk 訊號。研究指出 spike cells 會動態與 mpeg1+ 免疫細胞互動以維持免疫細胞族群，揭示鰭表皮中一個獨特上皮族群在免疫細胞微環境動態中的作用。",
+      "topicTags": [
+        "zebrafish",
+        "epithelial-cells",
+        "immune-niche",
+        "regeneration",
+        "single-cell-rna-seq"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.29.762763",
+      "title": "Regionalisation of muscle nucleus heterogeneity in foetal skeletal muscle",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-06",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.29.762763v2",
+      "doi": "10.64898/2026.10.29.762763",
+      "abstract": "Skeletal muscle is organized into functional domains with attachments at both extremities to tendons via the myotendinous junction (MTJ) and innervation in the middle via the neuromuscular junction (NMJ). In adult muscle, the molecular heterogeneity of muscle domains is described at the level of myonuclei with specialized MTJ and NMJ myonuclei at the tips and middle of muscle fibre. However, the regionalisation of molecular heterogeneity remains poorly understood during development. Combining single-cell and single-nucleus RNA sequencing approaches with in situ hybridization experiments to limb muscles of chicken embryos, we uncover transcriptionally distinct muscle nuclei according to tip and central domains, in both myofibres and mononucleated myogenic cells. At early foetal stage, all myonuclei display either a tip or a central domain identity. Immature mononucleated myogenic cells are enriched in the tip domain. Tip myonuclei of foetal muscles show a robust transcriptional signal transduction signature, which highlights molecular crosstalks with adjacent tendon fibroblasts but also with adjacent immature myogenic cells. We propose that the tip muscle domain is a signalling centre interacting with tendon fibroblasts to regulate muscle/tendon attachment and with adjacent mononucleated muscle cells to regulate myogenesis in limb foetal muscles.",
+      "authors": [
+        "KUROSAWA, T.",
+        "BLAVET, C.",
+        "BONNIN, M.-A.",
+        "GHARSALLI, T.",
+        "DELFINI, M.-C.",
+        "HIRSINGER, E.",
+        "DUPREZ, D."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "胎兒骨骼肌中肌核異質性的區域化",
+      "summaryZh": "研究結合單細胞與單核 RNA 定序及原位雜交，分析雞胚肢體肌肉，發現肌纖維與單核肌生成細胞中的肌肉核依尖端與中央區域呈轉錄差異。早期胎兒期所有肌核皆表現尖端或中央區域身份，且未成熟單核肌生成細胞在尖端區域富集。胎兒肌肉的尖端肌核顯示強烈的轉錄訊號傳導特徵，提示與相鄰肌腱纖維母細胞及相鄰未成熟肌生成細胞存在分子交互作用。作者提出尖端肌肉區域可能是調控肌肉/肌腱附著與肢體胎兒肌肉肌生成的訊號中心。",
+      "topicTags": [
+        "single-nucleus-rna-seq",
+        "skeletal-muscle",
+        "developmental-biology",
+        "myogenesis"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79067-7",
+      "title": "Generalist and human-restricted Salmonella evolved divergent human intestinal epithelial cell tropism",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79067-7",
+      "doi": "10.1038/s41467-026-79067-7",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "廣宿主與人類限制性沙門氏菌演化出分歧的人類腸上皮細胞嗜性"
+    },
+    {
+      "id": "10.1038/s41467-026-79136-x",
+      "title": "Adipocyte enhancer binding protein 1 (AEBP1) inhibition mediates cardiac reverse remodeling by regulating MRTFB and RUNX2 signaling",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-06T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79136-x",
+      "doi": "10.1038/s41467-026-79136-x",
+      "abstract": "Cardiac fibrosis contributes to adverse remodeling and heart failure progression, but its molecular drivers remain poorly understood. Here, the authors show that ACLP/AEBP1 promotes cardiac fibrosis and AEBP1 inhibition following injury, improves cardiac structure and function.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "AEBP1 抑制透過調控 MRTFB 與 RUNX2 促進心臟逆向重塑",
+      "summaryZh": "本研究聚焦於心臟纖維化對不良重塑與心衰竭進展的貢獻，並指出其分子驅動因子仍未充分了解。作者顯示 ACLP/AEBP1 會促進心臟纖維化。研究指出，在損傷後抑制 AEBP1 可改善心臟結構與功能。論文標題指出此效應與調控 MRTFB 和 RUNX2 信號相關。",
+      "topicTags": [
+        "cardiac-fibrosis",
+        "heart-failure",
+        "reverse-remodeling",
+        "aebp1"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 34,
+      "passedByScope": 21,
+      "llmClassified": 13,
+      "llmYes": 5,
+      "llmNotSure": 1,
+      "llmNo": 7,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 27,
+      "excluded": 7
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 10,
+      "llmTagged": 10,
+      "llmLineA": 1,
+      "llmLineB": 9,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 23,
+      "candidates": 22,
+      "featured": 12,
+      "overflow": 10,
+      "lineA": 1,
+      "lineB": 9,
+      "preprint": 12,
+      "skip": 1,
+      "featuredLineA": 0,
+      "featuredLineB": 3,
+      "featuredPreprint": 9,
+      "overflowLineA": 1,
+      "overflowLineB": 6,
+      "overflowPreprint": 3
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 11,
+      "primarySucceeded": 11,
+      "fallbackSucceeded": 0,
+      "failed": 1
+    },
+    "translate": {
+      "requested": 10,
+      "llmTranslated": 10,
+      "primarySucceeded": 10,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 10
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 1,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 11
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 10,
+        "succeeded": 10,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        },
+        "primarySucceeded": 10,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03442-z",
+        "title": "Preprint platform offers to pay researchers to review papers, but questions remain",
+        "journal": "Nature",
+        "publishedDate": "2026-11-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03442-z",
+        "doi": "10.1038/d41586-026-03442-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03622-x",
+        "title": "‘Mathematics is more than a mechanical process’ — why I think the field will survive OpenAI’s disruption",
+        "journal": "Nature",
+        "publishedDate": "2026-11-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03622-x",
+        "doi": "10.1038/d41586-026-03622-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03585-z",
+        "title": "The palaeo cave art that hid in plain sight for 26,000 years",
+        "journal": "Nature",
+        "publishedDate": "2026-11-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03585-z",
+        "doi": "10.1038/d41586-026-03585-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78879-x",
+        "title": "Agentic AI needs a science of interaction",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78879-x",
+        "doi": "10.1038/s41467-026-78879-x",
+        "abstract": "Here, the authors argue that agentic AI requires a shift from evaluating individual agents alone to analyzing interaction architectures, proposing a framework that links agent interactions, collective configurations and time-dependent outcomes.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79298-8",
+        "title": "Addressing the 1000-h/1000-nit stability challenge in perovskite LEDs",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79298-8",
+        "doi": "10.1038/s41467-026-79298-8",
+        "abstract": "Perovskite light-emitting diodes offer vivid, efficient displays, but long-term stability at practical brightness remains difficult. Yuan et al. add a fluorinated molecular layer to lower voltage, extending device life and enabling a stable flexible perovskite display.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79060-0",
+        "title": "Photoredox cobalt-catalyzed late-stage N-methyl-selective C–H vinylation of unactivated trialkylamines with alkynes",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79060-0",
+        "doi": "10.1038/s41467-026-79060-0",
+        "abstract": "Direct α-C–H functionalization of unactivated tertiary alkylamines remains challenging, particularly with competing α-amino C–H bonds. Here, the authors report a photoredox/cobalt-catalyzed method for regio- and stereoselective vinylation with internal alkynes, enabling efficient access to trisubstituted allylic amines without directing groups or oxidants.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-77617-7",
+        "title": "Resolving phonons in superconductor Bi2Sr2CaCu2O8+δ at sub-unit-cell resolution",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-06T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-77617-7",
+        "doi": "10.1038/s41467-026-77617-7",
+        "abstract": "The role of phonons in cuprate superconductivity remains debated, partly because their layered structures host complex lattice dynamics. Here, sub-unit-cell spectroscopy resolves layer-localized phonons in Bi-2212 and reveals a spatial correlation between superstructure-driven phonon frequency modulations and superconducting gap variations.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
