@@ -1,0 +1,382 @@
+{
+  "reportDate": "2026-11-07",
+  "generatedAt": "2026-11-07T16:33:14.876Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.10.07.757445",
+      "title": "High-throughput identification of chromatin-opening transcription factors",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.07.757445v2",
+      "doi": "10.64898/2026.10.07.757445",
+      "abstract": "Cell fate transitions involve major changes to the chromatin landscape, some of which are thought to deepen the basin around a newly adopted cell state, stabilizing gene expression programs that might otherwise be transient. Transcription factors (TFs) are central to this process, binding only a subset of the genome-wide occurrences of their cognate motifs to create accessible regions that can act as cell type-specific enhancers. However, apart from a few well-studied cases, it is not clear which of the ~1,600 mammalian TFs can directly or indirectly initiate newly accessible sites, nor why only some motif occurrences gain accessibility. Here, we performed pooled CRISPR activation (CRISPRa) screens to upregulate endogenous developmental TFs in mouse embryonic stem cells (mESCs) and assess their impact on the chromatin landscape. Following a pre-screen of 240 developmental TFs for their capacity to elicit strong changes to the transcriptome, we prioritized 60 TFs for a well-powered CRISPRa multiome screen in which we jointly profiled gene expression and chromatin accessibility across ~140,000 single cells. We identify TFs that appear to initiate new chromatin accessibility on their own (\"autonomous\"), others whose chromatin-opening activity appears dependent on coincident binding of co-TFs heterogeneously expressed across mESCs (\"opportunistic\"), and yet others which appear to induce a co-TF and then act alongside it (\"hierarchical\"). Taken together, our findings suggest that the ability of a TF to \"pioneer\" chromatin opening, when it is newly expressed at physiological levels, strongly depends on the cell state and gene regulatory network it lands in. Looking forward, a comprehensive charting of such dependencies will inform how cell fate transitions are initiated in development, homeostasis and disease, and how to engineer them in silico, in vitro and in vivo.",
+      "authors": [
+        "Keith, A.",
+        "Jain, S.",
+        "Daza, R. M.",
+        "Qiu, C.",
+        "Germain, P.-L.",
+        "Shendure, J.",
+        "Domcke, S."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "development",
+        "CRISPR",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "高通量鑑定可開啟染色質的轉錄因子",
+      "summaryZh": "研究團隊以 pooled CRISPR activation 篩選上調小鼠胚胎幹細胞內源性發育轉錄因子，評估其對染色質景觀的影響。先對 240 個發育轉錄因子進行預篩選，再挑選 60 個進行多體 CRISPRa 篩選，於約 14 萬個單細胞中同時分析基因表現與染色質可及性。結果辨識出可自行啟動新染色質可及性的「自主型」、需與異質表現的共轉錄因子共同結合才具染色質開啟活性的「機會型」，以及先誘導共轉錄因子再共同作用的「階層型」轉錄因子。研究指出轉錄因子在生理濃度下「先鋒」開啟染色質的能力強烈依賴細胞狀態與基因調控網絡。作者認為全面描繪此類依賴性將有助理解發育、穩態與疾病中的細胞命運轉換，並為體內外工程提供參考。",
+      "topicTags": [
+        "chromatin-accessibility",
+        "transcription-factors",
+        "crispr-activation",
+        "single-cell",
+        "stem-cells"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.06.764689",
+      "title": "SPACE-Tag Enables High-Throughput Spatial Chromatin Profiling With CUT&Tag",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-07",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.06.764689v1",
+      "doi": "10.64898/2026.11.06.764689",
+      "abstract": "Spatial epigenomics maps chromatin states within intact tissues, yet current methods remain limited by accessibility and scale. We developed SPACE-Tag, a spatial CUT&Tag framework that converts epigenetic marks-associated DNA into polyadenylated RNA through T7 based linear amplification, enabling direct integration with standard spatial transcriptomic workflows. Applied to the mouse brain, SPACETag resolved activating and repressive chromatin landscapes, recovered region-specific gene regulatory programs across anatomical domains, and showed strong correlation with existing bulk and single cell reference data. We generated an integrated multimodal atlas of the aging mouse brain, profiling five histone modifications and the transcriptome in parallel across the adult lifespan to establish the largest spatial multimodal dataset to date. This analysis uncovered sharp regional divergence with aging in the brain: fiber tracts showed widespread transcriptional downregulation, often without nearby chromatin state transitions, whereas the isocortex showed coordinated chromatin transcriptome changes, including an H3K4me1 peak module that increased with age, was enriched at super-enhancers and linked to upregulation of neuronal plasticity regulators. These findings highlight the power of multimodal and high throughput spatial genomics in uncovering the divergent regulatory logic that governs tissue-specific vulnerability and resilience in the aging brain.",
+      "authors": [
+        "Yan, C.",
+        "He, R.",
+        "Fernandez, S.",
+        "Pleska, M.",
+        "Maniatis, S.",
+        "Raimondi, I.",
+        "Vickovic, S."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "SPACE-Tag 實現高通量空間染色質分析結合 CUT&Tag",
+      "summaryZh": "研究團隊開發了 SPACE-Tag，一種空間 CUT&Tag 框架，能將與表觀遺傳標記相關的 DNA 轉換為多聚腺苷酸化 RNA，並透過 T7 基礎線性擴增與標準空間轉錄組學流程整合。該方法應用於小鼠腦部後，分辨出活化與抑制的染色質景觀，並在解剖區域間重建區域特異性基因調控程序，與現有 bulk 與單細胞參考資料呈現強相關。團隊建立了老化小鼠腦部的整合式多模態圖譜，在成年壽命期間平行分析五種組蛋白修飾與轉錄組，據稱為迄今最大規模的空間多模態資料集。分析顯示腦部老化存在明顯的區域分歧：纖維束出現廣泛的轉錄下調，常未伴隨附近染色質狀態轉變；而同質皮質則呈現協調的染色質與轉錄組變化，包括隨年齡增加的 H3K4me1 峰模組，該模組富集於超增強子並與神經元可塑性調控因子上調相關。這些結果凸顯多模態高通量空間基因體學在揭示老化腦部組織特異性脆弱與韌性的分歧調控邏輯方面的潛力。",
+      "topicTags": [
+        "spatial-epigenomics",
+        "cut-tag",
+        "spatial-transcriptomics",
+        "aging-brain",
+        "multimodal-atlas"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79432-6",
+      "title": "Antagonistic second-messenger signalling coordinates Pseudomonas aeruginosa surface colonization and virulence",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79432-6",
+      "doi": "10.1038/s41467-026-79432-6",
+      "abstract": "Second messengers cAMP and c-di-GMP regulate surface behaviours and virulence in Pseudomonas aeruginosa. Here, the authors show how the bacteria switch between attachment and surface movement by coordinating the two signalling systems, allowing distinct bacterial populations to work together to colonise and damage human airway tissue.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "拮抗性第二信使訊號協調表面定殖與毒力",
+      "summaryZh": "第二信使 cAMP 與 c-di-GMP 在 Pseudomonas aeruginosa 中調控表面行為與毒力。本研究顯示細菌透過協調這兩套訊號系統，在附著與表面移動之間切換。該協調使不同的細菌族群能夠合作，共同定殖並損傷人類氣道組織。研究揭示了訊號拮抗如何連結表面定殖與致病性。",
+      "topicTags": [
+        "pseudomonas-aeruginosa",
+        "second-messenger",
+        "virulence",
+        "surface-colonization",
+        "microbiology"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79065-9",
+      "title": "WASH orchestrates phagosomal maturation and bacterial killing in neutrophils through syntaxin 19-mediated lysosomal fusion",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79065-9",
+      "doi": "10.1038/s41467-026-79065-9",
+      "abstract": "How actin regulates late phagosomal maturation and microbial killing in neutrophils remains unclear. The authors here show that WASH drives actin-dependent lysosomal dynamics and STX19 recruitment to phagosomes, enabling lysosome fusion and bacterial killing.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "WASH 調控嗜中性球吞噬體成熟與細菌殺傷，透過 syntaxin 19 介導的溶酶體融合",
+      "summaryZh": "本研究探討 actin 如何調控嗜中性球晚期吞噬體成熟與微生物殺傷。作者指出 WASH 驅動依賴 actin's 溶酶體動態，並促進 STX19 招募至吞噬體。該招募使溶酶體與吞噬體融合得以進行，並支持細菌殺傷。研究將 WASH 與 syntaxin 19 連結至吞噬體成熟的調控過程。",
+      "topicTags": [
+        "neutrophils",
+        "phagosome",
+        "lysosome-fusion",
+        "actin-dynamics",
+        "bacterial-killing"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79097-1",
+      "title": "Genome-wide CRISPR screening in Spodoptera frugiperda reveals the determinants of insecticide activation and sensitivity",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79097-1",
+      "doi": "10.1038/s41467-026-79097-1",
+      "abstract": "New tools to investigate the molecular determinants of insect sensitivity to insecticides are needed. Here, a new genome-wide CRISPR-based screening platform is established and used to identify genes involved in activating the insecticide pyridalyl.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "CRISPR",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "基因組規模 CRISPR 篩選揭示玉米螟對殺蟲劑活化與敏感性的決定因子",
+      "summaryZh": "本研究建立了一種新的基因組規模 CRISPR-based 篩選平台，用於探討昆蟲對殺蟲劑敏感性的分子決定因子。該平台應用於 Spodoptera frugiperda，並用以鑑定參與活化殺蟲劑 pyridalyl 的基因。研究提供了調查昆蟲殺蟲劑敏感性的新工具。鑑定相關基因有助於理解殺蟲劑活化與敏感性的分子基礎。",
+      "topicTags": [
+        "crispr-screen",
+        "insecticide",
+        "insect-genetics",
+        "spodoptera-frugiperda"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79325-8",
+      "title": "Transposable element polymorphisms underlie epigenetic variation and phenotypic diversification during foxtail millet domestication",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79325-8",
+      "doi": "10.1038/s41467-026-79325-8",
+      "abstract": "Foxtail millet is one of the oldest domesticated crops with climate-resilient trait and balanced nutrients. Here, the authors analyze methylome over a set of 60 foxtail millet accessions and reveal transposable element polymorphisms underlying epigenetic variation and phenotypic diversification during domestication.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "轉座元件多態性驅動狐尾黍馴化過程的表觀遺傳變異與表型分化",
+      "summaryZh": "該研究以狐尾黍為材料，分析 60 個品種的甲基化組。狐尾黍被描述為最古老的馴化作物之一，具有耐氣候性狀與均衡營養。作者發現轉座元件多態性與馴化過程中的表觀遺傳變異及表型多樣化相關。此結果顯示轉座元件多態性可能在狐尾黍馴化期間的表觀遺傳與表型變化中扮演角色。",
+      "topicTags": [
+        "transposable-elements",
+        "epigenetics",
+        "crop-domestication",
+        "foxtail-millet",
+        "methylome"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79118-z",
+      "title": "Propofol induces sustained suppression of alcohol drinking via habenular activation in mice",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-07T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79118-z",
+      "doi": "10.1038/s41467-026-79118-z",
+      "abstract": "The lateral habenula is known to regulate alcohol drinking behaviors in mice. Here, the authors show that a single dose of propofol reduces voluntary alcohol drinking in mice via hyperactivity of neurons in the lateral habenula, and through propofol interaction with the 5-HT2C receptor.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "丙泊酚透過緻密核活化持續抑制小鼠酒精飲用",
+      "summaryZh": "研究指出外側緻密核 lateral habenula 與小鼠的酒精飲用行為有關。作者發現單次給予丙泊酚 propofol 可降低小鼠自願飲用酒精，且此效應與緻密核神經元的過度活躍有關。作用機制涉及丙泊酚與 5-HT2C 受體的交互作用。該結果連結了麻醉藥物、緻密核活化與酒精飲用抑制，並為理解藥物調控飲酒行為提供線索。",
+      "topicTags": [
+        "alcohol-drinking",
+        "habenula",
+        "propofol",
+        "5-ht2c-receptor",
+        "mice"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 10,
+      "passedByScope": 2,
+      "llmClassified": 8,
+      "llmYes": 5,
+      "llmNotSure": 0,
+      "llmNo": 3,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 7,
+      "excluded": 3
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 5,
+      "llmTagged": 5,
+      "llmLineA": 0,
+      "llmLineB": 5,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 7,
+      "candidates": 7,
+      "featured": 7,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 5,
+      "preprint": 2,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 5,
+      "featuredPreprint": 2,
+      "overflowLineA": 0,
+      "overflowLineB": 0,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 7,
+      "llmSummarized": 7,
+      "primarySucceeded": 7,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 5
+      },
+      "summarize": {
+        "requested": 7,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 7
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 0,
+        "succeeded": 0,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b"
+        },
+        "primarySucceeded": 0,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79077-5",
+        "title": "Topological Josephson trijunctions as a Majorana source and path",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-07T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79077-5",
+        "doi": "10.1038/s41467-026-79077-5",
+        "abstract": "Manipulating Majorana bound states is a key requirement for topological quantum computation. Here, the authors propose a topological insulator Josephson trijunction in a magnetic field that enables the generation, transport, and fusion of Majorana bound states through static control of superconducting phases.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79006-6",
+        "title": "CO2 responsive nanoscopic and macroscopic materials directed by peptides",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-07T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79006-6",
+        "doi": "10.1038/s41467-026-79006-6",
+        "abstract": "Stimuli responsive assemblies can offer precise control over behaviour, but use of gases for this control is rare. Here, the authors report the use of carbon dioxide for tuneable nanoparticle response, directed by changes in peptide structure.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79393-w",
+        "title": "Coupling electrolyte mechanical reinforcement and interfacial stress relaxation for near-ambient sulfide all-solid-state lithium metal batteries",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-07T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79393-w",
+        "doi": "10.1038/s41467-026-79393-w",
+        "abstract": "All-solid-state lithium metal batteries can suffer from dendrite growth and interfacial stress at low pressures. Here, authors couple a self-polymerizable composite sulfide electrolyte with a porous carbon current collector, enabling stable near-ambient condition cycling at high areal loading.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
