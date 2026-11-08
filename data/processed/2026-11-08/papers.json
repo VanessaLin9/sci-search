@@ -1,0 +1,69 @@
+{
+  "reportDate": "2026-11-08",
+  "generatedAt": "2026-11-08T16:43:37.902Z",
+  "papers": [],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 0,
+      "passedByScope": 0,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 0,
+      "excluded": 0
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b"
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 0,
+      "llmTagged": 0,
+      "llmLineA": 0,
+      "llmLineB": 0,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 0,
+      "candidates": 0,
+      "featured": 0,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 0,
+      "preprint": 0,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 0,
+      "featuredPreprint": 0,
+      "overflowLineA": 0,
+      "overflowLineB": 0,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 0,
+      "llmSummarized": 0,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    }
+  }
+}
