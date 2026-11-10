@@ -1,0 +1,970 @@
+{
+  "reportDate": "2026-11-10",
+  "generatedAt": "2026-11-10T18:03:13.497Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03296-3",
+      "title": "In situ profiling of plasma cell clonality with image-based single-cell transcriptomics",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03296-3",
+      "doi": "10.1038/s41592-026-03296-3",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "以影像為基礎的單細胞轉錄體學進行漿細胞克隆性的原位分析"
+    },
+    {
+      "id": "10.1038/s41588-026-02830-5",
+      "title": "Efficient count-based models improve power and robustness for large-scale single-cell eQTL mapping",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02830-5",
+      "doi": "10.1038/s41588-026-02830-5",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "高效的計數模型提升大規模單細胞 eQTL 映射的效能與穩健性"
+    },
+    {
+      "id": "10.1038/s41559-026-03238-4",
+      "title": "Potential risks from automation of biodiversity credits",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03238-4",
+      "doi": "10.1038/s41559-026-03238-4",
+      "abstract": "Agentic artificial intelligence (AI), spaceborne monitoring and programmable payments may benefit nature finance, but could also pose new risks emergent from over-automation. Rapid developments in technology will bring difficult debates on AI safety in relation to conservation.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "生物多樣性信用自動化之潛在風險",
+      "summaryZh": "本文指出具代理能力的 AI、太空監測與可程式化支付可能為自然金融帶來益處，但過度自動化也可能產生新風險。研究強調自動化所引發的風險是新興的。隨著技術快速發展，關於 AI 安全與保育關聯的辯論將變得困難。",
+      "topicTags": [
+        "biodiversity-credits",
+        "nature-finance",
+        "ai-safety",
+        "automation",
+        "conservation"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03210-2",
+      "title": "Extrapolation challenges in global biodiversity modelling",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03210-2",
+      "doi": "10.1038/s41559-026-03210-2",
+      "abstract": "Low extrapolation performance in correlative global biodiversity models highlights the need for cautious interpretation, additional data collection and multimodel projections.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "全球生物多樣性模型的推估挑戰",
+      "summaryZh": "本文指出相關性全球生物多樣性模型在推估上的表現偏低。研究強調這一點凸顯了對此類模型結果應謹慎解讀。作者認為需要進行額外的資料收集。研究也建議採用多模型預測來因應推估的限制。",
+      "topicTags": [
+        "biodiversity-modelling",
+        "extrapolation",
+        "ecology",
+        "species-distribution"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03205-z",
+      "title": "Global biodiversity models exhibit low predictive accuracy on local scales",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03205-z",
+      "doi": "10.1038/s41559-026-03205-z",
+      "abstract": "An evaluation of global pressure–response models for predicting local biodiversity finds that ecologically structured models have higher interpolation accuracy than study-centric mixed-effects models, while both model types exhibit low performance when extrapolating to other contexts.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "全球生物多樣性模型在地方尺度上展現出低預測準確度",
+      "summaryZh": "本研究評估了用於預測地方生物多樣性的全球壓力－反應模型。結果發現，具生態結構的模型比研究導向的混合效應模型具有更高的內插準確度，但這兩種模型在推論至其他情境時，表現皆偏低。這項評估揭示了現有全球模型應用於區域或不同情境時的侷限性。",
+      "topicTags": [
+        "biodiversity",
+        "ecological-models",
+        "predictive-accuracy"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03397-6",
+      "title": "China plans ban on biotech exports",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03397-6",
+      "doi": "10.1038/s41587-026-03397-6",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "中國計畫禁止生技出口"
+    },
+    {
+      "id": "10.1038/s41587-026-03388-7",
+      "title": "UK Biobank adds immune and brain health layers",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03388-7",
+      "doi": "10.1038/s41587-026-03388-7",
+      "abstract": "UK Biobank adds immune and brain health layers",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "UK Biobank 新增免疫與腦部健康層",
+      "summaryZh": "Nature Biotechnology 刊載的報導指出，UK Biobank 新增免疫與腦部健康層。摘要說明資料庫增添了免疫與腦部健康的相關層面。",
+      "topicTags": [
+        "uk-biobank",
+        "immunology",
+        "neuroscience",
+        "biobank"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03390-z",
+      "title": "Searching perturbation dictionaries with RNA fingerprints",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03390-z",
+      "doi": "10.1038/s41587-026-03390-z",
+      "abstract": "Searching perturbation dictionaries with RNA fingerprints",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "以 RNA 指紋搜尋擾動字典",
+      "summaryZh": "本文發表於《Nature Biotechnology》，題目為《Searching perturbation dictionaries with RNA fingerprints》。摘要指出研究內容涉及以 RNA 指紋搜尋擾動字典。",
+      "topicTags": [
+        "rna-fingerprint",
+        "perturbation",
+        "dictionary-search"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03393-w",
+      "title": "Silence snapped up for $1.3 billion",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03393-w",
+      "doi": "10.1038/s41587-026-03393-w",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "Silence 以 13 億美元被收購"
+    },
+    {
+      "id": "10.1038/s41587-026-03384-x",
+      "title": "Biotech news from around the world",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03384-x",
+      "doi": "10.1038/s41587-026-03384-x",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "全球生技新聞"
+    },
+    {
+      "id": "10.1038/s41587-026-03389-6",
+      "title": "De novo design of proteases",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03389-6",
+      "doi": "10.1038/s41587-026-03389-6",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "蛋白酶的從頭設計"
+    },
+    {
+      "id": "10.1038/s41587-026-03391-y",
+      "title": "Dual-layer engineering of herbicide resistance in crops",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03391-y",
+      "doi": "10.1038/s41587-026-03391-y",
+      "abstract": "Dual-layer engineering of herbicide resistance in crops",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "作物除草劑抗性的雙層工程",
+      "summaryZh": "本研究報告作物除草劑抗性的雙層工程。論文發表於《Nature Biotechnology》。",
+      "topicTags": [
+        "crop engineering",
+        "herbicide resistance",
+        "plant biotechnology"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03370-3",
+      "title": "Climate biotechnology",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03370-3",
+      "doi": "10.1038/s41587-026-03370-3",
+      "abstract": "Recent patents relating to biotechnological solutions to mitigate or adapt to climate change.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41556-026-02125-1",
+      "title": "Theoretical considerations regarding an acidic nanolayer surrounding lysosomes",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02125-1",
+      "doi": "10.1038/s41556-026-02125-1",
+      "abstract": "Theoretical considerations regarding an acidic nanolayer surrounding lysosomes",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "圍繞溶酶體的酸性奈米層理論探討",
+      "summaryZh": "本文針對溶酶體周圍可能存在的酸性奈米層提出理論性考量。研究以理論角度探討此奈米層的存在與相關問題。",
+      "topicTags": [
+        "lysosome",
+        "acidification",
+        "theoretical-model",
+        "cell-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41593-026-02514-7",
+      "title": "Information formatting in neuronal populations predicts differential functional contributions to behavior",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02514-7",
+      "doi": "10.1038/s41593-026-02514-7",
+      "abstract": "Using experiments in monkeys and modeling, the authors demonstrate that the formatting of population information predicts the contribution of different brain areas to behavior.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "神經元族群資訊格式可預測對行為的差異功能貢獻",
+      "summaryZh": "本研究結合靈長類實驗與建模，探討神經元族群如何編碼資訊。作者發現族群資訊的格式與不同腦區對行為的貢獻有關。研究指出資訊格式可作為預測腦區功能差異的指標。",
+      "topicTags": [
+        "neuroscience",
+        "neuronal-populations",
+        "information-coding",
+        "monkey",
+        "computational-modeling"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02426-z",
+      "title": "Env-specific antibodies promote post-treatment control in SIV-infected macaques",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02426-z",
+      "doi": "10.1038/s41564-026-02426-z",
+      "abstract": "Latency reversal, but not reservoir reduction, has been achieved by combining antiretroviral therapy, CD8α lymphocyte depletion and N-803 in SIV-infected rhesus macaques. In this study, after cessation of antiretroviral therapy, anti-SIV Env antibodies enabled post-treatment control with reduced rebound and enhanced expression of antiviral CD4+ T cell gene signatures.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Env特異性抗體促進SIV感染獼猴停藥後控制",
+      "summaryZh": "本研究在SIV感染的猕猴中，先以抗逆轉錄病毒治療、CD8α淋巴細胞耗竭與N-803合併處理達到潛伏期逆轉，但未減少病毒庫。停藥後，抗SIV Env抗體與後續的治療後控制相關，表現為病毒反彈減少。研究同時觀察到抗病毒CD4+ T細胞基因特徵的表現增強。這些結果顯示Env特異性抗體可能有助於停藥後的病毒控制。",
+      "topicTags": [
+        "siv",
+        "post-treatment-control",
+        "antibodies",
+        "latency-reversal",
+        "nonhuman-primates"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02544-8",
+      "title": "S-layer expansion is mediated by hoop-like cracks in the paracrystalline lattice during Bacillus anthracis growth",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02544-8",
+      "doi": "10.1038/s41564-026-02544-8",
+      "abstract": "Hoop-like cracking of the S-layer, filled either completely or partially, respectively leading to dispersed or focused modes of S-layer synthesis, enables S-layer expansion during Bacillus anthracis growth.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "S 層擴張由環狀裂縫介導",
+      "summaryZh": "研究報告指出，Bacillus anthracis 在生長過程中，S 層的擴張是透過其擬晶格中出現環狀裂縫來進行。這些環狀裂縫會被完全或部分填補，分別導致分散式或聚焦式的 S 層合成模式。該裂縫與填補機制被認為能使 S 層隨菌體生長而擴張。研究聚焦於 S 層在生長期間的結構重排方式。",
+      "topicTags": [
+        "s-layer",
+        "bacterial-growth",
+        "bacillus-anthracis",
+        "paracrystalline-lattice"
+      ]
+    },
+    {
+      "id": "10.64898/2026.08.18.745447",
+      "title": "Implicit Hierarchical Tensor Decomposition of Single-Cell Four-Omics Data Reveals Cell-Type-Linked Candidate Enhancer--Promoter-Associated Programs",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.18.745447v2",
+      "doi": "10.64898/2026.08.18.745447",
+      "abstract": "Single-cell multi-omics provides complementary views of gene regulation, but integrating modalities with natural features comprising enhancers, genes, and three-dimensional (3D) genomic loci remains challenging. This study developed an implicit hierarchical tensor decomposition framework and applied it to the CHARM single-cell four-omics mouse brain data (GSE303006) by jointly analyzing ATAC, H3K27ac, RNA, and reconstructed 3D enhancer--promoter (E--P) distances. After quality control, 730,969 E--P pairs, 42,669 enhancers, 16,239 genes, 391,435 20-kb bin pairs, and 4,258 cells were retained. Each modality was independently reduced to 20 components and mapped to an implicit 730,969x4{,}258x20x4 tensor, which was decomposed without materializing the full array. In a joint model, cell type explained more variance than biological replicate for all 12 distinct cell components represented among the 100 largest Tucker core elements. A representative core linked the Inh_Ndnf/Lamp5--Ex_L3/4_IT cell axis to contrasting presynaptic-transmission and developmental/morphogenetic candidate E--P-associated programs. Its E--P and cell factors were recovered when the whole analysis was repeated independently on each pair of replicates, and the E--P pairs it prioritized agreed in direction with the cell-type-resolved enhancer--gene links of the original CHARM study. No single modality reproduced the program, which required the combination of accessibility, chromatin contact, and expression. Backprojection showed reproducible ATAC, H3K27ac, and 3D effects across three biological replicates; RNA differed clearly for the developmental module but not for the presynaptic module. The framework thus identifies regulatory structure that is shared across molecular modalities and is not recoverable from any single modality.",
+      "authors": [
+        "Taguchi, Y.-h.",
+        "Turki, T."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "單細胞四組學資料的隱式階層張量分解揭示細胞類型相關的候選增強子-啟動子相關程式"
+    },
+    {
+      "id": "10.64898/2026.02.11.705358",
+      "title": "Simple models outperform single-cell foundation models on downstream benchmarks",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.02.11.705358v2",
+      "doi": "10.64898/2026.02.11.705358",
+      "abstract": "Single-cell RNA sequencing (scRNA-seq) data exhibit strong and reproducible statistical structure. This has motivated the development of large-scale foundation models, such as TranscriptFormer, that use transformer-based architectures to learn a generative model for gene expression by embedding genes into a latent vector space. These embeddings have been used to obtain state-of-the-art (SOTA) performance on downstream tasks such as cell-type classification, disease-state prediction, and cross-species learning. Here, we ask whether similar performance can be achieved without utilizing computationally intensive deep learning-based representations. Using simple, interpretable pipelines that rely on careful normalization and linear methods, we obtain SOTA or near SOTA performance across multiple benchmarks commonly used to evaluate single-cell foundation models, including outperforming foundation models on out-of-distribution tasks involving novel cell types and organisms absent from the training data. Our findings highlight the need for rigorous benchmarking and suggest that the biology of cell identity can be captured by simple linear representations of single cell gene expression data.",
+      "authors": [
+        "Souza, H.",
+        "Mehta, P."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "scRNA-seq",
+        "biology",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "簡單模型在下游基準測試中勝過單細胞基礎模型"
+    },
+    {
+      "id": "10.64898/2026.11.07.765083",
+      "title": "Disentangled generative modeling of single-cell perturbation responses across dynamic cellular states",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.07.765083v1",
+      "doi": "10.64898/2026.11.07.765083",
+      "abstract": "Single-cell perturbation studies are increasingly conducted across complex, multi-condition biolog-ical systems, offering a powerful lens into how interventions reshape cell states and molecular pro-grams. However, standard computational models compress single-cell profiles into unified repre-sentations where treatment effects are obscured by cell division, lineage progression, donor varia-tion, and cellular stress. Here, we present Disentangled Variational Inference for Perturbation Re-sponse (PertVI), a deep generative model that separates baseline mitotic phase, cellular state, and batch effects from treatment-induced shifts while isolating aberrant off-manifold responses in or-thogonal anomaly space. This structured design tackles two intertwined tasks: (1) quantifying treatment-induced changes in cell-state composition, and (2) inferring state-gated transcriptional changes in response to treatment. Across simulated benchmarks, PertVI accurately disentangles coupled biological axes and recovers weak treatment signatures. In conditional chemical and genet-ic screens of primary human CD8+ and CD4+ T cells, PertVI separates memory-precursor adju-vants from toxic phenocopies, resolves co-clustered regulators into directional kinetic trajectories and biphasic rebounders obscured by standard workflows, and reveals that treatment-induced phe-notypic shifting is decoupled from broad transcriptional perturbation responses and instead gov-erned by state-specific impulses. Altogether, PertVI brings unique mechanistic granularity to sin-gle-cell perturbation response modeling, serving as a proof of principle for biology-informed, struc-ture-guided variance disentanglement in dynamic cellular systems.",
+      "authors": [
+        "Wang, Y.",
+        "Zhao, Y.",
+        "Li, S.",
+        "Yang, D."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "單細胞擾動反應在動態細胞狀態下的解耦生成建模"
+    },
+    {
+      "id": "10.64898/2026.11.07.765116",
+      "title": "KLONE: An Imbalance-Robust k-NN Ensemble for Cross-Modal Single-Cell Clone Assignment",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.07.765116v1",
+      "doi": "10.64898/2026.11.07.765116",
+      "abstract": "Single-cell DNA sequencing (scDNA-seq) and single-cell RNA sequencing (scRNA-seq) enable the inference of copy number clones and transcriptional states in tumor studies. However, these two assays usually profile different cells of the same tumor, requiring computational assignment of unpaired scRNA-seq cells to clones identified by scDNA-seq to link clonal genotypes with transcriptional profiles. This task is challenging because the only connection between the two modalities is a weak, gene-dependent dosage effect, and the absence of clone labels for RNA cells precludes supervised learning of this relationship. Moreover, clonal distributions may differ between the two modalities because the cells are profiled independently, while the inherent clonal imbalance of real tumors can leave minority subclones underrepresented, further compromising assignment accuracy. To address these challenges, we present KLONE, a per-clone $k$-nearest-neighbor ($k$-NN) ensemble that assigns RNA cells directly to copy-number clones based on cross-modal Pearson similarity, without the need for a parametric model or clone labels for RNA cells. To ensure a fair assessment of each clone's compatibility with a given RNA cell, KLONE allocates an identical neighborhood budget to every clone, preventing majority clones from dominating the affinity assessment solely through their greater abundance. We compare KLONE with six existing methods on three colorectal cancer patients, using cells profiled in both modalities as ground truth. KLONE is the most accurate method and recalls minority clones at 100\\%. Despite discrepancies in clonal distribution between the two modalities, KLONE recovers the clonal distribution of RNA cells almost perfectly ($\\rho = 0.99$).",
+      "authors": [
+        "Huang, X.",
+        "Ye, S.",
+        "Silva, A.",
+        "Nakhleh, L."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "KLONE：用於跨模態單細胞克隆分配的不平衡穩健 k-NN 集成"
+    },
+    {
+      "id": "10.64898/2026.11.07.765075",
+      "title": "Statistical significance testing for spatial domain detection in spatial transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.07.765075v1",
+      "doi": "10.64898/2026.11.07.765075",
+      "abstract": "In spatial transcriptomics, domain-detection methods group platform-specific spatial measurement units--cells, bins or multicellular spots--into spatial domains for comparing molecular programs, cellular composition and interactions among tissue regions. However, the number of candidate domains detected in the same tissue can vary with user-specified parameters or model-selection criteria. Whether candidate domains should be merged can be framed as a test of a single-domain null hypothesis, under which each gene has constant mean expression across all spatial units in the combined region. However, testing candidate domains on the same gene-expression data used to detect them may induce post-selection bias and yield anti-conservative p-values, increasing the risk of oversegmentation. To address these challenges, we introduce SigDoTS (statistical Significance testing for Domain deTection in Spatial transcriptomics), a hypothesis-testing framework for spatial domain detection. SigDoTS uses hierarchical testing to determine which candidate domains to retain or merge, with adjustment for family-wise error control. It accounts for gene-gene covariance and spatial dependence and computes p-values by rerunning the upstream domain-detection pipeline on datasets simulated under the fitted single-domain null. In simulations, SigDoTS controlled the type I error rate at the root node under the single-domain null and improved recovery of the true spatial domains when multiple domains were present. In human dorsolateral prefrontal cortex, SigDoTS retained superficial and deep Layer 6 domains but merged Layer 3 candidate domains across different initial numbers of candidate domains. In ovarian and colorectal cancers, SigDoTS retained epithelial domains with different gene-expression programs and local immune environments, together with immune, stromal and vascular domains.",
+      "authors": [
+        "Wang, H.",
+        "Cao, F.",
+        "Shen, H.",
+        "Liu, Y.",
+        "Yan, G."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "spatial domains",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "空間轉錄組學中空間域檢測的統計顯著性檢驗"
+    },
+    {
+      "id": "10.64898/2026.10.02.756356",
+      "title": "DECONVersation: Single Cell Foundation Model-Derived Embeddings for Robust Cell Type Deconvolution of Bulk RNA-seq",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.02.756356v2",
+      "doi": "10.64898/2026.10.02.756356",
+      "abstract": "Motivation: Bulk RNA-seq deconvolution uses single-cell references to estimate cell type proportions in bulk tissue. Existing methods face challenges with batch effects, subject-level variation, and marker gene selection. We propose a new approach leveraging general-purpose single-cell foundation models. Results: DECONVersation combines pretrained or fine-tuned single-cell foundation model embeddings with non-negative least squares for deconvolution. The embeddings eliminate the need for explicit marker selection, and reduce batch effects. Compared against MuSiC, DWLS, and BayesPrism, DECONVersation with Geneformer or Cell2Sentence-2B achieved competitive performance across six bulk datasets with ground truth, with performance improvements after reference-specific fine-tuning. Availability and Implementation: DECONVersation is available through the Python Package Index. The source code is available at https://github.com/nygenome/DECONVersation, and the datasets and Apptainer/Singularity images are archived on https://zenodo.org/records/22949405.",
+      "authors": [
+        "Oku, A.",
+        "Geiger, H.",
+        "Robine, N.",
+        "Fu, R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "DECONVersation：基於單細胞基礎模型衍生嵌入的批量 RNA-seq 穩健細胞類型解卷積"
+    },
+    {
+      "id": "10.64898/2026.11.07.765073",
+      "title": "Uncovering Viral Signals Across Cell Populations in Colorectal Cancer",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.07.765073v1",
+      "doi": "10.64898/2026.11.07.765073",
+      "abstract": "Viral sequences have been detected in colorectal cancer, but their cellular and anatomical distribution remains poorly resolved. We aimed to establish a cell-type-resolved map of viral reference-associated RNA signals across colorectal cancer, tumour-adjacent normal tissue, and healthy colon. We repurposed human-unmapped reads from single-cell RNA sequencing libraries generated in ten publicly available studies. We retained cell-barcode and unique molecular identifier information, removed duplicate molecules, and aligned reads to a curated human-associated viral reference using three aligners. Viral signals were analysed across cell types, tissue conditions, and colorectal segments. We used participant-grouped repeated cross-validation to evaluate tissue-condition classification and screened an independent paired colorectal cancer proteomics cohort for compatible peptide matches. The study included 547 libraries from 112 participants, including 49 with matched colorectal cancer and tumour-adjacent normal samples, and approximately 415,000 cells spanning ten major cell populations. Viral reference-associated RNA signals differed across epithelial, immune, stromal, and vascular compartments, tissue conditions, and anatomical regions of the colon. Of 318 independent healthy-reference viral-load comparisons, seven involving six virus-cell-type groups remained significant after Benjamini-Hochberg correction, including plasma-cell HHV-7 and HHV-6B and mast-cell HCV-2. Cell-type-resolved viral features distinguished colorectal cancer, tumour-adjacent normal tissue, and healthy colon in participant-grouped validation; random forest achieved a macro-AUC of 0.957 (SD 0.028), with HERV-K113 as the leading quantitative feature. An independent proteomic screen identified peptide matches compatible with 20 candidate viral groups. We established a cell-type-resolved map of viral reference-associated RNA signals across colorectal tissue conditions and anatomical regions. By identifying candidate viral signals in epithelial and immune compartments, this map provides a basis for investigating virus-host pathways involved in tumour biology, immune regulation, and antigen-presentation states, and could help prioritise future combination strategies pairing virus-directed or virus-mimetic approaches with standard treatment or immune checkpoint blockade.",
+      "authors": [
+        "Mahmanzar, M.",
+        "Rahimian, K.",
+        "Kavousi, K.",
+        "Deng, Y."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "發掘結直腸癌中跨細胞族群的病毒訊號"
+    },
+    {
+      "id": "10.64898/2026.10.22.761199",
+      "title": "Overcoming segmentation bottlenecks in brain tissue for spatial proteomic inference at population scale",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.22.761199v2",
+      "doi": "10.64898/2026.10.22.761199",
+      "abstract": "In spatial proteomics across large cohorts, downstream estimates from tens of thousands of images depend on accurate cell segmentation. Yet pretrained segmentation models struggle with morphologically complex cell bodies in human brain tissue, and how domain adaptation affects downstream discovery remains unclear. Here, we introduce SPInfer, a workflow for spatial proteomic inference developed using 5,832 manually annotated cell bodies from 120 immunofluorescence images of the human prefrontal cortex. After benchmarking eight segmentation methods spanning classical, convolutional, and foundation models, we adapted Cellpose-SAM, raising cell segmentation F1 from 0.37 to 0.84 and recovering cell compositions concordant with matched single-nucleus RNA-seq and spatial transcriptomics. Across 14,765 images from 69 postmortem donors, identical Alzheimer's disease pathology models found no significant associations after false discovery rate correction using zero-shot masks, versus four using fine-tuned masks; three linked higher OLIG2-positive fractions to greater neurofibrillary tangle and plaque burden. Using the fine-tuned masks, a graph attention network over nuclear neighborhoods classified four cell types without marker information, and differential expression analysis linked cell morphology to gene expression. This provides a pipeline for fine-tuning foundation models to segment complex tissues, enabling biological discovery in spatial proteomics at the population scale.",
+      "authors": [
+        "You, L.",
+        "Durbin, J. L.",
+        "Meng, G.",
+        "Stallaert, W.",
+        "Li, G.",
+        "Uttam, S.",
+        "Feng, H.",
+        "Glausier, J. R.",
+        "Wang, J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "spatial transcriptomics",
+        "spatial proteomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "克服大腦組織中的分割瓶頸以實現族群規模的空間蛋白體推斷"
+    },
+    {
+      "id": "10.64898/2026.10.26.761949",
+      "title": "Evaluation design shapes estimates of cross-donor generalization in single-cell classification of cell-type",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-10",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.26.761949v2",
+      "doi": "10.64898/2026.10.26.761949",
+      "abstract": "Motivation: Single-cell cell-type classifiers are often evaluated using random cell-level splits, although cells from the same donor are not independent. We asked how evaluation design affects estimates of cross-donor generalization. Results: Across PBMC and lung datasets, random cell-level splitting consistently yielded higher macro F1 than donor-held-out evaluation across multiple expression representations. This gap persisted after batch covariate adjustment and donor-level mixed-effects modeling. In contrast, evaluation gaps were generally minimal in highly separable, trivially easy kidney, pancreas, and blood classification settings and in a randomized-label setting with no meaningful predictive signal. These results show that evaluation bias depends on the underlying classification difficulty and that donor-held-out evaluation is necessary when claims concern generalization to unseen individuals. Availability and Implementation: Code and analyses are available on GitHub at https://github.com/danielchen05/scRNA-cross-donor-generalization/. Processed data are archived at Zenodo at https://doi.org/10.5281/zenodo.19717558. Contact: ajbattle@jhu.edu",
+      "authors": [
+        "Chen, X.",
+        "Li, J.",
+        "Battle, A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "評估設計影響單細胞細胞類型分類中跨捐贈者泛化估計"
+    },
+    {
+      "id": "10.1038/s41467-026-79213-1",
+      "title": "Cryo-EM reveals conserved baseplate-architecture and distinct accessory-protein assemblies in mycobacteriophages Claus, Corndog and Mysterious",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79213-1",
+      "doi": "10.1038/s41467-026-79213-1",
+      "abstract": "Atomic-resolution structures of three mycobacteriophages reveal a conserved baseplate core decorated by diverse accessory proteins, showing how related siphophages build distinct baseplate architectures from a common structural core.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "冷凍電鏡解析三種分枝桿菌噬菌體底板結構",
+      "summaryZh": "研究團隊以冷凍電鏡解析三種分枝桿菌噬菌體 Claus、Corndog 與 Mysterious 的原子解析結構。結果顯示三者具有保守的底板核心，並由多樣化的附屬蛋白裝飾。研究指出相關的 siphophages 能從共同的結構核心建構出不同的底板架構。",
+      "topicTags": [
+        "cryo-em",
+        "bacteriophage",
+        "structural-biology",
+        "mycobacteriophage"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79651-x",
+      "title": "A lactate-fatty acid loop drives prostate cancer bone colonization by mediating metabolic interplay between tumor cells and osteoblasts",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79651-x",
+      "doi": "10.1038/s41467-026-79651-x",
+      "abstract": "Bone metastases in advanced prostate cancer remain difficult to treat and are associated with poor outcomes. Here, the authors show that bone-colonizing prostate tumor cells exploit lactate uptake via MCT1 to fuel tumor growth and promote osteogenesis, identifying MCT1 inhibition as a potential therapeutic strategy.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "乳酸-脂肪酸循環驅動前列腺癌骨定殖",
+      "summaryZh": "本研究聚焦於晚期前列腺癌的骨轉移，該病目前治療困難且預後不佳。作者指出，骨定殖的前列腺腫瘤細胞利用 MCT1 攝取乳酸，以促進腫瘤生長並促進成骨。研究提出乳酸-脂肪酸循環在腫瘤細胞與成骨細胞間的代謝交互作用中扮演驅動角色。基於此發現，MCT1 抑制被提出為潛在的治療策略。",
+      "topicTags": [
+        "prostate-cancer",
+        "bone-metastasis",
+        "metabolism",
+        "lactate",
+        "mct1"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-77621-x",
+      "title": "The representational geometry of cognitive maps under cognitive control",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-77621-x",
+      "doi": "10.1038/s41467-026-77621-x",
+      "abstract": "The brain organizes relationships between entities into cognitive maps. Here, the authors show that complementary stable and context-dependent representational geometries balance stability and behavioral flexibility, with their geometry shaped by cognitive control.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "認知控制下認知地圖的表徵幾何"
+    },
+    {
+      "id": "10.1038/s41467-026-79289-9",
+      "title": "Toward personalized deep brain stimulation via white matter stimulation and microstructure in depression",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79289-9",
+      "doi": "10.1038/s41467-026-79289-9",
+      "abstract": "A study of 51 patients receiving deep brain stimulation for treatment-resistant depression shows that individual white matter stimulation and integrity jointly influence antidepressant response, supporting more personalized neuromodulation strategies.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "邁向以白質刺激與微結構實現個人化深部腦刺激於憂鬱症"
+    },
+    {
+      "id": "10.1038/s41467-026-78712-5",
+      "title": "Global environmental genomics reveals vast uncultivated protist diversity and taxonomic blind spots",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-10T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78712-5",
+      "doi": "10.1038/s41467-026-78712-5",
+      "abstract": "In this study, the authors analyze over 30,000 assembled metagenomes across ecosystems to uncover hidden protist diversity, including major novel uncultivated lineages, and reveal their habitats and connections to other microbes.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "全球環境基因體學揭示廣泛的未培養原生生物多樣性與分類學盲點"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 34,
+      "passedByScope": 26,
+      "llmClassified": 8,
+      "llmYes": 5,
+      "llmNotSure": 0,
+      "llmNo": 3,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 31,
+      "excluded": 3
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 21,
+      "llmTagged": 21,
+      "llmLineA": 2,
+      "llmLineB": 19,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 31,
+      "candidates": 30,
+      "featured": 12,
+      "overflow": 18,
+      "lineA": 2,
+      "lineB": 19,
+      "preprint": 9,
+      "skip": 1,
+      "featuredLineA": 0,
+      "featuredLineB": 12,
+      "featuredPreprint": 0,
+      "overflowLineA": 2,
+      "overflowLineB": 7,
+      "overflowPreprint": 9
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "primarySucceeded": 11,
+      "fallbackSucceeded": 1,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 18,
+      "llmTranslated": 18,
+      "primarySucceeded": 18,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 21
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 11
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "observed": [
+            "gemini-3.5-flash-lite"
+          ],
+          "succeeded": 1
+        }
+      },
+      "translate": {
+        "requested": 18,
+        "succeeded": 18,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        },
+        "primarySucceeded": 18,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79332-9",
+        "title": "Pico-X: a 24.9 nanowatt microcontroller for long-duration autonomous operation in flexible landing-pad sensor networks",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-10T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79332-9",
+        "doi": "10.1038/s41467-026-79332-9",
+        "abstract": "Researchers present Pico-X, a programmable microcontroller designed for sparse event-driven sensing. Operating at nanowatt power levels, it enables long-duration autonomous monitoring and reliable event detection in distributed flexible sensor networks.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79046-y",
+        "title": "Electric vehicle battery materials supply disruptions can be mitigated&#xa0; with chemistry changes and recycling",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-10T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79046-y",
+        "doi": "10.1038/s41467-026-79046-y",
+        "abstract": "This study shows that disruptions in US battery materials supply could cost tens of billions of dollars. However, feasible changes in battery chemistry and increasing recycled lithium supply largely reduce the consequences of the disruptions.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78330-1",
+        "title": "High-entropy alloy aerogels promote selective glycerol oxidation to tartronate at industrial current densities",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-10T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78330-1",
+        "doi": "10.1038/s41467-026-78330-1",
+        "abstract": "The production of tartronate from glycerol electrooxidation is limited by low selectivity at industrial-scale current densities. Here, the authors report a PtCuCoCeSn high-entropy alloy aerogel for regulated glycerol adsorption, enabling 81.4% selectivity and stable operation up to 240 hours.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
