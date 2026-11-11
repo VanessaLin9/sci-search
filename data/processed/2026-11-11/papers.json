@@ -1,0 +1,1129 @@
+{
+  "reportDate": "2026-11-11",
+  "generatedAt": "2026-11-11T18:19:09.467Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03320-6",
+      "title": "Advancing multimodal tools to decode organoid complexity",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-11T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03320-6",
+      "doi": "10.1038/s41592-026-03320-6",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "推進多模態工具以解碼類器官複雜性"
+    },
+    {
+      "id": "10.1038/s41588-026-02832-3",
+      "title": "Saturation genome editing of BRCA1 across cell types improves interpretation of variant pathogenicity",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-11T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02832-3",
+      "doi": "10.1038/s41588-026-02832-3",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "跨細胞型態的 BRCA1 飽和基因組編輯有助於提升變異致病性的判讀"
+    },
+    {
+      "id": "10.1038/s41590-026-02703-3",
+      "title": "PKA signaling controls ILC3 homeostasis and IL-23-mediated inflammation in the gut",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-11-11T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02703-3",
+      "doi": "10.1038/s41590-026-02703-3",
+      "abstract": "Sonnnenberg and colleagues show that prostaglandin engages protein kinase A (PKA) and sustained PKA activation promotes the depletion of ILC3s. IL-23 can drive aberrant PKA signaling resulting in intestinal inflammation.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.07.08.735777",
+      "title": "Multi-omics profiling links epigenetic and lncRNA changes to early human endochondral ossification priming",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-11",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.08.735777v3",
+      "doi": "10.64898/2026.07.08.735777",
+      "abstract": "Differentiation programs remain incompletely understood across stem cell types, including for human bone marrow mesenchymal stromal/stem (BM-MSCs) cells, a heterogenous population orchestrating bone formation and establishing a functional hematopoietic niche in the bone marrow. BM-MSCs form and repair bone through the evolutionarily conserved process of endochondral ossification (EO), initiated by deposition of a transient cartilage template subsequently remodeled into bone and bone marrow tissues. Despite their considerable potential for skeletal regeneration, the early molecular and cellular events underlying BM-MSCs commitment to EO remain elusive. To overcome donor dependent variability in chondrogenic potential that limits mechanistic studies, we here exploit OssiGel as a potent chondro-inductive extracellular matrix offering robust recapitulation of EO by BMMSCs. Through multi-omics profiling of OssiGel-primed BM-MSCs, we identify rapid chromatin remodeling at chondrogenic loci as concomitant for lineage commitment. The emergence of a chondro-progenitor population is detected as early as 3 days in vivo and correlates with successful EO recapitulation. Mechanistically, we identify LINC02511 as novel enhancer-associated element involved in the onset of EO. We confirm presence of LINC02511 in human skeletal atlases, and its CRISPR-mediated silencing significantly impaired EO. By integrating human tissue engineering strategies with single cell multi-omics profiling, our study provides a framework for deciphering BM-MSCs fate decisions, highlighting the role of enhancer and non-coding elements as key determinants of early lineage specification. These findings advance our understanding of BM-MSCs biology and will prompt their translational exploitation in regenerative medicine.",
+      "authors": [
+        "Hidalgo Gil, D.",
+        "Garcia Garcia, A.",
+        "Wolf, F.",
+        "Gonzalez Anton, S.",
+        "Bosch, S.",
+        "Grigoryan, A.",
+        "Ngoc, P. C. T.",
+        "Muthukumar, S.",
+        "Bellodi, C.",
+        "Barbero, A.",
+        "Bourgine, P. E."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "multi-omics",
+        "biology",
+        "evolution",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "多體學分析將表觀遺傳與 lncRNA 變化連結至早期人類軟骨內骨化啟動",
+      "summaryZh": "本研究利用 OssiGel 作為軟骨誘導性細胞外基質，探討人類骨髓間質幹細胞（BM-MSCs）在軟骨內骨化（EO）過程中的早期分子與細胞事件。透過多體學分析，研究團隊發現軟骨生成基因座上的快速染色質重塑與譜系承諾同時發生，並在體內 3 天內即可偵測到軟骨祖細胞群的出現。機制上，研究識別出參與軟骨內骨化啟動的新型強化子相關元件 LINC02511，且其 CRISPR 標靶靜默會顯著受損軟骨內骨化。這些發現結合了人類組織工程策略與單細胞多體學分析，為解構幹細胞命運決定提供框架，並突顯非編碼元件作為早期譜系特化關鍵決定因子的角色。",
+      "topicTags": [
+        "multi-omics",
+        "epigenetics",
+        "lncrna",
+        "stem-cells",
+        "bone-regeneration"
+      ]
+    },
+    {
+      "id": "10.64898/2026.03.20.713192",
+      "title": "Integrating Long-Read Structural Variant Analysis with single-nucleus RNA-seq to Elucidate Gene Expression Effects in Disease",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-11",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.03.20.713192v2",
+      "doi": "10.64898/2026.03.20.713192",
+      "abstract": "Structural variants (SVs) are a major source of genetic diversity, yet how they impact cell types in complex brain diseases remains largely unexplored, partially due to limitations of short-read sequencing. Here, we addressed this fundamental question in Parkinson's disease (PD). generating long-read whole-genome sequencing (WGS) data for 100 post-mortem brain samples from a PD cohort, constructing a high-confidence catalog of 74,552 SVs. To resolve their functional impact, we integrated single-nucleus RNA-sequencing data from two brain regions from the same samples and focused functional analyses on SVs proximal to genes previously nominated as cis-regulated, potential causal targets of PD-associated GWAS loci. Using expression quantitative trait locus and allele-specific expression analyses, we uncovered SVs significantly associated with expression in specific cell types as well as effects shared across cell types. This study demonstrates the power of uniting long-read WGS with transcriptomics to uncover SVs underlying complex disease architecture with cell type resolution.",
+      "authors": [
+        "Kim, K.",
+        "Lin, Z.",
+        "Simmons, S. K.",
+        "Parker, J.",
+        "Kearney, M.",
+        "Liao, Z.",
+        "Haywood, N.",
+        "Zhang, J.",
+        "Cline, M. P.",
+        "Tuncali, I.",
+        "Sharma, M.",
+        "Serrano, G. E.",
+        "Beach, T. G.",
+        "Dong, X.",
+        "Popic, V.",
+        "Scherzer, C. R.",
+        "Levin, J. Z."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "結合長讀長結構變異分析與單核 RNA 定序以闡明疾病中的基因表現效應",
+      "summaryZh": "本研究探討結構變異（SVs）在帕金森氏症（PD）中對不同細胞類型的影響。研究團隊針對帕金森氏症世代的 100 個死後腦部樣本產生長讀長全基因組定序（WGS）資料，建構了包含 74,552 個結構變異的高信賴度目錄。藉由整合來自相同樣本兩個腦區的單核 RNA 定序資料，並聚焦於先前被提名為順式調控、具潛在因果關係之帕金森氏症相關全基因組關聯分析（GWAS）位點附近的結構變異，研究團隊發現了與特定細胞類型表現顯著相關的結構變異，以及跨細胞類型共有的效應。此研究展現了結合長讀長全基因組定序與轉錄體學，以解析複雜疾病架構中結構變異及其細胞類型解析度的潛力。",
+      "topicTags": [
+        "structural-variants",
+        "single-nucleus-rna-seq",
+        "long-read-sequencing",
+        "parkinsons-disease",
+        "genetics"
+      ]
+    },
+    {
+      "id": "10.1101/2025.03.12.642799",
+      "title": "A reformulation of the t-test in single-cell transcriptomics dramatically reduces false positives",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-11",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.03.12.642799v2",
+      "doi": "10.1101/2025.03.12.642799",
+      "abstract": "The default differential expression tests in single-cell analysis software provide fast and simple approaches that help practitioners annotate cell populations identified through clustering algorithms. Here, we use theoretical arguments and empirical studies to show that these tests suffer from inflated false positive rates that affect the resulting annotations. We introduce LN's t-test, which tests a novel, asymptotically unbiased log-fold change estimator and avoids these false positives, without compromising speed.",
+      "authors": [
+        "Kviman, O.",
+        "Ferreira, P. F.",
+        "Jun, S.-H.",
+        "Toosi, H.",
+        "Lagergren, J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "單細胞轉錄體學中 t 檢定的一項重新表述可大幅減少偽陽性",
+      "summaryZh": "本研究指出，預設的單細胞分析軟體中的差異表現檢定會面臨膨脹的偽陽性率，進而影響細胞群集註解。作者運用理論論證與實證研究，展示了這些檢定造成的影響。為此，團隊推出了 LN 的 t 檢定（LN's t-test），該檢定測試了一種新穎且漸近無偏的對數倍數變化估計量，能在不犧牲運算速度的情況下避免這些偽陽性。",
+      "topicTags": [
+        "single-cell",
+        "transcriptomics",
+        "computational-biology",
+        "statistics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.09.765280",
+      "title": "CellChat Hotspot: A Targeted Approach to Cell Cell Communication Analysis With Spatial transcriptomics Validation.",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-11",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765280v1",
+      "doi": "10.64898/2026.11.09.765280",
+      "abstract": "Abstract. In recent years, single cell RNA sequencing (scRNA seq) has enabled the investigation of intercellular communication through Cell Cell Communication (CCC) tools such as CellChat. Despite their potential, these approaches remain challenging to interpret, particularly when global analyses generate complex interaction networks that may include biologically irrelevant signals. To address this limitation, we developed a framework termed CellChat Hotspot, designed to improve the biological interpretability of inferred communication networks. This approach integrates gene set enrichment analysis with a context driven filtering strategy, selecting both genes and cells based on their functional relevance prior to communication inference. Applied to stage II colon cancer data, CellChat Hotspot enabled the identification of condition-specific interaction patterns associated with recurrence. Non recurrent patients showed enrichment of immune related processes, whereas recurrent cases were characterized by pathways associated with invasion and metastasis. Notably, a loss of interaction in the HSPG pathway between CALB1+ and stromal cells was observed in recurrent patients, suggesting a potential disruption of cell matrix adhesion mechanisms. To verify the reliability of this finding, we applied the framework to spatial transcriptomics data, which confirmed the presence of the HSPG2 DAG1 interaction in non-recurrent tumors and its near absence in recurrent ones. Overall, this framework provides a biologically guided strategy for studying intercellular communication in complex systems such as the tumor microenvironment.",
+      "authors": [
+        "Monaco, D.",
+        "Dioguardi, M.",
+        "Dipalma, M.",
+        "Mattioli, E.",
+        "Zito, F. A.",
+        "Giovannelli, F.",
+        "Ricco, A.",
+        "Brunetti, O.",
+        "Argentiero, A.",
+        "De Summa, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "CellChat Hotspot：結合空間轉錄體學驗證的標靶式細胞間通訊分析方法",
+      "summaryZh": "本研究開發了一項名為 CellChat Hotspot 的分析框架，旨在透過整合基因集富集分析與情境驅動的過濾策略，改善細胞間通訊（CCC）推論網路的生物學可解釋性。將此方法應用於第二期大腸癌數據時，成功識別出與復發相關的條件特異性互動模式，並發現復發患者中存在侵襲與轉移相關路徑的特徵。研究進一步利用空間轉錄體學數據進行驗證，證實了非復發腫瘤中 HSPG2 DAG1 互動的存在及其在復發腫瘤中的幾近缺失。整體而言，此框架為研究複雜系統（如腫瘤微環境）中的細胞間通訊提供了一種具生物學指引的策略。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "single-cell",
+        "cell-cell-communication",
+        "tumor-microenvironment",
+        "bioinformatics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.09.765456",
+      "title": "scDeepSim: Deep Generative Simulation for Controlled Benchmarking of Single-Cell Methods",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-11",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765456v1",
+      "doi": "10.64898/2026.11.09.765456",
+      "abstract": "Benchmarking single-cell computational methods requires both realistic data and reliable ground truth. However, annotating real datasets is costly and, even when available, may not fully represent the diverse settings where methods are used. Simulators address this gap by generating synthetic data that has fully specified ground truth and whose structure can be tailored to challenge competing methods. Existing single-cell simulators can broadly be divided into statistical and deep generative classes. Statistical simulators offer interpretable parameters for controlling simulated data, but their modeling assumptions may not accurately represent real data. Deep generative models can learn complex expression patterns, but it remains unclear how to transparently control individual biological or technical factors without introducing unintended effects. We introduce scDeepSim, a simulator that combines a structured variational autoencoder with latent diffusion to generate synthetic single-cell expression profiles. It allows users to intervene on selected biological or technical factors at user-specified strengths, producing realistic datasets with benchmark ground truth. We demonstrate this capability by benchmarking batch correction and trajectory inference methods, showing how batch-effect strength affects batch mixing and cell-type preservation, and how trajectory geometry and noise affect pseudotime recovery. scDeepSim therefore enables researchers to vary selected biological and technical factors in realistic simulated data and assess how these changes affect the performance of single-cell analysis methods, helping understand when such methods may be appropriately applied. Code for the scDeepSim simulator and experiments is available at https://github.com/LangtianM/scDeepSim.",
+      "authors": [
+        "Ma, L.",
+        "Li, J. J.",
+        "Sankaran, K."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.11.08.765156",
+      "title": "Curvature-based schedule ordering is preserved in homogeneous and heterogeneous tumors",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-11",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.08.765156v1",
+      "doi": "10.64898/2026.11.08.765156",
+      "abstract": "During treatment, dosing protocols with identical total dose may favor one schedule over another depending on how exposure is distributed over time. In homogeneous cell populations, Jensen's inequality has been shown to predict whether continuous or intermittent high-dose followed by low-dose is favored, based on the curvature of the concentration-effect function. Scheduling ordering can be performed based on curvature only: concave functions favor continuous dosing while convex functions favor intermittent dosing schedules with a high time-variance. However, tumors exhibit heterogeneous drug sensitivities, and treatment preferentially eliminates drug-sensitive cells, progressively shifting the surviving population toward greater drug resistance. Whether this treatment-induced selection can reverse curvature-based schedule ordering remains unclear. We develop a mathematical framework in which phenotypes share a common concentration-effect function but differ by fixed, nonnegative sensitivity scales. We prove that the ordering of equal-mean schedules is administrated solely by the scalar cumulative treatment effect, that is, by the curvature of the effect function alone. Consequently, baseline heterogeneity and treatment-induced selection can alter the magnitude of treatment response and the composition of surviving cells, but cannot reverse the ordering of equal-mean schedules predicted by the curvature of the single-cell concentration-effect function. This preservation holds across different temporal dosing profiles and repeated treatment cycles. Our work uncovers a general principle that curvature-based schedule ordering is preserved in heterogeneous tumors despite treatment-induced selection toward resistance.",
+      "authors": [
+        "Song, A. H.",
+        "West, J."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.11.08.764927",
+      "title": "BAF complexes cooperate with lineage-restricted transcription factors to establish cell-state-specific regulatory programs",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-11",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.08.764927v1",
+      "doi": "10.64898/2026.11.08.764927",
+      "abstract": "BRG1/BRM-associated factor (BAF) complexes are essential regulators of chromatin organization and cell identity. Genes encoding BAF subunits are among the most frequently mutated in human cancer. Yet, how disruption of a single subunit gives rise to distinct tumor states remains poorly understood. Atypical teratoid rhabdoid tumors (ATRTs) provide a compelling model, as they are uniformly driven by bi-allelic loss of the BAF subunit SMARCB1, yet segregate into distinct molecular subtypes. Using integrated multi-omics profiling of patient-derived ATRT organoids and primary tumor tissues, we show that transcriptional and chromatin accessibility changes upon SMARCB1 reconstitution are directed by subtype- and lineage-specific transcription factor (TF) repertoires. Genome-wide binding and transcriptomic analyses reveal that SMARCB1 reconstitution enables the lineage-specific TF RFX4 to engage regulatory elements and activate neuronal differentiation programs, partially reprogramming ATRT-MYC toward an ATRT-SHH-like identity. Together, these findings demonstrate that SMARCB1 loss disrupts TF-dependent chromatin priming, revealing that the lineage-specific regulatory output of BAF complexes is constrained by the underlying TF repertoire.",
+      "authors": [
+        "He, J.",
+        "Rios Arceo, C.",
+        "Anderson, N.",
+        "Teunissen, W.",
+        "Paassen, I.",
+        "Jongsma, S.",
+        "de Wit, E.",
+        "Kool, M.",
+        "Liu, N. Q.",
+        "Drost, J."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics",
+        "cancer",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "BAF 複合體與譜系受限轉錄因子協同建立細胞狀態特異性調控程式",
+      "summaryZh": "本研究探討了 BRG1/BRM-associated factor (BAF) 複合體如何與轉錄因子合作來調控細胞狀態。透過整合患者來源的非典型畸胎瘤橫紋肌樣瘤 (ATRT) 器官oid與原發性腫瘤組織的多體學分析，研究顯示 SMARCB1 的重建會透過亞型與譜系特異性的轉錄因子庫來引導轉錄與染色質可及性的改變。基因體範圍的結合與轉錄體分析表明，SMARCB1 的重建使譜系特異性轉錄因子 RFX4 能夠結合調節元件並活化神經分化程式，部分將 ATRT-MYC 重設為類似 ATRT-SHH 的特性。這些發現證明了 SMARCB1 的缺失會破壞依賴轉錄因子的染色質啟動，並揭示了 BAF 複合體的譜系特異性調控輸出受到潛在轉錄因子庫的限制。",
+      "topicTags": [
+        "baf-complex",
+        "chromatin-organization",
+        "transcription-factors",
+        "cancer",
+        "multi-omics"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78755-8",
+      "title": "Topographical mismatch sustains open microchannels in living soft tissue for non-destructive protein biopsy",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-11T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78755-8",
+      "doi": "10.1038/s41467-026-78755-8",
+      "abstract": "Skin-attached devices can easily inflame or collapse. Here, the authors show a multi-lobed microneedle device that holds micron-scale conduits open for seven days, allowing repeated protein sampling from interstitial fluid",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41467-026-79260-8",
+      "title": "Functionally divergent RHOA mutations drive peripheral T cell lymphoma development by engaging a common neomorphic pathway",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-11T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79260-8",
+      "doi": "10.1038/s41467-026-79260-8",
+      "abstract": "RHOA mutation variants, exerting opposite effects on canonical RHOA signaling, are associated with peripheral T-cell lymphomas (PTCL). Here, the authors show that different RHOA mutants share a neomorphic activity that activates the transcription factor NFAT to drive PTCL.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "功能分歧的 RHOA 突變透過共同的新突變路徑驅動周邊 T 細胞淋巴瘤的發展",
+      "summaryZh": "本研究探討了對典型 RHOA 訊息傳遞具有相反影響的 RHOA 突變變異體，如何與周邊 T 細胞淋巴瘤（peripheral T-cell lymphomas, PTCL）產生關聯。作者指出，這些不同的 RHOA 突變體共享一種新突變活性（neomorphic activity），可活化轉錄因子 NFAT 並進一步驅動 PTCL 的發展。此發現有助於理解多樣化突變如何共同促進腫瘤發生。",
+      "topicTags": [
+        "cancer",
+        "genetics",
+        "molecular-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79336-5",
+      "title": "UMIche: a UMI-centric analysis platform for enhancing molecular quantification accuracy in bulk and single-cell sequencing",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-11T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79336-5",
+      "doi": "10.1038/s41467-026-79336-5",
+      "abstract": "Errors in unique molecular identifiers (UMIs) can distort molecule counts. Here, the authors present UMIche, a platform for benchmarking deduplication methods, and show that set cover and majority voting are more robust as barcode errors increase.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "UMIche：用於提升批量與單細胞定序中分子量化準確度的 UMI 為中心分析平台",
+      "summaryZh": "獨特分子識別碼（UMI）中的錯誤可能會扭曲分子計數。本研究發表了 UMIche 平台，用於對去重複方法進行基準測試。研究結果顯示，當條碼錯誤增加時，集合覆蓋（set cover）與多數決（majority voting）方法展現出更高的穩健性。這項研究有助於改善分子量化準確度，並提供評估去重複方法的工具。",
+      "topicTags": [
+        "sequencing",
+        "single-cell",
+        "computational-biology",
+        "methodology"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 67,
+      "passedByScope": 10,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 57,
+      "keywordFallbackYes": 14,
+      "keywordFallbackNo": 43,
+      "included": 24,
+      "excluded": 43
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b"
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 6,
+      "llmTagged": 0,
+      "llmLineA": 0,
+      "llmLineB": 0,
+      "fallback": 6,
+      "fallbackLineA": 1,
+      "fallbackLineB": 5,
+      "failures": 6
+    },
+    "selection": {
+      "total": 13,
+      "candidates": 13,
+      "featured": 11,
+      "overflow": 2,
+      "lineA": 1,
+      "lineB": 5,
+      "preprint": 7,
+      "skip": 0,
+      "featuredLineA": 1,
+      "featuredLineB": 3,
+      "featuredPreprint": 7,
+      "overflowLineA": 0,
+      "overflowLineB": 2,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 11,
+      "llmSummarized": 7,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 7,
+      "failed": 4
+    },
+    "translate": {
+      "requested": 2,
+      "llmTranslated": 2,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 2,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "llmTagged": 0
+      },
+      "summarize": {
+        "requested": 11,
+        "failed": 4,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "succeeded": 0
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "observed": [
+            "gemini-3.5-flash-lite"
+          ],
+          "succeeded": 7
+        }
+      },
+      "translate": {
+        "requested": 2,
+        "succeeded": 2,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b"
+        },
+        "primarySucceeded": 0,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "observed": [
+            "gemini-3.5-flash-lite"
+          ],
+          "succeeded": 2
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03642-7",
+        "title": "Iconic first image of black hole holds up to scrutiny",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03642-7",
+        "doi": "10.1038/d41586-026-03642-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03671-2",
+        "title": "Too dry for cacti: extreme droughts could push iconic species to extinction",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03671-2",
+        "doi": "10.1038/d41586-026-03671-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03591-1",
+        "title": "Getting a grasp on the global wildlife trade",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03591-1",
+        "doi": "10.1038/d41586-026-03591-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11391-w",
+        "title": "Efficient catalyst-controlled C–H arylation of arenes",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11391-w",
+        "doi": "10.1038/s41586-026-11391-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03441-0",
+        "title": "A guide to Nature Index tables",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03441-0",
+        "doi": "10.1038/d41586-026-03441-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03660-5",
+        "title": "Even giant anteaters in the remote Amazon have microplastics in their blood",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03660-5",
+        "doi": "10.1038/d41586-026-03660-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03489-y",
+        "title": "Salty grains in Saturn’s outermost ring formed from the slow freeze of plumes from the moon Enceladus",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03489-y",
+        "doi": "10.1038/d41586-026-03489-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03496-z",
+        "title": "Cacti are severely threatened by drought in a warming world",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03496-z",
+        "doi": "10.1038/d41586-026-03496-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03272-z",
+        "title": "Extraordinary materials shaped by the principles of complex networks",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03272-z",
+        "doi": "10.1038/d41586-026-03272-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03515-z",
+        "title": "How to avoid aliens and live",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03515-z",
+        "doi": "10.1038/d41586-026-03515-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03499-w",
+        "title": "Earth’s early history told by 3.9-billion-year-old rocks from northern China",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03499-w",
+        "doi": "10.1038/d41586-026-03499-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03621-y",
+        "title": "Biotech innovations are an opportunity to limit climate change",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03621-y",
+        "doi": "10.1038/d41586-026-03621-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03183-z",
+        "title": "How I balance my life as a professional surfer and a university researcher",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03183-z",
+        "doi": "10.1038/d41586-026-03183-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03633-8",
+        "title": "Hideki Shirakawa obituary: chemist who showed that plastics can conduct electricity",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03633-8",
+        "doi": "10.1038/d41586-026-03633-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03669-w",
+        "title": "Give biologists the space to be curious, not just better tools",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03669-w",
+        "doi": "10.1038/d41586-026-03669-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03636-5",
+        "title": "Move over BMI: new obesity definition is better for predicting your health",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03636-5",
+        "doi": "10.1038/d41586-026-03636-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03412-5",
+        "title": "AI’s energy paradox: will the AI boom strain energy systems or be the source of solutions?",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03412-5",
+        "doi": "10.1038/d41586-026-03412-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03624-9",
+        "title": "Retractions of old papers are on the rise: when should bad science be culled?",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03624-9",
+        "doi": "10.1038/d41586-026-03624-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03448-7",
+        "title": "Author or just ‘acknowledged’? How women are not gaining full credit for research",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03448-7",
+        "doi": "10.1038/d41586-026-03448-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03425-0",
+        "title": "Proposed approach for diagnosing obesity outperforms old method",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03425-0",
+        "doi": "10.1038/d41586-026-03425-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03274-x",
+        "title": "Personal incentives for public officials drove a drop in China’s fertility",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03274-x",
+        "doi": "10.1038/d41586-026-03274-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03409-0",
+        "title": "Can green technologies deliver energy security in an unstable world?",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03409-0",
+        "doi": "10.1038/d41586-026-03409-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11204-0",
+        "title": "Human replisomes direct a dedicated leading-strand primase for fork restart",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11204-0",
+        "doi": "10.1038/s41586-026-11204-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11232-w",
+        "title": "Bureaucratic incentives shaped effectiveness of the one-child policy in China",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11232-w",
+        "doi": "10.1038/s41586-026-11232-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11324-7",
+        "title": "NRF2 is a mechanosensitive checkpoint for NLRP3 inflammasome activation",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11324-7",
+        "doi": "10.1038/s41586-026-11324-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11282-0",
+        "title": "Non-halogen aqueous electrolytes for four-electron iodine conversion",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11282-0",
+        "doi": "10.1038/s41586-026-11282-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11278-w",
+        "title": "Flexible rubber blades for tidal turbines",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11278-w",
+        "doi": "10.1038/s41586-026-11278-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11280-2",
+        "title": "Hadean mantle depletion and 3.95-Gyr subduction implied by North China rocks",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11280-2",
+        "doi": "10.1038/s41586-026-11280-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11285-x",
+        "title": "Human land use drives microplastic abundance in terrestrial wildlife",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11285-x",
+        "doi": "10.1038/s41586-026-11285-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11264-2",
+        "title": "Suppression of epithelial proliferation and tumorigenesis by IgA",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11264-2",
+        "doi": "10.1038/s41586-026-11264-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11269-x",
+        "title": "Evolutionary dynamics in the years preceding acute myeloid leukaemia",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11269-x",
+        "doi": "10.1038/s41586-026-11269-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11191-2",
+        "title": "Scale-rich network-based metamaterials",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11191-2",
+        "doi": "10.1038/s41586-026-11191-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11276-y",
+        "title": "The molecular basis of replication fork restart via repriming by PRIMPOL",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11276-y",
+        "doi": "10.1038/s41586-026-11276-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11258-0",
+        "title": "Glycosylation and importins liquefy the FG barrier in live nuclear pores",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11258-0",
+        "doi": "10.1038/s41586-026-11258-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11265-1",
+        "title": "Severe drought and warming increase the extinction risk of cacti",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11265-1",
+        "doi": "10.1038/s41586-026-11265-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11272-2",
+        "title": "Low-power 2D CFETs using single-crystal high-κ dielectrics",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11272-2",
+        "doi": "10.1038/s41586-026-11272-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11241-9",
+        "title": "Independent interferometric observable confirms black hole shadow in M87*",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11241-9",
+        "doi": "10.1038/s41586-026-11241-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11277-x",
+        "title": "Metasurface waveguides for all-day augmented reality glasses",
+        "journal": "Nature",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11277-x",
+        "doi": "10.1038/s41586-026-11277-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78984-x",
+        "title": "Single photon reflection from a quantum dot in a waveguide",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78984-x",
+        "doi": "10.1038/s41467-026-78984-x",
+        "abstract": "The authors achieve efficient mode matching to a quantum-dot nanowire waveguide and demonstrate coherent single-photon reflection with strong antibunching, realizing a waveguide-QED quantum mirror.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79329-4",
+        "title": "Frequency-tagged fMRI reveals dual mechanisms of attentional enhancement and suppression",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79329-4",
+        "doi": "10.1038/s41467-026-79329-4",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78808-y",
+        "title": "Toward triggered generation of indistinguishable single&#xa0;photons from MoTe2 quantum emitters",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78808-y",
+        "doi": "10.1038/s41467-026-78808-y",
+        "abstract": "Two-dimensional transition-metal dichalcogenides are promising single-photon platforms but achieving photon indistinguishability remains challenging. Here, the authors realize reproducible near-infrared quantum emitters in bilayer MoTe2 with high purity, electrical tunability, and record indistinguishability.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79063-x",
+        "title": "OsCPK17- and OsMPK6-mediated dual phosphorylation of OsPUB12 maintains OsPUB2-regulated OsPUB12 homeostasis and balances rice immunity",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79063-x",
+        "doi": "10.1038/s41467-026-79063-x",
+        "abstract": "OsPUB2 degrades OsPUB12 to promote rice immunity. Phosphorylation of OsPUB12 by OsCPK17 and OsMPK6 at two sites fine-tunes its stability and the plant’s defense response.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79139-8",
+        "title": "Low-thermal-budget solution-processed montmorillonite dielectric for low-voltage 2D electronics",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-11T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79139-8",
+        "doi": "10.1038/s41467-026-79139-8",
+        "abstract": "The low temperature synthesis of high-quality dielectrics is desired for the development of 2D electronics. Here, the authors report an environmentally friendly synthesis method of solution-processed montmorillonite dielectric layers and their application for low-voltage 2D transistors and logic circuits.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    }
+  ]
+}
