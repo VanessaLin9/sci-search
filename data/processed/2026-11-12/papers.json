@@ -1,0 +1,1139 @@
+{
+  "reportDate": "2026-11-12",
+  "generatedAt": "2026-11-12T18:26:57.966Z",
+  "papers": [
+    {
+      "id": "10.1016/j.cell.2026.10.032",
+      "title": "Collaboration across scales: More than the sum of its parts",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01282-1?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.032",
+      "abstract": "Science is collaborative by nature, but some questions require coordination on an exceptional scale. Among them is the challenge of creating a comprehensive reference framework for the human brain. In this issue of Cell, together with papers published in Cell Genomics, Cell Reports, Cell Reports Methods, Cell Systems, and Neuron, we present the first publication package from the NIH BRAIN Initiative Cell Atlas Network (BICAN).",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "跨尺度協同：大於各部分的總和"
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.021",
+      "title": "Mapping primate brain aging across cell types, regions, and sexes",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01271-7?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.021",
+      "abstract": "Aging is the major risk factor for neurodegenerative disease, yet how it affects different cells in the primate brain remains unclear. In this issue of Cell, Yang et al. present a single-nucleus atlas of the aging macaque brain that, together with recent work by Zhang et al., reveals context-dependent aging programs, sex-biased transcriptional aging, and molecular links to Alzheimer’s disease.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.024",
+      "title": "Deploying liquid intelligence in cancer: Finding answers in our blood",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01274-2?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.024",
+      "abstract": "Liquid biopsies provide a noninvasive way to screen for disease. This review explains how AI-powered multimodal foundation models will help to identify robust tumor signals from liquid biopsies at scale, but clinical and infrastructural hurdles will need to be addressed to deliver their promise to the clinic.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "在癌症中運用液態智力：從血液中尋找答案"
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.034",
+      "title": "From the human genome to the human brain cell atlas",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01284-5?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.034",
+      "abstract": "The BRAIN Initiative Cell Atlas Network (BICAN) is establishing an evolving reference for neuroscience by integrating cell identities, anatomy, and multimodal evidence across species. In analogy with the Human Genome Project, the BICAN basal ganglia atlas is a model for a federated reference to advance understanding of brain organization, function, variation, and disease.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "neuroscience",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "從人類基因體到人腦細胞圖譜"
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.020",
+      "title": "Stepping (hi)stones: Charting a single-cell multiomic path toward understanding the human brain",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01270-5?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.020",
+      "abstract": "In this issue of Cell, two single-cell multiomic atlases jointly profile transcription and histone modifications across different regions of the adult human brain, revealing cell-type-specific regulatory landscapes, developmental epigenetic memory, and improved interpretation of neurological variants. These studies establish a framework for understanding human brain cell identity, evolution, and pathology.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "踏腳石：繪製單細胞多體學路徑以理解人腦"
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.025",
+      "title": "Conserved striatal mechanisms underlying ASD",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01275-4?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.025",
+      "abstract": "Autism spectrum disorder (ASD) involves changes in social and stereotypic behaviors regulated by striatal circuitry. Using an innovative cross-species approach, in this issue of Cell, Yuan et al. identify alterations in specific striatal neurons and astrocytes, opening new avenues for investigating cellular and molecular mechanisms underlying striatal dysfunction in ASD.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "自閉症類群障礙症背後高度保守的紋狀體機制"
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.031",
+      "title": "Toward an integrated framework for a human and mammalian brain cell atlas",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01281-X?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.031",
+      "abstract": "The BRAIN Initiative Cell Atlas Network integrates molecular profiles, spatial maps, and anatomical frameworks into a curated cell-type taxonomy of the human, macaque, and marmoset basal ganglia. This multimodal atlas offers a blueprint for comparing brain cell types across species and for scaling to the whole brain.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "邁向人類與哺乳動物腦細胞圖譜的整合框架"
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.012",
+      "title": "Cross-species multiomic atlas of the primate basal ganglia",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01256-0?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.012",
+      "abstract": "A cross-species multiomic atlas of the primate basal ganglia aligns 1.8 million nuclei from human, macaque, and marmoset into 61 cell types conserved over 76 million years. The atlas reveals that dorsal-ventral spatial identity is more evolutionarily constrained than direct and indirect pathway or striosome and matrix identity, identifies a distinct SMYD2-HTR7 spiny projection neuron type, and links regulatory sequence grammars and psychiatric risk variants to specific cell populations.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "靈長類基底核的跨物種多體學圖譜"
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.023",
+      "title": "Spatial transcriptomics reveals molecular organization of human and nonhuman primate basal ganglia",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01273-0?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.023",
+      "abstract": "A cellular-resolution spatial transcriptomics atlas of the basal ganglia in human, rhesus macaque, and common marmoset highlights a conserved molecular organization and introduces an accessible resource for the research community. This atlas reveals complex gene expression gradients that coexist with discrete cell-type specializations.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.029",
+      "title": "Mesoscale molecular architecture of the striatum across cell types and adult aging",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01279-1?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.029",
+      "abstract": "Using Slide-tags spatial transcriptomics across 19 human donors, this study shows that the striatum is organized into six molecularly distinct zones that are conserved in macaque and mouse, align with brain-wide projection inputs, and lose their transcriptional distinctiveness with age.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.026",
+      "title": "Common variation of cell abundances and gene expression in the human striatum",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01276-6?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.026",
+      "abstract": "Single-cell analyses of the adult human striatum and prefrontal cortex reveal substantial inter-individual variation in cell-type abundance and gene expression. Most aspects of donor-associated cellular and molecular features recur across brain regions, while age and common genetic variation have distinct effects across cell types.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "人體紋狀體中細胞豐度與基因表現的常見變異",
+      "summaryZh": "本研究透過成人人類紋狀體與前額葉皮質的單細胞分析，揭示了個體間在細胞類型豐度與基因表現上存在顯著差異。大多數供體相關的細胞與分子特徵在不同腦區中皆會重複出現，而年齡和常見的基因變異則對不同的細胞類型產生各自獨特的影響。這些發現增進了我們對人類大腦組織細胞組成與分子特徵變異的理解。",
+      "topicTags": [
+        "single-cell",
+        "genetics",
+        "neuroscience",
+        "gene-expression"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.019",
+      "title": "Multimodal single-cell epigenomic and 3D genome atlas of the human basal ganglia",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01269-9?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.019",
+      "abstract": "A single-cell atlas of DNA methylation and 3D genome architecture across the human basal ganglia defines the regulatory signatures of its cell types, including a distinct striatal projection neuron subtype, and predicts cell-type-specific gene regulatory networks. Spatial transcriptomics further reveals interneuron types that differ between the striatal matrix and striosomes.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1016/j.cell.2026.09.008",
+      "title": "Single-cell analysis of chromatin state and transcriptome in the human basal ganglia",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01077-9?rss=yes",
+      "doi": "10.1016/j.cell.2026.09.008",
+      "abstract": "A single-cell multi-omic atlas spanning eight regions of the human basal ganglia maps cell-type-specific chromatin landscapes and gene regulation, revealing the regulatory programs that shape cell identity. The atlas provides a framework for interpreting noncoding variants linked to basal ganglia traits and diseases, and it enables the construction of a deep-learning model for predicting how variants affect gene regulation and function.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1016/j.cell.2026.09.027",
+      "title": "Multiscale spatial atlas of human basal ganglia cell types and communities",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01129-3?rss=yes",
+      "doi": "10.1016/j.cell.2026.09.027",
+      "abstract": "This study combines MERFISH+ and Stereo-seq to generate a multiscale spatial transcriptomic atlas of the human basal ganglia. It reveals cellular community organization, conserved and species-specialized features of striosome-matrix architecture, and projection-associated molecular signatures inferred from subcellular RNA localization.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "MERFISH",
+        "Stereo-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1016/j.cell.2026.08.012",
+      "title": "Single-cell multimodal atlas reveals regulatory programs in the human brain",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)00939-6?rss=yes",
+      "doi": "10.1016/j.cell.2026.08.012",
+      "abstract": "A multimodal, integrative framework for understanding gene regulatory mechanisms across diverse cell types in the adult human brain. This framework helps elucidate how regulatory programs govern neuronal and glial functions, encode developmental trajectories, underlie neurological phenotypes, and change during evolution.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.007",
+      "title": "Spatial and regulatory organization of cell identity across the primate subcortex",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01218-3?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.007",
+      "abstract": "Dense multimodal profiling of the marmoset subcortex reveals how spatial context and gene regulatory programs jointly shape cell identity across the primate brain. By linking transcriptional states, chromatin accessibility, and anatomy, this atlas uncovers regulatory principles underlying spatial gradients, neuronal convergence, and evolutionary specialization.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "靈長類皮質下區域細胞特性的空間與調控組織"
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.028",
+      "title": "Morphoelectric diversity and specialization of primate striatal neuron types",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01278-X?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.028",
+      "abstract": "Patch-seq in the macaque striatum links transcriptomic cell-type identity to neuronal form and function, revealing non-canonical spiny projection neurons, specialized interneurons, spatially organized morphoelectric gradients, and features that distinguish macaque from mouse neuron types.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1016/j.cell.2026.09.041",
+      "title": "Circuit-aligned specialization of human basal ganglia astrocytes",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01143-8?rss=yes",
+      "doi": "10.1016/j.cell.2026.09.041",
+      "abstract": "Astrocyte diversity in the human basal ganglia reflects both large-scale brain identity programs and local microcircuit specialization. Integrated transcriptomic, epigenomic, and spatial analyses link these astrocyte populations to subgroup-specific regulatory features and enhancer logic, providing a framework for understanding and targeting astrocyte heterogeneity.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.027",
+      "title": "Disruption of cell-type-specific molecular programs of striatal spiny projection neurons in autism",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01277-8?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.027",
+      "abstract": "Cross-species single-cell profiling identifies molecular disruptions among striatal spiny projection neurons in genetically defined autism. D1 striosome spiny projection neurons are identified as the most affected, with altered synaptic and energy metabolism programs linked to reduced EGR1/EGR3 activity, partly reproduced by EGR1/EGR3 loss in organoids.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "自閉症中紋狀體多棘投射神經元細胞類型特異性分子程式的破壞",
+      "summaryZh": "本研究透過跨物種單細胞分析，辨識出基因定義的自閉症中，紋狀體多棘投射神經元（striatal spiny projection neurons）的分子破壞情形。其中，D1 striosome 多棘投射神經元被辨識為受影響最劇烈的細胞，其突觸與能量代謝程式改變，並與 EGR1/EGR3 活性降低有關，部分結果可透過類器官中的 EGR1/EGR3 缺失來重現。這些發現有助於了解自閉症相關的神經生物學機制。",
+      "topicTags": [
+        "single-cell",
+        "neuroscience",
+        "autism",
+        "molecular-biology"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.008",
+      "title": "A single-cell and spatial 3D multi-omic atlas of developing human basal ganglia",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01219-5?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.008",
+      "abstract": "Single-cell and spatial profiling of the developing human basal ganglia show that their principal neurons, spiny projection neurons, mature through unusually synchronized epigenomic remodeling; that oligodendrocytes pass through a transient chromatin state during differentiation; and that spiny projection neurons carry an elevated genetic risk for schizophrenia and bipolar disorder.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1016/j.cell.2026.09.014",
+      "title": "Single-cell, multi-region profiling of the macaque brain across the lifespan",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01116-5?rss=yes",
+      "doi": "10.1016/j.cell.2026.09.014",
+      "abstract": "Yang, Watkins et al. generate a 5.3 million cell transcriptomic atlas of the aging primate brain, which reveals that glia drive most age-related compositional shifts. These data uncover region-, cell-type-, and sex-specific molecular trajectories linked to neurodegenerative disease, providing key insights into the cellular mechanisms underlying brain aging and vulnerability.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "跨生命週期獼猴大腦之單細胞多區域分析",
+      "summaryZh": "本研究生成了含有 530 萬個細胞的老化靈長類大腦轉錄體圖譜，揭示神經膠細胞（glia）驅動了多數與年齡相關的組成轉變。這些數據揭示了與神經退化性疾病相關的區域、細胞類型及性別特異性分子軌跡，為大腦老化與易感性背後的細胞機制提供了關鍵見解。",
+      "topicTags": [
+        "single-cell",
+        "brain-aging",
+        "transcriptomics",
+        "neuroscience"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.022",
+      "title": "An integrative single-cell epigenomic atlas annotates the regulatory genome of the adult mouse brain",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01272-9?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.022",
+      "abstract": "A comprehensive single-cell epigenomic atlas integrates four histone modifications, chromatin accessibility, DNA methylation, the 3D genome, and the transcriptome, and resolves functional chromatin states of the adult mouse brain. This integrative framework, together with sequence-based deep learning, identifies active and repressive regulatory mechanisms and their dynamic deployment underlying cell-type-specific gene regulation.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.033",
+      "title": "Harmonized brain ontology and 3D atlases for human, macaque, and marmoset basal ganglia",
+      "journal": "Cell",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01283-3?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.033",
+      "abstract": "A Harmonized Ontology of Mammalian Brain Anatomy (HOMBA) enables consistent creation of structural and cellular brain atlases and ontologies as well as the integration of multimodal data and samples across species.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41592-026-03295-4",
+      "title": "PANGEA: an integrated cell atlas across diverse biological contexts enables systematic profiling of multicellular responses in human diseases",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03295-4",
+      "doi": "10.1038/s41592-026-03295-4",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03378-9",
+      "title": "A comprehensive analysis of CBER experience with AAV gene therapy IND submissions",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03378-9",
+      "doi": "10.1038/s41587-026-03378-9",
+      "abstract": "An analysis of Investigational New Drug (IND) submissions to the US Food and Drug Administration (FDA) from 1995 to 2025 reveals a rapid growth in adeno-associated virus (AAV) development over three decades and highlights common reasons for regulatory holds that should be considered for successful product development.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41556-026-02124-2",
+      "title": "The optogenetic tool ASAP acutely inhibits autophagy",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02124-2",
+      "doi": "10.1038/s41556-026-02124-2",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41556-026-02134-0",
+      "title": "Mapping mammalian placental formation and implantation transitions with single-cell transcriptomics and live imaging",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02134-0",
+      "doi": "10.1038/s41556-026-02134-0",
+      "abstract": "Chen, Hu et al. perform single-cell transcriptomics on peri-implantation mouse embryos and film embryo implantation. They find that mural trophectoderm population is an essential component of the placenta.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41556-026-02135-z",
+      "title": "TMEM192 is a calcineurin-regulated membrane receptor for ubiquitin-independent lysophagy",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02135-z",
+      "doi": "10.1038/s41556-026-02135-z",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41593-026-02455-1",
+      "title": "Gene discovery and pleiotropic architecture of multidimensional pain in a genome-wide association study of &gt;1.2 million individuals",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02455-1",
+      "doi": "10.1038/s41593-026-02455-1",
+      "abstract": "We conducted a meta-analytic genome-wide association study of multidimensional pain in >1.2 million European-ancestry individuals. We identified 343 independent loci, which, alongside findings from a sex-stratified GWAS and other analyses, expand our knowledge of the genetics of pain.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1101/2023.11.28.568925",
+      "title": "Expansion of human hematopoietic stem cells by inhibiting translation",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-12",
+      "url": "https://www.biorxiv.org/content/10.1101/2023.11.28.568925v3",
+      "doi": "10.1101/2023.11.28.568925",
+      "abstract": "Hematopoietic stem cell (HSC) transplantation using umbilical cord blood (UCB) is a potentially life-saving treatment for leukemia and bone marrow failure but is limited by the low number of HSCs in UCB. The loss of HSCs after ex vivo manipulation is also a major obstacle to gene editing for inherited blood disorders. HSCs require a low rate of translation to maintain their capacity for self-renewal, but hematopoietic cytokines used to expand HSCs stimulate protein synthesis and impair long-term self-renewal. We previously described cytokine-free conditions that maintain but do not expand human and mouse HSCs ex vivo. Here we performed a high-throughput screen and identified translation inhibitors that allow ex vivo expansion of human HSCs while minimizing cytokine exposure. Transplantation assays show a ~4.3-fold expansion of long-term HSCs from UCB after one week of culture in low cytokine conditions that include the translation initiation inhibitor 4E1RCat. Single cell transcriptomic analysis demonstrates maintenance of the HSC/MPP transcriptional signature and reduced expression of stress markers under culture conditions that maintain or expand functional long-term HSCs. Addition of 4E1RCat induces a dose-dependent increase in autophagic vacuoles and reduces expression of oxidative phosphorylation and cell cycle gene expression programs. These culture conditions maintain adult HSCs after CRISPR/Cas9 editing of the BCL11A+58 enhancer, overcoming a major obstacle to ex vivo gene correction for human hemoglobinopathies.",
+      "authors": [
+        "Li, C.",
+        "Shin, H.",
+        "Bhavanasi, D.",
+        "Liu, M.",
+        "Briones, M. I.",
+        "Yu, X.",
+        "Liu, X.",
+        "Herbst, F.",
+        "Said, H.",
+        "Alameh, M.-G.",
+        "Breda, L.",
+        "Kovuru, N.",
+        "Kwa, Y.",
+        "Sam Ravi, N.",
+        "Schultz, D. C.",
+        "Cherry, S. R.",
+        "Rivella, S.",
+        "Alvarez--Dominguez, J. R.",
+        "Blobel, G. A.",
+        "Gregory, B. D.",
+        "Peslak, S. A.",
+        "Huang, J.",
+        "Klein, P. S."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.11.09.765486",
+      "title": "Single-cell Transcriptome-Proteome-PTMome(x8)-Metabolome (scTPPM) co-profiling decodes multimodal regulation during mouse oocyte meiosis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-12",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765486v1",
+      "doi": "10.64898/2026.11.09.765486",
+      "abstract": "Single-cell multi-omics technology is crucial for comprehensive characterization of cellular molecular features. Despite recent advances in single-cell multi-omics approaches, co-profiling of nucleic acids, proteins, metabolites, and post-translational modifications (PTMs) within the same cell individuals remains major challenges. Here, we developed a single-cell transcriptome, proteome, PTMome, and metabolome (scTPPM) profiling approach, enabling simultaneous analysis of transcriptomes, proteomes, eight types of PTMs (e.g., phosphorylation, methylation, ubiquitination, O_GlcNAc, acetylation, crotonylation, lactylation, and succinylation), and metabolomes in individual cells. We demonstrated the scTPPM's performance in tumor cell lines and oocyte samples, reaching total identification and quantification of 27,668 genes, 4,847 proteins, 1,508 PTM sites, and 680 metabolites in single mouse oocytes. We profiled previously-uncharacterized dynamic crosstalk among the entire metabolic pathways from metabolic enzyme expression and regulation to metabolite-mediated post-translational modifications during oocyte maturation. In summary, scTPPM provided an effective workflow for multi-omics co-profiling in single cells, enabling multi-layered insights into complex regulatory network.",
+      "authors": [
+        "Jiang, Y.-R.",
+        "Cao, L.-R.",
+        "Ni, X.-F.",
+        "Wu, J.",
+        "Yang, Y.",
+        "Xu, Q.-Q.",
+        "Qiu, Y.-M.",
+        "Hou, Y.-X.",
+        "Wu, Q.",
+        "Wang, Y.",
+        "Guo, H.-S.",
+        "Pan, J.-Z.",
+        "Fu, X.",
+        "Fang, Q."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.02.23.703392",
+      "title": "DemuxHMM: Large-Scale Single-Cell Embryo Profiling via Recombination Barcoding",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-12",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.02.23.703392v2",
+      "doi": "10.64898/2026.02.23.703392",
+      "abstract": "High-resolution developmental time-courses with single-cell RNA sequencing (scRNA-seq) increasingly target trajectory inference and other analyses in the study of development and disease. Researchers can efficiently generate these datasets by pooling individuals and inferring cell-to-individual mappings after sequencing, in a process called demultiplexing. Existing demultiplexing methods face limitations in the number of timepoints they can support, due to either the need for individual-by-individual processing or reduced accuracy at large numbers of individuals. To address these limitations, we introduce a computational framework for demultiplexing large-scale, individual-resolved datasets. Our framework includes a recombination-aware demultiplexing method, DemuxHMM, which uses a Hidden Markov Model (HMM) to explicitly model contiguous SNP patterns that arise from simple breeding schemes. We demonstrate substantial performance and scalability gains from this recombination-aware approach on both a real Diversity Outbred (DO) mouse data and a simulated Drosophila dataset. This performance demonstrates the value of the method when used for common applications on model organisms such as time series, crossover position inference, and eQTLS, among others.",
+      "authors": [
+        "Afanassiev, A. I.",
+        "Wei, K.",
+        "Yachie, N.",
+        "Sugioka, K.",
+        "Schiebinger, G."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1101/2025.09.02.673780",
+      "title": "A Proteome-Wide Gain-of-Function Atlas Mapping the Landscape of Chemotherapy Response",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-12",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.09.02.673780v4",
+      "doi": "10.1101/2025.09.02.673780",
+      "abstract": "Background: Conventional chemotherapies remain the core therapeutic backbone of cancer treatment, yet the rapid emergence of chemoresistance often compromises their clinical efficacy. Although large-scale functional genomics has transformed precision oncology, existing reference maps rely predominantly on loss-of-function paradigms and lack systematic data on gain-of-function (GOF) events that commonly drive clinical resistance. Methods: To address this gap, we engineered a site-specific Bxb1 integrase landing-pad system in HeLa cells, enabling single-copy integration of a human proteome-wide library [18,388 open reading frames (ORFs)] at the AAVS1 locus under a uniform EF1 promoter. We systematically profiled cellular fitness across 16 chemotherapeutics. We integrated this GOF perturbation screen with bulk and single-cell RNA sequencing, FACS-based lysosomal functional screening, clinical cohort survival analyses, and preclinical xenograft modeling. Results: Stratified modeling of over 230,000 gene-drug interactions defined distinct functional categories that are strongly enriched for clinical cancer biomarkers and prognostic relevance. Global network analysis and organelle-specific lysosomal functional screening uncovered that chemotherapeutic agents, most prominently the nucleoside analog TAS-102 (Lonsurf), converge upon a shared survival hub centered on the BCL-2 family-associated autophagy-endolysosomal network. Mechanistically, TAS-102 triggered lysosomal activation as an adaptive survival response. Co-treatment with the BCL-2 family inhibitor ABT-263 (Navitoclax) attenuated this TAS-102-induced lysosomal response and synergistically reversed TAS-102 resistance across colorectal and pancreatic cancer models in vitro and in colorectal cell line- and patient-derived xenograft (CDX, PDX) models in vivo. Conclusions: Our study establishes an open-access, proteome-wide GOF reference atlas that systematically maps chemotherapeutic responses, recapitulates canonical resistance biology, and nominates rational drug combinations. This systems-genomics resource bridges massive-scale perturbation mapping with actionable target discovery, providing a translational framework to overcome therapeutic resistance and reprogram cancer drug responses.",
+      "authors": [
+        "Jo, K. B.",
+        "Alruwaili, M. M.",
+        "Kim, D.-E.",
+        "Koh, Y.",
+        "You, K.",
+        "Kim, J.-S.",
+        "Kim, H.",
+        "Sane, S.",
+        "Guo, Y.",
+        "Cote, A. G.",
+        "Sahni, N.",
+        "Roth, F. P.",
+        "Hill, D. E.",
+        "Choi, J.-H.",
+        "Lee, H.",
+        "Matreyek, K. A.",
+        "Farh, K. K.- H.",
+        "Park, J.-E.",
+        "Kim, H.",
+        "Bakin, A. V.",
+        "Kim, D.-K."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.11.09.765457",
+      "title": "Single Nucleus Profiling Reveals Rewired Tumor-Immune-Stromal Cell Communication in Plasmacytoid Urothelial Carcinoma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-12",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765457v1",
+      "doi": "10.64898/2026.11.09.765457",
+      "abstract": "Plasmacytoid urothelial carcinoma (PUC) is an aggressive histologic subtype of bladder cancer associated with worse patient outcomes and therapeutic response compared to conventional urothelial carcinoma (CUC). While recent work has demonstrated metastatic lymph nodes from PUC tumors have an inflamed phenotype, how the tumor microenvironment (TME) and crosstalk between tumor, stromal, and immune cells in primary PUC bladder tumors differs from those in CUC remains poorly understood. The impact of these differences on response to immunotherapy is also unknown. To understand TME differences between CUC and PUC and their impact on cell signaling, we performed single nucleus RNA sequencing on PUC and CUC tumors, as well as Xenium spatial transcriptomics on a mixed CUC / PUC tumor. We identified increased signaling between PUC-enriched, CDH1-low urothelial cells, immunosuppressive lipid-associated macrophages, and SFRP2+/CTHRC1+ fibroblasts in PUC tumors compared to CUC. Spatial transcriptomics identified increased macrophage infiltration in PUC histology and colocalization of PUC tumor cells, immunosuppressive macrophages, and SFRP2+ fibroblasts. Taken together, this study delineates PUC architecture and demonstrates interplay CDH1-low tumor cells, EMT, and immunosuppressive macrophages, identifying possible therapeutic vulnerabilities in PUC.",
+      "authors": [
+        "Gessner, K. H.",
+        "Liu, S.",
+        "Zhou, M.",
+        "Damrauer, J. S.",
+        "Hwang, K.",
+        "Corcoran, D. L.",
+        "Miller, B. C.",
+        "Serody, J. S.",
+        "Murano, H.",
+        "Furusho, M.",
+        "Okuda, K.",
+        "O'Neal, W. K.",
+        "Tan, H.-J.",
+        "Bjurlin, M. A.",
+        "Westerman, M. E.",
+        "Nielsen, M. E.",
+        "Feuer, Z. S.",
+        "Smith, A. B.",
+        "Wobker, S. E.",
+        "Milowsky, M. I.",
+        "Kim, W. Y."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single nucleus",
+        "spatial transcriptomics",
+        "Xenium",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.64898/2026.04.16.719000",
+      "title": "Bulk transcriptomic subtypes in high-grade serous ovarian carcinoma (HGSC) are readouts of tumor cellular composition",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-12",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.04.16.719000v2",
+      "doi": "10.64898/2026.04.16.719000",
+      "abstract": "High-grade serous ovarian carcinoma (HGSC) is classified into four transcriptomic subtypes that are reproducible across cohorts but have not informed treatment. These subtypes are associated with stromal and immune content, yet they are assigned from bulk expression, from which composition is also estimated. We tested whether composition alone determines subtype. In tumors constructed from single cells with epithelial cells held constant, varying a single cell type within the range observed in primary tumors reassigned the subtype, and known composition distinguished all four subtypes. Varying epithelial cell identity at fixed composition displaced tumors approximately half as far in expression space. Across 2,161 primary tumors from ten cohorts, composition structured the leading axes of expression and predicted subtype in held-out cohorts (ROC-AUC 0.817 to 0.963). The consequence is prognostic. Adjustment for composition largely attenuated subtype associations with survival, whereas fibroblast content remained prognostic. Subtype-associated biology and prognosis therefore largely reflect the tumor microenvironment.",
+      "authors": [
+        "Tanis, S.",
+        "Lixandrao, M.",
+        "Ivich, A.",
+        "Grieshober, L.",
+        "Lawson-Michod, K. A.",
+        "Collin, L. J.",
+        "Peres, L. C.",
+        "Salas, L. A.",
+        "Marks, J. R.",
+        "Bitler, B. G.",
+        "Greene, C. S.",
+        "Schildkraut, J. M.",
+        "Doherty, J. A.",
+        "Davidson, N. R."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41467-026-79175-4",
+      "title": "A single NLS directs AGO1 import shaping small RNA loading and silencing outputs in Arabidopsis",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79175-4",
+      "doi": "10.1038/s41467-026-79175-4",
+      "abstract": "Small RNAs guide ARGONAUTE proteins to their targets. Here the authors identify a pathway controlling AGO1 nuclear import and show that AGO1 subcellular localization shapes small RNA loading and silencing outputs in plants.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41467-026-79401-z",
+      "title": "Autapse-inspired neuromorphic hardware with synapse–neuron integration for bidirectional feedback control",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79401-z",
+      "doi": "10.1038/s41467-026-79401-z",
+      "abstract": "Inspired by autapses in the nervous system, researchers integrated artificial synapses and neurons to enhance or suppress signals through self-feedback, opening a new path toward autonomous, self-regulating hardware.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41467-026-79451-3",
+      "title": "Structural basis of ligand-mediated transition to higher-order rubisco assemblies",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-12T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79451-3",
+      "doi": "10.1038/s41467-026-79451-3",
+      "abstract": "Proteins often assemble into complexes, and while binding partners typically drive this, ligand binding can too. Here the authors show ligand binding drives distinct rubisco assemblies, revealing an evolutionary path to greater structural complexity.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 47,
+      "passedByScope": 35,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 12,
+      "keywordFallbackYes": 6,
+      "keywordFallbackNo": 6,
+      "included": 41,
+      "excluded": 6
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b"
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 32,
+      "llmTagged": 0,
+      "llmLineA": 0,
+      "llmLineB": 0,
+      "fallback": 32,
+      "fallbackLineA": 14,
+      "fallbackLineB": 18,
+      "failures": 32
+    },
+    "selection": {
+      "total": 38,
+      "candidates": 38,
+      "featured": 12,
+      "overflow": 26,
+      "lineA": 14,
+      "lineB": 18,
+      "preprint": 6,
+      "skip": 0,
+      "featuredLineA": 12,
+      "featuredLineB": 0,
+      "featuredPreprint": 0,
+      "overflowLineA": 2,
+      "overflowLineB": 18,
+      "overflowPreprint": 6
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 3,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 3,
+      "failed": 9
+    },
+    "translate": {
+      "requested": 26,
+      "llmTranslated": 8,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 8,
+      "failed": 18
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "llmTagged": 0
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 9,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "succeeded": 0
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "observed": [
+            "gemini-3.5-flash-lite"
+          ],
+          "succeeded": 3
+        }
+      },
+      "translate": {
+        "requested": 26,
+        "succeeded": 8,
+        "failed": 18,
+        "model": {
+          "requested": "meta/muse-glimmer-30b"
+        },
+        "primarySucceeded": 0,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "observed": [
+            "gemini-3.5-flash-lite"
+          ],
+          "succeeded": 8
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03639-2",
+        "title": "This little brown mushroom is laced with a hallucinogen — and lethal toxins",
+        "journal": "Nature",
+        "publishedDate": "2026-11-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03639-2",
+        "doi": "10.1038/d41586-026-03639-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78767-4",
+        "title": "Scaling medical imaging report generation with multimodal reinforcement learning",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78767-4",
+        "doi": "10.1038/s41467-026-78767-4",
+        "abstract": "Researchers developed UniRG, a reinforcement learning framework that optimizes clinically aligned composite rewards for medical imaging report generation. UniRG outperforms prior models and demonstrates strong generalization across unseen hospitals and datasets",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79595-2",
+        "title": "Thin-film lithium niobate waveguide-integrated p-i-n Tungsten selenide photodiodes with 10Gbit/s data reception",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79595-2",
+        "doi": "10.1038/s41467-026-79595-2",
+        "abstract": "Thin-film lithium niobate (TFLN) is a promising photonic platform, but its integration with 2D materials remains challenging. Here, the authors report the realization of TFLN-based waveguide-integrated WSe2 photodetectors, showing a 3-dB bandwidth up to 1.12 GHz, up to 10 Gbit/s data rates and responsivity up to 492 mA/W in the visible range.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79428-2",
+        "title": "Latitude modulates climate-driven maize yield gains across the central U.S. “warming hole”",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79428-2",
+        "doi": "10.1038/s41467-026-79428-2",
+        "abstract": "Climate change affects crop yield variation across regions and seasons. This study suggests that climate impacts on maize yields shift from losses in the southern U.S. Corn Belt to gains in the north, driven by climate trends, thermal matching, and hybrid selection.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79171-8",
+        "title": "Evolution of the molybdenum and vanadium cycles through time and their impact on ancient nitrogen fixation",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79171-8",
+        "doi": "10.1038/s41467-026-79171-8",
+        "abstract": "Partitioning experiments and Fe-rich sediments show V was removed from Archean– Paleoproterozoic seawater more efficiently than Mo, enriching seawater in Mo relative to V and helping explain the early evolution of Mo-based nitrogenase.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79789-8",
+        "title": "Constructing exclusive Pt@WOx interfacial sites enables selective C–O bond activation",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-12T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79789-8",
+        "doi": "10.1038/s41467-026-79789-8",
+        "abstract": "Precisely constructing metal–oxide catalysts with exclusively interfacial active sites remains challenging. Here, glycerol is selectively converted to 1,3-propanediol over catalysts in which Pt exists solely as isolated Pt@WOx interfacial sites.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    }
+  ]
+}
