@@ -1,0 +1,800 @@
+{
+  "reportDate": "2026-11-13",
+  "generatedAt": "2026-11-13T18:08:33.731Z",
+  "papers": [
+    {
+      "id": "10.1038/s41588-026-02813-6",
+      "title": "A unified framework for defining and analyzing spatial niches in spatial omics data analysis",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02813-6",
+      "doi": "10.1038/s41588-026-02813-6",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "空間組學數據分析中定義與分析空間生態位的統一框架"
+    },
+    {
+      "id": "10.1038/s41559-026-03246-4",
+      "title": "Blackfin icefish (Chaenocephalus aceratus)",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-11-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03246-4",
+      "doi": "10.1038/s41559-026-03246-4",
+      "abstract": "Three months in Antarctica set Thomas Desvignes on a journey to study white-blooded icefishes.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41559-026-03244-6",
+      "title": "Egg mimicry leaves its mark on mitochondria",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-11-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03244-6",
+      "doi": "10.1038/s41559-026-03244-6",
+      "abstract": "Selection on egg colour genes accelerates evolution of the maternally co-inherited W chromosome and mitochondrial DNA in the brood parasitic cuckoo finch, driving mitonuclear coevolution and W chromosome degeneration.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "擬態鳥蛋在粒線體上留下痕跡",
+      "summaryZh": "這項研究探討了巢寄生杜鵑雀中，蛋殼顏色基因的選擇如何加速母系共同遺傳的 W 染色體與粒線體 DNA 的演化。這驅動了粒線體與核基因的共同演化（mitonuclear coevolution），同時也導致了 W 染色體的退化。這些發現揭示了卵色擬態對基因組演化的重要影響。",
+      "topicTags": [
+        "evolution",
+        "mitochondria",
+        "genetics",
+        "ecology"
+      ]
+    },
+    {
+      "id": "10.1038/s41559-026-03204-0",
+      "title": "Lynx reintroduction from a bottlenecked source exposes a lethal genetic defect",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-11-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03204-0",
+      "doi": "10.1038/s41559-026-03204-0",
+      "abstract": "A recessive loss-of-function allele causing lethal multi-organ pathology is found to have been present in a source population for a lynx reintroduction programme, and has increased in frequency through founder effects and inbreeding.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "從瓶頸來源族群重新引入猞猁暴露了致死性遺傳缺陷",
+      "summaryZh": "本研究指出，在一個猞猁重新引入計畫的來源族群中，存在著會導致致死性多重器官病變的隱性功能喪失對立基因（recessive loss-of-function allele）。此等對立基因透過創辦者效應與近親交配而在族群中頻率上升。這項發現揭示了族群瓶頸對重新引入計畫及野生動物保育的重要影響。",
+      "topicTags": [
+        "conservation",
+        "genetics",
+        "ecology"
+      ]
+    },
+    {
+      "id": "10.1038/s41587-026-03379-8",
+      "title": "A unified and practical taxonomy for false discovery rate control in omics research",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-11-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03379-8",
+      "doi": "10.1038/s41587-026-03379-8",
+      "abstract": "False discovery rate (FDR) control is central to omics research, yet the diverse procedures used rely on different assumptions. This Comment proposes a 2 × 2 matrix that helps sequencing-based and mass-spectrometry-based omics researchers choose the appropriate family of FDR procedures, or alternative methods that may be more rigorous, depending on data and study design.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "定序與質譜體學研究的 FDR 控制實用分類",
+      "summaryZh": "這篇刊載於 Nature Biotechnology 的評論指出，假發現率控制是體學研究的核心，但現行使用的多種程序依賴不同假設。作者提出一個 2 × 2 矩陣，作為選擇適當 FDR 程序家族的分類框架。該矩陣旨在協助定序為基礎與質譜為基礎的體學研究者，依資料與研究設計挑選方法。評論也提到在某些情境下可考慮更嚴謹的替代方法。",
+      "topicTags": [
+        "false-discovery-rate",
+        "omics",
+        "statistics",
+        "taxonomy",
+        "methodology"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02114-4",
+      "title": "Diffuse assemblies drive oncogenic signalling",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-11-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02114-4",
+      "doi": "10.1038/s41556-026-02114-4",
+      "abstract": "Cytoplasmic condensates formed by receptor tyrosine kinase (RTK) fusion oncoproteins have been implicated in the regulation of oncogenic signalling. A study shows that low‑order RTK assemblies operate independently of condensate formation and that they are sufficient to activate the canonical RAS–ERK cascade driving downstream oncogenic output.",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "擴散性組裝驅動致癌訊號",
+      "summaryZh": "研究聚焦於受體型酪氨酸激酶融合致癌蛋白形成的細胞質凝聚體與致癌訊號調控的關係。研究指出，低階的RTK組裝可在不依賴凝聚體形成的情況下運作。該組裝足以活化經典的RAS–ERK級聯，進而驅動下游的致癌輸出。結果顯示致癌訊號的啟動並不必然需要凝聚體形成。",
+      "topicTags": [
+        "receptor-tyrosine-kinase",
+        "oncogenic-signalling",
+        "phase-separation",
+        "ras-erk",
+        "condensates"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02112-6",
+      "title": "Low-order assemblies drive oncogenic RTK fusion signalling without condensation",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-11-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02112-6",
+      "doi": "10.1038/s41556-026-02112-6",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "低階組裝驅動致癌性 RTK 融合訊號傳導，無需凝聚"
+    },
+    {
+      "id": "10.1038/s41590-026-02711-3",
+      "title": "Rewiring dendritic cell function with CLEC9A and DEC205 CARs",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-11-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02711-3",
+      "doi": "10.1038/s41590-026-02711-3",
+      "abstract": "Chimeric antigen receptor dendritic cells (CAR-DCs) are sometimes engineered in the manner of T cells to enhance specific DC functions. Here, the authors engineer CAR-DCs with the intracellular domains of the endocytic receptors CLEC9A and DEC205 to make an immunotherapeutic that cross-presents tumor antigens to induce CD8+ T cell killing of tumors in humanized mice.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "以 CLEC9A 與 DEC205 CAR 重編樹突細胞功能",
+      "summaryZh": "研究團隊以類似 T 細胞 CAR 的方式改造樹突細胞，製備嵌合抗原受體樹突細胞 CAR-DCs。作者將內吞受體 CLEC9A 與 DEC205 的胞內結構域導入 CAR-DC 設計，建構免疫治療策略。該策略在人源化小鼠中可促進腫瘤抗原的交叉呈現，並誘發 CD8+ T 細胞對腫瘤的殺傷。結果顯示以內吞受體訊號重編 CAR-DC 功能的一種可行方向。",
+      "topicTags": [
+        "dendritic-cells",
+        "car-dc",
+        "immunotherapy",
+        "cross-presentation",
+        "cancer"
+      ]
+    },
+    {
+      "id": "10.64898/2026.02.11.705362",
+      "title": "Identification of target genes and regulatory networks for bone mineral density GWAS loci through systematic targeting and inhibition",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-13",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.02.11.705362v2",
+      "doi": "10.64898/2026.02.11.705362",
+      "abstract": "Osteoporosis is characterized by low bone mineral density (BMD) and elevated fracture risk. Most BMD-associated GWAS variants lie in noncoding regions, complicating efforts to identify causal genes and mechanisms. To overcome this variant-to-function challenge, we previously developed STING-seq, a framework integrating biobank-scale GWAS with single-cell CRISPR inhibition (CRISPRi) screening to directly connect noncoding cis-regulatory elements (CREs) to their target genes. Applied to human fetal osteoblast (hFOB) cells across osteogenic differentiation, STING-seq linked 76 CREs to 75 target genes at BMD loci. Arrayed CRISPRi and activation validated key CRE-gene relationships, including long-range enhancers regulating CXCL12 (over 500 kb apart). CRISPRi effects were broadly reproduced in primary human mesenchymal stem cells, with 82% of regulatory effects concordant in direction with hFOB cells and strongly correlated in magnitude (Pearson r = 0.83). We further uncovered trans-regulatory networks and characterized the DAP3-YY1AP1 bidirectional promoter, demonstrating a role for DAP3 in mineralization via mitochondrial pathways. Together, these findings provide mechanistic insight into how noncoding GWAS variants shape osteoblast activity and highlight the genes and pathways that mediate genetic effects on BMD.",
+      "authors": [
+        "Kahlani, M.",
+        "Mesner, L.",
+        "Madhu, V.",
+        "Wagner, L.",
+        "Kupkova, K.",
+        "Pitas, H. J.",
+        "Gebbia, M.",
+        "Kazemi, M.",
+        "Belarbi, C.",
+        "Mello, A. C.",
+        "Ghatan, S.",
+        "Lappalainen, T.",
+        "Sanjana, N. E.",
+        "Morris, J. A.",
+        "Farber, C. R."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.11.11.765722",
+      "title": "msiFlow 2.0: Extending Mass Spectrometry Imaging Workflows with Mass Recalibration, Annotation, Batch Correction, and Visual Quality Control",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-13",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.11.765722v1",
+      "doi": "10.64898/2026.11.11.765722",
+      "abstract": "Mass spectrometry imaging (MSI) enables label-free, spatially resolved molecular profiling of tissues and cells, providing insights into physiological and pathological processes. However, its large and complex datasets require specialised computational approaches. We recently introduced msiFlow, an open source, end-to-end solution for reproducible and scalable MSI data analysis. Here, we present msiFlow 2.0, a major extension that integrates pixel-wise post-acquisition mass recalibration, automated lipid annotation, batch correction, and visual quality control, together with improved alignment, spatially informed deisotoping, and computational scalability. The workflow was evaluated using four human and mouse MALDI-2 and t-MALDI-2 MSI lipidomic datasets encompassing different biological conditions, sample types, and spatial resolutions. The updated computational mass recalibration and alignment workflow significantly improved mass accuracy of reported m/z values by correcting systematic mass deviations, achieving a mean absolute mass error below 1.5 ppm for independent MS/MS-supported lipid features. The integrated lipid annotation module reduced the number of unsupported candidate lipid assignments, while ComBat correction reduced sample-associated variation and retained separation of tissue compartments. Computational optimisation reduced alignment runtime by approximately 80%. Together, these advances provide an accurate, transparent, and scalable open-source framework for MSI data processing and downstream analysis.",
+      "authors": [
+        "Spangenberg, P.",
+        "Bessler, S.",
+        "Hanschmann, E.-M.",
+        "Widera, L.",
+        "Bottek, J.",
+        "Thiebes, S.",
+        "Potthoff, A.",
+        "Shevchuk, O.",
+        "Brandau, S.",
+        "Soltwisch, J.",
+        "Engel, D. R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial resolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "msiFlow 2.0：透過質量重新校準、註解、批次校正與視覺化品質控制來擴充質譜成像工作流程",
+      "summaryZh": "本研究推出了 msiFlow 2.0，作為先前 msiFlow 開源端到端質譜成像（mass spectrometry imaging, MSI）數據分析方案的重要擴充版本。此更新版本整合了像素級別的後續採集質量重新校準、自動化脂質註解、批次校正與視覺化品質控制，同時改善了對齊、空間資訊同位素去除及運算可擴展性。透過四個來自人類與小鼠的 MALDI-2 及 t-MALDI-2 MSI 脂質體學數據集進行評估，結果顯示其質量重新校準與對齊工作流程顯著提升了 m/z 值的質量準確度，並降低了不受支援的候選脂質指定數量。此外，ComBat 校正減少了樣本相關的變異同時保留了組織區室的分離，運算最佳化也將對齊執行時間縮短了約 80%。這些進展共同為 MSI 數據處理與下游分析提供了一個準確、透明且具可擴展性的開源框架。",
+      "topicTags": [
+        "mass-spectrometry",
+        "imaging",
+        "bioinformatics",
+        "lipidomics",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.16.759546",
+      "title": "SpacePath enables pathway and molecular-family analysis beyond annotation ambiguity in spatial metabolomics and lipidomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-13",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.16.759546v2",
+      "doi": "10.64898/2026.10.16.759546",
+      "abstract": "Mass spectrometry imaging (MSI) maps metabolites and lipids in tissue with spatial resolution, but molecular identity remains partly resolved: single ions match multiple candidate compounds, and most detected metabolites and lipids fall outside canonical biochemical pathways. We developed SpacePath, a computational framework that retains ion-to-compound ambiguity, scores canonical pathways across tissue locations, and groups assignments that were unmapped to pathways into de novo molecular families by chemical similarity. Pathway mappings covered on average only 1% of molecular assignments, whereas the combined SpacePath representation covered 24% of pooled assignments. Benchmarking on four public spatial lipidomics datasets (healthy mouse brain, cerebellum, a demyelination model, and human bladder cancer) recovered previously reported spatial patterns. In newly acquired glioblastoma xenograft datasets, SpacePath identified lipid programs specific to tumor and surrounding brain, and SpiderMass-MS/MS independently confirmed four tumor-associated features from a de novo family, refining the initial MS1 assignments. SpacePath extends the spatial interpretation of MSI data beyond canonical pathways while preserving annotation uncertainty.",
+      "authors": [
+        "Galvis, J.",
+        "Moreau, M.",
+        "Lillo, S.",
+        "Bomont, D.",
+        "Ledoux, L.",
+        "Zirem, Y.",
+        "Salzet, M.",
+        "Fournier, I.",
+        "Desbenoit, N.",
+        "Daubon, T.",
+        "Nikolski, M."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial resolution",
+        "spatial metabolomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "SpacePath 使空間代謝體學與脂質體學中超越註解模糊性的路徑與分子家族分析成為可能"
+    },
+    {
+      "id": "10.64898/2026.11.12.766149",
+      "title": "Spatial multi-omic profiling of non-autonomous transcriptomic and epigenomic responses to genetic perturbation",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-13",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.12.766149v1",
+      "doi": "10.64898/2026.11.12.766149",
+      "abstract": "Multicellular organisms develop and maintain differentiated cell states through a combination of cell-autonomous and non-autonomous regulatory mechanisms, including signal transduction pathways mediated by ligands, receptors, and kinases. Genetic perturbation through CRISPR pooled screening is widely used to study cell-autonomous regulatory mechanisms, but the challenges of cellular-resolution in situ measurement have limited the study of non-autonomous regulatory mechanisms. We developed Perturb-Tags, a spatial multi-omic technique for pooled CRISPR screening that tags nuclei with spatial barcodes, allowing joint measurement of single-nucleus gene expression, CRISPR guide RNAs, chromatin accessibility, and spatial positions within intact tissue. Perturb-Tags achieves cellular-resolution, unbiased gene expression and multi-omic profiling, and higher sensitivity than previous spatial perturbation approaches. We used Perturb-Tags to systematically perturb ligands, receptors, and all expressed kinases in human embryoid bodies. These experiments revealed extensive non-autonomous gene expression changes after perturbation, including distance-dependent loss of signaling pathway activity upon ligand knockdown, compensatory upregulation of alternative signaling pathways, and responses to receptor and kinase knockdown that vary with cell microenvironment. We also identified changes in the spatial organization of cells with ligand and kinase knockdowns. Finally, we trained a graph neural network to model the combined effects of genetic perturbations on gene expression and chromatin accessibility across an entire tissue. Our work provides a powerful experimental and computational platform for mechanistic studies of non-autonomous regulatory mechanisms across healthy and diseased tissues.",
+      "authors": [
+        "Ghaemmaghami, J.",
+        "Lee, K. H.",
+        "Jiang, S.",
+        "Zhao, Y.",
+        "Gadhvi, G.",
+        "Lu, L.",
+        "Wen, M.-C.",
+        "Wang, Y.",
+        "Liu, L.",
+        "Cable, D.",
+        "Welch, J. D."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "遺傳擾動誘發之非自主性轉錄體與表觀基因體反應的空間多體學分析"
+    },
+    {
+      "id": "10.64898/2026.11.11.765995",
+      "title": "Epigenomic circuits shaping cellular heterogeneity in pleural mesothelioma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-13",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.11.765995v1",
+      "doi": "10.64898/2026.11.11.765995",
+      "abstract": "Pleural mesothelioma (PM) is an aggressive and lethal malignancy with current treatments offering limited clinical benefit. In this study, we utilized single-cell chromatin accessibility and transcriptomic profiling of patient-matched samples to infer the epigenomic regulation underlying cellular heterogeneity in PM. High-resolution epigenomic profiling suggested transcriptional regulators with putative pro-tumoral roles in mesothelioma, whose function was experimentally tested using genetic perturbations across four PM cell lines. Furthermore, we observed several putative associations between epigenomic circuits and macrophage ontogeny, a sarcomatoid-like neoplastic state, and a fetal-like endothelial cell state. Our analysis also showed similarities between the chromatin accessibility landscapes of exhausted CD8 T and KLRC1 natural killer cells and identified NR4A2 as a potential shared regulator of dysfunction in both lymphocyte subsets. We further identified a state-specific distal enhancer near NR4A2 and experimentally validated its regulation of NR4A2 expression in Jurkat cells. Together, we provide an epigenomic map of PM and nominate candidate transcription factors and regulatory elements for future functional investigation, including their potential relevance to epigenetic editing strategies to limit tumor growth and enhance anti-tumor immunity.",
+      "authors": [
+        "Tsankov, A.",
+        "Giotti, B.",
+        "Chang, L.",
+        "Dolasia, K.",
+        "Lee, W.",
+        "Sridhar, S.",
+        "Hopkins, B. D.",
+        "Horowitz, A.",
+        "Wolf, A.",
+        "Sun, Y.",
+        "Tocheva, A. S.",
+        "Walsh, M. J."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "表觀基因體迴路形塑胸膜間皮瘤細胞異質性",
+      "summaryZh": "胸膜間皮瘤為侵襲性且致命的惡性腫瘤，目前治療臨床效益有限。本研究利用患者配對樣本的單細胞染色質可及性與轉錄體學分析，推論胸膜間皮瘤細胞異質性的表觀基因體調控。高解析度表觀基因體分析提示具潛在促腫瘤作用的轉錄調控因子，其功能在四株胸膜間皮瘤細胞株中以遺傳干擾進行實驗測試。研究另觀察到表觀基因體迴路與巨噬細胞起源、肉瘤樣腫瘤狀態及胎兒樣內皮細胞狀態的潛在關聯，並發現耗竭型 CD8 T 細胞與 KLRC1 自然殺手細胞的染色質可及性景觀相似，NR4A2 為兩者功能異常的潛在共同調控因子。研究團隊進一步鑑定 NR4A2 附近的狀態特異性遠端增強子，並在 Jurkat 細胞中實驗驗證其對 NR4A2 表達的調控，提供胸膜間皮瘤的表觀基因體地圖並提出候選轉錄因子與調控元件供後續功能研究。",
+      "topicTags": [
+        "single-cell",
+        "epigenomics",
+        "pleural-mesothelioma",
+        "chromatin-accessibility",
+        "immune-dysfunction"
+      ]
+    },
+    {
+      "id": "10.64898/2026.06.15.732361",
+      "title": "Galectin-1 identifies a unique subpopulation of highly invasive glioblastoma cells and enables their migration.",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-13",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.15.732361v2",
+      "doi": "10.64898/2026.06.15.732361",
+      "abstract": "Glioblastoma (GBM), the most common primary brain tumor, is characterized by extensive infiltration into surrounding brain tissue. GBM tumors exhibit substantial intratumoral heterogeneity making it difficult to identify and target invasive cell subpopulations. Here, we use an in vitro model of the mechanical transitions at the tumor-brain interface to isolate highly invasive GBM cells from populations derived from unique patient tumors. Using single-cell RNA sequencing combined with cell barcodes we were able to trace distinct cell lineages during migration and identify an invasive subpopulation which preferentially migrates across stiffness interfaces. This mechanically sensitive invasive subpopulation exhibits a transcriptomic profile characterized by overexpression of galectin-1, a {beta}-galactoside binding protein. Our findings reveal that galectin-1 expression level positively correlates with invasion rate and inhibition of galectin-1 binding to cell surface glycoproteins prevents migration. This study identifies galectin-1 expression is a characteristic of invading GBM cells in mechanically defined interface model where galectin-1 may serve as an important maker to identify and target invasive GBM cells.",
+      "authors": [
+        "Sanazzaro, T.",
+        "Cotner, M.",
+        "Arvinth, N.",
+        "Brock, A.",
+        "Seidlits, S. K."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "半乳糖凝集素-1 標示高度侵襲性膠質母細胞瘤細胞亞群並促進遷移",
+      "summaryZh": "膠質母細胞瘤為最常見的原發性腦瘤，其特徵為向周圍腦組織廣泛浸潤，且腫瘤內異質性高，使侵襲性細胞亞群難以辨識與標靶。研究團隊使用模擬腫瘤-腦介面機械轉換的體外模型，從個別病人腫瘤衍生的細胞群中分離出高度侵襲性的膠質母細胞瘤細胞。結合單細胞RNA定序與細胞條碼追蹤遷移過程中的細胞譜系，發現一群偏好跨越硬度介面遷移的侵襲亞群。該機械敏感的侵襲亞群轉錄體特徵為半乳糖凝集素-1，galectin-1，一種β-半乳糖苷結合蛋白的過度表現。研究發現galectin-1表現量與侵襲速率呈正相關，且抑制galectin-1與細胞表面糖蛋白的結合可阻止遷移。在此機械定義的介面模型中，galectin-1表現被認為是侵襲膠質母細胞瘤細胞的特徵，可能作為辨識與標靶侵襲細胞的指標。",
+      "topicTags": [
+        "glioblastoma",
+        "invasion",
+        "single-cell-rna-seq",
+        "galectin-1",
+        "mechanobiology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.11.765433",
+      "title": "Whole embryo barcoding reveals convergent origins of mesodermal cells during mammalian gastrulation",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-13",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.11.765433v1",
+      "doi": "10.64898/2026.11.11.765433",
+      "abstract": "Classical fate-mapping and recent single-cell trajectory studies have suggested that mesoderm diversification during gastrulation proceeds through progressive fate bias and branching lineage segregation. Here, we combine inducible CRISPR-based lineage recording with single-cell RNA sequencing to reconstruct clonal relationships across mouse embryos barcoded at primitive streak onset and analyzed at early organogenesis. Mesodermal clones diverged after streak formation, but their developmental outputs remained extensively overlapping, revealing a clonal architecture that is not a simple branching lineage tree. Using sampling-aware statistical models, we quantify distinct clonal origins of paraxial mesoderm across the anterior-posterior axis, show that endothelial cells arise from multiple mesoderm origins but demonstrate transcriptional differences that correspond to anatomical position and clonal lineage, and identify clonal sharing between extra-embryonic mesoderm and embryonic derivatives, including cardiac lineages and a shared hindlimb-allantois progenitor. In the heart, progenitors corresponding to classical heart fields remain multipotent, contributing both myocardial and non-myocardial cell types. Together, our findings support a model in which mesodermal diversity is assembled through spatially distinct, fate-biased progenitor pools whose descendants converge on shared cell states. Our findings challenge simple branching models of mesoderm diversification and provide a clonal framework for understanding how tissue diversity emerges in the embryo.",
+      "authors": [
+        "Secchi, M. A.",
+        "Martin, P. J.",
+        "Cornwall-Scoones, J.",
+        "Van Egeren, D.",
+        "Dooley, P. J.",
+        "Liu, E. Y.",
+        "Liu, N.",
+        "Masaltseva, A.",
+        "King, H. D.",
+        "Jokhai, R. T.",
+        "Qiu, X.",
+        "Loh, K. M.",
+        "Gottgens, B.",
+        "Camargo, F.",
+        "Bowling, S."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "全胚胎條碼揭示哺乳動物原腸胚形成期間中胚層細胞的趨同起源"
+    },
+    {
+      "id": "10.1038/s41467-026-79301-2",
+      "title": "Power-sensitive partnerships for just nature-based solutions in urban informal settlements",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79301-2",
+      "doi": "10.1038/s41467-026-79301-2",
+      "abstract": "Nature-based solutions should better redistribute benefits and reduce climate risks for vulnerable groups in urban informal settlements. To enable this, we argue for power-sensitive partnerships and a deep commitment to pluralism in values, ways of knowing, and understandings of nature.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "not_sure",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "城市非正式聚落中具權力敏感性的夥伴關係，促進公平的自然為本解方",
+      "summaryZh": "本文聚焦於城市非正式聚落中的自然為本解方，指出其應更公平地分配效益並降低脆弱群體的氣候風險。作者主張，為達成此目標，需要建立具權力敏感性的夥伴關係。文章同時強調對價值觀、知識體系與自然觀的多元主義應有深刻承諾。這些論點旨在讓自然為本解方更能回應城市非正式聚落中弱勢群體的需求。",
+      "topicTags": [
+        "nature-based-solutions",
+        "urban-informal-settlements",
+        "climate-risk",
+        "environmental-justice",
+        "power-partnerships"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78668-6",
+      "title": "Depth-enhanced molecular imaging with two-photon oblique plane microscopy",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78668-6",
+      "doi": "10.1038/s41467-026-78668-6",
+      "abstract": "Two-photon oblique plane microscopy combines high-numerical-aperture single-objective detection with two-photon light-sheet illumination, resolving subcellular and single-molecule dynamics deep in multicellular systems through standard glass-based mounting.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "雙光子斜面顯微鏡的深度增強分子影像",
+      "summaryZh": "該研究介紹了雙光子斜面顯微鏡，結合高數值孔徑單物鏡偵測與雙光子光片照明。該方法可在標準玻璃基底裝載下，對多細胞系統深層進行成像。研究指出此技術可解析次細胞與單分子動態。",
+      "topicTags": [
+        "microscopy",
+        "two-photon",
+        "light-sheet",
+        "single-molecule",
+        "deep-imaging"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79135-y",
+      "title": "Vagal afferent activation induces a dissociated NREM sleep-like state with wake-related locus coeruleus activity",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-13T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79135-y",
+      "doi": "10.1038/s41467-026-79135-y",
+      "abstract": "The role of peripheral signals in sleep state regulation is not well understood. Here authors show that vagal sensory afferent activation induces a NREMS-like state with low-frequency EEG, slowed heart rate, and cooling, while elevating locus coeruleus noradrenergic activity, revealing brain arousal within a sleep-like state.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "迷走神經感覺活化誘發解離性NREM睡眠樣狀態並伴隨清醒相關藍斑核活動",
+      "summaryZh": "作者探討外周訊號在睡眠狀態調節中的作用。研究顯示，迷走神經感覺传入活化可誘發類似非快速動眼睡眠的狀態，表現為低頻腦電波、心率減慢與體溫下降。與此同時，藍斑核去甲腎上腺素能活動升高，呈現清醒相關的特徵。該結果揭示在睡眠樣狀態中仍存在腦部覺醒的現象。研究為外周訊號如何影響睡眠狀態調節提供了新的觀察。",
+      "topicTags": [
+        "sleep",
+        "vagal-afferent",
+        "locus-coeruleus",
+        "neuroscience",
+        "physiology"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 26,
+      "passedByScope": 15,
+      "llmClassified": 11,
+      "llmYes": 2,
+      "llmNotSure": 1,
+      "llmNo": 8,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 18,
+      "excluded": 8
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 10,
+      "llmTagged": 10,
+      "llmLineA": 1,
+      "llmLineB": 9,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 18,
+      "candidates": 17,
+      "featured": 12,
+      "overflow": 5,
+      "lineA": 1,
+      "lineB": 9,
+      "preprint": 7,
+      "skip": 1,
+      "featuredLineA": 0,
+      "featuredLineB": 8,
+      "featuredPreprint": 4,
+      "overflowLineA": 1,
+      "overflowLineB": 1,
+      "overflowPreprint": 3
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 11,
+      "primarySucceeded": 8,
+      "fallbackSucceeded": 3,
+      "failed": 1
+    },
+    "translate": {
+      "requested": 5,
+      "llmTranslated": 5,
+      "primarySucceeded": 5,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 10
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 1,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 8
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "observed": [
+            "gemini-3.5-flash-lite"
+          ],
+          "succeeded": 3
+        }
+      },
+      "translate": {
+        "requested": 5,
+        "succeeded": 5,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        },
+        "primarySucceeded": 5,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03456-7",
+        "title": "Chinese graduate students are now choosing to stay closer to home",
+        "journal": "Nature",
+        "publishedDate": "2026-11-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03456-7",
+        "doi": "10.1038/d41586-026-03456-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03516-y",
+        "title": "Accept all changes",
+        "journal": "Nature",
+        "publishedDate": "2026-11-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03516-y",
+        "doi": "10.1038/d41586-026-03516-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03679-8",
+        "title": "This AI ‘mechanic’ can peer inside the black box of other neural networks",
+        "journal": "Nature",
+        "publishedDate": "2026-11-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03679-8",
+        "doi": "10.1038/d41586-026-03679-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03716-6",
+        "title": "Is the climate totally cooked? What the data say",
+        "journal": "Nature",
+        "publishedDate": "2026-11-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03716-6",
+        "doi": "10.1038/d41586-026-03716-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79422-8",
+        "title": "Photonic-assisted ingenious agile non-periodic oscillator (PIANO)",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79422-8",
+        "doi": "10.1038/s41467-026-79422-8",
+        "abstract": "The study presents PIANO, a microwave photonic oscillator that generates frequency-agile microwave signals with rapid switching and ultra-low phase noise, while overcoming the cavity-delay constraint of conventional delay-based oscillators.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79012-8",
+        "title": "Room-temperature continuous-wave lasing-like emission from solution-processed bulk monolayer MoS2 thin films",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79012-8",
+        "doi": "10.1038/s41467-026-79012-8",
+        "abstract": "Scaling up atomically thin light emitters remains challenging. Here, authors develop solution-processable bulk-monolayer MoS2 films that preserve monolayer optical properties and exhibit room-temperature lasing-like emission under continuous optical pumping at just a few nW.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79441-5",
+        "title": "Selective aromatization of polyolefins by temporal decoupling from cracking",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79441-5",
+        "doi": "10.1038/s41467-026-79441-5",
+        "abstract": "Turning plastic waste into useful chemicals is limited because breaking polymer chains and controlling products need conflicting conditions. This study separates these steps in time, enabling fast, durable aromatic production with lower emissions.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78687-3",
+        "title": "Signatures of a Kondo insulator in a multilayer moiré Superlattice",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-13T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78687-3",
+        "doi": "10.1038/s41467-026-78687-3",
+        "abstract": "Kondo insulator phases are traditionally found in materials with f-electrons. Here, the authors present evidence towards the realization of a tunable Kondo insulator in a monolayer WS2/bilayer WSe2 moiré superlattice.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
