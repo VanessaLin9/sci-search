@@ -1,0 +1,363 @@
+{
+  "reportDate": "2026-11-14",
+  "generatedAt": "2026-11-14T16:42:09.020Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.09.06.749635",
+      "title": "IL18 and pyroptosis-related genes show contrasting expression in human cardiac pericytes and endothelial cells",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.06.749635v2",
+      "doi": "10.64898/2026.09.06.749635",
+      "abstract": "Interleukin-18 (IL-18) contributes to cardiac inflammation, fibrosis and contractile dysfunction, and its maturation and release involve inflammatory caspases and gasdermin D (GSDMD). In two discovery cohorts (42 and 38 donors), donor-paired comparisons of public single-nucleus RNA-sequencing data from human hearts showed IL18 relatively enriched in pericytes and CASP1, CASP4 and GSDMD in endothelium. We specified these four directions as predictions and tested them against prespecified confirmation criteria in 22 adult non-failing donors from two additional resources. All four directions held in all 22 donors, each gene meeting the criteria. In prediction-based evaluations planned after the initial confirmation, endothelial enrichment of IL18BP and CARD8 was also confirmed in all 22 donors. Among 52 cardiomyopathy donors, IL18 favoured pericytes in 51, and CASP1, CASP4 and GSDMD favoured endothelium in all 52. In exploratory analyses of three ischaemic-heart resources planned after confirmation, the four median directions were preserved in all five groups. In both acute myocardial infarction cohorts, pericyte-class CASP4 relative RNA abundance was higher than in controls and the difference from endothelium was smaller. We propose the configuration hypothesis of intercellular division of labour: in the cardiac microvasculature, pericytes supply the IL-18 precursor and endothelium carries out its processing and release. This hypothesis reframes IL-18 maturation and release not only as a process completed within a single cell but also as a reaction accomplished through cooperation between cells with different roles.",
+      "authors": [
+        "Oryoji, D.",
+        "Doi, G.",
+        "Fujimoto, S.",
+        "Nishimura, N.",
+        "Otsuka, K.",
+        "Kuwahara, A.",
+        "Ayano, M.",
+        "Kimoto, Y.",
+        "Akashi, K.",
+        "Niiro, H.",
+        "Mitoma, H."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-nucleus"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "心臟周細胞與內皮細胞中 IL18 與焦亡相關基因表現呈對比",
+      "summaryZh": "研究指出 IL-18 與心臟發炎、纖維化及收縮功能異常相關，其成熟與釋放涉及發炎性半胱天冬酶與 gasdermin D。作者利用公開單核 RNA 定序資料，在兩個發現族群共 42 與 38 位捐贈者中進行捐贈者配對比較，發現 IL18 在周細胞相對富集，而 CASP1、CASP4 與 GSDMD 在內皮細胞相對富集。將這四個方向設為預測後，在 22 位成人非衰竭捐贈者的兩項額外資料中進行確認，所有四個方向在全部 22 位捐贈者中均成立，且各基因均符合預設標準。後續預測性評估亦確認 IL18BP 與 CARD8 在內皮細胞富集。",
+      "topicTags": [
+        "cardiac biology",
+        "single-nucleus rna-seq",
+        "pyroptosis",
+        "interleukin-18",
+        "pericytes"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.09.765280",
+      "title": "CellChat Hotspot: A Targeted Approach to Cell Cell Communication Analysis With Spatial transcriptomics Validation.",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-14",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.09.765280v2",
+      "doi": "10.64898/2026.11.09.765280",
+      "abstract": "Abstract. In recent years, single cell RNA sequencing (scRNA seq) has enabled the investigation of intercellular communication through Cell Cell Communication (CCC) tools such as CellChat. Despite their potential, these approaches remain challenging to interpret, particularly when global analyses generate complex interaction networks that may include biologically irrelevant signals. To address this limitation, we developed a framework termed CellChat Hotspot, designed to improve the biological interpretability of inferred communication networks. This approach integrates gene set enrichment analysis with a context driven filtering strategy, selecting both genes and cells based on their functional relevance prior to communication inference. Applied to stage II colon cancer data, CellChat Hotspot enabled the identification of condition-specific interaction patterns associated with recurrence. Non recurrent patients showed enrichment of immune related processes, whereas recurrent cases were characterized by pathways associated with invasion and metastasis. Notably, a loss of interaction in the HSPG pathway between CALB1+ and stromal cells was observed in recurrent patients, suggesting a potential disruption of cell matrix adhesion mechanisms. To verify the reliability of this finding, we applied the framework to spatial transcriptomics data, which confirmed the presence of the HSPG2 DAG1 interaction in non-recurrent tumors and its near absence in recurrent ones. Overall, this framework provides a biologically guided strategy for studying intercellular communication in complex systems such as the tumor microenvironment.",
+      "authors": [
+        "Monaco, D.",
+        "Dioguardi, M.",
+        "Dipalma, M.",
+        "Mattioli, E.",
+        "Zito, F. A.",
+        "Giovannelli, F.",
+        "Ricco, A.",
+        "Brunetti, O.",
+        "Argentiero, A.",
+        "De Summa, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "spatial transcriptomics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "以基因集富集與情境篩選聚焦細胞間通訊分析並以空間轉錄組驗證",
+      "summaryZh": "研究團隊提出 CellChat Hotspot 框架，旨在提升推論通訊網絡的生物學可解釋性。該方法整合基因集富集分析與情境驅動的篩選策略，在推論通訊前依功能相關性挑選基因與細胞。將此框架應用於第二期結腸癌資料後，可辨識與復發相關的條件特異性交互作用模式。非復發患者富集免疫相關過程，復發病例則以侵襲與轉移相關途徑為特徵。研究觀察到復發患者中 CALB1+ 細胞與基質細胞間 HSPG 途徑的交互作用喪失，暗示細胞基質黏附機制可能受干擾。為驗證此發現，研究團隊將框架應用於空間轉錄組資料，證實 HSPG2-DAG1 交互作用存在於非復發腫瘤且在復發腫瘤中幾近消失。整體而言，該框架提供一種生物學導向的策略，用於研究如腫瘤微環境等複雜系統的細胞間通訊。",
+      "topicTags": [
+        "single-cell",
+        "spatial-transcriptomics",
+        "cell-cell-communication",
+        "colon-cancer",
+        "bioinformatics"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79357-0",
+      "title": "Multi-ancestry genetic analysis reveals 29 novel rheumatoid arthritis loci, effector genes and drug repurposing opportunities",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-14T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79357-0",
+      "doi": "10.1038/s41467-026-79357-0",
+      "abstract": "Integrated genetic, functional, and network-level analyses reveal how population-specific and shared genetic signals contribute to rheumatoid arthritis and provide new insights into disease mechanisms and therapeutic opportunities.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "多族群遺傳分析發現29個新的類風濕性關節炎位點",
+      "summaryZh": "本研究進行多族群遺傳分析，發現29個新的類風濕性關節炎位點，並指出相關效應基因與藥物再利用機會。研究整合遺傳、功能與網絡層級分析，探討族群特異性與共享的遺傳訊號如何影響類風濕性關節炎。分析結果提供疾病機制的新見解。研究亦指向可能的治療機會。",
+      "topicTags": [
+        "rheumatoid-arthritis",
+        "genetics",
+        "multi-ancestry",
+        "drug-repurposing",
+        "functional-genomics"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79090-8",
+      "title": "DPI-score: a deep learning-based metric for assessing protein-protein interfaces in cryoEM derived assemblies",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-14T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79090-8",
+      "doi": "10.1038/s41467-026-79090-8",
+      "abstract": "The study introduces deep learning-based protein-protein interfaces’ quality score- DPI-score, that uses only structural coordinates, without engineered interface features. It provides complementary validation and detects errors at interfaces.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "基於深度學習評估冷凍電鏡蛋白質複合體界面品質的指標",
+      "summaryZh": "研究提出 DPI-score，一種基於深度學習的蛋白質-蛋白質界面品質評分方法，用於評估冷凍電鏡衍生的組裝體。該方法僅使用結構座標，不依賴人工設計的界面特徵。DPI-score 可作為互補驗證工具，並用於偵測界面上的錯誤。研究指出此指標能提供對蛋白質複合體界面品質的評估。",
+      "topicTags": [
+        "deep-learning",
+        "protein-protein-interaction",
+        "cryo-em",
+        "structural-biology",
+        "model-validation"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79121-4",
+      "title": "A subspecialty diagnostic system powered by self-supervised learning for cervical histopathology",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-14T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79121-4",
+      "doi": "10.1038/s41467-026-79121-4",
+      "abstract": "Foundation models could be promising for cervical cancer screening, but have important limitations for their clinical deployment. Here, the authors introduce the Cervical Subspecialty Pathology (CerS-Path) diagnostic system, a self-supervised learning framework for cervical cancer pathology that outperforms state-of-the-art foundation models across multiple diagnostic tasks.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "自監督學習驅動的子專科子宮頸組織病理診斷系統",
+      "summaryZh": "作者提出 Cervical Subspecialty Pathology（CerS-Path）診斷系統，是一種針對子宮頸癌病理的自監督學習框架。該系統旨在改善子宮頸癌篩檢中基礎模型臨床部署的限制。研究指出 CerS-Path 在多項診斷任務上表現優於現有的最先進基礎模型。",
+      "topicTags": [
+        "self-supervised-learning",
+        "cervical-cancer",
+        "histopathology",
+        "diagnostic-system",
+        "foundation-models"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 10,
+      "passedByScope": 2,
+      "llmClassified": 8,
+      "llmYes": 3,
+      "llmNotSure": 0,
+      "llmNo": 5,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 5,
+      "excluded": 5
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 3,
+      "llmTagged": 3,
+      "llmLineA": 0,
+      "llmLineB": 3,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 5,
+      "candidates": 5,
+      "featured": 5,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 3,
+      "preprint": 2,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 3,
+      "featuredPreprint": 2,
+      "overflowLineA": 0,
+      "overflowLineB": 0,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 5,
+      "llmSummarized": 5,
+      "primarySucceeded": 5,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 3
+      },
+      "summarize": {
+        "requested": 5,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 5
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 0,
+        "succeeded": 0,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b"
+        },
+        "primarySucceeded": 0,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79359-y",
+        "title": "Chirality-locked low-dimensional bound states in the continuum lasers",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-14T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79359-y",
+        "doi": "10.1038/s41467-026-79359-y",
+        "abstract": "Bound states in the continuum are intrinsically delocalized. Here, the authors realize localized bound state-in-the-continuum lasers at one-dimensional interfaces and zero-dimensional junctions by interfacing domains of opposite chirality.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78707-2",
+        "title": "Boosting reinforcement learning for critical node detection with multi-topology training strategies",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-14T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78707-2",
+        "doi": "10.1038/s41467-026-78707-2",
+        "abstract": "Critical node detection helps identify network elements whose removal most disrupts connectivity. Here, the authors develop a reinforcement-learning approach that trains on diverse graph topologies to improve generalization to both synthetic and real networks.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78019-5",
+        "title": "Field-angle-resolved heat transport in UTe2: determination of nodal positions in the superconducting order parameter",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-14T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78019-5",
+        "doi": "10.1038/s41467-026-78019-5",
+        "abstract": "Determining the gap symmetry of superconducting phases in UTe2 remains a central challenge. Here, the authors use field-angle-dependent thermal conductivity and theoretical analysis to identify b-axis point nodes in the low-field state, consistent with a B2u order parameter.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79569-4",
+        "title": "Emergent mesoscale nanoparticle patterns from a non-equilibrium liquid lens",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-14T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79569-4",
+        "doi": "10.1038/s41467-026-79569-4",
+        "abstract": "Nanoparticle assembly at fluid interfaces is often viewed as unpredictable and dominated by uncontrolled non-equilibrium effects. Here, the authors show that evaporation-driven nanoparticle assembly reveals predictable morphologies through multiscale modeling, linking transport dynamics and kinetic arrest.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79788-9",
+        "title": "Tuning methanol-CO selectivity in CO2 hydrogenation by Ga coordination engineering in ZnGa2O4",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-14T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79788-9",
+        "doi": "10.1038/s41467-026-79788-9",
+        "abstract": "Controlling whether carbon dioxide hydrogenation yields methanol or carbon monoxide remains challenging. This study shows that tuning gallium coordination in ZnGa₂O₄ directs distinct reaction pathways and product selectivity.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
