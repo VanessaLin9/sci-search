@@ -1,0 +1,733 @@
+{
+  "reportDate": "2026-11-17",
+  "generatedAt": "2026-11-17T19:25:27.370Z",
+  "papers": [
+    {
+      "id": "10.1038/s41588-026-02843-0",
+      "title": "Integrated QTL mapping and CRISPR screening in pooled iPSC-derived microglia reveals genetic drivers of neurodegenerative risk",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02843-0",
+      "doi": "10.1038/s41588-026-02843-0",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "CRISPR"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "整合 QTL 定位與 CRISPR 篩選於混合 iPSC 誘導微膠細胞中揭示神經退行性風險的遺傳驅動因子"
+    },
+    {
+      "id": "10.1038/s41588-026-02823-4",
+      "title": "Evolutionary lineage-specific and heterochromatin-independent repression of transposon-derived sequences",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02823-4",
+      "doi": "10.1038/s41588-026-02823-4",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "演化譜系特異性且異染色質非依賴性的轉座子衍生序列抑制"
+    },
+    {
+      "id": "10.1038/s41556-026-02163-9",
+      "title": "Editorial Expression of Concern: MicroRNAs 17-5p–20a–106a control monocytopoiesis through AML1 targeting and M-CSF receptor upregulation",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-11-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02163-9",
+      "doi": "10.1038/s41556-026-02163-9",
+      "abstract": "Editorial Expression of Concern: MicroRNAs 17-5p–20a–106a control monocytopoiesis through AML1 targeting and M-CSF receptor upregulation",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41593-026-02505-8",
+      "title": "Microglia mediate motor memory decay through activity-dependent phagocytosis of myelin sheaths",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-11-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02505-8",
+      "doi": "10.1038/s41593-026-02505-8",
+      "abstract": "Hu et al. showed that motor memory decay involves microglia engulfing memory-related myelin sheaths. Reduced engram activity lowers CD47, a ‘don’t eat me’ signal, thus promoting microglia-mediated myelin clearance and facilitating memory decay.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "小膠質細胞透過活性依賴性吞噬髓鞘鞘膜介導運動記憶衰退",
+      "summaryZh": "Hu 等人指出，運動記憶衰退涉及小膠質細胞吞噬與記憶相關的髓鞘鞘膜。研究顯示，記憶痕跡活動降低會使 CD47 這種「不要吃我」訊號下降。CD47 下降促進小膠質細胞介導的髓鞘清除，並有助於記憶衰退。該結果將小膠質細胞的吞噬作用與運動記憶的衰退連結起來。",
+      "topicTags": [
+        "microglia",
+        "motor-memory",
+        "myelin-phagocytosis",
+        "memory-decay"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02709-x",
+      "title": "Fever-induced OR560 promotes antibacterial immunity through macrophage pseudopod formation and phagocytosis",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-11-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02709-x",
+      "doi": "10.1038/s41590-026-02709-x",
+      "abstract": "Li and colleagues propose that elevated temperatures in the fever range induces olfactory receptor 560 in macrophages to promote phagocytosis.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "發燒誘導的 OR560 促進巨噬細胞偽足形成與吞噬作用",
+      "summaryZh": "Li 等人提出，處於發燒範圍的升高溫度會誘導巨噬細胞中的嗅覺受體 OR560。該受體的誘導與巨噬細胞偽足形成及吞噬作用相關。研究指出此機制可促進抗菌免疫。",
+      "topicTags": [
+        "fever",
+        "macrophage",
+        "phagocytosis",
+        "innate-immunity",
+        "antibacterial"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.16.767021",
+      "title": "A spatial correlation function approach reveals zonation loss in liver disease",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-17",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.16.767021v1",
+      "doi": "10.64898/2026.11.16.767021",
+      "abstract": "Spatial transcriptomics measures the expression of hundreds to thousands of genes in each cell together with the cell's position in the tissue. Here we use spatial correlation functions, which describe how the correlation of gene expression between cells decays with distance, to quantify how the spatial organization of gene expression changes in disease. From the correlation function of each gene, or of each pair of genes, we extract two numbers: a susceptibility, which measures how strongly gene expression is correlated between nearby cells, and a correlation length, the distance over which this correlation extends. Both are in physical units and can be compared directly between samples and conditions. We apply the approach to healthy and fibrotic mouse liver using newly generated data, and to healthy and fibrotic human liver using published data. Correlations between gene pairs identify genes of the same hepatocyte zone, and assign a zone to 1,266 genes that are not known zonation markers. The two fibrotic conditions differ: CCl4 injection in mice produces a moderate reorganization in which some genes lose spatial correlation and others gain it, while in human fibrosis almost every measured gene loses it. Changes in spatial correlation are only weakly related to changes in expression level. For instance Cyp2c29 and Pon1 partially lose their spatial correlation in treated mice, although their average expression does not consistently fall. Spatial correlation functions therefore detect changes in tissue organization that measurements of expression level alone miss.",
+      "authors": [
+        "Ginne, K. C.",
+        "Bowman, D.",
+        "Piñero, J.",
+        "Cobos-Figueroa, J.",
+        "Cañas-Martín, J.",
+        "Capelo-Diz, A.",
+        "Varela-Rey, M.",
+        "Kuppe, C.",
+        "Ruiz-Villalba, A.",
+        "Bhattacharya, S.",
+        "Piermarocchi, C."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "空間相關函數揭示肝臟疾病中區域化喪失",
+      "summaryZh": "本研究提出以空間相關函數描述基因表現隨細胞間距離衰減的相關性，並從每個基因或基因對的相關函數中提取兩個可比較的物理量：衡量鄰近細胞表現相關強度的易感性，以及相關性延伸距離的相關長度。方法應用於新生成的健康與纖維化小鼠肝臟數據，以及已發表的健康與纖維化人類肝臟數據。基因對間的相關性可辨識同屬肝細胞區域的基因，並為1,266個非已知區域標記基因指派區域。兩種纖維化情況不同：小鼠CCl4注射造成部分基因失去空間相關、部分獲得的適度重組，而人類纖維化中幾乎所有測量基因皆失去相關性。空間相關的變化與表現量變化僅弱相關，例如小鼠治療後Cyp2c29與Pon1部分失去空間相關，但平均表現並未一致下降。研究指出空間相關函數可偵測單獨測量表現量會遺漏的組織結構變化。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "liver-fibrosis",
+        "zonation",
+        "spatial-correlation",
+        "bioinformatics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.15.766341",
+      "title": "Brain disorder mechanisms and therapeutic targets identified from developmental, cell-specific gene regulation",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-17",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.15.766341v1",
+      "doi": "10.64898/2026.11.15.766341",
+      "abstract": "Genetic variation influences brain physiology and disease across cell types and development. We integrated whole-genome sequencing, bulk RNA sequencing, and single-nucleus multiome profiling from 231 human dorsolateral prefrontal cortex donors spanning six postconceptional weeks to 92 years. Across 24 brain-related traits, neurodevelopmental and psychiatric genetic risk was enriched in neuronal transcriptomic and chromatin profiles, whereas neurodegenerative risk was enriched in microglia. Thousands of expression, chromatin accessibility, and splicing quantitative trait loci revealed developmental and cell-type-specific regulatory effects. Colocalization linked multiple sclerosis risk to AHI1 expression in prenatal neurons and problematic alcohol use to GPX1 expression in postnatal glia. Leveraging dynamic cis-regulatory elements, we identified therapeutic candidates for haploinsufficient neurodevelopmental disorders, including a SOX5 enhancer whose CRISPR activation increased transcript and protein abundance. Together, these findings establish a publicly accessible genomic resource for resolving the developmental and cellular contexts of genetic risk and identifying therapeutic targets in the human brain.",
+      "authors": [
+        "Rohani, N.",
+        "Kovner, R.",
+        "Liu, Y.",
+        "Garcia Guerra, A.",
+        "Markati, T.",
+        "Kim, S.-W.",
+        "Kim, Y.",
+        "Xu, Q.",
+        "Wigdor, E. M.",
+        "Weiss, J.",
+        "Lalli, J. L.",
+        "Dong, S.",
+        "Nadkarni, A.",
+        "Wang, X.",
+        "Klei, L.",
+        "Pochareddy, S.",
+        "Speckhard-Pasque, D.",
+        "Dema, C.",
+        "Canosa, S.",
+        "Cho, H.",
+        "Deveau-French, A.",
+        "Gordon, G.",
+        "Griffiths, M.",
+        "Jaisingh, K.",
+        "Kachko, J.",
+        "Kathail, P.",
+        "Li, M.",
+        "Liang, D.",
+        "Ljungdahl, A.",
+        "Ma, S.",
+        "Makkar, R.",
+        "Page, N. F.",
+        "Sliby, A.-N.",
+        "Zhang, M.",
+        "Zhao, X.",
+        "Adle-Biassette, H.",
+        "Ye, C. J.",
+        "Brand, H.",
+        "Talkowski, M. E.",
+        "De Jager, P. L.",
+        "Werling, D. M.",
+        "Girgenti, M. J.",
+        "Rinaldi, C.",
+        "Roeder, K.",
+        "Devlin, B.",
+        "Sestan, N.",
+        "Sanders"
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "development",
+        "CRISPR",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "從發育與細胞特異性基因調控找出腦部疾病機制與治療標的",
+      "summaryZh": "研究團隊整合了231名人類背外側前額葉皮質捐贈者的全基因組定序、bulk RNA定序與單核多組學分析，涵蓋從受精後六週到92歲的發育範圍。針對24項腦部相關性狀，神經發育與精神疾病的遺傳風險富集於神經元的轉錄組與染色質特徵，而神經退化性風險則富集於小膠細胞。研究發現數千個表現量、染色質可及性與剪接的數量性狀基因座，顯示出發育與細胞類型特異性的調控效應。共定位分析將多發性硬化症風險連結至胎兒期神經元中AHI1的表現，並將問題性酒精使用連結至出生後膠細胞中GPX1的表現。利用動態的順式調控元件，研究團隊為單倍劑量不足的神經發育疾病找出治療候選標的，其中包括一個SOX5增強子，其CRISPR活化可提高轉錄本與蛋白質豐度。整體結果建立了一個公開可用的基因組資源，用於解析遺傳風險的發育與細胞背景並找出人類大腦的治療標的。",
+      "topicTags": [
+        "genetics",
+        "brain",
+        "single-nucleus",
+        "gene-regulation",
+        "neurodevelopment"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.14.766684",
+      "title": "GatorAnchor: Cross-Modal Uncertainty-Aware Learning of Reliable Cell Neighborhoods in Single-Cell Multi-Omics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-17",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.14.766684v1",
+      "doi": "10.64898/2026.11.14.766684",
+      "abstract": "Cross-modal uncertainty challenges single-cell multi-omics integration because molecular modalities differ in sparsity, technical noise, and context-dependent biological informativeness, producing discordant cell-cell relationships. Treating conflicting evidence as equally reliable can propagate uncertain relationships and obscure biologically meaningful cellular heterogeneity. GatorAnchor is a cross-modal uncertainty-aware framework that learns modality-specific probabilistic representations, quantifies disagreement across modalities and neighborhood evidence sources, and refines cell-cell relationships according to their reliability. Across ten paired transcriptome-protein and transcriptome-chromatin datasets, GatorAnchor achieves the highest mean performance across four evaluation metrics among nine representative integration methods, demonstrating improved resolution of cellular heterogeneity. Candidate relations with greater composite unreliability show lower consistency with reference cell-type structure, whereas filtering highly unreliable relations increases same-type edge purity across all datasets. Modality conflict is associated with transcript-protein measurement discordance, while transcriptome-chromatin analyses reveal lineage-dependent contributions of molecular and decoder-derived evidence. A three-modality transcriptome-chromatin-protein analysis characterizes cluster of differentiation 4 (CD4)-related communities with distinct molecular profiles and consistent within-donor contrasts across 12 donors. Under incomplete and mosaic measurements, GatorAnchor preserves informative cell-population structure, while cross-modal correspondence increasingly depends on paired-cell anchors. These findings support uncertainty-aware neighborhood refinement for reliable and interpretable characterization of cellular heterogeneity.",
+      "authors": [
+        "Zhang, Z.",
+        "Tang, Y.",
+        "Bian, J.",
+        "Li, X.",
+        "Liu, Y."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "GatorAnchor：跨模態不確定性感知學習可靠單細胞鄰域",
+      "summaryZh": "跨模態不確定性使單細胞多體學整合面臨挑戰，因不同分子模態在稀疏性、技術雜訊與生物資訊性上存在差異，導致細胞間關係不一致。GatorAnchor 為跨模態不確定性感知框架，學習模態特異的機率表徵、量化模態間與鄰域證據來源的分歧，並依可靠性精煉細胞間關係。在十組配對的轉錄組-蛋白質與轉錄組-染色質資料集中，GatorAnchor 在九種代表性整合方法中於四項評估指標的平均表現最高，顯示細胞異質性解析改善。具較高複合不可靠性的候選關係與參考細胞型別結構的一致性較低，過濾高度不可靠關係可提升所有資料集的同型邊純度。作者亦以三模態轉錄組-染色質-蛋白質分析描繪 CD4 相關社群，並指出在不完整與馬賽克測量下方法仍保留資訊性細胞族群結構。",
+      "topicTags": [
+        "single-cell",
+        "multi-omics",
+        "uncertainty-aware",
+        "cell-neighborhood",
+        "integration"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.15.766815",
+      "title": "Transferring CRISPRi knockdown responses to new cell lines requires screening part of each line",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-17",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.15.766815v1",
+      "doi": "10.64898/2026.11.15.766815",
+      "abstract": "Perturb-seq screens measure knockdown responses in one cell line at a time. Models that transfer responses to new lines rarely beat simple averages, and standard metrics often ignore noise. It is unclear how much of a response is shared and what a new line must contribute. We studied CRISPR interference Perturb-seq of essential genes in four human cell lines, using noise ceilings and calibrated metrics. We also introduce CASTER, a set-based model that adapts the transferred mean to the target line. After noise correction, responses correlated at a median of 0.52, highest between the TP53 wild-type lines. With 30% of a line screened, a linear model and CASTER scored 0.84 and 0.80 versus 0.44 for the transferred mean (1 equals a technical duplicate). CASTER led only at 2.5% screened (0.62 versus 0.47) and fell below the transferred mean without a screen. Response size tracked general essentiality more than line-specific dependency.",
+      "authors": [
+        "Kawsar, M.",
+        "Dip, S. A.",
+        "Paul, B. K.",
+        "Noman, A. A.",
+        "Zhang, L.",
+        "Moni, M. A."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "Perturb-seq",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "轉移 CRISPRi 敲降反應至新細胞株需先部分篩選",
+      "summaryZh": "研究以 CRISPR 干擾 Perturb-seq 分析四個人類細胞株中必需基因的敲降反應，並以雜訊上限與校正後指標評估結果的可轉移性。作者指出現有轉移模型鮮少超越簡單平均，且標準指標常忽略雜訊，提出 CASTER 這套基於集合的模型以將轉移的平均值適應至目標細胞株。雜訊校正後，各細胞株間反應相關性中位數為 0.52，其中 TP53 野生型細胞株間相關性最高。當以 30% 的細胞株進行篩選時，線性模型與 CASTER 的分數分別為 0.84 與 0.80，顯著高於僅轉移平均值的 0.44，1 代表技術重複。CASTER 僅在 2.5% 篩選時優於轉移平均值，無篩選資料時則表現更差。反應大小與一般必需性相關性高於細胞株特異性依賴。",
+      "topicTags": [
+        "crispr-interference",
+        "perturb-seq",
+        "functional-genomics",
+        "cell-lines",
+        "model-transfer"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.14.766416",
+      "title": "A Biologically Interpretable Single-Cell Pathology Foundation Model for Molecular Decoding of H&E Images",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-17",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.14.766416v1",
+      "doi": "10.64898/2026.11.14.766416",
+      "abstract": "The microscopic structure of human tissues encodes molecular information that is not directly accessible by visual inspection. Current pathology foundation models improve histological interpretation but operate at multicellular resolution. It remains unclear whether routine histology contains structured molecular and cellular information recoverable at single-cell resolution, which biological properties are associated with this recoverability, and where its limits lie. Here, we introduce Loki2, a single-cell pathology foundation model trained on UniSeg, a pan-tissue resource integrating 15 million cells with segmentation, lineage annotations and measured or histology-inferred transcriptomic profiles. We examine the above question across cellular representation, molecular recoverability, and patient-level relevance. Loki2 captures cellular identity and continuous morphological variation, with interpretable latent dimensions linked to physical nuclear phenotypes through DAPI validation. Transcriptomic retrieval and in silico protein staining test molecular recoverability, with gene-level analyses revealing the strongest recovery for genes associated with morphologically distinct cellular identities and functions. Then, patient staging and biomarker discovery connect cellular morphology representations to clinical relevance. Together, these findings establish Loki2 as a biologically interpretable single-cell pathology foundation model and provide the opportunities of recovering cellular and molecular information from routine H&E histology at single-cell resolution.",
+      "authors": [
+        "Chen, W.",
+        "Li, Q.",
+        "Cheng, H.",
+        "Zhang, P.",
+        "Chang, Y.",
+        "Wang, X.",
+        "Tran, T. N.",
+        "Li, C.",
+        "Yang, Y.",
+        "Xiao, Y.",
+        "Zhao, X.",
+        "Wu, W.",
+        "Ma, A.",
+        "Mora, A.",
+        "Rojas, M.",
+        "Aggarwal, S.",
+        "Lin, S. H.",
+        "Li, S.",
+        "Ma, Q.",
+        "Wang, G."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "單細胞病理基礎模型可從 H&E 影像解碼分子資訊",
+      "summaryZh": "研究團隊提出 Loki2，一個單細胞病理基礎模型，並以 UniSeg 泛組織資源訓練，該資源整合 1500 萬個細胞的分割、譜系註解以及測量或由組織學推斷的轉錄組檔案。Loki2 能捕捉細胞身份與連續形態變異，其可解釋的潛在維度經 DAPI 驗證與物理性核表型相關。透過轉錄組檢索與 in silico 蛋白染色測試分子可恢復性，基因層級分析顯示與形態上明顯的細胞身份與功能相關的基因恢復最強。研究進一步以患者分期與生物標記發現連結細胞形態表徵與臨床相關性。整體結果將 Loki2 建立為生物學上可解釋的單細胞病理基礎模型，並顯示從常規 H&E 組織學以單細胞解析度恢復細胞與分子資訊的可能性。",
+      "topicTags": [
+        "single-cell",
+        "pathology",
+        "foundation-model",
+        "histology",
+        "transcriptomics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.13.766471",
+      "title": "Spatial Transcriptomics Reveals Age-Specific Cancer Hallmark Architecture in Pediatric and Adult Brain Tumors",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-17",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.13.766471v1",
+      "doi": "10.64898/2026.11.13.766471",
+      "abstract": "Pediatric cancers are fundamentally different from their adult counterparts. Specifically, pediatric cancers carry fewer mutations, interact with developing immune systems, and have active developmental microenvironments. The tumor microenvironment (TME), which includes the surrounding stromal cells, immune cells, blood vessels, and extracellular matrix, plays a crucial role in cancer progression, metastasis, behavior, and treatment response. To better understand the effects of the pediatric tumor microenvironment on tumor gene expression, we acquired spatial transcriptomic data from 17 pediatric brain tumor samples and analyzed it through a Cancer Hallmarks framework. Cancer Hallmarks, as outlined by Hanahan and Weinberg, provide a comprehensive set of 14 biological capabilities that cancers acquire to enable tumor growth and metastasis. We compared the spatial gene expression patterns of the Cancer Hallmarks gene sets between the TME and neoplastic compartments in pediatric brain tumors. Compared with a similar study of adult brain tumors, in which Cancer Hallmark expression patterns clearly separated the TME and neoplastic compartments, we identified three hallmarks (\"Deregulating Cellular Energetics,\" \"Senescent Cells,\" and \"Evading Growth Suppressors\") whose predominant cellular compartments differed between pediatric and adult tumors. In pediatric samples, these hallmarks were associated primarily with the TME rather than the neoplastic compartment. This shift implicates an age-specific rewiring of the tumor ecosystem. We also provide clear evidence of strong transcriptomic regulation in genes shared by pediatric and adult neoplastic compartments. Finally, we show how measures of spatial autocorrelation may be used to distinguish tumor grade.",
+      "authors": [
+        "Moffat, N. T.",
+        "Tolbert, C. T.",
+        "Middleton, C. W.",
+        "Sibai, M.",
+        "Cervilla, S.",
+        "Porta-Pardo, E.",
+        "Bailey, M. H."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "cancer",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "空間轉錄體學揭示兒童與成人腦瘤癌症特徵的年齡差異架構",
+      "summaryZh": "研究團隊取得17例兒童腦瘤樣本的空間轉錄體資料，並以Hanahan與Weinberg提出的癌症特徵框架分析腫瘤微環境與腫瘤細胞區室的基因表現。與成人腦瘤研究相比，成人中癌症特徵表現可清楚區分腫瘤微環境與腫瘤細胞區室，而在兒童腦瘤中，三項特徵「Deregulating Cellular Energetics」、「Senescent Cells」與「Evading Growth Suppressors」的主要細胞區室出現差異。這些特徵在兒童樣本中主要與腫瘤微環境相關，而非腫瘤細胞區室，顯示年齡特異性的腫瘤生態重組。研究也指出兒童與成人腫瘤細胞區室共享基因存在強烈的轉錄調控，並提出空間自相關測量可區分腫瘤分級。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "brain-tumor",
+        "pediatric-oncology",
+        "tumor-microenvironment",
+        "cancer-hallmarks"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78924-9",
+      "title": "EpiPack: A computational framework for reference mapping and out-of-reference detection for single-cell ATAC-seq data with heterogeneous peak features",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78924-9",
+      "doi": "10.1038/s41467-026-78924-9",
+      "abstract": "EpiPack maps single-cell chromatin accessibility data across heterogeneous datasets and identifies cell types and states absent from reference atlases, enabling analysis of disease-associated cellular changes.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-cell ATAC"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "單細胞 ATAC-seq 跨資料集參考映射與離群偵測框架",
+      "summaryZh": "EpiPack 是一個針對單細胞 ATAC-seq 資料的計算框架。該框架可在具有異質性峰值特徵的資料集間進行參考映射，並偵測參考圖譜中不存在的細胞類型與狀態。作者指出此功能可支援疾病相關細胞變化的分析。論文發表於 Nature Communications。",
+      "topicTags": [
+        "single-cell",
+        "atac-seq",
+        "computational-biology",
+        "chromatin-accessibility"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79029-z",
+      "title": "RSM01, an extended half-life RSV monoclonal antibody with a high barrier to in vitro resistance",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-17T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79029-z",
+      "doi": "10.1038/s41467-026-79029-z",
+      "abstract": "RSM01 showed broad neutralizing activity against circulating LMIC RSV strains. Authors found a high barrier to resistance, supporting RSM01 as an alternative should resistance emerge with widespread use of current licensed anti-RSV mAbs.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "具高體外抗藥性屏障的長效 RSV 單株抗體 RSM01",
+      "summaryZh": "研究報告 RSM01 是一種延長半衰期的 RSV 單株抗體。RSM01 對流通於 LMIC 的 RSV 株展現廣泛中和活性。作者發現 RSM01 在體外具有高抗藥性屏障。該結果支持 RSM01 可作為現有授權抗 RSV 單株抗體在廣泛使用下出現抗藥性時的替代選項。",
+      "topicTags": [
+        "rsv",
+        "monoclonal-antibody",
+        "neutralization",
+        "antiviral-resistance"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 30,
+      "passedByScope": 11,
+      "llmClassified": 19,
+      "llmYes": 8,
+      "llmNotSure": 1,
+      "llmNo": 10,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 20,
+      "excluded": 10
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 6,
+      "llmTagged": 6,
+      "llmLineA": 1,
+      "llmLineB": 5,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 13,
+      "candidates": 12,
+      "featured": 10,
+      "overflow": 2,
+      "lineA": 1,
+      "lineB": 5,
+      "preprint": 6,
+      "skip": 1,
+      "featuredLineA": 1,
+      "featuredLineB": 3,
+      "featuredPreprint": 6,
+      "overflowLineA": 0,
+      "overflowLineB": 2,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 10,
+      "llmSummarized": 10,
+      "primarySucceeded": 10,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 2,
+      "llmTranslated": 2,
+      "primarySucceeded": 2,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 6
+      },
+      "summarize": {
+        "requested": 10,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 10
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 2,
+        "succeeded": 2,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        },
+        "primarySucceeded": 2,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03744-2",
+        "title": "The prospect of a ‘super’ El Niño demands better ocean monitoring",
+        "journal": "Nature",
+        "publishedDate": "2026-11-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03744-2",
+        "doi": "10.1038/d41586-026-03744-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03742-4",
+        "title": "AI wearables could exploit people’s most vulnerable moments",
+        "journal": "Nature",
+        "publishedDate": "2026-11-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03742-4",
+        "doi": "10.1038/d41586-026-03742-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03772-y",
+        "title": "Is academia’s risk-averse culture stifling scientific discovery?",
+        "journal": "Nature",
+        "publishedDate": "2026-11-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03772-y",
+        "doi": "10.1038/d41586-026-03772-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03709-5",
+        "title": "New US Congress should ‘reimagine’ science — not just return to the past",
+        "journal": "Nature",
+        "publishedDate": "2026-11-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03709-5",
+        "doi": "10.1038/d41586-026-03709-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03707-7",
+        "title": "Open up peer review to early-career researchers",
+        "journal": "Nature",
+        "publishedDate": "2026-11-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03707-7",
+        "doi": "10.1038/d41586-026-03707-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03672-1",
+        "title": "Voyager 1 is about to achieve a cosmic first: one ‘light day’ from Earth",
+        "journal": "Nature",
+        "publishedDate": "2026-11-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03672-1",
+        "doi": "10.1038/d41586-026-03672-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79458-w",
+        "title": "Dearomatization and cycloaddition of furans and indoles enable divergent syntheses of spirooxindole alkaloids",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79458-w",
+        "doi": "10.1038/s41467-026-79458-w",
+        "abstract": "Dearomatization offers powerful routes to molecular complexity, yet strategies that couple distinct dearomatization products remain underdeveloped. Here, the authors report an oxidative strategy linking indole and furan dearomatization to rapidly access diverse tetracyclic spirooxindoles, including natural products.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79689-x",
+        "title": "Upcycling of polyolefin and polyester mixtures via a single-atom alloy",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79689-x",
+        "doi": "10.1038/s41467-026-79689-x",
+        "abstract": "Mixed plastic waste is difficult to recycle because different polymers require separate processing. This study develops a catalyst that converts mixed plastics directly into fuel-range hydrocarbons with high liquid yield.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79390-z",
+        "title": "Transforming spinel LiMn2O4 into a Na-layered cathode",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79390-z",
+        "doi": "10.1038/s41467-026-79390-z",
+        "abstract": "Spinel LiMn2O4 has potential to be transformed into a layered Na-storage material, but the mechanism remains unclear. Here, authors investigate the ion migration mechanism during the transformation and evaluate the Na storage performance of the resulting material, including application in pouch and cylindrical cells.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79510-9",
+        "title": "Hydroxyl-mediated oxygen anchoring steers CO electroreduction toward ethanol",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-17T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79510-9",
+        "doi": "10.1038/s41467-026-79510-9",
+        "abstract": "Converting carbon monoxide into ethanol is hindered by oxygen removing pathways. Here, the authors report a strontium-modified copper catalyst designed to organize surface hydroxyl groups, promoting oxygen retention and ethanol formation at industrially relevant current densities.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
