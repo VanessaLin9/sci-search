@@ -1,0 +1,929 @@
+{
+  "reportDate": "2026-11-20",
+  "generatedAt": "2026-11-20T18:53:47.404Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03287-4",
+      "title": "Computational methods for cell–cell communication via single cells",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03287-4",
+      "doi": "10.1038/s41592-026-03287-4",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "單細胞細胞間通訊的計算方法"
+    },
+    {
+      "id": "10.1038/s41592-026-03327-z",
+      "title": "A two-platform blueprint for modeling human brain development",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03327-z",
+      "doi": "10.1038/s41592-026-03327-z",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "建模人類大腦發育的雙平台藍圖"
+    },
+    {
+      "id": "10.1038/s41588-026-02810-9",
+      "title": "Multiancestry genome-wide association and integrative multiomics analyses implicate key pathways in endometriosis",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02810-9",
+      "doi": "10.1038/s41588-026-02810-9",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "多祖先全基因組關聯與整合性多體學分析揭示子宮內膜異位症的關鍵途徑"
+    },
+    {
+      "id": "10.1038/s41559-026-03221-z",
+      "title": "Meta-analysis shows that immunization reduces amphibian susceptibility to the chytrid fungus",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-11-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03221-z",
+      "doi": "10.1038/s41559-026-03221-z",
+      "abstract": "Meta-analysis of findings across 22 amphibian species shows efficacious experimental immunization with live Bd pathogens, and identifies differing effects on infection dynamics depending on immunization approach, host life stages and taxonomy.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "統合分析顯示免疫能降低兩棲類對壺菌的易感性",
+      "summaryZh": "這項針對22種兩棲類動物的統合分析顯示，以活的壺菌（Bd pathogens）進行實驗性免疫具備成效。研究並指出，不同的免疫方式、宿主生活史階段與分類群，會對感染動態產生相異的影響。此研究有助於理解免疫對兩棲類感染動態的影響及其差異。",
+      "topicTags": [
+        "meta-analysis",
+        "immunization",
+        "amphibian",
+        "chytrid-fungus",
+        "ecology"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02679-0",
+      "title": "Herpesvirus exposures map to self-reactivity networks in chronic disease",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-11-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02679-0",
+      "doi": "10.1038/s41590-026-02679-0",
+      "abstract": "Herpesviruses have long been linked to chronic disease, but how they interact with the immune system remains unclear. Comprehensive mapping of viral and human targets of antibody reactivity across two biobank cohorts identified distinct networks connecting herpesviruses to future disease, highlighting self-reactive hubs that may help to explain chronic disease.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "皰疹病毒暴露與慢性疾病中的自體反應網絡相符",
+      "summaryZh": "本研究探討皰疹病毒與免疫系統的互動，並指出其長期以來與慢性疾病的關聯。研究團隊透過對兩個生物銀行（biobank）世代進行抗體反應之病毒與人類目標的綜合繪圖，識別出將皰疹病毒與未來疾病連結的獨特網絡。這些發現凸顯了自體反應樞紐，有助於解釋慢性疾病的成因。",
+      "topicTags": [
+        "herpesvirus",
+        "chronic-disease",
+        "immune-system",
+        "antibody-reactivity"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02674-5",
+      "title": "Large-scale antibody reactome profiling identifies herpesvirus–autoantigen associations that underlie chronic diseases",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-11-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02674-5",
+      "doi": "10.1038/s41590-026-02674-5",
+      "abstract": "Lasky-Su and colleagues profiled plasma IgG reactivities against linear peptides derived from human herpesviruses and human proteins and integrated them with electronic health records to define a herpesvirus–autoantigen–disease network atlas.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "大規模抗體反應體分析揭示疱疹病毒與自身抗原關聯及慢性疾病",
+      "summaryZh": "Lasky-Su 等人對血漿 IgG 對源自人類疱疹病毒與人類蛋白質的線性胜肽的反應性進行分析。研究將抗體反應性資料與電子健康紀錄整合。整合結果用以定義疱疹病毒—自身抗原—疾病網絡圖譜。該圖譜呈現疱疹病毒與自身抗原的關聯及其與慢性疾病的連結。",
+      "topicTags": [
+        "antibody profiling",
+        "herpesvirus",
+        "autoantigen",
+        "chronic disease",
+        "immunology"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02529-7",
+      "title": "Inside the gut microbiome of manatees",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02529-7",
+      "doi": "10.1038/s41564-026-02529-7",
+      "abstract": "An ultra-deep metagenomic atlas of the gut microbiome of manatees sheds light on the broad and previously unexplored microbial and viral diversity underlying aquatic herbivory. We identified specialized molecular strategies for aquatic plant biomass deconstruction and discovered a metabolic pathway that expands the current functional landscape of gut carbohydrate metabolism.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "microbiome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "海牛腸道微生物組的內部圖譜",
+      "summaryZh": "本研究以超深度宏基因組方式建立海牛腸道微生物組的圖譜，探討與水生草食性相關的微生物與病毒多樣性。研究指出海牛腸道中存在廣泛且此前未被探索的微生物與病毒多樣性。作者發現了專門用於水生植物生物質分解的分子策略，並發現一條擴展腸道碳水化合物代謝功能範圍的代謝途徑。",
+      "topicTags": [
+        "gut-microbiome",
+        "manatee",
+        "metagenomics",
+        "herbivory",
+        "carbohydrate-metabolism"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.19.767467",
+      "title": "Tissue-specific mucociliary regulatory programs in the healthy human endocervix and ectocervix",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-20",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.19.767467v1",
+      "doi": "10.64898/2026.11.19.767467",
+      "abstract": "The cervix is a dynamic mucosal barrier in the female reproductive tract that balances inflammatory and anti inflammatory functions to regulate physiologically critical functions, including pregnancy, sperm transport, fertility, and protection of the upper reproductive tract from infection. Despite its central role in reproduction, the cellular and transcriptional organization of the healthy human cervix remains incompletely characterized, including how clinical sampling methods influence the epithelial populations recovered and how cervical mucociliary programs compare with those of pulmonary epithelium. We performed single-nucleus RNA sequencing (snRNAseq) on paired Tischler punch biopsy and endocervical curettage (ECC) samples from four healthy, exogenous hormone-naive donors to generate a dedicated transcriptomic map of the healthy human cervix followed by an integrative computational analysis framework combining differential expression, functional enrichment, cell to cell communication, cross-tissue mapping, and regulon activity inference. This approach identified ten cell types spanning epithelial, stromal, vascular, and immune cell populations and found that sampling method strongly influenced cellular composition and transcriptional state as Tischler punch biopsy preferentially recovered basal and suprabasal epithelial populations, whereas ECC enriched for secretory and ciliated epithelial cell types. Cross-tissue comparison with publicly available healthy lung epithelial transcriptomics dataset revealed conserved mucociliary cell types alongside tissue-divergent transcriptional programs, including distinct regulation of ion transport and mucin associated genes. Together, these findings demonstrate the importance of sampling modality in resolving cervical epithelial heterogeneity, and reveal tissue-specialized mucociliary regulatory programs underlying cervical mucus biology and fertility regulation.",
+      "authors": [
+        "Parvez, A.",
+        "Kholod, O.",
+        "Lucy, L.",
+        "Looney, R.",
+        "Lan, T. C. T.",
+        "Han, L. L.",
+        "Goods, B. A."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "健康人類子宮頸內膜與子宮頸外膜的組織特異性黏液纖毛調控程序"
+    },
+    {
+      "id": "10.64898/2026.11.18.767745",
+      "title": "CELL-X: A Single-Cell Transcriptomics Framework for Cell-Type and Disease-State Prioritization of Type 2 Diabetes Risk Genes",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-20",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.18.767745v1",
+      "doi": "10.64898/2026.11.18.767745",
+      "abstract": "Genome-wide association studies (GWAS) have identified hundreds of loci associated with Type 2 Diabetes (T2D), yet pinpointing specific causal genes and their relevant cellular contexts remains a critical bottleneck. To address this gap, we developed CELL-X, a novel computational framework systematically integrating fine-mapped genetic evidence with high-resolution single-cell transcriptomics and disease progression dynamics. Utilizing a custom out-of-memory processing engine, we analyzed an integrated human pancreatic islet atlas of 245,878 cells without forced data downsampling. We evaluated 37 genetically supported T2D candidate genes, quantifying cell-type relevance via a max-scaled Cell Relevance Score (CRS). Disease-associated transcriptional dynamics were subsequently incorporated using a Disease Relevance Score (DRS) based on heterogeneous expression shifts across normal, prediabetic, and T2D metabolic states. CELL-X successfully identified beta cells as the dominant disease-relevant cellular context and prioritized established causal genes, including SLC30A8, GLIS3, GCK, and TCF7L2. Validation against a 30-gene benchmark demonstrated exceptional target recovery and significant metabolic pathway enrichment. Furthermore, rigorous statistical null modeling confirmed this prioritization is driven by true biological variance rather than background transcriptomic noise. Ultimately, CELL-X provides a highly scalable, robust framework for generating biologically informed hypotheses in complex polygenic disease research.",
+      "authors": [
+        "Uddin, M. M.",
+        "Khan, S. M. Z. A.",
+        "Bomma Yadagiri, K."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "單細胞轉錄體學框架 CELL-X 優先排序第2型糖尿病風險基因的細胞類型與疾病狀態",
+      "summaryZh": "為解決 GWAS 鑑定第2型糖尿病位點後難以鎖定因果基因與相關細胞情境的瓶頸，研究團隊開發了 CELL-X 計算框架，系統性整合細緻定位的遺傳證據、高解析度單細胞轉錄體學與疾病進展動態。團隊以自訂的記憶體外處理引擎分析整合的人類胰島圖譜，共 245,878 個細胞且未強制降採樣，並針對 37 個具遺傳支持的 T2D 候選基因以最大化縮放的細胞相關性分數 CRS 量化細胞類型相關性。疾病相關轉錄動態則以疾病相關分數 DRS 衡量，依據正常、糖尿病前期與第2型糖尿病代謝狀態下的異質性表現變化。CELL-X 指出 β 細胞為主要疾病相關細胞情境，並優先排序了 SLC30A8、GLIS3、GCK 與 TCF7L2 等已建立的因果基因；對 30 基因基準的驗證顯示目標回收率高且代謝途徑富集顯著，統計空模型也支持此優先排序源於真實生物變異而非背景轉錄噪音。",
+      "topicTags": [
+        "single-cell",
+        "type-2-diabetes",
+        "genetics",
+        "computational-biology",
+        "pancreatic-islet"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.19.767173",
+      "title": "scPACE: A Personalized Autoencoder for Cell Evolution in Single-Cell Transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-20",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.19.767173v1",
+      "doi": "10.64898/2026.11.19.767173",
+      "abstract": "Single-cell studies increasingly profile large cohorts of individuals, measuring thousands of cells in each donor. These datasets contain information at two levels: variation among individual cells and among donors. Analyzing both levels requires methods that can learn cellular representations, infer cell and donor states, and account for cell types that may be missing in some donors. Existing methods partially address these tasks. We introduce scPACE, a hierarchical personalized variational autoencoder handling these tasks. scPACE learns a cell representation, a cell state, and then aggregates cells within each type of cell to infer a donor state. It also imputes missing cell types with confidence estimates. Across simulated cohorts and a developing mouse visual-cortex dataset, scPACE recovered held-out cell and donor states accurately while achieving efficient cell-type imputation and representation. scPACE provides a unified framework for learning phenotypes across cellular and donor scales in cohort-scale single-cell transcriptomics.",
+      "authors": [
+        "Bao, J.",
+        "Lai, H.-Y.",
+        "Cuoco, M. S.",
+        "van Velthoven, C. T. J.",
+        "Travaglini, K. J.",
+        "Gabitto, M. I."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "個人化自編碼器追蹤單細胞轉錄組中的細胞演化",
+      "summaryZh": "研究團隊提出 scPACE，一種階層式個人化變分自編碼器，用於處理單細胞轉錄組的群體資料。方法同時學習細胞表徵與細胞狀態，並在每個細胞類型內彙整細胞以推斷捐贈者狀態，同時對缺失的細胞類型進行插補並提供信心估計。作者指出現有方法僅部分處理細胞與捐贈者兩個層次的變異。模擬群體與發育中小鼠視覺皮質資料集的測試顯示，scPACE 能準確恢復被保留的細胞與捐贈者狀態，並達到有效的細胞類型插補與表徵。研究認為 scPACE 為群體規模單細胞轉錄組中跨細胞與捐贈者尺度的表型學習提供統一框架。",
+      "topicTags": [
+        "single-cell",
+        "variational-autoencoder",
+        "personalized-model",
+        "transcriptomics",
+        "cohort-analysis"
+      ]
+    },
+    {
+      "id": "10.1101/2024.11.22.624797",
+      "title": "Mapping whole-tissue spatial multi-omics at single-cell resolution with STEP",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-20",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.11.22.624797v2",
+      "doi": "10.1101/2024.11.22.624797",
+      "abstract": "Spatial omics technologies have revolutionized our ability to map transcriptomic, proteomic, or metabolomic profiles within tissue contexts. However, existing spatial multi-omics approaches emphasize clustering or domain identification from measured profiles, while a general framework for whole-slice mapping in measured and unmeasured areas at single-cell resolution across additional omics layers remains lacking. Here we introduce STEP, a computational framework that integrates probabilistic inference with deep learning for flexible integration of histology, spatially resolved transcriptomics (SRT), single-cell, and/or multi-omics data. We validated STEP's advantages across diverse applications. Furthermore, STEP enables tri-modal integration of Xenium, CITE-seq, and imaging mass cytometry to map transcriptome-wide gene expression and protein profiles from a small gene panel. Through quadra-modal integration of SRT, histology, single-nucleus RNA sequencing, and inCITE-seq, STEP reconstructs a 3D multi-omics brain cell atlas from six low-resolution SRT sections. Collectively, STEP provides a cost-effective tool for exploring spatial biology by integrating diverse, complementary modalities.",
+      "authors": [
+        "Hu, Z.",
+        "Zhu, Z.",
+        "Cai, L.",
+        "Zhan, Y.",
+        "Yan, X.",
+        "Wang, Z.",
+        "Chen, J.",
+        "Sun, B.",
+        "Jiang, S.",
+        "Du, S.",
+        "Wang, H.",
+        "Li, X.",
+        "Wang, F.",
+        "Wang, G.",
+        "Zou, Q.",
+        "Du, Y.",
+        "Yuan, Z.",
+        "Zhang, Y."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "spatial omics",
+        "multi-omics",
+        "Xenium",
+        "CITE-seq",
+        "biology",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "以 STEP 實現全切片單細胞解析度空間多體學映射",
+      "summaryZh": "研究團隊提出 STEP，一個結合機率推論與深度學習的計算框架，用於彈性整合組織學、空間解析轉錄體學、單細胞及／或多體學資料。作者指出現有空間多體學方法多著重於測量輪廓的聚類或區域辨識，而 STEP 旨在於測量與未測量區域進行全切片、單細胞解析度的跨體學映射。驗證顯示 STEP 在多樣應用中具優勢，並可進行 Xenium、CITE-seq 與影像質譜細胞術的三模態整合，從小基因 panel 映射全轉錄體基因表現與蛋白質輪廓。透過空間解析轉錄體學、組織學、單核 RNA 定序與 inCITE-seq 的四模態整合，STEP 能由六張低解析度 SRT 切片重建三維多體學腦細胞圖譜。整體而言，STEP 被描述為探索空間生物學的成本效益工具，可整合多元互補模態。",
+      "topicTags": [
+        "spatial-omics",
+        "single-cell",
+        "multi-omics",
+        "computational-biology",
+        "deep-learning"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.18.767479",
+      "title": "Spatial organization of a SPINK1-associated tumor-stromal ecosystem links metabolic remodeling to immune restriction in bladder cancer",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-20",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.18.767479v1",
+      "doi": "10.64898/2026.11.18.767479",
+      "abstract": "Spatially organized tumor-stromal interactions contribute to metabolic remodeling and immune suppression in bladder cancer (BLCA). Using spatial transcriptional programs to define single-cell states, we identified a niche comprising SPINK1-high epithelial cells (E2) and TPM2-high cancer-associated fibroblasts (CAFs) (C1). SPINK1 promoted tumor growth and myofibroblastic CAF programs, with EGFR and TGF-{beta} signaling implicated in tumor-CAF communication. Inferred metabolic reactions and spatial metabolite distributions supported a candidate circuit linking tumor-derived lactate to CAF oxidative metabolism and glutamine provision, followed by tumor glutamine utilization for reductive carboxylation and fatty acid synthesis. SPINK1 perturbation altered extracellular glutamine and lactate concentrations. Predicted chemokine interactions implicated C2/C3 CAFs in T cell recruitment, whereas the E2-C1 niche exhibited checkpoint and exhaustion-associated features. RHCG-positive tumor regions contained higher proportions of TOXCXCR4 cells among CD3 T cells, suggesting a possible association between ammonia handling and T cell dysfunction. In vivo, Spink1 loss attenuated tumor progression, increased cytotoxic CD8 T-cell infiltration, and enhanced tumor control during PD-1 blockade. These findings identify a spatially organized tumor-stromal niche associated with metabolic cooperation and immune restriction, supporting SPINK1 as a candidate therapeutic target in combination with immunotherapy.",
+      "authors": [
+        "Yu, Q.",
+        "Wu, Y.",
+        "Han, X.",
+        "Lu, Y.",
+        "Li, H.",
+        "Jiang, Y. D. D.",
+        "Zhou, J.",
+        "Li, Y.",
+        "Huang, H.",
+        "Chen, W.",
+        "Li, X.",
+        "Ye, F.",
+        "Zheng, L."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "SPINK1相關腫瘤-基質生態系統的空間組織將代謝重塑與膀胱癌中的免疫限制聯繫起來"
+    },
+    {
+      "id": "10.64898/2026.11.17.767133",
+      "title": "Spatial co-enrichment of immature myeloid and T-cell populations predicts survival in NPM1-mutant AML",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-20",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.17.767133v1",
+      "doi": "10.64898/2026.11.17.767133",
+      "abstract": "NPM1-mutant acute myeloid leukemia (AML) is the most common molecularly defined AML subtype. Outcomes vary considerably across co-mutational profiles, and the bone marrow (BM) microenvironment may shape treatment responses through immune cell interactions. Whether these interactions form spatially organized structures with independent prognostic relevance in the diagnostic BM is unknown. We used CO-Detection by indEXing (CODEX) with a 54-marker panel and MERFISH spatial transcriptomics to profile 67 NPM1-mutant AML patients at diagnosis and 38 age- and sex-matched normal BM (NBM) controls on tissue microarrays from archival FFPE samples, profiling 1,494,397 cells and annotating 27 cell types. Compared to NBM, NPM1-mutant AML showed striking architectural reorganization, including a loss of stroma association with adaptive immune cells and loss of NBM-specific mature myeloid and erythroid cellular neighborhoods. AML was characterized by expansion of phenotypically distinct immature myeloid (IM) populations with aberrant immunophenotypes, including CD11b+ VISTA+ and CD15+ subsets, alongside an expansion of CD8+ and PD1+ CD4+ T-cells. While cell type and neighborhood cluster frequencies showed limited prognostic associations, spatial context-dependent interactions were more informative. Both enrichment of CD11b+ IM in adaptive immune neighborhoods, and co-enrichment with CD8+ T-cells were adversely associated with overall survival. Spatial transcriptomics identified upregulated genes associated with monocytic AML in CD11b+ IM cells and candidate immunosuppressive ligand-receptor interactions, including TGFB1-TGFBR1 and JAG1-NOTCH1, with T-cells. These findings indicate that spatial context of suppressor-immune cell interactions carries prognostic information not captured by genomics or cell type frequencies alone and is amenable to translation using routine diagnostic FFPE samples.",
+      "authors": [
+        "Schroeder, J. C.",
+        "Zeis, P.",
+        "Saeed, B. R.",
+        "Zidane, M.",
+        "Li, L.",
+        "Makky, A.",
+        "Rochwarger, A.",
+        "Beschorner, C.",
+        "Zhao, J.",
+        "Palmowski, Y. A.",
+        "Mix, L.",
+        "Bethge, W. A.",
+        "Lengerke, C.",
+        "Schuerch, C. M."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "MERFISH"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "空間共富集未成熟骨髓細胞與 T 細胞群可預測 NPM1 突變型急性 myeloid 白血病的存活率",
+      "summaryZh": "本研究使用 CODEX 與 MERFISH 空間轉錄體學技術，分析 NPM1 突變型急性 myeloid 白血病（AML）患者與正常骨髓對照組的組織微陣列，探討骨髓微環境的空間組織。結果顯示，NPM1 突變型 AML 呈現顯著的組織結構重組，並擴增了具有異常免疫表型的未成熟骨髓（IM）細胞與 T 細胞群。空間脈絡依賴的互動分析發現，CD11b+ IM 細胞在適應性免疫鄰近區域的富集以及與 CD8+ T 細胞的共富集，皆與整體存活率呈現不良的預後關聯。這些發現指出，免疫抑制性細胞互動的空間脈絡帶有獨立於基因體或細胞型態頻率之外的預後資訊。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "aml",
+        "tumor-microenvironment",
+        "immunology",
+        "prognosis"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.19.767941",
+      "title": "Spatial single cell multi-omics identifies divergent melanoma-cell states associated with metastatic outcomes in thin primary melanomas",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-20",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.19.767941v1",
+      "doi": "10.64898/2026.11.19.767941",
+      "abstract": "Thin melanomas (Breslow thickness [&le;]1 mm) generally have favorable outcomes, yet some metastasise, highlighting the need for biomarkers of progression. Here, we combined same-section single-cell spatial transcriptomics and proteomics to identify seven melanoma-cell states organized along two inferred trajectories sharing a common trunk, extending from an in situ epithelial-adjacent state through developmental stress to melanocytic differentiation before diverging into two lineages. Lineage 1 progressed through an IFN-associated stress intermediate state towards mesenchymal-invasive cells enriched in metastasizing tumors and associated with immune-hot neighborhoods, extracellular-matrix remodeling and angiogenesis, potentially supporting vascular mimicry and metastatic dissemination. Lineage 2 terminated in cohesive nevus-like cells retaining melanocytic features within relatively immune-cold neighborhoods and enriched in non-metastasizing tumors. We confirmed these associations using H&E-inferred spatial transcriptomics in an international multicentric cohort and independent bulk transcriptomic datasets in primary melanomas, linking spatially organized melanoma-cell programs to metastatic outcome and identifying potential biomarkers of progression in thin melanoma.",
+      "authors": [
+        "Antoranz, A.",
+        "Andhari, M. D.",
+        "Chui, J.",
+        "Dubroja, N.",
+        "Nazari, P.",
+        "Vandermeulen, N.",
+        "Vandereyken, K.",
+        "Nsengimana, J.",
+        "Güvenc, C.",
+        "Demaerel, P. G.",
+        "Verstegen, D.",
+        "Leeman, A.",
+        "Pozniak, J.",
+        "Massi, D.",
+        "De Giorgi, V.",
+        "Szumera-Cieckiewicz, A.",
+        "Rutkowski, P.",
+        "Teterycz, P.",
+        "Mooyaart, A.",
+        "Valpione, S.",
+        "Boecxstaens, V.",
+        "Voet, T.",
+        "Govaere, O.",
+        "Bosisio, F."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "spatial transcriptomics",
+        "multi-omics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "空間單細胞多體學鑑定與薄原發性黑色素瘤轉移結果相關的分歧黑色素瘤細胞狀態"
+    },
+    {
+      "id": "10.1038/s41467-026-79493-7",
+      "title": "SMC5/6 safeguards chromatin compartments and TAD boundaries for genome stability",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79493-7",
+      "doi": "10.1038/s41467-026-79493-7",
+      "abstract": "The SMC5/6 complex protects genome stability, but how it shapes 3D genome folding is unclear. Here, the authors show that SMC5/6 loss in human cells alters chromatin compartments and activates inflammatory and cancer-related genes, changes that are uncoupled from DNA damage.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [
+        "cancer",
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "SMC5/6 維護染色質區隔與 TAD 邊界以維持基因體穩定",
+      "summaryZh": "SMC5/6 複合體已知可保護基因體穩定，但其如何影響三維基因體折疊尚不清楚。本文作者顯示，在人類細胞中失去 SMC5/6 會改變染色質區隔。該改變伴隨發炎相關基因與癌症相關基因的活化。這些變化與 DNA 損傷脫鉤，顯示 SMC5/6 對染色質結構的調控作用獨立於其傳統的基因體穩定功能。",
+      "topicTags": [
+        "genome-stability",
+        "chromatin",
+        "3d-genome",
+        "smc5-6",
+        "topologically-associating-domains"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79418-4",
+      "title": "Linking human sources to antibiotic resistance genes in global surface waters",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79418-4",
+      "doi": "10.1038/s41467-026-79418-4",
+      "abstract": "In this study, the authors used measurement data combined with modeling and machine learning to estimate global human generation of five individual ARGs and intI1, discharge, and surface-water abundance, highlighting hotspots of per-capita generation and total abundance.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "連結人類來源與全球地表水中的抗生素抗藥基因",
+      "summaryZh": "本研究結合測量數據、模型與機器學習，估算全球人類產生五種個別抗生素抗藥基因（ARGs）與 intI1、排放量及地表水中的豐度。研究指出人為產生與排放的熱點，並呈現人均產生量與總豐度的分布差異。結果將人類來源與全球地表水中的抗藥基因連結起來。研究發表於 Nature Communications。",
+      "topicTags": [
+        "antibiotic-resistance",
+        "surface-water",
+        "global-modeling",
+        "machine-learning"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-78986-9",
+      "title": "Double-membrane-spanning RNA export pores are a conserved feature in nidovirus replication organelles",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-78986-9",
+      "doi": "10.1038/s41467-026-78986-9",
+      "abstract": "This study shows that arteriviruses, like coronaviruses, form pore complexes that span their double-membrane replication organelles, pointing to a conserved nidovirus strategy that links the synthesis, export and packaging of viral RNA.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "雙膜跨膜 RNA 轉運孔為尼多病毒複製器官的保守特徵",
+      "summaryZh": "本研究指出，動脈炎病毒與冠狀病毒相似，會在雙膜複製器官上形成跨膜的孔蛋白複合體。該發現顯示此類孔結構在尼多病毒中具有保守性。研究將此孔結構與病毒 RNA 的合成、輸出及包裝連結起來，暗示這是一種共通的尼多病毒策略。",
+      "topicTags": [
+        "virology",
+        "nidovirus",
+        "rna-export",
+        "replication-organelles",
+        "membrane-pores"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79609-z",
+      "title": "Wnk1 drives CD4+ T cell lineage fate determination and bone marrow homing in a mouse model of retinal autoimmune disease",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-20T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79609-z",
+      "doi": "10.1038/s41467-026-79609-z",
+      "abstract": "CD4 T cells are central to the pathogenesis of uveitis and related inflammatory responses by promoting myeloid cell infiltration. Here, by leveraging scRNA-seq and a mouse model of experimental autoimmune uveitis, the authors identify the kinase Wnk1 as a key regulator of CD4 T cell differentiation, migration and metabolic reprogramming and as a coordinator of T cell-bone marrow crosstalk that contributes to myeloid-biased hematopoiesis.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [
+        "scRNA-seq"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "Wnk1 調控 CD4+ T 細胞分化與骨髓歸巢",
+      "summaryZh": "本研究利用 scRNA-seq 與小鼠實驗性自體免疫葡萄膜炎模型，探討 CD4 T 細胞在葡萄膜炎病理中的作用。作者發現激酶 Wnk1 是 CD4 T 細胞分化、遷移與代謝重編程的關鍵調控因子。研究指出 Wnk1 協調 T 細胞與骨髓的交互作用，並參與髓系偏向的造血過程。該發現連結了 T 細胞調控與骨髓造血偏向在自體免疫視網膜疾病模型中的關聯。",
+      "topicTags": [
+        "cd4-t-cells",
+        "autoimmune-uveitis",
+        "wnk1-kinase",
+        "bone-marrow",
+        "single-cell-rna-seq"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 34,
+      "passedByScope": 14,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 20,
+      "keywordFallbackYes": 5,
+      "keywordFallbackNo": 15,
+      "included": 19,
+      "excluded": 15
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b"
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 11,
+      "llmTagged": 11,
+      "llmLineA": 2,
+      "llmLineB": 9,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 18,
+      "candidates": 18,
+      "featured": 12,
+      "overflow": 6,
+      "lineA": 2,
+      "lineB": 9,
+      "preprint": 7,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 8,
+      "featuredPreprint": 4,
+      "overflowLineA": 2,
+      "overflowLineB": 1,
+      "overflowPreprint": 3
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 12,
+      "primarySucceeded": 9,
+      "fallbackSucceeded": 3,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 6,
+      "llmTranslated": 6,
+      "primarySucceeded": 6,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 11
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 9
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "observed": [
+            "gemini-3.5-flash-lite"
+          ],
+          "succeeded": 3
+        }
+      },
+      "translate": {
+        "requested": 6,
+        "succeeded": 6,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        },
+        "primarySucceeded": 6,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03680-1",
+        "title": "How AI is affecting science careers",
+        "journal": "Nature",
+        "publishedDate": "2026-11-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03680-1",
+        "doi": "10.1038/d41586-026-03680-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03751-3",
+        "title": "Lifting weights reduces muscle loss from obesity drugs",
+        "journal": "Nature",
+        "publishedDate": "2026-11-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03751-3",
+        "doi": "10.1038/d41586-026-03751-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03806-5",
+        "title": "Briefing Chat: Voyager 1 is now one ‘light day’ from Earth — setting a cosmic record",
+        "journal": "Nature",
+        "publishedDate": "2026-11-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03806-5",
+        "doi": "10.1038/d41586-026-03806-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03776-8",
+        "title": "Fraud helps little fire ants to survive and conquer",
+        "journal": "Nature",
+        "publishedDate": "2026-11-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03776-8",
+        "doi": "10.1038/d41586-026-03776-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03590-2",
+        "title": "‘I had felt overconfident’: senior scientists reveal mistakes that aided discovery",
+        "journal": "Nature",
+        "publishedDate": "2026-11-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03590-2",
+        "doi": "10.1038/d41586-026-03590-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03805-6",
+        "title": "‘Incredibly frustrating’: prestigious fellowship applications close in just 21 hours",
+        "journal": "Nature",
+        "publishedDate": "2026-11-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03805-6",
+        "doi": "10.1038/d41586-026-03805-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03787-5",
+        "title": "US science academy urges journals to fix errors more quickly",
+        "journal": "Nature",
+        "publishedDate": "2026-11-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03787-5",
+        "doi": "10.1038/d41586-026-03787-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03519-9",
+        "title": "Ruminations on a last movement",
+        "journal": "Nature",
+        "publishedDate": "2026-11-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03519-9",
+        "doi": "10.1038/d41586-026-03519-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03790-w",
+        "title": "Claude, find me a planet: amateur astronomers are using AI with mixed results",
+        "journal": "Nature",
+        "publishedDate": "2026-11-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03790-w",
+        "doi": "10.1038/d41586-026-03790-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03465-6",
+        "title": "How to turn impostor syndrome into a superpower",
+        "journal": "Nature",
+        "publishedDate": "2026-11-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03465-6",
+        "doi": "10.1038/d41586-026-03465-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03811-8",
+        "title": "These gaps in weather data affect forecasts everywhere: plugging them is not charity",
+        "journal": "Nature",
+        "publishedDate": "2026-11-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03811-8",
+        "doi": "10.1038/d41586-026-03811-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79649-5",
+        "title": "Chemical upcycling of mixed polyolefins via rapid C–H nitration",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79649-5",
+        "doi": "10.1038/s41467-026-79649-5",
+        "abstract": "Post-polymerization modification provides a route to upcycle polyolefin waste, but most current systems have long reaction times and are substrate specific. Here, the authors report the rapid C-H nitration of various polyolefins with high selectivity and functionalisation degrees, forming functionalised polyolefins with enhanced tensile and adhesive properties.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79779-w",
+        "title": "Optical observation of ultrafast carrier separation in InGaN photocatalyst nanostructures",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79779-w",
+        "doi": "10.1038/s41467-026-79779-w",
+        "abstract": "The authors show that ultrafast carrier separation causes the rapid photoluminescence decay in nanostructured InGaN photocatalysts from time resolved photoluminescence and differential reflectance spectroscopy supported by numerical modelling.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79576-5",
+        "title": "High-κ bismuth molybdate single-crystalline dielectric for high-temperature two-dimensional transistors",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79576-5",
+        "doi": "10.1038/s41467-026-79576-5",
+        "abstract": "High temperature stability is an important requirement for future electronic circuits based on 2D semiconductors. Here, the authors report the synthesis of high-κ (54.2) Bi2MoO6 single-crystalline nanosheets and their application as gate dielectric for 2D MoS2 transistors, showing good thermal stability of the devices up to 500 K.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79477-7",
+        "title": "Opposite migrations of Pacific and Atlantic tropical cyclones during the Medieval Warm Period",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-20T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79477-7",
+        "doi": "10.1038/s41467-026-79477-7",
+        "abstract": "During the Medieval Warm Period, natural warming drove tropical cyclones poleward in the western North Pacific but equatorward in the North Atlantic. In the modern warm period, both basins shift poleward, likely due to anthropogenic warming.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    }
+  ]
+}
