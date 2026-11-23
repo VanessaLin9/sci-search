@@ -1,0 +1,1395 @@
+{
+  "reportDate": "2026-11-23",
+  "generatedAt": "2026-11-23T22:26:09.760Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03406-1",
+      "title": "Tracking individual birds by their song",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03406-1",
+      "doi": "10.1038/s41592-026-03406-1",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "以鳥鳴追蹤個別鳥類"
+    },
+    {
+      "id": "10.1038/s41588-026-02842-1",
+      "title": "A draft mouse pangenome graph reference",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02842-1",
+      "doi": "10.1038/s41588-026-02842-1",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "genome"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "小鼠泛基因組圖譜草案參考"
+    },
+    {
+      "id": "10.1038/s41559-026-03243-7",
+      "title": "Spongolivella ellipsoides",
+      "journal": "Nature Ecology & Evolution",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41559-026-03243-7",
+      "doi": "10.1038/s41559-026-03243-7",
+      "abstract": "Sophie Westacott was not looking for this species of radiolarian, but it was the one she found.",
+      "sourceId": "nature-ecology-evolution",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41587-026-03284-0",
+      "title": "A unified framework for scalable differential testing for spatial omics",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03284-0",
+      "doi": "10.1038/s41587-026-03284-0",
+      "abstract": "A scalable framework enables cell-type-resolved analysis of spatial omics data.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "空間組學可擴展差異檢測的統一框架",
+      "summaryZh": "該研究提出一個統一框架，用於空間組學的可擴展差異檢測。框架可實現空間組學數據的細胞類型解析分析。",
+      "topicTags": [
+        "spatial-omics",
+        "differential-testing",
+        "computational-biology",
+        "bioinformatics"
+      ]
+    },
+    {
+      "id": "10.1038/s41556-026-02110-8",
+      "title": "A prime-editing-based strategy for pooled protein tagging and subcellular localization mapping",
+      "journal": "Nature Cell Biology",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41556-026-02110-8",
+      "doi": "10.1038/s41556-026-02110-8",
+      "sourceId": "nature-cell-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "基於 prime editing 的群體蛋白標記與亞細胞定位圖譜策略"
+    },
+    {
+      "id": "10.1038/s41593-026-02523-6",
+      "title": "A shared meaning component across languages in the human brain",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02523-6",
+      "doi": "10.1038/s41593-026-02523-6",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": false,
+      "titleZh": "人類大腦中跨語言共享的意義成分"
+    },
+    {
+      "id": "10.1038/s41593-026-02517-4",
+      "title": "Presynaptic functional organization by phase separation",
+      "journal": "Nature Neuroscience",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41593-026-02517-4",
+      "doi": "10.1038/s41593-026-02517-4",
+      "abstract": "This Review by Ogunmowo and Watanabe summarizes recent findings in the field showing how presynaptic functions are enabled, organized and coordinated by phase separation and discusses future directions in this branch of neuroscience.",
+      "sourceId": "nature-neuroscience",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "neuroscience"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "相分離調控突觸前功能組織",
+      "summaryZh": "Ogunmowo 與 Watanabe 的這篇綜述整理近期研究成果，說明突觸前功能如何透過相分離得以實現、組織並協調。文章聚焦於相分離在突觸前區域的角色，並對該領域的未來研究方向進行討論。此綜述刊載於 Nature Neuroscience，屬於神經科學領域的回顧性整理。",
+      "topicTags": [
+        "phase-separation",
+        "presynaptic",
+        "neuroscience",
+        "review"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02733-x",
+      "title": "Diet leaves a memory",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02733-x",
+      "doi": "10.1038/s41590-026-02733-x",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41590-026-02734-w",
+      "title": "Infection thresholds",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02734-w",
+      "doi": "10.1038/s41590-026-02734-w",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41590-026-02661-w",
+      "title": "Beyond antibodies: engineering organ-scale immunity",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02661-w",
+      "doi": "10.1038/s41590-026-02661-w",
+      "abstract": "Vaccines do more than induce antibodies and lymphocytes. Emerging evidence suggests that they can establish tissue-embedded organ-scale immunity, termed integrated organ immunity, that provides broad protection against diverse pathogens and reveals a broader landscape of protective immune states.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "超越抗體：打造器官尺度免疫",
+      "summaryZh": "該論文指出疫苗的作用不僅限於誘導抗體與淋巴細胞。研究提出新證據顯示疫苗可建立組織嵌入式的器官尺度免疫，被稱為 integrated organ immunity。作者認為此類免疫能提供對多種病原體的廣泛保護，並揭示更廣闊的保護性免疫狀態樣貌。",
+      "topicTags": [
+        "vaccines",
+        "organ-immunity",
+        "immunology",
+        "integrated-immunity"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02666-5",
+      "title": "Africa’s vaccine manufacturing ambition from sovereignty to sustainable resilience",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02666-5",
+      "doi": "10.1038/s41590-026-02666-5",
+      "abstract": "Inequitable access to life-saving vaccines, including COVID-19 vaccines, exposed Africa’s vulnerability to external supply dependence. Africa should build resilience through affordable routine procurement while strategically institutionalizing adaptable platforms, research and development, outbreak-response capacity and regulatory expertise.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "非洲疫苗製造雄心：從主權到永續韌性",
+      "summaryZh": "本文指出，不平等的疫苗取得，包括COVID-19疫苗，暴露了非洲對外部供應依賴的脆弱性。作者認為非洲應透過可負擔的常規採購建立韌性。文中建議策略性地制度化可適應平台、研究與開發、疫情應對能力以及監管專業。這些方向被提出作為提升疫苗製造自主與永續韌性的途徑。",
+      "topicTags": [
+        "vaccine-manufacturing",
+        "vaccine-access",
+        "global-health",
+        "health-equity",
+        "africa"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02720-2",
+      "title": "Exploiting immunoregulatory functions of ILC2s for CAR therapy",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02720-2",
+      "doi": "10.1038/s41590-026-02720-2",
+      "abstract": "In addition to promoting type 2 immunity, group 2 innate lymphoid cells (ILC2s) also have potent immunoregulatory capacity; this underappreciated function of ILC2s is now being exploited as a potential ‘CAR ILC2’ therapy for the treatment of autoimmune disease.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "利用 ILC2 的免疫調節功能發展 CAR 治療",
+      "summaryZh": "本文指出第2型先天性淋巴球細胞 ILC2 除促進第2型免疫外，也具有強大的免疫調節能力。該研究強調此項功能過去較受忽略。作者說明此免疫調節特性正被探索作為潛在的 CAR ILC2 治療策略。該策略的應用方向被指向自體免疫疾病的治療。",
+      "topicTags": [
+        "innate-lymphoid-cells",
+        "car-therapy",
+        "immunoregulation",
+        "autoimmunity"
+      ]
+    },
+    {
+      "id": "10.1038/s41590-026-02725-x",
+      "title": "Vaccinology 2.0",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02725-x",
+      "doi": "10.1038/s41590-026-02725-x",
+      "abstract": "The COVID-19 pandemic highlighted the success of vaccine development, but more improvements in vaccine design, equity, manufacturing and changes in public health policy are warranted.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41590-026-02688-z",
+      "title": "New horizons of mRNA vaccines",
+      "journal": "Nature Immunology",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41590-026-02688-z",
+      "doi": "10.1038/s41590-026-02688-z",
+      "abstract": "This Comment highlights the innovations behind mRNA vaccine success, reviews recent advances and discusses limitations across RNA vaccine platforms and potential strategies to overcome them.",
+      "sourceId": "nature-immunology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "mRNA 疫苗的新展望",
+      "summaryZh": "這篇評論聚焦於 mRNA 疫苗成功的創新基礎。文章回顧了近期在 RNA 疫苗平台上的進展。作者也討論了各 RNA 疫苗平台的限制，並提出可能克服這些限制的策略。",
+      "topicTags": [
+        "mrna-vaccine",
+        "vaccines",
+        "immunology",
+        "review"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004119",
+      "title": "When should adaptation arise from a polygenic response versus few large-effect changes?",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-11-23T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004119",
+      "doi": "10.1371/journal.pbio.3004119",
+      "abstract": "When will adaptation involve a few genetic changes of large effect versus a polygenic response? There are compelling reasons to expect polygenic adaptation to be common, yet direct evidence is lacking. Conversely, there are hundreds of examples of large-effect adaptations across species, but it is unclear whether they occur frequently within any given species. These different lines of evidence are hard to synthesize, in part due to the lack of theory that relates them. To address this gap, we frame the question in terms of the properties of an adaptive trait. We ask how the genetic basis of adaptation depends on key aspects of genetic variation in the trait and on the degree to which its selection pressures have changed. To this end, we consider a quantitative trait subject to stabilizing selection and model its response when a population at mutation–selection–drift balance experiences a sudden shift in the trait optimum. Using this model, we delimit how the contributions of large-effect and polygenic changes to adaptation depend on the genetics and ecology of adaptive traits, as well as on other salient factors. Thus, we formulate testable predictions for when different modes of adaptation are expected.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.11.19.767932",
+      "title": "Physical constraints on the social-genetic dynamics of mtDNA inside plant mitochondria",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.19.767932v1",
+      "doi": "10.64898/2026.11.19.767932",
+      "abstract": "Mitochondrial DNA (mtDNA) encodes essential cellular machinery and is contained within mitochondria. This physical containment shapes the genetic dynamics of mtDNA populations in the cell. In plants (and other non-bilaterians), mtDNA colocalisation is essential for recombination, while other cellular priorities may favour mtDNA spacing through the cell. Given possible physical interactions between mtDNA and the inner mitochondrial membrane and its cristae, it is not clear how readily or often this colocalisation may occur. Only limited, indirect evidence exists supporting the capacity for plant mtDNAs to physically colocalise. Here, we survey evidence from recent and new single-cell timelapse microscopy to quantitatively characterise the motion of mtDNA nucleoids inside vegetative plant cells. We combine biophysical arguments with new microscopy data and spatial statistics to demonstrate the subdiffusive but not internally static nature of nucleoids, demonstrating that they are enriched at the termini of elongated mitochondria and well-spaced through the cell but capable of colocalisation. We also describe other modes of physical motion that may impact the genetic dynamics of mtDNA populations, and discuss the implication of this physical behaviour for cytoplasmic genetics.",
+      "authors": [
+        "Chustecki, J. M.",
+        "Summers, A. J.",
+        "Wang, J.",
+        "Dickinson, H.",
+        "Johnston, I."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "植物粒線體內 mtDNA 社會-遺傳動態的物理限制"
+    },
+    {
+      "id": "10.64898/2026.11.20.767802",
+      "title": "IκBα loss impairs mitochondrial homeostasis and primes cells for senescence",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.20.767802v1",
+      "doi": "10.64898/2026.11.20.767802",
+      "abstract": "Inflammatory signaling and mitochondrial dysfunction are hallmarks of cellular senescence, yet how these processes are coordinated remains incompletely understood. Here, we identify I{kappa}B, a well-known inhibitor of NF-{kappa}B, as a regulatory factor that links mitochondrial homeostasis to stress-induced cell death and senescence. Knockdown (KD) of I{kappa}B did not by itself induce a fully established senescent state but instead generated a senescence-primed state characterized by cellular hypertrophy, reduced DNA synthesis, metabolic remodeling, and mitochondrial dysfunction. Time-course proteomic and phosphoproteomic analyses revealed a selective reduction of mitochondrial inner membrane-associated proteins in I{kappa}B KD cells and attenuated early signaling responses to TNF stimulation, respectively. Single-cell transcriptomic analysis further indicated that a smaller fraction of I{kappa}B KD cells was predicted to transition toward a pro-apoptotic state. Among canonical I{kappa}B family members, induction of the senescence-associated secretory phenotype (SASP) was specific to I{kappa}B KD, even though mitochondrial dysfunction was more pronounced in I{kappa}B{beta} and I{kappa}B{varepsilon} KD. These findings suggest that I{kappa}B influences the balance between post-stress cellular senescence and cell death through mechanisms that include maintaining mitochondrial homeostasis.",
+      "authors": [
+        "Matsuda, K.",
+        "Kono, T.",
+        "Hyun, A.",
+        "Hibino, K.",
+        "Soeda, S.",
+        "Tabata, S.",
+        "Tiwari, S.",
+        "Goldenbogen, B.",
+        "Takahashi, M.",
+        "Izumi, Y.",
+        "Bamba, T.",
+        "Adachi, J.",
+        "Hochegger, H.",
+        "Wolf, J.",
+        "Okada, M."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "IκBα 缺失損害粒線體穩態並使細胞傾向衰老"
+    },
+    {
+      "id": "10.64898/2026.11.20.767850",
+      "title": "β-tubulin tyrosination tunes glutamylation and parasite motility in Trypanosoma brucei",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.20.767850v1",
+      "doi": "10.64898/2026.11.20.767850",
+      "abstract": "Post-translational modifications of tubulin diversify microtubule function by generating distinct molecular states collectively known as the tubulin code. Whereas the reversible tyrosination cycle is a conserved feature of -tubulin throughout eukaryotes, in trypanosomatid parasites, {beta}-tubulin also carries a genetically encoded C-terminal tyrosine, which is subjected to detyrosination and whose biological role remains unknown. Here, we show that {beta}-tubulin tyrosination is rare across eukaryotes but highly conserved across trypanosomatids. Using genome editing to uncouple the tyrosination states of - and {beta}-tubulin in Trypanosoma brucei, we demonstrate that the {beta}-tubulin C-terminal tyrosine independently contributes to the regulation of microtubule glutamylation. Rather than depending on - or {beta}-tubulin alone, glutamylation levels reflect the combined tyrosination states of both subunits. Strikingly, either increasing or reducing {beta}-tubulin tyrosination produces opposing changes in parasite morphometry, single-cell motility and collective migration. Together, these findings establish {beta}-tubulin (de)tyrosination as an evolutionarily conserved component of the trypanosomatid tubulin code that contributes to microtubule regulation and function in T. brucei, extending the significance of tubulin tyrosination beyond the canonical -tubulin tyrosination cycle.",
+      "authors": [
+        "VINCENT, J.",
+        "VELTZ, N.",
+        "CROBU, L.",
+        "CORRALES, R. M.",
+        "TUYISHIME, A.",
+        "GIRARD-BLANC, C.",
+        "MONERON, G.",
+        "URBACH, S.",
+        "STERKERS, Y.",
+        "ROGOWSKI, K.",
+        "BONNEFOY, S.",
+        "BASTIN, P.",
+        "LEVEQUE, M. F."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "evolution",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "β-微管蛋白酪氨酸化調控布氏錐蟲的麩醯胺化與寄生蟲運動性"
+    },
+    {
+      "id": "10.64898/2026.11.20.767944",
+      "title": "Joint Estimation of Mother and Daughter Protein Regulatory Networks Quantifies Inheritance in Yeast Lineages",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.20.767944v1",
+      "doi": "10.64898/2026.11.20.767944",
+      "abstract": "Live-cell imaging tracks multiple protein levels within individual cells across divisions in real time, enabling direct measurement of how regulatory dynamics are inherited by a daughter cell from her mother. This technology presents a unique opportunity to directly observe longitudinal dynamics, in contrast to single-cell RNA sequencing, which can only measure cells cross-sectionally. However, there is a lack of computational methods for analyzing live-cell imaging data. Existing frameworks based on ordinary differential equations (ODEs) estimate networks from individual time series, but adapting them to mother-daughter pairs poses a dilemma: pooling both cells forces complete inheritance, while fitting each cell separately starves the short daughter trajectory of timepoints needed for reliable estimation. To address this gap, we develop PRNODE (Protein Regulatory Networks via ODEs), which models each cell's network as a deviation from a shared regulatory scaffold and estimates the scaffold and both deviations jointly under a fused group-lasso penalty. The mother's longer time series thereby supports the daughter's estimate, while allowing the two networks to differ wherever the data demand it. We then propose a novel measure of inheritance based on comparing the rate of change of protein levels between the mother's and daughter's networks. Across simulation studies, we find that PRNODE outperforms existing ODE estimation methods in recovering the networks of daughter cells and in estimating inheritance. Finally, we apply PRNODE to many mother-daughter pairs of Saccharomyces cerevisiae observed over a 9-hour period at 12-minute intervals. Many estimated networks show a negative feedback loop between the cell-cycle inhibitor Whi5 and the cyclin Clb2, which together sustain cell-cycle oscillations. We also find that the measured inheritance tracks the number of regulatory edges a daughter shares with her mother with the same sign, more than the presence of any single edge. PRNODE is available as an R package at https://github.com/shirmath/LIC_methods.",
+      "authors": [
+        "Mathur, S.",
+        "Wu, W.",
+        "Kennedy, T.",
+        "Arguello-Miranda, O.",
+        "Lin, K. Z."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "母細胞與子細胞蛋白調控網絡的聯合估計量化酵母譜系中的遺傳"
+    },
+    {
+      "id": "10.64898/2026.11.20.768136",
+      "title": "Population-level learning of non-additive effects enables accurate and efficient prediction of combinatorial perturbation responses",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.20.768136v1",
+      "doi": "10.64898/2026.11.20.768136",
+      "abstract": "Combinatorial perturbations are widely used to study genetic interactions and to develop drug combinations, but the number of possible combinations grows quadratically with the number of perturbations, and only a small fraction can be measured in a screen experiment. Despite their growing sophistication, deep-learning and foundation models often fail to outperform a simple additive baseline based on measured single-perturbation responses. This suggests a simpler approach that builds on these measurements and directly learns deviations from additivity at the population level. We therefore developed GAIN, a lightweight model that implements these principles by predicting the pseudobulk response to a combination as the sum of its two single-perturbation responses and a learned interaction term. Across three single-cell datasets of genetic and drug combinations, GAIN corrected deviations from additivity and outperformed the additive model and cell-level methods across generalization settings and metrics, while training 3- to 64-fold faster. Applied to a combinatorial CRISPR screen of leukemia differentiation regulators, GAIN revealed synergy between key regulators of the differentiation block and genes that restrain differentiation but have little effect alone. It also revealed dampening by the histone chaperone FACT, which supports the induction of differentiation genes. These results establish population-level modeling of the deviation from additivity as a simple, accurate and scalable approach to predicting combination responses.",
+      "authors": [
+        "An, s.",
+        "Gong, Q.",
+        "Cao, K."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "群體層級學習非加性效應可實現組合干擾反應的準確且高效預測"
+    },
+    {
+      "id": "10.64898/2026.11.21.768276",
+      "title": "Cortical neurons accumulate point mutations at similar rates in mice and humans",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.21.768276v1",
+      "doi": "10.64898/2026.11.21.768276",
+      "abstract": "Across vertebrate species, it has long been known that germline mutation rates per year are inversely proportional to reproductive ages. A similar pattern was recently reported in mammals for mutations in colonic epithelium, leading to speculation that this inter-species scaling may apply to many cell types. We tested whether a similar relationship holds in postmitotic cells, by estimating point mutation rates in mouse cortical neurons from PacBio HiFi circular consensus sequencing data. Our analysis revealed a significant effect of age on the number of point mutations, of 25.9 mutations per diploid genome per year (95% CI: [17.7, 34.1]). This rate is comparable to the one reported for human neurons, indicating that somatic rates need not scale with lifespan. Our findings further demonstrate that a readily available sequencing method can be used to reliably identify somatic mutations at single-cell resolution.",
+      "authors": [
+        "Saeidi, M.",
+        "Yoo, J.",
+        "Stolyarova, A.",
+        "Polleux, F.",
+        "Przeworski, M.",
+        "Spisak, N."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "皮質神經元在小鼠與人類中以相似速率累積點突變"
+    },
+    {
+      "id": "10.64898/2026.06.19.732250",
+      "title": "Statistical tests for bivariate spatial association across multi-omics data with disjoint coordinates",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.06.19.732250v3",
+      "doi": "10.64898/2026.06.19.732250",
+      "abstract": "Spatial biology has entered a new era of multimodal profiling, with multiple, high-dimensional spatial omics types being measured on consecutive tissue slices, or co-assayed on the same slice. Interest then lies in statistical testing for spatial association between the features of the different modalities, to gain insight in biological processes. One major challenge is the multitude of bivariate combinations, leading to high computational demands. Another difficulty is the difference in spatial resolution between technologies, implying no one-to-one matching between the measurement spots of the different modalities, even after alignment. As a result, common statistical measures such as joint distributions and correlations are not defined, and tests need to rely on spatial vicinity only. Moreover, we argue that many existing bivariate association tests address an inappropriate null hypothesis, or make inappropriate assumptions, both implying absence of spatial autocorrelation in any of the features and leading to misleading conclusions. As a remedy, we modify tests for the detection of spatially variable genes (Moran's I, Gaussian processes and generalized additive models) to derive bivariate spatial association tests across modalities with non-overlapping coordinate sets, and provide variance estimators that do account for spatial autocorrelation. We develop inference methods for single sections as well as for replicated experiments with multiple sections, and compare their performance in nonparametric and parametric simulations. Finally, we apply the newly developed methods to two co-assayed spatial transcriptomics and metabolomics datasets from mouse and human. The full suite of tests is available from BioConductor as the R-package sbivar.",
+      "authors": [
+        "Hawinkel, S.",
+        "Hu, W.",
+        "Velten, B.",
+        "Maere, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "spatial omics",
+        "spatial resolution",
+        "multi-omics",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "針對座標不重疊的多體學資料之雙變量空間關聯統計檢定"
+    },
+    {
+      "id": "10.64898/2026.11.20.768224",
+      "title": "The IGVF Catalog Knowledge Graph",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.20.768224v1",
+      "doi": "10.64898/2026.11.20.768224",
+      "abstract": "The Impact of Genomic Variation on Function (IGVF) consortium is systematically characterizing how genomic variation influences regulatory elements, gene expression, and human phenotypes through thousands of experimental mapping and perturbation datasets alongside predictive models. To synthesize these diverse results into quantitative relationships and situate them within established biological knowledge, we developed the IGVF Catalog, a large-scale knowledge graph. Implemented in ArangoDB using schema-validated JSON records. Version 1.3 encompasses nearly 3 billion nodes across 14 entity types (including variants, coding variants, genomic elements, genes, transcripts, proteins, pathways, and ontology graphs for biosamples and phenotypes) connected by more than 8.6 billion edges across 31 relationship types. Edges encode statistical significance, effect sizes, source provenance, and biological context via ontology-linked hyperedges. The Catalog integrates 657 IGVF datasets spanning non-coding reporter and CRISPR perturbation screens (MPRA, STARR-seq, Perturb-seq), coding variant assays (VAMP-seq, SGE, MAVE, DUAL-IPA), and predictive models (scE2G, SEMVAR, cV2F, TLAND, and BlueSTARR), unified with extensive public context including GENCODE annotations, FAVOR and dbSNP variants, TopLD linkage disequilibrium, GWAS, QTLs, and protein interactions. Users can interrogate the Catalog through a web portal (https://igvf.catalog.org) Python and R clients, an OpenAPI-documented API featuring 86 endpoints supporting identifier and genomic-region queries, and a Model Context Protocol (MCP) server enabling agent-assisted querying with large language models. We demonstrate the Catalog's utility for mechanistic interpretation across three case studies: resolving a FOXA1-dependent enhancer variant (rs11257655) regulating CAMK1D at a type 2 diabetes locus, distinguishing coding (GCKR rs1260326) and regulatory (HNF1A rs1169289) mechanisms for liver traits, and linking vascular CRISPRi-perturbed elements to CDKN2A/CDKN2B and NOS3 in coronary artery disease. Updated quarterly with open data and software, the IGVF Catalog provides a scalable resource for variant-to-function discovery.",
+      "authors": [
+        "Dong, S.",
+        "Whaling, I.",
+        "Jou, J.",
+        "Shen, Z.",
+        "Lin, K. Z.",
+        "Jolanki, O. A.",
+        "Assis, P.",
+        "Gabdank, I.",
+        "Graham, K.",
+        "Kagda, M.",
+        "Li, M.",
+        "Tanaka, F.",
+        "Engreitz, J. M.",
+        "Liu, S.",
+        "Li, D.",
+        "Wang, T.",
+        "Love, M. I.",
+        "Steinmetz, L.",
+        "Hitz, B."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "Perturb-seq",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "IGVF 目錄知識圖譜"
+    },
+    {
+      "id": "10.64898/2026.11.20.768248",
+      "title": "Unsupervised tensor integration of hippocampal and colonic multi-omics reveals enteric neural signatures in cognitive aging",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.20.768248v1",
+      "doi": "10.64898/2026.11.20.768248",
+      "abstract": "Background: Molecular changes in peripheral tissues may provide insights into cognitive aging, but identifying relevant genes without using behavioral outcomes for feature selection remains challenging. Results: We applied tensor decomposition-based unsupervised feature extraction to publicly available hippocampal and colonic transcriptomic and promoter DNA methylation profiles from mice across five age groups. A tensor comprising tissue, molecular modality, age group, biological replicate, and gene dimensions was constructed using 16,080 shared genes. Higher-order singular value decomposition identified a component with a monotonic age pattern, shared tissue contributions, and opposing transcriptomic and methylation contributions. This component yielded 1,577 selected genes without using cognitive scores for feature selection. The corresponding colonic methylation score correlated with overall cognition (r=0.589; Benjamini--Hochberg-adjusted P=9.87 x10-7), although no significant associations remained after age adjustment. The selected genes were enriched for enteric neuronal and glial markers derived from a published single-cell atlas, with 5.10-fold and 4.65-fold enrichment, respectively. Comparison with the broadest available Boruta-selected gene set identified only 64 overlapping genes, leaving 1,513 genes selected exclusively by the tensor approach in this comparison. These remaining genes retained significant enrichment for synaptic processes and enteric neuronal and glial signatures using library-specific backgrounds. Conclusions: Unsupervised tensor integration recovered an aging-associated relationship between colonic methylation and cognition while identifying a largely distinct set of functionally coherent candidate genes. These findings complement supervised feature selection and provide candidates for investigating enteric neural involvement in cognitive aging, without establishing an age-independent association or a causal gut-to-brain mechanism.",
+      "authors": [
+        "Taguchi, Y.-h.",
+        "Turki, T."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "海馬與結腸多體學的無監督張量整合揭示認知老化中的腸神經特徵"
+    },
+    {
+      "id": "10.64898/2026.11.21.768275",
+      "title": "Deciphering state bridges via a single-cell large language model",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.21.768275v1",
+      "doi": "10.64898/2026.11.21.768275",
+      "abstract": "Large-scale single-cell transcriptomic data provide a new avenue for precision medicine by uncovering cellular heterogeneity. However, systematic comparison of remodeling patterns across various biological states remains unavailable. Here, we first developed a computational framework based on a foundation model of single cell biology, Universal Cell Embedding (UCE), to harmonize annotations comprising 36 cell types. Based on an integrated dataset of single cell RNA sequencing (scRNA-seq) with 8,789 human samples comprising more than 59 million cells or nuclei across 614 biological states, we then embedded each state with a 36-dimensional vector in a unified space of cell-composition change and further deciphered states bridges by analyzing the relationships among the 614 state vectors. As a result, 22,161 significant bridges (P < 0.05) between the 614 states were revealed. Moreover, we successfully identified a number of well-known bridges such as bridge between Alzheimer's disease and Parkinson's disease (P = 2.21e-15), suggesting the effectiveness of the proposed framework. More importantly, we uncovered a number of new bridges. Furthermore, analyses of the number of changed cell types (NCC) and Shannon entropy revealed heterogeneous and tissue-dependent patterns of cellular composition remodeling. This study provides a new strategy for identifying disease associations and potential therapeutic relationships by deciphering bridges between biological states from scRNA-seq landscape.",
+      "authors": [
+        "Fei, Q.",
+        "Liang, M.",
+        "Cui, C.",
+        "Kang, B.",
+        "Cui, Q."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "scRNA-seq",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "透過單細胞大型語言模型解析狀態橋接"
+    },
+    {
+      "id": "10.64898/2026.11.20.768082",
+      "title": "Integrating CRISPRi perturbation responses and transcription-factor binding priors for regulatory network inference in triple-negative breast cancer",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.20.768082v1",
+      "doi": "10.64898/2026.11.20.768082",
+      "abstract": "Triple-Negative Breast Cancer (TNBC) represents an aggressive breast cancer subtype that lacks actionable cell-surface receptors, restricting frontline systemic management to cytotoxic chemotherapy. While recent functional epigenomics shows that TNBC progression is governed by non-coding regulatory remodeling at distal super-enhancers, conventional Gene Regulatory Network (GRN) inference methods rely on observational transcriptomic co-expression, which suffers from technical dropouts and confounding correlations that inflate false discoveries (>30%). Here, we present an interventional network inference framework that integrates large-scale single-cell CRISPR-interference perturbation sequencing (Perturb-seq; GSE224986, 95,678 cells across 11,975 sgRNAs) with ENCODE Factorbook ChIP-seq physical transcription factor binding priors across 819 somatic mutation-associated enhancer loci in human TNBC (MDA-MB-231). Our pipeline reconstructed a tripartite network yielding 5,935 physical TF-enhancer edges, 383,757 functional enhancer-gene edges, and 542,760 unique TF-target gene functional pairs across 372 active enhancers. Topological centrality prioritized master transcriptional drivers governing TNBC oncogenic signaling, including CTCF, POLR2A, EP300, JUND, MYC, and FOS, which regulate Hallmark programs for Epithelial-Mesenchymal Transition (p = 1.2 x 10-9) and cell cycle progression. Explainable machine learning (SHAP TreeExplainer) revealed non-linear, thresholded transactivation dynamics for AP-1 and MYC. Quantitative benchmarking against held-out CRISPRi ground truth demonstrated strong discriminatory accuracy (AUROC = 0.8999, AUPRC = 0.8745, Precision = 90.13%, FDR = 9.87%), substantially outperforming GENIE3 (AUPRC = 0.6323, FDR = 35.73%) and co-expression correlation (AUPRC = 0.6814). In silico-simulated driver feature silencing correlated with experimental responses (R2 = 0.473, p < 10-122), and master driver signatures significantly stratified overall survival in the METABRIC (n = 320) and TCGA-BRCA (n = 160; p [&le;] 0.019) cohorts. Finally, in silico perturbation modeling indicated that multi-target epigenetic combinations achieved 93% topological disruption of oncogenic regulatory connectivity, nominating prioritized candidate circuits for experimental validation.",
+      "authors": [
+        "Faroque, O.",
+        "Jannaty, M. H.",
+        "Abir, S. H.",
+        "Biswas, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "Perturb-seq",
+        "cancer",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "整合 CRISPRi 干擾反應與轉錄因子結合先驗以推斷三陰性乳癌的調控網絡"
+    },
+    {
+      "id": "10.64898/2026.11.21.768293",
+      "title": "Zero-shot virtual knock-out rankings do not recover causal genes from observational single-cell data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.21.768293v1",
+      "doi": "10.64898/2026.11.21.768293",
+      "abstract": "Background: Virtual knock-out methods rank genes by the change predicted after deleting one gene in silico and nominate targets without perturbation data. That use assumes the ranking reflects the causal consequence of removal; we tested it for three zero-shot methods in four configurations under one criterion. Results: We compared scTenifoldKnk (R and Python), CellOracle and Geneformer on 438 real, 3,585 synthetic and 330 DepMap knock-outs. Top-20 lists of different knock-outs overlapped by a median of 12 to 14 of 20, against 0.08 by chance. Displacement followed out-degree (R^2 = 0.825; 0.852 with six further features). Decoupling causal effect from topology left criterion value and grade unchanged (36 of 36 RED). For scTenifoldKnk, the ranking showed no evidence of recovery above chance where causal genes were planted (AUROC 0.538 and 0.528 in the two constructions). CellOracle's displacement showed no detectable relation to the data-built network (rho = -0.212, P = 0.556). Geneformer's shift tracked token coverage inconsistently (+0.41, +0.40, -0.27). Against DepMap essentiality, scTenifoldKnk's Python implementation (scTenifoldpy 0.5.1) reached AUROC 0.459 (95% CI 0.357-0.566), not distinguishable from chance; detection rate reached 0.588 (95% CI 0.497-0.677). Conclusions: For scTenifoldKnk and CellOracle, the ranking reports network properties, not the causal consequence of removal. No measured structural feature accounted for more than a small fraction of Geneformer's shift. Detection rate, needing no network, gained +0.129 (95% CI 0.0017-0.2543; 97.6% of resamples positive) over the tool.",
+      "authors": [
+        "Cui, J.",
+        "Li, M.",
+        "Zhou, R.",
+        "Zhang, H.",
+        "Xu, S.",
+        "Li, L.",
+        "Zhang, R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "零樣本虛擬基因敲除排序無法從觀察性單細胞資料中恢復因果基因"
+    },
+    {
+      "id": "10.64898/2026.11.17.767214",
+      "title": "Model evaluation metrics of Virtual Cell Challenge 2026",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.17.767214v1",
+      "doi": "10.64898/2026.11.17.767214",
+      "abstract": "Virtual cell models aim to predict the effects of genetic, environmental, chemical and other perturbations in silico, reducing the dependency on complex and costly experiments. The Virtual Cell Challenge 2026 motivates the field toward this goal, tasking models with zero-shot prediction of the transcriptional responses to CRISPRi knockdowns in six human cell lines. The faithfulness of a model to the experiment is assessed by metrics that compare its predictions with the real data, and designing such metrics is not trivial. We developed the metrics of the 2026 Challenge around three principles: a metric should (i) reflect the biological information extracted from experiments, (ii) be calibrated on a repeat of the experiment, and (iii) resist shortcut solutions that raise the score without predicting the response. Here we present the six resulting metrics, the reasoning behind each of them, and their evaluations on the Challenge data. Two of the metrics compare the pseudobulk expression profiles of predicted and measured cells, while four assess the genes that respond to each perturbation, the central readout of a Perturb-seq experiment. The metrics are implemented in cell-eval2, an open-source Python package. On the Challenge data, all six metrics score a repeat of the experiment above the mean baseline, and the shortcut solutions that the metrics of the 2025 Challenge left open can no longer raise the score. The new metrics are therefore more robust than the previous ones.",
+      "authors": [
+        "Dobin, A.",
+        "Adduri, A.",
+        "Sullivan, J.",
+        "Lyda, J.",
+        "Mehta, R.",
+        "Leto, D. E.",
+        "Datlinger, P.",
+        "VanHorn, S.",
+        "Chizari, S.",
+        "Ranadive, N.",
+        "Nagesh, S.",
+        "Tung, P.-Y.",
+        "Li, N.",
+        "Caputo, J.",
+        "Plosky, B. S.",
+        "Ricci-Tam, C.",
+        "Senturia, R.",
+        "Feng, K.",
+        "Chu, T.",
+        "Tsui, M.",
+        "Eraslan, B.",
+        "Bevilacqua, B.",
+        "Carpenter, C.",
+        "Verma, R.",
+        "Yan, Z.",
+        "Min, J.",
+        "Torun, F. M.",
+        "Averbukh, I.",
+        "Sandmann, T.",
+        "Chen, T. J.",
+        "Dicks, S.",
+        "Mosafi, O.",
+        "Rvachov, T.",
+        "Shin, H.",
+        "Sundaram, L.",
+        "Voss, D.",
+        "Zhang, Y.",
+        "Zynda, G.",
+        "van Overbeek, M.",
+        "Muzaffar, U.",
+        "Woodrow, A.",
+        "Burke, D. P.",
+        "Hsu, P. D.",
+        "Konermann, S.",
+        "Arc Virtual Cell Team,",
+        "Goodarzi, H."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "Perturb-seq",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "虛擬細胞挑戰賽 2026 的模型評估指標"
+    },
+    {
+      "id": "10.64898/2026.11.20.766488",
+      "title": "Kynurenine-AHR signaling sustains a targetable FATP2 dependency in advanced systemic mastocytosis",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.20.766488v1",
+      "doi": "10.64898/2026.11.20.766488",
+      "abstract": "Avapritinib and midostaurin have transformed the treatment of advanced systemic mastocytosis (AdvSM), yet residual neoplastic mast cells persist despite sustained KIT inhibition, through mechanisms that remain poorly understood. In a prospective cohort of patients with indolent or advanced SM, plasma metabolomic profiling identified L-kynurenine (L-kyn) as a marker of advanced disease. Transcriptomics analysis of purified bone marrow mast cells, together with single-cell RNA sequencing, further revealed coordinated activation of a tryptophan-kynurenine-aryl-hydrocarbon receptor (AHR) pathway in the neoplastic marrow compartment. In KIT D816V mast cells, L-kyn activated AHR signaling, promoted a metabolic shift toward oxidative phosphorylation and fatty acid oxidation, enhanced AHR-dependent fatty acid uptake, and induced expression of FATP2 (SLC27A2), the most upregulated lipid transporter in AdvSM mast cells. L-kyn also increased plasma membrane-associated cholesterol, partly independently of AHR, whereas AHR knockdown reduced GM1-positive lipid raft abundance. Disruption of membrane sphingolipids and cholesterol impaired KIT and STAT5 phosphorylation, supporting a role for lipid raft integrity in sustaining oncogenic signaling. Neither avapritinib nor midostaurin impaired L-kyn uptake, indicating that this metabolic input persists despite KIT inhibition. Pharmacologic FATP2 inhibition with lipofermata reduced mast cell viability and disease burden in a KIT D816V xenograft model. Pharmacologic or genetic FATP2 blockade synergized with avapritinib and midostaurin in mast cell lines and primary AdvSM cells ex vivo, with limited effects on normal CD34+ progenitors., These findings identify FATP2 as a therapeutically actionable metabolic dependency in AdvSM and provide a rationale for combining FATP2 inhibition with KIT-targeted therapy.",
+      "authors": [
+        "Scorrano, G.",
+        "Laisney, C.",
+        "Kousteridou, P.",
+        "Kembia Kalombo, P.",
+        "Agopian, J.",
+        "Castellano, R.",
+        "Goubard, A.",
+        "Serge, A.",
+        "Maillot, L.",
+        "Letard, S.",
+        "Argüello, R. J.",
+        "Colette, Y.",
+        "Maouche-Chretien, L.",
+        "Arock, M.",
+        "Orfao, A.",
+        "Rossignol, J.",
+        "Dubreuil, P.",
+        "Hermine, O.",
+        "Brenet, F."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "Kynurenine-AHR 訊號維持晚期系統性肥大細胞增生症中可靶向的 FATP2 依賴性"
+    },
+    {
+      "id": "10.1101/2024.09.23.614468",
+      "title": "Caveolin-1-dependent signaling and survival in distinct Ewing sarcoma cell states.",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.09.23.614468v5",
+      "doi": "10.1101/2024.09.23.614468",
+      "abstract": "Plasticity is a hallmark function of cancer cells, yet the mechanisms that enable dynamic switching between survival states remain incompletely understood. Here, we identify Caveolin-1, a membrane-domain scaffolding protein, as a regulator of survival signaling in a Ewing sarcoma (EwS) cell line. Single-cell analyses reveal a distinct subpopulation of EwS cells marked by high CD99 and elevated Caveolin-1 expression. These CD99High cells exhibit unique morphology, transcriptional programs, and markedly enhanced survival both under chemotherapeutic challenge and in vivo. Importantly, CD99High and CD99Low states are reversible, providing EwS cells with a flexible route to survival-oriented plasticity. Mechanistically, we show that Caveolin-1 in CD99High cells orchestrates PI3K/AKT survival signaling by modulating recruitment of PI3K activity to the plasma membrane. We propose that the CD99High state establishes a Caveolin-1-driven signaling architecture that supports survival through mechanisms distinct from those used by CD99Low cells. These findings uncover a dynamic state transition in EwS cells and position Caveolin-1 as a regulator of cell-state-dependent survival signaling.",
+      "authors": [
+        "Segal, D.",
+        "Wang, X.",
+        "Mazloom-Farsibaf, H.",
+        "Zhou, F. Y.",
+        "Rajendran, D.",
+        "Butler, E.",
+        "Chen, B.",
+        "Chang, B.-J.",
+        "Ahuja, K.",
+        "Perny, A.",
+        "Bhatt, K.",
+        "Reed, D. K.",
+        "Castrillon, D.",
+        "Lee, J.",
+        "Jeffery, E.",
+        "Wang, L.",
+        "Nguyen, K.",
+        "Williams, N. S.",
+        "Rajaram, S.",
+        "Fiolka, R. P.",
+        "Jaqaman, K.",
+        "Skapek, S. X.",
+        "Hon, G. C.",
+        "Amatruda, J.",
+        "Danuser, G."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.11.20.768047",
+      "title": "Locus-resolved expression and manipulation of human-specific transposable elements reveal their role in timely progression of early brain development",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.20.768047v1",
+      "doi": "10.64898/2026.11.20.768047",
+      "abstract": "The human cerebral cortex has undergone remarkable expansion during primate evolution, yet the regulatory innovations underlying human-specific neurodevelopmental programmes remain poorly understood. Transposable elements (TEs) comprise approximately half of the human genome and represent a major source of lineage-specific regulatory novelty, but their individual contributions to cortical development have been inaccessible due to the technical challenge of resolving near-identical repetitive sequences. Here we apply single-cell long-read sequencing (CELLO-seq) to generate the first locus-resolved atlas of young human-specific TE expression in cortical organoids, revealing that individual loci from multiple TE families, including SVAs, LTR5Hs, and L1Hs, are expressed across all major cortical cell types and carry binding motifs for key cortical and neurogenic transcription factors. Using CRISPRi to silence SVAs and LTR5Hs during organoid differentiation, we demonstrate that their combined loss causes coordinated failure of the radial glia-to-neuron transition, characterised by progenitor retention, transcriptional ventralisation, impaired synaptic maturation and a differentiation block in interneuron precursors. Co-expression network and regulon analyses identify loss of dorsal cortical identity programmes and gain of ventralisation-associated transcriptional activity as the dominant molecular consequences of TE silencing. Motif-to-regulon convergence directly links SVA and LTR5Hs chromatin accessibility to the loss of specific TF binding programmes. These findings establish young and human-specific TEs as functional components of the regulatory architecture governing the timing of cortical neurogenesis, with implications for understanding human brain evolution and neurodevelopmental disease.",
+      "authors": [
+        "Deelen, L.",
+        "Marlow, S. A.",
+        "Urbanaviciute, P.",
+        "Richards, T. T.",
+        "Mitchell, Z. H.",
+        "Demurtas, M.",
+        "Koulle, A.",
+        "Li, X.",
+        "Bowles, K. R.",
+        "Berrens, R. V.",
+        "Trizzino, M."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development",
+        "evolution",
+        "CRISPR",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "基因座解析的人類特異性轉座元件表現與操縱揭示其在早期大腦發育及時進展中的作用"
+    },
+    {
+      "id": "10.64898/2026.04.14.718471",
+      "title": "Generation of human hindlimb/genital tubercle progenitors from pluripotent stem cells",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-23",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.04.14.718471v2",
+      "doi": "10.64898/2026.04.14.718471",
+      "abstract": "The hindlimbs and genital tubercle arise from a bipotent posterior lateral plate mesoderm (pLPM) progenitor population and share common genetic programmes, reflecting their deep evolutionary homology. Perturbations of this shared developmental programme underlie several congenital conditions, yet most insights into the divergence of pLPM fates come from traditional model organisms, emphasising the need for a human-based system. Here, we report the WNT-FGF-BMP-dependent differentiation of human pluripotent stem cells into pLPM-derived hindlimb/genital tubercle progenitors (HGTps). BMP signalling drives transcriptomic changes reminiscent of the trunk-to-tail transition, a major reorganisation of the embryonic body plan that initiates pLPM/HGTp specification. We further show that retinoic acid acts biphasically: early exposure blocks these changes, whereas late exposure refines HGTp fate by suppressing alternative pLPM derivatives. Single-cell profiling reveals a spectrum of uncommitted progenitors and cells acquiring genital tubercle or hindlimb character, which map to posterior appendage populations of Carnegie stage 12-18 human embryos. Differentiating mesenchyme self-organises alongside a surrounding epithelium, mirroring appendage development in vivo. Grafted HGTp-derived spheroids incorporate into the genital tubercle-forming region of chick embryos, revealing their positional competence. Collectively, our work establishes a platform for the reverse engineering and disease modelling of human HGTps.",
+      "authors": [
+        "Uyulgan, S.",
+        "Sedas Perez, S.",
+        "Chinnaiya, K.",
+        "Towers, M.",
+        "Tsakiridis, A."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development",
+        "evolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "由多能幹細胞產生人類後肢／生殖結節前驅細胞"
+    },
+    {
+      "id": "10.1038/s41467-026-79802-0",
+      "title": "ORE1 stabilizes PIF4 protein through a UBP12/UBP13-dependent regulatory module in thermomorphogenesis",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79802-0",
+      "doi": "10.1038/s41467-026-79802-0",
+      "abstract": "Plants adapt their growth to warmth, but how aging signals tune protein stability remains unclear. Here, the authors show that the senescence factor ORE1 acts as a scaffold to stabilize the heat regulator PIF4 via UBP12/UBP13-mediated deubiquitination, driving warmth induced growth.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "ORE1透過UBP12／UBP13調控模組穩定PIF4蛋白，調節熱形態建成",
+      "summaryZh": "植物會依溫暖調整生長，但衰老訊號如何調控蛋白質穩定性仍不清楚。本文作者指出，衰老因子ORE1作為支架，透過UBP12／UBP13介導的去泛素化作用穩定熱調節因子PIF4。該調控模組與溫暖誘導的生長相關。研究將ORE1、PIF4與UBP12／UBP13連結為熱形態建成中的穩定性調控路徑。",
+      "topicTags": [
+        "plant-biology",
+        "thermomorphogenesis",
+        "protein-stability",
+        "ubiquitination",
+        "senescence"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79922-7",
+      "title": "A conceptual analysis of One Health and Person-Centred Practice",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79922-7",
+      "doi": "10.1038/s41467-026-79922-7",
+      "abstract": "This Review examines how One Health and person-centred practice can strengthen each other. The authors argue that care should account for animal and ecosystem health, while One Health should attend to people’s lived experience.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "一體健康與以人為中心實務的概念分析",
+      "summaryZh": "這篇刊載於 Nature Communications 的評論探討一體健康 One Health 與以人為中心實務 Person-Centred Practice 如何相互強化。作者認為照護應納入動物與生態系統健康。作者也主張一體健康應重視人們的 lived experience。文章從概念層面檢視兩者結合的可能性。",
+      "topicTags": [
+        "one-health",
+        "person-centred-care",
+        "conceptual-review",
+        "health-systems"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79321-y",
+      "title": "Biomass-based platform for pesticide management balancing field efficacy with postharvest residue via dynamic adhesion switch",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79321-y",
+      "doi": "10.1038/s41467-026-79321-y",
+      "abstract": "Pesticide formulations must balance two competing requirements—robust adhesion during cultivation and efficient removal in postharvest. Here, the authors developed a thermoresponsive biomass-based dynamic adhesion switch and constructed a Pickering emulsion system loaded with the UV-sensitive pesticide emamectin benzoate.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "生物質基動態黏附開關平衡田間效能與採後殘留",
+      "summaryZh": "農藥配方需要在栽培期間維持穩固附著與採後有效去除之間取得平衡。作者開發了熱響應的生物質基動態黏附開關，並建構了載有紫外光敏感農藥 emamectin benzoate 的 Pickering 乳液系統。該平台旨在同時兼顧田間使用效能與採後殘留管理。研究提出以動態黏附調控作為調和兩項競爭需求的策略。",
+      "topicTags": [
+        "pesticide",
+        "biomass",
+        "adhesion",
+        "pickering-emulsion",
+        "postharvest"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79275-1",
+      "title": "CARM1-mediated methylation controls interactions of ALIX with key partners important for cytokinesis",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-23T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79275-1",
+      "doi": "10.1038/s41467-026-79275-1",
+      "abstract": "ALIX methylation by CARM1 controls CD2AP levels at the midbody and is important for cytokinesis. Their findings reveal a role for protein arginine methylation in the last step of cell division.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "llm"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "llm",
+      "featured": true,
+      "titleZh": "CARM1介導的甲基化調控ALIX與關鍵夥伴的交互作用以影響細胞質分裂",
+      "summaryZh": "研究指出ALIX經由CARM1進行甲基化後，會控制CD2AP在中體的含量，並對細胞質分裂具有重要性。該結果顯示蛋白質精胺酸甲基化參與細胞分裂的最後步驟。研究揭示了CARM1介導的甲基化如何調控ALIX與其關鍵夥伴的交互作用。",
+      "topicTags": [
+        "protein-methylation",
+        "cytokinesis",
+        "cell-division",
+        "alix"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 51,
+      "passedByScope": 32,
+      "llmClassified": 19,
+      "llmYes": 6,
+      "llmNotSure": 0,
+      "llmNo": 13,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 38,
+      "excluded": 13
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b",
+      "observed": [
+        "meta/muse-glimmer-30b"
+      ]
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 15,
+      "llmTagged": 15,
+      "llmLineA": 1,
+      "llmLineB": 14,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 36,
+      "candidates": 32,
+      "featured": 12,
+      "overflow": 20,
+      "lineA": 1,
+      "lineB": 14,
+      "preprint": 17,
+      "skip": 4,
+      "featuredLineA": 1,
+      "featuredLineB": 10,
+      "featuredPreprint": 1,
+      "overflowLineA": 0,
+      "overflowLineB": 4,
+      "overflowPreprint": 16
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 10,
+      "primarySucceeded": 10,
+      "fallbackSucceeded": 0,
+      "failed": 2
+    },
+    "translate": {
+      "requested": 20,
+      "llmTranslated": 20,
+      "primarySucceeded": 20,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "observed": [
+          "meta/muse-glimmer-30b"
+        ],
+        "llmTagged": 15
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 2,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ],
+          "succeeded": 10
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      },
+      "translate": {
+        "requested": 20,
+        "succeeded": 20,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b",
+          "observed": [
+            "meta/muse-glimmer-30b"
+          ]
+        },
+        "primarySucceeded": 20,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11449-9",
+        "title": "Hexa-substituted benzene synthesis with non-classical carbocations",
+        "journal": "Nature",
+        "publishedDate": "2026-11-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11449-9",
+        "doi": "10.1038/s41586-026-11449-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03722-8",
+        "title": "Build for the future climate — or waste trillions of dollars",
+        "journal": "Nature",
+        "publishedDate": "2026-11-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03722-8",
+        "doi": "10.1038/d41586-026-03722-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03720-w",
+        "title": "‘Mozart of maths’ Terence Tao is your guide to what underpins reality",
+        "journal": "Nature",
+        "publishedDate": "2026-11-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03720-w",
+        "doi": "10.1038/d41586-026-03720-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03808-3",
+        "title": "Chemistry giant George Whitesides dies: one of the most influential researchers of his generation",
+        "journal": "Nature",
+        "publishedDate": "2026-11-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03808-3",
+        "doi": "10.1038/d41586-026-03808-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03818-1",
+        "title": "How to make climate anxiety your superpower",
+        "journal": "Nature",
+        "publishedDate": "2026-11-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03818-1",
+        "doi": "10.1038/d41586-026-03818-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-02203-2",
+        "title": "It’s our duty to promote ourselves: even to other scientists. Am I wrong?",
+        "journal": "Nature",
+        "publishedDate": "2026-11-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-02203-2",
+        "doi": "10.1038/d41586-026-02203-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03721-9",
+        "title": "Ayanna Howard thinks ‘everyone has to be part of’ building ethical AI tools",
+        "journal": "Nature",
+        "publishedDate": "2026-11-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03721-9",
+        "doi": "10.1038/d41586-026-03721-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03724-6",
+        "title": "Is trust in science falling, or does it just feel that way?",
+        "journal": "Nature",
+        "publishedDate": "2026-11-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03724-6",
+        "doi": "10.1038/d41586-026-03724-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03795-5",
+        "title": "How AI shocks are rattling the next generation of mathematicians — in charts",
+        "journal": "Nature",
+        "publishedDate": "2026-11-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03795-5",
+        "doi": "10.1038/d41586-026-03795-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79534-1",
+        "title": "Non Hermitian synthetic phase shifter with topologically protected phase control via tunable losses",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79534-1",
+        "doi": "10.1038/s41467-026-79534-1",
+        "abstract": "Programmable photonic circuits typically rely on refractive-index modulation for active control, limiting scalability. Here, authors develop and validate a synthetic phase-shifter framework using optical loss modulation to achieve full-cycle phase control protected by topological quantities.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79687-z",
+        "title": "Mesophase-induced vitrification in coordination polymers via aliphatic chain dynamics",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79687-z",
+        "doi": "10.1038/s41467-026-79687-z",
+        "abstract": "Coordination-polymer glasses offer structural functionality and processability but are hindered by poor thermal stability and high melting points. Here, the authors report mesophase-induced vitrification in magnesium-based frameworks, enabling glass formation without melting while preserving network integrity and mechanical stiffness.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79515-4",
+        "title": "Intramolecular electrophilic aminations of indoles enable divergent bond migrations to access piperidinoindolines and δ-carbolines",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79515-4",
+        "doi": "10.1038/s41467-026-79515-4",
+        "abstract": "C–C migration rearrangements of spiro[indole-3,3′-pyrrolidines] are well established, but their isomeric spiro[indole-3,2′ pyrrolidine] counterparts remain unexplored. Here, the authors report a versatile strategy enabling selective C–C or C–N migration to access piperidinoindolines and δ-carbolines, with promising antitumour activity.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79746-5",
+        "title": "Quasi-degenerate cation occupation enables oxygen-vacancy defect healing in nonlinear optical crystals",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-23T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79746-5",
+        "doi": "10.1038/s41467-026-79746-5",
+        "abstract": "A quasi-degenerate cation occupation strategy offers a pathway to overcome substitution-induced defects in functional crystals. Its validation in La3TiGa5O14 demonstrates effective oxygen-vacancy healing and improved nonlinear optical performance.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "llm"
+    }
+  ]
+}
