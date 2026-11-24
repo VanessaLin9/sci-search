@@ -1,0 +1,944 @@
+{
+  "reportDate": "2026-11-24",
+  "generatedAt": "2026-11-24T20:44:17.394Z",
+  "papers": [
+    {
+      "id": "10.1038/s41592-026-03416-z",
+      "title": "Author Correction: GHT-SELEX demonstrates unexpectedly high intrinsic sequence specificity and complex DNA binding of many human transcription factors",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03416-z",
+      "doi": "10.1038/s41592-026-03416-z",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "skip",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false
+    },
+    {
+      "id": "10.1038/s41592-026-03302-8",
+      "title": "ISOMPRA enables the disambiguation of transcriptional and post-transcriptional effects of genetic variants",
+      "journal": "Nature Methods",
+      "publishedDate": "2026-11-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41592-026-03302-8",
+      "doi": "10.1038/s41592-026-03302-8",
+      "sourceId": "nature-methods",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "ISOMPRA 能厘清基因变异的转录与转录后效应"
+    },
+    {
+      "id": "10.1038/s41588-026-02838-x",
+      "title": "Exhaustive rearrangement of an enhancer reveals that dependency-syntax encodes tissue specificity",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02838-x",
+      "doi": "10.1038/s41588-026-02838-x",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "增强子的彻底重排揭示相依语法编码了组织特异性"
+    },
+    {
+      "id": "10.1038/s41587-026-03351-6",
+      "title": "Modular mRNA-encoded helper proteins enhance DNA delivery",
+      "journal": "Nature Biotechnology",
+      "publishedDate": "2026-11-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41587-026-03351-6",
+      "doi": "10.1038/s41587-026-03351-6",
+      "abstract": "DNA delivery is improved with codelivered helper proteins.",
+      "sourceId": "nature-biotechnology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "模組化 mRNA 編碼輔助蛋白可提升 DNA 遞送效率",
+      "summaryZh": "本研究報導了透過共同遞送模組化的 mRNA 編碼輔助蛋白，能有效改善 DNA 遞送。這項技術對於提升核酸傳遞的效能具有重要意義。",
+      "topicTags": [
+        "mrna",
+        "dna-delivery",
+        "biotechnology"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02546-6",
+      "title": "Mycobacterium tuberculosis calls the cough",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02546-6",
+      "doi": "10.1038/s41564-026-02546-6",
+      "abstract": "Cough protects the airways but helps respiratory pathogens to spread. Identifying phenolic glycolipid as an additional Mycobacterium tuberculosis cell wall component that activates sensory neurons and induces cough suggests an expanded repertoire of triggers and potential targets for disrupting this response in tuberculosis.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "結核分枝桿菌誘發咳嗽",
+      "summaryZh": "咳嗽能保護呼吸道，但同時有助於呼吸道病原體的傳播。本研究識別出酚類甘油脂（phenolic glycolipid）為結核分枝桿菌（Mycobacterium tuberculosis）細胞壁的額外成分，能活化感覺神經元並誘發咳嗽。這項發現揭示了誘發此反應的廣泛因子，並為中斷結核病相關咳嗽提供了潛在標靶。",
+      "topicTags": [
+        "microbiology",
+        "tuberculosis",
+        "neuroscience",
+        "pathogen"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02539-5",
+      "title": "Time-resolved single-cell phenotyping identifies two major classes of antimicrobial peptides with shared principles and key trade-offs",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02539-5",
+      "doi": "10.1038/s41564-026-02539-5",
+      "abstract": "A time-resolved single-cell imaging pipeline reveals that, across a diverse set of antimicrobial peptides, fast kinetics are traded off with efficacy against dense bacterial populations.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "時間解析單細胞表現型分析識別出兩大類具備共同原則與關鍵權衡的抗菌肽",
+      "summaryZh": "本研究利用時間解析單細胞成像管線，發現各種抗菌肽的共同原則與關鍵權衡。研究指出，在多樣化的抗菌肽中，快速動力學與針對高密度細菌族群的效力之間存在權衡關係。這項發現有助於深入理解抗菌肽的作用機制。",
+      "topicTags": [
+        "single-cell",
+        "antimicrobial-peptides",
+        "microbiology"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02551-9",
+      "title": "A conserved oscillatory system that positions the divisome in Archaea",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02551-9",
+      "doi": "10.1038/s41564-026-02551-9",
+      "abstract": "The widely conserved and broadly distributed DipABC system enables precise cell division across FtsZ-employing archaea, and is an example of convergent evolution with the bacterial Min system.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "evolution"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "古菌中定位分裂體之保守振盪系統",
+      "summaryZh": "本研究報導了廣泛保守且分佈廣泛的 DipABC 系統，其能在使用 FtsZ 的古菌中實現精確的細胞分裂。此系統為理解細胞分裂機制提供了重要見解，並展現了與細菌 Min 系統的趨同演化實例。",
+      "topicTags": [
+        "archaea",
+        "cell-division",
+        "microbiology"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02533-x",
+      "title": "Mycobacterial phenolic glycolipid triggers ATP-mediated neuronal signalling and cough",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02533-x",
+      "doi": "10.1038/s41564-026-02533-x",
+      "abstract": "Certain strains of Mycobacterium tuberculosis produce a phenolic glycolipid that activates sensory neurons and triggers cough through ATP signalling, revealing a potential mechanism that may promote transmission.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "分枝桿菌酚基醣脂質會觸發 ATP 媒介的神經訊號傳遞與咳嗽",
+      "summaryZh": "某些結核分枝桿菌（Mycobacterium tuberculosis）菌株會產生一種酚基醣脂質，透過 ATP 訊號活化感覺神經元並引發咳嗽。這項研究揭示了一個可能促進傳染的潛在機制。這些發現有助於理解病原體如何利用神經系統來促進其傳播。",
+      "topicTags": [
+        "microbiology",
+        "neuroscience",
+        "infectious-disease"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02538-6",
+      "title": "Structural basis for proton-powered secretion by the bacterial flagellar export machinery",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02538-6",
+      "doi": "10.1038/s41564-026-02538-6",
+      "abstract": "Structural and functional analyses of the proton-dependent export apparatus that powers secretion of flagellar components in Salmonella reveal architectural similarities with rotary motors.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1371/journal.pbio.3004125",
+      "title": "Correction: Single-nucleus transcriptomics of wing sexual dimorphism and scale cell specialization in sulphur butterflies",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-11-24T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004125",
+      "doi": "10.1371/journal.pbio.3004125",
+      "abstract": "by Ling S. Loh, Joseph J. Hanly, Alexander Carter, Martik Chatterjee, Martina Tsimba, Donya N. Shodja, Luca Livraghi, Christopher R. Day, Robert D. Reed, W. Owen McMillan, Gregory A. Wray, Arnaud Martin",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "line-a",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "更正：黃粉蝶翅膀性二型與鱗片細胞特化之單核轉錄體學",
+      "summaryZh": "本篇為針對「黃粉蝶翅膀性二型與鱗片細胞特化之單核轉錄體學」一文的更正啟事。論文作者群包含 Ling S. Loh 等人。詳細更正內容請參閱官方期刊網站。",
+      "topicTags": [
+        "transcriptomics",
+        "cell-biology"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004022",
+      "title": "Distinct trajectories and predictability of individual grouping patterns in dolphins link social ageing to longevity",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-11-24T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004022",
+      "doi": "10.1371/journal.pbio.3004022",
+      "abstract": "Recent work has unearthed strong relationships between ageing and average sociability. Clear patterns of decreases in average sociability are observed across taxa; many of these are sex-specific. Individuals, however, generally deviate from population averages, and discounting individual variance in behaviour could disguise mechanisms of adaptation, selection, and developmental stability. Using 40 years of behavioural data from Indo-Pacific bottlenose dolphins, we provide new insights into social ageing. We achieve this by simultaneously measuring both mean (repeatability) and variance (predictability) in group size—a trait reflecting social interaction preference—across the population and throughout individual lifespans. Double hierarchical location-scale modelling reveals a multidimensional response; at both the population and individual level, the mean trait response (plasticity) and variance (malleability) of group size change with age. At a population level and for most individuals, average group size increases then declines in later life. This decline is more pronounced in males, though males are consistently in larger and more predictable groups than females at all life stages. Population predictability of group size increases throughout life, consistent with our prediction that social preferences strengthen with age. Individuals which are highly sociable are also highly predictable, and increased sociability and predictability both appear correlated with longevity. The positive correlation between increasing predictability and longevity leads us to hypothesise that individuals develop social competence by refining their social experiences. This process likely involves increasing social selectivity and optimising social choices to achieve a net fitness benefit. These findings provide novel insights into social ageing and illustrate how studying variance in social traits can capture processes of social competence, selectivity, and adaptation of social phenotypes occurring within an individual’s social environment.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "海豚個體群聚模式的獨特軌跡與可預測性將社會老化與長壽連結",
+      "summaryZh": "本研究利用長達 40 年的印太洋瓶鼻海豚（Indo-Pacific bottlenose dolphin）行為數據，探討社會老化現象，並透過雙階層位置尺度建模同時測量群體大小的平均值與變異數。研究發現，在群體及個體層級上，平均群體大小隨年齡先增加後在晚年下降，且此下降趨勢在雄性中更為明顯。同時，群體大小的可預測性隨年齡增長而增加，顯示社會偏好隨年齡而增強。高度社交且具高可預測性的個體與長壽呈現正相關，這項結果支持了個體可能透過精煉社會經驗來發展社會能力並獲得適應效益的假設。",
+      "topicTags": [
+        "social-ageing",
+        "dolphins",
+        "behavioural-ecology",
+        "longevity"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3003805",
+      "title": "Species diversity increases information flow about predation in bird communities",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-11-24T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003805",
+      "doi": "10.1371/journal.pbio.3003805",
+      "abstract": "The Biodiversity-Ecosystem Functioning (BEF) literature has shown species diversity to be essential for ecosystem functioning and services. Yet this concept has not been extended often to behavioral ecology, so that although it is understood that acquiring social information from heterospecific individuals is an important component of ecosystem functioning, it is unclear how animal signaling at the community level, and subsequent information flow, is related to increased species diversity. Eliciting vocal responses using predator models across 10 nature reserves on a latitudinal gradient, we first show that the species diversity of birds is correlated with signaling about predation, both in the low-risk system of mobbing and in the higher-risk system of alarm calls. After finding a similar result across a fragment area gradient in one reserve, we used this system to test how interspecific information flow is affected by species diversity. Potential mechanisms behind this effect include that species are complementary in the characteristics of their mobbing calls, so more species translates into more cumulative information, or there are higher signaling rates as more individuals are involved, or a specific keystone species is more likely to occur. This experiment varied the number of species producing mobbing calls (one, two, four, eight species), with two playback construction methods (standardizing call rate, as typical for BEF experiments, or letting it increase with species richness, as in natural assemblages). Heterospecific mobbing participation (number of vocal species, number of participating individuals), and responses (call rate, probability to call in the first minute and frequency range) increased with species richness. Construction method significantly interacted with species richness, as non-standardized exemplars showed accentuated response as species richness increased. These results match expectations that complementary differences among species in the acoustic characteristics of mobbing calls, and increased call rate, both contribute to the result. There was little evidence that the signals of one particular species changed the experimental result. The overall evidence thus supports the hypothesis that the species diversity of a community is a key component influencing the quantity and the characteristics of signaling and information flow inside it.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.64898/2026.11.20.767879",
+      "title": "CA19-9-associated transcriptional programs in pancreatic ductal adenocarcinoma are linked to survival and drug sensitivity",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-24",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.20.767879v1",
+      "doi": "10.64898/2026.11.20.767879",
+      "abstract": "Pancreatic cancer contains diverse cancer-cell states that complicate treatment selection. We asked whether targeted transcriptomics of glycan-defined PDAC cells would reveal novel and clinically informative subtypes. Spatial profiling of CA19-9-positive regions from 3 tumors with divergent clinical outcomes identified four transcriptional programs: inflammation and tissue remodeling (Cluster 1), proliferation (Cluster 2), antigen presentation and differentiation (Cluster 3), and protein synthesis (Cluster 4). These programs were recovered across 108 Visium sections from 39 patients, 161 patients from The Cancer Genome Atlas, and 37 cell lines with drug-response data. Among 31 tumors with broadly elevated program expression, eight Cluster 1 dominant tumors had poorer survival than the remaining 23. Exploratory drug-response analyses identified cluster-associated sensitivity and resistance patterns, including greater moexipril sensitivity with higher Cluster 1 activity. These findings demonstrate targeted profiling of glycan-defined PDAC populations to uncover cancer-cell-intrinsic therapeutic vulnerabilities, and they reveal CA19-9-associated molecular diversity with program-specific therapeutic candidates.",
+      "authors": [
+        "Goralski, T. M.",
+        "Klamer, Z. M.",
+        "Gao, C.",
+        "Fletcher, A.",
+        "Turner, L.",
+        "Avequin, T.",
+        "Becker, K.",
+        "Shi, C.",
+        "Allen, P.",
+        "Haab, B. B.",
+        "Jang, J."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "Visium",
+        "cancer",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "胰腺导管腺癌中与 CA19-9 相关的转录程序与存活率和药物敏感性有关"
+    },
+    {
+      "id": "10.64898/2026.11.23.768521",
+      "title": "Confidence-guided spatial gene expression inference for reliability-aware prognostic analysis from histology",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-24",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.23.768521v1",
+      "doi": "10.64898/2026.11.23.768521",
+      "abstract": "Inferring spatial gene expression from histology images offers a promising strategy for extending spatial molecular profiling to large-scale clinical tissue archives. However, existing approaches face two major challenges: limited generalizability of single-cell expression inference across datasets and platforms, and the lack of reliable estimates of prediction uncertainty, which compromise downstream biological and clinical analyses. Here, we present REGAIN, a framework for spatial gene expression inference at both single-cell and spot resolutions with prediction confidence. Across tissue sections, independent datasets and platforms, REGAIN improved spatial gene expression prediction and downstream analysis. Confidence-guided selection further enriched for cells with more accurately recovered expression profiles and improved cell-type annotation, while confidence-weighted clustering enhanced spatial-domain identification. Beyond assessing prediction quality, confidence mapping reveals greater heterogeneity in gene expression predictability across spatial domains than across broad cell types, with differences persisting within the same cell type and associated with tumor progression-related cell states and local microenvironmental context. Importantly, in 766 patients from the TCGA-BRCA cohort, confidence weighting enhanced the prognostic value of histology-inferred spatial molecular features, yielding stronger prognostic associations and identifying additional prognostic information beyond age and PAM50 molecular subtype. These confidence-weighted features also showed improved prognostic discrimination compared with clinical variables alone or combined with unweighted spatial molecular features. Together, REGAIN marks a shift in histology-based spatial gene expression inference from a focus on predictive accuracy toward a reliability-aware paradigm, demonstrating that prediction confidence provides biological insights into morphology-expression coupling and enhances the clinical informativeness of inferred spatial molecular features.",
+      "authors": [
+        "Bai, X.",
+        "Liu, R.",
+        "Sun, Y.",
+        "Wang, G.",
+        "Wang, Y.",
+        "Zhao, T."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial domains"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "基于信赖度引导的空间基因表现推断用于组织学中具可靠性考量的预后分析"
+    },
+    {
+      "id": "10.64898/2026.11.22.768448",
+      "title": "Disentangling within-cell-type heterogeneity from transcript contamination in imaging-based spatial transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-24",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.22.768448v1",
+      "doi": "10.64898/2026.11.22.768448",
+      "abstract": "Recent advances in imaging-based spatial transcriptomics have enabled high-resolution characterization of gene expression and cellular organization in situ. Resolving within-cell-type heterogeneity is essential for understanding how cellular states relate to tissue function and disease. However, imperfect cell segmentation and RNA spillover can contaminate cell-level expression profiles, obscuring intrinsic expression patterns and generating spurious variation. Existing decontamination methods can struggle to distinguish intrinsic variation from contamination when both are inferred from spatial measurements alone, and may suppress genuine state-associated signals when within-cell-type heterogeneity is not explicitly modeled. Here we present Dancer, a reference-guided probabilistic framework that disentangles within-cell-type heterogeneity from transcript contamination by combining cell-type-specific gene programs learned from single-cell data with explicit modeling of intrinsic expression, neighboring-cell contamination and background RNA. Across multiple human tumor datasets with varying gene compositions and panel sizes, Dancer improves cell-type separation and expression specificity while preserving identity-associated signals, achieving superior overall performance in benchmark comparisons. Inferred gene program activities reveal within-cell-type heterogeneity in the form of distinct cellular states and continuous spatial gradients associated with local tissue environments, while reference-guided panel expansion extends molecular characterization beyond the measured genes. Together, Dancer supports accurate transcript decontamination and more faithful interpretation of cellular heterogeneity within its native tissue context.",
+      "authors": [
+        "Liu, Z.",
+        "Chen, Y.",
+        "Yang, C.",
+        "Liu, Y."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "从基於成像的空间转录组学中厘清细胞内部异质性与转录本污染"
+    },
+    {
+      "id": "10.64898/2026.11.22.768440",
+      "title": "Multi-omics causal deep learning reveals regulatory structure while interventions refine perturbation predictions",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-24",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.22.768440v1",
+      "doi": "10.64898/2026.11.22.768440",
+      "abstract": "Inferring gene regulation from single-cell data is difficult because observational measurements cannot distinguish correlation from causation and access to perturbational data, especially with multiple modalities, remains limited. Here we present the Cross-Modal Causal Variational Autoencoder (CMC-VAE), which learns a network linking genes and proteins (gene-gene, protein-protein and gene-protein) in the latent space and maps each connection back onto measured features. Trained on 809,130 observational CITE-seq profiles, CMC-VAE recovers co-expression, transcription factor regulons and immune signalling programs, and learns a sparse cross-modal map enriched for transcript-protein cognate pairs. On three CRISPR screens used during development, it ranks knockout-responsive genes better than correlation and latent-VAE baselines. Fitted to a screen's unperturbed control cells, without perturbation labels, the model translates measured knockout RNA responses into protein responses better than a correlation map and cognate transcripts. The direction of gene-to-gene regulation, however, is not recovered from observational data. On the CITE-seq screens, fine-tuning only the latent network improves held-out response correlation, mainly by learning a response shared across knockouts. On larger Perturb-seq screens, with about 1,000 training perturbations, fine-tuning the latent network learns gene-specific effects that transfer to held-out genes, more so than a gene-level causal model fine-tuned on the same cells, and in simulation, such interventions also restore edge orientations that observational training leaves unresolved.",
+      "authors": [
+        "Goudarzi, S.",
+        "Nandi, V.",
+        "Liu, N.",
+        "Goodarzi, H."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics",
+        "CITE-seq",
+        "Perturb-seq",
+        "development",
+        "CRISPR"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "多体学因果深度学习揭示调节结构，同时介入性操作优化了扰动预测"
+    },
+    {
+      "id": "10.64898/2026.05.05.722864",
+      "title": "Acetate promotes nutritional adaptation in Escherichia coli",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-24",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.05.722864v2",
+      "doi": "10.64898/2026.05.05.722864",
+      "abstract": "Escherichia coli often releases acetate in its environment where it can accumulate to concentrations high enough to inhibit the bacterium's own growth. Here, we demonstrate that acetate promotes E. coli adaptation to nutrient changes by accelerating growth resumption, with as little as 250 M acetate being sufficient to shorten the lag phase by several hours. Acetate was found to be consumed via acetyl-CoA synthetase very early after the nutrient change. Transcriptomics, metabolomics and 13C-isotope labeling experiments show that acetate replenishes metabolic pools in the tricarboxylic acid cycle and upper glycolysis. Single-cell analyses reveal that acetate increases the adaptation speed of individual cells switching to the new nutrient. We conclude that the reuse of excreted acetate by E. coli facilitates nutritional adaptation by transiently replenishing central metabolite pools. This work identifies an unexpected role of acetate in the nutritional adaptation of E. coli, providing new insights into the physiological relevance of overflow metabolism.",
+      "authors": [
+        "Devlin, L.",
+        "Oudard, V.",
+        "Barthe, M.",
+        "Gosselin-Monplaisir, T.",
+        "Dupin, J.-B.",
+        "Condamine, F.",
+        "Baudry, J.",
+        "Cocaign-Bousquet, M.",
+        "Millard, P.",
+        "Enjalbert, B."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "醋酸促进大肠杆菌的营养适应"
+    },
+    {
+      "id": "10.64898/2026.11.13.766211",
+      "title": "Real-world longitudinal multi-omics separates weight-loss-associated responses to incretin agonists from a broader response not dependent on weight loss",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-24",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.13.766211v1",
+      "doi": "10.64898/2026.11.13.766211",
+      "abstract": "The benefits of incretin agonists, including glucagon-like peptide-1 receptor agonists and dual GIP/GLP-1 receptor agonists, are largely attributed to glycemic control and weight loss, as these therapies enhance insulin secretion, suppress glucagon release and delay gastric emptying to produce satiety. Yet treatment is also associated with lower risk of cardiometabolic, renal and other chronic diseases. Whether these broader benefits depend on weight loss itself or reflect direct effects of treatment on physiology remains unclear, as does the basis of the marked variation in how patients respond. Resolving these questions has been difficult because weight loss and drug effects occur together, and because molecular studies of treated patients have been limited in scope. Here we profiled paired plasma samples collected before and after treatment from 165 individuals drawn from DynamiQ, a biorepository that links plasma samples to longitudinal clinical records, combining mass spectrometry-based proteomics, a targeted inflammation proteomics panel (NULISAseq) and non-targeted metabolomics to capture metabolic function, inflammation and markers of chronic disease. Treatment was associated with broad remodeling of the plasma proteome and metabolome, but the extent to which this remodeling depended on weight loss differed across the molecular layers. The metabolome carried a lipid signature that scaled with the weight lost, whereas proteomic and inflammation-panel changes largely did not depend on weight loss. Among these changes, treatment was associated with lower circulating mitochondrial oxidative proteins and cardiolipins, consistent with relief of lipid-driven metabolic stress, and with a shift of the inflammation panel toward a less inflamed state. A metabolic aging clock showed that age acceleration decreased by a mean of 2.96 years after treatment (95% confidence interval -4.95 to -0.98; P = 3.7 x 10-3), a change that did not depend on weight loss or on the interval between samples, with the largest reductions in participants starting from the highest age acceleration, most of whom had diabetes. Treatment-associated features overlapped with features associated with cardiometabolic, renal and hepatic disease. Before treatment, higher systemic inflammation, reflecting chronic tissue stress and repair, was associated with less subsequent weight loss. Together, these findings indicate that incretin agonist treatment is associated with lower markers of metabolic and inflammatory stress and with a younger metabolic age, changes that do not depend on weight loss, identify baseline inflammation as an axis of heterogeneity in treatment response, and suggest that biorepositories linking longitudinal multi-omic profiling to clinical records can relate drug pharmacodynamics to disease risk and to variation in patient response.",
+      "authors": [
+        "Long, T.",
+        "Large, A.",
+        "Gallagher, K.",
+        "Justice, J. L.",
+        "Dao, K.",
+        "Park, S.",
+        "Usuka, J.",
+        "Watrous, J.",
+        "Jain, M."
+      ],
+      "articleType": "systems biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "真实世界纵向多体学研究将肠促胰岛素激动剂引发的体重减轻相关反应，与不依赖体重减轻的更广泛反应区隔开来"
+    },
+    {
+      "id": "10.64898/2026.11.19.767767",
+      "title": "CIP2A is a biomarker for progression and poor prognosis in cutaneous squamous cell carcinoma",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-24",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.19.767767v1",
+      "doi": "10.64898/2026.11.19.767767",
+      "abstract": "The incidence of cutaneous squamous cell carcinoma (cSCC) is rising worldwide, highlighting the need for novel therapeutic options for recurrent and metastatic disease. Protein phosphatase 2A (PP2A) is a keyt tumor suppressor, and its inhibition promotes malignant progression. Here, we investigated the role of the cancerous inhibitor of PP2A (CIP2A) in cSCC progression. RNA-sequencing, oligonucleotide array-based expression, and qRT-PCR analysis demonstrated elevated CIP2A mRNA levels in cSCC cells compared with normal human epidermal keratinocytes (NHEKs). Western blotting confirmed higher CIP2A protein production in cSCC cells than in NHEKs. Analysis of single-cell RNA-sequencing data from cSCC showed CIP2A expression in epithelial cells and fibroblasts. Silencing CIP2A with specific siRNAs reduced cSCC cell growth and viability by inhibiting MEK1 and ERK1/2 phosphorylation. In vivo, strong CIP2A immunostaining was observed in tumor cells of primary cSCCs and cSCC metastases, whereas staining was absent or weak in all actinic keratoses and most cSCC in situ samples. Kaplan-Meier analysis revealed that patients with high CIP2A expression had significantly worse disease-specific survival than those with low expression. These findings identify CIP2A as a clinically relevant oncogene in cSCC progression, with elevated expression in invasive primary tumors and metastases. CIP2A may serve as a biomarker of cSCC progression and metastasis, as well as a potential therapeutic target in advanced and metastatic cSCC.",
+      "authors": [
+        "Nissinen, L.",
+        "Tran, P.",
+        "Heiskanen, L.",
+        "Huvila, J.",
+        "Knuutila, J. S.",
+        "Westermarck, J.",
+        "Kahari, V.-M.",
+        "Riihila, P."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "CIP2A 作為皮膚鱗狀細胞癌惡化與不良預后的生物標記"
+    },
+    {
+      "id": "10.1038/s41467-026-80283-4",
+      "title": "Retraction Note: Combination of PARP and KRASG12D inhibitors enhances therapeutic efficacy by exploiting vulnerabilities in PDAC",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-80283-4",
+      "doi": "10.1038/s41467-026-80283-4",
+      "abstract": "Retraction Note: Combination of PARP and KRAS G12D inhibitors enhances therapeutic efficacy by exploiting vulnerabilities in PDAC",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "撤稿聲明：PARP 與 KRAS G12D 抑制劑的組合透過利用 PDAC 的脆弱性來增強治療療效",
+      "summaryZh": "本篇為針對論文「Combination of PARP and KRASG12D inhibitors enhances therapeutic efficacy by exploiting vulnerabilities in PDAC」的撤稿聲明（Retraction Note）。原研究探討結合 PARP 與 KRAS G12D 抑制劑在胰臟導管腺癌（PDAC）中的治療潛力。詳細的撤稿原因請參閱原始期刊公告。",
+      "topicTags": [
+        "retraction",
+        "pdac",
+        "parp-inhibitor",
+        "kras"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79502-9",
+      "title": "De novo identification of protein domains in cryo-electron tomography maps from AlphaFold2 models",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79502-9",
+      "doi": "10.1038/s41467-026-79502-9",
+      "abstract": "Identifying proteins in medium- to low-resolution cryo-electron tomography density maps remains challenging. Here the authors develop DomainSeeker, which combines AlphaFold2 models with experimental data to identify protein domains from density maps.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "利用 AlphaFold2 模型從冷凍電子斷層掃描圖中從頭鑑定蛋白質域",
+      "summaryZh": "在解析度中等到偏低的冷凍電子斷層掃描密度圖中辨識蛋白質，至今仍是一大挑戰。本研究開發了 DomainSeeker，結合 AlphaFold2 模型與實驗數據，能從密度圖中鑑定蛋白質域。這項技術有助於克服現有解析度限制所帶來的辨識難題。",
+      "topicTags": [
+        "cryo-et",
+        "alphafold2",
+        "protein-domains",
+        "structural-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79540-3",
+      "title": "CD33-CD45 interaction in Alzheimer’s disease susceptibility",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79540-3",
+      "doi": "10.1038/s41467-026-79540-3",
+      "abstract": "CD33 and CD45 are both genetically linked to Alzheimer’s risk. Here the authors show the two proteins physically interact, and this interaction is increased in Alzheimer’s disease.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "阿茲海默症易感性中的 CD33-CD45 相互作用",
+      "summaryZh": "CD33 與 CD45 兩者皆在基因上與阿茲海默症的風險相關聯。本研究顯示這兩種蛋白質會發生物理性相互作用，且此相互作用在阿茲海默症中會增加。這項發現有助於理解這兩種與疾病風險相關的蛋白質之間的關聯。",
+      "topicTags": [
+        "alzheimers-disease",
+        "protein-interaction",
+        "genetics"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79338-3",
+      "title": "Subsets of regulatory T cells are CD1a-reactive and dysfunctional in psoriasis",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-24T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79338-3",
+      "doi": "10.1038/s41467-026-79338-3",
+      "abstract": "T regulatory cells (Treg) cells may be involved with the regulation of immune responses in psoriasis. Here, using psoriasis samples from humans, the authors characterize the function of CD1a-responsive Treg cells in psoriasis and show that these cells secrete IL-10 in response to lysophosphatidylcholine and are found in close proximity to CD1a+ antigen-presenting cells and are potentially dysfunctional in psoriasis.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "調節型 T 細胞亞群具 CD1a 反應性且在乾癬中功能失調"
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 44,
+      "passedByScope": 19,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 25,
+      "keywordFallbackYes": 10,
+      "keywordFallbackNo": 15,
+      "included": 29,
+      "excluded": 15
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b"
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 15,
+      "llmTagged": 0,
+      "llmLineA": 0,
+      "llmLineB": 0,
+      "fallback": 15,
+      "fallbackLineA": 2,
+      "fallbackLineB": 13,
+      "failures": 15
+    },
+    "selection": {
+      "total": 23,
+      "candidates": 22,
+      "featured": 12,
+      "overflow": 10,
+      "lineA": 2,
+      "lineB": 13,
+      "preprint": 7,
+      "skip": 1,
+      "featuredLineA": 2,
+      "featuredLineB": 10,
+      "featuredPreprint": 0,
+      "overflowLineA": 0,
+      "overflowLineB": 3,
+      "overflowPreprint": 7
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 10,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 10,
+      "failed": 2
+    },
+    "translate": {
+      "requested": 10,
+      "llmTranslated": 10,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 10,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "llmTagged": 0
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 2,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "succeeded": 0
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "observed": [
+            "gemini-3.5-flash-lite"
+          ],
+          "succeeded": 10
+        }
+      },
+      "translate": {
+        "requested": 10,
+        "succeeded": 10,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b"
+        },
+        "primarySucceeded": 0,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "observed": [
+            "gemini-3.5-flash-lite"
+          ],
+          "succeeded": 10
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03824-3",
+        "title": "Fight AI slop without punishing legitimate researchers",
+        "journal": "Nature",
+        "publishedDate": "2026-11-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03824-3",
+        "doi": "10.1038/d41586-026-03824-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03725-5",
+        "title": "Richard of Wallingford and his Rectangulus",
+        "journal": "Nature",
+        "publishedDate": "2026-11-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03725-5",
+        "doi": "10.1038/d41586-026-03725-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03822-5",
+        "title": "The science on AI consciousness must acknowledge uncertainty",
+        "journal": "Nature",
+        "publishedDate": "2026-11-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03822-5",
+        "doi": "10.1038/d41586-026-03822-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03825-2",
+        "title": "Himalayan disasters demand biodiversity conservation across borders",
+        "journal": "Nature",
+        "publishedDate": "2026-11-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03825-2",
+        "doi": "10.1038/d41586-026-03825-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03823-4",
+        "title": "Submission caps aren’t enough to tackle AI slop",
+        "journal": "Nature",
+        "publishedDate": "2026-11-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03823-4",
+        "doi": "10.1038/d41586-026-03823-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03829-y",
+        "title": "Pakistani astronaut to become first foreign visitor to China’s space station",
+        "journal": "Nature",
+        "publishedDate": "2026-11-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03829-y",
+        "doi": "10.1038/d41586-026-03829-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03381-9",
+        "title": "How acidic compounds in human sweat open a mosquito ion channel",
+        "journal": "Nature",
+        "publishedDate": "2026-11-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03381-9",
+        "doi": "10.1038/d41586-026-03381-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03723-7",
+        "title": "Blend public cash and private innovation to unlock drug development",
+        "journal": "Nature",
+        "publishedDate": "2026-11-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03723-7",
+        "doi": "10.1038/d41586-026-03723-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03810-9",
+        "title": "‘The worst COP ever’ offers a chance to learn from failure",
+        "journal": "Nature",
+        "publishedDate": "2026-11-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03810-9",
+        "doi": "10.1038/d41586-026-03810-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03719-3",
+        "title": "AI is ‘the end of mathematics as we know it’ — where does the field go next?",
+        "journal": "Nature",
+        "publishedDate": "2026-11-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03719-3",
+        "doi": "10.1038/d41586-026-03719-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03542-w",
+        "title": "Who did figure 3? Why scientists should make experimental contributions visible",
+        "journal": "Nature",
+        "publishedDate": "2026-11-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03542-w",
+        "doi": "10.1038/d41586-026-03542-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03847-w",
+        "title": "William D. Nordhaus obituary: economist whose tools transformed climate policy",
+        "journal": "Nature",
+        "publishedDate": "2026-11-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03847-w",
+        "doi": "10.1038/d41586-026-03847-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79659-3",
+        "title": "Cyclical high-magnitude lake drainage slows Greenland ice sheet motion",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79659-3",
+        "doi": "10.1038/s41467-026-79659-3",
+        "abstract": "Four decades of satellite data show that repeated outburst floods from ice-marginal lakes beside a Greenland glacier reset its flow to a slow state for several years, acting as a natural brake on ice motion.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79791-0",
+        "title": "EcoVAE: a generative deep learning method for global species distribution prediction",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79791-0",
+        "doi": "10.1038/s41467-026-79791-0",
+        "abstract": "Predicting where species live is key to protecting biodiversity. The authors present EcoVAE, a generative model that rapidly and accurately predicts global species distributions, reveals species associations, and identifies sampling gaps.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-78734-z",
+        "title": "A spectral-spatial interweaver for hyperdimensional photonic computing",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-24T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-78734-z",
+        "doi": "10.1038/s41467-026-78734-z",
+        "abstract": "Photonic computing promises faster, more energy-efficient AI, but hardware scaling remains challenging. Here, the authors present HyperON, a TFLN-based hyperdimensional photonic computing network combining a spectral-spatial interweaver with wavelength-parallel modulators.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    }
+  ]
+}
