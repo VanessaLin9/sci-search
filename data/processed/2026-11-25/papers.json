@@ -1,0 +1,1528 @@
+{
+  "reportDate": "2026-11-25",
+  "generatedAt": "2026-11-25T20:00:17.897Z",
+  "papers": [
+    {
+      "id": "10.1016/j.cell.2026.10.037",
+      "title": "A pincer attack to take down cancer",
+      "journal": "Cell",
+      "publishedDate": "2026-11-25T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01323-1?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.037",
+      "abstract": "In this issue of Cell, Qiang et al. explore a new combination therapy that attacks pancreatic cancer from two angles. The therapy uses a KRAS inhibitor to target cancer cells, along with an AI-designed interleukin-21 mimetic to amplify an antitumor immune response mediated by effector CD4 T cells.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "cancer"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "雙管齊下擊潰癌症",
+      "summaryZh": "本期《Cell》中，Qiang 等人探討了一種從兩個角度攻擊胰臟癌的新型合併療法。該療法使用 KRAS 抑制劑來標靶癌細胞，並搭配人工智慧（AI）設計介白素-21（interleukin-21）模擬物，以放大由效應 CD4 T 細胞所介導的抗腫瘤免疫反應。這項研究展示了結合標靶與 AI 設計免疫療法的策略。",
+      "topicTags": [
+        "cancer",
+        "immunotherapy",
+        "kras",
+        "ai"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.10.042",
+      "title": "Revisiting the chemical alphabet of nucleic acids",
+      "journal": "Cell",
+      "publishedDate": "2026-11-25T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01335-8?rss=yes",
+      "doi": "10.1016/j.cell.2026.10.042",
+      "abstract": "Nearly two decades after the discovery of natural phosphorothioates in bacterial DNA, Maman et al. now demonstrate their existence in archaeal RNA. By identifying the responsible writer enzymes and revealing a role in tRNA stabilization, they establish phosphorothioation as a biologically relevant RNA modification. This discovery invites us to reconsider the traditional boundaries between the chemical alphabets of DNA and RNA.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "重新審視核酸的化學字母表",
+      "summaryZh": "本研究在古菌的 RNA 中展示了天然硫代磷酸酯的存在，距離細菌 DNA 中發現天然硫代磷酸酯已近二十年。透過辨識出負責的寫入酶並揭示其在 tRNA 穩定化中的作用，研究團隊確立了硫代磷酸酯化作為具生物學相關性的 RNA 修飾。這項發現促使人們重新思考 DNA 與 RNA 傳統化學字母表之間的界線。",
+      "topicTags": [
+        "rna-modification",
+        "archaea",
+        "nucleic-acids",
+        "biochemistry"
+      ]
+    },
+    {
+      "id": "10.1016/j.cell.2026.09.025",
+      "title": "You can’t always get where you want: Selective protein entry into the brain",
+      "journal": "Cell",
+      "publishedDate": "2026-11-25T00:00:00.000Z",
+      "url": "https://www.cell.com/cell/fulltext/S0092-8674(26)01127-X?rss=yes",
+      "doi": "10.1016/j.cell.2026.09.025",
+      "abstract": "Brain health depends on the blood-brain barrier blocking neurotoxins while allowing essential proteins to pass, but which proteins cross this barrier remains poorly understood. In this issue of Cell, Zhou and colleagues define the brain plasma proteome and show that protein transport selectively changes in neurodegeneration.",
+      "sourceId": "cell",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "蛋白質進入大腦的選擇性機制",
+      "summaryZh": "大腦健康依賴於血腦障壁（blood-brain barrier）阻擋神經毒素同時允許必需蛋白質通過，但哪些蛋白質能穿越此障壁仍所知甚少。在本期 Cell 中，Zhou 及其同事定義了腦部血漿蛋白質體（brain plasma proteome），並顯示蛋白質運輸在神經退化過程中會發生選擇性改變。這項研究有助於理解血腦障壁在神經退化疾病中的蛋白質運輸變化。",
+      "topicTags": [
+        "blood-brain-barrier",
+        "proteome",
+        "neurodegeneration",
+        "protein-transport"
+      ]
+    },
+    {
+      "id": "10.1038/s41588-026-02853-y",
+      "title": "Uncovering directionally and temporally variable genes with STAVAG",
+      "journal": "Nature Genetics",
+      "publishedDate": "2026-11-25T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41588-026-02853-y",
+      "doi": "10.1038/s41588-026-02853-y",
+      "sourceId": "nature-genetics",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "利用 STAVAG 揭示具方向性與時間變異的基因"
+    },
+    {
+      "id": "10.1038/s41564-026-02563-5",
+      "title": "Ebola virus-based antibody products cross-neutralize 2026 Bundibugyo virus glycoprotein",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-25T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02563-5",
+      "doi": "10.1038/s41564-026-02563-5",
+      "abstract": "Antibodies raised by Ebola virus retain neutralizing activity against the glycoprotein of the Bundibugyo virus causing the 2026 outbreak, supporting the rapid evaluation of existing Ebola antibody products in the current outbreak.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "基於伊波拉病毒的抗體產品可交叉中和 2026 年邦迪布吉約病毒醣蛋白",
+      "summaryZh": "本研究指出，由伊波拉病毒（Ebola virus）引發的抗體仍具備對抗 2026 年疫情中邦迪布吉約病毒（Bundibugyo virus）醣蛋白的中和活性。這項發現支持在當前疫情中，對現有的伊波拉抗體產品進行快速評估。研究結果有助於為應對疫情提供重要的後續評估依據。",
+      "topicTags": [
+        "ebola-virus",
+        "bundibugyo-virus",
+        "antibodies",
+        "glycoprotein"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02541-x",
+      "title": "Epithelial cell adhesion molecule on alveolar macrophages promotes the clearance of pulmonary bacterial infections",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-25T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02541-x",
+      "doi": "10.1038/s41564-026-02541-x",
+      "abstract": "This work identifies EpCAM as a marker of fetal-derived alveolar macrophages that supports bacterial uptake. Influenza infection suppresses EpCAM expression on alveolar macrophages, impairing subsequent bacterial clearance and leaving mice more vulnerable to secondary pneumonia.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "上皮細胞黏附分子在肺泡巨噬細胞上促進肺部細菌感染的清除",
+      "summaryZh": "本研究識別出上皮細胞黏附分子（EpCAM）作為胎兒源性肺泡巨噬細胞的標記物，有助於細菌的攝取。研究指出，流感感染會抑制肺泡巨噬細胞上的 EpCAM 表達，進而削弱隨後的細菌清除能力，使小鼠更容易感染繼發性肺炎。這項發現揭示了病毒感染如何影響肺部免疫防禦機制。",
+      "topicTags": [
+        "immunology",
+        "infectious-disease",
+        "microbiology",
+        "cellular-biology"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02525-x",
+      "title": "Mapping unsolved lipidomes accelerates lipid discovery in major bacterial pathogens",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-25T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02525-x",
+      "doi": "10.1038/s41564-026-02525-x",
+      "abstract": "A discovery lipidomics pipeline reveals unknown lipids in Mycobacterium tuberculosis and other bacterial pathogens.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "繪製未解明的脂質體系以加速主要細菌病原體的脂質發現",
+      "summaryZh": "本研究報導了一項發現型脂質體學（lipidomics）管線，可用於揭示結核分枝桿菌（Mycobacterium tuberculosis）及其他細菌病原體中的未知脂質。這項研究有助於加速細菌病原體中脂質的發現與相關研究。",
+      "topicTags": [
+        "lipidomics",
+        "bacterial-pathogens",
+        "microbiology"
+      ]
+    },
+    {
+      "id": "10.1038/s41564-026-02516-y",
+      "title": "Temperature-sensitive N6-methyladenosine interactions prime the malaria parasite for transmission",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-25T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02516-y",
+      "doi": "10.1038/s41564-026-02516-y",
+      "abstract": "The temperature drop accompanying malaria parasite transmission from humans to mosquitoes triggers m6A-mediated mRNA–YTH.2 interactions that rapidly reprogram translation and coordinate developmental progression.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "development"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true
+    },
+    {
+      "id": "10.1038/s41564-026-02545-7",
+      "title": "Sources and drivers of antibiotic resistance genes across rivers and lakes",
+      "journal": "Nature Microbiology",
+      "publishedDate": "2026-11-25T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41564-026-02545-7",
+      "doi": "10.1038/s41564-026-02545-7",
+      "abstract": "A comprehensive analysis of river and lake resistomes reveals the growing contribution of aquaculture to antimicrobial resistance in rivers and offers insights to strengthen environmental surveillance and early-warning systems.",
+      "sourceId": "nature-microbiology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "河流與湖泊中抗生素抗性基因的來源與驅動因素",
+      "summaryZh": "本研究對河流與湖泊的抗性基因體（resistomes）進行了全面分析，揭示了水產養殖業對河流中抗生素抗性日益增長的貢獻。這些發現為加強環境監測與早期預警系統提供了重要見解。",
+      "topicTags": [
+        "antimicrobial-resistance",
+        "environmental-surveillance",
+        "aquaculture",
+        "resistomes"
+      ]
+    },
+    {
+      "id": "10.1371/journal.pbio.3004107",
+      "title": "Social predictability increases with age in dolphins: A marker of longevity?",
+      "journal": "PLOS Biology",
+      "publishedDate": "2026-11-25T14:00:00.000Z",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3004107",
+      "doi": "10.1371/journal.pbio.3004107",
+      "abstract": "Social ageing research has focused on changes in average social behaviour, overlooking behavioural consistency as a trait. A new PLOS Biology study shows that wild dolphins’ grouping patterns become more predictable with age, most markedly in the longest-lived animals. Social aging research has focused on age-related changes in behavioral averages, overlooking behavioral consistency as a trait. This Primer explores a new PLOS Biology showing that grouping patterns become more predictable with age in dolphins, and links this pattern to longevity.",
+      "sourceId": "plos-biology",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "biology"
+      ],
+      "section": "biology",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "海豚的社會可預測性隨年齡增長而增加：長壽的標記？",
+      "summaryZh": "社會老化研究過去多聚焦於平均社會行為的變化，而忽略了作為特質的行為一致性。一項新的《PLOS Biology》研究指出，野生海豚的群聚模式隨著年齡增長而變得更具可預測性，且在壽命最長的動物身上最為顯著。這篇引介文章探討了這項研究，並將此模式與長壽連結。",
+      "topicTags": [
+        "social-aging",
+        "behavioral-consistency",
+        "longevity",
+        "dolphins"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.23.768474",
+      "title": "Single-cell transcriptomics atlas of Echinococcus granulosusreveals germinative cell heterogeneity and candidate developmental key genes",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.23.768474v1",
+      "doi": "10.64898/2026.11.23.768474",
+      "abstract": "Cystic echinococcosis is a zoonotic parasitic disease caused by infection with Echinococcus granulosus. Progressive cyst growth can compress host tissues and elicit immune responses. Characterizing the cellular composition and lineage differentiation of E. granulosus protoscoleces may provide insight into the regulation of parasite proliferation and development and facilitate the identification of potential intervention targets. We generated a single-cell transcriptomic atlas of E. granulosus and identified six major cell populations: Germinative cell, Muscle, Neuron, Storage, Tegument,and Cilium. Germinative cells were heterogeneous: some retained an undifferentiated transcriptional profile, whereas others expressed genes associated with differentiated cell types, consistent with the initiation of lineage-associated programs. RNA velocity analysis suggested four potential trajectories, one involving transitions within the undifferentiated population that may contribute to self-renewal and homeostasis, and three showing trends toward distinct lineage-associated subpopulations. A p53 homolog and threonine dehydrogenase tdh were identified as candidate developmental key genes that may contribute to larval growth and development. This study provides a single-cell atlas of E. granulosus protoscoleces and identifies key candidate genes involved in larval development, providing a foundation for future functional studies and the exploration of potential anthelmintic targets.",
+      "authors": [
+        "Wang, Q.",
+        "Quan, J.",
+        "Wang, H."
+      ],
+      "articleType": "cell biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "細粒棘球懸蟲單細胞轉錄體圖譜揭示生發細胞異質性與候選發育關鍵基因"
+    },
+    {
+      "id": "10.64898/2026.11.16.767041",
+      "title": "Cell-state conditioning predicts the expression response to an unseen stimulus but not stimulus-dependent genetic effects",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.16.767041v3",
+      "doi": "10.64898/2026.11.16.767041",
+      "abstract": "Background: Second-generation sequence models can be conditioned on a cell state supplied as a single-cell snapshot rather than selected from a fixed catalogue, but whether that conditioning carries an experimentally applied perturbation has not been tested. Results: We conditioned such a model on interferon-{beta}-stimulated and unstimulated monocytes from a published experiment, using cells disjoint from those providing the measurement, and asked whether the predicted expression response tracks the measured one and whether the same conditioning identifies expression QTL specific to the stimulated state. Predicted and measured responses agree at Spearman {rho} = 0.616 across 119 genes (95% CI 0.486 to 0.716), and at 0.607 after all 119 target genes are deleted from the conditioning input; across fifteen conditions the model's response scales with how much each condition's biology genuinely overlaps the target response (slope 0.73, Pearson 0.92), and a near-neighbour monocyte subset receives 0.295 against a measured overlap of 0.336. For stimulation-specific genetic effects we find no reliable evidence: the pre-specified primary arm moves from p = 0.0019 to 0.443 once both conditions must carry a measurable predicted effect, and the separation localises to the resting-condition baseline. Neither model generation's catalogue contains a perturbed sample, 0 of 4,430 tracks and 0 of 2,799 conditions, although both carry activation-state labels, so the gap is experimental perturbation rather than cell state. Two incidental findings apply beyond this model: credible-set membership mislabels over half of putatively condition-specific loci, and gating a ratio statistic on its larger term manufactures signal. Conclusions: Conditioning therefore conveys the state but not the mechanism: transfer between states is supported at the level of expression and unsupported at the level of variant effect, and an evaluation that separates the two is needed before either is claimed.",
+      "authors": [
+        "He, H.",
+        "Sun, J.",
+        "Xu, J.",
+        "Abudureyimu, M.",
+        "Yang, Y.",
+        "Huang, Y.",
+        "Wang, Z.",
+        "Xia, Q.",
+        "Wang, S."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "biology"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "細胞狀態條件化可用於預測對未見刺激的表現反應，但無法預測刺激依賴性基因效應"
+    },
+    {
+      "id": "10.64898/2026.11.24.768903",
+      "title": "Structural and functional reference maps of transcriptional enhancers in the developing human cortex",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.24.768903v1",
+      "doi": "10.64898/2026.11.24.768903",
+      "abstract": "Non-coding regulatory variation is the major driver of human phenotypic diversity, yet maps of cis-regulatory elements (CREs) and their variability across developmental cell types remain limited. Here, we integrated single-nucleus chromatin accessibility data from 54 mid-gestation human prenatal cortical donors to generate a CRE atlas comprising 1,165,697 candidate CREs across 104,266 cortical nuclei. Chromatin-state annotation classified 1.5% of CREs as bivalent promoters, 0.3% as active promoters, 39.8% as active distal enhancers, 1.3% as CTCF-associated insulators but 57.1% remain unresolved. Overlap with an external enhancer assay dataset showed that many unresolved CREs, nevertheless, exhibit regulatory activity; thus, current chromatin signatures underestimate the functional regulatory landscape. Pseudo-bulk analysis across major cortical lineages revealed that the prenatal cortical regulome is dominated by lineage-restricted CREs, with only a small core shared across all lineages. Restricted CREs were enriched for unresolved elements, intermediate-sharing classes were enhancer-dominant, and broadly shared CREs showed the strongest promoter-proximal and bivalent contribution. Lineage-selective transcription factor (TF) sequence grammar analyses identified progenitor-associated homeodomain programs and neuronal basic helix-loop-helix signatures, together with representative candidate regulators such as SOX10, NFIA, EMX2, DLX1, ARX, and RFX3. Across donors, developmental time, and sex, prenatal cortical CREs segregated into a stable versus variable regulatory compartments. Broadly, recurrent and developmentally persistent CREs had greater activity, on average, and greater enrichment for promoter-associated states, whereas donor-restricted and temporally restricted CREs had lower activity and were enriched for unresolved and enhancer-like elements. Sex-biased CREs were rare but highly specific: female-biased CREs were predominantly X-linked, broadly shared, and developmentally persistent, whereas male-biased CREs were more numerous, less resolved, and more restricted across lineage and developmental contexts. Together, these results define the prenatal cortical regulatory landscape at single-cell resolution, revealing a small, stable, promoter-rich core and a larger variable, enhancer- and unresolved-rich compartment in which lineage diversification is driven primarily by selective deployment of distal regulatory elements.",
+      "authors": [
+        "Karunakarun, D.",
+        "Hennick, K.",
+        "Leonard, R.",
+        "Nowakowski, T. J.",
+        "Berk-Rauch, H.",
+        "Chakravarti, A."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "人類發育中大腦皮質轉錄促進子的結構與功能參考地圖"
+    },
+    {
+      "id": "10.64898/2026.11.24.768778",
+      "title": "Heterogeneous Effects Across Clonal Hematopoiesis of Indeterminate Potential (CHIP) Driver Mutations Challenges a Unified Model of CHIP",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.24.768778v1",
+      "doi": "10.64898/2026.11.24.768778",
+      "abstract": "Clonal Hematopoiesis of Indeterminate Potential (CHIP) is an age-associated expansion of hematopoietic stem cells harboring somatic mutations in the absence of overt malignancy. CHIP driver genes impart divergent effects on many biological processes, yet the mechanisms underlying these gene-specific effects, particularly in non-hematologic disease contexts, remain poorly understood. We analyzed 466 samples from the Multi-Ancestry Genomics, Epigenomics, and Transcriptomics of Alzheimer's Disease dataset, and identified function-specific differences between CHIP categorizations. Uniquely, DNMT3A CHIP was associated with global hypomethylation, STAG2 CHIP increased mutation burden, HSC differentiation CHIP strongly triggered adaptive immune response, and proliferative signaling CHIP induced coagulation and cell adhesion. These divergent functions differentially modulate inflammatory pathways and suggest investigating CHIP's downstream effects through a driver gene function-based approach rather than treating CHIP as a single entity. Our multi-omics analyses provide such a framework to improve mechanistic interpretation of conflicting relationships between CHIP and diseases such as Alzheimer's disease, cardiovascular disease, and cancer.",
+      "authors": [
+        "Liu, M. H.",
+        "Sun, X.",
+        "Gomez, L.",
+        "Gu, T.",
+        "Mews, M. A.",
+        "Mustafa, Y.",
+        "Griswold, A. J.",
+        "Bush, W."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "multi-omics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "未明意義之純系造血（CHIP）驅動突變的異質性效應挑戰了 CHIP 的統一模型"
+    },
+    {
+      "id": "10.64898/2026.11.24.769043",
+      "title": "scOnion: Cross-Modal Concordance-Aware Joint Analysis of Cells and Features in Single-Cell Multiomic Data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.24.769043v1",
+      "doi": "10.64898/2026.11.24.769043",
+      "abstract": "Single-cell multiomic assays jointly profile gene expression and chromatin accessibility in the same cells, enabling direct analysis of cross-layer coordination. However, agreement between modalities varies across cells, and existing integration methods often emphasize shared structure, potentially averaging away cell-specific cross-modal discordance that carries biological signal. Here we present scOnion, a concordance-aware computational framework that quantifies cross-modality agreement and propagates this information into downstream analyses. Starting from paired low-rank representations obtained by spectral integration, scOnion computes per-cell concordance scores, a concordance-aware joint cell embedding, and an induced cross-modal feature embedding. The cell embedding preserves structure strongly represented in either modality, improving cell-type and state resolution, while the feature embedding scores candidate regulatory element(rE)-to-gene (rE2G) pairs. Across immune, neural, and developmental functional genomic datasets, scOnion's concordance patterns are reproducible and cell-resolved, with low-concordance cells enriched for modality-specific structure. scOnion also prioritizes candidate rE2G pairs, including distal links, with stronger support from external Hi-C contacts and fine-mapped eQTL data than the baseline linkage methods. In a B-cell fate bifurcation study, scOnion reveals remodeling of concordance and rE2G coupling during lineage commitment. scOnion embeds ~70,000 cells and computes rE2G links on CPU in 30 minutes, extends naturally to other multiomic assays such as CITE-seq, and is available as open-source software.",
+      "authors": [
+        "Fu, Z.",
+        "Zhu, J.",
+        "Pease, N. A.",
+        "Singh, H.",
+        "Das, J.",
+        "Lin, X.",
+        "Ma, R."
+      ],
+      "articleType": "genomics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "CITE-seq",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "scOnion：單細胞多體學數據中跨模態一致性感知的細胞與特徵聯合分析"
+    },
+    {
+      "id": "10.64898/2026.11.23.768697",
+      "title": "ELLA-mix: Detecting Cell-to-Cell Heterogeneity in Subcellular RNA Localization",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.23.768697v2",
+      "doi": "10.64898/2026.11.23.768697",
+      "abstract": "Subcellular RNA localization can differ between cells expressing the same gene, yet most analyses summarize transcript positions with a single gene-level pattern. We propose ELLA-mix, a finite mixture model for identifying cell subpopulations with distinct radial localization patterns from imaging-based spatial transcriptomics data. Transcript positions are normalized relative to the cell boundary and modeled using flexible spline densities within a count-conditioned nonhomogeneous Poisson process framework. Conditioning on each cell's transcript count separates differences in localization from differences in abundance. We estimate component densities and cell memberships using an expectation-maximization algorithm and select the number of patterns using the Bayesian information criterion, restricting consideration to models with stable cell assignments and sufficiently distinct components. Simulation studies evaluated the type I error and power of the test for nonuniform localization, as well as the accuracy of selecting the number of mixture components and estimating their radial distributions. ELLA-mix correctly selected the number of components in most simulated settings. In seqFISH+ mouse fibroblasts, ELLA-mix identified distinct cell subpopulations for genes previously assigned a single localization class; genes showing such variation were enriched for endoplasmic reticulum and extracellular matrix functions. In Xenium ovarian cancer tissue, more peripheral localization patterns were associated with higher proportions of proliferating cells, particularly in S phase. These results show how modeling cell-to-cell variation can reveal localization patterns and biological associations obscured by gene-level summaries.",
+      "authors": [
+        "Bandreddi, A.",
+        "Bruce, S. A.",
+        "Wang, J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "Xenium",
+        "SeqFISH",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "ELLA-mix：偵測亞細胞 RNA 定位中的細胞間異質性"
+    },
+    {
+      "id": "10.64898/2026.11.24.768971",
+      "title": "XenoType: Decoding cellular identity in breast cancer histology through molecular supervision",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.24.768971v1",
+      "doi": "10.64898/2026.11.24.768971",
+      "abstract": "Characterizing the cellular composition of the tumor microenvironment from histological images is fundamental to understanding cancer biology and informing treatment decisions. Deep learning has enabled automated nuclear detection and classification from hematoxylin and eosin (H&E) images, yet cell classifiers remain largely confined to broad morphological categories owing to a reliance on manual annotations. Recent efforts have used spatial molecular measurements to supervise histological classification, but these approaches often require separate tissue sections or produce altered H&E staining, and the resulting cell-type annotations depend on subjective choices such as marker selection and clustering parameters. Here we develop XenoType, a framework that classifies cells into seven molecularly informed categories directly from routine histology, trained using paired same-section Xenium spatial transcriptomics. Cell-type annotations are reconciled from four single-cell RNA-sequencing references, reducing dependence on marker choices. Across eight held-out breast tissue sections, XenoType outperformed commonly used CellViT++ retrained on the same molecular annotations under both four-class (macro-F1: 0.703 vs. 0.569) and seven-class (macro-F1: 0.571 vs. 0.403) taxonomies, with the largest gains for myoepithelial (F1: 0.175 to 0.572) and endothelial cells (F1: 0.395 to 0.682). Molecular measurements are required only during training; at inference, XenoType uses the H&E image alone. Model-reference agreement increased consistently with annotation confidence, and XenoType generalized to an independently profiled breast tissue section from a different spatial transcriptomics platform, supporting scalable cell-type mapping from routine histology without per-specimen molecular profiling.",
+      "authors": [
+        "Forjaz, D. F.",
+        "Vieira, D. F.",
+        "Queiroga, V.",
+        "Willig, M. L.",
+        "Joshi, S.",
+        "Kiemen, A. L.",
+        "Forjaz, A.",
+        "Wirtz, D.",
+        "Wu, P.-H."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "Xenium",
+        "biology",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "XenoType：透過分子監督解碼乳癌組織學中的細胞特性"
+    },
+    {
+      "id": "10.64898/2026.11.24.768923",
+      "title": "A method to disentangle enhancer-gene interactions from latent factors in single-cell multi-omics data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.24.768923v1",
+      "doi": "10.64898/2026.11.24.768923",
+      "abstract": "Mapping regulatory elements to their target genes in the cell types relevant to disease is essential for interpreting non-coding variants identified by genome-wide association studies. Single-cell multiome data, which simultaneously measure accessible chromatin and gene expression per cell, allow such peak-gene links to be inferred within individual cell types. However, shared technical and biological variation across genes and peaks, such as cell cycle, cell quality, and inter-sample differences, creates spurious links, while including sample covariates to control for this variation inadvertently removes true genotype-driven links. To address this trade-off, we developed CREMAP (Covariance-of-Residuals-based Enhancer-gene Mapping), a statistical method that estimates shared variation as latent factors from the data and adjusts for them before testing each peak-gene pair. Using CRISPRi perturbation experiments and fine-mapped eQTLs as validation benchmarks, we demonstrate that CREMAP improves the accuracy of inferred peak-gene links compared with existing methods across two cell lines and 13 cell types from human bone marrow, brain, and kidney. In kidney proximal tubule cells, CREMAP retains eQTL-supported and allele-specific links that standard approaches miss when samples are included as covariates. Furthermore, its latent factors capture previously unrecognized global signatures, including a tubular injury program. CREMAP thus enables accurate cell-type-specific peak-gene mapping from single-cell multiome data while preserving genuine genetic regulatory effects.",
+      "authors": [
+        "Nguyen, N. D.",
+        "McNulty, M. T.",
+        "Kim, G.",
+        "Han, S. K.",
+        "Sampson, M. G.",
+        "Lee, D."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "multi-omics",
+        "CRISPR",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "從單細胞多體學數據中拆解強化子與基因交互作用的新方法",
+      "summaryZh": "本研究開發了一種名為 CREMAP 的統計方法，旨在從單細胞多體學數據中準確推論強化子與基因的交互作用，同時避免潛在干擾因素造成的偽陽性或遺漏真實的基因型驅動連結。利用 CRISPRi 擾動實驗與微調的 eQTL 作為驗證基準，證實該方法在多種細胞系與人體組織中皆能提升峰-基因連結的推論準確度。此方法不僅能保留標準方法常忽略的遺傳調節效應，其估計的潛在因子亦捕捉到了先前未被識別的全域特徵。這項技術有助於在細胞類型特異性下進行精準的峰-基因對應，並為解讀全基因組關聯研究的非編碼變異提供重要基礎。",
+      "topicTags": [
+        "single-cell",
+        "multi-omics",
+        "enhancer-gene",
+        "computational-biology",
+        "genomics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.24.768931",
+      "title": "ChronoClone links temporal clonal behavior to lineage output and mutation responses",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.24.768931v1",
+      "doi": "10.64898/2026.11.24.768931",
+      "abstract": "Distinct stem cell clones can yield similar lineage outputs via different developmental trajectories or dynamics and respond differently to perturbation. Here, we introduce ChronoClone, an unsupervised method that groups single-cell clones by time-resolved cell-state composition into metaclones. Benchmarked against simulated ground-truth scenarios, ChronoClone demonstrates high noise tolerance compared to existing methods. Applied to an adult mouse hematopoietic lineage-tracing dataset, ChronoClone showed that clones producing the same lineage mature at different speeds, a difference the original study did not examine. Furthermore, using WT metaclones as a baseline reference for Dnmt3a- and Npm1c-mutant sister-clones, ChronoClone uncovered hidden, clone-specific mutation responses including slowed maturation and lineage composition shifts. By connecting temporal dynamics, perturbation responses, and ancestral molecular states, ChronoClone adds temporal cell-state dynamics into clonal analysis.",
+      "authors": [
+        "Harimoto, H.",
+        "Zheng, W.",
+        "Gottgens, B.",
+        "Barile, M.",
+        "Wilson, N. K."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "ChronoClone 將時間克隆行為與譜系輸出及突變反應相連結"
+    },
+    {
+      "id": "10.64898/2026.11.24.768888",
+      "title": "CyteArc: in-place analysis and reuse of remote atlases at 100-million-cell scale",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.24.768888v1",
+      "doi": "10.64898/2026.11.24.768888",
+      "abstract": "Public repositories hold hundreds of millions of single-cell profiles, yet analyzing them still requires downloading full files. We present CyteArc, a framework that analyzes remote atlases in place, scaling to nearly 100 million cells on standard CPUs faster than benchmarked workflows, with the lowest memory from 10 million cells upward. Without copying counts, CyteArc integrates millions of cells across studies using 1% to 4% of the disk space of other tools. CyteArc saves every step with full provenance, keeping analyses reproducible and letting researchers branch without rerunning upstream stages. Because those saved steps stay linked, completed cloud atlases act as live references, annotating new datasets without exporting reference files. Using CyteBase, an open cloud repository of over 160 million single-cell and spatial profiles in CyteArc format, we screen over 30 million blood cells across cohorts in minutes and identify rare circulating progenitors whose expansion tracks COVID-19 severity.",
+      "authors": [
+        "Ahuja, G.",
+        "Viniak, S.",
+        "Su, Y.",
+        "Dhapola, P."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "CyteArc：在一億細胞規模下就地分析與重複利用遠端圖譜"
+    },
+    {
+      "id": "10.64898/2026.11.24.769044",
+      "title": "GASTON-VI efficiently quantifies spatial axes and molecular gradients from multi-sample, multi-modal spatial-omics data",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.24.769044v1",
+      "doi": "10.64898/2026.11.24.769044",
+      "abstract": "Many tissues exhibit an underlying spatial axis along which fundamental biological processes occur due to continuous spatial gradients of cell type and molecular state. Modern spatial-omics technologies measure molecular features (e.g. gene/protein expression) at 100,000s-1,000,000s of locations within a two-dimensional (2-D) tissue slice, with large-scale atlases profiling multiple tissue slices of the same organ type across different individuals and biological conditions (e.g. healthy versus diseased). However, existing computational methods for identifying spatial molecular gradients are limited to small spatial transcriptomics datasets (1000s of cells) of a single tissue slice, while methods for integrating multiple samples do not explicitly model spatial axes nor spatial molecular gradients along such axes. Here, we present GASTON-VI, a variational inference (VI)-based deep learning model which efficiently learns an underlying spatial axis and spatial molecular gradients along this axis from multi-sample, multi-condition spatial-omics data of any molecular modality (e.g. transcriptomics, proteomics). GASTON-VI jointly learns (1) a spatial coordinate (the \"isodepth\") for each individual tissue slice and (2) 1-D spatial modality functions that describe molecular gradients along the isodepth for tissues of the same biological condition, while utilizing a latent variable model to account for batch effects. Further, GASTON-VI implements a statistical test for identifying molecules with differential spatial gradients across biological conditions (e.g. healthy versus diseased). On spatial transcriptomics and proteomics data from the intestine, tonsil, and liver, we show that GASTON-VI recovers spatial axes and molecular gradients along these axes more accurately and efficiently than existing methods. In particular, applied to large-scale spatial transcriptomics and proteomics atlases, GASTON-VI reveals differential spatial gradients of gene expression along the portal vein-central vein axis in fibrotic livers, and differential spatial gradients of protein abundance along the muscularis-lumen axis across different regions of the intestine. Software availability: GASTON-VI is available at https://github.com/chitra-lab/GASTON-VI.",
+      "authors": [
+        "Ning, Z.",
+        "Dharmasena, S.",
+        "Chitra, U."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "GASTON-VI：高效量化多樣本、多模態空間體學數據中的空間軸與分子梯度"
+    },
+    {
+      "id": "10.64898/2026.11.24.751906",
+      "title": "SYNDRI: Context-aware removal of transcript spillover in imaging-based spatial transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.24.751906v1",
+      "doi": "10.64898/2026.11.24.751906",
+      "abstract": "Imaging-based spatial transcriptomics (ST) measures gene expression at single-cell resolution, but imperfect segmentation often misassigns transcripts between neighboring cells, a problem known as transcript spillover. This spillover is niche-dependent and can therefore confound downstream analyses that rely on niche-specific differential expression. True spillover cannot be directly quantified in experimental ST data, so existing correction methods infer contamination indirectly from transcript positions or expression structure. Here we introduce SYNDRI, a post-segmentation correction method that frames spillover detection as a supervised, gene-level classification task. We develop SYNDRI-SIM to generate labeled training data by simulating spillover between spatially mapped scRNA-seq profiles. SYNDRI uses a transformer to predict gene-level spillover probabilities conditioned on each cell's expression, identity, and local neighborhood, without requiring transcript-level coordinates or deconvolution. On held-out simulated data, SYNDRI achieves an AUPRC of 0.86, compared with 0.64 for the next-best method. Across MERFISH, CosMx, and Xenium datasets, SYNDRI achieves the highest aggregate performance across metrics of cell-type separation, reference similarity, and preservation of within-cell-type heterogeneity. In a CosMx lung cancer dataset, SYNDRI removes nearly all potentially contaminating tumor and macrophage markers from differential expression between tumor-associated and stromal fibroblasts while retaining native fibroblast markers. These results demonstrate the utility of learning from simulated spillover to improve the interpretation of spatial gene expression.",
+      "authors": [
+        "Winchell, J.",
+        "Ma, J.",
+        "Krieger, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "scRNA-seq",
+        "spatial transcriptomics",
+        "MERFISH",
+        "Xenium",
+        "CosMx",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "SYNDRI：基於成像的空間轉錄體學中具情境意識的轉錄本溢出去除方法"
+    },
+    {
+      "id": "10.64898/2026.11.24.768701",
+      "title": "Random-walk-based Probabilistic Microglia Morphology Reconstruction in 2D and 3D from Confocal Microscopy Images",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.24.768701v1",
+      "doi": "10.64898/2026.11.24.768701",
+      "abstract": "Reconstructing individual microglia from confocal images is challenging when fine processes have weak fluorescence or neighboring cells form connected structures. Inspired by Grady's random-walker framework, we propose a soma-guided probabilistic method for three-dimensional microglial reconstruction and cell-of-origin assignment. Signal-weighted random walks quantify voxel connectivity to each soma by the probability of reaching that soma before background or another soma. A path-length adjustment reduces the penalty on distal processes. Adjusted scores are compared across somata to assign voxels, subject to score and image-intensity thresholds. We assess process recovery and cell assignment separately using exact three-dimensional matching to manual tracings. In a P28 single-cell example, the reconstruction covered 83.98% of traced voxels within the analyzed region. For a connected cell pair in sample 12hrMD82, coverage was 71.86% and 82.31%, with a pooled incorrect-assignment rate of 4.61% among detected traced voxels. Local analyses were also combined to produce an overview of 13 cell reconstructions in the same sample. We additionally provide a two-dimensional version that tolerates short signal gaps in maximum-intensity projections. These initial examples demonstrate the potential of soma-specific connectivity for microglial reconstruction.",
+      "authors": [
+        "Chen, X.",
+        "Hossain, E.",
+        "McCall, M. N."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "基於隨機漫步的共軛焦顯微影像 2D 與 3D 小膠質細胞形態概率重建"
+    },
+    {
+      "id": "10.64898/2026.11.24.768887",
+      "title": "Functional cooperation, adaptation and synchronization of subcellular processes in cellular neighborhoods as inferred from spatial transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.24.768887v1",
+      "doi": "10.64898/2026.11.24.768887",
+      "abstract": "Tissue-level functions emerge from pathway activities distributed across neighboring cells. Yet analyses of spatial transcriptomics mostly focus on cell type composition or signaling through ligand-receptor pairs, leaving spatial relationships between effector processes undescribed. We inferred networks of functionally interacting subcellular processes (SCPs) that are independent of shared gene products and lie beyond sibling relationships defined in parent-child hierarchies. Using those networks for the analysis of published spatial transcriptomics datasets from human kidney biopsies, we identified functionally related SCP activities between a tissue spot and its neighbors. Identified pairs of adjacent SCPs indicate functional cooperation, e.g. basement membrane assembly and cell-matrix adhesion, functional adaption, e.g. complement synthesis and inhibition, and functional synchronization, e.g. folate cycle and cobalamin metabolism or pre-mRNA splicing and nuclear mRNA export. Two independent null models, shuffling of SCP labels within the network and shuffling of spots on the tissue slice, distinguish pairs that are functionally non-random and pairs that are additionally enriched within the immediate neighborhood, separating local from tissue-wide coordination. Our results suggest that tissue physiology reflects not only cell type composition but also functional coordination between neighboring regions.",
+      "authors": [
+        "Hansen, J.",
+        "Iyengar, R."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "從空間轉錄體學推斷細胞鄰近區域中亞細胞過程的功能協同、適應與同步化"
+    },
+    {
+      "id": "10.64898/2026.11.16.767062",
+      "title": "An interpretable framework for decoding transcriptomic foundation models",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.16.767062v1",
+      "doi": "10.64898/2026.11.16.767062",
+      "abstract": "Transcriptomic foundation models are pretrained on millions of single-cell profiles, but what their hidden states encode, and whether it holds on targeted spatial panels, is uncertain. We present interpreTFM, a layer-resolved framework that extracts frozen activations from scGPT, Geneformer, and C2S-scale, decomposes each evaluated layer with a sparse autoencoder (SAE), and evaluates the resulting features against raw hidden dimensions, an untrained SAE of the same width, and single genes, holding out either gene-token rows or whole genes. Concept-associated features are then projected to cells for spatial niche discovery and interface analysis. We applied the framework to a CosMx lung-cancer section (81,236 cells, 960 genes) and a Xenium renal-cell-carcinoma section (465,220 cells, 399 model-compatible genes), screening 29 model-layer combinations per dataset. On held-out observations of known genes, sparse features marked 262--593 biological concepts per analysis layer, against 0--70 for raw hidden dimensions and 0--249 for the untrained SAE; on genes held out during feature selection, concept F1 was 0.01--0.12 for every representation and lowest for sparse features, so a feature's concept label reflects the genes it detects, and randomly re-initialized models scored the same. A linear readout of the hidden states recovered the concept membership of unseen genes (area under the receiver operating characteristic curve 0.66--0.75, versus 0.59--0.61 for co-expression and cell-type profiles, and chance level for randomly re-initialized scGPT and Geneformer), so this information is learned and distributed across dimensions. At the cell level, sparse features were about twice as population-specific as raw hidden dimensions and approached single marker genes, and this held in four further CosMx donors. In the analyzed CosMx section, niches built from sparse features agreed with author cell types more closely than label-composition and expression-only niches and converged across models; in the further donors their concept-level definition recurred, whereas their composition did not. In the single Xenium section, three of five niches per model (lymphoid, tumor/myeloid, tumor/vascular) were shared across models and also emerged from measured expression alone. A macrophage's sparse profile predicted the myeloid composition of its neighborhood about as well as the full gene panel, also in three further donors. Within model niches, ligand--receptor co-localization recurred directionally across CosMx donors and placed CCL19--CCR7 in the Xenium lymphoid niche, whereas the models' own interface calls, under a local, stratified null with a threshold calibrated on contact-free fields, were at chance level in CosMx and tracked transcript spillover in Xenium. interpreTFM thus provides held-out tests that separate gene detection from concept generalization, and features that make cells and niches comparable across models and patients while carrying the information of the measured panel. Source code is available at \\href{https://github.com/OliiverHu/interpreTFM}{github.com/OliiverHu/interpreTFM}.",
+      "authors": [
+        "Hu, Y.",
+        "Wen, Z.",
+        "Liu, Y. H.",
+        "Yuan, W.",
+        "Qin, H.",
+        "Lin, Z.",
+        "Klindt, D.",
+        "Yang, H.",
+        "Carja, O.",
+        "Zhou, X. M."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "Xenium",
+        "CosMx",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "用於解碼轉錄體基礎模型的可解釋框架"
+    },
+    {
+      "id": "10.64898/2026.11.23.768583",
+      "title": "Spatiotemporal Dynamics of Vascular Wall Cells during Ductus Arteriosus Development and Closure",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-25",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.23.768583v1",
+      "doi": "10.64898/2026.11.23.768583",
+      "abstract": "Background: The transition from fetal to postnatal circulation requires closure of the ductus arteriosus (DA), involving smooth muscle cell contraction followed by anatomical remodeling. However, the spatial organization and developmental transcriptional dynamics of vascular wall cells during this transition remain poorly understood. Methods: We analyzed vascular morphology and spatial transcript profiles of the mouse DA and aorta at five stages from embryonic day 14.5 (E14.5) to postnatal day 2.5 (P2.5), enabling paired comparisons within tissue sections. Selected findings were compared with an independent mouse single-cell RNA-sequencing dataset. Histological and spatial transcript analyses were also performed on human DA tissue and the adjacent pulmonary artery. Results: The DA exhibited transiently higher cell-cycle-associated transcription across multiple vascular wall populations at E16.5, preceding medial thickening at E18.5 and postnatal luminal closure. Prenatally, DA mural cells exhibited greater contractile-associated gene expression than aortic mural cells. This difference diminished after birth, accompanied by a marked shift toward synthetic-like transcriptional programs associated with extracellular matrix remodeling and proteolysis. Ductal endothelial cells exhibited postnatal divergence from aortic endothelial cells in matrix- and adhesion-associated gene expression. Adventitial fibroblasts displayed distinct extracellular matrix- and insulin-like growth factor-associated expression profiles. In a human postnatal DA specimen, synthetic-like mural cells were enriched in regions of disrupted elastic lamellae and prominent collagen staining and shared selected remodeling-associated markers with postnatal mouse DA mural cells. Conclusions: DA development and closure involve temporally organized transcriptional changes across vascular wall populations, characterized by prenatal cell-cycle-associated activity and rapid postnatal reorganization of mural transcriptional programs. These findings provide a spatial framework for understanding vascular cell plasticity and multicellular remodeling during DA closure.",
+      "authors": [
+        "Sanderson, C.",
+        "Dahal, I.",
+        "Sinha, A.",
+        "Zoccheddu, M.",
+        "Sharma, A.",
+        "Reese, J.",
+        "Shelton, E. L.",
+        "St. Louis, J. D.",
+        "Stansfield, B.",
+        "Saito, J."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": false,
+      "titleZh": "動脈導管發育與閉合過程中血管壁細胞的時空動態學"
+    },
+    {
+      "id": "10.1038/s41467-026-79387-8",
+      "title": "Atomic-resolution insights into interactions of rifampicin and rifamycin derivatives with orphan CYP143 of M. tuberculosis",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-25T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79387-8",
+      "doi": "10.1038/s41467-026-79387-8",
+      "abstract": "The study reveals how the mutation associated with drug resistance facilitates the binding of rifampicin to the orphan enzyme of tubercular bacilli, thereby influencing protein-protein interactions. The findings explore pathogen adaptation mechanisms.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "結核分枝桿菌孤兒酵素 CYP143 與利福平及利福黴素衍生物交互作用的原子解析度見解",
+      "summaryZh": "本研究揭示了與抗藥性相關的突變如何促進利福平與結核桿菌（tubercular bacilli）孤兒酵素的結合，進而影響蛋白質間交互作用。這些發現探討了病原體的適應機制，有助於深入理解抗藥性的運作。相關成果發表於《Nature Communications》。",
+      "topicTags": [
+        "structural-biology",
+        "microbiology",
+        "drug-resistance",
+        "protein-interactions"
+      ]
+    },
+    {
+      "id": "10.1038/s41467-026-79416-6",
+      "title": "Lithium coordination compound reduces nephrotoxicity and enhances therapeutic effects in Alzheimer’s disease female mice",
+      "journal": "Nature Communications",
+      "publishedDate": "2026-11-25T00:00:00.000Z",
+      "url": "https://www.nature.com/articles/s41467-026-79416-6",
+      "doi": "10.1038/s41467-026-79416-6",
+      "abstract": "Here authors rationally design a lithium coordination compound BuLiPro. Compared with conventional lithium carbonate, BuLiPro improves brain lithium bioavailability, enhances GSK-3β inhibitory potency and reduces nephrotoxicity. In female AD mouse models, BuLiPro mitigates tau and amyloid-β pathologies and rescues cognitive deficits, showing potential for safer lithium-based therapeutics.",
+      "sourceId": "nature-communications",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "routing-keyword-fallback"
+      },
+      "matchedKeywords": [],
+      "section": "other",
+      "digestLine": "line-b",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "鋰配位化合物能降低腎毒性並增強阿茲海默症雌性小鼠的治療效果",
+      "summaryZh": "本研究合理設計了一種鋰配位化合物 BuLiPro，與傳統碳酸鋰相比，它能改善大鼠腦部的鋰生物利用度、增強 GSK-3β 抑制效力並減少腎毒性。在阿茲海默症雌性小鼠模型中，BuLiPro 能減輕 tau 與類澱粉蛋白病變並挽救認知缺陷，展現出作為更安全鋰基療法之潛力。",
+      "topicTags": [
+        "alzheimers-disease",
+        "pharmacology",
+        "neuroscience"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 83,
+      "passedByScope": 26,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 57,
+      "keywordFallbackYes": 16,
+      "keywordFallbackNo": 41,
+      "included": 42,
+      "excluded": 41
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b"
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 12,
+      "llmTagged": 0,
+      "llmLineA": 0,
+      "llmLineB": 0,
+      "fallback": 12,
+      "fallbackLineA": 0,
+      "fallbackLineB": 12,
+      "failures": 12
+    },
+    "selection": {
+      "total": 28,
+      "candidates": 28,
+      "featured": 12,
+      "overflow": 16,
+      "lineA": 0,
+      "lineB": 12,
+      "preprint": 16,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 11,
+      "featuredPreprint": 1,
+      "overflowLineA": 0,
+      "overflowLineB": 1,
+      "overflowPreprint": 15
+    },
+    "summarize": {
+      "requested": 12,
+      "llmSummarized": 11,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 11,
+      "failed": 1
+    },
+    "translate": {
+      "requested": 16,
+      "llmTranslated": 16,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 16,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "llmTagged": 0
+      },
+      "summarize": {
+        "requested": 12,
+        "failed": 1,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "succeeded": 0
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "observed": [
+            "gemini-3.5-flash-lite"
+          ],
+          "succeeded": 11
+        }
+      },
+      "translate": {
+        "requested": 16,
+        "succeeded": 16,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b"
+        },
+        "primarySucceeded": 0,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "observed": [
+            "gemini-3.5-flash-lite"
+          ],
+          "succeeded": 16
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03468-3",
+        "title": "The leading cities in the world for high-quality research in 2025",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03468-3",
+        "doi": "10.1038/d41586-026-03468-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03853-y",
+        "title": "Dual proofs of legendary Riemann hypothesis stun mathematicians",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03853-y",
+        "doi": "10.1038/d41586-026-03853-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11465-9",
+        "title": "An in situ redox-converted molecule for all-perovskite tandem solar cells",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11465-9",
+        "doi": "10.1038/s41586-026-11465-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03472-7",
+        "title": "How Singapore has turned a nation into a smart-city testing ground",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03472-7",
+        "doi": "10.1038/d41586-026-03472-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03854-x",
+        "title": "What is the Riemann hypothesis? A guide to the famed conjecture that rules prime numbers",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03854-x",
+        "doi": "10.1038/d41586-026-03854-x",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03475-4",
+        "title": "Saving Nepal’s wild orchids — in photos",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03475-4",
+        "doi": "10.1038/d41586-026-03475-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03494-1",
+        "title": "A fine-grained reconstruction of barley’s evolutionary history",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03494-1",
+        "doi": "10.1038/d41586-026-03494-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03470-9",
+        "title": "Can Beijing scale up its smart-city ambitions?",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03470-9",
+        "doi": "10.1038/d41586-026-03470-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03513-1",
+        "title": "From sketch to publication-ready flowchart: how AI tools can bridge the gap",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03513-1",
+        "doi": "10.1038/d41586-026-03513-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03466-5",
+        "title": "The world’s leading science cities are changing — here’s why",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03466-5",
+        "doi": "10.1038/d41586-026-03466-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03268-9",
+        "title": "Gut microbes can adapt to our ageing bodies",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03268-9",
+        "doi": "10.1038/d41586-026-03268-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03473-6",
+        "title": "China’s AI-powered smart-city model is going global",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03473-6",
+        "doi": "10.1038/d41586-026-03473-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03469-2",
+        "title": "Helsinki puts trust at the heart of its smart-city model",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03469-2",
+        "doi": "10.1038/d41586-026-03469-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03471-8",
+        "title": "London’s people-first approach to smart-city development",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03471-8",
+        "doi": "10.1038/d41586-026-03471-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03693-w",
+        "title": "Bogong moths can migrate using an internal geomagnetic compass",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03693-w",
+        "doi": "10.1038/d41586-026-03693-w",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03467-4",
+        "title": "Can smart cities attract the talent they need to thrive?",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03467-4",
+        "doi": "10.1038/d41586-026-03467-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03813-6",
+        "title": "Dengue has exploded globally with shocking speed",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03813-6",
+        "doi": "10.1038/d41586-026-03813-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03521-1",
+        "title": "The Mona Lisa Lottery",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03521-1",
+        "doi": "10.1038/d41586-026-03521-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03809-2",
+        "title": "The world has a golden chance to improve HIV prevention: don’t squander it",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03809-2",
+        "doi": "10.1038/d41586-026-03809-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03474-5",
+        "title": "A guide to the Nature Index",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03474-5",
+        "doi": "10.1038/d41586-026-03474-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03837-y",
+        "title": "Succumbing to certainty is a failure in science",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03837-y",
+        "doi": "10.1038/d41586-026-03837-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03835-0",
+        "title": "‘If we can solve Riemann, what can’t we do?’: mathematicians shocked and excited by AI breakthroughs",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03835-0",
+        "doi": "10.1038/d41586-026-03835-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03333-3",
+        "title": "Just eight universities dominate Nobel and other top economics prizes",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03333-3",
+        "doi": "10.1038/d41586-026-03333-3",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11339-0",
+        "title": "An enduring climatic burden from past peatland drainage",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11339-0",
+        "doi": "10.1038/s41586-026-11339-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11353-2",
+        "title": "Quantum-enhanced sensing with 500 photons via Fock-space confocal focusing",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11353-2",
+        "doi": "10.1038/s41586-026-11353-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11287-9",
+        "title": "Licensing mechanisms during RNA-guided DNA integration by type I-F3 CAST",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11287-9",
+        "doi": "10.1038/s41586-026-11287-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11341-6",
+        "title": "Middle–Late Pleistocene Denisovans and unresolved Homo in southern China",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11341-6",
+        "doi": "10.1038/s41586-026-11341-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11146-7",
+        "title": "Augmenting reality with integrated photonics",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11146-7",
+        "doi": "10.1038/s41586-026-11146-7",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11309-6",
+        "title": "Coherent parity oscillations in coupled minimal Kitaev chains",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11309-6",
+        "doi": "10.1038/s41586-026-11309-6",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11311-y",
+        "title": "Transcription from megabase-scale heterochromatin generates neural barcodes",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11311-y",
+        "doi": "10.1038/s41586-026-11311-y",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11354-1",
+        "title": "Disturbances and climate drive tree elevational shifts",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11354-1",
+        "doi": "10.1038/s41586-026-11354-1",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11288-8",
+        "title": "Unconventional resistivity reduction in NbP semimetal nanoribbons",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11288-8",
+        "doi": "10.1038/s41586-026-11288-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11326-5",
+        "title": "Engineering signalling centres to trigger human trunk morphogenesis in vitro",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11326-5",
+        "doi": "10.1038/s41586-026-11326-5",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11345-2",
+        "title": "Rare-variant genetic architecture of height in over 1.4 million individuals",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11345-2",
+        "doi": "10.1038/s41586-026-11345-2",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41586-026-11279-9",
+        "title": "Submillimetre hot-electron transport in manganese-doped quantum dot solids",
+        "journal": "Nature",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41586-026-11279-9",
+        "doi": "10.1038/s41586-026-11279-9",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79552-z",
+        "title": "Excitonic electrically tunable metaatoms for visible light",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79552-z",
+        "doi": "10.1038/s41467-026-79552-z",
+        "abstract": "This study shows that an excitonic transition in a polymer can induce negative permittivity and create switchable visible-light metaatoms, enabling dynamic metasurfaces for beam steering and rewritable holograms",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79797-8",
+        "title": "Observationally-constrained CMIP6 projections of a snow-free Northern Hemisphere",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79797-8",
+        "doi": "10.1038/s41467-026-79797-8",
+        "abstract": "This study presents a monthly emergent constraint based on observed warming that reduces CMIP6 inter-model variance and refines snow-free projections: Arctic summers become snow-free by 2040 s under SSP5-8.5, while snow disappearance is delayed by 7–34 years under SSP1-2.6 in vulnerable regions and months.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79713-0",
+        "title": "Carbon-neutral algal bloom management via algal organic matter repurposing",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79713-0",
+        "doi": "10.1038/s41467-026-79713-0",
+        "abstract": "Algal organic matter (AOM) is repurposed as a crosslinker with metal coagulants, forming gel flocs that activate dissolved oxygen and generate microbubbles. This self-driven flotation effectively removes algae and AOM while reducing carbon footprint.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79044-0",
+        "title": "Scalable 3D hybrid integrated photonic computing chiplets",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79044-0",
+        "doi": "10.1038/s41467-026-79044-0",
+        "abstract": "Integrated photonics promises fast, energy efficient information processing but remains difficult to scale. Here, authors develop HyPec, a hybrid photonic chiplet architecture combining 2D high-speed encoding with 3D photonic routing to enable scalable multi-chip computing.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79720-1",
+        "title": "SMYD1 trimethylates myosin K129 to restrain cardiomyocyte hypercontractility",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79720-1",
+        "doi": "10.1038/s41467-026-79720-1",
+        "abstract": "How the muscle-specific enzyme SMYD1 regulates heart contraction and contributes to inherited heart disease has remained unclear. Here, the authors show that SMYD1 modifies the motor protein myosin to restrain heart-cell contraction, linking loss of this activity to hypertrophic cardiomyopathy.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/s41467-026-79518-1",
+        "title": "Basal mantle motion causes Pacific hotspot drift",
+        "journal": "Nature Communications",
+        "publishedDate": "2026-11-25T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/s41467-026-79518-1",
+        "doi": "10.1038/s41467-026-79518-1",
+        "abstract": "This study shows that the average southward drift of Pacific hotspots since 80 Ma is linked to the migration of the underlying basal mantle structure, driven by large-scale lower-mantle flow associated with asymmetric subduction around the Pacific.",
+        "sourceId": "nature-communications"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    }
+  ]
+}
