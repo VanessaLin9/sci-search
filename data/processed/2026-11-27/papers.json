@@ -1,0 +1,337 @@
+{
+  "reportDate": "2026-11-27",
+  "generatedAt": "2026-11-27T19:32:32.975Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.11.23.768643",
+      "title": "Measuring and reducing segmentation-driven cell-type labeling errors in imaging spatial transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-27",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.23.768643v1",
+      "doi": "10.64898/2026.11.23.768643",
+      "abstract": "Imaging spatial transcriptomics labels each segmented cell from transcripts that include some of its neighbors RNA. We labeled each cell from its nucleus and its whole mask at equal depth, with two nuclear halves as a null. Whole-cell counts drew small, RNA-poor cells toward their larger neighbors labels. On three platforms, relative to nuclear labels at equal depth, T and NK cells lost 23-53% of their labels in six datasets of five tissues and 4-9% in renal cell carcinoma; this label-only measure matched same-cell protein markers in five donors and, where it differed, understated the loss. In gut, labels alone placed the loss at 58% of T cells among epithelial cells, compared with 24% in the lamina propria. The error lowered immune contact counts mainly by removing T cells; random relabeling, a common robustness test, raised them. Nuclear labels, where nuclei held enough counts, recovered many lost T cells. Imaged nuclei also carried some neighbor RNA and isolated nuclei carried none, indicating that these losses are lower bounds.",
+      "authors": [
+        "Elgart, V.",
+        "Loscalzo, J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "測量與減少造影空間轉錄體學中的細胞類型標記誤差",
+      "summaryZh": "本研究探討造影空間轉錄體學（imaging spatial transcriptomics）中，細胞分割過程會將鄰近細胞的RNA納入，進而產生標記誤差的現象。研究指出，全細胞計數會將小型且RNA較少的細胞拉向較大的鄰近細胞標記，導致特定細胞類型（如T細胞與NK細胞）的標記大量流失。相較之下，使用細胞核標記能恢復許多流失的細胞，並有助於降低免疫接觸計數的誤差。這些發現揭示了空間轉錄體學中細胞類型標記的偏差與其對免疫細胞計數的影響。",
+      "topicTags": [
+        "spatial-transcriptomics",
+        "cell-typing",
+        "transcriptomics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.23.768628",
+      "title": "A systematic benchmark evaluation of algorithms for 3D tissue alignment and registration with spatial omics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-27",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.23.768628v1",
+      "doi": "10.64898/2026.11.23.768628",
+      "abstract": "Recent advances in spatial omics have enabled tissue atlases spanning serial sections, donors, and experimental technologies. Aligning these datasets is essential for comparing spatial organization, reconstructing three-dimensional tissue architecture, and registering sections to a common coordinate framework. However, systematic comparisons of alignment accuracy, computational efficiency, and usability remain limited. Here, we benchmarked 15 tissue alignment and registration algorithms using experimental and simulated spatial transcriptomics datasets across pairwise alignment, three-dimensional reconstruction, cross-resolution alignment, and atlas registration tasks. We assessed spatial-domain and cell-type correspondence, spatial gene-expression similarity, computational scalability, and usability. Simulated datasets with known spatial coordinates additionally enabled direct evaluation of geometric accuracy and reconstruction stability. No single method performed best across all settings: performance depended on the task, spatial resolution, and tissue characteristics, and strong pairwise alignment did not necessarily translate into reliable three-dimensional reconstruction. Evaluation metrics captured complementary aspects of alignment quality, highlighting the importance of using multiple criteria for comprehensive assessment. These findings provide practical guidance for method selection and identify priorities for improving the accuracy, scalability, and accessibility of spatial omics alignment.",
+      "authors": [
+        "Yao, J.",
+        "Matthias, J.",
+        "Gui, G.",
+        "Padmakumar, V.",
+        "Wang, A.",
+        "Luan, S.",
+        "Chen, Y.",
+        "Younes, L.",
+        "Maynard, K. R.",
+        "Martinowich, K.",
+        "Hicks, S. C."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "spatial transcriptomics",
+        "spatial omics",
+        "spatial resolution"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "針對 3D 組織對齊與空間體學註冊演算法的系統性基準評估",
+      "summaryZh": "本研究針對 15 種組織對齊與註冊演算法進行了系統性基準評估，使用實驗與模擬的空間轉錄體學資料集，涵蓋成對對齊、三維重建、跨解析度對齊及圖譜註冊等任務。結果顯示，沒有單一方法能在所有設定下皆表現最佳，且強健的成對對齊不一定能轉化為可靠的三維重建。這些發現提供了方法選擇的實用指引，並指出了提升空間體學對齊準確性、可擴展性與可及性的優先方向。",
+      "topicTags": [
+        "spatial-omics",
+        "benchmark",
+        "algorithm",
+        "3d-reconstruction",
+        "spatial-transcriptomics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.18.767576",
+      "title": "Multimodal profiling resolves the functional and spatial organization of colorectal cancer liver metastases",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-27",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.18.767576v1",
+      "doi": "10.64898/2026.11.18.767576",
+      "abstract": "BackgroundColorectal cancer (CRC) is the second leading cause of cancer-related mortality, largely because of liver metastases (LM). Despite advances in perioperative treatment and surgery, recurrence after resection of CRC liver metastases (CRC-LM) remains common. The cellular complexity of treatment-exposed CRC-LM and the interactions among malignant, stromal, immune, vascular and liver-resident populations remain incompletely understood, limiting the identification of biological vulnerabilities associated with disease progression and recurrence. MethodsWe used single-nuclei RNA sequencing (snRNAseq) to characterize the cellular composition and transcriptional states of nine chemotherapy-treated CRC-LM specimens. Single-nucleus profiles were integrated with spatial transcriptomic and protein-based analyses to define the functional and spatial organization of the metastatic ecosystem. We further compared tumors from patients with early versus no or later relapse and investigated candidate cell-cell interactions associated with recurrence-related cellular states. ResultsSingle-nucleus profiling recovered malignant epithelial tumor cells, fibroblasts, immune cells, endothelial cells and liver resident epithelial populations across samples and revealed substantial functional heterogeneity within each compartment. Malignant epithelial cells occupied interconnected stem-like, proliferative, differentiated and invasive states, whereas stromal, immune and vascular populations exhibited distinct transcriptional programs organized within specific tissue niches. Comparative analysis identified a fibroblast subtype enriched in early-relapse metastases, which was reproducibly identified in independent LM-CRC single-cell datasets. This population showed features consistent with a role in tumor dissemination and appeared to actively shape the metastatic microenvironment. ConclusionOur study provides an integrated single-nucleus and spatial characterization of the cellular organization of chemotherapy-treated CRC-LM. It reveals functionally specialized multicellular niches and identifies a fibroblast state associated with early relapse and epithelial and endothelial plasticity.",
+      "authors": [
+        "Picard, M.",
+        "Guille, A.",
+        "Denicolai, E.",
+        "Belfil, N.",
+        "Finetti, P.",
+        "Germier, C.",
+        "Lumet, G.",
+        "de Rauglaudre, B.",
+        "Dougy, E.",
+        "Bertucci, F.",
+        "Birnbaum, D. J.",
+        "Mamessier, E."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "多模態分析解析大腸直腸癌肝轉移的功能與空間組織",
+      "summaryZh": "本研究利用單核 RNA 定序（snRNAseq）結合空間轉錄體學與蛋白質分析，探討經化學治療後的大腸直腸癌肝轉移（CRC-LM）檢體之細胞組成與轉錄狀態。結果顯示，惡性上皮細胞具有顯著的功能異質性，且間質、免疫與血管群體呈現組織於特定組織生態位的獨特轉錄程式。比較分析更識別出在早期復發轉移中富集的特定成纖維細胞亞型，該亞型可能參與腫瘤散播並形塑轉移微環境。此整合性表徵有助於釐清治療後轉移生態結構，並進一步探討與復發相關的細胞間交互作用。",
+      "topicTags": [
+        "single-cell",
+        "spatial-transcriptomics",
+        "cancer",
+        "colorectal-cancer"
+      ]
+    },
+    {
+      "id": "10.64898/2025.12.11.693590",
+      "title": "Single-cell transcriptomics reveals conserved embryonic-like cell populations in different human cancers",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-27",
+      "url": "https://www.biorxiv.org/content/10.64898/2025.12.11.693590v3",
+      "doi": "10.64898/2025.12.11.693590",
+      "abstract": "Background Embryonic development is governed by coordinated transcriptional programs that shape cellular differentiation and can be reactivated in cancer. However, whether tumors of distinct ontogenetic origins contain conserved tumor cell populations that recapitulate features of these developmental programs remains unclear. Methods Here, we integrated single-cell RNA sequencing data from embryoid bodies (EBs), an in vitro model of early human development, and three ontogenetically distinct cancers (lung adenocarcinoma, melanoma, and medulloblastoma) to identify conserved tumor cell populations, whose features were further validated in an independent pan-cancer single-cell RNA sequencing atlas and by spatial transcriptomics. Results Across three cancer types, integrative analysis identified conserved tumor cell populations transcriptionally similar to EB-derived cells. The populations were marked by pronounced proliferation, recurrent expression of UBE2C, TOP2A, BIRC5, and NUSAP1, coordinated E2F-TFDP activity, and enrichment of cell-cycle, DNA repair, and mitotic programs together with low differentiation, high inferred developmental potential, and early pseudotime positioning. A proliferation-associated signature derived from these populations recurred across multiple cancer types and was more frequently detected in tumor than in normal cells, demonstrating altered expression of several cancer-related genes. Spatial transcriptomics localized the conserved tumor cell populations and their signature to premalignant bronchial lesions and discrete regions of lung adenocarcinoma tissue. Conclusions Together, our findings identify conserved tumor cell populations across cancers of distinct origins with transcriptional similarities to EB-derived cells including pronounced proliferation, low differentiation, and high inferred developmental potential and provide a foundation for developing new diagnostic and therapeutic solutions.",
+      "authors": [
+        "Khozyainova, A.",
+        "Subrakova, V.",
+        "Menyailo, M.",
+        "Zhigalina, D.",
+        "Kireeva, T.",
+        "Galiakberova, A.",
+        "Berestovoy, M.",
+        "Kopantseva, E.",
+        "Korobeynikova, A.",
+        "Dashinimaev, E.",
+        "Loos, D.",
+        "Tretyakova, M.",
+        "Bokova, U.",
+        "Skryabin, N.",
+        "Denisov, E."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "cancer",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "單細胞轉錄體學揭示不同人類癌症中保守的胚胎樣細胞群",
+      "summaryZh": "本研究整合了胚狀體（embryoid bodies）與三種不同起源癌症（肺腺癌、黑色素瘤與神經膠母細胞瘤）的單細胞 RNA 定序資料，以探討腫瘤細胞是否包含重現早期發育程式的保守族群。分析結果顯示，這些跨癌種的保守腫瘤細胞群具有顯著增生、低分化、高推斷發育潛能，以及高度表現 UBE2C、TOP2A、BIRC5 與 NUSAP1 等特徵。此外，研究透過獨立的泛癌單細胞 RNA 定序圖譜與空間轉錄體學驗證了這些特徵，並將其定位於癌前支氣管病變及肺腺癌組織的特定區域。這些發現識別出跨癌症類別的保守腫瘤細胞群，並為開發新的診斷與治療方案奠定基礎。",
+      "topicTags": [
+        "single-cell",
+        "cancer",
+        "transcriptomics",
+        "embryonic-development"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 12,
+      "passedByScope": 4,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 8,
+      "keywordFallbackYes": 4,
+      "keywordFallbackNo": 4,
+      "included": 8,
+      "excluded": 4
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b"
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 0,
+      "llmTagged": 0,
+      "llmLineA": 0,
+      "llmLineB": 0,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 4,
+      "candidates": 4,
+      "featured": 4,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 0,
+      "preprint": 4,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 0,
+      "featuredPreprint": 4,
+      "overflowLineA": 0,
+      "overflowLineB": 0,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 4,
+      "llmSummarized": 4,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 4,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "llmTagged": 0
+      },
+      "summarize": {
+        "requested": 4,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "succeeded": 0
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "observed": [
+            "gemini-3.5-flash-lite"
+          ],
+          "succeeded": 4
+        }
+      },
+      "translate": {
+        "requested": 0,
+        "succeeded": 0,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b"
+        },
+        "primarySucceeded": 0,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  },
+  "excludedPapers": [
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03885-4",
+        "title": "The haunting loveliness of boglands: Books in brief",
+        "journal": "Nature",
+        "publishedDate": "2026-11-27T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03885-4",
+        "doi": "10.1038/d41586-026-03885-4",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03754-0",
+        "title": "Want your research cited in patents? Publishing open access increases your chances",
+        "journal": "Nature",
+        "publishedDate": "2026-11-27T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03754-0",
+        "doi": "10.1038/d41586-026-03754-0",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03523-z",
+        "title": "Postcards from your graves",
+        "journal": "Nature",
+        "publishedDate": "2026-11-27T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03523-z",
+        "doi": "10.1038/d41586-026-03523-z",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    },
+    {
+      "paper": {
+        "id": "10.1038/d41586-026-03849-8",
+        "title": "Why the incoming US Congress should ban the development of self-improving AI",
+        "journal": "Nature",
+        "publishedDate": "2026-11-27T00:00:00.000Z",
+        "url": "https://www.nature.com/articles/d41586-026-03849-8",
+        "doi": "10.1038/d41586-026-03849-8",
+        "sourceId": "nature"
+      },
+      "reason": "life-science-routing",
+      "verdict": "no",
+      "method": "routing-keyword-fallback"
+    }
+  ]
+}
