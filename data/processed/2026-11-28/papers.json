@@ -1,0 +1,416 @@
+{
+  "reportDate": "2026-11-28",
+  "generatedAt": "2026-11-28T18:18:05.536Z",
+  "papers": [
+    {
+      "id": "10.64898/2026.11.27.767303",
+      "title": "Identification of HIV-1 infected cells in single-cell multiome datasets using Kraken2",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.27.767303v1",
+      "doi": "10.64898/2026.11.27.767303",
+      "abstract": "Detecting HIV-1-infected cells in single-cell sequencing studies is challenging primarily due to low transcriptional activity, scarcity of infected cells, and high viral genetic variability. Here, we present a novel pipeline integrating multiple HIV-1 subtype B genomes with Kraken2 (K2) for k-mer-based classification, bypassing the need for exact sequence alignment. Peripheral blood mononuclear cells from five individuals were analyzed at three time points: before HIV acquisition, at the time of HIV diagnosis, and after one year on antiretroviral therapy (ART). Single-cell multiome libraries -comprising nuclei ATAC-seq (ATAC) and gene expression (GEX) data- were processed using K2 against a curated HIV-1 subtype B reference library. Calibration was performed using pre-HIV acquisition samples, and optimized parameters applied to post-HIV and post-ART samples. For comparison, the standard Cell Ranger-ARC (CR) pipeline was also used. Out of 150,060 single nuclei analyzed, our pipeline identified 32 HIV-infected cells (13 in ATAC datasets, 18 in GEX datasets, and 1 in both), whereas CR detected 11 infected cells exclusively in GEX and yielded one false positive. This innovative bioinformatic approach enhances the detection of HIV-infected cells compared to CR and may complement studies aimed at defining cellular markers identifying infected cells",
+      "authors": [
+        "Garrido-Sanz, L.",
+        "Urrea, V.",
+        "Lorenzo-Redondo, R.",
+        "Soriaga, L. B.",
+        "Puertas, M. C.",
+        "Dalmau, J.",
+        "Coll, P.",
+        "Mothe, B.",
+        "Brander, C.",
+        "Clotet, B.",
+        "Telenti, A.",
+        "Martinez-Picado, J.",
+        "Moron-Lopez, S."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "使用 Kraken2 從單細胞 multiome 資料集中識別 HIV-1 感染細胞",
+      "summaryZh": "本研究提出了一個整合多個 HIV-1 B 型基因組與 Kraken2 的新穎生物資訊管線，用於基於 k-mer 分類來檢測單細胞定序研究中的 HIV-1 感染細胞，藉此繞過精確序列比對的需求。研究團隊分析了五位個體在 HIV 感染前、診斷時及抗反轉錄病毒療法（ART）治療一年後的周邊血液單核細胞，處理單細胞 multiome 資料庫（包含核 ATAC-seq 與基因表現數據）。結果顯示，該管線在分析的 150,060 個單一細胞核中識別出 32 個 HIV 感染細胞，表現優於標準的 Cell Ranger-ARC 管線。這項創新方法提升了 HIV 感染細胞的檢測能力，並可望輔助旨在定義感染細胞標記的研究。",
+      "topicTags": [
+        "hiv-1",
+        "single-cell",
+        "bioinformatics",
+        "genomics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.16.767195",
+      "title": "Recovering Missing Regulations by Multiplex Graph Aggregation of GRN Predictions (Technical Report)",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.16.767195v1",
+      "doi": "10.64898/2026.11.16.767195",
+      "abstract": "Gene regulatory networks (GRNs) capture the complex gene interactions underlying biological systems. However, existing GRN inference models face technical challenges in recovering faithful GRNs from single-cell RNA sequencing data in an unsupervised setting. GRN aggregation has been proposed to leverage the wisdom of different GRN models and improve overall performance, but aggregation methods either train on ground-truth edges, overlook the network nature of GRNs, or are computationally expensive. To bridge this gap, we propose MuxGRN, a novel GRN aggregation method that leverages multiplex link prediction to aggregate GRNs inferred from various state-of-the-art models and extract the information propagated within different layers of GRNs. We use CompGCN for representation learning and the variational graph autoencoder framework for self-supervised link prediction, which does not require ground-truth labels and can capture GRN network structure efficiently. Under this formulation, MuxGRN aggregates GRNs inferred by 9 GRN models and is evaluated on 14 real single-cell RNA sequencing datasets against the individual models and two edge-level aggregation baselines. Our evaluation shows that MuxGRN recovers up to 26.55% of previously missed true-positive edges that individual GRN models miss, substantially exceeding edge-level baselines while maintaining AUPRC comparable to the best individual GRN models. This supports the importance of the network structure in GRN and the potential for link prediction in GRN aggregation.",
+      "authors": [
+        "Tong, T. P.",
+        "Pang, J."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "透過基因調控網路預測的多重圖聚合來恢復遺失的調控關係",
+      "summaryZh": "本研究提出名為 MuxGRN 的新型基因調控網路（GRN）聚合方法，旨在解決現有模型從單細胞 RNA 定序資料中推斷 GRN 時的技術挑戰。透過運用多重鏈結預測並結合 CompGCN 與變分圖自動編碼器框架，該方法無需真實標籤即可進行自我監督學習，有效捕捉 GRN 的網路結構。評估結果顯示，MuxGRN 能恢復高達 26.55% 傳統個別模型所遺漏的真實正向邊，大幅超越邊級基準，同時維持與最佳個別模型相當的 AUPRC。這項成果凸顯了網路結構在 GRN 中的重要性，並展現了鏈結預測在 GRN 聚合上的潛力。",
+      "topicTags": [
+        "gene-regulatory-networks",
+        "single-cell",
+        "graph-neural-networks",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.20.768074",
+      "title": "COMPASS: In silico reconstruction of single-cell-resolved spatial atlases via cross-omics distillation and coordinate refinement",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.20.768074v1",
+      "doi": "10.64898/2026.11.20.768074",
+      "abstract": "The spatial organization of single cells underlies tissue function, yet most spatial omics protocols capture multiple cells per spot. Recovering single-cell coordinates from spot-level data is underdetermined, and existing methods give only cell-type proportions or heuristic placements while rarely using domain structure, geometric priors, and complementary modalities. We introduce COMPASS, a constrained reconstruction framework that resolves this ambiguity by imposing three mutually reinforcing priors on cell-resolved atlas assembly. COMPASS distills auxiliary spatial modalities into an RNA-centered representation deployable to RNA-only dissociated cells, restricts cell-to-spot matching through domain-constrained optimal transport, and refines discrete assignments into dense, non-overlapping coordinates under capacity, locality, and minimum-separation constraints. Across simulations and real datasets, COMPASS outperformed twelve baselines in localization accuracy. In clinical breast cancer, the reconstructed atlas enabled spatial analyses inaccessible to spot-level methods, revealing that compact ER+ tumor nests physically exclude immune cells and suggesting a spatial barrier to immunotherapy.",
+      "authors": [
+        "Wang, X.",
+        "Fang, W.",
+        "Wang, Y.",
+        "Guan, X.",
+        "Li, N.",
+        "Bai, Y.",
+        "Liang, L.",
+        "Peng, H.",
+        "He, H.",
+        "Liu, W.",
+        "Dong, Q."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single cell",
+        "single-cell",
+        "spatial omics",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "透過跨體學蒸餾與座標精煉進行單細胞解析度空間圖譜的計算重建",
+      "summaryZh": "本研究介紹名為 COMPASS 的受限制重建框架，旨在透過強加三個互補的先驗條件來解決從點狀數據恢復單細胞座標的模糊性。COMPASS 結合跨體學蒸餾、網域限制的最佳輸運以及密集座標精煉，在模擬與真實數據集中展現出優於現有基準的定位準確度。在臨床乳癌應用中，該重建圖譜揭示了緊密的雌激素受體陽性（ER+）腫瘤巢會物理性排除免疫細胞，進而暗示了免疫療法的空間屏障。",
+      "topicTags": [
+        "single-cell",
+        "spatial-omics",
+        "computational-biology",
+        "cancer"
+      ]
+    },
+    {
+      "id": "10.64898/2026.10.20.760578",
+      "title": "Chromatin-encoded IRX4 identity erosion bounds cardiomyocyte renewal in the infarcted human heart",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.20.760578v2",
+      "doi": "10.64898/2026.10.20.760578",
+      "abstract": "Abstract Myocardial infarction leaves the adult human heart unable to regenerate, yet whether injured cardiomyocytes revert to an immature, proliferative state is unresolved. We integrated 1.59 million single-cell and single-nucleus profiles with single-nucleus chromatin accessibility, spatial transcriptomics, plasma-proteome Mendelian randomization and an independent cardiomyopathy cohort of 79 donors to define the injured cardiomyocyte state. Infarcted cardiomyocytes showed a module-wide erosion of ventricular identity, including IRX4, with stress-gene induction and a chromatin-encoded loss of the identity module. Proliferation was not restored: nuclei co-detecting two cell-cycle transcripts remained at 0.011% (5/46,200), and the mitotic signal was confined to the ischaemic core. Genetic dissection separated the identity node from its secretory output: no variant at the IRX4 locus reached genome-wide significance across eight phenotypes, whereas genetically predicted NT-proBNP was causally associated with heart failure (odds ratio 1.12 per standard deviation; 95% confidence interval 1.05-1.19). The ligand and its endothelial receptor NPR1 were spatially uncoupled, and IRX4 erosion did not generalize to chronic cardiomyopathy. The injured cardiomyocyte therefore adopts a chromatin-encoded, non-regenerative stress identity rather than a fetal one, and the natriuretic peptide that reports this state lies on a causal path to heart failure.",
+      "authors": [
+        "qiao, s.",
+        "Li, L.",
+        "He, C.",
+        "Li, W."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "single-nucleus",
+        "spatial transcriptomics",
+        "genome"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "染色體編碼的 IRX4 特性流失限制了梗塞人體心肌細胞的更新",
+      "summaryZh": "本研究整合了多種單細胞與單核體學特性、空間轉錄體學、血漿蛋白質體孟德爾隨機化分析以及心肌病變捐贈者世代，探討受損心肌細胞的狀態。結果顯示，梗塞的心肌細胞表現出包含 IRX4 在內的心室特性模組全面流失、壓力基因誘導，以及特性模組的染色體編碼喪失，且增生能力並未恢復。受損的心肌細胞因此轉變為具染色體編碼的非再生壓力特性，而非胎兒特性，而反映此狀態的利鈉肽則位於通往心衰竭的因果路徑上。",
+      "topicTags": [
+        "cardiomyocyte",
+        "chromatin",
+        "myocardial-infarction",
+        "single-cell"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.18.767106",
+      "title": "NovAST: a deep learning framework for automated label transfer and novel cell type discovery in spatial transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.18.767106v1",
+      "doi": "10.64898/2026.11.18.767106",
+      "abstract": "Spatially resolved transcriptomics enables the mapping of gene expression within tissue architecture, transforming our understanding of cellular organization and function. However, its interpretation critically depends on accurate cell type annotation. As recent technologies now achieve single-cell resolution, annotation has become essential for linking molecular profiles to tissue architecture and disease mechanisms. However, reference-based annotation methods rely on the assumption that all cell types in the target tissue are present in the reference, which is frequently violated in complex or pathological contexts, causing systematic misclassification and masking novel or context-specific cell populations. Here we introduce NovAST (Novel cell type discovery and Annotation in Spatial Transcriptomics), a fully automated deep learning framework that jointly performs reference-guided annotation and novel cell type discovery. NovAST learns a cluster-aware latent space that preserves cell-type structure, supports graph-based label propagation, and explicitly quantifies assignment uncertainty. This model design enables NovAST to automatically infer whether novel cell populations are absent, singular, or multiple, a question that cannot be specified a priori, thereby avoiding the incorrect assumption of user-defined novel cell types required by existing approaches. Applied to eleven spatial transcriptomics reference-target pairs spanning MERFISH, CosMx SMI, and 10x Xenium platforms, NovAST consistently recovers known cell types while uncovering previously unannotated, disease-associated novel cell types, including immune-associated cell states in idiopathic pulmonary fibrosis and inflammatory cell populations in human colon tissue.",
+      "authors": [
+        "Zhu, Y.",
+        "Singh, R.",
+        "Ma, Y."
+      ],
+      "articleType": "bioinformatics",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "spatial transcriptomics",
+        "MERFISH",
+        "Xenium",
+        "CosMx"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "NovAST：用於空間轉錄體學中自動標籤轉移與新細胞類型發現的深度學習框架",
+      "summaryZh": "本研究提出名為 NovAST 的全自動深度學習框架，旨在同時進行參考基準引導的註釋與新細胞類型發現。該模型透過學習能保持細胞類型結構的群聚感知潛在空間、支援基於圖的標籤傳播，並明確量化指派不確定性，藉此自動推斷新細胞群體是否存在。應用於多種平台的空間轉錄體學參考與目標配對時，NovAST 能持續恢復已知細胞類型，並揭示先前未註釋的疾病相關新細胞類型。這項研究有助於克服現有方法依賴參考基準及需要預先定義新細胞類型的限制，進一步推動空間轉錄體學的解讀。",
+      "topicTags": [
+        "deep-learning",
+        "spatial-transcriptomics",
+        "cell-type-annotation",
+        "computational-biology"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.23.768526",
+      "title": "ImmunoCAR Atlas: a pan-immune single-cell resource for dissecting CAR-T therapy response across patient cohorts",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.23.768526v1",
+      "doi": "10.64898/2026.11.23.768526",
+      "abstract": "Chimeric antigen receptor (CAR) T-cell therapy has transformed treatment for relapsed/refractory hematologic malignancies, yet 40-60% of patients relapse within one to two years, and the immune correlates separating durable responders from non-responders remain poorly defined. Single-cell transcriptomics has been widely applied to CAR-T cohorts, but the resulting data remain fragmented across small, underpowered studies with inconsistent metadata, tissue sources, sampling timepoints, and annotation schemes, and existing immune atlases each address only part of this problem. Here we present ImmunoCAR Atlas (https://car-t-atlas.igib.res.in/), a harmonized, patient-stratified single-cell resource comprising 5.7 million cells from 1,085 samples and 584 clinically annotated patients, spanning three cancer indications and four FDA-approved CAR-T products, integrated into 16 scVI-corrected reference atlases with patient-level responder/non-responder annotation. Unlike prior resources, ImmunoCAR Atlas preserves the full pan-immune tumor microenvironment, links longitudinal pre- and post-infusion samples to standardized clinical outcomes, and provides an interactive interface with dedicated analytical modules for exploring patient and cellular composition, cell-population shifts, differential gene expression, and cell-cell communication between responders and non-responders. The atlas features four purpose-built tools: metaCIDER (Meta-analysis of Cross-study Immune Differentially Expressed Response genes), which identifies genes consistently associated with response or resistance across datasets; CellMARK (Cross-Atlas Cell Marker Discovery), which nominates reproducible cell-type markers distinguishing response groups; CAR-T RSS (CAR-T Response Signature Score), which validates metaCIDER-nominated or user-supplied gene signatures; and a Gene Search module, which allows users to query genes of interest and explore their associations with responder and non-responder groups across datasets. To our knowledge, ImmunoCAR Atlas is the first harmonized single-cell CAR-T resource to integrate clinical annotations, response-centric analytical modules, and downloadable reference atlases in a single platform facilitating mechanistic studies and the discovery of robust, reproducible biomarkers of CAR-T response and resistance across the treatment continuum.",
+      "authors": [
+        "Jain, K.",
+        "Sharma, T. N.",
+        "Ansari, A.",
+        "Rathore, D. S.",
+        "Jit, S.",
+        "Dev, R. R.",
+        "Bhalla, S."
+      ],
+      "articleType": "cancer biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-cell",
+        "cancer"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "ImmunoCAR Atlas：用於解析嵌合抗原受體 T 細胞療法反應的泛免疫單細胞資源",
+      "summaryZh": "本研究發表了 ImmunoCAR Atlas，這是一個整合了來自 584 名臨床註釋患者、1,085 個樣本與 5,700 萬個細胞的協調單細胞資源，涵蓋三種癌症適應症與四種 FDA 批准的 CAR-T 產品。該圖譜透過將數據整合至 16 個經 scVI 修正的參考圖譜中，並提供患者層級的反應者與非反應者註釋，克服了過往研究數據零碎且樣本數不足的問題。此資源保留了完整的泛免疫腫瘤微環境，並連結縱向樣本與標準化臨床結果，以互動式介面及專屬分析工具協助研究人員探索細胞組成、基因表現與細胞間通訊。這項資源有助於釐清區分持久反應者與非反應者的免疫相關因素，進一步促進 CAR-T 療法的研究。",
+      "topicTags": [
+        "single-cell",
+        "car-t",
+        "immunology",
+        "cancer",
+        "transcriptomics"
+      ]
+    },
+    {
+      "id": "10.64898/2026.11.20.768035",
+      "title": "A Spatiotemporal Embryonic Atlas of Bombyx mori Integrating Single-Nucleus RNA Sequencing and Spatial Transcriptomics",
+      "journal": "bioRxiv",
+      "publishedDate": "2026-11-28",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.11.20.768035v1",
+      "doi": "10.64898/2026.11.20.768035",
+      "abstract": "The silkworm, Bombyx mori, is an important lepidopteran model and economically valuable insect. However, the cellular composition and dynamic spatiotemporal features of its embryonic development remain to be systematically characterized. Here, we integrated single-nucleus RNA sequencing (snRNA-seq) with spatial transcriptomics to construct an embryonic atlas of B. mori at 1, 3, 5, 7, and 9 days post-oviposition (dpo). We systematically identified the major cell types present during embryonic development and mapped their spatial distributions. We then focused on cellular heterogeneity and differentiation within the embryonic midgut lineage, identifying several candidate midgut-associated marker genes and characterizing their spatial expression patterns. These findings expand the molecular marker resources available for multiple cell types in B. mori embryos. This study provides valuable data and a framework for improving our understanding of cellular heterogeneity and organogenesis during embryonic development in B. mori and other lepidopteran insects.",
+      "authors": [
+        "Dou, Y.",
+        "Li, T.",
+        "Zhang, Y.",
+        "Shen, Z.",
+        "Liu, C.",
+        "Ran, M.",
+        "Li, S.",
+        "Chen, J.",
+        "Chen, K.",
+        "Huang, Q.",
+        "Shi, Y.",
+        "Wu, S.",
+        "Li, L.",
+        "Tang, Y.",
+        "Chen, L.",
+        "Li, S.",
+        "Shen, L.",
+        "Qin, Y.",
+        "Chen, G.",
+        "Wang, C.",
+        "Lv, Q.",
+        "Meng, X.",
+        "Wei, J.",
+        "Long, M.",
+        "Bao, J.",
+        "Li, C.",
+        "Zhou, Z.",
+        "Chen, J.",
+        "Li, X.",
+        "Xiong, B.",
+        "Li, T.",
+        "Pan, G."
+      ],
+      "articleType": "developmental biology",
+      "sourceId": "biorxiv",
+      "lifeScienceRouting": {
+        "verdict": "yes",
+        "method": "scope-default"
+      },
+      "matchedKeywords": [
+        "single-nucleus",
+        "snRNA-seq",
+        "spatial transcriptomics",
+        "development"
+      ],
+      "section": "single-cell-spatial",
+      "digestLine": "preprint",
+      "digestTaggingMethod": "keyword-fallback",
+      "featured": true,
+      "titleZh": "整合單核 RNA 定序與空間轉錄體學的家蠶胚胎時空圖譜",
+      "summaryZh": "本研究整合了單核 RNA 定序（snRNA-seq）與空間轉錄體學，建構了家蠶（Bombyx mori）在產卵後 1、3、5、7 與 9 天的胚胎圖譜。研究團隊系統性地鑑定出胚胎發育過程中的主要細胞類型，並繪製其空間分布。進一步聚焦於胚胎中腸譜系的細胞異質性與分化，識別出多個候選的中腸相關標記基因並釐清其空間表現模式。這些發現擴展了家蠶胚胎多種細胞類型的分子標記資源，並為理解家蠶及其他鱗翅目昆蟲胚胎發育過程中的細胞異質性與器官發生提供了寶貴的資料與框架。",
+      "topicTags": [
+        "single-nucleus-rna-seq",
+        "spatial-transcriptomics",
+        "embryonic-development",
+        "entomology"
+      ]
+    }
+  ],
+  "routing": {
+    "enabled": true,
+    "stats": {
+      "total": 7,
+      "passedByScope": 7,
+      "llmClassified": 0,
+      "llmYes": 0,
+      "llmNotSure": 0,
+      "llmNo": 0,
+      "keywordFallbackClassified": 0,
+      "keywordFallbackYes": 0,
+      "keywordFallbackNo": 0,
+      "included": 7,
+      "excluded": 0
+    },
+    "model": {
+      "requested": "meta/muse-glimmer-30b"
+    }
+  },
+  "digest": {
+    "enabled": true,
+    "llmTagging": true,
+    "tagging": {
+      "threshold": 0.75,
+      "llmClassified": 0,
+      "llmTagged": 0,
+      "llmLineA": 0,
+      "llmLineB": 0,
+      "fallback": 0,
+      "fallbackLineA": 0,
+      "fallbackLineB": 0,
+      "failures": 0
+    },
+    "selection": {
+      "total": 7,
+      "candidates": 7,
+      "featured": 7,
+      "overflow": 0,
+      "lineA": 0,
+      "lineB": 0,
+      "preprint": 7,
+      "skip": 0,
+      "featuredLineA": 0,
+      "featuredLineB": 0,
+      "featuredPreprint": 7,
+      "overflowLineA": 0,
+      "overflowLineB": 0,
+      "overflowPreprint": 0
+    },
+    "summarize": {
+      "requested": 7,
+      "llmSummarized": 7,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 7,
+      "failed": 0
+    },
+    "translate": {
+      "requested": 0,
+      "llmTranslated": 0,
+      "primarySucceeded": 0,
+      "fallbackSucceeded": 0,
+      "failed": 0
+    },
+    "models": {
+      "spatial": {
+        "requested": "meta/muse-glimmer-30b",
+        "llmTagged": 0
+      },
+      "summarize": {
+        "requested": 7,
+        "failed": 0,
+        "primary": {
+          "requested": "meta/muse-glimmer-30b",
+          "succeeded": 0
+        },
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "observed": [
+            "gemini-3.5-flash-lite"
+          ],
+          "succeeded": 7
+        }
+      },
+      "translate": {
+        "requested": 0,
+        "succeeded": 0,
+        "failed": 0,
+        "model": {
+          "requested": "meta/muse-glimmer-30b"
+        },
+        "primarySucceeded": 0,
+        "fallback": {
+          "requested": "gemini-3.5-flash-lite",
+          "succeeded": 0
+        }
+      }
+    }
+  }
+}
